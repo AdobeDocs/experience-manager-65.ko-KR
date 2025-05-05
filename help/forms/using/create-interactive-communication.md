@@ -300,7 +300,7 @@ ht-degree: 1%
 | 사회보장번호 | 1234567 | text{999-99-9999} | 1-23-4567 | 기본값 필드의 자릿수가 패턴 필드의 자릿수보다 적습니다. 패턴은 사용 가능한 7자리 숫자에 적용됩니다. |
 | 사회보장번호 | 1234567890 | text{999-99-9999} | 1234567890 | 기본값 필드의 자릿수가 패턴 필드의 자릿수보다 큽니다. 결과적으로 표시 값에는 변경 사항이 없습니다. |
 
-변수 또는 양식 데이터 모델 요소에 표시 패턴이 지정되지 않은 경우 기본적으로 [전역 문서 조각 구성](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)이 사용됩니다.
+변수 또는 양식 데이터 모델 요소에 표시 패턴이 지정되지 않은 경우 기본적으로 [전역 문서 조각 구성](https://helpx.adobe.com/kr//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)이 사용됩니다.
 
 숫자 데이터 유형의 변수에 표시 패턴을 적용하지 않는 경우 인쇄 미리 보기에는 글로벌 문서 조각 구성에 따라 패턴이 표시됩니다. 기본 전역 문서 조각 구성에 변경 사항을 적용하면 로케일에 대해 정의된 기본 구분 기호에 따라 에이전트 UI에 패턴이 표시됩니다.
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-다른 형식으로 출력을 생성하려면 출력 형식 유형을 지정합니다. 지원되는 출력 형식 유형 목록은 [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)를 참조하십시오.
+다른 형식으로 출력을 생성하려면 출력 형식 유형을 지정합니다. 지원되는 출력 형식 유형 목록은 [PrintChannel API](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)를 참조하십시오.
 
 예를 들어 다음 샘플을 사용하여 대화형 커뮤니케이션의 출력 형식으로 PCL을 정의할 수 있습니다.
 

@@ -116,7 +116,7 @@ ZIP 파일의 폴더 계층 구조의 가장 낮은 수준에 둘 이상의 HTML
 
    파일을 변환할 때 표시되는 변환 시간은 여기에서 지정한 값보다 클 수 있습니다. 변환 시간 에는 스레드 또는 프로세스를 기다리는 시간, 파일을 변환하는 데 걸리는 시간 및 대체 변환기에 걸리는 시간(해당하는 경우)이 포함됩니다. 시간. Specify a Timeout 값은 파일을 변환하는 데 걸리는 시간입니다.
 
-1. (선택 사항) **사용자 지정 Preflight 프로필 지정** 옵션에서 [찾아보기]를 클릭하고 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 선택합니다. Preflight 프로필은 문서를 PDF 아카이브(PDF/A) 형식으로 변환하는 동안에만 사용됩니다.
+1. (선택 사항) **사용자 지정 Preflight 프로필 지정** 옵션에서 [찾아보기]를 클릭하고 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/kr/acrobat/using/preflight-profiles-acrobat-pro.html)을 선택합니다. Preflight 프로필은 문서를 PDF 아카이브(PDF/A) 형식으로 변환하는 동안에만 사용됩니다.
 1. 내보내기를 클릭합니다. 변환이 완료되면 내보낸 파일에 대한 링크가 나타납니다.
 1. 변환된 파일을 보려면 링크를 클릭합니다.
 

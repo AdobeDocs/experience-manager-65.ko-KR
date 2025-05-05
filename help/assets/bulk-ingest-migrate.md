@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. Experience Manager 인스턴스에서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**(으)로 이동하고 **[!UICONTROL 사용자 만들기]**&#x200B;를 선택합니다. 이 서비스 사용자는 `/content/dam.`에 대한 *읽기/쓰기* 권한이 있어야 합니다.
 1. **[!UICONTROL ID]** 및 **[!UICONTROL 암호]** 필드에 사용자 이름과 암호를 입력합니다(예: **FTP 사용자**). 이 이름은 타임라인에 자산을 만든 사용자로 나타납니다. FTP에서 에셋을 업로드하는 경우 FTP 서버에 에셋을 업로드하고 Experience Manager으로 푸시할 때 에셋이 생성된 것으로 간주됩니다.
-1. 다운로드를 위해 기능 팩 18912에 대한 액세스를 요청하려면 [Experience Manager 고객 지원 Adobe](https://experienceleague.adobe.com/?support-solution=General#support)에 문의하십시오. 지원 센터에 문의할 때 다음 정보가 필요할 수 있습니다.
+1. 다운로드를 위해 기능 팩 18912에 대한 액세스를 요청하려면 [Experience Manager 고객 지원 Adobe](https://experienceleague.adobe.com/ko?support-solution=General#support)에 문의하십시오. 지원 센터에 문의할 때 다음 정보가 필요할 수 있습니다.
 
    * 포트 번호를 포함한 작성자 인스턴스의 서버 IP 주소(기본적으로 포트 번호는 4502입니다.)
    * 이전 단계의 Experience Manager 서비스 사용자 이름 및 암호입니다.

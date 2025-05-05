@@ -44,7 +44,7 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 
 * Adobe Campaign Classic에 대한 관리자 액세스
    * 통합을 수행하려면 구성된 데이터베이스를 포함하는 작동 중인 Adobe Campaign Classic 인스턴스가 필요합니다.
-   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)를 참조하십시오. 특히 설치 및 구성 안내서를 참조하십시오.
+   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=ko)를 참조하십시오. 특히 설치 및 구성 안내서를 참조하십시오.
 * AEM에 대한 관리자 액세스
 
 ## Campaign에 AEM 통합 패키지 설치 {#install-package}
@@ -119,7 +119,7 @@ Adobe Campaign의 **AEM 통합** 패키지에는 AEM에 연결하는 데 필요�
    >
    >기본적으로, 연산자에 대해 보안 영역이 구성되어 있지 않습니다. AEM이 Adobe Campaign에 연결되려면 앞의 단계들에서 자세히 설명한 대로 영역을 반드시 선택해야 합니다.
    >
-   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=ko)
 
 1. Campaign 클라이언트에서 `aemserver` 연산자로 돌아간 뒤 **일반** 탭을 선택합니다.
 

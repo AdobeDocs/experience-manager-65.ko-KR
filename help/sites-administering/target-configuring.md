@@ -56,7 +56,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
 >* AT.js에는 target.js에 포함된 구성 요소가 포함되어 있으므로 더 이상 target을 호출할 필요가 없습니다.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ko -->
 
 ### 프로비저닝된 타겟 프레임워크 속성 {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 >
 >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ko -->
 
 ### Target 클라우드 구성 만들기 {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
 ### 활동을 Target 클라우드 구성과 연결  {#associating-activities-with-the-target-cloud-configuration}
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html)의 활동을 미러링할 수 있도록 [AEM 활동](/help/sites-authoring/activitylib.md)을 Target 클라우드 구성과 연결하십시오.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ko)의 활동을 미러링할 수 있도록 [AEM 활동](/help/sites-authoring/activitylib.md)을 Target 클라우드 구성과 연결하십시오.
 
 >[!NOTE]
 >

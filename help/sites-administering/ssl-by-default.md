@@ -195,7 +195,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 >[!NOTE]
 >
->AEM에서 유용한 cURL 명령의 중앙 집중식 목록은 [AEM에서 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
+>AEM에서 유용한 cURL 명령의 중앙 집중식 목록은 [AEM에서 cURL 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
 
 cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 이 URL에 구성 매개 변수를 게시하여 이 작업을 수행할 수 있습니다.
 

@@ -32,7 +32,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
 ## 구성 {#configuration}
 
-1. [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)에 설명된 패턴에 따라 여러 스토어 및 스토어 보기를 구성합니다
+1. [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko)에 설명된 패턴에 따라 여러 스토어 및 스토어 보기를 구성합니다
 
 2. AEM과 Adobe Commerce 간 연결이 작동하는지 확인합니다.
 
@@ -58,7 +58,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
 ## 추가 리소스
 
-* [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko)
 * [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=ko)
 * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)

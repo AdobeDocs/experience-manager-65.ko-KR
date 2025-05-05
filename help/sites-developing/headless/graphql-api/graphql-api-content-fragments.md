@@ -769,7 +769,7 @@ query {
   >
   >Dispatcher은 모든 지속 쿼리 URL에 접미사 `.json`을(를) 추가하여 결과를 캐시할 수 있도록 합니다.
   >
-  >이는 쿼리가 캐시될 수 있는 문서에 대한 Dispatcher의 요구 사항을 준수하는지 확인하기 위한 것입니다. 자세한 내용은 [Dispatcher에서 문서를 어떻게 반환합니까?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)를 참조하십시오.
+  >이는 쿼리가 캐시될 수 있는 문서에 대한 Dispatcher의 요구 사항을 준수하는지 확인하기 위한 것입니다. 자세한 내용은 [Dispatcher에서 문서를 어떻게 반환합니까?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=ko#how-does-the-dispatcher-return-documents%3F)를 참조하십시오.
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -959,7 +959,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 >[!NOTE]
 >
->AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
+>AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
 
 GraphQL 엔드포인트에 액세스하려면 고객 Git 저장소에서 CORS 정책을 구성합니다. 이 구성은 하나 이상의 원하는 끝점에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행됩니다.
 
@@ -1098,4 +1098,4 @@ CORS 구성 외에도 서드파티 호스트에서 액세스를 허용하도록 
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko) 엔드투엔드 튜토리얼을 확인하십시오.

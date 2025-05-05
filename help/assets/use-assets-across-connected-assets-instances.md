@@ -19,7 +19,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -42,7 +42,7 @@ ht-degree: 15%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
-* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager]에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service] (으)로 작동하는 방법에 대한 자세한 내용은 [Experience Manageras a Cloud Service 의 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)을 참조하십시오.
+* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager]에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service] (으)로 작동하는 방법에 대한 자세한 내용은 [Experience Manageras a Cloud Service 의 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ko)을 참조하십시오.
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
@@ -135,7 +135,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
    >
    >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 렌디션을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
 
-1. [!DNL Assets] 배포의 CORS 구성에서 [!DNL Sites] 배포를 허용된 원본으로 추가합니다. 자세한 내용은 [CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)를 참조하십시오.
+1. [!DNL Assets] 배포의 CORS 구성에서 [!DNL Sites] 배포를 허용된 원본으로 추가합니다. 자세한 내용은 [CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)를 참조하십시오.
 
 1. [동일한 사이트 쿠키 지원 구성](/help/sites-administering/same-site-cookie-support.md).
 
@@ -174,7 +174,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
    * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 사용 안 함]**&#x200B;을 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
    * 로컬 [!DNL Sites]의 **[!UICONTROL Publish Assets]** 옵션에서 **[!UICONTROL 선택적 Publish]**&#x200B;을(를) 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
 
-1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지에서 작성자가 [!DNL Dynamic Media]개의 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)에 [!DNL Dynamic Media]개의 이미지가 표시됩니다.
+1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko#dynamic-media). 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지에서 작성자가 [!DNL Dynamic Media]개의 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)에 [!DNL Dynamic Media]개의 이미지가 표시됩니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -317,7 +317,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 * 에셋 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [Assets 통찰력](/help/assets/asset-insights.md) 기능을 구성하십시오.
 
-* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
+* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko#configure-dialog)(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 

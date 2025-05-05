@@ -32,7 +32,7 @@ AEM을 사용하여 AEM Mobile 앱용 콘텐츠를 생성하려면 AEM 인스턴
 
 AEM Mobile 설정을 시작하려면 다음을 수행해야 합니다.
 
-* **API 키 요청**: 온디맨드 서비스 API에 액세스하려면 API 키를 요청해야 합니다. API 키를 요청하려면 [PDF 양식](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)을(를) 완료하십시오. 완성된 양식을 Adobe Developer 지원 팀에 보내기: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **API 키 요청**: 온디맨드 서비스 API에 액세스하려면 API 키를 요청해야 합니다. API 키를 요청하려면 [PDF 양식](https://helpx.adobe.com/kr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)을(를) 완료하십시오. 완성된 양식을 Adobe Developer 지원 팀에 보내기: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **장치 ID 및 장치 토큰 생성**: API 키를 받으면 장치 ID 및 장치 토큰을 생성할 수 있습니다. `https://aex.aemmobile.adobe.com`(으)로 이동하여 다음을 수행합니다.
 
@@ -46,7 +46,7 @@ AEM Mobile 설정을 시작하려면 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->필요한 Adobe ID에게 AEM Mobile 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 온라인 도움말에서 [AEM Mobile용 계정 관리](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)를 참조하십시오.
+>필요한 Adobe ID에게 AEM Mobile 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 온라인 도움말에서 [AEM Mobile용 계정 관리](https://helpx.adobe.com/kr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)를 참조하십시오.
 
 ## AEM Mobile에 대한 프로젝트 만들기 {#creating-projects-for-aem-mobile}
 
@@ -56,7 +56,7 @@ AEM Mobile 설정을 시작하려면 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->AEM Mobile에서 프로젝트를 만드는 방법에 대한 자세한 내용을 보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html)를 클릭하세요.
+>AEM Mobile에서 프로젝트를 만드는 방법에 대한 자세한 내용을 보려면 [여기](https://helpx.adobe.com/kr/digital-publishing-solution/help/creating-projects.html)를 클릭하세요.
 
 ## AEM Mobile 커넥터 구성 {#configuring-an-aem-mobile-connector}
 
@@ -117,7 +117,7 @@ AEM Mobile 앱 개발에서는 세 가지 역할이 있습니다.
 * 개발자
 * 작성자
 
-앱 빌드나 콘텐츠 만들기 및 게시와 같이 다른 권한으로 역할을 만드는 방법에 대한 자세한 내용은 AEM Mobile 도움말에서 [사용자 역할 만들기 및 액세스 권한 부여](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)를 클릭하십시오.
+앱 빌드나 콘텐츠 만들기 및 게시와 같이 다른 권한으로 역할을 만드는 방법에 대한 자세한 내용은 AEM Mobile 도움말에서 [사용자 역할 만들기 및 액세스 권한 부여](https://helpx.adobe.com/kr/digital-publishing-solution/help/account-admin-dps.html)를 클릭하십시오.
 
 >[!NOTE]
 >

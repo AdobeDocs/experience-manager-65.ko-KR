@@ -46,7 +46,7 @@ AEM에서 JSR 286 호환 포틀릿을 실행할 수 있습니다. 포틀릿 구�
 
 >[!CAUTION]
 >
->AEM Portal Director은 AEM 6.4부터 더 이상 사용되지 않습니다. [사용되지 않거나 제거된 기능](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html)을 참조하세요.
+>AEM Portal Director은 AEM 6.4부터 더 이상 사용되지 않습니다. [사용되지 않거나 제거된 기능](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/deprecated-removed-features.html)을 참조하세요.
 
 ## AEM 컨텐트 포틀릿 관리 {#administering-the-aem-content-portlet}
 

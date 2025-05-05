@@ -116,12 +116,12 @@ facebook 응용 프로그램을 만들려면 [https://developers.facebook.com/ap
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL 제목]** (*필수*) Facebook 앱을 식별하는 표시 제목을 입력합니다. facebook 앱에 대해 *표시 이름*&#x200B;과(와) 동일한 이름을 입력하십시오.
-   * **[!UICONTROL 앱 ID/API 키]**(*필수*) Facebook 앱의 ***앱 ID***&#x200B;을(를) 입력하십시오. 대화 상자에서 만든 [Adobe Granite OAuth 응용 프로그램 및 공급자](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스를 식별합니다.
+   * **[!UICONTROL 앱 ID/API 키]**(*필수*) Facebook 앱의 ***앱 ID***&#x200B;을(를) 입력하십시오. 대화 상자에서 만든 [Adobe Granite OAuth 응용 프로그램 및 공급자](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스를 식별합니다.
    * **[!UICONTROL 앱 암호]** (*필수*) Facebook 앱의 ***앱 암호***&#x200B;를 입력하십시오.
    * **[!UICONTROL 사용자 만들기]** 확인 표시가 되어 있으면 Facebook 계정으로 로그인하면 AEM 사용자 항목이 만들어지고 선택한 사용자 그룹의 구성원으로 추가됩니다.  기본값이 선택되어 있습니다(적극 권장).
    * **[!UICONTROL 사용자 ID 마스크]**: 선택 해제된 상태로 둡니다.
    * **[!UICONTROL 범위 이메일]**: 사용자의 이메일 ID를 Facebook에서 가져와야 합니다.
-   * **[!UICONTROL 사용자 그룹에 추가]** 사용자 그룹 추가를 선택하여 사용자를 추가할 커뮤니티 사이트에 대해 하나 이상의 [구성원 그룹](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)을 선택합니다.
+   * **[!UICONTROL 사용자 그룹에 추가]** 사용자 그룹 추가를 선택하여 사용자를 추가할 커뮤니티 사이트에 대해 하나 이상의 [구성원 그룹](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/users.html)을 선택합니다.
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ facebook 응용 프로그램을 만들려면 [https://developers.facebook.com/ap
    * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    * **[!UICONTROL Publish]**.
 
-결과 [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) 인스턴스이며, 추가 범위(권한)를 추가하지 않으면 더 이상 수정할 필요가 없습니다. 기본 범위는 Facebook 로그인에 대한 표준 권한입니다. 추가 범위를 원하는 경우 OSGI 구성을 직접 편집해야 합니다. 시스템/콘솔을 통해 직접 수정한 내용이 있는 경우 덮어쓰지 않도록 Touch UI에서 클라우드 서비스 구성을 편집하지 마십시오.
+결과 [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) 인스턴스이며, 추가 범위(권한)를 추가하지 않으면 더 이상 수정할 필요가 없습니다. 기본 범위는 Facebook 로그인에 대한 표준 권한입니다. 추가 범위를 원하는 경우 OSGI 구성을 직접 편집해야 합니다. 시스템/콘솔을 통해 직접 수정한 내용이 있는 경우 덮어쓰지 않도록 Touch UI에서 클라우드 서비스 구성을 편집하지 마십시오.
 
 ### AEM Communities Facebook OAuth 공급자 {#aem-communities-facebook-oauth-provider}
 
@@ -270,7 +270,7 @@ twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니�
 
    * **[!UICONTROL 소비자 키]**
 
-     (*필수*) Twitter 앱에 대한 **소비자(API) 키**&#x200B;를 입력합니다. 대화 상자에서 만든 [Adobe Granite OAuth 응용 프로그램 및 공급자](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스를 식별합니다.
+     (*필수*) Twitter 앱에 대한 **소비자(API) 키**&#x200B;를 입력합니다. 대화 상자에서 만든 [Adobe Granite OAuth 응용 프로그램 및 공급자](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스를 식별합니다.
 
    * **[!UICONTROL 소비자 암호]**
 
@@ -286,7 +286,7 @@ twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니�
 
    * **[!UICONTROL 사용자 그룹에 추가]**
 
-     사용자를 추가할 커뮤니티 사이트에 대해 하나 이상의 [구성원 그룹](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)을 선택하려면 사용자 그룹 추가를 선택하십시오.
+     사용자를 추가할 커뮤니티 사이트에 대해 하나 이상의 [구성원 그룹](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/users.html)을 선택하려면 사용자 그룹 추가를 선택하십시오.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니�
 
 1. **[!UICONTROL 저장]** 및 **[!UICONTROL Publish]**&#x200B;을(를) 선택하십시오.
 
-그 결과 추가 수정이 필요하지 않은 [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) 인스턴스가 생성됩니다. 기본 범위는 Twitter 로그인에 대한 표준 권한입니다.
+그 결과 추가 수정이 필요하지 않은 [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) 인스턴스가 생성됩니다. 기본 범위는 Twitter 로그인에 대한 표준 권한입니다.
 
 ### AEM Communities Twitter OAuth 공급자 {#aem-communities-twitter-oauth-provider}
 
@@ -346,7 +346,7 @@ AEM Communities 구성은 [Adobe Granite OAuth 애플리케이션 및 공급자]
 
 ### AEM Communities 사이트 콘솔 {#aem-communities-sites-console}
 
-클라우드 서비스가 구성되면 커뮤니티 사이트 [생성](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) 또는 [관리](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) 중에 [사용자 관리](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) 설정 하위 패널을 사용하여 커뮤니티 사이트에 대한 관련 소셜 로그인 설정을 활성화할 수 있습니다.
+클라우드 서비스가 구성되면 커뮤니티 사이트 [생성](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) 또는 [관리](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) 중에 [사용자 관리](https://helpx.adobe.com/kr/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) 설정 하위 패널을 사용하여 커뮤니티 사이트에 대한 관련 소셜 로그인 설정을 활성화할 수 있습니다.
 
 1. 소셜 로그인 구성을 저장한 사이트 구성 컨텍스트를 선택합니다.
 

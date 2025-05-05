@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 Forms 포털 구성 요소는 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 양식 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다. 양식 포털에 대한 간략한 개요는 [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md)를 참조하십시오.

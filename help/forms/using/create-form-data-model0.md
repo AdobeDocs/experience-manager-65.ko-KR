@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스와 같은 서로 다른 백엔드 데이터 소스에서 양식 데이터 모델을 만들 수 있습니다. 양식 데이터 모델에서 데이터 모델 개체 및 서비스를 구성하고 적응형 양식과 연결할 수 있습니다. 적응형 양식 필드는 데이터 모델 개체 속성에 바인딩됩니다. 이 서비스를 사용하면 적응형 양식을 미리 채우고 제출된 양식 데이터를 데이터 모델 개체에 다시 쓸 수 있습니다.
 
-양식 데이터 통합 및 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)을 참조하십시오.
+양식 데이터 통합 및 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html)을 참조하십시오.
 
 이 자습서에서는 양식 데이터 모델을 대화형 통신과 준비, 만들기, 구성 및 연결하는 단계를 안내합니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
@@ -46,7 +46,7 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 시작하기 전에 다음을 확인하십시오.
 
 * [데이터베이스 설정](../../forms/using/create-form-data-model0.md#step-set-up-the-database) 섹션에 명시된 샘플 데이터가 있는 MySQL 데이터베이스입니다.
-* [JDBC 데이터베이스 드라이버 번들](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)에 설명된 대로 MySQL JDBC 드라이버용 OSGi 번들
+* [JDBC 데이터베이스 드라이버 번들](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)에 설명된 대로 MySQL JDBC 드라이버용 OSGi 번들
 
 ## 1단계: 데이터베이스 설정 {#step-set-up-the-database}
 
@@ -113,7 +113,7 @@ CREATE TABLE `calls` (
 
 ## 2단계: MySQL 데이터베이스를 데이터 소스로 구성 {#step-configure-mysql-database-as-data-source}
 
-다양한 유형의 데이터 소스를 구성하여 양식 데이터 모델을 만들 수 있습니다. 이 자습서에서는 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 원본 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)을 참조하세요.
+다양한 유형의 데이터 소스를 구성하여 양식 데이터 모델을 만들 수 있습니다. 이 자습서에서는 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 원본 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html)을 참조하세요.
 
 다음을 수행하여 MySQL 데이터베이스를 구성합니다.
 
@@ -155,7 +155,7 @@ CREATE TABLE `calls` (
 
 ## 3단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
-AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들기](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 

@@ -35,4 +35,4 @@ AEM Forms JEE 6.5.15.0 서비스 팩의 설치 문제를 해결하려면 `RUP_BO
 1. 추출된 폴더 외부의 다른 위치에 `Resource1.zip` 파일을 복사하고 `Resource1.zip` 파일의 압축을 풉니다.
 1. `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml`(으)로 이동하여 `RUP_BOM.xml` 파일을 복사합니다.
 1. `[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml`에 RUP_BOM.xml 파일을 붙여 넣습니다.
-1. [AEM Forms JEE 6.5.15.0 서비스 팩을 다시 설치합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. [AEM Forms JEE 6.5.15.0 서비스 팩을 다시 설치합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko).

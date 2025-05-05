@@ -213,7 +213,7 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 
 AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성하지만 이를 프로젝트에 포함해야 합니다.
 
-또한 추가 구성 및 함수 호출을 제공하려면 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/)를 만들어야 합니다. 다음 LESS 추출은 프로젝트에 추가해야 하는 최소값의 예입니다.
+또한 추가 구성 및 함수 호출을 제공하려면 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/?lang=ko)를 만들어야 합니다. 다음 LESS 추출은 프로젝트에 추가해야 하는 최소값의 예입니다.
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

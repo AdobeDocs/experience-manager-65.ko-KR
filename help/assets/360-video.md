@@ -40,7 +40,7 @@ Dynamic Media - Scene7 모드에는 360 비디오 자산의 배송에 대한 기
 
 Adobe 프리미어 프로를 사용하여 360/VR 푸티지를 보고 편집할 수 있습니다. 예를 들어, 장면에 로고와 텍스트를 적절하게 배치하고, 등장방형 미디어용으로 특별히 설계된 효과와 전환을 적용할 수 있습니다.
 
-[360/VR 비디오 편집](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
+[360/VR 비디오 편집](https://helpx.adobe.com/kr/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
 
 ## 360 비디오 뷰어에 사용할 자산 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 

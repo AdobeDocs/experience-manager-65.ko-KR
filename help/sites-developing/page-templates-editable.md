@@ -49,13 +49,13 @@ ht-degree: 4%
 >[!NOTE]
 >
 >다음 튜토리얼은 새 프로젝트에서 편집 가능한 페이지 템플릿을 설정하는 데 유용할 수도 있습니다.
->[AEM Sites 2부 시작하기 - 기본 페이지 및 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[AEM Sites 2부 시작하기 - 기본 페이지 및 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=ko)
 
 ## 새 템플릿 만들기 {#creating-a-new-template}
 
 편집 가능한 템플릿 만들기는 주로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 수행합니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478)를 참조하십시오.
+AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=ko)를 참조하십시오.
 
 편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
@@ -73,7 +73,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    * 이 구조를 사용하여 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 
-      * `We.Retail` 샘플 콘텐츠 외부의 사용자 지정 폴더에서 템플릿을 만드는 경우 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)를 사용할 수 있습니다.
+      * `We.Retail` 샘플 콘텐츠 외부의 사용자 지정 폴더에서 템플릿을 만드는 경우 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)를 사용할 수 있습니다.
 
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
@@ -132,7 +132,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 >[!TIP]
 >
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 현지화 기능을 사용하는 것이 좋습니다.
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)의 현지화 기능을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 데스크탑 앱을 사용하면 Adobe Experience Manager(AEM) Assets 저장소 및 AEM Forms 바이너리 파일을 시스템의 네트워크 디렉터리에 매핑할 수 있습니다. 파일 탐색기에서 동기화된 에셋 및 이진 파일을 보고 다양한 앱을 사용하여 원하는 대로 파일을 편집할 수 있습니다. 파일을 보는 것 외에도 이진 파일을 만들고, 업로드하고, 삭제할 수도 있습니다. 소프트웨어에서 직접 파일을 열고 편집하고 저장할 수도 있습니다. 예를 들어 Designer에서 XDP 파일을 직접 열고 편집할 수 있습니다. 에셋에 로컬로 적용되는 변경 사항은 AEM Assets 저장소 및 AEM Forms 사용자 인터페이스에 반영됩니다.
 
-AEM 인스턴스에서 앱을 다운로드할 수 있습니다. 앱 다운로드에 대한 자세한 내용은 [AEM 데스크톱 앱 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)를 참조하십시오.
+AEM 인스턴스에서 앱을 다운로드할 수 있습니다. 앱 다운로드에 대한 자세한 내용은 [AEM 데스크톱 앱 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ko)를 참조하십시오.
 
 ## AEM 데스크탑 앱에서 지원되는 AEM Forms 에셋 {#aem-forms-assets-supported-in-aem-desktop-app}
 

@@ -30,9 +30,9 @@ ht-degree: 1%
 >
 >AEM Mobile 앱의 다음 항목에 대한 자세한 내용은 온라인 도움말의 다음 리소스를 참조하십시오.
 >
->* [디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)
 >
->* [배너 만들기](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [배너 만들기](https://helpx.adobe.com/kr/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## 배너 만들기 {#creating-a-banner}

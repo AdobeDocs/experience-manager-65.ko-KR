@@ -31,7 +31,7 @@ ht-degree: 44%
 * 표준화된 사용자 인터페이스가 있습니다.
 * 구성할 수 있는 편집 비헤이비어가 있습니다.
 * Granite UI 구성 요소를 기반으로 하는 하위 요소를 사용하여 빌드된 대화 상자 사용
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)(권장) 또는 JSP를 사용하여 개발되었습니다.
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)(권장) 또는 JSP를 사용하여 개발되었습니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소가 모듈식이므로 다음과 같은 작업을 수행할 수 있습니다.
@@ -63,7 +63,7 @@ AEM에는 다음과 같은 포괄적인 기능을 제공하는 다양한 [즉시
 
 Adobe이 제공하는 AEM 구성 요소에는 두 가지 세트가 있습니다.
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
 
 **핵심 구성 요소**&#x200B;는 AEM 6.3과 함께 도입되었으며 유연하고 다양한 작성 기능을 제공합니다. [We.Retail 참조 사이트](/help/sites-developing/we-retail.md)에서는 핵심 구성 요소를 사용할 수 있는 방법을 보여 주고 현재 구성 요소 개발 모범 사례를 보여 줍니다.

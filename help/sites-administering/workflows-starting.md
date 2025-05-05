@@ -35,7 +35,7 @@ ht-degree: 3%
 >
 >* [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md)
 >* [워크플로를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/kr/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [번역 프로젝트](/help/sites-administering/tc-manage.md)
 >
 

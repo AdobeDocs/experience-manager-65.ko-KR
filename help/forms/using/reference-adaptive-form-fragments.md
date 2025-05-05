@@ -19,7 +19,7 @@ ht-degree: 1%
 
 [적응형 양식 조각](../../forms/using/adaptive-form-fragments.md)은(는) 필드 그룹이거나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널입니다. 이를 통해 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 에셋 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 앤 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
+적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보

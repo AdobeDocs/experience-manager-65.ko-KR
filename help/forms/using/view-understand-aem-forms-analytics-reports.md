@@ -92,7 +92,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 * **초안**: 양식이 초안으로 저장된 횟수
 * **제출**: 양식이 제출된 횟수
 * **중단**: 사용자가 양식을 입력한 후 양식을 완료하지 않고 그대로 둔 횟수입니다
-* **고유 방문자 수**: 고유 방문자가 양식을 렌더링한 횟수입니다. 고유 방문자에 대한 자세한 내용은 [고유 방문자, 방문 횟수 및 고객 동작](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)을 참조하세요.
+* **고유 방문자 수**: 고유 방문자가 양식을 렌더링한 횟수입니다. 고유 방문자에 대한 자세한 내용은 [고유 방문자, 방문 횟수 및 고객 동작](https://helpx.adobe.com/kr/analytics/kb/unique-visitors-visitor-behavior.html)을 참조하세요.
 
 ![확장된 양식 수준 요약 분석 보고서](assets/analytics-report.png)
 

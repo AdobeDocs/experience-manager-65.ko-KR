@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 보안 핫픽스 설치 {#install-security-hotfixes}
 
-Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)에서 제공한 최신 보안 핫픽스를 설치했는지 확인하십시오.
+Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)에서 제공한 최신 보안 핫픽스를 설치했는지 확인하십시오.
 
 ### AEM 및 OSGi 콘솔 관리자 계정에 대한 기본 암호 변경 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -110,11 +110,11 @@ Adobe은 특히 404 및 500 HTTP 응답 코드에 대해 사용자 지정 오류
 
 >[!NOTE]
 >
->자세한 내용은 [사용자 지정 스크립트나 오류 처리기를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html)을 참조하세요.
+>자세한 내용은 [사용자 지정 스크립트나 오류 처리기를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=ko)을 참조하세요.
 
 ### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher은 인프라의 중요한 부분입니다. Adobe은 [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)을 완료할 것을 권장합니다.
+AEM Dispatcher은 인프라의 중요한 부분입니다. Adobe은 [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=ko)을 완료할 것을 권장합니다.
 
 >[!CAUTION]
 >

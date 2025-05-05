@@ -28,8 +28,8 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 >
 >플러그인에 대해 자세히 알아보려면 다음 리소스를 참조하십시오.
 >
->* [AEM Mobile에서 Cordova 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [AEM Mobile 전용 Cordova 사용 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [AEM Mobile에서 Cordova 플러그인 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/cordova-api.html)
+>* [AEM Mobile 전용 Cordova 사용 플러그인 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * 플러그인 기능을 사용하는 템플릿은 플러그인 브리지가 없어도 브라우저에서 계속 작성할 수 있는 방식으로 작성되어야 합니다.

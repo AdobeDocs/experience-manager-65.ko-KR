@@ -124,7 +124,7 @@ ht-degree: 1%
    >
    >[!DNL Experience Manager]이(가) 이미지를 확인하도록 하려면 다음을 수행하십시오.
    >
-   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/indesign/using/graphics-links.html) 참조).
+   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/kr/indesign/using/graphics-links.html) 참조).
    >* 로컬 파일 시스템에 [!DNL Experience Manager]을(를) 탑재한 다음 누락된 아이콘을 [!DNL Experience Manager]의 기존 자산에 매핑합니다.
    >
    >[!DNL InDesign] 문서 작업에 대한 자세한 내용은 [Experience Manager에서 InDesign 문서 작업 모범 사례](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)를 참조하세요.

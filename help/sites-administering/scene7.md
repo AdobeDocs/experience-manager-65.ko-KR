@@ -421,7 +421,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 자산을 게시하지 않고 Dynamic Media Classic에 푸시하려면 먼저 다음을 설정해야 합니다.
 
 1. [Admin Console을 사용하여 지원 사례를 만드십시오](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
-1. [Dynamic Media Classic 계정에 대한 보안 미리 보기를 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
+1. [Dynamic Media Classic 계정에 대한 보안 미리 보기를 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=ko).
 
 이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 따라야 하는 단계와 동일합니다.
 
@@ -454,7 +454,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 1. **[!UICONTROL 고급]** 탭을 선택합니다.
 1. **[!UICONTROL 보안 보기 사용]** 드롭다운 메뉴에서 **[!UICONTROL AEM Publish 활성화 시]**&#x200B;를 선택하여 게시하지 않고 자산을 Dynamic Media Classic에 푸시합니다. (기본적으로 이 값은 **[!UICONTROL 즉시]**(Dynamic Media Classic 자산이 즉시 게시됨)로 설정됩니다.)
 
-   공개하기 전에 자산을 테스트하는 방법에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)를 참조하세요.
+   공개하기 전에 자산을 테스트하는 방법에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=ko)를 참조하세요.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -569,7 +569,7 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 
    예: `psprocess="rasterize"&psresolution=120` .
 
-   사용할 수 있는 업로드 작업 매개 변수에 대한 자세한 내용은 [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)를 참조하십시오.
+   사용할 수 있는 업로드 작업 매개 변수에 대한 자세한 내용은 [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=ko)를 참조하십시오.
 
    >[!NOTE]
    >

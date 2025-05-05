@@ -176,4 +176,4 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
 CQ는 기본 404 핸들러 jsp를 재정의하는 메커니즘을 제공합니다.
 
-오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en)을 참조하십시오.
+오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=ko)을 참조하십시오.

@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 비디오 형식은 조직의 디지털 에셋에 중요한 부분입니다. [!DNL Adobe Experience Manager]은(는) 생성 후 비디오 자산의 전체 라이프사이클을 관리하는 완성도 높은 서비스와 기능을 제공합니다.
@@ -44,7 +44,7 @@ ht-degree: 7%
 [!DNL Assets] 구성 외에 다음 구성을 변경하여 큰 에셋을 업로드하십시오.
 
 * 토큰 만료 시간을 늘립니다. `https://[aem_server]:[port]/system/console/configMgr`의 웹 콘솔에서 [!UICONTROL Adobe Granite CSRF 서블릿]을(를) 참조하십시오. 자세한 내용은 [CSRF 보호](/help/sites-developing/csrf-protection.md)를 참조하십시오.
-* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Dispatcher 구성 Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)를 참조하십시오.
+* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Dispatcher 구성 Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#renders-options)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ To create the metadata processing profile, you are first going to copy values fr
 1. 비디오 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 Publish]**&#x200B;를 클릭합니다.
 
-   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)도 참조하세요.
+   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ko)도 참조하세요.
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 

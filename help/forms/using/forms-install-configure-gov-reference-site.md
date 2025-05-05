@@ -88,7 +88,7 @@ ht-degree: 1%
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. **we-gov-forms.pkg.all-&lt;version>.zip** 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    ![we gov forms 패키지](assets/wegov_forms_package.jpg)
@@ -226,7 +226,7 @@ ht-degree: 1%
 **참조:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=ko)
 
 #### MS® Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
 
@@ -480,7 +480,7 @@ Forms Adobe을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 추가 지침을 읽기 전에 다음 사항을 검토하십시오.
 
-* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko)
 
 #### IMS 구성 1부 만들기 {#creating-ims-config}
 
@@ -579,7 +579,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 이 구성의 경우 두 확인란 값을 비워둡니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)을 참조하십시오.
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko#configure-the-cloud-service)을 참조하십시오.
 
 #### 클라우드 구성(We.Finance AFC 프로덕션) {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +609,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 이 구성의 경우 두 확인란 값을 비워둡니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)을 참조하십시오.
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko#configure-the-cloud-service)을 참조하십시오.
 
 #### 양식 전환 테스트(We.Gov 등록 애플리케이션) {#test-forms-conversion}
 
@@ -649,7 +649,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 #### 알려진 문제 및 참고 사항 {#known-issues-notes}
 
-automated forms conversion 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html) 및 [알려진 문제](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html)가 포함됩니다. AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 이러한 사항을 검토하십시오.
+automated forms conversion 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=ko) 및 [알려진 문제](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=ko)가 포함됩니다. AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 이러한 사항을 검토하십시오.
 
 1. 전환 후 양식을 FDM에 바인딩하려면 데이터 바인딩 없이 적응형 양식 생성을 활성화하여 양식을 생성합니다.
 

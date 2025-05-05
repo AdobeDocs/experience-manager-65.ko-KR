@@ -98,7 +98,7 @@ ht-degree: 42%
   >* 기존 페이지로 설정하면 안 됩니다.
   >
 
-  vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+  vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **가상 URL 리디렉션**
 
@@ -190,7 +190,7 @@ ht-degree: 42%
 
 * **소셜 미디어 공유**
 
-  페이지에서 사용할 수 있는 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html)에 사용할 수 있는 옵션을 표시합니다.
+  페이지에서 사용할 수 있는 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=ko)에 사용할 수 있는 옵션을 표시합니다.
 
    * **Facebook에 대해 사용자 공유 사용**
    * **Pinterest에 대해 사용자 공유 사용**

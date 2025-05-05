@@ -37,7 +37,7 @@ AEM 설명서에서는 표준 사용 사례를 다룹니다. 이러한 이유로
 
 AEM 설명서를 개선하기 위해 필요한 모든 아이디어를 기여할 수 있습니다. 그러나 주석, 문제 및 가져오기 요청만 *기여*&#x200B;에 해당합니다. 하지만 기여는 AEM 사용 방법, AEM 프로젝트 구현 방법, 기술 문제 해결 방법 등에 대한 질문에 답변하기 위해 마련된 것이 아닙니다.
 
-AEM 사용 또는 기술 오류에 대한 질문은 [Experience Manager 지원 포털](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)에서의 일반적인 지원 프로세스를 통해 보고하거나 [Experience Manager 커뮤니티](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)에서 다루어야 합니다.
+AEM 사용 또는 기술 오류에 대한 질문은 [Experience Manager 지원 포털](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)에서의 일반적인 지원 프로세스를 통해 보고하거나 [Experience Manager 커뮤니티](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ko)에서 다루어야 합니다.
 
 ***AEM 설명서 기여는 Adobe 고객 지원 센터를 대체할 수 없으며*** 지원 관련 질문에 대한 답변을 구하는 기여는 거부됩니다.
 

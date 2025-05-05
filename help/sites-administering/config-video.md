@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소 임베드 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소 임베드 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=ko)를 사용할 것을 권장합니다.
 
 >[!CAUTION]
 >

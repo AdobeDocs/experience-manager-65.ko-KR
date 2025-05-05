@@ -21,7 +21,7 @@ Adobe LiveCycle Rights Management를 사용하여 XFA 기반 PDF 양식 또는 �
 
 * XFA 기반 PDF forms 및 정책으로 보호된 문서에는 Adobe® Acrobat® 또는 Adobe® Reader® 버전 8 이상이 필요합니다. 최신 Reader 또는 Acrobat 다운로드는 [Adobe 다운로드](https://www.adobe.com/downloads.html)를 참조하십시오.
 * Mozilla Firefox 및 Google Chrome과 같은 브라우저에서는 XFA 기반 PDF forms을 지원하지 않는 내장된 PDF 뷰어를 제공합니다. 이러한 브라우저에서 XFA 기반 PDF forms을 보려면 Acrobat 또는 Reader을 사용하여 PDF를 열도록 을 구성해야 합니다. 자세한 내용은 Mozilla Firefox의 XFA 기반 PDF forms 및 Google Chrome 를 참조하십시오.
-* Microsoft® Windows®의 Acrobat 및 Reader을 사용하면 보호된 보기 모드에서 PDF를 열도록 구성할 수 있으므로 XFA 기반 PDF forms 및 정책으로 보호된 문서를 열 수 없습니다. Acrobat 또는 Reader의 보호된 보기 모드가 비활성화되어 있는지 확인합니다. 자세한 내용은 [보호된 보기(Windows만 해당)](https://helpx.adobe.com/acrobat/kb/end-of-support-acrobat-x-reader-x.html)를 참조하십시오.
+* Microsoft® Windows®의 Acrobat 및 Reader을 사용하면 보호된 보기 모드에서 PDF를 열도록 구성할 수 있으므로 XFA 기반 PDF forms 및 정책으로 보호된 문서를 열 수 없습니다. Acrobat 또는 Reader의 보호된 보기 모드가 비활성화되어 있는지 확인합니다. 자세한 내용은 [보호된 보기(Windows만 해당)](https://helpx.adobe.com/kr/acrobat/kb/end-of-support-acrobat-x-reader-x.html)를 참조하십시오.
 * 모바일 장치에서 XFA 기반 PDF forms 또는 정책으로 보호된 문서에 액세스하려는 경우 다음 사항을 고려하십시오.
 
    * 모바일 장치에서 정책으로 보호된 문서를 열려면 모바일용 Adobe Reader가 필요합니다. 자세한 내용은 [Adobe Reader 모바일 앱](https://www.adobe.com/in/acrobat/mobile/acrobat-reader.html)을 참조하십시오.

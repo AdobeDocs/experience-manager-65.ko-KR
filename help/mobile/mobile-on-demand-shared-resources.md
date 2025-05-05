@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)을 참조하십시오.
 
 >[!CAUTION]
 >

@@ -18,11 +18,11 @@ ht-degree: 16%
 
 # [!DNL Adobe Sign]을(를) AEM [!DNL Forms]과(와) 통합{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=ko#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Sign]은(는) 적응형 양식용 전자 서명 워크플로를 사용합니다. 전자 서명은 법무, 판매, 임금, 인적 자원 관리 등의 다양한 분야에서 문서를 처리하는 워크플로를 개선합니다.
@@ -91,7 +91,7 @@ ht-degree: 16%
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ ht-degree: 16%
 1. **[!UICONTROL Forms 일반 구성 서비스].** 열기
 1. **[!UICONTROL 허용]** 필드에서 모든 사용자(익명 또는 로그인한 모든 사용자)를 **선택**&#x200B;하고 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 **[!UICONTROL 저장]을 클릭합니다.** 작성자 인스턴스가 [!DNL Adobe Sign]을(를) 사용하도록 구성되어 있습니다.
 1. 구성을 Publish에 추가합니다.
-1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
+1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=ko)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
 
 이제 [!DNL Adobe Sign]이(가) AEM [!DNL Forms]과(와) 통합되어 적응형 양식에서 사용할 수 있습니다. [적응형 양식에서 Adobe Sign 서비스를 사용하려면](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form) 적응형 양식 속성에서 위에서 만든 구성 컨테이너를 지정하십시오.
 
@@ -240,7 +240,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 1. **[!UICONTROL 허용]** 필드에서 모든 사용자(익명 또는 로그인한 모든 사용자)를 **선택**&#x200B;하고 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 **[!UICONTROL 저장]을 클릭합니다.** 작성자 인스턴스가 [!DNL Adobe Sign]을(를) 사용하도록 구성되어 있습니다.
 
 1. 구성을 Publish에 추가합니다.
-1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
+1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=ko)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
 
 이제 [적응형 양식에서 Adobe Acrobat Sign 필드 추가](working-with-adobe-sign.md) 또는 [AEM 워크플로](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)를 사용할 수 있습니다. Cloud Service 구성에 사용된 구성 컨테이너를 [!DNL Adobe Acrobat Sign]에 대해 사용 중인 모든 적응형 Forms에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 

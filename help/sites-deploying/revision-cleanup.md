@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM 6.3 이상에서는 온라인 수정 정리 라는 이 기능의 온라인 버전이 도입되었습니다. AEM 인스턴스를 종료해야 하는 오프라인 개정 정리와 비교하여 온라인 개정 정리는 AEM 인스턴스가 온라인 상태에 있는 동안 실행할 수 있습니다. 온라인 개정 정리는 기본적으로 켜져 있으며 개정 정리를 수행하는 데 권장되는 방법입니다.
 
-**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html)에서 소개 및 온라인 수정 정리 사용 방법을 확인하십시오.
+**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=ko)에서 소개 및 온라인 수정 정리 사용 방법을 확인하십시오.
 
 수정 정리 프로세스는 **estimation**, **압축** 및 **정리**&#x200B;의 세 단계로 구성됩니다. 예상 값은 수집된 가비지 양을 기반으로 다음 단계(압축)를 실행할지 여부를 결정합니다. 압축 단계 세그먼트 및 tar 파일은 사용되지 않은 콘텐츠를 제외하고 다시 작성됩니다. 그런 다음 정리 단계에서는 포함될 수 있는 쓰레기를 포함한 이전 세그먼트를 제거합니다. 오프라인 모드는 추가 세그먼트가 수집되지 않도록 유지하는 AEM의 작업 세트를 고려해야 하므로 일반적으로 더 많은 공간을 확보할 수 있습니다.
 
@@ -494,7 +494,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>권장 액세스 메커니즘(예: Sling 및 JCR API)을 우회하고 하위 수준 API/SPI를 사용하여 저장소에 액세스한 다음 세그먼트의 유지 시간을 초과하는 애플리케이션입니다. 즉, 온라인 개정 정리(기본적으로 24시간)에서 허용하는 보존 시간보다 오래 엔티티에 대한 참조를 유지합니다. 이 경우는 일시적이며 데이터 손상으로 이어지지 않습니다. 복구하려면 oak-run 도구를 사용하여 예외의 일시적인 특성을 확인해야 합니다(oak-run 검사가 오류를 보고하지 않음). 이렇게 하려면 인스턴스를 오프라인 상태로 전환한 후 다시 시작해야 합니다.</li>
      <li>외부 이벤트로 인해 디스크의 데이터가 손상되었습니다. 이는 디스크 장애, 디스크 공간 부족 또는 필요한 데이터 파일의 우발적 수정일 수 있습니다. 이 경우 인스턴스를 오프라인으로 전환하고 oak-run 검사를 사용하여 복구해야 합니다. oak-run 검사를 수행하는 방법에 대한 자세한 내용은 다음 <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache 설명서</a>를 참조하십시오.</li>
-     <li><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">고객 지원 Adobe</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
+     <li><a href="https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support" target="_blank">고객 지원 Adobe</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
     </ol> </td>
    <td> </td>
   </tr>

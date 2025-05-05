@@ -80,13 +80,13 @@ AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/s
 
 >[!NOTE]
 >
->Microsoft® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
+>Microsoft® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >`disp_iis.ini` 집합:
->자세한 내용은 [Microsoft® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server)를 참조하십시오.
+>자세한 내용은 [Microsoft® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko#microsoft-internet-information-server)를 참조하십시오.
 >
 >* `servervariables=1`(IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달함)
 >* `replaceauthorization=1`(&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꾸기)

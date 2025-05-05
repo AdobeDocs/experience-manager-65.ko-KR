@@ -87,7 +87,7 @@ SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/
 
 ### 표준 설치 {#standard-installation}
 
-소프트웨어 배포 는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)를 참조하세요.
+소프트웨어 배포 는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko#software-distribution)를 참조하세요.
 
 
 #### AEM과 통합 {#integrating-with-aem}

@@ -37,7 +37,7 @@ AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고
 >[!CAUTION]
 >이 문서에서는 데모용으로만 [We.Retail 저널 앱](https://github.com/adobe/aem-sample-we-retail-journal)을 사용합니다. 프로젝트 작업에는 사용하지 마십시오.
 >
->AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용해야 합니다.
 
 ## 날씨 구성 요소 {#the-weather-component}
 

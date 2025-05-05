@@ -31,7 +31,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 �
 * [코드 함정](/help/sites-developing/code-pitfalls.md)
 * [JCR 상호 작용](/help/sites-developing/jcr-integration.md)
 * [OSGi 번들](/help/sites-developing/osgi-bundles.md)
-* [Java API 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Java API 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ko)
 
 ### 추가 모범 사례 정보 {#additional-best-practices-information}
 
@@ -95,8 +95,8 @@ HTML 템플릿 언어(HTL)는 AEM 6.0과 함께 도입된 새로운 HTML 템플�
 
 |  |  |  |
 |---|---|---|
-| HTL 개요 | [HTL 개요 및 구문](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 이 문서에서는 HTL 정의, HTL로 이동하는 방법, 샘플 프로젝트, 구문, 표현식 및 문에 대해 설명합니다 |
-| Java에서 API 사용 | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. |
+| HTL 개요 | [HTL 개요 및 구문](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) | 이 문서에서는 HTL 정의, HTL로 이동하는 방법, 샘플 프로젝트, 구문, 표현식 및 문에 대해 설명합니다 |
+| Java에서 API 사용 | [HTL Java Use-API](https://helpx.adobe.com/kr/experience-manager/htl/using/use-api.html) | HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. |
 
 >[!NOTE]
 >

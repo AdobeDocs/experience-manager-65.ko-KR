@@ -174,7 +174,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 
 >[!NOTE]
 >
->[특정 인스턴스에만 리포지토리 기반 구성을 정의하는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html)도 읽어 보십시오.
+>[특정 인스턴스에만 리포지토리 기반 구성을 정의하는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=ko)도 읽어 보십시오.
 
 ### 저장소에 새 구성 추가 {#adding-a-new-configuration-to-the-repository}
 

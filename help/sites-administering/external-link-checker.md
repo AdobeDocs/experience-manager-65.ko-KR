@@ -35,7 +35,7 @@ ht-degree: 0%
 내부 링크는 AEM 저장소의 다른 콘텐츠에 대한 링크입니다. RTE의 경로 선택기를 사용하거나 사용자 지정 구성 요소를 사용하여 내부 링크를 추가할 수 있습니다. 예:
 
 * 내 페이지 `/content/wknd/us/en/adventures/ski-touring.html`
-* [텍스트 구성 요소에 `/content/wknd/us/en/adventures/extreme-ironing.html`에 대한 링크를 포함합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* [텍스트 구성 요소에 `/content/wknd/us/en/adventures/extreme-ironing.html`에 대한 링크를 포함합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)
 
 내부 링크는 콘텐츠 작성자가 페이지에 내부 링크를 추가하는 즉시 검증됩니다. 링크가 잘못된 경우:
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 외부 링크는 AEM 리포지토리 외부의 컨텐츠에 대한 링크입니다. 외부 링크는 RTE를 사용하거나 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * 내 페이지 `/content/wknd/us/en/adventures/ski-touring.html`
-* [텍스트 구성 요소에 `https://bunwarmerthermalunderwear.com`에 대한 링크를 포함합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* [텍스트 구성 요소에 `https://bunwarmerthermalunderwear.com`에 대한 링크를 포함합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)
 
 외부 링크는 구문을 확인하고 가용성을 확인합니다. 이 검사는 구성 가능한 내부에서 비동기적으로 수행됩니다. 링크 검사기에서 잘못된 외부 링크를 찾은 경우:
 

@@ -40,7 +40,7 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 >
 >또한 CSRF 보호 프레임워크를 사용하기 위해 필요한 Dispatcher 구성을 변경해야 합니다.
 >
->* [CSRF 공격을 방지하도록 Adobe Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [CSRF 공격을 방지하도록 Adobe Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Dispatcher 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]

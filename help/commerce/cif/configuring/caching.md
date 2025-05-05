@@ -50,11 +50,11 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher 캐싱 {#dispatcher}
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)에서 AEM 페이지 또는 조각을 캐시하는 것은 모든 AEM 프로젝트에 대한 모범 사례입니다. 일반적으로 AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 AEM 페이지 또는 조각을 캐시하는 것은 모든 AEM 프로젝트에 대한 모범 사례입니다. 일반적으로 AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 컨텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Adobe Commerce에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않지만, 일부 제품 데이터(예: 이름 또는 가격)가 Adobe Commerce에서 변경되는 경우 상거래 콘텐츠가 변경될 수 있습니다.
 
-AEM Dispatcher에서 제한된 시간 동안 CIF 페이지를 캐시할 수 있도록 하려면 AEM Dispatcher에서 CIF 페이지를 캐시할 때 [시간 기반 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)(TTL 기반 캐시라고도 함)를 사용하는 것이 좋습니다. 이 기능은 추가 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 패키지를 사용하여 AEM에서 구성할 수 있습니다.
+AEM Dispatcher에서 제한된 시간 동안 CIF 페이지를 캐시할 수 있도록 하려면 AEM Dispatcher에서 CIF 페이지를 캐시할 때 [시간 기반 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-time-based-cache-invalidation-enablettl)(TTL 기반 캐시라고도 함)를 사용하는 것이 좋습니다. 이 기능은 추가 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 패키지를 사용하여 AEM에서 구성할 수 있습니다.
 
 TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페이지에 대해 하나 이상의 캐싱 기간을 정의합니다. 이렇게 하면 CIF 페이지가 구성된 기간까지 AEM Dispatcher에 캐시되며 콘텐츠가 자주 업데이트됩니다.
 
@@ -66,4 +66,4 @@ TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페
 
 - [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL 캐싱 구성](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)

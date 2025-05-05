@@ -23,7 +23,7 @@ ht-degree: 7%
 
 ## 전제 조건 {#prerequisite-versioning}
 
-핵심 구성 요소를 기반으로 하는 적응형 양식에서 비교 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
+핵심 구성 요소를 기반으로 하는 적응형 양식에서 비교 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
 
 ## 개별 적응형 양식 비교 {#compare-af-65}
 

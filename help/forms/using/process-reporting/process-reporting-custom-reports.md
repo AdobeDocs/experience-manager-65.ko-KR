@@ -25,13 +25,13 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사�
 사용자 정의 보고서를 추가하기 전에 다음 템플릿 절차를 수행하십시오.
 
 1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터의 가용성을 확인하려면 cron 작업을 예약하거나 프로세스 보고 UI에서 **[동기화](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** 옵션을 사용하십시오.
-1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)의 REST 인터페이스를 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
+1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)의 REST 인터페이스를 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
 
 1. 결과를 표시할 사용자 지정 사용자 인터페이스를 만듭니다. 독립형 사용자 인터페이스를 만들거나 결과를 기존 프로세스 보고 UI와 통합할 수 있습니다.
 
 ## QueryBuilder의 REST 인터페이스 사용 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)를 사용하는 방법을 알아보십시오.
+CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)를 사용하는 방법을 알아보십시오.
 
 1. URL `https://'[server]:[port]'/lc/bin/querybuilder.json`(으)로 이동
 1. 프로세스 보고 저장 영역 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
@@ -48,7 +48,7 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 
 
 ## Query Builder API를 사용하여 서비스 만들기  {#creating-a-service-using-query-builder-api-nbsp}
 
-Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)입니다.
+Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)입니다.
 
 1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면 다음을 사용합니다.
 

@@ -47,7 +47,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 >[!NOTE]
 >
->이 코드 샘플은 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html)의 AEM Gems 세션과 관련되어 있습니다.
+>이 코드 샘플은 [대화 상자 필드 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=ko)의 AEM Gems 세션과 관련되어 있습니다.
 
 ## 관련 리소스 {#related-resources}
 

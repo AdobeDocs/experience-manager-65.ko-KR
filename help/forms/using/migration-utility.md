@@ -37,13 +37,13 @@ AEM Forms 6.4, 6.3, 6.2에서 최신 버전의 AEM Forms 6.5로 [업그레이드
 
 **업그레이드된 경우**
 
-원본 위치 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)(서신 관리 호환성 패키지 포함)를 설치해야 합니다
+원본 위치 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)(서신 관리 호환성 패키지 포함)를 설치해야 합니다
 
 [마이그레이션 유틸리티를 실행](#runningmigrationutility)하여 자산 및 문서를 업데이트해야 합니다.
 
 **잘못된 설치가 있는 경우**
 
-잘못된(새로운) 설치인 경우 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
+잘못된(새로운) 설치인 경우 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
 
 그런 다음 새 설정에서 자산 패키지(zip 또는 cmp)를 가져온 다음 [마이그레이션 유틸리티를 실행](#runningmigrationutility)하여 자산 및 문서를 업데이트해야 합니다. Adobe은 마이그레이션 유틸리티를 실행한 후에만 새 설정에서 에셋을 만들 것을 권장합니다.
 

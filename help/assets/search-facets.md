@@ -18,7 +18,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]의 엔터프라이즈급 배포에는 많은 자산을 저장할 수 있는 용량이 있습니다. [!DNL Experience Manager]의 일반 검색 기능만 사용하는 경우 적절한 자산을 찾는 데 많은 시간이 소요될 수 있습니다.

@@ -134,8 +134,8 @@ JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
 다음 API를 사용할 수 있습니다.
 
-* 6.3의 [com.adobe.cq.social.scoring.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* 6.3의 [com.adobe.cq.social.badging.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* 6.3의 [com.adobe.cq.social.scoring.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)
+* 6.3의 [com.adobe.cq.social.badging.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)
 
 설치된 기능 팩의 최신 Javadocs는 Adobe 저장소에서 개발자가 사용할 수 있습니다. [커뮤니티용 Maven 사용: Javadocs](/help/communities/maven.md#javadocs)을 참조하십시오.
 

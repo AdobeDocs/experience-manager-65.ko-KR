@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)하십시오.
+>자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)하십시오.
 
 ## 패치 설치 관리자 정보 {#about-the-patch-installer}
 
@@ -71,8 +71,8 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
 1. 응용 프로그램 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션의 지침을 따릅니다.
 
-   * [JBoss용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [JBoss용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
+   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
 
 1. (JBoss®만 해당) 패치를 설치하고 서버를 구성한 후 JBoss® 애플리케이션 서버의 tmp 및 작업 디렉토리를 삭제합니다.
 
@@ -97,4 +97,4 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
 * 문서 보안
 * Foundation JEE
 
-[지원팀에 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
+[지원팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)

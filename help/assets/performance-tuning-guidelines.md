@@ -243,7 +243,7 @@ Adobe 예를 들어 Sites 구현에서 자산을 많은 게시 인스턴스에 �
 
 ## 색인 검색 {#search-indexes}
 
-[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en)을 참조하세요.
+[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=ko)을 참조하세요.
 
 자주 실행하는 쿼리에 대한 사용자 지정 색인을 만듭니다. 자세한 내용은 [느린 쿼리 분석 방법](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 [사용자 지정 인덱스 만들기](/help/sites-deploying/queries-and-indexing.md)를 참조하십시오. 쿼리 및 색인 모범 사례에 대한 추가 인사이트를 보려면 [쿼리 및 색인화 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 

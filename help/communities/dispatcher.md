@@ -24,9 +24,9 @@ AEM Communities의 경우 [커뮤니티 사이트](overview.md#community-sites)�
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
-* [고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support) 문의
 
-기본 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)도 참조하세요.
+기본 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 참조하세요.
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
@@ -42,7 +42,7 @@ Dispatcher 캐싱을 지원하도록 구성된 경우, TTL 기반 &quot;최대 �
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(최신 버전은 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) 참조)
+* Dispatcher 버전 4.1.2 이상(최신 버전은 [Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko) 참조)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -69,7 +69,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - Max Age**&#x20
 
 ## Dispatcher 필터 {#dispatcher-filters}
 
-`dispatcher.any` 파일의 /filter 섹션은 [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)에 설명되어 있습니다.
+`dispatcher.any` 파일의 /filter 섹션은 [콘텐츠에 대한 액세스 구성 - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)에 설명되어 있습니다.
 
 이 섹션에서는 Communities 기능이 제대로 작동하는 데 필요한 항목에 대해 설명합니다.
 
@@ -79,7 +79,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - Max Age**&#x20
 
 추가 참조:
 
-* [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
+* [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=ko)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - Max Age**&#x20
 
 >[!CAUTION]
 >
->Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 AEM 설치와 관련된 추가 보안 세부 정보는 [AEM 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)를 참조하십시오.
+>Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=ko)를 참조하십시오. 또한 AEM 설치와 관련된 추가 보안 세부 정보는 [AEM 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)를 참조하십시오.
 >
 
 /filter 섹션의 끝에 다음 항목을 추가해야 합니다. 특히 거부된 모든 항목 다음에 추가됩니다.

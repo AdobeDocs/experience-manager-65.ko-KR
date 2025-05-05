@@ -137,9 +137,9 @@ AEM 콘솔에서 **AEMFD Barcoded Forms 서비스**&#x200B;를 사용하여 이 
 
 바코드 Forms 서비스는 다음 두 가지 API를 제공합니다.
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: 입력 PDF 문서 또는 tiff 이미지에서 사용할 수 있는 모든 바코드를 디코딩합니다. 입력 문서 또는 이미지에서 사용할 수 있는 모든 바코드에서 검색된 데이터가 포함된 다른 XML 문서를 반환합니다.
+* **[decode](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: 입력 PDF 문서 또는 tiff 이미지에서 사용할 수 있는 모든 바코드를 디코딩합니다. 입력 문서 또는 이미지에서 사용할 수 있는 모든 바코드에서 검색된 데이터가 포함된 다른 XML 문서를 반환합니다.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decode API를 사용하여 디코딩된 데이터를 XML 데이터로 변환합니다. 이 XML 데이터는 XFA 양식과 병합할 수 있습니다. 각 바코드에 대해 하나씩 XML 문서 목록을 반환합니다.
+* **[extractToXML](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decode API를 사용하여 디코딩된 데이터를 XML 데이터로 변환합니다. 이 XML 데이터는 XFA 양식과 병합할 수 있습니다. 각 바코드에 대해 하나씩 XML 문서 목록을 반환합니다.
 
 ### JSP 또는 서블릿에 BCF 서비스 사용 {#using-bcf-service-with-a-jsp-or-servlets}
 

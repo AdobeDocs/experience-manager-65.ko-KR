@@ -24,7 +24,7 @@ Document Security는 승인된 사용자만 문서를 사용할 수 있도록 �
 * Adobe PDF 파일
 * Microsoft® Word, Excel 및 PowerPoint 파일
 
-정책이 지원되는 파일 형식을 보호하는 방법에 대한 자세한 내용은 [추가 문서 보안 정보](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en)를 참조하십시오.
+정책이 지원되는 파일 형식을 보호하는 방법에 대한 자세한 내용은 [추가 문서 보안 정보](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=ko)를 참조하십시오.
 
 문서 보안을 사용하면 미리 정의된 기밀 유지 설정을 문서에 쉽게 만들고 저장하고 적용할 수 있습니다. 정보가 범위를 넘어 확산되지 않도록 문서를 배포한 후 수신자가 문서를 사용하는 방법을 모니터링하고 제어할 수도 있습니다.
 

@@ -19,7 +19,7 @@ Adobe 다이내믹 Tag Management은 디지털 마케팅 도구를 활성화하�
 
 >[!CAUTION]
 >
->Adobe DTM은 [!DNL Adobe Experience Platform]을(를) 위해 더 이상 사용되지 않으며 곧 [수명 종료](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 자산 통찰력에 대해 [사용 [!DNL Adobe Experience Platform] 하도록](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)할 것을 권장합니다.
+>Adobe DTM은 [!DNL Adobe Experience Platform]을(를) 위해 더 이상 사용되지 않으며 곧 [수명 종료](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 자산 통찰력에 대해 [사용 [!DNL Adobe Experience Platform] 하도록](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=ko)할 것을 권장합니다.
 
 다음 단계를 수행하여 DTM을 통해 Assets Insights를 활성화합니다.
 

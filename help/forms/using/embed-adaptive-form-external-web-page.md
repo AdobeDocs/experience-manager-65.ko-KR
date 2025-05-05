@@ -19,11 +19,11 @@ ht-degree: 54%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
 | AEM 6.5 | 이 문서 |
 
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 [AEM Sites 페이지에서 적응형 양식을 임베드](/help/forms/using/embed-adaptive-form-aem-sites.md)하거나 AEM 외부에 호스트된 웹 페이지를 임베드할 수 있습니다. 임베드된 적응형 양식은 완전한 기능을 갖추고 있으며 사용자는 페이지를 떠나지 않고 양식을 작성하고 제출할 수 있습니다. 이로써 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있는 동시에 양식과 상호 작용할 수 있습니다.
 
@@ -165,8 +165,8 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 * 웹 페이지 CSS에 정의된 스타일 규칙이 양식 오브젝트 CSS와 충돌하지 않는지 확인합니다. 충돌을 방지하기 위해 AEM 클라이언트 라이브러리를 사용하여 적응형 양식 테마의 웹 페이지 CSS를 재사용할 수 있습니다. 적응형 양식 테마에서 클라이언트 라이브러리를 사용하는 방법에 대한 자세한 내용은 [AEM Forms의 테마](../../forms/using/themes.md)를 참조하십시오.
 * 웹 페이지의 양식 컨테이너에서 전체 창 너비를 사용할 수 있습니다. 모바일 디바이스용으로 구성된 CSS 규칙이 변경 사항 없이 작동하고 있는지 확인합니다. 양식 컨테이너가 전체 창 너비를 차지하지 않는 경우 양식이 다른 모바일 장치에 맞게 조정되도록 사용자 지정 CSS를 작성해야 합니다.
-* `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API를 사용하여 클라이언트에서 양식 데이터의 XML 또는 JSON 표현식을 가져옵니다.
-* `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API를 사용하여 HTML DOM에서 적응형 양식을 언로드합니다.
+* `[getData](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API를 사용하여 클라이언트에서 양식 데이터의 XML 또는 JSON 표현식을 가져옵니다.
+* `[unloadAdaptiveForm](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API를 사용하여 HTML DOM에서 적응형 양식을 언로드합니다.
 * AEM 서버에서 응답을 보낼 때 access-control-origin 헤더를 설정합니다.
 
 ## AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 활성화 {#cross-site}

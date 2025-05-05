@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 이전 버전에서 [자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)을(를) [자산 선택기](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)이라고 했습니다.
+>[!DNL Experience Manager] 이전 버전에서 [자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=ko)을(를) [자산 선택기](https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/asset-picker.html)이라고 했습니다.
 
 에셋 선택기를 사용하여 [!DNL Adobe Experience Manager] Assets에서 에셋을 검색 및 필터링할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수도 있습니다. 자산 선택기 인터페이스를 사용자 지정하려면 지원되는 요청 매개 변수와 함께 자산 선택기 인터페이스를 시작할 수 있습니다. 이러한 매개 변수는 특정 시나리오에 대한 에셋 선택기의 컨텍스트를 설정합니다.
 
@@ -63,4 +63,4 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 >[!MORELIKETHIS]
 >
->* AEM as a Cloud Service의 [Micro-Frontend 자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* AEM as a Cloud Service의 [Micro-Frontend 자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=ko)

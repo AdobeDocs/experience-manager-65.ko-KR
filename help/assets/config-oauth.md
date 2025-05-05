@@ -27,7 +27,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+>필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 ## 기존 AMS 사용자에 대한 OAuth 구성 {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 ### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
 
-시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 1. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`에서 아래 속성을 추가하거나 업데이트하십시오.
 
@@ -89,7 +89,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 >[!NOTE]
 >
->`unsupported_grant_type` 오류가 발생하면 Granite 핫픽스를 설치해 보십시오. [서비스 계정(JWT)에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)을 참조하세요.
+>`unsupported_grant_type` 오류가 발생하면 Granite 핫픽스를 설치해 보십시오. [서비스 계정(JWT)에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24660)을 참조하세요.
 
 ## Adobe Developer Console과 통합 {#integrate-adobe-io}
 
@@ -198,4 +198,4 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그 지정 구성](config-smart-tagging.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)

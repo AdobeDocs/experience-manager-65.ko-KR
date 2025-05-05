@@ -97,7 +97,7 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 React 앱에 제공하는 콘텐츠를 시뮬레이션할 수 있습니다.
 
-로컬 개발 환경 설정과 콘텐츠 미리 보기에 필요한 모든 종속성에 대해 자세히 알아보려면 [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html)를 참조하세요.
+로컬 개발 환경 설정과 콘텐츠 미리 보기에 필요한 모든 종속성에 대해 자세히 알아보려면 [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=ko)를 참조하세요.
 
 ## Go-Live를 위해 AEM Headless 애플리케이션 준비 {#prepare-your-aem-headless-application-for-golive}
 
@@ -144,13 +144,13 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 
 ## Maven을 사용하여 프로덕션에 배포 {#deploy-to-production-maven}
 
-Maven을 사용하는 *기존* 배포(AMS 제외)에 대한 개요는 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build)를 참조하십시오.
+Maven을 사용하는 *기존* 배포(AMS 제외)에 대한 개요는 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ko#build)를 참조하십시오.
 
 ## Cloud Manager을 사용하여 프로덕션에 배포 {#deploy-to-production-cloud-manager}
 
-Cloud Manager을 사용하는 AMS 고객인 경우 모든 것이 테스트되고 제대로 작동하는지 확인한 후 코드 업데이트를 Cloud Manager의 [중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html)에 푸시할 수 있습니다.
+Cloud Manager을 사용하는 AMS 고객인 경우 모든 것이 테스트되고 제대로 작동하는지 확인한 후 코드 업데이트를 Cloud Manager의 [중앙 집중식 Git 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=ko)에 푸시할 수 있습니다.
 
-업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)을 사용하여 AEM에 배포합니다.
+업데이트가 Cloud Manager에 업로드되면 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ko)을 사용하여 AEM에 배포합니다.
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -217,18 +217,18 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 개발 가이드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
+* [AEM 개발 가이드](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=ko)
 
 * [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
-* AEM용 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* AEM용 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)
 
 * CDN 캐시
 
-   * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#controlling-a-cdn-cache)
 
-   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) 구성(*CDN 재작성기 검색*)
+   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=ko) 구성(*CDN 재작성기 검색*)
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)

@@ -32,9 +32,9 @@ Java EE 웹 애플리케이션 개발을 위한 인기 있는 오픈 소스 웹 
 
 | 릴리스 | 현재 버전 | 사용자 작업 |
 |---|---|---|
-| JEE의 6.5 Forms Experience Manager | 6.5.19.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| JEE의 6.5 Forms Experience Manager | 6.5.13.0 - 6.5.18.0 | 다음 방법 중 하나를 사용하십시오. <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> 최신 서비스 팩 </a> 설치 </li> <li> <a href ="#use-manual-mitigation-steps"> 수동 완화 단계 사용 </a> |
-| JEE의 6.5 Forms Experience Manager | 6.5 - 6.5.12.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **참고:** AEM Forms은 현재 6.5.13.0부터 6.5.19.0까지 버전을 지원합니다. 이전 버전을 사용 중인 경우 6.5.13.0 이상 릴리스로 업그레이드하는 것이 좋습니다. AEM 6.5.13.0 이상 릴리스를 설치하는 방법은 릴리스 노트를 참조하십시오. |
+| JEE의 6.5 Forms Experience Manager | 6.5.19.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko) |
+| JEE의 6.5 Forms Experience Manager | 6.5.13.0 - 6.5.18.0 | 다음 방법 중 하나를 사용하십시오. <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko"> 최신 서비스 팩 </a> 설치 </li> <li> <a href ="#use-manual-mitigation-steps"> 수동 완화 단계 사용 </a> |
+| JEE의 6.5 Forms Experience Manager | 6.5 - 6.5.12.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko) </br> </br> **참고:** AEM Forms은 현재 6.5.13.0부터 6.5.19.0까지 버전을 지원합니다. 이전 버전을 사용 중인 경우 6.5.13.0 이상 릴리스로 업그레이드하는 것이 좋습니다. AEM 6.5.13.0 이상 릴리스를 설치하는 방법은 릴리스 노트를 참조하십시오. |
 
 ### 수동 완화 단계 사용 {#use-manual-mitigation-steps}
 

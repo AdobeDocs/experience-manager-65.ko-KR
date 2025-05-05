@@ -98,7 +98,7 @@ AEM에는 현재 동일한 릴리스에 클래식 UI와 터치에 적합한 UI�
   </tr>
   <tr>
    <td>콘텐츠 전송 네트워크에 Dispatcher 사용</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">콘텐츠 전송 네트워크에 Dispatcher 사용</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">콘텐츠 전송 네트워크에 Dispatcher 사용</a></td>
    <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(컨텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 컨텐츠를 전달합니다.</td>
   </tr>
   <tr>

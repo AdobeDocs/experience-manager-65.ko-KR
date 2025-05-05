@@ -37,7 +37,7 @@ OSGi &quot;*은(는) 응용 프로그램을 작고 재사용 가능한 공동 �
 
 >[!NOTE]
 >
->[AEM 도구](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)의 일부인 OSGi 구성 비교 도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
+>[AEM 도구](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=ko)의 일부인 OSGi 구성 비교 도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ JSON을 비활성화하지 마십시오.
 
 >[!CAUTION]
 >
->**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html)를 참조하세요.
+>**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

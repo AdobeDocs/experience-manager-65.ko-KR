@@ -584,7 +584,7 @@ AEM 패키지를 사용하여 AEM 환경에서 콘텐츠를 만들고 공유할 
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)은(는) AEM 패키지의 검색 및 다운로드를 간소화하기 위해 고안된 중앙 집중식 서비스입니다.
 
-자세한 내용은 [소프트웨어 배포 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+자세한 내용은 [소프트웨어 배포 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)
 
 >[!NOTE]
 >

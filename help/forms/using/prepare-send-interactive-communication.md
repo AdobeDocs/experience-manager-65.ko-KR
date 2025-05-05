@@ -180,7 +180,7 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
 
 초안으로 저장(Save as a Draft) 기능은 기본적으로 활성화되어 있지 않습니다. 기능을 활성화하려면 다음 단계를 수행하십시오.
 
-1. [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
+1. [ccrDocumentInstance](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
 
    SPI를 사용하면 대화형 통신의 초안 버전을 고유 식별자로 초안 ID를 사용하여 데이터베이스에 저장할 수 있습니다. 이러한 지침은 Maven 프로젝트를 사용하여 OSGi 번들을 작성하는 방법에 대한 사전 지식이 있다고 가정합니다.
 

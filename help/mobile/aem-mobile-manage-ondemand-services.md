@@ -42,7 +42,7 @@ Mobile On-Demand Preflight 앱을 사용하면 액세스 권한이 있는 모든
 
 >[!NOTE]
 >
->AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)를 클릭하세요.
+>AEM Preflight 앱은 콘텐츠를 미리 보고 페이지를 검색하는 데 사용됩니다. Preflight 앱에 대해 자세히 알아보려면 [여기](https://helpx.adobe.com/kr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)를 클릭하세요.
 >
 
 ### 시작하기 {#getting-ahead}

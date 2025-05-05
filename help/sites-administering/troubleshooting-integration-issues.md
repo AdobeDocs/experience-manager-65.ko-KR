@@ -166,7 +166,7 @@ var s=s_gi(s_account)
 다음 솔루션을 시도할 수 있습니다.
 
 * DTM과 유사한 라이브러리를 로드하는 고객 코드(결과적으로 Target 라이브러리를 로드함)가 [페이지 헤드](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages)에서 동기적으로 실행되는지 확인하십시오.
-* 사이트가 DTM을 사용하여 Target 라이브러리를 전달하도록 구성된 경우, [사이트에 대한 Target 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html)에서 **DTM에 의해 전달된 Clientlib** 옵션이 선택되어 있는지 확인하십시오.
+* 사이트가 DTM을 사용하여 Target 라이브러리를 전달하도록 구성된 경우, [사이트에 대한 Target 구성](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/target-configuring.html)에서 **DTM에 의해 전달된 Clientlib** 옵션이 선택되어 있는지 확인하십시오.
 
 ### AT.js 1.3+를 사용할 때 올바른 오퍼 대신 항상 기본 오퍼가 표시됩니다 {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-응답에 줄 `a4tEnabled:false`이(가) 포함된 경우 [고객 지원 센터 Adobe](https://helpx.adobe.com/contact.html)에 연락하여 계정이 올바르게 프로비저닝되도록 하십시오.
+응답에 줄 `a4tEnabled:false`이(가) 포함된 경우 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/contact.html)에 연락하여 계정이 올바르게 프로비저닝되도록 하십시오.
 
 ### 유용한 Target API {#helpful-target-apis}
 

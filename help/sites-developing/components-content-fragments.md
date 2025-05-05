@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->이제 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 사용하는 것이 좋습니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)을 참조하십시오.
+>이제 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 사용하는 것이 좋습니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)을 참조하십시오.
 >
 >이 섹션에서는 콘텐츠 조각(**일반** 그룹의 **콘텐츠 조각**)에 사용하기 위해 전달된 원래 구성 요소에 대해 자세히 설명합니다.
 

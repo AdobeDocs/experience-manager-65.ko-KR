@@ -51,7 +51,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
+Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ko) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
 
 필요한 경우 `https://api.omniture.com/`을(를) 사용하여 올바른 데이터 센터로 라우팅합니다.
 
@@ -86,7 +86,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Activity Map 구성 {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -183,7 +183,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 1. **저장 후 닫기**&#x200B;를 선택합니다.
 1. 페이지 및 연결된 구성/파일을 활성화하려면 페이지를 **[Publish](/help/sites-authoring/publishing-pages.md)**&#x200B;하세요.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 **검색** 구성 요소를 사용하여 키워드(예: 에그플랜트)를 검색하는 것입니다.
-1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
+1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
 1. 제공된 예를 사용하면 호출에는 event7에 입력한 값(즉, 가지)이 포함되어야 하며 eVar 목록에는 event3이 있어야 합니다.
 
 ### 페이지 조회수 {#page-views}

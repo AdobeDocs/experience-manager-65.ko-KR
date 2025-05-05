@@ -28,13 +28,13 @@ ht-degree: 28%
 ### [!DNL Forms]
 
 * **새로운 적응형 양식 핵심 구성 요소**: 양식의 확장성을 높이기 위해 세로 탭, 약관 및 확인란이 추가되었습니다.
-   * **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
+   * **[확인란 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
 
-   * **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 Forms 작성자는 서비스, 제품 또는 플랫폼 사용과 관련된 약관, 조건 또는 법적 계약서를 사용자에게 제공하는 양식 내에서 특정 섹션을 소개할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
+   * **[약관 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 약관 구성 요소를 포함함 수 있습니다. 이를 통해 Forms 작성자는 서비스, 제품 또는 플랫폼 사용과 관련된 약관, 조건 또는 법적 계약서를 사용자에게 제공하는 양식 내에서 특정 섹션을 소개할 수 있습니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
 
      ![세로 탭, 약관 및 확인란 구성 요소](/help/forms/using/assets/forms-components.png)
 
-   * **[세로 탭 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식에서 세로 탭을 사용하면 특히 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 탐색을 단순화하고 양식 콘텐츠 구성을 개선하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
+   * **[세로 탭 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=ko)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식에서 세로 탭을 사용하면 특히 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 탐색을 단순화하고 양식 콘텐츠 구성을 개선하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
 
 * **[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer은 향상된 성능, 확장성 및 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
 
@@ -55,9 +55,9 @@ ht-degree: 28%
 
 ### [!DNL Forms]
 
-* **[규칙 편집기에서 사용자 지정 오류 처리기를 사용하여 오류 처리 기능이 개선되었습니다](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다
+* **[규칙 편집기에서 사용자 지정 오류 처리기를 사용하여 오류 처리 기능이 개선되었습니다](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=ko)** - 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다
 
-* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 향상된 기능을 통해 사용할 수 있습니다.
+* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=ko#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 향상된 기능을 통해 사용할 수 있습니다.
 
    * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 향상된 보안** - Adobe Acrobat Sign의 정부 ID 기반 인증은 추가 인증 계층을 제공합니다. 사용자가 정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)을 이용해 본인 인증을 할 수 있도록 했다. 신뢰할 수 있는 식별 문서를 사용하여 이 개선된 기능은 서명 프로세스에 신뢰도를 추가하여 보안, 규정 준수 및 사용자 유효성 검사 강화에 필요한 시나리오에 적합합니다.
 
@@ -67,7 +67,7 @@ ht-degree: 28%
    * **서명자 이상으로 계약 수신자의 역할 확장** - Adobe Acrobat Sign을 사용하면 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 할 수 있습니다. 활성화된 경우 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
 
 
-* **[JEE의 AEM Forms 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - 서비스 팩은 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원하는 JEE의 AEM Forms 전체 설치 관리자를 제공합니다.
+* **[JEE의 AEM Forms 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html?lang=ko)** - 서비스 팩은 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원하는 JEE의 AEM Forms 전체 설치 관리자를 제공합니다.
    * Microsoft® 윈도우 서버 2022
    * Microsoft® Active Directory 2022
    * Windows Server 2022의 Oracle WebLogic 14C
@@ -85,7 +85,7 @@ JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 설치하거나 사용�
    * 자산 연결 또는 연결 해제
 
   해당 작업을 수행하기 위해 자산 위치로 이동하여 자산 속성을 볼 필요가 없습니다.
-* **Dynamic Media _스냅숏_**- 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고 Smart Imaging에서 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대해 최적화합니다. [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)을 참조하십시오.
+* **Dynamic Media _스냅숏_**- 테스트 이미지 또는 Dynamic Media URL을 실험하여 다양한 이미지 수정자의 출력을 확인하고 Smart Imaging에서 파일 크기(WebP 및 AVIF 전달), 네트워크 대역폭 및 장치 픽셀 비율에 대해 최적화합니다. [Dynamic Media 스냅샷](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=ko)을 참조하십시오.
 * **Dynamic Media를 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재(CMAF가 활성화됨)에서 적응형 스트리밍을 위해 실행된 새 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍). 현재 모든 지역에서 사용할 수 있습니다.
 * **Experience Manager Sites 및 컨텐츠 조각과 Assets 차세대 Dynamic Media 통합** - 이제 Experience Manager Assets as a Cloud Service 차세대 Dynamic Media 사용자는 이러한 클라우드 호스팅 자산을 Experience Manager Sites 6.5의 온-프레미스 또는 Managed Services 인스턴스와 함께 작성 및 게재에 사용할 수 있습니다.
 
@@ -110,9 +110,9 @@ Dynamic Media 비디오 게재 시 적응형 비트율 스트리밍을 위해 �
 
 ### [!DNL Forms]
 
-* [Headless 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)을(를) 사용하면 개발자는 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다.
+* [Headless 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ko)을(를) 사용하면 개발자는 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다.
 
-* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)는 Adobe Experience Manager WCM 핵심 구성 요소를 기반으로 구축된 24개의 오픈 소스 BEM 호환 구성 요소 세트입니다. 이러한 구성 요소는 오픈 소스이며 개발자가 조직의 특정 요구 사항에 맞게 이러한 구성 요소를 쉽게 사용자 정의하고 확장할 수 있는 기능을 제공합니다. [WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html)를 사용자 지정할 수 있는 기존 기술을 가진 사용자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다.
+* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#features)는 Adobe Experience Manager WCM 핵심 구성 요소를 기반으로 구축된 24개의 오픈 소스 BEM 호환 구성 요소 세트입니다. 이러한 구성 요소는 오픈 소스이며 개발자가 조직의 특정 요구 사항에 맞게 이러한 구성 요소를 쉽게 사용자 정의하고 확장할 수 있는 기능을 제공합니다. [WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=ko)를 사용자 지정할 수 있는 기존 기술을 가진 사용자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다.
 
 * 이제 OSGi의 Reader 확장 서비스에서 PDF의 가져오기 및 내보내기 사용 권한을 활성화하여 Adobe Acrobat Reader에서 데이터를 가져오거나 내보낼 수 있는 별도의 옵션을 제공합니다.
 
@@ -120,9 +120,9 @@ Dynamic Media 비디오 게재 시 적응형 비트율 스트리밍을 위해 �
 
 ### [!DNL Forms]
 
-* 이제 AEM Forms Designer을 [스페인어 로케일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 사용할 수 있습니다.
+* 이제 AEM Forms Designer을 [스페인어 로케일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 사용할 수 있습니다.
 * 이제 [OAuth2를 사용하여 Microsoft® Office 365 메일 서버 프로토콜(SMTP 및 IMAP)](/help/forms/using/oauth2-support-for-mail-service.md)을 인증할 수 있습니다.
-* [서버에서 다시 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) 속성을 true로 설정하여 서버측 기록 문서에서 제외할 숨겨진 필드를 식별할 수 있습니다.
+* [서버에서 다시 유효성 검사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko#enabling-server-side-validation-br) 속성을 true로 설정하여 서버측 기록 문서에서 제외할 숨겨진 필드를 식별할 수 있습니다.
 * AEM Forms Designer에는 32비트 버전의 Visual C++ 2019 재배포 가능 패키지(x86)가 필요합니다.
 
 ## AEM 6.5, 서비스 팩 14 - 2022년 8월 25일

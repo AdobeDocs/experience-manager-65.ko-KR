@@ -158,4 +158,4 @@ API를 사용하여 노드 및 속성에 액세스하고 제거할 수도 있습
 
 * [프로그래밍 방식으로 AEM JCR에 액세스하는 방법](/help/sites-developing/access-jcr.md)
 * [노드 및 속성 제거](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API 참조](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API 참조](https://helpx.adobe.com/kr/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

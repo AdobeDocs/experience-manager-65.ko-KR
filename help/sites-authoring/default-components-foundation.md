@@ -18,7 +18,7 @@ ht-degree: 32%
 >
 >대부분의 기초 구성 요소는 이제 AEM 6.5에서 더 이상 사용되지 않습니다. 자세한 내용은 [릴리스 노트](/help/release-notes/deprecated-removed-features.md)를 참조하십시오.
 >
->Adobe은 AEM 프로젝트에서 보다 현대적이고 확장 가능한 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 사용할 것을 권장합니다. 이러한 구성 요소는 [We.Retail 샘플 콘텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html)할 수도 있습니다.
+>Adobe은 AEM 프로젝트에서 보다 현대적이고 확장 가능한 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 사용할 것을 권장합니다. 이러한 구성 요소는 [We.Retail 샘플 콘텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ko)할 수도 있습니다.
 >
 >[AEM 현대화 도구 세트](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 Foundation 구성 요소 기반 사이트에서 핵심 구성 요소를 사용하도록 리팩터링할 수 있습니다.
 
@@ -57,7 +57,7 @@ ht-degree: 32%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 사용할 것을 권장합니다.
 
 제목 및 설명을 사용하여 링크를 정의할 수 있습니다.
 
@@ -67,7 +67,7 @@ ht-degree: 32%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)를 사용할 것을 권장합니다.
 
 응용 이미지 기초 구성 요소는 웹 페이지가 열리는 창에 맞는 크기의 이미지를 생성합니다. 구성 요소를 사용하려면 파일 시스템 또는 DAM에서 이미지 리소스를 제공합니다. 웹 페이지가 열리면 웹 브라우저는 현재 창에 맞게 크기가 조정된 이미지 복사본을 다운로드합니다.
 
@@ -150,7 +150,7 @@ ht-degree: 32%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [회전 메뉴 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [회전 메뉴 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko)를 사용할 것을 권장합니다.
 
 슬라이드 구성 요소를 사용하여 개별 페이지와 연결된 이미지를 표시할 수 있습니다.
 
@@ -257,7 +257,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 사용할 것을 권장합니다.
 
 [콘텐츠 조각](/help/sites-authoring/content-fragments.md)이(가) 페이지에 영향을 받지 않는 에셋으로 만들어지고 관리됩니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
@@ -372,7 +372,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko)를 사용할 것을 권장합니다.
 
 이미지 구성 요소는 지정된 매개 변수에 따라 이미지와 추가 텍스트를 표시합니다.
 
@@ -458,13 +458,13 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!NOTE]
 >
->이 구성 요소는 [HTL(HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용하여 구현되었습니다.
+>이 구성 요소는 [HTL(HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용하여 구현되었습니다.
 
 ### 목록 {#list}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [목록 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=ko)를 사용할 것을 권장합니다.
 
 목록 구성 요소를 사용하여 목록을 표시하기 위한 검색 기준을 구성할 수 있습니다.
 
@@ -604,7 +604,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ko)를 사용할 것을 권장합니다.
 
 **참조** 구성 요소를 사용하면 AEM 웹 사이트의 다른 페이지(현재 인스턴스 내)에서 텍스트를 참조할 수 있습니다. 참조된 단락의 콘텐츠가 현재 페이지에 있는 것처럼 표시됩니다. 소스 단락이 변경되면 콘텐츠가 업데이트됩니다( 페이지를 새로 고쳐야 할 수 있음).
 
@@ -638,7 +638,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [빠른 검색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [빠른 검색 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html?lang=ko)를 사용할 것을 권장합니다.
 
 검색 구성 요소는 페이지에 검색 기능을 추가합니다.
 
@@ -707,7 +707,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [언어 탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html) 및 [탐색 표시 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=ko), [언어 탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html?lang=ko) 및 [탐색 표시 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html?lang=ko)를 사용할 것을 권장합니다.
 
 기본 설정을 사용하여 현재 웹 사이트의 모든 페이지를 활성 링크로 나열하는 자동 사이트 맵 목록입니다. 예를 들어 추출은 다음을 표시합니다.
 
@@ -725,7 +725,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [회전 메뉴 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [회전 메뉴 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=ko)를 사용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -759,7 +759,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko)를 사용할 것을 권장합니다.
 
 >[!NOTE]
 >
@@ -808,7 +808,7 @@ Flash 구성 요소를 사용하여 Flash 동영상을 로드할 수 있습니�
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko)를 사용할 것을 권장합니다.
 
 >[!NOTE]
 >
@@ -837,7 +837,7 @@ Text 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-auth
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) 및 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko) 및 [텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko)를 사용할 것을 권장합니다.
 
 텍스트 및 이미지 구성 요소는 텍스트 블록과 이미지를 추가합니다. 텍스트와 이미지를 별도로 추가하고 편집할 수도 있습니다. 자세한 내용은 [Text](#text) 및 [Image](#image) 구성 요소를 참조하십시오.
 
@@ -885,7 +885,7 @@ Text 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-auth
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [제목 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [제목 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=ko)를 사용할 것을 권장합니다.
 
 제목 구성 요소는 다음 중 하나를 수행할 수 있습니다.
 
@@ -914,7 +914,7 @@ Text 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-auth
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소 임베드 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소 임베드 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=ko)를 사용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -1094,7 +1094,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 컨테이너 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)를 대신 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 컨테이너 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=ko)를 대신 사용할 것을 권장합니다.
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 모두 정의합니다. 양식이 올바르게 정의되었는지 확인하기 위해 시작과 끝이 항상 쌍을 이룹니다.
 
@@ -1322,7 +1322,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=ko)를 사용할 것을 권장합니다.
 
 사용자가 계정 이름을 입력할 수 있습니다.
 
@@ -1332,7 +1332,7 @@ Forms은 다음과 같은 몇 가지 구성 요소로 구성됩니다.
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=ko)를 사용할 것을 권장합니다.
 
 다음과 같은 형식의 국제 주소 필드를 추가할 수 있습니다.
 
@@ -1360,7 +1360,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=ko)를 사용할 것을 권장합니다.
 
 확인란을 사용하여 동시에 선택할 수 있는 하나 이상의 확인란 목록을 작성할 수 있습니다.
 
@@ -1388,7 +1388,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=ko)를 사용할 것을 권장합니다.
 
 선택 가능한 값 범위를 사용하여 드롭다운 목록을 구성할 수 있습니다.
 
@@ -1414,13 +1414,13 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!NOTE]
 >
->사용자 지정 업로드 구성 요소를 만들어 Sling 서블릿에 파일을 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276)를 참조하십시오.
+>사용자 지정 업로드 구성 요소를 만들어 Sling 서블릿에 파일을 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=ko)를 참조하십시오.
 
 ### 숨김 필드 {#hidden-field}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 숨김 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html)를 대신 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 숨김 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html?lang=ko)를 대신 사용할 것을 권장합니다.
 
 숨겨진 필드를 만들 수 있습니다. 이러한 숨겨진 필드는 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 하는 경우 또는 사후 처리에서 숨겨진 데이터가 필요한 경우입니다.
 
@@ -1436,7 +1436,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html)를 대신 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=ko)를 대신 사용할 것을 권장합니다.
 
 이미지 단추를 사용하면 이미지 및 텍스트를 직접 입력하여 단추를 만들 수 있습니다.
 
@@ -1493,7 +1493,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 옵션 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=ko)를 사용할 것을 권장합니다.
 
 라디오 그룹은 하나 이상의 라디오 확인란 목록을 제공하며, 이 확인란 중 하나만 특정 시간에 선택할 수 있습니다.
 
@@ -1511,7 +1511,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html)를 대신 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=ko)를 대신 사용할 것을 권장합니다.
 
 이 구성 요소를 사용하여 기본 텍스트 중 하나를 사용하는 제출 단추를 만들 수 있습니다.
 
@@ -1552,7 +1552,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [양식 텍스트 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=ko)를 사용할 것을 권장합니다.
 
 표준 텍스트 필드를 필요한 크기로 구성하고 안내 메시지를 직접 입력할 수 있습니다.
 
@@ -1562,7 +1562,7 @@ captcha 문자열이 잘못된 경우 표시할 메시지를 포함하여 이 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html)를 대신 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [양식 단추 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=ko)를 대신 사용할 것을 권장합니다.
 
 워크플로우에서 사용할 제출 단추를 만들 수 있습니다.
 

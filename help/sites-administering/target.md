@@ -66,7 +66,7 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 AEM을 Adobe Target과 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상 관리에 대한 지식이 필요합니다. 다음과 같은 정보를 숙지해야 합니다.
 
-* Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html) 참조)
+* Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko) 참조)
 * AEM 활동 콘솔([활동 관리](/help/sites-authoring/activitylib.md) 참조)
 * AEM 대상자([대상자 관리](/help/sites-authoring/managing-audiences.md) 참조)
 

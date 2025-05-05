@@ -132,9 +132,9 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 >[!CAUTION]
 >
->이제 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)를 사용하는 것이 좋습니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)을 참조하십시오.
+>이제 [콘텐츠 조각 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)를 사용하는 것이 좋습니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)을 참조하십시오.
 
-다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)구성 요소인 [**콘텐츠 조각** 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)를 제공합니다. 이 **콘텐츠 조각** 핵심 구성 요소를 확장할 수도 있습니다.
+다른 에셋 유형과 마찬가지로 AEM 페이지에서 콘텐츠 조각을 참조할 수 있습니다. AEM은 페이지에 콘텐츠 조각을 포함할 수 있는 [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)구성 요소인 [**콘텐츠 조각** 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)를 제공합니다. 이 **콘텐츠 조각** 핵심 구성 요소를 확장할 수도 있습니다.
 
 * 구성 요소는 `fragmentPath` 속성을 사용하여 실제 콘텐츠 조각을 참조합니다. `fragmentPath` 속성은 다른 에셋 유형의 유사한 속성과 동일한 방식으로 처리됩니다. 예를 들어 콘텐츠 조각을 다른 위치로 이동할 때 사용됩니다.
 
@@ -537,5 +537,5 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 자세한 내용은
 
-* [핵심 구성 요소 - 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)(권장)
+* [핵심 구성 요소 - 콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)(권장)
 * [콘텐츠 조각 구성 요소 - 페이지 작성을 위한 구성 요소](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

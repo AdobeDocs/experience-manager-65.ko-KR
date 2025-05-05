@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 자산의 정품 여부 및 저작권 소유권을 확인하는 데 도움이 되는 디지털 워터마크를 자산에 추가할 수 있습니다. [!DNL Experience Manager Assets]은(는) PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.

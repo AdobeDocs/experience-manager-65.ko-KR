@@ -60,7 +60,7 @@ AEM Forms 저장소의 리소스 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->Applications/FormsApplication이 기본적으로 없습니다. 빠른 시작과 함께 하려면 Workbench를 사용하여 이 응용 프로그램을 만듭니다. Workbench를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [프로세스 디자인 시작](https://www.adobe.com/go/learn_aemforms_workbench_65)을 참조하십시오.
+>Applications/FormsApplication이 기본적으로 없습니다. 빠른 시작과 함께 하려면 Workbench를 사용하여 이 응용 프로그램을 만듭니다. Workbench를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [프로세스 디자인 시작](https://www.adobe.com/go/learn_aemforms_workbench_65_kr)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 폴더 만들기 {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

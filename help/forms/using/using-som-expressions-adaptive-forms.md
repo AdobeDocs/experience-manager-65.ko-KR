@@ -46,4 +46,4 @@ DOM 트리
 
 패널 도구 모음을 사용하여 SOM 표현식 추출
 
-[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)에 나열된 일부 API는 요소의 SOM 식을 사용합니다. 예를 들어 적응형 양식의 특정 필드에 초점을 맞추려면 해당 SOM 식을 `guideBridge`의 `getFocus`API에 전달하십시오.
+[GuideBridge](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)에 나열된 일부 API는 요소의 SOM 식을 사용합니다. 예를 들어 적응형 양식의 특정 필드에 초점을 맞추려면 해당 SOM 식을 `guideBridge`의 `getFocus`API에 전달하십시오.

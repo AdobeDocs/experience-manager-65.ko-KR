@@ -43,7 +43,7 @@ ht-degree: 0%
 
 Adobe Experience Manager 내에서 파노라마 이미지 뷰어가 제대로 작동하려면 파노라마 이미지 뷰어 사전 설정을 Dynamic Media Classic 및 Dynamic Media Classic 관련 메타데이터와 동기화하여 뷰어 사전 설정을 JCR에서 업데이트합니다. 이 동기화를 수행하려면 다음과 같이 Dynamic Media Classic을 구성하십시오.
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL Publish 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 선택합니다.
 1. 이미지 서버 Publish 페이지의 맨 위에 있는 **[!UICONTROL Publish 컨텍스트]** 드롭다운 메뉴에서 **[!UICONTROL 이미지 제공]**&#x200B;을 선택합니다.

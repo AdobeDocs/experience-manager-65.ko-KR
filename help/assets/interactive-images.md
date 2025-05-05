@@ -27,7 +27,7 @@ ht-degree: 1%
 
 다음으로 이동하여 위의 웹 페이지에서 작동 중인 대화형 이미지를 참조하십시오.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=ko)
 
 ## 대화형 이미지 배너가 생성되는 방식 보기 {#watch-how-interactive-image-banners-are-created}
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 아직 대화형 이미지가 추가되지 않은 다음 웹 페이지 예를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
 
 이 자습서는 웹 사이트에서 대화형 이미지를 통합하는 단계를 설명하는 데 도움이 됩니다.
 
@@ -159,7 +159,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [�
 
 위의 세 가지 예에서 사용한 것과 동일한 접근 방식을 데모 웹 페이지에 적용할 수 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
 
 데모 웹 페이지에는 여러 제품 썸네일이 있으며, 각 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 버튼이 있습니다. 웹 브라우저의 디버깅 도구가 여전히 활성화된 상태에서 각 버튼을 선택하고 기록된 빠른 보기 URL을 확인합니다. 페이지에서 사용할 수 있는 네 개의 제품 빠른 보기를 모두 활성화하면 다음과 같은 백엔드에 대한 빠른 보기 요청 목록이 제공됩니다.
 
@@ -357,7 +357,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 데모 웹 사이트 사용 예:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
 
 세 남자의 사진은 정적 `IMG` 태그입니다.
 
@@ -367,7 +367,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 통합은 `IMG` 태그를 제거하고 Experience Manager Assets에서 복사한 포함 코드로 바꾸는 것만큼 간단합니다. 3개의 원형 핫스팟이 있는 페이지에서 구매 가능한 대화형 이미지를 표시하는 다음 URL에서 결과를 볼 수 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ko)
 
 >[!NOTE]
 >
@@ -375,9 +375,9 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 응답형 환경의 구매 가능한 대화형 이미지에 &quot;자르기&quot;를 적용하려면 대화형 이미지 구성 특성 `ZoomView.iscommand`을(를) 경로에 포함할 수 있습니다. 구성 요소 `ZoomView`이(가) 호출되었으며 `iscommand`은(는) 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-[ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 특성을 참조하십시오.
+[ZoomView.iscommand](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 특성을 참조하십시오.
 
-[자르기](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령을 참조하십시오.
+[자르기](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령을 참조하십시오.
 
 이제 대화형 이미지를 웹 사이트의 기존 빠른 보기와 통합할 준비가 되었습니다.
 
@@ -516,7 +516,7 @@ loadQuickView(quickViewUrl);
 
 완전히 통합된 대화형 이미지가 포함된 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=ko)
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 

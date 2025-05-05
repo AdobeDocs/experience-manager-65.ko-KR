@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### getAllLetterInstances 사용 {#using-nbsp-getallletterinstances}
 
-다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있는 [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 개체 목록을 반환합니다.
+다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있는 [LetterInstanceVO](https://helpx.adobe.com/kr/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 개체 목록을 반환합니다.
 
 **구문**: `List getAllLetterInstances(Query query) throws ICCException;`
 

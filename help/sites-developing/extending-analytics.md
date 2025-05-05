@@ -105,7 +105,7 @@ ContextHub의 초기 가용성을 알리는 가장 좋은 방법은 `ContextHub.
 
 >[!NOTE]
 >
->전체 [ContextHub API 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)도 참조하세요.
+>전체 [ContextHub API 참조](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)도 참조하세요.
 
 ## 레코드 콜백 추가 {#adding-record-callbacks}
 

@@ -151,7 +151,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=ko#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 이메일 엔드포인트를 구성하려면 {#configure_email_endpoint}
 
@@ -165,7 +165,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html)을 클릭하세요.
+   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=ko)을 클릭하세요.
 
 ## 문제 해결 {#troubleshooting}
 

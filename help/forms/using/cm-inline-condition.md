@@ -200,7 +200,7 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
    * 샘플 데이터가 있는 편지를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일.
 
-   자세한 내용은 [데이터 사전](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)을 참조하세요.
+   자세한 내용은 [데이터 사전](https://helpx.adobe.com/kr/aem-forms/6-2/data-dictionary.html)을 참조하세요.
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 

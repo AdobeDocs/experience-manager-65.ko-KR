@@ -188,7 +188,7 @@ function check(){
 
 >[!NOTE]
 >
->[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)를 참조하십시오.
+>[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=ko#use-a-variable)를 참조하십시오.
 
 ![OR 분할을 사용하여 분기](assets/variables_orsplit_new.png)
 

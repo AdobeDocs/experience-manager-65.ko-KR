@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 사전 요구 사항 {#prerequisites}
 
-* AEM [페이지 템플릿](/help/sites-authoring/templates.md) 및 [적응형 양식 작성](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)에 대한 이해
+* AEM [페이지 템플릿](/help/sites-authoring/templates.md) 및 [적응형 양식 작성](https://helpx.adobe.com/kr/aem-forms/6-1/introduction-forms-authoring.html)에 대한 이해
 
 * AEM [클라이언트측 라이브러리](/help/sites-developing/clientlibs.md)에 대한 이해
 

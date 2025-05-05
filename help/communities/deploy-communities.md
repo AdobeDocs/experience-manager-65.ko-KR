@@ -301,7 +301,7 @@ AEM 6.3 이상에서는 주요 자료가 파일 시스템에 저장되고 더 �
 
 >[!CAUTION]
 >
->암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하면 [고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)하세요.
+>암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하면 [고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)하세요.
 
 #### 저장소 복제 {#repository-replication}
 
@@ -366,7 +366,7 @@ Apache HTTP 서버를 사용하는 경우 모든 관련 항목에 올바른 서�
 Dispatcher을 사용하는 경우 다음을 참조하십시오.
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/kr/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) 설명서
-* [Dispatcher 설치](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Dispatcher 설치](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [커뮤니티에 대한 Dispatcher 구성](/help/communities/dispatcher.md)
 * [알려진 문제](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

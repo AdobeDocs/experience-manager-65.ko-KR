@@ -35,7 +35,7 @@ AEM의 표준 참조 구현인 We.Retail에서는 AEM의 가장 강력한 기능
 | [전역 사이트 구조](/help/sites-administering/tc-bp.md) | We.Retail에는 국가별 사이트에 라이브 카피되는 언어 마스터가 포함되어 있습니다. | [사용해 보세요!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 장치 크기에 맞게 동적으로 조정되는 반응형 레이아웃이 있습니다. | [사용해 보세요!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md) | 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자도 템플릿을 조정하고 맞춤화할 수 있습니다. | [사용해 보세요!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML 템플릿 언어](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
+| [HTML 템플릿 언어](https://experienceleague.adobe.com/ko/docs/experience-manager-htl/content/overview) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
 | [전자 상거래 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론에 참여하고 블로그를 읽는 등 다양한 활동을 할 수 있도록 허용 |  |
 | [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며, 보다 유용하고 즉시 구성 가능한 구성 요소입니다 | [사용해 보세요!](/help/sites-developing/we-retail-core-components.md) |

@@ -117,13 +117,13 @@ CUG 페이지에 대한 모든 링크의 대상이 익명 사용자에게 표시
 
 Dispatcher을 사용하는 경우 다음 속성을 사용하여 Dispatcher 팜을 정의해야 합니다.
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): CUG가 적용되는 페이지의 경로와 일치합니다.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#identifying-virtual-hosts-virtualhosts): CUG가 적용되는 페이지의 경로와 일치합니다.
 * \sessionmanagement: 아래를 참조하십시오.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): CUG가 적용되는 파일 전용의 캐시 디렉터리입니다.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache): CUG가 적용되는 파일 전용의 캐시 디렉터리입니다.
 
 ### CUG에 대한 Dispatcher 세션 관리 구성 {#configuring-dispatcher-session-management-for-cugs}
 
-CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)에서 세션 관리를 구성합니다. CUG 페이지에 대한 액세스가 요청될 때 사용되는 인증 핸들러는 세션 관리를 구성하는 방법을 결정합니다.
+CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-secure-sessions-sessionmanagement)에서 세션 관리를 구성합니다. CUG 페이지에 대한 액세스가 요청될 때 사용되는 인증 핸들러는 세션 관리를 구성하는 방법을 결정합니다.
 
 ```xml
 /sessionmanagement
@@ -137,7 +137,7 @@ CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.co
 >Dispatcher 팜에 세션 관리가 활성화되어 있으면 팜이 처리하는 모든 페이지가 캐시되지 않습니다. CUG 외부에 있는 페이지를 캐시하려면 dispatcher.any에서 두 번째 팜을 만듭니다
 >비 CUG 페이지를 처리합니다.
 
-1. `/directory`을(를) 정의하여 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)을(를) 구성합니다. 예:
+1. `/directory`을(를) 정의하여 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-secure-sessions-sessionmanagement)을(를) 구성합니다. 예:
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.co
      }
    ```
 
-1. [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used)을(를) `0`(으)로 설정합니다.
+1. [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#caching-when-authentication-is-used)을(를) `0`(으)로 설정합니다.

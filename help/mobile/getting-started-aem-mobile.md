@@ -29,7 +29,7 @@ AEM Mobile은 AEM Assets, Sites, Screens, Workflow, User Manager, Commerce 및 F
 AEM Mobile은 앱을 만드는 여러 가지 방법을 제공합니다. 앱을 만들 수 있는 세 가지 방법은 다음과 같습니다.
 
 * **[AEM에서 온디맨드 서비스 사용](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[AEM 없이 온디맨드 서비스 사용](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[AEM 없이 온디맨드 서비스 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[AEM에서 Adobe PhoneGap Enterprise 사용](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]

@@ -168,7 +168,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 >
 >`/etc/commerce/products/...`
 >
->즉, 기본적으로 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)에 의해 차단되므로 필요에 따라 구성합니다.
+>즉, 기본적으로 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)에 의해 차단되므로 필요에 따라 구성합니다.
 
 #### 제품 정보 편집 - 터치에 적합한 UI {#editing-product-information-touch-optimized-ui}
 

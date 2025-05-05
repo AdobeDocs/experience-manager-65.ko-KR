@@ -87,17 +87,17 @@ Analytics for Communities 기능을 구성하려면 계정 담당자와 함께 A
 
 ## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
-Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)를 사용하면 커뮤니티 사이트에서 커뮤니티 기능에 대한 보고서를 제공하도록 Analytics 보고서 세트를 구성할 수 있습니다.
+Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=ko)를 사용하면 커뮤니티 사이트에서 커뮤니티 기능에 대한 보고서를 제공하도록 Analytics 보고서 세트를 구성할 수 있습니다.
 
-[회사 이름 및 사용자 이름](/help/communities/analytics.md#prerequisites)을(를) 사용하여 [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)에 로그인하면 새 보고서 세트나 기존 보고서 세트를 다음과 같이 구성할 수 있습니다.
+[회사 이름 및 사용자 이름](/help/communities/analytics.md#prerequisites)을(를) 사용하여 [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ko)에 로그인하면 새 보고서 세트나 기존 보고서 세트를 다음과 같이 구성할 수 있습니다.
 
-* [11개의 전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)(eVars)
+* [11개의 전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=ko)(eVars)
 
    * **`evar1`**&#x200B;에서 **`evar11`** 사용
 
    * 기존 eVar를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 eVar를 만들 수 있음
 
-* [7 성공 이벤트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)(이벤트)
+* [7 성공 이벤트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=ko)(이벤트)
 
    * **`event1`**&#x200B;에서 **`event7`** 사용
 
@@ -107,7 +107,7 @@ Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.
 
    * 기존 이벤트를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 이벤트를 만들 수 있음
 
-* [비디오 관리](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [비디오 관리](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko)
 
    * 비디오 보고 콘솔
 
@@ -655,10 +655,10 @@ Analytics 사용 커뮤니티 사이트가 게시되면 CRXDE에서 개별적으
 
 ## Analytics에서 사용자 데이터 관리 {#manage-user-data-in-analytics}
 
-Adobe Analytics에서는 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)을 참조하십시오.
+Adobe Analytics에서는 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=ko)을 참조하십시오.
 
 ## 리소스 {#resources}
 
-* Adobe Experience Cloud: [Analytics 도움말 및 참조](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [Analytics 도움말 및 참조](https://experienceleague.adobe.com/docs/analytics.html?lang=ko)
 * AEM: [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md)
 * AEM: [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)

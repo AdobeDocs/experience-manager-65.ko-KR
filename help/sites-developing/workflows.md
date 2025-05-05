@@ -40,7 +40,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 >
 >* 워크플로우에 참여하려면 [워크플로우 사용](/help/sites-authoring/workflows.md)을 참조하세요.
 >* 워크플로우 및 워크플로우 인스턴스 관리는 [워크플로우 관리](/help/sites-administering/workflows.md)를 참조하십시오.
->* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)을 참조하십시오.
+>* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=ko)을 참조하십시오.
 >* [워크플로에 대한 AEM 전문가에게 묻기](https://communities.adobeconnect.com/p5s33iburd54/)를 참조하십시오.
 >* 정보 위치를 변경하면 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) 및 [워크플로 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)를 참조하십시오.
 >
@@ -206,7 +206,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 ### 워크플로우 및 Forms {#workflows-and-forms}
 
-일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
+일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=ko) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
 
 양식을 작성할 때 양식 제출을 워크플로우 모델과 쉽게 연결할 수 있습니다. 예를 들어 저장소의 특정 위치에 콘텐츠를 저장하거나 사용자에게 양식 제출 및 해당 콘텐츠에 대해 알릴 수 있습니다.
 

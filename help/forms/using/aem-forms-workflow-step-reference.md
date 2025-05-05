@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. [모델에 다양한 AEM Workflow 단계를 포함하여 비즈니스 논리를 달성할 수 있습니다](/help/sites-developing/workflows-models.md#extending-aem).
@@ -89,7 +89,7 @@ Forms 중심 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 작�
    * **다음을 사용하여 레이아웃 템플릿 저장:** 페이로드에 상대적인 경로를 사용하여 레이아웃 템플릿을 저장하거나 문서 데이터 형식의 변수에 저장합니다. [레이아웃 템플릿](../../forms/using/layout-design-details.md)은(는) Forms Designer을 사용하여 만든 XDP 파일을 참조합니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
 
 * **할당자 > 옵션 할당:** 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
-* **참가자 선택기:** 옵션 할당 필드에서 **사용자 또는 그룹에 동적으로** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)를 참조하십시오.
+* **참가자 선택기:** 옵션 할당 필드에서 **사용자 또는 그룹에 동적으로** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko&amp;CID=RedirectAEMCommunityKautuk)를 참조하십시오.
 
 * **참가자:** 이 필드는 **참가자 선택기** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 

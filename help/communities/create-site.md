@@ -119,7 +119,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[터널 서비스](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)에서는 게시 환경에만 있는 구성원 및 그룹을 선택할 수 있습니다.
+>[터널 서비스](https://helpx.adobe.com/kr/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)에서는 게시 환경에만 있는 구성원 및 그룹을 선택할 수 있습니다.
 
 새 사이트의 ![사용자 역할](assets/site-admin-1.png)
 

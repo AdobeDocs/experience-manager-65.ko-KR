@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM을 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html)을 참조하세요.
+>AEM을 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/kr/digital-publishing-solution/topics.html)을 참조하세요.
 
 >[!NOTE]
 >

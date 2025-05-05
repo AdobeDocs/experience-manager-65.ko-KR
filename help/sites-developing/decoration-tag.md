@@ -65,7 +65,7 @@ ht-degree: 8%
 
 HTL 스크립트 및 관련 로직의 래퍼 태그 동작을 완전히 제어할 수 있습니다.
 
-HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)를 참조하십시오.
+HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)를 참조하십시오.
 
 #### 의사 결정 트리 {#decision-tree}
 

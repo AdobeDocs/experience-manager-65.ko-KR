@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >HTL(HTML 템플릿 언어)과 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
 >
->이제 AEM에 HTL을 권장하는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
+>이제 AEM에 HTL을 권장하는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
 
 ## 구조 {#structure}
 

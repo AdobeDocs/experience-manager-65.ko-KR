@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]에서 에셋을 저장하고 제어하는 것 이상의 작업을 수행할 수 있습니다. [!DNL Experience Manager]은(는) 엔터프라이즈급 자산 관리 기능을 제공합니다. 에셋을 편집 및 공유하고, 고급 검색을 실행하고, 수십 개의 지원되는 파일 형식의 여러 렌디션을 만들 수 있습니다. 또한 버전 및 디지털 권한을 관리하고, 에셋 처리를 자동화하고, 메타데이터를 관리 및 관리하며, 주석을 사용하여 공동 작업을 수행할 수도 있습니다.
@@ -103,7 +103,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!CAUTION]
 >
->기본값이 500MB이고 청크 크기가 50MB인 경우 청크 업로드가 트리거됩니다. [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html)을 편집하고 `timeout configuration`을(를) 에셋을 업로드하는 데 걸리는 시간보다 짧게 설정하면 에셋 업로드가 진행되는 동안 세션 시간 초과 상황이 발생합니다. 따라서 각 청크 요청이 세션을 새로 고치도록 `chunkUploadMinFileSize` 및 `chunksize`을(를) 변경합니다.
+>기본값이 500MB이고 청크 크기가 50MB인 경우 청크 업로드가 트리거됩니다. [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=ko)을 편집하고 `timeout configuration`을(를) 에셋을 업로드하는 데 걸리는 시간보다 짧게 설정하면 에셋 업로드가 진행되는 동안 세션 시간 초과 상황이 발생합니다. 따라서 각 청크 요청이 세션을 새로 고치도록 `chunkUploadMinFileSize` 및 `chunksize`을(를) 변경합니다.
 >
 >자격 증명 만료 시간 제한, 대기 시간, 대역폭 및 예상 동시 업로드가 주어지면 다음을 선택할 수 있는 가장 높은 값입니다.
 >
@@ -170,7 +170,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 [!DNL Experience Manager] 작성자 인스턴스에 기능 팩 18912을 설치하십시오. FP-18912에 액세스하여 FTP 계정 설정을 완료하려면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/?support-solution=General#support)에 문의하십시오. 자세한 내용은 [일괄 에셋 마이그레이션에 대한 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
+>Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 [!DNL Experience Manager] 작성자 인스턴스에 기능 팩 18912을 설치하십시오. FP-18912에 액세스하여 FTP 계정 설정을 완료하려면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General#support)에 문의하십시오. 자세한 내용은 [일괄 에셋 마이그레이션에 대한 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
 >
 >FTP를 사용하여 자산을 업로드하는 경우 [!DNL Experience Manager]에 지정된 업로드 설정이 무시됩니다. 대신 Dynamic Media Classic에서 정의한 파일 처리 규칙이 사용됩니다.
 
@@ -178,7 +178,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 
 1. 선택한 FTP 클라이언트를 사용하여 프로비저닝 이메일에서 받은 FTP 사용자 이름 및 암호를 사용하여 FTP 서버에 로그인합니다. FTP 클라이언트에서 FTP 서버에 파일이나 폴더를 업로드합니다.
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=ko#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인은 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -883,7 +883,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 동일한 위치에 존재하는 동일한 파일 이름으로 에셋을 업로드합니다. 새 에셋이거나 동일한 에셋의 수정된 버전일 수 있습니다.
 * [!DNL Experience Manager]에서 이미지를 편집하고 변경 내용을 저장합니다.
 * 에셋의 메타데이터를 편집합니다.
-* [!DNL Experience Manager] 데스크톱 앱을 사용하여 기존 자산을 체크 아웃하고 편집한 다음 [변경 내용을 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)합니다.
+* [!DNL Experience Manager] 데스크톱 앱을 사용하여 기존 자산을 체크 아웃하고 편집한 다음 [변경 내용을 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#edit-assets-upload-updated-assets)합니다.
 
 워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 에셋에 대한 버전을 만들면 버전과 함께 메타데이터 및 렌디션이 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같이 동일한 이미지의 대체 표현물입니다.
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 찾는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)을 참조하세요.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 찾는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)을 참조하세요.

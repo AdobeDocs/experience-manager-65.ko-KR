@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 참조 테마{#reference-themes}
 
-[테마](../../forms/using/themes.md)를 사용하면 CSS에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)를 설치하여 다음 테마를 가져올 수 있습니다.
+[테마](../../forms/using/themes.md)를 사용하면 CSS에 대한 깊은 지식 없이 양식을 스타일링할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 설치하여 다음 테마를 가져올 수 있습니다.
 
 * 베릴
 * 실행

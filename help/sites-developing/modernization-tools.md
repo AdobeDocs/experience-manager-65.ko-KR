@@ -20,7 +20,7 @@ ht-degree: 46%
 
 * [정적 템플릿](page-templates-static.md)에서 [편집 가능한 템플릿](page-templates-editable.md)
 * [디자인 구성](page-templates-static.md)에서 [정책](page-templates-editable.md)
-* [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)에서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)(으)로
+* [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)에서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)(으)로
 * [클래식 UI](website.md)에서 [터치 사용 UI](touch-ui-concepts.md)(으)로
 
 이 도구 사용에 대한 자세한 내용은 [도구 설명서를 참조하십시오](https://opensource.adobe.com/aem-modernize-tools/).

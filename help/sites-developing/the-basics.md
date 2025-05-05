@@ -447,7 +447,7 @@ AEM을 사용하면 프로덕션 환경은 종종 [작성자 및 Publish 인스�
 
 ## 더 Dispatcher {#the-dispatcher}
 
-Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)에서 확인할 수 있습니다.
+Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 확인할 수 있습니다.
 
 ## FileVault(소스 버전 시스템) {#filevault-source-revision-system}
 

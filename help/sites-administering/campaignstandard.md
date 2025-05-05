@@ -45,7 +45,7 @@ AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에
 ## 사전 요구 사항 {#prerequisites}
 
 * Adobe Campaign Standard에 대한 관리자 액세스
-   * Adobe Campaign Standard 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Standard 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * Adobe Campaign Standard 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Standard 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=ko)
 * AEM에 대한 관리자 액세스
 
 ## Campaign에서 aemserver 사용자 구성 {#aemserver-user}
@@ -66,7 +66,7 @@ AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에
 
 이제 AEM이 Adobe Campaign과 통신하는 데 사용할 수 있도록 `aemserver` 사용자에게 필요한 권한이 있습니다.
 
-그러나 AEM에서 `aemserver` 사용자를 사용하려면 먼저 해당 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. `aemserver` 암호 재설정을 요청하려면 [고객 지원 센터 Adobe으로 티켓을 제출](https://experienceleague.adobe.com/?support-tab=home#support)하십시오. Adobe 고객 지원 센터에서 받은 암호를 안전한 위치에 보관하십시오.
+그러나 AEM에서 `aemserver` 사용자를 사용하려면 먼저 해당 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. `aemserver` 암호 재설정을 요청하려면 [고객 지원 센터 Adobe으로 티켓을 제출](https://experienceleague.adobe.com/ko?support-tab=home#support)하십시오. Adobe 고객 지원 센터에서 받은 암호를 안전한 위치에 보관하십시오.
 
 ## Campaign에서 AEMResourceTypeFilter 확인 {#resource-type-filter}
 

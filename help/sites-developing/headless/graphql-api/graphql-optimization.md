@@ -66,7 +66,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 **권장 사항**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)은(는) CDN 캐시 이전의 AEM 서비스 내 첫 번째 수준 캐시입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)은(는) CDN 캐시 이전의 AEM 서비스 내 첫 번째 수준 캐시입니다.
 
 **추가 참조**
 
@@ -84,7 +84,7 @@ CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 �
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 

@@ -32,7 +32,7 @@ Dynamic Media 자산은 빠른 전달을 위해 CDN(Content Delivery Network)에
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=ko#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그온은 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 

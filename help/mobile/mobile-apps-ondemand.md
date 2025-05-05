@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe Experience Manager(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html)을 참조하십시오.
+>Adobe Experience Manager(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/kr/digital-publishing-solution/topics.html)을 참조하십시오.
 
 >[!NOTE]
 >

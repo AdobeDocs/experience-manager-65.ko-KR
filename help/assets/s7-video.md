@@ -66,7 +66,7 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 에셋에 대해 워크플로우나 버전 관리가 필요하지 않은 경우 에셋을 Scene7에 업로드합니다. 다음은 권장되는 워크플로우입니다.
 
-1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)합니다.
+1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-files-using-via-ftp)합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. **[!UICONTROL Scene7 비디오]** 구성 요소로 작성합니다.
 
@@ -85,7 +85,7 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
    >[!NOTE]
    >
-   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)를 참조하십시오.
+   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=ko#video-presets-for-encoding-video-files)를 참조하십시오.
    >
    >범용 사전 설정을 구성할 때 응용 비디오 설정을 선택하거나 **[!UICONTROL 응용 비디오 인코딩]** 옵션을 선택하는 것이 좋습니다.
 

@@ -32,7 +32,7 @@ ht-degree: 2%
 ## 시작하기 전 {#before-you-start}
 
 * **[AEM Forms 게시 인스턴스 설정](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: 게시 인스턴스가 게시 모드에서 실행 중인 AEM [!DNL Forms]의 공개 인스턴스입니다. 프로덕션 환경에서 게시 인스턴스는 조직의 방화벽 외부에 있습니다.
-* **[복제 및 역방향 복제 설정](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: 복제는 작성자 인스턴스의 내용을 게시 인스턴스로 복사하고 게시 인스턴스의 사용자 입력(예: 양식 입력)을 작성자 인스턴스로 반환합니다.
+* **[복제 및 역방향 복제 설정](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-deploying/replication.html)**: 복제는 작성자 인스턴스의 내용을 게시 인스턴스로 복사하고 게시 인스턴스의 사용자 입력(예: 양식 입력)을 작성자 인스턴스로 반환합니다.
 
 ## 적응형 양식을 AEM 페이지로 Publish {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -54,7 +54,7 @@ AEM [!DNL Forms]은(는) 구성 요소인 AEM [!DNL Forms] 컨테이너를 제�
 
    기존 We.Retail [!DNL Site's] 페이지에 적응형 양식을 포함할 수도 있습니다. 예를 들어 미국 정보 페이지 [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html)입니다. 페이지를 만드는 시간이 절약됩니다. 아래 단계에서는 새로 만든 페이지를 사용합니다.
 
-   We.Retail 사이트에는 AEM이 함께 제공됩니다. We.Retail 사이트가 설치되어 있지 않으면 [We.Retail 참조 구현](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html)에서 사이트 설치를 참조하십시오.
+   We.Retail 사이트에는 AEM이 함께 제공됩니다. We.Retail 사이트가 설치되어 있지 않으면 [We.Retail 참조 구현](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/we-retail.html)에서 사이트 설치를 참조하십시오.
 
 1. ![속성](assets/properties.png) 페이지 정보를 선택하고 새로 만든 We.Retail 사이트 페이지에서 **[!UICONTROL 템플릿 편집]** 옵션을 선택합니다. 페이지의 템플릿이 브라우저의 새 탭에서 열립니다.
 1. **[!UICONTROL 레이아웃 컨테이너]** 상자 안을 선택하고 ![Feedmanagement](assets/feedmanagement.png)을(를) 선택합니다. **[!UICONTROL 허용된 구성 요소]** 탭에서 **[!UICONTROL 일반]** 아코디언을 확장하고 **[!UICONTROL AEM 양식]** 옵션을 선택한 다음 ![save_icon](assets/save_icon.svg)을(를) 선택합니다. 페이지에 AEM [!DNL Forms] 컨테이너 구성 요소를 사용할 수 있습니다.

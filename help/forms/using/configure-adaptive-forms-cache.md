@@ -60,10 +60,10 @@ ht-degree: 0%
 
 Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 [환경의 게시 인스턴스에 대해 플러시 에이전트를 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)합니다.
+1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 [환경의 게시 인스턴스에 대해 플러시 에이전트를 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance)합니다.
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [dispatcher.any 파일에 다음 내용을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [dispatcher.any 파일에 다음 내용을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다�
    * 적응형 양식은 업데이트된 버전의 양식이 게시되지 않을 때까지 캐시에 남아 있습니다.
 
    * 적응형 양식에서 참조된 리소스의 새 버전이 게시되면 영향을 받은 적응형 양식이 자동으로 무효화됩니다. 참조된 리소스의 자동 무효화에 대한 몇 가지 예외가 있습니다. 예외에 대한 해결 방법은 [문제 해결](#troubleshooting) 섹션을 참조하십시오.
-1. [아래의 규칙 dispatcher.any 또는 사용자 지정 규칙 파일을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 통신.
+1. [아래의 규칙 dispatcher.any 또는 사용자 지정 규칙 파일을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 통신.
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다�
       }
    ```
 
-1. [URL 매개 변수 무시 목록에 다음 매개 변수를 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [URL 매개 변수 무시 목록에 다음 매개 변수를 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {

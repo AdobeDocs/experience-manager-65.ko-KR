@@ -49,21 +49,21 @@ Document Security SDK, Adobe Acrobat, Microsoft® Office용 Document Security Ex
 
 * **Document Security SDK:** SDK는 기능이 풍부한 클라이언트입니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 지정 확장 프로그램, 플러그인 또는 애플리케이션을 개발할 수 있습니다. 예를 들어 확장을 개발하여 사용자 지정 파일 형식을 보호하거나 SDK를 DLP(데이터 손실 방지) 솔루션과 통합할 수 있습니다. Document Security SDK를 사용하여 문서를 지정된 AEM Forms 서버로 전송하기 위해 개발된 확장, 애플리케이션 및 플러그인이며 정책은 서버에 적용됩니다. AEM Forms CSDK(Document Security Client SDK)는 PPL(Portable Protection Library)을 사용하여 보호되는 문서의 보호를 해제할 수 없으며, 이와 반대도 마찬가지입니다.
 
-  Document Security SDK는 Java™ 및 C++ 모두에서 사용할 수 있습니다. Java™ SDK는 AEM Forms Document Security 오퍼링에 포함되어 있으며 JEE에 AEM Forms를 배포할 때 설치됩니다. C++ SDK를 조달하려면 [AEM 고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)에 문의하십시오. C++ SDK는 Microsoft® Visual Studio 2013을 사용하여 컴파일할 수 있습니다. SDK의 기능을 배우고 사용할 수 있는 [Document Security API 설명서](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) 사이트를 방문하십시오.
+  Document Security SDK는 Java™ 및 C++ 모두에서 사용할 수 있습니다. Java™ SDK는 AEM Forms Document Security 오퍼링에 포함되어 있으며 JEE에 AEM Forms를 배포할 때 설치됩니다. C++ SDK를 조달하려면 [AEM 고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)에 문의하십시오. C++ SDK는 Microsoft® Visual Studio 2013을 사용하여 컴파일할 수 있습니다. SDK의 기능을 배우고 사용할 수 있는 [Document Security API 설명서](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) 사이트를 방문하십시오.
 
 * **Adobe Acrobat:** Adobe Acrobat을 사용하여 Microsoft® Office, 웹 브라우저와 같이 인기 있는 데스크톱 응용 프로그램을 사용하여 만든 PDF 문서 또는 PDF 형식으로 인쇄를 지원하는 모든 응용 프로그램에 보안 정책을 적용할 수 있습니다.
 
-  [Adobe 웹 사이트](https://www.adobe.com/acrobat/free-trial-download.html)에서 Adobe Acrobat을 구입하고 다운로드할 수 있습니다. Adobe Acrobat 문서 [PDF에 대한 보안 정책 설정](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html)에서는 Adobe Acrobat에서 정책을 만들고 적용하는 방법에 대한 자세한 정보를 제공합니다.
+  [Adobe 웹 사이트](https://www.adobe.com/acrobat/free-trial-download.html)에서 Adobe Acrobat을 구입하고 다운로드할 수 있습니다. Adobe Acrobat 문서 [PDF에 대한 보안 정책 설정](https://helpx.adobe.com/kr/acrobat/using/setting-security-policies-pdfs.html)에서는 Adobe Acrobat에서 정책을 만들고 적용하는 방법에 대한 자세한 정보를 제공합니다.
 
 * **Microsoft® Office용 Document Security Extension**: Microsoft® Office용 Document Security Extension을 사용하여 Microsoft® Office 프로그램 내에서 Microsoft® Office 파일에 사전 정의된 정책을 적용할 수 있습니다. 확장은 승인된 사용자만 정책으로 보호된 Microsoft® Word, Excel 및 PowerPoint 파일을 사용할 수 있도록 합니다. 플러그인이 설치된 승인된 사용자만 정책으로 보호된 파일을 사용할 수 있습니다.
 
-  Document Security 확장은 Microsoft® Office 플러그인으로 사용할 수 있습니다. 확장을 얻으려면 [AEM 고객 지원 센터](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html)에 문의하십시오. 나중에 [Microsoft® Office용 Document Security Extension](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=en) 도움말을 방문하여 확장 기능 설치, 구성 및 사용에 대해 알아볼 수 있습니다.
+  Document Security 확장은 Microsoft® Office 플러그인으로 사용할 수 있습니다. 확장을 얻으려면 [AEM 고객 지원 센터](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html)에 문의하십시오. 나중에 [Microsoft® Office용 Document Security Extension](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=ko) 도움말을 방문하여 확장 기능 설치, 구성 및 사용에 대해 알아볼 수 있습니다.
 
 * **이식 가능한 보호 라이브러리:** PPL은 AEM Forms 서버로 문서를 보내지 않고 로컬로 문서를 보호합니다. 보안 자격 증명과 정책 세부 정보만 네트워크를 통해 전달됩니다. 또한 PPL을 사용하면 로그인한 사용자만 정책 검색 액세스를 제한할 수 있습니다. AEM 사용자에 로그인한 사용자의 컨텍스트가 있는 정책을 가져올 수 있습니다.
 
   위와 함께 PPL에는 Document Security SDK의 모든 기능이 포함되어 있습니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 지정 확장 프로그램, 플러그인 또는 애플리케이션을 개발할 수 있습니다. PPL은 CSDK(AEM Forms document security client SDK)를 사용하여 보호된 문서를 보호 해제할 수 없으며 이와 반대로 보호할 수도 없습니다.
 
-  PPL은 32비트 및 64비트 버전의 Java™ 및 C++ 언어에서 사용할 수 있습니다. 또한 OSGi에서 AEM Forms용 OSGi 번들로 사용할 수 있습니다. C++ PPL은 Microsoft® Visual Studio 2013으로 컴파일할 수 있습니다. AEM Forms Document Security 추가 기능에 라이선스를 부여한 경우 [AEM Forms Document Security](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 지원 팀에 연락하여 PPL을 확보할 수 있습니다. 나중에 PPL 도움말(라이브러리와 함께 제공됨)을 사용하여 PPL을 설정하고 사용할 수 있습니다.
+  PPL은 32비트 및 64비트 버전의 Java™ 및 C++ 언어에서 사용할 수 있습니다. 또한 OSGi에서 AEM Forms용 OSGi 번들로 사용할 수 있습니다. C++ PPL은 Microsoft® Visual Studio 2013으로 컴파일할 수 있습니다. AEM Forms Document Security 추가 기능에 라이선스를 부여한 경우 [AEM Forms Document Security](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support) 지원 팀에 연락하여 PPL을 확보할 수 있습니다. 나중에 PPL 도움말(라이브러리와 함께 제공됨)을 사용하여 PPL을 설정하고 사용할 수 있습니다.
 
 ### 보호된 문서 보기 또는 편집 {#view-or-edit-protected-documents}
 

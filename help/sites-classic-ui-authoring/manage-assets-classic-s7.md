@@ -19,7 +19,7 @@ ht-degree: 12%
 
 # 페이지에 Dynamic Media Classic(Scene7) 기능 추가{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic(Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic(Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=ko)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
 
 Dynamic Media Classic(Scene7)에 게시된 Experience Manager 에셋을 다양한 뷰어에서 볼 수 있습니다.
 

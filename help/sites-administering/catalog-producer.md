@@ -28,9 +28,9 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 
 >[!NOTE]
 >
->AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/indesign/using/files-templates.html)을 참조하세요.
+>AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/kr/indesign/using/files-templates.html)을 참조하세요.
 >
->InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠에 태그 지정](https://helpx.adobe.com/indesign/using/tagging-content-xml.html)을 참조하세요.
+>InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠에 태그 지정](https://helpx.adobe.com/kr/indesign/using/tagging-content-xml.html)을 참조하세요.
 
 >[!NOTE]
 >

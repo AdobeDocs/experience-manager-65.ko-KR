@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Experience Manager(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html)을 참조하십시오.
+>Adobe Experience Manager(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/kr/digital-publishing-solution/topics.html)을 참조하십시오.
 
 AEM은 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다.
 
@@ -32,7 +32,7 @@ AEM Preflight 앱은 게시하기 전에 앱과 콘텐츠를 미리 보는 테�
 
 >[!NOTE]
 >
->Preflight 앱에 대한 자세한 내용은 AEM Mobile On-demand Services 도움말의 [AEM Preflight 앱 사용](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)을 참조하세요.
+>Preflight 앱에 대한 자세한 내용은 AEM Mobile On-demand Services 도움말의 [AEM Preflight 앱 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/preflight-app.html)을 참조하세요.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ AEM 작성자는 AEM Mobile On-demand Services을 사용하여 앱을 만들 때
 
 >[!NOTE]
 >
->AEM 작성자는 권한 설정, 카드 및 레이아웃 만들기, 푸시 알림 전송도 담당합니다. 또한 AEM Mobile에서 컨텐츠 작성, 문서 및 컬렉션 관리, 배너, 카드 및 레이아웃 만들기 방법에 대한 자세한 내용은 [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2)을 참조하십시오.
+>AEM 작성자는 권한 설정, 카드 및 레이아웃 만들기, 푸시 알림 전송도 담당합니다. 또한 AEM Mobile에서 컨텐츠 작성, 문서 및 컬렉션 관리, 배너, 카드 및 레이아웃 만들기 방법에 대한 자세한 내용은 [AEM Mobile On-Demand Portal](https://helpx.adobe.com/kr/digital-publishing-solution/topics.html#dynamicpod_reference_2)을 참조하십시오.

@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## 링크 추적 구성 예 {#example-link-tracking-configuration}
 
-Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차를 수행하십시오. 프로시저에 [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)의 결과가 표시됩니다.
+Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차를 수행하십시오. 프로시저에 [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ko)의 결과가 표시됩니다.
 
 ### 일반 구성 {#general-configuration}
 

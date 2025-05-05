@@ -153,8 +153,8 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)에서 CORS용 개발
+>* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)
+>* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko)에서 CORS용 개발
 >
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
@@ -395,4 +395,4 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 자세한 내용은 다음을 참조하십시오.
 
 * [Assets HTTP API 설명서](/help/assets/mac-api-assets.md)
-* [AEM Gem 세션: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem 세션: OAuth](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
