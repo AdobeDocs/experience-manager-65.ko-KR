@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 1%
+source-wordcount: '3651'
+ht-degree: 4%
 
 ---
 
@@ -61,11 +61,11 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
   </tr>
   <tr>
    <td><strong>A: 지원됨</strong></td>
-   <td>Adobe은 이 구성에 대한 전체 지원 및 유지 관리 기능을 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스에서 다룹니다.</td>
+   <td>Adobe는 이 구성에 대한 전체 지원과 유지 관리를 제공합니다. 이 구성은 Adobe 품질 보증 프로세스에 따라 처리됩니다.</td>
   </tr>
   <tr>
    <td><strong>R: 제한된 지원</strong></td>
-   <td>고객의 프로젝트 성공을 보장하기 위해 Adobe은 제한된 지원 프로그램 내에서 모든 지원을 제공하며 이를 위해서는 특정 조건이 충족되어야 합니다. R 레벨 지원에는 공식적인 고객 요청 및 Adobe의 확인이 필요합니다. 자세한 내용은 Adobe 고객 지원 센터에 문의하십시오.</td>
+   <td>고객의 프로젝트 성공을 보장하기 위해 Adobe은 제한된 지원 프로그램 내에서 모든 지원을 제공하며 이를 위해서는 특정 조건이 충족되어야 합니다. R 레벨 지원에는 공식적인 고객 요청 및 Adobe의 확인이 필요합니다. 자세한 내용은 Adobe 고객 지원에 문의하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -74,7 +74,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 | 지원 수준 | 설명 |
 |---|---|
-| **Z: 지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성의 작동 여부에 대해 설명하지 않으며 이를 지원하지 않습니다. |
+| **Z: 지원되지 않음** | 구성이 지원되지 않습니다. Adobe에서는 해당 구성이 작동하는지 여부에 대해 언급하지 않으며 이를 지원하지 않습니다. |
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -208,8 +208,8 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 | IBM® AIX® 7.2 | Z: 지원되지 않음 |
 
 1. Linux® 커널 2.6, 3. x, 4. x, 5. x와 6. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat® 배포판의 파생물이 포함되어 있습니다. AEM Forms 추가 기능 기능은 CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
-2. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
-3. Adobe Managed Services에서 지원하는 Linux® 배포.
+1. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
+1. Adobe Managed Services에서 지원하는 Linux® 배포.
 
    >[!NOTE]
    >
@@ -220,10 +220,13 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 이상)
+   >* OpenSSL 3(OS의 기본 위치에 필요).
 
-4. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. 새 배포는 AEM Sites 및 Assets에 대한 온디맨드 요청입니다.
-5. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
-6. AEM Forms에서 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
+   *OpenSSL 3 설치의 경우: 라이브러리 libcrypto.so.3 및 libssl.so.3은 LD_LIBRARY_PATH 환경 변수가 나타내는 기본 라이브러리 경로에서 사용할 수 있어야 합니다. 비표준 위치에 설치된 경우 서버를 시작하기 전에 이 경로가 LD_LIBRARY_PATH에 추가되었는지 확인하십시오.*
+
+1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. 새 배포는 AEM Sites 및 Assets에 대한 온디맨드 요청입니다.
+1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
+1. AEM Forms에서 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
 
 >[!NOTE]
 >
@@ -250,7 +253,7 @@ Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법�
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=ko). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 Dispatcher 버전 4.3.2에서 사용할 수 있는 웹 서버는 다음과 같습니다.
 
@@ -271,13 +274,13 @@ Dispatcher 버전 4.3.2에서 사용할 수 있는 웹 서버는 다음과 같�
 
 ### 사용자 인터페이스 작성에 지원되는 브라우저 {#supported-browsers-for-authoring-user-interface}
 
-Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능 세트로 테스트됩니다.
+Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능 세트에 대한 테스트를 완료했습니다.
 
 AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 데스크탑 컴퓨터)과 태블릿 폼 팩터(예: Apple iPad 또는 Microsoft® 표면)에 최적화되어 있습니다. 휴대폰 폼 팩터는 지원되지 않습니다.
 
 >[!NOTE]
 >
->**빠른 릴리스 주기를 사용하는 브라우저 지원:**
+>**릴리스 주기가 빠른 브라우저 지원:**
 >
 >Mozilla Firefox, Google Chrome 및 Microsoft® Edge 릴리스 업데이트는 몇 개월마다 업데이트됩니다. Adobe은 이러한 브라우저의 향후 버전에 따라 아래에 명시된 대로 지원 수준을 유지하기 위해 Adobe Experience Manager에 대한 업데이트를 제공하기로 약속했습니다.
 
@@ -339,7 +342,7 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
 1. Firefox의 확장 지원 릴리스 [mozilla.org에 대해 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Apple iPad 지원
 
-### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
+### 웹 사이트에 지원되는 브라우저 {#supported-browsers-for-websites}
 
 일반적으로 AEM Sites에서 렌더링하는 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 디자인 및 구성 요소 출력의 구현에 따라 다르며, 따라서 이러한 부분을 구현하는 당사자의 통제 하에 있습니다.
 
@@ -462,11 +465,11 @@ Windows x86의 경우:
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> 최신 버전(더 이상 사용되지 않음)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> 최신 버전(더 이상 사용되지 않음)</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -514,7 +517,7 @@ Windows x86의 경우:
 >
 >또한,
 >
->* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html)이(가) 필요합니다.
+>* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이(가) 필요합니다.
 >* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 버전만 지원합니다.
 >* Microsoft® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
 >* 볼륨 라이선스가 있는 설치가 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 Microsoft® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 취득하고 다시 활성화하기 전까지 전환이 실패할 수 있습니다.
@@ -522,7 +525,7 @@ Windows x86의 경우:
 >* PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >* OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 AEM Forms 라이선스가 있는 동안 AEM Forms에서만 번들 버전에 프로그래밍 방식으로 액세스합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([온-프레미스](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하세요.
+>* Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 AEM Forms 라이선스가 있는 동안 AEM Forms에서만 번들 버전에 프로그래밍 방식으로 액세스합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([온-프레미스](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하세요.
 >* PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >* PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못했습니다.
 >* PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다.
