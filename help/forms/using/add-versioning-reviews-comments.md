@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 전제 조건 {#prerequisite-versioning}
 
-적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
+적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
 
 ## 적응형 양식 버전 관리 {#adaptive-form-versioning}
 
