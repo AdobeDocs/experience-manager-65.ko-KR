@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 AEM 6에서 색인을 구성하는 방법에 대한 내용입니다. 쿼리 및 인덱싱 성능 최적화에 대한 모범 사례는 [쿼리 및 인덱싱 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
+>이 문서는 AEM 6에서의 인덱스 구성에 대해 설명합니다. 쿼리 및 인덱싱 성능 최적화에 대한 모범 사례는 [쿼리 및 인덱싱 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 
 ## 소개 {#introduction}
 
@@ -136,7 +136,7 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 
 ### 전체 텍스트 검색 이해 {#understanding-fulltext-search}
 
-이 섹션의 설명서는 PostgreSQL, SQLite 및 MySQL의 Apache Lucene, Elasticsearch 및 전체 텍스트 인덱스에 적용됩니다. 다음 예제는 AEM/Oak/Lucene용입니다.
+이 섹션의 설명서는 Apache Lucene, Elasticsearch 및 PostgreSQL, SQLite 및 MySQL의 전체 텍스트 인덱스에 적용됩니다. 다음 예제는 AEM / Oak / Lucene입니다.
 
 인덱싱할 <b>데이터</b>
 
@@ -211,6 +211,10 @@ Lucene은 `n`개의 단어를 검색할 때 두 목록(또는 라운드 로빈 `
 | --- | --- | --- |
 
 여러 항목이 발견되면 점수별로 정렬됩니다.
+
+>[!NOTE]
+>
+>이 섹션에서 설명하는 검색 메커니즘은 Linux `grep` 명령처럼 부분 일치가 아닌 Lucene 인덱싱을 사용합니다.
 
 ### Lucene 속성 색인 {#the-lucene-property-index}
 
@@ -362,7 +366,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 Solr 인덱스의 목적은 전체 텍스트 검색이지만 경로, 속성 제한 및 기본 유형 제한 사항별로 검색을 인덱싱하는 데 사용할 수도 있습니다. 즉, Oak의 Solr 인덱스를 모든 유형의 JCR 쿼리에 사용할 수 있습니다.
 
-AEM의 통합은 저장소 수준에서 수행되므로 Solr은 AEM과 함께 제공되는 새로운 저장소 구현인 Oak에서 사용할 수 있는 인덱스 중 하나입니다.
+AEM의 통합은 저장소 수준에서 수행되므로 Solr은 AEM과 함께 제공되는 새로운 저장소 구현인 Oak에서 사용할 수 있는 색인 중 하나입니다.
 
 AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 있습니다.
 
@@ -431,7 +435,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 #### Solr에 대한 권장 구성 {#recommended-configuration-for-solr}
 
-다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하므로 다른 애플리케이션과 함께 사용하지 마십시오.
+다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하므로 다른 애플리케이션에는 사용하지 마십시오.
 
 아카이브를 제대로 사용하려면 아카이브 내용을 Solr Home 디렉토리에 직접 배치해야 합니다. 다중 노드 배포가 있는 경우 각 노드의 루트 폴더 바로 아래로 이동해야 합니다.
 
@@ -441,7 +445,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 
 ### AEM 색인화 도구 {#aem-indexing-tools}
 
-또한 AEM 6.1에는 Adobe Consulting Services Commons 도구 세트의 일부로 AEM 6.0에 있는 두 개의 색인 지정 도구가 통합되어 있습니다.
+AEM 6.1에는 Adobe Consulting Services Commons 도구 세트의 일부로 AEM 6.0에 있는 두 개의 인덱싱 도구가 통합되어 있습니다.
 
 1. **쿼리 설명**: 관리자가 쿼리 실행 방법을 이해하는 데 도움이 되도록 디자인된 도구입니다.
 1. 기존 색인을 유지 관리하기 위한 웹 사용자 인터페이스인 **Oak 색인 관리자**.
