@@ -1,12 +1,12 @@
 ---
-title: 버전, 주석 및 주석을 AEM 6.5 적응형 양식에 추가합니다.
-description: AEM 6.5 적응형 양식 핵심 구성 요소를 사용하여 적응형 양식에 주석, 주석 및 버전을 추가할 수 있습니다.
+title: 버전, 주석 및 주석을 am AEM 6.5 적응형 양식에 추가합니다.
+description: AEM 6.5 적응형 양식 핵심 구성 요소를 사용하여 적응형 양식에 주석, 주석 및 버전을 추가하십시오.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,20 @@ ht-degree: 0%
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
 <!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview"> This feature is under the early adopter program. If you're interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
 
 <span class="preview">이 기능은 기본적으로 사용할 수 없습니다. 공식 주소에서 aem-forms-ea@adobe.com에 작성하여 기능에 대한 액세스를 요청할 수 있습니다.</span>
 
 적응형 양식 핵심 구성 요소를 사용하여 양식 작성자는 양식에 버전 관리, 주석 및 주석을 추가할 수 있습니다. 이러한 기능을 사용하면 여러 버전을 만들고 관리하고, 주석을 통해 공동 작업하고, 특정 양식 섹션에 메모를 추가할 수 있으므로 양식 개발을 간소화할 수 있으므로 양식 작성 경험이 향상됩니다.
 
+적응형 양식의 버전 관리, 댓글 달기 및 주석 기능에 대한 자세한 내용은 이 단계별 비디오를 참조하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## 전제 조건 {#prerequisite-versioning}
 
-적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
+적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
 
 ## 적응형 양식 버전 관리 {#adaptive-form-versioning}
 
@@ -34,7 +38,7 @@ ht-degree: 0%
 양식의 버전을 만들려면 아래 단계를 수행하십시오.
 
 1. AEM Forms 환경에서 **[!UICONTROL 양식]**>>**[!UICONTROL Forms 및 문서]**(으)로 이동하여 **양식**&#x200B;을(를) 선택합니다.
-1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**&#x200B;을 선택합니다.
+1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**을 선택합니다.
    ![양식 선택](assets/select-a-form.png)
 1. 왼쪽 하단 패널에 있는 **세 점**&#x200B;을 클릭하고 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.
 1. 양식 버전에 레이블을 입력하면 댓글을 통해 양식에 대한 정보를 추가할 수도 있습니다.
@@ -75,10 +79,10 @@ ht-degree: 0%
 
 1. **[!UICONTROL 편집]** 모드에서 양식을 엽니다.
 
-1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭합니다.
+1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**을 클릭합니다.
    ![주석](assets/annotation.png)
 
-1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭하여 주석을 추가합니다.
+1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**을 클릭하여 주석을 추가합니다.
    ![주석 추가](assets/add-annotation.png)
 
 1. 이제 주석을 추가하고 여러 색상으로 스케치를 그려 구성 요소를 형성할 수 있습니다.
