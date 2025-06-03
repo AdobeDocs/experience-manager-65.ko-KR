@@ -1,15 +1,15 @@
 ---
 title: 사용자 지정 독립 실행형 설치
-description: 독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다.
+description: 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 
 
 ### Java 11 고려 사항 {#java-considerations}
 
-oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다.
+Oracle Java 11(또는 일반적으로 Java 버전이 8보다 최신임)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다.
 
 * `stdout.log`에서 관련 리플렉션 액세스 WARNING 메시지를 방지하려면 `-add-opens` 스위치를 추가해야 합니다.
 
@@ -86,10 +86,6 @@ oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하�
 * 문제가 발생하면 웹 콘솔과 저장소에 연결할 수 없습니다. 이를 통해 추가 번들을 이 디렉토리에 넣을 수 있으며 설치해야 합니다.
 * `crx-quickstart/install` 폴더는 빠른 시작을 시작하기 전에 만들 수 있으며 추가 패키지를 넣을 수 있습니다.
 
->[!NOTE]
->
->예를 보려면 [서버 시작 시 자동으로 CRX 패키지를 설치하는 방법](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html)을 참조하십시오.
-
 ## Adobe Experience Manager as a Windows Service 설치 및 시작 {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -128,7 +124,7 @@ AEM as a Windows 서비스를 설치하고 시작하려면 다음을 수행하�
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows는 서비스가 실행 중임을 나타냅니다. AEM이 시작되고 작업 관리자에 prunsrv 실행 파일이 나타납니다. 웹 브라우저에서 AEM(예: `https://localhost:4502`)으로 이동하여 AEM을 시작합니다.
+1. Windows는 서비스가 실행 중임을 나타냅니다. AEM이 시작되고 작업 관리자에 prunsrv 실행 파일이 나타납니다. 웹 브라우저에서 AEM(예: `https://localhost:4502`)로 이동하여 AEM을 시작합니다.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -144,7 +140,7 @@ AEM as a Windows 서비스를 설치하고 시작하려면 다음을 수행하�
 
 ## 임시 작업 디렉터리 위치 재정의 {#redefining-the-location-of-the-temporary-work-directory}
 
-Java 컴퓨터의 임시 폴더의 기본 위치는 `/tmp`입니다. AEM은 예를 들어 패키지를 빌드할 때 이 폴더도 사용합니다.
+Java 컴퓨터의 임시 폴더의 기본 위치는 `/tmp`입니다. AEM은 패키지를 빌드할 때 이 폴더도 사용합니다.
 
 임시 폴더의 위치를 변경하려면(예: 사용 가능한 공간이 더 많은 디렉터리가 필요한 경우) JVM 매개 변수를 추가하여 * `<new-tmp-path>`*을(를) 정의합니다.
 
@@ -274,9 +270,9 @@ Log files
 
 ## Amazon EC2 환경에 AEM 설치 {#installing-aem-in-the-amazon-ec-environment}
 
-Amazon Elastic Compute Cloud(EC2) 인스턴스에 AEM을 설치할 때 EC2 인스턴스에 작성자와 게시를 모두 설치하면 작성자 인스턴스가 [AEM Manager의 인스턴스 설치](#installinginstancesofaemmanager)의 절차에 따라 올바르게 설치됩니다. 그러나 Publish 인스턴스가 작성자가 됩니다.
+Amazon Elastic Compute Cloud(EC2) 인스턴스에 AEM을 설치할 때 EC2 인스턴스에 작성자와 게시를 모두 설치하면 작성자 인스턴스가 [AEM Manager의 인스턴스 설치](#installinginstancesofaemmanager)의 절차에 따라 올바르게 설치됩니다. 그러나 게시 인스턴스는 작성자가 됩니다.
 
-EC2 환경에 Publish 인스턴스를 설치하기 전에 다음을 수행하십시오.
+EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십시오.
 
 1. 인스턴스를 처음 시작하기 전에 Publish 인스턴스에 대한 jar 파일의 압축을 풉니다. 파일의 압축을 풀려면 다음 명령을 사용합니다.
 
@@ -344,7 +340,7 @@ AEM WCM이 시작되면 다음에 액세스할 수도 있습니다.
 
 ### CRXDE Lite 액세스 {#accessing-crxde-lite}
 
-CRXDE Lite을 열려면 시작 화면에서 **CRXDE Lite**&#x200B;을 선택하거나 브라우저를 사용하여 다음으로 이동할 수 있습니다.
+CRXDE Lite 시작 화면에서 **CRXDE Lite**&#x200B;을(를) 선택하거나 브라우저를 사용하여 다음 위치로 이동할 수 있습니다.
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -380,12 +376,12 @@ Adobe CQ 웹 콘솔에 액세스하려면 시작 화면에서 **OSGi 콘솔**&#x
 
 ## Adobe Experience Manager 제거 {#uninstalling-adobe-experience-manager}
 
-AEM은 단일 디렉토리에 설치되므로 제거 유틸리티가 필요하지 않습니다. AEM 제거 방법은 달성하려는 내용과 사용하는 영구 스토리지에 따라 다르지만 설치 디렉토리 전체를 삭제하는 것만큼 간단할 수 있습니다.
+AEM은 단일 디렉터리에 설치되므로 제거 유틸리티가 필요하지 않습니다. AEM 제거 방법은 달성하려는 내용과 사용하는 영구 스토리지에 따라 다르지만 제거 방법은 전체 설치 디렉토리를 삭제하는 것만큼 간단할 수 있습니다.
 
 영구 스토리지가 설치 디렉토리(예: 기본 TarPM 설치)에 포함된 경우 폴더를 삭제하면 데이터도 제거됩니다.
 
 >[!NOTE]
 >
->Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것을 권장합니다. 전체 &lt;cq-installation-directory>를 삭제하면 저장소가 삭제됩니다. 삭제하기 전에 저장소 데이터를 유지하려면 다른 폴더를 삭제하기 전에 &lt;cq-installation-directory>/crx-quickstart/repository 폴더를 다른 위치로 이동하거나 복사하십시오.
+>Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것을 적극 권장합니다. 전체 &lt;cq-installation-directory>를 삭제하면 저장소가 삭제됩니다. 삭제하기 전에 저장소 데이터를 유지하려면 다른 폴더를 삭제하기 전에 &lt;cq-installation-directory>/crx-quickstart/repository 폴더를 다른 위치로 이동하거나 복사하십시오.
 
-AEM의 설치에서 외부 스토리지(예: 데이터베이스 서버)를 사용하는 경우 폴더를 제거하면 데이터가 자동으로 제거되지는 않지만 스토리지 구성이 제거되므로 JCR 콘텐츠를 복원하기가 어렵습니다.
+AEM 설치 시 데이터베이스 서버와 같은 외부 스토리지를 사용하는 경우 폴더를 제거해도 데이터가 자동으로 제거되지는 않지만 스토리지 구성은 제거되므로 JCR 콘텐츠를 복원하기가 어렵습니다.
