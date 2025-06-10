@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * AEM 6.5
    * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
@@ -136,9 +136,9 @@ Universal Editor는 추가 구성이 필요한 여러 패키지를 활용합니�
 AEM이 업데이트 및 구성되면 고유한 로컬 개발 및 테스트를 위해 로컬 유니버설 편집기 서비스를 설정할 수 있습니다.
 
 1. Node.js 버전 >=20을 설치합니다.
-1. [Software Distribution](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)에서 최신 유니버설 편집기 서비스 다운로드 및 압축 풀기
+1. [Software Distribution](https://experienceleague.adobe.com/ko/docs/experience-cloud/software-distribution/home)에서 최신 유니버설 편집기 서비스 다운로드 및 압축 풀기
 1. 환경 변수 또는 `.env` 파일을 통해 유니버설 편집기 서비스를 구성하십시오.
-   * [자세한 내용은 AEM as a Cloud Service 유니버설 편집기 설명서를 참조하세요.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [자세한 내용은 AEM as a Cloud Service 유니버설 편집기 설명서를 참조하세요.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 내부 IP 재작성이 필요한 경우 `UES_MAPPING` 옵션을 사용해야 할 수 있습니다.
 1. `universal-editor-service.cjs` 실행
 
@@ -157,7 +157,7 @@ AEM이 구성되어 있고 로컬 유니버설 편집기 서비스가 실행 중
 
    >[!NOTE]
    >
-   >8080이 기본 포트입니다. [내 `.env` 파일,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)에서 `UES_PORT` 매개 변수를 사용하여 이 값을 변경한 경우 여기에서 포트 값을 적절하게 조정해야 합니다.
+   >8080이 기본 포트입니다. [내 `.env` 파일,](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)에서 `UES_PORT` 매개 변수를 사용하여 이 값을 변경한 경우 여기에서 포트 값을 적절하게 조정해야 합니다.
 
 1. Apache를 다시 시작합니다.
 
@@ -165,7 +165,7 @@ AEM이 구성되어 있고 로컬 유니버설 편집기 서비스가 실행 중
 
 AEM이 업데이트되고 로컬 유니버설 편집기 서비스가 실행되면 유니버설 편집기를 사용하여 headless 콘텐츠 편집을 시작할 수 있습니다.
 
-그러나 범용 편집기를 사용하려면 앱을 계측해야 합니다. 여기에는 콘텐츠를 지속하는 방법과 위치를 편집기에 지시하는 메타 태그가 포함됩니다. 이 계기에 대한 자세한 내용은 [AEM as a Cloud Service용 유니버설 편집기 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)를 참조하세요.
+그러나 범용 편집기를 사용하려면 앱을 계측해야 합니다. 여기에는 콘텐츠를 지속하는 방법과 위치를 편집기에 지시하는 메타 태그가 포함됩니다. 이 계기에 대한 자세한 내용은 [AEM as a Cloud Service용 유니버설 편집기 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)를 참조하세요.
 
 AEM as a Cloud Service을 사용하는 범용 편집기에 대한 설명서를 참조할 때 AEM 6.5에서 사용할 때 다음 변경 사항이 적용됩니다.
 
@@ -185,7 +185,7 @@ AEM as a Cloud Service을 사용하는 범용 편집기에 대한 설명서를 �
 
 >[!TIP]
 >
->범용 편집기를 시작하는 개발자를 위한 포괄적인 안내서는 이 섹션에서 언급한 대로 AEM 6.5 지원에 필요한 변경 사항을 염두에 두고 AEM as a Cloud Service 설명서의 [AEM 개발자를 위한 범용 편집기 개요](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) 문서를 참조하십시오.
+>범용 편집기를 시작하는 개발자를 위한 포괄적인 안내서는 이 섹션에서 언급한 대로 AEM 6.5 지원에 필요한 변경 사항을 염두에 두고 AEM as a Cloud Service 설명서의 [AEM 개발자를 위한 범용 편집기 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) 문서를 참조하십시오.
 
 ## AEM 6.5와 AEM as a Cloud Service의 차이점 {#differences}
 
