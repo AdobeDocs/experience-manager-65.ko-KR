@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dbee0e382bad460746416dac5206843ed67bdf04
+source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6485'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
   최신 버전에서는 지원되는 플랫폼 매트릭스에 대한 업데이트를 도입하여 최신 기술과의 호환성을 보장합니다.
 
-   * IBM Content Manager 클라이언트 8.7
+   * IBM® Content Manager 클라이언트 8.7
 
    * MongoDB Enterprise 7.0
 
@@ -71,7 +71,7 @@ ht-degree: 2%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 #### 접근성 {#sites-accessibility-6523}
 
-* 이제 AEM 편집기 페이지의 캔버스 섹션에서 전체 키보드 접근성을 지원합니다. 사용자는 마우스로 가리키지 않고 키보드만 사용하여 섹션 제목을 활성화하고 버튼을 편집할 수 있습니다. 이 업데이트는 WCAG 2.1.1을 준수하도록 하며 티저, 이미지, 회전 메뉴, 레이아웃, 시간 비틀기 및 주석 모달과 같은 구성 요소 전반의 사용성을 개선합니다. (SITES-25256) <!-- 6.5 LTS SP1 -->
+* 이제 AEM 편집기 페이지의 캔버스 섹션에서 전체 키보드 접근성을 지원합니다. 사용자는 마우스로 가리키지 않고 키보드만 사용하여 섹션 제목을 활성화하고 버튼을 편집할 수 있습니다. 이 업데이트는 WCAG 2.1.1을 준수하도록 하며 구성 요소(예: 티저, 이미지, 회전 메뉴, 레이아웃, 타임워프 및 주석 양식) 간의 사용성을 개선합니다. (SITES-25256) <!-- 6.5 LTS SP1 -->
 * 페르소나, 장바구니 또는 포기와 같은 단추를 활성화한 후 키보드 포커스가 예기치 않게 인구 통계학적 도구 모음의 시작으로 재설정되는 AEM 페이지 편집기의 접근성 문제를 해결했습니다. 이제 일관된 키보드 탐색 및 화면 판독기 워크플로우를 지원하기 위해 활성화된 단추에 포커스가 유지됩니다. (SITES-25306)
 * AEM 페이지 편집기에서 키보드만 사용하여 여러 대화 상자와 모달(예: 에셋 레일 또는 레이아웃 미리 보기)의 캔버스 요소를 작동할 수 없는 중요한 접근성 문제를 수정했습니다. 모든 대화형 캔버스 요소는 이제 키보드 전용 탐색을 지원하므로 WCAG 2.1 성공 기준 2.1.1(SITE-25256)을 준수합니다
 * 만들기 팝업의 인터랙티브 목록 항목이 잘못된 ARIA 역할을 사용하는 사이트 관리 UI의 접근성 문제를 수정했습니다. 링크처럼 동작한 요소에 `role="menuitem"` 대신 `role="listitem"`이(가) 할당되어 ARIA 디자인 패턴을 위반하고 화면 판독기를 혼동했습니다. 업데이트는 모든 목록 구성 요소가 적절한 의미 체계 역할을 따라 향상된 키보드 및 보조 기술 지원을 제공하도록 합니다. (SITES-24493)
@@ -105,7 +105,7 @@ ht-degree: 2%
 * 선택 대화 상자의 검색 결과에 대한 NVDA/내레이터 공지가 개선되었습니다. NVDA 또는 내레이터와 같은 화면 판독기를 사용할 때 검색 결과가 검색되는지 여부를 알리도록 선택 열기 대화 상자를 업데이트했습니다. 이러한 개선된 기능은 보조 기술에 의존하는 사용자가 시각적 확인이 필요 없이 검색 작업의 결과를 이해하는 데 도움이 됩니다. (SITES-26883)
 * 댓글 입력 필드 옆에 있는 줄임표 아이콘에 대한 ARIA 역할을 수정했습니다. 올바른 ARIA 역할을 사용하도록 주석 입력 필드 옆에 있는 생략 부호(세 점) 아이콘을 업데이트하여 화면 판독기에서 요소를 정확하게 식별할 수 있도록 했습니다. 이러한 개선 사항은 접근성 규정 준수를 향상시키며 보조 기술에 의존하는 사용자의 경험을 개선합니다. (SITES-26881)
 * Coral UI 구성 요소에서 잘못된 ARIA 속성을 수정했습니다. 모든 ARIA 속성이 유효한 값을 사용하도록 Coral UI 구성 요소를 업데이트하여 접근성 준수를 개선했습니다. 특히 `aria-modal="dialog"`과(와) 같은 잘못된 값이 잘못 할당된 경우가 해결되었습니다. 이 향상된 기능을 통해 화면 판독기에서 대화 상자 요소를 올바르게 해석할 수 있으므로 보조 기술에 의존하는 사용자의 접근성을 향상시킬 수 있습니다. (SITES-26873)
-* 리플로우 시나리오에서 아이콘에 대한 가시성 및 도구 설명이 개선되었습니다. **다운로드**, **에셋 재처리** 및 **체크아웃** 아이콘에 대한 도구 설명이 올바르게 표시되도록 리플로우 동작을 개선했습니다. 뷰포트 크기가 조정되거나 브라우저 확대/축소 설정이 변경될 때 아이콘과 해당 레이블이 보이지 않는 접근성 문제에 초점을 맞췄습니다. 이 수정 사항은 리플로우 동안 가시성을 유지하고 적절한 아이콘 설명을 제공하여 저시력 사용자를 지원합니다. (SITES-26871)
+* 리플로우 시나리오에서 아이콘에 대한 가시성과 도구 설명이 개선되었습니다. **다운로드**, **에셋 재처리** 및 **체크아웃** 아이콘에 대한 도구 설명이 올바르게 표시되도록 리플로우 동작을 개선했습니다. 뷰포트 크기가 조정되거나 브라우저 확대/축소 설정이 변경될 때 아이콘과 해당 레이블이 보이지 않는 접근성 문제에 초점을 맞췄습니다. 이 수정 사항은 Reflow 동안 가시성을 유지하고 적절한 아이콘 설명을 제공하여 저시력 사용자를 지원합니다. (SITES-26871)
 
 #### 관리 사용자 인터페이스{#sites-adminui-6523}
 
@@ -119,7 +119,7 @@ ht-degree: 2%
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * `DeleteVariationIT.testUpdateBasic`에 대한 유효성 검사 테스트 실패를 수정했습니다. 서비스 팩 유효성 검사를 실행하는 동안 `DeleteVariationIT.testUpdateBasic` 테스트가 더 이상 실패하지 않습니다. 이 수정 사항은 JSON 처리 논리에서 누락된 텍스트 매핑 문제를 수정하여 테스트 안정성을 보장하고 불필요한 테스트 중단을 방지합니다. (SITES-28022)
-* 이제 AEM은 이미지 에셋에서 잘못된 형식의 XMP 메타데이터로 인한 성능 저하를 방지합니다. 숫자 세그먼트나 정규화되지 않은 구조가 있는 Assets과 같이 잘못되거나 호환되지 않는 XMP 속성 이름이 포함된 는 처리 중에 더 이상 반복된 경고 로그를 트리거하지 않습니다. 시스템은 문제가 있는 메타데이터를 필터링하여 자산 수집 및 유효성 검사를 오류 없이 완료합니다. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
+* 이제 AEM은 이미지 에셋에서 잘못된 형식의 XMP 메타데이터로 인한 성능 저하를 방지합니다. 숫자 세그먼트나 정규화되지 않은 구조가 있는 Assets과 같이 잘못되거나 호환되지 않는 XMP 속성 이름이 포함된 는 처리 중에 더 이상 반복된 경고 로그를 트리거하지 않습니다. 시스템은 문제가 있는 메타데이터를 필터링하여 자산 수집 및 유효성 검사가 오류 없이 완료되도록 합니다. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -215,11 +215,11 @@ ht-degree: 2%
 
 ### [!DNL Assets]{#assets-6523}
 
-* ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;을(를) 선택하고&#x200B;**[!UICONTROL &#x200B; Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후 [!DNL AEM] 온-프레미스(6.5.22.0) 탐색 페이지에서 다음 문제가 발생합니다.
+* ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**을(를) 선택하고**[!UICONTROL  Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후 [!DNL AEM] 온-프레미스(6.5.22.0) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * [!DNL AEM] On-Premise(6.5.22.0) 탐색 페이지에서 폴더 이름에 `/`이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-indesign` 대신 `x-adobe-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -260,89 +260,89 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 #### Forms Designer
 
-* 사용자가 exportDataAPI를 사용하여 XFA 기반 PDF에 대한 데이터를 내보낼 때 결과 XML이 Acrobat Reader을 사용하여 수동으로 내보낸 XML 데이터와 비교할 때 불일치를 표시합니다. 일부 필드의 값이 Acrobat Reader에서 생성된 출력과 비교하여 출력에서 누락되었습니다. (LC-3922791).
+* 사용자가 exportDataAPI를 사용하여 XFA 기반 PDF에 대한 데이터를 내보낼 때 결과 XML이 Acrobat Reader을 사용하여 수동으로 내보낸 XML 데이터와 비교할 때 불일치를 표시합니다. 일부 필드의 값이 Acrobat Reader에서 생성된 출력과 비교하여 출력에서 누락되었습니다. (LC-3922791)
 
-* AEM Forms 6.5.22.0에서 사용자가 Workbench의 출력 서비스를 사용하여 태그가 지정된 PDF을 생성하려고 하면 결과 PDF에 콘텐츠 항목의 테이블 참조 태그 아래에 추가 레이블 태그가 포함됩니다. (LC-3922756)
+* AEM Forms 6.5.22.0에서 Workbench의 출력 서비스로 태그가 지정된 PDF을 생성하면 목차 항목의 참조 태그 아래에 예기치 않은 레이블 태그가 추가됩니다. (LC-3922756)
 
-* 사용자가 AEM Forms Designer에서 아래쪽 또는 오른쪽 맞춤의 필드 캡션을 배치하면 태그 트리에 해당 값 없이 캡션만 포함되어 불완전한 접근성 태깅이 발생합니다. (LC-3922619).
+* 사용자가 AEM Forms Designer에서 아래쪽 또는 오른쪽 맞춤의 필드 캡션을 배치하면 태그 트리에 해당 값 없이 캡션만 포함되어 불완전한 접근성 태깅이 발생합니다. (LC-3922619)
 
-* AEM Forms 6.5 서비스 팩 6에서 AEM Forms 서비스 팩 20으로 업그레이드 시 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 줍니다. (LC-3922551).
+* AEM Forms 6.5 서비스 팩 6에서 AEM Forms 서비스 팩 20으로 업그레이드 시 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 줍니다. (LC-3922551)
 
-* 사용자가 AEM Forms 서비스 팩 18의 에이전트 UI에서 문자를 렌더링할 때 FormService.render() API로 인해 콘텐츠가 올바르게 표시되지 않습니다. (LC-3922461).
+* 사용자가 AEM Forms 서비스 팩 18의 에이전트 UI에서 문자를 렌더링할 때 FormService.render() API로 인해 콘텐츠가 올바르게 표시되지 않습니다. (LC-3922461)
 
 #### Forms
 
-* 사용자가 AEM Forms 적응형 양식의 루트 패널에서 &quot;제목의 리치 텍스트 허용&quot;을 활성화하면 중첩된 패널의 &quot;기록 문서에서 제목 제외&quot; 설정이 자동 생성된 기록 문서에서 루트 패널의 제목을 잘못 숨깁니다. (FORMS-19696).
+* AEM Forms에서 루트 패널에서 &quot;제목에 대한 리치 텍스트 허용&quot;을 활성화하면 중첩된 패널에서 &quot;기록 문서에서 제목 제외&quot;가 루트 패널의 제목을 잘못 숨깁니다. 생성된 기록 문서에서도 마찬가지입니다. (FORMS-19696)
 
-* 사용자가 온-프레미스 AEM 6.5 인스턴스에서 JSON 스키마의 aem:afProperties를 사용하여 핵심 구성 요소에 사용자 지정 sling:resourceType을 할당하려고 하면 사용자 지정 리소스 유형이 적용되지 않습니다. (FORMS-19691).
+* 시스템은 AEM 6.5의 JSON 스키마에서 `aem:afProperties`을(를) 통해 할당된 사용자 지정 `sling:resourceType`을(를) 무시합니다. 렌더링하는 동안 사용자 지정 리소스 유형이 무시됩니다. (FORMS-19691)
 
-* 사용자가 URI를 사용하여 미리 채워진 첨부 파일이 있는 적응형 양식을 제출할 때 이진 데이터가 누락되어 양식 제출이 NullPointerException으로 실패합니다. (FORMS-19371) (FORMS-19486).
+* 사용자가 URI를 사용하여 미리 채워진 첨부 파일이 있는 적응형 양식을 제출할 때 이진 데이터가 누락되어 양식 제출이 NullPointerException으로 실패합니다. (FORMS-19371) (FORMS-19486)
 
-* 사용자가 PDF 6.5 Forms의 &#39;Forms 및 문서&#39; 섹션 아래에 AEM을 업로드하면 타임라인 기능이 작동하지 않습니다. (FORMS-19407)(FORMS-19234).
+* 사용자가 PDF 6.5 Forms의 &#39;Forms 및 문서&#39; 섹션 아래에 AEM을 업로드하면 타임라인 기능이 작동하지 않습니다. (FORMS-19407)(FORMS-19234)
 
-* 사용자가 AEM Forms에서 기본 제공(OOTB) 파일 첨부 구성 요소를 사용하여 파일을 업로드할 때 보안 취약성이 식별됩니다. 이는 인가받지 않은 실체에 의해 제출 프로세스의 잠재적인 차단으로 이어진다. (FORMS-19271).
+* 사용자가 AEM Forms에서 기본 제공(OOTB) 파일 첨부 구성 요소를 사용하여 파일을 업로드할 때 보안 취약성이 식별됩니다. 이 문제는 권한 없는 엔터티에 의해 제출 프로세스를 잠재적으로 차단하는 결과를 초래합니다. (FORMS-19271)
 
-* 사용자가 기록 문서(DoR)를 자동으로 생성하도록 AEM Forms에서 기본 제공 적응형 양식을 구성할 때 Acrobat Reader 문서 속성의 &quot;제목&quot; 필드에 캡처된 DoR 제목이 표시되지 않고 기본적으로 양식 제목이 파일 이름 대신 표시되지 않습니다. (FORMS-19263).
+* 사용자가 기록 문서(DoR)를 자동으로 생성하도록 AEM Forms에서 기본 제공 적응형 양식을 구성할 때 Acrobat Reader 문서 속성의 &quot;제목&quot; 필드에 캡처된 DoR 제목이 표시되지 않습니다. 기본적으로 파일 이름 대신 양식 제목이 표시되지 않습니다. (FORMS-19263)
 
-* 사용자가 에이전트 UI에서 대화형 통신을 열면 미리 채워진 데이터를 완전히 지울 수 없습니다. 제거할 때 동일한 데이터로 자동으로 다시 채워집니다. (FORMS-19151).
+* 사용자가 에이전트 UI에서 대화형 통신을 열면 미리 채워진 데이터를 완전히 지울 수 없습니다. 제거할 때 동일한 데이터로 자동으로 다시 채워집니다. (FORMS-19151)
 
-* 사용자가 에이전트 UI의 날짜 필드를 미리 볼 때 VM의 UTC 설정과 시스템의 날짜 해석 간 시간대 불일치로 인해 날짜가 예기치 않게 변경됩니다. (FORMS-19115).
+* 사용자가 에이전트 UI에서 날짜 필드를 미리 볼 때 날짜가 예기치 않게 변경됩니다. 이 문제는 VM의 UTC 설정과 시스템의 날짜 해석 간 시간대 불일치로 인해 발생합니다. (FORMS-19115)
 
-* 사용자가 양식을 제출할 때 첨부 파일이 중복되어 동일한 파일이 여러 번 업로드될 수 있습니다. (FORMS-19045)(FORMS-19051).
+* 사용자가 양식을 제출할 때 첨부 파일이 중복되어 동일한 파일이 여러 번 업로드될 수 있습니다. (FORMS-19045)(FORMS-19051)
 
-* 프로덕션 환경과 하위 환경 모두에서 AEM 6.5 Document Security의 정책 세트에 코디네이터를 추가할 수 없습니다. (FORMS-18603, FORMS-18212, FORMS-19697).
+* 프로덕션 환경과 하위 환경 모두에서 AEM 6.5 Document Security의 정책 세트에 코디네이터를 추가할 수 없습니다. (FORMS-18603, FORMS-18212, FORMS-19697)
 
-* 사용자가 데스크탑 모드에서 AEM Forms 서비스 팩 22의 빈 필드로 &quot;datepicker-calendar-icon&quot;을 클릭하면 정의되지 않은 _$focusedDate 변수로 인해 오류가 발생하여 연관된 사용자 정의 스크립트가 중단됩니다. (FORMS-18483)(FORMS-18268).
+* 사용자가 데스크탑 모드에서 AEM Forms 서비스 팩 22의 빈 필드로 &quot;datepicker-calendar-icon&quot;을 클릭하면 정의되지 않은 _$focusedDate 변수로 인해 오류가 발생하여 연관된 사용자 정의 스크립트가 중단됩니다. (FORMS-18483)(FORMS-18268)
 
 * AEM Forms 서비스 팩 19(6.5.19.0)에서 고객이 문자를 미리 볼 때 &#39;단어 단위&#39; 필드에 숫자 값이 잘못 표시되거나 업데이트되지 않아 콘텐츠가 잘못 정렬되고 공백이 누락됩니다. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
 
-* 고객이 RHEL에서 AEM Forms 6.5 SP19에 저장된 문자를 미리 보면 콘텐츠가 잘못 정렬되고, 공백이 없고, &#39;x&#39;와 같은 예기치 않은 문자가 나타납니다. (FORMS-18422)(FORMS-17641).
+* 고객이 RHEL에서 AEM Forms 6.5 SP19에 저장된 문자를 미리 보면 콘텐츠가 잘못 정렬되고, 공백이 없고, &#39;x&#39;와 같은 예기치 않은 문자가 나타납니다. (FORMS-18422)(FORMS-17641)
 
-* 사용자가 AEM Forms에서 탭 간을 이동할 때 첫 번째 탭의 구성 요소 선택이 응답하지 않습니다. (FORMS-18345).
+* 사용자가 AEM Forms에서 탭 간을 이동할 때 첫 번째 탭의 구성 요소 선택이 응답하지 않습니다. (FORMS-18345)
 
-* AEM Forms 6.5.21.0에서 사용자가 WebToPDF 옵션을 사용하여 HTML 파일을 PDF으로 변환할 때 출력 PDF에 메타데이터 및 제목 태그를 포함한 헤더 섹션이 없습니다. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224).
+* AEM Forms 6.5.21.0에서 사용자가 WebToPDF 옵션을 사용하여 HTML 파일을 PDF으로 변환할 때 출력 PDF에 메타데이터 및 제목 태그를 포함한 헤더 섹션이 없습니다. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 
-* AEM JEE Process Manager SDK에서 사용자가 retryAction(long actionOid) 메서드를 호출하면 시스템이 tb_action_instance 테이블에 있는 첫 번째 작업을 잘못 다시 시도합니다. 특정 작업 ID가 제공되거나 ID가 null인 경우에도 이러한 문제가 발생하여 의도하지 않은 동작이 발생합니다. (FORMS-18187).
+* AEM JEE Process Manager SDK에서 사용자가 retryAction(long actionOid) 메서드를 호출하면 시스템이 tb_action_instance 테이블에 있는 첫 번째 작업을 잘못 다시 시도합니다. 이 워크플로우는 특정 작업 ID가 제공되거나 ID가 null인 경우에도 발생하며 이로 인해 의도하지 않은 동작이 발생합니다. (FORMS-18187)
 
-* SP22로 업데이트한 후 오류 메시지를 표시하지 않고 초안 저장 및 제출 기능에 오류가 발생하는 문제가 발생합니다. (FORMS-18069).
+* SP22로 업데이트한 후 오류 메시지를 표시하지 않고 저장된 초안 및 제출 기능에 오류가 발생하는 문제가 발생합니다. (FORMS-18069)
 
-* AEM 6.5.21.0에서 XSD 기반 기초 구성 요소에서 핵심 구성 요소로 전환하면 JSON 스키마의 파일 간 참조 구현이 방해되어 적응형 Forms 마이그레이션에 영향을 줍니다. (FORMS-18065).
+* AEM 6.5.21.0에서 XSD 기반 기초 구성 요소에서 핵심 구성 요소로 전환하면 JSON 스키마의 파일 간 참조 구현이 방해되어 적응형 Forms 마이그레이션에 영향을 줍니다. (FORMS-18065)
 
-* 사용자가 에이전트 UI에서 편지를 미리 볼 때 IC 시간 변환 문제로 인해 날짜 필드에 잘못된 값이 표시됩니다. 이러한 불일치는 VM 환경과 시스템의 시간 해석(UTC와 현지 시간) 간의 시간대 차이로 인해 발생합니다. (FORMS-17988) (FORMS-17248).
+* 사용자가 에이전트 UI에서 편지를 미리 볼 때 IC 시간 변환 문제로 인해 날짜 필드에 잘못된 값이 표시됩니다. 이러한 불일치는 VM 환경과 시스템의 시간 해석(UTC 대 현지 시간) 간의 시간대 차이로 인해 발생합니다. (FORMS-17988) (FORMS-17248)
 
-* 사용자가 AEM Forms에서 알림 IC 템플릿을 사용하여 문자를 미리 볼 때 PDF 생성 시간이 동일한 서버에서도 1.5초에서 10초 이상 크게 다릅니다. 이러한 불일치는 비즈니스 크리티컬 워크플로우에 영향을 줍니다. (FORMS-17951).
+* 사용자가 AEM Forms에서 알림 IC 템플릿을 사용하여 문자를 미리 볼 때 PDF 생성 시간이 동일한 서버에서도 1.5초에서 10초 이상 크게 다릅니다. 이러한 불일치는 비즈니스 크리티컬 워크플로우에 영향을 줍니다. (FORMS-17951)
 
-* 사용자가 &#39;데이터 소스&#39; 옵션을 사용하여 적응형 양식의 스크리블 서명 개체를 XDP에 바인딩하면 유효한 값을 사용하는 경우에도 지속적인 종횡비 유효성 검사 오류로 인해 변경 사항을 저장할 수 없습니다. (FORMS-17587).
+* 사용자가 &#39;데이터 소스&#39; 옵션을 사용하여 적응형 양식의 스크리블 서명 개체를 XDP에 바인딩하면 변경 사항을 저장할 수 없습니다. 이는 유효한 값을 사용하더라도 지속적인 종횡비 유효성 검사 오류 때문입니다. (FORMS-17587)
 
-* 사용자가 문서 조각에 대해 숨겨진 필드가 많은 특정 XDP를 사용하면 AEM에서 cm:optional 속성이 false로 설정된 CRX 노드를 만들며, 이로 인해 IC(대화형 통신) 제출이 실패합니다. (FORMS-17538).
+* 사용자가 문서 조각에 대해 숨겨진 필드가 많은 특정 XDP를 사용하면 AEM에서 `cm:optional` 속성이 false로 설정된 CRX 노드를 만들며, 이로 인해 IC(대화형 통신) 제출이 실패합니다. (FORMS-17538)
 
-* AEM Forms 6.5.19.0에서 고객이 문자를 미리 볼 때 Lead 및 Frac에 대한 숫자 제한을 정의할 때 숫자 상자 필드가 음수 값을 올바르게 처리하지 못합니다. 이 문제는 빼기 기호를 숫자의 일부로 처리하는 parseFloat의 사용으로 인해 발생합니다. (FORMS-17451).
+* AEM Forms 6.5.19.0에서 고객이 문자를 미리 볼 때 Lead 및 Frac에 대한 숫자 제한을 정의할 때 숫자 상자 필드가 음수 값을 올바르게 처리하지 못합니다. 이 문제는 빼기 기호를 숫자의 일부로 처리하는 parseFloat의 사용으로 인해 발생합니다. (FORMS-17451)
 
-* AEM Forms 6.5에서 편지를 미리 볼 때 Adobe.json 파일에 &quot;*&quot; 와일드카드를 사용하는 것이 확인되어 해당 목적 및 잠재적인 수정 사항에 대해 문제가 발생합니다(FORMS-17317).
+* AEM Forms 6.5에서 편지를 미리 보면 Adobe.json 파일에 &quot;*&quot; 와일드카드가 사용된다는 사실을 인지하여 해당 목적과 잠재적인 수정 사항에 대해 우려를 낳고 있습니다. (FORMS-17317)
 
-* 사용자가 &quot;고정 비율 절약 공동 계정 신청&quot;에서 화면 판독기를 사용할 때 제목이 &quot;클릭 가능&quot;으로 잘못 표시되어 접근성 문제를 일으킵니다. (FORMS-17038).
+* 사용자가 `Apply for a Fixed Rate Saver joint account`에서 화면 판독기를 사용하면 제목이 `clickable`(으)로 잘못 표시되어 접근성 문제가 발생합니다. (FORMS-17038)
 
-* 양식이 임베드되면 생성된 iframe에 제목 속성이 누락되어 액세스 가능성 준수 문제가 발생합니다. (FORMS-17010).
+* 양식이 임베드되면 생성된 iframe에 제목 속성이 누락되어 액세스 가능성 준수 문제가 발생합니다. (FORMS-17010)
 
-* 테마 및 조각과 같은 관련 종속성을 포함하지 않으면 Forms Manager UI를 사용하여 양식을 다운로드할 수 없습니다. (FORMS-15811).
+* Forms Manager UI를 사용하여 양식을 다운로드하면 항상 테마 및 조각과 같은 관련 종속성이 포함됩니다. (FORMS-15811)
 
-* 사용자가 모바일 장치(iOS 및 Android)에서 양식에 액세스할 경우, 첫 번째 페이지의 &#39;다음&#39; 및 &#39;이전&#39; 버튼이 비활성화되지만 화면 판독기가 비활성화된 것으로 식별하지 않습니다. (FORMS-15773).
+* 사용자가 모바일 장치(iOS 및 Android™)에서 양식에 액세스하면 첫 번째 페이지의 &#39;다음&#39; 및 &#39;이전&#39; 버튼이 비활성화됩니다. 그러나 화면 판독기는 비활성화된 것으로 식별하지 않습니다. (FORMS-15773)
 
-* 사용자가 조각과 소극적 로드가 활성화된 큰 양식을 저장할 때 초안을 검색하지 못해 워크플로가 중단됩니다. (FORMS-19890, FORMS-19808).
+* 사용자가 조각과 소극적 로드가 활성화된 큰 양식을 저장할 때 초안을 검색하지 못해 워크플로가 중단됩니다. (FORMS-19890, FORMS-19808)
 
 #### FORMS JEE
 
 * 사용자가 AEM Forms에서 데이터베이스를 다시 구성할 때 하드코딩된 매개 변수로 인해 연결에 실패합니다. (FORMS-19568, FORMS-17621)
 
-* 사용자가 부분 턴키 방법을 사용하여 MySQL 8.4로 AEM 6.5를 설정하면 LCM(LiveCycle Configuration Manager)이 데이터베이스 연결 테스트 중에 필요한 MySQL 커넥터 드라이버를 인식하지 못해 설정이 실패합니다. (FORMS-19442).
+* 사용자가 부분 턴키 방법을 사용하여 MySQL 8.4로 AEM 6.5를 설정할 때 LiveCycle Configuration Manager(LCM)가 필요한 MySQL 커넥터 드라이버를 인식하지 못합니다. 이로 인해 데이터베이스 연결 테스트 및 설정이 실패합니다. (FORMS-19442)
 
-* 사용자가 JEE 환경의 JRE 11에서 JDBC 12.8.1로 LCM을 실행할 때 비호환성 문제로 인해 설정이 실패합니다.(FORMS-19276).
+* 사용자가 JEE 환경의 JRE 11에서 JDBC 12.8.1로 LCM을 실행할 때 비호환성 문제로 인해 설정이 실패합니다. (FORMS-19276)
 
-* 사용자가 AEM On-Premise에서 작업을 열면 시스템이 AssignedUserProfile 대신 Workspace 시작 작업 프로필을 실행합니다. (FORMS-19065).
+* 사용자가 AEM On-Premise에서 작업을 열면 시스템이 AssignedUserProfile 대신 Workspace 시작 작업 프로필을 실행합니다. (FORMS-19065)
 
-* 사용자가 AEM JEE Process Manager에서 retryAction(long actionOid) 메서드를 사용할 때 예기치 않은 동작이 발생합니다. (FORMS-18357)(FORMS-18187).
+* 사용자가 AEM JEE Process Manager에서 retryAction(long actionOid) 메서드를 사용할 때 예기치 않은 동작이 발생합니다. (FORMS-18357)(FORMS-18187)
 
-* AEM Forms 6.5.21.0에서 PDFG 변환이 실패하고 다음 오류가 발생합니다. (FORMS-16851)(FORMS-14613).
+* AEM Forms 6.5.21.0에서 PDFG 변환이 실패하고 다음 오류가 발생합니다. (FORMS-16851)(FORMS-14613)
 
 #### Forms Captcha {#forms-captcha-6523}
 
@@ -405,7 +405,7 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 #### Granite{#foundation-granite-6523}
 
 * 서비스 팩 21로 업그레이드한 후 HTML 페이지를 로드할 때 지연 또는 실패를 발생시킨 Apache Sling 스크립팅 서비스 간의 OSGi 종속성 주기가 해결되었습니다. `SightlyScriptingEngineFactory` 및 관련 구성 요소와 관련된 순환 종속성을 제거하기 위해 내부 서비스 참조를 업데이트하여 스크립팅 엔진의 안정성 및 시작 동작을 개선했습니다. (GRANITE-56808)
-* JS 시작 시 Apache Sling의 스크립트 사용 을 업데이트했습니다. 이 스크립트를 사용하면 스레드 경합이 발생하지 않고 게시 서버가 로드 중에 응답하지 않는 위험을 줄일 수 있습니다. 이 변경 사항은 초기 스크립트 해결로 인한 리소스 잠금을 방지하여 트래픽이 많은 시나리오 중에 서버 안정성과 응답 시간을 향상시킵니다. (GRANITE-56611)
+* JS를 업데이트했습니다. Apache Sling의 스크립트를 사용하여 시작 시 열심히 로드하지 않고 온디맨드만 로드하여 스레드 경합을 제거하고 게시 서버가 로드 중에 응답하지 않는 위험을 줄였습니다. 이 변경 사항은 초기 스크립트 해결로 인한 리소스 잠금을 방지하여 트래픽이 많은 시나리오 중에 서버 안정성과 응답 시간을 향상시킵니다. (GRANITE-56611)
 * 입력 필드의 자리 표시자가 레이블로 잘못 표시되어 시각적 혼동을 초래하는 AEM Omnisearch의 문제를 수정했습니다. 일관되고 액세스 가능한 양식 동작을 유지하면서 필터 필드 간에 자리 표시자를 적절히 렌더링합니다. (GRANITE-51791)
 * 콘텐츠 조각 모델 편집기에서 다중 필드 참조가 있는 30개 이상의 CFM(콘텐츠 조각 모델)을 선택할 때 트리거된 서버 오류를 해결했습니다. POST 작업을 지원하도록 필터 제안 구성 요소를 개선했습니다. 이 기능을 사용하면 콘텐츠 조각을 만드는 동안 큰 참조 세트를 적절하게 처리하고 대량 모델 구성의 안정성을 향상시킬 수 있습니다. (GRANITE-57164)
 * 확인란 닫기를 클릭할 때 의도하지 않게 상태가 전환된 CFM 문제를 해결했습니다. 클릭 활성화를 확인란 요소로 엄격히 제한하도록 스타일을 업데이트하여 우발적인 사용자 상호 작용을 방지하고 양식 유용성과 접근성을 개선했습니다. (GRANITE-52384)
@@ -531,7 +531,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -676,7 +676,7 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6523}
 
-* 고객이 Struts 2.x에서 6.x로 업그레이드할 때 더 엄격한 유형 확인으로 인해 자동 오류가 발생할 수 있습니다. 특히 확인란 구성 요소가 false를 반환하고 목록 *Integer*&#x200B;에 바인딩된 경우. 역직렬화 오류를 방지하려면 이 값 불일치를 명시적으로 처리해야 합니다. (FORMS-20203)
+* 고객이 Struts 2.x에서 6.x로 업그레이드할 때 더 엄격한 유형 확인으로 인해 자동 오류가 발생할 수 있습니다. 특히 확인란 구성 요소가 false를 반환하고 목록 *Integer*&#x200B;에 바인딩된 경우 더욱 그렇습니다. 역직렬화 오류를 방지하려면 이 값 불일치를 명시적으로 처리해야 합니다. (FORMS-20203)
 
 * SUSE® Linux®(SLES 15 SP6 이상) 서버에서 HTML에서 PDF으로의 변환이 실패하고 다음 오류가 발생하는 경우:
 
@@ -732,10 +732,10 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
