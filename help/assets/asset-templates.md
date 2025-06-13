@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 에셋 템플릿은 디지털 및 인쇄 미디어용 시각적으로 풍부한 콘텐츠를 신속하게 재활용할 수 있는 특별한 에셋 클래스입니다. 에셋 템플릿에는 고정 메시징 섹션과 편집 가능 섹션의 두 부분이 포함되어 있습니다. 고정 메시징 섹션에는 편집할 수 없는 브랜드 로고 및 저작권 정보와 같은 독점 콘텐츠가 포함될 수 있습니다. 편집 가능 섹션에는 메시징을 사용자 지정하기 위해 편집할 수 있는 필드에 시각적 및 텍스트 콘텐츠가 포함될 수 있습니다.
 
-글로벌 사이니지의 보안을 유지하면서 제한적인 편집 작업을 할 수 있는 유연성은 자산 템플릿을 다양한 기능의 콘텐츠 아티팩트로 빠른 콘텐츠 적응 및 배포에 이상적인 빌딩 블록으로 만듭니다. 컨텐츠 재활용 기능은 인쇄 및 디지털 채널 관리 비용을 절감하고, 이러한 채널 전반에 걸쳐 총체적이고 일관된 환경을 제공하는 데 도움이 됩니다.
+자산 템플릿은 글로벌 간판을 안전하게 보호하면서 제한된 편집을 할 수 있는 유연성을 제공합니다. 이러한 기능을 통해 다양한 기능에 빠르게 콘텐츠를 적용하고 배포할 수 있는 이상적인 기본 구성단위입니다. 컨텐츠 재활용 기능은 인쇄 및 디지털 채널 관리 비용을 절감하고, 이러한 채널 전반에 걸쳐 총체적이고 일관된 환경을 제공하는 데 도움이 됩니다.
 
-마케터는 [!DNL Experience Manager Assets] 내에서 템플릿을 저장하고 관리할 수 있으며, 단일 기본 템플릿을 사용하여 간편하게 여러 개인 맞춤화된 인쇄 경험을 만들 수 있습니다. 브로셔, 전단지, 엽서, 명함 등 다양한 유형의 마케팅 자료를 만들어 고객에게 마케팅 메시지를 전달할 수 있습니다. 기존 또는 새 인쇄 출력에서 다중 페이지 인쇄 출력을 조합할 수도 있습니다. 무엇보다도 디지털 및 인쇄 환경을 동시에 쉽게 제공하여 사용자에게 일관되고 통합된 환경을 제공할 수 있습니다.
+마케터는 [!DNL Experience Manager Assets] 내에서 템플릿을 저장하고 관리할 수 있으며, 단일 기본 템플릿을 사용하여 간편하게 여러 개인 맞춤화된 인쇄 경험을 만들 수 있습니다. 브로셔, 전단지, 엽서, 명함 등 다양한 유형의 마케팅 자료를 만들어 고객에게 마케팅 메시지를 잘 전달할 수 있습니다. 기존 또는 새 인쇄 출력에서 다중 페이지 인쇄 출력을 조합할 수도 있습니다. 무엇보다도 디지털 및 인쇄 환경을 동시에 쉽게 제공하여 사용자에게 일관되고 통합된 환경을 제공할 수 있습니다.
 
 자산 템플릿이 대부분 [!DNL Adobe InDesign]개 파일이지만 [!DNL Adobe InDesign]의 숙련도는 Stellar 아티팩트를 만드는 데 걸림돌이 되지 않습니다. [!DNL Adobe InDesign] 템플릿의 필드를 카탈로그를 만들 때 필요한 제품 필드와 매핑할 필요가 없습니다. 웹 인터페이스에서 직접 WYSIWYG 모드로 템플릿을 편집할 수 있습니다. 그러나 [!DNL Adobe InDesign]이(가) 편집 변경 내용을 처리하려면 먼저 [!DNL Experience Manager Assets]을(를) [!DNL Adobe InDesign Server]과(와) 통합하도록 구성해야 합니다.
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ## 자료 조각 편집 {#editing-a-collateral}
 
-자료 조각을 만든 후 바로 편집할 수 있습니다. 또는 [!UICONTROL 템플릿] 페이지 또는 에셋 페이지에서 엽니다.
+자료 조각을 만든 후 바로 편집할 수 있습니다. 또는 [!UICONTROL 템플릿] 페이지 또는 에셋 페이지에서 열 수 있습니다.
 
 1. 편집할 자료를 열려면 다음 중 하나를 수행합니다.
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager Assets]이(가) [!DNL InDesign] 템플릿에서 데이터를 추출하고 편집할 수 있도록 하려면 [!DNL Experience Manager] 배포가 [!DNL InDesign Server]과(와) 통합되어야 합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하세요.
+   >[!DNL Experience Manager Assets]이(가) [!DNL InDesign] 템플릿에서 데이터를 추출하여 편집할 수 있도록 [!DNL Experience Manager] 배포를 [!DNL InDesign Server]과(와) 통합합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -124,17 +124,16 @@ ht-degree: 1%
    >
    >[!DNL Experience Manager]이(가) 이미지를 확인하도록 하려면 다음을 수행하십시오.
    >
-   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/kr/indesign/using/graphics-links.html) 참조).
+   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/indesign/using/graphics-links.html) 참조).
    >* 로컬 파일 시스템에 [!DNL Experience Manager]을(를) 탑재한 다음 누락된 아이콘을 [!DNL Experience Manager]의 기존 자산에 매핑합니다.
    >
-   >[!DNL InDesign] 문서 작업에 대한 자세한 내용은 [Experience Manager에서 InDesign 문서 작업 모범 사례](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)를 참조하세요.
 
 1. 브로셔에 대한 PDF 렌디션을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 자료 조각은 시작한 폴더에 생성됩니다. 렌디션을 보려면 자료를 열고 GlobalNav 목록에서 **[!UICONTROL 렌디션]**&#x200B;을 선택하십시오.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. PDF 파일을 다운로드할 수 있도록 렌디션 목록에서 PDF 렌디션을 선택합니다. PDF 파일을 열어 자료를 검토하십시오.
+1. PDF 파일을 다운로드할 수 있도록 렌디션 목록에서 PDF 렌디션을 선택합니다. PDF 파일을 열어 보충 자료를 검토하십시오.
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 

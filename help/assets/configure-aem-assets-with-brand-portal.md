@@ -10,10 +10,10 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 24%
+source-wordcount: '670'
+ht-degree: 21%
 
 ---
 
@@ -22,16 +22,16 @@ ht-degree: 24%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal) |
 | AEM 6.5 | 이 문서 |
 
 Adobe Experience Manager Assets Brand Portal을 사용하면 승인된 브랜드 자산을 Adobe Experience Manager Assets에서 Brand Portal으로 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
-AEM Assets은 Brand Portal 테넌트의 인증을 위해 IMS(Adobe Identity Management Services) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 구성됩니다.
+AEM Assets은 Brand Portal 테넌트의 인증을 위해 Adobe Identity Management 서비스(IMS) 계정 토큰을 조달하는 Adobe Developer Console을 통해 Brand Portal으로 구성됩니다.
 
 >[!NOTE]
 >
->AEM 6.5.4.0 이상에서 Adobe 개발자 콘솔을 통해 Brand Portal에 AEM Assets을 구성할 수 있습니다.
+>AEM 6.5.4.0 이상에서는 Adobe Developer Console을 통해 Brand Portal에서 AEM Assets을 구성할 수 있습니다.
 >
 <!--
 >Earlier, Brand Portal was configured via legacy OAuth Gateway, which uses the JSON Web Token (JWT) exchange to obtain an IMS Access token for authorization. 
@@ -73,15 +73,15 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 AEM 작성자 인스턴스를 설정하려면 AEM 6.5가 있어야 합니다. AEM을 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
 
-* 기존 AEM 고객의 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com)에서 AEM 6.5를 다운로드하십시오.
+* 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com)에서 AEM 6.5를 다운로드하십시오.
 
-* Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청하십시오.
+* Adobe 파트너인 경우 Adobe 파트너 교육 프로그램 을 사용하여 AEM 6.5를 요청합니다.
 
-AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko#default-local-install)를 참조하십시오.
+AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy#default-local-install)를 참조하십시오.
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko)를 참조하세요.
+자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/release-notes)를 참조하세요.
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **Adobe 고객 지원 센터에 문의**&#x200B;하십시오.
 
@@ -89,7 +89,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 >[!NOTE]
 >
->2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다. OAuth 구성 만들기에 대해 자세히 알아보십시오.
+>2024년 6월 이후부터는 새 JWT 자격 증명을 만들 수 없습니다. 앞으로 OAuth 자격 증명만 생성됩니다. OAuth 구성 만들기에 대한 자세한 내용을 참조하십시오.
 
 Brand Portal을 사용하여 AEM Assets을 구성하려면 AEM Assets 작성자 인스턴스와 Adobe Developer Console 모두에서 구성해야 합니다.
 
@@ -123,11 +123,11 @@ Brand Portal을 사용하여 AEM Assets을 처음 구성하는 경우 나열된 
 
 #### Adobe Developer Console에서 OAuth 자격 증명 구성 {#config-oauth}
 
-[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
+[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
 
 #### OAuth를 사용하여 새 Adobe IMS 통합 만들기 {#create-ims-account-configuration}
 
-[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal을 선택합니다.
+[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal을 선택합니다.
 
 #### 클라우드 서비스 구성 {#configure-cloud-service}
 
@@ -370,20 +370,20 @@ To configure the IMS account:
    >
    >Avoid disabling any of the replication agents, as it can cause the replication of the assets (running-in-queue) to fail.
    >
-   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=ko#connection-timeout).
+   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Do not modify any autogenerated settings.
 
 You can now:
 
 * [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko) - Asset Sourcing in Brand Portal 
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal 
 * [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=ko)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=ko)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ko) for more information.
+See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
 <!--

@@ -6,9 +6,9 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
@@ -21,22 +21,22 @@ ht-degree: 2%
 * 특정 작업을 정의하고 관리하는 프록시 작업자입니다.
 예를 들어 [!DNL InDesign Server]을(를) 사용하여 파일을 처리하는 등 다양한 작업을 처리할 수 있습니다.
 
-[!DNL Adobe InDesign] (으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. [스크립트](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)을(를) 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
+[!DNL Adobe InDesign]&#x200B;(으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 이 작업자는 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. 여기서 스크립트를 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign] (으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. 해당 [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성됩니다. [!DNL InDesign] 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)을(를) 참조하십시오.
+>[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. ExtendScript 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
-[!DNL Adobe InDesign Server]을(를) [!DNL Experience Manager Assets]과(와) 통합하여 [!DNL InDesign] (으)로 만든 INDD 파일을 업로드하고, 렌디션을 생성하고, 모든 미디어(예: 비디오)를 추출하여 에셋으로 저장할 수 있습니다.
+[!DNL Adobe InDesign Server]을(를) [!DNL Experience Manager Assets]과(와) 통합하여 [!DNL InDesign]&#x200B;(으)로 만든 INDD 파일을 업로드하고, 렌디션을 생성하고, 모든 미디어(예: 비디오)를 추출하여 에셋으로 저장할 수 있습니다.
 
 >[!NOTE]
 >
->이전 버전의 [!DNL Experience Manager]에서 XMP과 썸네일을 추출할 수 있었습니다. 이제 모든 미디어를 추출할 수 있습니다.
+>이전 버전의 [!DNL Experience Manager]에서 XMP 및 썸네일을 추출할 수 있으므로 이제 모든 미디어를 추출할 수 있습니다.
 
 1. INDD 파일을 [!DNL Experience Manager Assets]에 업로드합니다.
-1. 프레임워크는 SOAP(Simple Object Access Protocol)을 통해 [!DNL InDesign Server]에 명령 스크립트를 보냅니다.
+1. 프레임워크는 SOAP(Simple Object Access Protocol)를 통해 [!DNL InDesign Server]에 명령 스크립트를 보냅니다.
 이 명령 스크립트는 다음을 수행합니다.
 
    * INDD 파일을 검색합니다.
@@ -46,15 +46,15 @@ ht-degree: 2%
       * PDF 및 JPG 렌디션이 생성됩니다.
       * HTML 및 IDML 렌디션이 생성됩니다.
 
-   * 결과 파일을 다시 [!DNL Experience Manager Assets] (으)로 Post.
+   * 결과 파일을 [!DNL Experience Manager Assets]에 다시 게시합니다.
 
    >[!NOTE]
    >
-   >IDML은 [!DNL InDesign] 파일의 모든 내용을 렌더링하는 XML 기반 형식입니다. [ZIP](https://www.techterms.com/definition/zip) 압축을 사용하여 압축된 패키지로 저장됩니다. 자세한 내용은 [InDesign 교환 형식 INX 및 IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)을 참조하세요.
+   >IDML은 [!DNL InDesign] 파일의 모든 내용을 렌더링하는 XML 기반 형식입니다. [ZIP](https://techterms.com/definition/zip) 압축을 사용하여 압축된 패키지로 저장됩니다. 자세한 내용은 [InDesign Interchange 형식 INX 및 IDML](https://www.peachpit.com/promotions/adobe-creative-cloud-2024-release-books-ebooks-and-142536)을 참조하십시오.
 
    >[!CAUTION]
    >
-   >[!DNL InDesign Server]이(가) 설치되지 않았거나 구성되지 않은 경우에도 INDD 파일을 [!DNL Experience Manager]에 업로드할 수 있습니다. 그러나 생성된 렌디션은 PNG 및 JPEG으로 제한됩니다. HTML, .idml 또는 페이지 표현물을 생성할 수 없습니다.
+   >[!DNL InDesign Server]이(가) 설치되지 않았거나 구성되지 않은 경우에도 INDD 파일을 [!DNL Experience Manager]에 업로드할 수 있습니다. 그러나 생성된 렌디션은 PNG 및 JPEG으로 제한됩니다. HTML, `.idml` 또는 페이지 표현물을 생성할 수 없습니다.
 
 1. 추출 및 렌디션 생성 후:
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 1. [InDesign Server 설치](#installing-the-indesign-server).
 1. 필요한 경우 [Experience Manager Assets 워크플로를 구성](#configuring-the-aem-assets-workflow)합니다.
 기본값이 인스턴스에 적합하지 않은 경우에만 필요합니다.
-1. [&#128279;](#configuring-the-proxy-worker-for-indesign-server) InDesign Server에 대해 프록시 작업자를 구성하십시오.
+1. InDesign Server에 대해 [프록시 작업자를 구성](#configuring-the-proxy-worker-for-indesign-server)합니다.
 
 ### [!DNL InDesign Server] 설치 {#installing-the-indesign-server}
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
    `<*ids-installation-dir*>/InDesignServer.com -port 8080`
 
-   이렇게 하면 포트 8080에서 수신하는 SOAP 플러그인으로 서버가 시작됩니다. 모든 로그 메시지와 출력은 명령 창에 직접 기록됩니다.
+   이렇게 하면 SOAP 플러그인이 포트 8080에서 수신 대기하며 서버가 시작됩니다. 모든 로그 메시지와 출력은 명령 창에 직접 기록됩니다.
 
    >[!NOTE]
    >
@@ -105,7 +105,7 @@ ht-degree: 2%
 
 이 단계는 INDD 파일에서 미디어 추출을 제어합니다.
 
-To customize, you can edit **[!UICONTROL Arguments]** tab of the **[!UICONTROL Media Extraction]** step.
+사용자 지정하려면 **[!UICONTROL 미디어 추출]** 단계의 **[!UICONTROL 인수]** 탭을 편집할 수 있습니다.
 
 ![미디어 추출 인수 및 스크립트 경로](assets/media_extraction_arguments_scripts.png)
 
@@ -125,11 +125,11 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 미디어 추출 워크플로 단계에서 실행되는 `ThumbnailExport.jsx` 스크립트는 JPG 형식의 썸네일 렌디션을 생성합니다. 이 렌디션은 프로세스 썸네일 워크플로 단계에서 [!DNL Experience Manager]에 필요한 정적 렌디션을 생성하는 데 사용됩니다.
 
-프로세스 축소판 워크플로 단계를 구성하여 다양한 크기의 정적 렌디션을 생성할 수 있습니다. 기본값은 [!DNL Experience Manager Assets] 인터페이스에 필요하므로 제거하지 마십시오. 마지막으로, 이미지 미리 보기 렌디션 삭제 워크플로 단계에서는 더 이상 필요하지 않으므로 JPG 썸네일 렌디션을 제거합니다.
+프로세스 축소판 워크플로 단계를 구성하여 다양한 크기의 정적 렌디션을 생성할 수 있습니다. 기본값은 [!DNL Experience Manager Assets] 인터페이스에 필요하므로 제거하지 마십시오. 마지막으로, 이미지 미리 보기 렌디션 삭제 워크플로우 단계에서는 더 이상 필요하지 않으므로 JPG 썸네일 렌디션을 제거합니다.
 
 #### 페이지 추출 {#page-extraction}
 
-이렇게 하면 추출된 요소에서 [!DNL Experience Manager] 페이지가 만들어집니다. 추출 핸들러는 렌디션(현재 HTML 또는 IDML)에서 데이터를 추출하는 데 사용됩니다. 그런 다음 PageBuilder를 사용하여 페이지를 만드는 데 이 데이터를 사용합니다.
+이렇게 하면 추출된 요소에서 [!DNL Experience Manager] 페이지가 만들어집니다. 추출 핸들러는 렌디션(현재 HTML 또는 IDML)에서 데이터를 추출하는 데 사용됩니다. 그런 다음 이 데이터를 사용하여 페이지 빌더를 사용하여 페이지를 만듭니다.
 
 To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Page Extraction]** step.
 
@@ -154,7 +154,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 >
 >작업자는 프록시 인스턴스에 상주합니다.
 
-1. 도구 콘솔에서 왼쪽 창의 **[!UICONTROL Cloud Service 구성]**&#x200B;을 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성]**&#x200B;을 확장합니다.
+1. 도구 콘솔에서 왼쪽 창의 **[!UICONTROL 클라우드 서비스 구성]**&#x200B;을 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성]**&#x200B;을 확장합니다.
 
 1. Double-click the **[!UICONTROL IDS worker]** to open for configuration.
 
@@ -163,7 +163,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS 풀**
-[!DNL InDesign Server]과(와) 통신하는 데 사용할 SOAP 끝점입니다. 항목을 추가, 제거 및 주문해야 합니다.
+[!DNL InDesign Server]과(와) 통신하는 데 사용되는 SOAP 종단점입니다. 항목을 추가, 제거 및 주문해야 합니다.
 
 1. 확인 을 클릭하여 저장합니다.
 
