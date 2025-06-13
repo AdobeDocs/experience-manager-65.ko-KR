@@ -88,7 +88,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
 
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
       * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
          1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
          1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
