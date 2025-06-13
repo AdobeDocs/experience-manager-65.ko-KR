@@ -66,13 +66,13 @@ AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 �
 
 Adobe에서는 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 ### HTL과 JSP {#htl-vs-jsp}
 
 HTL은 AEM 6.0과 함께 도입된 HTML 템플릿 언어입니다.
 
-이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
+이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
 
 HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요소 개발에 사용할 수 있습니다. HTL은 터치 지원 UI용이고 JSP는 클래식 UI용이라고 가정하는 경향이 있을 수 있지만, 이는 잘못된 인식이며 타이밍으로 인한 더 많은 것입니다. 터치 지원 UI 및 HTL은 거의 동일한 기간에 AEM에 통합되었습니다. 이제 HTL이 권장 언어이므로 터치 지원 UI용 경향이 있는 새 구성 요소에 사용되고 있습니다.
 

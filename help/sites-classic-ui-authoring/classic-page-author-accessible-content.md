@@ -312,7 +312,7 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 * [성공 기준 이해 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/kr/premiere-pro/using/whats-new.html)
 
 ### 캡션(라이브) (1.2.4)  {#captions-live}
 

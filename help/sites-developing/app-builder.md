@@ -28,7 +28,7 @@ App Builder은 고객이 다양한 사용 사례에서 Adobe Experience Manager�
 
 >[!NOTE]
 >
->App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)을 참조하십시오.
+>App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=ko)을 참조하십시오.
 
 ## 아키텍처 {#architecture}
 

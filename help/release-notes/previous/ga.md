@@ -21,7 +21,7 @@ ht-degree: 22%
 | 버전 | 6.5 |
 | 유형 | 주요 릴리스 |
 | 일반 가용 날짜 | 2019년 4월 8일 |
-| 권장 업데이트 | [AEM 최신 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)를 참조하세요. |
+| 권장 업데이트 | [AEM 최신 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)를 참조하세요. |
 
 ### 트리비아 {#trivia}
 
@@ -140,7 +140,7 @@ AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할
 * 동적 자리 표시자를 사용하여 데이터 트리거된 콘텐츠의 위치 또는 구성으로 개인화합니다.
 * AEM Screens Player로의 Adobe Analytics 통합으로 추진된 통합 인사이트
 
-AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)의 릴리스 노트를 참조하십시오.
+AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)의 릴리스 노트를 참조하십시오.
 
 #### 구성 요소 및 템플릿 개발 {#component-amp-template-development}
 
@@ -257,7 +257,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 #### AEM 및 Commerce {#aem-commerce}
 
-AEM 6.4 이후 Commerce integration framework에 대한 개선 사항이 더 빠른 릴리스 주기에 있습니다. [Commerce integration framework을 사용하여 AEM 및 Adobe Commerce 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)에서 자세히 알아보세요.
+AEM 6.4 이후 Commerce integration framework에 대한 개선 사항이 더 빠른 릴리스 주기에 있습니다. [Commerce integration framework을 사용하여 AEM 및 Adobe Commerce 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=ko)에서 자세히 알아보세요.
 
 #### Communities 추가 기능 {#communities-add-on}
 
@@ -362,7 +362,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 [!DNL Experience Manager Assets Brand Portal]은 승인된 자산을 외부 공급업체/에이전시 및 내부 비즈니스 사용자가 간편하게 구매하고 효과적으로 제어하며 장치 간에 안전하게 분배할 수 있도록 지원합니다. 자산 공유의 효율성을 향상시키고, 자산 출시 시기를 앞당길 수 있으며, 규정을 준수하지 않고 무단 액세스하는 위험을 방지할 수 있습니다.
 
-자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하세요.
+자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko)을 참조하세요.
 
 #### 연결된 자산 {#connectedassets}
 
@@ -378,7 +378,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 [!DNL Dynamic Media]는 [!DNL Experience Manager Assets]에서 향상된 리치 미디어 작성 및 전달 기능을 제공하여 몰입 및 맞춤화된 최신 경험을 제공합니다. 고품질의 단일 기본 에셋을 업로드하고 Adobe의 고급 클라우드 렌더링 및 뷰어를 사용하여 모든 표현물의 조합을 제공하여 조직의 미디어 전략을 지원할 수 있습니다.
 
-새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
+새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=ko)를 참조하십시오.
 
 ##### 360 비디오 지원 {#video-support}
 
@@ -390,7 +390,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 ##### 액세스 가능성 개선 {#accessibility-enhancements}
 
-이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)를 참조하십시오.
+이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=ko)를 참조하십시오.
 
 #### 향상된 검색 경험 {#experience-enhancement-for-searching}
 
@@ -437,7 +437,7 @@ AEM 6.5 Forms은 몇 가지 새로운 기능과 개선 사항을 제공합니다
 
 Adobe은 사양, 개발 및 테스트 동안 고객이 개발 프로세스의 모든 단계에 기여할 수 있는 고객 중심 개발 모델을 사용하고 있습니다. 이 과정에서 모든 기여 고객 및 파트너에게 감사를 드립니다.
 
-Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 수집, 우선 순위 지정 및 추적을 활성화하는 절차 및 프로세스가 있습니다. [Experience Manager 지원 포털](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)은(는) Adobe 개선 사항 및 결함 추적 시스템과 통합되었습니다. 고객 질문은 가능한 경우 고객 지원 팀에서 식별하고 해결합니다. R&amp;D로 에스컬레이션되면 모든 고객 정보가 캡처되어 우선 순위 지정 및 보고 용도로 사용됩니다. 개발에서 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
+Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 수집, 우선 순위 지정 및 추적을 활성화하는 절차 및 프로세스가 있습니다. [Experience Manager 지원 포털](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)은(는) Adobe 개선 사항 및 결함 추적 시스템과 통합되었습니다. 고객 질문은 가능한 경우 고객 지원 팀에서 식별하고 해결합니다. R&amp;D로 에스컬레이션되면 모든 고객 정보가 캡처되어 우선 순위 지정 및 보고 용도로 사용됩니다. 개발에서 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
 
 이 우선 순위 지정 프로세스에서 750개 이상의 고객 중심 변경 사항이 AEM 6.5에서 수정되었습니다.
 
@@ -447,7 +447,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 * 독립형 빠른 시작: `cq-quickstart-6.5.0.jar`.
 * 응용 프로그램 서버 빠른 시작: `cq-quickstart-6.5.0.war`.
-* 다양한 웹 서버 및 플랫폼용 Dispatcher 4.3.2 이상 [다운로드 링크](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) 보기
+* 다양한 웹 서버 및 플랫폼용 Dispatcher 4.3.2 이상 [다운로드 링크](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=ko) 보기
 * Eclipse IDE용 플러그인([자세한 내용 보기 및 다운로드](/help/sites-developing/aem-eclipse.md))
 
 * Brackets 코드 편집기의 확장([자세히 읽고 다운로드](/help/sites-developing/aem-brackets.md))
@@ -480,7 +480,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 **Forms**
 
-* [AEM Forms 기능용 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [AEM Forms 기능용 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
 * [AEM Forms OSGi 클라이언트 SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## 언어 {#languages}
@@ -599,4 +599,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에 대한 추가 기능을 위한 제품 업데이트, 패치 및 패키지
 
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html)을 참조하십시오.
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=ko)을 참조하십시오.

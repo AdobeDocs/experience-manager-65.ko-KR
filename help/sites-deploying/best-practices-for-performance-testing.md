@@ -73,7 +73,7 @@ ht-degree: 0%
 
 Touch UI의 **개발자 모드**
 
-AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)을 참조하세요.
+AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=ko)을 참조하세요.
 
 **rlog.jar을 사용하여 요청 로그를 읽습니다**
 
@@ -118,7 +118,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 1. /crx-quickstart/install 폴더 아래에 놓습니다.
 
 >[!NOTE]
->[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko)
 
 기본 설정은 10,000이지만 대부분의 배포에서는 20,000 또는 50,000으로 설정해야 합니다.
 
@@ -146,7 +146,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 * 오류 로그에서 오류 또는 경고를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오.
 * 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다. 이러한 리소스는 종종 성능 병목 현상의 원인입니다.
 * 페이지의 아키텍처 및 페이지 처리 방법을 최적화하여 URL 매개 변수의 사용을 최소화하여 가능한 한 많은 캐싱을 허용합니다.
-* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) 설명서를 따르십시오.
+* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko) 설명서를 따르십시오.
 
 * 작성자 인스턴스에서 특정 페이지 또는 구성 요소를 편집하는 데 문제가 있는 경우 TouchUI 개발자 모드를 사용하여 해당 페이지를 검사합니다. 이렇게 하면 페이지의 각 콘텐츠 영역과 로드 시간에 대한 분류가 제공됩니다.
 * 사이트의 모든 JS 및 CSS를 축소합니다. 이 [블로그 게시물](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)을 참조하세요.

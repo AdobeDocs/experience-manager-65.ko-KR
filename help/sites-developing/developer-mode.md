@@ -56,8 +56,8 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 개발자 모드�
 >
 >다음을 참조하십시오.
 >
->* 기술 자료 문서, [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
->* [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html)에 대한 AEM Gems 세션.
+>* 기술 자료 문서, [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
+>* [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=ko)에 대한 AEM Gems 세션.
 >
 
 ## 개발자 모드 열기 {#opening-developer-mode}

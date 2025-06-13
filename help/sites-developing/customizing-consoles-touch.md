@@ -64,7 +64,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 >[!NOTE]
 >
->추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
+>추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
 
 ## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
