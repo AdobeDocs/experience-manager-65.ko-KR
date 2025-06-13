@@ -336,9 +336,9 @@ TTL을 조정하려면 다음을 수행하십시오.
 >**X-Adobe-Smart-Imaging = -1(WebP 제공)**
 >
 >`X-Adobe-Smart-Imaging`의 값이 -1이고 WebP가 계속 배달 중인 경우 스마트 이미징이 활성화됩니다. 그러나 캐시가 오래되어 크기 이점이 계산되지 않았습니다. 이미지의 URL에서 `cache=update`(한 번만)을 사용하여 이 문제를 해결할 수 있습니다.
->>수정자 사용의 예:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
+>&#x200B;>수정자 사용의 예:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
 
 +++
 
