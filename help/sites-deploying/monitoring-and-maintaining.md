@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 인스턴스 모니터링 및 유지 관리
-description: Adobe Experience Manager 인스턴스 모니터하고 유지하는 방법에 대해 알아보십시오.
+description: Adobe Experience Manager 인스턴스를 모니터링하고 유지 관리하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5755'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 | 오류 추적 시스템은 보고 문제에 사용할 수 있습니다. | 예를 들어, [Bugzilla](https://www.bugzilla.org/), [Jira](https://www.atlassian.com/software/jira) 또는 여러 가지 중 하나가 있습니다. |  |
 | 파일 시스템을 모니터링하고 있습니다. | 사용 가능한 디스크 공간이 부족하면 CRX 저장소가 &quot;정지&quot;됩니다. 공간을 사용할 수 있게 되면 다시 시작됩니다. | 사용 가능한 공간이 부족해지면 로그 파일에서 &quot; `*ERROR* LowDiskSpaceBlocker`&quot; 메시지를 볼 수 있습니다. |
 | [로그 파일](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)을(를) 모니터링하고 있습니다. |  |  |
-| 시스템 모니터링이 백그라운드에서 계속 실행됩니다. | CPU, 메모리, 디스크 및 네트워크 사용량 포함 예를 들어 iostat / vmstat / perfmon을 사용합니다. | 기록된 데이터는 시각화되며 성능 문제를 추적하는 데 사용할 수 있습니다. 원시 데이터에도 액세스할 수 있습니다. |
-| [AEM 성능을 모니터링하고 있습니다](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | 트래픽 수준을 모니터링하기 위해 [요청 카운터](/help/sites-deploying/monitoring-and-maintaining.md#request-counters)를 포함합니다. | 중대한, 장기적 성과 손실이 보이면 정밀한 조사를 해야 한다. |
+| 시스템 모니터링이 백그라운드에서 계속 실행됩니다. | CPU, 메모리, 디스크 및 네트워크 사용을 포함합니다. 예를 들어 iostat / vmstat / perfmon을 사용합니다. | 기록된 데이터는 시각화되며 성능 문제를 추적하는 데 사용할 수 있습니다. 원시 데이터에도 액세스할 수 있습니다. |
+| [AEM 성능이 모니터링되고 있습니다](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | 트래픽 수준을 모니터링하기 위해 [요청 카운터](/help/sites-deploying/monitoring-and-maintaining.md#request-counters)를 포함합니다. | 중대한, 장기적 성과 손실이 보이면 정밀한 조사를 해야 한다. |
 | [복제 에이전트](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)를 모니터링하고 있습니다. |  |  |
 | 정기적으로 워크플로우 인스턴스를 제거합니다. | 저장소 크기 및 워크플로 성능. | [워크플로 인스턴스 정기적 제거](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)를 참조하십시오. |
 
@@ -61,15 +61,15 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 >[!NOTE]
 >
->백업 성능에 대한 자세한 내용은 성능[&#128279;](/help/sites-deploying/configuring-performance.md#backup-performance) 뒤로 섹션을 참조하십시오.
+>백업 성능에 대한 자세한 내용은 [성능 백업](/help/sites-deploying/configuring-performance.md#backup-performance) 섹션을 참조하십시오.
 
 ### 소프트웨어 설치 백업 {#backing-up-your-software-installation}
 
-설치 후 또는 구성이 크게 변경된 경우 소프트웨어 설치의 백업 백업을 만듭니다.
+설치 후 또는 구성에 중요한 변경 사항이 있으면 소프트웨어 설치의 백업을 만듭니다.
 
-이 작업을 [수행하려면 전체 저장소](#backing-up-your-repository) 백업을 한 후 다음을 수행합니다.
+이 작업을 수행하려면 [전체 리포지토리를 백업](#backing-up-your-repository)한 다음 다음을 수행합니다.
 
-1. 정지 AEM.
+1. AEM을 중지합니다.
 1. 파일 시스템에서 전체 `<cq-installation-dir>`을(를) 백업합니다.
 
 >[!CAUTION]
@@ -94,11 +94,11 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
-이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 주요 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 되는 것입니다.
+이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
 ### 개요 {#overview}
 
-**버전** 삭제 도구 은 주별 유지 관리 작업으로 사용할 수 있습니다. 처음 사용하기 전에 추가한 다음 구성해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
+**버전 제거** 도구는 주간 유지 관리 작업으로 사용할 수 있습니다. 을 처음 사용하기 전에 을 추가한 다음 구성해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
 
 ### 웹 사이트 버전 삭제 {#purging-versions-of-a-web-site}
 
@@ -130,7 +130,7 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
      >[!CAUTION]
      >
-     >Adobe은 각 웹 사이트에 대해 여러 경로를 정의할 것을 권장합니다.
+     >Adobe에서는 각 웹 사이트에 대해 여러 경로를 정의할 것을 권장합니다.
      >
      >하위 항목이 너무 많은 경로를 정의하면 제거 수행 시간이 크게 늘어날 수 있습니다.
 
@@ -178,13 +178,13 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 또한 콘솔에서는 버전에 대한 유용한 정보를 제공합니다.
 
 * `V 1.0`: 버전 번호입니다.
-* `V 1.0.1`&#42;: 별표는 버전이 현재(기본) 버전이며 제거할 수 없음을 나타냅니다.
+* `V 1.0.1`&#42;: 별표는 버전이 현재(기본) 버전이며 삭제할 수 없음을 나타냅니다.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: 버전의 날짜입니다.
 
-다음 예제에서:
+다음 예제에서는
 
-* **[!DNL Shirts]** 버전 사용 기간이 2일보다 길기 때문에 버전이 제거됩니다.
+* **[!DNL Shirts]** 버전은 버전 사용 기간이 2일 이상이므로 제거됩니다.
 * 버전 수가 5보다 크므로 **[!DNL Tonga Fashions!]** 버전이 삭제됩니다.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -195,7 +195,7 @@ Adobe Experience Manager(AEM)와 관련된 감사 레코드 및 로그 파일은
 
 ### 로그 작업 {#working-with-logs}
 
-AEM WCM은 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 시작하면 다음에서 로그를 찾을 수 있습니다.
+AEM WCM은 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작을 시작하면 다음에서 로그를 찾을 수 있습니다.
 
 * `<cq-installation-dir>/crx-quickstart/logs/`
 
@@ -203,15 +203,15 @@ AEM WCM은 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 �
 
 #### 로그 파일 회전 {#log-file-rotation}
 
-로그 파일 순환은 주기적으로 파일을 만들어 파일의 성장을 제한하는 프로세스를 말합니다. AEM에서 `error.log`(이)라는 로그 파일은 지정된 규칙에 따라 하루에 한 번 회전됩니다.
+로그 파일 순환은 주기적으로 파일을 만들어 파일의 성장을 제한하는 프로세스를 말합니다. AEM에서 로그 파일 `error.log`은(는) 지정된 규칙에 따라 하루에 한 번 회전됩니다.
 
 * `{original_filename}.yyyy-MM-dd` 패턴에 따라 `error.log` 파일의 이름이 바뀝니다. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름이 `error.log-2010-07-10`으로 바뀌고 새 `error.log`이(가) 만들어집니다.
 
-* 이전 로그 파일은 삭제되지 않으므로 오래된 로그 파일을 주기적으로 정리하여 디스크 사용량을 제한해야 합니다.
+* 이전 로그 파일은 삭제되지 않으므로 디스크 사용을 제한하기 위해 이전 로그 파일을 정기적으로 정리해야 합니다.
 
 >[!NOTE]
 >
->AEM 설치를 업그레이드하는 경우 AEM에서 더 이상 사용되지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 항목은 새 로그 파일에 기록됩니다.
+>AEM 설치를 업그레이드하는 경우 AEM에서 더 이상 사용하지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 항목이 새 로그 파일에 기록됩니다.
 
 ### 로그 파일 찾기 {#finding-the-log-files}
 
@@ -228,13 +228,13 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
    * `error.log`
 여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ko)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
    * `request.log`
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ko)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 [!DNL Dynamic Media]에 대한 각 요청을 기록합니다.
 
    * `stderr.log`
@@ -253,7 +253,7 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
 
 >[!NOTE]
 >
->ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**&#x200B;번들리스트&#x200B;**페이지에서 생성된 전체 다운로드**&#x200B;패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
+>ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
 
 ### DEBUG 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -292,7 +292,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     Where `<identifier>` 는 인스턴스 식별을 위해 입력해야 하는 무료 텍스트로 대체됩니다(이 정보는 생략할 수 없음).
+     `<identifier>`은(는) 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보는 생략할 수 없음).
 
      예, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -300,9 +300,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    >[!NOTE]
    >
-   >기술적 요구 사항은 아니지만 고유하게 만드는 `<identifier>` 것이 좋습니다.
+   >기술 요구 사항은 아니지만 `<identifier>`을(를) 고유하게 만드는 것이 좋습니다.
 
-1. 이 노드 설정에서 다음 속성을 설정합니다.
+1. 이 노드에서 다음 속성을 설정합니다.
 
    * 이름: `org.apache.sling.commons.log.file`
 
@@ -312,9 +312,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.names`
 
-     유형: String[] (String + Multi)
+     유형: String[]&#x200B;(String + Multi)
 
-     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다. 예를 들어 다음과 같습니다.
+     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -332,7 +332,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
         유형: `String`
 
-        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예를 들어
+        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -433,11 +433,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >새 파일이 만들어지는 시점(및 기존 파일의 이름이 이름 패턴에 따라 변경됨)을 나타냅니다.
    >
    >* 숫자로 크기 제한을 지정할 수 있습니다. 크기 표시기가 제공되지 않으면 바이트 수로 간주하거나 크기 표시기 중 하나(`KB`, `MB` 또는 `GB`)를 추가할 수 있습니다(대/소문자가 무시됨).
-   >* 시간/날짜 일정은 패턴으로 `java.util.SimpleDateFormat` 지정할 수 있습니다. 파일이 회전되는 기간 이후를 정의합니다. 또한 회전된 파일에 추가된 접미어(식별용).
+   >* 시간/날짜 일정을 `java.util.SimpleDateFormat` 패턴으로 지정할 수 있습니다. 파일이 회전된 후 기간을 정의합니다. 또한 회전된 파일에 추가되는 접미사(식별용)입니다.
    >
-   >기본값은 &#39;.&#39;yyyy-MM-dd(일별 로그 회전용).
+   >기본값은 &#39;.&#39;입니다.yyyy-MM-dd(일별 로그 회전용)
    >
-   >예를 들어, 2010년 1월 20일 자정(또는 이 날짜 이후의 첫 번째 로그 메시지가 정확할 때)에 .. /logs/error.log의 이름이 .로 바뀝니다. /logs/error.log.2010-01-20입니다. 1 월 21 일에 대한 로깅은 (새롭고 비어 있음)에 출력됩니다. /logs/error.log 다음 변경 시 롤오버될 때까지 유지됩니다.
+   >예를 들어 2010년 1월 20일 자정(또는 이 날짜 이후의 첫 번째 로그 메시지가 정확하게 표시되는 경우)에 ../logs/error.log의 이름이 ../logs/error.log.2010-01-20으로 바뀝니다. 1월 21일에 대한 로깅은 다음 일 변경 시 롤오버될 때까지 (새 항목 및 빈 항목) ../logs/error.log에 출력됩니다.
    >
    >| `'.'yyyy-MM` | 매월 초에 순환 |
    >|---|---|
@@ -499,7 +499,7 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 복제 에이전트를 모니터링하려면 다음을 수행합니다.
 
-1. AEM의 **도구** 탭에 액세스합니다.
+1. AEM에서 **도구** 탭에 액세스합니다.
 1. **복제**&#x200B;를 클릭합니다.
 1. 적절한 환경(왼쪽 또는 오른쪽 창)에 대한 에이전트 링크를 두 번 클릭합니다(예: **작성자의 에이전트**).
 
@@ -546,11 +546,11 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 | 영역 | 증상 | 용량 증가... | 볼륨을 줄이려면... |
 |---|---|---|---|
-| 클라이언트 | 클라이언트 CPU 사용량이 많습니다. | 성능이 더 높은 클라이언트 CPU를 설치합니다. | (HTML) 레이아웃을 간소화합니다. |
-|   | 낮은 서버 CPU 사용률. | 더 빠른 브라우저로 업그레이드하십시오. | 클라이언트측 캐시를 개선합니다. |
+| 클라이언트 | 높은 클라이언트 CPU 사용. | 더 높은 성능의 클라이언트 CPU을 설치합니다. | (HTML) 레이아웃을 간소화합니다. |
+|   | 낮은 서버 CPU 사용량. | 더 빠른 브라우저로 업그레이드하십시오. | 클라이언트측 캐시를 개선합니다. |
 |   | 어떤 고객은 빠르고, 어떤 고객은 느립니다. |  |  |
 | 서버 |  |  |  |
-| 네트워크 | 서버와 클라이언트의 CPU 사용량이 낮습니다. | 네트워크 병목 현상을 제거합니다. | 클라이언트 캐시의 구성을 개선/최적화합니다. |
+| 네트워크 | 서버와 클라이언트 모두에서 CPU 사용량 낮음. | 네트워크 병목 현상을 제거합니다. | 클라이언트 캐시의 구성을 개선/최적화합니다. |
 |   | 서버에서 로컬로 탐색하는 것이 (비교적) 빠릅니다. | 네트워크 대역폭 향상. | 웹 페이지의 &quot;가중치&quot;를 줄입니다(예: 더 적은 수의 이미지, 최적화된 HTML). |
 | 웹 서버 | 웹 서버의 CPU 사용량이 높습니다. | 웹 서버를 클러스터링합니다. | 페이지당(방문) 히트 수를 줄입니다. |
 |   |  | 하드웨어 로드 밸런서를 사용합니다. |  |
@@ -560,7 +560,7 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 | 저장소 |  |  |  |
 | 캐시 |  |  |  |
 
-성능 문제는 연결 속도, CPU 로드 등의 일시적인 성능 저하를 포함하여 웹 사이트와 관련이 없는 다양한 원인에서 기인할 수 있습니다.
+성능 문제는 연결 속도의 일시적인 느림, CPU 로드 등을 포함하여 웹 사이트와 관련이 없는 다양한 원인에서 기인할 수 있습니다.
 
 모든 방문자 또는 방문자의 하위 집합에만 영향을 줄 수도 있습니다.
 
@@ -618,7 +618,7 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
   <tr>
    <td>시스템 호출</td>
    <td>타이밍 문제를 식별합니다.</td>
-   <td><p><code>System.currentTimeMillis()</code> 또는 <code>com.day.util</code> 호출. 타이밍은 코드에서 또는 <a href="#html-comments">HTML 주석</a>을 통해 타임스탬프를 생성하는 데 사용됩니다.</p> <p><strong>참고:</strong> 필요에 따라 활성화/비활성화할 수 있도록 이러한 기능을 구현하십시오. 시스템이 원활하게 실행될 때 통계 수집 오버헤드가 필요하지 않습니다.</p> </td>
+   <td><p><code>System.currentTimeMillis()</code> 또는 <code>com.day.util</code> 호출. 타이밍은 코드에서 또는 <a href="#html-comments">HTML-comments</a>을 통해 타임스탬프를 생성하는 데 사용됩니다.</p> <p><strong>참고:</strong> 필요에 따라 활성화/비활성화할 수 있도록 이러한 기능을 구현하십시오. 시스템이 원활하게 실행될 때 통계 수집 오버헤드가 필요하지 않습니다.</p> </td>
   </tr>
   <tr>
    <td>아파치 벤치</td>
@@ -637,7 +637,7 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
   </tr>
   <tr>
    <td>JProfiler</td>
-   <td>심층적인 CPU 및 메모리 프로파일링</td>
+   <td>심층적인 CPU 및 메모리 프로파일링.</td>
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
@@ -682,9 +682,9 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 이 파일은 AEM에 대한 모든 요청에 대한 기본 정보를 등록합니다. 이로부터 가치 있는 결론을 추출할 수 있다.
 
-`request.log`은(는) 기본 제공 방식으로 요청을 처리하는 데 걸리는 시간을 확인할 수 있습니다. 개발 목적상 `request.log`을(를) `tail -f`하고 응답 속도가 느려지지 않도록 관찰하는 것이 유용합니다. Adobe 더 큰 `request.log`을(를) 분석하려면 응답 시간을 정렬 및 필터링할 수 있는 [`rlog.jar`을(를) 사용하는 것이 좋습니다](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log`은(는) 기본 제공 방식으로 요청을 처리하는 데 걸리는 시간을 확인할 수 있습니다. 개발 목적상 `request.log`을(를) `tail -f`하고 응답 속도가 느려지지 않도록 관찰하는 것이 유용합니다. 더 큰 `request.log`을(를) 분석하려면 Adobe에서는 응답 시간을 정렬 및 필터링할 수 있는 [을(를) `rlog.jar`에서 사용하는 것이 좋습니다](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
-Adobe은 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다음 더 나은 성능을 위해 개별적으로 조정할 것을 권장합니다. 구성 요소별 성능 지표를 포함하거나 ` [yourkit](https://www.yourkit.com/)`과(와) 같은 성능 프로파일링 도구를 사용합니다.
+Adobe에서는 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다음 더 나은 성능을 위해 개별적으로 튜닝할 것을 권장합니다. 구성 요소별 성능 지표를 포함하거나 ` [yourkit](https://www.yourkit.com/)`과(와) 같은 성능 프로파일링 도구를 사용합니다.
 
 #### 웹 사이트의 트래픽 모니터링 {#monitoring-traffic-on-your-website}
 
@@ -695,7 +695,7 @@ Adobe은 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다음 �
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-특정 기간(예: 다양한 24시간 기간) 내에 모든 GET 항목을 합계함으로써 웹 사이트의 평균 트래픽에 대해 진술할 수 있습니다.
+특정 기간(예: 다양한 24시간 기간) 내에 모든 GET 항목을 합계함으로써 웹 사이트의 평균 트래픽에 대해 설명을 만들 수 있습니다.
 
 #### request.log로 응답 시간 모니터링 {#monitoring-response-times-with-the-request-log}
 
@@ -897,7 +897,7 @@ Percentage of the requests served within a certain time (ms)
 * 중복 인스턴스
 * 모든 다시 시작(카운터가 0으로 재설정)
 
-### HTML 주석 {#html-comments}
+### HTML 댓글 {#html-comments}
 
 서버 성능을 위해 모든 프로젝트에 `html comments`이(가) 포함되는 것이 좋습니다. 좋은 공공 사례를 많이 찾을 수 있다. 페이지를 선택하고 표시할 페이지 소스를 연 다음 아래로 스크롤합니다. 다음과 같은 코드를 볼 수 있습니다.
 
@@ -915,7 +915,7 @@ Percentage of the requests served within a certain time (ms)
 
 1. AEM 인스턴스를 시작합니다.
 1. `jconsole.` 실행
-1. AEM 인스턴스를 선택하고 **연결**&#x200B;하세요.
+1. AEM 인스턴스와 **연결**&#x200B;을 선택하세요.
 
 1. `Local` 응용 프로그램 내에서 `com.day.crx.quickstart.Main`을(를) 두 번 클릭합니다. 기본적으로 개요가 표시됩니다.
 
@@ -923,9 +923,9 @@ Percentage of the requests served within a certain time (ms)
 
    이제 다른 옵션을 선택할 수 있습니다.
 
-### (J)VisualVM을 이용한 성능 모니터링 {#monitoring-performance-using-j-visualvm}
+### (J)VisualVM을 사용하여 성능 모니터링 {#monitoring-performance-using-j-visualvm}
 
-JDK 6-8의 경우 도구 명령을 `visualvm` 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
+JDK 6-8의 경우 도구 명령 `visualvm`을(를) 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
 
 1. AEM 인스턴스를 시작합니다.
 
@@ -1037,11 +1037,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 에셋의 평균 크기는 얼마입니까? {#what-is-the-average-size-of-the-assets}
 
-폴더의 전체 크기를 확인하려면 다음을 수행합니다.`/var/dam`
+`/var/dam` 폴더의 전체 크기를 확인하려면:
 
-1. WebDAV를 사용하여 저장소를 로컬 파일 시스템에 매핑합니다.
+1. WebDAV를 사용하여 로컬 파일 시스템에 저장소를 매핑합니다.
 
-1. 명령줄을 사용합니다.
+1. 다음 명령줄을 사용합니다.
 
    ```shell
    cd /Volumes/localhost/var
@@ -1098,19 +1098,10 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >자세한 내용은 다음 문서를 참조하십시오.
 >
->* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
->* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
->* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
->* [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
-
-### 100%의 CPU {#cpu-at}
-
-시스템의 CPU가 100%로 계속 실행되는 경우 다음을 참조하십시오.
-
-* 기술 자료:
-
-   * [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### 메모리 부족 {#out-of-memory}
 
@@ -1125,7 +1116,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [AEM을 시작](/help/sites-deploying/deploy.md#getting-started)하는 데 사용되는 JVM 설정
 * 기술 자료:
 
-   * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
+* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1137,29 +1128,28 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
    * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 디버그 필터링](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [로거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 버전 제거를 구성 [했는지 여부 및 방법](/help/sites-deploying/version-purging.md)
+* [버전 제거](/help/sites-deploying/version-purging.md)를 구성했는지 여부 및 방법
 * 기술 자료:
 
-   * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko)
-   * [저널이 너무 많은 디스크 공간을 사용함](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [열려 있는 파일이 너무 많음]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
-재부팅할 때마다(때로는 일주일 이상) 인스턴스 성능이 저하되는 경우 다음을 확인할 수 있습니다.
+재부팅할 때마다(때때로 1주일 이상) 인스턴스 성능이 저하되는 경우 다음을 확인할 수 있습니다.
 
 * [메모리 부족](#outofmemory)
 * 기술 자료:
 
-   * [닫히지 않은 세션](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [리소스 확인자가 닫히지 않았습니다](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM 조정 {#jvm-tuning}
 
 JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특히 Java™ 7 이후). 따라서, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 종종 적절합니다.
 
-기본 설정이 적합하지 않은 경우 GC 성능을 모니터 및 평가하는 방법을 설정하는 것이 중요합니다. JVM을 조정하기 전에 이를 수행하십시오. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함한 모니터링 요소가 포함될 수 있습니다.
+기본 설정이 적합하지 않다면 GC 성능을 모니터링하고 평가하는 방법을 설정하는 것이 중요합니다. JVM을 튜닝하기 전에 이 작업을 수행하십시오. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함하는 모니터링 요소가 포함될 수 있습니다.
 
 몇 가지 일반적인 선택 사항은 다음과 같습니다.
 
@@ -1194,6 +1184,6 @@ JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특
 
 >[!NOTE]
 >
->oracle의 VM의 경우 다음 위치에도 정보가 있습니다.
+>Oracle의 VM에 대한 정보는 다음과 같습니다.
 >
 >[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

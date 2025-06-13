@@ -10,9 +10,9 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4828'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
 * **클래식 UI**
 AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 사용자 인터페이스입니다.
 
-자세한 내용은 [고객을 위한 UI 인터페이스 Recommendations](/help/sites-deploying/ui-recommendations.md)를 참조하십시오.
+자세한 내용은 [고객을 위한 UI 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)을 참조하십시오.
 
 터치 지원 UI, 클래식 UI 또는 둘 다를 지원하도록 구성 요소를 구현할 수 있습니다. 표준 인스턴스를 보면 원래 클래식 UI나 터치 지원 UI 또는 둘 다에 맞게 디자인된 즉시 사용 가능한 구성 요소도 표시됩니다.
 
@@ -60,19 +60,19 @@ AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 �
 
 >[!NOTE]
 >
->Adobe은 터치 지원 UI를 사용하여 최신 기술을 활용할 것을 권장합니다. [AEM 현대화 도구](modernization-tools.md)를 통해 마이그레이션을 더 쉽게 수행할 수 있습니다.
+>Adobe에서는 터치 지원 UI를 사용하여 최신 기술을 활용할 것을 권장합니다. [AEM 현대화 도구](modernization-tools.md)를 통해 마이그레이션을 더 쉽게 수행할 수 있습니다.
 
 ### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
-Adobe은 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것을 권장합니다.
+Adobe에서는 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 ### HTL과 JSP {#htl-vs-jsp}
 
 HTL은 AEM 6.0과 함께 도입된 HTML 템플릿 언어입니다.
 
-HTL이 AEM에서 권장되는 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
+이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
 
 HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요소 개발에 사용할 수 있습니다. HTL은 터치 지원 UI용이고 JSP는 클래식 UI용이라고 가정하는 경향이 있을 수 있지만, 이는 잘못된 인식이며 타이밍으로 인한 더 많은 것입니다. 터치 지원 UI 및 HTL은 거의 동일한 기간에 AEM에 통합되었습니다. 이제 HTL이 권장 언어이므로 터치 지원 UI용 경향이 있는 새 구성 요소에 사용되고 있습니다.
 
@@ -91,13 +91,13 @@ HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요�
 
 * [구성 요소 개발](/help/sites-developing/developing-components-samples.md)(터치 사용 UI에 중점)
 
-### Publish 인스턴스로 구성 요소 이동 {#moving-components-to-the-publish-instance}
+### 구성 요소를 게시 인스턴스로 이동 {#moving-components-to-the-publish-instance}
 
 콘텐츠를 렌더링하는 구성 요소는 콘텐츠와 동일한 AEM 인스턴스에 배포해야 합니다. 따라서 작성 인스턴스에서 페이지를 작성 및 렌더링하는 데 사용되는 모든 구성 요소를 게시 인스턴스에 배포해야 합니다. 배포되면 구성 요소를 활성화된 페이지를 렌더링하는 데 사용할 수 있습니다.
 
 다음 도구를 사용하여 구성 요소를 게시 인스턴스로 이동합니다.
 
-* [패키지 관리자를 사용하여 구성 요소를 패키지에 추가하고 다른 AEM 인스턴스로 이동합니다](/help/sites-administering/package-manager.md).
+* [패키지 관리자를 사용하여](/help/sites-administering/package-manager.md) 구성 요소를 패키지에 추가하고 다른 AEM 인스턴스로 이동합니다.
 * [트리 복제 활성화 도구를 사용하여](/help/sites-authoring/publishing-pages.md#manage-publication) 구성 요소를 복제하십시오.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요�
 
 * 페이지:
 
-   * AEM에 *page* 구성 요소(`cq:Page`)가 있습니다.
+   * AEM에 *페이지* 구성 요소(`cq:Page`)가 있습니다.
    * 이는 콘텐츠 관리에 중요한 특정 유형의 리소스입니다.
       * 페이지는 웹 사이트의 콘텐츠가 들어 있는 웹 페이지에 해당합니다.
 
@@ -314,7 +314,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>설정된 경우 이 속성은 셀 ID로 간주됩니다. 자세한 내용은 기술 자료 문서 <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">디자인 셀 ID를 작성하는 방법</a>을 참조하십시오.<br /> </td>
+   <td>설정하면 이 속성은 셀 ID로 간주됩니다.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -429,7 +429,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 >[!NOTE]
 >
 >* 호환성을 위해 터치 지원 UI에 대한 대화 상자가 정의되지 않은 경우 터치 지원 UI는 클래식 UI 대화 상자 정의를 사용할 수 있습니다.
->* 클래식 UI에 대해 정의된 대화 상자만 있는 구성 요소를 확장/변환할 수 있도록 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)도 제공됩니다.
+>* 클래식 UI에 대해 정의된 대화 상자만 있는 구성 요소를 확장/변환하는 데 도움이 되는 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)도 제공됩니다.
 >
 
 * 터치 지원 UI
@@ -521,7 +521,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
 ## 구성 요소 계층 및 상속 {#component-hierarchy-and-inheritance}
 
-AEM 내의 구성 요소는 세 가지 서로 다른 계층을 따릅니다.
+AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
 * **리소스 유형 계층 구조**
 
@@ -599,13 +599,13 @@ AEM 내의 구성 요소는 세 가지 서로 다른 계층을 따릅니다.
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고 **&#x200B; CRXDE Lite에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열** 검색할 수 있습니다.
+* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고** CRXDE Lite**에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
 ### 구성 요소 자리 표시자 {#component-placeholders}
 
-구성 요소에 콘텐츠가 없는 경우에도 구성 요소는 항상 작성자가 볼 수 있는 일부 HTML을 렌더링해야 합니다. 그렇지 않으면 편집기의 인터페이스에서 시각적으로 사라져 페이지와 편집기에서 기술적으로 표시되지만 보이지 않을 수 있습니다. 이러한 경우 작성자는 빈 구성 요소를 선택하고 상호 작용할 수 없습니다.
+구성 요소는 구성 요소에 콘텐츠가 없는 경우에도 항상 작성자가 볼 수 있는 일부 HTML을 렌더링해야 합니다. 그렇지 않으면 편집기의 인터페이스에서 시각적으로 사라져 페이지와 편집기에서 기술적으로 표시되지만 보이지 않을 수 있습니다. 이러한 경우 작성자는 빈 구성 요소를 선택하고 상호 작용할 수 없습니다.
 
 따라서 구성 요소는 페이지가 페이지 편집기에서 렌더링될 때(WCM 모드가 `edit` 또는 `preview`일 때) 표시되는 출력을 렌더링하지 않는 한 자리 표시자를 렌더링해야 합니다.
 자리 표시자에 대한 일반적인 HTML 마크업은 다음과 같습니다.
@@ -623,7 +623,7 @@ AEM 내의 구성 요소는 세 가지 서로 다른 계층을 따릅니다.
 
 앞의 예에서 `isEmpty`은(는) 구성 요소에 콘텐츠가 없고 작성자에게 보이지 않는 경우에만 true인 변수입니다.
 
-Adobe 반복을 방지하기 위해 구성 요소 구현자는 핵심 구성 요소에서 제공하는 것과 같은 [자리 표시자에 HTL 템플릿을 사용하는 것이 좋습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 핵심 구성 요소에서 제공하는 것과 같은 [자리 표시자에 HTL 템플릿을 사용하는 것이 좋습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 그런 다음 이전 링크에서 템플릿 사용은 다음 HTL 행을 통해 수행됩니다.
 
@@ -923,9 +923,9 @@ Adobe 반복을 방지하기 위해 구성 요소 구현자는 핵심 구성 요
    <td><code>editorType</code></td>
    <td><p>(<code>String</code>) 편집기 유형. 사용 가능한 유형은 다음과 같습니다.</p>
     <ul>
-     <li>일반 텍스트: HTML이 아닌 콘텐츠에 사용됩니다.<br /> </li>
+     <li>일반 텍스트: HTML 이외의 콘텐츠에 사용됩니다.<br /> </li>
      <li>title: 는 편집을 시작하기 전에 그래픽 제목을 일반 텍스트로 변환하는 향상된 일반 텍스트 편집기입니다. Geometrixx 제목 구성 요소에서 사용됩니다.<br /> </li>
-     <li>텍스트: HTML 콘텐츠에 사용됩니다(리치 텍스트 편집기 사용).<br /> </li>
+     <li>텍스트: HTML 콘텐츠에 사용할 텍스트(리치 텍스트 편집기 사용).<br /> </li>
     </ul> </td>
   </tr>
  </tbody>

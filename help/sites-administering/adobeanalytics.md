@@ -10,10 +10,10 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 56%
+source-wordcount: '249'
+ht-degree: 53%
 
 ---
 
@@ -50,15 +50,14 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 다음을 참조하십시오.
 
 * 사용자 데이터를 수집하는 구성 요소 개발 및 Adobe Analytics 프레임워크 사용자 지정에 대한 자세한 내용은 [Adobe Analytics 통합 확장](/help/sites-developing/extending-analytics.md)을 참조하십시오.
-* 지식 기반 문서인 [Adobe Analytics 통합 - 문제 해결](https://helpx.adobe.com/kr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)을 참조하여 Adobe Analytics 통합 관련 문제를 해결하는 방법에 대해 알아보십시오.
 
 >[!NOTE]
 >
 >If you are using Adobe Analytics with a custom proxy configuration, you need to [configure two OSGi bundles](/help/sites-deploying/configuring-osgi.md) (for example, with the Web console) required for the **Apache HTTP Client** proxy configurations. Both are required as some functionalities of AEM use the 3.x APIs, while others use the 4.x APIs. 다음을 구성하십시오.
 >
 >* 3.x API 구성을 위한 **Day Commons HTTP 클라이언트 3.1**
->  (예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient))
+>  >  (예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient))
 >
 >* 4.x API 구성을 위한 **Apache HTTP 구성 요소 프록시 구성**
->  (예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator))
+>  >  (예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator))
 >

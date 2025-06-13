@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 성능 테스트는 AEM 배포의 중요한 부분입니다. 고객 요구 사항에 따라 게시 인스턴스, 작성자 인스턴스 또는 둘 다에서 성능 테스트를 수행할 수 있습니다.
 
-이 설명서에서는 성능 테스트를 수행하는 전반적인 전략 및 방법론과 프로세스를 지원하기 위해 Adobe에서 사용할 수 있는 몇 가지 도구에 대해 설명합니다. 마지막으로, 코드 분석 및 시스템 구성 측면에서 성능 조정을 지원하기 위해 AEM 6에서 사용할 수 있는 도구에 대한 분석을 읽어 보십시오.
+이 설명서는 성능 테스트를 수행하는 전반적인 전략 및 방법론과 프로세스를 지원하기 위해 Adobe에서 사용할 수 있는 몇 가지 도구에 대해 설명합니다. 마지막으로, 코드 분석 및 시스템 구성 측면에서 성능 조정을 지원하기 위해 AEM 6에서 사용할 수 있는 도구에 대한 분석을 읽어 보십시오.
 
 ### 현실 시뮬레이션 {#simulating-reality}
 
@@ -54,12 +54,10 @@ ht-degree: 0%
 
 #### 테스트 도구 {#testing-tools}
 
-* Adobe의 **힘든 날** 도구를 사용하여 AEM 인스턴스에 대한 로드를 생성하고 성능 데이터를 수집할 수 있습니다. Adobe의 AEM 엔지니어링 팀은 실제로 도구를 사용하여 AEM 제품 자체의 부하 테스트를 수행합니다. Tough Day에서 실행되는 스크립트는 속성 파일과 JMX XML 파일을 통해 구성됩니다. 자세한 내용은 [힘든 날 설명서](/help/sites-developing/tough-day.md)를 참조하세요.
+* Adobe의 **힘든 날** 도구를 사용하여 AEM 인스턴스에 대한 로드를 생성하고 성능 데이터를 수집할 수 있습니다. Adobe의 AEM 엔지니어링 팀은 실제로 이 도구를 사용하여 AEM 제품 자체에 대한 로드 테스트를 수행합니다. Tough Day에서 실행되는 스크립트는 속성 파일과 JMX XML 파일을 통해 구성됩니다. 자세한 내용은 [힘든 날 설명서](/help/sites-developing/tough-day.md)를 참조하세요.
 
 * AEM은 문제가 있는 쿼리, 요청 및 오류 메시지를 빠르게 볼 수 있는 기본 도구를 제공합니다. 자세한 내용은 작업 대시보드 설명서의 [진단 도구](/help/sites-administering/operations-dashboard.md#diagnosis-tools) 섹션을 참조하십시오.
 * Apache는 성능 및 로드 테스트 및 기능 동작에 사용할 수 있는 **JMeter**(이)라는 제품을 제공합니다. 오픈 소스 소프트웨어이며 자유롭게 사용할 수 있지만, 엔터프라이즈 제품보다 기능 세트가 작고 학습 곡선이 더 가파르다. JMeter는 Apache 웹 사이트([https://jmeter.apache.org/](https://jmeter.apache.org/))에서 찾을 수 있습니다.
-
-* **Load Runner**&#x200B;은(는) 엔터프라이즈급 부하 테스트 제품입니다. 무료 평가 버전을 사용할 수 있습니다. 자세한 내용은 [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)을(를) 참조하십시오.
 
 * [Vercara](https://vercara.com/website-performance-management)과(와) 같은 웹 사이트 로드 테스트 도구를 사용할 수도 있습니다.
 * 모바일 또는 반응형 웹 사이트를 테스트할 때 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하거나 3G 또는 EDGE과 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 보다 널리 사용되는 도구 중 하나는 다음과 같습니다.
@@ -75,11 +73,11 @@ ht-degree: 0%
 
 Touch UI의 **개발자 모드**
 
-AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=ko)을 참조하세요.
+AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)을 참조하세요.
 
 **rlog.jar을 사용하여 요청 로그를 읽습니다**
 
-AEM 시스템에서 요청 로그를 보다 포괄적으로 분석하려면 `rlog.jar`을(를) 사용하여 AEM에서 생성한 `request.log` 파일을 검색하고 정렬할 수 있습니다. 이 jar 파일은 `/crx-quickstart/opt/helpers` 폴더의 AEM 설치에 포함되어 있습니다. rlog 도구 및 요청 로그온 일반에 대한 자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md) 설명서를 참조하십시오.
+AEM 시스템에서 요청 로그를 보다 포괄적으로 분석하기 위해 `rlog.jar`을(를) 사용하여 AEM에서 생성한 `request.log` 파일을 검색하고 정렬할 수 있습니다. 이 jar 파일은 `/crx-quickstart/opt/helpers` 폴더의 AEM 설치에 포함되어 있습니다. rlog 도구 및 요청 로그온 일반에 대한 자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md) 설명서를 참조하십시오.
 
 **쿼리 설명 도구**
 
@@ -108,7 +106,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-이름이 **Document-Diff**&#x200B;인 캐시의 경우 적중률은 `.90`을(를) 넘어야 합니다. 적중률이 90% 미만이면 `DocumentNodeStoreService` 구성을 편집해야 합니다. Adobe 제품 지원은 환경에 가장 적합한 설정을 추천할 수 있습니다.
+이름이 **Document-Diff**&#x200B;인 캐시의 경우 적중률은 `.90`을(를) 넘어야 합니다. 적중률이 90% 미만이면 `DocumentNodeStoreService` 구성을 편집해야 합니다. Adobe 제품 지원에서 환경에 가장 적합한 설정을 추천할 수 있습니다.
 
 * **Oak 저장소 통계** Mbean입니다. 다음으로 이동하여 직접 액세스할 수 있습니다.
 
@@ -120,7 +118,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 1. /crx-quickstart/install 폴더 아래에 놓습니다.
 
 >[!NOTE]
->[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko)
+>[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 기본 설정은 10,000이지만 대부분의 배포에서는 20,000 또는 50,000으로 설정해야 합니다.
 
@@ -148,11 +146,11 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 * 오류 로그에서 오류 또는 경고를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오.
 * 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다. 이러한 리소스는 종종 성능 병목 현상의 원인입니다.
 * 페이지의 아키텍처 및 페이지 처리 방법을 최적화하여 URL 매개 변수의 사용을 최소화하여 가능한 한 많은 캐싱을 허용합니다.
-* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko) 설명서를 따르십시오.
+* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) 설명서를 따르십시오.
 
 * 작성자 인스턴스에서 특정 페이지 또는 구성 요소를 편집하는 데 문제가 있는 경우 TouchUI 개발자 모드를 사용하여 해당 페이지를 검사합니다. 이렇게 하면 페이지의 각 콘텐츠 영역과 로드 시간에 대한 분류가 제공됩니다.
 * 사이트의 모든 JS 및 CSS를 축소합니다. 이 [블로그 게시물](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)을 참조하세요.
 * 구성 요소에서 포함된 CSS 및 JS를 제거합니다. 페이지 렌더링에 필요한 요청 수를 최소화하기 위해 클라이언트측 라이브러리와 함께 포함되고 축소되어야 합니다.
 * 서버 요청을 검사하고 가장 오래 걸리는 요청을 확인하려면 Chrome의 네트워크 탭과 같은 브라우저 도구를 사용합니다.
 
-문제 영역이 식별되면 성능 최적화를 위해 애플리케이션 코드를 검사할 수 있습니다. 제대로 수행되지 않는 AEM 기능은 Adobe 지원에서 해결할 수 있습니다.
+문제 영역이 식별되면 성능 최적화를 위해 애플리케이션 코드를 검사할 수 있습니다. 제대로 수행되지 않는 AEM 기능은 Adobe 지원에서 즉시 해결할 수 있습니다.

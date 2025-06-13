@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 다음의 세부 사항은 David Nuescheler가 표현한 아이디어와 주석이다.
 
-David은 2010년 Adobe이 인수한 글로벌 컨텐츠 관리 및 컨텐츠 인프라 소프트웨어의 선두 공급업체인 Day Software AG의 공동 설립자이자 CTO였습니다. David은 현재 Adobe의 엔터프라이즈 기술 부문 동료 겸 부사장으로서, 컨텐츠 관리 기술 표준인 Java™ JCR(Content Repository) API(Application Programming Interface) 인 JSR-170의 개발도 주도하고 있습니다.
+David은 2010년 Adobe이 인수한 글로벌 콘텐츠 관리 및 콘텐츠 인프라 소프트웨어의 선두 공급업체인 Day Software AG의 공동 설립자이자 CTO였습니다. David은 현재 Adobe의 엔터프라이즈 기술 부문 동료 겸 부사장으로서, 컨텐츠 관리 기술 표준인 Java™ JCR(Content Repository) API(Application Programming Interface) 인 JSR-170의 개발도 주도하고 있습니다.
 
 [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel)에서도 추가 업데이트를 볼 수 있습니다.
 
@@ -73,8 +73,6 @@ ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것
 >[!CAUTION]
 >
 >콘텐츠 저장소의 구성 방식은 성능에도 영향을 줄 수 있습니다. 최상의 성능을 위해 컨텐츠 저장소의 개별 노드에 연결된 하위 노드 수는 1,000개를 초과할 수 없습니다.
->
->[CRX에서 처리할 수 있는 데이터의 양](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)을 참조하세요.
 
 #### 예 {#example-2}
 
@@ -175,7 +173,7 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 
 콘텐츠 모델이 파일이나 폴더와 같은 냄새를 원격으로 노출하는 경우 `nt:file`, `nt:folder` 및 `nt:resource`을(를) 사용하거나 확장하려고 합니다.
 
-경험상 많은 일반 애플리케이션은 nt:folder 및 nt:files와의 상호 작용을 묵시적으로 허용하며 추가 메타 정보로 보강된 경우 이러한 이벤트를 처리하고 표시하는 방법을 알고 있습니다. 예를 들어 JCR 위에 있는 CIF 또는 WebDAV와 같은 파일 서버 구현과 직접적인 상호 작용은 암시적이 됩니다.
+경험상 많은 일반 애플리케이션은 nt:folder 및 nt:files와의 상호 작용을 묵시적으로 허용하며 추가 메타 정보로 보강된 경우 이러한 이벤트를 처리하고 표시하는 방법을 알고 있습니다. 예를 들어, JCR 위에 있는 CIFS 또는 WebDAV와 같은 파일 서버 구현과 직접적인 상호 작용은 암시적이 됩니다.
 
 파일 이름과 MIME 형식을 저장해야 하는 경우 `nt:file`/ `nt:resource`이(가) 일치하는 것으로 알고 있습니다. 여러 &quot;파일&quot;이 있을 수 있는 경우 nt:folder를 저장하는 것이 좋습니다.
 

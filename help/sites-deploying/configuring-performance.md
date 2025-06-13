@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6470'
+source-wordcount: '6467'
 ht-degree: 13%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 13%
 >
 >성능 문제 해결 및 해결에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md)를 참조하십시오.
 >
->또한 [성능 조정 팁](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17466)에 대한 기술 자료 문서를 검토할 수 있습니다.
+>또한 [성능 조정 팁](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)에 대한 기술 자료 문서를 검토할 수 있습니다.
 
 핵심 문제는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다. 이 값은 요청마다 다르지만 평균 대상 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 가능한 것으로 입증되면 웹 사이트의 성능을 모니터링하고 잠재적인 문제의 발생을 나타내는 데 사용할 수 있습니다.
 
@@ -41,11 +41,11 @@ ht-degree: 13%
 >[!NOTE]
 >
 >* 성능 최적화를 구성한 후 [힘든 날](/help/sites-developing/tough-day.md)의 절차에 따라 부하가 큰 환경을 테스트하십시오.
->* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
-AEM Projects에 대한 성능 최적화 방법론은 처음부터 성능 문제를 방지하기 위해 따를 수 있는 5가지 간단한 규칙으로 요약할 수 있습니다.
+AEM 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문제를 방지하기 위해 따를 수 있는 5가지 간단한 규칙으로 요약할 수 있습니다.
 
 1. [최적화를 위한 계획](#planning-for-optimization)
 1. [현실 시뮬레이션](#simulate-reality)
@@ -112,7 +112,7 @@ AEM Projects에 대한 성능 최적화 방법론은 처음부터 성능 문제�
 * 게시 시 측정됨(작성 환경과 관련된 간접비 없음)
 * 서버에서 측정됨(네트워크 오버헤드 없음)
 * 캐시되지 않음(AEM 출력 캐시 없음, Dispatcher 캐시 없음)
-* 많은 종속성(HTML, JS, PDF, ...)이 있는 복잡한 항목에만 해당합니다.
+* 많은 종속성이 있는 복잡한 항목(HTML, JS, PDF, ...)에만 해당됩니다.
 * 시스템에 다른 로드 없음
 
 다음을 포함하여 성능 문제에 자주 기여하는 몇 가지 문제가 있습니다.
@@ -155,7 +155,7 @@ JVM 및 OS 레벨 조정은 일반적으로 성능 향상을 가져오지 않으
 
 ## 성능 모니터링 {#performance-monitoring}
 
-성능(또는 성능 부족)은 사용자가 가장 먼저 인식하는 것 중 하나이며, 따라서 사용자 인터페이스가 있는 모든 응용 프로그램과 마찬가지로 성능이 중요합니다. AEM 설치의 성능을 최적화하려면 인스턴스의 다양한 속성과 해당 동작을 모니터링합니다.
+성능(또는 성능 부족)은 사용자가 가장 먼저 인식하는 것 중 하나이며, 따라서 사용자 인터페이스가 있는 모든 응용 프로그램과 마찬가지로 성능이 중요합니다. AEM 설치의 성능을 최적화하려면 인스턴스의 다양한 속성과 동작을 모니터링합니다.
 
 성능 모니터링 수행 방법에 대한 자세한 내용은 [성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)을 참조하십시오.
 
@@ -163,7 +163,7 @@ JVM 및 OS 레벨 조정은 일반적으로 성능 향상을 가져오지 않으
 
 기본 시작점은 시스템이 정상적으로 작동할 때 시스템에 대한 좋은 지식입니다. 제대로 수행될 때 환경이 어떻게 &quot;모양&quot;이고 &quot;동작&quot;인지 알지 못하면 성능이 저하될 때 문제를 찾는 것이 어렵습니다. 시스템이 원활하게 실행될 때 시스템을 조사하는 데 시간을 투자하고 성능 정보 수집이 지속적인 작업인지 확인하십시오. 이렇게 하면 성능이 저하되는 경우 비교할 수 있는 기반이 제공됩니다.
 
-다음 다이어그램은 AEM 컨텐츠에 대한 요청이 수행할 수 있는 경로를 보여 주며, 따라서 성능에 영향을 줄 수 있는 여러 요소의 수를 보여 줍니다.
+다음 다이어그램은 AEM 콘텐츠에 대한 요청이 수행할 수 있는 경로를 보여 주며, 따라서 성능에 영향을 줄 수 있는 다양한 요소의 수를 보여 줍니다.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -203,7 +203,7 @@ AEM(및/또는 기본 저장소)의 특정 측면을 성능을 최적화하도�
 
 >[!NOTE]
 >
->[성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko)를 참조하십시오.
+>[성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)를 참조하십시오.
 
 ### 색인 검색 {#search-indexing}
 
@@ -216,14 +216,14 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 ### 동시 워크플로우 처리 {#concurrent-workflow-processing}
 
-성능을 향상시키려면 동시에 실행되는 워크플로우 프로세스 수를 제한하십시오. 기본적으로 워크플로 엔진은 Java™ VM에서 사용할 수 있는 프로세서만큼 많은 워크플로를 동시에 처리합니다. 워크플로우 단계에 대량의 처리 리소스(RAM 또는 CPU)가 필요한 경우 이러한 워크플로우 중 여러 개를 동시에 실행하면 사용 가능한 서버 리소스에 대한 수요가 높을 수 있습니다.
+성능을 향상시키려면 동시에 실행되는 워크플로우 프로세스 수를 제한하십시오. 기본적으로 워크플로 엔진은 Java™ VM에서 사용할 수 있는 프로세서만큼 많은 워크플로를 동시에 처리합니다. 워크플로우 단계에 대량의 처리 리소스(RAM 또는 CPU)가 필요한 경우, 이러한 워크플로우 중 여러 개를 동시에 실행하면 사용 가능한 서버 리소스에 대한 수요가 높을 수 있습니다.
 
 예를 들어 이미지(또는 일반적인 DAM 에셋)가 업로드되면 워크플로우는 이미지를 DAM으로 자동으로 가져옵니다. 이미지는 종종 고해상도이며 처리를 위해 수백 MB의 힙을 쉽게 사용할 수 있습니다. 이러한 이미지를 병렬로 처리하면 메모리 하위 시스템과 가비지 수집기에 높은 부하가 걸리게 됩니다.
 
 워크플로우 엔진은 작업 항목 처리를 처리하고 예약하기 위해 Apache Sling 작업 대기열을 사용합니다. 워크플로 작업을 처리하기 위해 Apache Sling 작업 큐 구성 서비스 팩토리에서 기본적으로 다음 작업 큐 서비스를 만들었습니다.
 
 * Granite 워크플로우 큐: DAM 에셋을 처리하는 워크플로우 단계와 같은 대부분의 워크플로우 단계는 Granite 워크플로우 큐 서비스를 사용합니다.
-* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특수 외부 워크플로우 단계에 사용됩니다. 예를 들어, InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현된다. 워크플로우 엔진은 외부 대기열을 사용하여 폴링을 처리합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)을(를) 참조하십시오.)
+* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특수 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 외부 대기열을 사용하여 폴링을 처리합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)을(를) 참조하십시오.)
 
 동시에 실행되는 최대 워크플로우 프로세스 수를 제한하도록 이러한 서비스를 구성합니다.
 
@@ -233,7 +233,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 #### 저장소에서의 구성 {#configuration-in-the-repo}
 
-sling:OsgiConfig 노드[&#128279;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 사용하여  서비스를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다(예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705). 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
+sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 사용하여 [ 서비스를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다(예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705). 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
 이름이 `queue.maxparallel`인 속성을 구성하십시오.
 
@@ -290,7 +290,7 @@ sling:OsgiConfig 노드[&#128279;](/help/sites-deploying/configuring-osgi.md#add
 * 작성자의 &quot;진행 중인 작업&quot;과 게시의 &quot;최종&quot; 구분
 * 작성자의 내부 사용자와 게시의 외부 방문자/사용자(예: 에이전트, 언론 매체 담당자, 고객 및 학생) 구분.
 
-## 품질 보증 우수 사례 {#best-practices-for-quality-assurance}
+## 품질 Assurance 우수 사례 {#best-practices-for-quality-assurance}
 
 성능은 게시 환경에 가장 중요합니다. 따라서 프로젝트를 구현하는 동안 게시 환경에 대해 수행하는 성능 테스트를 신중하게 계획하고 분석해야 합니다.
 
@@ -317,7 +317,7 @@ sling:OsgiConfig 노드[&#128279;](/help/sites-deploying/configuring-osgi.md#add
 
 성능 테스트에 사용되는 테스트 환경의 아키텍처를 문서화합니다.
 
-Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경을 복제해야 합니다.
+Dispatcher 및 로드 밸런서와 함께 프로덕션 게시 환경의 복제가 필요합니다.
 
 #### 응용 프로그램 맵 {#application-map}
 
@@ -329,7 +329,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 응용 프로그램에는 일반적으로 다양한 사용 사례가 있습니다. 일부 사용 사례는 중요하지만, 다른 사용 사례는 덜 중요합니다.
 
-게시 시 성능 테스트 범위에 중점을 두려면, Adobe은 다음을 정의하는 것을 권장합니다.
+게시에서 성능 테스트 범위에 중점을 두려면 Adobe에서 다음을 정의하는 것이 좋습니다.
 
 * 가장 중요한 비즈니스 사용 사례
 * 가장 중요한 기술 사용 사례
@@ -383,7 +383,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 두 경우 모두 사전 정의된 수의 사용자가 시스템을 사용할 때 초당 예상 트랜잭션 수를 정의할 수 있습니다.
 
-| 구성 요소 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 구성 요소 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 홈페이지 단일 사용자 | 평균 | 1 | 1 |  |  |
 |   | 피크 | 1 | 3 |  |  |
@@ -394,7 +394,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 구성 요소를 함께 테스트하면 애플리케이션 동작을 보다 세밀하게 반영할 수 있습니다. 다시 평균 및 피크 조건을 테스트해야 합니다.
 
-| 시나리오 | 구성 요소 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 구성 요소 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 혼합 평균 | 홈 페이지 | 10 | 1 |  |  |
 |   | 검색 | 10 | 1 |  |  |
@@ -409,9 +409,9 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 #### 라이브 테스트 진행 중 {#going-live-tests}
 
-웹 사이트를 사용 가능하게 한 후 처음 며칠 동안은 관심 수준이 높아질 것으로 예상됩니다. 이 시나리오는 테스트 중인 피크 값보다 훨씬 큽니다. Adobe은 실행 중 시나리오를 테스트하여 시스템이 이 상황을 지원할 수 있도록 하는 것을 권장합니다.
+웹 사이트를 사용 가능하게 한 후 처음 며칠 동안은 관심 수준이 높아질 것으로 예상됩니다. 이 시나리오는 테스트 중인 피크 값보다 훨씬 큽니다. Adobe에서는 실행 중 시나리오를 테스트하여 시스템이 이 상황을 지원할 수 있도록 하는 것이 좋습니다.
 
-| 시나리오 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 라이브 피크 | 홈 페이지 | 200 | 20 |  |  |
 |   | 검색 | 100 | 10 |  |  |
@@ -428,9 +428,9 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 이러한 검사를 고안할 때 모든 시나리오가 규칙적으로 발생하는 것은 아니라는 것을 기억해야 한다. 그러나, 그들이 전체 시스템에 미치는 영향은 중요합니다.
 
-| 오류 시나리오 | 오류 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 오류 시나리오 | 오류 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &ast;&ast;&ast;&ast;만 검색됩니다. |
+| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast;만 검색됩니다. |
 |   | 정지어 | 20 | 2 |  | 정지어를 찾고 있습니다. |
 |   | 빈 문자열 | 10 | 1 |  | 빈 문자열을 검색하는 중입니다. |
 |   | 특수 문자 | 10 | 1 |  | 특수 문자를 검색하는 중입니다. |
@@ -439,7 +439,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 특정 문제는 시스템이 몇 시간 또는 며칠 동안 계속 실행된 후에만 발생합니다. 필요한 시간 기간 동안 일정한 평균 하중을 시험하기 위해 내구 시험을 사용한다. 그런 다음 성능 저하를 분석할 수 있습니다.
 
-| 시나리오 | 테스트 유형 | 아니. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 내구 시험(72시간) | 홈 페이지 | 10 | 1 |  |  |
 |   | 검색 | 10 | 1 |  |  |
@@ -459,7 +459,6 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 다양한 도구를 사용하여 로드 생성, 성능 모니터링 및 결과 분석을 수행할 수 있습니다. 이러한 도구 중 일부는 다음과 같습니다.
 
 * [JMeter](https://jmeter.apache.org/)
-* [실행자 로드](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [적외선](https://www.infraredsoftware.com/)
 * [Java™ 대화형 프로필](https://jiprof.sourceforge.net/)
 
@@ -478,7 +477,7 @@ Dispatcher 및 로드 밸런서와 함께 계획된 프로덕션 Publish 환경�
 
 ## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)은(는) Adobe의 캐싱 및/또는 부하 분산 도구입니다. Dispatcher을 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)은(는) Adobe의 캐싱 및/또는 부하 분산 도구입니다. Dispatcher을 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -494,7 +493,7 @@ Dispatcher에서는 웹 사이트에서 이러한 메커니즘을 활용하는 �
 >
 >일반적으로, 많은 캐싱 전략은 좋은 URL을 선택하고 이 추가 데이터에 의존하지 않는 것을 포함합니다.
 >
->Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐시할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)을 참조하십시오.
+>Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐시할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)을 참조하십시오.
 >
 
 ### Dispatcher 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
@@ -503,19 +502,19 @@ Dispatcher에서는 웹 사이트에서 이러한 메커니즘을 활용하는 �
 
 * 총 요청 수입니다. 이 정보는 Apache `access.log`에서 사용할 수 있습니다. 자세한 내용은 [공식 Apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog)를 참조하십시오.
 
-* Publish 인스턴스가 제공한 요청 수입니다. 이 정보는 인스턴스의 `request.log`에서 사용할 수 있습니다. 자세한 내용은 [request.log 해석](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) 및 [로그 파일 찾기](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)를 참조하십시오.
+* 게시 인스턴스가 제공한 요청 수입니다. 이 정보는 인스턴스의 `request.log`에서 사용할 수 있습니다. 자세한 내용은 [request.log 해석](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) 및 [로그 파일 찾기](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)를 참조하십시오.
 
 캐시 비율을 계산하는 공식은 다음과 같습니다.
 
-* (Publish의 총 요청 수 **빼기**) **나누기**&#x200B;를 총 요청 수로 계산합니다.
+* (총 요청 수 **마이너스** 게시 시 요청 수) **나누기** 총 요청 수로.
 
-예를 들어 총 요청 수가 129491 Publish 인스턴스에서 제공하는 요청 수가 58959 캐시 비율은 **(129491 - 58959)/129491= 54.5%**&#x200B;입니다.
+예를 들어 총 요청 수가 129491 게시 인스턴스에서 제공하는 요청 수가 58959 캐시 비율은 **(129491 - 58959)/129491= 54.5%**&#x200B;입니다.
 
 일대일 게시자/Dispatcher 연결이 없는 경우 정확한 측정을 위해 모든 Dispatcher와 게시자의 요청을 함께 추가합니다. [권장 배포](/help/sites-deploying/recommended-deploys.md)도 참조하세요.
 
 >[!NOTE]
 >
->최상의 성능을 위해 Adobe에서는 90% 대 95%의 캐시 비율을 권장합니다.
+>최상의 성능을 위해 Adobe에서는 캐시 비율을 90% 대 95%로 권장합니다.
 
 #### 일관된 페이지 인코딩 사용 {#using-consistent-page-encoding}
 
@@ -530,7 +529,7 @@ Dispatcher 버전 4.1.11에서는 응답 헤더를 캐시할 수 있습니다. D
 
 #### URL 매개변수 방지 {#avoid-url-parameters}
 
-가능하면 캐시하려는 페이지의 URL 매개변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)되지 않은 경우).
+가능하면 캐시하려는 페이지의 URL 매개변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)되지 않은 경우).
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -603,22 +602,22 @@ www.myCompany.com/news/main.large.html
 * 반대로 10개의 서로 다른 시작 페이지를 선택할 수 있는 경우 각 시작 페이지를 캐시할 수 있으므로 성능이 향상됩니다.
 
 >[!TIP]
->Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=ko) 및 [보호된 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=ko#dispatcher-tips-and-tricks)의 해당 섹션을 참조하십시오.
+>Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 및 [보호된 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)의 해당 섹션을 참조하십시오.
 
 사용자 이름을 제목 표시줄에 입력하여 각 페이지를 개인화하는 경우(예: ) 성능에 영향을 줍니다.
 
 >[!TIP]
->보안 콘텐츠를 캐시하려면 Dispatcher 안내서의 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR)을 참조하십시오.
+>보안 콘텐츠를 캐시하려면 Dispatcher 안내서의 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)을 참조하십시오.
 
 한 페이지에서 제한된 컨텐츠와 공개 컨텐츠를 혼합하는 경우 Dispatcher의 서버측 포함 또는 브라우저의 Ajax를 통해 클라이언트측 포함 을 사용하는 전략을 고려해 보십시오.
 
 >[!TIP]
 >
->혼합 공개 콘텐츠와 제한된 콘텐츠를 처리하려면 [Sling Dynamic Include 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=ko)을 참조하십시오.
+>혼합 공개 콘텐츠와 제한된 콘텐츠를 처리하려면 [Sling Dynamic Include 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)을 참조하십시오.
 
 #### 고정 연결 {#sticky-connections}
 
-[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#the-benefits-of-load-balancing)은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
+[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing)은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
 
 #### MIME 유형 {#mime-types}
 
@@ -664,7 +663,7 @@ AEM 구성은 운영 체제 및 AEM 소프트웨어와 함께 저장소 및 데�
 
 #### 데이터 볼륨 {#data-volumes}
 
-다음 표에서는 백업 벤치마크에서 사용되는 데이터 볼륨의 크기를 보여 줍니다. 초기 기본 컨텐츠가 처음 설치된 다음 알려진 양의 데이터가 추가되어 백업된 컨텐츠의 크기가 커집니다. 특정 단위로 백업이 생성되므로 하루에 생성할 수 있는 내용과 컨텐츠가 크게 증가합니다. 콘텐츠(페이지, 이미지, 태그)의 배포는 대략적으로 실제 프로덕션 에셋 구성을 기반으로 합니다. 페이지, 이미지 및 태그는 최대 800개의 하위 페이지로 제한됩니다. 각 페이지에는 제목, Flash, 텍스트/이미지, 비디오, 슬라이드쇼, 양식, 테이블, 클라우드 및 슬라이드 구성 요소가 포함되어 있습니다. 이미지는 37KB에서 594KB까지 400개의 고유한 파일 풀에서 업로드됩니다.
+다음 표에서는 백업 벤치마크에서 사용되는 데이터 볼륨의 크기를 보여 줍니다. 초기 기본 컨텐츠가 처음 설치된 다음 알려진 양의 데이터가 추가되어 백업된 컨텐츠의 크기가 커집니다. 특정 단위로 백업이 생성되므로 하루에 생성할 수 있는 내용과 컨텐츠가 크게 증가합니다. 콘텐츠(페이지, 이미지, 태그)의 배포는 대략적으로 실제 프로덕션 에셋 구성을 기반으로 합니다. 페이지, 이미지 및 태그는 최대 800개의 하위 페이지로 제한됩니다. 각 페이지에는 제목, 플래시, 텍스트/이미지, 비디오, 슬라이드쇼, 양식, 테이블, 클라우드 및 슬라이드 구성 요소가 포함되어 있습니다. 이미지는 37KB에서 594KB까지 400개의 고유한 파일 풀에서 업로드됩니다.
 
 | 콘텐츠 | 노드 | 페이지 | 이미지 | 태그 |
 |---|---|---|---|---|
@@ -676,12 +675,12 @@ AEM 구성은 운영 체제 및 AEM 소프트웨어와 함께 저장소 및 데�
 
 #### 벤치마크 시나리오 {#benchmark-scenarios}
 
-백업 벤치마크는 두 가지 주요 시나리오를 다룹니다. 즉, 시스템이 애플리케이션 로드가 많이 발생하는 경우 백업하고 시스템이 유휴 상태인 경우 백업합니다. 일반적인 권장 사항은 AEM이 가능한 한 유휴 상태일 때 백업을 수행해야 한다는 것이지만, 시스템이 부하 상태일 때 백업을 실행해야 하는 경우가 있습니다.
+백업 벤치마크는 두 가지 주요 시나리오를 다룹니다. 즉, 시스템이 애플리케이션 로드가 많이 발생하는 경우 백업하고 시스템이 유휴 상태인 경우 백업합니다. AEM이 가능한 한 유휴 상태일 때 백업을 수행하는 것이 일반적인 권장 사항이지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
 
 * **유휴 상태** - AEM에서 다른 작업 없이 백업이 수행됩니다.
 * **로드 중** - 온라인 프로세스에서 시스템이 80% 로드되지 않는 동안 백업이 수행됩니다. 백업 지연은 로드에 미치는 영향을 파악하기 위해 다양했습니다.
 
-AEM 서버 로그에서 백업 시간 및 결과 백업 크기를 얻습니다. 일반적으로 백업은 한밤중과 같이 AEM이 유휴 상태일 때 해제 시간으로 예약하는 것이 좋습니다. 이 시나리오는 권장 접근 방식을 나타냅니다.
+AEM 서버 로그에서 백업 시간 및 결과 백업 크기를 얻습니다. 일반적으로 AEM이 유휴 상태일 때(예: 한밤중과 같은) 오프타임에 백업을 예약하는 것이 좋습니다. 이 시나리오는 권장 접근 방식을 나타냅니다.
 
 로드는 생성된 페이지, 삭제된 페이지, 트래버스 및 쿼리로 구성되며, 페이지 트래버스 및 쿼리에서 나오는 로드가 가장 많습니다. 너무 많은 페이지를 추가 및 제거하면 작업 공간 크기가 지속적으로 증가하고 백업이 완료되지 않습니다. 스크립트가 사용하는 로드 분포는 페이지 트래버스 75%, 쿼리 24%, 페이지 작성 1%입니다(중첩된 하위 페이지가 없는 단일 수준). 유휴 시스템에서 초당 최대 평균 트랜잭션 수는 로드 중인 백업을 테스트할 때 사용되는 4개의 동시 스레드로 수행됩니다.
 
@@ -712,7 +711,7 @@ AEM 서버 로그에서 백업 시간 및 결과 백업 크기를 얻습니다. 
 
 * 정기적인 애플리케이션 로드와 동시에 백업을 실행하는 것은 정기적인 로드 처리량에 부정적인 영향을 미칩니다.
 * 그 영향은 경미하거나(5%로 적음) 상당히 클 수 있으며, 처리량이 75%까지 떨어질 수 있습니다. 애플리케이션에 따라 다를 수 있습니다.
-* 백업은 CPU에 큰 부담이 되지 않으므로 CPU를 많이 사용하는 운영 워크로드는 I/O를 많이 사용하는 워크로드보다 백업의 영향을 덜 받습니다.
+* 백업은 CPU에 큰 부담이 되지 않으므로 CPU 중심의 운영 워크로드는 I/O 중심의 워크로드보다 백업의 영향을 덜 받습니다.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

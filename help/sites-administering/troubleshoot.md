@@ -10,20 +10,20 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Manager 문제 해결 {#troubleshooting-aem}
 
-다음 섹션에서는 AEM(Adobe Experience Manager)을 사용할 때 발생할 수 있는 몇 가지 문제와 그 해결 방법에 대한 제안을 다룹니다.
+다음 섹션에서는 AEM(Adobe Experience Manager)를 사용할 때 발생할 수 있는 몇 가지 문제와 그 해결 방법에 대한 제안을 다룹니다.
 
 >[!NOTE]
 >
->AEM에서 작성 문제를 해결하려면 [작성자 문제 해결](/help/sites-authoring/troubleshooting.md)을 참조하십시오.
+>AEM에서 작성 문제를 해결하는 경우 [작성자 문제 해결](/help/sites-authoring/troubleshooting.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 ### Sling 스레드 덤퍼 사용 {#using-sling-thread-dumper}
 
-1. **AEM 웹 콘솔**&#x200B;을 엽니다(예: `https://localhost:4502/system/console/`에 있음).
+1. **AEM 웹 콘솔**&#x200B;을 엽니다(예: `https://localhost:4502/system/console/`).
 1. **Threads**&#x200B;아래&#x200B;**상태** 탭을 선택합니다.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
@@ -101,7 +101,7 @@ ht-degree: 2%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko) 설명서를 참조하십시오
+자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) 설명서를 참조하십시오
 
 ### 닫히지 않은 JCR 세션 확인 {#checking-for-unclosed-jcr-sessions}
 
@@ -111,13 +111,13 @@ AEM WCM에 대한 기능이 개발되면 JCR 세션을 열 수 있습니다(데�
 * CacheManager의 대부분을 볼 수 있습니다. resize로그 파일의 모든 항목을 표시합니다. 다음 숫자(size=&lt;x>)는 캐시 수를 보여주며, 각 세션은 여러 개의 캐시를 엽니다.
 * 때때로 시스템에서 메모리가 부족합니다(심각도에 따라 몇 시간, 며칠 또는 몇 주 후).
 
-닫히지 않은 세션을 분석하고 세션을 닫지 않는 코드를 확인하려면 기술 자료 문서 [닫히지 않은 세션 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)을 참조하세요.
+닫히지 않은 세션 분석을 시작하려면 기술 자료 문서 [닫히지 않은 리소스 확인자](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)를 참조하세요.
 
 ### Adobe Experience Manager 웹 콘솔 사용 {#using-the-adobe-experience-manager-web-console}
 
 또한 OSGi 번들의 상태를 통해 가능한 문제를 조기에 파악할 수 있습니다.
 
-1. **AEM 웹 콘솔**&#x200B;을 엽니다(예: `https://localhost:4502/system/console/`에 있음).
+1. **AEM 웹 콘솔**&#x200B;을 엽니다(예: `https://localhost:4502/system/console/`).
 1. **OSGI** 탭에서 **번들**&#x200B;을(를) 선택합니다.
 1. 확인:
 

@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AEM에서는 다음을 구성할 수 있습니다.
 
 >[!NOTE]
 >
->AEM에서의 로깅은 Sling 원칙을 기반으로 합니다. 자세한 내용은 [Sling 로깅](https://sling.apache.org/site/logging.html)을 참조하십시오.
+>AEM에서의 로그인은 Sling 원칙을 기반으로 합니다. 자세한 내용은 [Sling 로깅](https://sling.apache.org/site/logging.html)을 참조하십시오.
 
 ## 글로벌 로깅 {#global-logging}
 
@@ -39,10 +39,6 @@ AEM에서는 다음을 구성할 수 있습니다.
 * 보관할 버전 수
 * 버전 회전(최대 크기 또는 시간 간격)
 * 로그 메시지를 작성할 때 사용할 형식
-
->[!NOTE]
->
->이 [기술 자료 문서](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)에서는 request.log 및 access.log 파일을 회전하는 방법을 설명합니다.
 
 ## 개인 서비스용 로거 및 라이터 {#loggers-and-writers-for-individual-services}
 

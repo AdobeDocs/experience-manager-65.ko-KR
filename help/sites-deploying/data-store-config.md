@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)에서 바이너리 데이터는 컨텐츠 노드�
 
 >[!CAUTION]
 >
->세그먼트 노드 저장소의 PID가 AEM 6.3에서 AEM 6의 `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`에서 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`(으)로 변경되었습니다. 이 변경 사항을 반영하도록 필요한 구성을 조정해야 합니다.
+>세그먼트 노드 저장소에 대한 PID가 AEM 6의 `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`에서 AEM 6.3의 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`(으)로 변경되었습니다. 이 변경 사항을 반영하도록 필요한 구성을 조정해야 합니다.
 
 다음 옵션을 구성할 수 있습니다.
 
@@ -80,7 +80,7 @@ customBlobStore=B"true"
 
 #### 문서 노드 저장소 {#document-node-store}
 
-문서 노드 저장소는 AEM의 MongoMK 구현의 기초입니다. `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID를 사용합니다. 다음 구성 옵션을 사용할 수 있습니다.
+문서 노드 저장소는 AEM의 MongoMK 구현의 기반입니다. `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID를 사용합니다. 다음 구성 옵션을 사용할 수 있습니다.
 
 * `mongouri`: Mongo 데이터베이스에 연결하는 데 필요한 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)입니다. 기본값은 `mongodb://localhost:27017`입니다.
 
@@ -141,13 +141,13 @@ AEM은 Amazon의 Simple Storage Service(S3)에 데이터를 저장하도록 구�
 
 >[!NOTE]
 >
->AEM 6.5는 Amazon의 S3에 데이터 저장을 지원하지만, 이러한 지원은 공급업체가 Amazon의 S3 API를 자체적으로 구현할 수 있는 다른 플랫폼에 데이터를 저장하는 것으로는 확장되지 않습니다.
+>AEM 6.5는 Amazon의 S3에 데이터 저장을 지원하지만, 공급업체가 Amazon의 S3 API를 자체적으로 구현할 수 있는 다른 플랫폼에 데이터를 저장하는 것에는 지원이 확장되지 않습니다.
 
-S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)(으)로 이동하여 기능 팩의 1.10.x 버전(예: com.adobe.granite.oak.s3connector-1.10.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하여 설치해야 합니다.
+S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)&#x200B;(으)로 이동하여 기능 팩의 1.10.x 버전(예: com.adobe.granite.oak.s3connector-1.10.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하여 설치해야 합니다.
 
 >[!NOTE]
 >
->TarMK와 함께 AEM을 사용하는 경우 기본적으로 바이너리는 `FileDataStore`에 저장됩니다. TarMK를 S3 데이터 저장소와 함께 사용하려면 `crx3tar-nofds` 실행 모드를 사용하여 AEM을 시작해야 합니다. 예를 들면 다음과 같습니다.
+>AEM을 TarMK와 함께 사용하면 기본적으로 바이너리가 `FileDataStore`에 저장됩니다. TarMK를 S3 데이터 저장소와 함께 사용하려면 `crx3tar-nofds` 실행 모드를 사용하여 AEM을 시작해야 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -193,7 +193,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. AEM 인스턴스를 중지합니다.
 
-1. AEM 설치 폴더의 `<aem-install>/crx-quickstart/install/15`(으)로 이동하여 해당 내용을 백업합니다.
+1. AEM 설치 폴더의 `<aem-install>/crx-quickstart/install/15`(으)로 이동하여 해당 콘텐츠를 백업합니다.
 1. 백업 후 `<aem-install>/crx-quickstart/install/15` 폴더에서 모든 jar 파일을 삭제하여 S3 커넥터의 이전 버전과 해당 종속성을 삭제합니다. 예를 들면 다음과 같습니다.
 
    * **oak-blob-cloud-1.6.1.jar**
@@ -389,7 +389,7 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >AEM 설치에서 사용하는 Oak 버전에 따라 다른 버전의 도구를 사용해야 합니다. 도구를 사용하기 전에 아래의 버전 요구 사항 목록을 확인하십시오.
+   >AEM 설치 시 사용하는 Oak 버전에 따라 서로 다른 버전의 도구를 사용해야 합니다. 도구를 사용하기 전에 아래의 버전 요구 사항 목록을 확인하십시오.
    >
    >
    >
@@ -411,7 +411,7 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
 
 AEM은 Microsoft®의 Azure 스토리지 서비스에 데이터를 저장하도록 구성할 수 있습니다. 구성에 `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID를 사용합니다.
 
-Azure 데이터 저장소 기능을 활성화하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)(으)로 이동하여 기능 팩의 1.6.x 버전(예: com.adobe.granite.oak.azureblobconnector-1.6.3.zip)에서 최신 버전을 다운로드합니다.
+Azure 데이터 저장소 기능을 활성화하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)&#x200B;(으)로 이동하여 기능 팩의 1.6.x 버전(예: com.adobe.granite.oak.azureblobconnector-1.6.3.zip)에서 최신 버전을 다운로드합니다.
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 * azureSas=&quot;&quot;: 커넥터 버전 1.6.3에서 Azure SAS(Shared Access Signature) 지원이 추가되었습니다. **SAS와 저장소 자격 증명이 모두 구성 파일에 있는 경우 SAS에 우선 순위가 있습니다.** SAS에 대한 자세한 내용은 [공식 문서](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)를 참조하십시오. &#39;=&#39; 문자가 &#39;\=&#39;처럼 이스케이프되는지 확인하십시오.
 
 * azureBlobEndpoint=&quot;&quot;: Azure Blob 끝점입니다. 예: https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: 저장소 계정 이름입니다. Microsoft® Azure 인증 자격 증명에 대한 자세한 내용은 [공식 설명서](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account)를 참조하세요.
+* accessKey=&quot;&quot;: 저장소 계정 이름입니다. Microsoft® Azure 인증 자격 증명에 대한 자세한 내용은 [공식 설명서](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create)를 참조하세요.
 
 * secretKey=&quot;&quot;: 저장소 액세스 키입니다. &#39;=&#39; 문자가 &#39;\=&#39;처럼 이스케이프되는지 확인하십시오.
 * container=&quot;&quot;: Microsoft® Azure Blob 저장 공간 컨테이너 이름입니다. 컨테이너는 블롭 한 세트의 그룹입니다. 자세한 내용은 [공식 설명서](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN)를 참조하세요.
@@ -505,7 +505,7 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 >2. `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일에 `blobTrackSnapshotIntervalInSecs=L"0"` 매개 변수를 추가합니다. 이 매개 변수를 사용하려면 Oak 1.12.0, 1.10.2 이상이 필요합니다.
 >3. AEM 인스턴스를 다시 시작합니다.
 
-최신 버전의 AEM에서는 둘 이상의 저장소에서 공유하는 데이터 저장소에서도 데이터 저장소 가비지 수집을 실행할 수 있습니다. 공유 데이터 저장소에서 데이터 저장소 가비지 수집을 실행하려면 다음 단계를 수행하십시오.
+최신 버전의 AEM에서는 둘 이상의 저장소에서 공유하는 데이터 저장소에서 데이터 저장소 가비지 수집을 실행할 수도 있습니다. 공유 데이터 저장소에서 데이터 저장소 가비지 수집을 실행하려면 다음 단계를 수행하십시오.
 
 1. 데이터 저장소 가비지 수집에 대해 구성된 유지 관리 작업이 데이터 저장소를 공유하는 모든 저장소 인스턴스에서 비활성화되도록 합니다.
 1. 데이터 저장소를 공유하는 **모두** 저장소 인스턴스에서 [이진 가비지 수집](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)에 언급된 단계를 개별적으로 실행합니다. 그러나 호출 단추를 클릭하기 전에 `markOnly` 매개 변수에 대해 `true`을(를) 입력해야 합니다.

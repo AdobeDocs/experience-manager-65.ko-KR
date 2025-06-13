@@ -10,9 +10,9 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -48,25 +48,23 @@ ht-degree: 0%
 
 ## /etc에 변경 사항 백업 {#backup-changes-etc}
 
-업그레이드 프로세스는 저장소의 `/apps` 및 `/libs` 경로 아래에서 기존 콘텐츠 및 구성을 유지 관리하고 병합하는 데 유용합니다. Context Hub 구성을 포함하여 `/etc` 경로를 변경한 경우 업그레이드 후 이러한 변경 내용을 다시 적용해야 하는 경우가 많습니다. Adobe 업그레이드는 `/var`에서 병합할 수 없는 변경 내용의 백업 복사본을 만들지만, 업그레이드를 시작하기 전에 이러한 변경 내용을 수동으로 백업하는 것이 좋습니다.
+업그레이드 프로세스는 저장소의 `/apps` 및 `/libs` 경로 아래에서 기존 콘텐츠 및 구성을 유지 관리하고 병합하는 데 유용합니다. Context Hub 구성을 포함하여 `/etc` 경로를 변경한 경우 업그레이드 후 이러한 변경 내용을 다시 적용해야 하는 경우가 많습니다. 업그레이드는 `/var`에서 병합할 수 없는 변경 내용의 백업 복사본을 만들지만, Adobe에서는 업그레이드를 시작하기 전에 이러한 변경 내용을 수동으로 백업하는 것이 좋습니다.
 
 ## quickstart.properties 파일 생성 {#generate-quickstart-properties}
 
-jar 파일에서 AEM을 시작하면 `crx-quickstart/conf`에 `quickstart.properties` 파일이 생성됩니다. AEM이 이전에 시작 스크립트로만 시작된 경우에는 이 파일이 없고 업그레이드가 실패합니다. 이 파일이 있는지 확인하고 jar 파일이 없는 경우 AEM에서 다시 시작합니다.
+jar 파일에서 AEM을 시작하면 `crx-quickstart/conf`에 `quickstart.properties` 파일이 생성됩니다. AEM이 이전에 시작 스크립트로만 시작된 경우에는 이 파일이 없고 업그레이드가 실패합니다. 이 파일이 있는지 확인하고 jar 파일이 없는 경우 AEM을 다시 시작합니다.
 
 ## 워크플로우 및 감사 로그 삭제 구성 {#configure-wf-audit-purging}
 
 `WorkflowPurgeTask` 및 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 작업에는 별도의 OSGi 구성이 필요하며 이 구성 없이는 작업할 수 없습니다. 업그레이드 전 작업 실행 중에 실패하는 경우 구성 누락이 가장 큰 원인입니다. 따라서 이러한 작업을 실행하지 않으려면 이러한 작업에 대한 OSGi 구성을 추가하거나 업그레이드 전 최적화 작업 목록에서 모두 제거해야 합니다. 워크플로 제거 작업을 구성하는 데 필요한 설명서는 [워크플로 인스턴스 관리](/help/sites-administering/workflows-administering.md)에서 찾을 수 있으며, 감사 로그 유지 관리 작업 구성은 [AEM의 감사 로그 유지 관리](/help/sites-administering/operations-audit-log.md)에서 찾을 수 있습니다.
 
-CQ 5.6의 워크플로 및 감사 로그 제거와 AEM 6.0의 감사 로그 제거에 대해서는 [워크플로 및 감사 노드 제거](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)를 참조하십시오.
-
 ## 업그레이드 전 작업 설치, 구성 및 실행 {#install-configure-run-pre-upgrade-tasks}
 
-AEM에서 허용하는 사용자 정의 수준으로 인해 환경은 일반적으로 균일한 업그레이드 수행 방법을 준수하지 않습니다. 이처럼 업그레이드 수행을 위한 표준화된 절차를 만드는 것은 어려운 과정이다.
+AEM에서 허용하는 사용자 지정 수준으로 인해 환경은 일반적으로 균일한 업그레이드 수행 방법을 준수하지 않습니다. 이처럼 업그레이드 수행을 위한 표준화된 절차를 만드는 것은 어려운 과정이다.
 
-이전 버전에서는 중지되었거나 안전하게 재개하지 못한 AEM 업그레이드도 어려웠습니다. 이 문제로 인해 전체 업그레이드 절차를 다시 시작해야 하거나 오류가 있는 업그레이드가 경고를 트리거하지 않고 수행되는 상황이 발생했습니다.
+이전 버전에서는 중단되었거나 안전하게 재개하지 못한 AEM 업그레이드도 어려웠습니다. 이 문제로 인해 전체 업그레이드 절차를 다시 시작해야 하거나 오류가 있는 업그레이드가 경고를 트리거하지 않고 수행되는 상황이 발생했습니다.
 
-이러한 문제를 해결하기 위해 Adobe은 업그레이드 프로세스에 몇 가지 향상된 기능을 추가하여 보다 탄력적이고 사용자 친화적으로 만들었습니다. 이전에 수동으로 수행해야 했던 업그레이드 전 유지 관리 작업이 최적화 및 자동화되고 있습니다. 또한 업그레이드 후 보고서를 추가하여 모든 문제가 보다 쉽게 발견되기를 바라며 프로세스를 면밀히 조사할 수 있습니다.
+이러한 문제를 해결하기 위해 Adobe은 업그레이드 프로세스에 몇 가지 개선 사항을 추가했으며, 이를 통해 더욱 탄력적이고 사용자 친화적인 업그레이드를 가능하게 했습니다. 이전에 수동으로 수행해야 했던 업그레이드 전 유지 관리 작업이 최적화 및 자동화되고 있습니다. 또한 업그레이드 후 보고서를 추가하여 모든 문제가 보다 쉽게 발견되기를 바라며 프로세스를 면밀히 조사할 수 있습니다.
 
 업그레이드 전 유지 관리 작업은 현재 일부 또는 전체가 수동으로 수행되는 다양한 인터페이스에 분산되어 있습니다. AEM 6.3에 도입된 업그레이드 전 유지 관리 최적화를 통해 이러한 작업을 트리거하고 요청 시 결과를 검사할 수 있는 통합된 방법을 사용할 수 있습니다.
 
@@ -127,7 +125,7 @@ You can find the packages at these locations:
   <tr>
    <td><code>WorkflowPurgeTask</code></td>
    <td>crx2/crx3</td>
-   <td>실행 전에 Granite 워크플로우 제거 구성 OSGi Adobe을 구성해야 합니다.</td>
+   <td>실행하기 전에 Adobe Granite 워크플로우 제거 구성 OSGi를 구성해야 합니다.</td>
   </tr>
   <tr>
    <td><code>GenerateBundlesListFileTask</code></td>
@@ -137,7 +135,7 @@ You can find the packages at these locations:
   <tr>
    <td><code>RevisionCleanupTask</code></td>
    <td>crx3</td>
-   <td>AEM 6.0에서 6.2로의 TarMK 인스턴스의 경우, 대신 오프라인 개정 정리를 수동으로 실행하십시오.</td>
+   <td>AEM 6.0 - 6.2의 TarMK 인스턴스에 대해서는 오프라인 개정 정리를 대신 수동으로 실행합니다.</td>
   </tr>
   <tr>
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td>
@@ -224,7 +222,7 @@ You can find the packages at these locations:
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>작업</td>
-   <td><p>모든 업그레이드 전 상태 검사를 실행하고 슬링 홈 경로에 있는 <code>preUpgradeHCStatus.properties</code> 파일에 상태를 저장합니다. <code>shutDownOnSuccess</code> 매개 변수가 <code>true</code>(으)로 설정되어 있으면 AEM 인스턴스가 종료되지만 업그레이드 전 상태 검사가 모두 OK 상태일 경우에만 가능합니다.</p> <p>속성 파일은 향후 업그레이드 <br />의 사전 조건으로 사용되며 업그레이드 전 상태 검사<br /> 실행이 실패한 경우 업그레이드 프로세스가 중지됩니다. 업그레이드 전<br /> 상태 검사 결과를 무시하고 업그레이드를 시작하려면 파일을 삭제할 수 있습니다.</p> </td>
+   <td><p>모든 업그레이드 전 상태 검사를 실행하고 슬링 홈 경로에 있는 <code>preUpgradeHCStatus.properties</code> 파일에 상태를 저장합니다. <code>shutDownOnSuccess</code> 매개 변수가 <code>true</code>(으)로 설정된 경우 AEM 인스턴스가 종료되지만 업그레이드 전 상태 검사가 모두 OK 상태일 경우에만 가능합니다.</p> <p>속성 파일은 향후 업그레이드 <br />의 사전 조건으로 사용되며 업그레이드 전 상태 검사<br /> 실행이 실패한 경우 업그레이드 프로세스가 중지됩니다. 업그레이드 전<br /> 상태 검사 결과를 무시하고 업그레이드를 시작하려면 파일을 삭제할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
@@ -251,7 +249,7 @@ You can find the packages at these locations:
 
 저장소 수준에서 인증을 위해 사용자 지정 `LoginModules`을(를) 구성하는 방식이 Apache Oak에서 근본적으로 변경되었습니다.
 
-CRX2 구성을 사용한 AEM 버전에서는 `repository.xml` 파일에 배치되었지만 AEM 6에서는 웹 콘솔을 통해 Apache Felix JAS Configuration Factory 서비스에서 수행됩니다.
+CRX2 구성을 사용한 AEM 버전에서는 `repository.xml` 파일에 배치되었지만 AEM 6부터 웹 콘솔을 통해 Apache Felix JAAS Configuration Factory 서비스에서 수행됩니다.
 
 따라서 업그레이드 이후 Apache Oak에 대해 기존 구성을 비활성화하고 다시 만들어야 합니다.
 
@@ -316,7 +314,7 @@ CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가�
 
 일반적으로 AEM이 지속성을 위해 사용하는 기본 Apache Oak 스택은 필요한 경우 데이터베이스 스키마를 업그레이드합니다.
 
-그러나 스키마를 자동으로 업그레이드할 수 없는 경우 문제가 발생할 수 있습니다. 이러한 경우는 대부분 제한된 권한을 가진 사용자가 데이터베이스를 실행하는 높은 보안 환경입니다. 이러한 상황이 발생하면 AEM은 이전 스키마를 계속 사용합니다.
+그러나 스키마를 자동으로 업그레이드할 수 없는 경우 문제가 발생할 수 있습니다. 이러한 경우는 대부분 제한된 권한을 가진 사용자가 데이터베이스를 실행하는 높은 보안 환경입니다. 이런 상황이 발생하면 AEM은 이전 스키마를 계속 사용합니다.
 
 이러한 시나리오가 발생하지 않도록 하려면 다음을 수행하여 스키마를 업그레이드합니다.
 

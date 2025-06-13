@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 22%
@@ -64,7 +64,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 >[!NOTE]
 >
->추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)을 참조하십시오.
+>추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
 
 ## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 ### 도구 모음에 새 작업 추가 {#add-new-action-to-the-toolbar}
 
-1. 고유한 구성 요소를 빌드하고 사용자 지정 작업에 해당하는 클라이언트 라이브러리를 포함할 수 있습니다. 예를 들어 다음 위치에 **Twitter으로 승격** 작업이 있습니다.
+1. 고유한 구성 요소를 빌드하고 사용자 지정 작업에 해당하는 클라이언트 라이브러리를 포함할 수 있습니다. 예를 들어 다음 위치의 **Twitter로 승격** 작업을 참조하십시오.
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 1. 선택적으로:
 
    * 추가 데이터를 연결하려면 [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
-
      `pageInfoProviderType` 속성입니다.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.
