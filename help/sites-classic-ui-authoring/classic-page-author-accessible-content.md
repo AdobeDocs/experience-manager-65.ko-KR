@@ -449,7 +449,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
   >[!NOTE]
   >
-  >시스템 관리자가 **테이블 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >시스템 관리자가 **테이블 속성**&#x200B;[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   **테이블**&#x200B;을(를) 추가할 때 대화 상자를 사용하여 **테이블 속성**&#x200B;을(를) 구성할 수 있습니다.
 
@@ -940,7 +940,7 @@ AEM에서는 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페�
 
 #### 이미지 버튼 {#image-buttons}
 
-이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 ****&#x200B;이라는 대체 텍스트가 있습니다.
+이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 **&#x200B;**&#x200B;이라는 대체 텍스트가 있습니다.
 
 ![제목 필드(편집 대화 상자)에 대체 텍스트가 설정된 이미지 단추.](assets/chlimage_1-23a.png)
 
@@ -950,7 +950,7 @@ AEM에서는 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페�
 
 ![라디오 그룹에 항목을 추가하고 있습니다. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
 
-하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**&#x200B;[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Forms에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 

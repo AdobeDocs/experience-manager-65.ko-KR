@@ -599,7 +599,7 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고** CRXDE Lite**에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고 **&#x200B; CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

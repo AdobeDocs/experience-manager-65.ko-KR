@@ -151,6 +151,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 1. 선택적으로:
 
    * 추가 데이터를 연결하려면 [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
+
      `pageInfoProviderType` 속성입니다.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.
