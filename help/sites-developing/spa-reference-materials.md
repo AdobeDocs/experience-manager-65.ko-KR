@@ -9,7 +9,8 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
@@ -23,19 +24,19 @@ ht-degree: 1%
 
 ## SPA JavaScript API 참조{#spa-javascript-api-references}
 
-다음은 AEM SPA Editor SDK 프레임워크용 NPM 모듈에서 사용할 수 있는 JavaScript API 참조입니다.
+다음은 AEM SPA Editor SDK 프레임워크에 대한 NPM 모듈의 JavaScript API 참조입니다.
 
 * [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [편집 가능한 구성 요소 Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Angular 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Source GitHub 저장소 열기 {#github-repositories}
 
-다음은 SPA 라이브러리용 GitHub의 오픈 소스 저장소입니다.
+다음은 SPA 라이브러리의 GitHub에 있는 오픈 소스 저장소입니다.
 
 * [구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)
 * [편집 가능한 구성 요소 반응](https://github.com/adobe/aem-react-editable-components)
-* [편집 가능한 구성 요소 Angular](https://github.com/adobe/aem-angular-editable-components)
+* [Angular 편집 가능한 구성 요소](https://github.com/adobe/aem-angular-editable-components)
 * [SPA 프로젝트 코어](https://github.com/adobe/aem-spa-project-core)

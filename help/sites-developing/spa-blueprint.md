@@ -9,7 +9,8 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
@@ -19,13 +20,13 @@ ht-degree: 1%
 
 # SPA 블루프린트{#spa-blueprint}
 
-작성자가 AEM SPA Editor를 사용하여 SPA의 콘텐츠를 편집할 수 있도록 SPA에서 이행해야 하는 요구 사항이 있으며, 이는 이 문서에 설명되어 있습니다.
+작성자가 AEM SPA 편집기를 사용하여 SPA의 콘텐츠를 편집할 수 있도록 하기 위해 SPA가 이행해야 하는 요구 사항이 있으며, 이는 이 문서에 설명되어 있습니다.
 
 {{ue-over-spa}}
 
 ## 소개 {#introduction}
 
-이 문서에서는 모든 SPA 프레임워크가 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 이행해야 하는 일반 계약(즉, AEM 지원 계층의 종류)에 대해 설명합니다.
+이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 SPA 프레임워크가 이행해야 하는 일반 계약(즉, AEM 지원 계층의 종류)에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -37,13 +38,13 @@ ht-degree: 1%
 >
 >AEM의 SPA 기능은 프레임워크에 독립적이지만 현재는 React 및 Angular 프레임워크만 지원됩니다.
 
-작성자가 AEM 페이지 편집기를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면 프로젝트가 AEM 저장소 내의 애플리케이션에 대해 저장된 데이터의 의미론적 의미를 나타내는 모델 구조를 해석할 수 있어야 합니다. 이 목표를 달성하기 위해 프레임워크와 독립적인 두 라이브러리(`PageModelManager` 및 `ComponentMapping`)가 제공됩니다.
+작성자가 AEM 페이지 편집기 를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면 프로젝트가 AEM 저장소 내의 애플리케이션에 대해 저장된 데이터의 의미론적 의미를 나타내는 모델 구조를 해석할 수 있어야 합니다. 이 목표를 달성하기 위해 프레임워크와 독립적인 두 라이브러리(`PageModelManager` 및 `ComponentMapping`)가 제공됩니다.
 
 ### PageModelManager {#pagemodelmanager}
 
-`PageModelManager` 라이브러리는 SPA 프로젝트에서 사용할 NPM 패키지로 제공됩니다. SPA과 함께 제공되며 데이터 모델 관리자 역할을 합니다.
+`PageModelManager` 라이브러리는 SPA 프로젝트에서 사용할 NPM 패키지로 제공됩니다. SPA와 함께 데이터 모델 관리자 역할을 합니다.
 
-SPA을 대신하여 실제 콘텐츠 구조를 나타내는 JSON 구조의 검색 및 관리를 추상화합니다. 또한 SPA과 동기화하여 구성 요소를 다시 렌더링해야 하는 시기를 알려주어야 합니다.
+SPA를 대신하여 실제 콘텐츠 구조를 나타내는 JSON 구조의 검색 및 관리를 추상화합니다. 또한 SPA와 동기화하여 구성 요소를 다시 렌더링해야 하는 시기를 알려주어야 합니다.
 
 NPM 패키지 [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)를 참조하세요.
 
@@ -55,7 +56,7 @@ NPM 패키지 [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/
 
 `ComponentMapping` 모듈은 프론트엔드 프로젝트에 NPM 패키지로 제공됩니다. 프론트엔드 구성 요소를 저장하고 SPA에서 프론트엔드 구성 요소를 AEM 리소스 유형에 매핑하는 방법을 제공합니다. 이렇게 하면 애플리케이션의 JSON 모델을 구문 분석할 때 구성 요소를 동적으로 확인할 수 있습니다.
 
-모델에 있는 각 항목에는 AEM 리소스 형식을 노출하는 `:type` 필드가 있습니다. 마운트되면 프론트엔드 구성 요소는 기본 라이브러리에서 받은 모델 조각을 사용하여 자신을 렌더링할 수 있습니다.
+모델에 있는 각 항목에는 AEM 리소스 형식을 노출하는 `:type` 필드가 포함되어 있습니다. 마운트되면 프론트엔드 구성 요소는 기본 라이브러리에서 받은 모델 조각을 사용하여 자신을 렌더링할 수 있습니다.
 
 #### 구성 요소 매핑을 위한 동적 모델 {#dynamic-model-to-component-mapping}
 
@@ -87,26 +88,26 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 * `:itemsOrder`: 정렬된 자식 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보장하지 않습니다. 맵과 현재 배열을 모두 가짐으로써 API 소비자는 두 구조의 이점을 얻을 수 있습니다
 * `:path`: 항목의 콘텐츠 경로(페이지를 나타내는 항목에 있음)
 
-[AEM Content Services 시작](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use.html)도 참조하세요.
+[AEM 콘텐츠 서비스 시작](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use.html)도 참조하세요.
 
 ### 프레임워크별 모듈 {#framework-specific-module}
 
 문제를 분리하는 것은 프로젝트 구현을 용이하게 하는 데 도움이 됩니다. 따라서 npm 전용 패키지가 제공되어야 합니다. 이 패키지는 기본 모듈, 서비스 및 구성 요소를 집계 및 노출합니다. 이러한 구성 요소는 데이터 모델 관리 논리를 캡슐화하고 프로젝트의 구성 요소가 기대하는 데이터에 대한 액세스 권한을 제공해야 합니다. 모듈은 또한 기본 라이브러리의 유용한 진입점을 과도적으로 노출시킵니다.
 
-라이브러리의 상호 운용성을 용이하게 하기 위해 Adobe은 프레임워크별 모듈에 다음 라이브러리를 번들로 제공할 것을 권장합니다. 필요한 경우 레이어는 기본 API를 프로젝트에 노출하기 전에 캡슐화하고 조정할 수 있습니다.
+라이브러리의 상호 운용성을 용이하게 하기 위해 Adobe에서는 프레임워크별 모듈에 다음 라이브러리를 번들로 제공할 것을 권장합니다. 필요한 경우 레이어는 기본 API를 프로젝트에 노출하기 전에 캡슐화하고 조정할 수 있습니다.
 
 * [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### 구현 {#implementations}
 
-#### 반응 {#react}
+#### React {#react}
 
 npm 모듈: [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
-angular npm 모듈: [@adobe/aem-module-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+npm 모듈: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 주요 서비스 및 구성 요소 {#main-services-and-components}
 
@@ -118,9 +119,9 @@ angular npm 모듈: [@adobe/aem-module-editable-components](https://www.npmjs.co
 
 이렇게 하려면 모델 공급자가 ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`에 등록해야 합니다. 그런 다음 변경이 발생하면 업데이트된 데이터를 받아 위임 구성 요소에 전달합니다. 규칙에 따라 모델 조각을 전달할 위임 구성 요소에 사용할 수 있는 속성은 `cqModel`(으)로 지정됩니다. 구현은 이 속성을 구성 요소에 자유롭게 제공할 수 있지만, 프레임워크 아키텍처와의 통합, 검색 기능 및 사용 편의성과 같은 측면을 고려해야 합니다.
 
-### 구성 요소 HTML 데코레이터 {#the-component-html-decorator}
+### 구성 요소 HTML Decorator {#the-component-html-decorator}
 
-Component Decorator는 페이지 편집기에서 예상하는 일련의 데이터 속성 및 클래스 이름으로 각 구성 요소 인스턴스의 요소 외부 HTML을 장식하는 역할을 합니다.
+구성 요소 데코레이터는 페이지 편집기에서 예상하는 일련의 데이터 속성 및 클래스 이름으로 각 구성 요소 인스턴스의 요소 외부 HTML을 장식하는 역할을 합니다.
 
 #### 구성 요소 선언 {#component-declaration}
 
@@ -167,7 +168,7 @@ Component Decorator는 페이지 편집기에서 예상하는 일련의 데이�
 
 #### 반응형 격자의 자리 표시자 {#placeholder-of-the-reponsive-grid}
 
-SPA 구성 요소는 반응형 그리드 등의 그래픽 컨테이너에 매핑되며 콘텐츠를 작성할 때 가상 하위 자리 표시자를 추가해야 합니다. 페이지 편집기에서 SPA의 콘텐츠를 작성할 때 해당 콘텐츠는 iframe을 사용하여 편집기에 임베드되고 `data-cq-editor` 특성이 해당 콘텐츠의 문서 노드에 추가됩니다. `data-cq-editor` 특성이 있는 경우 컨테이너는 새 구성 요소를 페이지에 삽입할 때 작성자가 상호 작용하는 영역을 나타내는 HTMLElement를 포함해야 합니다.
+SPA 구성 요소는 반응형 그리드 등의 그래픽 컨테이너에 매핑되며 콘텐츠가 작성 중일 때 가상 하위 자리 표시자를 추가해야 합니다. 페이지 편집기에서 SPA의 콘텐츠를 작성할 때 해당 콘텐츠는 iframe을 사용하여 편집기에 임베드되고 `data-cq-editor` 특성이 해당 콘텐츠의 문서 노드에 추가됩니다. `data-cq-editor` 특성이 있는 경우 컨테이너는 새 구성 요소를 페이지에 삽입할 때 작성자가 상호 작용하는 영역을 나타내는 HTMLElement를 포함해야 합니다.
 
 예:
 
@@ -244,7 +245,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ### 일반적인 HTML 요소 구조 {#typical-html-element-structure}
 
-다음 조각은 페이지 컨텐츠 구조의 일반적인 HTML 표현을 보여 줍니다. 다음은 몇 가지 중요한 점입니다.
+다음 조각은 페이지 콘텐츠 구조의 일반적인 HTML 표현을 보여 줍니다. 다음은 몇 가지 중요한 점입니다.
 
 * 응답형 격자 요소에는 `aem-Grid--` 접두사가 붙은 클래스 이름이 있습니다.
 * 응답형 열 요소에는 `aem-GridColumn--` 접두사가 붙은 클래스 이름이 있습니다.
@@ -273,15 +274,15 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 두 엔터티는 라우팅 개념과 관련이 있지만 ` [ModelRouter](/help/sites-developing/spa-routing.md)`은(는) 현재 응용 프로그램 상태와 동기화되어 구성된 데이터 모델이 있는 ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`을(를) 로드하는 역할만 합니다.
 
-자세한 내용은 문서 [SPA 모델 라우팅](/help/sites-developing/spa-routing.md)을(를) 참조하십시오.
+자세한 내용은 [SPA 모델 라우팅](/help/sites-developing/spa-routing.md) 문서를 참조하십시오.
 
 ## SPA 작동 중 {#spa-in-action}
 
-[AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 문서를 계속 진행하여 간단한 SPA의 작동 방식과 SPA을 직접 실험해 보십시오.
+[AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 문서를 계속 진행하여 간단한 SPA의 작동 방식과 SPA를 직접 실험해 보십시오.
 
 ## 추가 참조 {#further-reading}
 
 AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* AEM 및 통신 모델의 SPA 개요는 [SPA 작성 개요](/help/sites-developing/spa-overview.md)를 참조하십시오.
-* 간단한 SPA에 대한 안내서 및 작동 방법을 보려면 AEM에서 [SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)
+* AEM 및 통신 모델의 SPA에 대한 개요는 [SPA 작성 개요](/help/sites-developing/spa-overview.md)를 참조하십시오
+* 간단한 SPA 및 작동 방식에 대한 안내서를 보려면 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)

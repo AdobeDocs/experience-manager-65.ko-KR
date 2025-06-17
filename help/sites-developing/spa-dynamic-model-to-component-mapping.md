@@ -1,6 +1,6 @@
 ---
-title: SPA용 동적 모델과 구성 요소 간 매핑
-description: JavaScript SPA SDK for Adobe Experience Manager에서 동적 모델과 구성 요소 간 매핑이 어떻게 수행되는지 알아보십시오.
+title: SPA에 대한 동적 모델과 구성 요소 간 매핑
+description: Adobe Experience Manager용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 어떻게 수행되는지 알아보십시오.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,7 +9,8 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -17,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# SPA용 동적 모델과 구성 요소 간 매핑{#dynamic-model-to-component-mapping-for-spas}
+# SPA에 대한 동적 모델과 구성 요소 간 매핑{#dynamic-model-to-component-mapping-for-spas}
 
-이 문서에서는 AEM(JavaScript SPA SDK for Adobe Experience Manager)에서 동적 모델과 구성 요소 간 매핑이 발생하는 방식을 설명합니다.
+이 문서에서는 Adobe Experience Manager(AEM)용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발생하는 방법을 설명합니다.
 
 {{ue-over-spa}}
 
 ## ComponentMapping 모듈 {#componentmapping-module}
 
-`ComponentMapping` 모듈은 프론트엔드 프로젝트에 NPM 패키지로 제공됩니다. 프론트엔드 구성 요소를 저장하고, 단일 페이지 애플리케이션 이 프론트엔드 구성 요소를 AEM 리소스 유형에 매핑하는 방법을 제공합니다. 이렇게 하면 애플리케이션의 JSON 모델을 구문 분석할 때 구성 요소를 동적으로 확인할 수 있습니다.
+`ComponentMapping` 모듈은 프론트엔드 프로젝트에 NPM 패키지로 제공됩니다. 프론트엔드 구성 요소를 저장하고, 단일 페이지 애플리케이션에서 프론트엔드 구성 요소를 AEM 리소스 유형에 매핑하는 방법을 제공합니다. 이렇게 하면 애플리케이션의 JSON 모델을 구문 분석할 때 구성 요소를 동적으로 확인할 수 있습니다.
 
-모델에 있는 각 항목에는 AEM 리소스 형식을 노출하는 `:type` 필드가 있습니다. 마운트되면 프론트엔드 구성 요소는 기본 라이브러리에서 받은 모델 조각을 사용하여 자신을 렌더링할 수 있습니다.
+모델에 있는 각 항목에는 AEM 리소스 형식을 노출하는 `:type` 필드가 포함되어 있습니다. 마운트되면 프론트엔드 구성 요소는 기본 라이브러리에서 받은 모델 조각을 사용하여 자신을 렌더링할 수 있습니다.
 
 모델 구문 분석 및 모델에 대한 프런트 엔드 구성 요소 액세스에 대한 자세한 내용은 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)를 참조하십시오.
 
@@ -35,7 +36,7 @@ ht-degree: 0%
 
 ## 모델 기반 단일 페이지 애플리케이션 {#model-driven-single-page-application}
 
-JavaScript SPA SDK for AEM을 사용하는 단일 페이지 애플리케이션은 모델 기반의 애플리케이션입니다.
+AEM용 JavaScript SPA SDK을 사용하는 단일 페이지 애플리케이션은 모델 기반으로 합니다.
 
 1. 프론트엔드 구성 요소가 [구성 요소 매핑 저장소](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module)에 등록됩니다.
 1. [모델 공급자](/help/sites-developing/spa-blueprint.md#the-model-provider)에서 모델을 제공하면 [컨테이너](/help/sites-developing/spa-blueprint.md#container)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.

@@ -3,13 +3,14 @@ title: SPA 편집기 서비스 중단
 description: SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프로젝트에 어떤 의미가 있는지, 그리고 향후 프로젝트를 위해 어떤 옵션이 있는지 알아보십시오.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
 
 ---
-
 
 # SPA 편집기 서비스 중단 {#spa-editor-deprecation}
 
@@ -32,7 +33,7 @@ SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않
 * [AEM SPA 프로젝트 코어](https://github.com/adobe/aem-spa-project-core)
 * [AEM SPA 페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA 구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React Editable Components](https://github.com/adobe/aem-react-editable-components)
+* [AEM SPA React 편집 가능한 구성 요소](https://github.com/adobe/aem-react-editable-components)
    * [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components)
    * [AEM React 핵심 구성 요소 베이스](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [AEM React 핵심 구성 요소 SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -64,7 +65,7 @@ SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에
 * **향후 교정:** AEM의 로드맵은 비주얼 편집기로 유니버설 편집기의 우선 순위를 지정합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
 * **간단한 통합:** 범용 편집기를 사용하는 데 AEM 관련 SDK이 필요하지 않으므로 기술 스택 잠금이 줄어듭니다.
 * **나만의 앱 만들기:** 유니버설 편집기는 모든 웹 프레임워크나 아키텍처를 지원하므로 복잡한 리팩터링을 수행하지 않아도 됩니다.
-* **확장성:** 유니버설 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크,](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)의 이점을 제공합니다.
+* **확장성:** 유니버설 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)의 이점을 제공합니다.
 
 SPA 편집기에서 범용 편집기로의 직접 마이그레이션 경로는 없습니다. 이는 두 기술의 근본적인 차이에서 기인한다.
 

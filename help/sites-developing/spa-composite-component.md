@@ -1,11 +1,12 @@
 ---
 title: SPA의 복합 구성 요소
-description: AEM 단일 페이지 애플리케이션(SPA) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
+description: AEM SPA(단일 페이지 애플리케이션) 편집기와 함께 작동하는 다른 구성 요소로 구성된 구성 요소인 복합 구성 요소를 직접 만드는 방법을 알아봅니다.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 복합 구성 요소는 여러 기본 구성 요소를 단일 구성 요소로 결합하여 AEM 구성 요소의 모듈식 특성을 사용합니다. 일반적인 복합 구성 요소 사용 사례는 이미지 및 텍스트 구성 요소의 조합으로 구성된 카드 구성 요소입니다.
 
-복합 구성 요소가 AEM SPA(단일 페이지 애플리케이션) 편집기 프레임워크 내에서 올바르게 구현되면 콘텐츠 작성자는 다른 구성 요소와 마찬가지로 이러한 구성 요소를 드래그하여 놓을 수 있지만, 복합 구성 요소를 구성하는 각 구성 요소를 개별적으로 편집할 수는 있습니다.
+합성 구성 요소가 AEM SPA(단일 페이지 애플리케이션) 편집기 프레임워크 내에서 올바르게 구현되면 콘텐츠 작성자는 다른 구성 요소와 마찬가지로 이러한 구성 요소를 드래그 앤 드롭할 수 있지만 합성 구성 요소를 구성하는 각 구성 요소를 개별적으로 편집할 수는 있습니다.
 
 이 문서에서는 단일 페이지 애플리케이션에 합성 구성 요소를 추가하여 AEM SPA 편집기와 원활하게 작동하는 방법을 보여 줍니다.
 
@@ -40,7 +41,7 @@ ht-degree: 1%
 AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 가지 모델이 있습니다.
 
 * [구성 요소가 AEM 프로젝트에 없습니다.](#component-does-not-exist)
-* [구성 요소는 AEM 프로젝트에 존재하지만 필수 콘텐츠는 존재하지 않습니다.](#content-does-not-exist)
+* [구성 요소는 AEM 프로젝트에 존재하지만 필요한 콘텐츠는 존재하지 않습니다.](#content-does-not-exist)
 * [구성 요소와 필수 콘텐츠는 모두 AEM 프로젝트에 있습니다.](#both-exist)
 
 다음 섹션에서는 카드 구성 요소를 예로 사용하여 각 사례를 구현하는 예를 제공합니다.
@@ -110,7 +111,7 @@ export const AEMCard = ({ pagePath, itemPath}) => (
 );
 ```
 
-이렇게 만들어진 합성 구성 요소는 이제 앱의 어느 위치에나 배치할 수 있으며 SPA 편집기에서 텍스트 및 이미지 구성 요소에 대한 자리 표시자를 추가합니다. 아래 샘플에서 카드 구성 요소는 제목 아래의 홈 구성 요소에 추가됩니다.
+이렇게 만들어진 합성 구성 요소는 이제 앱의 어디에나 배치할 수 있으며 에서는 SPA 편집기에서 텍스트 및 이미지 구성 요소에 대한 자리 표시자를 추가합니다. 아래 샘플에서 카드 구성 요소는 제목 아래의 홈 구성 요소에 추가됩니다.
 
 ```javascript
 function Home() {
@@ -128,7 +129,7 @@ function Home() {
 
 ![편집기의 복합 카드 구성 요소](assets/composite-card.png)
 
-### 구성 요소는 AEM 프로젝트에 존재하지만 필수 콘텐츠는 존재하지 않습니다. {#content-does-not-exist}
+### 구성 요소는 AEM 프로젝트에 존재하지만 필요한 콘텐츠는 존재하지 않습니다. {#content-does-not-exist}
 
 이 경우 카드 구성 요소는 제목 및 이미지 노드가 포함된 AEM 프로젝트에 이미 생성되었습니다. 하위 노드(텍스트 및 이미지)에는 해당 리소스 유형이 있습니다.
 
@@ -136,7 +137,7 @@ function Home() {
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. 이에 대한 해당 구성 요소를 SPA에서 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다.](#component-does-not-exist)
+1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -152,8 +153,8 @@ function Home() {
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. `imagecard` 구성 요소에 대한 콘텐츠가 없으므로 카드를 페이지에 추가하십시오. AEM의 기존 컨테이너를 SPA에 포함합니다.
-   * AEM 프로젝트에 이미 컨테이너가 있는 경우 SPA에 이 내용을 대신 포함하고 AEM의 컨테이너에 구성 요소를 대신 추가할 수 있습니다.
+1. `imagecard` 구성 요소에 대한 콘텐츠가 없으므로 카드를 페이지에 추가하십시오. SPA에 AEM의 기존 컨테이너를 포함합니다.
+   * AEM 프로젝트에 이미 컨테이너가 있는 경우 SPA에 이를 대신 포함하고 AEM에서 구성 요소를 컨테이너에 추가할 수 있습니다.
    * 카드 구성 요소가 SPA의 해당 리소스 유형에 매핑되어 있는지 확인합니다.
 
    ```javascript
@@ -180,4 +181,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함되어 있습니다.
+`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함됩니다.

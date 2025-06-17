@@ -10,7 +10,8 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 9%
@@ -22,13 +23,13 @@ ht-degree: 9%
 
 SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 적합한 멋진 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크를 사용하여 빌드된 사이트의 Adobe Experience Manager(AEM) 내에서 콘텐츠를 원활하게 편집하려고 합니다.
 
-SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 간단한 기존 React 구성 요소를 AEM SPA Editor에서 작동하도록 조정하는 방법에 대한 예를 제공합니다.
+SPA 작성 기능은 AEM 내에서 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 간단한 기존 React 구성 요소를 AEM SPA 편집기에서 작동하도록 조정하는 방법에 대한 예를 제공합니다.
 
 {{ue-over-spa}}
 
 ## 소개 {#introduction}
 
-AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고 가벼운 계약 덕분에 기존 JavaScript 애플리케이션을 AEM에서 SPA과 함께 사용하기 위해 채택하는 것은 간단한 일입니다.
+AEM에서 필요로 하고 SPA와 SPA 편집기 간에 수립된 간단하고 가벼운 계약 덕분에 기존 JavaScript 애플리케이션을 AEM에서 SPA에 사용하도록 채택하는 것은 간단한 문제입니다.
 
 이 문서에서는 We.Retail 저널 샘플 SPA에 있는 날씨 구성 요소의 예를 보여줍니다.
 
@@ -37,7 +38,7 @@ AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고
 >[!CAUTION]
 >이 문서에서는 데모용으로만 [We.Retail 저널 앱](https://github.com/adobe/aem-sample-we-retail-journal)을 사용합니다. 프로젝트 작업에는 사용하지 마십시오.
 >
->AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을 사용해야 합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해야 합니다.
 
 ## 날씨 구성 요소 {#the-weather-component}
 
@@ -47,7 +48,7 @@ AEM에서 필요로 하고 SPA과 SPA 편집기 간에 설정되는 간단하고
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-SPA 편집기에서 SPA 콘텐츠를 작성할 때 날씨 구성 요소는 도구 모음과 함께 다른 AEM 구성 요소로 표시되며 편집할 수 있습니다.
+SPA 편집기에서 SPA의 콘텐츠를 작성할 때 날씨 구성 요소는 도구 모음이 포함된 다른 AEM 구성 요소로 표시되며 편집할 수 있습니다.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
@@ -125,8 +126,8 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-백엔드 구성 요소가 이미 존재해야 하지만, 프론트엔드 개발자는 We.Retail Journal SPA에서 적은 코딩으로 React Open Weather 구성 요소를 사용할 수 있습니다.
+백엔드 구성 요소가 이미 존재해야 하지만, 프론트엔드 개발자는 We.Retail 저널 SPA에서 적은 코딩으로 React 오픈 날씨 구성 요소를 사용할 수 있습니다.
 
 ## 다음 단계 {#next-step}
 
-AEM용 SPA 개발에 대한 자세한 내용은 문서 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)을 참조하십시오.
+AEM용 SPA 개발에 대한 자세한 내용은 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서를 참조하십시오.

@@ -10,7 +10,8 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
@@ -37,15 +38,15 @@ AEM의 SPA 지원을 통해 페이지 편집기에 로드하는 경우 SPA JS �
 AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * SPA 기술 요구 사항에 대한 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
-* 간단한 SPA을 빠르게 살펴보려면 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)
+* 간단한 SPA를 빠르게 살펴보려면 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)
 
 ## 디자인 {#design}
 
-SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA가 아닌 구성 요소에서 페이지 구성 요소의 초기 본문 구성을 구별합니다.
+SPA의 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소 또는 모델 표현은 JCR의 JSON 데이터 구조로 가져옵니다. 그런 다음 SPA 구성 요소는 해당 구조에 따라 페이지에 추가됩니다. 이 비헤이비어는 SPA 페이지 구성 요소의 초기 본문 컴포지션이 SPA가 아닌 방식과 다른 점을 보여줍니다.
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA은 초기화하고 SPA 편집기에서 작성할 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 사용하려면 추가 라이브러리 `cq.authoring.pagemodel.messaging`을(를) 추가해야 합니다.
+페이지 모델의 해상도와 관리는 제공되는 `PageModel`라이브러리에 위임됩니다. SPA는 초기화하고 SPA 편집기에서 작성할 페이지 모델 라이브러리를 사용해야 합니다. `aem-react-editable-components` npm을 통해 AEM 페이지 구성 요소에 페이지 모델 라이브러리를 간접적으로 제공합니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 사용하려면 추가 라이브러리 `cq.authoring.pagemodel.messaging`을(를) 추가해야 합니다.
 
 SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받는 경우 `cq.authoring.pagemodel.messaging` 클라이언트 라이브러리 범주를 사용할 수 있는 두 가지 옵션이 있습니다.
 
@@ -156,7 +157,7 @@ SPA 편집기의 핵심 요소에 중점을 두면 AEM 내 SPA를 편집하는 �
 
 ## 요구 사항 및 제한 사항 {#requirements-limitations}
 
-작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 실행을 위해 알아야 할 최소한의 정보는 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)를 참조하십시오.
+작성자가 SPA 콘텐츠를 편집할 수 있도록 페이지 편집기를 사용하려면 SPA 애플리케이션을 구현하여 AEM SPA Editor SDK와 상호 작용해야 합니다. 실행하는 데 필요한 최소한의 정보는 [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md)를 참조하십시오.
 
 ### 지원되는 프레임워크 {#supported-frameworks}
 
@@ -169,7 +170,7 @@ SPA Editor SDK는 다음의 최소 버전을 지원합니다.
 
 ### 추가 프레임워크 {#additional-frameworks}
 
-AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. AEM SPA 편집기에서 사용할 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 계층을 만들기 위해 프레임워크가 충족해야 하는 요구 사항에 대해서는 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)를 참조하십시오.
+AEM SPA Editor SDK와 구동할 수 있도록 추가 SPA 프레임워크를 구현할 수 있습니다. AEM SPA 편집기에서 작동하는 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 레이어를 만들기 위해 프레임워크가 충족해야 하는 요구 사항에 대해서는 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)를 참조하십시오.
 
 ### 여러 선택기 사용 {#multiple-selectors}
 
@@ -188,7 +189,7 @@ SPA에 생성된 텍스트 구성 요소의 내부 편집기를 사용하려면 
 
 ### 제한 사항 {#limitations}
 
-AEM SPA Editor SDK은 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. 이는 Adobe에 의해 완전히 지원되며, 지속적으로 향상 및 확장되고 있다. 다음 AEM 기능은 SPA Editor에서 아직 지원하지 않습니다.
+AEM SPA Editor SDK 는 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. Adobe에서 전폭적으로 지원하고 있으며, 지속적으로 향상 및 확장되고 있다. 다음 AEM 기능은 SPA Editor에서 아직 지원하지 않습니다.
 
 * 타겟 모드
 * ContextHub
@@ -196,6 +197,6 @@ AEM SPA Editor SDK은 AEM 6.4 서비스 팩 2와 함께 도입되었습니다. �
 * 구성 편집 (예: 리스너)
 * 실행 취소 / 다시 실행
 * 페이지 비교 및 시간 비틀기
-* 링크 검사기, CDN 재작성기 서비스, URL 단축 등과 같이 서버측에서 HTML 재작성을 수행하는 기능입니다.
+* 링크 검사기, CDN 재작성기 서비스, URL 단축 등과 같이 HTML 재작성을 수행하는 기능입니다.
 * 개발자 모드
 * AEM 론치
