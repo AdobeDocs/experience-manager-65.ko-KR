@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3688'
 ht-degree: 4%
 
 ---
@@ -129,19 +129,21 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 | MongoDB Enterprise 3.4 | 저장소 | Z: 지원되지 않음 |
 | IBM® DB2® 10.5 | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 `[5]` |
 | Oracle 데이터베이스 12c (12.1.x) | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 |
+| Oracle 데이터베이스 19c | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 |
 | Microsoft® SQL Server 2016 | Forms 데이터베이스 | A: 지원됨 |
+| Microsoft® SQL Server 2019(더 이상 사용되지 않음) | Forms 데이터베이스 | A: 지원됨 |
+| Microsoft® SQL Server 2022 | Forms 데이터베이스 | A: 지원됨 |
 | **Apache Lucene(빠른 시작 기본 제공)** | 검색 서비스 | A: 지원됨 |
 | Apache Solr | 검색 서비스 | A: 지원됨 |
 
 1. &#39;파일 시스템&#39;에는 POSIX와 호환되는 블록 저장소가 포함되어 있습니다. 네트워크 스토리지 기술을 포함합니다. 파일 시스템 성능이 달라질 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템으로 AEM을 로드합니다.
-1. MongoDB Enterprise 버전 4.2 및 4.4에는 AEM 6.5 SP9 이상이 필요합니다.
-1. MongoDB 분할은 AEM에서 지원되지 않습니다.
-1. MongoDB 스토리지 엔진 WiredTiger는 만 지원됩니다.
-1. AEM Forms 업그레이드 고객을 위해 지원됩니다. 새 설치에서는 지원되지 않습니다.
-1. AEM Forms에만 적용 가능:
+2. MongoDB Enterprise 버전 4.2 및 4.4에는 AEM 6.5 SP9 이상이 필요합니다.
+3. MongoDB 분할은 AEM에서 지원되지 않습니다.
+4. MongoDB 스토리지 엔진 WiredTiger는 만 지원됩니다.
+5. AEM Forms 업그레이드 고객을 위해 지원됩니다. 새 설치에서는 지원되지 않습니다.
+6. AEM Forms에만 적용 가능:
    * Oracle Database 12c에 대한 지원이 제거되었으며 Oracle Database 19c에 대한 지원이 추가되었습니다.
-   * Microsoft® SQL Server 2016에 대한 지원이 제거되었으며 Microsoft® SQL Server 2019에 대한 지원이 추가되었습니다.
-1. AEM Forms에서는 지원되지 않습니다.
+   * Microsoft® SQL Server 2016에 대한 지원이 제거되었으며 Microsoft® SQL Server 2019 및 Microsoft® SQL Server 2022에 대한 지원이 추가되었습니다.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하
 | Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
 | 웹 프로필 7.0 및 IBM® JRE 1.8을 사용한 IBM® WebSphere® Application Server Continuous Delivery(LibertyProfile) | R: 새 계약에 대한 지원이 제한됨 `[2]` |
 | IBM® WebSphere® Application Server 9.0 및 IBM® JRE 1.8 | R: 새 계약에 대한 지원이 제한됨 `[1]` `[2]` |
+| IBM® WebSphere® 응용 프로그램 서버 9.0.0.10 | R: 새 계약에 대한 지원이 제한됨 `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: 새 계약에 대한 지원이 제한됨 `[2]` |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.2.x | Z: 지원되지 않음 |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.1.4 | R: 새 계약에 대한 지원이 제한됨 `[1]` `[2]` |
 | JBoss® 애플리케이션 서버와 JBoss® EAP 7.0.x | Z: 지원되지 않음 |
+| JBoss® EAP 7.4(JBoss® Application Server 포함) <sup>[2] [3] [7] | A: 지원됨 |
 
 1. AEM Forms을 사용하는 배포에 권장됩니다.
-1. 애플리케이션 서버에서 AEM 6.5 배포를 시작하면 제한된 지원으로 이동합니다. 기존 고객은 AEM 6.5로 업그레이드하고 애플리케이션 서버를 계속 사용할 수 있습니다. 신규 고객의 경우 위의 Level-R 설명에 명시된 대로 지원 기준 및 지원 프로그램을 제공합니다.
-1. 적용 가능한 AEM Forms만:
+2. 애플리케이션 서버에서 AEM 6.5 배포를 시작하면 제한된 지원으로 이동합니다. 기존 고객은 AEM 6.5로 업그레이드하고 애플리케이션 서버를 계속 사용할 수 있습니다. 신규 고객의 경우 위의 Level-R 설명에 명시된 대로 지원 기준 및 지원 프로그램을 제공합니다.
+3. 적용 가능한 AEM Forms만:
    * JBoss® EAP 7.1.4에 대한 지원을 제거하고 JBoss® EAP 7.4.10에 대한 지원을 추가했습니다.
 
 ### 서버 운영 체제 {#server-operating-systems}
@@ -202,15 +206,15 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 | Debian 배포 기반 Linux®에는 다음이 포함됩니다. 우분투 | A: 지원되는 `[1]` `[2]` |
 | Linux®, SUSE® 배포 기반 | A: 지원되는 `[1]` |
 | Microsoft® 윈도우 서버 2022 | R: 제한된 지원 |
-| Microsoft® Windows Server 2019 `[4]` | R: 새 계약에 대한 지원이 제한됨 `[5]` |
+| Microsoft® Windows Server 2019 `[4]`(더 이상 사용되지 않음) | R: 새 계약에 대한 지원이 제한됨 `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: 새 계약에 대한 지원이 제한됨 `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: 지원되지 않음 |
 | Oracle Solaris™ 11 | Z: 지원되지 않음 |
 | IBM® AIX® 7.2 | Z: 지원되지 않음 |
 
-1. Linux® 커널 2.6, 3. x, 4. x, 5. x와 6. x에는 Red Hat® Enterprise Linux®, Oracle Linux® 및 Amazon Linux®를 포함하여 Red Hat® 배포판의 파생물이 포함되어 있습니다. AEM Forms 추가 기능 기능은 Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
-1. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
-1. Adobe Managed Services에서 지원하는 Linux® 배포.
+1. Linux® 커널 2.6, 3. x, 4. x, 5. x, 6. x 와 9. x에는 Red Hat® Enterprise Linux®, Oracle Linux® 및 Amazon Linux®를 포함하여 Red Hat® 배포판의 파생물이 포함되어 있습니다. AEM Forms 추가 기능 기능은 Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
+2. AEM Forms은 Ubuntu 20.04 및 SUSE® Linux® Enterprise Server 15 SP6(64비트)에서 지원됩니다.
+3. Adobe Managed Services에서 지원하는 Linux® 배포.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 
    *OpenSSL 3 설치의 경우: 라이브러리 libcrypto.so.3 및 libssl.so.3은 LD_LIBRARY_PATH 환경 변수가 나타내는 기본 라이브러리 경로에서 사용할 수 있어야 합니다. 비표준 위치에 설치된 경우 서버를 시작하기 전에 이 경로가 LD_LIBRARY_PATH에 추가되었는지 확인하십시오.*
 
-1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. 새 배포는 AEM Sites 및 Assets에 대한 온디맨드 요청입니다.
-1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
-1. AEM Forms에서 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
+4. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. 새 배포는 AEM Sites 및 Assets에 대한 온디맨드 요청입니다.
+5. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
+6. AEM Forms에서 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
 
 >[!NOTE]
 >
@@ -254,7 +258,7 @@ Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법�
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=ko). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 Dispatcher 버전 4.3.2에서 사용할 수 있는 웹 서버는 다음과 같습니다.
 
@@ -466,11 +470,11 @@ Windows x86의 경우:
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> 최신 버전(더 이상 사용되지 않음)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> 최신 버전(더 이상 사용되지 않음)</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -518,7 +522,7 @@ Windows x86의 경우:
 >
 >또한,
 >
->* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html)이(가) 필요합니다.
+>* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이(가) 필요합니다.
 >* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 버전만 지원합니다.
 >* Microsoft® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
 >* 볼륨 라이선스가 있는 설치가 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 Microsoft® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 취득하고 다시 활성화하기 전까지 전환이 실패할 수 있습니다.
@@ -526,7 +530,7 @@ Windows x86의 경우:
 >* PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >* OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 AEM Forms 라이선스가 있는 동안 AEM Forms에서만 번들 버전에 프로그래밍 방식으로 액세스합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([온-프레미스](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하세요.
+>* Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 AEM Forms 라이선스가 있는 동안 AEM Forms에서만 번들 버전에 프로그래밍 방식으로 액세스합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([온-프레미스](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하세요.
 >* PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >* PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못했습니다.
 >* PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다.
