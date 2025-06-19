@@ -24,7 +24,7 @@ ht-degree: 5%
 
 애플리케이션 라우팅을 통해 프로젝트 설정으로 시작하는 AEM을 통해 편집할 수 있는 단일 페이지 애플리케이션을 빌드하는 방법에 대한 전체적인 예는 WKND SPA 튜토리얼을 참조하십시오.
 
-* [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
-* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
+* [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
+* [AEM SPA 편집기 및 반응 시작하기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
 
 그러나 AEM용 SPA 프로젝트를 시작하기 전에 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서도 검토하십시오.
