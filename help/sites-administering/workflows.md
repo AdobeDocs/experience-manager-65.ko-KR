@@ -9,9 +9,9 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
    * 각 단계는 사용자 입력 대기, 페이지 활성화 또는 이메일 메시지 전송과 같은 고유한 활동을 수행합니다.
 
 * 저장소, 사용자 계정 및 AEM 서비스의 에셋과 상호 작용할 수 있습니다.
-* AEM의 모든 측면을 포함하는 복잡한 활동을 조정할 수 있습니다.
+* AEM의 모든 측면과 관련된 복잡한 활동을 조정할 수 있습니다.
 
 조직에서 설정한 비즈니스 프로세스를 워크플로우로 표시할 수 있습니다. 예를 들어 웹 사이트 콘텐츠를 게시하는 프로세스에는 일반적으로 다양한 관련자의 승인 및 승인과 같은 단계가 포함됩니다. 이러한 프로세스는 AEM 워크플로우로 구현하고 컨텐츠 페이지 및 자산에 적용할 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM의 [워크플로 모델](/help/sites-developing/workflows.md#model)은(는) 
 
 >[!CAUTION]
 >
->수행되는 단계는 인스턴스가 생성될 때 *워크플로 모델에서 정의한 단계입니다*. 자세한 내용은 [워크플로우 개발](/help/sites-developing/workflows.md#model)을 참조하십시오.
+>수행되는 단계는 인스턴스가 생성될 때 *워크플로 모델에서 정의한 단계입니다*. 자세한 내용은 [워크플로 개발 및 확장 - 모델](/help/sites-developing/workflows.md#model)을 참조하십시오.
 
 워크플로 인스턴스는 다음 수명 주기에서 진행됩니다.
 
@@ -70,7 +70,7 @@ AEM의 [워크플로 모델](/help/sites-developing/workflows.md#model)은(는) 
 1. 워크플로우 모델의 후속 단계가 실행 및 완료됩니다.
 1. 최종 단계가 완료되면 워크플로우 인스턴스가 완료되어 보관됩니다.
 
-많은 유용한 워크플로우 모델이 AEM과 함께 제공됩니다. 또한 조직의 개발자는 비즈니스 프로세스의 특정 요구 사항에 맞게 사용자 정의 워크플로 모델을 만들 수 있습니다.
+AEM에는 많은 유용한 워크플로우 모델이 제공됩니다. 또한 조직의 개발자는 비즈니스 프로세스의 특정 요구 사항에 맞게 사용자 정의 워크플로 모델을 만들 수 있습니다.
 
 ## 워크플로 단계 {#workflow-steps}
 
