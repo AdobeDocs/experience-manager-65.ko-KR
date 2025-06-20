@@ -1,16 +1,18 @@
 ---
-title: 콘텐츠 페이지 속성 편집
+title: 페이지 속성 편집
 description: Adobe Experience Manager에서 페이지에 필요한 속성을 정의합니다.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+mini-toc-levels: 2
+source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 42%
+source-wordcount: '2477'
+ht-degree: 38%
 
 ---
+
 
 # 페이지 속성 편집{#editing-page-properties}
 
@@ -22,237 +24,226 @@ ht-degree: 42%
 
 ### 기본 {#basic}
 
-* **제목**
+#### 제목 및 태그 {#tile}
 
-  페이지 제목은 여러 위치에 표시됩니다. 예를 들어 **웹 사이트** 탭 목록 및 **사이트** 카드/목록 보기가 있습니다.
-
-  필수 필드입니다.
-
-* **태그**
-
-  선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
-
+* **제목** - 페이지 제목이 여러 위치에 표시됩니다.
+   * 예를 들어 **웹 사이트** 탭 목록 및 **사이트** 카드/목록 보기가 있습니다.
+   * 필수 필드입니다.
+* **태그** - 선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
    * 태그를 선택하면 선택 상자 아래에 태그가 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 새 태그를 입력할 수 있습니다.
-
       * Enter 키를 누르면 새 태그가 만들어집니다.
       * 새 태그 오른쪽에 새 태그임을 나타내는 작은 별표가 표시됩니다.
-
-   * 드롭다운 기능을 사용하여 기존 태그에서 선택할 수 있습니다.
+   * 드롭다운을 사용하여 기존 태그에서 선택할 수 있습니다.
    * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
+   * 태그에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하세요.
+* **탐색 숨기기** - 최종 사이트의 페이지 탐색에서 페이지를 표시할지 또는 숨길지 여부를 나타냅니다.
 
-  태그에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
+#### 브랜딩 {#branding}
 
-* **탐색에서 숨기기**
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
-  결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다.
+* **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
+   * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
+* **오버라이드 값** - 페이지 제목에 추가할 브랜드 슬러그의 텍스트입니다.
+   * 값이 `Cycling Tuscany | Always ready for the WKND`과(와) 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다.
 
-* **브랜딩**
+#### 기타 제목 및 설명 {#more}
 
-  각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+* **페이지 제목** - 페이지에서 사용할 제목
+   * 일반적으로 제목 구성 요소에서 사용됩니다.
+   * 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
+* **탐색 제목** - 탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우).
+   * 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
+* **부제목** - 페이지에서 사용할 부제목
+* **설명** - 페이지, 페이지 용도 또는 추가하려는 기타 세부 정보에 대한 설명입니다.
 
-   * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
-      * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
-   * **재정의 값** - 페이지 제목에 추가될 브랜드 슬러그의 텍스트입니다.
-      * 이 값은 페이지에서 파이프 문자 뒤에 추가됩니다(예: “Cycling Tuscany | Always ready for the WKND”)
-* **페이지 제목**
+#### 설정/해제 시간 {#on-time}
 
-  페이지에서 사용할 제목입니다. 일반적으로 제목 구성 요소별로 사용됩니다. 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
+페이지의 켜기/끄기 시간은 이미 게시된 콘텐츠를 일시적으로 숨기는 편리한 방법입니다. 콘텐츠가 꺼져 있으면 게시 인스턴스에 남아 있습니다. 페이지를 해제해도 콘텐츠 게시가 취소되지 않습니다.
 
-* **탐색 제목**
+* **설정 시간** - 게시된 페이지가 게시 환경에 표시되는(렌더링되는) 날짜 및 시간입니다. 수동으로 또는 사전 구성된 자동 복제를 통해 페이지를 게시해야 합니다.
 
-  탐색에서 사용할 별도의 제목을 지정할 수 있습니다(예: 간결하게 나타내고자 하는 경우). 비어 있는 경우, **제목**&#x200B;이 사용됩니다.
+   * 이미 [게시됨](/help/sites-authoring/publishing-pages.md)인 경우 이 페이지는 게시 인스턴스에서 사용할 수 있지만 지정된 시간에 렌더링할 때까지 휴면 상태(숨겨짐)로 유지됩니다.
+   * 게시되지 않고 [자동 복제에 대해 구성된 경우](/help/sites-deploying/replication.md) 페이지가 지정된 시간에 자동으로 게시된 다음 렌더링됩니다.
+   * 게시되지 않았고 자동 복제에 대해 구성되지 않은 경우 페이지가 자동으로 게시되지 않으므로 페이지에 액세스하려고 하면 404가 표시됩니다.
 
-* **자막**
+* **해제 시간** - **설정 시간**&#x200B;과 유사하며 이와 함께 사용됩니다. 해제 시간은 게시된 페이지가 게시 환경에서 숨겨지는 날짜 및 시간입니다.
 
-  페이지에서 사용할 부제입니다.
+페이지를 게시하고 이를 즉시 사용하고 이를 비활성화하기 전까지 게시 환경에서 사용하고자 하는 경우 이러한 필드(**설정 시간** 및 **해제 시간**)를 비워두십시오(일반적인 시나리오).
 
-* **설명**
+>[!NOTE]
+>**설정 시간** 또는 **해제 시간** 중 하나가 과거이고 자동 복제가 구성되어 있는 경우, 관련된 작업이 즉시 트리거됩니다.
 
-  페이지, 페이지 용도 또는 추가하고자 하는 기타 세부 정보에 대한 설명입니다.
+>[!TIP]
+>
+>설정/해제 시간은 이미 게시된 콘텐츠를 엄격히 처리합니다(수동으로 또는 자동 복제를 통해). 따라서 콘텐츠 승인용 워크플로와 같은 게시 워크플로우는 설정/해제 시간 및 설정/해제 시간에 의해 트리거되지 않으며, 페이지의 게시 상태에 영향을 주지 않습니다. 이러한 이유로 이미 승인되고 게시된 콘텐츠를 일시적으로 표시/숨기는 데 설정/해제 시간이 가장 적합합니다.
+>
+>연결된 모든 워크플로와 함께 새 콘텐츠를 게시하거나 사이트에서 콘텐츠를 완전히 제거(게시 취소)하려면 [게시 관리를 고려하십시오.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-* **정시**
+#### 별칭 URL {#vanity-url}
 
-  게시된 페이지가 활성화되는 날짜 및 시간입니다. 이 페이지는 게시되면 지정된 시간까지 휴면 상태로 유지됩니다.
+이 페이지의 단축 URL을 입력하여 더 짧고/짧거나 표현식 URL을 가질 수 있습니다.
 
-  즉시 게시하려는 페이지의 경우 이러한 필드를 비워 두십시오(일반적인 시나리오).
+예를 들어 웹 사이트 `http://example.com,`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`(으)로 설정하면 `http://example.com/welcome`이(가) `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다
 
-* **해제 시간**
+>[!CAUTION]
+>
+>별칭 URL:
+>
+>* 고유해야 합니다.
+>* 정규 표현식 패턴을 지원하지 않습니다.
+>* 기존 페이지로 설정하면 안 됩니다.
 
-  게시된 페이지가 비활성화되는 시간.
+vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
-  즉각적인 조치를 취할 수 있도록 이 필드를 비워 두십시오.
-
-* **별칭 URL**
-
-  이 페이지의 단축 URL을 입력하여 더 짧고/짧거나 표현식 URL을 가질 수 있습니다.
-
-  예를 들어 웹 사이트 `http://example.com,`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`(으)로 설정하면 `http://example.com/welcome`이(가) `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다
-
-  >[!CAUTION]
-  >
-  >별칭 URL:
-  >
-  >* 고유해야 합니다. 값이 다른 페이지에서 이미 사용되고 있지 않은지 확인하십시오.
-  >* 정규 표현식 패턴을 지원하지 않습니다.
-  >* 기존 페이지로 설정하면 안 됩니다.
-  >
-
-  vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
-
-* **가상 URL 리디렉션**
-
-  페이지에서 별칭 URL을 사용할지를 지정합니다.
+* **추가** - vanity URL을 추가하려면 탭하거나 클릭합니다.
+* **제거** - vanity URL을 제거하려면 탭하거나 클릭합니다.
+  **vanity URL 리디렉션** - 페이지에서 vanity URL을 사용할지 또는 페이지의 실제 URL로 리디렉션할지 여부를 나타냅니다.
 
 ### 고급 {#advanced}
 
-* **언어**
+#### 설정 {#settings}
 
-  페이지 언어입니다.
-
-* **언어 루트**
-
-  페이지가 언어 사본의 루트인 경우 선택해야 합니다.
-
-* **리디렉션**
-
-  이 페이지를 자동으로 리디렉션할 페이지를 지정합니다.
-
-* **디자인**
-
-  이 페이지에 사용할 [디자인](/help/sites-developing/designer.md)을(를) 지정하십시오.
-
-* **별칭**
-
-  이 페이지에서 사용할 별칭을 지정합니다.
-
+* **언어** - 페이지 언어
+* **언어 루트** - 페이지가 언어 사본의 루트인 경우 선택해야 합니다.
+* **리디렉션** - 이 페이지를 자동으로 리디렉션할 페이지를 나타냅니다.
+* **디자인** - 이 페이지에 사용할 [디자인](/help/sites-developing/designer.md)을 나타냅니다.
+* **별칭** - 이 페이지와 사용할 별칭을 지정합니다.
    * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
    * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
    * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-authoring/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
    * 자세한 내용은 [SEO 및 URL 관리 모범 사례 아래의 지역화된 페이지 이름](/help/managing/seo-and-url-management.md#localized-page-names)을 참조하십시오.
 
-* **&lt;*경로*>**&#x200B;에서 상속
+#### 구성 {#configuration}
 
-  페이지가 상속되는지 여부를 나타냅니다. 및 출처:
+* **&lt;*경로*>**&#x200B;에서 상속 - 페이지에 대한 **클라우드 구성**&#x200B;의 상속을 활성화/비활성화합니다.
+* **클라우드 구성** - 구성으로의 경로
 
-* **클라우드 구성**
+#### 템플릿 설정 {#templates}
 
-  구성의 경로입니다.
+* **허용된 템플릿** - 이 하위 분기 내에서 [사용할 수 있는 템플릿 목록을 정의](/help/sites-authoring/templates.md#allowingatemplate)합니다.
 
-* **허용된 템플릿**
+#### 인증 요구 사항 {#authentication}
 
-  [사용할 수 있는 템플릿 목록을 정의](/help/sites-authoring/templates.md#allowingatemplate)합니다.
+* **활성화** - 페이지에 액세스할 수 있도록 인증 사용을 활성화(또는 비활성화)합니다.
+* **로그인 페이지** - 로그인에 사용할 페이지
 
-* **사용**(인증 요구 사항)
+>[!NOTE]
+>
+>페이지의 닫힌 사용자 그룹은 **[권한](/help/sites-authoring/editing-page-properties.md#permissions)** 탭에 정의됩니다.
 
-  페이지에 액세스할 수 있도록 인증 사용을 활성화(또는 비활성화)합니다.
+>[!CAUTION]
+>
+>**[권한](#permissions)** 탭에서는 `granite:AuthenticationRequired` mixin의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `cq:cugEnabled` 속성의 존재에 따라 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 **인증 요구 사항**&#x200B;에 경고 메시지가 표시되며 옵션을 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)도 편집할 수 없습니다.
+>
+>
+>이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
 
-  >[!NOTE]
-  >
-  >페이지의 닫힌 사용자 그룹은 **[권한](/help/sites-authoring/editing-page-properties.md#permissions)** 탭에 정의됩니다.
+#### 내보내기 {#export}
 
-  >[!CAUTION]
-  >
-  >**[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` mixin의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `cq:cugEnabled` 속성의 존재에 따라 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 **인증 요구 사항**&#x200B;에 경고 메시지가 표시되며 옵션을 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)도 편집할 수 없습니다.
-  >
-  >
-  >이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
+* **구성** - 내보내기 구성을 지정합니다.
 
-* **로그인 페이지**
+#### SEO {#seo}
 
-  로그인에 사용할 페이지입니다.
+* **표준 URL** - 페이지의 표준 URL을 덮어쓰는 데 사용됨
+   * 을 비워 두면 페이지의 URL은 표준 URL입니다.
+* **로봇 태그** - 드롭다운을 사용하여 검색 엔진 크롤러의 동작을 제어할 로봇 태그를 선택합니다.
+   * 일부 옵션은 서로 충돌하며, 이 경우 보다 허용 가능한 옵션이 우선합니다.
+* **사이트 맵 생성** - 선택되면 이 페이지와 하위 항목에 대한 `sitemap.xml`이(가) 생성됩니다.
 
-* **구성 내보내기**
+### 이미지 {#images}
 
-  내보내기 구성을 지정합니다.
+#### 추천 이미지 {#featured-image}
 
-### 썸네일 {#thumbnail}
+이 섹션은 추천 이미지를 선택하고 구성하는 데 사용됩니다. 페이지를 참조하는 구성 요소(예: 티저, 페이지 목록 등)에 사용됩니다.
 
-페이지 썸네일 이미지를 표시합니다. 다음을 작업을 수행할 수 있습니다.
+* **이미지** - 에셋을 **선택**&#x200B;하거나 업로드할 파일을 찾은 다음 **편집** 또는 **선택한 이미지를 지우기**&#x200B;할 수 있습니다.
+* **대체 텍스트** - 이미지의 의미 및/또는 기능을 나타내는 데 사용되는 텍스트로서 일반적으로 화면 판독기에서 사용됩니다.
+* **상속 - DAM 에셋에서 값 사용** - 확인 표시가 되어 있으면 대체 텍스트가 DAM의 `dc:description`메타데이터 값으로 채워집니다.
 
-* **미리 보기 생성**
+#### 썸네일 {#thumbnail}
 
-  썸네일로 사용할 페이지의 미리보기를 생성합니다.
+이 섹션은 페이지의 이미지 썸네일을 선택하고 구성하는 데 사용됩니다. 페이지를 참조하는 구성 요소(예: 티저, 페이지 목록 등)에 사용됩니다.
 
-* **이미지 업로드**
-
-  썸네일로 사용할 이미지를 업로드합니다.
-
-* **이미지 선택**
-
-  썸네일로 사용할 기존 에셋을 선택합니다.
-
-* **되돌리기**
-
-  이 옵션은 썸네일을 변경한 후에 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
-
-### 소셜 미디어 {#social-media}
-
-* **소셜 미디어 공유**
-
-  페이지에서 사용할 수 있는 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=ko)에 사용할 수 있는 옵션을 표시합니다.
-
-   * **Facebook에 대해 사용자 공유 사용**
-   * **Pinterest에 대해 사용자 공유 사용**
-   * **선호하는 XF 변형**
-페이지의 메타데이터 생성에 사용되는 경험 조각 변형을 정의합니다.
+* **미리 보기 생성** - 썸네일로 사용할 페이지의 미리 보기를 생성합니다.
+* **이미지 업로드** - 썸네일로 사용할 이미지를 업로드합니다.
+* **이미지 선택** - 썸네일로 사용할 기존 에셋을 선택합니다.
+* **되돌리기** - 이 옵션은 썸네일을 변경한 후에 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
-* **클라우드 서비스**
-
-  [클라우드 서비스](/help/sites-developing/extending-cloud-config.md)에 대한 속성을 정의합니다.
+* **Cloud Service 구성** - 페이지의 클라우드 서비스에 사용할 구성을 정의합니다.
+* **다음에서 상속** - 라이브 카피 및 언어 사본의 경우 클라우드 구성이 기본적으로 블루프린트에서 상속됩니다.
+   * 상속을 무시하려면 선택 취소
 
 ### 개인화 {#personalization}
 
-* **ContextHub 구성**
+#### ContextHub 구성 {#contexthub}
 
-  [ContextHub 구성](/help/sites-developing/ch-configuring.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md)를 선택하십시오.
+* **다음에서 상속** - ContextHub 구성은 기본적으로 상위 페이지에서 상속됩니다.
+   * 상속을 무시하려면 선택을 취소합니다.
+* **ContextHub 경로** - [ContextHub 구성 선택](/help/sites-developing/ch-configuring.md)
+* **세그먼트 경로** - [세그먼트 경로](/help/sites-administering/segmentation.md)을(를) 선택합니다.
 
-* **타겟팅 구성**
+#### 타깃팅 구성 {#targeting}
 
-  [타깃팅할 범위를 지정하려면 브랜드](/help/sites-authoring/target-adobe-campaign.md)를 선택합니다.
+타깃팅할 범위를 지정하려면 [브랜드를 선택하십시오.](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
+>[!NOTE]
+>이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
 
 ### 권한 {#permissions}
 
-* **권한**
+**권한** 탭을 사용하여 페이지에 액세스하거나 수정할 수 있는 사용자, 그룹 또는 [폐쇄형 사용자 그룹(CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=ko-KR)을(를) 정의합니다.
 
-  이 탭에서는 다음 작업을 수행할 수 있습니다.
+* [권한 추가](/help/sites-administering/user-group-ac-admin.md)
+* [폐쇄된 사용자 그룹 편집](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
 
-   * [권한 추가](/help/sites-administering/user-group-ac-admin.md)
-   * [폐쇄된 사용자 그룹 편집](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>**권한** 탭에서 `granite:AuthenticationRequired` mixin의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `cq:cugEnabled` 속성의 존재 여부에 따라 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 경고 메시지가 표시되고 CUG 권한을 편집할 수 없으며 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항도 편집할 수 없습니다.
+>
+>
+>이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
 
-   * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
-
-  >[!CAUTION]
-  >
-  >**권한** 탭에서 `granite:AuthenticationRequired` mixin의 존재 여부에 따라 CUG 구성을 편집할 수 있습니다. `cq:cugEnabled` 속성의 존재 여부에 따라 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 경고 메시지가 표시되고 CUG 권한을 편집할 수 없으며 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항도 편집할 수 없습니다.
-  >
-  >
-  >이 경우 CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
-
-  >[!NOTE]
-  >
-  >권한 탭에서는 빈 CUG 그룹을 만들 수 없으며, 이는 모든 사용자의 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이렇게 하려면 CRX Explorer를 사용해야 합니다. 자세한 내용은 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 문서를 참조하십시오.
+>[!NOTE]
+>
+>권한 탭에서는 빈 CUG 그룹을 만들 수 없으며, 이는 모든 사용자의 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이렇게 하려면 CRX Explorer를 사용해야 합니다. 자세한 내용은 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 문서를 참조하십시오.
 
 ### 블루프린트 {#blueprint}
 
-* **블루프린트**
+이 탭은 블루프린트 역할을 하는 페이지에만 표시됩니다. 블루프린트는 Live Copy의 기반이 되며, [다중 사이트 관리](/help/sites-administering/msm.md)의 일부입니다.
 
-  [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 블루프린트 페이지에 대한 속성을 정의합니다. 수정 사항이 라이브 카피에 전파되는 상황을 제어합니다.
+* **롤아웃** - 블루프린트 콘텐츠를 라이브 카피로 롤아웃합니다.
+* **라이브 카피 개요** - 라이브 카피 페이지 구조를 검색하는 창을 엽니다.
+* **현재 라이브 카피** - 선택한 블루프린트 페이지를 기반으로 하는(즉, 의 라이브 카피인) 페이지 목록입니다.
+* **롤아웃 구성** - 페이지의 롤아웃 구성을 정의합니다.
 
 ### Live Copy {#live-copy}
 
-* **Livecopy**
+이 탭은 Live Copy로 구성된 페이지에만 표시됩니다. [블루프린트와 마찬가지로](#blueprint) Live Copy는 [다중 사이트 관리](/help/sites-administering/msm.md)의 일부입니다.
 
-  [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 블루프린트에서 수정 사항이 반영되는 상황을 제어합니다.
+* **동기화** - 로컬 수정 사항을 유지하면서 라이브 카피를 블루프린트와 동기화합니다.
+* **재설정** - 로컬 수정 사항을 제거하고 Live Copy를 블루프린트 상태로 다시 설정합니다.
+* **일시 중단** - Live Copy의 추가 롤아웃 수정을 일시 중단합니다.
+* **분리** - Live Copy를 블루프린트에서 분리합니다.
 
-### 사이트 구조 {#site-structure}
+#### 소스 {#source}
 
-* **등록 페이지**, **오프라인 페이지** 등 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
+* 이 Live Copy에 대한 블루프린트 경로를 표시합니다.
+
+#### 상태 {#status}
+
+* 페이지의 현재 Live Copy 상태를 나열합니다.
+
+#### 구성 {#live-copy-config}
+
+* **Live Copy 상속** - 이 옵션이 선택되어 있으면 Live Copy 구성이 모든 하위 항목에 적용됩니다.
+* **상위 항목에서 롤아웃 구성 상속** - 이 옵션이 선택되어 있으면 페이지의 상위 항목에서 롤아웃 구성이 상속됩니다.
+* **롤아웃 구성 선택** - 블루프린트에서 수정 사항이 반영되는 상황을 정의하며, **상위 항목에서 롤아웃 구성 상속**&#x200B;이 선택되어 있지 않은 경우에만 사용할 수 있습니다.
+* **제외된 경로 목록**
 
 ## 페이지 속성 편집 {#editing-page-properties-1}
 
