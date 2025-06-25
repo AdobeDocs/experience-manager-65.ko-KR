@@ -4,9 +4,10 @@ description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -14,6 +15,28 @@ ht-degree: 2%
 # Adobe Experience Manager(AEM) 6.5의 기능 전환{#enable-feature-toggle-aem-forms-65}
 
 기능 토글 은 관리자가 특정 기능을 동적으로 활성화 또는 비활성화할 수 있는 AEM의 기능입니다. 이 기능은 코드 베이스에 대한 주요 배포 또는 변경 없이 **얼리어답터 기능** 및 **프리릴리스 기능**&#x200B;을 관리하는 데 특히 유용합니다. AEM 환경에서 액세스할 수 있는 기능을 유연하게 제어할 수 있습니다.
+
+## AEM 6.5 설정에서 기능 전환을 사용하는 이유는 무엇입니까?
+
+AEM 6.5 설정에서 작업할 때 기능에서 도움말을 토글합니다.
+
+* 실험 기능을 안전하게 테스트합니다.
+
+* 새 구성 요소를 단계적으로 롤아웃
+
+* 여러 환경에서 단일 코드 베이스를 유지 관리합니다.
+
+* 배포 및 업그레이드 시 위험 감소
+
+## 사전 요구 사항
+
+AEM 6.5 설정에서 기능 전환을 활성화하기 전에 다음을 확인하십시오.
+
+* 사용자가 `forms-users` 그룹의 구성원입니다.
+
+* `http://<author-instance-url>:portnumber/system/console/bundles`(으)로 이동하여 **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** 번들이 있는지 확인합니다. 없는 경우 [링크에서 번들을 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)합니다.
+
+  ![기능 전환](/help/forms/using/assets/feature-toggle-6.5.png)
 
 ## 기능 활성화 전환 {#enable-feature-toggle-65}
 
