@@ -40,7 +40,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >* 64비트 버전의 디자이너는 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
->* 32비트 버전의 디자이너는 [AEM Forms 서비스 팩 21(6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 릴리스 이후 더 이상 사용되지 않습니다.
+>* 32비트 버전의 디자이너는 [AEM Forms 서비스 팩 21(6.5.21.0)](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 릴리스 이후 더 이상 사용되지 않습니다.
 > * Forms Designer에 대해 지원되는 플랫폼은 AEM Forms 지원 플랫폼과 일치합니다. Forms Designer에 대해 지원되는 플랫폼에 대해 알아보려면 [여기를 클릭](/help/forms/using/aem-forms-jee-supported-platforms.md)하십시오.
 
 Forms Designer 설치에 대한 자세한 내용은 [자주 묻는 질문](#fandq)을 참조하세요.
@@ -96,15 +96,15 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 단계를 수행하십시오.
 
 1. **AEM Forms Designer6.5.16.0**&#x200B;을(를) 설치하기 전에 사용자가 이전 버전을 모두 제거해야 합니다.
-1. AEM 양식 릴리스 페이지에서 [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을(를) 다운로드하여 설치하십시오.
-1. **AEM Forms Designer6.5.15.0**&#x200B;을(를) 설치한 후 다운로드한 설치 관리자 파일 을 두 번 클릭하여 [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을(를) 다운로드하여 설치하십시오.
+1. AEM 양식 릴리스 페이지에서 [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을(를) 다운로드하여 설치하십시오.
+1. **AEM Forms Designer6.5.15.0**&#x200B;을(를) 설치한 후 다운로드한 설치 관리자 파일 을 두 번 클릭하여 [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을(를) 다운로드하여 설치하십시오.
 
 +++
 
 +++**사용자에게 6.5.15.0개의 AEM Forms Designer 버전이 있는 경우**
 
 AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 단계를 수행하십시오.
-1. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 최신 버전의 AEM Forms Designer을 다운로드합니다.
+1. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 최신 버전의 AEM Forms Designer을 다운로드합니다.
 1. 다운로드한 설치 관리자 파일을 두 번 클릭하여 최신 버전의 AEM Forms Designer을 설치합니다.
 
 +++
