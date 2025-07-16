@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
 workflow-type: tm+mt
-source-wordcount: '6444'
+source-wordcount: '6643'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## [!DNL Experience Manager] 6.5.23.0에 포함된 항목 {#what-is-included-in-aem-6523}
 
-[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [!DNL Experience Manager] 6.5에서 [이 서비스 팩을 설치](#install)합니다.
+[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -71,7 +71,11 @@ ht-degree: 2%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+
+* FORMS-20533: 이제 AEM Forms에 양식 구성 요소용 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
+
+* FORMS-20532: 이제 AEM Forms에 출력 구성 요소에 대해 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -97,7 +101,7 @@ ht-degree: 2%
 * 이제 AEM 편집기 페이지의 캔버스 섹션에서 전체 키보드 접근성을 지원합니다. 사용자는 마우스로 가리키지 않고 키보드만 사용하여 섹션 제목을 활성화하고 버튼을 편집할 수 있습니다. 이 업데이트는 WCAG 2.1.1을 준수하도록 하며 구성 요소(예: 티저, 이미지, 회전 메뉴, 레이아웃, 타임워프 및 주석 양식) 간의 사용성을 개선합니다. (SITES-25256) <!-- 6.5 LTS SP1 -->
 * 페르소나, 장바구니 또는 포기와 같은 단추를 활성화한 후 키보드 포커스가 예기치 않게 인구 통계학적 도구 모음의 시작으로 재설정되는 AEM 페이지 편집기의 접근성 문제를 해결했습니다. 이제 일관된 키보드 탐색 및 화면 판독기 워크플로우를 지원하기 위해 활성화된 단추에 포커스가 유지됩니다. (SITES-25306)
 * AEM 페이지 편집기에서 키보드만 사용하여 여러 대화 상자와 모달(예: 에셋 레일 또는 레이아웃 미리 보기)의 캔버스 요소를 작동할 수 없는 중요한 접근성 문제를 수정했습니다. 모든 대화형 캔버스 요소는 이제 키보드 전용 탐색을 지원하므로 WCAG 2.1 성공 기준 2.1.1(SITE-25256)을 준수합니다
-* 만들기 팝업의 인터랙티브 목록 항목이 잘못된 ARIA 역할을 사용하는 사이트 관리 UI의 접근성 문제를 수정했습니다. 링크처럼 동작한 요소에 `role="menuitem"` 대신 `role="listitem"`이(가) 할당되어 ARIA 디자인 패턴을 위반하고 화면 판독기를 혼동했습니다. 업데이트는 모든 목록 구성 요소가 적절한 의미 체계 역할을 따라 향상된 키보드 및 보조 기술 지원을 제공하도록 합니다. (SITES-24493)
+* 만들기 팝업의 인터랙티브 목록 항목이 잘못된 ARIA 역할을 사용하는 사이트 관리 UI의 접근성 문제를 수정했습니다. 링크처럼 동작한 요소에 `role="listitem"` 대신 `role="menuitem"`이(가) 할당되어 ARIA 디자인 패턴을 위반하고 화면 판독기를 혼동했습니다. 업데이트는 모든 목록 구성 요소가 적절한 의미 체계 역할을 따라 향상된 키보드 및 보조 기술 지원을 제공하도록 합니다. (SITES-24493)
 * 페이지 제목 및 태그 필드에 대한 접근성 레이블 연결 문제를 수정했습니다. 이제 AEM 인터페이스는 JAWS와 같은 화면 판독기를 사용할 때 액세스 가능성 레이블을 &quot;제목&quot; 및 &quot;페이지 제목&quot; 필드와 올바르게 연결합니다. 이 수정 사항은 적절한 레이블 읽기를 보장하며 페이지 생성, 속성 및 이동 워크플로우에서 ADA 준수를 향상시킵니다. (SITES-27149)
 * 권한 대화 상자의 표 식별에 대한 접근성 문제를 수정했습니다. 이제 AEM의 권한 테이블에서는 올바른 ARIA 역할 및 속성을 사용하여 JAWS와 같은 화면 판독기에서 이를 테이블로 제대로 식별하도록 합니다. 이 수정 사항은 접근성 준수를 향상시키고 사용자가 정확한 탐색 및 콘텐츠 공지를 받도록 합니다. (SITES-27140)
 * 타임라인의 주석 입력 필드에 대한 시각적 레이블이 누락되는 문제를 해결했습니다. 접근성을 개선하기 위해 타임라인 섹션 아래의 &quot;댓글&quot; 입력 필드에 대한 시각적 레이블이 누락되었습니다. 업데이트를 통해 화면 판독기에서 필드 레이블을 정확하게 알릴 수 있습니다. 이 경험은 모든 사용자, 특히 보조 기술에 의존하는 개인을 위해 양식 탐색 및 제출을 향상시킵니다. (SITES-26903)
@@ -196,7 +200,7 @@ ht-degree: 2%
 * 작성자 대화 상자의 탭 탐색이 개선되었습니다. 사용자가 설명 편집 상자에 도달한 후 계속 앞으로 탭할 수 있도록 하여 AEM 작성자 대화 상자의 키보드 탐색을 개선합니다. 이전에는 설명 필드에서 포커스가 트래핑되면 특별한 키 조합을 사용하지 않고 탐색을 더 이상 할 수 없었습니다. 이 업데이트를 통해 사용자는 Tab 키만 사용하여 필드를 원활하게 이동할 수 있으므로 접근성 규정 준수 및 사용자 경험이 향상됩니다. (SITES-26524)
 * 사용자가 Launch 제목에 공백을 포함할 수 없는 회귀가 AEM 6.5 서비스 팩 22에 도입되었습니다. 이 수정 사항은 공백을 사용하는 기능을 복원하여 팀이 예상 동작에 맞게 Launch 이름을 보다 유연하게 정의하고 구성할 수 있도록 합니다. (SITES-29414)
 * 숨기기/숨기기 취소 작업 후 레이아웃 컨테이너 내의 구성 요소에 대한 크기 조정 문제를 수정했습니다. 이제 페이지 편집기에서 레이아웃 컨테이너를 숨기고 숨김을 취소한 후 열 값을 올바르게 계산합니다. 사용자는 오류 없이 구성 요소의 크기를 조정할 수 있으며 크기 조정 작업 중에 열이 올바르게 표시됩니다. (SITES-28463)
-* 페이지 편집기에서 컨텐츠 트리 버튼 위치가 잘못 표시되었습니다. 이제 페이지 편집기는 잘못된 섹션 대신 의도한 &quot;헤드 티저&quot; 대화 상자 아래에 콘텐츠 트리 구성 버튼을 올바르게 배치합니다. 이 수정 사항은 `bottom:0` 대신 `top:0`을(를) 사용하도록 콘텐츠 트리 대화 상자의 CSS를 업데이트하여 올바른 단추 배치를 보장합니다. (SITES-28448)
+* 페이지 편집기에서 컨텐츠 트리 버튼 위치가 잘못 표시되었습니다. 이제 페이지 편집기는 잘못된 섹션 대신 의도한 &quot;헤드 티저&quot; 대화 상자 아래에 콘텐츠 트리 구성 버튼을 올바르게 배치합니다. 이 수정 사항은 `top:0` 대신 `bottom:0`을(를) 사용하도록 콘텐츠 트리 대화 상자의 CSS를 업데이트하여 올바른 단추 배치를 보장합니다. (SITES-28448)
 
 
 <!-- #### Replication{#sites-replication-6523}
@@ -211,16 +215,16 @@ ht-degree: 2%
 #### Universal Editor {#sites-universal-editor-6523}
 
 * 쿼리 매개 변수가 포함된 여러 요청이 AEM으로 전송되는 경우 로그인 토큰 쿠키가 제시간에 반환되지 않아 로그인에 실패할 수 있습니다. (SITES-30659) <!-- LTS -->
-* SAML 처리기와의 호환성 및 지원을 보장하려면 `Query Token Auth` 처리기가 `SAML Auth` 처리기를 *이전*&#x200B;에 실행되도록 `service.ranking` 속성을 구성해야 합니다. (SITES-29684)
+* SAML 처리기와의 호환성 및 지원을 보장하려면 `service.ranking` 처리기가 `Query Token Auth` 처리기를 *이전*&#x200B;에 실행되도록 `SAML Auth` 속성을 구성해야 합니다. (SITES-29684)
 
 ### [!DNL Assets]{#assets-6523}
 
-* ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;을(를) 선택하고&#x200B;**[!UICONTROL &#x200B; Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후 [!DNL AEM] 온-프레미스(6.5.22.0) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
-* [!DNL AEM] On-Premise(6.5.22.0) 탐색 페이지에서 폴더 이름에 `/`이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
-* [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-indesign` 대신 `x-adobe-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
+* `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
 * 제목을 업데이트하는 등의 사소한 변경 작업을 수행한 후 로컬 Sites 인스턴스에서 **[!DNL Connected Assets configuration]**&#x200B;을(를) 다시 열고 다시 저장합니다. 그러면 원격 인스턴스가 로컬 인스턴스와의 연결을 잃게 됩니다. 따라서 로컬 Sites 인스턴스와의 통신을 설정할 수 없습니다. (ASSETS-44484)
@@ -238,12 +242,12 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 **키 수정 포함**
 
-오류 없이 복제가 성공해도 `/conf/global/settings/dam/dm/imageserver`의 `catalog.expiration` 매개 변수에 대한 업데이트가 서버 또는 작성자 URL에 반영되지 않는 Dynamic Media - 하이브리드 배포의 문제를 해결했습니다. 업데이트는 CRX/DE, 서버 응답 및 공개 게재 URL 간에 일관된 만료 값을 보장합니다. 결과적으로 캐시 비헤이비어와 이미지 변환의 신뢰성을 향상시킵니다. (ASSETS-44837)
+오류 없이 복제가 성공해도 `catalog.expiration`의 `/conf/global/settings/dam/dm/imageserver` 매개 변수에 대한 업데이트가 서버 또는 작성자 URL에 반영되지 않는 Dynamic Media - 하이브리드 배포의 문제를 해결했습니다. 업데이트는 CRX/DE, 서버 응답 및 공개 게재 URL 간에 일관된 만료 값을 보장합니다. 결과적으로 캐시 비헤이비어와 이미지 변환의 신뢰성을 향상시킵니다. (ASSETS-44837)
 
 **중요 고려 사항**
 
 * 기본 AEM 6.5.23 이상 설치의 `cq-scene7-imaging` 번들은 Dynamic Media - 하이브리드 실행 모드와 *호환되지 않음*&#x200B;입니다.
-* 서비스 팩 23 이상을 설치하면 Dynamic Media - 하이브리드(`-r dynamicmedia` 실행 모드)에 대해 구성된 AEM 인스턴스에서 기존 `cq-scene7-imaging` 번들을 *자동으로 업데이트하지 않습니다*.
+* 서비스 팩 23 이상을 설치하면 Dynamic Media - 하이브리드(*실행 모드)에 대해 구성된 AEM 인스턴스에서 기존* 번들을 `cq-scene7-imaging`자동으로 업데이트하지 않습니다`-r dynamicmedia`.
 
 **하이브리드 추가 기능 패키지를 설치할 때**
 
@@ -274,7 +278,7 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 * AEM Forms에서 루트 패널에서 &quot;제목에 대한 리치 텍스트 허용&quot;을 활성화하면 중첩된 패널에서 &quot;기록 문서에서 제목 제외&quot;가 루트 패널의 제목을 잘못 숨깁니다. 생성된 기록 문서에서도 마찬가지입니다. (FORMS-19696)
 
-* 시스템은 AEM 6.5의 JSON 스키마에서 `aem:afProperties`을(를) 통해 할당된 사용자 지정 `sling:resourceType`을(를) 무시합니다. 렌더링하는 동안 사용자 지정 리소스 유형이 무시됩니다. (FORMS-19691)
+* 시스템은 AEM 6.5의 JSON 스키마에서 `sling:resourceType`을(를) 통해 할당된 사용자 지정 `aem:afProperties`을(를) 무시합니다. 렌더링하는 동안 사용자 지정 리소스 유형이 무시됩니다. (FORMS-19691)
 
 * 사용자가 URI를 사용하여 미리 채워진 첨부 파일이 있는 적응형 양식을 제출할 때 이진 데이터가 누락되어 양식 제출이 NullPointerException으로 실패합니다. (FORMS-19371) (FORMS-19486)
 
@@ -347,7 +351,7 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 #### Forms Captcha {#forms-captcha-6523}
 
 * 제출 오류 코드를 400으로 업데이트하여 적응형 Forms의 reCAPTCHA 경고를 개선했습니다. 또한 시간 초과, 만료 및 보트 감지 실패를 구별하도록 로그 경고를 개선하여 문제 해결 정확도와 시스템 가시성을 향상했습니다. (FORMS-19240)
-* AEM Forms에서 reCAPTCHA 통합을 사용할 때 잠재적인 리소스 누수를 방지하고 시스템 안정성을 개선하기 위해 `ReCaptchaConfigurationServiceImpl`에서 닫히지 않은 `ResourceResolver` 인스턴스를 닫았습니다. (FORMS-19242)
+* AEM Forms에서 reCAPTCHA 통합을 사용할 때 잠재적인 리소스 누수를 방지하고 시스템 안정성을 개선하기 위해 `ResourceResolver`에서 닫히지 않은 `ReCaptchaConfigurationServiceImpl` 인스턴스를 닫았습니다. (FORMS-19242)
 * `/conf/global` 폴더에 여러 항목이 있을 때 각 양식에 올바른 구성이 바인딩되도록 하여 AEM Forms에 대한 CAPTCHA 구성 처리를 개선했습니다. 구성 컨테이너를 명시적으로 선택하지 않은 경우 의도하지 않게 잘못된 CAPTCHA 설정이 사용되는 것을 방지합니다. (FORMS-19239)
 
 <!--
@@ -465,7 +469,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 #### 워크플로{#foundation-workflow-6523}
 
-핫픽스 배포 후 `getSegmentId` 메서드가 `null`을(를) 반환하여 워크플로우 처리 중 이메일 트리거가 실패하는 `EmailNotificationServiceProcessor`의 문제를 해결했습니다. 프로세서가 AEM 인스턴스 전반에 걸쳐 이메일 알림 워크플로우를 지원하는 데 필요한 `SegmentInfo` 값을 검색하도록 하여 올바른 세그먼트 ID 확인 논리를 복원합니다. (CQ-4359755)
+핫픽스 배포 후 `EmailNotificationServiceProcessor` 메서드가 `getSegmentId`을(를) 반환하여 워크플로우 처리 중 이메일 트리거가 실패하는 `null`의 문제를 해결했습니다. 프로세서가 AEM 인스턴스 전반에 걸쳐 이메일 알림 워크플로우를 지원하는 데 필요한 `SegmentInfo` 값을 검색하도록 하여 올바른 세그먼트 ID 확인 논리를 복원합니다. (CQ-4359755)
 
 
 ## [!DNL Experience Manager] 6.5.23.0 설치{#install}
@@ -515,7 +519,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품]에 업데이트된 버전 문자열 `Adobe Experience Manager (6.5.23.0)`이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -531,7 +535,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -558,7 +562,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 >[!NOTE]
 >
->UberJar 및 기타 관련 아티팩트는 Adobe Public Maven 저장소(`repo.adobe.com`) 대신 Maven Central Repository에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`(으)로 바뀝니다. 따라서 `dependency` 태그에 대한 값으로 `apis`을(를) 가진 `classifier`이(가) 없습니다.
+>UberJar 및 기타 관련 아티팩트는 Adobe Public Maven 저장소(`repo.adobe.com`) 대신 Maven Central Repository에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`(으)로 바뀝니다. 따라서 `classifier` 태그에 대한 값으로 `apis`을(를) 가진 `dependency`이(가) 없습니다.
 
 
 
@@ -620,13 +624,13 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
       * `diff-cache`
 
    1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service을 다시 시작합니다.
-`cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `error.log`에서 더 이상 `mvstore`과(와) 관련된 예외가 발생하지 않습니다.
+`cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `mvstore`에서 더 이상 `error.log`과(와) 관련된 예외가 발생하지 않습니다.
 
 * 콘텐츠 모델의 기본 이름을 대신 사용하도록 콘텐츠 모델에 대해 사용자 지정 API 이름을 사용했을 수 있는 GraphQL 쿼리를 업데이트합니다.
 
-* GraphQL 쿼리에서 `fragments` 인덱스 대신 `damAssetLucene` 인덱스를 사용할 수 있습니다. 이 작업으로 인해 GraphQL 쿼리가 실패하거나 실행하는 데 시간이 오래 걸릴 수 있습니다.
+* GraphQL 쿼리에서 `damAssetLucene` 인덱스 대신 `fragments` 인덱스를 사용할 수 있습니다. 이 작업으로 인해 GraphQL 쿼리가 실패하거나 실행하는 데 시간이 오래 걸릴 수 있습니다.
 
-  문제를 해결하려면 `/indexRules/dam:Asset/properties` 아래에 다음 두 속성을 포함하도록 `damAssetLucene`을(를) 구성해야 합니다.
+  문제를 해결하려면 `damAssetLucene` 아래에 다음 두 속성을 포함하도록 `/indexRules/dam:Asset/properties`을(를) 구성해야 합니다.
 
    * `contentFragment`
       * `jcr:primaryType="nt:unstructured"`
@@ -654,7 +658,7 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
   "refresh": true
   ```
 
-* [!DNL Experience Manager] 인스턴스를 6.5.0 - 6.5.4에서 Java™ 11의 최신 서비스 팩으로 업그레이드하는 경우 `error.log` 파일에 `RRD4JReporter` 예외가 표시됩니다. 예외를 중지하려면 [!DNL Experience Manager]의 인스턴스를 다시 시작하십시오. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* [!DNL Experience Manager] 인스턴스를 6.5.0 - 6.5.4에서 Java™ 11의 최신 서비스 팩으로 업그레이드하는 경우 `RRD4JReporter` 파일에 `error.log` 예외가 표시됩니다. 예외를 중지하려면 [!DNL Experience Manager]의 인스턴스를 다시 시작하십시오. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * 사용자는 [!DNL Assets]의 계층 구조에서 폴더의 이름을 바꾸고 중첩된 폴더를 [!DNL Brand Portal]에 게시할 수 있습니다. 그러나 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
 
@@ -680,11 +684,11 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 >
 > 예기치 않은 오류가 발생할 수 있으므로 사용 가능한 핫픽스가 없는 문제에 대해서는 서비스 팩 6.5.23.0(으)로 업그레이드하지 마십시오. 필요한 핫픽스가 릴리스된 후에만 서비스 팩 6.5.23.0(으)로 업그레이드하십시오.
 
-* 사용자가 Struts를 AEM 서비스 팩 2.5.x에서 AEM Forms 서비스 팩 6.x로 업그레이드할 때 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다. (FORMS-20203)
+* 사용자가 Struts를 AEM 서비스 팩 2.5.x에서 AEM Forms 서비스 팩 6.x로 업그레이드할 때 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다. 해결된 문제를 [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있습니다.  (FORMS-20203)
 * AEM Forms 서비스 팩 6.5.23.0(으)로 업그레이드한 후 다음 오류가 발생하여 ImageToPDF 변환 서비스가 실패합니다(FORMS-20360).
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` 해결된 문제를 [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있습니다.
 
-* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더(FORMS-14926) 아래에 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
+* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 폴더(FORMS-14926) 아래에 Geode jar `<AEM_Forms_Installation>/lib/caching/lib`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
 
    1. 로케이터가 실행 중인 경우 중지합니다.
    2. AEM 서버를 중지합니다.
@@ -716,6 +720,8 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
+* FORMS-20478: 유형 7/8 TIFF 파일을 PDF으로 변환하려고 할 때 &quot;ALC-PDG-001-000-Image2Pdf 변환 실패, 원인: com/sun/image/codec/jpeg/JPEGCodec&quot; 및 &quot;ALC-PDG-016-003-PDF 사후 처리 중에 알 수 없는/예기치 않은 오류가 발생했습니다&quot;라는 오류와 함께 변환 프로세스가 실패합니다. 시스템이 TM ImageIO TIFF 디코더를 사용하여 다시 시도하지만 결국 작업을 완료하지 못합니다. [핫픽스를 다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)하여 문제를 해결할 수 있습니다.
+
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
 
@@ -729,10 +735,10 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
