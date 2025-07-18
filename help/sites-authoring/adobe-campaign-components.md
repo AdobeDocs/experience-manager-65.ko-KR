@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 11%
 
 ---
+
 
 # Adobe Campaign 구성 요소{#adobe-campaign-components}
 
@@ -23,13 +25,13 @@ Adobe Campaign과 통합하면 뉴스레터 및 양식으로 작업할 때 사�
 
 >[!CAUTION]
 >
->AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 즉시 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 정의 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
+>AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 기본적으로 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 지정 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
 >
 >이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 그러나 프로젝트에서 이러한 사용되지 않는 구성 요소는 사용하지 마십시오.
 
 ## Adobe Campaign 뉴스레터 구성 요소 {#adobe-campaign-newsletter-components}
 
-모든 Campaign 구성 요소는 [전자 메일 템플릿에 대한 우수 사례](/help/sites-administering/best-practices-for-email-templates.md)에 설명된 우수 사례를 따르며 Adobe 마크업 언어 [HTL](https://helpx.adobe.com/kr/experience-manager/htl/using/overview.html)을 기반으로 합니다.
+모든 Campaign 구성 요소는 [전자 메일 템플릿 모범 사례](/help/sites-administering/best-practices-for-email-templates.md)에 설명된 모범 사례를 따르며 Adobe 마크업 언어 [HTL](https://helpx.adobe.com/kr/experience-manager/htl/using/overview.html)을 기반으로 합니다.
 
 Adobe Campaign과 통합되도록 구성된 뉴스레터/이메일을 열면 **Adobe Campaign 뉴스레터** 섹션에 다음 구성 요소가 표시됩니다.
 
@@ -64,7 +66,7 @@ Adobe Campaign과 통합되도록 구성된 뉴스레터/이메일을 열면 **A
 페이지 제목 이외의 이름을 사용하려면 여기에 입력합니다.
 
 * **제목 수준(1, 2, 3, 4)**
-HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
+HTML 제목 크기를 기반으로 하는 제목 수준은 1-4입니다.
 
 다음 예는 표시 중인 제목 (캠페인) 구성 요소를 보여 줍니다.
 
@@ -177,7 +179,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 
 **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에서 설명하는 설정을 구성할 수 있습니다. 이 Scene7 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template)에 자세히 설명되어 있습니다.
 
-또한 Scene7의 템플릿에 대해 정의된 모든 템플릿 매개 변수가 매개 변수 패널에 나열됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 기본값으로 재설정할 수 있습니다.
+또한 Scene7에서 템플릿에 대해 정의된 모든 템플릿 매개 변수가 매개 변수 패널에 나열됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 기본값으로 재설정할 수 있습니다.
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -246,7 +248,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 
 ### 텍스트 및 개인화(캠페인) {#text-personalization-campaign}
 
-텍스트 및 Personalization(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능을 사용하여 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드 및 개인화 블록을 사용할 수 있습니다. [Personalization 삽입](/help/sites-authoring/campaign.md#inserting-personalization)도 참조하세요.
+텍스트 및 Personalization(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드 및 개인화 블록을 사용할 수 있습니다. [Personalization 삽입](/help/sites-authoring/campaign.md#inserting-personalization)도 참조하세요.
 
 아이콘을 선택하면 글꼴 특성, 정렬, 링크, 목록, 들여쓰기 등 텍스트 서식을 지정할 수 있습니다. [두 UI](/help/sites-authoring/editing-content.md)의 기능은 기본적으로 동일하지만 모양과 느낌은 다릅니다.
 
@@ -265,7 +267,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 
 >[!NOTE]
 >
->**nms:seedMember** 스키마 또는 확장 중 하나에 정의된 필드만 고려합니다. **nms:seedMember**&#x200B;에 연결된 테이블의 특성을 사용할 수 없습니다.
+>**nms:seedMember** 스키마 또는 해당 확장 중 하나에 정의된 필드만 고려됩니다. **nms:seedMember**&#x200B;에 연결된 테이블의 특성을 사용할 수 없습니다.
 
 ## Adobe Campaign 양식 구성 요소 {#adobe-campaign-form-components}
 
@@ -447,7 +449,7 @@ Adobe Campaign 프로필 데이터 **을(를) 표시하고 수정하는 각 양�
 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components) 외에 다음을 구성할 수 있습니다.
 
 * **제약 조건 - 제약 조건** 드롭다운
-&#x200B;- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
+- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
 
 * **제한 메시지** 또한 제한 메시지를 추가하여 사용자가 답변의 서식을 올바르게 지정하는 방법을 알 수 있습니다.
 * **스타일 - 너비** **+** 및 **-** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.

@@ -1,6 +1,6 @@
 ---
 title: 이메일 템플릿에 대한 우수 사례
-description: AEM에서 이메일 템플릿을 만드는 모범 사례를 확인하십시오.
+description: AEM에서 이메일 템플릿 만들기에 대한 모범 사례를 확인하십시오.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration, best-practices
@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 1%
 >
 >이 문서는 더 이상 사용되지 않는 기초 구성 요소 기반 AEM 이메일 구성 요소에 적용됩니다.
 >
->사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=ko)
+>사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 이 문서에서는 이메일 디자인 관련 모범 사례 중 일부를 설명합니다. 이렇게 하면 이메일 캠페인 템플릿이 제대로 개발됩니다.
 
@@ -34,7 +35,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 >[!NOTE]
 >
->모든 캠페인 콘텐츠는 `cq/personalization/components/ambitpage` 유형의 `master` 페이지에 만들어야 합니다.
+>모든 캠페인 콘텐츠는 `master` 유형의 `cq/personalization/components/ambitpage` 페이지에 만들어야 합니다.
 >
 >예를 들어 계획된 캠페인 구조가 다음과 같은 경우
 >
@@ -46,7 +47,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 >[!NOTE]
 >
->Adobe Campaign용 메일 템플릿을 만들 때 템플릿의 **jcr:content** 노드에 값이 **mapRecipient**&#x200B;인 속성 **acMapping**&#x200B;을(를) 포함해야 합니다. 그렇지 않으면 Experience Manager의 **페이지 속성**&#x200B;에서 Adobe Campaign 템플릿을 선택할 수 없습니다(필드가 비활성화됨).
+>Adobe Campaign용 메일 템플릿을 만들 때 템플릿의 **jcr** 노드에 값이 **mapRecipient**&#x200B;인 속성 **acMapping:content**&#x200B;을(를) 포함해야 합니다. 그렇지 않으면 Adobe Campaign의 **페이지 속성**&#x200B;에서 Experience Manager 템플릿을 선택할 수 없습니다(필드가 비활성화됨).
 
 ## 템플릿/페이지 구성 요소 {#template-page-component}
 
@@ -80,7 +81,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
   </tr>
   <tr>
    <td>인라인 CSS는 모든 CSS를 시작 부분에 배치하는 것보다 좋습니다.</td>
-   <td><p>기본 HTML 구조를 더 잘 보여 주고 뉴스레터 구조를 사용자 정의할 수 있는 가능성을 완화하기 위해 일부 CSS 정의만 인라인되었습니다.</p> <p>기본 스타일과 템플릿 변형이 페이지의 &lt;head&gt;에 있는 스타일 블록으로 추출되었습니다. 뉴스레터의 최종 제출 시 이러한 CSS 정의는 HTML에 인라인됩니다. 자동 인라인 메커니즘이 계획되어 있지만 현재 사용할 수 없습니다.</p> </td>
+   <td><p>기본 HTML 구조를 더 잘 보여 주고 뉴스레터 구조를 사용자 정의할 수 있는 가능성을 완화하기 위해 일부 CSS 정의만 인라인되었습니다.</p> <p>기본 스타일과 템플릿 변형이 페이지의 &lt;head&gt;에 있는 스타일 블록으로 추출되었습니다. 뉴스레터를 최종 제출할 때 이러한 CSS 정의는 HTML에 인라인됩니다. 자동 인라인 메커니즘이 계획되어 있지만 현재 사용할 수 없습니다.</p> </td>
   </tr>
   <tr>
    <td>CSS를 간단하게 유지하십시오. 복합 스타일 선언, 속기 코드, CSS 레이아웃 속성, 복합 선택기 및 의사 요소를 사용하지 마십시오.</td>
@@ -130,7 +131,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 | **우수 사례** | **구현** |
 |---|---|
 | W3C 유효성 검사기를 사용하여 HTML 코드를 수정합니다. 열려 있는 모든 태그가 제대로 닫혀 있는지 확인하십시오. | 코드가 확인되었습니다. XHTML 전환 Doctype의 경우에만 `<html>` 요소에 대해 누락된 xmlns 특성이 없습니다. |
-| JavaScript 또는 Flash을 사용하지 마십시오. 이메일 클라이언트에서 이러한 기술을 지원하지 않는 경우가 많습니다. | 뉴스레터 템플릿에서 JavaScript 또는 Flash을 사용하지 않습니다. |
+| JavaScript 또는 Flash를 사용하지 마십시오. 이메일 클라이언트에서 이러한 기술을 지원하지 않는 경우가 많습니다. | JavaScript 또는 Flash는 뉴스레터 템플릿에서 사용되지 않습니다. |
 | 다중 부분 전송을 위한 일반 텍스트 버전을 추가합니다. | 페이지 속성에서 일반 텍스트 버전을 쉽게 추출할 수 있도록 새로운 위젯이 페이지 속성에 빌드되었습니다. 최종 일반 텍스트 버전의 시작점으로 사용할 수 있습니다. |
 
 ## Campaign 뉴스레터 템플릿 및 예제 {#campaign-newsletter-templates-and-examples}

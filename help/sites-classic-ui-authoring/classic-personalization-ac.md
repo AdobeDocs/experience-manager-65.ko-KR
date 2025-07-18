@@ -9,9 +9,9 @@ exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '126'
 ht-degree: 2%
 
 ---
@@ -35,5 +35,5 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 또한 통합을 사용자 정의하려면 다음 항목을 참조하십시오.
 
-* [사용자 지정 확장 프로그램 만들기](/help/sites-developing/extending-campaign-extensions.md)
+* [사용자 지정 Adobe Campaign 확장](/help/sites-developing/extending-campaign-extensions.md)
 * [사용자 정의 양식 매핑 만들기](/help/sites-developing/extending-campaign-form-mapping.md)

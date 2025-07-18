@@ -9,9 +9,9 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -52,10 +52,10 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
 >[!NOTE]
 >
->Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr:content** 노드에 있는 **acMapping** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
+>Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr** 노드에 있는 **acMapping:content** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
 >
 
-1. AEM의 Sites에서 페이지를 만들 위치로 이동합니다.
+1. AEM의 Sites에서 페이지를 만들려는 위치로 이동합니다.
 1. 페이지를 만들고 **Adobe Campaign Classic 프로필**&#x200B;또는&#x200B;**Adobe Campaign Standard 프로필**&#x200B;을 선택한 후 **다음**&#x200B;을 클릭하세요.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -66,7 +66,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
 1. **이름** 필드에 페이지 이름을 추가합니다. 유효한 JCR 이름이어야 합니다.
 1. **제목** 필드에 제목을 입력하고 **만들기**&#x200B;를 클릭합니다.
-1. Cloud Service을 열고 **속성 열기**&#x200B;를 선택한 다음 페이지에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 내용을 저장합니다.
+1. 페이지를 열고 **속성 열기**&#x200B;를 선택한 다음 Cloud Services에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 내용을 저장합니다.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -78,11 +78,11 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 
 >[!NOTE]
 >
->원하는 템플릿을 사용할 수 없는 경우 [사용할 수 있는 템플릿 만들기](/help/sites-authoring/adobe-campaign.md)를 참조하십시오.
+>원하는 템플릿을 사용할 수 없는 경우 [사용할 수 있는 템플릿 만들기](/help/sites-authoring/campaign.md)를 참조하십시오.
 
 이 섹션에서는 Adobe Campaign에 대한 특정 링크만 자세히 설명합니다. Adobe Experience Manager에서 양식을 사용하는 방법에 대한 보다 일반적인 개요는 [편집 모드 구성 요소](/help/sites-authoring/default-components-foundation.md)를 참조하십시오.
 
-1. **속성 열기**&#x200B;를 선택하고 Cloud Service에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 내용을 저장합니다.
+1. **속성 열기**&#x200B;를 선택하고 Cloud Services에서 Adobe Campaign 구성을 추가하고 확인 표시를 선택하여 변경 내용을 저장합니다.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
@@ -114,7 +114,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
    >
    >[https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)의 지침을 따라 받는 사람 테이블에 표시되는 필드를 추가/제거할 수 있습니다.
 
-1. **Publish 페이지**&#x200B;를 클릭합니다. 페이지가 사이트에서 활성화됩니다. AEM 게시 인스턴스로 이동하여 볼 수 있습니다. [양식을 테스트](#testing-a-form)할 수도 있습니다.
+1. **페이지 게시**&#x200B;를 클릭합니다. 페이지가 사이트에서 활성화됩니다. AEM 게시 인스턴스로 이동하여 볼 수 있습니다. [양식을 테스트](#testing-a-form)할 수도 있습니다.
 
    >[!CAUTION]
    >

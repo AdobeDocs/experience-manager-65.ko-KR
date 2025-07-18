@@ -1,6 +1,6 @@
 ---
-title: 사용자 지정 확장 프로그램 만들기
-description: AEM 또는 AEM에서 Adobe Campaign으로 Adobe Campaign에서 사용자 지정 코드를 호출할 수 있습니다.
+title: 사용자 지정 Adobe Campaign 확장
+description: AEM 또는 Adobe Campaign에서 Adobe Campaign으로 AEM에서 사용자 지정 코드를 호출할 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,14 +9,15 @@ exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 2%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
-# 사용자 지정 확장 프로그램 만들기{#creating-custom-extensions}
+
+# 사용자 지정 Adobe Campaign 확장{#creating-custom-extensions}
 
 일반적으로 프로젝트를 구현할 때에는 AEM과 Adobe Campaign 모두에 사용자 지정 코드가 있습니다. 기존 API를 사용하면 AEM 또는 AEM에서 Adobe Campaign으로 Adobe Campaign에서 사용자 지정 코드를 호출할 수 있습니다. 이 문서에서는 그 방법에 대해 설명합니다.
 
@@ -29,15 +30,11 @@ ht-degree: 2%
 
 자세한 내용은 [AEM과 Adobe Campaign 6.1 통합](/help/sites-administering/campaignonpremise.md)을 참조하십시오.
 
-## 예제 1: AEM에서 Adobe Campaign으로 {#example-aem-to-adobe-campaign}
+## 예제 1: AEM to Adobe Campaign {#example-aem-to-adobe-campaign}
 
 AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript 서버 페이지)를 기반으로 합니다. 이러한 JSSP 파일은 Campaign 콘솔에서 찾을 수 있으며 모두 **aec**(Adobe Experience Cloud)로 시작합니다.
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
-
->[!NOTE]
->
->[이 예제에서는 패키지 공유에서 사용할 수 있는 Geometrixx](/help/sites-developing/we-retail.md)을(를) 참조하십시오.
 
 이 예에서는 새로운 사용자 정의 JSSP 파일이 만들어지고 AEM 측에서 해당 파일을 호출하여 결과를 검색합니다. 예를 들어 Adobe Campaign에서 데이터를 검색하거나 Adobe Campaign에 데이터를 저장하는 데 사용할 수 있습니다.
 
@@ -45,7 +42,7 @@ AEM과 Campaign 간의 표준 통합은 JSON 및 JSSP(JavaScript 서버 페이�
 
    ![왼쪽 상단 모서리 근처에 별표가 있는 페이지에 표시된 새 아이콘](do-not-localize/chlimage_1-4a.png)
 
-1. 이 JSSP 파일의 이름을 입력합니다. 이 예제에서는 **cus:custom.jssp**&#x200B;이 사용됩니다(**cus** 네임스페이스에 있음).
+1. 이 JSSP 파일의 이름을 입력합니다. 이 예제에서는 **cus:custom.jssp**&#x200B;를 사용합니다(**cus** 네임스페이스에 있음).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -161,9 +158,9 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## 예제 2: Adobe Campaign - AEM {#example-adobe-campaign-to-aem}
+## 예제 2: Adobe Campaign to AEM {#example-adobe-campaign-to-aem}
 
-AEM에서는 siteadmin 탐색기 보기의 어느 위치에서나 사용 가능한 개체를 검색할 수 있는 기본 API를 제공합니다.
+AEM은 siteadmin 탐색기 보기의 어느 위치에서나 사용 가능한 개체를 검색할 수 있는 기본 API를 제공합니다.
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
 
@@ -173,11 +170,11 @@ AEM에서는 siteadmin 탐색기 보기의 어느 위치에서나 사용 가능�
 
 탐색기의 각 노드에 대해 연결된 API가 있습니다. 예를 들어 노드의 경우:
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommendations](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 API:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommendations.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 URL **.1.json**&#x200B;의 끝은 가져오려는 하위 수준의 수에 따라 **.2.json**, **.3.json**(으)로 바꿀 수 있습니다. 모두 키워드를 얻으려면 **무한**&#x200B;을(를) 사용할 수 있습니다.
 
