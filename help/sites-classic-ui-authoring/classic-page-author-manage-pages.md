@@ -106,7 +106,7 @@ ht-degree: 20%
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### 이름 {#name}
 
