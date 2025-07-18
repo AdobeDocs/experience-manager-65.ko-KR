@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 8%
 
 ---
@@ -41,7 +41,7 @@ AEM 내에서 다양한 **도움말** 리소스에 직접 액세스할 수 있�
 
 콘솔 도구 모음에서 [도움말](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)에 액세스할 수 있을 뿐만 아니라 사이드 킥의 도움말(? 아이콘)을 클릭하여 페이지를 편집합니다.
 
-![Sidekick 축소됨](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick 축소](do-not-localize/sidekick-collapsed-2.png)
 
 또는 특정 구성 요소의 편집 대화 상자에 있는 **도움말** 단추를 사용하면 상황에 맞는 도움말이 표시됩니다.
 
@@ -156,7 +156,7 @@ AEM 내에서 다양한 **도움말** 리소스에 직접 액세스할 수 있�
 
 AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼 수 있습니다.
 
-직접 페이지 참조를 표시하려면 다음을 수행하십시오.
+페이지 참조를 표시하려면:
 
 1. 사이드 킥에서 **페이지** 탭 아이콘을 선택합니다.
 
@@ -166,7 +166,11 @@ AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-특정 상황에서 다음 작업을 포함하여 Sidekick에서 추가 작업을 사용할 수 있습니다.
+AEM에는 선택한 페이지를 직접 참조하는 모든 페이지와 간접 참조가 표시됩니다. 페이지를 이동하거나 삭제해야 하는 경우 업데이트되는 모든 링크를 이해하는 데 도움이 됩니다.
+
+## 추가 Sidekick 작업 {#additional-actions}
+
+특정 상황에서 Sidekick은 다음을 포함하여 추가 작업을 사용할 수 있습니다.
 
 * [론치](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copy](/help/sites-administering/msm.md)

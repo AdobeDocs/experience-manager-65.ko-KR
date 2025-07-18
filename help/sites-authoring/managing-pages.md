@@ -5,16 +5,16 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 77%
+source-wordcount: '2476'
+ht-degree: 74%
 
 ---
 
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
-이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-authoring/editing-content.md)할 수 있도록 Adobe Experience Manager(AEM)를 사용하여 페이지를 만들고 관리하는 방법을 설명합니다.
+이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-authoring/editing-content.md)할 수 있도록 Adobe Experience Manager(AEM)로 페이지를 만들고 관리하는 방법을 설명합니다.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ ht-degree: 77%
 
 #### 제목 {#title}
 
-페이지를 만들 때 **Title** 페이지만 제공하면 AEM은 이 문자열에서 **Name** 페이지를 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
+페이지를 만들 때 **제목** 페이지만 제공하면 AEM은 이 문자열에서 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
@@ -326,10 +326,9 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    페이지 이동 마법사가 열립니다.
 
-1. 마법사의 **이름 바꾸기** 단계에서 다음 중 하나를 수행할 수 있습니다.
+1. 마법사의 **이름 바꾸기** 단계에서는 만든 날짜, 경로 및 직접 참조 수를 포함하여 페이지에 대한 **정보**&#x200B;를 제공합니다. 여기에서 다음 중 하나를 수행할 수 있습니다.
 
    * 페이지가 이동되면 사용할 이름을 지정한 후 **다음**&#x200B;을 클릭하여 계속하십시오.
-
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
    ![caop-07](assets/caop-07.png)
@@ -365,7 +364,8 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    >[!NOTE]
    >
-   >페이지가 연결 또는 참조되지 않은 경우 이 단계를 사용할 수 없습니다.
+   >* 페이지가 연결 또는 참조되지 않은 경우 이 단계를 사용할 수 없습니다.
+   >* 이 단계에는 직접 참조와 간접 참조가 모두 나열됩니다. 이 값은 마법사의 **이름 바꾸기** 단계에 보고된 양과 참조 레일에 보고된 참조 양과는 다를 수 있습니다. 두 참조 모두 성능상의 이유로 직접 참조만 보고합니다.
 
    ![caop-09](assets/caop-09.png)
 
@@ -389,7 +389,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
   ![비동기 페이지 이동](assets/asynchronous-page-move.png)
 
-비동기 작업의 상태는 **전역 탐색** > **도구** > **작업** > **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
+비동기 작업의 상태는 [**전역 탐색** > ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)도구&#x200B;**>**&#x200B;작업&#x200B;**>**&#x200B;작업&#x200B;**의**&#x200B;비동기 작업 상태&#x200B;**대시보드**&#x200B;에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -397,7 +397,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->비동기 페이지 이동 처리를 수행하려면 AEM 6.5.3.0 이상이 필요합니다.
+>비동기 페이지 이동을 처리하려면 AEM 6.5.3.0 이상이 필요합니다.
 
 ### 페이지 삭제 {#deleting-a-page}
 

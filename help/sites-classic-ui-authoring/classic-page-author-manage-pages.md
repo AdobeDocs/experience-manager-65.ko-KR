@@ -1,6 +1,6 @@
 ---
 title: 페이지 생성 및 구성
-description: 이 섹션에서는 해당 페이지에 컨텐츠를 만들 수 있도록 AEM으로 페이지를 만들고 관리하는 방법을 설명합니다.
+description: 이 섹션에서는 해당 페이지에 콘텐츠를 만들 수 있도록 AEM으로 페이지를 만들고 관리하는 방법을 설명합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,16 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 20%
 
 ---
 
 # 페이지 생성 및 구성{#creating-and-organizing-pages}
 
-이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)할 수 있도록 Adobe Experience Manager(AEM)를 사용하여 페이지를 만들고 관리하는 방법을 설명합니다.
+이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)할 수 있도록 Adobe Experience Manager(AEM)로 페이지를 만들고 관리하는 방법을 설명합니다.
 
 >[!NOTE]
 >
@@ -101,12 +101,12 @@ ht-degree: 20%
 
 #### 제목 {#title}
 
-페이지를 만들 때 **Title** 페이지만 제공하면 AEM은 이 문자열에서 **Name** 페이지를 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. 두 UI에서 잘못된 문자가 포함된 **제목** 필드를 사용할 수 있지만, 파생된 이름에서는 잘못된 문자가 대체됩니다. 예:
+페이지를 만들 때 **제목** 페이지만 제공하면 AEM은 이 문자열에서 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. 두 UI에서 잘못된 문자가 포함된 **제목** 필드를 사용할 수 있지만, 파생된 이름에서는 잘못된 문자가 대체됩니다. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### 이름 {#name}
 
@@ -252,7 +252,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공된
 * 동일한 위치에서 페이지 이름 바꾸기
 * 페이지를 새 위치로 이동함과 동시에 이름을 변경합니다
 
-AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링크를 업데이트하는 기능을 제공합니다. 페이지별로 다른 기준을 적용할 수 있으므로 완벽한 유연성이 발휘됩니다.
+AEM은 이름 변경 또는 이동되는 페이지에 대한 내부 링크를 업데이트하는 기능을 제공합니다. 페이지별로 다른 기준을 적용할 수 있으므로 완벽한 유연성이 발휘됩니다.
 
 페이지를 이동하거나 이름을 변경하려면 다음 작업을 수행하십시오.
 
@@ -266,7 +266,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   이 페이지에는 이동 중인 페이지를 참조하는 모든 페이지도 나열됩니다. 참조하는 페이지의 상태에 따라 페이지의 해당 링크를 조정하거나 페이지를 다시 게시할 수 있습니다.
+   또한 이 페이지에는 이동되는 페이지를 직접 또는 간접적으로 참조하는 모든 페이지가 나열됩니다. 참조하는 페이지의 상태에 따라 페이지의 해당 링크를 조정하거나 페이지를 다시 게시할 수 있습니다.
 
 1. 다음 필드를 적절히 입력합니다.
 

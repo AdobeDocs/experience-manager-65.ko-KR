@@ -5,9 +5,9 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1087'
 ht-degree: 15%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 15%
 
 Adobe Experience Manager(AEM) 6.4 이상 [클래식 UI는 더 이상 사용되지 않습니다](../release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 더 이상 개선하지 않으며 사용자는 터치 지원 UI에서 사용할 수 있는 강력한 새 기능을 사용하는 것이 좋습니다.
 
-버전 6.0부터 AEM에서는 [!DNL Adobe Experience Cloud] 및 전체 Adobe 사용자 인터페이스 지침에 맞게 조정된 &quot;터치 지원 UI&quot;(터치 UI라고 함)라는 새로운 사용자 인터페이스를 도입했습니다. 거의 기능 패리티에 도달함에 따라 &quot;클래식 UI&quot;라고 하는 레거시 데스크탑 지향 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다.
+버전 6.0부터 AEM은 [!DNL Adobe Experience Cloud] 및 전체 Adobe 사용자 인터페이스 지침에 맞게 조정된 &quot;터치 지원 UI&quot;(터치 UI라고 함)라는 새로운 사용자 인터페이스를 도입했습니다. 거의 기능 패리티에 도달함에 따라 &quot;클래식 UI&quot;라고 하는 레거시 데스크탑 지향 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다.
 
 터치 사용 UI에 대부분의 기능이 표시되지만 아직 완성되지 않은 기능이 있으며 향후 릴리스에서 추가될 예정입니다.
 
-다음 목록은 AEM 6.5에 구현된 기능의 상태를 보여 줍니다.
+다음 목록은 AEM 6.5에 구현된 기능의 상태를 보여줍니다.
 
 AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 위한 사용자 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)을 참조하십시오.
 
@@ -57,10 +57,10 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
 | 검색 | 완료 |  |
 | 페이지 복사 및 붙여넣기(복제) | 완료 |  |
 | 페이지 이동 | 완료 |  |
-| Publish 페이지 | 완료 |  |
-| 복제 권한이 없는 Publish 페이지 | 완료 |  |
+| 페이지 게시 | 완료 |  |
+| 복제 권한이 없는 페이지 게시 | 완료 |  |
 | 나중에 게시 | 완료 |  |
-| Publish 트리 | 완료 |  |
+| 트리 게시 | 완료 |  |
 | 페이지 게시 취소 | 완료 |  |
 | 복제 권한이 없는 페이지 게시 취소 | 완료 |  |
 | 나중에 게시 취소 | 완료 |  |
@@ -76,7 +76,7 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
 | 언어 사본 보기 | 완료 |  |
 | 찾기 및 바꾸기 | 누락 | 클래식 UI를 사용합니다. |
 | 알림 받은 편지함(JCR 이벤트) | 누락 | 클래식 UI를 사용합니다. 나중에 다른 구현으로 대체되었습니다. |
-| 참조 | 완료 | AEM 6.5에 추가된 수신 페이지 링크 표시 |
+| 참조 | 완료 | AEM 6.5에 추가된 수신 페이지 링크 표시. 성능 상의 이유로 페이지에 대한 직접 링크만 표시됩니다. |
 
 ## 기능 상태: 페이지 편집기 {#feature-status-page-editor}
 
@@ -145,7 +145,7 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
 | RTE 플러그인: 목록(글머리 기호 / 숫자) | 완료 |  |
 | RTE 플러그인: 단락 형식 | 완료 |  |
 | RTE 플러그인: 텍스트 스타일 | 완료 |  |
-| RTE 플러그인: Source 편집기(편집 HTML) | 완료 | 대화 상자 및 전체 화면에서만 사용할 수 있습니다. |
+| RTE 플러그인: Source 편집기(HTML 편집) | 완료 | 대화 상자 및 전체 화면에서만 사용할 수 있습니다. |
 | RTE 플러그인: 맞춤법 검사기 | 완료 |  |
 | RTE 플러그인: 테이블(포함된 테이블 편집기) | 완료 |  |
 | RTE 플러그인: 실행 취소/다시 실행 | 완료 |  |

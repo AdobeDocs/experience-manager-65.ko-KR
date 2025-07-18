@@ -1,5 +1,5 @@
 ---
-title: AEM 작성자 환경 사용 시 기본 처리
+title: AEM 작성 환경 사용 시 기본 처리
 description: Adobe Experience Manager 탐색 및 기본 사용에 익숙해지십시오.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 52%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 52%
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용](/help/sites-authoring/keyboard-shortcuts.md) 및 [페이지를 편집](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)하는 경우.
 >
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 ### 터치 지원 UI {#a-touch-enabled-ui}
 
-AEM의 사용자 인터페이스가 터치가 활성화되었습니다. 터치 지원 인터페이스를 사용하면 터치를 사용하여 선택, 길게 터치 및 스와이프와 같은 제스처를 통해 소프트웨어와 상호 작용할 수 있습니다. 이는 기존의 데스크탑 인터페이스가 클릭, 두 번 클릭, 마우스 오른쪽 버튼 클릭 및 마우스 오버와 같은 마우스 동작과 함께 작동하는 방식과 대조적입니다.
+AEM의 사용자 인터페이스를 터치할 수 있도록 설정했습니다. 터치 지원 인터페이스를 사용하면 터치를 사용하여 선택, 길게 터치 및 스와이프와 같은 제스처를 통해 소프트웨어와 상호 작용할 수 있습니다. 이는 기존의 데스크탑 인터페이스가 클릭, 두 번 클릭, 마우스 오른쪽 버튼 클릭 및 마우스 오버와 같은 마우스 동작과 함께 작동하는 방식과 대조적입니다.
 
 AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블릿)에서 터치 제스처를 사용하고 기존 데스크탑 장치에서 마우스 동작을 사용할 수 있습니다.
 
@@ -98,7 +98,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>커뮤니티</td>
-   <td>이 콘솔을 통해 <a href="/help/communities/overview.md#engagement-community">참여</a> 및 <a href="/help/communities/overview.md#enablement-community">지원</a>에 대한 <a href="/help/communities/sites-console.md">커뮤니티 사이트</a>를 만들고 관리할 수 있습니다.</td>
+   <td>이 콘솔을 통해 <a href="/help/communities/sites-console.md">참여</a> 및 <a href="/help/communities/overview.md#engagement-community">지원</a>에 대한 <a href="/help/communities/overview.md#enablement-community">커뮤니티 사이트</a>를 만들고 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>상거래</td>
@@ -122,7 +122,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=ko">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -171,7 +171,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
   >[!NOTE]
   >
-  >기본 AEM에는 관리자 사용자 그룹에 할당된 관리 작업이 미리 로드되어 있습니다. 자세한 내용은 [받은 편지함 - 기본 제공 관리 작업](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks)을 참조하세요.
+  >AEM에는 관리자 사용자 그룹에 할당된 관리 작업이 사전 로드되어 있습니다. 자세한 내용은 [받은 편지함 - 기본 제공 관리 작업](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks)을 참조하세요.
 
 * [사용자 속성](/help/sites-authoring/user-properties.md)
 
@@ -237,7 +237,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * **탐색**
 
-  시스템을 처음 탐색하면 [일련의 슬라이드가 AEM 탐색을 도입합니다](/help/sites-authoring/basic-handling.md#product-navigation).
+  시스템을 처음 탐색하면 [일련의 슬라이드가 AEM 탐색을 소개합니다](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **페이지 편집기**
 
@@ -442,7 +442,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    * 페이지 제목.
    * 중요한 날짜(예: 마지막 편집 날짜, 마지막 게시 날짜).
    * 페이지가 잠겨 있거나 숨겨져 있거나 라이브 카피의 일부입니다.
-   * 필요한 경우 워크플로우의 일부로 작업을 수행해야 합니다.
+   * 필요한 경우 워크플로의 일부로 작업을 수행해야 합니다.
 
       * 필요한 작업을 나타내는 마커는 [받은 편지함](/help/sites-authoring/inbox.md)의 항목과 관련되어 있을 수 있습니다.
 
@@ -560,7 +560,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 * 특정 콘솔에는 추가 기능이 있습니다. 예를 들어 사이트 콘솔에서 다음을 수행할 수 있습니다.
 
    * [버전을 저장](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)합니다.
-   * [워크플로우 시작](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+   * [워크플로 시작](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 이러한 옵션은 **댓글** 필드 옆에 있는 V자형 화살표를 통해 액세스할 수 있습니다.
 
@@ -568,15 +568,16 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 참조 {#references}
 
-**참조**&#x200B;은(는) 선택한 리소스에 대한 모든 연결을 표시합니다. 예를 들어 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
+**참조**&#x200B;은(는) 선택한 리소스에 대한 연결을 표시합니다. 예를 들어 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
 
+* [블루프린트](/help/sites-administering/msm.md)
 * [론치](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [언어 사본](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * 콘텐츠 참조:
 
-   * 다른 페이지에서 선택한 페이지로의 링크
-   * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠, 선택한 페이지에 빌려준 컨텐츠 또는 두 컨텐츠 모두
+   * 다른 페이지에서 선택한 페이지로 직접 연결
+   * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠, 선택한 페이지에 빌려준 컨텐츠 또는 선택한 페이지에 빌려준 컨텐츠
 
 ![bh-28](assets/bh-28.png)
 
