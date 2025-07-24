@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 > 핫픽스는 이전의 모든 수정 사항을 포함하여 누적되도록 설계되었습니다. 릴리스에 최신 핫픽스를 적용하면 최신 문제를 해결할 수 있을 뿐만 아니라 이전의 모든 버그 수정 및 개선 사항이 통합되어 있습니다.
 
-## 적응형 Forms에 대한 핫픽스 {#hotfix-for-adaptive-forms}
+## AEM Forms용 핫픽스 {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -46,7 +46,16 @@ ht-degree: 0%
     </td>
     <td>
     <ul>
-    <li>JEE의 AEM Forms용 SP23 핫픽스</li>
+    <li><strong>이 핫픽스는 다음을 수정합니다.</strong>
+      <ul>
+        <li><strong>FORMS-20533:</strong> AEM Forms에 forms 구성 요소의 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 다운로드 및 설치할 수 있는 핫픽스를 통해 지원이 추가되었습니다.</li>
+        <li><strong>FORMS-20532:</strong> AEM Forms에 출력 구성 요소에 대한 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 다운로드 및 설치할 수 있는 핫픽스를 통해 지원이 추가되었습니다.</li>
+        <li><strong>FORMS-20203:</strong> 사용자가 Struts를 AEM 서비스 팩 2.5.x에서 AEM Forms 서비스 팩 6.x로 업그레이드할 때 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다. 이 문제를 해결하려면 핫픽스를 다운로드하여 설치할 수 있습니다.</li>
+        <li><strong>FORMS-20360:</strong> AEM Forms 서비스 팩 6.5.23.0으로 업그레이드한 후 ImageToPDF 변환 서비스가 실패하고 오류:<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        이 문제를 해결하려면 핫픽스를 다운로드하여 설치할 수 있습니다.</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>

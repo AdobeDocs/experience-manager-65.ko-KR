@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '6643'
+source-wordcount: '6684'
 ht-degree: 2%
 
 ---
@@ -71,11 +71,21 @@ ht-degree: 2%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
-* FORMS-20533: 이제 AEM Forms에 양식 구성 요소용 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
+* FORMS-20533, FORMS-20532: 이제 AEM Forms에 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
-* FORMS-20532: 이제 AEM Forms에 출력 구성 요소에 대해 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
+* **LC-3922769**: 이제 일부 AEM Forms 기능이 제대로 작동하려면 OpenSSL 3이 필요합니다. 시스템에 `libcrypto.so.3` 및 `libssl.so.3` 라이브러리와 함께 OpenSSL 3이 설치되어 있어야 합니다. 보안 업데이트는 OpenSSL 3.0.14 버전에서만 사용할 수 있으며 SafeLogic 지원은 2025년 2월에 종료되므로 Safe를 제거하고 이제 보안 규정 준수를 위해 OpenSSL 3을 사용합니다. 플랫폼 호환성 및 자세한 요구 사항은 [JEE에서 AEM Forms에 지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 및 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
+
+  **OpenSSL 3 설치를 확인하려면:**
+
+   * **RHEL/CentOS/Fedora 기반 시스템**: `rpm -qa | grep   openssl3`
+   * **우분투/데비안 기반 시스템**: `dpkg -l | grep openssl3`
+   * **대체 확인**: `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'`(라이브러리가 LD_LIBRARY_PATH에 있는 경우)
+
+
+
+
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -219,11 +229,11 @@ ht-degree: 2%
 
 ### [!DNL Assets]{#assets-6523}
 
-* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후&#x200B;**[!UICONTROL &#x200B; 온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -519,7 +529,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -684,9 +694,22 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 >
 > 예기치 않은 오류가 발생할 수 있으므로 사용 가능한 핫픽스가 없는 문제에 대해서는 서비스 팩 6.5.23.0(으)로 업그레이드하지 마십시오. 필요한 핫픽스가 릴리스된 후에만 서비스 팩 6.5.23.0(으)로 업그레이드하십시오.
 
-* 사용자가 Struts 프레임워크를 버전 2.5.x에서 6.x로 업그레이드할 때 AEM Forms의 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다. [핫픽스를 다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)하여 문제를 해결할 수 있습니다. (FORMS-20203)
-* AEM Forms 서비스 팩 6.5.23.0(으)로 업그레이드한 후 다음 오류가 발생하여 ImageToPDF 변환 서비스가 실패합니다(FORMS-20360).
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` 해결된 문제를 [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있습니다.
+#### 사용 가능한 핫픽스 문제 {#aem-forms-issues-with-hotfixes}
+
+다음 문제에는 다운로드 및 설치에 사용할 수 있는 핫픽스가 있습니다. [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하여 다음 문제를 해결할 수 있습니다.
+
+* **FORMS-20203**: 사용자가 Struts 프레임워크를 버전 2.5.x에서 6.x로 업그레이드할 때 AEM Forms의 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다.
+
+* **FORMS-20360**: AEM Forms 서비스 팩 6.5.23.0(으)로 업그레이드한 후 ImageToPDF 변환 서비스가 실패하고 다음 오류가 발생합니다.
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+
+* **FORMS-20478**: 형식 7/8 TIFF 파일을 PDF으로 변환하려고 할 때 &quot;ALC-PDG-001-000-Image2Pdf 변환 실패, 원인: com/sun/image/codec/jpeg/jpegcODEC&quot; 및 &quot;ALC-PDG-016-003-PDF 사후 처리 중 알 수 없는/예기치 않은 오류가 발생했습니다&quot;라는 오류 메시지가 표시되면서 변환 프로세스가 실패합니다. 시스템이 TM ImageIO TIFF 디코더를 사용하여 다시 시도하지만 결국 작업을 완료하지 못합니다.
+
+* **FORMS-14521**: 사용자가 저장된 XML 데이터가 있는 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다.
+
+* 이제 AEM Forms에 양식 구성 요소에 대한 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이렇게 하면 SP23에 포함되지 않았던 이전에 누락된 Struts 변경 사항이 제공됩니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 다운로드하여 설치할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 지원이 추가되었습니다.
+
+#### 기타 알려진 문제 {#aem-forms-other-known-issues}
 
 * AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 폴더(FORMS-14926) 아래에 Geode jar `<AEM_Forms_Installation>/lib/caching/lib`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
 
@@ -697,7 +720,6 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
    5. 관리자 모드에서 명령 프롬프트를 엽니다.
    6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
 
-* 사용자가 저장된 XML 데이터를 사용하여 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-14521)
 * AEM 6.5 Forms 서비스 팩 18 또는 19에서 서비스 팩 20 또는 21로 업그레이드한 사용자에게 JSP 컴파일 오류가 발생했습니다. 이 오류로 인해 적응형 양식을 열거나 만들 수 없습니다. 또한 다른 AEM 인터페이스에 문제가 발생했습니다. 이러한 인터페이스에는 페이지 편집기, AEM Forms UI, 워크플로우 편집기 및 시스템 개요 UI가 포함되었습니다. (FORMS-15256)
 
   이러한 문제가 발생하면 다음 단계를 수행하여 해결하십시오.
@@ -705,11 +727,12 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
    2. 이름이 `com.adobe.granite.ui.commons-5.10.26.jar`인 번들을 삭제합니다.
    3. AEM 서버를 다시 시작합니다.
 
-* Forms 추가 기능을 사용하여 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 자격 증명 기반 인증을 사용하여 레거시 Adobe Analytics Cloud 서비스에 의존하는 구성이 작동하지 않습니다. 이 문제로 인해 분석 규칙이 올바르게 실행되지 못했습니다. 핫픽스를 다운로드하여 설치하려면 [Adobe Experience Manager Forms 핫픽스](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 문서를 참조하십시오. (FORMS-15428)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
 * 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
 * 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
 * [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 일부 공백이 사라지고 특정 문자가 `x`(으)로 바뀝니다. (FORMS-15681)
+* **FORMS-15428**: Forms 추가 기능을 사용하여 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 자격 증명 기반 인증을 사용하여 레거시 Adobe Analytics Cloud 서비스에 의존하는 구성이 작동하지 않습니다. 이 문제로 인해 분석 규칙이 올바르게 실행되지 못했습니다.
+
 * 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
 
   ```java
@@ -720,7 +743,6 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* FORMS-20478: 유형 7/8 TIFF 파일을 PDF으로 변환하려고 할 때 &quot;ALC-PDG-001-000-Image2Pdf 변환 실패, 원인: com/sun/image/codec/jpeg/JPEGCodec&quot; 및 &quot;ALC-PDG-016-003-PDF 사후 처리 중에 알 수 없는/예기치 않은 오류가 발생했습니다&quot;라는 오류와 함께 변환 프로세스가 실패합니다. 시스템이 TM ImageIO TIFF 디코더를 사용하여 다시 시도하지만 결국 작업을 완료하지 못합니다. [핫픽스를 다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)하여 문제를 해결할 수 있습니다.
 
 
 ## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
@@ -735,10 +757,10 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
