@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
+source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,67 @@ ht-degree: 0%
     <td><strong>해결된 문제</strong></td>
   </tr>
   <tr>
-    <td>SP23 핫픽스-</td>
+    <td>
+      <strong>2025년 8월 5일</strong><br>
+      <em>적용 대상:</em> AEM 6.5 Forms 서비스 팩 23<br>
+      <em>설치 지침:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
+        JEE에서 AEM Forms의 XXE, 구성 및 원격 코드 실행(CVE-2025-49533) 취약점 완화
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><strong>보스:</strong></li>
+    <li>Windows- JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">핫픽스2</a></li>
+    <li>Linux- JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">핫픽스2</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- Weblogic JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">핫픽스2</a></li>
+    <li>Linux- Weblogic JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">핫픽스2</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">핫픽스2</a></li>
+    <li>Linux- Websphere JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">핫픽스2</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Adobe Experience Manager(AEM) Forms의 RCE(원격 코드 실행) 취약점 문제를 해결하여 보안을 강화했습니다. 이 문제는 디버그 기능을 통해 임의의 OGNL(Object-Graph Navigation Language) 평가를 허용하는 관리 UI(사용자 인터페이스)의 Struts 개발 모드와 관련이 있습니다. 이 수정 사항을 통해 Struts 개발 모드가 비활성화되고 무단 액세스를 방지하기 위해 적절한 보안 필터가 적용됩니다.</li>
+    <li>Adobe Experience Manager(AEM) Forms의 EDC(Electronic Document Component) 모듈에서 XML(Extensible Markup Language) XXE(외부 엔티티) 취약점에 대한 보호 기능이 개선되었습니다. 취약점은 XXE 보호 없이 XML 문서를 잘못 처리했기 때문에 로컬 파일을 읽을 수 있습니다. 이 수정 사항에는 다음이 포함됩니다.
+      <ul>
+        <li>SecurityCheckHandler 클래스에 사용된 DocumentBuilderFactory가 XXE 공격을 방지하도록 구성되어 있는지 확인합니다.</li>
+        <li>EDC 웹 서비스를 업데이트하여 XML 문서를 안전하게 처리하여 로컬 파일에 대한 무단 액세스를 방지합니다.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <strong>2025년 8월 5일</strong><br>
+      <em>적용 대상:</em> AEM 6.5 Forms 서비스 팩 18 - 22<br>
+      <em>설치 지침:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
+        서비스 팩 18-22용 수동 핫픽스 설치
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">AEM 6.5 Forms 서비스 팩 18 - AEM 6.5 Forms 서비스 팩 22용 패치 </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Adobe Experience Manager(AEM) Forms의 RCE(원격 코드 실행) 취약점 문제를 해결하여 보안을 강화했습니다. 이 문제는 디버그 기능을 통해 임의의 OGNL(Object-Graph Navigation Language) 평가를 허용하는 관리 UI(사용자 인터페이스)의 Struts 개발 모드와 관련이 있습니다. 이 수정 사항을 통해 Struts 개발 모드가 비활성화되고 무단 액세스를 방지하기 위해 적절한 보안 필터가 적용됩니다.</li>
+    <li>Adobe Experience Manager(AEM) Forms의 Document Security 모듈에서 XML(Extensible Markup Language) XXE(외부 엔티티) 취약점에 대한 보호 기능이 개선되었습니다. 취약점은 XXE 보호 없이 XML 문서를 잘못 처리했기 때문에 로컬 파일을 읽을 수 있습니다. 이 수정 사항에는 다음이 포함됩니다.
+      <ul>
+        <li>SecurityCheckHandler 클래스에 사용된 DocumentBuilderFactory가 XXE 공격을 방지하도록 구성되어 있는지 확인합니다.</li>
+        <li>XML 문서를 안전하게 처리하도록 Document Security 웹 서비스를 업데이트하여 로컬 파일에 대한 무단 액세스를 방지합니다.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>2025년 7월 10일-</td>
     <td>
     <ul>
     <li><strong>보스:</strong></li>
@@ -192,7 +252,7 @@ ht-degree: 0%
   <tbody>
 </table>
 
-## 핫픽스 다운로드 및 설치 {#download-install-hotfix}
+## OSGi 핫픽스 다운로드 및 설치 {#download-install-hotfix}
 
 다음 단계를 수행하여 핫픽스를 다운로드하고 설치합니다.
 
@@ -200,6 +260,10 @@ ht-degree: 0%
 1. Experience Manager 패키지(.zip)를 가져오고 파일을 번들(.jar)할 수 있도록 핫픽스 아카이브 파일을 추출합니다.
 1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing)를 통해 패키지(.zip)를 업로드하고 설치합니다.
 1. Configuration Manager 번들 `https://server:host/system/console/bundles`을(를) 열고 번들(.jar)을 업로드한 후 설치합니다. 핫픽스가 설치되었습니다.
+
+## JEE 패치 설치 {#download-install-jee-patch}
+
+JEE 패치를 설치하는 방법은 [AEM Forms JEE 패치 설치 관리자 설명서](/help/release-notes/jee-patch-installer-65.md)를 참조하십시오.
 
 
 ## 초안 편지 문제에 대한 핫픽스 다운로드 및 설치 {#install-hotfix}
