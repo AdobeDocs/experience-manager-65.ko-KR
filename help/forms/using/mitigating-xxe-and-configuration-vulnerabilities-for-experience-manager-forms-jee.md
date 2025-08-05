@@ -6,16 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-exl-id: c8f3e7c1-d5a2-4e2f-8b9c-1a8d7f8e2a9b
+exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
+source-git-commit: 8420597b7ee09b15a7f0004acc64e3625771a4d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # JEE에서 RCE(CVE-2025-49533), Struts 개발 모드 구성(CVE-2025-54253), XXE(CVE-2025-54254) 및 AEM Forms의 취약점 완화 {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
@@ -67,22 +66,18 @@ ht-degree: 5%
 ### 옵션 1: (버전 6.5.23.0의 사용자용) 최신 핫픽스 설치
 
 1. [6.5.23.0](/help/release-notes/aem-forms-hotfix.md)용 핫픽스를 다운로드합니다.
-2. 표준 [핫픽스/패치 설치 지침](/help/release-notes/jee-patch-installer-65.md) 준수
-3. IBM WebSphere 또는 Oracle WebLogic에서 Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 서버를 시작하기 전에 다음 Java 시스템 속성(JVM 인수)을 설정하십시오.
+1. 표준 [핫픽스/패치 설치 지침](/help/release-notes/jee-patch-installer-65.md) 준수
+1. IBM WebSphere 또는 Oracle WebLogic에서 Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 서버를 시작하기 전에 다음 Java 시스템 속성(JVM 인수)을 설정하십시오.
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
    ```
 
-4. 응용 프로그램 서버 다시 시작
-
-</details>
+1. 응용 프로그램 서버 다시 시작
 
 ### 옵션 2: (6.5.18.0 - 6.5.22.0의 사용자용) 수동 핫픽스 설치
 
-
-<details>
-<summary><b>6.5.18.0 - 6.5.22.0용 수동 핫픽스 설치</b></summary>
++++<b> - 6.5.18.0에 대한 6.5.22.0</b>수동 핫픽스 설치
 
 **1단계: 핫픽스 패키지 다운로드 및 추출**
 
@@ -125,7 +120,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/jboss/adminui.war`
 
-2. `adobe-core-jboss.ear` 내에서 `lib/` 폴더로 이동하여 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
+1. `adobe-core-jboss.ear` 내에서 `lib/` 폴더로 이동하여 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -133,10 +128,10 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
+1. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
 
 
-4. `adobe-edcserver-jboss.ear` 바꾸기
+1. `adobe-edcserver-jboss.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-edcserver-jboss.ear
@@ -144,7 +139,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/jboss/adobe-edcserver-jboss.ear`
 
-5. `adobe-forms-jboss.ear` 바꾸기
+1. `adobe-forms-jboss.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-forms-jboss.ear
@@ -164,7 +159,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/weblogic/adminui.war`
 
-2. `adobe-core-weblogic.ear` 내에서 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
+1. `adobe-core-weblogic.ear` 내에서 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -172,10 +167,10 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
+1. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
 
 
-4. `adobe-edcserver-weblogic.ear` 바꾸기
+1. `adobe-edcserver-weblogic.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-edcserver-weblogic.ear
@@ -183,7 +178,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/weblogic/adobe-edcserver-weblogic.ear`
 
-5. `adobe-forms-weblogic.ear` 바꾸기
+1. `adobe-forms-weblogic.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-forms-weblogic.ear
@@ -201,7 +196,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/websphere/adminui.war`
 
-2. `adobe-core-websphere.ear` 내에서 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
+1. `adobe-core-websphere.ear` 내에서 `adobe-uisupport.jar`을(를) 다음으로 바꾸기:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -209,10 +204,10 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
+1. 귀를 막아라. 변경 사항이 제대로 저장되었는지 확인합니다.
 
 
-4. `adobe-edcserver-websphere.ear` 바꾸기
+1. `adobe-edcserver-websphere.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-edcserver-websphere.ear
@@ -220,7 +215,7 @@ ht-degree: 5%
 
    예, `adobe-xxe-configuration-hotfix/SP20/websphere/adobe-edcserver-websphere.ear`
 
-5. `adobe-forms-websphere.ear` 바꾸기
+1. `adobe-forms-websphere.ear` 바꾸기
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-forms-websphere.ear
@@ -253,16 +248,16 @@ Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 
 
 - 구성 관리자를 실행하여 업데이트된 EAR을 다시 배포하고 핫픽스를 적용합니다
 
-</details>
++++
 
 ### 옵션 3: (6.5.17.0 및 이전 버전의 사용자용) 업그레이드 경로
 
 1. [지원되는 서비스 팩 버전으로 업그레이드](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-2. 새 버전을 기준으로 위의 옵션 1 또는 옵션 2를 따르십시오.
+1. 새 버전을 기준으로 위의 옵션 1 또는 옵션 2를 따르십시오.
 
 ## 참조
 
 - [CWE-611: XML 외부 엔터티 참조를 잘못 제한합니다](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16: 구성](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE 방지 치트 시트](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms 보안 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)
+- [Adobe Experience Manager Forms 보안 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
