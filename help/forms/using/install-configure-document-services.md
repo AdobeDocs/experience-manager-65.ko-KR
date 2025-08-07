@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 1%
 
 ---
@@ -253,6 +253,12 @@ Microsoft Office용 Adobe Acrobat Pro DC 설치 프로세스는 라이선스 유
 * **배포 유형**: 단일 사용자 또는 여러 사용자
 
 각 탭에는 특정 설정에 최적화된 맞춤 지침이 포함되어 있으므로 구성 문제를 방지하고 적절한 라이선스 준수를 보장할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>이 비디오에서는 소매 라이선스 - 단일 사용자 구성의 설치 프로세스를 보여 줍니다. 다른 배포 시나리오(소매 - 여러 사용자, 볼륨 라이선스 - 단일 사용자 또는 볼륨 라이선스 - 여러 사용자)에 대해서는 아래의 해당 탭에 있는 9단계 지침을 참조하여 배포 유형에 맞게 적절한 서버 시작 및 라이선스 활성화를 확인하십시오.
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 모든 프로세스를 완료한 후 빠른 작업 테스트를 수행하여 설치가 유효한지 확인합니다.
 
 1. RDP(원격 데스크톱)를 사용하여 서버에 로그인하고 서비스를 사용하여 AEM Forms 서버를 시작합니다.
-2. RDP(원격 데스크톱)를 사용하여 서버에 로그인하고 Windows 서비스를 사용하여 AEM Forms 서버를 시작합니다. 서버가 실행되면 RDP 창을 닫지 마십시오. 대신 사용자를 로그오프하여 정상적으로 로그아웃하십시오. 이렇게 하면 서비스가 백그라운드에서 계속 실행되는 동안 세션이 깨끗하게 종료됩니다.
+2. 서버가 실행되면 RDP 창을 닫지 마십시오. 대신 사용자를 로그오프하여 정상적으로 로그아웃하십시오. 이렇게 하면 서비스가 백그라운드에서 계속 실행되는 동안 세션이 깨끗하게 종료됩니다.
 
 ###### 10단계: PDF Generator 서비스 테스트
 
