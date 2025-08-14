@@ -9,7 +9,7 @@ role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: 9be9bfc9e20a151afdb9ae2cddcc39b4d2701c1b
+source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 5%
@@ -77,7 +77,7 @@ ht-degree: 5%
 
 ### 옵션 2: (6.5.18.0 - 6.5.22.0의 사용자용) 수동 핫픽스 설치
 
-+++6.5.18.0부터 6.5.22.0까지 수동 핫픽스 설치
++++6.5.18.0에서 6.5.22.0까지 수동 핫픽스 설치
 
 **1단계: 핫픽스 패키지 다운로드 및 추출**
 
@@ -260,4 +260,4 @@ Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 
 - [CWE-611: XML 외부 엔터티 참조를 잘못 제한합니다](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16: 구성](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE 방지 치트 시트](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms 보안 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)
+- [Adobe Experience Manager Forms 보안 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
