@@ -5,9 +5,9 @@ landing-page-description: 모든 Adobe 기능에 액세스하기 위한 중앙 �
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
+source-git-commit: b7977fcc76a3d8b4ec9e8d9e8ae8622ff13a441a
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '589'
 ht-degree: 5%
 
 ---
@@ -75,7 +75,7 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ![Experience Hub 빠른 바로 가기](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
 
-프로덕션 AEM Cloud Service 또는 Managed Services 환경이 없는 경우 선택 옵션이 흐리게 표시되어 사용할 수 없습니다.
+프로덕션 AEM Cloud Service 또는 Managed Services 환경이 없는 경우 선택 옵션이 흐리게 표시됩니다(사용할 수 없음).
 
 ![프로덕션 환경이 없는 Experience Hub](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
