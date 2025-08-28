@@ -1,23 +1,22 @@
 ---
-title: AEM의 AI 지원
+title: AEM 6.5의 AI Assistant
 description: AI Assistant를 사용하여 Adobe Experience Manager에서 사용할 수 있는 솔루션에 대한 해답을 찾고 문제를 해결할 수 있습니다.
-solution: Experience Manager
+solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 78ba3c9a8c2636eebdeac08c54ad3d0b1d0e8249
+source-git-commit: c98a66a4b4be23145334b339a793ded1716e9889
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
-# AEM의 AI 지원 {#about-ai-assistant-in-aem}
+# AEM 6.5의 AI Assistant {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
 >
 >Cloud Manager/Experience Hub을 사용하지 않는 AEM 6.5 및 AEM 6.5 LTS 고객은 Adobe 고객 성공 엔지니어에게 연락하여 AI Assistant에 대한 액세스를 요청해야 합니다.
-
 
 AEM 6.5/AEM 6.5 LTS의 AI Assistant는 Adobe Experience Manager 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. AEM 제품 관련 질문에 대한 즉각적인 답변을 얻고(*모든 사용자가 사용할 수 있음*) 지원 티켓 생성을 자동화할 수 있습니다(*지원 관리자가 사용할 수 있음*).
 
@@ -36,7 +35,7 @@ AEM에 직접 임베드되며 AEM Experience Hub, Cloud Manager 및 Author UI에
 
 다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
@@ -134,7 +133,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
