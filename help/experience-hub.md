@@ -1,7 +1,7 @@
 ---
 title: Experience Hub 정보
-description: Adobe Experience Hub 페이지에 대해 알아봅니다.
-landing-page-description: 모든 Adobe 기능에 액세스하기 위한 중앙 집중식 시작점인 AEM Experience Hub에 대해 알아봅니다.
+description: Adobe Experience Hub 페이지에 대해 알아보십시오.
+landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Adobe Experience Hub에 대해 알아보십시오.
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -9,7 +9,7 @@ exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
 source-git-commit: 276b7bb5462e4dd0dfbb27c94f759a89afb815cf
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ![프로덕션 환경이 없는 Experience Hub](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
-## AEM의 AI 지원
+## AEM 내 AI 어시스턴트
 
 [필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.
