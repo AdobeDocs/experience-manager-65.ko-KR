@@ -62,7 +62,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 요청을 시작하여 HTTP/2로 전환합니다. 이 작업은 자동으로 수행되지 않습니다.
 
-1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
+1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/ko?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
 
    1. 지원 요청에 다음 정보를 제공합니다.
 
