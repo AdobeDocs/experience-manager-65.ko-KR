@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 276b7bb5462e4dd0dfbb27c94f759a89afb815cf
+source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(4분 9초)을 잠깐 둘러보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471448?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -82,4 +82,4 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ## AEM 내 AI 어시스턴트
 
-[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.
+[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI Assistant를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.

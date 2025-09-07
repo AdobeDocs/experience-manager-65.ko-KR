@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
-source-git-commit: c89b0dc7c544e3b81ea05bf078f33e9ab7f40880
+source-git-commit: 11be37d5a96dd7236f2011b6df3e39bf0b1904b7
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1076'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 ## 1 - Adobe Admin Console에서 새 제품 프로필 만들기{#create-profile}
 
-1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
+1. Experience Platform 설명서에 있는 [Adobe Admin Console에서 새 제품 프로필 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)의 자세한 지침을 따르십시오.
 
 1. 새 제품 프로필을 만들 때 AI Assistant에 대해 다음과 같이 제안된 값을 사용할 수 있습니다.
 
@@ -65,7 +65,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 제품 프로필에 사용자 지정 권한을 할당하는 프로세스는 표준 Adobe Cloud Manager 사용자 지정 권한 워크플로우를 따릅니다.
 
-참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+참조 문서: [새 제품 프로필에 사용자 지정 권한 할당](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Admin Console에서 새로 만든 제품 프로필의 이름(`AI Assistant in AEM`)을 클릭합니다
 
@@ -81,7 +81,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 1. **AI Assistant에 대한 권한 편집** 페이지에서 **AI Assistant 제품 지식** 토글을 켭니다.
 
-   ![AI Assistant 제품 지식 토글 옵션의 권한 페이지 편집](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
+   ![AI Assistant 제품 지식 토글 옵션에 대한 권한 페이지 편집](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
 
 1. 페이지의 오른쪽 아래 모서리에서 **저장**&#x200B;을 클릭합니다.
 
@@ -135,7 +135,7 @@ AEM에서 AI Assistant를 구성하는 프로세스는 다음 단계로 구성�
 
 1. AEM의 **AI Assistant**&#x200B;에 대한 **사용자 그룹** 페이지에서 **사용자** 탭을 클릭한 다음 **사용자 추가**&#x200B;를 클릭합니다.
 
-   ![AEM 사용자 그룹 페이지의 AI 도우미에 사용자 탭과 사용자 추가 단추가 표시됩니다](/help/assets/assets-ai/ai-assistant-add-users.png)
+   ![AEM 사용자 그룹 페이지의 AI 도우미에 사용자 탭과 사용자 추가 버튼이 표시됨](/help/assets/assets-ai/ai-assistant-add-users.png)
 
 1. **`Add users to this user group`** 페이지에서 AEM의 AI Assistant에 액세스해야 하는 사용자를 검색하고 선택합니다.
 
@@ -173,14 +173,14 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 1. 대화 상자의 오른쪽 아래 모서리에서 **적용**&#x200B;을 클릭합니다.
 1. **제품 및 프로필 할당** 페이지의 오른쪽 아래 모서리에서 **저장**&#x200B;을 클릭합니다.
 
-   ![표시된 AI Assistant 제품 프로필이 AEM 사용자 그룹의 AI Assistant에 할당되었습니다](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
+   ![AEM 사용자 그룹의 AI Assistant에 할당된 AI Assistant 제품 프로필이 표시됨](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## 구성 확인
 
 * 제품 프로필에 할당된 사용자 그룹의 올바른 수가 표시되는지 확인합니다.
 * 사용자 그룹에 올바른 사용자 수가 표시되는지 확인합니다.
-* AI Assistant 제품 지식 권한이 활성화되고 올바르게 구성되었는지 확인합니다.
+* AI Assistant 제품 지식 권한이 활성화되어 있고 올바르게 구성되어 있는지 확인합니다.
 
 
 ## 구성 테스트
@@ -193,6 +193,6 @@ Admin Console에서 일괄 업로드 기능을 사용할 수 있습니다.
 
 ## 추가 참조
 
-* [AEM의 AI 지원](/help/ai-assistant-in-aem.md)
-* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/ui/overview)
+* [AEM 내 AI 어시스턴트](/help/ai-assistant-in-aem.md)
+* [Adobe Experience Platform 액세스 제어](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->
