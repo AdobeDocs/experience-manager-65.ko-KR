@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
+source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
 workflow-type: tm+mt
-source-wordcount: '6710'
-ht-degree: 3%
+source-wordcount: '6713'
+ht-degree: 13%
 
 ---
 
@@ -26,10 +26,13 @@ ht-degree: 3%
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 버전 | 6.5.23.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 버전 | 6.5.23.0, GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE -->용 핫픽스 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2025년 5월 22일 목요일 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 날짜 | 2025년 9월 9일 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+
+<!-- OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## [!DNL Experience Manager] 6.5.23.0에 포함된 항목 {#what-is-included-in-aem-6523}
 
@@ -71,7 +74,7 @@ ht-degree: 3%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 * FORMS-20533, FORMS-20532: 이제 AEM Forms에 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
@@ -109,18 +112,18 @@ ht-degree: 3%
 
 #### 접근성 {#sites-accessibility-6523}
 
-* 이제 AEM 편집기 페이지의 캔버스 섹션에서 전체 키보드 접근성을 지원합니다. 사용자는 마우스로 가리키지 않고 키보드만 사용하여 섹션 제목을 활성화하고 버튼을 편집할 수 있습니다. 이 업데이트는 WCAG 2.1.1을 준수하도록 하며 구성 요소(예: 티저, 이미지, 회전 메뉴, 레이아웃, 타임워프 및 주석 양식) 간의 사용성을 개선합니다. (SITES-25256) <!-- 6.5 LTS SP1 -->
-* 페르소나, 장바구니 또는 포기와 같은 단추를 활성화한 후 키보드 포커스가 예기치 않게 인구 통계학적 도구 모음의 시작으로 재설정되는 AEM 페이지 편집기의 접근성 문제를 해결했습니다. 이제 일관된 키보드 탐색 및 화면 판독기 워크플로우를 지원하기 위해 활성화된 단추에 포커스가 유지됩니다. (SITES-25306)
+* AEM 편집기 페이지의 캔버스 섹션에서 이제 전체 키보드 접근성이 지원됩니다. 사용자는 마우스 호버에 의존하지 않고 키보드만 사용하여 섹션 제목과 편집 버튼을 활성화할 수 있습니다. 이 업데이트는 WCAG 2.1.1을 준수하고 티저, 이미지, 슬라이드, 레이아웃, 타임워프, 주석 모달 등 구성 요소 전반의 사용성을 개선합니다. (SITES-25256) <!-- 6.5 LTS SP1 -->
+* 페르소나, 장바구니 또는 포기와 같은 단추를 활성화한 후 키보드 포커스가 예기치 않게 인구 통계학적 도구 모음의 시작으로 재설정되는 AEM 페이지 편집기의 접근성 문제를 해결했습니다. 일관된 키보드 탐색과 화면 판독기 워크플로를 지원하기 위해 이제 활성화된 버튼에 포커스가 유지됩니다. (SITES-25306)
 * AEM 페이지 편집기에서 키보드만 사용하여 여러 대화 상자와 모달(예: 에셋 레일 또는 레이아웃 미리 보기)의 캔버스 요소를 작동할 수 없는 중요한 접근성 문제를 수정했습니다. 모든 대화형 캔버스 요소는 이제 키보드 전용 탐색을 지원하므로 WCAG 2.1 성공 기준 2.1.1(SITE-25256)을 준수합니다
 * 만들기 팝업의 인터랙티브 목록 항목이 잘못된 ARIA 역할을 사용하는 사이트 관리 UI의 접근성 문제를 수정했습니다. 링크처럼 동작한 요소에 `role="listitem"` 대신 `role="menuitem"`이(가) 할당되어 ARIA 디자인 패턴을 위반하고 화면 판독기를 혼동했습니다. 업데이트는 모든 목록 구성 요소가 적절한 의미 체계 역할을 따라 향상된 키보드 및 보조 기술 지원을 제공하도록 합니다. (SITES-24493)
-* 페이지 제목 및 태그 필드에 대한 접근성 레이블 연결 문제를 수정했습니다. 이제 AEM 인터페이스는 JAWS와 같은 화면 판독기를 사용할 때 액세스 가능성 레이블을 &quot;제목&quot; 및 &quot;페이지 제목&quot; 필드와 올바르게 연결합니다. 이 수정 사항은 적절한 레이블 읽기를 보장하며 페이지 생성, 속성 및 이동 워크플로우에서 ADA 준수를 향상시킵니다. (SITES-27149)
+* 페이지 제목 및 태그 필드에 대한 접근성 레이블 연결 문제를 해결했습니다. 이제 AEM 인터페이스는 JAWS와 같은 화면 판독기를 사용할 때 접근성 레이블을 &#39;제목&#39; 및 &#39;페이지 제목&#39; 필드에 올바르게 연결합니다. 이 수정 사항을 통해 적절한 레이블 판독이 보장되고 페이지 생성, 속성 및 이동 워크플로 전반에서 ADA 규정 준수가 개선됩니다. (SITES-27149)
 * 권한 대화 상자의 표 식별에 대한 접근성 문제를 수정했습니다. 이제 AEM의 권한 테이블에서는 올바른 ARIA 역할 및 속성을 사용하여 JAWS와 같은 화면 판독기에서 이를 테이블로 제대로 식별하도록 합니다. 이 수정 사항은 접근성 준수를 향상시키고 사용자가 정확한 탐색 및 콘텐츠 공지를 받도록 합니다. (SITES-27140)
-* 타임라인의 주석 입력 필드에 대한 시각적 레이블이 누락되는 문제를 해결했습니다. 접근성을 개선하기 위해 타임라인 섹션 아래의 &quot;댓글&quot; 입력 필드에 대한 시각적 레이블이 누락되었습니다. 업데이트를 통해 화면 판독기에서 필드 레이블을 정확하게 알릴 수 있습니다. 이 경험은 모든 사용자, 특히 보조 기술에 의존하는 개인을 위해 양식 탐색 및 제출을 향상시킵니다. (SITES-26903)
-* 타임라인 주석에서 줄임표 단추에 대한 키보드 접근성을 수정했습니다. 타임라인 섹션의 주석 옆에 있는 생략 부호(세 점) 단추에 대한 키보드 탐색을 활성화했습니다. 이제 사용자는 tab 키를 사용하여 버튼에 액세스하고 버튼과 상호 작용할 수 있으므로 키보드 전용 탐색에 의존하는 사용자의 접근성을 향상시킵니다. (SITES-26891)
-* 선택 대화 상자의 검색 결과에 대한 NVDA/내레이터 공지가 개선되었습니다. NVDA 또는 내레이터와 같은 화면 판독기를 사용할 때 검색 결과가 검색되는지 여부를 알리도록 선택 열기 대화 상자를 업데이트했습니다. 이러한 개선된 기능은 보조 기술에 의존하는 사용자가 시각적 확인이 필요 없이 검색 작업의 결과를 이해하는 데 도움이 됩니다. (SITES-26883)
-* 댓글 입력 필드 옆에 있는 줄임표 아이콘에 대한 ARIA 역할을 수정했습니다. 올바른 ARIA 역할을 사용하도록 주석 입력 필드 옆에 있는 생략 부호(세 점) 아이콘을 업데이트하여 화면 판독기에서 요소를 정확하게 식별할 수 있도록 했습니다. 이러한 개선 사항은 접근성 규정 준수를 향상시키며 보조 기술에 의존하는 사용자의 경험을 개선합니다. (SITES-26881)
-* Coral UI 구성 요소에서 잘못된 ARIA 속성을 수정했습니다. 모든 ARIA 속성이 유효한 값을 사용하도록 Coral UI 구성 요소를 업데이트하여 접근성 준수를 개선했습니다. 특히 `aria-modal="dialog"`과(와) 같은 잘못된 값이 잘못 할당된 경우가 해결되었습니다. 이 향상된 기능을 통해 화면 판독기에서 대화 상자 요소를 올바르게 해석할 수 있으므로 보조 기술에 의존하는 사용자의 접근성을 향상시킬 수 있습니다. (SITES-26873)
-* 리플로우 시나리오에서 아이콘에 대한 가시성과 도구 설명이 개선되었습니다. **다운로드**, **에셋 재처리** 및 **체크아웃** 아이콘에 대한 도구 설명이 올바르게 표시되도록 리플로우 동작을 개선했습니다. 뷰포트 크기가 조정되거나 브라우저 확대/축소 설정이 변경될 때 아이콘과 해당 레이블이 보이지 않는 접근성 문제에 초점을 맞췄습니다. 이 수정 사항은 Reflow 동안 가시성을 유지하고 적절한 아이콘 설명을 제공하여 저시력 사용자를 지원합니다. (SITES-26871)
+* 타임라인의 댓글 입력 필드에 시각적 레이블이 누락된 문제를 해결했습니다. 접근성을 개선하기 위해 타임라인 섹션의 &#39;댓글&#39; 입력 필드에 시각적 레이블이 누락된 문제를 수정했습니다. 이 업데이트 덕분에 화면 판독기가 필드 레이블을 정확하게 읽을 수 있습니다. 이러한 경험은 특히 보조 기술에 의존하는 개인을 비롯하여 모든 사용자에 대한 양식 탐색 및 제출 기능을 향상합니다. (SITES-26903)
+* 타임라인 댓글의 줄임표 버튼에 대한 키보드 접근성을 개선했습니다. 타임라인 섹션의 댓글 옆에 있는 줄임표(점 세 개) 버튼에 대한 키보드 탐색을 활성화했습니다. 이제 사용자는 탭 키를 사용하여 버튼에 접근하고 상호 작용할 수 있기 때문에 키보드만으로 탐색하던 기존 대비 사용자의 접근성이 향상되었습니다. (SITES-26891)
+* 선택 대화 상자에서 검색 결과에 대한 NVDA/내레이터 안내를 개선했습니다. NVDA 또는 내레이터와 같은 화면 판독기를 사용할 때 검색 결과가 있는지 여부를 알려 주는 선택 항목 열기 대화 상자를 업데이트했습니다. 이러한 개선 사항은 보조 기술을 사용하는 사용자가 시각적 확인 없이도 검색 작업의 결과를 이해하는 데 도움이 됩니다. (SITES-26883)
+* 댓글 입력 필드 옆에 있는 줄임표 아이콘에 대한 ARIA 역할을 수정했습니다. 화면 판독기의 정확한 요소 판별을 지원하기 위해 댓글 입력 필드 옆에 있는 줄임표(점 세 개) 아이콘을 올바른 ARIA 역할을 사용하도록 업데이트했습니다. 이러한 개선을 통해 접근성 규정 준수가 강화되고 보조 기술을 사용하는 사용자의 경험이 향상됩니다. (SITES-26881)
+* Coral UI 구성 요소의 잘못된 ARIA 속성을 수정했습니다. 모든 ARIA 속성이 유효한 값을 사용하도록 Coral UI 구성 요소를 업데이트하여 접근성 규정 준수를 향상했습니다. 특히, `aria-modal="dialog"`와 같이 잘못된 값이 잘못 할당되는 문제가 해결되었습니다. 이 개선 사항은 화면 판독기가 대화 상자 요소를 올바르게 해석하도록 지원하여 보조 기술을 사용하는 사용자의 접근성을 향상합니다. (SITES-26873)
+* 리플로우 시나리오에서 아이콘의 가시성과 툴팁을 개선했습니다. **다운로드**, **자산 재처리** 및 **체크아웃** 아이콘에 대한 툴팁이 올바르게 표시되도록 리플로우 동작을 향상했습니다. 뷰포트 크기가 조정되거나 브라우저 확대/축소 설정이 변경되면 아이콘과 레이블이 보이지 않는 접근성 문제에 중점을 두었습니다. 이 수정 사항은 리플로우 중에 가시성을 유지하고 적절한 아이콘 설명을 제공함으로써 시력이 약한 사용자를 지원합니다. (SITES-26871)
 
 #### 관리 사용자 인터페이스{#sites-adminui-6523}
 
@@ -134,7 +137,7 @@ ht-degree: 3%
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * `DeleteVariationIT.testUpdateBasic`에 대한 유효성 검사 테스트 실패를 수정했습니다. 서비스 팩 유효성 검사를 실행하는 동안 `DeleteVariationIT.testUpdateBasic` 테스트가 더 이상 실패하지 않습니다. 이 수정 사항은 JSON 처리 논리에서 누락된 텍스트 매핑 문제를 수정하여 테스트 안정성을 보장하고 불필요한 테스트 중단을 방지합니다. (SITES-28022)
-* 이제 AEM은 이미지 에셋에서 잘못된 형식의 XMP 메타데이터로 인한 성능 저하를 방지합니다. 숫자 세그먼트나 정규화되지 않은 구조가 있는 Assets과 같이 잘못되거나 호환되지 않는 XMP 속성 이름이 포함된 는 처리 중에 더 이상 반복된 경고 로그를 트리거하지 않습니다. 시스템은 문제가 있는 메타데이터를 필터링하여 자산 수집 및 유효성 검사가 오류 없이 완료되도록 합니다. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
+* 이제 AEM이 이미지 자산의 잘못된 XMP 메타데이터로 인해 발생하는 성능 저하를 방지합니다. 숫자 세그먼트나 정규화되지 않은 구조 등 유효하지 않거나 규정을 준수하지 않는 XMP 속성 이름이 포함된 자산은 처리 중에 더 이상 반복적인 경고 로그를 트리거하지 않습니다. 이 시스템은 문제가 있는 메타데이터를 필터링하여 자산 수집 및 검증이 오류 없이 완료되도록 보장합니다. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -144,7 +147,7 @@ ht-degree: 3%
 
 #### [!DNL Content Fragments] - 조각 편집기{#sites-fragments-editor-6523}
 
-다른 작성자는 다른 작성자가 체크아웃하더라도 콘텐츠 조각을 게시할 수 있으며, 이는 체크아웃 기능의 의도한 비헤이비어와 상반됩니다. 이 수정 사항으로 인해 콘텐츠 조각을 체크아웃할 때 작성 인터페이스에서 다른 사용자가 게시 버튼을 보거나 사용할 수 없습니다. (SITES-30578) <!-- LTS -->
+작성자가 콘텐츠 조각을 체크아웃한 경우에도 다른 작성자가 여전히 콘텐츠 조각을 게시할 수 있다면 체크아웃 기능의 의도된 동작에 반하게 됩니다. 이번 수정 사항은 콘텐츠 조각이 체크아웃될 때 다른 사용자가 작성 인터페이스에서 게시 버튼을 보거나 사용할 수 없도록 합니다. (SITES-30578) <!-- LTS -->
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6523}
 
@@ -168,7 +171,7 @@ ht-degree: 3%
 
 * 잘못된 에셋 이름으로 인한 콘텐츠 파인더 에셋 나열 실패를 수정했습니다. 이제 콘텐츠 파인더가 인코딩할 수 없는 문자가 있는 자산 이름을 올바르게 처리합니다. 문제가 있는 이름의 자산이 발견될 때 페이지 편집기의 자산 목록에 더 이상 실패하거나 예외가 발생하지 않습니다. (SITES-28722)
 * `SearchPathLimiter` 구성 요소가 각 호출에 대해 ERROR 수준에서 메시지를 인쇄하여 과도한 로그 항목을 생성하는 문제가 발생했습니다. 이 동작은 서비스 팩 17 이후에 시작되었으며 로그 볼륨이 매우 높아 성능 문제가 발생했습니다. 이 수정 사항으로 로그 수준이 DEBUG로 다운그레이드되어 로그 노이즈가 크게 줄어들고 시스템 모니터링 및 진단 효율성이 향상됩니다. (SITES-29835)
-* `ValidationDataServlet`에서 이미지 자산을 처리하는 동안 형식이 잘못된 XMP 메타데이터에서 오류가 발생했습니다. 이 수정 사항은 규정을 준수하는 메타데이터 처리를 보장하며 잘못된 속성의 중복 구문 분석을 방지합니다. (SITE-30683) <!-- LTS -->
+* XMP 메타데이터가 잘못 포맷되어 `ValidationDataServlet`에서 이미지 자산을 처리하는 동안 오류가 발생하는 문제가 있었습니다. 이번 수정 사항은 규정을 준수하는 메타데이터의 처리를 보장하고 잘못된 속성의 중복 구문 분석을 방지합니다. (SITE-30683) <!-- LTS -->
 
 
 <!-- #### Core Components{#sites-core-components-6523}
@@ -223,18 +226,18 @@ ht-degree: 3%
 
 일반 텍스트 붙여넣기 모드로 리치 텍스트 편집기에서 예기치 않은 `<br>`개 태그를 수정했습니다. 이제 일반 텍스트 `defaultPasteMode`을(를) 사용할 때 서식 있는 텍스트 편집기에서 잘라내기 및 붙여넣기 작업을 올바르게 처리합니다. 이 수정 사항으로 인해 사용자가 RTE 필드 내에서 텍스트를 잘라내어 붙여넣을 때 예기치 않은 `<br>` 태그가 삽입되지 않으므로 콘텐츠를 편집하는 동안 깔끔한 서식이 유지됩니다. (SITES-27780)
 
-#### Universal Editor {#sites-universal-editor-6523}
+#### 범용 편집기 {#sites-universal-editor-6523}
 
 * 쿼리 매개 변수가 포함된 여러 요청이 AEM으로 전송되는 경우 로그인 토큰 쿠키가 제시간에 반환되지 않아 로그인에 실패할 수 있습니다. (SITES-30659) <!-- LTS -->
 * SAML 처리기와의 호환성 및 지원을 보장하려면 `service.ranking` 처리기가 `Query Token Auth` 처리기를 *이전*&#x200B;에 실행되도록 `SAML Auth` 속성을 구성해야 합니다. (SITES-29684)
 
 ### [!DNL Assets]{#assets-6523}
 
-* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후&#x200B;**[!UICONTROL &#x200B; 온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -530,7 +533,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -577,7 +580,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 
 
-## 이제 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
+## 더 이상 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
 AEM 6.5에서 더 이상 사용되지 않거나 제거된 모든 기능에 대한 자세한 목록은 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md/)을 참조하십시오.
 
@@ -748,7 +751,7 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 
 
-## OSGi 번들 및 콘텐츠 패키지가 포함됨{#osgi-bundles-and-content-packages-included}
+## OSGi 번들 및 콘텐츠 패키지 포함됨{#osgi-bundles-and-content-packages-included}
 
 다음 텍스트 문서에는 이 [!DNL Experience Manager] 6.5 서비스 팩 릴리스에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 나와 있습니다.
 
@@ -765,5 +768,5 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
