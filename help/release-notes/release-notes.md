@@ -233,11 +233,11 @@ ht-degree: 13%
 
 ### [!DNL Assets]{#assets-6523}
 
-* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후&#x200B;**[!UICONTROL &#x200B; 온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -533,7 +533,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
