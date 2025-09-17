@@ -1,25 +1,26 @@
 ---
-title: Experience Hub 정보
+title: Experience Hub 소개
 description: Adobe Experience Hub 페이지에 대해 알아보십시오.
 landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 집중형 시작점인 Adobe Experience Hub에 대해 알아보십시오.
 solution: Experience Manager, Experience Manager 6.5
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
+role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
+source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# Experience Hub 정보 {#aem-experience-hub}
+# Experience Hub 소개 {#aem-experience-hub}
 
 Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub을 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. Experience Hub은 명확한 사용자 중심의 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 하므로 모든 AEM 기능에 걸쳐 간소하고 효과적인 경험을 제공합니다.
 
 다시 상상한 AEM Experience Hub 작업 영역(4분 9초)을 잠깐 둘러보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471448?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -82,4 +83,4 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ## AEM 내 AI 어시스턴트
 
-[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI Assistant를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.
+[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI Assistant를 해당 조직의 사용자가 사용할 수 있습니다. [AEM 내 AI 어시스턴트](/help/ai-assistant-in-aem.md)를 확인합니다.
