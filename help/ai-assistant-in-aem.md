@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 646816ab50c432c86772c228878f8114854c320f
+source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1311'
 ht-degree: 4%
 
 ---
@@ -35,32 +35,27 @@ AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Autho
 
 다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
-AEM에서 사용자에게 AI Assistant에 대한 액세스 권한을 부여하려면 Adobe 관리자가 **Adobe Admin Console**&#x200B;에서 액세스 권한이 필요한 프로필에 대해 다음 사용자 지정 권한을 구성해야 합니다.
+AEM에서 AI Assistant에 액세스하려면 고객이 다음을 보유해야 합니다.
 
-* **AI Assistant 액세스** - 제품 지식을 위해 AEM에서 AI Assistant를 사용할 수 있는 권한으로, 사용자가 AI Assistant 채팅에서 제품 관련 질문을 할 수 있습니다. 이 권한을 활성화해야 합니다.
-* **지원 액세스** - **지원 관리자** 역할이 필요한 지원 티켓을 열 수 있는 권한도 사용자에게 있어야 합니다.
+* 제품 지식을 위해 AEM에서 AI Assistant를 사용할 수 있는 권한. 이 권한을 사용하면 AI Assistant 채팅에서 제품 관련 질문을 할 수 있습니다. 이 권한을 활성화해야 합니다.
+* 지원 티켓을 열 수 있는 권한입니다. **지원 관리자** 역할이 필요합니다.
 
-AEM의 AI Assistant 요청은 Adobe Identity Management Services(IMS)를 통해 인증됩니다. 자세한 내용은 [Adobe Identity Management 서비스 개요](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)를 참조하십시오.
+>[!NOTE]
+>
+>AEM의 AI Assistant 요청은 Adobe Identity Management Services(IMS)를 통해 인증됩니다. 자세한 내용은 [Adobe Identity Management 서비스 개요](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)를 참조하십시오.
 
 **AEM에서 AI Assistant에 액세스하려면:**
 
 1. 고객은 Adobe Experience Manager에서 AI가 제공하는 대부분의 아젠틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. AEM에서 AI Assistant를 사용하려면 AI Assistant를 통해 제품 지식에 액세스할 수 있는 권한이 필요합니다. 이 권한은 기본적으로 켜져 있습니다.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   제품 정보에 액세스할 수 있는 사용자를 제어하려면 Adobe ID과 연결된 전자 메일 주소에서 [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)(으)로 전자 메일을 보내십시오. Adobe은 사용자 수준 액세스 제어를 활성화할 수 있습니다. 활성화되면 관리자는 [AEM에서 AI Assistant 구성](/help/ai-assistant-in-aem-admin.md)의 단계에 따라 사용자 수준 액세스 권한을 부여할 수 있습니다.
 
-1. AEM 관리자는 조직에서 사용할 AI Assistant를 구성합니다. [AEM에서 AI Assistant 구성](/help/ai-assistant-in-aem-admin.md)을 참조하십시오.
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## 범위 {#scope}
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
