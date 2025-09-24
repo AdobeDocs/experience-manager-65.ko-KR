@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
+source-git-commit: eb0deb1cb401964c86f38cc42961d2c428d9311c
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '593'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(4분 9초)을 잠깐 둘러보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471448?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud 홈 페이지](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. **빠른 액세스** 그룹화에서 [**Experience Manager**](https://experience.adobe.com)을(를) 클릭합니다.
-1. 처음 액세스할 때는 **수행할 작업 설명** 페이지에서 원하는 옵션을 클릭하여 Adobe에서 사용자 환경을 조정할 수 있도록 합니다.
+1. 처음 액세스할 때 시스템에서는 **콘텐츠 작성자** 사전 설정(페이지의 오른쪽 상단 모서리 근처에 표시됨)을 할당합니다. 표시되는 위젯, 탐색 항목 및 콘텐츠를 제어합니다.
 
-   언제든지 이 환경 설정을 변경할 수 있습니다.
+   언제든지 이 사전 설정을 변경할 수 있습니다.
 
-   ![수행할 작업을 알려 주세요](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+   ![콘텐츠 작성자 사전 설정을 표시하는 드롭다운 목록이 선택되었습니다](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 향상된 탐색 및 대화형 위젯으로 Adobe Experience Manager 페이지가 새로 고쳐졌습니다. 이전 솔루션 카드 컬렉션에서는 다음과 같은 도구에 대한 액세스를 제공했습니다.
 
@@ -59,7 +59,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
 ![프로덕션 및 스테이징 환경](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이지는 확장되어 각 사용자 역할에 맞는 추가 위젯과 작업을 제공합니다. 사용자 정의가 가능한 이 페이지에서는 화면에 가장 적합한 레이아웃을 선택할 수 있습니다. 위젯은 선택한 위젯만 기본 페이지에 표시되도록 필터링할 수 있으므로 개인화된 환경을 유지할 수 있습니다.
+Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이지는 확장되어 각 사용자 역할에 맞는 추가 위젯 및 작업(사전 설정)이 포함됩니다. 사용자 정의가 가능한 이 페이지에서는 화면에 가장 적합한 레이아웃을 선택할 수 있습니다. 위젯은 선택한 위젯만 기본 페이지에 표시되도록 필터링할 수 있으므로 개인화된 환경을 유지할 수 있습니다.
 
 ![Experience Hub 사용자 지정](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
