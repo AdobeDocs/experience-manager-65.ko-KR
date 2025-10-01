@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
+source-git-commit: 773a3e1ce6365589c968dd56a44d7adc9a4ec447
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 4%
@@ -33,9 +33,9 @@ AI Assistant는 다음 솔루션을 포함하여 AEM as a Cloud Service을 지�
 
 AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Author UI에서 액세스할 수 있습니다.
 
-다음 3분 39초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
+다음 3분 25초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470362?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
@@ -59,7 +59,7 @@ AEM에서 AI Assistant에 액세스하려면 고객이 다음을 보유해야 �
 
 ## 범위 {#scope}
 
-AEM의 현재 AI Assistant 범위는 AEMr as a Cloud Service에 대한 제품 지식 질문 해결에 중점을 둡니다. 이 범위에는 주요 영역에 대한 포괄적인 지원이 포함됩니다. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+AEM의 현재 AI Assistant 범위는 AEMr as a Cloud Service에 대한 제품 지식 질문 처리에 중점을 둡니다. 이 범위에는 주요 영역에 대한 포괄적인 지원이 포함됩니다. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **표면**: AEM Experience Hub, 작성자 UI, Cloud Manager에서 사용할 수 있습니다.
 * **기능**: 문제 해결 및 지침, 지원 티켓 자동 생성 및 조회를 위한 제품 지식 및 첫 번째 중지.
@@ -128,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
