@@ -1,6 +1,6 @@
 ---
-title: 적시 사용자 프로비저닝
-description: 인증 성공 후 Just-in-time 프로비저닝을 사용하여 User Management에 사용자를 추가하고 관련 역할 및 그룹을 새 사용자에게 동적으로 할당합니다.
+title: 사용자 적시 프로비저닝
+description: 적시 프로비저닝을 사용하여 사용자가 인증에 성공한 후 해당 사용자를 사용자 관리에 추가하고 관련 역할 및 그룹을 새 사용자에게 동적으로 할당합니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
@@ -10,40 +10,40 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 적시 사용자 프로비저닝 {#just-in-time-user-provisioning}
+# 사용자 적시 프로비저닝 {#just-in-time-user-provisioning}
 
-AEM forms는 사용자 관리에 아직 존재하지 않는 사용자의 정시 프로비저닝을 지원합니다. 적시 프로비저닝을 사용하면 자격 증명이 성공적으로 인증된 후 사용자가 사용자 관리에 자동으로 추가됩니다. 또한 관련 역할 및 그룹은 새 사용자에게 동적으로 할당됩니다.
+AEM Forms는 사용자 관리에 아직 존재하지 않는 사용자의 적시 프로비저닝을 지원합니다. 적시 프로비저닝을 사용하면 자격 증명 인증에 성공한 후 사용자가 사용자 관리에 자동으로 추가됩니다. 또한 관련 역할 및 그룹이 새 사용자에게 동적으로 할당됩니다.
 
-## 적시 사용자 프로비저닝 필요 {#need-for-just-in-time-user-provisioning}
+## 사용자 적시 프로비저닝의 필요성 {#need-for-just-in-time-user-provisioning}
 
-다음은 기존 인증 작동 방식입니다.
+기존 인증의 작동 방식은 다음과 같습니다.
 
-1. 사용자가 AEM Forms에 로그인하려고 하면 User Management에서 사용 가능한 모든 인증 공급자에게 사용자 자격 증명을 순차적으로 전달합니다. (로그인 자격 증명에는 사용자 이름/암호 조합, Kerberos 티켓, PKCS7 서명 등이 포함됩니다.)
+1. 사용자가 AEM Forms에 로그인을 시도하면 사용자 관리에서 사용자의 자격 증명을 사용 가능한 모든 인증 공급자에게 순차적으로 전달합니다. (로그인 자격 증명에는 사용자 이름/암호 조합, Kerberos 티켓, PKCS7 서명 등이 포함됩니다.)
 1. 인증 공급자가 자격 증명의 유효성을 검사합니다.
-1. 그런 다음 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 여부를 확인합니다. 다음과 같은 결과가 가능합니다.
+1. 그런 다음, 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 확인합니다. 다음과 같은 결과가 발생할 수 있습니다.
 
-   **있음:** 사용자가 현재 사용 중이고 잠금 해제된 경우 사용자 관리에서 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 User Management에서 인증 실패를 반환합니다.
+   **존재함:** 사용자가 현재 상태이고 잠금 해제된 경우 사용자 관리에서 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있는 경우 사용자 관리에서 인증 실패를 반환합니다.
 
-   **존재하지 않음:** User Management에서 인증 오류를 반환합니다.
+   **존재하지 않음:** 사용자 관리에서 인증 실패를 반환합니다.
 
-   **잘못됨:** 사용자 관리에서 인증 오류를 반환합니다.
+   **잘못됨:** 사용자 관리에서 인증 실패를 반환합니다.
 
-1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환한 경우 사용자가 로그인할 수 있습니다. 그렇지 않으면 User Management에서 다음 인증 공급자에게 확인합니다(2-3단계).
-1. 사용 가능한 인증 공급자가 사용자 자격 증명의 유효성을 검사하지 않으면 인증 실패가 반환됩니다.
+1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자는 로그인할 수 있습니다. 그렇지 않은 경우 사용자 관리에서는 다음 인증 공급자에게 확인합니다(2~3단계).
+1. 사용 가능한 인증 공급자가 사용자 자격 증명의 유효성을 검사하지 못하면 인증 실패가 반환됩니다.
 
-Just-in-time 프로비저닝이 구현되면 인증 공급자 중 하나가 사용자 자격 증명의 유효성을 검사하는 경우 User Management에서 새 사용자가 동적으로 만들어집니다. (위의 기존 인증 절차에서 3단계 이후)
+적시 프로비저닝이 구현된 경우 인증 공급자 중 하나가 사용자가 보유한 자격 증명의 유효성을 검사하면 사용자 관리에서 새 사용자가 동적으로 생성됩니다. (위에 명시된 기존 인증 절차의 3단계 이후)
 
-## 적시 사용자 프로비저닝 구현 {#implement-just-in-time-user-provisioning}
+## 사용자 적시 프로비저닝 구현 {#implement-just-in-time-user-provisioning}
 
-### 적시 프로비저닝을 위한 API {#apis-for-just-in-time-provisioning}
+### 적시 프로비저닝 API {#apis-for-just-in-time-provisioning}
 
-AEM forms는 적시 프로비저닝을 위해 다음 API를 제공합니다.
+AEM Forms는 다음과 같은 적시 프로비저닝 API를 제공합니다.
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -80,33 +80,33 @@ public Boolean assign(User user);
 }
 ```
 
-### Just-in-Time 활성화 도메인을 만드는 동안 고려 사항 {#considerations-while-creating-a-just-in-time-enabled-domain}
+### 적시 프로비저닝이 활성화된 도메인 생성 시 고려 사항 {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* 하이브리드 도메인에 대한 사용자 지정 `IdentityCreator`을(를) 만드는 동안 로컬 사용자에 대해 더미 암호가 지정되었는지 확인하십시오. 이 암호 필드를 비워 두지 마십시오.
-* 권장 사항: `DomainSpecificAuthentication`을(를) 사용하여 특정 도메인에 대한 사용자 자격 증명의 유효성을 검사합니다.
+* 하이브리드 도메인에 대한 사용자 정의 `IdentityCreator`를 만드는 동안 로컬 사용자에 대해 더미 암호가 지정되었는지 확인합니다. 이 암호 필드를 비워 두지 마십시오.
+* 권장 사항: `DomainSpecificAuthentication`을 사용하여 특정 도메인에 대해 사용자 자격 증명의 유효성을 검사합니다.
 
-### 적시 활성화 도메인 만들기 {#create-a-just-in-time-enabled-domain}
+### 적시 프로비저닝이 활성화된 도메인 만들기 {#create-a-just-in-time-enabled-domain}
 
-1. &quot;API for just-in-time provisioning&quot; 섹션에서 API를 구현하는 DSC를 작성합니다.
-1. Forms 서버에 DSC를 배포합니다.
-1. Just-In-Time 활성화 도메인 만들기:
+1. &#39;적시 프로비저닝 API&#39; 섹션의 API를 구현하는 DSC를 작성합니다.
+1. DSC를 Forms 서버에 배포합니다.
+1. 다음과 같이 적시 프로비저닝이 활성화된 도메인을 만듭니다.
 
-   * Administration Console에서 설정 > 사용자 관리 > 도메인 관리 > 새 엔터프라이즈 도메인을 클릭합니다.
-   * 도메인을 구성하고 Enable Just In Time Provisioning 을 선택합니다. <!--Fix broken link (See Setting up and managing domains).-->
-   * 인증 공급자를 추가합니다. 인증 공급자를 추가하는 동안 새 인증 화면에서 등록된 ID 작성자 및 할당 공급자를 선택합니다.
+   * 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 > 새 엔터프라이즈 도메인을 클릭합니다.
+   * 도메인을 구성하고 적시 프로비저닝 활성화를 선택합니다. <!--Fix broken link (See Setting up and managing domains).-->
+   * 인증 공급자를 추가합니다. 인증 공급자를 추가하는 동안 새 인증 화면에서 등록된 ID 생성자와 할당 공급자를 선택합니다.
 
 1. 새 도메인을 저장합니다.
 
-## 비하인드 스토리 {#behind-the-scenes}
+## 백그라운드 동작 {#behind-the-scenes}
 
-사용자가 AEM Forms에 로그인하려고 하고 인증 공급자가 사용자 자격 증명을 수락한다고 가정합니다. 사용자가 User Management 데이터베이스에 아직 없는 경우 해당 사용자에 대한 ID 검사가 실패합니다. 이제 AEM forms에서 다음 작업을 수행합니다.
+사용자가 AEM Forms에 로그인을 시도하고 인증 공급자가 해당 사용자 자격 증명을 수락한다고 가정해 보십시오. 사용자가 사용자 관리 데이터베이스에 아직 존재하지 않으면 해당 사용자의 신원 확인이 실패합니다. AEM Forms는 이제 다음 작업을 수행합니다.
 
-1. 인증 데이터를 사용하여 `UserProvisioningBO` 개체를 만들고 자격 증명 맵에 넣습니다.
-1. `UserProvisioningBO`에서 반환된 도메인 정보를 기반으로 도메인에 대해 등록된 `IdentityCreator` 및 `AssignmentProvider`을(를) 가져와 호출하십시오.
-1. `IdentityCreator`을(를) 호출합니다. 성공한 `AuthResponse`을(를) 반환하는 경우 자격 증명 맵에서 `UserInfo`을(를) 추출하십시오. 사용자를 만든 후 그룹/역할 할당 및 기타 사후 처리를 위해 `AssignmentProvider`에 전달합니다.
-1. 사용자가 성공적으로 생성되면 사용자의 로그인 시도를 성공한 것으로 반환합니다.
-1. 하이브리드 도메인의 경우 인증 공급자에게 제공된 인증 데이터에서 사용자 정보를 가져옵니다. 이 정보를 성공적으로 가져오면 즉시 사용자를 만듭니다.
+1. 인증 데이터가 포함된 `UserProvisioningBO` 오브젝트를 만들고 자격 증명 맵에 배치합니다.
+1. `UserProvisioningBO`에서 반환된 도메인 정보를 기반으로 해당 도메인에 등록된 `IdentityCreator` 및 `AssignmentProvider`를 가져오고 호출합니다.
+1. `IdentityCreator`를 호출합니다. 성공적인 `AuthResponse`가 반환되면 자격 증명 맵에서 `UserInfo`를 추출합니다. 사용자가 생성된 후 그룹/역할 할당 및 기타 사후 처리를 위해 해당 정보를 `AssignmentProvider`에게 전달합니다.
+1. 사용자가 성공적으로 생성되면 사용자의 로그인 시도를 성공으로 반환합니다.
+1. 하이브리드 도메인의 경우 인증 공급자에게 제공된 인증 데이터에서 사용자 정보를 가져옵니다. 이 정보를 성공적으로 가져오면 사용자가 즉시 생성됩니다.
 
 >[!NOTE]
 >
->Just-in-time 프로비전 기능은 사용자를 동적으로 만드는 데 사용할 수 있는 `IdentityCreator`의 기본 구현과 함께 제공됩니다. 사용자는 도메인의 디렉터리와 관련된 정보로 만들어집니다.
+>적시 프로비저닝 기능은 사용자를 동적으로 만드는 데 사용할 수 있는 `IdentityCreator`의 기본 구현과 함께 제공됩니다. 사용자는 도메인의 디렉터리와 연결된 정보를 사용하여 생성됩니다.

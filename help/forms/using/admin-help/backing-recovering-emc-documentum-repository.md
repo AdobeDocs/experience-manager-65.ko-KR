@@ -1,6 +1,6 @@
 ---
 title: EMC Documentum 저장소 백업 및 복구
-description: 이 문서에서는 AEM Forms 환경에 맞게 구성된 EMC Documentum 저장소를 백업 및 복구하는 데 필요한 작업에 대해 설명합니다.
+description: 이 문서에서는 AEM Forms 환경에 맞게 구성된 EMC Documentum 저장소를 백업하고 복구하는 데 필요한 작업을 설명합니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -10,54 +10,54 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '790'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # EMC Documentum 저장소 백업 및 복구 {#backing-up-and-recovering-the-emc-documentum-repository}
 
-이 섹션에서는 AEM Forms 환경에 대해 구성된 EMC Documentum 저장소를 백업 및 복구하는 데 필요한 작업에 대해 설명합니다.
+이 섹션에서는 AEM Forms 환경에 맞게 구성된 EMC Documentum 저장소를 백업하고 복구하는 데 필요한 작업을 설명합니다.
 
 >[!NOTE]
 >
->이 지침에서는 필요에 따라 ECM 및 EMC Documentum Content Server용 커넥터를 사용하는 AEM Forms가 설치 및 구성되어 있다고 가정합니다.
+>이 지침에서는 ECM용 커넥터와 EMC Documentum 콘텐츠 서버가 포함된 AEM Forms가 필요에 따라 설치되고 구성되어 있다고 가정합니다.
 
-백업 및 복원 프로세스에는 두 가지 주요 작업이 있습니다.
+백업 및 복원 프로세스에는 다음과 같은 두 가지 주요 작업이 있습니다.
 
-* AEM Forms 환경 백업(또는 복원)
-* EMC Documentum Content Server 백업(또는 복원)
+* AEM Forms 환경을 백업(또는 복원)합니다.
+* EMC Documentum 콘텐츠 서버를 백업(또는 복원)합니다.
 
 >[!NOTE]
 >
->EMC Documentum 시스템을 백업하기 전에 AEM Forms 데이터를 백업한 다음 AEM Forms 환경을 복원하기 전에 EMC Documentum 시스템을 복원합니다.
+>EMC Documentum 시스템을 백업하기 전에 AEM Forms 데이터를 백업하고 이후 AEM Forms 환경을 복원하기 전에 EMC Documentum 시스템을 복원하십시오.
 
 ## 소프트웨어 요구 사항 {#software-requirements}
 
-EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 EMC의 EMC NetWorker 또는 CYA의 CYA SmartRecovery for EMC Documentum과 같은 타사 유틸리티를 구입하십시오. 다음 지침에서는 EMC NetWorker Module 버전 7.2.2를 사용하는 단계에 대해 설명합니다.
+EMC Documentum 콘텐츠 서버에서 필요한 백업 작업을 수행하려면 EMC의 EMC NetWorker나 CYA의 EMC Documentum용 CYA SmartRecovery과 같은 적절한 서드파티 유틸리티를 구매합니다. 다음 지침에서는 EMC NetWorker 모듈 버전 7.2.2를 사용하는 단계를 설명합니다.
 
 다음과 같은 EMC NetWorker 모듈이 필요합니다.
 
 * NetWorker 모듈
 * NetWorker 구성 마법사
-* NetWorker 디바이스 구성 마법사
-* Content Server에서 사용하는 데이터베이스 유형에 대한 NetWorker Module
-* NetWorker Module for Documentum
+* NetWorker 장치 구성 마법사
+* 콘텐츠 서버에서 사용하는 데이터베이스 유형에 대한 NetWorker 모듈
+* Documentum용 NetWorker 모듈
 
-## 백업 및 복구를 위한 EMC Document Content Server 준비 {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## 백업 및 복구용 EMC Document 콘텐츠 서버 준비 {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
-이 섹션에서는 Content Server에 EMC NetWorker 소프트웨어를 설치하고 구성하는 방법에 대해 설명합니다.
+이 섹션에서는 콘텐츠 서버에 EMC NetWorker 소프트웨어를 설치하고 구성하는 방법을 설명합니다.
 
-**백업을 위해 EMC Documentum 서버 준비**
+**백업을 위한 EMC Documentum 서버 준비**
 
-1. EMC Documentum Content Server에 EMC NetWorker 모듈을 설치하고 모든 기본값을 적용합니다.
+1. EMC Documentum 콘텐츠 서버에서 모든 기본값을 적용하여 EMC NetWorker 모듈을 설치합니다.
 
-   설치 프로세스 중에 Content Server 컴퓨터의 서버 이름을 *NetWorker Server 이름*(으)로 입력하라는 메시지가 표시됩니다. 데이터베이스에 EMC NetWorker Module을 설치할 때 &quot;전체&quot; 설치를 선택합니다.
+   설치 프로세스 중에 콘텐츠 서버 컴퓨터의 서버 이름을 *NetWorker 서버 이름*&#x200B;으로 입력하라는 메시지가 표시됩니다. 데이터베이스에 EMC NetWorker 모듈을 설치할 때 &#39;전체&#39; 설치를 선택합니다.
 
-1. 아래 샘플 콘텐츠를 사용하여 *nsrnmd_win.cfg* 구성 파일을 만들고 Content Server의 액세스 가능한 위치에 저장합니다. 이 파일은 백업 및 복원 명령에 의해 호출됩니다.
+1. 아래 샘플 콘텐츠를 사용하여 *nsrnmd_win. cfg*&#x200B;라는 구성 파일을 만들어서 콘텐츠 서버에서 액세스 가능한 위치에 저장합니다. 이 파일은 백업 및 복원 명령에 따라 호출됩니다.
 
-   다음 텍스트에는 줄 바꿈에 사용할 서식 문자가 포함되어 있습니다. 이 텍스트를 이 문서 외부 위치에 복사하는 경우 새 위치에 붙여넣을 때 한 번에 일부를 복사하고 서식 문자를 제거합니다.
+   다음 텍스트에는 줄 바꿈을 위한 서식 문자가 포함되어 있습니다. 이 텍스트를 이 문서 외부의 위치에 복사하는 경우 한 번에 일부만 복사하고 새 위치에 붙여넣을 때 서식 문자를 제거합니다.
 
    ```shell
     ################################################
@@ -186,80 +186,80 @@ EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 E
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   구성 파일 암호 필드 `NMDDE_DM_PASSWD`을(를) 비워 둡니다. 다음 단계에서 암호를 설정합니다.
+   구성 필드 암호 필드 `NMDDE_DM_PASSWD`는 비워 두십시오. 이 암호는 다음 단계에서 설정합니다.
 
-1. 구성 파일 암호를 다음과 같이 설정합니다.
+1. 다음과 같이 구성 파일 암호를 설정합니다.
 
-   * 명령 프롬프트를 열고 `[NetWorker_root]\Legato\nsr\bin`(으)로 변경합니다.
+   * 명령 프롬프트를 열고 `[NetWorker_root]\Legato\nsr\bin`으로 변경합니다.
    * 다음 명령을 실행합니다. `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. 데이터베이스를 백업하는 데 사용되는 실행 가능한 일괄 처리(.bat) 파일을 만듭니다. NetWorker 설명서를 참조하십시오. 설치에 따라 배치 파일에서 세부 사항을 설정합니다.
+1. 데이터베이스를 백업하는 데 사용되는 실행 가능한 배치 파일(. bat)을 만듭니다. (NetWorker 설명서를 참조하십시오.) 설치에 맞게 배치 파일에서 세부 정보를 설정합니다.
 
-   * 전체 데이터베이스 백업(nsrnmdbf.bat):
+   * 전체 데이터베이스 백업(nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P`*[암호&#x200B;]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
-   * 증분 데이터베이스 백업(nsrnmdbi.bat):
+   * 증분 데이터베이스 백업(nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * 데이터베이스 로그 백업(nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
      위치:
 
-     `[NetWorker_database_module_root]`은(는) NetWorker Module의 설치 디렉터리입니다. 예를 들어 NetWorker Module for SQL Server의 기본 설치 디렉토리는 C:\Program Files\Legato\nsr\bin\nsrsqlsv입니다.
+     `[NetWorker_database_module_root]`는 NetWorker 모듈의 설치 디렉터리입니다. 예를 들어 SQL Server용 NetWorker 모듈의 기본 설치 디렉터리는 C:\Program Files\Legato\nsr\bin\nsrsqlsv입니다.
 
-     `NetWorker_Server_Name`은(는) NetWorker가 설치된 서버입니다.
+     `NetWorker_Server_Name`은 NetWorker가 설치된 서버입니다.
 
-     `username` 및 `password`은(는) 데이터베이스 관리자 사용자의 사용자 이름과 암호입니다.
+     `username` 및 `password`는 데이터베이스 관리자 사용자의 사용자 이름 및 암호입니다.
 
-     `database_name`은(는) 백업할 데이터베이스의 이름입니다.
+     `database_name`은 백업할 데이터베이스 이름입니다.
 
 **백업 장치 만들기**
 
-1. EMC Documentum 서버에 디렉토리를 만들고 모든 사용자에게 모든 권한을 부여하여 폴더를 공유합니다.
-1. EMC NetWorker Administrator 를 시작하고 Media Management > Devices 를 클릭합니다.
-1. 장치 를 마우스 오른쪽 단추로 클릭하고 만들기 를 선택합니다.
-1. 다음 값을 입력하고 확인을 누릅니다.
+1. EMC Documentum 서버에 디렉터리를 만들고 모든 사용자에게 전체 권한을 부여하여 폴더를 공유합니다.
+1. EMC NetWorker 관리자를 시작하고 미디어 관리 > 장치를 클릭합니다.
+1. 장치를 마우스 오른쪽 버튼으로 클릭하고 만들기를 선택합니다.
+1. 다음 값을 입력하고 확인을 클릭합니다.
 
    **이름:** 공유 디렉터리의 전체 경로
 
    **미디어 유형:** `File`
 
-1. 새 장치를 마우스 오른쪽 단추로 클릭하고 작업을 선택합니다.
-1. 레이블 을 클릭하고 이름을 입력한 다음 확인 을 클릭하고 마운트 를 클릭합니다.
+1. 새 장치를 마우스 오른쪽 버튼으로 클릭하고 작업을 선택합니다.
+1. 레이블을 클릭하고 이름을 입력한 후 확인을 클릭하고 탑재를 클릭합니다.
 
-백업된 파일을 저장할 장치가 추가됩니다. 서로 다른 형식의 여러 장치를 추가할 수 있습니다.
+백업된 파일을 저장할 장치가 추가됩니다. 다양한 형식의 여러 장치를 추가할 수 있습니다.
 
-## EMC Documentum Content Server 백업 {#back-up-the-emc-documentum-content-server}
+## EMC Documentum 콘텐츠 서버 백업 {#back-up-the-emc-documentum-content-server}
 
-AEM Forms 데이터의 전체 백업을 완료한 후 다음 작업을 수행합니다. ([AEM 양식 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)을 참조하십시오.)
+AEM Forms 데이터의 전체 백업을 완료한 후 다음 작업을 수행합니다. ([AEM Forms 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)을 참조하십시오.)
 
 >[!NOTE]
 >
->명령 스크립트에는 [백업 및 복구를 위해 EMC Document Content Server 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery)에서 작성한 nsrnmd_win.cfg 파일의 전체 경로가 필요합니다.
+>명령 스크립트에는 [백업 및 복구용 EMC Document 콘텐츠 서버 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery)에서 만든 nsrnmd_win.cfg 파일의 전체 경로가 필요합니다.
 
-1. 명령 프롬프트를 열고 `[NetWorker_root]\Legato\nsr\bin`(으)로 변경합니다.
+1. 명령 프롬프트를 열고 `[NetWorker_root]\Legato\nsr\bin`으로 변경합니다.
 1. 다음 명령을 실행합니다.
 
    ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
-## EMC Documentum Content Server 복구 {#restore-the-emc-documentum-content-server}
+## EMC Documentum 콘텐츠 서버 복원 {#restore-the-emc-documentum-content-server}
 
-AEM Forms 데이터를 복원하기 전에 다음 작업을 수행하십시오. ([AEM 양식 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)를 참조하십시오.)
+AEM Forms 데이터를 복원하기 전에 다음 작업을 수행합니다. ([AEM Forms 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)를 참조하십시오.)
 
 >[!NOTE]
 >
->명령 스크립트에는 [백업 및 복구를 위해 EMC Document Content Server 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery)에서 작성한 nsrnmd_win.cfg 파일의 전체 경로가 필요합니다.
+>명령 스크립트에는 [백업 및 복구용 EMC Document 콘텐츠 서버 준비](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery)에서 만든 nsrnmd_win.cfg 파일의 전체 경로가 필요합니다.
 
 1. 복원 중인 Docbase 서비스를 중지합니다.
-1. 데이터베이스 모듈에 대한 NetWorker User 유틸리티를 시작합니다(예: *SQL Server용 NetWorker User*).
-1. [복원 도구]를 클릭한 다음 [보통]을 선택합니다.
-1. 화면 왼쪽에서 Docbase에 대한 데이터베이스를 선택하고 도구 모음에서 시작 단추를 클릭합니다.
+1. 데이터베이스 모듈에 대한 NetWorker 사용자 유틸리티를 시작합니다(예: *SQL Server용 NetWorker 사용자*).
+1. 복원 도구를 클릭한 후 일반을 선택합니다.
+1. 화면 왼쪽에서 Docbase 데이터베이스를 선택하고 도구 모음에서 시작 버튼을 클릭합니다.
 1. 데이터베이스가 복원되면 Docbase 서비스를 다시 시작합니다.
 1. 명령 프롬프트를 열고 *[NetWorker_root]*\Legato\nsr\bin으로 변경합니다.
 1. 다음 명령을 실행합니다.

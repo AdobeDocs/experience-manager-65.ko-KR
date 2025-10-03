@@ -1,6 +1,6 @@
 ---
 title: Oracle 데이터베이스 최대 열린 커서 임계값
-description: oracle에서 열린 커서의 최대값을 구성하는 방법에 대해 알아봅니다.
+description: Oracle에서 열린 커서의 최대값을 구성하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Oracle 데이터베이스 최대 열린 커서 임계값 {#oracle-database-maximum-open-cursors-threshold}
 
-oracle의 열린 커서에 대한 최대값을 구성하려면 이 값을 응용 프로그램에 적합한 숫자로 조정해야 할 수 있습니다. 중간 부하 하에서 열린 평균 커서는 2700개임이 분명하다. 3000의 상한으로 시작하는 것이 좋습니다. 자세한 내용을 보려면 [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758)(으)로 이동하십시오.
+Oracle에서 열린 커서의 최대값을 구성하려면 이 값을 애플리케이션에 적합한 숫자로 조정해야 할 수도 있습니다. 적당한 부하에서는 평균 열린 커서 수가 2,700개였던 것으로 확인됩니다. 처음에는 상한선을 3,000개로 시작하는 것이 좋습니다. 자세한 내용은 [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758)에서 확인하십시오.

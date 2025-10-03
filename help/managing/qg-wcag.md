@@ -1,22 +1,22 @@
 ---
 title: WCAG 2.1에 대한 빠른 안내서
-description: 웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1에 대한 빠른 안내서입니다.
+description: WCAG(웹 콘텐츠 접근성 지침) 버전 2.1에 대한 빠른 안내서입니다.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1744'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # WCAG 2.1에 대한 빠른 안내서{#quick-guide-to-wcag}
 
-Adobe Experience Manager(AEM)는 웹 컨텐츠 액세스 가능성 지침을 최대한 준수하기 위해 개발되었습니다.
+AEM(Adobe Experience Manager)은 웹 콘텐츠 접근성 지침을 최대한 준수하도록 개발되었습니다.
 
-[웹 콘텐츠 접근성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
+[WCAG(웹 콘텐츠 접근성 지침) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [W3C(World Wide Web Consortium)](https://www.w3.org/)에서 [WAI(Web Accessibility Initiative)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)는 웹 컨텐츠 액세스 가능성 지침을 최
 
 >[!NOTE]
 >
->이 문서는 지침의 [업데이트된 버전에서 작성되었으므로 2023년 10월에 WCAG 2.2](https://www.w3.org/TR/)을 사용할 수 있습니다.
+>본 문서가 작성된 이후 [지침의 업데이트 버전인 WCAG 2.2](https://www.w3.org/TR/)가 2023년 10월에 제공되었습니다.
 >
 >[WCAG 2.1과의 비교](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) 및 [WCAG 2.2의 새로운 기능](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)을 참조하십시오.
 
@@ -32,7 +32,7 @@ WCAG 2.1은 장애가 있는 사용자가 웹 콘텐츠를 액세스하여 사�
 
 예를 들어 HTML에서 `alt` 속성을 사용하여 이미지(또는 기타 텍스트가 아닌 콘텐츠)를 설명하는 것은 앞이 보이지 않거나 제한적인 시력을 가진 사람들에게 큰 도움이 됩니다. `alt` 속성의 텍스트 설명은 음성 출력으로 변환하거나 전자식 재생 가능 점자 디스플레이에 전송할 수 있습니다.
 
-또한 WCAG 2.1은 *상황적 장애인*&#x200B;으로 간주될 수 있는 사람들을 포함하여 다른 수혜자들에게 이점을 줄 수 있습니다. 탐색 기술, 네트워크 연결 속도 또는 탐색 환경과 같은 상황으로 인해 장애가 있는 사람과 유사한 장애를 겪을 수 있는 사람들에게도 유익할 수 있습니다.
+또한 WCAG 2.1은 *특정 상황에서 접근성 제한*&#x200B;을 겪을 수 있는 사람들을 포함하여 다른 이용자들에게도 이점을 제공합니다. 예를 들어 탐색 기술, 네트워크 연결 속도 또는 탐색 환경 등으로 인해 장애가 있는 사람과 유사한 접근 장벽을 경험할 수 있는 사람들에게도 유익할 수 있습니다.
 
 콘텐츠 작성자 및/또는 웹 사이트 소유자는 Adobe Experience Manager를 사용하여 적절한 WCAG 2.1 Level A 및 Level AA 성공 기준을 충족하는 웹 콘텐츠를 만들 수 있습니다.
 
@@ -45,7 +45,7 @@ WCAG 2.1의 목적은 다음과 같은 지침을 제공하는 것입니다.
 * **테스트 가능한 지침:**&#x200B;각 지침이 접근성 전문가 그룹이 지침이 충족되었다는 것에 일반적으로 동의할 수 있도록 객관적으로 테스트할 수 있는 방식으로 작성됩니다. 접근성 지침의 어려운 점 중 하나는 일부 지침은 기술적으로 테스트 가능하지만, 다른 지침은 지침이 제대로 이행되었는지 사람이 직접 판단해야 한다는 것입니다.
 
 * **우선 순위가 지정된 컨텍스트 기반 구현 지원:**
-WCAG 2.1 지침에는 장애가 있는 특정 사용자 그룹에 대한 지침을 따르지 않을 가능성이 있는 영향과 관련하여 우선 순위가 지정됩니다. 이를 통해 작성자는 특정 상황에 가장 중요한 지침에 대해 현명한 결정을 내릴 수 있습니다. 또한 *지원되는 액세서빌러티 개념*&#x200B;을 도입했습니다. 이를 통해 작성자는 완벽한 액세서빌러티 지원이 없을 수 있는 웹 기술을 가장 효과적으로 사용하는 방법을 결정하거나 액세서빌러티를 활용하려면 특정 보조 기술 및/또는 브라우저를 사용해야 할 수도 있습니다.
+WCAG 2.1 지침에는 장애가 있는 특정 사용자 그룹에 대한 지침을 따르지 않을 가능성이 있는 영향과 관련하여 우선 순위가 지정됩니다. 이를 통해 작성자는 특정 상황에 가장 중요한 지침에 대해 현명한 결정을 내릴 수 있습니다. 또한 *접근성 지원*&#x200B;이라는 개념이 도입되었습니다. 이를 통해 작성자는 완전한 접근성이 제공되지 않거나, 접근성 기능을 사용하기 위해 특정 보조 기술 및/또는 브라우저가 필요한 웹 기술을 가장 효과적으로 활용하는 방법을 결정할 수 있습니다.
 
 이러한 목적은 WCAG 2.1의 구조에 상당한 영향을 주었습니다.
 
@@ -79,14 +79,14 @@ WCAG 2.1은 **POUR**&#x200B;이라는 약어로 지칭되는 액세스 가능한
 
 원칙, 지침 및 성공 기준이라는 핵심적 WCAG 2.1 구성 요소 외에도 일련의 지원 문서가 있습니다. 이 중 일부는 지침의 여러 측면을 충족하는 방법에 대한 구체적인 조언을 제공하며, 또 다른 부분은 다양한 수준의 웹 작성자, 디자이너 및 개발자가 WCAG 2.1을 이해하고 가능한 한 효과적으로 사용할 수 있도록 지원하는 일반적인 참조 사항입니다.
 
-WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스의 대부분은 동적 문서라서 새로운 기술이 등장하고 시간이 지남에 따라 변화하고 확장될 것이며 웹 액세서빌러티를 실현하는 방법에 대한 새로운 사례를 발견할 수 있습니다.
+WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스의 대부분은 동적 문서라서 새로운 기술이 등장하고 시간이 지남에 따라 변화하고 확장될 것이며 웹 접근성을 실현하는 방법에 대한 새로운 사례를 발견할 수 있습니다.
 
 ### WCAG 2.1 리소스 {#wcag-resources}
 
 이 목록은 완벽한 목록이 아니며, 사용 가능한 리소스에 대한 개요를 제공합니다.
 * [모든 WCAG 관련 문서의 개요](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [다양한 문서의 요약](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
-* [웹 콘텐츠 접근성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+* [WCAG(웹 콘텐츠 접근성 지침) 2.1](https://www.w3.org/TR/WCAG21/)
 * [WCAG 2.1의 새로운 기능](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
 * [WCAG 2.1 충족 방법에 대한 빠른 참조 안내서](https://www.w3.org/WAI/WCAG21/quickref/)
 * [WCAG 2 FAQ](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
