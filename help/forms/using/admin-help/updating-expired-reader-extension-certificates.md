@@ -33,7 +33,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: 추가로 궁금한 점이 있으면 어디로 문의해야 합니까?**
 
-답변: [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출해 주십시오.
+답변: [Adobe 지원](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출해 주십시오.
 
 **질문: 2023년 1월 7일 이전에 인증서를 업데이트하지 않으면 어떻게 됩니까?**
 
@@ -45,7 +45,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: 최신 인증서를 받으려면 어떻게 해야 합니까?**
 
-답변: 권한이 있는 모든 Forms 고객(활성 라이선스 보유)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&#39;Adobe Root CA G2&#39; 기반 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 해당 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)에 문의하거나 지원 티켓을 제출해 주십시오.
+답변: 권한이 있는 모든 Forms 고객(활성 라이선스 보유)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&#39;Adobe Root CA G2&#39; 기반 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 해당 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&lang=en#support)에 문의하거나 지원 티켓을 제출해 주십시오.
 
 **질문: &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 인증서를 사용하는 확장 PDF 문서는 2023년 1월 7일 이후에도 계속 작동합니까?**
 
@@ -97,7 +97,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html?lang=ko) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 
@@ -189,4 +189,4 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=ko).  -->

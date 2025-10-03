@@ -107,7 +107,7 @@ AEM은 가상화된 환경에서도 잘 실행되지만, CPU 또는 I/O와 같�
 필요한 클러스터 노드 수를 추정하는 기준은 특정 웹 프로젝트의 기본 요구 사항과 특정 사용 사례에 따라 결정됩니다.
 
 * 고장 안전성 관점에서 볼 때 모든 환경에서 고장의 심각도와 클러스터 노드가 복구하는 데 걸리는 시간을 기준으로 한 고장 보상 시간을 결정하는 것이 필요합니다.
-* 확장성 측면에서는 쓰기 작업의 수가 기본적으로 가장 중요한 요소입니다. 읽기 작업을 처리하기 위해서만 시스템에 액세스하는 작업에 대해 부하 분산을 설정할 수 있습니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)를 참조하십시오.
+* 확장성 측면에서는 쓰기 작업의 수가 기본적으로 가장 중요한 요소입니다. 읽기 작업을 처리하기 위해서만 시스템에 액세스하는 작업에 대해 부하 분산을 설정할 수 있습니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)를 참조하십시오.
 
 ### 하드웨어 권장 사항 {#hardware-recommendations}
 

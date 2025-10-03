@@ -33,7 +33,7 @@ AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크
 사용 중인 다음과 같은 AEM 기능과 디자인에 미치는 영향을 고려하십시오.
 
 * [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
 * [자산](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)

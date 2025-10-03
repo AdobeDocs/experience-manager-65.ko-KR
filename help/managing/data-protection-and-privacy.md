@@ -117,7 +117,7 @@ Adobe Experience Manager 통합은 데이터 보호 및 개인 정보 보호(예
 
 * [Adobe Target - 개인정보 보호 개요](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=ko)
 
 ## AEM Communities {#aem-communities}
 
