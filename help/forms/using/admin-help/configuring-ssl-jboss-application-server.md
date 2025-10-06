@@ -89,7 +89,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
    * 서버 클러스터 - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
+1. &#x200B;
    * **단일 서버의 경우** lc_&lt;dbaname/tunkey>.xml 파일에서 &lt;security-realms> 섹션 뒤에 다음을 추가합니다.
 
    ```xml
