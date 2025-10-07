@@ -9,9 +9,9 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 172b8667b1ff0bd533a035b21c316e2e66721bf8
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 4%
 
 &quot;AEM 개발자 도구&quot;는 Apache 라이선스 2에 따라 릴리스된 Apache Sling용 [Eclipse 플러그인](https://sling.apache.org/documentation/development/ide-tooling.html)을 기반으로 하는 Eclipse 플러그인입니다.
 
-AEM 개발을 쉽게 만드는 몇 가지 기능을 제공합니다.
+AEM 개발을 보다 쉽게 만드는 몇 가지 기능을 제공합니다.
 
 * Eclipse Server Connector를 통해 AEM 인스턴스와 원활하게 통합됩니다.
 * 콘텐츠 및 OSGI 번들 모두에 대한 동기화.
 * 코드 핫 스왑 기능으로 디버깅 지원.
-* 특정 프로젝트 만들기 마법사를 통한 AEM 프로젝트 단순 Bootstrap.
+* 특정 프로젝트 만들기 마법사를 통한 AEM 프로젝트의 간단한 Bootstrap.
 * JCR 속성을 쉽게 편집할 수 있습니다.
 
 ## 요구 사항 {#requirements}
@@ -38,8 +38,8 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행하십시오.
 
 * Java™ EE 개발자용 [Eclipse IDE를 다운로드하여 설치합니다](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM 개발자 도구는 현재 Eclipse Kepler 이상을 지원합니다
 
-* AEM 버전 5.6.1 이상에서 사용할 수 있습니다.
-* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)에 설명된 대로 `eclipse.ini` 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
+* AEM 버전 5.6.1 이상에서 사용할 수 있습니다
+* `eclipse.ini`Eclipse FAQ[에 설명된 대로 ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 Eclipse 설치를 구성하여 힙 메모리가 1GB 이상 있는지 확인합니다.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행하십시오.
 
 위의 [요구 사항](#requirements)을 충족하면 다음과 같이 플러그인을 설치할 수 있습니다.
 
-1. `https://eclipse.adobe.com/aem/dev-tools/`에서 **AEM 개발자 도구** 웹 사이트를 찾아봅니다.
+1. [AEM 개발자 도구 웹 사이트](https://eclipse.adobe.com/)를 엽니다.
 
 1. **설치 링크**&#x200B;를 복사합니다.
 
@@ -58,10 +58,10 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행하십시오.
 1. Eclipse에서 **도움말** 메뉴를 엽니다.
 1. **새 소프트웨어 설치**&#x200B;를 클릭합니다.
 1. **추가...**&#x200B;를 클릭합니다.
-1. **이름**&#x200B;에서 AEM 개발자 도구를 입력합니다.
+1. **이름**&#x200B;에서 AEM 개발자 도구를 입력하십시오.
 1. **위치**&#x200B;에서 설치 URL을 복사합니다.
 1. **확인**&#x200B;을 클릭합니다.
-1. **AEM** 및 **Sling** 플러그인을 모두 확인하십시오.
+1. **AEM** 및 **Sling** 플러그인을 모두 확인하세요.
 1. **다음**&#x200B;을 클릭합니다.
 1. **다음**&#x200B;을 클릭합니다.
 1. 사용권 계약에 동의하고 **마침**&#x200B;을 클릭합니다.
@@ -75,13 +75,13 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행하십시오.
 
 ## AEM 관점 {#the-aem-perspective}
 
-AEM Development Tools for Eclipse에는 AEM 프로젝트 및 인스턴스를 완벽하게 제어할 수 있는 관점이 포함되어 있습니다.
+Eclipse용 AEM 개발 도구는 AEM 프로젝트 및 인스턴스에 대한 모든 권한을 제공하는 Perspective와 함께 제공됩니다.
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
 ## 샘플 다중 모듈 프로젝트 {#sample-multi-module-project}
 
-&quot;AEM 개발자 도구&quot;에는 Eclipse의 프로젝트 설정을 빠르게 시작하는 데 도움이 되는 샘플 다중 모듈 프로젝트가 포함되어 있습니다. 또한 여러 AEM 기능에 대한 모범 사례 안내서 역할을 합니다. [Project Archetype에 대해 자세히 알아보기](https://github.com/adobe/aem-project-archetype).
+&quot;AEM 개발자 도구&quot;에는 Eclipse의 프로젝트 설정을 빠르게 시작하는 데 도움이 되는 샘플 다중 모듈 프로젝트가 포함되어 있습니다. 또한 여러 AEM 기능에 대한 모범 사례 안내서로도 사용됩니다. [Project Archetype에 대해 자세히 알아보기](https://github.com/adobe/aem-project-archetype).
 
 샘플 프로젝트를 만들려면 다음 단계를 완료하십시오.
 
