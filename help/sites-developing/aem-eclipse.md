@@ -126,7 +126,7 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
 
    >[!TIP]
    >
-   >로컬 AEM SDK에서 실행 중인 프로젝트를 디버깅하는 방법에 대한 자세한 내용은 문서 [AEM SDK 원격 디버깅](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)을 참조하십시오.
+   >로컬 AEM SDK에서 실행 중인 프로젝트를 디버깅하는 방법에 대한 자세한 내용은 문서 [AEM SDK 원격 디버깅](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)을 참조하십시오.
 
 1. **마침**&#x200B;을 클릭합니다.
 
