@@ -39,7 +39,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java 및 웹 개발자용 [Eclipse IDE를 다운로드하여 설치합니다.](https://www.eclipse.org/downloads/packages/)
    * AEM Developer Tools for Eclipse 버전 1.4.0은 Eclipse 2022-12(4.26) 이상과 호환되며, 실행하려면 Java 17 이상이 필요합니다.
-* `eclipse.ini`Eclipse FAQ[에 설명된 대로 ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
+* `eclipse.ini`Eclipse FAQ[에 설명된 대로 &#x200B;](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
 
 >[!NOTE]
 >
