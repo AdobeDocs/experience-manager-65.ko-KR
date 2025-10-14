@@ -104,7 +104,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 1. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트 업데이트:
 
    1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
-   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, `core.wcm.components.version`WCM 핵심 구성 요소[에 지정된 대로 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html)의 버전을 설정하십시오.
+   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, `core.wcm.components.version`WCM 핵심 구성 요소[에 지정된 대로 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html)의 버전을 설정하십시오.
 
       >[!WARNING]
       >
