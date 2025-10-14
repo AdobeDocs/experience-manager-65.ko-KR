@@ -9,10 +9,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: c75cd7a0cbd0c19fd10cc7512bbfa14fae1e4f92
+source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 11%
+source-wordcount: '962'
+ht-degree: 12%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 11%
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-적응형 Forms 핵심 구성 요소를 활성화하면 AEM 6.5 Forms 환경에서 [적응형 Forms을 기반으로 한 핵심 구성 요소](create-an-adaptive-form-core-components.md) 및 [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ko)를 만들고, 게시하고, 제공할 수 있습니다.
+적응형 Forms 핵심 구성 요소를 활성화하면 AEM 6.5 Forms 환경에서 [적응형 Forms을 기반으로 한 핵심 구성 요소](create-an-adaptive-form-core-components.md) 및 [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)를 만들고, 게시하고, 제공할 수 있습니다.
 
-AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하려면 모든 작성자 및 게시 인스턴스에서 [AEM Archetype 41 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 기반 프로젝트(양식 옵션 사용)를 설정하고 배포합니다.
+AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하려면 모든 작성자 및 게시 인스턴스에서 [AEM Archetype 41 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 기반 프로젝트(양식 옵션 사용)를 설정하고 배포합니다.
 
 이 문서에서는 적응형 AEM 핵심 구성 요소를 활성화하기 위해 AEM 6.5 Forms 환경에서 Forms Archetype 41 이상 프로젝트를 설정하고 배포하는 방법에 대한 자세한 지침을 제공합니다. Forms 핵심 구성 요소를 활성화하기 위해 아래 목록에서 **AEM 6.5** 호환 버전을 참조할 수 있습니다.
 
@@ -35,7 +35,7 @@ AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하�
 
 AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하기 전에:
 
-* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko).
+* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
@@ -104,15 +104,15 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 1. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트 업데이트:
 
    1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
-   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=ko#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, [WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=ko)에 지정된 대로 `core.wcm.components.version`의 버전을 설정하십시오.
+   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, `core.wcm.components.version`WCM 핵심 구성 요소[에 지정된 대로 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html)의 버전을 설정하십시오.
 
       >[!WARNING]
       >
-      >* 버전 45의 Archetype 프로젝트를 만들 때 `[AEM Archetype Project Folder]/pom.xml`은(는) 처음에 양식 핵심 구성 요소 버전을 1.1.28로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 1.1.26으로 업데이트합니다. [AEM 6.5 Forms 버전 내역](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=ko#aem-as-form-version-history)에서 최신 버전을 찾을 수 있습니다.
+      >* 버전 45의 Archetype 프로젝트를 만들 때 `[AEM Archetype Project Folder]/pom.xml`은(는) 처음에 양식 핵심 구성 요소 버전을 1.1.28로 설정합니다. Archetype 프로젝트를 빌드하거나 배포하기 전에 Forms 핵심 구성 요소 버전을 1.1.26으로 업데이트합니다. [AEM 6.5 Forms 버전 내역](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history)에서 최신 버전을 찾을 수 있습니다.
 
       >[!NOTE]
       >
-      >* 다른 토폴로지를 설정하는 경우 제출, 미리 채우기 및 기타 URL을 Dispatcher 레이어의 허용 목록에 추가하다에 추가해야 합니다.
+      >* 다른 토폴로지를 설정하는 경우 필요한 선택기(예: `/content/forms/*model.json`)와 함께 제출, 미리 채우기 및 기타 필수 URL이 Dispatcher 레이어의 허용 목록에 추가하다 설정에 추가되어 있는지 확인하십시오.
 
    1. 파일을 저장하고 닫습니다.
 
@@ -132,7 +132,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
    AEM Archetype 프로젝트가 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
 
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
 ### 핵심 구성 요소란 무엇입니까?
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
 
 ### 핵심 구성 요소 활성화에 추가된 기능은 무엇입니까?
 
@@ -163,5 +163,5 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [핵심 구성 요소 기반 적응형 양식을 위한 테마 만들기](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
