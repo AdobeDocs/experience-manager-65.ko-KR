@@ -209,5 +209,5 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    >
    >관리자는 관리 콘솔을 사용하여 **[!UICONTROL 서비스 > 문서 보안 > 내 정책]**&#x200B;에서 다른 사용자의 개인 정책에서 사용자 데이터를 검색, 액세스 및 삭제할 수 있습니다.
 
-1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터 ](/help/forms/using/user-management-handling-user-data.md)을(를) 처리하고 있습니다.
+1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터 &#x200B;](/help/forms/using/user-management-handling-user-data.md)을(를) 처리하고 있습니다.
 1. AEM Forms 서버를 시작합니다.

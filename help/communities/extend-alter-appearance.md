@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ### 게시된 샘플 페이지에서 수정된 댓글 보기 {#view-modified-comment-on-published-sample-page}
 
-[게시 인스턴스에서 계속 ](/help/communities/extend-sample-page.md#publish-sample-page) 환경을 사용하면서 동일한 사용자로 로그인되어 있습니다. 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 내용을 볼 수 있습니다.
+[게시 인스턴스에서 계속 &#x200B;](/help/communities/extend-sample-page.md#publish-sample-page) 환경을 사용하면서 동일한 사용자로 로그인되어 있습니다. 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 내용을 볼 수 있습니다.
 
 ![수정된 콘텐츠 보기](assets/view-modified-content.png)
 

@@ -237,7 +237,7 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 * 최상의 쿼리를 수행하려면 항상 AEM에서 지속 쿼리를 사용합니다. 여정 후반부에서 자세히 설명합니다.
 * GraphQL은 “필요한 것은 정확히 요청하고 제대로 얻습니다.”라는 모토에 따라 선언적입니다. 즉, GraphQL 쿼리를 만드는 도중 관계형 데이터베이스에서 만들 수 있는 `select *`유형 쿼리는 항상 피해야 합니다.
 
-[AEM을 사용하여 일반적으로 Headless를 구현하는 경우 ](#level-1) 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
+[AEM을 사용하여 일반적으로 Headless를 구현하는 경우 &#x200B;](#level-1) 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
 
 ### 성능 요구 사항 {#performance-requirements}
 
@@ -285,7 +285,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [AEM Headless 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정을 통해 Headless 기술, AEM에서 Headless 콘텐츠를 제공하는 방법과 콘텐츠를 번역하는 방법을 폭넓게 이해할 수 있습니다.
 
 * [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
-* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/ko?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
+* [GraphQL API를 사용한 Headless 콘텐츠 관리](https://experienceleague.adobe.com/ko?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - 이 과정에 따라 AEM에서 구현되는 GraphQL API의 개요를 확인합니다. Adobe ID를 통한 인증이 필요합니다.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM의 GraphQL API를 강조 표시하는 예제 애플리케이션이 포함됩니다.
 * [작성 개념](/help/sites-authoring/author.md) - 작성-게시 설정의 세부 정보가 포함된 AEM의 작성 환경을 대한 기술 설명서
 * [페이지 게시](/help/sites-authoring/publishing-pages.md) - AEM에서 콘텐츠 게시에 대한 기술 설명서

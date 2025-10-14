@@ -31,13 +31,13 @@ AEM 6.5를 ACS(Adobe Campaign Standard)와 통합하여 AEM에서 이메일 게�
 
 AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에서 몇 가지 단계가 필요합니다.
 
-1. [구성 ](#aemserver-user)
-1. [확인 ](#resource-type-filter)
+1. [구성 &#x200B;](#aemserver-user)
+1. [확인 &#x200B;](#resource-type-filter)
 1. [Campaign에서 AEM 관련 이메일 게재 템플릿 만들기](#aem-email-delivery-template)
 1. [AEM에서 Campaign 통합 구성](#campaign-integration)
 1. [AEM Publish 인스턴스에 복제 구성](#replication)
 1. [AEM 외부화 구성](#externalizer)
-1. [구성 ](#campaign-remote-user)
+1. [구성 &#x200B;](#campaign-remote-user)
 1. [Campaign에서 AEM 외부 계정 구성](#acc-external-user)
 
 이 문서는 이러한 각 단계를 자세히 안내합니다.

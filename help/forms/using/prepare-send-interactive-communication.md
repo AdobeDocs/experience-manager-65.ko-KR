@@ -146,7 +146,7 @@ ht-degree: 2%
 
 ### 문서 단편 {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **위쪽/아래쪽 화살표**: 대화형 통신에서 문서 조각을 위아래로 이동하는 화살표입니다.
 * **삭제**: 허용되는 경우 대화형 통신에서 문서 단편을 삭제하십시오.

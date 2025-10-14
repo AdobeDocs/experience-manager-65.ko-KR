@@ -32,7 +32,7 @@ Forms 포털 및 해당 기능에 대한 자세한 내용은 [포털에서 양�
 
 Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 Publish 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
 
-![샘플 양식 포털 페이지 ](assets/forms-portal-page.png)
+![샘플 양식 포털 페이지 &#x200B;](assets/forms-portal-page.png)
 
 샘플 Forms 포털 페이지
 

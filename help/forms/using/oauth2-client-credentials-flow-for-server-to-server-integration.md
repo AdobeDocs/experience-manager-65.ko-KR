@@ -34,7 +34,7 @@ AEM Forms은 Salesforce 연결 애플리케이션에 정의된 클라이언트 �
 
 Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에 다음 작업을 수행하십시오.
 
-* [OAuth 2.0 클라이언트 자격 증명 흐름이 있는 Salesforce 연결 앱](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) 및 조직의 API 전용 사용자를 만들고 앱에 대한 소비자 키 및 소비자 암호를 받습니다.
+* [OAuth 2.0 클라이언트 자격 증명 흐름이 있는 Salesforce 연결 앱](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) 및 조직의 API 전용 사용자를 만들고 앱에 대한 소비자 키 및 소비자 암호를 받습니다.
 
 * Swagger 파일이 조직의 API와 일치하도록 적절하게 구성되었는지 확인합니다. 또는 AEM 환경에서 활용하는 데 맞춤형으로 직접 [Swagger 파일을 만들](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=ko) 수도 있습니다.
 >[!NOTE]

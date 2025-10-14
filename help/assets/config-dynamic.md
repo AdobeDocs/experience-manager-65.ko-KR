@@ -1272,7 +1272,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
   </tr>
   <tr>
    <td>뷰어 URL 복사</td>
-   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
+   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
   </tr>
   <tr>
    <td>뷰어의 포함 코드 복사</td>

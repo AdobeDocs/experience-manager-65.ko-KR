@@ -87,7 +87,7 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
    >
    >AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기가 CRX 서버에 연결되어 미리 보기를 *생성*&#x200B;합니다.
 
-   ![AEM Forms Designer 옵션 ](assets/server_options.png)
+   ![AEM Forms Designer 옵션 &#x200B;](assets/server_options.png)
 
    AEM Forms Designer 옵션
 

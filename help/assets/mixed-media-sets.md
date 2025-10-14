@@ -127,7 +127,7 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
 ## 혼합 미디어 집합 편집 {#editing-mixed-media-sets}
 
-Assets의 모든 에셋과 마찬가지로 [ 사용자 인터페이스에서 ](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
+Assets의 모든 에셋과 마찬가지로 [&#x200B; 사용자 인터페이스에서 &#x200B;](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
 
 * 혼합 미디어 집합에 자산을 추가합니다.
 * 혼합 미디어 집합에서 에셋 순서를 변경합니다.

@@ -25,7 +25,7 @@ ht-degree: 2%
 1. [로드할 제품 특성을 구성하십시오](#configure-the-product-attributes-to-load).
 1. [제품 데이터를 가져오는 중](#importing-the-product-data).
 1. [카탈로그 가져오기를 구성합니다](#configure-the-catalog-importer).
-1. [가져오기를 사용하여 ](#catalog-import) 카탈로그를 AEM의 특정 위치로 가져옵니다.
+1. [가져오기를 사용하여 &#x200B;](#catalog-import) 카탈로그를 AEM의 특정 위치로 가져옵니다.
 
 ## Geometrixx Outdoors에 대한 면처리 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
 

@@ -103,8 +103,8 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 개발자로서 다음 단계를 실행하여 [!DNL Adobe Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하십시오.
 
-1. [ [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
-1. [ [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
+1. [&#x200B; [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
+1. [&#x200B; [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console]에서 프로그램 설정 {#set-up-a-program-in-developer-console}
 
@@ -124,8 +124,8 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에 구성을 추가합니다.
 
-1. [ [!DNL AEM] 작성자 인스턴스에서 새  [!DNL Adobe Stock IMS configuration] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [ [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
+1. [&#x200B; [!DNL AEM] 작성자 인스턴스에서 새  [!DNL Adobe Stock IMS configuration] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [&#x200B; [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### [!DNL AEM author] 인스턴스에서 새 [!DNL Adobe Stock IMS configuration] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 

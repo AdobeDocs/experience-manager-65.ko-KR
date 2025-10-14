@@ -28,7 +28,7 @@ NotSoSerial은 Java™ 수준 문제에 대한 Java™ 수준 솔루션이며 AE
 
 기본적으로 에이전트는 현재 알려진 취약성 클래스에 대해 차단 목록에 추가하다 검사를 수행합니다. 이 차단 목록에 추가하다는 이러한 유형의 취약성 목록에서 여러분을 보호하기 위한 것입니다.
 
-이 문서의 [ 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
+이 문서의 [&#x200B; 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
 
 이 에이전트는 알려진 최신 취약한 계층을 완화하는 데 도움을 주기 위한 것입니다. 프로젝트가 신뢰할 수 없는 데이터를 역직렬화하는 경우에도 서비스 거부 공격, 메모리 부족 공격 및 알 수 없는 향후 역직렬화 공격에 취약할 수 있습니다.
 

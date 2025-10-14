@@ -304,7 +304,7 @@ AEM에서 바이너리 데이터는 컨텐츠 노드와 독립적으로 저장�
 
 >[!CAUTION]
 >
->관계형 데이터베이스 마이크로 커널은 제한된 지원을 받고 있습니다. 이 유형의 마이크로 커널을 사용하기 전에 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)에 문의하십시오.
+>관계형 데이터베이스 마이크로 커널은 제한된 지원을 받고 있습니다. 이 유형의 마이크로 커널을 사용하기 전에 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)에 문의하십시오.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

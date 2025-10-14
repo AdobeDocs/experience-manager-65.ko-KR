@@ -30,7 +30,7 @@ PhoneGap CLI 설정(`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#
 
 iOS의 경우: iPhone 및 iPad용으로 개발하려면 Apple의 Xcode IDE가 필요합니다.
 
-* [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1)에서 무료로 다운로드하세요.
+* [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1)에서 무료로 다운로드하세요.
 * PhoneGap iOS 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Android™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android™ Stuido IDE가 필요합니다.

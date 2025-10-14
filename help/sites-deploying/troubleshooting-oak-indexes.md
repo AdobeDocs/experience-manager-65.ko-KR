@@ -128,7 +128,7 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 1. 1단계에서 설명한 모든 정보를 수집한 후 AEM을 다시 시작합니다.
 
    * AEM을 다시 시작하면 동시 부하가 높은 경우(관찰 대기열 오버플로 등) 문제를 해결할 수 있습니다.
-   * 다시 시작해도 문제가 해결되지 않으면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)에 문제를 열고 1단계에서 수집된 모든 정보를 제공하세요.
+   * 다시 시작해도 문제가 해결되지 않으면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)에 문제를 열고 1단계에서 수집된 모든 정보를 제공하세요.
 
 ## 비동기 리인덱싱을 안전하게 중단합니다. {#safely-aborting-asynchronous-re-indexing}
 

@@ -27,7 +27,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+>필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 ## 기존 AMS 사용자에 대한 OAuth 구성 {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 ### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
 
-시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&amp;support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 1. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`에서 아래 속성을 추가하거나 업데이트하십시오.
 

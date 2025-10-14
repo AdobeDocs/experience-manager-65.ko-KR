@@ -230,7 +230,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 #### 론치 {#launches}
 
 * 론치에 대한 새로운 검토 및 승인 워크플로우 및 승인된 론치 페이지만 홍보하는 기능
-* 프로모션 단계[ 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* 프로모션 단계[&#x200B; 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 #### 콘텐츠 타겟팅 및 시뮬레이션 {#content-targeting-simulation}
 

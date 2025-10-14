@@ -43,7 +43,7 @@ ht-degree: 2%
 
 ### 대화형 비디오가 만들어지는 방식 보기 {#watch-how-interactive-videos-are-created}
 
-[대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7분 30초)에 대해 연습합니다.
+[대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo)(7분 30초)에 대해 연습합니다.
 비디오 연습은 Assets on Demand로 브랜딩되었지만 원리와 단계는 Adobe Experience Manager Assets의 대화형 비디오에 여전히 적용됩니다.
 
 ### Adobe 고객 솔루션 웨비나 {#adobe-customer-success-webinar}
@@ -150,10 +150,10 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열에 있는 단일 SKU.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>URL의 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서 썸네일은 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>과(와) 같은 값으로 채워진 SKU 필드만 필요합니다.</p> </td>
   </tr>
   <tr>
@@ -169,9 +169,9 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID는 <code>category=</code> 매개 변수에 저장됩니다.</p> <p>따라서 썸네일 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
       <li>SKU는 <code>305466</code>이고 <code>categoryId</code>은(는) <code>1100004</code></li>

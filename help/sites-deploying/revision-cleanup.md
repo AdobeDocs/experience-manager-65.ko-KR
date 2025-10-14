@@ -494,7 +494,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>권장 액세스 메커니즘(예: Sling 및 JCR API)을 우회하고 하위 수준 API/SPI를 사용하여 저장소에 액세스한 다음 세그먼트의 유지 시간을 초과하는 애플리케이션입니다. 즉, 온라인 개정 정리(기본적으로 24시간)에서 허용하는 보존 시간보다 오래 엔티티에 대한 참조를 유지합니다. 이 경우는 일시적이며 데이터 손상으로 이어지지 않습니다. 복구하려면 oak-run 도구를 사용하여 예외의 일시적인 특성을 확인해야 합니다(oak-run 검사가 오류를 보고하지 않음). 이렇게 하려면 인스턴스를 오프라인 상태로 전환한 후 다시 시작해야 합니다.</li>
      <li>외부 이벤트로 인해 디스크의 데이터가 손상되었습니다. 이는 디스크 장애, 디스크 공간 부족 또는 필요한 데이터 파일의 우발적 수정일 수 있습니다. 이 경우 인스턴스를 오프라인으로 전환하고 oak-run 검사를 사용하여 복구해야 합니다. oak-run 검사를 수행하는 방법에 대한 자세한 내용은 다음 <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache 설명서</a>를 참조하십시오.</li>
-     <li><a href="https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support" target="_blank">고객 지원 Adobe</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
+     <li><a href="https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support" target="_blank">고객 지원 Adobe</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
     </ol> </td>
    <td> </td>
   </tr>

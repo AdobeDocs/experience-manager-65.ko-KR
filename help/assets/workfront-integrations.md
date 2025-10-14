@@ -22,7 +22,7 @@ ht-degree: 9%
 
 [!DNL Adobe Workfront]은(는) 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]과(와) [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
 
-[!DNL Workfront for Experience Manager enhanced connector]은(는) 통합 워크플로우를 통해 향상된 비즈니스 프로세스를 가능하게 하고 개인화된 통합 클라이언트 환경과 중앙 저장소를 제공합니다. Adobe은 표준 커넥터와 두 솔루션을 통합할 수 있는 향상된 커넥터를 제공합니다. 비교하려면 아래의 지원되는 기능을 확인하고 [새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)을 확인하세요.
+[!DNL Workfront for Experience Manager enhanced connector]은(는) 통합 워크플로우를 통해 향상된 비즈니스 프로세스를 가능하게 하고 개인화된 통합 클라이언트 환경과 중앙 저장소를 제공합니다. Adobe은 표준 커넥터와 두 솔루션을 통합할 수 있는 향상된 커넥터를 제공합니다. 비교하려면 아래의 지원되는 기능을 확인하고 [새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)을 확인하세요.
 
 [!DNL Workfront for Experience Manage enhanced connector]을(를) 통해 조직은 다음을 수행할 수 있습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 * Experience Manager 워크플로우를 사용하여 구성 가능한 조건에 따라 Workfront 개체 상태를 설정합니다.
 * Publish Experience Manager assets를 게시 환경 또는 Brand Portal에 게시합니다.
 
-플랫폼 지원 및 향상된 커넥터에 대한 [필수 구성 요소](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)를 참조하세요.
+플랫폼 지원 및 향상된 커넥터에 대한 [필수 구성 요소](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)를 참조하세요.
 
 >[!IMPORTANT]
 >

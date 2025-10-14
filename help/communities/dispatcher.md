@@ -24,7 +24,7 @@ AEM Communities의 경우 [커뮤니티 사이트](overview.md#community-sites)�
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
-* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support) 문의
+* [고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support) 문의
 
 기본 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 참조하세요.
 

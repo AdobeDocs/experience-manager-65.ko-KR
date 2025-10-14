@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)하십시오.
+>자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)하십시오.
 
 ## 패치 설치 관리자 정보 {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
 * 문서 보안
 * Foundation JEE
 
-[지원팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)
+[지원팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)

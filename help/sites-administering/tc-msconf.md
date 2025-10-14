@@ -25,7 +25,7 @@ AEM은 [Microsoft Translator](https://www.microsoft.com/en-us/translator/busines
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
-1. [탐색 패널에서 ](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **Cloud Service** > **번역 Cloud Service**.
+1. [탐색 패널에서 &#x200B;](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **Cloud Service** > **번역 Cloud Service**.
 1. 구성을 만들고자 하는 위치로 이동합니다. 일반적으로 이는 사이트 루트에 있거나 전역 기본 구성일 수 있습니다.
 1. **만들기** 단추를 클릭합니다.
 1. 구성을 정의합니다.

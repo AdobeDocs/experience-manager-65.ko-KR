@@ -27,7 +27,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 ](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
+>타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 &#x200B;](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
 
 활동 콘솔에서 활동은 브랜드별로 구성됩니다. 브랜드 및 폴더를 사용하여 활동 조직을 체계화할 수 있습니다. **개인화**&#x200B;를 탭/클릭하고 **활동**&#x200B;을 탭/클릭하여 활동 콘솔로 이동합니다.
 

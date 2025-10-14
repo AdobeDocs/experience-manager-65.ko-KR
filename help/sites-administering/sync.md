@@ -505,7 +505,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2을(를) 확인합니다. 인증된 사용자 ](#createauthuser) 만들기가 제대로 수행되었습니다.
+그런 다음 섹션 [2을(를) 확인합니다. 인증된 사용자 &#x200B;](#createauthuser) 만들기가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 Publish 인스턴스에 존재하는 인증된 사용자를 만들고, 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 해당 사용자를 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 

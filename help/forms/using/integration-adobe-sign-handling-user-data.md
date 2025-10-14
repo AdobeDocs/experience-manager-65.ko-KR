@@ -32,4 +32,4 @@ ht-degree: 0%
 
 [!DNL Adobe Sign]은(는) 참가자가 계약을 검색하고 필요한 경우 삭제할 수 있도록 허용하는 웹 응용 프로그램을 제공합니다. 자세한 내용은 [Adobe Sign - 기능: 사용자 정보 삭제](https://helpx.adobe.com/kr/sign/help/adobesign_gdpr_user_deletion.html)를 참조하십시오.
 
-Forms 포털 제출 액션을 사용하도록 구성된 적응형 양식에 대한 계약 데이터도 Forms 포털 데이터 저장소에 저장됩니다. Forms 포털 데이터 저장소에서 데이터에 액세스하고 삭제하려면 [Forms 포털을 참조하십시오. | 사용자 데이터 ](/help/forms/using/forms-portal-handling-user-data.md)을(를) 처리하고 있습니다.
+Forms 포털 제출 액션을 사용하도록 구성된 적응형 양식에 대한 계약 데이터도 Forms 포털 데이터 저장소에 저장됩니다. Forms 포털 데이터 저장소에서 데이터에 액세스하고 삭제하려면 [Forms 포털을 참조하십시오. | 사용자 데이터 &#x200B;](/help/forms/using/forms-portal-handling-user-data.md)을(를) 처리하고 있습니다.

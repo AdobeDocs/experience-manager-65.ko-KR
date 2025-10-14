@@ -25,7 +25,7 @@ ht-degree: 2%
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * Publish 환경의 사용자 입력(예: 양식 입력)을 작성자 환경(작성자 환경의 제어 아래)으로 반환합니다.
 
-요청을 처리할 적절한 에이전트에 대해 [큐에 ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
+요청을 처리할 적절한 에이전트에 대해 [큐에 &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
 
 >[!NOTE]
 >

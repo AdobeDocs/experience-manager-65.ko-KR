@@ -75,7 +75,7 @@ Google™용 Google Cloud Messaging에 익숙해지려면 Android 페이지 [여
 
 다음 단계는 GCM API 키를 만드는 다른 방법을 보여 줍니다.
 
-1. Google에 로그인한 다음 [Google의 개발자 페이지로 이동](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm)합니다.
+1. Google에 로그인한 다음 [Google의 개발자 페이지로 이동](https://developers.google.com/mobile/add?platform=android&cntapi=gcm)합니다.
 1. 목록에서 앱을 선택하거나 앱을 만듭니다.
 1. Android™ 패키지 이름 아래에 앱 ID, 즉 `com.adobe.cq.mobile.weretail.outdoorsapp`을(를) 입력합니다. (작동하지 않는 경우 &quot;test.test&quot;로 다시 시도하십시오.)
 1. **서비스를 계속 선택하고 구성하십시오**

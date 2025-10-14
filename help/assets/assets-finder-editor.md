@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 ](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
+>자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 &#x200B;](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
 
 ## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까? {#why-create-and-configure-asset-editor-pages}
 

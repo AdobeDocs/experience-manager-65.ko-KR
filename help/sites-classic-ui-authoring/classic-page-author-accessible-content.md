@@ -449,7 +449,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
   >[!NOTE]
   >
-  >시스템 관리자가 **테이블 속성**&#x200B;[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >시스템 관리자가 **테이블 속성**&#x200B;[&#x200B; 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   **테이블**&#x200B;을(를) 추가할 때 대화 상자를 사용하여 **테이블 속성**&#x200B;을(를) 구성할 수 있습니다.
 
@@ -909,7 +909,7 @@ AEM에서는 페이지를 생성할 때 페이지의 기본 언어가 설정되�
 >
 >이름이나 도시를 서로 다른 언어로 포함할 때 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
 
-적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 속성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[&#x200B; 속성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### 추가 정보 - 부분 언어 (3.1.2) {#more-information-language-of-parts}
 
@@ -950,7 +950,7 @@ AEM에서는 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페�
 
 ![라디오 그룹에 항목을 추가하고 있습니다. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
 
-하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**&#x200B;[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**&#x200B;[&#x200B; 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Forms에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 

@@ -26,7 +26,7 @@ ht-degree: 3%
 
 <div class="preview">
 
-Adobe은 패치 설치 프로그램과 함께 JEE에 AEM [ Forms 서비스 팩 23(](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko))이 포함된 6.5.23.0전체 설치 관리자6.5.23.0를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
+Adobe은 패치 설치 프로그램과 함께 JEE에 AEM [&#x200B; Forms 서비스 팩 23(](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko))이 포함된 6.5.23.0전체 설치 관리자6.5.23.0를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
 
 새로 설치하거나 JEE의 AEM 6.5.23.0 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2023년 8월 31일에 릴리스된 AEM 6.5.18 Forms 설치 프로그램이나 2019년 4월 08일에 릴리스된 AEM Forms 6.5.12 Adobe 설치 프로그램 대신 2025년 6월 06일에 릴리스된 [JEE의 AEM 6.5.23.0 Forms 전체 설치 프로그램](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을 사용하는 것이 좋습니다.
 

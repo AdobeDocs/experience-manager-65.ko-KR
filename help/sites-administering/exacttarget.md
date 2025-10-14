@@ -54,7 +54,7 @@ Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 
    ExactTarget이 구성되었습니다. **편집**&#x200B;을 클릭하여 구성을 편집할 수 있습니다. **ExactTarget으로 이동**&#x200B;을 클릭하여 ExactTarget으로 이동할 수 있습니다.
 
-1. 이제 AEM에서 데이터 확장 기능을 제공합니다. ExactTarget 데이터 확장 열을 가져올 수 있습니다. ExactTarget 구성을 만든 것 외에 표시되는 &quot;+&quot; 기호를 클릭하여 구성할 수 있습니다. 드롭다운 목록에서 기존 데이터 확장을 선택할 수 있습니다. 데이터 확장을 구성하는 방법에 대한 자세한 내용은 [ExactTarget 설명서](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5)를 참조하십시오.
+1. 이제 AEM에서 데이터 확장 기능을 제공합니다. ExactTarget 데이터 확장 열을 가져올 수 있습니다. ExactTarget 구성을 만든 것 외에 표시되는 &quot;+&quot; 기호를 클릭하여 구성할 수 있습니다. 드롭다운 목록에서 기존 데이터 확장을 선택할 수 있습니다. 데이터 확장을 구성하는 방법에 대한 자세한 내용은 [ExactTarget 설명서](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5)를 참조하십시오.
 
    가져온 데이터 확장 열은 나중에 **Text 및 Personalization** 구성 요소를 통해 사용할 수 있습니다.
 

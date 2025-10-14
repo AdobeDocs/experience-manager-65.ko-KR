@@ -49,7 +49,7 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 
 1. Chrome PDF 뷰어 아래에서 비활성화 를 클릭하고 Adobe PDF 플러그인 아래에서 활성화 를 클릭합니다.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-자세한 내용은 Google의 [Adobe PDF 플러그인](https://support.google.com/chrome/?hl=en&amp;visit_id=638803785294106945-2276548125&amp;rd=4&amp;topic=3421431#topic=7439538) 설명서를 참조하십시오.
+자세한 내용은 Google의 [Adobe PDF 플러그인](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) 설명서를 참조하십시오.
 
 >[!NOTE]
 > 

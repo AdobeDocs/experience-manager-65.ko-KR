@@ -28,7 +28,7 @@ AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Googl
 
     &lbrack; ![google_play](assets/google_play.png)(https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    &lbrack; ![app_store](assets/app_store.png)(https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    &lbrack; ![app_store](assets/app_store.png)(https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
     &lbrack; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)(https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 

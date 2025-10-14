@@ -27,7 +27,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만듭니다.
 
-AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-administering/tc-msconf.md)하는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE)에서 찾을 수 있습니다.
+AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-administering/tc-msconf.md)하는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)에서 찾을 수 있습니다.
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md)을 참조합시오.
 

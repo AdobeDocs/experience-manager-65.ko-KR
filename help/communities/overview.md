@@ -214,7 +214,7 @@ AEM 데모 컴퓨터에는 유효한 AEM 라이센스가 필요합니다.
 
 >[!NOTE]
 >
->AEM 데모 컴퓨터에 대한 [비디오 소개](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be)를 봅니다(13:26).
+>AEM 데모 컴퓨터에 대한 [비디오 소개](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be)를 봅니다(13:26).
 
 ## AEM Communities 설명서 {#aem-communities-documentation}
 

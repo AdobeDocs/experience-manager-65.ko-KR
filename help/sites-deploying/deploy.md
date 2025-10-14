@@ -140,7 +140,7 @@ Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manage
 
 AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시스템이나 Microsoft® Windows 또는 Linux®의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것이 일반적입니다.
 
-클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
+클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
 
 ### 소프트웨어 가져오기 {#getting-the-software}
 
