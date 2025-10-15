@@ -1,5 +1,5 @@
 ---
-title: 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리
+title: 미디어 핸들러 및 워크플로를 사용하여 자산 처리
 description: 미디어 핸들러 및 워크플로우를 사용하여 디지털 에셋에서 작업을 수행하는 방법에 대해 알아봅니다.
 mini-toc-levels: 1
 contentOwner: AG
@@ -7,14 +7,14 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 3%
+source-wordcount: '2109'
+ht-degree: 4%
 
 ---
 
-# 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리 {#processing-assets-using-media-handlers-and-workflows}
+# 미디어 핸들러 및 워크플로를 사용하여 자산 처리 {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets]에는 자산을 처리하는 기본 워크플로 및 미디어 처리기가 포함되어 있습니다. 워크플로는 에셋에서 실행할 작업을 정의한 다음 특정 작업을 미디어 핸들러에 위임합니다(예: 썸네일 생성 또는 메타데이터 추출).
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[!DNL Assets]에서 지원하는 모든 형식과 각 형식에 대해 지원되는 기능에 대한 설명은 [지원되는 자산 형식](assets-formats.md) 페이지를 참조하십시오.
+>[에서 지원하는 모든 형식과 각 형식에 대해 지원되는 기능에 대한 설명은 ](assets-formats.md)지원되는 자산 형식[!DNL Assets] 페이지를 참조하십시오.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
@@ -123,7 +123,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 다음은 예제 템플릿입니다.
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
 
 인터페이스 및 클래스는 다음과 같습니다.
 
@@ -137,7 +137,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; 
 
 다음과 같이 진행합니다.
 
-[!DNL Maven] 플러그인으로 Eclipse를 설치 및 설정하고 [!DNL Maven] 프로젝트에 필요한 종속성을 설정하려면 [개발 도구](../sites-developing/dev-tools.md)를 참조하십시오.
+[ 플러그인으로 Eclipse를 설치 및 설정하고 ](../sites-developing/dev-tools.md) 프로젝트에 필요한 종속성을 설정하려면 [!DNL Maven]개발 도구[!DNL Maven]를 참조하십시오.
 
 다음 절차를 수행하면 TXT 파일을 [!DNL Experience Manager]에 업로드할 때 파일의 메타데이터가 추출되고 워터마크가 포함된 두 개의 썸네일이 생성됩니다.
 
@@ -283,7 +283,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; 
     </dependencies>
    ```
 
-1. `myBundle/src/main/java` 아래에 [!DNL Java™] 클래스를 포함하는 패키지 `com.day.cq5.myhandler` 만들기:
+1. `com.day.cq5.myhandler` 아래에 [!DNL Java™] 클래스를 포함하는 패키지 `myBundle/src/main/java` 만들기:
 
    1. myBundle에서 `src/main/java`을(를) 마우스 오른쪽 단추로 클릭하고 새로 만들기, 패키지 순으로 선택합니다.
    1. 이름을 `com.day.cq5.myhandler`로 지정하고 [마침]을 클릭하십시오.
@@ -449,7 +449,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; 
 
 다음 변환은 [!DNL Assets] 내에서 자동으로 실행되고 저장될 수 있습니다.
 
-* [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용한 EPS 및 AI 변환.
+* `https://www.imagemagick.org/script/index.php` 및 [Ghostscript](https://www.ghostscript.com/)를 사용한 EPS 및 AI 변환.
 * [FFmpeg](https://ffmpeg.org/)을(를) 사용하여 FLV 비디오 코드 변환.
 * [RAME](https://lame.sourceforge.io/)을(를) 사용하는 MP3 인코딩입니다.
 * [SOX](https://sourceforge.net/projects/sox/)을(를) 사용한 오디오 처리.
@@ -470,13 +470,13 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; 
 
 ### [!DNL ImageMagick]을(를) 사용하는 예 {#an-example-using-imagemagick}
 
-다음 예제에서는 miMIME e-type GIF 또는 TIFF이 포함된 에셋을 [!DNL Experience Manager] 서버의 `/content/dam`에 추가할 때마다 원본의 대칭 이동 이미지가 만들어지도록 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다. 140x100, 48x48, 10x250 축소판 세 개가 더 만들어집니다.
+다음 예제에서는 miMIME e-type GIF 또는 TIFF이 포함된 에셋을 `/content/dam` 서버의 [!DNL Experience Manager]에 추가할 때마다 원본의 대칭 이동 이미지가 만들어지도록 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다. 140x100, 48x48, 10x250 축소판 세 개가 더 만들어집니다.
 
 이렇게 하려면 [!DNL ImageMagick]을(를) 사용합니다. [!DNL ImageMagick]은(는) 비트맵 이미지를 만들고, 편집하고, 작성하는 데 사용되는 무료 명령줄 소프트웨어입니다.
 
-[!DNL Experience Manager] 서버를 호스팅하는 디스크에 [!DNL ImageMagick] 설치:
+[!DNL ImageMagick] 서버를 호스팅하는 디스크에 [!DNL Experience Manager] 설치:
 
-1. [!DNL ImageMagick] 설치: [ImageMagick 설명서](https://www.imagemagick.org/script/download.php)를 참조하십시오.
+1. [!DNL ImageMagick] 설치: `https://www.imagemagick.org/script/download.php` 웹 사이트를 참조하십시오.
 1. 명령줄 중 하나에서 `convert`을(를) 실행할 수 있도록 도구를 설정합니다.
 1. 도구가 제대로 설치되었는지 확인하려면 명령줄에서 다음 명령 `convert -h`을(를) 실행하십시오.
 
@@ -489,7 +489,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; 
 1. 도구가 제대로 실행되는지 확인하려면 작업 디렉터리에 JPG 이미지를 추가하고 명령줄에서 `<image-name>.jpg -flip <image-name>-flipped.jpg` 변환 명령을 실행합니다. 대칭 이동된 이미지가 디렉토리에 추가됩니다. 그런 다음 명령줄 프로세스 단계를 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에 추가합니다.
 1. **[!UICONTROL 워크플로]** 콘솔로 이동합니다.
 1. **[!UICONTROL 모델]** 탭에서 **[!UICONTROL DAM 자산 업데이트]** 모델을 편집합니다.
-1. **[!UICONTROL 웹 사용 렌디션]** 단계의 [!UICONTROL 인수]을(를) `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`(으)로 변경합니다.
+1. [!UICONTROL 웹 사용 렌디션] 단계의 **[!UICONTROL 인수]**&#x200B;을(를) `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`(으)로 변경합니다.
 1. 워크플로우를 저장합니다.
 
 수정된 워크플로를 테스트하려면 자산을 `/content/dam`에 추가하십시오.
@@ -508,19 +508,19 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 에셋이 인수의 MIME 유형과 동일한 MIME 유형인 경우 프로세스가 적용됩니다. <br>여러 MIME 형식을 정의할 수 있습니다. |
 | tn:&lt;폭>:&lt;높이> | 선택적 인수입니다. 이 프로세스는 인수에 정의된 차원으로 썸네일을 만듭니다. <br>여러 축소판을 정의할 수 있습니다. |
-| cmd: &lt;명령> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 명령은 하나만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`: 입력 파일 이름(예: original.jpg <br>) `${file}`: 입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br>) `${directory}`: 입력 파일의 디렉터리(예: `/tmp/cqdam0816.tmp` <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본 <br>`${extension}`: 입력 파일의 확장명(예: JPG)). |
+| cmd: &lt;명령> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 명령은 하나만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`: 입력 파일 이름(예: original.jpg <br>) `${file}`: 입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br>) `${directory}`: 입력 파일의 디렉터리(예: `/tmp/cqdam0816.tmp` <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본 <br>`${extension}`: 입력 파일의 확장명(예: JPG). |
 
-예를 들어 [!DNL Experience Manager] 서버를 호스팅하는 디스크에 [!DNL ImageMagick]이(가) 설치되어 있고 [!UICONTROL CommandLineProcess]을(를) 구현으로 사용하고 다음 값을 [!UICONTROL 프로세스 인수]로 사용하여 프로세스 단계를 만드는 경우:
+예를 들어 [!DNL ImageMagick] 서버를 호스팅하는 디스크에 [!DNL Experience Manager]이(가) 설치되어 있고 [!UICONTROL CommandLineProcess]을(를) 구현으로 사용하고 다음 값을 [!UICONTROL 프로세스 인수]로 사용하여 프로세스 단계를 만드는 경우:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그러면 워크플로우가 실행될 때 `image/gif` 또는 `mime:image/tiff`이(가) `mime-types`(으)로 있는 자산에만 단계가 적용됩니다. 원본 이미지의 대칭 이동 이미지를 만들어 JPG으로 변환하고 140x100, 48x48 및 10x250 치수로 세 개의 썸네일을 만듭니다.
+그러면 워크플로우가 실행될 때 `image/gif` 또는 `mime:image/tiff`이(가) `mime-types`(으)로 있는 자산에만 단계가 적용됩니다. 원본 이미지의 대칭 이동 이미지를 만들어 JPG으로 변환하고 140x100, 48x48 및 10x250 치수의 세 가지 썸네일을 만듭니다.
 
 다음 [!UICONTROL 프로세스 인수]를 사용하여 [!DNL ImageMagick]을(를) 사용하여 표준 썸네일 세 개를 만듭니다.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-[!DNL ImageMagick]을(를) 사용하여 웹 사용 렌디션을 만들려면 다음 [!UICONTROL 프로세스 인수]를 사용하십시오.
+[!UICONTROL 을(를) 사용하여 웹 사용 렌디션을 만들려면 다음 ]프로세스 인수[!DNL ImageMagick]를 사용하십시오.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 

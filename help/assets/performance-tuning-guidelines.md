@@ -1,13 +1,13 @@
 ---
 title: 성능 조정 [!DNL Assets]
-description: 병목 현상을 제거하고  [!DNL Experience Manager Assets]의 성능을 최적화하기 위한  [!DNL Experience Manager] 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소 변경 사항에 대한 제안 및 지침입니다.
+description: 병목 현상을 제거하고  [!DNL Experience Manager] 의 성능을 최적화하기 위한  [!DNL Experience Manager Assets]구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소 변경 사항에 대한 제안 및 지침입니다.
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] 성능 조정 가이드 {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] 성능 조정 안내서 {#assets-performance-tuning-guide}
 
 [!DNL Experience Manager Assets] 설치 프로그램에 여러 하드웨어, 소프트웨어 및 네트워크 구성 요소가 포함되어 있습니다. 배포 시나리오에 따라 성능 병목 현상을 제거하기 위해 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 특정 구성 변경이 필요할 수 있습니다.
 
@@ -47,7 +47,7 @@ mkfs -q /dev/ram1 800000
 
 Windows OS에서 타사 드라이버를 사용하여 RAM 드라이브를 만들거나 SSD와 같은 고성능 스토리지를 사용합니다.
 
-고성능 임시 볼륨이 준비되면 JVM 매개 변수 `-Djava.io.tmpdir`을(를) 설정하십시오. 예를 들어 [!DNL Experience Manager]의 `bin/start` 스크립트에서 `CQ_JVM_OPTS` 변수에 아래의 JVM 매개 변수를 추가할 수 있습니다.
+고성능 임시 볼륨이 준비되면 JVM 매개 변수 `-Djava.io.tmpdir`을(를) 설정하십시오. 예를 들어 `CQ_JVM_OPTS`의 `bin/start` 스크립트에서 [!DNL Experience Manager] 변수에 아래의 JVM 매개 변수를 추가할 수 있습니다.
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -130,7 +130,7 @@ Adobe에서는 많은 회사에 HTTP 트래픽을 스니프하는 방화벽이 �
 
 가능한 경우 [!UICONTROL DAM 자산 업데이트] 워크플로우를 임시 워크플로우로 설정하십시오. 이 설정은 워크플로우를 처리하는 데 필요한 오버헤드를 크게 줄입니다. 이 경우 워크플로우가 일반적인 추적 및 보관 프로세스를 통과할 필요가 없기 때문입니다.
 
-1. `https://[aem_server]:[port]/miscadmin`에 있는 [!DNL Experience Manager] 배포의 `/miscadmin`(으)로 이동합니다.
+1. `/miscadmin`에 있는 [!DNL Experience Manager] 배포의 `https://[aem_server]:[port]/miscadmin`(으)로 이동합니다.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 모델]** > **[!UICONTROL dam]**&#x200B;을 확장합니다.
 
@@ -186,7 +186,7 @@ Adobe에서는 많은 회사에 HTTP 트래픽을 스니프하는 방화벽이 �
 
 #### ImageMagick {#imagemagick}
 
-Adobe ImageMagick를 사용하여 표현물을 생성하도록 [!UICONTROL DAM 자산 업데이트] 워크플로우를 사용자 지정하는 경우 `/etc/ImageMagick/`에서 `policy.xml` 파일을 수정하는 것이 좋습니다. 기본적으로 ImageMagick은 OS 볼륨에서 사용 가능한 전체 디스크 공간과 사용 가능한 메모리를 사용합니다. 이러한 리소스를 제한하려면 `policy.xml`의 `policymap` 섹션 내에서 다음 구성을 변경합니다.
+Adobe ImageMagick를 사용하여 표현물을 생성하도록 [!UICONTROL DAM 자산 업데이트] 워크플로우를 사용자 지정하는 경우 `policy.xml`에서 `/etc/ImageMagick/` 파일을 수정하는 것이 좋습니다. 기본적으로 ImageMagick은 OS 볼륨에서 사용 가능한 전체 디스크 공간과 사용 가능한 메모리를 사용합니다. 이러한 리소스를 제한하려면 `policymap`의 `policy.xml` 섹션 내에서 다음 구성을 변경합니다.
 
 ```xml
 <policymap>
@@ -211,7 +211,7 @@ Adobe ImageMagick를 사용하여 표현물을 생성하도록 [!UICONTROL DAM �
 
 >[!NOTE]
 >
->ImageMagick `policy.xml` 및 `configure.xml` 파일을 `/etc/ImageMagick/` 대신 `/usr/lib64/ImageMagick-&#42;/config/`에서 사용할 수 있습니다. 구성 파일의 위치는 [ImageMagick 설명서](https://www.imagemagick.org/script/resources.php)를 참조하십시오.
+>ImageMagick `policy.xml` 및 `configure.xml` 파일을 `/usr/lib64/ImageMagick-&#42;/config/` 대신 `/etc/ImageMagick/`에서 사용할 수 있습니다. 구성 파일의 위치는 ImageMagick 설명서(`https://www.imagemagick.org/script/resources.php` 웹 사이트)를 참조하십시오.
 
 Adobe Managed Services(AMS)에서 [!DNL Experience Manager]을(를) 사용하는 경우 많은 대용량 PSD 또는 PSB 파일을 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe 소유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager]은(는) 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
@@ -243,7 +243,7 @@ Adobe 예를 들어 Sites 구현에서 자산을 많은 게시 인스턴스에 �
 
 ## 색인 검색 {#search-indexes}
 
-[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)을 참조하세요.
+[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)을 참조하세요.
 
 자주 실행하는 쿼리에 대한 사용자 지정 색인을 만듭니다. 자세한 내용은 [느린 쿼리 분석 방법](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 [사용자 지정 인덱스 만들기](/help/sites-deploying/queries-and-indexing.md)를 참조하십시오. 쿼리 및 색인 모범 사례에 대한 추가 인사이트를 보려면 [쿼리 및 색인화 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 
@@ -253,8 +253,8 @@ Adobe 예를 들어 Sites 구현에서 자산을 많은 게시 인스턴스에 �
 
 1. CRXDe `/crx/de/index.jsp`을(를) 열고 관리자로 로그인합니다.
 1. `/oak:index/lucene`(으)로 이동합니다.
-1. 값이 `/var`, `/etc/workflow/instances` 및 `/etc/replication`인 `String[]` 속성 `excludedPaths`을(를) 추가합니다.
-1. `/oak:index/damAssetLucene`(으)로 이동합니다. 값이 `/content/dam`인 `String[]` 속성 `includedPaths`을(를) 추가합니다. 변경 사항을 저장합니다.
+1. 값이 `String[]`, `excludedPaths` 및 `/var`인 `/etc/workflow/instances` 속성 `/etc/replication`을(를) 추가합니다.
+1. `/oak:index/damAssetLucene`(으)로 이동합니다. 값이 `String[]`인 `includedPaths` 속성 `/content/dam`을(를) 추가합니다. 변경 사항을 저장합니다.
 
 사용자가 에셋의 전체 텍스트 검색을 수행할 필요가 없는 경우(예: PDF 문서에서 텍스트 검색) 이를 비활성화합니다. 전체 텍스트 인덱싱을 비활성화하여 인덱스 성능을 향상시킵니다. [!DNL Apache Lucene] 텍스트 추출을 사용하지 않도록 설정하려면 다음 단계를 수행합니다.
 
@@ -309,4 +309,4 @@ Adobe 예를 들어 Sites 구현에서 자산을 많은 게시 인스턴스에 �
 * 워크플로우 및 버전 삭제를 구성합니다.
 * 최신 서비스 팩 및 핫픽스를 사용하여 인덱스를 최적화합니다. 사용 가능한 추가적인 색인 최적화에 대해서는 Adobe 고객 지원 센터에 문의하십시오.
 * guessTotal을 사용하여 쿼리 성능을 최적화합니다.
-* **[!UICONTROL AEM 웹 콘솔]**&#x200B;에서 **[!UICONTROL 일 CQ DAM Mime 유형 서비스]**&#x200B;를 사용하도록 설정하여 [!DNL Experience Manager]이(가) 파일 콘텐츠에서 파일 유형을 검색하도록 구성하는 경우 사용량이 적은 시간 동안 많은 파일을 대량으로 업로드하십시오.
+* [!DNL Experience Manager]AEM 웹 콘솔&#x200B;**[!UICONTROL 에서]**&#x200B;일 CQ DAM Mime 유형 서비스&#x200B;**[!UICONTROL 를 사용하도록 설정하여]**&#x200B;이(가) 파일 콘텐츠에서 파일 유형을 검색하도록 구성하는 경우 사용량이 적은 시간 동안 많은 파일을 대량으로 업로드하십시오.

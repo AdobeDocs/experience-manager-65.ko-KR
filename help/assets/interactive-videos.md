@@ -1,6 +1,6 @@
 ---
 title: 대화형 비디오
-description: Dynamic Media에서 대화형 비디오 및 구매 가능한 비디오를 사용하여 작업하는 방법에 대해 알아봅니다
+description: Dynamic Media에서 대화형 비디오 및 구매 가능한 비디오로 작업하는 방법에 대해 알아봅니다
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '5927'
+source-wordcount: '5914'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 비디오에서 바로 전환을 유도하는 대화형 비디오(구매 가능한 비디오라고도 함)를 쉽게 만들 수 있습니다. 비디오에 대한 고객 참여는 비디오 플레이어와 함께 비디오에 포함된 내용을 기반으로 관련 서비스, 정보 또는 제품 썸네일을 보기 위해 스크롤하는 패널에서 수행됩니다. 고객은 썸네일을 선택하여 서비스에 직접 연결하거나, 제품을 장바구니에 추가하여 즉시 구매하거나, 웹 페이지에 연결하여 자세한 내용을 확인할 수 있습니다.
 
-비디오가 종료되면 모든 오퍼링에 대한 시각적 요약이 표시되어 콜 투 액션을 유도합니다. 고객은 원하는 항목을 선택할 수 있는 또 다른 기회가 있습니다. 이와 같이 실행 가능하고 구체적인 경험은 고객 참여 및 전환을 증가시킵니다.
+비디오가 종료되면 모든 오퍼링에 대한 시각적 요약이 표시되어 call to action을 구동합니다. 고객은 원하는 항목을 선택할 수 있는 또 다른 기회가 있습니다. 이와 같이 실행 가능하고 구체적인 경험은 고객 참여 및 전환을 증가시킵니다.
 
 [대화형 이미지](/help/assets/interactive-images.md)도 참조하세요.
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 * 비디오를 일시 중지하고 제품의 빠른 보기를 열려면 썸네일을 선택합니다. 예를 들어, 믹서의 360도 회전 보기를 경험하려면 비디오에서 KitchenAid 썸네일 이미지를 선택하고, 믹서 세부 정보를 보려면 확대합니다.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=ko. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![대화형 구매 가능한 비디오의 프레임](assets/chlimage_1-126.png) *대화형 구매 가능한 비디오의 비디오 프레임 캡처*
 
@@ -43,37 +43,39 @@ ht-degree: 2%
 
 ### 대화형 비디오가 만들어지는 방식 보기 {#watch-how-interactive-videos-are-created}
 
-[대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo)(7분 30초)에 대해 연습합니다.
+[대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo)&#x200B;(7분 30초)에 대해 연습합니다.
 비디오 연습은 Assets on Demand로 브랜딩되었지만 원리와 단계는 Adobe Experience Manager Assets의 대화형 비디오에 여전히 적용됩니다.
 
 ### Adobe 고객 솔루션 웨비나 {#adobe-customer-success-webinar}
 
 &quot;Experience Manager Assets에서 대화형 비디오, 링크 공유 및 YouTube 공유 사용&quot; 웨비나에서는 대화형 비디오 및 기타 기능을 사용하여 전환 기반 이벤트를 비디오 마케팅 콘텐츠에 연결하는 방법을 설명합니다.
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[Experience Manager Assets에서 대화형 비디오, 링크 공유 및 YouTube 공유 사용](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/). 
+-->
 
 ## 빠른 시작: 대화형 비디오 {#quick-start-interactive-videos}
 
-다음 단계별 워크플로 설명은 Dynamic Media에서 대화형 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
+다음 단계별 워크플로 설명은 Dynamic Media의 대화형 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
 일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 *아직*&#x200B;하지 않은 대화형 활동이 추가된 이 시작 데모 웹 페이지를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 The **Examples** help to illustrate the steps of integrating interactive videos on your own website.
 
 마지막 예제 섹션에서 자습서를 마치면 완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 페이지가 다음과 같이 표시됩니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 대화형 비디오 단계:
 
 1. **(선택 사항) 빠른 보기 변수 식별** - 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 썸네일을 해당 제품 빠른 보기에 매핑합니다. [(선택 사항) 빠른 보기 변수 식별](#optional-identifying-quickview-variables)을 참조하십시오.
    *이 단계는 다음 내용이 모두 참인 경우에만 필요합니다*:
    * 빠른 보기로 트리거하여 비디오에 대화형 기능을 추가하려는 경우.
-   * Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 전자 상거래 통합 프레임워크를 사용하지 *않습니다*. Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
+   * Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다*. Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전 설정 만들기** - 비디오 스크러버 및 대화형 썸네일과 같이 플레이어를 구성하는 다양한 구성 요소의 모양 및 동작을 사용자 지정합니다.
 기본 제공 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark`을(를) 대신 사용하려는 경우에는 고유한 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -84,14 +86,14 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    >[!NOTE]
    >
-   >MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
+   >MXF 비디오 형식은 아직 Dynamic Media의 대화형 비디오와 함께 사용할 수 없습니다.
 
 1. **비디오에 대화형 작업 추가** - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에서 이미지 썸네일을 연결합니다. 각 이미지 썸네일을 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 할당합니다.
 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 대화형 비디오 자산을 게시하여 완료합니다. 게시하면 복사하고 웹 사이트 랜딩 페이지에 적용하는 포함 코드 또는 URL이 만들어집니다. [비디오에 인터랙티브 추가](#adding-interactivity-to-your-video)를 참조하십시오.
-[Publish Assets](/help/assets/publishing-dynamicmedia-assets.md)을(를) 참조하십시오.
+[Assets 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **Experience Manager에서 웹 사이트 또는 웹 사이트에 대화형 비디오를 추가** - Experience Manager Sites 또는 eCommerce를 사용하거나 둘 다 사용하는 경우 대화형 비디오를 웹 페이지에 추가할 수 있습니다. 대화형 미디어 구성 요소를 Experience Manager의 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+1. **Experience Manager의 웹 사이트 또는 웹 사이트에 대화형 비디오를 추가** - Experience Manager Sites나 전자 상거래 또는 둘 다를 사용하는 경우 대화형 비디오를 웹 페이지에 추가할 수 있습니다. 대화형 미디어 구성 요소를 Experience Manager의 페이지로 드래그합니다. [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 포함 코드 또는 URL을 사용하여 대화형 비디오를 웹 사이트 경험과 통합합니다. [대화형 비디오와 웹 사이트 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. [대화형 비디오를 기존 빠른 보기와 통합](#integrating-an-interactive-video-with-an-existing-quickview)을 참조하십시오.
    [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -103,7 +105,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >이 작업은 다음이 참인 경우에만 필요합니다.
 >
 >* 빠른 보기로 트리거하여 비디오에 대화형 기능을 추가하려는 경우.
->* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 전자 상거래 통합 프레임워크를 사용하지 *않습니다*. Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
+>* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다*. Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -150,10 +152,10 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열에 있는 단일 SKU.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL의 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서 썸네일은 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>과(와) 같은 값으로 채워진 SKU 필드만 필요합니다.</p> </td>
   </tr>
   <tr>
@@ -169,9 +171,9 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID는 <code>category=</code> 매개 변수에 저장됩니다.</p> <p>따라서 썸네일 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
       <li>SKU는 <code>305466</code>이고 <code>categoryId</code>은(는) <code>1100004</code></li>
@@ -186,7 +188,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
 위의 접근 방식을 예제 웹 사이트에 적용하면 여러 제품 썸네일이 있는 웹 페이지가 있고 각 페이지에는 &quot;자세히 보기&quot; 버튼이 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 페이지에서 사용할 수 있는 모든 제품 빠른 보기를 활성화하면 백엔드에 수행된 다음 빠른 보기 요청 목록을 가져옵니다.
 
@@ -246,7 +248,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
 >[!NOTE]
 >
->MXF 비디오 포맷은 Dynamic Media의 대화형 비디오에 사용할 수 없습니다 .
+>MXF 비디오 형식은 아직 Dynamic Media의 대화형 비디오에 사용할 수 없습니다.
 
 잘못된 비디오나 이미지를 업로드했거나 업로드한 비디오나 이미지를 더 이상 필요하지 않게 하려면 [자산 삭제](/help/assets/manage-assets.md#deleting-assets)를 참조하세요.
 
@@ -496,13 +498,13 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    >[!NOTE]
    >
-   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. `.vtt` 파일이 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
+   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. `.vtt` 파일이 `_VTT`Assets **[!UICONTROL 의 루트에 있는]** 폴더에 저장됩니다. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
-1. Publish 대화형 비디오입니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
+1. 대화형 비디오를 게시합니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
 
    빠른 보기에서 인터랙티브를 추가한 경우에는 포함 코드만 사용하고, 하이퍼링크된 웹 페이지에서 인터랙티브를 추가한 경우에는 게시된 URL도 사용할 수 있습니다. 그러나 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
-   [Publish 자산](publishing-dynamicmedia-assets.md)을 참조하세요.
+   [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -510,15 +512,15 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [대화형 비디오와 웹 사이트 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
 
-## Publish 대화형 비디오 자산 {#publishing-interactive-video-assets}
+## 대화형 비디오 자산 게시 {#publishing-interactive-video-assets}
 
-대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [Publish 자산](/help/assets/publishing-dynamicmedia-assets.md)을 참조하세요.
+대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 웹 사이트와 대화형 비디오 통합 {#integrating-an-interactive-video-with-your-website}
 
 비디오를 업로드하고, 타임라인 세그먼트를 추가하고, 대화형 비디오를 게시하면 이제 기존 웹 사이트에 추가할 준비가 된 것입니다.
 
-Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. [페이지에 Dynamic Media 에셋 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 독립형 Experience Manager Assets 고객인 경우 이 섹션에 설명된 대로 대화형 비디오를 웹 사이트에 수동으로 추가할 수 있습니다.
 
@@ -540,7 +542,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 데모 웹 사이트 사용 예:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 포함 코드는 표준입니다.
 
@@ -571,7 +573,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 통합은 Experience Manager에서 비디오 포함 코드를 제거하고 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 있는 대화형 비디오를 표시하지만 기존 빠른 보기와 아직 통합되지 않았습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 기존 빠른 보기와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -603,7 +605,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 또한 대화형 비디오 뷰어는 전체 화면 작업 모드를 지원합니다. 최종 사용자는 전체 화면을 종료하지 않고 썸네일을 선택하여 빠른 보기를 트리거합니다. 이 기능을 사용하려면 빠른 보기 모달 대화 상자가 뷰어의 컨테이너에 연결되도록 프론트엔드 코드를 변경합니다. 뷰어가 전체 화면 모드에 있는 경우 사용할 수 없는 문서 BODY 또는 기타 웹 페이지 요소를 추가하지 마십시오. 이 작업을 수행하는 코드는 페이지에 로드되는 뷰어 이후에 전송되는 하나 이상의 뷰어 콜백을 수신해야 합니다.
 
-Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 된 이벤트 처리기가 있습니다. 이것은 다음 강조 표시된 코드 조각에 표시된 대로 주석으로 처리됩니다.
+Experience Manager에서 반환한 포함 코드에는 이미 사용할 준비가 된 이벤트 핸들러가 있습니다. 이것은 다음 강조 표시된 코드 조각에 표시된 대로 주석으로 처리됩니다.
 
 ```xml
 <style type="text/css">
@@ -660,27 +662,27 @@ Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 �
   <tbody>
   <tr>
     <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>URL 경로에 있는 단일 SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -693,7 +695,7 @@ Experience Manager에서 반환한 포함 코드에 이미 사용할 준비가 �
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-다음과 같이 뷰어 코드를 통해 처리기에 전달된 `inData` 개체에서 사용할 수 있는 `categoryId` 및 `sku` 필드를 사용하여 `quickViewActivate` 처리기 내에서 이 URL을 쉽게 재구성할 수 있습니다.
+다음과 같이 뷰어 코드를 통해 처리기에 전달된 `quickViewActivate` 개체에서 사용할 수 있는 `categoryId` 및 `sku` 필드를 사용하여 `inData` 처리기 내에서 이 URL을 쉽게 재구성할 수 있습니다.
 
 ```xml
 var sku=inData.sku;
@@ -718,7 +720,7 @@ var inner_container = document.getElementById(sdkContainerId);
 
 모달 대화 상자 요소를 실제로 찾아 위의 컨테이너에 연결하는 단계는 대소문자를 구분합니다. 다시 필요한 빠른 보기 구현에 익숙한 프론트엔드 개발자의 도움을 요청할 수 있습니다.
 
-샘플 웹 사이트를 사용하는 경우 Quickview 모달 대화 상자는 `BODY` 문서에 직접 첨부된 Quickview 모달 ID를 사용하여 `DIV`(으)로 구현됩니다. 따라서 이 대화 상자를 뷰어의 컨테이너로 이동하는 코드는 다음과 같이 간단합니다.
+샘플 웹 사이트를 사용하는 경우 Quickview 모달 대화 상자는 `DIV` 문서에 직접 첨부된 Quickview 모달 ID를 사용하여 `BODY`(으)로 구현됩니다. 따라서 이 대화 상자를 뷰어의 컨테이너로 이동하는 코드는 다음과 같이 간단합니다.
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -771,8 +773,8 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+## 빠른 보기를 사용하여 사용자 정의 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
 [빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md)를 참조하십시오.
