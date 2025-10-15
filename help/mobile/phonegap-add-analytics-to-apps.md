@@ -24,7 +24,7 @@ ht-degree: 0%
 
 사용자가 모든 콘텐츠에 액세스하고 있습니까? 앱을 포기하는 것이며, 포기하는 경우 어디에 있습니까? 얼마나 자주 앱에 머무르며 앱을 사용하기 위해 다시 방문합니까? 어떤 변경 사항을 적용한 다음 이를 측정하여 보존을 늘릴 수 있습니까? 충돌 비율은 어떻습니까? 사용자들에게 앱이 충돌하고 있습니까?
 
-[Mobile Services Adobe](https://business.adobe.com/products/campaign/mobile-marketing.html)와 통합하여 Adobe Experience Manager(AEM) 앱에서 [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html)를 활용하십시오.
+[Mobile Services Adobe](https://business.adobe.com/kr/products/campaign/mobile-marketing.html)와 통합하여 Adobe Experience Manager(AEM) 앱에서 [Mobile App Analytics](https://business.adobe.com/kr/products/analytics/mobile-marketing.html)를 활용하십시오.
 
 AEM 앱을 활용하여 사용자가 모바일 앱 및 콘텐츠에 어떻게 참여하는지를 추적, 보고 및 파악하고, 시작, 앱 내 시간 및 충돌률과 같은 주요 라이프사이클 지표를 측정합니다.
 

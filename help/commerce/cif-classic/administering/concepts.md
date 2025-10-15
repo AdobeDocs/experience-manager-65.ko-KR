@@ -40,7 +40,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[eCommerce 통합 프레임워크](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html)은(는) AEM 추가 기능입니다.
+>[eCommerce 통합 프레임워크](https://business.adobe.com/kr/products/experience-manager/sites/ecommerce-integrations.html)은(는) AEM 추가 기능입니다.
 >
 >영업 담당자가 해당 엔진에 따라 세부 정보를 제공할 수 있습니다.
 

@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 활용하려면 활성화해야 합니다.
+[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 활용하려면 활성화해야 합니다.
 
 >[!WARNING]
 >
@@ -80,7 +80,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 기능 팩 18912 설치는 *선택 사항*&#x200B;입니다.
 
-기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Experience Manager 시 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)에서 사용할 수 있습니다.
+기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Experience Manager 시 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)에서 사용할 수 있습니다.
 
 자세한 내용은 [일괄 에셋 18912을 위한 기능 팩 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
 
@@ -252,7 +252,7 @@ Dynamic Media - Scene7 모드에서 기본 에셋 업로드 파일 크기는 2GB
 이 기능을 사용하려면 다음 사전 요구 사항과 점에 유의하십시오.
 
 * Dynamic Media - Scene7 모드에서 서비스 팩 6.5.4.0 이상으로 Experience Manager 6.5를 실행해야 합니다.
-* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
+* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/kr/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
 * Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소로 구성되어 있는지 확인하십시오.
 
   >[!NOTE]

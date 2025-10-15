@@ -131,7 +131,7 @@ ht-degree: 12%
    * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
    * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
-* 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe Sensei에서 제공하는 Adobe Commerce Sensei 제품 권장 사항](https://business.adobe.com/products/magento/product-recommendations.html)을 지원합니다.
+* 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe Sensei에서 제공하는 Adobe Commerce Sensei 제품 권장 사항](https://business.adobe.com/kr/products/magento/product-recommendations.html)을 지원합니다.
 
 ## 릴리스 날짜: 2021년 6월
 

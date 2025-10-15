@@ -37,7 +37,7 @@ Document Security 서버는 Document Security가 사용자 인증, 정책 실시
 
 Document Security 서버는 정책을 만들고, 정책으로 보호된 문서를 관리하고, 정책으로 보호된 문서와 관련된 이벤트를 모니터링하는 웹 기반 인터페이스(웹 페이지)를 제공합니다. 또한 관리자는 사용자 인증, 감사 및 초대된 사용자에 대한 메시지와 같은 글로벌 옵션을 구성하고 초대된 사용자 계정을 관리할 수 있습니다.
 
-서버는 AEM Forms Document Security 추가 기능 오퍼링에 포함되어 있습니다. Document Security 추가 기능을 구매하려면 AEM Forms [영업팀](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG)에 문의하십시오.
+서버는 AEM Forms Document Security 추가 기능 오퍼링에 포함되어 있습니다. Document Security 추가 기능을 구매하려면 AEM Forms [영업팀](https://business.adobe.com/kr/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG)에 문의하십시오.
 
 ### Protect 문서 {#protect-documents}
 

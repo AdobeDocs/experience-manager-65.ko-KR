@@ -126,4 +126,4 @@ jpegSize는 메모리가 제한된 장치에 이미지가 전달될 때 특정 �
 
 * URL에서 직접 다양한 매개 변수를 실시간으로 테스트해 보십시오.
 * 가장 좋은 방법은 Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화하는 것입니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$`과(와) 같은 사용자 지정 사전 설정 이름이 있는 URL 명령 매크로입니다. URL 경로의 사용자 지정 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
-* Experience Manager은 또한 수집 시 이미지 선명하게 하기 적용과 같이, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하는 옵션이 있는 고급 사용 사례의 경우 [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)을(를) 통해 사용자 지정된 통찰력과 모범 사례를 확인할 수 있습니다.
+* Experience Manager은 또한 수집 시 이미지 선명하게 하기 적용과 같이, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하는 옵션이 있는 고급 사용 사례의 경우 [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)을(를) 통해 사용자 지정된 통찰력과 모범 사례를 확인할 수 있습니다.

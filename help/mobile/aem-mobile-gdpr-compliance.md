@@ -29,7 +29,7 @@ AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비�
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html)을(를) 참조하세요. 다음은 GDPR 요청을 시작하기 위해 Adobe을 사용하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
+Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://business.adobe.com/kr/privacy/general-data-protection-regulation.html](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)을(를) 참조하세요. 다음은 GDPR 요청을 시작하기 위해 Adobe을 사용하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
 
 AEM Mobile을 이전 Digital Publishing Suite 제품과 혼동하지 않도록 다음 위치에서 Digital Publishing Suite 제품에 로그인할 수 있습니다.
 

@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR 및 CCPA와 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
-데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. Adobe 개인 정보 보호 센터의 [GDPR 페이지](https://business.adobe.com/privacy/general-data-protection-regulation.html)를 참조하세요.
+데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. Adobe 개인 정보 보호 센터의 [GDPR 페이지](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)를 참조하세요.
 
 >[!NOTE]
 >

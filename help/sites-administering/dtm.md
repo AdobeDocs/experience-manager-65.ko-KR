@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Adobe Dynamic Tag Management과 통합 {#integrating-with-adobe-dynamic-tag-management}
 
-Adobe Dynamic Tag Management 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [Dynamic Cloud를 AEMTag Management 과 통합](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html)합니다. Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
+Adobe Dynamic Tag Management 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [Dynamic Cloud를 AEMTag Management 과 통합](https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html)합니다. Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
 
 통합하기 전에 AEM 사이트의 도메인을 추적하는 Dynamic Tag Management [웹 속성](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)을 만드십시오. Dynamic Tag Management 라이브러리에 액세스하도록 AEM을 구성할 수 있도록 웹 속성의 [호스팅 옵션](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)을 구성해야 합니다.
 

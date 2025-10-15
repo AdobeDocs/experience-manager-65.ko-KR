@@ -21,13 +21,13 @@ ht-degree: 0%
 
 기능 팩 18912 설치는 *선택 사항*&#x200B;입니다.
 
-기능 팩 18912을 사용하면 FTP를 통해 자산을 Dynamic Media - Scene7 Adobe Experience Manager 모드로 직접 대량 수집할 수 있습니다. 또한 Experience Manager에서 Dynamic Media Classic의 자산을 Dynamic Media - Scene7 모드로 마이그레이션할 수 있습니다. 기능 팩은 [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)에서 사용할 수 있습니다.
+기능 팩 18912을 사용하면 FTP를 통해 자산을 Dynamic Media - Scene7 Adobe Experience Manager 모드로 직접 대량 수집할 수 있습니다. 또한 Experience Manager에서 Dynamic Media Classic의 자산을 Dynamic Media - Scene7 모드로 마이그레이션할 수 있습니다. 기능 팩은 [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)에서 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
 >기능 팩을 사용하여 Experience Manager에서 Dynamic Media Classic에서 Dynamic Media - Scene7 모드로 자산을 대량 마이그레이션할 수 있습니다. Dynamic Media Classic의 FTP 기능을 사용하여 자산을 대량 마이그레이션할 수도 있습니다. 그러나 Adobe은 복잡성 때문에 이러한 방법 중 하나를 사용하는 것이 좋습니다(*not*).
 >
->따라서 이 마이그레이션 기능 팩은 [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)을(를) 통해 완료 시 마이그레이션 프로젝트의 일부로 *only*&#x200B;이(가) 지원됩니다.
+>따라서 이 마이그레이션 기능 팩은 [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)을(를) 통해 완료 시 마이그레이션 프로젝트의 일부로 *only*&#x200B;이(가) 지원됩니다.
 
 기능 팩을 설치하기 전에 서비스 사용자를 만들고 Adobe 지원에 해당 정보를 제공합니다.
 

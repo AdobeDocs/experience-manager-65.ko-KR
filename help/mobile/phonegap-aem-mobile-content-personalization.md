@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >이 문서는 AEM Mobile 참조에 대한 권장 시작점인 [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md) 안내서의 일부입니다.
 
-AEM Mobile 콘텐츠 개인화 기능을 사용하면 [AEM 작성자](#author)가 [Adobe Target](https://business.adobe.com/products/target/adobe-target.html)을(를) 사용하여 모바일 앱 콘텐츠를 개인화할 수 있습니다. 이렇게 하면 모바일 애플리케이션 사용자에게 타깃팅된 오퍼를 전달할 수 있습니다. Adobe Experience Manager Mobile은 사용자에게 고유한 개인 취향에 맞는 콘텐츠를 제공할 콘텐츠를 만들고, 타깃팅하고, 전달하는 기능을 제공합니다.
+AEM Mobile 콘텐츠 개인화 기능을 사용하면 [AEM 작성자](#author)가 [Adobe Target](https://business.adobe.com/kr/products/target/adobe-target.html)을(를) 사용하여 모바일 앱 콘텐츠를 개인화할 수 있습니다. 이렇게 하면 모바일 애플리케이션 사용자에게 타깃팅된 오퍼를 전달할 수 있습니다. Adobe Experience Manager Mobile은 사용자에게 고유한 개인 취향에 맞는 콘텐츠를 제공할 콘텐츠를 만들고, 타깃팅하고, 전달하는 기능을 제공합니다.
 
 AEM에서 작성자가 이 콘텐츠를 만들려면 먼저 관리자와 개발자가 환경을 준비해야 합니다.
 
