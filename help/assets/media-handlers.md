@@ -24,7 +24,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->[에서 지원하는 모든 형식과 각 형식에 대해 지원되는 기능에 대한 설명은 ](assets-formats.md)지원되는 자산 형식[!DNL Assets] 페이지를 참조하십시오.
+>[에서 지원하는 모든 형식과 각 형식에 대해 지원되는 기능에 대한 설명은 &#x200B;](assets-formats.md)지원되는 자산 형식[!DNL Assets] 페이지를 참조하십시오.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
@@ -123,7 +123,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 다음은 예제 템플릿입니다.
 
-package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
+package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
 
 인터페이스 및 클래스는 다음과 같습니다.
 
@@ -137,7 +137,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 다음과 같이 진행합니다.
 
-[ 플러그인으로 Eclipse를 설치 및 설정하고 ](../sites-developing/dev-tools.md) 프로젝트에 필요한 종속성을 설정하려면 [!DNL Maven]개발 도구[!DNL Maven]를 참조하십시오.
+[&#x200B; 플러그인으로 Eclipse를 설치 및 설정하고 &#x200B;](../sites-developing/dev-tools.md) 프로젝트에 필요한 종속성을 설정하려면 [!DNL Maven]개발 도구[!DNL Maven]를 참조하십시오.
 
 다음 절차를 수행하면 TXT 파일을 [!DNL Experience Manager]에 업로드할 때 파일의 메타데이터가 추출되고 워터마크가 포함된 두 개의 썸네일이 생성됩니다.
 
@@ -520,7 +520,7 @@ This section describes how to set the [!UICONTROL Process Arguments] of the [!UI
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-[!UICONTROL 을(를) 사용하여 웹 사용 렌디션을 만들려면 다음 ]프로세스 인수[!DNL ImageMagick]를 사용하십시오.
+[!UICONTROL 을(를) 사용하여 웹 사용 렌디션을 만들려면 다음 &#x200B;]프로세스 인수[!DNL ImageMagick]를 사용하십시오.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
