@@ -7,10 +7,10 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: ee81b9090505b357e63d6983adffdc947eda37e5
+source-git-commit: 3d4396ede2abe477665a8cc4877245780e555078
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 11%
+source-wordcount: '934'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(2분 39초)을 간단히 살펴볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475199/?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -80,6 +80,68 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 프로덕션 AEM Cloud Service 또는 Managed Services 환경이 없는 경우 선택 옵션이 흐리게 표시됩니다(사용할 수 없음).
 
 ![프로덕션 환경이 없는 Experience Hub](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
+
+## 자주 묻는 질문 (FAQ) {#faq}
+
++++**Adobe Experience Manager 내에서 Adobe Experience Hub의 주요 목적은 무엇입니까?**
+
+Adobe Experience Hub은 Adobe Experience Manager 내의 콘텐츠, 에셋 및 사이트 관리를 위한 중앙 집중식 시작점 역할을 하며 사용자 역할 및 목표에 따라 개인화된 경험을 제공합니다.
+
++++
+
++++**Experience Hub은 어떻게 다양한 사용자 역할에 적응합니까?**
+
+Experience Hub은 작성자, 에셋 사서, 관리자 및 IT에 대한 역할 기반 보기와 빠른 작업을 보여 줍니다. 각 역할은 필요한 도구와 기능에 빠르게 액세스할 수 있습니다.
+
++++
+
++++**Experience Hub 탐색 및 레이아웃의 일부 기능은 무엇입니까?**
+
+Experience Hub은 통합 왼쪽 탐색 기능을 사용하여 핵심 AEM 기능, 사용자 정의 가능한 위젯 및 빠른 작업을 구성합니다. 이 레이아웃은 조직화되고 효율적인 작업 공간을 만듭니다.
+
++++
+
++++**사용자가 어떻게 Experience Hub 작업 영역을 개인화할 수 있습니까?**
+
+사용자는 위젯을 추가, 제거, 크기 조정 및 재배열할 수 있으며 빠른 작업을 사용자 정의하여 요구 사항과 환경 설정에 따라 작업 영역을 맞춤화할 수 있습니다.
+
++++
+
++++**Experience Hub을 사용하여 빠르게 수행할 수 있는 작업 유형은 무엇입니까?**
+
+Experience Hub은 사용자의 역할에 맞게 콘텐츠 만들기, 에셋 업로드 또는 팀 액세스 관리와 같은 중요한 작업을 위한 원클릭 단축키를 제공합니다.
+
++++
+
++++**Experience Hub을 통해 다양한 AEM 기능을 탐색하는 방법은 무엇입니까?**
+
+**도구** 또는 **서비스**&#x200B;에서 Experience Hub의 기본 탐색을 사용하면 Assets, Sites, Forms, 콘텐츠 조각 및 시작과 같은 AEM 기능에 빠르게 액세스할 수 있습니다.
+
++++
+
++++**Experience Hub에서 위젯의 중요성은 무엇입니까?**
+
+Experience Hub의 위젯은 사용자가 최근 활동을 추적하고 제품 업데이트에 대한 정보를 유지하는 것과 같이 작업을 효율적으로 관리하는 데 도움이 되는 사용자 정의 가능한 요소입니다.
+
++++
+
++++**사용자가 Experience Hub을 사용하여 여러 AEM 환경을 관리하는 방법은 무엇입니까?**
+
+사용자는 타겟팅할 환경을 선택하고 즐겨찾기를 고정하여 즐겨찾기를 맨 위에 유지할 수 있습니다. 단축키는 이러한 환경 내에서 솔루션과 페이지를 엽니다.
+
++++
+
++++**AEM에서 AI Assistant는 어떤 역할을 합니까?**
+
+AEM의 AI 어시스턴트는 사전 요구 사항 기준을 완료한 사용자가 사용할 수 있으며, 조직 내에서 추가적인 지원과 통찰력을 제공합니다.
+
++++
+
++++**프로덕션 AEM Cloud Service 또는 Managed Services 환경이 없으면 어떻게 됩니까?**
+
+프로덕션 환경이 없는 경우 Experience Hub의 선택 옵션이 흐리게 표시되어 사용할 수 없습니다.
+
++++
 
 ## AEM 내 AI 어시스턴트
 
