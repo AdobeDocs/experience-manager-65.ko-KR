@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
+source-git-commit: 0e80096b6b49372765b04a3bc1438b93d9cccf6e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 3%
 
 ---
 
@@ -34,11 +34,15 @@ AEM 6.5 설정에서 기능 전환을 활성화하기 전에 다음을 확인하
 
 * 사용자가 `forms-users` 그룹의 구성원입니다.
 
-* `http://<author-instance-url>:portnumber/system/console/bundles`(으)로 이동하여 **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** 번들이 있는지 확인합니다. 없는 경우 [링크에서 번들을 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)합니다.
+* `http://<author-instance-url>:portnumber/system/console/bundles`(으)로 이동하여 **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** 번들이 있는지 확인합니다. 없는 경우 [링크에서 번들을 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar)합니다.
 
-  ![기능 전환](/help/forms/using/assets/feature-toggle-6.5.png)
+![기능 전환](/help/forms/using/assets/feature-toggle-1.1.8.png)
 
-## 기능 활성화 전환 {#enable-feature-toggle-65}
+>[!NOTE]
+>
+>필요에 따라 AEM 6.5 환경 또는 이전 버전에서 기능 전환을 활성화할 수 있습니다.
+
+## 기능 토글 활성화 {#enable-feature-toggle-65}
 
 조기 채택자 또는 새 기능에 대한 기능 전환은 아래 단계에 따라 **AEM 웹 콘솔**&#x200B;을 통해 구성할 수 있습니다.
 
