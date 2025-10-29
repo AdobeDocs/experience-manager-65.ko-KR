@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 730f8cabd6825ed289238f9000037644a8139301
+source-git-commit: e3901bbcb82b3c05d95b0d2bb8addab049dc3a4e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '409'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ AEM 6.5 설정에서 작업할 때 기능에서 도움말을 토글합니다.
 
 ## 고려 사항
 
-AEM 6.5 SP23 이상에서는 번들 [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/)이(가) Forms 추가 기능과 함께 이미 설치되어 있으므로 설치할 필요가 없습니다.
+AEM 6.5 SP23 이상에서는 번들 [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/)이(가) Forms 추가 기능 AEM 서비스 팩과 함께 이미 설치되어 있으므로 설치할 필요가 없습니다.
 
 ## 사전 요구 사항
 
