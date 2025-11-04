@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+source-git-commit: 650131b88e06d59e6c206e07b8512149cd360b08
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1987'
 ht-degree: 2%
 
 ---
@@ -32,15 +32,15 @@ ht-degree: 2%
   <tr>
     <td>
       <strong>2025년 10월 14일</strong><br>
-      <em>적용 대상:</em> ImgToPdf가 AEM Forms SP23 Jboss 핫픽스3(109)<br>에서 실패했습니다.
+      <em>적용 대상:</em> ImgToPdf가 AEM Forms SP23 Jboss로 실패<br>
     </td>
     <td>
-    <ul> 해결 방법은 [Adobe Experience Manager Forms 지원](https://business.adobe.com/in/support/main.html)에 문의하십시오.
+    <ul> 해결 방법은 <a href="https://business.adobe.com/in/support/main.html">Adobe Experience Manager Forms 지원</a>에 문의하십시오.
     </ul>
     </td>
     <td>
     <ul>
-    <li> <b>(FORMS-22029):</b> 핫픽스 3을 사용하여 SP23으로 업그레이드한 후 PDF Generator(PDFG)가 이미지 파일을 PDF으로 변환하지 못해 예기치 않은 후처리 오류가 발생하는 문제를 해결하여 PDF 변환 안정성을 향상시킵니다.
+    <li> <b>(FORMS-22029):</b> SP23으로 업그레이드한 후 PDF Generator(PDFG)가 이미지 파일을 PDF으로 변환하지 못해 예기치 않은 후처리 오류가 발생하는 문제를 해결하여 PDF 변환 안정성을 향상시킵니다.
       <ul>
   <tr>
     <td>
@@ -48,15 +48,15 @@ ht-degree: 2%
     </td>
     <td>
     <ul>
-    <li><strong>보스:</strong></li>
-    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 핫픽스3</a></li>
-    <li>Linux- JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz">핫픽스3</a></li>
-    <li><strong>Weblogic:</strong></li>
-    <li>Windows- Weblogic JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">핫픽스3</a></li>
-    <li>Linux- Weblogic JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">핫픽스3</a></li>
-    <li><strong>Websphere:</strong></li>
-    <li>Windows- Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">핫픽스3</a></li>
-    <li>Linux- Websphere JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz">핫픽스3</a></li>
+    <strong>Jboss:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz">JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <strong>Weblogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">Weblogic JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- Weblogic JEE 서버용 Linux에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">핫픽스</a></li>
+    <strong>Websphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- Websphere JEE 서버용 Linux에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz">핫픽스</a></li>
     </ul>
     </td>
     <td>
@@ -64,7 +64,7 @@ ht-degree: 2%
     <strong>이 핫픽스는 다음을 수정합니다.</strong> 
     <li> <b>(FORMS-21378):</b> SSV(Server-Side Validation)를 사용하고 계산된 Meta 정보가 비어 있는 경우 제출이 실패하는 문제를 해결하여 양식 제출 안정성을 개선했습니다.
 
-<li> <b>(FORMS-21721):</b> 6.5.23.0 맨 위에서 핫픽스 2를 배포한 후 PS에서 PDF으로, HTML에서 PDF으로(WebKit) 전환하지 못하는 문제가 개선되었습니다. 
+<li> <b>(FORMS-21721):</b> 6.5.23.0용 핫픽스(<b>2025년 8월 5일</b>에 릴리스됨)를 배포한 후 PS에서 PDF으로, HTML에서 PDF으로(WebKit) 전환하지 못하는 문제가 개선되었습니다. 
     </li>
     </ul>
     </td>    
@@ -83,14 +83,14 @@ ht-degree: 2%
     <td>
     <ul>
     <li><strong>보스:</strong></li>
-    <li>Windows- JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">핫픽스2</a></li>
-    <li>Linux- JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">핫픽스2</a></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
     <li><strong>Weblogic:</strong></li>
-    <li>Windows- Weblogic JEE 서버용 Windows의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">핫픽스2</a></li>
-    <li>Linux- Weblogic JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">핫픽스2</a></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">Weblogic JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- Weblogic JEE 서버용 Linux에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">핫픽스</a></li>
     <li><strong>Websphere:</strong></li>
-    <li>Windows- Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">핫픽스2</a></li>
-    <li>Linux- Websphere JEE 서버용 Linux의 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">핫픽스2</a></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.23.0용 핫픽스</a></li>
+    <li>Linux- Websphere JEE 서버용 Linux에서 AEM 서비스 팩 6.5.23.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">핫픽스</a></li>
     </ul>
     </td>
     <td>
@@ -200,10 +200,10 @@ ht-degree: 2%
     <td>2024년 6월 21일 토요일</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">JBoss JEE 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Weblogic JEE 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Webshpere JEE 서버 </a>에서 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">OSGi 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">JBoss JEE 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Weblogic JEE 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Webshpere JEE 서버 </a>에서 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">OSGi 서버 </a>의 AEM 서비스 팩 6.5.21.0 또는 AEM Forms 서비스 팩 6.5.22.0용 핫픽스 </li>
      </ul>
      </td>
     <td>
