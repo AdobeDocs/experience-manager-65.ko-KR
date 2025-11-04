@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
 workflow-type: tm+mt
-source-wordcount: '6713'
-ht-degree: 13%
+source-wordcount: '6746'
+ht-degree: 25%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 13%
 
 ## [!DNL Experience Manager] 6.5.23.0에 포함된 항목 {#what-is-included-in-aem-6523}
 
-[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [&#x200B; 6.5에서 &#x200B;](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
+[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -52,7 +52,7 @@ ht-degree: 13%
 * A ()
 -->
 
-### Forms {#forms-sp23}
+### 양식 {#forms-sp23}
 
 이번 릴리스의 주요 기능 및 개선 사항은 다음과 같습니다.
 
@@ -74,7 +74,7 @@ ht-degree: 13%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 * FORMS-20533, FORMS-20532: 이제 AEM Forms에 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
@@ -222,7 +222,7 @@ ht-degree: 13%
 * A () -->
 
 
-#### 리치 텍스트 편집기{#sites-rte-6523}
+#### 서식 있는 텍스트 편집기{#sites-rte-6523}
 
 일반 텍스트 붙여넣기 모드로 리치 텍스트 편집기에서 예기치 않은 `<br>`개 태그를 수정했습니다. 이제 일반 텍스트 `defaultPasteMode`을(를) 사용할 때 서식 있는 텍스트 편집기에서 잘라내기 및 붙여넣기 작업을 올바르게 처리합니다. 이 수정 사항으로 인해 사용자가 RTE 필드 내에서 텍스트를 잘라내어 붙여넣을 때 예기치 않은 `<br>` 태그가 삽입되지 않으므로 콘텐츠를 편집하는 동안 깔끔한 서식이 유지됩니다. (SITES-27780)
 
@@ -233,11 +233,11 @@ ht-degree: 13%
 
 ### [!DNL Assets]{#assets-6523}
 
-* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 &#x200B;](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후&#x200B;**[!UICONTROL &#x200B; 온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -278,75 +278,75 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 #### Forms Designer
 
-* 사용자가 exportDataAPI를 사용하여 XFA 기반 PDF에 대한 데이터를 내보낼 때 결과 XML이 Acrobat Reader을 사용하여 수동으로 내보낸 XML 데이터와 비교할 때 불일치를 표시합니다. 일부 필드의 값이 Acrobat Reader에서 생성된 출력과 비교하여 출력에서 누락되었습니다. (LC-3922791)
+* 사용자가 exportDataAPI를 사용하여 XFA 기반 PDF에 대한 데이터를 내보낼 때 결과 XML이 Acrobat Reader를 사용하여 수동으로 내보낸 XML 데이터와 불일치합니다. Acrobat Reader에서 생성된 출력과 비교했을 때 일부 필드의 값이 출력에 누락되었습니다. (LC-3922791)
 
 * AEM Forms 6.5.22.0에서 Workbench의 출력 서비스로 태그가 지정된 PDF을 생성하면 목차 항목의 참조 태그 아래에 예기치 않은 레이블 태그가 추가됩니다. (LC-3922756)
 
-* 사용자가 AEM Forms Designer에서 아래쪽 또는 오른쪽 맞춤의 필드 캡션을 배치하면 태그 트리에 해당 값 없이 캡션만 포함되어 불완전한 접근성 태깅이 발생합니다. (LC-3922619)
+* 사용자가 AEM Forms Designer에서 필드 캡션을 하단 또는 오른쪽 정렬로 배치하면 태그 트리에 해당 값이 없는 캡션만 포함되어 접근성 태그 지정이 불완전해집니다. (LC-3922619)
 
-* AEM Forms 6.5 서비스 팩 6에서 AEM Forms 서비스 팩 20으로 업그레이드 시 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 줍니다. (LC-3922551)
+* AEM Forms 6.5 서비스 팩 6에서 AEM Forms 서비스 팩 20으로 업그레이드 시 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 미칩니다. (LC-3922551)
 
 * 사용자가 AEM Forms 서비스 팩 18의 에이전트 UI에서 문자를 렌더링할 때 FormService.render() API로 인해 콘텐츠가 올바르게 표시되지 않습니다. (LC-3922461)
 
-#### Forms
+#### 양식
 
-* AEM Forms에서 루트 패널에서 &quot;제목에 대한 리치 텍스트 허용&quot;을 활성화하면 중첩된 패널에서 &quot;기록 문서에서 제목 제외&quot;가 루트 패널의 제목을 잘못 숨깁니다. 생성된 기록 문서에서도 마찬가지입니다. (FORMS-19696)
+* AEM Forms에서 루트 패널에 “제목에 리치 텍스트 허용”을 활성화하면 중첩된 패널에서 “기록 문서에서 제목 제외”가 기록 문서에 루트 패널의 제목을 잘못 숨깁니다. 이는 생성된 기록 문서에서 수행됩니다. (FORMS-19696)
 
 * 시스템은 AEM 6.5의 JSON 스키마에서 `sling:resourceType`을(를) 통해 할당된 사용자 지정 `aem:afProperties`을(를) 무시합니다. 렌더링하는 동안 사용자 지정 리소스 유형이 무시됩니다. (FORMS-19691)
 
-* 사용자가 URI를 사용하여 미리 채워진 첨부 파일이 있는 적응형 양식을 제출할 때 이진 데이터가 누락되어 양식 제출이 NullPointerException으로 실패합니다. (FORMS-19371) (FORMS-19486)
+* 사용자가 URI를 사용하여 미리 채워진 첨부 파일로 적응형 양식을 제출하면 바이너리 데이터가 누락되어 NullPointerException으로 인해 양식 제출이 실패합니다. (FORMS-19371) (FORMS-19486)
 
 * 사용자가 PDF 6.5 Forms의 &#39;Forms 및 문서&#39; 섹션 아래에 AEM을 업로드하면 타임라인 기능이 작동하지 않습니다. (FORMS-19407)(FORMS-19234)
 
-* 사용자가 AEM Forms에서 기본 제공(OOTB) 파일 첨부 구성 요소를 사용하여 파일을 업로드할 때 보안 취약성이 식별됩니다. 이 문제는 권한 없는 엔터티에 의해 제출 프로세스를 잠재적으로 차단하는 결과를 초래합니다. (FORMS-19271)
+* 사용자가 AEM Forms의 기본 제공(OOTB) 파일 첨부 구성 요소로 파일을 업로드하면 보안 취약성이 식별됩니다. 이 문제로 인해 승인되지 않은 엔티티가 제출 프로세스를 가로챌 가능성이 있습니다. (FORMS-19271)
 
-* 사용자가 기록 문서(DoR)를 자동으로 생성하도록 AEM Forms에서 기본 제공 적응형 양식을 구성할 때 Acrobat Reader 문서 속성의 &quot;제목&quot; 필드에 캡처된 DoR 제목이 표시되지 않습니다. 기본적으로 파일 이름 대신 양식 제목이 표시되지 않습니다. (FORMS-19263)
+* 사용자가 기록 문서(DoR)를 자동으로 생성하도록 AEM Forms의 기본 제공 적응형 양식을 구성하면 Acrobat Reader의 문서 속성에 있는 “제목” 필드에 캡처된 DoR 제목이 표시되지 않습니다. 기본적으로 양식 제목은 파일 이름 대신 나타나지 않습니다. (FORMS-19263)
 
-* 사용자가 에이전트 UI에서 대화형 통신을 열면 미리 채워진 데이터를 완전히 지울 수 없습니다. 제거할 때 동일한 데이터로 자동으로 다시 채워집니다. (FORMS-19151)
+* 사용자가 에이전트 UI에서 대화형 커뮤니케이션을 열면 미리 채워진 데이터를 완전히 지울 수 없습니다. 제거 시 동일한 데이터로 자동으로 채워집니다. (FORMS-19151)
 
-* 사용자가 에이전트 UI에서 날짜 필드를 미리 볼 때 날짜가 예기치 않게 변경됩니다. 이 문제는 VM의 UTC 설정과 시스템의 날짜 해석 간 시간대 불일치로 인해 발생합니다. (FORMS-19115)
+* 사용자가 에이전트 UI에서 날짜 필드를 미리 볼 때 날짜가 예기치 않게 변경됩니다. 이 문제는 VM의 UTC 설정과 시스템의 날짜 해석 간의 시간대 불일치로 인해 발생합니다. (FORMS-19115)
 
-* 사용자가 양식을 제출할 때 첨부 파일이 중복되어 동일한 파일이 여러 번 업로드될 수 있습니다. (FORMS-19045)(FORMS-19051)
+* 사용자가 양식을 제출하면 파일 첨부 파일이 중복되어 동일한 파일이 여러 번 업로드될 수 있습니다. (FORMS-19045)(FORMS-19051)
 
 * 프로덕션 환경과 하위 환경 모두에서 AEM 6.5 Document Security의 정책 세트에 코디네이터를 추가할 수 없습니다. (FORMS-18603, FORMS-18212, FORMS-19697)
 
 * 사용자가 데스크탑 모드에서 AEM Forms 서비스 팩 22의 빈 필드로 &quot;datepicker-calendar-icon&quot;을 클릭하면 정의되지 않은 _$focusedDate 변수로 인해 오류가 발생하여 연관된 사용자 정의 스크립트가 중단됩니다. (FORMS-18483)(FORMS-18268)
 
-* AEM Forms 서비스 팩 19(6.5.19.0)에서 고객이 문자를 미리 볼 때 &#39;단어 단위&#39; 필드에 숫자 값이 잘못 표시되거나 업데이트되지 않아 콘텐츠가 잘못 정렬되고 공백이 누락됩니다. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
+* AEM Forms 서비스 팩 19(6.5.19.0)에서 고객이 문자를 미리 볼 때 &#39;단어 단위&#39; 필드에 숫자 값이 잘못 표시되거나 업데이트되지 않아 콘텐츠가 잘못 정렬되고 공백이 누락됩니다. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 
 * 고객이 RHEL에서 AEM Forms 6.5 SP19에 저장된 문자를 미리 보면 콘텐츠가 잘못 정렬되고, 공백이 없고, &#39;x&#39;와 같은 예기치 않은 문자가 나타납니다. (FORMS-18422)(FORMS-17641)
 
-* 사용자가 AEM Forms에서 탭 간을 이동할 때 첫 번째 탭의 구성 요소 선택이 응답하지 않습니다. (FORMS-18345)
+* 사용자가 AEM Forms의 탭 사이를 이동하면 첫 번째 탭의 구성 요소 선택이 응답하지 않습니다. (FORMS-18345)
 
 * AEM Forms 6.5.21.0에서 사용자가 WebToPDF 옵션을 사용하여 HTML 파일을 PDF으로 변환할 때 출력 PDF에 메타데이터 및 제목 태그를 포함한 헤더 섹션이 없습니다. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 
-* AEM JEE Process Manager SDK에서 사용자가 retryAction(long actionOid) 메서드를 호출하면 시스템이 tb_action_instance 테이블에 있는 첫 번째 작업을 잘못 다시 시도합니다. 이 워크플로우는 특정 작업 ID가 제공되거나 ID가 null인 경우에도 발생하며 이로 인해 의도하지 않은 동작이 발생합니다. (FORMS-18187)
+* AEM JEE Process Manager SDK에서 사용자가 retryAction(long actionOid) 메서드를 호출하면 시스템이 tb_action_instance 테이블에서 발견된 첫 번째 작업을 잘못 재시도합니다. 이 워크플로는 특정 작업 ID가 제공되거나 ID가 null인 경우에도 발생하여 의도하지 않은 비헤이비어가 발생합니다. (FORMS-18187)
 
 * SP22로 업데이트한 후 오류 메시지를 표시하지 않고 저장된 초안 및 제출 기능에 오류가 발생하는 문제가 발생합니다. (FORMS-18069)
 
 * AEM 6.5.21.0에서 XSD 기반 기초 구성 요소에서 핵심 구성 요소로 전환하면 JSON 스키마의 파일 간 참조 구현이 방해되어 적응형 Forms 마이그레이션에 영향을 줍니다. (FORMS-18065)
 
-* 사용자가 에이전트 UI에서 편지를 미리 볼 때 IC 시간 변환 문제로 인해 날짜 필드에 잘못된 값이 표시됩니다. 이러한 불일치는 VM 환경과 시스템의 시간 해석(UTC 대 현지 시간) 간의 시간대 차이로 인해 발생합니다. (FORMS-17988) (FORMS-17248)
+* 사용자가 에이전트 UI에서 문자를 미리 볼 때 IC 시간 변환 문제로 인해 날짜 필드에 잘못된 값이 표시됩니다. 이러한 불일치는 VM 환경과 시스템의 시간 해석(UTC 및 현지 시간) 간의 시간대 차이로 인해 발생합니다. (FORMS-17988) (FORMS-17248)
 
-* 사용자가 AEM Forms에서 알림 IC 템플릿을 사용하여 문자를 미리 볼 때 PDF 생성 시간이 동일한 서버에서도 1.5초에서 10초 이상 크게 다릅니다. 이러한 불일치는 비즈니스 크리티컬 워크플로우에 영향을 줍니다. (FORMS-17951)
+* 사용자가 AEM Forms에서 Notice IC 템플릿을 사용하여 문자를 미리 보면 동일한 서버에서도 PDF 생성 시간이 1.5초에서 10초 이상까지 크게 다릅니다. 이 불일치는 비즈니스에 중요한 워크플로에 영향을 미칩니다. (FORMS-17951)
 
-* 사용자가 &#39;데이터 소스&#39; 옵션을 사용하여 적응형 양식의 스크리블 서명 개체를 XDP에 바인딩하면 변경 사항을 저장할 수 없습니다. 이는 유효한 값을 사용하더라도 지속적인 종횡비 유효성 검사 오류 때문입니다. (FORMS-17587)
+* 사용자가 &#39;데이터 소스&#39; 옵션을 사용하여 적응형 양식의 스크리블 서명 오브젝트를 XDP에 바인딩하면 변경 사항을 저장할 수 없습니다. 유효한 값을 사용할 때도 종횡비 유효성 검사 오류가 지속적으로 발생하기 때문입니다. (FORMS-17587)
 
-* 사용자가 문서 조각에 대해 숨겨진 필드가 많은 특정 XDP를 사용하면 AEM에서 `cm:optional` 속성이 false로 설정된 CRX 노드를 만들며, 이로 인해 IC(대화형 통신) 제출이 실패합니다. (FORMS-17538)
+* 사용자가 문서 조각에 숨겨진 필드가 많은 특정 XDP를 사용할 때, AEM은 `cm:optional` 속성이 false로 설정된 CRX 노드를 생성하여 인터랙티브 커뮤니케이션(IC) 제출이 실패하게 됩니다. (FORMS-17538)
 
-* AEM Forms 6.5.19.0에서 고객이 문자를 미리 볼 때 Lead 및 Frac에 대한 숫자 제한을 정의할 때 숫자 상자 필드가 음수 값을 올바르게 처리하지 못합니다. 이 문제는 빼기 기호를 숫자의 일부로 처리하는 parseFloat의 사용으로 인해 발생합니다. (FORMS-17451)
+* AEM Forms 6.5.19.0에서 고객이 문자를 미리 볼 때 Lead 및 Frac에 대한 숫자 제한을 정의할 때 숫자 상자 필드가 음수 값을 올바르게 처리하지 못합니다. 이 문제는 빼기 기호를 숫자의 일부로 처리하는 parseFloat를 사용하기 때문에 발생합니다. (FORMS-17451)
 
 * AEM Forms 6.5에서 편지를 미리 보면 Adobe.json 파일에 &quot;*&quot; 와일드카드가 사용된다는 사실을 인지하여 해당 목적과 잠재적인 수정 사항에 대해 우려를 낳고 있습니다. (FORMS-17317)
 
 * 사용자가 `Apply for a Fixed Rate Saver joint account`에서 화면 판독기를 사용하면 제목이 `clickable`(으)로 잘못 표시되어 접근성 문제가 발생합니다. (FORMS-17038)
 
-* 양식이 임베드되면 생성된 iframe에 제목 속성이 누락되어 액세스 가능성 준수 문제가 발생합니다. (FORMS-17010)
+* 양식이 임베드되면 생성된 iframe에 제목 속성이 누락되어 접근성 규정 준수 문제가 발생합니다. (FORMS-17010)
 
-* Forms Manager UI를 사용하여 양식을 다운로드하면 항상 테마 및 조각과 같은 관련 종속성이 포함됩니다. (FORMS-15811)
+* Forms Manager UI를 사용하여 양식을 다운로드하면 테마 및 조각과 같은 관련 종속성이 항상 포함됩니다. (FORMS-15811)
 
-* 사용자가 모바일 장치(iOS 및 Android™)에서 양식에 액세스하면 첫 번째 페이지의 &#39;다음&#39; 및 &#39;이전&#39; 버튼이 비활성화됩니다. 그러나 화면 판독기는 비활성화된 것으로 식별하지 않습니다. (FORMS-15773)
+* 사용자가 모바일 디바이스(iOS 및 Android™)에서 양식에 액세스하면 첫 번째 페이지의 &#39;다음&#39; 및 &#39;이전&#39; 버튼이 비활성화됩니다. 그러나 화면 판독기는 비활성화된 것으로 식별하지 않습니다. (FORMS-15773)
 
-* 사용자가 조각과 소극적 로드가 활성화된 큰 양식을 저장할 때 초안을 검색하지 못해 워크플로가 중단됩니다. (FORMS-19890, FORMS-19808)
+* 사용자가 조각 및 지연 로딩이 활성화된 상태에서 큰 양식을 저장하면 초안을 검색하지 못하여 워크플로가 중단됩니다. (FORMS-19890, FORMS-19808)
 
 #### FORMS JEE
 
@@ -362,11 +362,15 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 * AEM Forms 6.5.21.0에서 PDFG 변환이 실패하고 다음 오류가 발생합니다. (FORMS-16851)(FORMS-14613)
 
+* 핫픽스 2가 있는 AEM Forms 6.5.23.0에서 (PDFG) PS를 PDF으로, HTML을 PDF으로(WebKit) 전환하지 못했습니다. (FORMS-21721)
+
+* 핫픽스 3이 있는 AEM Forms 6.5.23.0에서 (PDFG) 이미지를 PDF으로 변환할 수 없습니다. (FORMS-22029)
+
 #### Forms Captcha {#forms-captcha-6523}
 
-* 제출 오류 코드를 400으로 업데이트하여 적응형 Forms의 reCAPTCHA 경고를 개선했습니다. 또한 시간 초과, 만료 및 보트 감지 실패를 구별하도록 로그 경고를 개선하여 문제 해결 정확도와 시스템 가시성을 향상했습니다. (FORMS-19240)
+* 제출 오류 코드를 400으로 업데이트하여 적응형 양식에서 reCAPTCHA 경고를 개선했습니다. 또한 로그 경고를 개선하여 시간 초과, 만료 및 봇 감지 실패를 구분함으로써 문제 해결 정확도와 시스템 관찰 가능성을 향상했습니다. (FORMS-19240)
 * AEM Forms에서 reCAPTCHA 통합을 사용할 때 잠재적인 리소스 누수를 방지하고 시스템 안정성을 개선하기 위해 `ResourceResolver`에서 닫히지 않은 `ReCaptchaConfigurationServiceImpl` 인스턴스를 닫았습니다. (FORMS-19242)
-* `/conf/global` 폴더에 여러 항목이 있을 때 각 양식에 올바른 구성이 바인딩되도록 하여 AEM Forms에 대한 CAPTCHA 구성 처리를 개선했습니다. 구성 컨테이너를 명시적으로 선택하지 않은 경우 의도하지 않게 잘못된 CAPTCHA 설정이 사용되는 것을 방지합니다. (FORMS-19239)
+* `/conf/global` 폴더에 여러 항목이 있을 때 각 양식에 올바른 구성이 바인딩되도록 하여 AEM Forms에 대한 CAPTCHA 구성 처리를 개선했습니다. 구성 컨테이너가 명시적으로 선택되지 않은 경우 잘못된 CAPTCHA 설정이 의도치 않게 사용되는 것을 방지합니다. (FORMS-19239)
 
 <!--
 #### XMLFM {#forms-xmlfm-6523}
@@ -533,7 +537,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -549,7 +553,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -767,6 +771,6 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)

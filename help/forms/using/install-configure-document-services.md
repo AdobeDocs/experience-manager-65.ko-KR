@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
+source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
 workflow-type: tm+mt
-source-wordcount: '10085'
-ht-degree: 1%
+source-wordcount: '10086'
+ht-degree: 2%
 
 ---
 
@@ -25,13 +25,13 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
 * **DocAssurance 서비스:** 문서를 암호화 및 암호 해독하고, 추가 사용 권한으로 Adobe Reader의 기능을 확장하고, 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 서명, 암호화 및 Reader 확장의 세 가지 서비스가 포함됩니다. 자세한 내용은 [DocAssurance 서비스](/help/forms/using/overview-aem-document-services.md)를 참조하십시오.
 
-* **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 승인된 사용자는 문서의 내용을 해독하여 콘텐츠에 액세스할 수 있습니다. 자세한 내용은 [암호화 서비스](/help/forms/using/overview-aem-document-services.md#encryption-service)를 참조하세요.
+* **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 콘텐츠를 읽을 수 없게 됩니다. 승인된 사용자는 문서의 내용을 해독하여 콘텐츠에 액세스할 수 있습니다. 자세한 내용은 [암호화 서비스](/help/forms/using/overview-aem-document-services.md#encryption-service)를 참조하세요.
 
 * **Forms 서비스:** Forms Designer에서 일반적으로 만들어지는 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 응용 프로그램을 만들 수 있습니다. Forms 서비스는 사용자가 개발하는 모든 양식 디자인을 PDF 문서로 렌더링합니다. 자세한 내용은 [Forms 서비스](/help/forms/using/forms-service.md)를 참조하세요.
 
 * **출력 서비스:** PDF, 레이저 프린터 형식, 라벨 프린터 형식 등 다양한 형식의 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 PCL(Printer Control Language)입니다. 자세한 내용은 [출력 서비스](/help/forms/using/output-service.md)를 참조하세요.
 
-* **PDF Generator 서비스:** PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 [PDF Generator 서비스](aem-document-services-programmatically.md#pdfgeneratorservice)를 참조하세요.
+* **PDF Generator 서비스:** PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF를 다른 파일 형식으로 변환하고 PDF 문서 크기를 최적화합니다. 자세한 내용은 [PDF Generator 서비스](aem-document-services-programmatically.md#pdfgeneratorservice)를 참조하세요.
 
 * **Reader 확장 서비스:** 추가 사용 권한으로 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 문서에 주석 추가, 양식 채우기 및 문서 저장과 같이 Adobe Reader를 사용하여 PDF 문서를 열 때 사용할 수 없는 기능을 활성화합니다. 자세한 내용은 [Reader 확장 서비스](/help/forms/using/overview-aem-document-services.md#reader-extension-service)를 참조하십시오.
 
@@ -184,7 +184,7 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (PDF Generator만 해당) RHEL 8 또는 RHEL 9 설정에서 WebKit 경로를 활성화하려면 기본적으로 32비트 `nspr` 라이브러리를 사용하지 못할 수 있습니다. 없는 경우 설치하십시오.
+* (PDF Generator만 해당) RHEL 8 또는 RHEL 9, SLES15 설정에서 WebKit 경로를 활성화하려면 기본적으로 32비트 `nspr` 라이브러리를 사용하지 못할 수 있습니다. 없는 경우 설치하십시오.
 
 * (PDF Generator만 해당) Unix® 서버에서 WebToPDF 변환이 실패하고 다음 오류가 발생하는 경우:
 
@@ -210,7 +210,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 ### Adobe Acrobat Pro DC 설치
 
@@ -294,7 +294,7 @@ Microsoft Office용 Adobe Acrobat Pro DC 설치 프로세스는 라이선스 유
    | 앱 선택 - 사용 가능한 애플리케이션 | 사용 가능한 애플리케이션에 Adobe Acrobat을 보관합니다. 선택한 응용 프로그램으로 이동 안 함 | 6단계에서 Adobe Experience League 페이지에서 [Adobe Acrobat을 다운로드](#step-6-download-and-install-adobe-acrobat-pro)합니다. |
    | 앱 선택 - 선택한 애플리케이션 | 선택한 응용 프로그램에 라이선스 파일만 유지 | FRL 배포에 대한 기본 설정 |
    | 플러그인 | 이 화면에서 변경 안 함 | |
-   | 옵션 | 이 화면에서 변경 안 함 | |
+   | 선택 사항 | 이 화면에서 변경 안 함 | |
    | 완료 | 패키지 이름: &quot;Acrobat FRL AEM Forms&quot; | 수사적 이름 사용 |
 
 1. 패키지를 만들려면 **만들기**&#x200B;를 클릭합니다.
@@ -444,7 +444,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
    | 앱 선택 - 사용 가능한 애플리케이션 | 사용 가능한 애플리케이션에 Adobe Acrobat을 보관합니다. 선택한 응용 프로그램으로 이동 안 함 | 6단계에서 Adobe Experience League 페이지에서 [Adobe Acrobat을 다운로드](#step-6-download-and-install-adobe-acrobat-pro)합니다. |
    | 앱 선택 - 선택한 애플리케이션 | 선택한 응용 프로그램에 라이선스 파일만 유지 | FRL 배포에 대한 기본 설정 |
    | 플러그인 | 이 화면에서 변경 안 함 | |
-   | 옵션 | 이 화면에서 변경 안 함 | |
+   | 선택 사항 | 이 화면에서 변경 안 함 | |
    | 완료 | 패키지 이름: &quot;Acrobat FRL AEM Forms&quot; | 수사적 이름 사용 |
 
 1. 패키지를 만들려면 **만들기**&#x200B;를 클릭합니다.
@@ -600,7 +600,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
    | 앱 선택 - 사용 가능한 애플리케이션 | 사용 가능한 애플리케이션에 Adobe Acrobat을 보관합니다. 선택한 응용 프로그램으로 이동 안 함 | 6단계에서 Adobe Experience League 페이지에서 [Adobe Acrobat을 다운로드](#step-6-download-and-install-adobe-acrobat-pro)합니다. |
    | 앱 선택 - 선택한 애플리케이션 | 선택한 응용 프로그램에 라이선스 파일만 유지 | FRL 배포에 대한 기본 설정 |
    | 플러그인 | 이 화면에서 변경 안 함 | |
-   | 옵션 | 이 화면에서 변경 안 함 | |
+   | 선택 사항 | 이 화면에서 변경 안 함 | |
    | 완료 | 패키지 이름: &quot;Acrobat FRL AEM Forms&quot; | 수사적 이름 사용 |
 
 1. 패키지를 만들려면 **만들기**&#x200B;를 클릭합니다.
@@ -757,7 +757,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
    | 앱 선택 - 사용 가능한 애플리케이션 | 사용 가능한 애플리케이션에 Adobe Acrobat을 보관합니다. 선택한 응용 프로그램으로 이동 안 함 | 6단계에서 Adobe Experience League 페이지에서 [Adobe Acrobat을 다운로드](#step-6-download-and-install-adobe-acrobat-pro)합니다. |
    | 앱 선택 - 선택한 애플리케이션 | 선택한 응용 프로그램에 라이선스 파일만 유지 | FRL 배포에 대한 기본 설정 |
    | 플러그인 | 이 화면에서 변경 안 함 | |
-   | 옵션 | 이 화면에서 변경 안 함 | |
+   | 선택 사항 | 이 화면에서 변경 안 함 | |
    | 완료 | 패키지 이름: &quot;Acrobat FRL AEM Forms&quot; | 수사적 이름 사용 |
 
 1. 패키지를 만들려면 **만들기**&#x200B;를 클릭합니다.
@@ -891,7 +891,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 
 FLL(Feature Restricted Licensing)을 활성화하고 Acrobat 활성화를 확인한 후에는 AEM Forms PDF Generator과의 호환성을 위해 Adobe Acrobat에서 &quot;시작 시 보호 모드&quot;를 비활성화하는 것이 좋습니다.
 
-다음 단계를 수행합니다.
+다음 단계를 수행하십시오.
 
 1. 서버에서 **Adobe Acrobat Pro DC**&#x200B;을 엽니다.
 2. **메뉴** > **환경 설정**(으)로 이동합니다.
@@ -905,7 +905,7 @@ FLL(Feature Restricted Licensing)을 활성화하고 Acrobat 활성화를 확인
 >
 >AEM Forms PDF Generator과 같은 서버측 자동화 시나리오에는 보호 모드 비활성화가 필요합니다. 이 설정은 최종 사용자 데스크톱이 아닌 전용 서버 환경에서만 변경해야 합니다.
 
-자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/kr/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
+자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
 
 
 
@@ -1006,7 +1006,7 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF Generator 서�
 
 1. Microsoft® Windows용 그룹 정책 편집기를 엽니다. 그룹 정책 편집기를 열려면 **[!UICONTROL 시작]**&#x200B;을 클릭하고 검색 시작 상자에 **gpedit.msc**&#x200B;을 입력한 다음 **[!UICONTROL 그룹 정책 편집기]**&#x200B;를 클릭하십시오.
 1. **[!UICONTROL 로컬 컴퓨터 정책]** > **[!UICONTROL 컴퓨터 구성]** > **[!UICONTROL Windows 설정]** > **[!UICONTROL 보안 설정]** > **[!UICONTROL 로컬 정책]** > **[!UICONTROL 사용자 권한 할당]**(으)로 이동하여 **[!UICONTROL 프로세스 수준 토큰 바꾸기]** 정책을 편집하고 관리자 그룹을 포함하십시오.
-1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
+1. 사용자를 프로세스 수준 토큰 교체 항목에 추가합니다.
 
 >[!NOTE]
 >
@@ -1022,7 +1022,7 @@ Microsoft® Office 트러스트 센터 설정을 변경하여 PDF Generator 서�
 
 >[!NOTE]
 >
-> SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ### (Windows만 해당) 사용자 계정 컨트롤(UAC) 비활성화 {#disable-user-account-control-uac}
 
@@ -1088,10 +1088,10 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -1206,7 +1206,7 @@ HTML에서 PDF으로 전환하는 기본 기본 경로는 Webkit입니다. 변�
 
 ### 글로벌 Trust Store 초기화 {#intialize-global-trust-store}
 
-Trust Store Management를 사용하면 디지털 서명 및 인증서 인증의 유효성 검사를 위해 서버에서 신뢰할 수 있는 인증서를 가져오고 편집하고 삭제할 수 있습니다. 여러 인증서를 가져오고 내보낼 수 있습니다. 인증서를 가져온 후에는 트러스트 설정 및 트러스트 저장소 유형을 편집할 수 있습니다. Trust Store를 초기화하려면 다음 단계를 수행하십시오.
+Trust Store 관리를 사용하면 디지털 서명의 유효성 검사와 인증서 인증을 위해 서버에서 신뢰하는 인증서를 가져오고, 편집하고, 삭제할 수 있습니다. 인증서를 원하는 수만큼 가져오고 내보낼 수 있습니다. 인증서를 가져온 후에는 신뢰 설정과 Trust Store 유형을 편집할 수 있습니다. Trust Store를 초기화하려면 다음 단계를 수행하십시오.
 
 1. 관리자로 AEM Forms 인스턴스에 로그인합니다.
 1. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Trust Store]**(으)로 이동합니다.
@@ -1244,7 +1244,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
 ### AES-256 활성화 {#enable-aes}
 
-PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extension) 무제한 강도 관할 정책 파일을 가져와 설치하십시오. jre/lib/security 폴더에서 local_policy.jar 및 US_export_policy.jar 파일을 바꿉니다. 예를 들어 Sun JDK를 사용하는 경우 다운로드한 파일을 `[JAVA_HOME]/jre/lib/security` 폴더에 복사합니다.
+PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java 암호화 확장) 무제한 강도 관할 정책 파일을 가져와서 설치합니다. jre/lib/security 폴더에서 local_policy.jar 및 US_export_policy.jar 파일을 바꿉니다. 예를 들어 Sun JDK를 사용하는 경우 다운로드한 파일을 `[JAVA_HOME]/jre/lib/security` 폴더에 복사합니다.
 
 어셈블러 서비스는 Reader 확장 서비스, 서명 서비스, Forms 서비스 및 출력 서비스에 따라 다릅니다. 다음 단계를 수행하여 필요한 서비스가 실행 중인지 확인합니다.
 
@@ -1266,7 +1266,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
    <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td>
   </tr>
   <tr>
-   <td>Forms 서비스</td>
+   <td>양식 서비스</td>
    <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
   </tr>
   <tr>
@@ -1373,7 +1373,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 
-+++오픈오피스
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -1398,7 +1398,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 
-+++HTML에서 PDF으로 전환 문제
++++HTML에서 PDF으로의 전환 문제
 
 * PDF Generator 구성 UI에 글꼴 디렉터리가 추가되었는지 확인합니다.
 
@@ -1508,7 +1508,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++ -->
 
-+++ Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없음
++++ Windows Server에서 Word 또는 Excel 파일을 PDF로 변환할 수 없음
 
 사용자가 Microsoft Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환하려고 할 때 다음과 같은 오류가 발생합니다.
 
