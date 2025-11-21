@@ -13,14 +13,14 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
 
 # 작성자를 위한 첫 번째 단계{#first-steps-for-authors}
 
-이 섹션에서는 AEM(Adobe Experience Manager)을 사용하여 [콘텐츠 작성을 시작](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)할 때 사용할 주요 작업에 대한 개요를 제공합니다.
+이 섹션에서는 Adobe Experience Manager(AEM)를 사용하여 [콘텐츠 작성을 시작](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)할 때 사용할 주요 작업에 대한 개요를 제공합니다.
 
 여기에는 다음이 포함됩니다.
 
@@ -30,7 +30,7 @@ ht-degree: 11%
 * [추가 작업](#further-actions)\
   작성할 때 사용할 수 있는 기타 여러 가지 작업을 사용하여 이 작업을 수행합니다.
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 첫 페이지를 만들고 게시하는 데 필요한 기본 이벤트 시퀀스에 대해 자세히 설명합니다.
 

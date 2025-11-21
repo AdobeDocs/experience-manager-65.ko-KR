@@ -12,7 +12,7 @@ role: Admin, User, Developer
 source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 이 문서 |
 
 AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md)을 참조하세요.
@@ -31,15 +31,15 @@ Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및
 
 AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 보안 및 통합 분석을 결합하여 매력적인 종단 간 경험을 만듭니다. 웹 및 모바일 채널에서 작동하도록 설계된 AEM Forms은 비즈니스 프로세스에 효율적으로 통합되어 종이 프로세스와 오류를 줄이고 효율성을 향상시킬 수 있습니다.
 
-대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 채널과 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 Forms 포털을 제공합니다.
+대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 양식의 대규모 데이터베이스를 최신 상태로 유지하고 이를 검색 가능하게 만드는 것은 상당한 도전이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 Forms 포털을 제공합니다.
 
 AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 에셋도 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md)를 참조하십시오.
 
 >[!NOTE]
 >
->[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
-![AEM 양식 기능](do-not-localize/4th-draft-updated.gif)
+![AEM forms 기능](do-not-localize/4th-draft-updated.gif)
 
 ### 주요 기능 {#key-capabilities}
 
@@ -57,12 +57,12 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 
 AEM Forms을 사용하면 새 양식 및 기존 양식을 확장하여 다음을 만들 수 있습니다.
 
-* 픽셀이 완벽하고, 페이지가 매겨진 HTML 및 거의 종이와 유사한 PDF forms
+* 거의 종이처럼 보이는 픽셀 완성도, 페이지 매김된 HTML 및 PDF forms
 * 사용자의 장치 및 브라우저에 대해 자동으로 렌더링되는 적응형 양식입니다.
 
 **PDF forms**
 
-PDF forms은 오프라인으로 채우고, 로컬로 저장하고, 다음에 온라인 상태일 때 양식 데이터를 전송할 수 있습니다. 2D 바코드를 사용하여 양식 데이터를 캡처하고 디지털 서명을 사용하여 사용자의 신뢰성을 검증할 수 있습니다.
+PDF forms은 오프라인으로 채우고, 로컬로 저장하고, 다음에 온라인에 있을 때 양식 데이터를 전송할 수 있습니다. 2D 바코드를 사용하여 양식 데이터를 캡처하고 디지털 서명을 사용하여 사용자의 신뢰성을 검증할 수 있습니다.
 
 **HTML 양식**
 
@@ -95,12 +95,12 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 장치로 확장�
 
 **오프라인 데이터 수집에 Forms Workspace을 사용할 때의 이점**
 
-* 작업 할당 및 추적을 위한 사용하기 쉬운 HTML 작업 영역 애플리케이션
+* 작업 할당 및 추적을 위해 사용하기 쉬운 HTML 작업 영역 애플리케이션
 * 워크플로우 디자인 환경 드래그 앤 드롭
 * ECM(엔터프라이즈 컨텐츠 관리 커넥터)
 * 양식 데이터를 엔터프라이즈 시스템과 연결하기 위한 XML 및 SOAP 등 개방형 표준 지원
 * 즉시 사용 가능한 HTML 보고서 는 백로그, 작업 대기열 및 주요 성능 지표(KPI)를 모니터링합니다
-* 비즈니스 운영에 대한 실시간 통찰력을 위한 맞춤형 대시보드
+* 비즈니스 운영에 대한 실시간 insight을 위한 맞춤형 대시보드
 * 서드파티 보고 도구와의 연결을 위한 API
 
 ![세 번째 초안](do-not-localize/3rd-draft.gif)

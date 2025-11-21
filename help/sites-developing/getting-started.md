@@ -30,16 +30,16 @@ AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십�
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
+[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
 
 ## 핵심 개념 {#core-concepts}
 
 튜토리얼 구현은 여러 개의 강력한 AEM 기능을 사용합니다. 다음을 사용하여 사이트를 구현합니다.
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch UI](/help/sites-developing/touch-ui-concepts.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
 
 위의 개념으로 자세히 들어가기 전에 자습서를 진행합니다.

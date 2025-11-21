@@ -13,7 +13,7 @@ role: Architect
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,11 @@ AEM 6의 AEM 플랫폼은 Apache Jackrabbit Oak을 기반으로 합니다.
 
 Apache Jackrabbit Oak은 확장 가능하고 성능이 뛰어난 계층형 콘텐츠 저장소를 구현하여 최신 세계적 수준의 웹 사이트 및 기타 까다로운 콘텐츠 애플리케이션의 기반으로 사용하도록 하기 위한 노력입니다.
 
-Jackrabbit 2의 후속 제품이며 AEM 6에서 컨텐츠 저장소인 CRX에 대한 기본 백엔드로 사용됩니다.
+Jackrabbit 2의 후속 제품이며 AEM 6에서 컨텐츠 저장소인 CRX의 기본 백엔드로 사용됩니다.
 
 ## 설계 원칙 및 목표 {#design-principles-and-goals}
 
-Oak은 [JSR-283](https://jcp.org/en/jsr/detail?id=283)(JCR 2.0) 사양을 구현합니다. 주요 설계 목표는 다음과 같습니다.
+Oak은 [JSR-283](https://jcp.org/en/jsr/detail?id=283)&#x200B;(JCR 2.0) 사양을 구현합니다. 주요 설계 목표는 다음과 같습니다.
 
 * 대형 저장소에 대한 지원 향상
 * 고가용성을 위한 여러 분산 클러스터 노드
@@ -52,7 +52,7 @@ Oak은 [JSR-283](https://jcp.org/en/jsr/detail?id=283)(JCR 2.0) 사양을 구현
 Oak 코어는 스토리지 레이어에 다음과 같은 여러 계층을 추가합니다.
 
 * 액세스 수준 제어
-* 검색 및 색인 지정
+* 검색 및 색인화
 * 관찰
 
 ### OAK JS {#oak-jcr}
@@ -130,9 +130,9 @@ Oak은 JCR 1.0 표준과 하위 호환되므로 사용자 수준에서 거의 �
 
 ## 기타 플랫폼 관련 설명서 {#other-platform-related-documentation}
 
-AEM 플랫폼에 대한 자세한 내용은 아래 문서도 참조하십시오.
+AEM 플랫폼에 대한 자세한 내용은 아래 기사도 참조하십시오.
 
 * [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)
 * [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
-* [AEM 6의 저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
-* [MongoDB와 AEM](/help/sites-deploying/aem-with-mongodb.md)
+* [AEM 6의 스토리지 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [MongoDB를 사용한 AEM](/help/sites-deploying/aem-with-mongodb.md)

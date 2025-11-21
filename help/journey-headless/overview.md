@@ -1,5 +1,5 @@
 ---
-title: AEM Headless 여정
+title: AEM 헤드리스 여정
 description: Adobe Experience Manager as a Headless CMS를 사용하는 방법에 대해 설명하는 설명서 여정 모음입니다.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 solution: Experience Manager, Experience Manager Sites
@@ -12,7 +12,7 @@ ht-degree: 57%
 
 ---
 
-# AEM Headless 여정 {#aem-headless-journeys}
+# AEM 헤드리스 여정 {#aem-headless-journeys}
 
 여기에서 AEM의 강력한 Headless 기능을 이해할 수 있는 가이드 여정에 대한 개요를 살펴보십시오.
 
@@ -36,9 +36,9 @@ Adobe이 AEM과 관련하여 헤드리스 비즈니스 사례를 해결하는 �
 
 Headless 여정은 다양한 담당자를 위해 설계되었으며 다양한 관점에서 Headless 솔루션 구현에 대한 요구 사항, 단계 및 접근 방식을 제시합니다.
 
-개별 여정은 특정 담당자 또는 대상자를 위해 정의되지만, 독자와 상호 작용하는 추가적인 담당자도 정의할 수 있습니다.
+개별 여정은 특정 페르소나 또는 대상자를 위해 정의되지만, 독자와 상호 작용하는 추가적인 페르소나도 정의할 수 있습니다.
 
-이 여정에서 제공하는 정보는 여러 담당자에게 유용하지만, 일부 여정은 특정 담당자를 대상으로 하며 일부 정보는 특정 역할에게 불필요할 수 있습니다.
+이 여정에서 제공하는 정보는 여러 페르소나에게 유용하지만, 특정 여정은 특정 페르소나를 대상으로 하며, 일부 정보는 특정 역할에는 필요하지 않을 수 있습니다.
 
 ## 헤드리스 여정 {#headless-journeys}
 
@@ -48,7 +48,7 @@ Headless 여정은 다양한 담당자를 위해 설계되었으며 다양한 �
 |---|---|---|
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | 헤드리스 기술, 헤드리스 기술을 통해 사용자 경험을 얻는 방법, AEM이 헤드리스 모델을 지원하는 방법, A부터 Z까지 나만의 헤드리스 개발 프로젝트를 구현하는 방법에 대해 알아봅니다. | 개발자 |
 | [Headless 번역 여정](/help/journey-headless/translation/overview.md) | Headless 기술, 이들을 프로젝트에서 사용할 수 있는 이유, AEM에서 번역 프로젝트를 만들고 업데이트하는 방법을 A부터 Z까지 알아봅니다. | 번역 전문가 |
-| [Headless 설계자 여정](/help/journey-headless/architect/overview.md) | AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오. | 설계자 |
+| [Headless 설계자 여정](/help/journey-headless/architect/overview.md) | AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오. | 설계자 |
 | [Headless 작성 여정](/help/journey-headless/author/overview.md) | 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 만드는 방법을 알아보십시오. | 콘텐츠 작성자 및 작성자 |
 
 [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/home.md#journeys)은 추후에 업데이트될 예정입니다.
