@@ -2,11 +2,11 @@
 title: '[!DNL Assets] 프록시 개발'
 description: 프록시는 프록시 작업자를 사용하여 작업을 처리하는  [!DNL Experience Manager] 인스턴스입니다.  [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소를 구성하는 방법 및 사용자 지정 프록시 작업자를 개발하는 방법에 대해 알아봅니다.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -113,11 +113,11 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
-프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
+프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy`)에 대해 `/etc/cloudservices/proxy/workername` 아래에 노드를 추가해야 합니다.
 
 >[!NOTE]
 >
->자세한 내용은 [InDesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [Cloud Service 구성](../sites-developing/extending-cloud-config.md)을 참조하십시오.
+>자세한 내용은 [InDesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [Cloud Services 구성](../sites-developing/extending-cloud-config.md)을 참조하십시오.
 
 다음은 API 사용의 예입니다.
 
@@ -182,7 +182,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >[!DNL Assets] 프록시 프레임워크에서 기본적으로 제공하지 않는 것은 풀 메커니즘입니다.
 >
->[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL Assets] 프록시 프레임워크의 일부가 아니라 [!DNL InDesign] 통합에만 적용됩니다.
+>[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL InDesign] 프록시 프레임워크의 일부가 아니라 [!DNL Assets] 통합에만 적용됩니다.
 
 >[!NOTE]
 >

@@ -2,18 +2,18 @@
 title: 웹 페이지에 페이지 추적기 및 포함 코드 사용
 description: Adobe Analytics에서 자산에 대한 사용 데이터를 캡처할 수 있도록 웹 사이트 코드에 페이지 추적기 를 포함하고 JavaScript 코드를 포함하는 방법을 알아봅니다.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# 웹 페이지에 페이지 추적기 및 포함 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
+# 웹 페이지에 페이지 추적기 및 임베드 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
 
 Page Tracker는 Adobe Analytics에서 이러한 웹 사이트의 [!DNL Adobe Experience Manager Assets] 관련 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드 조각입니다.
 

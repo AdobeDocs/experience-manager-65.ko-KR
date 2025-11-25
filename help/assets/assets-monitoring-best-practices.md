@@ -2,13 +2,13 @@
 title: ' [!DNL Assets] 배포 모니터링 모범 사례'
 description: 배포 후  [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Experience Manager Assets] 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰 및 보고가 포함되어야 합니다.
 
-* 시스템
+* 시스템 CPU
 * 시스템 메모리 사용
 * 시스템 디스크 IO 및 IO 대기 시간
 * 시스템 네트워크 입출력
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * [시각적 VM](https://visualvm.github.io/): 시각적 VM을 사용하면 CPU 사용, Java 메모리 사용을 포함하여 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있도록 해줍니다.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top은 대시보드를 여는 Linux 명령으로 CPU, 메모리 및 IO 사용량을 포함한 사용 통계를 표시합니다. 인스턴스에서 발생하는 사항에 대한 높은 수준의 개요를 제공합니다.
-* [Htop](https://hisham.hm/htop/): Htop은 대화형 프로세스 뷰어입니다. 탑이 제공할 수 있는 것 외에도 자세한 CPU 및 메모리 사용량을 제공합니다. `yum install htop` 또는 `apt-get install htop`을(를) 사용하는 대부분의 Linux 시스템에 Top을 설치할 수 있습니다.
+* [Htop](https://hisham.hm/htop/): Htop은 대화형 프로세스 뷰어입니다. 탑이 제공할 수 있는 것 외에도 자세한 CPU 및 메모리 사용을 제공합니다. `yum install htop` 또는 `apt-get install htop`을(를) 사용하는 대부분의 Linux 시스템에 Top을 설치할 수 있습니다.
 
 * Iotop: Iotop은 디스크 IO 사용에 대한 세부 대시보드입니다. 디스크 IO를 사용하는 프로세스와 사용되는 양을 나타내는 막대 및 미터를 표시합니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을(를) 사용하는 대부분의 Linux 시스템에 설치할 수 있습니다.
 
@@ -69,11 +69,11 @@ ht-degree: 0%
 * 네트워크 처리량
 * 디스크 IO
 * 메모리
-* CPU 사용률
+* CPU 활용
 * JMX MBean
 * 외부 웹 사이트
 
-각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 높은 시스템 사용률, 워크플로우 백업, 상태 검사 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등 시스템과 관련된 경고를 정의할 수 있습니다. Adobe은 다른 도구보다 특정 도구를 권장하지 않습니다. 자신에게 적합한 도구를 찾아 이 도구를 사용하여 논의된 항목을 모니터링합니다.
+각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 높은 시스템 사용률, 워크플로우 백업, 상태 검사 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등 시스템과 관련된 경고를 정의할 수 있습니다. Adobe에서는 다른 도구보다 특별한 도구를 권장하지 않습니다. 자신에게 적합한 도구를 찾아 이 도구를 사용하여 논의된 항목을 모니터링합니다.
 
 #### 내부 애플리케이션 모니터링 {#internal-application-monitoring}
 
@@ -111,7 +111,7 @@ Threads
 
 **모니터[!DNL Experience Manager]**
 
-[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [!DNL Experience Manager] JMX MBean의 [설명서](/help/sites-administering/jmx-console.md)를 참조하십시오.
+[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [ JMX MBean의 ](/help/sites-administering/jmx-console.md)설명서[!DNL Experience Manager]를 참조하십시오.
 
 다음은 [!DNL Experience Manager]에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
 
@@ -194,7 +194,7 @@ Threads
 모니터링 과정에서 문제가 발생하는 경우 [!DNL Experience Manager] 배포와 관련된 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
 
 * TarMK를 사용하는 경우 종종 Tar 압축을 실행합니다. 자세한 내용은 [저장소 유지](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)를 참조하세요.
-* `OutOfMemoryError`개의 로그를 확인하십시오. 자세한 내용은 [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)을 참조하십시오.
+* `OutOfMemoryError`개의 로그를 확인하십시오. 자세한 내용은 [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)을 참조하십시오.
 
 * 인덱싱되지 않은 쿼리, 트리 트래버스 또는 인덱스 트래버스에 대한 참조를 로그에 확인합니다. 인덱싱되지 않은 쿼리 또는 인덱싱되지 않은 쿼리를 나타냅니다. 쿼리 및 색인화 성능을 최적화하는 방법에 대한 모범 사례는 [쿼리 및 색인화 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 수행되는지 확인합니다. 가능한 경우 여러 워크플로우를 단일 워크플로우로 압축합니다.

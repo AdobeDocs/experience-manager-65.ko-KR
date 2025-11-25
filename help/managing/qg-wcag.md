@@ -4,9 +4,9 @@ description: WCAG(웹 콘텐츠 접근성 지침) 버전 2.1에 대한 빠른 �
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: ht
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ WCAG 2.1에 대한 기법은 [WCAG 2.1용 기법](https://www.w3.org/WAI/WCAG21/
 
 ### WCAG 2.1을 충족하는 방법 {#how-to-meet-wcag}
 
-“충족하는 방법” 섹션은 [WCAG 2.1을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 표현을 제공하여 독자가 지침의 콘텐츠를 독자의 관심사나 상황과 가장 관련이 있는 사항으로 구체화할 수 있습니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 콘텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
+&#39;충족하는 방법&#39; 섹션은 [WCAG 2.1을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 표현을 제공하여 독자가 지침의 콘텐츠를 독자의 관심사나 상황과 가장 관련이 있는 사항으로 구체화할 수 있습니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 콘텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
 
 이 리소스는 필터링하지 않고 지침별로 그룹화된 모든 성공 기준을 제공합니다. 각 성공 기준에 대해 다음 항목이 제공됩니다.
 

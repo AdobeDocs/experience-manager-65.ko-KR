@@ -4,11 +4,11 @@ description: 메타데이터 유형과 에셋을 쉽게 구성하고 처리할 �
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 <!-- Scope of metadata articles:
@@ -36,13 +36,13 @@ ht-degree: 10%
 
 다음 메서드를 사용하여 디지털 에셋에 메타데이터를 추가할 수 있습니다.
 
-* 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/kr/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에 IPTC 메타데이터를 추가](https://helpx.adobe.com/kr/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
+* 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에서 IPTC 메타데이터를 추가](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
 
-* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/kr/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 태그 패널을 보는 방법을 참조하십시오.
+* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [에서  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 [!DNL Adobe Exchange]태그 패널을 보는 방법을 참조하십시오.
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 
-* 자산이 DAM에 업로드될 때 [!DNL Experience Manager Assets]의 [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
+* 자산이 DAM에 업로드될 때 [의 ](/help/assets/metadata-config.md#metadata-profiles)메타데이터 프로필[!DNL Experience Manager Assets] 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
 
 ## [!DNL Experience Manager Assets]에서 메타데이터 추가 또는 편집 {#add-edit-metadata}
 
@@ -101,7 +101,7 @@ ht-degree: 10%
 
 [!DNL Assets]을(를) 사용하면 CSV 파일을 사용하여 자산 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 에셋 또는 기존 에셋에 대한 대량 업데이트를 수행할 수 있습니다. 자산 메타데이터를 CSV 형식으로 서드파티 시스템에서 일괄로 수집할 수도 있습니다.
 
-메타데이터 가져오기는 비동기적이며 시스템 성능을 방해하지 않습니다. 워크플로우 플래그가 선택된 경우 XMP 원본에 쓰기 활동으로 인해 여러 자산에 대한 메타데이터를 동시에 업데이트하는 경우 리소스가 많이 소모될 수 있습니다. 다른 사용자의 성능에 영향을 주지 않도록 린 서버 사용 중 이러한 가져오기를 계획합니다.
+메타데이터 가져오기는 비동기적이며 시스템 성능을 방해하지 않습니다. 워크플로우 플래그가 선택된 경우 XMP 원본에 쓰기 활동 때문에 여러 자산에 대한 메타데이터를 동시에 업데이트하는 경우 리소스가 많이 소모될 수 있습니다. 다른 사용자의 성능에 영향을 주지 않도록 린 서버 사용 중 이러한 가져오기를 계획합니다.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ ht-degree: 10%
    |:---|:---|
    | [!UICONTROL 일괄 처리 크기] | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
    | [!UICONTROL 필드 구분 기호] | 기본값은 `,`(쉼표)입니다. 다른 문자를 지정할 수 있습니다. |
-   | [!UICONTROL 다중 값 구분 기호] | 메타데이터 값에 대한 구분 기호입니다. 기본값은 `|`입니다. |
+   | [!UICONTROL 다중 값 구분 기호] | 메타데이터 값에 대한 구분 기호입니다. 기본값은 `\|`입니다. |
    | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. `true`(으)로 설정된 경우 기본 설정이 [!UICONTROL DAM 메타데이터 WriteBack] 워크플로(이진 XMP 데이터에 메타데이터 쓰기)에 적용됩니다. 워크플로우를 활성화하면 시스템 속도가 느려집니다. |
    | [!UICONTROL 자산 경로 열 이름] | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 
@@ -241,7 +241,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=ko)
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

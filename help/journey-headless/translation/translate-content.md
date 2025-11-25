@@ -4,8 +4,8 @@ description: 번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 �
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -128,7 +128,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ### 자동으로 생성된 번역 프로젝트 사용 {#using-automatic-project}
 
-번역 프로젝트를 자동으로 생성할 때 AEM은 이전에 정의한 번역 규칙을 기반으로 사용자가 선택한 경로의 Headless 콘텐츠를 평가합니다. 해당 평가를 기반으로 번역에 필요한 콘텐츠를 새 번역 프로젝트에 추출합니다.
+번역 프로젝트를 자동으로 생성할 때, AEM은 이전에 정의한 번역 규칙을 기반으로 사용자가 선택한 경로의 Headless 콘텐츠를 평가합니다. 해당 평가를 기반으로 번역에 필요한 콘텐츠를 새 번역 프로젝트에 추출합니다.
 
 이 프로젝트에 포함된 Headless 콘텐츠 세부 정보를 보려면 다음 작업을 수행하십시오.
 
@@ -149,7 +149,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ![승인된 번역 작업](assets/translation-job-approved.png)
 
-기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만, 이는 이 여정에서 다루지 않습니다.
+기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만 이는 이 여정에서 다루지 않습니다.
 
 ### 수동으로 생성된 번역 프로젝트 사용 {#using-manual-project}
 
@@ -198,11 +198,11 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ![승인된 번역 작업](assets/translation-job-approved-manual.png)
 
-기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만, 이는 이 여정에서 다루지 않습니다.
+기계 번역은 **승인됨** 상태로 자동 반환됩니다. 인간 번역은 더 많은 상호 작용을 허용하지만 이는 이 여정에서 다루지 않습니다.
 
 ## 번역된 콘텐츠 검토 {#reviewing}
 
-[앞에서 보았던 대로 &#x200B;](#using-translation-project) 기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
+[앞에서 보았던 대로 ](#using-translation-project) 기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
 
 완료된 번역 작업으로 이동하여 확인란을 탭하거나 클릭하여 라인 항목을 선택하십시오. 도구 모음에 **콘텐츠 조각에 표시** 아이콘이 표시됩니다.
 
@@ -212,7 +212,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ![번역된 콘텐츠 조각](assets/translated-content-fragment.png)
 
-올바른 권한을 보유하고 있는 경우 필요에 따라 콘텐츠 조각을 추가로 수정할 수 있지만, 콘텐츠 조각 편집 작업은 이 여정에서 다루지 않습니다. 이 주제에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+올바른 권한을 보유하고 있는 경우 필요에 따라 콘텐츠 조각을 추가로 수정할 수 있지만 콘텐츠 조각 편집 작업은 이 여정에서 다루지 않습니다. 이 주제에 대한 자세한 내용은 이 문서 끝에 있는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 이 프로젝트의 목적은 간편한 액세스와 명확한 개요 제공을 위해 번역과 관련된 모든 리소스를 한 곳에 수집하는 것입니다. 그러나 번역된 항목의 세부 정보에서 확인할 수 있듯이 번역 자체는 번역 언어의 자산 폴더로 다시 흐릅니다. 이 예제에서 폴더는 다음과 같습니다.
 

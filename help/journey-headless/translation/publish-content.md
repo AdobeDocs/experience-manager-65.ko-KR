@@ -4,8 +4,8 @@ description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 �
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -70,9 +70,9 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 1. 여기에서 언어 루트 폴더 및 모든 기타 언어 폴더를 볼 수 있습니다. 게시하고자 하는 현지화된 언어를 선택합니다.
    ![언어 폴더 선택](assets/select-language-folder.png)
 1. **게시 관리**&#x200B;를 클릭합니다.
-1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**&#x200B;을 클릭합니다.
+1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**을 클릭합니다.
    ![게시 관리 옵션](assets/manage-publication-options.png)
-1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**&#x200B;를 클릭합니다.
+1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**를 클릭합니다.
    ![게시 범위 관리](assets/manage-publication-scope.png)
 1. AEM은 화면 상단의 팝업 메시지를 사용하여 게시 작업을 확인합니다.
    ![리소스 게시 배너](assets/resources-published-message.png)
@@ -169,6 +169,6 @@ You see that a new job card was added to the project. In this example, another S
 ## 추가 리소스 {#additional-resources}
 
 * [번역 프로젝트 관리](/help/sites-administering/tc-manage.md) - 인간 번역 워크플로 및 다국어 프로젝트와 같은 번역 프로젝트 및 추가 기능의 세부 정보에 대해 알아봅니다.
-* [작성 개념](/help/sites-authoring/author.md) - AEM의 작성자 및 게시 모델에 대해 자세히 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
-* [페이지 게시](/help/sites-authoring/publishing-pages.md) - 콘텐츠를 게시할 때 사용할 수 있는 추가 기능에 대해 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만, 이론은 여전히 적용됩니다.
+* [작성 개념](/help/sites-authoring/author.md) - AEM의 작성자 및 게시 모델에 대해 자세히 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만 이론은 여전히 적용됩니다.
+* [페이지 게시](/help/sites-authoring/publishing-pages.md) - 콘텐츠를 게시할 때 사용할 수 있는 추가 기능에 대해 알아봅니다. 이 문서는 콘텐츠 조각이 아닌 페이지 작성에 중점을 두고 있지만 이론은 여전히 적용됩니다.
 * [작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM은 강력한 경로 브라우저를 포함하여 콘텐츠 구성 및 편집을 위한 다양한 메커니즘을 제공합니다.

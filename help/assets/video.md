@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10488'
+source-wordcount: '10481'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 >
 >Dynamic Media에서 비디오로 작업하기 전에 Adobe Experience Manager 관리자가 Dynamic Media - Scene7 모드 또는 하이브리드 모드에서 Dynamic Media 클라우드 서비스를 활성화하고 구성했는지 확인하십시오.
 >
->* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md)에서 [Dynamic Media 클라우드 서비스 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을(를) 참조하십시오.
+>* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)에서 [Dynamic Media 클라우드 서비스 구성](/help/assets/troubleshoot-dms7.md)을(를) 참조하십시오.
 >
 >* Dynamic Media - 하이브리드 모드 구성에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을(를) 참조하십시오.
 >
->Experience Manager 6.5.9.0의 Dynamic Media *에서 현재 알려진 비디오 재생 문제*:
+>Experience Manager *의 Dynamic Media 6.5.9.0에서 현재 알려진 비디오 재생 문제*:
 >
 >* 게시된 비디오가 업데이트된 경우 게재의 변경 사항을 반영하도록 다시 게시해야 합니다.
 >
@@ -75,7 +75,6 @@ ht-degree: 2%
    * 비디오 자산 미리 보기 및 게시
 
       * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
-
         [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리 보기](previewing-assets.md)
         [비디오 표현물 보기](video-renditions.md)
         [비디오 표현물 관리](manage-assets.md#managing-renditions)
@@ -86,11 +85,9 @@ ht-degree: 2%
    * 비디오 메타데이터 작업
 
       * 프레임 속도, 오디오 및 비디오 비트율, 코덱 등 인코딩된 비디오 렌디션의 속성을 확인합니다.
-
         [비디오 렌디션 속성 보기](video-renditions.md)
 
       * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
-
         [비디오 속성 편집](manage-assets.md#editing-properties)
 
       * [디지털 에셋용 메타데이터 관리](metadata.md)
@@ -115,11 +112,9 @@ ht-degree: 2%
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-
         [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-
         [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
 
    * [비디오 보고서 생성](#viewing-video-reports).
@@ -155,7 +150,7 @@ Dynamic Media의 비디오는 데스크톱, iOS, Android™, BlackBerry® 및 Wi
 * 전체 메타데이터 지원을 통해 비디오를 구성, 탐색 및 검색하여 비디오 자산을 효율적으로 관리할 수 있습니다.
 * iPhone, iPad, Android™, BlackBerry® 및 Windows phone을 비롯한 데스크탑 및 모바일 장치와 웹에 응용 비디오 세트를 제공합니다.
 
-응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video)를 참조하세요.
+응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video)를 참조하세요.
 
 Dynamic Media는 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지원합니다. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -171,7 +166,7 @@ Dynamic Media는 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-[Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) 및 [Experience Manager 자산용 뷰어](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
+[Experience Manager Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) 및 [Experience Manager 자산용 뷰어](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
 
 ## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -189,7 +184,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 리치 미디어 콘텐츠의 범위를 데스크탑 및 모바일 사용자 모두에게 확장하고 간소화된 비디오 환경을 제공합니다.
 
-[HTML5 뷰어 정보](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
+[HTML5 뷰어 정보](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)도 참조하세요.
 
 ### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -479,7 +474,7 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우, 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 고유한 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 보내는지 확인하십시오.
 
-[Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources) 및 [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 나만의 비디오 뷰어를 만드십시오.
+[Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) 및 [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 나만의 비디오 뷰어를 만드십시오.
 
 **Dynamic Media HTML5 뷰어 SDK을 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면 다음을 수행하십시오.**
 
@@ -557,7 +552,7 @@ Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여�
 |  | 주석 트랙 |
 |  | 설명 오디오 |
 
-Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media [&#128279;](/help/assets/assets-formats.md)에서 지원되는 모든 비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+Dynamic Media [Video_360](/help/assets/assets-formats.md) 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media *에서 지원되는 모든*&#x200B;비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
 
 ### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
@@ -614,8 +609,8 @@ Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰
      |--- |--- |
      | 파일 이름 | 기본 파일 이름은 원래 파일 이름에서 파생됩니다. 파일 이름은 업로드 중에만 변경할 수 있으며 나중에 변경할 수 없습니다. 파일 이름 문자 요구 사항은 AEM Assets의 요구 사항과 동일합니다.<br>추가 오디오 트랙 파일 또는 캡션 파일에 같은 파일 이름을 사용할 수 없습니다. |
      | 언어 | 오디오 트랙의 언어를 선택합니다. |
-     | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 `English` 언어가 선택된 레이블에 `[Original]`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
-     | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 자막 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예, `English [Original]`. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
+     | 유형 | 사용 중인 오디오 트랙 유형을 선택합니다.<br>**원본** - 비디오에 원래 첨부되고 기본적으로 `[Original]` 언어가 선택된 레이블에 `English`(으)로 표시되는 오디오 트랙입니다. **[!UICONTROL 오디오 트랙 편집]** 대화 상자에서 **[!UICONTROL Label]** 및 **[!UICONTROL Language]**&#x200B;을(를) 변경할 수 있지만 기본 비디오가 다시 처리되는 경우에는 기본값이 원래 값으로 설정됩니다.<br>**표준** - 원본이 아닌 언어에 대한 추가 기능 오디오 트랙입니다.<br>**오디오 설명** - 비디오 내의 비언어적 동작 및 제스처에 대한 설명 설명을 포함하는 오디오 트랙으로, 시각 장애가 있는 개인이 콘텐츠에 더 쉽게 액세스할 수 있습니다. |
+     | 레이블 | 미디어 플레이어의 **[!UICONTROL 오디오 또는 자막 선택]** 팝업 목록에서 오디오 트랙 이름으로 표시되는 텍스트입니다. 레이블은 오디오 트랙에 해당하는 것으로, 고객에게 표시됩니다. 예를 들어, `English [Original]`과 같이 입력합니다. 비디오에 첨부된 오디오의 레이블은 기본적으로 `[Original]`(으)로 설정됩니다. |
 
      필요한 경우 나중에 이 오디오 트랙 메타데이터를 변경하거나 편집할 수 있습니다. 비디오가 게시되면 이러한 세부 사항이 게시된 비디오의 공개 URL에 반영됩니다.
 
@@ -699,7 +694,7 @@ Dynamic Media는 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
 1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. **오디오 트랙** 제목 아래에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
-1. **[!UICONTROL 기본값으로 설정]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 기본값으로 설정]**을 선택합니다.
 **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택합니다.
 
    ![선택한 오디오 트랙 파일 이름이 있고 &quot;기본값으로 설정&quot; 단추가 강조 표시된 오디오 트랙 머리글입니다.](assets-dm/msma-defaultaudiotrack2.png)*비디오에 대한 기본 오디오 트랙을 설정하는 중입니다.*
@@ -809,7 +804,7 @@ Dynamic Media의 [접근성](/help/assets/accessibility-dm.md)도 참조하세�
 
 Dynamic Media는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환합니다. 이 전환은 JSON 텍스트를 웹 페이지에 숨김이나 비디오의 전체 트랜스크립트로 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 콘텐츠를 크롤링하고 색인화하여 비디오를 보다 쉽게 검색하고 고객에게 비디오 콘텐츠에 대한 추가 세부 정보를 제공할 수 있습니다.
 
-URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
+URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정적(이미지가 아닌) 콘텐츠 제공](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)을 참조하십시오.
 
 **비디오에 폐쇄 캡션을 추가하려면:**
 
@@ -1121,7 +1116,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
    * Dynamic Media의 응용 비디오 세트를 사용하여 비디오가 수집되지 않았습니다.
 
 * Dynamic Media에 연결하는 데 문제가 있으면 `IOException`이(가) 기록됩니다.
-* 비디오가 DASH 형식을 사용하여 처리되지 않은 동안 전달된 `manifestType` 매개 변수가 `ManifestType.DASH`이면 `UnsupportedOperationException`이(가) 기록됩니다.
+* 비디오가 DASH 형식을 사용하여 처리되지 않은 동안 전달된 `UnsupportedOperationException` 매개 변수가 `manifestType`이면 `ManifestType.DASH`이(가) 기록됩니다.
 
 다음은 *HTTPWhiteBoard* 사양으로 작성된 서블릿을 사용하는 위의 API의 예입니다. 코드 구문에 대한 각 탭을 선택합니다.
 
@@ -1129,7 +1124,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 >[!TAB pom.xml에 종속성 추가]
 
-+++**pom.xml에 종속성 추가**
++++**pom.xml에 종속성 추가** 
 
 ```java
 dependency> 
@@ -1144,7 +1139,7 @@ dependency>
 
 >[!TAB 샘플 서블릿]
 
-+++**샘플 서블릿**
++++**샘플 서블릿** 
 
 ```java
 @Component
@@ -1221,9 +1216,9 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->[!TAB 서블릿에 대한  응답 클래스]
+>서블릿에 대한 [!TAB 응답 클래스]
 
-+++서블릿에 대한 **응답 클래스**
++++서블릿에 대한 **응답 클래스** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1253,7 +1248,7 @@ public abstract class VideoResponse {
 
 >[!TAB 서블릿에 참조된 상수 파일]
 
-+++**서블릿에 참조된 상수 파일**
++++**서블릿에 참조된 상수 파일** 
 
 ```java
 public final class Constants { 
@@ -1272,7 +1267,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 `servletContext`을(를) 사용하여 위의 서블릿을 탑재하십시오. 다음은 `servletContext`의 예입니다.
 
@@ -1384,7 +1379,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 ### 샘플 서블릿 사용
 
-`/dmSample/dynamicmedia/video/manifestUrl`에서 `GET` 작업을 수행하여 서블릿을 호출합니다. 다음 쿼리 매개 변수가 전달됩니다.
+`GET`에서 `/dmSample/dynamicmedia/video/manifestUrl` 작업을 수행하여 서블릿을 호출합니다. 다음 쿼리 매개 변수가 전달됩니다.
 
 | 쿼리 매개 변수 | 설명 |
 | --- | --- |
@@ -1451,7 +1446,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

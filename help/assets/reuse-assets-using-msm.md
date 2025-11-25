@@ -3,12 +3,12 @@ title: MSM을 사용하여 자산 재사용
 description: 상위 에셋에서 파생되고 연결된 여러 페이지/폴더에서 에셋을 사용합니다. 자산은 기본 복사본과 동기화 상태를 유지하며, 몇 번의 클릭만으로 상위 자산으로부터 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3284'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager]의 MSM(다중 사이트 관리자) 기능을 사용하면 한 번 작성되어 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. [!DNL Assets] 기능에 대한 MSM과 디지털 자산에도 동일한 기능을 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하여 다음을 수행할 수 있습니다.

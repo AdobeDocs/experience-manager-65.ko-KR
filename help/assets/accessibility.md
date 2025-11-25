@@ -3,13 +3,13 @@ title: ' [!DNL Experience Manager Assets]의 액세스 가능한 기능 및 인�
 description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 장애가 있는 사용자를 돕는 접근성 기능에 대해 알아봅니다.'
 contentOwner: AG
 feature: Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Possible topics to cover in this article are below.
 * [접근성 이니셔티브 - W3C에서 WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/accessibility/compliance.html)(ACR) 페이지를 참조하십시오.
+준수 수준에 대한 세부 정보가 포함된 보고서를 읽으려면 [접근성 적합성 보고서](https://www.adobe.com/kr/accessibility/compliance.html)&#x200B;(ACR) 페이지를 참조하십시오.
 
 [!DNL Dynamic Media]에 액세스하는 방법을 알아보려면 [다음 위치의 액세스 가능성 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)을 참조하세요.
 
@@ -147,7 +147,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * `Esc` 키를 사용하여 썸네일 보기에서 빠른 작업 아이콘을 제거해도 마지막 포커스 항목에서 키보드 포커스가 제거되지 않습니다.
 * 자산을 선택한 상태에서 `Alt + 4` 바로 가기 키를 선택하면 왼쪽 레일에서 [!UICONTROL 참조] 목록이 열립니다. `Tab` 키를 사용하면 0이 아닌 참조 항목을 탐색할 수 있습니다. 0이 아닌 참조 항목만 탐색하면 작업량과 키 입력도 절약됩니다.
 * 에셋에 대한 댓글은 에셋 타임라인에서 사용할 수 있습니다. 키보드 또는 키보드 단축키를 사용하여 왼쪽 레일에 액세스하는 경우 액세스할 수 있습니다.
-* 키보드를 사용하여 [!DNL Experience Manager]의 [!UICONTROL 보기 설정]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
+* 키보드를 사용하여 [!UICONTROL 의 ]보기 설정[!DNL Experience Manager]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
@@ -209,7 +209,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 ## 액세스 가능한 설명서 {#accessible-docs}
 
-[!DNL Experience Manager]은(는) 장애가 있는 사용자가 사용할 수 있도록 액세스 가능한 설명서를 제공합니다. 다음은 Adobe이 템플릿과 컨텐츠를 계속 개선하는 동안 컨텐츠 제공을 지금 액세스할 수 있도록 하는 데 도움이 됩니다.
+[!DNL Experience Manager]은(는) 장애가 있는 사용자가 사용할 수 있도록 액세스 가능한 설명서를 제공합니다. 다음은 Adobe이 템플릿과 컨텐츠를 지속적으로 개선하는 동안 컨텐츠 제공을 지금 사용할 수 있도록 하는 데 도움이 됩니다.
 
 * 화면 판독기는 텍스트를 읽을 수 있습니다.
 * 이미지와 일러스트레이션에 대체 텍스트를 사용할 수 있습니다.
@@ -225,7 +225,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)의 접근성 기능.
+>* [의  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)접근성 기능.
 >* [각 서비스 팩 릴리스에서 수행된 개선 사항의 릴리스 노트](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] 접근성 지침](/help/managing/web-accessibility.md).
->* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).
+>* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).

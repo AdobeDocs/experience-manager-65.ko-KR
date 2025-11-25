@@ -1,18 +1,18 @@
 ---
-title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
+title: AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 콘텐츠 조각 모델을 사용하여 Headless CMS용 콘텐츠를 모델링하는 개념 및 메커니즘에 대해 알아봅니다.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
 
 ---
 
-# AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
+# AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
 
 ## 지금까지의 스토리 {#story-so-far}
 
@@ -103,7 +103,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 모델이 게시되는 즉시 작성자의 읽기 전용 모드로 *잠깁니다*. 목표는 특히 게시 환경에서 기존 GraphQL 스키마 및 쿼리에 오류를 발생시킬 수 있는 변경 사항을 방지하는 것입니다. 콘솔에 **잠김**&#x200B;으로 표시됩니다.
 
-모델이 읽기 전용 모드에서 **잠금**&#x200B;인 경우 모델의 콘텐츠 및 구조를 볼 수 있지만 이를 편집할 수는 없습니다. 단, 콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
+모델이 읽기 전용 모드에서 **잠김**&#x200B;인 경우 모델의 콘텐츠 및 구조를 볼 수 있지만 이를 편집할 수는 없습니다. 단, 콘솔 또는 모델 편집기에서 **잠긴** 모델을 관리할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 

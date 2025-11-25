@@ -4,11 +4,11 @@ description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a C
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 58%
+ht-degree: 88%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 58%
 >
 >이러한 최적화 권장 사항을 적용하기 전에 최상의 성능을 얻으려면 [GraphQL 필터링에서 페이징 및 정렬을 위해 콘텐츠 조각을 업데이트](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)하는 것이 좋습니다.
 
-이 지침은 GraphQL 쿼리와 관련된 성능 문제를 방지하기 위해 제공됩니다.
+이러한 지침은 GraphQL 쿼리의 성능 문제를 방지하는 데 도움이 되도록 제공됩니다.
 
-## GraphQL 검사 목록 {#graphql-checklist}
+## GraphQL 체크리스트 {#graphql-checklist}
 
-다음 체크리스트는 Adobe Experience Manager(AEM as a Cloud Service)의 GraphQL 구성 및 사용을 최적화하는 데 도움이 되는 것입니다.
+다음 체크리스트는 Adobe Experience Manager(AEM) as a Cloud Service에서 GraphQL의 구성 및 사용을 최적화하는 데 도움을 제공하기 위한 것입니다.
 
-### 첫 번째 원칙 {#first-principles}
+### 주요 원칙 {#first-principles}
 
 #### 지속 GraphQL 쿼리 사용 {#use-persisted-graphql-queries}
 
@@ -32,7 +32,7 @@ ht-degree: 58%
 
 지속 GraphQL 쿼리를 사용하는 것이 좋습니다.
 
-지속 GraphQL 쿼리는 CDN(Content Delivery Network)을 활용하여 쿼리 실행 성능을 줄이는 데 도움이 됩니다. 클라이언트 애플리케이션은 빠른 에지 지원 실행을 위해 GET 요청과 함께 지속 쿼리를 요청합니다.
+지속 GraphQL 쿼리는 콘텐츠 전송 네트워크(CDN)를 활용하여 쿼리 실행 성능을 줄이는 데 도움이 됩니다. 클라이언트 애플리케이션은 빠른 에지 지원 실행을 위해 GET 요청으로 지속 쿼리를 요청합니다.
 
 **추가 참조**
 
@@ -47,7 +47,7 @@ ht-degree: 58%
 
 GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Experience Manager 콘텐츠 조각을 설치해야 합니다*. 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다. 이 패키지를 설치하지 않으면 GraphQL 쿼리가 느려지거나 실패할 수 있습니다.
 
-서비스 팩에 적합한 버전에 대한 릴리스 정보를 참조하십시오. 예를 들어 최신 서비스 팩의 경우 [Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) 를 참조하십시오.
+서비스 팩에 적합한 버전에 대한 릴리스 정보를 참조하십시오. 예를 들어 최신 서비스 팩은 [Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) 를 참조하십시오.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 **추가 참조**
 다음을 참조하십시오.
 
-* [Experience Manager 콘텐츠 조각용 GraphQL 인덱스 패키지 설치](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
+* [Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
 
 ### 캐시 전략 {#cache-strategy}
 
@@ -66,7 +66,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 **권장 사항**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)은(는) CDN 캐시 이전의 AEM 서비스 내 첫 번째 수준 캐시입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
 
 **추가 참조**
 
@@ -74,17 +74,17 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 * [GraphQL 지속 쿼리 - Dispatcher에서 캐싱 활성화](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-persisted-queries-enabling-caching-dispatcher)
 
-#### CDN(Content Delivery Network) 사용 {#use-cdn}
+#### 콘텐츠 전송 네트워크(CDN) 사용 {#use-cdn}
 
 **권장 사항**
 
-CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 해당 JSON 응답이 캐시될 수 있습니다. 반대로 캐시되지 않은 요청은 매우 (리소스) 비용이 많이 들고 처리 속도가 느릴 수 있으며, 이로 인해 원본 리소스에 추가 해로운 영향을 미칠 수 있습니다.
+GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 지정되면 캐시될 수 있습니다. 반면, 캐시되지 않은 요청은 (리소스) 비용이 매우 높고 처리 속도가 느릴 수 있으며 원본 리소스에 더 해로운 영향을 미칠 가능성이 있습니다.
 
 **추가 참조**
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 
@@ -92,7 +92,7 @@ CDN을 사용할 때 `GET` 요청으로 타깃팅된 경우 GraphQL 쿼리 및 �
 
 CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
 
-각 지속 쿼리에는 고유한 캐시 제어 헤더 집합이 있을 수 있습니다. 헤더는 [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 설정할 수 있습니다.
+각 지속 쿼리에는 고유한 특정 캐시 제어 헤더 집합이 있을 수 있습니다. 헤더는 [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 설정할 수 있습니다.
 
 **cURL** 명령줄 도구를 사용하여 설정할 수도 있습니다. 예를 들어 `PUT` 요청을 사용하여 캐시 제어를 사용하여 래핑된 일반 쿼리를 만듭니다.
 
@@ -147,7 +147,7 @@ AEM은 GraphQL 쿼리를 최적화하는 데 2가지 접근 방식을 제공합�
 
    * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
 
-각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 GraphQL 쿼리를 최적화하는 데 사용되는 일부 [모범 사례](#best-practices)와 함께 하이브리드 필터링 및 페이징에 대한 정보를 제공합니다.
+각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 하이브리드 필터링 및 페이징에 대한 정보와 GraphQL 쿼리 최적화에 사용되는 [모범 사례](#best-practices)를 제공합니다.
 
 #### AEM GraphQL 하이브리드 필터링 사용 {#use-aem-graphql-hybrid-filtering}
 
@@ -165,7 +165,7 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 >[!NOTE]
 >
->AEM 하이브리드 필터링을 사용하려면 기존 콘텐츠 조각을 업데이트해야 합니다
+>AEM 하이브리드 필터링을 사용하려면 기존 콘텐츠 조각을 업데이트해야 합니다.
 
 **추가 참조**
 
@@ -178,12 +178,12 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 
 **권장 사항**
 
-GraphQL 표준인 페이지 매김을 사용하여 응답을 청크로 세분화함으로써, 결과 세트가 큰 복잡한 쿼리의 응답 시간을 향상시킬 수 있습니다.
+큰 결과 세트가 포함된 복잡한 쿼리의 응답 시간은 GraphQL 표준인 페이지 매김을 사용하여 응답을 청크로 분할함으로써 개선할 수 있습니다.
 
 AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 * [제한/오프셋 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-목록 쿼리에 사용됩니다. `List`(예: `articleList`)로 끝납니다.
+목록 쿼리에 사용되며, `articleList` 등의 `List`로 끝납니다.
 이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
 * [커서 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)(`first` 및 `after`로 표시)
@@ -208,7 +208,7 @@ AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 **권장 사항**
 
-또한 GraphQL 표준인 정렬을 통해 클라이언트는 정렬된 순서대로 JSON 콘텐츠를 수신할 수 있습니다. 이를 통해 클라이언트에 대한 추가 처리 필요성을 줄일 수 있습니다.
+또한 GraphQL 표준인 정렬을 사용하면 클라이언트가 JSON 콘텐츠를 정렬된 순서로 수신할 수 있습니다. 이렇게 하면 클라이언트에서 추가 처리의 필요성이 줄어들 수 있습니다.
 
 정렬은 모든 정렬 기준이 최상위 조각과 관련된 경우에만 효율적입니다.
 
@@ -222,7 +222,7 @@ AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 다음을 참조하십시오.
 
-* [태그 ID별로 필터링하고 변형을 제외한 샘플 쿼리 및 이름별 정렬](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-filtering-tag-not-variations)
+* [_tags ID별로 필터링하고 변형을 제외하며 이름별로 분류하는 샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-filtering-tag-not-variations)
 
 ## 모범 사례 {#best-practices}
 
@@ -319,24 +319,24 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 ### 콘텐츠 조각 중첩 최소화 {#minimize-content-fragment-nesting}
 
-콘텐츠 조각 중첩은 사용자 지정 콘텐츠 구조를 모델링하는 좋은 방법입니다. 중첩된 조각이 있고, ... 등이 있는 중첩된 조각이 있는 조각을 가질 수도 있습니다.
+콘텐츠 조각 중첩은 사용자 정의 콘텐츠 구조를 모델링하는 좋은 방법입니다. 중첩된 조각이 있고, ... 등이 있는 중첩된 조각이 있는 조각을 가질 수도 있습니다.
 
-그러나 GraphQL이 중첩된 모든 콘텐츠 조각의 전체 계층 구조를 통과해야 하므로 수준이 너무 많은 구조를 만들면 GraphQL 쿼리의 처리 시간이 늘어날 수 있습니다.
+그러나 너무 많은 수준으로 구조를 생성하면 GraphQL이 중첩된 모든 콘텐츠 조각의 전체 계층 구조를 통과해야 하므로 GraphQL 쿼리의 처리 시간이 늘어날 수 있습니다.
 
-딥중첩은 콘텐츠 거버넌스에 악영향을 줄 수도 있습니다. 일반적으로 콘텐츠 조각 중첩을 5개 또는 6개 수준 이하로 제한하는 것이 좋습니다.
+깊은 중첩은 콘텐츠 거버넌스에 부정적인 영향을 미칠 수도 있습니다. 일반적으로 콘텐츠 조각 중첩을 5~6개 수준 미만으로 제한하는 것이 좋습니다.
 
-### 모든 형식 출력 안 함(여러 줄 텍스트 요소) {#do-not-output-all-formats}
+### 모든 포맷을 출력하지 않음(여러 줄 텍스트 요소) {#do-not-output-all-formats}
 
-AEM GraphQL은 **[여러 줄 텍스트](/help/assets/content-fragments/content-fragments-models.md#data-types)** 데이터 형식으로 작성된 텍스트를 서식 있는 텍스트, 간단한 텍스트 및 Markdown의 다양한 형식으로 반환할 수 있습니다.
+AEM GraphQL은 **[여러 줄 텍스트](/help/assets/content-fragments/content-fragments-models.md#data-types)** 데이터 유형으로 작성된 텍스트를 리치 텍스트, 간단한 텍스트, 마크다운 등 다양한 포맷으로 반환할 수 있습니다.
 
-세 형식을 모두 출력하면 JSON의 텍스트 출력 크기가 3배율로 증가합니다. 따라서 매우 광범위한 쿼리의 일반적으로 큰 결과 세트와 함께 매우 큰 JSON 응답을 생성할 수 있으므로 계산하는 데 시간이 오래 걸립니다. 콘텐츠를 렌더링하는 데 필요한 텍스트 형식으로만 출력을 제한하는 것이 좋습니다.
+세 가지 형식을 모두 출력하면 JSON의 텍스트 출력 크기가 3배 증가합니다. 이는 일반적으로 매우 광범위한 쿼리의 대규모 결과 세트와 결합되어 매우 큰 JSON 응답을 생성할 수 있으므로 계산에 오랜 시간이 소요될 수 있습니다. 콘텐츠 렌더링에 필요한 텍스트 형식으로만 출력을 제한하는 것이 좋습니다.
 
-### 컨텐츠 조각 수정 {#modifying-content-fragments}
+### 콘텐츠 조각 수정 {#modifying-content-fragments}
 
 AEM UI 또는 API를 사용하여 콘텐츠 조각 및 해당 리소스만 수정합니다. JCR에서 직접 수정하지 마십시오.
 
 ### 쿼리 테스트 {#test-your-queries}
 
-GraphQL 쿼리 처리는 검색 쿼리 처리와 유사하며 단순한 GET 전체 컨텐츠 API 요청보다 훨씬 더 복잡합니다.
+GraphQL 쿼리 처리는 검색 쿼리 처리와 유사하며 단순한 GET-all-content API 요청보다 훨씬 더 복잡합니다.
 
-제어된 비프로덕션 환경에서 쿼리를 신중하게 계획, 테스트 및 최적화하는 것은 프로덕션에서 사용할 때 추후 성공을 위한 핵심입니다.
+통제된 비프로덕션 환경에서 쿼리를 신중하게 계획하고, 테스트하고, 최적화하는 것은 프로덕션 환경에서 나중에 사용할 때 성공을 거두기 위한 핵심 요소입니다.

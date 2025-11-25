@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식을 위한 기록 문서 생성
+title: 적응형 양식의 기록 문서 생성
 description: 적응형 양식에 대한 기록 문서(DoR)를 생성하는 방법을 설명합니다.
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -9,20 +9,20 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 3%
 
 ---
 
 # 적응형 양식 또는 적응형 양식 단편을 위한 기록 문서 생성 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 적응형 양식 편집기에서 적응형 양식 단편 및 해당 필드를 사용자 지정하는 지원은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+> 적응형 양식 편집기에서 적응형 양식 조각 및 해당 필드를 사용자 지정할 수 있는 지원은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 
 
 >[!NOTE]
@@ -79,7 +79,7 @@ ht-degree: 3%
 
 기록 문서를 생성할 **적응형 양식 단편** 적응형 양식 단편.
 
-**기본 템플릿(권장)** AEM Designer에서 만든 XFA 템플릿(XDP 파일). 기본 템플릿은 기록 문서 템플릿의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다.
+AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일). 기본 템플릿은 기록 문서 템플릿의 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다.
 
 [기록 문서의 기본 템플릿](#base-template-of-a-document-of-record)을 참조하세요.
 
@@ -132,7 +132,7 @@ ht-degree: 3%
    <td> </td>
   </tr>
   <tr>
-   <td>낙서 서명</td>
+   <td>스크리블 서명</td>
    <td>서명 낙서</td>
    <td>true</td>
    <td> </td>
@@ -210,7 +210,7 @@ ht-degree: 3%
 | 적응형 양식 구성 요소 | 해당 XFA 구성 요소 | 메모 |
 |---|---|---|
 | 이미지 | 이미지 | 바운드 컨트롤이든 언바운드 컨트롤이든 TextDraw 및 Image 구성 요소는 레코드 설정 문서를 사용하여 제외하지 않는 한 항상 XSD 기반 적응형 양식에 대한 기록 문서에 나타납니다. |
-| 텍스트 | 텍스트 |
+| 텍스트 | 텍스트 |  |
 
 >[!NOTE]
 >
@@ -234,13 +234,13 @@ ht-degree: 3%
 
 * 기본 템플릿에서 루트 하위 양식의 이름을 `AF_METATEMPLATE`(으)로 지정하고 마스터 페이지의 이름을 `AF_MASTERPAGE`(으)로 지정해야 합니다.
 
-* `AF_METATEMPLATE` 루트 하위 양식 아래에 있는 이름이 `AF_MASTERPAGE`인 마스터 페이지에 머리글, 바닥글 및 스타일 정보 추출을 위한 기본 설정이 지정되어 있습니다.
+* `AF_MASTERPAGE` 루트 하위 양식 아래에 있는 이름이 `AF_METATEMPLATE`인 마스터 페이지에 머리글, 바닥글 및 스타일 정보 추출을 위한 기본 설정이 지정되어 있습니다.
 
 * `AF_MASTERPAGE`이(가) 없으면 기본 템플릿에 있는 첫 번째 마스터 페이지가 사용됩니다.
 
 **필드에 대한 스타일 규칙**
 
-* 기록 문서의 필드에 스타일을 적용하려면 기본 템플릿에서 `AF_METATEMPLATE` 루트 하위 양식 아래에 있는 `AF_FIELDSSUBFORM` 하위 양식의 필드를 제공합니다.
+* 기록 문서의 필드에 스타일을 적용하려면 기본 템플릿에서 `AF_FIELDSSUBFORM` 루트 하위 양식 아래에 있는 `AF_METATEMPLATE` 하위 양식의 필드를 제공합니다.
 
 * 이러한 필드의 속성은 기록 문서의 필드에 적용됩니다. 이러한 필드는 `AF_<name of field in all caps>_XFO` 명명 규칙을 따라야 합니다. 예를들어 확인란의 필드 이름은 `AF_CHECKBOX_XFO`이어야 합니다.
 
@@ -276,7 +276,7 @@ ht-degree: 3%
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
-1. 속성 창에서 **양식 모델**&#x200B;을(를) 선택합니다.
+1. 속성 창에서 **양식 모델**을(를) 선택합니다.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -421,7 +421,6 @@ ht-degree: 3%
 
 * **[!UICONTROL 기본]**
    * **템플릿:** 템플릿 기본값 또는 사용자 지정을 선택할 수 있습니다.
-
      ![대체 텍스트](image.png)
    * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
    * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
@@ -434,7 +433,6 @@ ht-degree: 3%
       * 세로
       * 가로
       * 적응형 양식과 동일
-
      >[!NOTE]
      > 세로 및 가로 정렬은 에만 적용할 수 있습니다.     라디오 단추 및 확인란
 * **[!UICONTROL 기본 페이지 속성]** [기본 페이지 속성](#master-page-properties-master-page-properties)에 대한 자세한 내용을 보려면 클릭하세요.
@@ -448,7 +446,7 @@ ht-degree: 3%
 1. 패널을 선택하고 ![구성](/help/forms/using/assets/configure.png)을 선택합니다.
 1. 속성을 보려면 **[!UICONTROL 기록 문서]**&#x200B;를 확장하세요.
 
-1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
+1. **[!UICONTROL 페이지 매김]** 섹션의 ![배치](/help/forms/using/assets/folder-icon.png) 필드에서 **[!UICONTROL 폴더]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 다음 페이지 상단]**&#x200B;을 선택하고 **[!UICONTROL 선택]**&#x200B;을 선택합니다. **[!UICONTROL 페이지 상단]**&#x200B;을 선택하고 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택하여 페이지 나누기를 적용할 수도 있습니다.
 1. 속성을 저장하려면 ![저장](/help/forms/using/assets/save_icon.png)을(를) 선택하십시오.
 
@@ -466,10 +464,10 @@ ht-degree: 3%
 두 번째 마스터 페이지 속성을 패널에 적용하고 세 번째 마스터 페이지 속성을 다음에 나오는 패널에 적용하려면 다음 단계를 실행합니다.
 
 1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png)을(를) 선택하십시오.
-1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
-1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 페이지 매김]** 섹션의 ![배치](/help/forms/using/assets/folder-icon.png) 필드에서 **[!UICONTROL 폴더]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**을 선택합니다.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
-1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 이후]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
+1. **[!UICONTROL 페이지 매김]** 섹션의 ![이후](/help/forms/using/assets/folder-icon.png) 필드에서 **[!UICONTROL 폴더]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 페이지로 이동]**&#x200B;을 선택하고 세 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 1. 속성을 저장하려면 ![저장](/help/forms/using/assets/save_icon.png)을(를) 선택하십시오.
 AEM Forms은 세 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
@@ -498,7 +496,7 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 | 구성/현재/레이아웃 | 출력이 단일 패널인지 또는 페이지 매김되어 있는지 여부를 제어합니다. |
 | config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
 | config/present/pdf/fontInfo/embed | 출력 문서의 글꼴 포함을 제어합니다. |
-| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보를 포함할지 여부를 제어합니다. |
+| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보가 포함되어 있는지 여부를 제어합니다. |
 | config/present/common/data/adjustData | XFA 애플리케이션이 병합 후 데이터를 조정하는지 여부를 제어합니다. |
 | config/present/pdf/renderPolicy | 페이지 컨텐츠 생성이 서버에서 수행되는지 아니면 클라이언트로 연기되는지를 제어합니다. |
 | config/present/common/locale | 출력 문서에 사용되는 기본 로케일을 지정합니다. |
@@ -509,15 +507,15 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 | config/present/common/log/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
 | config/present/output/to | 로그 데이터나 출력 데이터가 기록되는 위치를 제어합니다. |
 | config/present/script/currentPage | 문서를 열 때의 초기 페이지를 지정합니다. |
-| config/present/script/exclude | 무시할 Forms as a Cloud Service 이벤트를 알립니다. |
-| config/present/pdf/linearized | 출력 PDF 문서의 선형 여부를 제어합니다. |
-| config/present/script/runScripts | Formsas a Cloud Service 가 실행하는 스크립트 집합을 제어합니다. |
-| config/present/pdf/태그됨 | 출력 PDF 문서에 태그를 포함하도록 제어합니다. 태그는 PDF 컨텍스트에서 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 지원 및 서식 변경을 지원합니다. 예를 들어, 화면 판독기가 텍스트 중간에 이를 발음하지 않도록 페이지 번호를 아티팩트로 태그 지정할 수 있습니다. 태그를 사용하면 문서가 더 유용해지지만 문서 크기와 문서를 만드는 처리 시간도 늘어납니다. |
+| config/present/script/exclude | 무시할 이벤트를 Forms as a Cloud Service에 알립니다. |
+| config/present/pdf/linearized | 출력 PDF 문서가 선형화되는지 여부를 제어합니다. |
+| config/present/script/runScripts | Forms as a Cloud Service이 실행하는 스크립트 세트를 제어합니다. |
+| config/present/pdf/태그됨 | 출력 PDF 문서에 태그를 포함하도록 제어합니다. PDF의 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 지원 및 서식 변경을 지원합니다. 예를 들어, 화면 판독기가 텍스트 중간에 이를 발음하지 않도록 페이지 번호를 아티팩트로 태그 지정할 수 있습니다. 태그를 사용하면 문서가 더 유용해지지만 문서 크기와 문서를 만드는 처리 시간도 늘어납니다. |
 | config/present/pdf/fontInfo/alwaysEmbed | 출력 문서에 포함된 글꼴을 지정합니다. |
 | config/present/pdf/fontInfo/neverEmbed | 출력 문서에 포함해서는 안 되는 글꼴을 지정합니다. |
 | config/present/pdf/pdfa/part | 문서가 준수하는 PDF/A 사양의 버전 번호를 지정합니다. |
 | config/present/pdf/pdfa/amd | PDF/A 사양의 수정 수준을 지정합니다. |
-| config/present/pdf/pdfa/conformance | PDF/A 사양과 호환 레벨을 지정합니다. |
+| config/present/pdf/pdfa/conformance | PDF/A 사양으로 적합성 수준을 지정합니다. |
 | config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
 | config/present/pdf/version/map | 문서의 대체 글꼴을 지정합니다. |
 
@@ -535,6 +533,6 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 ### 로컬 Forms 개발 환경에서 사용자 지정 XCI 파일 사용
 
 1. XCI 파일을 로컬 개발 환경에 업로드합니다.
-1. &#x200B;<!--Cloud Service SDK--> 구성 관리자를 엽니다. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. <!--Cloud Service SDK--> 구성 관리자를 엽니다. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. **[!UICONTROL 적응형 Forms 및 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
 1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.

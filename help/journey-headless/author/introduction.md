@@ -4,17 +4,17 @@ description: Adobe Experience Manager의 강력하고 유연한 Headless 기능�
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 87%
 
 ---
 
-# AEM을 통한 Headless 작성 - 소개 {#author-headless-introduction}
+# AEM을 통한 헤드리스 작성 - 소개 {#author-headless-introduction}
 
-[AEM Headless 콘텐츠 작성 여정](overview.md)의 이 부분에서는 Adobe Experience Manager(AEM)를 사용한 Headless 콘텐츠 게재를 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
+[AEM Headless 콘텐츠 작성 여정](overview.md)의 이 부분에서는 Adobe Experience Manager(AEM)를 사용하여 Headless 콘텐츠 게재를 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 ## 목표 {#objective}
 
@@ -33,7 +33,7 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 
 일반적으로 CMS에서 콘텐츠를 관리하고, 동일한 CMS는 웹 페이지의 해당 콘텐츠 렌더링을 담당합니다.
 
-이제 Headless는 콘텐츠 세트를 CMS에서 관리한 다음 하나 이상의 (독립적인) 애플리케이션에서 액세스할 수 있음을 의미합니다.
+이제 Headless는 CMS에서 콘텐츠 세트를 관리하고 하나 이상의 (독립적인) 애플리케이션에서 액세스할 수 있음을 의미합니다.
 
 즉, 콘텐츠를 다양한 형식으로 모든 디바이스에 게재할 수 있습니다. 이를 통해 전체 프로세스를 보다 유연하게 구성할 수 있고 레이아웃 및 서식에 대해 걱정할 필요는 없습니다.
 
@@ -50,8 +50,8 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 즉, 다음 경우로 사용할 수 있습니다.
 
 * Headless CMS
-   * Headless의 경우 콘텐츠를 **콘텐츠 조각**&#x200B;으로 작성할 수 있습니다.
-이는 **콘텐츠 조각 모델**&#x200B;을 기반으로 사전 정의된 구조가 있는 다양한 애플리케이션을 통해 직접 액세스할 수 있는 자체 포함된 콘텐츠 항목입니다.
+   * Headless의 경우 콘텐츠를 **콘텐츠 조각**으로 작성할 수 있습니다.
+이는 **콘텐츠 조각 모델**을 기반으로 사전 정의된 구조가 있는 다양한 애플리케이션을 통해 직접 액세스할 수 있는 자체 포함된 콘텐츠 항목입니다.
 즉, 콘텐츠에서 다양한 형식과 기능으로 다양한 디바이스를 사용할 수 있습니다.
 (문제가 발생하면 AEM 웹 페이지를 구성할 때도 이 조각이 필요한 경우 사용할 수 있습니다.)
 
@@ -87,6 +87,6 @@ AEM의 경우 콘텐츠 설계자 역할(종종 다른 개인)이 데이터 모�
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

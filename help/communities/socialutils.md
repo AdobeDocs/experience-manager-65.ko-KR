@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,24 +26,24 @@ ht-degree: 1%
 
 ## SocialResourceUtility 패키지  {#socialresourceutilities-package}
 
-| com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities의 메서드 |
-|---|
+| com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities의 메서드 | 메모 |
+|---|---|
 | 부울 checkPermission(ResourceResolver, 문자열 경로, 문자열 작업) |  |
 | SocialResourceProvider getSocialResourceProvider(리소스 리소스 리소스) |  |
 | SocialResourceConfiguration getStorageConfig(리소스 리소스) |  |
 | 리소스 getUGCResource(리소스 사용자 리소스) |  |
-| 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf) | 새 항목 |
-| 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | 새 항목 |
+| 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf) | 신규 |
+| 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | 신규 |
 | 리소스 getUGCResource(리소스 사용자 리소스, 문자열 리소스 유형 힌트) |  |
 | boolean hasModeratePermissions(리소스 리소스) |  |
 | 문자열 resourceToACLPath(리소스 리소스) |  |
 | 문자열 resourceToUGCStoragePath(Resource resource) | 문자열 resourceToUGCPath(리소스 리소스)를 대체합니다. |
 | 문자열 UGCoResourcePath(리소스 리소스) |  |
 | 문자열 UGCoResourcePath(문자열 ugcPath) | 메서드 시그니처가 변경됨 |
-| 문자열 UGCoResourcePath(문자열 ugcPath, ResourceResolver) | 새 항목 |
+| 문자열 UGCoResourcePath(문자열 ugcPath, ResourceResolver) | 신규 |
 
-| `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities의 메서드 |
-|---|
+| `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities의 메서드 | 메모 |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(리소스 리소스 리소스) | 는 SocialResourceProvider getConfiguredProvider(리소스 리소스)를 대체합니다. |
 
 ## SCFUtilities 패키지 {#scfutilities-package}

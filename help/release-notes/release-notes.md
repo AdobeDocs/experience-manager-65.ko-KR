@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 650131b88e06d59e6c206e07b8512149cd360b08
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6772'
 ht-degree: 25%
@@ -36,7 +36,7 @@ ht-degree: 25%
 
 ## [!DNL Experience Manager] 6.5.23.0에 포함된 항목 {#what-is-included-in-aem-6523}
 
-[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [&#x200B; 6.5에서 &#x200B;](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
+[!DNL Experience Manager] 6.5.23.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -74,7 +74,7 @@ ht-degree: 25%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 * FORMS-20533, FORMS-20532: 이제 AEM Forms에 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
@@ -233,11 +233,11 @@ ht-degree: 25%
 
 ### [!DNL Assets]{#assets-6523}
 
-* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 &#x200B;](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**&#x200B;폴더로 이동한 다음 스톡 이미지를 선택한 후&#x200B;**[!UICONTROL &#x200B; 온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
+* [!DNL AEM]Assets6.5.22.0Assets![을(를) 선택하고 ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Adobe Stock 검색&#x200B;]**폴더로 이동한 다음 스톡 이미지를 선택한 후**[!UICONTROL  온-프레미스(]**) 탐색 페이지에서 다음 문제가 발생합니다.
    * **[!UICONTROL 라이선스 및 저장]**&#x200B;을 클릭하면 빈 드롭다운이 표시되므로 선택한 스톡 이미지에 라이선스를 부여하고 저장할 수 없습니다.
    * 스톡 이미지를 선택하거나 스톡 페이지 URL을 다시 입력하면 [!DNL AEM] 홈페이지로 리디렉션되어 Adobe Stock 이미지에 액세스할 수 없습니다. (ASSETS-48687)
 * `/` On-Premise([!DNL AEM]) 탐색 페이지에서 폴더 이름에 6.5.22.0이(가) 포함된 경우 폴더를 관리하는 동안 문제가 발생합니다. (ASSETS-46740)
-* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**&#x200B;보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
+* [!DNL AEM] 6.5의 경우 메모리 사용량이 많아 ![컬렉션](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 컬렉션&#x200B;]**보기에서 자산 세부 정보 페이지가 로드되지 않습니다. (ASSETS-46738)
 * [!DNL InDesign]을(를) `Day CQ DAM Mime Type OSGI` 서비스로 통합하는 동안 문제가 발생하여 [!DNL InDesign] 파일이 `x-adobe-indesign` 대신 `x-indesign`(으)로 잘못 식별됩니다. (ASSETS-45953)
 * [!DNL AEM 6.5.21] 세션 누수가 기본 **[!UICONTROL Brand Portal에 예약된 게시]** 워크플로 단계로 추적되었습니다. (ASSETS-44104)
 * 이미지를 처리하고 게시할 때 **[!UICONTROL 메모리 부족(OOM)]** 오류가 [!DNL AEM]에 표시됩니다. 이 문제는 **[!DNL Dam Asset update]** 및 **[!DNL Dynamic Media: Reprocess assets]**&#x200B;과(와) 같이 워크플로우에서 더 이상 사용되지 않는 메서드로 인해 발생했습니다. (ASSETS-43343)
@@ -362,9 +362,9 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 * AEM Forms 6.5.21.0에서 PDFG 변환이 실패하고 다음 오류가 발생합니다. (FORMS-16851)(FORMS-14613)
 
-* AEM Forms 6.5.23.0에서 (PDFG) PS를 PDF으로, HTML을 PDF으로(WebKit) 전환하지 못했습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-21721)
+* AEM Forms 6.5.23.0에서 (PDFG) PS를 PDF으로, HTML을 PDF으로(WebKit) 전환하지 못했습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-21721)
 
-* AEM Forms 6.5.23.0에서 (PDFG) 이미지를 PDF으로 변환할 수 없습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-22029)
+* AEM Forms 6.5.23.0에서 (PDFG) 이미지를 PDF으로 변환할 수 없습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-22029)
 
 #### Forms Captcha {#forms-captcha-6523}
 
@@ -537,7 +537,7 @@ SNI 유효성 검사가 사용자 지정 호스트 헤더와 함께 Dispatcher S
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.23.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -553,7 +553,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -586,7 +586,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 
 ## 더 이상 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
-AEM 6.5에서 더 이상 사용되지 않거나 제거된 모든 기능에 대한 자세한 목록은 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md/)을 참조하십시오.
+AEM 6.5에서 더 이상 사용되지 않거나 제거된 모든 기능에 대한 자세한 목록은 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하십시오.
 
 ### SPA 편집기 {#spa-editor}
 
@@ -771,6 +771,6 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)

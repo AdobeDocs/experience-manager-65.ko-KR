@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 feature: Viewers
-role: User, Admin,Developer,Data Engineer,Data Architect
+role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6677'
 ht-degree: 5%
@@ -28,7 +28,7 @@ Experience Platform 태그 및 Dynamic Media 뷰어 5.13용 *Dynamic Media 뷰�
 
 이 통합은 Adobe Analytics을 사용하여 웹 사이트에서 Dynamic Media 뷰어 사용을 추적할 수 있음을 의미합니다. 동시에 Adobe 또는 서드파티의 다른 Experience Platform 태그 확장과 함께 뷰어가 노출하는 이벤트 및 데이터를 사용할 수 있습니다.
 
-Adobe 확장 또는 타사 확장에 대한 자세한 내용은 Experience Platform 태그 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/overview)을 참조하십시오.
+Adobe 확장 또는 타사 확장에 대한 자세한 내용은 Experience Platform 태그 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/overview)을 참조하십시오.
 
 **이 항목은 다음을 위한 것입니다.** 사이트 관리자, Experience Platform의 개발자 및 작업 중인 사람.
 
@@ -37,7 +37,7 @@ Adobe 확장 또는 타사 확장에 대한 자세한 내용은 Experience Platf
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합이 Experience Manager 작성자 노드에서 작동하지 않습니다. WCM 페이지는 게시될 때까지 추적할 수 없습니다.
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합은 자산 세부 사항 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 가져오는 &quot;팝업&quot; 작업 모드에서는 지원되지 않습니다.
 * Experience Platform 태그 통합은 기존 뷰어 Analytics 통합과 동시에 사용할 수 없습니다(`config2=` 매개 변수 사용).
-* 비디오 추적 지원은 [추적 개요](https://experienceleague.adobe.com/ko/docs/media-analytics/using/tracking/track-core-overview)에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다. 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
+* 비디오 추적 지원은 [추적 개요](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview)에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다. 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
 * *Dynamic Media 뷰어* 확장을 사용하는 데이터 요소에 대해서는 데이터 요소에 대한 저장소 기간 구성이 지원되지 않습니다. 저장소 기간은 **[!UICONTROL 없음]**(으)로 설정해야 합니다.
 
 ### 통합에 대한 사용 사례 {#use-cases-for-the-integration}
@@ -74,7 +74,7 @@ Dynamic Media 뷰어 확장 기능은 데이터 요소 값을 자동으로 최�
 
 데이터 요소를 정의한 후 데이터 요소 선택기 위젯을 사용하여 Experience Platform Tags UI의 다른 위치에서 데이터 요소를 사용할 수 있습니다. 특히, Dynamic Media 뷰어 추적을 위해 정의된 데이터 요소는 규칙에서 Adobe Analytics 확장의 변수 설정 작업에서 참조됩니다(아래 참조).
 
-[데이터 요소](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/ui/data-elements)를 참조하십시오.
+[데이터 요소](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements)를 참조하십시오.
 
 #### Experience Platform 태그의 규칙 정보 {#about-rules-in-adobe-launch}
 
@@ -100,13 +100,13 @@ Dynamic Media 뷰어를 추적하려면 다음 유형을 사용할 수 있습니
 
 *변수 설정* 동작 뒤에는 *비콘 보내기* 동작이 와야 합니다. *비콘 보내기* 작업은 실제로 Analytics 추적 서버로 데이터를 보냅니다. *변수 설정* 및 *비콘 보내기* 작업은 모두 Adobe Analytics 확장에서 가져옵니다.
 
-[규칙](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/ui/rules)을 참조하세요.
+[규칙](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules)을 참조하세요.
 
 #### 샘플 구성 {#sample-configuration}
 
 Experience Platform Tags 내의 다음 샘플 구성은 뷰어 로드 시 에셋 이름을 추적하는 방법을 보여 줍니다.
 
-1. **[!UICONTROL 데이터 요소]** 탭에서 Dynamic Media 뷰어 확장에서 `LOAD` 이벤트의 `asset` 매개 변수를 참조하는 데이터 요소 `AssetName`을(를) 정의합니다.
+1. **[!UICONTROL 데이터 요소]** 탭에서 Dynamic Media 뷰어 확장에서 `AssetName` 이벤트의 `asset` 매개 변수를 참조하는 데이터 요소 `LOAD`을(를) 정의합니다.
 
    ![image2019-11](assets/image2019-11.png)
 
@@ -134,7 +134,7 @@ Experience Cloud 계정이 오디오 및 비디오용 Adobe Analytics을 사용�
 
 [확장 설치 및 설정](#installing-and-setup-of-extensions)을 참조하세요.
 
-현재 비디오 추적은 [추적 개요](https://experienceleague.adobe.com/ko/docs/media-analytics/using/tracking/track-core-overview)에 설명된 대로 &quot;코어 재생&quot; 추적으로만 지원됩니다. 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
+현재 비디오 추적은 [추적 개요](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview)에 설명된 대로 &quot;코어 재생&quot; 추적으로만 지원됩니다. 특히 QoS, 광고, 챕터/세그먼트 또는 오류 추적이 지원되지 않습니다.
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
@@ -158,7 +158,7 @@ Experience Manager Sites을 사용하지 않거나 Experience Manager Sites 외�
 
 적절한 구성에 따라 Dynamic Media 뷰어를 사용하여 웹 페이지에 Experience Platform 태그 지원을 추가할 수 있습니다.
 
-Experience Platform 태그 라이브러리 포함 코드를 사용하는 방법에 대한 자세한 내용은 [Experience Platform 태그 포함 코드 추가](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code)를 참조하십시오.
+Experience Platform 태그 라이브러리 포함 코드를 사용하는 방법에 대한 자세한 내용은 [Experience Platform 태그 포함 코드 추가](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code)를 참조하십시오.
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
@@ -206,13 +206,13 @@ The only Data Element type that the Dynamic Media Viewers extension provides is 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-각 뷰어 유형별 지원되는 이벤트 목록은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 선택하십시오. 현재 Dynamic Media 뷰어 참조 안내서에서는 이벤트 인수를 문서화하지 않습니다.
+각 뷰어 유형별 지원되는 이벤트 목록은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 선택하십시오. 현재 Dynamic Media 뷰어 참조 안내서에서는 이벤트 인수를 문서화하지 않습니다.
 
 이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 수명 주기를 고려하십시오. 이러한 데이터 요소의 값은 해당 Dynamic Media 뷰어 이벤트가 페이지에서 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리킨다고 가정합니다. 이 경우 뷰어가 **[!UICONTROL LOAD]** 이벤트를 처음 실행한 후 이러한 데이터 요소의 값이 올바른 데이터를 받습니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키는 경우 뷰어가 **[!UICONTROL ZOOM]** 이벤트를 처음으로 보낼 때까지 해당 데이터 요소의 값은 비어 있습니다.
 
 Similarly, the values of Data Elements get automatically updated when the viewer sends a corresponding event on the page. The value update happens even if the particular event is not specified in the Rule configuration. 예를 들어 데이터 요소 **[!UICONTROL ZoomScale]**&#x200B;이(가) ZOOM 이벤트의 &quot;scale&quot; 매개 변수에 대해 정의되어 있다고 가정합니다. 하지만 규칙 구성에 있는 유일한 규칙은 **[!UICONTROL LOAD]** 이벤트에 의해 트리거됩니다. 사용자가 뷰어 내에서 확대/축소를 실행할 때마다 **[!UICONTROL ZoomScale]** 값이 계속 업데이트됩니다.
 
-Any Dynamic Media viewer has a unique identifier on the web page. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 예를 들어 같은 페이지에 여러 뷰어가 있고 **[!UICONTROL LOAD]** 이벤트와 &quot;asset&quot; 인수를 가리키는 **[!UICONTROL AssetName]** 데이터 요소가 있다고 가정해 봅시다. **[!UICONTROL AssetName]** 데이터 요소는 페이지에 로드된 각 뷰어와 연결된 자산 이름의 컬렉션을 유지 관리합니다.
+모든 Dynamic Media 뷰어는 웹 페이지에서 고유한 식별자를 가집니다. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 예를 들어 같은 페이지에 여러 뷰어가 있고 **[!UICONTROL LOAD]** 이벤트와 &quot;asset&quot; 인수를 가리키는 **[!UICONTROL AssetName]** 데이터 요소가 있다고 가정해 봅시다. **[!UICONTROL AssetName]** 데이터 요소는 페이지에 로드된 각 뷰어와 연결된 자산 이름의 컬렉션을 유지 관리합니다.
 
 데이터 요소가 반환하는 정확한 값은 컨텍스트에 따라 다릅니다. Dynamic Media 뷰어 이벤트에 의해 트리거된 규칙에서 데이터 요소가 요청되면 규칙을 시작한 뷰어에 대해 데이터 요소 값이 반환됩니다. 또한 데이터 요소는 다른 일부 Experience Platform 태그 확장의 이벤트에 의해 트리거된 규칙에서 요청됩니다. 이때 데이터 요소의 값은 이 데이터 요소를 마지막으로 업데이트한 뷰어에서 가져옵니다.
 
@@ -235,14 +235,14 @@ Any Dynamic Media viewer has a unique identifier on the web page. 데이터 요�
 
 최종 사용자의 활동으로 인해 Adobe Analytics에 다음과 같은 두 개의 추적 호출이 수행됩니다.
 
-* 사용자가 *viewer1*&#x200B;에서 패닝하면 **[!UICONTROL TrackPan]** 규칙이 트리거되므로 첫 번째 호출이 발생합니다. 이 호출은 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 50%를 전송합니다. 데이터 요소는 규칙이 *viewer1*&#x200B;에 의해 트리거되고 해당 크기 값을 가져온다는 것을 알고 있기 때문입니다.
+* 사용자가 **[!UICONTROL viewer1]**&#x200B;에서 패닝하면 *TrackPan* 규칙이 트리거되므로 첫 번째 호출이 발생합니다. 이 호출은 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 50%를 전송합니다. 데이터 요소는 규칙이 *viewer1*&#x200B;에 의해 트리거되고 해당 크기 값을 가져온다는 것을 알고 있기 때문입니다.
 * 두 번째 호출은 사용자가 키보드에서 키를 누를 때 **[!UICONTROL TrackKey]** 규칙이 트리거되기 때문에 발생합니다. 규칙이 뷰어에 의해 트리거되지 않았으므로 이 호출은 25%를 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 보냅니다. 따라서 데이터 요소는 최신 값을 반환합니다.
 
 위에 설정된 샘플은 데이터 요소 값의 수명에도 영향을 줍니다. Dynamic Media 뷰어에서 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에 배치된 후에도 Experience Platform 태그 라이브러리 코드에 저장됩니다. 이 기능은 비 Dynamic Media 뷰어 확장에 의해 트리거되고 이러한 데이터 요소를 참조하는 규칙이 있는 경우 데이터 요소가 마지막으로 알려진 값을 반환함을 의미합니다. 뷰어가 웹 페이지에 더 이상 존재하지 않는 경우에도 마찬가지입니다.
 
 어떤 경우든 Dynamic Media 뷰어에 의해 구동되는 데이터 요소 값은 로컬 저장소 또는 서버에 저장되지 않습니다. 대신 클라이언트측 Experience Platform 태그 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드될 때 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [저장 기간 선택](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/ui/data-elements#create-a-data-element)을 지원합니다. 그러나 Dynamic Media 뷰어 확장을 사용하는 데이터 요소는 **[!UICONTROL 없음]**&#x200B;의 저장 유지 시간 옵션만 지원합니다. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다. 즉, 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [저장 기간 선택](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element)을 지원합니다. 그러나 Dynamic Media 뷰어 확장을 사용하는 데이터 요소는 **[!UICONTROL 없음]**&#x200B;의 저장 유지 시간 옵션만 지원합니다. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다. 즉, 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
 
 ### Dynamic Media 뷰어 확장의 규칙 정보 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -436,7 +436,7 @@ Adobe Analytics을 구성하면 통합에 대해 다음과 같이 설정됩니�
 * Analytics 변수는 추적 데이터를 받는 데 사용할 수 있습니다.
 * Adobe Analytics에서 수집된 데이터를 보는 데 보고서를 사용할 수 있습니다.
 
-[Analytics 구현 가이드](https://experienceleague.adobe.com/ko/docs/analytics/implementation/home)도 참조하세요.
+[Analytics 구현 가이드](https://experienceleague.adobe.com/en/docs/analytics/implementation/home)도 참조하세요.
 
 **통합을 위해 Adobe Analytics을 구성하려면:**
 
@@ -454,7 +454,7 @@ Adobe Analytics을 구성하면 통합에 대해 다음과 같이 설정됩니�
 
    사용 가능한 보고서 세트가 없는 경우 구성을 계속 진행하려면 먼저 사용자 또는 Adobe Analytics 관리자가 보고서 세트를 만들어야 합니다.
 
-   [보고서 및 보고서 세트](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)를 참조하십시오.
+   [보고서 및 보고서 세트](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)를 참조하십시오.
 
    Adobe Analytics의 보고서 세트는 **[!UICONTROL 관리자]** > **[!UICONTROL 보고서 세트]**&#x200B;에서 관리됩니다.
 
@@ -468,7 +468,7 @@ Adobe Analytics을 구성하면 통합에 대해 다음과 같이 설정됩니�
 
    Adobe Analytics에서 지원하는 모든 유형의 변수를 사용할 수 있습니다. 변수 유형(예: 사용자 지정 트래픽 [props], 전환 [eVar])에 대한 결정은 Analytics 구현의 특정 요구 사항에 의해 결정됩니다.
 
-   [prop 및 eVar 개요](https://experienceleague.adobe.com/ko/docs/analytics/implementation/vars/page-vars/evar#vars)를 참조하십시오.
+   [prop 및 eVar 개요](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/evar#vars)를 참조하십시오.
 
    이 설명서에서는 웹 페이지에서 작업이 발생한 후 몇 분 안에 Analytics 보고서에서 사용할 수 있으므로 사용자 지정 트래픽(props) 변수만 사용됩니다.
 
@@ -514,12 +514,12 @@ Experience Platform 태그를 구성하면 통합에 대해 다음과 같이 설
 
 Experience Platform Tags의 속성은 모든 설정을 함께 유지하는 명명된 구성입니다. 구성 설정 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-[태그 속성 만들기](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags)도 참조하세요.
+[태그 속성 만들기](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags)도 참조하세요.
 
 1. Experience Platform 태그에서 **[!UICONTROL 새 속성]**&#x200B;을 선택합니다.
 1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. 예, `DynamicMediaViewersProp.`
 1. **[!UICONTROL 도메인]** 필드에 웹 사이트의 도메인을 입력합니다.
-1. **[!UICONTROL 고급 옵션]** 드롭다운에서 사용할 확장(이 경우 *Dynamic Media 뷰어*)이 아직 릴리스되지 않은 경우 **[!UICONTROL 확장 개발에 대한 구성(나중에 수정할 수 없음)]**&#x200B;을 사용하도록 설정하십시오.
+1. **[!UICONTROL 고급 옵션]** 드롭다운에서 사용할 확장(이 경우 **[!UICONTROL Dynamic Media 뷰어]**)이 아직 릴리스되지 않은 경우 *확장 개발에 대한 구성(나중에 수정할 수 없음)*&#x200B;을 사용하도록 설정하십시오.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
@@ -539,7 +539,7 @@ Experience Platform 태그에서 사용 가능한 모든 확장은 **[!UICONTROL
 
 추가 구성이 필요하지 않습니다. 제안된 값에 동의하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.
 
-[Adobe Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/id-service/overview)을 참조하십시오.
+[Adobe Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview)을 참조하십시오.
 
 * (필수) *Adobe Analytics* 확장
 
@@ -559,7 +559,7 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-[Adobe Analytics 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/analytics/overview)을 참조하세요.
+[Adobe Analytics 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview)을 참조하세요.
 
 * (선택 사항, 비디오 추적이 필요한 경우에만 필수) *오디오 및 비디오용 Adobe Media Analytics* 확장
 
@@ -567,7 +567,7 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 다른 모든 필드는 선택 사항입니다.
 
-[Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/media-analytics/overview)을(를) 참조하십시오.
+[Adobe Media Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/media-analytics/overview)을(를) 참조하십시오.
 
 * (필수) *Dynamic Media 뷰어* 확장
 
@@ -597,7 +597,7 @@ Experience Platform 태그 구성(설정된 속성, 확장, 규칙 및 데이터
 
 Experience Platform 태그에는 잠재적으로 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 Experience Manager의 Experience Platform 태그 클라우드 구성은 Experience Manager 작성자 노드를 Experience Platform 태그의 스테이지 환경으로 지정합니다. Experience Manager Publish 노드는 Experience Platform 태그의 프로덕션 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용하여 Experience Platform 태그 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
-Experience Platform 태그 환경에 대한 자세한 내용은 [환경](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/publish/environments/environments)을 참조하십시오.
+Experience Platform 태그 환경에 대한 자세한 내용은 [환경](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments)을 참조하십시오.
 
 라이브러리 게시에는 다음 두 단계가 포함됩니다.
 
@@ -655,7 +655,7 @@ Experience Platform 태그 환경에 대한 자세한 내용은 [환경](https:/
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Experience Platform Tags의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/publish/overview)를 참조하십시오.
+   Experience Platform Tags의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)를 참조하십시오.
 
 ## 통합을 위한 Adobe Experience Manager 구성 {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -726,7 +726,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. 다음과 유사한 통합 세부 정보 페이지 **&#x200B;**&#x200B;이(가) 나타납니다.
+1. 다음과 유사한 통합 세부 정보 페이지 ****&#x200B;이(가) 나타납니다.
 
    >[!NOTE]
    >
@@ -854,4 +854,4 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 이 제한을 해결할 수 있습니다. 위의 Experience Manager 게시 노드에 대한 Experience Platform Tags Cloud 구성에서 플랫폼 태그 라이브러리의 개발 또는 스테이징 URL을 지정합니다. 이렇게 하면 Experience Manager 게시 노드가 Experience Platform 태그 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
 
-Experience Platform Tags Cloud 구성 설정에 대한 자세한 내용은 [을(를) 통해 Experience Manager과 Experience Platform 태그 통합 [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)을(를) 참조하십시오.
+Experience Platform Tags Cloud 구성 설정에 대한 자세한 내용은 [을(를) 통해 Experience Manager과 Experience Platform 태그 통합 [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)을(를) 참조하십시오.

@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: Experience Manager에서 디지털 자산을 작성하고, 관리하며, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 hide: true
 feature: Asset Management
-role: Leader, Architect, User
+role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 347828d5bf3da01685f19fb43609505b24126c63
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 4%

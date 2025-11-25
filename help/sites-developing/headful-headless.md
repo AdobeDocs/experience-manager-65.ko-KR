@@ -4,8 +4,8 @@ description: AEM 프로젝트는 Headful 및 Headless model 모델에서 구현�
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 92%
@@ -46,7 +46,7 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 
 >[!NOTE]
 >
->물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA을 만들려는 경우 이 방법을 사용하는 것이 좋습니다. 그러나 이 방법은 이 문서의 범위를 벗어납니다.
+>물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA를 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 

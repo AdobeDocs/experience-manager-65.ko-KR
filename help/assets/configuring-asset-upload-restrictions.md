@@ -2,14 +2,14 @@
 title: 자산 업로드 제한 사항 구성
 description: 사용자가 업로드할 수 있는 에셋(파일) 유형 제한
 contentOwner: AG
-role: Developer, Admin, Architect
+role: Developer, Admin
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 20%
+ht-degree: 6%
 
 ---
 
@@ -26,4 +26,4 @@ ht-degree: 20%
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요. If you specify MIME-strings for allowed MIME types, the upload operation fails for any asset with MIME type that doesn’t match the configured MIME strings in these fields.
+1. 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요. 허용된 MIME 유형에 MIME 문자열을 지정하는 경우 이러한 필드에 구성된 MIME 문자열과 일치하지 않는 MIME 유형의 자산에 대해 업로드 작업이 실패합니다.

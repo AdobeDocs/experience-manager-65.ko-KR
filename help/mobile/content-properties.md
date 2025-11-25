@@ -9,10 +9,10 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 21%
+source-wordcount: '312'
+ht-degree: 20%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 21%
 
 {{ue-over-mobile}}
 
-문서, 배너 및 컬렉션은 AEM에서 cq:Pages로 표시됩니다.
+문서, 배너 및 컬렉션은 AEM에서 cq:Pages(으)로 표시됩니다.
 
-이 속성은 Adobe Experience Manager(AEM) Mobile On-Demand 서비스 메타데이터 및 통합 지원 속성을 나타내는 아래에 표시된 몇 가지 다른 속성 외에도 모든 cq:Page에서 찾을 수 있는 동일한 공통 속성을 공유합니다.
+이 속성은 Adobe Experience Manager(AEM) Mobile On-Demand 서비스 메타데이터 및 통합 지원 속성을 나타내는 아래에 표시된 몇 가지 다른 속성 외에도 모든 cq:Page에서 발견된 동일한 공통 속성을 공유합니다.
 
 다음 표에서는 콘텐츠 속성 및 노드에 대해 설명합니다.
 
@@ -30,12 +30,12 @@ ht-degree: 21%
 
 | **속성 이름** | **유형** | **기본값 또는 예상 값** | **설명** |
 |---|---|---|---|
-| dps-id | 문자열 |  | AEM Mobile에 업로드되거나 AEM Mobile에서 가져온 후 AEMAEM Mobile 에서 할당되고 저장됩니다. |
-| dps-resourceType | 문자열 | dps:Article | dps:Banner | dps:Collection | 엔티티 유형 속성 |
+| dps-id | 문자열 |  | AEM Mobile에 업로드하거나 AEM Mobile에서 가져온 후에는 AEM에서 할당하고 AEM Mobile에서 저장합니다. |
+| dps-resourceType | 문자열 | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | 문자열 |  | AEM Mobile 엔티티 버전(전체 aemm-id에도 포함됨) |
 | dps-lastSynced | 날짜 |  | AEM Mobile에서 AEM으로 마지막 동기화/가져오기 날짜 |
 | dps-lastUploaded | 날짜 |  | AEM에서 AEM Mobile으로 마지막으로 업로드한 날짜 |
-| dps-lastUploadedBy | String:userid |  | AEM에서 AEM Mobile으로의 마지막 업로드 요청을 수행한 id 사용자 |
+| dps-lastUploadedBy | 문자열:userid |  | AEM에서 AEM Mobile으로의 마지막 업로드 요청을 수행한 id 사용자 |
 
 ## 코어 메타데이터 속성 {#core-metadata-properties}
 

@@ -9,10 +9,10 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Jackrabbit FileVault 도구(VLT)는 [Apache Foundation](https://www.apache.org/)
 
 ## 개념 및 아키텍처 {#concepts-and-architecture}
 
-Filevault 도구의 개념과 구조에 대한 자세한 개요는 공식 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/index.html)의 [Filevault 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 페이지를 참조하십시오.
+Filevault 도구의 개념과 구조에 대한 자세한 개요는 공식 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/overview.html)의 [Filevault 개요](https://jackrabbit.apache.org/filevault/vaultfs.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/index.html) 페이지를 참조하십시오.
 
 ## VLT 시작하기 {#getting-started-with-vlt}
 
@@ -45,7 +45,7 @@ VLT 도구를 사용하려면 먼저 설치해야 합니다. 추가 도구이므
    >
    >VLT 도구의 원본은 [GitHub에서 사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
 1. 아카이브를 추출합니다.
-1. 명령 파일 `vlt` 또는 `vlt.bat`에 적절하게 액세스할 수 있도록 `<archive-dir>/vault-cli-<version>/bin`을(를) 환경 `PATH`에 추가하십시오. 예:
+1. 명령 파일 `<archive-dir>/vault-cli-<version>/bin` 또는 `PATH`에 적절하게 액세스할 수 있도록 `vlt`을(를) 환경 `vlt.bat`에 추가하십시오. 예:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -224,7 +224,7 @@ Options:
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-이 작업을 수행하면 `META-INF` 및 `jcr_root` 디렉터리가 있는 새 내보내기 루트 `geo`이(가) 만들어지고 `geo/jcr_root`의 `/apps/geometrixx` 아래에 모든 파일이 저장됩니다.
+이 작업을 수행하면 `geo` 및 `META-INF` 디렉터리가 있는 새 내보내기 루트 `jcr_root`이(가) 만들어지고 `/apps/geometrixx`의 `geo/jcr_root` 아래에 모든 파일이 저장됩니다.
 
 ### 필터링된 체크아웃 수행 {#performing-a-filtered-checkout}
 
@@ -344,7 +344,7 @@ vlt [options] <command> [arg1 [arg2 [arg3] ..]]
 export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 ```
 
-#### 옵션 {#options}
+#### 선택 사항 {#options}
 
 |  |  |
 |--- |--- |
@@ -371,7 +371,7 @@ vlt export http://localhost:4502/crx /apps/geometrixx myproject
 import -v|-s <uri> <local-path> <jcr-path>
 ```
 
-#### 옵션 {#options-1}
+#### 선택 사항 {#options-1}
 
 |  |  |
 |--- |--- |
@@ -397,7 +397,7 @@ JCR 저장소에서 &lt;uri>로 시작하는 로컬 파일 시스템으로 &lt;l
 checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>  
 ```
 
-#### 옵션 {#options-2}
+#### 선택 사항 {#options-2}
 
 |  |  |
 |--- |--- |
@@ -439,11 +439,11 @@ vlt --credentials admin:admin co http://localhost:8080/crx
 analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 ```
 
-#### 옵션 {#options-3}
+#### 선택 사항 {#options-3}
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)의 printf 형식(예: `[CQ520_HF_%s|%s]`) |
+| `-l (--linkFormat) <format>` | 핫픽스 링크(name,id)의 printf 형식(예: `[CQ520_HF_%s\|%s]`) |
 | `-v (--verbose)` | 자세한 정보 출력 |
 | `-q (--quiet)` | 가능한 적게 인쇄합니다. |
 | `<localPaths> [<localPaths> ...]` | 로컬 경로 |
@@ -460,7 +460,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 status -v|-q|-u|-N <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-4}
+#### 선택 사항 {#options-4}
 
 |  |  |
 |--- |--- |
@@ -480,7 +480,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 update -v|-q|--force|-N <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-5}
+#### 선택 사항 {#options-5}
 
 |  |  |
 |--- |--- |
@@ -500,7 +500,7 @@ update -v|-q|--force|-N <file1> [<file2> ...]
 info -v|-q|-R <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-6}
+#### 선택 사항 {#options-6}
 
 |  |  |
 |--- |--- |
@@ -519,7 +519,7 @@ info -v|-q|-R <file1> [<file2> ...]
 commit -v|-q|--force|-N <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-7}
+#### 선택 사항 {#options-7}
 
 |  |  |
 |--- |--- |
@@ -539,7 +539,7 @@ commit -v|-q|--force|-N <file1> [<file2> ...]
 revert -q|-R <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-8}
+#### 선택 사항 {#options-8}
 
 |  |  |
 |--- |--- |
@@ -561,7 +561,7 @@ revert -q|-R <file1> [<file2> ...]
 resolved -q|-R|--force <file1> [<file2> ...]  
 ```
 
-#### 옵션 {#options-9}
+#### 선택 사항 {#options-9}
 
 |  |  |
 |--- |--- |
@@ -580,7 +580,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 propget -q|-R <propname> <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-10}
+#### 선택 사항 {#options-10}
 
 |  |  |
 |--- |--- |
@@ -599,7 +599,7 @@ propget -q|-R <propname> <file1> [<file2> ...]
 proplist -q|-R <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-11}
+#### 선택 사항 {#options-11}
 
 |  |  |
 |--- |--- |
@@ -625,7 +625,7 @@ proplist -q|-R <file1> [<file2> ...]
 propset -q|-R <propname> <propval> <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-12}
+#### 선택 사항 {#options-12}
 
 |  |  |
 |--- |--- |
@@ -645,7 +645,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 add -v|-q|-N|--force <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-13}
+#### 선택 사항 {#options-13}
 
 |  |  |
 |--- |--- |
@@ -665,7 +665,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 delete -v|-q|--force <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-14}
+#### 선택 사항 {#options-14}
 
 |  |  |
 |--- |--- |
@@ -684,7 +684,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 diff -N <file1> [<file2> ...]
 ```
 
-#### 옵션 {#options-15}
+#### 선택 사항 {#options-15}
 
 |  |  |
 |--- |--- |
@@ -701,7 +701,7 @@ diff -N <file1> [<file2> ...]
 console -F <file>
 ```
 
-#### 옵션 {#options-16}
+#### 선택 사항 {#options-16}
 
 |  |  |
 |--- |--- |
@@ -717,7 +717,7 @@ console -F <file>
 rcp -q|-r|-b <size>|-t <seconds>|-u|-n|-e <arg1> [<arg2> ...] <src> <dst>
 ```
 
-#### 옵션 {#options-17}
+#### 선택 사항 {#options-17}
 
 |  |  |
 |--- |--- |
@@ -739,7 +739,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->`<src>` 및 `<dst>` 인수 앞에 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. 예:
+>`--exclude` 및 `<src>` 인수 앞에 `<dst>` 옵션 다음에 다른 옵션이 와야 합니다. 예:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
@@ -753,7 +753,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 sync -v|--force|-u <uri> <command> <localPath>
 ```
 
-#### 옵션 {#options-18}
+#### 선택 사항 {#options-18}
 
 |  |  |
 |--- |--- |

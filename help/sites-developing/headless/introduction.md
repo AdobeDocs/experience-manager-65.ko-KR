@@ -4,8 +4,8 @@ description: 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 AEM 6.5�
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 35%
@@ -34,11 +34,11 @@ Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식�
 
 ## AEM 6.5 및 Headless {#aem-headless}
 
-AEM 6.5는 세 가지 강력한 서비스를 제공하여 headless 구현 모델을 위한 유연한 도구입니다.
+AEM 6.5는 다음과 같은 세 가지 강력한 서비스를 제공하여 headless 구현 모델을 위한 유연한 도구입니다.
 
 1. 콘텐츠 모델
    * 콘텐츠 모델은 콘텐츠를 구조적으로 표시한 것입니다.
-   * 정보 설계자는 AEM 콘텐츠 조각 모델 편집기에서 이를 정의합니다.
+   * AEM 콘텐츠 조각 모델 편집기에서 정보 설계자가 정의합니다.
    * 콘텐츠 모델은 콘텐츠 조각의 기초 역할을 합니다.
 1. 콘텐츠 조각
    * 콘텐츠 조각은 콘텐츠 모델의 인스턴스입니다.
@@ -57,5 +57,5 @@ AEM의 Headless 기능을 시작하는 데 사용할 수 있는 몇 가지 리�
 |---|---|---|---|---|
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | **AEM 및 Headless 기술을 처음 경험하는 사용자의 경우** 여기에서 Headless 이론에서 첫 번째 Headless 프로젝트 실행에 이르기까지 AEM 및 Headless 기능을 포괄적으로 접해 보십시오. | 안내서 | **AEM 및 Headless를 처음 경험하는** 개발자 | 1시간 |
 | [헤드리스 시작 안내서](/help/sites-developing/headless/getting-started/introduction.md) | 주요 AEM Headless 기능에 대한 간략한 요약이 필요한 **경험 있는 AEM 사용자의 경우** 이 빠른 시작 개요를 확인하십시오. | 빠른 시작 | **AEM 사용 경험이 있는** 개발자, 관리자 | 20분 |
-| [AEM Headless 실습형 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko) | **실습 접근 방식을 선호하고 AEM에 익숙한 경우** 이 자습서에서는 간단한 Headless 프로젝트 만들기로 바로 뛰어듭니다. | 튜토리얼 | 개발자 | 2시간 |
-| [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko) | 이 리소스 컬렉션은 **새** 및 **경험** 개발자 모두에게 제공됩니다. | 리소스 컬렉션 | 개발자 | |
+| [AEM Headless 실습형 튜토리얼 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **실습 접근 방식을 선호하고 AEM에 익숙한 경우** 이 튜토리얼에서는 간단한 Headless 프로젝트 만들기로 바로 뛰어듭니다. | 튜토리얼 | 개발자 | 2시간 |
+| [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html) | 이 리소스 컬렉션은 **새** 및 **경험** 개발자 모두에게 제공됩니다. | 리소스 컬렉션 | 개발자 | |

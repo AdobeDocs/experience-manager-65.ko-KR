@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 6%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager(AEM) 콘텐츠를 [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)을(를) 통해 손쉽게 렌더링하여 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식을 렌더링할 수 있습니다.
+Adobe Experience Manager(AEM) 콘텐츠를 [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)을 통해 손쉽게 렌더링하여 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식을 렌더링할 수 있습니다.
 
 이러한 기본 렌더링은 일반적으로 저장소를 이동하고 콘텐츠를 있는 그대로 반환합니다.
 
@@ -33,7 +33,7 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
 
 ## JSON 요청 중 {#requesting-json}
 
-**&lt;RESOURCE.caas[ 사용&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** to request JSON.
+JSON을 요청하려면 **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json**&#x200B;을(를) 사용합니다.
 
 <table>
  <tbody>

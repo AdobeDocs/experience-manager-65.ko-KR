@@ -2,14 +2,14 @@
 title: 네트워크 고려 사항 및 요구 사항
 description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-최대 로드 또는 대규모 공급자 중단으로 인해 인터넷 전체의 대역폭이 손상될 수 있으므로 인터넷 및 VPC 연결에 알려지지 않은 요소를 고려하는 것이 중요합니다. 일반적으로, 인터넷 접속은 신뢰할 수 있습니다. 그러나 때때로 가점을 도입할 수 있습니다.
+최대 로드 또는 대규모 공급자 중단으로 인해 인터넷 전체의 대역폭이 손상될 수 있으므로 인터넷 및 VPC 연결에 알 수 없는 요소를 고려하는 것이 중요합니다. 일반적으로, 인터넷 접속은 신뢰할 수 있습니다. 그러나 때때로 가점을 도입할 수 있습니다.
 
 기업 네트워크에서 인터넷으로 업링크에서 대역폭을 사용하는 다른 서비스가 있을 수 있습니다. Assets에 대해 전용 또는 우선 순위를 지정할 수 있는 대역폭의 크기를 이해하는 것이 중요합니다. 예를 들어 1Gbps 링크가 이미 사용률이 80%인 경우 [!DNL Experience Manager Assets]에 대해 최대 20%의 대역폭만 할당할 수 있습니다.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 [!DNL Experience Manager] 환경의 토폴로지를 디자인하려면 시스템 구성과 사용자 환경 내에서 네트워크가 연결되는 방법에 대해 자세히 알고 있어야 합니다.
 
-샘플 시나리오에는 5개의 서버, S3 이진 저장소 및 Dynamic Media이 구성된 게시 팜이 포함됩니다.
+샘플 시나리오에는 5개의 서버, S3 이진 저장소 및 Dynamic Media가 구성된 게시 팜이 포함됩니다.
 
 Dispatcher는 외부 및 [!DNL Experience Manager] 배포의 두 엔터티와 100Mbps 연결을 공유합니다. 동시 업로드 및 다운로드 작업의 경우 이 숫자를 2로 나누어야 합니다. 연결된 외부 스토리지는 별도의 연결을 사용합니다.
 

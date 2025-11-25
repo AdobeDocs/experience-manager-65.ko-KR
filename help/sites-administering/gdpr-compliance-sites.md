@@ -1,5 +1,5 @@
 ---
-title: AEM Sites - GDPR 준비 완료
+title: AEM Sites - GDPR 준비 상태
 description: AEM Sites에서 GDPR 요청을 처리하는 절차 및 사용 방법에 대해 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,15 +8,15 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 86%
 
 ---
 
-# AEM Sites - GDPR 준비 완료{#aem-sites-gdpr-readiness}
+# AEM Sites - GDPR 준비 상태{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ AEM Sites는 GDPR 준수 의무와 관련하여 고객을 지원할 준비가 �
 
 작성자 서버의 사용자 계정 및 UGC 컨텐츠는 [플랫폼 GDPR 설명서](/help/managing/data-protection-and-privacy.md)에서 다룹니다.
 
-## Publish 서버 {#publish-server}
+## 게시 서버 {#publish-server}
 
 사이트에서 방문자를 인증하는 데 사용되는 사용자 계정과 게시 서버의 UGC 컨텐츠는 [플랫폼 GDPR 설명서](/help/managing/data-protection-and-privacy.md)에서 다룹니다.
 
@@ -50,7 +50,7 @@ AEM에는 사용자에 대한 옵트인/옵트아웃을 관리하는 데 사용�
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics의 Enhanced Insights와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=ko)을 참조하십시오.
+Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
 
 ## Target의 향상된 Personalization {#enhanced-personalization-by-target}
 
@@ -68,7 +68,7 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 >
 >CQ(Adobe AEM) 5.6 이전에는 ClientContext(이전 버전의 ContextHub)에서 서버로 데이터를 보냈지만 저장하지 않았습니다.
 >
->Adobe AEM 6.4 및 이전 버전은 이제 단종되었으며 이 설명서에서 다루지 않습니다. [이전 버전의 Adobe Experience Manager, CQ 및 CRX 설명서를 참조하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 및 이전 버전은 이제 EOL이며 이 설명서에서 다루지 않습니다. [이전 버전의 Adobe Experience Manager, CQ 및 CRX 설명서를 참조하십시오](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### 옵트인/옵트아웃 구현 {#implementing-opt-in-opt-out}
 
@@ -104,7 +104,7 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 
 ### ContextHub의 지속성 미리보기 {#previewing-persistence-of-contexthub}
 
-ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행할 수 있습니다.
+ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행하십시오.
 
 * 브라우저의 콘솔 사용. 예를 들어
 
@@ -154,7 +154,7 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
-ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행할 수 있습니다.
+ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행하십시오.
 
 * 브라우저의 콘솔 사용:
 

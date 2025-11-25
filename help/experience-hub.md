@@ -5,9 +5,9 @@ landing-page-description: 모든 AEM 기능에 액세스할 수 있는 중앙 �
 solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
-role: Admin, Architect, Developer, User
+role: Admin, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 3d4396ede2abe477665a8cc4877245780e555078
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(2분 39초)을 간단히 살펴볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475199/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->

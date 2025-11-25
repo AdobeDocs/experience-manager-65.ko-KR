@@ -2,11 +2,11 @@
 title: '[!DNL Assets] 크기 조정 가이드'
 description: ' [!DNL Adobe Experience Manager Assets]을(를) 배포하는 데 필요한 인프라 및 리소스를 예상하는 효율적인 지표를 결정하는 모범 사례입니다.'
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -30,9 +30,9 @@ ht-degree: 0%
 이러한 요소들을 고려하여 사용자 자산을 저장할 수 있을 만큼 정확한 저장 공간을 계산하는 방법론이 필요합니다.
 
 1. 시스템에 로드되는 에셋의 크기와 수를 결정합니다.
-1. [!DNL Experience Manager] (으)로 업로드할 대표적인 자산 샘플을 얻습니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 형식의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡성을 나타냅니다.
+1. [!DNL Experience Manager]&#x200B;(으)로 업로드할 대표적인 자산 샘플을 얻습니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 형식의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡성을 나타냅니다.
 1. 사용할 렌디션을 정의합니다.
-1. [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램을 사용하여 [!DNL Experience Manager]에서 렌디션을 만듭니다. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media을 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
+1. [!DNL Experience Manager] 또는 [!DNL ImageMagick] 응용 프로그램을 사용하여 [!DNL Adobe Creative Cloud]에서 렌디션을 만듭니다. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media를 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
 1. 하위 에셋을 사용하려는 경우 적절한 파일 형식에 대해 하위 에셋을 생성합니다.
 1. 출력 이미지, 렌디션 및 하위 에셋의 크기를 원본 이미지와 비교합니다. 시스템이 로드될 때 예상 증가 계수를 생성할 수 있습니다. 예를 들어, 1GB의 에셋을 처리한 후 조합 크기가 3GB인 렌디션과 하위 에셋을 생성하는 경우 렌디션 증가 인자는 3입니다.
 1. 시스템에서 에셋 버전을 유지 관리할 최대 시간을 결정합니다.
@@ -98,13 +98,13 @@ NodeStore 또는 DocumentStore의 정확한 크기 조정 수치에 도달하기
 
 바이너리는 데이터 저장소에 저장되므로 각 바이너리는 일부 공간을 차지합니다. 대부분의 저장소 크기는 100GB 미만입니다. 그러나 최대 1TB의 용량이 큰 저장소가 있을 수 있습니다. 또한 오프라인 압축을 수행하려면 미리 압축된 버전과 함께 압축된 저장소를 다시 작성하기 위해 볼륨에 충분한 여유 공간이 필요합니다. 가장 좋은 방법은 저장소의 예상 크기를 1.5배로 늘리는 것입니다.
 
-저장소의 경우 IOPS 수준이 3000보다 큰 SSD 또는 디스크를 사용합니다. IOPS로 인해 성능 병목 현상이 발생할 가능성을 없애려면 CPU IO 대기 수준을 모니터링하여 문제의 조기 징후를 파악합니다.
+저장소의 경우 IOPS 수준이 3000보다 큰 SSD 또는 디스크를 사용합니다. 성능 병목 현상을 일으키는 IOPS의 가능성을 없애려면 문제의 조기 징후를 위해 CPU IO 대기 수준을 모니터링합니다.
 
 [파일 가져오기](assets/aem_environment_sizingtool.xlsx)
 
 ## 네트워크 {#network}
 
-[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항](/help/assets/assets-network-considerations.md)에서 [!DNL Experience Manager]에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
+[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [!DNL Experience Manager]사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항[에서 ](/help/assets/assets-network-considerations.md)에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
 
 ## 제한 사항 {#limitations}
 
@@ -118,9 +118,9 @@ NodeStore 또는 DocumentStore의 정확한 크기 조정 수치에 도달하기
 
 파일 시스템 제한 사항으로 인해 데이터 저장소에 존재할 수 있는 파일 수 제한은 21억 개입니다. 데이터 저장소 제한에 도달하기 오래 전에 많은 수의 노드로 인해 저장소에 문제가 발생할 수 있습니다.
 
-Camera Raw 렌디션이 잘못 생성된 경우 라이브러리를 사용합니다. 단, 이 경우 이미지의 가장 긴 변이 65000 픽셀보다 크지 않아야 합니다. 또한 이미지에는 512MP(512 x 1024 x 1024픽셀)를 초과할 수 없습니다. 에셋의 크기는 중요하지 않습니다.
+렌디션이 잘못 생성된 경우 Camera Raw 라이브러리를 사용합니다. 단, 이 경우 이미지의 가장 긴 변이 65000 픽셀보다 크지 않아야 합니다. 또한 이미지에는 512MP(512 x 1024 x 1024픽셀)를 초과할 수 없습니다. 에셋의 크기는 중요하지 않습니다.
 
-픽셀 크기와 같은 추가 요소가 처리에 영향을 주므로 [!DNL Experience Manager]에 대한 특정 힙을 사용하여 즉시 지원되는 TIFF 파일의 크기를 정확하게 추정하기는 어렵습니다. [!DNL Experience Manager]에서 255MB의 파일을 즉시 처리할 수 있지만, 18MB의 파일 크기는 처리할 수 없습니다. 왜냐하면 후자의 픽셀이 전자의 픽셀보다 비정상적으로 더 많기 때문입니다.
+픽셀 크기와 같은 추가 요소가 처리에 영향을 주므로 [!DNL Experience Manager]에 대한 특정 힙을 사용하여 즉시 지원되는 TIFF 파일의 크기를 정확하게 추정하는 것은 어렵습니다. [!DNL Experience Manager]에서 255MB의 파일을 즉시 처리할 수 있지만, 18MB의 파일 크기는 처리할 수 없습니다. 왜냐하면 후자의 픽셀이 전자의 픽셀보다 비정상적으로 더 많기 때문입니다.
 
 ## 에셋 크기 {#size-of-assets}
 

@@ -4,8 +4,8 @@ description: 콘텐츠, 다른 조각과 자산(미디어)의 콘텐츠 조각�
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%
@@ -70,7 +70,7 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
    * 직원 - 개인
       * 개인 상 - 상
 
-시작에만 적용되는 과정입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
+이는 시작일 뿐입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
 
 사용자(작성자)와 Headless 애플리케이션 모두가 이해하므로 조각 참조를 사용하여 해당 상호 관계를 나타낼 수 있습니다.
 

@@ -4,8 +4,8 @@ description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 �
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 39%
@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # Headless 시작 안내서 {#introduction}
 
-Headless 시작 안내서는 AEM(Adobe Experience Manager) 6.5를 사용하여 AEM 및 Headless 기술에 이미 익숙한 사용자를 위해 5단계로 경험을 만들고 관리하고 전달하기 위한 간단한 경로를 제공합니다. 각 안내서는 이전 안내서를 기반으로 하므로 처음부터 끝까지 순서대로 살펴보는 것이 좋습니다
+Headless 시작 안내서는 AEM 및 Headless 기술에 이미 익숙한 사용자를 위해 Adobe Experience Manager(AEM) 6.5를 사용하여 5단계로 경험을 만들고 관리하고 전달하기 위한 간단한 경로를 설명합니다. 각 안내서는 이전 안내서를 기반으로 하므로 처음부터 끝까지 순서대로 살펴보는 것이 좋습니다
 
 1. [구성 만들기](create-configuration.md)
 1. [콘텐츠 조각 모델 만들기](create-content-model.md)

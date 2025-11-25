@@ -2,14 +2,14 @@
 title: 번역 프로젝트 만들기
 description: ' [!DNL Adobe Experience Manager]에서 번역 프로젝트를 만드는 방법을 알아봅니다.'
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -261,5 +261,5 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 ## 팁 및 제한 사항 {#tips-limitations}
 
-* PDF 및 [!DNL Adobe InDesign] 파일과 같은 복잡한 에셋에 대해 번역 워크플로를 시작하는 경우 해당 하위 에셋 또는 렌디션(있는 경우)이 번역을 위해 제출되지 않습니다.
+* PDF 및 [!DNL Adobe InDesign] 파일과 같은 복잡한 자산에 대해 번역 워크플로우를 시작하면 해당 하위 자산이나 변환(있는 경우)이 번역을 위해 제출되지 않습니다.
 * 기계 번역을 사용하는 경우 에셋 바이너리는 번역되지 않습니다.

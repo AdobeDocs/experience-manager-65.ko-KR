@@ -1,12 +1,12 @@
 ---
 title: 일괄 에셋 마이그레이션
-description: 자산을  [!DNL Adobe Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+description: 자산을  [!DNL Adobe Experience Manager](으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 자산을 일괄적으로 마이그레이션하는 방법 {#assets-migration-guide}
 
-자산을 [!DNL Adobe Experience Manager] (으)로 마이그레이션할 때 고려해야 할 단계가 몇 가지 있습니다. 자산 및 메타데이터를 현재 홈에서 추출하는 방법은 구현마다 크게 다르므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 자산을 [!DNL Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+자산을 [!DNL Adobe Experience Manager]&#x200B;(으)로 마이그레이션할 때 고려해야 할 단계가 몇 가지 있습니다. 자산 및 메타데이터를 현재 홈에서 추출하는 방법은 구현마다 크게 다르므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 자산을 [!DNL Experience Manager]&#x200B;(으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 >
 >다음 자산 마이그레이션 도구는 [!DNL Experience Manager]에 속하지 않으며 Adobe에서 지원되지 않습니다.
 >
->* ACS AEM Tools 태그 작성기
+>* ACS AEM Tools Tag Maker
 >* ACS AEM 도구 CSV 자산 가져오기
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons 빠른 작업 관리자
@@ -33,9 +33,9 @@ ht-degree: 6%
 >
 >This software are open source and covered by the [Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## [!DNL Experience Manager] (으)로 마이그레이션 {#migrating-to-aem}
+## [!DNL Experience Manager]&#x200B;(으)로 마이그레이션 {#migrating-to-aem}
 
-자산을 [!DNL Experience Manager] (으)로 마이그레이션하려면 몇 가지 단계가 필요하며, 이를 단계별 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
+자산을 [!DNL Experience Manager]&#x200B;(으)로 마이그레이션하려면 몇 가지 단계가 필요하며, 이를 단계별 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
 1. 워크플로우를 비활성화합니다.
 1. 태그를 로드합니다.
@@ -52,7 +52,7 @@ ht-degree: 6%
 
 ### 태그 로드 {#loading-tags}
 
-이미지에 적용할 태그 분류가 이미 준비되었을 수 있습니다. CSV 자산 가져오기 및 메타데이터 프로필에 대한 [!DNL Experience Manager] 지원과 같은 도구는 자산에 태그를 적용하는 프로세스를 자동화할 수 있지만 태그를 시스템으로 로드해야 합니다. [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) 기능을 사용하면 시스템에 로드되는 Microsoft Excel 스프레드시트를 사용하여 태그를 채울 수 있습니다.
+이미지에 적용할 태그 분류가 이미 준비되었을 수 있습니다. CSV 자산 가져오기 및 메타데이터 프로필에 대한 [!DNL Experience Manager] 지원과 같은 도구는 자산에 태그를 적용하는 프로세스를 자동화할 수 있지만 태그를 시스템으로 로드해야 합니다. [ACS AEM 도구 태그 메이커](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) 기능을 사용하면 시스템에 로드되는 Microsoft Excel 스프레드시트를 사용하여 태그를 채울 수 있습니다.
 
 ### 에셋 수집 {#ingesting-assets}
 
@@ -73,7 +73,7 @@ https를 통해 푸시하는 접근 방식을 사용하는 데에는 두 가지 
 
 #### 로컬 파일 시스템에서 가져오기 {#pulling-from-the-local-filesystem}
 
-[ACS AEM Tools CSV 자산 가져오기](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)는 파일 시스템에서 자산을 가져오고 자산 가져오기를 위해 CSV 파일에서 자산 메타데이터를 가져옵니다. Experience Manager 에셋 관리자 API를 사용하여 에셋을 시스템으로 가져오고 구성된 메타데이터 속성을 적용합니다. 에셋은 네트워크 파일 마운트 또는 외부 드라이브를 통해 서버에 마운트되는 것이 가장 좋습니다.
+[ACS AEM 도구 CSV 자산 가져오기](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)는 자산 가져오기를 위해 파일 시스템의 자산과 CSV 파일의 자산 메타데이터를 가져옵니다. Experience Manager Asset Manager API를 사용하여 에셋을 시스템으로 가져오고 구성된 메타데이터 속성을 적용합니다. 에셋은 네트워크 파일 마운트 또는 외부 드라이브를 통해 서버에 마운트되는 것이 가장 좋습니다.
 
 네트워크를 통해 에셋을 전송할 필요가 없으므로 전체 성능이 크게 향상되며 일반적으로 이 방법은 에셋을 저장소에 로드하는 가장 효율적인 방법으로 간주됩니다. 또한 이 도구는 메타데이터 수집을 지원하므로 별도의 도구를 통해 메타데이터를 적용하는 두 번째 단계를 만들지 않고 모든 에셋과 메타데이터를 한 단계로 가져올 수 있습니다.
 
@@ -88,11 +88,11 @@ https를 통해 푸시하는 접근 방식을 사용하는 데에는 두 가지 
 
 ### 에셋 활성화 {#activating-assets}
 
-게시 계층이 있는 배포의 경우 게시 팜에 자산을 활성화해야 합니다. Adobe은 두 개 이상의 게시 인스턴스를 실행할 것을 권장하지만 모든 자산을 단일 게시 인스턴스로 복제한 다음 해당 인스턴스를 복제하는 것이 가장 효율적입니다. 많은 수의 에셋을 활성화할 때 트리 활성화를 트리거한 후 개입해야 할 수 있습니다. 이유는 다음과 같습니다. 활성화를 실행하면 항목이 Sling 작업/이벤트 큐에 추가됩니다. 이 큐의 크기가 약 40,000개의 항목을 초과하기 시작하면 처리 속도가 크게 느려집니다. 이 큐의 크기가 100,000개 항목을 초과하면 시스템 안정성이 저하되기 시작합니다.
+게시 계층이 있는 배포의 경우 게시 팜에 자산을 활성화해야 합니다. Adobe에서는 둘 이상의 게시 인스턴스를 실행하는 것이 좋지만 모든 자산을 단일 게시 인스턴스로 복제한 다음 해당 인스턴스를 복제하는 것이 가장 효율적입니다. 많은 수의 에셋을 활성화할 때 트리 활성화를 트리거한 후 개입해야 할 수 있습니다. 이유는 다음과 같습니다. 활성화를 실행하면 항목이 Sling 작업/이벤트 큐에 추가됩니다. 이 큐의 크기가 약 40,000개의 항목을 초과하기 시작하면 처리 속도가 크게 느려집니다. 이 큐의 크기가 100,000개 항목을 초과하면 시스템 안정성이 저하되기 시작합니다.
 
 이 문제를 해결하려면 [빠른 작업 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)를 사용하여 자산 복제를 관리할 수 있습니다. 이 기능은 Sling 대기열을 사용하지 않고 작동하여 오버헤드를 줄이는 동시에 워크로드를 조정하여 서버가 오버로드되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 예는 기능의 설명서 페이지에 나와 있습니다.
 
-Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. 또 다른 옵션은 vlt보다 성능이 빠르다고 주장하는 [Grabbit](https://github.com/TWCable/grabbit)이라는 [!DNL Experience Manager] 인프라에 대해 오픈 소스 도구를 사용하는 것입니다.
+Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. 또 다른 옵션은 vlt보다 성능이 빠르다고 주장하는 [!DNL Experience Manager]Grabbit[이라는 ](https://github.com/TWCable/grabbit) 인프라에 대해 오픈 소스 도구를 사용하는 것입니다.
 
 이러한 접근 방식의 경우, 작성자 인스턴스의 자산이 활성화된 것으로 표시되지 않는다는 점에 주의해야 합니다. 이러한 에셋에 올바른 활성화 상태로 플래그를 지정하려면 에셋을 활성화됨으로 표시하는 스크립트도 실행해야 합니다.
 
@@ -100,13 +100,13 @@ Other options for getting assets to the publish farm include using [vlt-rcp](htt
 >
 >Adobe은 Grabbit을 유지 또는 지원하지 않습니다.
 
-### Publish 복제 {#cloning-publish}
+### 복제 게시 {#cloning-publish}
 
 에셋이 활성화되면 게시 인스턴스를 복제하여 배포에 필요한 만큼 복사본을 만들 수 있습니다. 서버 복제는 매우 간단하지만 몇 가지 중요한 단계를 기억해야 합니다. 게시 복제:
 
 1. 소스 인스턴스 및 데이터 저장소를 백업합니다.
 1. 인스턴스 및 데이터 저장소의 백업을 대상 위치로 복원합니다. 다음 단계는 모두 이 새 인스턴스를 참조합니다.
-1. `sling.id`에 대해 `crx-quickstart/launchpad/felix` 아래의 파일 시스템 검색을 수행합니다. Delete this file.
+1. `crx-quickstart/launchpad/felix`에 대해 `sling.id` 아래의 파일 시스템 검색을 수행합니다. Delete this file.
 1. 데이터 저장소의 루트 경로에서 `repository-XXX`개 파일을 찾아 삭제합니다.
 1. 새 환경에서 데이터 저장소의 위치를 가리키도록 `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` 및 `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config`을(를) 편집합니다.
 1. 환경을 시작합니다.
@@ -131,8 +131,8 @@ Other options for getting assets to the publish farm include using [vlt-rcp](htt
    * **자격 증명 모음 원격 복사본** 또는 vlt rcp를 사용하면 네트워크에서 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정할 수 있으며 vlt는 한 인스턴스에서 모든 저장소 데이터를 다운로드하고 다른 인스턴스로 로드합니다. Vlt rcp는 [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)에 설명되어 있습니다.
    * **Grabbit**&#x200B;은(는) Time Warner Cable에서 [!DNL Experience Manager] 구현을 위해 개발한 오픈 소스 콘텐츠 동기화 도구입니다. 지속적인 데이터 스트림을 사용하므로 vlt rcp에 비해 지연 시간이 짧고 vlt rcp보다 2~10배 빠른 속도 개선을 주장합니다. Grabbit은 또한 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 과정이 완료된 후 변경 사항을 동기화할 수 있습니다.
 
-1. 에셋 활성화: [!DNL Experience Manager] (으)로의 초기 마이그레이션에 대해 문서화된 [에셋 활성화](#activating-assets)에 대한 지침을 따르십시오.
+1. 에셋 활성화: [(으)로의 초기 마이그레이션에 대해 문서화된 ](#activating-assets)에셋 활성화[!DNL Experience Manager]에 대한 지침을 따르십시오.
 
-1. 복제 게시: 새로운 마이그레이션과 마찬가지로 단일 게시 인스턴스를 로드하고 복제하는 것이 두 노드에서 콘텐츠를 활성화하는 것보다 효율적입니다. [Publish 복제](#cloning-publish)를 참조하십시오.
+1. 복제 게시: 새로운 마이그레이션과 마찬가지로 단일 게시 인스턴스를 로드하고 복제하는 것이 두 노드에서 콘텐츠를 활성화하는 것보다 효율적입니다. [게시 복제](#cloning-publish)를 참조하십시오.
 
 1. 워크플로우 사용: 마이그레이션을 완료한 후 [!UICONTROL DAM 자산 업데이트] 워크플로우에 대한 런처를 다시 사용하도록 설정하여 지속적인 시스템 사용을 위한 렌디션 생성 및 메타데이터 추출을 지원합니다.
