@@ -91,7 +91,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따릅니다.
+1. 이렇게 하면 [새 페이지를 만들 때 &#x200B;](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따릅니다.
 
 ### 추가 작업을 수행할 페이지 선택 {#selecting-your-page-for-further-action}
 

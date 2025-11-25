@@ -472,7 +472,7 @@ ht-degree: 77%
 
   구성을 제거하려면 구성 오른쪽에 있는 **삭제** 단추를 클릭합니다.
 
-  구성을 제거하려면 삭제** 단추** 클릭합니다.
+  구성을 제거하려면 삭제 **&#x200B; 단추** 클릭합니다.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ ht-degree: 77%
 
   >[!NOTE]
   >
-  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **정책 및 속성(레이아웃 컨테이너)**
 

@@ -193,7 +193,7 @@ JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 설치하거나 사용�
 
   해당 작업을 수행하기 위해 자산 위치로 이동하여 자산 속성을 볼 필요가 없습니다.
 
-* **Dynamic Media _스냅숏_**을(를) 사용하면 테스트 이미지 또는 Dynamic Media URL을 사용하여 WebP 또는 AVIF 출력, 대역폭 인식 압축 및 장치 픽셀 비율 비율과 같은 이미지 수정자 및 스마트 이미징 최적화를 미리 볼 수 있습니다. 그런 다음 각 설정이 품질 및 파일 크기에 미치는 영향을 즉시 비교할 수 있습니다.
+* **Dynamic Media _스냅숏_**&#x200B;을(를) 사용하면 테스트 이미지 또는 Dynamic Media URL을 사용하여 WebP 또는 AVIF 출력, 대역폭 인식 압축 및 장치 픽셀 비율 비율과 같은 이미지 수정자 및 스마트 이미징 최적화를 미리 볼 수 있습니다. 그런 다음 각 설정이 품질 및 파일 크기에 미치는 영향을 즉시 비교할 수 있습니다.
 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)을 참조하십시오.
 * **Dynamic Media를 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재(CMAF가 활성화됨)에서 적응형 스트리밍을 위해 새로운 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍)이 시작되었습니다. 현재 모든 지역에서 사용할 수 있습니다.
 * **Experience Manager Sites 및 컨텐츠 조각과 Assets 차세대 Dynamic Media 통합** - 사용자는 이제 Experience Manager Sites 6.5에서 클라우드 호스팅 자산을 사용할 수 있습니다. 온프레미스 또는 Managed Services 인스턴스에서 이러한 에셋을 작성하고 전달할 수 있습니다.

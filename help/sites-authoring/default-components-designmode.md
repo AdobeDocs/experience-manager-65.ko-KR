@@ -43,7 +43,7 @@ AEM 인스턴스가 기본적으로 설치되면 구성 요소 브라우저에�
 
 >[!NOTE]
 >
->[에 대한 자세한 내용은 ](/help/sites-developing/components.md)구성 요소 개발[ 및 ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)템플릿 및 구성 요소 사용 지침`parsys`을 참조하십시오.
+>[에 대한 자세한 내용은 &#x200B;](/help/sites-developing/components.md)구성 요소 개발[&#x200B; 및 &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)템플릿 및 구성 요소 사용 지침`parsys`을 참조하십시오.
 
 >[!CAUTION]
 >
