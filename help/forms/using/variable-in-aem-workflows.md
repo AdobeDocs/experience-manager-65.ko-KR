@@ -9,9 +9,9 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2087'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
 | AEM 6.5 | 이 문서 |
 
 워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다. 그런 다음 모든 워크플로우 단계에서 변수의 이름을 사용하여 변수에 저장된 값을 검색할 수 있습니다. 변수 이름을 사용하여 라우팅 의사 결정을 위한 표현식을 정의할 수도 있습니다.
@@ -31,11 +31,11 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 * 변수 설정 워크플로 단계를 사용하여 [변수에 대한 값을 설정](../../forms/using/variable-in-aem-workflows.md#set-a-variable)합니다.
 * [모든 AEM Forms 워크플로 단계에서 변수를 사용하여 저장된 값을 검색하고 OR 분할 및 이동 단계에서 라우팅 식을 정의합니다.](../../forms/using/variable-in-aem-workflows.md#use-a-variable)
 
-다음 비디오에서는 AEM 워크플로 모델에서 변수를 생성, 설정 및 사용하는 방법을 보여 줍니다.
+다음 비디오에서는 AEM 워크플로 모델에서 변수를 만들고, 설정하고, 사용하는 방법을 보여 줍니다.
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
+[변수 소개 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
 변수는 기존 [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스의 확장입니다. ECMAScript에서 [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)을(를) 사용하여 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
 
@@ -44,7 +44,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 워크플로우 모델의 사이드 킥에서 사용할 수 있는 변수 섹션을 사용하여 변수를 만듭니다. AEM 워크플로우 변수는 다음 데이터 유형을 지원합니다.
 
 * **기본 데이터 형식**: Long, Double, Boolean, Date 및 String
-* **복잡한 데이터 형식**: [문서](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) 및 양식 데이터 모델 인스턴스.
+* **복잡한 데이터 형식**: [문서](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) 및 양식 데이터 모델 인스턴스.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 파일에�
 
 이 예제에서는 **formdata** XML 변수를 선택하여 **cc-app.xml** 파일을 저장합니다. **formdata** 변수를 쿼리하여 **emailaddress** 문자열 변수의 값을 설정하여 **cc-app.xml** 파일에서 사용할 수 있는 **emailAddress** 속성의 값을 저장합니다.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "변수 값 설정")
+[변수 비디오 설정](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### 예제 2: 다른 변수를 기반으로 값을 저장하는 표현식 사용 {#example2}
 
@@ -123,7 +123,7 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 파일에�
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[변수 식 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## 표현식 편집기 사용 {#use-expression-editor}
 
@@ -170,9 +170,7 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 이 예제에서는 라우팅 식을 정의하기 전에 [예제 2](../../forms/using/variable-in-aem-workflows.md#example2)를 사용하여 **totalvalue** 변수에 대한 값을 설정하십시오. **totalvalue** 변수의 값이 50000보다 큰 경우 분기 1이 활성 상태입니다. 마찬가지로 **totalvalue** 변수의 값이 50000보다 작은 경우 분기 2를 활성화하도록 규칙을 정의할 수 있습니다.
 
-<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
-
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[또는 분할 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 분기의 대체 이름을 지정하려면 **[!UICONTROL 분기 이름 바꾸기]**&#x200B;를 선택하십시오.
 

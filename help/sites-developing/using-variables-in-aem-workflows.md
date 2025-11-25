@@ -1,6 +1,6 @@
 ---
-title: AEM 워크플로우의 변수
-description: 변수를 만들고 변수 값을 설정한 다음 OR 분할 및 이동 AEM 워크플로우 단계에서 사용합니다.
+title: AEM 워크플로의 변수
+description: 변수를 만들고 변수 값을 설정한 다음 OR 분할 및 AEM 워크플로우 단계로 이동합니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bdbf9b73553c42865560c76eebab76e2fc397fdf
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
 
-# AEM 워크플로우의 변수{#variables-in-aem-workflows}
+# AEM 워크플로의 변수{#variables-in-aem-workflows}
 
 워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다. 그런 다음 모든 워크플로우 단계에서 변수의 이름을 사용하여 변수에 저장된 값을 검색할 수 있습니다. 변수 이름을 사용하여 라우팅 의사 결정을 위한 표현식을 정의할 수도 있습니다.
 
@@ -24,13 +24,13 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 
 * 저장할 정보 형식을 기반으로 데이터 형식의 [변수를 만듭니다](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable).
 * 변수 설정 워크플로 단계를 사용하여 [변수에 대한 값을 설정](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)합니다.
-* [OR 분할 및 AEM 워크플로 단계로 이동하여 라우팅 결정을 내리는 식을 정의할 수 있도록 &#x200B;](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) 변수를 사용합니다. 모든 AEM Forms 워크플로 단계에서 변수를 사용할 수도 있습니다.
+* [라우팅 결정을 내리는 식을 정의할 수 있도록 OR 분할 및 AEM 워크플로 단계에서 변수를 사용](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)합니다. 모든 AEM Forms 워크플로 단계에서 변수를 사용할 수도 있습니다.
 
-다음 비디오에서는 AEM 워크플로 모델에서 변수를 생성, 설정 및 사용하는 방법을 보여 줍니다.
+다음 비디오에서는 AEM 워크플로 모델에서 변수를 만들고, 설정하고, 사용하는 방법을 보여 줍니다.
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[변수 사용 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 변수는 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스의 확장입니다. ECMAScript에서 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)을(를) 사용하여 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
 
@@ -63,7 +63,7 @@ AEM Forms 워크플로우에서 사용할 수 있는 복잡한 데이터 형식�
    * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션의 하위 유형을 지정합니다.
 
-1. 변수에 대한 선택적 설명을 지정하고 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 &#x200B;](assets/Done_Icon.png)하세요. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
+1. 변수에 대한 선택적 설명을 지정하고 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요. 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
 
 변수를 만들 때 다음 방법을 고려하십시오.
 
@@ -96,7 +96,7 @@ JSON 점 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 1. **변수 설정** 단계를 워크플로우 편집기로 드래그 앤 드롭하고 단계를 선택한 다음 렌치로 표시되는 ![구성 아이콘을 선택합니다.](assets/configure_icon.png)(구성).
 1. 변수 설정 대화 상자에서 **[!UICONTROL 매핑]** > **[!UICONTROL 매핑 추가]**&#x200B;를 선택합니다.
 1. **변수 매핑** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수의 유형에 따라 다릅니다.
-1. 의미 있는 표현식을 만들 수 있도록 더 많은 변수를 매핑합니다. 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 &#x200B;](assets/Done_Icon.png)하세요.
+1. 의미 있는 표현식을 만들 수 있도록 더 많은 변수를 매핑합니다. 상자 안에 확인 표시가 있는 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요.
 
 ### 예제 1: XML 변수를 쿼리하여 문자열 변수의 값을 설정합니다. {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -104,7 +104,7 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 파일에�
 
 이 예제에서는 **formdata** XML 변수를 선택하여 **cc-app.xml** 파일을 저장합니다. **formdata** 변수를 쿼리하여 **emailaddress** 문자열 변수의 값을 설정하여 **cc-app.xml** 파일에서 사용할 수 있는 **emailAddress** 속성의 값을 저장할 수 있습니다.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "변수 값 설정")
+[변수 비디오 설정](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### 예제 2: 다른 변수를 기반으로 값을 저장하는 표현식 사용 {#example2}
 
@@ -114,7 +114,7 @@ XML 파일을 저장할 XML 유형의 변수를 선택합니다. XML 파일에�
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[변수 식 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## 표현식 편집기 사용 {#use-expression-editor}
 
@@ -163,7 +163,7 @@ OR 분할은 워크플로우에 분할을 만들고 그 후 하나의 분기만 
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[또는 분할 비디오](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 마찬가지로 외부 스크립트 경로를 선택하거나 라우팅 표현식에 대한 ECMA 스크립트를 지정하여 활성 분기를 평가합니다. 분기의 대체 이름을 지정하려면 **[!UICONTROL 분기 이름 바꾸기]**&#x200B;를 선택하십시오.
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 변수 편집 {#edit-a-variable}
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
-1. 연필 기호로 표시된 ![편집 아이콘을 선택합니다.편집할 변수 이름 옆에 있는 &#x200B;](assets/edit.png)(편집) 아이콘입니다.
-1. 변수 정보를 편집하고 확인 표시가 표시된 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 &#x200B;](assets/Done_Icon.png)하세요. 변수에 대한 **[!UICONTROL Name]** 및 **[!UICONTROL Type]** 필드를 편집할 수 없습니다.
+1. 연필 기호로 표시된 ![편집 아이콘을 선택합니다.편집할 변수 이름 옆에 있는 ](assets/edit.png)(편집) 아이콘입니다.
+1. 변수 정보를 편집하고 확인 표시가 표시된 ![저장 아이콘을 선택합니다.변경 내용을 저장하려면 ](assets/Done_Icon.png)하세요. 변수에 대한 **[!UICONTROL Name]** 및 **[!UICONTROL Type]** 필드를 편집할 수 없습니다.
 
 ## 변수 삭제 {#delete-a-variable}
 
@@ -262,4 +262,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. 워크플로 편집 페이지에서 워크플로 모델의 사이드 킥에 사용할 수 있는 변수 아이콘을 선택합니다. 왼쪽 창의 변수 섹션에는 기존 변수가 모두 표시됩니다.
 1. 삭제하려는 변수 이름 옆에 있는 삭제 아이콘을 선택합니다.
-1. 확인 표시 기호가 표시된 ![완료 아이콘을 선택합니다.변수를 확인하고 삭제하려면 &#x200B;](assets/Done_Icon.png)을(를) 사용하십시오.
+1. 확인 표시 기호가 표시된 ![완료 아이콘을 선택합니다.변수를 확인하고 삭제하려면 ](assets/Done_Icon.png)을(를) 사용하십시오.
