@@ -74,7 +74,7 @@ ht-degree: 25%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트) 
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 * FORMS-20533, FORMS-20532: 이제 AEM Forms에 Struts 버전이 2.5.33에서 6.x로 업그레이드되었습니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 [다운로드 및 설치](/help/release-notes/aem-forms-hotfix.md)할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)을 통해 지원이 추가되었습니다.
 
@@ -362,9 +362,9 @@ AEM 6.5 서비스 팩 23부터 Dynamic Media - 하이브리드 모드에 새 추
 
 * AEM Forms 6.5.21.0에서 PDFG 변환이 실패하고 다음 오류가 발생합니다. (FORMS-16851)(FORMS-14613)
 
-* AEM Forms 6.5.23.0에서 (PDFG) PS를 PDF으로, HTML을 PDF으로(WebKit) 전환하지 못했습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-21721)
+* AEM Forms 6.5.23.0에서 (PDFG) PS를 PDF으로, HTML을 PDF으로(WebKit) 전환하지 못했습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-21721)
 
-* AEM Forms 6.5.23.0에서 (PDFG) 이미지를 PDF으로 변환할 수 없습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-22029)
+* AEM Forms 6.5.23.0에서 (PDFG) 이미지를 PDF으로 변환할 수 없습니다. 이 문제를 해결하려면 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)에서 핫픽스를 다운로드하여 설치하십시오(FORMS-22029)
 
 #### Forms Captcha {#forms-captcha-6523}
 
@@ -771,6 +771,6 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)

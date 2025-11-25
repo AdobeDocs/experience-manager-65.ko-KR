@@ -188,7 +188,7 @@ AEM(Adobe Experience Manager)을 구현하는 프로젝트를 관리하려면 �
 
    * 각 환경에 필요한 프로세스(예: 배포 및 유지 관리 요구 사항)
    * 유지 관리 활동(데이터 저장소 GC, TarPM 최적화 등)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 캐싱
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko) 캐싱
    * [클러스터링](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 게시/작성자 공유
    * 클라이언트측 성능(JS minify, concat, css sprites, 총 http 요청 수 등)
 
@@ -239,7 +239,7 @@ AEM(Adobe Experience Manager)을 구현하는 프로젝트를 관리하려면 �
 
   개발에 앞서 배포, 릴리스, 테스트, 문제 보고에 필요한 모든 지원 프로세스를 마련해야 합니다.
 
-  [Adobe 지원 포털](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)도 참조하십시오.
+  [Adobe 지원 포털](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)도 참조하십시오.
 
 ### 운영 계획 및 운영 {#operations-planning-and-operations}
 
@@ -628,8 +628,8 @@ Go-Live가 최대한 원활하게 진행되도록 합니다. 즉, 마지막 단�
 
       * [개발 - 기본 사항](/help/sites-developing/the-basics.md)
       * [MSM 개념](/help/sites-administering/msm.md)
-      * [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)
 
 * 관련 설명서
 
-   * Adobe Experience Cloud - [Adobe Experience Cloud 계획 수립](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Adobe Experience Cloud 계획 수립](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=ko)

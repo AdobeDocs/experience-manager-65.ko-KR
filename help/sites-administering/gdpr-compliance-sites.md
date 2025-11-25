@@ -50,7 +50,7 @@ AEM에는 사용자에 대한 옵트인/옵트아웃을 관리하는 데 사용�
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics의 Enhanced Insights와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
+Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=ko)을 참조하십시오.
 
 ## Target의 향상된 Personalization {#enhanced-personalization-by-target}
 
