@@ -1343,9 +1343,9 @@ PDF 문서에서 서명을 확인할 때 서명 서비스에서 사용하는 다
 * 해지 확인
 * 시간 스탬핑 값
 
-이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
+이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
-유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
+유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
 인증서에 대한 해지 검사를 수행하려면 `CRLOptionSpec` 개체를 사용하여 CRL(인증서 해지 목록) 서버에 대한 URL을 지정하십시오. 그러나 CRL 서버에 대한 URL을 지정하지 않으면 서명 서비스가 인증서에서 URL을 가져옵니다.
 
@@ -1567,9 +1567,9 @@ PDF 문서에서 모든 서명을 확인할 때 서명 서비스에서 사용하
 * 해지 확인
 * 시간 스탬핑 값
 
-이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
+이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
-유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
+유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
 인증서에 대한 해지 검사를 수행하려면 `CRLOptionSpec` 개체를 사용하여 CRL(인증서 해지 목록) 서버에 대한 URL을 지정하십시오. 그러나 CRL 서버에 대한 URL을 지정하지 않으면 서명 서비스가 인증서에서 URL을 가져옵니다.
 

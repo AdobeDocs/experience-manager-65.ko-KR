@@ -172,7 +172,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## 지원되는 MIME 유형 {#supported-mime-types}
 
-기본적으로 [!DNL Experience Manager]은(는) 파일 확장명을 사용하여 파일 형식을 검색합니다. [!DNL Experience Manager]이(가) 파일의 내용에서 이를 감지할 수 있습니다. 후자의 경우 [!UICONTROL  웹 콘솔에서 ]일 CQ DAM MIME 유형 서비스[!UICONTROL 의 ]콘텐츠에서 MIME 감지[!DNL Experience Manager] 옵션을 선택하십시오.
+기본적으로 [!DNL Experience Manager]은(는) 파일 확장명을 사용하여 파일 형식을 검색합니다. [!DNL Experience Manager]이(가) 파일의 내용에서 이를 감지할 수 있습니다. 후자의 경우 [!UICONTROL &#x200B; 웹 콘솔에서 &#x200B;]일 CQ DAM MIME 유형 서비스[!UICONTROL 의 &#x200B;]콘텐츠에서 MIME 감지[!DNL Experience Manager] 옵션을 선택하십시오.
 
 CRXDE Lite `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`에서 지원되는 MIME 유형 목록을 사용할 수 있습니다.
 
@@ -216,7 +216,7 @@ CRXDE Lite `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`�
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions] (https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |

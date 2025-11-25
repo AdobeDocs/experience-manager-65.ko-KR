@@ -233,7 +233,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 #### 저장소에서의 구성 {#configuration-in-the-repo}
 
-sling[ 노드를 사용하여 :OsgiConfig 서비스를 구성하는 경우](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
+sling[&#x200B; 노드를 사용하여 :OsgiConfig 서비스를 구성하는 경우](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
 이름이 `queue.maxparallel`인 속성을 구성하십시오.
 
@@ -430,7 +430,7 @@ Dispatcher 및 로드 밸런서와 함께 프로덕션 게시 환경의 복제�
 
 | 오류 시나리오 | 오류 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast;만 검색됩니다. |
+| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &ast;&ast;&ast;&ast;만 검색됩니다. |
 |   | 정지어 | 20 | 2 |  | 정지어를 찾고 있습니다. |
 |   | 빈 문자열 | 10 | 1 |  | 빈 문자열을 검색하는 중입니다. |
 |   | 특수 문자 | 10 | 1 |  | 특수 문자를 검색하는 중입니다. |

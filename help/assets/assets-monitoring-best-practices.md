@@ -111,7 +111,7 @@ Threads
 
 **모니터[!DNL Experience Manager]**
 
-[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [ JMX MBean의 ](/help/sites-administering/jmx-console.md)설명서[!DNL Experience Manager]를 참조하십시오.
+[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [&#x200B; JMX MBean의 &#x200B;](/help/sites-administering/jmx-console.md)설명서[!DNL Experience Manager]를 참조하십시오.
 
 다음은 [!DNL Experience Manager]에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
 

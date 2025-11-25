@@ -343,7 +343,7 @@ ht-degree: 99%
 + 자산 {#assets}
    + [DAM 정보](/help/assets/assets.md)
    + [자산 모범 사례](/help/assets/best-practices-for-assets.md)
-   + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
+   + [&#x200B; [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
    + Experience Manager Assets 사용 {#using}
       + [[!DNL Assets] 홈 페이지 환경](/help/assets/assets-home-page.md)
       + [디지털 자산 검색](/help/assets/search-assets.md)
@@ -358,7 +358,7 @@ ht-degree: 99%
       + [자산 처리](/help/assets/assets-workflow.md)
       + [이미지 맵 추가](/help/assets/image-maps.md)
       + [MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)
-      + [ [!DNL Sites]와 연결된 자산](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [&#x200B; [!DNL Sites]와 연결된 자산](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [Experience League의 뉴스레터 아카이브](/help/assets/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/administering-dynamic-media.md)
@@ -412,14 +412,14 @@ ht-degree: 99%
       + [대량 자산 마이그레이션용 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)
       + [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)
    + 자산 확장 {#extending}
-      + [ [!DNL Assets] 사용자 정의 및 확장](/help/assets/extending-assets.md)
+      + [&#x200B; [!DNL Assets] 사용자 정의 및 확장](/help/assets/extending-assets.md)
       + [미디어 핸들러 및 워크플로를 사용하여 자산 처리](/help/assets/media-handlers.md)
       + [검색 기능 확장](/help/assets/searchx.md)
-      + [ [!DNL Assets]와 함께 작동하도록 [!DNL ImageMagick] 설치 및 구성](/help/assets/best-practices-for-imagemagick.md)
+      + [&#x200B; [!DNL Assets]와 함께 작동하도록 [!DNL ImageMagick] 설치 및 구성](/help/assets/best-practices-for-imagemagick.md)
       + [자산과 활동 스트림 통합](/help/assets/extending-activity-stream.md)
       + [자산 편집기 확장](/help/assets/asseteditorx.md)
       + [[!DNL Assets] HTTP API](/help/assets/mac-api-assets.md)
-      + [ [!DNL Assets] HTTP API의 콘텐츠 조각 지원](/help/assets/assets-api-content-fragments.md)
+      + [&#x200B; [!DNL Assets] HTTP API의 콘텐츠 조각 지원](/help/assets/assets-api-content-fragments.md)
       + [콘텐츠 조각용 GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -447,7 +447,7 @@ ht-degree: 99%
       + [PDF 래스터라이저 사용](/help/assets/aem-pdf-rasterizer.md)
       + [업로드 제한 구성](/help/assets/configuring-asset-upload-restrictions.md)
       + [[!DNL Experience Manager] 및 [!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md)
-      + [ [!DNL InDesign Server]와 통합](/help/assets/indesign.md)
+      + [&#x200B; [!DNL InDesign Server]와 통합](/help/assets/indesign.md)
       + [자산의 Digital Rights Management](/help/assets/drm.md)
       + [자산 인사이트에 데모 패키지 사용](/help/assets/use-demo-package-for-asset-insights.md)
       + [Adobe Asset Link 구성](/help/assets/configure-asset-link.md)
@@ -461,10 +461,10 @@ ht-degree: 99%
       + [자산에 워터마크 지정](/help/assets/watermarking.md)
       + [자산 템플릿](/help/assets/asset-templates.md)
    + Brand Portal {#brandportal}
-      + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [ [!DNL Brand Portal]에 자산 게시](/help/assets/brand-portal-publish-assets.md)
-      + [ [!DNL Brand Portal]에 폴더 게시](/help/assets/brand-portal-publish-folder.md)
-      + [ [!DNL Brand Portal]에 컬렉션 게시](/help/assets/brand-portal-publish-collection.md)
+      + [&#x200B; [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [&#x200B; [!DNL Brand Portal]에 자산 게시](/help/assets/brand-portal-publish-assets.md)
+      + [&#x200B; [!DNL Brand Portal]에 폴더 게시](/help/assets/brand-portal-publish-folder.md)
+      + [&#x200B; [!DNL Brand Portal]에 컬렉션 게시](/help/assets/brand-portal-publish-collection.md)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
       + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -501,9 +501,9 @@ ht-degree: 99%
       + [비공개 폴더 공유](/help/assets/private-folder.md)
       + [비디오 표현물](/help/assets/video-renditions.md)
    + 다른 솔루션과 통합 {#integrations}
-      + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
-      + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
-      + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
+      + [&#x200B; [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
+      + [&#x200B; [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
+      + [&#x200B; [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + 릴리스 정보 {#release-notes-new-features}
       + [새로운 기능](/help/forms/using/whats-new.md)

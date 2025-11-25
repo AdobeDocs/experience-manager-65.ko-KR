@@ -38,7 +38,7 @@ ht-degree: 8%
 
 ## 페이지 추적기 {#page-tracker}
 
-[!DNL Adobe Analytics] 계정을 구성하면 페이지 추적기 코드가 생성됩니다. Assets Insights를 사용하여 서드파티 웹 사이트에서 사용되는 [!DNL Experience Manager]개의 자산을 추적할 수 있도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함하십시오. [!UICONTROL 에서 ]페이지 추적기[!DNL Experience Manager Assets] 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다. 타사 웹 페이지에 페이지 추적기 코드를 포함하는 방법에 대한 자세한 내용은 [웹 페이지에 페이지 추적기 및 포함 코드 사용](/help/assets/use-page-tracker.md)을 참조하십시오.
+[!DNL Adobe Analytics] 계정을 구성하면 페이지 추적기 코드가 생성됩니다. Assets Insights를 사용하여 서드파티 웹 사이트에서 사용되는 [!DNL Experience Manager]개의 자산을 추적할 수 있도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함하십시오. [!UICONTROL 에서 &#x200B;]페이지 추적기[!DNL Experience Manager Assets] 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다. 타사 웹 페이지에 페이지 추적기 코드를 포함하는 방법에 대한 자세한 내용은 [웹 페이지에 페이지 추적기 및 포함 코드 사용](/help/assets/use-page-tracker.md)을 참조하십시오.
 
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL Assets]**&#x200B;을(를) 클릭합니다.
 

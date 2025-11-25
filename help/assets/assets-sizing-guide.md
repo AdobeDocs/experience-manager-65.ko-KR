@@ -104,7 +104,7 @@ NodeStore 또는 DocumentStore의 정확한 크기 조정 수치에 도달하기
 
 ## 네트워크 {#network}
 
-[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [!DNL Experience Manager]사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항[에서 ](/help/assets/assets-network-considerations.md)에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
+[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [!DNL Experience Manager]사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항[에서 &#x200B;](/help/assets/assets-network-considerations.md)에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
 
 ## 제한 사항 {#limitations}
 

@@ -42,7 +42,7 @@ ht-degree: 10%
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 
-* 자산이 DAM에 업로드될 때 [의 ](/help/assets/metadata-config.md#metadata-profiles)메타데이터 프로필[!DNL Experience Manager Assets] 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
+* 자산이 DAM에 업로드될 때 [의 &#x200B;](/help/assets/metadata-config.md#metadata-profiles)메타데이터 프로필[!DNL Experience Manager Assets] 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
 
 ## [!DNL Experience Manager Assets]에서 메타데이터 추가 또는 편집 {#add-edit-metadata}
 
