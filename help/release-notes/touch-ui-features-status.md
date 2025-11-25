@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] 터치 사용 UI에 대한 릴리
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 15%
@@ -131,7 +131,7 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
 
 | 기능 | 상태 | 댓글 |
 |--- |--- |--- |
-| 리치 텍스트 편집기 | 완료 | 즉석, 대화 상자 및 전체 화면에서 사용할 수 있습니다. |
+| 서식 있는 텍스트 편집기 | 완료 | 즉석, 대화 상자 및 전체 화면에서 사용할 수 있습니다. |
 | RTE 플러그인 활성화/비활성화 | 완료 | [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 수행할 수 있습니다. |
 | 일반 텍스트에 RTE 사용 | 완료 |  |
 | RTE 플러그인: 링크 및 앵커 | 완료 |  |

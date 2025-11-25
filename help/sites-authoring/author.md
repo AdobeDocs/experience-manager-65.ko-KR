@@ -4,8 +4,8 @@ description: Adobe Experience Manager 6.5의 작성 및 게시 개념.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 39%
@@ -58,11 +58,11 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 >[!NOTE]
 >
->AEM은 작성 환경에서도 [관리](/help/sites-administering/home.md)(대부분의 작업)됩니다.
+>AEM도 작성 환경에서 [관리](/help/sites-administering/home.md)(대부분의 작업)됩니다.
 
 #### 게시 환경 {#publish-environment}
 
-준비가 완료된 AEM 사이트의 컨텐츠는 **게시 환경**&#x200B;에 게시됩니다. 이 환경에서는 의도했던 대상이 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
+준비가 완료된 AEM 사이트의 컨텐츠는 **게시 환경**&#x200B;에 게시됩니다. 이 환경에서는 의도한 대상자가 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
 
 일반적으로 게시 환경은 비무장지대 내부에 있습니다. 즉, 인터넷에서 사용할 수 있지만 더 이상 내부 네트워크의 완전한 보호 하에 있지 않습니다.
 
@@ -84,4 +84,4 @@ AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)이거�
 
 #### Dispatcher {#dispatcher}
 
-웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)**&#x200B;에서 부하 분산 및 캐싱을 구현합니다.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;에서 부하 분산 및 캐싱을 구현합니다.

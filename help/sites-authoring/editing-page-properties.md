@@ -4,9 +4,9 @@ description: Adobe Experience Manager에서 페이지에 필요한 속성을 정
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 38%
@@ -41,7 +41,7 @@ ht-degree: 38%
 
 #### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
    * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
@@ -85,7 +85,7 @@ ht-degree: 38%
 
 이 페이지의 단축 URL을 입력하여 더 짧고/짧거나 표현식 URL을 가질 수 있습니다.
 
-예를 들어 웹 사이트 `http://example.com,`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`(으)로 설정하면 `http://example.com/welcome`이(가) `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다
+예를 들어 웹 사이트 `welcome`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `http://example.com,`(으)로 설정하면 `http://example.com/welcome`이(가) `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ ht-degree: 38%
 >* 정규 표현식 패턴을 지원하지 않습니다.
 >* 기존 페이지로 설정하면 안 됩니다.
 
-vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **추가** - vanity URL을 추가하려면 탭하거나 클릭합니다.
 * **제거** - vanity URL을 제거하려면 탭하거나 클릭합니다.

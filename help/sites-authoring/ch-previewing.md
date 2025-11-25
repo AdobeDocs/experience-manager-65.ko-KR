@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 37%
@@ -25,7 +25,7 @@ ht-degree: 37%
 * UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 클릭하면 도구 모음에 포함된 UI 모듈이 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈을 사용하면 스토어 데이터를 조작할 수도 있습니다.
 
-ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 [다른 ContextHub를 표시하도록 &#x200B;](/help/sites-developing/ch-configuring.md)을(를) 구성했을 수 있습니다.
+ContextHub는 여러 UI 모드 및 UI 모듈을 설치합니다. 관리자가 [다른 ContextHub를 표시하도록 ](/help/sites-developing/ch-configuring.md)을(를) 구성했을 수 있습니다.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 

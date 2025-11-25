@@ -9,8 +9,8 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 52%
@@ -109,7 +109,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    <td><a href="/help/sites-authoring/experience-fragments.md">경험 조각</a>은(는) 여러 채널에서 재사용할 수 있고 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다.</td>
   </tr>
   <tr>
-   <td>Forms</td>
+   <td>양식</td>
    <td>이 콘솔을 사용하여 <a href="/help/forms/using/introduction-aem-forms.md">양식 및 문서</a>를 만들고, 관리하고, 처리할 수 있습니다.</td>
   </tr>
   <tr>
@@ -122,7 +122,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=ko">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
   [단축키](/help/sites-authoring/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://business.adobe.com/kr/)
+* [솔루션](https://business.adobe.com/)
 
   ![솔루션](do-not-localize/screen_shot_2018-03-23at103552.png)
 

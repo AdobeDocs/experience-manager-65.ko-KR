@@ -4,8 +4,8 @@ description: Adobe Experience Manager에는 웹 사이트 작성자에게 포괄
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -52,7 +52,7 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 다음 페이지는 구성 요소에 대한 몇 가지 중요한 추가 정보에 대한 링크를 제공합니다.
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) - 핵심 구성 요소는 페이지를 만드는 데 필요한 콘텐츠 형식을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - 핵심 구성 요소는 페이지를 만드는 데 필요한 콘텐츠 형식을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 * [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 포럼 및 댓글과 같은 웹 사이트에 대화형 기능을 제공합니다. [커뮤니티 사이트](/help/communities/overview.md)를 만들 때 이러한 구성 요소의 대부분이 포함됩니다.
 

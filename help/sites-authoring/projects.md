@@ -4,11 +4,11 @@ description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 �
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -235,6 +235,6 @@ ht-degree: 27%
 프로젝트 사용에 대한 자세한 내용은 다음 추가 문서를 참조하십시오.
 
 * [프로젝트 관리](/help/sites-authoring/touch-ui-managing-projects.md)
-* [작업](/help/sites-authoring/task-content.md)
+* [작업 처리](/help/sites-authoring/task-content.md)
 * [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 * [크리에이티브 프로젝트 및 PIM 통합](/help/sites-authoring/managing-product-information.md)

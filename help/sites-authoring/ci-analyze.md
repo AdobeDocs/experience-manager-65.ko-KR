@@ -1,6 +1,6 @@
 ---
 title: 페이지 성능 분석
-description: 콘텐츠 인사이트 페이지를 사용하여 작성 중인 페이지의 성능을 분석합니다
+description: 콘텐츠 Insight 페이지를 사용하여 작성 중인 페이지의 성능을 분석합니다
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,28 +9,28 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 페이지 성능 분석{#analyzing-page-performance}
 
-[콘텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지를 열어 작성 중인 페이지의 성능을 분석합니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
+[컨텐츠 Insight](/help/sites-authoring/content-insights.md) 페이지를 열어 작성 중인 페이지의 성능을 분석합니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
 
-## 페이지용 Analytics 및 Recommendations 열기 {#opening-analytics-and-recommendations-for-a-page}
+## 페이지에 대한 분석 및 권장 사항 열기 {#opening-analytics-and-recommendations-for-a-page}
 
-다음 절차에 따라 페이지에 대한 Analytics 및 Recommendations을 확인하십시오.
+페이지에 대한 분석 및 권장 사항을 보려면 다음 절차를 따르십시오.
 
 1. 분석할 페이지로 이동합니다.
-1. 도구 모음에서 **Analytics 및 Recommendations**&#x200B;를 클릭합니다.
+1. 도구 모음에서 **분석 및 권장 사항**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >페이지에 대한 Analytics 및 Recommendations은 AEM을 [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics-connect.md)하도록 구성한 경우에만 나타납니다.
+   >페이지에 대한 분석 및 권장 사항은 AEM을 [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics-connect.md)하도록 구성한 경우에만 나타납니다.
 
    ![screen-shot_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -41,15 +41,15 @@ ht-degree: 1%
 * 보고할 기간.
 * 데이터의 세부 기간입니다.
 
-보고서의 시간 관련 측면을 변경하는 도구는 Content Insight 페이지의 맨 위에 표시됩니다. ![chlimage_1-126](assets/chlimage_1-126.png)
+보고서의 시간 관련 측면을 변경하는 도구는 컨텐츠 Insight 페이지 맨 위에 표시됩니다. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### 보고 기간 변경 {#changing-the-reporting-period-1}
 
-페이지 활동 분석을 특정 기간에 집중하도록 컨텐츠 인사이트 페이지의 보고 기간을 변경합니다. 보고 기간을 변경하면 보고서가 자동으로 새로 고쳐집니다. 시간대의 음영 처리된 영역은 보고 기간을 나타냅니다. 일정의 날짜가 왼쪽에서 오른쪽으로 늘어납니다.
+페이지 활동 분석을 특정 기간에 집중하도록 컨텐츠 Insight 페이지의 보고 기간을 변경합니다. 보고 기간을 변경하면 보고서가 자동으로 새로 고쳐집니다. 시간대의 음영 처리된 영역은 보고 기간을 나타냅니다. 일정의 날짜가 왼쪽에서 오른쪽으로 늘어납니다.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Content Insight 페이지의 보고 기간을 변경하려면:
+컨텐츠 Insight 페이지의 보고 기간을 변경하려면 다음 작업을 수행하십시오.
 
 1. 일정이 페이지 상단에 표시되지 않으면 일정 전환 아이콘을 클릭합니다.
 
@@ -75,9 +75,9 @@ Content Insight 페이지의 보고 기간을 변경하려면:
 
 1. 원하는 세부 기간을 클릭합니다. 선택하면 세부 기간을 반영하도록 보고서가 자동으로 업데이트됩니다.
 
-### SEO Recommendations에 작업 할당 {#assigning-tasks-for-seo-recommendations}
+### SEO 권장 사항에 작업 할당 {#assigning-tasks-for-seo-recommendations}
 
-SEO Recommendations 보고서를 사용하여 검색 엔진에 대한 페이지 가시성을 개선하기 위한 작업을 만들 수 있습니다. 확인 표시가 없는 보고서의 각 권장 사항에 대해 사용자에게 할당할 작업을 만들어 필요한 작업을 수행할 수 있습니다.
+SEO 권장 사항 보고서를 사용하여 검색 엔진에 대한 페이지 가시성을 향상시키는 작업을 만들 수 있습니다. 확인 표시가 없는 보고서의 각 권장 사항에 대해 사용자에게 할당할 작업을 만들어 필요한 작업을 수행할 수 있습니다.
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 

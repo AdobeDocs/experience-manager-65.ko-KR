@@ -4,8 +4,8 @@ description: Adobe Experience Manager에서 페이지 버전을 만들고, 비�
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 63%
@@ -203,7 +203,7 @@ ht-degree: 63%
 
 >[!TIP]
 >
->AEM 6.5.10.0 이상을 실행할 때 [타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수 있습니다](/help/sites-authoring/launches.md).
+>AEM [ 이상을 실행할 때 ](/help/sites-authoring/launches.md)타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수 있습니다6.5.10.0.
 
 콘텐츠 작성은 지속적인 공동 작업 프로세스입니다. 타임워프의 목적은 작성자가 시간이 지남에 따라 게시된 웹 사이트를 추적하여 콘텐츠가 어떻게 변경되었는지 이해할 수 있도록 하는 것입니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 파악합니다.
 

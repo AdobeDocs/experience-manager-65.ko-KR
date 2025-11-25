@@ -1,6 +1,6 @@
 ---
-title: 컨텐츠 인사이트
-description: Content Insight는 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다
+title: 콘텐츠 인사이트
+description: 컨텐츠 Insight은 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,36 +8,36 @@ topic-tags: site-features
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# 컨텐츠 인사이트{#content-insight}
+# 콘텐츠 인사이트{#content-insight}
 
-Content Insight는 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다. 컨텐츠 인사이트를 사용하여 페이지 수정 방법을 결정하거나 이전 변경 사항으로 성능이 어떻게 변경되었는지 알아볼 수 있습니다. 작성하는 모든 페이지에 대해 컨텐츠 인사이트를 열어 페이지를 분석할 수 있습니다.
+컨텐츠 Insight은 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다. 컨텐츠 Insight을 사용하여 페이지 수정 방법을 결정하거나 이전 변경 사항으로 성능이 어떻게 변경되었는지 알아볼 수 있습니다. 작성하는 모든 페이지에 대해 컨텐츠 Insight을 열어 페이지를 분석할 수 있습니다.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-Content Insight 페이지의 레이아웃은 사용 중인 디바이스의 화면 차원과 방향에 맞게 변경됩니다.
+컨텐츠 Insight 페이지의 레이아웃은 사용 중인 장치의 화면 차원과 방향에 맞게 변경됩니다.
 
 ## 보고서 데이터
 
-Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social 및 BrightEdge 데이터를 사용하는 보고서가 포함됩니다.
+컨텐츠 Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social 및 BrightEdge 데이터를 사용하는 보고서가 포함되어 있습니다.
 
 * SiteCatalyst: 다음 지표에 대한 보고서를 사용할 수 있습니다.
 
-   * 페이지 보기 수
+   * 페이지 조회수
    * 페이지에서 보낸 평균 시간
    * 소스
 
 * 타겟: 페이지에 오퍼가 포함된 캠페인 활동에 대한 보고서입니다.
 * BrightEdge: 검색 엔진에 대한 페이지의 가시성을 개선하는 페이지 기능에 대해 보고하며 구현해야 하는 기능을 권장합니다.
 
-[Analytics 및 Recommendations 열기](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)를 참조하십시오.
+[페이지에 대한 분석 및 권장 사항 열기](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)를 참조하십시오.
 
 ## 보고 기간
 
@@ -45,7 +45,7 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 
 >[!NOTE]
 >
->Content Insight 대시보드의 타임라인이 `GMT`에 있습니다.
+>콘텐츠 Insight 대시보드의 타임라인이 `GMT`에 있습니다.
 
 보고된 데이터의 세부 기간(예: 일별, 주별, 월별 또는 연간 데이터)을 지정할 수도 있습니다.
 
@@ -94,10 +94,10 @@ Content Insight 페이지에는 Adobe SiteCatalyst, Adobe Target, Adobe Social �
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## SEO Recommendations 보고서 {#the-seo-recommendations-report}
+## SEO 권장 사항 보고서 {#the-seo-recommendations-report}
 
-SEO Recommendations 보고서에는 해당 페이지에 대한 BrightEdge 분석 결과가 포함되어 있습니다. 이 보고서는 검색 엔진을 사용하여 찾기 능력을 극대화하기 위해 페이지가 어떤 기능을 수행하는지, 어떤 기능을 포함하지 않는지 나타내는 페이지 기능 체크리스트입니다.
+SEO 권장 사항 보고서에는 페이지에 대한 BrightEdge 분석의 결과가 포함되어 있습니다. 이 보고서는 검색 엔진을 사용하여 찾기 능력을 극대화하기 위해 페이지가 어떤 기능을 수행하는지, 어떤 기능을 포함하지 않는지 나타내는 페이지 기능 체크리스트입니다.
 
-보고서를 사용하면 작업을 만들어 페이지 검색 기능을 향상시킬 수 있습니다. Recommendations은 권장 사항 구현을 위한 작업이 생성되었음을 나타냅니다. [SEO Recommendations에 대한 작업 할당](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)을 참조하세요.
+보고서를 사용하면 작업을 만들어 페이지 검색 기능을 향상시킬 수 있습니다. 권장 사항은 권장 사항 구현을 위한 작업이 생성되었음을 나타냅니다. [SEO 권장 사항에 대한 작업 할당](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)을 참조하세요.
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

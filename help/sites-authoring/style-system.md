@@ -7,11 +7,11 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 84%
+source-wordcount: '1296'
+ht-degree: 83%
 
 ---
 
@@ -62,7 +62,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ## 사용 {#use}
 
-이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
+이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
 다음 섹션 [콘텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자](#as-a-template-author)에서는 WKND의 스타일 시스템을 사용하여 스타일 시스템의 기능을 테스트하는 방법을 설명합니다.
 
@@ -129,7 +129,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 편집 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-edit}
 
-이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택 사항 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 콘텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
+이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택적 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 콘텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
 
 편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
 

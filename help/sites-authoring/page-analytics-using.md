@@ -10,11 +10,11 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
@@ -77,17 +77,17 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-사이트 콘솔에서 [콘텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효율성을 자세히 조사하십시오.
+사이트 콘솔에서 [컨텐츠 Insight](/help/sites-authoring/content-insights.md)을(를) 열어 페이지 효과를 자세히 조사하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
-1. 도구 모음에서 Analytics 및 Recommendations 아이콘을 클릭합니다.
+1. 도구 모음에서 Analytics 및 권장 사항 아이콘을 클릭합니다.
 
-   ![Analytics 및 Recommendations 아이콘](do-not-localize/chlimage_1-14.png)
+   ![분석 및 권장 사항 아이콘](do-not-localize/chlimage_1-14.png)
 
-## 페이지 편집기(Activity Map)에 표시되는 분석 {#analytics-visible-from-the-page-editor-activity-map}
+## 페이지 편집기에 표시되는 분석(Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
+>Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[에서 제공한 ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap 플러그인을 사용해야 합니다.

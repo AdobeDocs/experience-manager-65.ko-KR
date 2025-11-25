@@ -1,6 +1,6 @@
 ---
 title: 작성 - AEM의 환경 및 도구
-description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.
+description: AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -286,7 +286,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 예를 들어, 해당되는 경우 **페이지 정보**&#x200B;에도 다음 옵션이 있습니다.
 
 * 페이지가 시작인 경우 [시작 홍보](/help/sites-authoring/launches-promoting.md)
-* 관리자가 [&#128279;](/help/sites-administering/enable-classic-ui-editor.md)이 옵션을 사용하도록 설정한 경우 [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)
+* 관리자가 [이 옵션을 사용하도록 설정한 경우 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)클래식 UI에서 열기[](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 
@@ -320,7 +320,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 >* 페이지의 특성에 따라 일부 모드를 사용할 수 없습니다.
 >* 일부 모드에 액세스하려면 적절한 권한/권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 디바이스에서 사용할 수 없습니다.
->* **미리 보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃**) 간에 전환하려면 [바로 가기](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용합니다.
+>* [미리 보기](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)와 현재 선택한 모드(예: `Ctrl-Shift-M`편집&#x200B;**,**&#x200B;레이아웃&#x200B;**) 간에 전환하려면**&#x200B;바로 가기&#x200B;**(**)를 사용합니다.
 >
 
 ## 경로 선택 {#path-selection}

@@ -8,11 +8,11 @@ content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로를 개발할 수도 있습니다.
 
 ## 주석 {#annotations}
 
@@ -85,7 +85,7 @@ ht-degree: 33%
 
      스케치를 생성할 때 커서는 크로스와이어로 변경됩니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
 
-     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![스케치](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * 색상 선택/변경:
 

@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 58%
@@ -23,7 +23,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
 
 >[!NOTE]
 >
->작성 환경 외부에서 [쿼리 빌더](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)과 같은 다른 메커니즘을 검색할 수도 있습니다.
+>작성 환경 외부에서 [쿼리 빌더](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)와 같은 다른 메커니즘을 검색할 수도 있습니다.
 
 ## 검색 기본 사항 {#search-basics}
 
@@ -71,7 +71,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
    * 저장된 검색
    * 검색 디렉터리
    * 태그
-   * 검색 기준(예: 수정된 날짜, Publish 상태, 라이브 카피 상태).
+   * 검색 기준(예: 수정된 날짜, 게시 상태, 라이브 카피 상태).
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하�
    >
    >
    >    * 선택한 리소스 유형에 따라(예: 자산 및 커뮤니티) 기준이 세분화됩니다.
-   >    * [Forms 검색](/help/sites-administering/search-forms.md)(으)로 인스턴스를 사용자 지정할 수 있습니다(AEM 내 위치에 맞게).
+   >    * [Forms 검색](/help/sites-administering/search-forms.md)(으)로 인스턴스를 사용자 지정할 수 있습니다(AEM 내의 위치에 맞게).
    >
    >
 

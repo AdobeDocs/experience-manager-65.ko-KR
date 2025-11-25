@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
@@ -91,7 +91,7 @@ ht-degree: 18%
 
    ![작업 타일](assets/project-tile-tasks.png)
 
-1. AEM에서는 선택한 프로젝트를 기반으로 타일과 연결된 항목 유형 및 필터에 대한 콘솔을 엽니다.
+1. AEM은 선택한 프로젝트를 기반으로 타일과 연결된 항목 유형 및 필터에 대한 콘솔을 엽니다.
 
    ![프로젝트 작업](assets/project-tasks.png)
 
@@ -99,7 +99,7 @@ ht-degree: 18%
 
 프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 다음 단계를 따르십시오.
 
-1. **프로젝트** 콘솔의 왼쪽 상단에 있는 레일 선택기에서 **타임라인**&#x200B;을 클릭합니다.
+1. **프로젝트** 콘솔의 왼쪽 상단에 있는 레일 선택기에서 **타임라인**을 클릭합니다.
    ![타임라인 모드 선택](assets/projects-timeline-rail.png)
 2. 콘솔에서 타임라인을 보려는 프로젝트를 선택합니다.
    ![프로젝트 타임라인 보기](assets/project-timeline-view.png)
@@ -108,7 +108,7 @@ Assets이 레일에 표시됩니다. 완료되면 레일 선택기를 사용하�
 
 ### 비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-**프로젝트** 콘솔에서 활성 및 [비활성 프로젝트](#making-projects-inactive-or-active) 사이를 전환하려면 도구 모음의 **활성 프로젝트 전환** 아이콘을 클릭하십시오.
+[프로젝트](#making-projects-inactive-or-active) 콘솔에서 활성 및 **비활성 프로젝트** 사이를 전환하려면 도구 모음의 **활성 프로젝트 전환** 아이콘을 클릭하십시오.
 
 ![활성 프로젝트 전환 아이콘](assets/projects-toggle-active.png)
 
@@ -134,7 +134,7 @@ Assets이 레일에 표시됩니다. 완료되면 레일 선택기를 사용하�
 
 ### 프로젝트 비활성화 {#making-projects-inactive-or-active}
 
-완료된 프로젝트는 비활성 상태로 표시할 수 있지만 프로젝트에 대한 정보는 계속 유지해야 합니다. [비활성 프로젝트는 이제 **프로젝트** 콘솔에 기본적으로 표시](#viewing-active-inactive-projects)됩니다.
+완료된 프로젝트는 비활성 상태로 표시할 수 있지만 프로젝트에 대한 정보는 계속 유지해야 합니다. [비활성 프로젝트는 이제 ](#viewing-active-inactive-projects)프로젝트&#x200B;**콘솔에 기본적으로 표시**&#x200B;됩니다.
 
 프로젝트를 비활성화하려면 다음 단계를 따르십시오.
 
@@ -156,7 +156,7 @@ Assets이 레일에 표시됩니다. 완료되면 레일 선택기를 사용하�
 1. AEM은 프로젝트 삭제 시 연결된 프로젝트 데이터를 제거/수정할 수 있습니다. **프로젝트 삭제** 대화 상자에서 필요한 옵션을 선택하십시오.
    * 프로젝트 그룹 및 역할 제거
    * 프로젝트 Assets 폴더 삭제
-   * 프로젝트 워크플로우 종료
+   * 프로젝트 워크플로 종료
 
    ![프로젝트 삭제 옵션](assets/project-delete-options.png)
 1. 옵션을 선택한 상태에서 프로젝트를 삭제하려면 **삭제**&#x200B;를 클릭하십시오.

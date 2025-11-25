@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 47%
@@ -45,11 +45,11 @@ ht-degree: 47%
 
 도구 모음은 다양한 옵션에 대한 액세스를 제공합니다. 현재 컨텍스트 및 구성에 따라 일부 옵션을 사용하지 못할 수 있습니다.
 
-* **사이드 패널 전환**
+* **사이드 패널 토글**
 
   [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser), [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser) 및 [콘텐츠 트리](/help/sites-authoring/author-environment-tools.md#content-tree)를 보유하는 사이드 패널을 열고 닫습니다.
 
-  ![사이드 패널 전환](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![사이드 패널 토글](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **페이지 정보**
 
@@ -450,9 +450,9 @@ ht-degree: 47%
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
-페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)(으)로 쉽게 전환할 수 있습니다.
+페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/templates.md#editing-templates-template-authors)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/author-environment-tools.md#page-information)(으)로 쉽게 전환할 수 있습니다.
 
-페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
+페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/default-components-designmode.md)를 사용하여 [디자인 모드](/help/sites-authoring/author-environment-tools.md#page-modes)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
 
 [열 보기](/help/sites-authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.
 
@@ -570,7 +570,7 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 >
 >시스템 관리자는 인스턴스에 대한 요구 사항에 따라 [실행 취소/다시 실행 기능의 다양한 측면을 구성](/help/sites-administering/config-undo.md)할 수 있습니다.
 
-AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 순서를 저장합니다. 이 기능은 여러 작업을 수행한 순서대로 실행 취소하고 필요한 경우 다시 실행하여 하나 이상의 작업을 다시 적용할 수 있음을 의미합니다.
+AEM은 사용자가 수행한 작업 내역과 해당 작업을 수행한 시퀀스를 저장합니다. 이 기능은 여러 작업을 수행한 순서대로 실행 취소하고 필요한 경우 다시 실행하여 하나 이상의 작업을 다시 적용할 수 있음을 의미합니다.
 
 콘텐츠 페이지의 요소(예: 텍스트 구성 요소 등)가 선택된 경우 명령을 실행 취소 및 재실행하면 선택한 항목에 적용됩니다.
 

@@ -1,6 +1,6 @@
 ---
 title: 크리에이티브 프로젝트 및 PIM 통합
-description: Creative Project는 사진 촬영 요청 생성, 사진 촬영 업로드, 사진 촬영 공동 작업 및 승인된 에셋 패키징 등 전체 사진 촬영 워크플로우를 간소화합니다
+description: Creative 프로젝트는 사진 촬영 요청 생성, 사진 촬영 업로드, 사진 촬영 공동 작업, 승인된 에셋 패키징 등 전체 사진 촬영 워크플로우를 간소화합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 크리에이티브 프로젝트 및 PIM 통합 {#creative-project-and-pim-integration}
 
-마케터 또는 크리에이티브 전문가인 경우 Adobe Experience Manager(AEM)의 Creative Project 도구를 사용하여 조직 내에서 eCommerce 관련 제품 사진 및 관련 크리에이티브 프로세스를 관리할 수 있습니다.
+마케터 또는 크리에이티브 전문가인 경우 Adobe Experience Manager(AEM)의 Creative 프로젝트 도구를 사용하여 조직 내에서 eCommerce 관련 제품 사진 및 관련 크리에이티브 프로세스를 관리할 수 있습니다.
 
 Creative Project를 사용하여 사진 촬영 워크플로우에서 다음 작업을 간소화할 수 있습니다.
 
@@ -195,7 +195,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 
    ![촬영 목록 보기](assets/chlimage_1-148a.png)
 
-   기존 데이터를 편집하거나 새 데이터를 추가하려면 도구 모음에서 **편집**&#x200B;을 클릭합니다. **제품**&#x200B;및 **설명** 필드만 편집할 수 있습니다.
+   기존 데이터를 편집하거나 새 데이터를 추가하려면 도구 모음에서 **편집**&#x200B;을 클릭합니다. **제품**및 **설명** 필드만 편집할 수 있습니다.
 
    ![촬영 목록 편집](assets/chlimage_1-149a.png)
 
@@ -241,7 +241,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 
 편집자인 경우 이전 작업에서 만들거나 업로드한 **shotlist.csv** 파일에 나열된 제품에 대한 사진을 업로드할 수 있습니다.
 
-업로드할 이미지의 이름은 `shotlist.csv` 파일의 **Id** 필드에서 `ProductId`을(를) 참조하는 `<ProductId_>`(으)로 시작해야 합니다. 예를 들어 촬영 목록에서 **Id** `397122`을(를) 사용하는 제품의 경우 이름이 `397122_highcontrast.jpg`, `397122_lowlight.png`인 파일을 업로드합니다.
+업로드할 이미지의 이름은 `<ProductId_>` 파일의 `ProductId`Id **필드에서**&#x200B;을(를) 참조하는 `shotlist.csv`(으)로 시작해야 합니다. 예를 들어 촬영 목록에서 **Id** `397122`을(를) 사용하는 제품의 경우 이름이 `397122_highcontrast.jpg`, `397122_lowlight.png`인 파일을 업로드합니다.
 
 이미지를 직접 업로드하거나 이미지가 포함된 ZIP 파일을 업로드할 수 있습니다. 이름에 따라 이미지는 사진 촬영 폴더 내의 각 제품 폴더 내에 배치됩니다.
 

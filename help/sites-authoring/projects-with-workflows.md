@@ -8,11 +8,11 @@ content-type: reference
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -44,13 +44,13 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->&ast; 이들 워크플로는 프로젝트의 **워크플로** 타일에서 시작되지 않습니다. [에셋용 언어 사본 만들기](/help/sites-administering/tc-manage.md)를 참조하십시오.
+>&amp;ast; 이들 워크플로는 프로젝트의 **워크플로** 타일에서 시작되지 않습니다. [에셋용 언어 사본 만들기](/help/sites-administering/tc-manage.md)를 참조하십시오.
 
 워크플로 시작 및 완료 단계는 선택하는 워크플로와 상관없이 동일합니다. 단계만 변경됩니다.
 
 [프로젝트]에서 바로 워크플로를 시작합니다([DAM 언어 사본 작성]이나 [DAM 언어 사본 작성 및 번역] 제외). 프로젝트에서 아직 처리되지 않은 작업에 대한 정보는 **작업** 타일에 나열됩니다. 완료해야 하는 작업에 대한 알림은 사용자 아이콘 옆에 표시됩니다.
 
-AEM의 워크플로우 작업에 대한 자세한 내용은 다음 문서를 참조하십시오.
+AEM에서 워크플로우를 사용하여 작업하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [워크플로에 참여](/help/sites-authoring/workflows-participating.md)
 * [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md)
@@ -74,7 +74,7 @@ AEM의 워크플로우 작업에 대한 자세한 내용은 다음 문서를 참
 
 ## 제품 사진 촬영 워크플로우 {#product-photo-shoot-workflow}
 
-**제품 사진 촬영** 워크플로(상거래 및 비상거래)는 [Creative 프로젝트](/help/sites-authoring/managing-product-information.md) 문서에서 자세히 다룹니다
+**제품 사진 촬영** 워크플로(상거래 및 비상거래)는 [Creative 프로젝트](/help/sites-authoring/managing-product-information.md) 문서에서 자세히 다룹니다.
 
 ## 프로젝트 승인 워크플로 {#project-approval-workflow}
 

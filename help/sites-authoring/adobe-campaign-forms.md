@@ -8,15 +8,15 @@ topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-# AEM에서 Adobe Campaign Forms 만들기 {#creating-adobe-campaign-forms-in-aem}
+# AEM에서 Adobe Campaign 양식 작성 {#creating-adobe-campaign-forms-in-aem}
 
 AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 

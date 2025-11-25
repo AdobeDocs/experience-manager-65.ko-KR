@@ -4,13 +4,13 @@ description: 이전 8개의 서비스 팩 릴리스에서 Adobe Experience Manag
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: eef3ad559612c338de0c4232aadc4133c910aaf8
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3109'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 13%
 
 ## AEM 6.5, 서비스 팩 23—2025년 5월 22일
 
-### Forms {#forms-sp23}
+### 양식 {#forms-sp23}
 
 * [정적 PDF에서 혼합 텍스트 스타일을 사용하는 액세스 가능한 하이퍼링크](https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): 이제 정적 PDF에서 혼합 텍스트 스타일을 포함하는 하이퍼링크에 액세스 가능한 단일 요소로 태그가 지정됩니다. 이러한 향상된 기능은 태그 트리 구조를 단순화하고, 화면 판독기 탐색을 개선하며, 향상된 접근성 규정 준수를 지원합니다.
 
@@ -43,7 +43,7 @@ ht-degree: 13%
 
    * Red Hat® Enterprise Linux® 9(커널 4.x, 64비트)
 
-* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
+* [파일 첨부 파일 구성 요소 강화](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): 이제 보안 조치로서 구성 요소가 허용된 파일 형식 검사를 무시하는 수정된 확장자를 가진 파일 제출을 방지합니다. 이러한 파일은 제출 중에 차단되어 유효한 파일 형식만 허용됩니다.
 
 ## AEM 6.5, 서비스 팩 22—2024년 11월 21일
 
@@ -55,11 +55,11 @@ ht-degree: 13%
 
 이제 IPTC 탭에서 [!UICONTROL 대체 텍스트] 및 [!UICONTROL 확장 설명] 텍스트 필드를 지원합니다. (Assets-34918)
 
-### Forms {#forms-sp22}
+### 양식 {#forms-sp22}
 
 #### AEM Forms의 새로운 GA 기능 {#ga-aem-forms-sp22}
 
-* [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용할 수 있도록 지원이 추가되었습니다. 이제 대화형 통신에는 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 향상된 기능을 통해 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링이 보장되므로 PDF 출력에서 다국어 콘텐츠에 대한 지원이 향상됩니다.
+* [대화형 통신 일괄 처리 API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)에서 글꼴 임베딩을 사용할 수 있도록 지원이 추가되었습니다. 이제 대화형 통신에는 일괄 처리 API를 통해 생성된 PDF에 Adobe Ming 및 Adobe Myungjo 글꼴을 포함할 수 있는 지원이 포함됩니다. 이러한 향상된 기능을 통해 글꼴 하위 집합을 사용하는 경우에도 생성된 문서에서 정확한 텍스트 렌더링이 보장되므로 PDF 출력에서 다국어 콘텐츠에 대한 지원이 향상됩니다.
 
 * [PDF 접근성을 위한 목차 API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - 이제 OSGi의 AEM Forms에서 새로운 TOC Tag API를 지원하여 접근성 표준을 위한 PDF을 향상시킵니다. 보조 기술을 사용하는 사용자가 PDF에 보다 쉽게 액세스할 수 있도록 해줍니다.
 
@@ -114,7 +114,7 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 ### [!DNL Assets]
 
-* Dynamic Media는 이제 Apple iOS/iPadOS에 대해 무손실 HEIC 이미지 형식을 지원합니다. Dynamic Media 이미지 제공 및 렌더링 API에서 [fmt](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt)을(를) 참조하십시오.
+* Dynamic Media는 이제 Apple iOS/iPadOS에 대해 무손실 HEIC 이미지 형식을 지원합니다. Dynamic Media 이미지 제공 및 렌더링 API에서 [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt)을(를) 참조하십시오.
 * 이제 MSM(Multisite Manager)은 경험 조각을 라이브 카피로 효율적으로 대량 롤아웃하기 위해 폴더 및 하위 폴더를 포함한 경험 조각 구조를 지원합니다.
 
 ### [!DNL Forms]
@@ -135,13 +135,13 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 ### [!DNL Forms]
 
 * **새로운 적응형 양식 핵심 구성 요소**: 양식의 확장성을 높이기 위해 세로 탭, 약관 및 확인란이 추가되었습니다.
-   * **[확인란 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
+   * **[확인란 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식에 확인란 구성 요소를 포함할 수 있습니다. 이를 통해 사용자는 특정 옵션을 선택하거나 선택 취소하는 이진 선택을 할 수 있습니다. 확인란은 일반적으로 클릭하거나 탭하여 두 가지 상태(선택됨 및 선택 취소됨) 사이를 전환할 수 있는 작은 상자 형태입니다. 확인란은 예/아니요 또는 참/거짓 선택을 표시하는 데 사용되는 일반적인 양식 요소입니다.
 
-   * **[약관 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: 이제 핵심 구성 요소 기반 적응형 Forms에 약관 구성 요소가 포함됩니다. 양식 작성자는 이 섹션을 추가하여 사용자에게 서비스, 제품 또는 플랫폼에 대한 약관, 조건 또는 법적 계약을 표시합니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
+   * **[약관 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: 이제 핵심 구성 요소 기반 적응형 Forms에 약관 구성 요소가 포함됩니다. 양식 작성자는 이 섹션을 추가하여 사용자에게 서비스, 제품 또는 플랫폼에 대한 약관, 조건 또는 법적 계약을 표시합니다. 이 구성 요소는 양식을 제출하면 동의하는 것으로 간주되는 규칙, 규정 및 의무에 대해 사용자에게 알리도록 설계되었습니다.
 
      ![세로 탭, 약관 및 확인란 구성 요소](/help/forms/using/assets/forms-components.png)
 
-   * **[세로 탭 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식의 세로 탭은 탐색을 단순화하고 콘텐츠를 구성하여 사용자 경험을 향상시킵니다. 이 변수는 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 특히 유용합니다.
+   * **[세로 탭 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: 이제 핵심 구성 요소를 기반으로 하는 적응형 양식은 양식 콘텐츠를 세로 탭 목록으로 구성하여 체계적이고 탐색 가능한 레이아웃을 제공할 수 있습니다. 양식의 세로 탭은 탐색을 단순화하고 콘텐츠를 구성하여 사용자 경험을 향상시킵니다. 이 변수는 양식에 여러 섹션이나 복잡한 정보가 포함되어 있을 때 특히 유용합니다.
 
 * **[64비트 버전의 AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: 64비트 버전의 AEM Forms Designer은 향상된 성능, 확장성 및 메모리 관리를 제공하여 양식 생성 환경을 향상시킵니다. 64비트 아키텍처를 사용하면 더 크고 복잡한 프로젝트를 간단하게 처리하여 원활한 워크플로 디자인과 최적화된 효율성을 보장할 수 있습니다. 이 혁신적인 릴리스를 통해 양식 디자인 기능을 개선하고 AEM Forms Designer를 진전시킬 수 있습니다.
 
@@ -162,9 +162,9 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
 
 ### [!DNL Forms]
 
-* **[규칙 편집기에서 사용자 지정 오류 처리기를 사용하여 오류 처리 기능이 개선되었습니다](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다
+* **[규칙 편집기에서 사용자 지정 오류 처리기를 사용하여 오류 처리 기능이 개선되었습니다](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - 이제 외부 서비스에서 반환된 오류에 대한 응답으로 사용자 지정 함수(클라이언트 라이브러리 사용)를 호출할 수 있습니다. 또한 최종 사용자에게 맞춤 응답을 제공할 수 있습니다. 서비스에서 반환된 오류에 대해 특정 작업을 수행할 수도 있습니다. 예를 들어 특정 오류 코드에 대해 백엔드에서 사용자 지정 워크플로우를 호출하거나 서비스가 중단되었음을 고객에게 알릴 수 있습니다
 
-* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 향상된 기능을 통해 사용할 수 있습니다.
+* **[향상된 Adobe Sign 워크플로 단계](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - AEM 워크플로의 Adobe Sign 워크플로 단계는 다음과 같은 향상된 기능을 통해 사용할 수 있습니다.
 
    * **Adobe Sign에 대한 정부 ID 기반 인증을 통해 보안이 강화되었습니다** - Adobe Acrobat Sign의 정부 ID 기반 인증은 추가 인증 계층을 제공합니다. 사용자가 정부에서 발급한 신분증(운전면허증, 주민등록증, 여권)을 이용해 본인 인증을 할 수 있도록 했다. 신뢰할 수 있는 식별 문서를 사용하여 이 개선된 기능은 서명 프로세스에 신뢰도를 추가하여 보안, 규정 준수 및 사용자 유효성 검사 강화에 필요한 시나리오에 적합합니다.
 
@@ -174,7 +174,7 @@ Beta 기능은 혁신적인 최신 기술에 독점적으로 액세스하고 개
    * **서명자 이상으로 계약 수신자의 역할 확장** - Adobe Acrobat Sign을 사용하면 계약 수신자의 역할을 서명자 이상으로 확장하여 워크플로 요구 사항에 보다 잘 부합하도록 할 수 있습니다. 활성화된 경우 계약의 각 수신자는 자신의 역할을 개별적으로 구성할 수 있으며 기본값은 서명자입니다.
 
 
-* **[JEE의 AEM Forms 전체 설치 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - 서비스 팩은 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원하는 JEE의 AEM Forms 전체 설치 관리자를 제공합니다.
+* **[JEE의 AEM Forms 전체 설치 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - 서비스 팩은 다음을 포함한 여러 가지 새로운 소프트웨어 조합을 지원하는 JEE의 AEM Forms 전체 설치 관리자를 제공합니다.
    * Microsoft® 윈도우 서버 2022
    * Microsoft® Active Directory 2022
    * Windows Server 2022의 Oracle WebLogic 14C
@@ -193,7 +193,7 @@ JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 설치하거나 사용�
 
   해당 작업을 수행하기 위해 자산 위치로 이동하여 자산 속성을 볼 필요가 없습니다.
 
-* **Dynamic Media _스냅숏_**&#x200B;을(를) 사용하면 테스트 이미지 또는 Dynamic Media URL을 사용하여 WebP 또는 AVIF 출력, 대역폭 인식 압축 및 장치 픽셀 비율 비율과 같은 이미지 수정자 및 스마트 이미징 최적화를 미리 볼 수 있습니다. 그런 다음 각 설정이 품질 및 파일 크기에 미치는 영향을 즉시 비교할 수 있습니다.
+* **Dynamic Media _스냅숏_**을(를) 사용하면 테스트 이미지 또는 Dynamic Media URL을 사용하여 WebP 또는 AVIF 출력, 대역폭 인식 압축 및 장치 픽셀 비율 비율과 같은 이미지 수정자 및 스마트 이미징 최적화를 미리 볼 수 있습니다. 그런 다음 각 설정이 품질 및 파일 크기에 미치는 영향을 즉시 비교할 수 있습니다.
 [Dynamic Media 스냅샷](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)을 참조하십시오.
 * **Dynamic Media를 사용한 DASH 스트리밍** - Dynamic Media 비디오 게재(CMAF가 활성화됨)에서 적응형 스트리밍을 위해 새로운 프로토콜(DASH - HTTP를 통한 동적 적응형 스트리밍)이 시작되었습니다. 현재 모든 지역에서 사용할 수 있습니다.
 * **Experience Manager Sites 및 컨텐츠 조각과 Assets 차세대 Dynamic Media 통합** - 사용자는 이제 Experience Manager Sites 6.5에서 클라우드 호스팅 자산을 사용할 수 있습니다. 온프레미스 또는 Managed Services 인스턴스에서 이러한 에셋을 작성하고 전달할 수 있습니다.
@@ -214,13 +214,13 @@ JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 설치하거나 사용�
 Dynamic Media 비디오 게재 시 적응형 비트율 스트리밍을 위해 새 프로토콜 DASH(HTTP를 통한 동적 적응형 스트리밍)가 시작되었습니다(CMAF [공통 미디어 애플리케이션 형식]이 활성화됨).
 
 * 적응형 스트리밍(DASH/HLS)은 비디오에 대한 최종 사용자 시청 환경을 향상시킵니다.
-* DASH는 응용 비디오 스트리밍에 대한 국제 표준 프로토콜로서 업계에서 널리 채택되고 있다.
+* DASH는 적응형 비디오 스트리밍을 위한 국제 표준 프로토콜이며 업계에서 널리 채택되고 있습니다.
 * 현재 아시아 태평양 및 북미에서 이용 가능하며, 유럽-중동-아프리카에서 곧 출시될 예정입니다.
 
 ### [!DNL Forms]
 
-* [Headless 적응형 Forms](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/overview)을(를) 사용하면 개발자는 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다.
+* [Headless 적응형 Forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)을(를) 사용하면 개발자는 기존의 그래픽 사용자 인터페이스가 아닌 API를 통해 액세스하고 상호 작용할 수 있는 대화형 양식을 만들고 게시하고 관리할 수 있습니다.
 
-* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction#features)는 Adobe Experience Manager WCM 핵심 구성 요소를 기반으로 구축된 24개의 오픈 소스 BEM 호환 구성 요소 세트입니다. 이러한 구성 요소는 오픈 소스이며 개발자가 조직의 특정 요구 사항에 맞게 이러한 구성 요소를 쉽게 사용자 정의하고 확장할 수 있는 기능을 제공합니다. [WCM 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/get-started/authoring)를 사용자 지정할 수 있는 기존 기술을 가진 사용자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다.
+* [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features)는 Adobe Experience Manager WCM 핵심 구성 요소를 기반으로 구축된 24개의 오픈 소스 BEM 호환 구성 요소 세트입니다. 이러한 구성 요소는 오픈 소스이며 개발자가 조직의 특정 요구 사항에 맞게 이러한 구성 요소를 쉽게 사용자 정의하고 확장할 수 있는 기능을 제공합니다. [WCM 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring)를 사용자 지정할 수 있는 기존 기술을 가진 사용자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다.
 
 * 이제 OSGi의 Reader 확장 서비스에서 PDF의 가져오기 및 내보내기 사용 권한을 활성화하여 Adobe Acrobat Reader에서 데이터를 가져오거나 내보낼 수 있는 별도의 옵션을 제공합니다.

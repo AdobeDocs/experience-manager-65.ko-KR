@@ -4,8 +4,8 @@ description: Adobe Experience Manager 6.5에서 컨텐츠 페이지를 게시하
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1701'
 ht-degree: 67%
@@ -25,13 +25,13 @@ ht-degree: 67%
 >게시와 관련된 특정 용어는 혼동될 수 있습니다.
 >
 >* **게시/게시 취소**
->  &#x200B;>  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
+>  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
 >
 >* **활성화/비활성화**
->  &#x200B;>  게시/게시 취소와 동의어입니다.
+>  게시/게시 취소와 동의어입니다.
 >
 >* **복제**
->  &#x200B;>  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
+>  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
 
 ## 권한 부족 {#insufficient-privileges}
 
@@ -141,7 +141,7 @@ ht-degree: 67%
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
+   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
 
    마법사로 돌아가면 목록에서 항목을 선택하여 다음과 같은 추가 옵션을 구성할 수 있습니다.
 

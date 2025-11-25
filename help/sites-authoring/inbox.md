@@ -4,8 +4,8 @@ description: Adobe Experience Manager 6.5의 받은 편지함으로 작업 관�
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 62%
@@ -21,7 +21,7 @@ ht-degree: 62%
    * **프로젝트**&#x200B;와 같은 AEM UI의 다양한 지점에서 만들 수도 있습니다.
    * 워크플로 **작업 만들기** 또는 **프로젝트 작업 만들기** 단계의 결과일 수 있습니다.
 
-* 워크플로우:
+* 워크플로:
 
    * 페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업 항목
 
@@ -33,7 +33,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->기본 AEM에는 관리자 사용자 그룹에 할당된 관리 작업이 미리 로드되어 있습니다. 자세한 내용은 [기본 관리 작업](#out-of-the-box-administrative-tasks)을 참조하세요.
+>AEM에는 관리자 사용자 그룹에 할당된 관리 작업이 사전 로드되어 있습니다. 자세한 내용은 [기본 관리 작업](#out-of-the-box-administrative-tasks)을 참조하세요.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 62%
 >
 >* [프로젝트](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
->* [워크플로우](/help/sites-authoring/workflows.md)
+>* [워크플로](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/using/introduction-aem-forms.md)
 >
 
@@ -57,7 +57,7 @@ ht-degree: 62%
 
 ## 기본 관리 작업  {#out-of-the-box-administrative-tasks}
 
-기본 AEM에는 관리자 사용자 그룹에 할당된 4개의 작업이 미리 로드되어 있습니다.
+AEM에는 관리자 사용자 그룹에 할당된 4개의 작업이 사전 로드되어 있습니다.
 
 * [분석 및 타깃팅 구성](/help/sites-administering/opt-in.md)
 * [AEM 보안 검사 목록 적용](/help/sites-administering/security-checklist.md)
@@ -139,10 +139,10 @@ AEM 알림 받은 편지함 열기
 
 관리자 컨트롤 옵션은 `administrators` 또는 `workflow-administrators` 그룹의 구성원에게만 표시됩니다.
 
-* **열 사용자 지정**: AEM 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하고, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다.
+* **열 사용자 지정**: AEM 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하고, 워크플로의 데이터를 기반으로 추가 열을 표시할 수 있습니다.
    * **열 추가**: AEM 받은 편지함에서 추가할 열을 선택합니다.
    * **열 편집**: 열 제목 위에 마우스를 놓고 ![편집](assets/edit.svg) 아이콘을 선택하여 열 표시 이름을 입력합니다.
-   * **열 삭제**: ![삭제](assets/delete_updated.svg) 아이콘을 선택하여 AEM 받은 편지함에서 열을 삭제합니다.
+   * **열 삭제**: AEM 받은 편지함에서 열을 삭제하려면 ![삭제](assets/delete_updated.svg) 아이콘을 선택하십시오.
    * **열 이동**: ![이동](assets/move_updated.svg) 아이콘을 드래그하여 열을 AEM 받은 편지함의 새 위치로 이동합니다.
 
   ![admin-control](assets/admin-control-column-customize.png)
@@ -179,14 +179,14 @@ AEM 알림 받은 편지함 열기
       * 관련 설명서 열기
 
    * 이전 단계로 **돌아갑니다**.
-   * 워크플로우에 대한 페이로드를 확인합니다.
+   * 워크플로에 대한 페이로드를 확인합니다.
    * 항목에서 프로젝트를 생성합니다.
 
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
    >
-   >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
+   >* 워크플로 항목 - [워크플로에 참여](/help/sites-authoring/workflows-participating.md)
 
 1. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
 

@@ -9,10 +9,10 @@ docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 7c4be888c392520c82ef7b2172d0eee61fc3ee44
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '896'
 ht-degree: 73%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 73%
 * 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
-이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](/help/sites-authoring/launches-creating.md#deleting-a-launch)하는 방법에 대해 설명합니다.
+이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](/help/sites-authoring/launches-creating.md#deleting-a-launch)에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](#the-launches-console)하는 방법에 대해 설명합니다.
 
 * [론치 만들기](/help/sites-authoring/launches-creating.md)
 * [론치 편집](/help/sites-authoring/launches-editing.md)

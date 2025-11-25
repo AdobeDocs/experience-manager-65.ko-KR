@@ -4,8 +4,8 @@ description: Adobe Experience Manager으로 페이지를 만들고 관리하는 
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 383192083ec84176f67882a869550374f6074eef
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 74%
@@ -242,7 +242,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 >[!CAUTION]
 >
->페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 &#x200B;](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
+>페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 ](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
@@ -389,7 +389,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
   ![비동기 페이지 이동](assets/asynchronous-page-move.png)
 
-비동기 작업의 상태는 [**전역 탐색** > &#x200B;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)도구&#x200B;**>**&#x200B;작업&#x200B;**>**&#x200B;작업&#x200B;**의**&#x200B;비동기 작업 상태&#x200B;**대시보드**&#x200B;에서 확인할 수 있습니다.
+비동기 작업의 상태는 [**전역 탐색** > ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)도구&#x200B;**>**&#x200B;작업&#x200B;**>**&#x200B;작업&#x200B;**의**&#x200B;비동기 작업 상태&#x200B;**대시보드**&#x200B;에서 확인할 수 있습니다.
 
 >[!NOTE]
 >

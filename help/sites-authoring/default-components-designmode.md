@@ -4,8 +4,8 @@ description: 디자인 모드에서 Adobe Experience Manager 구성 요소 구�
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # 디자인 모드에서 기본 구성 요소 구성{#configuring-components-in-design-mode}
 
-AEM 인스턴스가 즉시 설치되면 구성 요소 브라우저에서 다양한 구성 요소를 즉시 사용할 수 있습니다.
+AEM 인스턴스가 기본적으로 설치되면 구성 요소 브라우저에서 다양한 구성 요소를 즉시 사용할 수 있습니다.
 
 이들 외에도 다양한 다른 구성 요소도 사용할 수 있습니다. 디자인 모드를 사용하여 [이러한 구성 요소를 활성화/비활성화](#enable-disable-components)할 수 있습니다. 활성화하여 페이지에 있는 경우 특성 매개 변수를 편집하여 디자인 모드를 사용하여 [구성 요소 디자인의 측면을 구성](#configuring-the-design-of-a-component)할 수 있습니다.
 
@@ -43,7 +43,7 @@ AEM 인스턴스가 즉시 설치되면 구성 요소 브라우저에서 다양�
 
 >[!NOTE]
 >
->`parsys`에 대한 자세한 내용은 [구성 요소 개발](/help/sites-developing/components.md) 및 [템플릿 및 구성 요소 사용 지침](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)을 참조하십시오.
+>[에 대한 자세한 내용은 ](/help/sites-developing/components.md)구성 요소 개발[ 및 ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)템플릿 및 구성 요소 사용 지침`parsys`을 참조하십시오.
 
 >[!CAUTION]
 >

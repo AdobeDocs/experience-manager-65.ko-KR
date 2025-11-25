@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1853'
 ht-degree: 69%
@@ -141,7 +141,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * 파란색 점선은 선택한 장치(여기서는 **iPhone 6**)에 대한 *접기*&#x200B;를 나타냅니다.
+   * 파란색 점선은 선택한 장치(여기서는 *iPhone 6*)에 대한 **접기**&#x200B;를 나타냅니다.
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 

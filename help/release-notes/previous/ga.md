@@ -4,11 +4,11 @@ description: 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '4477'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 22%
 |---|---|
 | 버전 | 6.5 |
 | 유형 | 주요 릴리스 |
-| 일반 가용 날짜 | 2019년 4월 8일 |
-| 권장 업데이트 | [AEM 최신 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)를 참조하세요. |
+| 일반 가용 일자 | 2019년 4월 8일 |
+| 권장 업데이트 | [AEM 최신 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)를 참조하세요. |
 
 ### 트리비아 {#trivia}
 
@@ -35,7 +35,7 @@ ht-degree: 22%
 
 [!DNL Adobe Experience Manager] 6.5는 [!DNL Adobe Experience Manager] 6.4 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. SP4까지 [!DNL Adobe Experience Manager] 6.4 서비스 팩 릴리스도 포함됩니다.
 
-아래 목록은 개요를 제공하며 후속 페이지에는 전체 세부 정보가 나열됩니다.
+아래 목록은 개요를 제공하며, 다음 페이지에는 전체 세부 사항이 나열됩니다.
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -51,7 +51,7 @@ Quickstart는 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다.
 
 #### Java™ 개발 {#java-development}
 
-* 이제 Uberjar[&#128279;](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
+* 이제 Uberjar[의 ](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
 
 #### 사용자 인터페이스 {#user-interface}
 
@@ -140,7 +140,7 @@ AEM은 다양한 형식 및 다양한 스택 수준에서 콘텐츠를 제공할
 * 동적 자리 표시자를 사용하여 데이터 트리거된 콘텐츠의 위치 또는 구성으로 개인화합니다.
 * AEM Screens Player로의 Adobe Analytics 통합으로 추진된 통합 인사이트
 
-AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)의 릴리스 노트를 참조하십시오.
+AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)의 릴리스 노트를 참조하십시오.
 
 #### 구성 요소 및 템플릿 개발 {#component-amp-template-development}
 
@@ -157,11 +157,9 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
      ```
 
    * data-sly-set을 사용한 변수 선언:
-
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * 목록 및 반복 제어 매개 변수: begin, step, end:
-
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * data-sly-unwrap용 식별자:
@@ -230,7 +228,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 #### 론치 {#launches}
 
 * 론치에 대한 새로운 검토 및 승인 워크플로우 및 승인된 론치 페이지만 홍보하는 기능
-* 프로모션 단계[&#x200B; 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* 프로모션 단계[ 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 #### 콘텐츠 타겟팅 및 시뮬레이션 {#content-targeting-simulation}
 
@@ -248,16 +246,16 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 * 이제 Adobe Target 통합에서 Target Standard API를 사용합니다. AEM의 이전 버전에서는 이제 더 이상 사용되지 않는 Target Classic HTTP API를 사용합니다.
 * Adobe Target `mbox.js` 버전 63이 포함되어 있습니다. Adobe에서는 구현을 `at.js` v1.x(으)로 전환할 것을 강력히 권장합니다.
-* 이제 `at.js` 버전 1.5.0이 포함되어 있습니다. [Adobe Experience Platform Launch](https://business.adobe.com/kr/products/experience-platform/launch.html)를 사용하여 사이트에 `at.js` v1.x를 프로비저닝할 것을 권장합니다.
+* 이제 `at.js` 버전 1.5.0이 포함되어 있습니다. [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html)를 사용하여 사이트에 `at.js` v1.x를 프로비저닝할 것을 권장합니다.
 
 #### AEM 및 Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5가 포함됩니다. 구현을 `AppMeasurement.js`로 전환할 것을 권장합니다.
-* `AppMeasurement.js` v1.8.0이 포함됩니다. Adobe에서는 [Adobe Experience Platform Launch](https://business.adobe.com/kr/products/experience-platform/launch.html)을(를) 사용하여 사이트에 AppMeasurement.js를 프로비저닝할 것을 권장합니다.
+* `AppMeasurement.js` v1.8.0이 포함됩니다. Adobe에서는 [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html)을(를) 사용하여 사이트에 AppMeasurement.js를 프로비저닝할 것을 권장합니다.
 
 #### AEM 및 Commerce {#aem-commerce}
 
-AEM 6.4 이후 Commerce integration framework에 대한 개선 사항이 더 빠른 릴리스 주기에 있습니다. [Commerce integration framework을 사용하여 AEM 및 Adobe Commerce 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=ko)에서 자세히 알아보세요.
+AEM 6.4 이후 Commerce integration framework에 대한 개선 사항이 더 빠른 릴리스 주기에 있습니다. [Commerce integration framework을 사용하여 AEM 및 Adobe Commerce 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)에서 자세히 알아보세요.
 
 #### Communities 추가 기능 {#communities-add-on}
 
@@ -362,7 +360,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 [!DNL Experience Manager Assets Brand Portal]은 승인된 자산을 외부 공급업체/에이전시 및 내부 비즈니스 사용자가 간편하게 구매하고 효과적으로 제어하며 장치 간에 안전하게 분배할 수 있도록 지원합니다. 자산 공유의 효율성을 향상시키고, 자산 출시 시기를 앞당길 수 있으며, 규정을 준수하지 않고 무단 액세스하는 위험을 방지할 수 있습니다.
 
-자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko)을 참조하세요.
+자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하세요.
 
 #### 연결된 자산 {#connectedassets}
 
@@ -378,7 +376,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 [!DNL Dynamic Media]는 [!DNL Experience Manager Assets]에서 향상된 리치 미디어 작성 및 전달 기능을 제공하여 몰입 및 맞춤화된 최신 경험을 제공합니다. 고품질의 단일 기본 에셋을 업로드하고 Adobe의 고급 클라우드 렌더링 및 뷰어를 사용하여 모든 표현물의 조합을 제공하여 조직의 미디어 전략을 지원할 수 있습니다.
 
-새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=ko)를 참조하십시오.
+새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
 
 ##### 360 비디오 지원 {#video-support}
 
@@ -390,7 +388,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 ##### 액세스 가능성 개선 {#accessibility-enhancements}
 
-이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=ko)를 참조하십시오.
+이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)를 참조하십시오.
 
 #### 향상된 검색 경험 {#experience-enhancement-for-searching}
 
@@ -416,7 +414,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 관련 크리에이티브 및 마
 
 #### 보고 개선 사항 {#reporting-enhancements}
 
-컨텐츠 조각 및 링크 공유는 지금 다운로드된 보고서에 포함됩니다. 자세한 정보는 [자산 보고서](/help/assets/asset-reports.md)를 참조하십시오.
+콘텐츠 조각 및 링크 공유는 지금 다운로드된 보고서에 포함됩니다. 자세한 정보는 [자산 보고서](/help/assets/asset-reports.md)를 참조하십시오.
 
 ### [!DNL Adobe Experience Manager Forms] {#experience-manager-forms}
 
@@ -437,7 +435,7 @@ AEM 6.5 Forms은 몇 가지 새로운 기능과 개선 사항을 제공합니다
 
 Adobe은 사양, 개발 및 테스트 동안 고객이 개발 프로세스의 모든 단계에 기여할 수 있는 고객 중심 개발 모델을 사용하고 있습니다. 이 과정에서 모든 기여 고객 및 파트너에게 감사를 드립니다.
 
-Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 수집, 우선 순위 지정 및 추적을 활성화하는 절차 및 프로세스가 있습니다. [Experience Manager 지원 포털](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)은(는) Adobe 개선 사항 및 결함 추적 시스템과 통합되었습니다. 고객 질문은 가능한 경우 고객 지원 팀에서 식별하고 해결합니다. R&amp;D로 에스컬레이션되면 모든 고객 정보가 캡처되어 우선 순위 지정 및 보고 용도로 사용됩니다. 개발에서 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
+Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 수집, 우선 순위 지정 및 추적을 활성화하는 절차 및 프로세스가 있습니다. [Experience Manager 지원 포털](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)은(는) Adobe 개선 사항 및 결함 추적 시스템과 통합되었습니다. 고객 질문은 가능한 경우 고객 지원 팀에서 식별하고 해결합니다. R&amp;D로 에스컬레이션되면 모든 고객 정보가 캡처되어 우선 순위 지정 및 보고 용도로 사용됩니다. 개발에서 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
 
 이 우선 순위 지정 프로세스에서 750개 이상의 고객 중심 변경 사항이 AEM 6.5에서 수정되었습니다.
 
@@ -447,7 +445,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 * 독립형 빠른 시작: `cq-quickstart-6.5.0.jar`.
 * 응용 프로그램 서버 빠른 시작: `cq-quickstart-6.5.0.war`.
-* 다양한 웹 서버 및 플랫폼용 Dispatcher 4.3.2 이상 [다운로드 링크](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=ko) 보기
+* 다양한 웹 서버 및 플랫폼용 Dispatcher 4.3.2 이상 [다운로드 링크](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) 보기
 * Eclipse IDE용 플러그인([자세한 내용 보기 및 다운로드](/help/sites-developing/aem-eclipse.md))
 
 * Brackets 코드 편집기의 확장([자세히 읽고 다운로드](/help/sites-developing/aem-brackets.md))
@@ -480,7 +478,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 **Forms**
 
-* [AEM Forms 기능용 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
+* [AEM Forms 기능용 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM Forms OSGi 클라이언트 SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## 언어 {#languages}
@@ -502,7 +500,7 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 
 ## 설치 및 업데이트 {#install-update}
 
-설치 요구 사항은 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
+설정 요구 사항에 대한 자세한 내용은 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
 
 자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요.
 
@@ -561,7 +559,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **폴더 메타데이터 스키마**: 선택 단추를 추가한 후 ID 및 값 필드가 예상대로 렌더링되지 않고 삭제 기능이 작동하지 않습니다. (CQ-4261144)
 * 에셋의 이름을 바꿀 때 에셋 이름에는 공백을 사용할 수 없습니다. (CQ-4266403)
 
-### Forms {#forms}
+### 양식 {#forms}
 
 * AEM Forms이 Linux® 운영 체제에 설치된 경우 하드웨어 보안 모듈의 디지털 서명이 작동하지 않습니다. (CQ-4266721)
 * (WebSphere의 AEM Forms만 해당®) 검색 기준으로 **사용자 이름**&#x200B;을(를) 사용하여 **관리자**&#x200B;를 검색하는 경우 **Forms Workflow** > **작업 검색** 옵션이 결과를 반환하지 않습니다. (CQ-4266457)
@@ -593,10 +591,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ## 제품 다운로드 및 지원(제한된 사이트) {#product-download-and-support-restricted-sites}
 
-다음 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
+다음 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
 
 * [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에 대한 추가 기능을 위한 제품 업데이트, 패치 및 패키지
 
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=ko)을 참조하십시오.
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html)을 참조하십시오.

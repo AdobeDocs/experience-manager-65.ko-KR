@@ -9,17 +9,17 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4825'
+source-wordcount: '4832'
 ht-degree: 77%
 
 ---
 
 # 페이지 템플릿 만들기{#creating-page-templates}
 
-페이지를 만들 때 새 페이지를 만들 때 기준으로 사용되는 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
+페이지를 만들 때 새 페이지를 만드는 기준으로 사용할 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 콘텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
 **템플릿 편집기**&#x200B;를 사용하면 템플릿을 만들고 유지 관리하는 작업은 더 이상 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 불리는 강력한 사용자 유형도 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고 클라이언트 라이브러리를 생성하고 사용할 구성 요소를 생성해야 하지만, 이러한 기본 사항이 마련되면 **템플릿 작성자**&#x200B;는 개발 프로젝트 없이도 템플릿을 생성하고 구성할 수 있습니다.
 
@@ -56,7 +56,7 @@ ht-degree: 77%
 
 * 템플릿을 만들려면 공동 작업이 필요합니다. 따라서 각 작업에 대해 [역할](#roles)이(가) 표시됩니다.
 
-* 인스턴스 구성 방식에 따라 AEM에서 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates)을 제공합니다. 이는 실제로 [템플릿을 사용하여 페이지를 만드는 방법](#using-a-template-to-create-a-page)에는 영향을 주지 않지만, 만들 수 있는 템플릿 유형과 페이지가 해당 템플릿과 관련되는 방식에는 영향을 줍니다.
+* 인스턴스 구성 방식에 따라 이제 AEM에서 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates)을 제공합니다. 이는 실제로 [템플릿을 사용하여 페이지를 만드는 방법](#using-a-template-to-create-a-page)에는 영향을 주지 않지만, 만들 수 있는 템플릿 유형과 페이지가 해당 템플릿과 관련되는 방식에는 영향을 줍니다.
 
 ### 역할 {#roles}
 
@@ -94,11 +94,11 @@ ht-degree: 77%
 
 ### 편집 가능한 정적 템플릿 {#editable-and-static-templates}
 
-AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
+이제 AEM은 두 가지 기본 유형의 템플릿을 제공합니다.
 
 * [편집 가능한 템플릿](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 템플릿 작성자가 **템플릿** 콘솔 및 편집기를 사용하여 [생성](#creatinganewtemplate) 및 [편집](#editingatemplate)할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
+   * 템플릿 작성자가 [템플릿](#creatinganewtemplate) 콘솔 및 편집기를 사용하여 [생성](#editingatemplate) 및 **편집**&#x200B;할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
 
    * 새 페이지가 만들어지면 페이지와 템플릿 간에 동적 연결이 유지됩니다. 즉, 템플릿 구조 및/또는 잠긴 콘텐츠에 대한 변경 사항이 해당 템플릿으로 만든 페이지에 반영됩니다. 잠금 해제된(즉, 초기) 콘텐츠에 대한 변경 사항은 반영되지 않습니다.
    * 템플릿 편집기에서 콘텐츠 정책을 정의하여 디자인 속성을 유지할 수 있습니다. 페이지 편집기 내의 디자인 모드는 더 이상 편집 가능한 템플릿에 사용되지 않습니다.
@@ -123,7 +123,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 * **템플릿** 콘솔을 사용합니다. **도구** 콘솔의 **일반** 섹션에서 사용할 수 있습니다.
 
-   * 또는 [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)에서 바로 사용할 수 있습니다.
+   * 또는 [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)에서 직접
 
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * [처음에 비어 있는 템플릿을 만듭니다](#creatinganewtemplateauthor)
@@ -146,7 +146,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 >[!CAUTION]
 >
->템플릿에 [국제화](/help/sites-developing/i18n.md)해야 하는 정보를 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용하는 것이 좋습니다.
+>템플릿에 [국제화](/help/sites-developing/i18n.md)해야 하는 정보를 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하는 것이 좋습니다.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -250,7 +250,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
-1. 이제 필요에 따라 [템플릿을 편집](#editingatemplate)할 수 있지만 [페이지를 만들](/help/sites-authoring/managing-pages.md#creating-a-new-page)때 템플릿을 사용할 수 있습니다.
+1. 이제 필요에 따라 [템플릿을 편집](/help/sites-authoring/managing-pages.md#creating-a-new-page)할 수 있지만 [페이지를 만들](#editingatemplate)때 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   >[!NOTE]
   >
-  >동일한 유형의 여러 구성 요소가 초기 콘텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 정적 템플릿[&#128279;](/help/sites-authoring/default-components-designmode.md)에 대해 **디자인 모드**&#x200B;에서 동일한 제한을 미러링합니다.
+  >동일한 유형의 여러 구성 요소가 초기 콘텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 정적 템플릿&#x200B;[**에 대해**&#x200B;디자인 모드](/help/sites-authoring/default-components-designmode.md)에서 동일한 제한을 미러링합니다.
 
   ***속성***
 
@@ -472,7 +472,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   구성을 제거하려면 구성 오른쪽에 있는 **삭제** 단추를 클릭합니다.
 
-  구성을 제거하려면 삭제 **&#x200B; 단추** 클릭합니다.
+  구성을 제거하려면 삭제** 단추** 클릭합니다.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 
   >[!NOTE]
   >
-  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **정책 및 속성(레이아웃 컨테이너)**
 
@@ -604,7 +604,7 @@ AEM은 이제 두 가지 기본 유형의 템플릿을 제공합니다.
 >
 >초기 콘텐츠는 콘텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 콘텐츠용이 아닙니다. 따라서 초기 콘텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 

@@ -9,10 +9,10 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1096'
 ht-degree: 79%
 
 ---
@@ -69,7 +69,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
    >
    >사이트에 최상위 수준 아래의 언어 루트가 포함되어 있는 경우 론치용 페이지 및 분기는 공통 언어 루트 아래에 있어야 합니다.
    >
-   >소스 경로에 상위 또는 하위 페이지가 있는 론치를 만들려고 하면 실패하고 &quot;대상이 :path에 이미 존재함: 페이지에 표시됨&quot; 오류가 반환됩니다.
+   >소스 경로에서 상위 또는 하위 페이지를 사용하여 론치를 만들려고 하면 실패하고 &quot;대상이 :path에 이미 있습니다.&quot;라는 오류가 반환됩니다.
 
 1. 각 항목에 대해 다음 여부를 지정할 수 있습니다.
 
@@ -99,7 +99,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
    * [**시작** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
-   * **사이트** 콘솔의 [**참조**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * [**사이트** 콘솔의 **참조**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 

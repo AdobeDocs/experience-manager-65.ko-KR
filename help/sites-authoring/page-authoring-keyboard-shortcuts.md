@@ -8,11 +8,11 @@ content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 52%
+ht-degree: 55%
 
 ---
 
@@ -42,7 +42,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->&ast; 사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>&amp;ast; 사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크탑 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 

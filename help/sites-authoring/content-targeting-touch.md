@@ -9,8 +9,8 @@ docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '5284'
 ht-degree: 82%
@@ -82,7 +82,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    >[!NOTE]
    >
-   >Adobe은 [활동 콘솔을 통해 브랜드를 만들](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)것을 권장합니다.
+   >Adobe에서는 [활동 콘솔을 통해 브랜드를 만들](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)것을 권장합니다.
    >
    >
    >다른 방식으로 브랜드를 생성하는 경우, `/campaigns/<brand>/master` 노드가 존재하는지 또는 활동을 작성하려고 할 때 오류가 발생하는지 확인해야 합니다.
@@ -92,7 +92,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    >[!NOTE]
    >
-   >활동을 만들고 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
+   >활동을 만들고 이 페이지 또는 그 상위 항목 중 하나에 연결된 Adobe Target 클라우드 구성이 있으면 AEM은 자동으로 Adobe Target을 엔진으로 가정합니다.
 
 1. **타겟팅** 엔진 드롭다운 메뉴에서 타겟팅 엔진을 선택합니다.
 
@@ -100,7 +100,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    * **Adobe Target**&#x200B;을(를) 선택하면 구성(기본적으로 [계정을 구성](/help/sites-administering/opt-in.md)할 때 제공한 구성)과 활동 유형을 선택할 수 있습니다.
 
-   * AEM/Adobe Campaign 통합을 사용 중이며 타깃팅된 콘텐츠(뉴스레터)를 보내는 경우 **Adobe Campaign**&#x200B;을(를) 선택하십시오. 자세한 내용은 [Adobe Campaign과 통합](/help/sites-administering/campaign.md)을 참조하십시오.
+   * AEM/Adobe Campaign 통합을 사용하고 타겟팅된 콘텐츠(뉴스레터)를 보내는 경우 **Adobe Campaign**&#x200B;을(를) 선택하십시오. 자세한 내용은 [Adobe Campaign과 통합](/help/sites-administering/campaign.md)을 참조하십시오.
 
 1. 활동 메뉴에서 **경험 타겟팅** 또는 **A/B 테스트**&#x200B;를 선택합니다.
 
@@ -316,7 +316,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. &#x200B;+ 아이콘을 클릭합니다.
+1. + 아이콘을 클릭합니다.
 
    기본값 오퍼의 콘텐츠는 현재 경험을 위한 오퍼로 사용됩니다.
 
@@ -399,7 +399,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 [타겟팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 타겟 단계에는 만들기 단계에서 작업에 사용한 경험과 대상자를 매핑하는 작업이 포함됩니다. 타겟 페이지에는 각 경험이 타겟팅하는 대상자가 표시됩니다. 각 경험의 대상자를 지정하거나 변경할 수 있습니다. Adobe Target을 사용하는 경우 대상에 대한 트래픽 비율을 특정 경험으로 타겟팅할 수 있도록 해 주는 A/B 테스트를 생성할 수도 있습니다.
 
-### AEM 타깃팅 또는 Adobe Target(경험 타깃팅) 을 사용하는 경우... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM 타겟팅 또는 Adobe Target(경험 타겟팅) 을 사용하는 경우... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 대상자가 매핑 다이어그램의 왼쪽에 표시되고 경험이 오른쪽에 표시됩니다.
 
@@ -493,7 +493,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
 
 또한 성공 지표의 수를 계산하는 방법을 결정할 수 있는 고급 설정이 있습니다. 옵션에는 노출당 지표나 방문자당 한 번씩 계산하는 작업과, 활동에 사용자를 유지할지 여부를 선택하거나 사용자를 제거하는 작업이 포함됩니다.
 
-고급 설정을 사용하여 사용자가 목표 지표를 찾은 **후** 발생하는 일을 결정하십시오. 다음 표는 사용 가능한 옵션을 보여 줍니다.
+고급 설정을 사용하여 사용자가 목표 지표를 찾은 **후** 발생하는 일을 결정하십시오. 다음 테이블은 사용 가능한 옵션을 보여 줍니다.
 
 <table>
  <tbody>
@@ -530,7 +530,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
  </tbody>
 </table>
 
-성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
 ### 설정 구성(AEM 타겟팅) {#configuring-settings-aem-targeting}
 
@@ -563,19 +563,19 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
    * **지정한 날짜 및 시간**: 구체적인 시점입니다. 이 옵션을 선택하는 경우 달력 아이콘을 클릭하고 날짜를 선택한 다음 활동을 종료할 시간을 지정합니다.
 
 1. 활동의 우선 순위를 지정하려면 슬라이더를 사용하여 **낮음**, **일반** 또는 **높음**&#x200B;을 선택합니다.
-1. Adobe Target 계정으로 Adobe 분석을 구성한 경우 **보고 Source** 드롭다운 메뉴가 표시됩니다. **Adobe Target** 또는 **Adobe Analytics**&#x200B;를 소스로 선택합니다.
+1. Adobe Target 계정으로 Adobe Analytics를 구성한 경우 **Source 보고** 드롭다운 메뉴가 표시됩니다. **Adobe Target** 또는 **Adobe Analytics**&#x200B;를 소스로 선택합니다.
 
    **Adobe Analytics**&#x200B;를 선택하는 경우, 회사와 보고서 세트를 선택하십시오. **Adobe Target**&#x200B;을 선택하는 경우에는 아무 작업도 필요하지 않습니다.
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 표의 목표 지표 정의를 참조하고 성공 지표에 대한 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 테이블의 목표 지표 정의를 참조하고 성공 지표에 대한 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    오른쪽 상단에 있는 세 개의 점을 클릭하고 **이름 변경**&#x200B;을 선택하여 목표의 이름을 변경할 수 있습니다.
 
    모든 필드를 지워야 하는 경우 오른쪽 상단에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 테이블에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -616,7 +616,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
 >[!NOTE]
 >
->A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이는 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. 작성자 활동은 시뮬레이션 중에 재평가를 허용하는 특정 설정과 동기화됩니다. 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고침을 해야 할 수 있습니다.
+>A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이는 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 다시 평가할 수 있는 특정 설정과 동기화됩니다(_Author). 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고쳐야 할 수 있습니다.
 
 방문자의 경험을 시뮬레이션하려면 다음 도구를 사용하십시오.
 
@@ -656,7 +656,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. 다음 표에 설명된 대로 Target 구성 요소 설정을 구성합니다.
+1. 다음 테이블에 설명된 대로 Target 구성 요소 설정을 구성합니다.
 
 <table>
  <tbody>

@@ -1,6 +1,6 @@
 ---
 title: 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업
-description: 사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
+description: 사이트 간 활동, 경험 및 오퍼와 같은 타기팅된 콘텐츠를 관리해야 하는 경우 타기팅된 콘텐츠에 대한 AEM의 기본 제공 다중 사이트 지원을 이용할 수 있습니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 84%
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 # 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업{#working-with-targeted-content-in-multisites}
 
-사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
+사이트 간 활동, 경험 및 오퍼와 같은 타기팅된 콘텐츠를 관리해야 하는 경우 타기팅된 콘텐츠에 대한 AEM의 기본 제공 다중 사이트 지원을 이용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 84%
 
 타겟팅된 콘텐츠에 대한 다중 사이트 지원은 즉시 사용할 수 있으며, MSM을 통해 관리하는 마스터 페이지의 타겟팅된 콘텐츠를 로컬 Live Copy에 푸시하거나 이러한 콘텐츠의 전역 및 로컬 수정 사항을 관리할 수 있도록 해 줍니다.
 
-**영역**&#x200B;에서 이를 관리할 수 있습니다. 영역은 다른 사이트에서 사용되는 타겟팅된 콘텐츠(활동, 경험 및 오퍼)를 구분하고 사이트 상속과 함께 타겟팅된 콘텐츠의 상속을 생성하고 관리하는 MSM 기반 메커니즘을 제공합니다. 따라서 6.2 이전에 AEM에서 필요했던 대로 상속된 사이트에서 타겟팅된 콘텐츠를 다시 생성하지 않아도 됩니다.
+**영역**&#x200B;에서 이를 관리할 수 있습니다. 영역은 다른 사이트에서 사용되는 타겟팅된 콘텐츠(활동, 경험 및 오퍼)를 구분하고 사이트 상속과 함께 타겟팅된 콘텐츠의 상속을 생성하고 관리하는 MSM 기반 메커니즘을 제공합니다. 따라서 6.2 이전의 AEM에서 필요했던 대로 상속된 사이트에서 타겟팅된 콘텐츠를 다시 만들어야 하는 문제가 방지됩니다.
 
 영역에서는 해당 영역에 연결된 활동만 Live Copy에 푸시됩니다. 기본적으로 [마스터 영역]이 선택됩니다. 추가 영역을 만든 후 만들어진 영역을 사이트나 페이지에 연결하여 푸시되는 타겟팅된 콘텐츠를 가리킬 수 있습니다.
 

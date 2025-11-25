@@ -7,11 +7,11 @@ hide: true
 hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 17%
+ht-degree: 24%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)하십시오.
+>자세한 내용을 보거나 패치를 얻으려면 [지원 팀에 문의](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)하십시오.
 
 ## 패치 설치 관리자 정보 {#about-the-patch-installer}
 
@@ -56,9 +56,9 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. 설치가 완료되면 **[!UICONTROL 다음]**&#x200B;을 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
 
 1. **[Windows 전용]:** 다음을 수행합니다.
-   * **[!UICONTROL 완료]**&#x200B;를 클릭하기 전에 **구성 관리자 시작** 옵션을 선택 취소하십시오. `[aem-forms root]\configurationManager\bin`의 **ConfigurationManager.bat** 파일을 사용하여 **구성 관리자**&#x200B;를 실행하십시오.
+   * **완료**&#x200B;를 클릭하기 전에 **[!UICONTROL 구성 관리자 시작]** 옵션을 선택 취소하십시오. **의** ConfigurationManager.bat **파일을 사용하여**&#x200B;구성 관리자`[aem-forms root]\configurationManager\bin`를 실행하십시오.
 
-   * 또는 **[!UICONTROL 완료]**&#x200B;를 클릭하기 전에 **구성 관리자 시작** 옵션을 선택 취소하십시오. **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**&#x200B;를 사용하여 **Configuration Manager**&#x200B;을(를) 실행하기 전에 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리로 이동하여 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax**&#x200B;을(를) 최신 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일로 바꾸고, 검색하고 이 두 파일에서 **axis-1.4.1.1.jar**&#x200B;을(를) **axis-1.4.1.2.jar**(으)로 바꿉니다.
+   * 또는 **완료**&#x200B;를 클릭하기 전에 **[!UICONTROL 구성 관리자 시작]** 옵션을 선택 취소하십시오. **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**&#x200B;를 사용하여 **Configuration Manager**&#x200B;을(를) 실행하기 전에 *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉터리로 이동하여 **ConfigurationManager.lax** 및 **ConfigurationManager_IPV6.lax**&#x200B;을(를) 최신 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일로 바꾸고, 검색하고 이 두 파일에서 **axis-1.4.1.1.jar**&#x200B;을(를) **axis-1.4.1.2.jar**(으)로 바꿉니다.
 
    >[!NOTE]
    >
@@ -67,16 +67,16 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
 1. **[Unix 기반 전용]:**
 
-   * 기본적으로 **구성 관리자 시작** 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 즉시 실행하거나 **구성 관리자**&#x200B;를 나중에 실행하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하기 전에 **구성 관리자 시작** 옵션을 선택 취소하십시오. `[AEM_forms_root]/configurationManager/bin` 디렉터리에 있는 적절한 스크립트를 사용하여 나중에 **구성 관리자**&#x200B;를 시작할 수 있습니다.
+   * 기본적으로 **구성 관리자 시작** 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 즉시 실행하거나 **구성 관리자**&#x200B;를 나중에 실행하려면 **완료**&#x200B;를 클릭하기 전에 **[!UICONTROL 구성 관리자 시작]** 옵션을 선택 취소하십시오. **디렉터리에 있는 적절한 스크립트를 사용하여 나중에**&#x200B;구성 관리자`[AEM_forms_root]/configurationManager/bin`를 시작할 수 있습니다.
 
 1. 응용 프로그램 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션의 지침을 따릅니다.
 
-   * [JBoss용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
-   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
+   * [JBoss용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (JBoss®만 해당) 패치를 설치하고 서버를 구성한 후 JBoss® 애플리케이션 서버의 tmp 및 작업 디렉토리를 삭제합니다.
 
-## Post-배포 구성 {#post-deployment-configurations}
+## 배포 후 구성 {#post-deployment-configurations}
 
 ### SAML 구성 {#saml-configurations}
 
@@ -89,7 +89,7 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## 영향을 받는 모듈 {#impacted-modules}
 
@@ -97,4 +97,4 @@ SAML 인증이 구성되어 있고 큰 IDP 메타데이터와 관련된 문제�
 * 문서 보안
 * Foundation JEE
 
-[지원팀에 문의](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)
+[지원팀에 문의](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

@@ -1,5 +1,5 @@
 ---
-title: AEM에서 작성할 때 문제 해결
+title: AEM에서 작성 시 문제 해결
 description: AEM을 사용할 때 발생할 수 있는 몇 가지 문제입니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 51%
@@ -26,7 +26,7 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->관리자 권한이 있고 AEM 문제를 해결하려는 사용자는 [AEM 문제 해결(관리자용)](/help/sites-administering/troubleshoot.md)에 설명된 문제 해결 방법을 사용할 수 있습니다. 충분한 권한이 없는 경우 AEM 문제 해결에 대해 시스템 관리자에게 문의하십시오.
+>관리자 권한이 있고 AEM 문제를 해결하려는 사용자는 [AEM 문제 해결(관리자용)](/help/sites-administering/troubleshoot.md)에 설명된 문제 해결 방법을 사용할 수 있습니다. 충분한 권한이 없는 경우 시스템 관리자에게 AEM 문제 해결에 대해 문의하십시오.
 
 ## 게시된 사이트에 이전 페이지 버전이 여전히 있음 {#old-page-version-still-on-published-site}
 

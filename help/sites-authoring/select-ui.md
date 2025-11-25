@@ -4,8 +4,8 @@ description: Adobe Experience Manager 6.5에서 작동하는 데 사용하는 �
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위한 클래식 UI를 유지합니다.
 >
->업그레이드 후 페이지 작성은 터치 사용 UI로 자동 전환되지 않지만 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 사용하여 구성할 수 있습니다. 편집기에 대한 [UI 재정의](#ui-overrides-for-the-editor)를 참조하십시오.
+>업그레이드 후 페이지 작성은 터치 사용 UI로 자동 전환되지 않지만 [WCM 작성 UI 모드 서비스](/help/sites-deploying/configuring-osgi.md)( **서비스)의** OSGi 구성`AuthoringUIMode`을(를) 사용하여 구성할 수 있습니다. 편집기에 대한 [UI 재정의](#ui-overrides-for-the-editor)를 참조하십시오.
 
 ## 인스턴스에 대한 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
@@ -108,11 +108,9 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 * 페이지 작성 시:
 
    * URL에서 `cf#`을(를) 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용해야 합니다. 예:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * URL에서 `/editor.html`을(를) 사용하거나 터치 장치를 사용할 때 터치 사용 편집기를 강제로 사용합니다. 예:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 모든 강제 작업은 일시적이며 브라우저 세션에만 유효합니다
@@ -123,7 +121,7 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 
    * 쿠키
    * 사용자 환경 설정
-   * 둘 다 존재하지 않는 경우 기본값은 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)에 설정된 정의로 설정됩니다.
+   * 둘 다 존재하지 않는 경우 기본값은 [WCM 작성 UI 모드 서비스](/help/sites-deploying/configuring-osgi.md)( **서비스)의** OSGi 구성`AuthoringUIMode`에 설정된 정의로 설정됩니다.
 
 >[!NOTE]
 >
