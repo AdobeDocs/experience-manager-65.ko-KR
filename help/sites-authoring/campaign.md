@@ -260,7 +260,7 @@ Adobe Campaign Standard을 사용하면 AEM에서 만든 컨텐츠를 다음과 
 
 AEM에서 만든 페이지를 Adobe Campaign의 이메일과 연결하려면 다음을 수행하십시오.
 
-1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
+1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

@@ -122,7 +122,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=ko">Screens</a>을(를) 사용하면 고객이 대면하는 모든 화면(크기 및 위치 불문)을 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
   [단축키](/help/sites-authoring/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://business.adobe.com/)
+* [솔루션](https://business.adobe.com/kr/)
 
   ![솔루션](do-not-localize/screen_shot_2018-03-23at103552.png)
 

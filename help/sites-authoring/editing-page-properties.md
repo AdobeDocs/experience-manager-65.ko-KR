@@ -41,7 +41,7 @@ ht-degree: 38%
 
 #### 브랜딩 {#branding}
 
-각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
+각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
 * **재정의** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
    * 하위 페이지에 **재정의** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
@@ -95,7 +95,7 @@ ht-degree: 38%
 >* 정규 표현식 패턴을 지원하지 않습니다.
 >* 기존 페이지로 설정하면 안 됩니다.
 
-vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+vanity URL에 액세스할 수 있도록 Dispatcher을 구성합니다. 자세한 내용은 [가상 URL에 대한 액세스 활성화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **추가** - vanity URL을 추가하려면 탭하거나 클릭합니다.
 * **제거** - vanity URL을 제거하려면 탭하거나 클릭합니다.

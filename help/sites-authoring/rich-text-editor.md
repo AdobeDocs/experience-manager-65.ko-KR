@@ -16,8 +16,8 @@ ht-degree: 57%
 
 리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이는 다음을 포함한 다양한 구성 요소의 기초를 형성합니다.
 
-* [텍스트](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [테이블](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [텍스트](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text)
+* [테이블](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## 즉석 편집 {#in-place-editing}
 

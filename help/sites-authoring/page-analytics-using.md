@@ -90,4 +90,4 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[에서 제공한 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[에서 제공한 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)ActivityMap 플러그인을 사용해야 합니다.
