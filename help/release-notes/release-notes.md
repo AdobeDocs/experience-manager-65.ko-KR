@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
+source-wordcount: '9451'
 ht-degree: 6%
 
 ---
@@ -36,15 +36,16 @@ ht-degree: 6%
 
 ## [!DNL Experience Manager] 6.5.24.0에 포함된 항목 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [&#x200B; 6.5에서 &#x200B;](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
+[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## 주요 기능 및 개선 사항
 
+### 양식
+
+* **사용자 지정 XCI 전달 지원:** cmdline 응용 프로그램 xmlformcmd의 매개 변수에서 사용자 지정 XCI 전달에 대한 지원을 추가했습니다. 이를 통해 사용자는 테스트를 위한 사용자 지정 XCI 파일을 지정할 수 있으므로 유연성이 향상되고 테스트 프로세스를 제어할 수 있습니다. (LC-3923248)
 
 
 ## 서비스 팩 24의 문제가 해결되었습니다. {#fixed-issues}
@@ -302,25 +303,40 @@ ContextHub는 더 이상 게시 페이지에 두 번째 jQuery 사본을 삽입�
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->[!DNL Experience Manager] Forms의 수정 사항은 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다. 이 경우 추가 기능 패키지는 2025년 12월 4일 목요일 릴리스됩니다. 또한 Forms 수정 사항 및 개선 사항 목록이 이 섹션에 추가됩니다.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Forms Designer
+
+* 사용자가 특정 테스트 사례에서 하이퍼링크를 클릭할 수 없어 애플리케이션 내의 링크를 탐색 및 확인하는 기능에 영향을 주는 문제가 발생했습니다. (LC-3923505)
+* 라틴어가 아닌 언어용 AEM Forms Designer 6.5.23을 사용하여 생성된 PDF에서 접근성 문제가 발생했습니다. 경로 태그가 아티팩트 컨테이너 내에 배치되지 않아 PAC 및 화면 판독기 검사에 오류가 발생했습니다. (LC-3923295)
+* 사용자가 출력 서비스를 사용하여 버전 6.5.21에서 6.5.23으로 패치한 후 Portable Document Format(PDF) 텍스트 상자에서 하이퍼링크가 끊어졌습니다. (LC-3923290)
+* 사용자가 기록 문서(DoR) 양식에서 접근성 문제를 경험했습니다. 입력 필드가 비어 있는 경우 화면 판독기는 값이 아닌 필드 캡션만 읽으므로 장애가 있는 사용자가 양식을 효과적으로 탐색하기 어렵습니다. (LC-3923234)
+* NVDA가 확인란, 라디오 버튼 및 텍스트 필드에 대해 &quot;사용할 수 없음&quot;을 잘못 읽는 DoR PDF forms에서 접근성 문제가 발생했으며, 종종 메시지가 반복되고 화면 판독기 사용자에게 혼란이 발생했습니다. (LC-3923201)
+* 새 필드를 추가할 때 XDP에서 탭 순서 불일치가 발생했습니다. 기존 탭 순서가 예기치 않게 변경되어 양식 탐색에 영향을 주었습니다. (LC-3923183, LC-3922630)
+* 사용자에게 HTML 렌더링 문제가 발생했습니다. `docReady` 이벤트를 사용할 때 HTML에서 올바르게 트리거되지 않아 스크립트가 예상대로 실행되지 않았습니다. (LC-3923118)
+* 사용자에게 AEM Forms Cloud 프로덕션 환경에서 PDF 렌더링 스크립트가 작동하지 않는 문제가 발생했습니다. (LC-3923082 )
+* 사용자에게 양식의 부동 필드에 문제가 발생했습니다. 서로 다른 데이터 파일을 사용할 때 부동 필드는 해당 필드와 관련이 없는 사소한 차이에도 불구하고 한 파일에는 올바르게 렌더링되지만 다른 파일에는 렌더링되지 않습니다. (LC-3923056)
+* 여러 마스터 페이지가 있는 XDP(XML 데이터 패키지)에서 영어 콘텐츠만 선택했을 때 사용자에게 빈 스페인어 마스터 페이지가 표시되었습니다. (LC-3923009)
+* 사용자가 AEM Designer에서 오래된 저작권 연도 정보를 관찰했습니다. 이 문제는 시작 시 팝업 상자, &quot;정보&quot; 섹션 및 &quot;법적 고지&quot; 섹션에 &quot;2003-2025&quot; 대신 &quot;2003-2024&quot;가 표시되면서 발생했습니다. (LC-3923005)
+* AEM Forms Designer에서 페이지 매김 을 사용할 때 빈 PDF 페이지가 발견되었습니다. WireAdviceHeader에 대해 &quot;다음 페이지 상단/페이지 상단&quot;을 선택할 때 문제가 발생하여 데이터 반복 레이아웃을 방해합니다. (LC-3922997, LC-3922830)
+* 사용자에게 64비트 버전의 AEM Forms Designer에서 XSD(Extensible Markup Language) 스키마 정의에 대한 Filedigest 값이 지속되지 않는 문제가 발생했습니다. (LC-3922924)
+* 텍스트 상자 내의 하이퍼링크가 첫 번째 문자의 서식과 같은 주변 텍스트의 스타일을 잘못 채택하는 AEM Designer 6.5.19에서 사용자가 하이퍼링크 서식이 불안정했습니다. (LC-3922376)
+* AEM Forms OSGI v6.5.22가 있는 MAC에서 모바일 렌더링을 통해 HTML 양식을 렌더링할 때 문제가 발생했습니다. (LC-3923058)
+* Designer 6.5.23으로 작성하고 PAC 2024로 분석한 XDP 템플릿에서 테두리 또는 배경 필드를 사용할 때 사용자에게 휴대용 문서 형식(PDF) 파일에서 &quot;경로 개체가 태그 지정되지 않음&quot; 오류가 발생했습니다. (LC-3923013)
+* 사용자가 PAC(Portable Application Component)에서 &quot;Dati Richiedente&quot; 제목의 배경색에 오류가 발생하여 &quot;path object not tagged&quot;라는 메시지가 표시되었습니다. (LC-3922912)
+* 사용자들은 특정 템플릿에서 의도한 글꼴을 압축 글꼴로 대체하는 문제가 발생했습니다. (LC-3922330)
+
+#### 적응형 양식
+
+* 규칙 편집기에서 옵션이 누락되었습니다. 작성자가 번호 입력에 대한 규칙을 작성할 때 쿼리, UTM 및 브라우저 세부 정보 옵션을 사용할 수 없었습니다. (FORMS-21660)
+* Null 포인터 예외로 인해 OdataResponse와 상호 작용할 때 사용자가 애플리케이션 충돌을 경험했습니다. (FORMS-20344)
+* 사용자가 패널을 표시하고 패널 내의 요소에 포커스를 설정하는 규칙을 만들 때 문제가 발생했습니다. 가시성 업데이트 전에 실행된 setFocus 규칙으로 인해 포커스 작업이 실패했습니다. (FORMS-19563)
+* AEM Forms 작성자의 구성 요소 선택에 문제가 발생했습니다. 편집 모드에서 탭 사이를 탐색할 때 일부 컨테이너를 선택할 수 없게 되어 쉽게 식별할 수 없고 상호 작용할 수 없습니다. (FORMS-18525)
+* AEM 6.5.22에서 에셋에 주석을 달려고 할 때 사용자에게 &quot;잘못된 URL&quot; 오류가 발생했습니다. (NPR-42684)
 
 ### 기초 {#foundation-6524}
 
@@ -478,7 +494,7 @@ Sling 기본 서블릿 **콘텐츠 유형 확인** 무시를 켜면 AEM 6.5 SP21
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -494,7 +510,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -698,6 +714,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
