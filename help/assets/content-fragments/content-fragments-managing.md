@@ -1,14 +1,14 @@
 ---
-title: 컨텐츠 조각 관리
+title: 콘텐츠 조각 관리
 description: Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 87%
+source-wordcount: '1728'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,11 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 >[!NOTE]
 >
->컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
+>콘텐츠 조각 모델 및 콘텐츠 조각을 사용하여 작업할 때 [모범 사례](/help/assets/content-fragments/content-fragments.md#best-practices)에 유의하십시오.
+
+>[!NOTE]
+>
+>콘텐츠 조각은 **에셋**&#x200B;으로 저장되므로 **에셋** 콘솔에서 주로 관리됩니다.
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -50,7 +54,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 컨텐츠 조각을 만드는 방법은 다음과 같습니다.
 
 1. 조각을 만들려는 **자산** 폴더로 이동합니다.
-1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
+1. **만들기**&#x200B;를 선택한 후 **콘텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
    * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예: **모험** 모델
@@ -90,7 +94,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 ## Assets 콘솔의 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
 
-**자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
+**에셋** 콘솔에서 콘텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
 * 도구 모음에서 조각을 선택한 후 모든 적절한 작업이 가능합니다.
 * 개별 조각 카드에 사용할 수 있는 작업의 일부로서 [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)이 있습니다.
@@ -137,7 +141,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 >
 >컨텐츠 조각을 편집하려면 적절한 권한이 필요합니다. 문제가 발생하는 경우, 시스템 관리자에게 문의하십시오.
 
-1. **자산** 콘솔을 사용하여 컨텐츠 조각의 위치로 이동합니다.
+1. **에셋** 콘솔을 사용하여 콘텐츠 조각의 위치로 이동합니다.
 1. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.
 
    * 조각 또는 조각 링크를 클릭/탭합니다(콘솔 보기에 따라 다름).
@@ -183,7 +187,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 * 이미 콘텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다. 메시지를 **닫을** 수 있습니다.
 
-* 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
+* 사이드 패널은 **사이드 패널 토글** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
 * 조각 이름 아래에 현재 조각 생성에 사용 중인 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름이 표시됩니다.
 
@@ -376,7 +380,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 조각을 삭제하려면 다음 작업을 수행합니다.
 
-1. **자산** 콘솔에서 컨텐츠 조각의 위치로 이동합니다.
+1. **에셋** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
 2. 조각을 선택합니다.
 
    >[!NOTE]
@@ -388,4 +392,4 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 컨텐츠 조각 구성 요소와 함께 조각이 모든 컨텐츠 페이지에서 삭제됩니다.
+   >조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.

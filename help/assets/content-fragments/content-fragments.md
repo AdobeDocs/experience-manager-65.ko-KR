@@ -5,14 +5,14 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 71%
+source-wordcount: '2295'
+ht-degree: 61%
 
 ---
 
-# 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
+# 콘텐츠 조각을 사용한 작업 {#working-with-content-fragments}
 
 Adobe Experience Manager(AEM)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-authoring/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
 
@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM)를 사용하면 콘텐츠 조각을 사용하여 �
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
-* API 게재에 사용되는 페이지에서 여러 콘텐츠 조각 핵심 구성 요소를 추가하여 일괄 게재를 수행할 수 있습니다.
+* API 게재에 사용되는 페이지에서 여러 콘텐츠 조각 핵심 구성 요소를 추가하여 벌크 게재를 수행할 수 있습니다.
 
 이 페이지 및 다음 페이지에서는 콘텐츠 조각 생성, 구성, 유지 관리 및 사용을 위한 작업을 다룹니다.
 
@@ -84,7 +84,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * **자산**&#x200B;으로 저장됩니다.
 
-   * 컨텐츠 조각(및 그 변형)은 **자산** 콘솔에서 만들고 유지 관리할 수 있습니다.
-   * 컨텐츠 조각 편집기에서 작성 및 편집됩니다.
+   * 콘텐츠 조각(및 그 변형)은 **에셋** 콘솔에서 만들고 유지 관리할 수 있습니다.
+   * 콘텐츠 조각 편집기에서 작성 및 편집됩니다.
 
 * [페이지 편집기에서 콘텐츠 조각 구성 요소](/help/sites-authoring/content-fragments.md)(참조 구성 요소)와 함께 사용됩니다.
 
@@ -159,7 +159,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 
   >[!NOTE]
   >
-  >콘텐츠 조각 자체에 삽입된 시각적 자산은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 에셋이 중간적 콘텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
+  >콘텐츠 조각 자체에 삽입된 시각적 에셋은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 에셋이 중간적 콘텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
 
 * **관련 콘텐츠**
 
@@ -263,7 +263,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 중간 콘텐츠는
 
 * 콘텐츠 조각을 사용하여 작업할 때 페이지 편집기에서 사용할 수 있습니다.
-* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 &#x200B;](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
+* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 ](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
 * [콘텐츠 조각을 사용하여 작업할 때 페이지 편집기](/help/sites-authoring/content-fragments.md)에서 사용할 수 있습니다.
 * 중간적 콘텐츠는 어떤 조각에든 추가할 수 있으며, 이 경우 요소는 하나만 표시됩니다.
 * 연결된 콘텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.
@@ -291,7 +291,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 
 * **콘텐츠 조각 구성 요소**
 
-   * 조각을 HTML 및/또는 JSON 형식으로 게재하는 데 유용합니다.
+   * HTML 및/또는 JSON 형식으로 조각을 게재하는 데 유용합니다.
    * [페이지에서 조각을 참조](/help/sites-authoring/content-fragments.md)하는 데 필요합니다.
    * 채널 등과 같이 조각의 레이아웃 및 게재를 담당합니다.
    * 조각은 레이아웃을 정의하고 일부 또는 모든 요소/변형 및 관련 컨텐츠를 게재하기 위해 하나 이상의 전용 구성 요소를 필요로 합니다.
@@ -300,3 +300,47 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 ## 사용 예 {#example-usage}
 
 요소 및 변형을 포함한 조각을 사용하여 여러 채널용의 일관된 콘텐츠를 만들 수 있습니다. 조각을 디자인할 때는 사용된 항목과 사용된 위치를 고려해야 합니다.
+
+## 모범 사례 {#best-practices}
+
+콘텐츠 조각을 사용하여 복잡한 구조를 형성할 수 있습니다. Adobe에서는 모델과 조각을 모두 정의하고 사용할 때 모범 사례에 대한 권장 사항을 제공합니다.
+
+### 단순하게 유지 {#keep-it-simple}
+
+AEM에서 구조화된 콘텐츠를 모델링할 때 강력한 시스템 성능과 간소화된 거버넌스를 보장하기 위해 콘텐츠 구조를 최대한 단순하게 유지합니다.
+
+### 모델 수 {#number-of-models}
+
+필요한 수만큼 콘텐츠 모델을 생성하지만 더 이상 생성하지 않습니다.
+
+모델이 너무 많으면 거버넌스가 복잡해지고 GraphQL 쿼리가 느려질 수 있습니다. 보통 10달러 이하의 작은 모델 세트만으로도 충분합니다. 높은 수십 개 이상에 접근하는 경우 모델링 전략을 재고하십시오.
+
+### 모델 및 조각 중첩(매우 중요) {#nesting-models-and-fragments}
+
+조각이 여러 수준에서 다른 조각을 참조할 수 있도록 해 주는 콘텐츠 조각 참조 를 사용하여 콘텐츠 조각의 깊이 또는 과도한 중첩을 방지합니다.
+
+콘텐츠 조각 참조를 많이 사용하면 시스템 성능, UI 응답성 및 GraphQL 쿼리 실행에 상당한 영향을 줄 수 있습니다. 10개 수준 이하로 중첩을 유지하는 것을 목표로 합니다.
+
+### 모델당 데이터 필드 및 형식 수 {#number-of-data-fields-and-types-per-model}
+
+모델에 실제로 필요한 데이터 필드와 유형만 포함합니다.
+
+너무 복잡한 모델은 너무 복잡한 조각으로 이어져 작성을 어렵게 하고 편집기 성능을 저하시킬 수 있습니다.
+
+### 서식 있는 텍스트 필드 {#rich-text-fields}
+
+서식 있는 텍스트 필드(**여러 줄 텍스트** 데이터 형식)를 고려하십시오.
+
+모델당 리치 텍스트 필드 수를 제한합니다. 각 조각에 저장된 텍스트의 양 및 HTML 서식의 양이기도 합니다. 매우 큰 리치 텍스트 콘텐츠는 시스템 성능에 부정적인 영향을 줄 수 있습니다.
+
+### 변형의 수 {#number-of-variations}
+
+필요한 만큼 조각 변형을 만들되 더 이상 만들지 않습니다.
+
+변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
+
+가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
+
+### 프로덕션 전 테스트 {#test-before-production}
+
+확실하지 않은 경우 제작으로 롤아웃하기 전에 의도한 콘텐츠 구조를 프로토타이핑하십시오. 적절한 테스트와 함께 기술 및 사용자 동의 없이 초기 개념 증명을 사용하면 생산 마감일에 직면할 때 나중에 문제를 방지할 수 있습니다.
