@@ -265,7 +265,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 중간 콘텐츠는
 
 * 콘텐츠 조각을 사용하여 작업할 때 페이지 편집기에서 사용할 수 있습니다.
-* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 ](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
+* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 &#x200B;](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
 * [콘텐츠 조각을 사용하여 작업할 때 페이지 편집기](/help/sites-authoring/content-fragments.md)에서 사용할 수 있습니다.
 * 중간적 콘텐츠는 어떤 조각에든 추가할 수 있으며, 이 경우 요소는 하나만 표시됩니다.
 * 연결된 콘텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.
