@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+source-git-commit: e71050fe23cc4c436859776918637158098864ef
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2331'
 ht-degree: 60%
 
 ---
@@ -19,7 +19,9 @@ Adobe Experience Manager(AEM)를 사용하면 콘텐츠 조각을 사용하여 �
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
 * 이는 최종 조각의 구조를 사전 정의하는 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)을 기반으로 합니다.
+
 * 구조의 범위는 다음과 같습니다.
+
    * 기본
       * 여러 줄이 있는 단일 텍스트 필드를 예로 들 수 있습니다.
       * 페이지 작성에 사용할 간단한 콘텐츠를 준비하는 데 사용됩니다.
@@ -84,7 +86,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ko#content-fragments)를 참조하십시오.
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -263,7 +265,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
 중간 콘텐츠는
 
 * 콘텐츠 조각을 사용하여 작업할 때 페이지 편집기에서 사용할 수 있습니다.
-* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 &#x200B;](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
+* 페이지에서 조각을 사용하거나 참조한 후 [조각의 흐름 내에 추가된 ](/help/sites-authoring/content-fragments.md#adding-in-between-content)입니다.
 * [콘텐츠 조각을 사용하여 작업할 때 페이지 편집기](/help/sites-authoring/content-fragments.md)에서 사용할 수 있습니다.
 * 중간적 콘텐츠는 어떤 조각에든 추가할 수 있으며, 이 경우 요소는 하나만 표시됩니다.
 * 연결된 콘텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.
