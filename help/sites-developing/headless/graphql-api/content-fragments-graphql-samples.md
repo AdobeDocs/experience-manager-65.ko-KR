@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 83%
@@ -229,7 +229,7 @@ GraphQL 쿼리를 시작하고 AEM 콘텐츠 조각에서 쿼리가 작동하는
 
 **샘플 쿼리**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
