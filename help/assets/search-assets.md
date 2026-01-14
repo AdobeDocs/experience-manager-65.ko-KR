@@ -239,7 +239,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 >[!NOTE]
 >
->자산 선택기는 이전 버전의 [에서 ](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)자산 선택기[!DNL Adobe Experience Manager]&#x200B;(으)로 호출되었습니다.
+>자산 선택기는 이전 버전의 [에서 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)자산 선택기[!DNL Adobe Experience Manager]&#x200B;(으)로 호출되었습니다.
 
 에셋 선택기를 사용하면 특별한 방식으로 DAM 에셋을 검색, 필터링 및 검색할 수 있습니다. 자산 선택기를 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수 있습니다. 에셋 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수로 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 에셋 선택기의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
 
