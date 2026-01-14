@@ -7,7 +7,7 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| Adobe Experience Manager(AEM as a Cloud Service) | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=ko) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
@@ -43,13 +43,13 @@ Microsoft® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 �
    * **날짜 기반 폴더**: 만든 날짜 또는 마지막으로 수정한 날짜를 기준으로 디지털 에셋을 포함합니다.
 
 * 사용자 지정 또는 자동화가 계속 작동하도록 변경되지 않는 폴더의 디렉토리를 만듭니다. 예를 들어 할당된 처리 프로필이 계속 작동합니다.
-* 자산이 이미 게시되어 있다면 [!DNL Experience Manager]을(를) 사용하여 자산을 다른 폴더로 이동하고 새 위치에서 다시 게시하면 새로 다시 게시된 자산과 함께 원래 게시된 자산 위치를 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 [!DNL Experience Manager]에 대해 *손실됨*&#x200B;이며 게시를 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 에셋의 게시를 취소한 다음 다른 폴더로 이동하는 것입니다.
+* 자산이 이미 게시되어 있다면 [!DNL Experience Manager]을(를) 사용하여 자산을 다른 폴더로 이동하고 새 위치에서 다시 게시하면 새로 다시 게시된 자산과 함께 원래 게시된 자산 위치를 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 *에 대해*&#x200B;손실됨[!DNL Experience Manager]이며 게시를 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 에셋의 게시를 취소한 다음 다른 폴더로 이동하는 것입니다.
 
 ## 태그를 사용하여 에셋 구성 {#use-tags-to-organize-assets}
 
-태그를 메타데이터로 사용하면 쉽게 자산을 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색에 Adobe Sensei의 인공 지능 알고리즘을 사용할 수 있습니다.
+태그를 메타데이터로 사용하면 쉽게 에셋을 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 에셋에 대한 검색 등급을 높이고, Adobe AI의 인공 지능 알고리즘을 사용하여 에셋을 검색할 수 있습니다.
 
-[!DNL Adobe Experience Manager Assets]은(는) 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 설명하는 태그를 만듭니다. 스마트 태깅은 Adobe의 인공 지능 및 머신 러닝 프레임워크인 Adobe Sensei을 사용하며, 이를 통해 표준 및 비즈니스별 태그를 모두 인식하고 이미지에 적용하는 교육을 받을 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구를 식별하고 설명 태그를 자산에 자동으로 적용할 수도 있습니다
+[!DNL Adobe Experience Manager Assets]은(는) 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 설명하는 태그를 만듭니다. 스마트 태깅은 Adobe AI, Adobe의 인공 지능 및 머신 러닝 프레임워크를 사용하며, 이를 통해 표준 및 비즈니스별 태그를 모두 인식하고 이미지에 적용할 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구를 식별하고 설명 태그를 자산에 자동으로 적용할 수도 있습니다
 
 자세한 내용은 다음 문서를 참조하십시오.
 

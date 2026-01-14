@@ -5,10 +5,10 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 12%
+source-wordcount: '1087'
+ht-degree: 14%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## 시스템 요구 사항 개요
 
-현재 사용 중이거나 향후 사용할 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
+현재 사용 중이거나 향후 사용할 예정인 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
@@ -60,7 +60,7 @@ ht-degree: 12%
 
 * 판매자는 Commerce 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 범주를 숨길 수 있습니다. CIF 탐색 핵심 구성 요소는 상거래 백엔드 구성 &quot;메뉴에 포함&quot;을 준수하여 탐색에서 범주를 표시하거나 숨깁니다
 
-* 범주 또는 제품 페이지를 찾을 수 없는 경우 AEM Storefront Venia가 HTTP 404 오류를 반환합니다.
+* 범주 또는 제품 페이지를 찾을 수 없는 경우 AEM Storefront Venia가 HTTP 404 오류를 반환합니다
 
 ## 릴리스 날짜: 2021년 9월
 
@@ -88,7 +88,7 @@ ht-degree: 12%
 
 * AEM CS 배포 단계 중 및 클라이언트측 구성 요소를 사용하지 않는 경우 JS 오류 발생
 
-* sling:configs 노드가 있는 폴더에 CIF 클라우드 구성을 만들 수 없음
+* sling:configs 노드가 있는 폴더에서 CIF 클라우드 구성을 만들 수 없습니다.
 
 ## 릴리스 날짜: 2021년 8월
 
@@ -110,7 +110,7 @@ ht-degree: 12%
 
 * 범주 필터 아코디언이 열린 후에는 닫을 수 없습니다.
 
-* 제품 티저에서 &#39;클릭 유도 문안&#39; 속성이 끊어짐
+* 제품 티저에서 &#39;Call to action text&#39; 속성이 손상되었습니다.
 
 * AEM CS 배포 단계 중 CIF JS 오류
 
@@ -126,12 +126,12 @@ ht-degree: 12%
 
 ### 새로운 기능 {#what-is-new-july}
 
-* CIF 코어 구성 요소 v2
+* CIF 핵심 구성 요소 v2
    * PDP/PLP URL 및 SEO에 대한 간소화된 개선된 구성
    * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
    * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
-* 미리 정의되거나 즉석에서 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe Sensei에서 제공하는 Adobe Commerce Sensei 제품 권장 사항](https://business.adobe.com/kr/products/magento/product-recommendations.html)을 지원합니다.
+* 사전 정의된 또는 즉시 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe AI 제품 권장 사항, Adobe Commerce AI 기반](https://business.adobe.com/ai/adobe-genai.html) 지원
 
 ## 릴리스 날짜: 2021년 6월
 
@@ -146,7 +146,7 @@ ht-degree: 12%
 * 컨텐츠 조각에 대한 새로운 CIF 제품 및 카테고리 참조 데이터 유형(포함) 제품/카테고리 선택기 UI 지원)
 * 새 Commerce 콘텐츠 조각 핵심 구성 요소
 * AEM 백엔드에서 전체 텍스트 상거래 검색 지원
-* Commerce 핵심 구성 요소는 Adobe Commerce Sensei Recs 데이터 수집
+* Commerce 핵심 구성 요소는 Adobe Commerce AI Recs 데이터 수집을 지원합니다
 * 범주 페이지에 대한 SEO 친화적인 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
 
@@ -178,9 +178,9 @@ ht-degree: 12%
 
 ### 새로운 기능 {#what-is-new-april}
 
-* 범주 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합을 잠금 해제합니다.
+* 카테고리 UID 지원 - 카테고리 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합 잠금 해제
 
-* PWA Studio에 대한 AEM 확장에는 다음이 포함됩니다. 통합 예
+* PWA Studio용 AEM 확장 포함. 통합 예
 
 * WCM 탐색 핵심 구성 요소를 확장하는 새로운 CIF 탐색 핵심 구성 요소
 
@@ -242,6 +242,6 @@ ht-degree: 12%
 
 ### 개선 사항  {#what-is-improved-january}
 
-* 인증 후 사용자 데이터를 Adobe 클라이언트 데이터 레이어에 보냅니다.
+* 인증 후 Adobe 클라이언트 데이터 레이어에 사용자 데이터를 보냅니다.
 
 * 여러 버그 수정.

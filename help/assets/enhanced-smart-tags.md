@@ -7,7 +7,7 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록을 포함합니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 자산을 쉽게 식별하고 검색할 수 있습니다.
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 태그가 교육되고 준비되면 이제 서비스는 태그 지정 작업 과정을 통해 자산에 이러한 태그를 적용할 수 있습니다.
 
-배경에서 스마트 컨텐츠 서비스는 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다.
+배경에서 스마트 컨텐츠 서비스는 Adobe AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다.
 
 스마트 컨텐츠 서비스는 [!DNL Adobe Developer Console]에서 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Experience Manager]에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 배포를 [!DNL Adobe Developer Console]과(와) 통합해야 합니다.
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ## 온보딩 {#onboarding}
 
-스마트 콘텐츠 서비스를 [!DNL Experience Manager]에 대한 추가 기능으로 구입할 수 있습니다. 구입하면 [!DNL Adobe I/O] (으)로 연결되는 링크가 포함된 전자 메일이 조직 관리자에게 전송됩니다.
+스마트 콘텐츠 서비스를 [!DNL Experience Manager]에 대한 추가 기능으로 구입할 수 있습니다. 구입하면 [!DNL Adobe I/O]&#x200B;(으)로 연결되는 링크가 포함된 전자 메일이 조직 관리자에게 전송됩니다.
 
 관리자는 링크를 따라 스마트 콘텐츠 서비스를 [!DNL Experience Manager]과(와) 통합할 수 있습니다. 서비스를 [!DNL Experience Manager Assets]과(와) 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하세요.
 
@@ -97,9 +97,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->1. 훈련은 돌이킬 수 없는 과정이다. Adobe은 태그에 대한 스마트 컨텐츠 서비스를 교육하기 전에 조정된 자산 세트의 태그를 검토할 것을 권장합니다.
+>1. 훈련은 돌이킬 수 없는 과정이다. Adobe에서는 태그에 대한 스마트 컨텐츠 서비스를 교육하기 전에 조정된 자산 세트의 태그를 검토할 것을 권장합니다.
 >1. 태그를 교육하기 전에 [스마트 콘텐츠 서비스 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service)을 참조하세요.
->1. 스마트 컨텐츠 서비스를 처음 교육할 때 Adobe은 두 개 이상의 서로 다른 태그에 대해 교육하는 것을 권장합니다.
+>1. 스마트 컨텐츠 서비스를 처음 교육할 때 Adobe에서는 두 개 이상의 서로 다른 태그에 대해 교육하는 것을 권장합니다.
 
 ## 스마트 태그를 사용하여 [!DNL Experience Manager]개 검색 결과 이해 {#understandsearch}
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 스마트 컨텐츠 서비스에서 폴더 내의 자산에 정기적으로 태그를 지정할 수 있습니다. 자산 폴더의 속성 페이지를 열고 **[!UICONTROL 세부 정보]** 탭에서 **[!UICONTROL 스마트 태그 사용]**&#x200B;을 선택한 다음 변경 내용을 저장합니다.
 
-폴더에 대해 이 옵션을 선택하면 Smart Content Service가 자동으로 폴더 내 자산에 태그를 지정합니다. 태깅 워크플로우는 기본적으로 매일 오전 12시에 실행됩니다.
+폴더에 대해 이 옵션을 선택하면 Smart Content Service가 자동으로 폴더 내 자산에 태그를 지정합니다. 태깅 워크플로우는 기본적으로 매일 오전 12:00시에 실행됩니다.
 
 ### 온디맨드 태깅 {#on-demand-tagging}
 
@@ -200,4 +200,4 @@ ht-degree: 1%
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그 지정 구성](config-smart-tagging.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

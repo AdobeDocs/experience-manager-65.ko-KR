@@ -11,7 +11,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 8%
@@ -99,7 +99,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 ## 비디오 프로필에서 스마트 자르기 사용 정보 {#about-smart-crop-video}
 
-비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오용 스마트 자르기는 Adobe Sensei에서 인공 지능의 기능을 사용하는 도구입니다. 크기에 상관없이 업로드한 모든 응용 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자릅니다.
+비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오용 스마트 자르기는 Adobe AI에서 인공 지능의 기능을 사용하는 도구입니다. 크기에 상관없이 업로드한 모든 응용 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자릅니다.
 
 스마트 자르기에 지원되는 비디오 형식에는 MP4, MKV, MOV, AVI, FLV 및 WMV가 포함됩니다.
 
@@ -109,7 +109,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * 초당 30프레임(FPS).
 * 300MB의 파일 크기입니다.
 
-Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe Sensei 및 스마트 자르기에서 지원되려면 2분 30초 정도 있어야 합니다.
+Adobe AI는 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe AI와 스마트 자르기를 지원하려면 60FPS 비디오가 2분 30초여야 합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -277,7 +277,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td><code>h264Level</code></td>
    <td>인코딩에 사용할 H.264 수준입니다. 일반적으로 이 매개 변수는 사용 중인 인코딩 설정을 기반으로 자동으로 결정됩니다.</td>
    <td><code>String</code></td>
-   <td><p>10 * h264 level</p> <p>예를 들어, 3.0 = 30, 1.3 = 13)</p> <p>기본값이 없습니다.</p> </td>
+   <td><p>10 * h264 level</p> <p>예를 들어, 3.0 = 30, 1.3 = 13)</p> <p>기본값은 없습니다.</p> </td>
   </tr>
   <tr>
    <td><code>keyframe</code></td>
@@ -289,13 +289,13 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td><code>minBitrate</code></td>
    <td><p>가변 비트율 인코딩을 허용하는 최소 비트율(Kbps/초)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 고급 탭에서 <strong> 상수 비트 전송률 사용</strong>을 선택 취소한 경우에만 적용됩니다.</p> <p><a href="/help/assets/video.md#bitrate">Bitrate</a>도 참조하세요.</p> </td>
    <td><code>String</code></td>
-   <td><p>양수, Kbps.</p> <p>기본값이 없습니다.</p> </td>
+   <td><p>양수, Kbps.</p> <p>기본값은 없습니다.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
    <td><p>가변 비트율 인코딩을 허용하는 최대 비트율(Kbps)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 고급 탭에서 <strong> 상수 비트 전송률 사용</strong>을 선택 취소한 경우에만 적용됩니다.</p> <p><a href="/help/assets/video.md#bitrate">Bitrate</a>도 참조하세요.</p> </td>
    <td><code>String</code></td>
-   <td><p>양수, Kbps.</p> <p>기본값이 없습니다. 하지만 권장 값은 인코딩 비트율의 최대 2배입니다.</p> </td>
+   <td><p>양수, Kbps.</p> <p>기본값은 없습니다. 하지만 권장 값은 인코딩 비트율의 최대 2배입니다.</p> </td>
   </tr>
   <tr>
    <td><code>audioBitrateCustom</code></td>
@@ -388,7 +388,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**&#x200B;에서 폴더 이름 바로 아래에 프로필 이름이 표시됩니다.
+1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**에서 폴더 이름 바로 아래에 프로필 이름이 표시됩니다.
 [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
 
 #### 속성에서 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
