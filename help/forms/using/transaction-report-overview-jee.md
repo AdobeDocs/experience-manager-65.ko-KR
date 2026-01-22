@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
+
 # JEE에서 AEM Forms에 대한 거래 보고서 활성화 및 보기 {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> 트랜잭션 보고 기능은 AEM Forms 6.5.20.0에서 JEE의 AEM Forms에 대해 도입되었습니다. 이 기능은 기본적으로 비활성화되어 있으며, 관리자 UI에서 활성화할 수 있습니다.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+JEE의 AEM Forms에 있는 거래 보고서를 사용하면 AEM Forms 배포에서 발생한 모든 거래의 수를 유지할 수 있습니다. 목표는 제품 사용에 대한 정보를 제공하고 비즈니스 이해 당사자가 디지털 처리 볼륨을 이해할 수 있도록 돕는 것입니다. 거래의 예는 다음과 같습니다.
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* 문서 제출
+* 문서의 렌디션
+* 한 파일 형식에서 다른 파일 형식으로 문서 변환
+
+거래로 간주되는 항목에 대한 자세한 내용은 [청구 가능 API](../../forms/using/transaction-reports-billable-apis-jee.md)를 참조하십시오.
 
 ## 거래 보고 활성화 {#enable-transaction-reporting}
 
@@ -53,7 +56,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 1. JEE의 AEM Forms에서 `/adminui`(으)로 이동합니다(예: `http://10.13.15.08:8080/adminui`).
 1. **관리자**(으)로 로그인합니다.
 1. 상태 모니터를 클릭합니다.
-1. **거래 보고자** 탭으로 이동하고 **총 거래 계산**&#x200B;을 클릭합니다. 이제 파이 차트가 제출되거나 렌더링되거나 변환된 PDF forms의 수를 나타냅니다.
+1. **거래 보고자** 탭으로 이동하고 **총 거래 계산**&#x200B;을 클릭합니다. 이제 파이 차트가 제출되거나 렌더링되거나 변환된 PDF forms 수를 나타냅니다.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
@@ -128,7 +131,7 @@ TransactionRecord
 
 트랜잭션 기록 빈도는 제출, 렌더링 또는 변환된 각 폼에 대한 서버의 업데이트 작업에 의해 결정됩니다.
 
-* **대시보드**&#x200B;에서 트랜잭션 수가 정기적으로 업데이트되며 기본값은 1분으로 설정됩니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`에서 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. 예를 들어, JBoss®의 JEE용 AEM Forms에서 `JAVA_OPTS`에 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`을(를) 추가하여 업데이트 빈도를 5분으로 설정합니다.
+* **대시보드**&#x200B;에서 트랜잭션 수가 정기적으로 업데이트되며 기본값은 1분으로 설정됩니다. `"com.adobe.idp.dsc.transaction.recordFrequency"`에서 시스템 속성을 설정하여 빈도를 업데이트할 수 있습니다. 예를 들어, JBoss®의 JEE용 AEM Forms에서 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`에 `JAVA_OPTS`을(를) 추가하여 업데이트 빈도를 5분으로 설정합니다.
 
 * **트랜잭션 로그**&#x200B;에서 각 트랜잭션에 대한 업데이트는 양식이 성공적으로 제출, 렌더링 또는 변환될 때 즉시 발생합니다.
 
