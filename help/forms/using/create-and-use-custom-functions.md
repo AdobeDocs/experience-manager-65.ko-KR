@@ -3,9 +3,10 @@ title: 적응형 양식에서 사용자 정의 함수 만들기 및 추가
 description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수를 만들고 사용할 수 있도록 하는 사용자 지정 함수를 지원합니다.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
+exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1116'
 ht-degree: 4%
 
 ---
@@ -13,6 +14,10 @@ ht-degree: 4%
 # 적응형 Forms의 사용자 정의 기능
 
 ## 소개
+
+>[!NOTE]
+>
+> 사용자 지정 함수는 ECMAScript 5 (ES5)와 호환되어야 합니다. Foundation Forms은 ES5만 지원합니다. 최신 ECMAScript 버전(ES6 이상)은 사용할 수 없으며, 이로 인해 오류나 예기치 않은 동작이 발생할 수 있습니다.
 
 AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규칙을 정의하는 데 사용할 수 있는 JavaScript 함수를 정의하는 기능이 도입되었습니다. AEM Forms에서는 이러한 다양한 사용자 정의 함수를 기본적으로 제공하지만, 사용자 정의 함수를 정의하고 여러 양식에서 사용해야 합니다.
 
@@ -87,7 +92,7 @@ function ValidateEmail(inputText)
 구문: `@return {type}`
 또는 `@returns {type}`을(를) 사용할 수 있습니다.
 함수 목적 등 함수에 대한 정보를 추가합니다.
-{type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+  {type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
    1. 문자열
    1. 숫자
@@ -100,7 +105,7 @@ function ValidateEmail(inputText)
 
   규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
 
-  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this.value`의 `this` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
+  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this`의 `this.value` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
 
   ```
      /**
@@ -198,9 +203,9 @@ var c = {
 
 1. 변경 사항을 저장합니다.
 
-1. `clientlibs` 폴더 아래에 `js` 폴더를 만듭니다.
-1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
-1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
+1. `js` 폴더 아래에 `clientlibs` 폴더를 만듭니다.
+1. `functions.js` 폴더 아래에 `js`(이)라는 JavaScript 파일을 만듭니다.
+1. `js.txt` 폴더 아래에 `clientlibs` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
 생성된 폴더 구조 형태는 다음과 같습니다.
 
@@ -240,7 +245,7 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 
 1. `js.txt` 파일을 저장합니다.
 
-다음 [사용자 지정 함수](/help/forms/using/assets/customfunction.zip) 폴더를 참조할 수 있습니다. 이 폴더를 다운로드하여 AEM 인스턴스에 설치합니다.
+다음 [사용자 지정 함수](/help/forms/using/assets/customfunction.zip) 폴더를 참조할 수 있습니다. AEM 인스턴스에서 이 폴더를 다운로드하여 설치합니다.
 
 이제 클라이언트 라이브러리를 추가하여 적응형 양식에서 사용자 지정 기능을 사용할 수 있습니다.
 
