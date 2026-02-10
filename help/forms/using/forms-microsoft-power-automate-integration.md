@@ -27,14 +27,14 @@ ht-degree: 15%
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)합니다
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)합니다
 
 ## 사전 요구 사항
 
 적응형 양식과 Microsoft® Power Automate를 연결하려면 다음이 필요합니다.
 
 * Microsoft® Power Automate Premium 라이센스
-* 적응형 양식 제출 데이터를 수락하기 위한 [ 트리거를 사용하는 Microsoft® ](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`
+* 적응형 양식 제출 데이터를 수락하기 위한 [&#x200B; 트리거를 사용하는 Microsoft® &#x200B;](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`
 * [Forms 작성자](/help/forms/using/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/using/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * Microsoft® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
@@ -125,7 +125,7 @@ ht-degree: 15%
 >
 > 토큰이 만료되기 전이나 후에 통합 작업을 유지하려면 Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성을 다시 인증하고 다시 게시하려면 [Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)에 설명된 단계를 사용하십시오.
 >
-> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명[에 대한 ](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
+> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명[에 대한 &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
 
 ## Microsoft 호출® Power Automate 플로우 제출 액션을 사용하여 Power Automate 플로우에 데이터 전송 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
