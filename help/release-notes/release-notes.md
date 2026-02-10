@@ -694,7 +694,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 * **FORMS-21378**: 서버측 유효성 검사(SSV)를 사용하도록 설정하면 양식 제출이 실패할 수 있습니다. 이 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
 
-* **FORMS-23703**: `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
+* **FORMS-23703**: `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
 
 * 필수 키워드 및 정규 표현식 패턴이 기본적으로 허용되지 않으므로 양식 데이터 모델 커넥터를 인증하지 못할 수 있습니다. 문제를 해결하려면 구성 관리자(`/system/console/configmgr`)를 통해 다음을 추가하십시오.
 
@@ -703,7 +703,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: PDFG(HTML-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
+* **FORMS-23979.**: PDFG(HTML-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
 
 * **FORMS-23722**(첨부 파일이 작업 할당에 없음): **첨부 파일** 필드가 있는 양식이 **작업 할당** 단계를 사용하는 AEM Workflow에 제출되면 받은 편지함에서 작업을 열 때 첨부 파일이 표시되지 않습니다. 파일이 저장소에 올바르게 저장되고 CRX에 표시됩니다. 작업 할당 단계 UI에만 파일이 표시되지 않습니다.
 
@@ -729,6 +729,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
