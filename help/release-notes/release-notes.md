@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
 workflow-type: tm+mt
-source-wordcount: '9732'
+source-wordcount: '9595'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## [!DNL Experience Manager] 6.5.24.0에 포함된 항목 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [&#x200B; 6.5에서 &#x200B;](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
+[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -494,7 +494,7 @@ Sling 기본 서블릿 **콘텐츠 유형 확인** 무시를 켜면 AEM 6.5 SP21
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -510,7 +510,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -641,26 +641,26 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6524}
 
+* **FORMS-14521** 사용자가 저장된 XML 데이터가 있는 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다.
+* **FORMS-16603** 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다.
+* **FORMS-15681** 인쇄 미리 보기에서 편지를 보면 내용이 변경됩니다. 즉, 일부 공백이 사라지고 특정 문자가 `x`(으)로 바뀝니다.
+* **FORMS-15428**: Forms 추가 기능을 사용하여 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 자격 증명 기반 인증을 사용하여 레거시 Adobe Analytics Cloud 서비스에 의존하는 구성이 작동하지 않습니다. 이 문제로 인해 분석 규칙이 올바르게 실행되지 못했습니다.
+* **FORMS-16557** 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다.
+* **FORMS-16575** 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 내용은 IC 편집기에 반영되지 않습니다.
+* **FORMS-21378** SSV(서버측 유효성 검사)를 사용하는 경우 양식 제출이 실패할 수 있습니다. 이 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
+* **FORMS-23722**(작업 할당에 첨부 파일 누락): bindref를 사용하는 **첨부 파일** 필드가 있는 양식이 **작업 할당** 단계를 사용하는 AEM Workflow에 제출되면 받은 편지함에서 작업을 열 때 첨부 파일이 표시되지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다.
+
+#### 사용 가능한 핫픽스 문제 {#aem-forms-issues-with-hotfixes}
+
 >[!NOTE]
 >
 >사용 가능한 핫픽스가 없는 문제에 대해서는 서비스 팩 6.5.24.0(으)로 업그레이드하지 마십시오. 예기치 않은 오류가 발생할 수 있습니다. 필요한 핫픽스가 릴리스된 후에만 서비스 팩 6.5.24.0(으)로 업그레이드하십시오.
 
-#### 사용 가능한 핫픽스 문제 {#aem-forms-issues-with-hotfixes}
-
 다음 문제에는 다운로드 및 설치에 사용할 수 있는 핫픽스가 있습니다. [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하여 다음 문제를 해결할 수 있습니다.
-
-* **FORMS-20203**: 사용자가 Struts 프레임워크를 버전 2.5.x에서 6.x로 업그레이드할 때 AEM Forms의 정책 UI에 워터마크를 추가하는 옵션과 같은 모든 구성이 표시되지 않습니다.
-
-* **FORMS-20360**: AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 ImageToPDF 변환 서비스가 실패하고 다음 오류가 발생합니다.
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
-
-* **FORMS-20478**: 형식 7/8 TIFF 파일을 PDF으로 변환하려고 할 때 &quot;ALC-PDG-001-000-Image2Pdf 변환 실패, 원인: com/sun/image/codec/jpeg/jpegcODEC&quot; 및 &quot;ALC-PDG-016-003-PDF 사후 처리 중 알 수 없는/예기치 않은 오류가 발생했습니다&quot;라는 오류 메시지가 표시되면서 변환 프로세스가 실패합니다. 시스템이 TM ImageIO TIFF 디코더를 사용하여 다시 시도하지만 결국 작업을 완료하지 못합니다.
-
-* **FORMS-14521**: 사용자가 저장된 XML 데이터가 있는 초안 문자를 미리 보려고 하면 일부 특정 문자에 대해 `Loading` 상태로 중단됩니다.
 
 * 이제 AEM Forms에 양식 구성 요소에 대한 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이 업그레이드는 SP24에 포함되지 않은 이전에 누락된 Struts 변경 사항을 제공합니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 다운로드하여 설치할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 지원이 추가되었습니다.
 
-* AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 폴더(FORMS-14926) 아래에 Geode jar `<AEM_Forms_Installation>/lib/caching/lib`의 중복 항목이 있는 경우 다음 단계를 수행하여 문제를 해결하십시오.
+* **FORMS-14926** AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 폴더 아래에서 Geode jar `<AEM_Forms_Installation>/lib/caching/lib`의 중복 항목을 찾으면 다음 단계를 수행하여 문제를 해결하십시오.
 
    1. 로케이터가 실행 중인 경우 중지합니다.
    2. AEM 서버를 중지합니다.
@@ -669,32 +669,14 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
    5. 관리자 모드에서 명령 프롬프트를 엽니다.
    6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
 
-* AEM 6.5 Forms 서비스 팩 18 또는 19에서 서비스 팩 20 또는 21로 업그레이드한 사용자에게 JSP 컴파일 오류가 발생했습니다. 이 오류로 인해 적응형 양식을 열거나 만들 수 없습니다. 또한 다른 AEM 인터페이스에 문제가 발생했습니다. 이러한 인터페이스에는 페이지 편집기, AEM Forms UI, 워크플로우 편집기 및 시스템 개요 UI가 포함되었습니다. (FORMS-15256)
+* **FORMS-15256** 사용자가 AEM 6.5 Forms 서비스 팩 18 또는 19에서 서비스 팩 20 또는 21로 업그레이드할 때 JSP 컴파일 오류가 발생했습니다. 이 오류로 인해 적응형 양식을 열거나 만들 수 없습니다. 또한 다른 AEM 인터페이스에 문제가 발생했습니다. 이러한 인터페이스에는 페이지 편집기, AEM Forms UI, 워크플로우 편집기 및 시스템 개요 UI가 포함되었습니다.
 
   이러한 문제가 발생하면 다음 단계를 수행하여 해결하십시오.
    1. CRXDE의 `/libs/fd/aemforms/install/` 디렉터리로 이동합니다.
    2. 이름이 `com.adobe.granite.ui.commons-5.10.26.jar`인 번들을 삭제합니다.
    3. AEM 서버를 다시 시작합니다.
 
-* 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 통화 기호(예: 달러 기호 $)가 모든 필드 값에 대해 일관되지 않게 표시됩니다. 999까지의 값에 대해 표시되지만 1000 이상의 값에 대해서는 누락됩니다. (FORMS-16557)
-* 대화형 통신에서 중첩된 레이아웃 조각의 XDP에 대한 수정 사항은 IC 편집기에 반영되지 않습니다. (FORMS-16575)
-* 대화형 통신 에이전트 UI의 인쇄 미리 보기에서 일부 계산된 값이 올바르게 표시되지 않습니다. (FORMS-16603)
-* [인쇄 미리 보기]에서 편지를 보면 내용이 변경됩니다. 즉, 일부 공백이 사라지고 특정 문자가 `x`(으)로 바뀝니다. (FORMS-15681)
-* **FORMS-15428**: Forms 추가 기능을 사용하여 AEM Forms 서비스 팩 20(6.5.20.0)으로 업데이트한 후 자격 증명 기반 인증을 사용하여 레거시 Adobe Analytics Cloud 서비스에 의존하는 구성이 작동하지 않습니다. 이 문제로 인해 분석 규칙이 올바르게 실행되지 못했습니다.
-
-* 사용자가 WebLogic 14c 인스턴스를 구성할 때 JBoss®에서 실행 중인 JEE의 AEM Forms 서비스 팩 21(6.5.21.0)에 있는 PDFG 서비스가 SLF4J 라이브러리와 관련된 클래스로더 충돌로 인해 실패합니다. 오류는 다음과 같이 표시됩니다(CQDOC-22178).
-
-  ```java
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
-  ```
-
-* **FORMS-21378**: 서버측 유효성 검사(SSV)를 사용하도록 설정하면 양식 제출이 실패할 수 있습니다. 이 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
-
-* **FORMS-23703**: `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
+* **FORMS-23703** `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
 
 * 필수 키워드 및 정규 표현식 패턴이 기본적으로 허용되지 않으므로 양식 데이터 모델 커넥터를 인증하지 못할 수 있습니다. 문제를 해결하려면 구성 관리자(`/system/console/configmgr`)를 통해 다음을 추가하십시오.
 
@@ -703,15 +685,13 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: PDFG(HTML-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
-
-* **FORMS-23722**(첨부 파일이 작업 할당에 없음): **첨부 파일** 필드가 있는 양식이 **작업 할당** 단계를 사용하는 AEM Workflow에 제출되면 받은 편지함에서 작업을 열 때 첨부 파일이 표시되지 않습니다. 파일이 저장소에 올바르게 저장되고 CRX에 표시됩니다. 작업 할당 단계 UI에만 파일이 표시되지 않습니다.
-
-* **FORMS-23717** 양식 데이터 모델 검색에서 관련 엔터티가 없는 경우에도 HTML 태그가 UI에 표시됩니다.
+* **FORMS-23979** PDFG(HTML-to-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
 
 * **FORMS-23717** **AEM Forms6.5.24.0**(으)로 업그레이드한 후 `server.log` 및 `error.log`에 *보안 파서 팩토리 생성 실패* 또는 *보안 특성... 지원되지 않음*&#x200B;과 같은 반복된 WARN 메시지가 표시될 수 있습니다. 로그는 약 **5-10줄/초**(시간당 수백MB) 증가하여 디스크를 채우고 프로덕션 롤아웃을 차단할 수 있습니다. **수정:**&#x200B;이(가) AEM Forms **6.5.25.0**&#x200B;에 포함되어 있습니다. **그때까지:**
 
   로그 볼륨을 줄이려면 응용 프로그램 서버 구성에서 또는 JVM 인수 `com.adobe.util.XMLSecurityUtil`을(를) 통해 `ERROR`의 로깅 수준을 `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`(으)로 설정합니다. 메시지를 숨기기만 하며 근본 원인을 해결하지는 않습니다.
+
+* **FORMS-23875** 양식 데이터 모델 검색에서 관련 엔터티가 없는 경우에도 HTML 태그가 UI에 표시됩니다. 이 문제를 해결하려면 [링크](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip)에서 핫픽스를 다운로드하여 설치하십시오.
 
 ## OSGi 번들 및 콘텐츠 패키지 포함됨{#osgi-bundles-and-content-packages-included}
 
@@ -729,6 +709,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
