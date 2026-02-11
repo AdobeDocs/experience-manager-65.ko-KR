@@ -677,7 +677,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
    2. 이름이 `com.adobe.granite.ui.commons-5.10.26.jar`인 번들을 삭제합니다.
    3. AEM 서버를 다시 시작합니다.
 
-* **FORMS-23703** `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
+* **FORMS-23703** `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
 
 * 필수 키워드 및 정규 표현식 패턴이 기본적으로 허용되지 않으므로 양식 데이터 모델 커넥터를 인증하지 못할 수 있습니다. 문제를 해결하려면 구성 관리자(`/system/console/configmgr`)를 통해 다음을 추가하십시오.
 
@@ -686,7 +686,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979** PDFG(HTML-to-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
+* **FORMS-23979** PDFG(HTML-to-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
 
 * **FORMS-23717** **AEM Forms6.5.24.0**(으)로 업그레이드한 후 `server.log` 및 `error.log`에 *보안 파서 팩토리 생성 실패* 또는 *보안 특성... 지원되지 않음*&#x200B;과 같은 반복된 WARN 메시지가 표시될 수 있습니다. 로그는 약 **5-10줄/초**(시간당 수백MB) 증가하여 디스크를 채우고 프로덕션 롤아웃을 차단할 수 있습니다. **수정:**&#x200B;이(가) AEM Forms **6.5.25.0**&#x200B;에 포함되어 있습니다. **그때까지:**
 
@@ -710,6 +710,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
