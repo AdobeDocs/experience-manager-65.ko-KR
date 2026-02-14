@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 71e85d8d140d0d478c9ef27daf90960747df295f
+source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
 workflow-type: tm+mt
-source-wordcount: '9567'
+source-wordcount: '9627'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 ## [!DNL Experience Manager] 6.5.24.0에 포함된 항목 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [&#x200B; 6.5에서 &#x200B;](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
+[!DNL Experience Manager] 6.5.24.0에는 새로운 기능, 주요 고객 요청 개선 사항 및 버그 수정 사항이 포함되어 있습니다. 또한 2019년 4월 6.5의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. [ 6.5에서 ](#install)이 서비스 팩을 설치[!DNL Experience Manager]합니다.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -494,7 +494,7 @@ Sling 기본 서블릿 **콘텐츠 유형 확인** 무시를 켜면 AEM 6.5 SP21
 
 이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 &#x200B;]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 `Adobe Experience Manager (6.5.24.0)`설치된 제품[!UICONTROL 에 업데이트된 버전 문자열 ]이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
@@ -510,7 +510,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[에 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -544,6 +544,12 @@ Maven 프로젝트에서 UberJar를 사용하려면 [UberJar 사용 방법](/hel
 ## 더 이상 사용되지 않는 기능과 제거된 기능{#removed-deprecated-features}
 
 AEM 6.5에서 더 이상 사용되지 않거나 제거된 모든 기능에 대한 자세한 목록은 [사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하십시오.
+
+### AEM Assets REST API의 콘텐츠 조각 지원 {#cf-support-assets-rest-api}
+
+AEM 6.5 LTS SP2는 컨텐츠 조각 및 모델 관리를 위한 최신 OpenAPI를 제공하므로 AEM Assets REST API의 이전 컨텐츠 조각 지원 엔드포인트는 이제 더 이상 사용되지 않습니다.
+
+Adobe은 서비스 종료 공지가 있을 때까지 이러한 이전 끝점을 계속 사용할 수 있도록 합니다. Adobe에서는 더 이상 사용되지 않는 끝점에 대한 추가 개선 사항을 계획하지 않습니다.
 
 ### SPA 편집기 {#spa-editor}
 
@@ -677,7 +683,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
    2. 이름이 `com.adobe.granite.ui.commons-5.10.26.jar`인 번들을 삭제합니다.
    3. AEM 서버를 다시 시작합니다.
 
-* **FORMS-23703** `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
+* **FORMS-23703** `contains` 규칙이 기본값 없이 구성된 경우 적응형 양식에 대한 서버측 유효성 검사가 실패합니다. 최신 버전의 [AEM Forms 6.5.24.0 서비스 팩](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)을 설치하여 문제를 해결할 수 있습니다.
 
 * 필수 키워드 및 정규 표현식 패턴이 기본적으로 허용되지 않으므로 양식 데이터 모델 커넥터를 인증하지 못할 수 있습니다. 문제를 해결하려면 구성 관리자(`/system/console/configmgr`)를 통해 다음을 추가하십시오.
 
@@ -686,7 +692,7 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979** PDFG(HTML-to-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
+* **FORMS-23979** PDFG(HTML-to-PDF 전환)에 간헐적인 시간 초과가 발생할 수 있습니다. 이후에 수정 사항이 포함된 SP24용 Forms 추가 기능의 최신 버전이 릴리스되었습니다. 이 문제가 발생하면 환경을 [6.5.24.0에 대해 ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)최신 릴리스된 Forms 추가 기능으로 업데이트하십시오.
 
 * **FORMS-23717** **AEM Forms6.5.24.0**(으)로 업그레이드한 후 `server.log` 및 `error.log`에 *보안 파서 팩토리 생성 실패* 또는 *보안 특성... 지원되지 않음*&#x200B;과 같은 반복된 WARN 메시지가 표시될 수 있습니다. 로그는 약 **5-10줄/초**(시간당 수백MB) 증가하여 디스크를 채우고 프로덕션 롤아웃을 차단할 수 있습니다. **수정:**&#x200B;이(가) AEM Forms **6.5.25.0**&#x200B;에 포함되어 있습니다. **그때까지:**
 
@@ -710,6 +716,6 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)

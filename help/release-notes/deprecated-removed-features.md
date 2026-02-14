@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 30137e36b60c3ada70240e1442390f9fdd26f3b9
+source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 32%
+source-wordcount: '1834'
+ht-degree: 31%
 
 ---
 
@@ -34,6 +34,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 | 영역 | 기능 | 대체 | 버전 (SP) |
 |---|---|---|---|
+| Sites | AEM Assets REST API의 콘텐츠 조각 지원 | AEM 6.5 LTS SP2는 컨텐츠 조각 및 모델 관리를 위한 최신 OpenAPI를 제공하므로 AEM Assets REST API의 이전 컨텐츠 조각 지원 엔드포인트는 이제 더 이상 사용되지 않습니다.<br>Adobe은 서비스 종료 공지가 있을 때까지 이러한 이전 끝점을 사용할 수 있도록 유지합니다. Adobe에서는 더 이상 사용되지 않는 끝점에 대한 추가 개선 사항을 계획하지 않습니다. | 6.5.24 |
 | Sites | [SPA 편집기](/help/sites-developing/spa-editor-deprecation.md) | Headless 사용 사례의 경우 시각적 편집을 위해 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)를 활용하거나 양식 기반 편집을 위해 [콘텐츠 조각 편집기](/help/sites-developing/universal-editor/introduction.md)를 활용하십시오. | 6.5.23 |
 | Sites | **Adobe AEM 관리 폴링 구성** 서비스: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | **Adobe AEM Analytics 보고서 Sling 가져오기** 서비스. Adobe Analytics 연결 및 프레임워크 만들기 - [가져오기 간격 구성](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)을 참조하십시오. | 6.5.19.0 |
 | Screens | Adobe Experience Manager(AEM)의 ActiveMQ. ActiveMQ는 두 AEM 게시 인스턴스 간의 통신에 사용되었습니다. | Adobe 이제 고객은 로드 밸런서를 사용하는 것이 좋습니다. | 6.5.18.0 |
@@ -69,9 +70,9 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 | 영역 | 기능 | 대체 | 버전 (SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic이 제거되었습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. 여전히 CIF Classic이 필요한 경우 호환성 패키지를 만들었습니다. [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General#support)하십시오. | 6.5.22.0 |
-| [!DNL Experience Cloud]과(와) 통합 | [!DNL Experience Cloud]을(를) 통해 구성을 사용하여 자산을 [!DNL Adobe I/O]과(와) 동기화할 수 있습니다. [!DNL Adobe Experience Cloud]은(는) 이전에 [!DNL Adobe Experience Cloud]&#x200B;(으)로 불렸습니다. | 질문이 있는 경우 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General#support)하십시오. |  |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics에서 제공한 [ActivityMap 플러그인을 사용하십시오](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko). |  |
+| Commerce | AEM CIF Classic이 제거되었습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. 여전히 CIF Classic이 필요한 경우 호환성 패키지를 만들었습니다. [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. | 6.5.22.0 |
+| [!DNL Experience Cloud]과(와) 통합 | [!DNL Experience Cloud]을(를) 통해 구성을 사용하여 자산을 [!DNL Adobe I/O]과(와) 동기화할 수 있습니다. [!DNL Adobe Experience Cloud]은(는) 이전에 [!DNL Adobe Experience Cloud]&#x200B;(으)로 불렸습니다. | 질문이 있는 경우 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. |  |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics에서 제공한 [ActivityMap 플러그인을 사용하십시오](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |  |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 설치할 추가 패키지입니다. | 기능은 계속 사용할 수 있습니다. |  |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central 마이그레이션 Bridge 서비스에 대한 지원이 제거되었습니다. | 교체 없음. |  |
