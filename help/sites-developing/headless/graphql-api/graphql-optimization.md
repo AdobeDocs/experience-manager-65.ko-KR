@@ -5,7 +5,7 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 88%
@@ -66,7 +66,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 **권장 사항**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
 
 **추가 참조**
 
@@ -84,7 +84,7 @@ GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 
@@ -98,7 +98,7 @@ CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시
 
 ```shell
 $ curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H 'authorization: Basic yourauthorizationcode' \
     -H "Content-Type: application/json" \
     "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
     -d \
