@@ -790,7 +790,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 ### Microsoft® Office용 Adobe 문서 보안 확장 {#adobe-rights-management-extension-for-microsoft-office}
 
 
-Microsoft® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
+Microsoft® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/kr/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
 
 
 ### 클라이언트 지원에 대한 예외 {#exceptions-to-client-support}

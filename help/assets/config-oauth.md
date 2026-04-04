@@ -138,7 +138,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    >[!NOTE]
    >
-   >[!UICONTROL 서비스 URL] (으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com](https://status.adobe.com)을(를) 참조하십시오.
+   >[!UICONTROL 서비스 URL] (으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com/ko-kr](https://status.adobe.com/ko-kr)을(를) 참조하십시오.
 
 1. **[!UICONTROL OAuth 통합을 위한 공개 인증서 다운로드]**&#x200B;를 클릭하고 공개 인증서 파일 `AEM-SmartTags.crt`을(를) 다운로드합니다. 또한 Adobe Developer 콘솔에서 이 인증서를 더 이상 업로드할 필요가 없습니다.
 
