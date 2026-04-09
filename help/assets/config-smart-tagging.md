@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: a3c0010e5eaef7fc516d49e410bba1c3b3f9e4b9
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2121'
 ht-degree: 13%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 13%
 
 **기존 사용자**
 
-서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[용 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[용 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
 
 서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 13%
 
 이미 이 기능이 활성화되어 있는 기존 온-프레미스 사용자는 스마트 컨텐츠 서비스를 계속 사용할 수 있습니다.
 
-서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[용 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
+서비스 팩 21로 업그레이드한 경우 Oauth 통합을 지원하려면 서비스 팩 21[용 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)핫픽스를 설치하십시오. 모든 기존 구성이 자동으로 삭제됩니다. 이 문서에 언급된 지침에 따라 스마트 컨텐츠 서비스를 설정합니다. 서비스 팩 22로 업그레이드하는 경우 이 [서비스 팩 22용 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)를 설치해야 합니다.
 
 서비스 팩 20 이상의 경우 SCS가 Oauth 통합을 지원하도록 해결 단계를 수행해야 합니다. [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)을 참조하십시오.
 
@@ -97,7 +97,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 * [!UICONTROL API 키]&#x200B;(Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨),
 * [!UICONTROL 조직 ID],
-* 및 [!UICONTROL 클라이언트 암호], [!UICONTROL 에 있는 클라우드 구성의 &#x200B;]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에 대해.
+* 및 [!UICONTROL 클라이언트 암호], [!UICONTROL 에 있는 클라우드 구성의 ]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에 대해.
 
 1. 브라우저에서 [https://developer.adobe.com](https://developer.adobe.com/)에 액세스합니다. 적절한 계정을 선택하고 연결된 조직 역할이 시스템 **관리자**&#x200B;인지 확인하십시오.
 
@@ -105,7 +105,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. **[!UICONTROL API 추가]** 페이지에서 **[!UICONTROL Experience Cloud]**&#x200B;를 선택하고 **[!UICONTROL 스마트 컨텐츠]**&#x200B;를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**을 클릭합니다.
 이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
    * 개요를 보려면 developer.adobe.com에서 *서버 간 인증*&#x200B;을 참조하십시오.
@@ -115,7 +115,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL 구성된 API 저장]** 옵션을 클릭합니다.
 
-   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 &#x200B;]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
+   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 ]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
 
    ![Developer Console의 OAuth 자격 증명](assets/ims-configuration-developer-console.png)
 
@@ -151,7 +151,7 @@ To configure the Smart Content Service, follow these top-level steps:
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -172,11 +172,6 @@ To configure the Smart Content Service, follow these top-level steps:
    | 연관된 Adobe IMS 구성 | 드롭다운에서 구성을 선택합니다. |
    | 서비스 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. 예를 들어, `https://smartcontent.adobe.io/apac`과 같이 입력합니다. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다. |
 
-   >[!NOTE]
-   >
-   >Experience Manager Managed Service가 2022년 9월 1일 이전에 프로비저닝된 경우 다음 서비스 URL을 사용하십시오.
-   >`https://mc.adobe.io/marketingcloud/smartcontent`
-
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
 ### 구성 유효성 검사 {#validate-the-configuration}
@@ -187,8 +182,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**(으)로 이동하여 OSGi 콘솔을 엽니다. **[!UICONTROL 기본] > [!UICONTROL JMX]**&#x200B;을(를) 클릭합니다.
 
-<!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. `com.day.cq.dam.similaritysearch.internal.impl`를 클릭합니다. **[!UICONTROL SimilaritySearch 기타 작업]**&#x200B;을 엽니다.—>
 
 1. `com.day.cq.dam.similaritysearch.internal.impl (SCS)`를 클릭합니다.
 
@@ -231,7 +225,7 @@ A public certificate lets you authenticate your profile on Adobe Developer Conso
 
    >[!NOTE]
    >
-   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com/ko-kr](https://status.adobe.com/ko-kr).
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -291,7 +285,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -426,7 +420,7 @@ The validation results are displayed in the same dialog.
 
 >[!NOTE]
 >
->태그에 대해 교육하고 다른 이미지에 적용하는 스마트 컨텐츠 서비스의 기능은 교육에 사용하는 이미지의 품질에 따라 다릅니다. Adobe 최상의 결과를 얻으려면 시각적으로 유사한 이미지를 사용하여 각 태그에 대한 서비스를 교육하는 것이 좋습니다.
+>태그에 대해 교육하고 다른 이미지에 적용하는 스마트 컨텐츠 서비스의 기능은 교육에 사용하는 이미지의 품질에 따라 다릅니다. 최상의 결과를 얻으려면 시각적으로 유사한 이미지를 사용하여 각 태그에 대한 서비스를 교육하는 것이 좋습니다.
 
 ### 정기 교육 {#periodic-training}
 
@@ -482,4 +476,4 @@ The validation results are displayed in the same dialog.
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)
