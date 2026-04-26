@@ -522,7 +522,7 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
    ![when-else](assets/when-else.png)
 
-1. Else 문의 **[!UICONTROL 작업 선택]** 드롭다운에서 **[!UICONTROL 숨기기]**를 선택합니다.
+1. Else 문의 **[!UICONTROL 작업 선택]** 드롭다운에서 **[!UICONTROL 숨기기]**&#x200B;를 선택합니다.
    ![when-else](assets/when-else-1.png)
 
 1. **[!UICONTROL 개체 놓기 또는 여기를 선택]** 필드의 양식 개체 탭에서 **[!UICONTROL 배우자 급여]** 필드를 드래그 앤 드롭하십시오. 또는 **[!UICONTROL 드롭 개체 또는 여기를 선택]** 필드를 선택하고 양식의 모든 양식 개체가 나열된 팝업 메뉴에서 **[!UICONTROL 배우자 급여]** 필드를 선택합니다.
@@ -562,7 +562,7 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
 1. 표현식 필드에서:
 
-   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는**[!UICONTROL &#x200B;급여&#x200B;]**필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
+   * Forms 개체 탭에서 첫 번째 **[!UICONTROL 놓기 개체에 있는**&#x200B;[!UICONTROL &#x200B;급여&#x200B;]&#x200B;**필드를 선택하거나 끌어서 놓거나 여기]** 필드를 선택합니다.
 
    * **[!UICONTROL 연산자 선택]** 필드에서 **[!UICONTROL 더하기]**&#x200B;을(를) 선택합니다.
 

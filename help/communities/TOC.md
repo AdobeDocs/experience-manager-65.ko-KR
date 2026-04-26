@@ -65,7 +65,7 @@ ht-degree: 12%
    + [DSRP - 관계형 데이터베이스 저장소 리소스 제공자](dsrp.md)
    + [DSRP에 대한 MySQL 구성](dsrp-mysql.md)
    + [JSRP - JCR 저장소 리소스 제공자](jsrp.md)
-   + SRP에 대한 [Solr 구성](solr.md)
+   + [SRP에 대한 Solr 구성](solr.md)
    + [사용자 생성 컨텐츠 태깅](tag-ugc.md)
    + [사용자 생성 콘텐츠 번역](translate-ugc.md)
    + [커뮤니티 사용자 동기화](sync.md)

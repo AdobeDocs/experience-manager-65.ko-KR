@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # JEE에서 AEM Forms에 대한 거래 보고서 활성화 및 보기 {#transaction-reports-overview}
 
-<span> 트랜잭션 보고 기능이 AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms)에서 JEE의 [AEM Forms에 도입되었습니다. 이 기능은 기본적으로 비활성화되어 있으며, 관리자 UI에서 활성화할 수 있습니다.</span>
+<span> 트랜잭션 보고 기능이 AEM Forms 6.5.20.0[&#128279;](/help/release-notes/previous/6-5-20.md#forms)에서 JEE의 AEM Forms에 도입되었습니다. 이 기능은 기본적으로 비활성화되어 있으며, 관리자 UI에서 활성화할 수 있습니다.</span>
 
 JEE의 AEM Forms에 있는 거래 보고서를 사용하면 AEM Forms 배포에서 발생한 모든 거래의 수를 유지할 수 있습니다. 목표는 제품 사용에 대한 정보를 제공하고 비즈니스 이해 당사자가 디지털 처리 볼륨을 이해할 수 있도록 돕는 것입니다. 거래의 예는 다음과 같습니다.
 
