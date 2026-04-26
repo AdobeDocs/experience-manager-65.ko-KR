@@ -1,27 +1,29 @@
 ---
-title: PDF 생성에서 WorkBench로 많은 PDF을 인쇄하지 못했습니다.
-description: 고객이 WorkBench를 통해 구현된 서비스를 통해 많은 수의 PDF을 생성하면 인쇄 서비스가 실패합니다.
+title: PDF 생성에서 WorkBench를 사용하여 많은 PDF를 인쇄하지 못했습니다.
+description: 고객이 WorkBench를 통해 구현된 서비스를 통해 많은 수의 PDF를 생성하면 인쇄 서비스가 실패합니다.
 exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
-# PDF 생성이 WorkBench를 통해 많은 PDF을 인쇄하지 못했습니다. {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
+# PDF 생성에서 WorkBench를 통해 많은 수의 PDF를 인쇄하지 못했습니다. {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## 문제 {#issue}
 
-고객이 WorkBench를 통해 구현된 서비스를 통해 많은 PDF을 생성하는 경우. 메모리가 부족하여 서비스가 실패합니다. 오류는 다음과 같이 표시됩니다.
+고객이 WorkBench를 통해 구현된 서비스를 통해 많은 수의 PDF를 생성하는 경우. 메모리가 부족하여 서비스가 실패합니다. 오류는 다음과 같이 표시됩니다.
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 인쇄 요청의 최대 페이지 수가 Windows에서 약 1000페이지로 제한되기 때문입니다. 인쇄 출력이 생성될 때 템플릿과 데이터를 메모리에 로드해야 하고 결과 레이아웃이 메모리에 빌드됩니다. 이는 최종 산출물의 크기에 한계가 있다는 것을 의미한다. 인쇄 출력을 생성하는 프로세스는 32비트 작업입니다. 즉, Windows <!--and 4 GB on UNIX-->에서 2GB의 RAM으로 제한됩니다.
 
@@ -64,7 +66,7 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 ### 이미지 형식 {#image-formats}
 
-Adobe은 특정 이미지 형식을 권장하지 않습니다. 하지만 PNG(Portable Network Graphics)와 같은 작은 이미지 크기를 갖는 것이 좋습니다. 크기가 수백 MegaBytes로 다양한 고해상도의 이미지를 사용하는 것도 바람직하지 않습니다. 또한 압축 해제 시 크기가 수백 MB의 데이터로 확장되는 압축 이미지를 사용하는 것은 바람직하지 않습니다.
+Adobe에서는 특정 이미지 형식을 권장하지 않습니다. 하지만 PNG(Portable Network Graphics)와 같은 작은 이미지 크기를 갖는 것이 좋습니다. 크기가 수백 MegaBytes로 다양한 고해상도의 이미지를 사용하는 것도 바람직하지 않습니다. 또한 압축 해제 시 크기가 수백 MB의 데이터로 확장되는 압축 이미지를 사용하는 것은 바람직하지 않습니다.
 
 ### 부록 {#appendix}
 
@@ -72,15 +74,15 @@ Adobe은 특정 이미지 형식을 권장하지 않습니다. 하지만 PNG(Por
 
 간단한 테이블과 복잡한 테이블에 대한 페이지 수와 데이터 크기를 보여 주는 테이블의 다른 변형이 아래에 표시되어 있습니다.
 
-1. 5000페이지의 PDF이 생성되는 단일 열의 테이블, 데이터 파일 크기는 24MB 및 30K 레코드입니다.
+1. 5000페이지의 PDF가 생성되는 데이터 파일 크기 24MB 및 30K 레코드가 포함된 단일 열이 있는 테이블입니다.
 
    ![table_single_column](/help/forms/using/assets/table_single_column.png)
 
-1. 800페이지의 PDF이 생성되고 데이터 파일 크기가 4.6MB 및 20K 레코드인 작은 열이 많은 표입니다.
+1. 800페이지의 PDF가 생성되고 데이터 파일 크기가 4.6MB 및 20K 레코드인 작은 열이 많은 표입니다.
    ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
 
 1. 작은 열이 많지만 더 큰 xmlTag 이름이 사용되었기 때문에 더 큰 데이터 파일이 있는 테이블입니다.
-여기서, 모든 것은 이전과 동일하지만 xml 태그 이름이 크게 만들어져 실제 유효 데이터가 증가하지 않고 데이터 파일 크기가 증가합니다. (따라서) 최종 결과(상한)는 거의 동일합니다. 데이터 파일 크기가 4.6MB에서 44.6MB로 증가했지만, 800페이지의 PDF이 생성되며 데이터 파일 크기는 44.6MB 및 20K 레코드입니다.
+여기서, 모든 것은 이전과 동일하지만 xml 태그 이름이 크게 만들어져 실제 유효 데이터가 증가하지 않고 데이터 파일 크기가 증가합니다. (따라서) 최종 결과(상한)는 거의 동일합니다. 데이터 파일 크기가 4.6MB에서 44.6MB로 증가했지만, 여기서 800페이지의 PDF가 생성되며 데이터 파일 크기는 44.6MB 및 20K 레코드입니다.
 
    ![table_bigger_xml_tagname](/help/forms/using/assets/table_bigger_xml_tagname.png)
 

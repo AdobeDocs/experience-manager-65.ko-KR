@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1043'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 조직 구성원 및 외부 엔터티(파트너 및 공급업체 포함)와 URL로 자산, 폴더 및 컬렉션을 공유할 수 있습니다. 링크를 통해 자산을 공유하면 [!DNL Assets]에 처음 로그인할 필요 없이 외부 당사자가 리소스를 사용할 수 있는 편리한 방법입니다.
@@ -118,4 +118,4 @@ ht-degree: 7%
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
 
-  [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다. **[!UICONTROL 일 CQ 링크 외부화]** 구성을 열고 **[!UICONTROL 도메인]** 필드에서 `local`, `author` 및 `publish`에 대해 언급된 값으로 다음 속성을 수정합니다. `local` 및 `author` 속성의 경우 각각 로컬 및 작성자 인스턴스의 URL을 제공하십시오. 단일 [!DNL Experience Manager] 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성에 동일한 값을 사용하십시오. Publish 인스턴스의 경우 [!DNL Experience Manager] Publish 인스턴스의 URL을 제공하십시오.
+  [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다. **[!UICONTROL 일 CQ 링크 외부화]** 구성을 열고 **[!UICONTROL 도메인]** 필드에서 `local`, `author` 및 `publish`에 대해 언급된 값으로 다음 속성을 수정합니다. `local` 및 `author` 속성의 경우 각각 로컬 및 작성자 인스턴스의 URL을 제공하십시오. 단일 [!DNL Experience Manager] 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성에 동일한 값을 사용하십시오. 게시 인스턴스의 경우 [!DNL Experience Manager] 게시 인스턴스의 URL을 제공하십시오.

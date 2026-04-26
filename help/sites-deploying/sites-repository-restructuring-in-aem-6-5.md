@@ -8,16 +8,16 @@ feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
 
 # AEM 6.5의 Sites 저장소 재구성 {#sites-repository-restructuring-in-aem}
 
-AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Sites 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.5](/help/sites-deploying/repository-restructuring.md)의 상위 [저장소 재구성 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Sites 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 
@@ -58,14 +58,14 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
     <ol>
      <li>이전 위치에서 새 ContextHub 세그먼트 또는 수정된 ContextHub 세그먼트를 적절한 새 위치(/<code>apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)에 복사</li>
      <li>이전 위치의 ContextHub 세그먼트에 대한 참조를 새 위치(<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>)에 있는 마이그레이션된 ContextHub 세그먼트로 업데이트합니다.</li>
-    </ol> <p>다음 QueryBuilder 쿼리는 ContextHub 세그먼트에 대한 모든 참조를 이전 위치에 찾습니다.<br /> <br /> <code class="code">path=/content
+    </ol> <p>다음 QueryBuilder 쿼리는 이전 위치의 ContextHub 세그먼트에 대한 모든 참조를 찾습니다.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder 디버거 UI</a>를 통해 실행할 수 있습니다. 이것은 트래버스 쿼리이므로 프로덕션에 대해 실행하지 말고, 필요에 따라 트래버스 제한이 조정되었는지 확인하십시오.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> 이 작업은 <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder Debugger UI</a>를 통해 실행할 수 있습니다. 이것은 트래버스 쿼리이므로 프로덕션에 대해 실행하지 말고, 필요에 따라 트래버스 제한이 조정되었는지 확인하십시오.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>이전 위치에 지속된 ContextHub 세그먼트는 <strong>AEM &gt; Personalization &gt; 대상</strong>에서 읽기 전용으로 표시됩니다.</p> <p>AEM에서 ContextHub 세그먼트를 편집할 수 있게 하려면 새 위치(<code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다. AEM에서 만든 모든 새 ContentHub 세그먼트 세그먼트는 새 위치(<code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 유지됩니다.</p> <p>AEM Sites 페이지 속성에서는 이전 위치(<code>/etc</code>) 또는 단일 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)만 선택할 수 있으므로 ContextHub 세그먼트를 그에 따라 마이그레이션해야 합니다.</p> <p>AEM 참조 사이트에서 사용하지 않는 모든 ContextHub 세그먼트를 제거하고 새 위치로 마이그레이션할 수 없습니다.</p>
+   <td><p>이전 위치에 지속된 ContextHub 세그먼트는 <strong>AEM &gt; Personalization &gt; 대상</strong>에서 읽기 전용으로 표시됩니다.</p> <p>ContextHub 세그먼트를 AEM에서 편집할 수 있게 하려면 새 위치(<code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다. AEM에서 만든 모든 새 ContentHub 세그먼트 세그먼트는 새 위치(<code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 유지됩니다.</p> <p>AEM Sites 페이지 속성에서는 이전 위치(<code>/etc</code>) 또는 단일 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)만 선택할 수 있으므로 ContextHub 세그먼트를 그에 따라 마이그레이션해야 합니다.</p> <p>AEM 참조 사이트에서 사용하지 않는 모든 ContextHub 세그먼트를 제거하고 새 위치로 마이그레이션할 수 없습니다.</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoors</li>
@@ -167,7 +167,7 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
    <td>새 모바일 장치 에뮬레이터 구성을 새 위치로 마이그레이션해야 합니다.
     <ol>
      <li>이전 위치에서 새 위치(<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>)로 새 모바일 장치 에뮬레이터 구성을 복사합니다.</li>
-     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 AEM Sites 페이지의 경우 페이지의 <span class="code">을(를) 업데이트하십시오
+     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 AEM Sites 페이지의 경우 페이지의 <span class="code">
        <code>
         jcr
        </code>
@@ -177,7 +177,7 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 편집 가능한 템플릿의 경우 <span class="code">을(를) 가리키며 편집 가능한 템플릿을 업데이트합니다
+     <li>이러한 모바일 장치 에뮬레이터 구성에 의존하는 편집 가능한 템플릿의 경우 다음을 가리키며 편집 가능한 템플릿을 업데이트합니다. <span class="code">
        <code>
         cq
        </code>:
@@ -222,7 +222,7 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>AEM 다중 사이트 관리자 블루프린트 구성이 모두 <code>/libs</code>의 새 위치에 있습니다.</p> <p>콘텐츠가 다중 사이트 관리자 파란색 구성을 참조하지 않으므로 조정할 콘텐츠 참조가 없습니다.</p> </td>
+   <td><p>다중 사이트 관리자 블루프린트 구성이 제공된 모든 AEM이 <code>/libs</code>의 새 위치에 있습니다.</p> <p>콘텐츠가 다중 사이트 관리자 파란색 구성을 참조하지 않으므로 조정할 콘텐츠 참조가 없습니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -244,12 +244,12 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
    <td><p>새 다중 사이트 관리자 롤아웃 구성 또는 수정된 구성을 새 위치로 마이그레이션해야 합니다.</p>
     <ol>
      <li>이전 위치에서 새 위치(<code>/apps</code>)로 새 다중 사이트 관리자 롤아웃 구성 또는 수정된 구성을 복사합니다.</li>
-     <li>AEM Pages의 참조를 이전 위치의 다중 사이트 관리자 롤아웃 구성으로 업데이트하여 새 위치(<code>/libs</code> 또는 <code>/apps</code>)의 해당 위치를 가리킵니다.</li>
+     <li>AEM 페이지의 모든 참조를 이전 위치의 다중 사이트 관리자 롤아웃 구성으로 업데이트하여 새 위치(<code>/libs</code> 또는 <code>/apps</code>)의 해당 위치를 가리킵니다.</li>
     </ol> <p>이전 위치에서 마이그레이션된 다중 사이트 관리자 롤아웃 구성을 제거합니다.</p> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td>이전 위치에서 마이그레이션된 다중 사이트 관리자 롤아웃 구성을 제거하지 못하면 중복 롤아웃 옵션이 AEM 작성자에게 표시됩니다.</td>
+   <td>이전 위치에서 마이그레이션된 다중 사이트 관리자 롤아웃 구성을 제거하지 못하면 AEM 작성자에게 중복 롤아웃 옵션이 표시됩니다.</td>
   </tr>
  </tbody>
 </table>
@@ -374,7 +374,8 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
  </tbody>
 </table>
 
-<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
+<!--
+Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -405,7 +406,8 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
     </ul> </td>
   </tr>
  </tbody>
-</table> -->
+</table>
+-->
 
 ### Adobe Target 통합 클라이언트 라이브러리 {#adobe-target-integration-client-libraries}
 

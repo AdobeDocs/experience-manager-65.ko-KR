@@ -6,9 +6,9 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/kr/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/kr/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. ExtendScript 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
+>[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. ExtendScript 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
@@ -115,7 +115,8 @@ ht-degree: 2%
 
 * **스크립트 확장**: 여기에서 다른 스크립트 조합을 지정할 수 있습니다. [!DNL InDesign Server]에서 고유한 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장하십시오.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -239,4 +240,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [Adobe InDesign Server 정보](https://www.adobe.com/kr/products/indesignserver/faq.html)
+>* [Adobe InDesign Server 정보](https://www.adobe.com/products/indesignserver/faq.html)

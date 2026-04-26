@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 6%
+source-wordcount: '801'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 원본 자산의 렌디션에 복제합니다. Assets 내에서 또는 에셋을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 사항이 에셋 계층의 메타데이터 노드에 처음 저장됩니다.

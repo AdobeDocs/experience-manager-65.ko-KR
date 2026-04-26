@@ -8,10 +8,10 @@ user-guide-description: 모바일 앱용 콘텐츠 제작 및 관리
 feature: Mobile
 role: User
 hide: true
-source-git-commit: 829eadb61062f20be74e36b52175627f1f377c50
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 11%
+source-wordcount: '329'
+ht-degree: 12%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 11%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR 준비 완료](aem-mobile-gdpr-compliance.md)
    + [모바일 앱 개발](develop-mobile-apps.md)
-+ On-Demand Services 앱 작성 {#authoring}
++ 온디맨드 서비스 앱 작성 {#authoring}
    + [모바일 온디맨드](mobile-apps-ondemand.md)
    + [컨텐츠 관리](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Publish 컨텐츠 게시 취소](mobile-on-demand-publishing-unpublishing.md)
+   + [게시 취소 컨텐츠](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile 애플리케이션 대시보드](mobile-apps-ondemand-application-dashboard.md)
    + [응용 프로그램 만들기 및 구성 작업](mobile-apps-ondemand-application-create-configure-action.md)
    + [문서 관리](mobile-on-demand-managing-articles.md)
@@ -48,8 +48,8 @@ ht-degree: 11%
    + [모바일 앱용 페이지 템플릿](apps-architecture.md)
    + [컨텐츠 속성을 사용하여 컨텐츠 내보내기](on-demand-content-properties-exporting.md)
    + [렌더링 및 게재](rendering-and-delivery.md)
-   + [Content Services](developing-content-services.md)
-   + [컨텐츠 전달](develop-content-as-a-service.md)
+   + [콘텐츠 서비스](developing-content-services.md)
+   + [콘텐츠 게재](develop-content-as-a-service.md)
 + On-Demand Services 앱 관리 {#administering}
    + [AEM Mobile 온디맨드](aem-mobile.md)
    + [AEM Mobile 설정](aem-mobile-setup.md)
@@ -82,7 +82,7 @@ ht-degree: 11%
    + [장치 기능 액세스](phonegap-access-device-features.md)
    + [모바일 애플리케이션에 Adobe Analytics 추가](phonegap-add-analytics-to-apps.md)
    + [모바일 앱용 페이지 템플릿](phonegap-apps-arch-page-templates.md)
-   + [Adobe Target 구성 Cloud Service](aem-mobile-configuring-cloud-service.md)
+   + [Adobe Target Cloud Service 구성](aem-mobile-configuring-cloud-service.md)
    + [SPA (Single Page Applications)](phonegap-single-page-applications.md)
    + [AEM PhoneGap 시작](starting-aem-phonegap-app.md)
    + [모바일 앱 테스트](develop-mobile-apps-testing.md)

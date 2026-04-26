@@ -8,9 +8,9 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2400'
 ht-degree: 10%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -36,13 +37,13 @@ ht-degree: 10%
 
 다음 메서드를 사용하여 디지털 에셋에 메타데이터를 추가할 수 있습니다.
 
-* 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/kr/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에서 IPTC 메타데이터를 추가](https://helpx.adobe.com/kr/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
+* 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에서 IPTC 메타데이터를 추가](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
 
-* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/kr/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [에서  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 [!DNL Adobe Exchange]태그 패널을 보는 방법을 참조하십시오.
+* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 [태그 패널을 보는 방법을 참조하십시오.
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 
-* 자산이 DAM에 업로드될 때 [의 &#x200B;](/help/assets/metadata-config.md#metadata-profiles)메타데이터 프로필[!DNL Experience Manager Assets] 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
+* 자산이 DAM에 업로드될 때 [!DNL Experience Manager Assets]의 [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 기능을 사용하여 메타데이터를 자동으로 추가할 수 있습니다.
 
 ## [!DNL Experience Manager Assets]에서 메타데이터 추가 또는 편집 {#add-edit-metadata}
 
@@ -165,7 +166,8 @@ ht-degree: 10%
 
 ## 폴더에 메타데이터 프로필 적용 {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview.
+<!--
+TBD: Review this overview.
 -->
 
 폴더에 메타데이터 프로필을 할당하면 하위 폴더는 자동으로 상위 폴더에서 프로필을 상속합니다. 즉, 폴더에 하나의 메타데이터 프로필만 할당할 수 있습니다. 따라서 에셋을 업로드, 저장, 사용 및 보관하는 의 폴더 구조를 신중하게 고려하십시오.
@@ -203,11 +205,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
-<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+<!--
+TBD: Commenting as the topic in metadata-config.md is incomplete.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+-->
 
 ### 폴더에서 메타데이터 프로필 제거 {#removing-a-metadata-profile-from-folders}
 
@@ -241,9 +245,10 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=ko)
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-<!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
+<!--
+TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
 

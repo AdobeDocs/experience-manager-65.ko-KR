@@ -9,9 +9,9 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 자동화된 테스트 {#automated-testing}
 
-다양한 화면 크기, 메모리 제한, 입력 방법 및 운영 체제를 다루기 위해 어느 정도의 자동화된 테스트를 수행해야 합니다. 많은 테스트 사례를 다룰 뿐만 아니라 새로운 기능이나 장치가 도입되면 회귀 테스트 속도를 높일 수 있다. 가장 좋은 방법은 자동화 툴이 노력의 중복을 줄이거나 제한하는 것입니다. 모든 플랫폼에서 테스트 작업을 적용할 수 있도록 도구 또는 프레임워크를 사용합니다. 다음 차트는 웹 기반 UI 테스트와 모바일 앱 테스트 모두를 위한 테스트 환경의 간소화된 구조를 보여 줍니다. 차트의 왼쪽에는 브라우저가 있는 일련의 Selenium 노드가 표시됩니다. SeleniumGrid는 이러한 모든 노드에 대해 공통적인 웹 기반 UI 테스트를 팜아웃할 수 있습니다. Selenium 허브는 플랫폼 간 앱 테스트를 위해 Appium에 연결할 수도 있습니다. 표시된 것은 시뮬레이터이지만 Android™용 adb 및 iOS 장치용 Xcode 유틸리티를 통합할 수 있습니다. 링크는 이 문서의 후반부에 제공되며, 여기에서 언급된 도구에 대한 특정 세부 정보를 찾을 수 있습니다.
+다양한 화면 크기, 메모리 제한, 입력 방법 및 운영 체제를 다루기 위해 어느 정도의 자동화된 테스트를 수행해야 합니다. 많은 테스트 사례를 다룰 뿐만 아니라 새로운 기능이나 장치가 도입되면 회귀 테스트 속도를 높일 수 있다. 가장 좋은 방법은 자동화 툴이 노력의 중복을 줄이거나 제한하는 것입니다. 모든 플랫폼에서 테스트 작업을 적용할 수 있도록 도구 또는 프레임워크를 사용합니다. 다음 차트는 웹 기반 UI 테스트와 모바일 앱 테스트 모두를 위한 테스트 환경의 간소화된 구조를 보여 줍니다. 차트의 왼쪽에는 브라우저가 있는 일련의 Selenium 노드가 표시됩니다. SeleniumGrid는 이러한 모든 노드에 대해 공통적인 웹 기반 UI 테스트를 팜아웃할 수 있습니다. Selenium 허브는 플랫폼 간 앱 테스트를 위해 Appium에 연결할 수도 있습니다. 표시된 것은 시뮬레이터이지만 ™용 adb 및 iOS 장치용 Xcode 유틸리티를 통합할 수 있습니다. 링크는 이 문서의 후반부에 제공되며, 여기에서 언급된 도구에 대한 특정 세부 정보를 찾을 수 있습니다.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 **Testdroid**
 
 * 지속적인 통합 후크와 실제 디바이스 테스트를 갖춘 클라우드 기반 테스트 서비스.
-* 장치 호환성을 확인하고, 로그를 분석하고, 보기를 트래버스하고, 스크린샷을 촬영하고, 성능을 모니터링하는 앱 크롤러가 포함됩니다.
+* 장치 호환성을 확인하고, 로그를 분석하고, 보기를 트래버스하고, 스크린샷을 촬영하고, 성능을 모니터링하는 앱 웹 크롤러가 포함됩니다.
 
 자세한 내용은 [https://testdroid.com/](https://testdroid.com/)을(를) 참조하십시오.
 
@@ -90,12 +90,14 @@ ht-degree: 0%
 
 자세한 내용은 [https://saucelabs.com/](https://saucelabs.com/)을(를) 참조하십시오.
 
-<!-- **AppTestNow**
+<!--
+**AppTestNow**
 
 * An outsourcing service that tests your mobile apps.
 * Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
+For more information, see [https://apptestnow.com/](https://apptestnow.com/).
+-->
 
 **HokeyApp**
 

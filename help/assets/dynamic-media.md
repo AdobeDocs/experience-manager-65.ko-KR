@@ -9,22 +9,24 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 16%
+source-wordcount: '429'
+ht-degree: 15%
 
 ---
 
 # Dynamic Media를 사용하여 작업 {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 소프트웨어는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 소프트웨어는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
 이 소프트웨어는 확대/축소, 360도 회전 및 비디오를 비롯한 대화형 보기 환경을 제공합니다. Adobe Experience Manager 디지털 에셋 관리(Assets) 솔루션의 워크플로를 고유하게 통합하여 디지털 캠페인 관리 프로세스를 간소화하고 간소화합니다.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## 소프트웨어를 사용하여 수행할 수 있는 작업 {#what-you-can-do-with-dynamic-media}
 
@@ -32,7 +34,7 @@ ht-degree: 16%
 
 Dynamic Media 전용 기능에는 다음이 포함됩니다.
 
-* [회전 배너](carousel-banners.md)
+* [슬라이드 배너](carousel-banners.md)
 * [이미지 세트](image-sets.md)
 * [대화형 이미지](interactive-images.md)
 * [대화형 비디오](interactive-videos.md)
@@ -43,13 +45,13 @@ Dynamic Media 전용 기능에는 다음이 포함됩니다.
 * [비디오](video.md)
 * [Dynamic Media 자산 전송](delivering-dynamic-media-assets.md)
 * [자산 관리](managing-assets.md)
-* [빠른 보기를 사용하여 사용자 정의 팝업 제작](custom-pop-ups.md)
+* [빠른 보기를 사용하여 사용자 정의 팝업 만들기](custom-pop-ups.md)
 
 [Dynamic Media 설정](administering-dynamic-media.md)도 참조하세요.
 
 >[!NOTE]
 >
->Dynamic Media 사용과 Dynamic Media Classic과 Adobe Experience Manager 통합 간의 차이점을 이해하려면 [Dynamic Media Classic 통합 대 Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)를 참조하십시오.
+>Dynamic Media 사용과 Dynamic Media Classic과 Adobe Experience Manager 통합 간의 차이점을 이해하려면 [Dynamic Media Classic 통합과 Dynamic Media 통합 비교](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)를 참조하십시오.
 
 ## Dynamic Media 활성화됨 대 Dynamic Media 비활성화됨 {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -75,7 +77,7 @@ Dynamic Media 전용 기능에는 다음이 포함됩니다.
 
 ### PTIFF 표현물 {#ptiff-renditions}
 
-Dynamic Media 사용 자산에는 `pyramid.tiffs`이(가) 포함됩니다.
+Dynamic Media 사용 자산에 `pyramid.tiffs`이(가) 포함되어 있습니다.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 

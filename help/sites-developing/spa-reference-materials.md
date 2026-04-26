@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '152'
+ht-degree: 9%
 
 ---
 
@@ -37,6 +37,6 @@ ht-degree: 1%
 
 * [구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)
-* [편집 가능한 구성 요소 반응](https://github.com/adobe/aem-react-editable-components)
+* [React 편집 가능한 구성 요소](https://github.com/adobe/aem-react-editable-components)
 * [Angular 편집 가능한 구성 요소](https://github.com/adobe/aem-angular-editable-components)
 * [SPA 프로젝트 코어](https://github.com/adobe/aem-spa-project-core)

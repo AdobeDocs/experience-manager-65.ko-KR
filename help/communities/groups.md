@@ -11,9 +11,9 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,8 @@ ht-degree: 1%
 * **컨트롤**: 그룹은 공개 또는 암호일 수 있습니다.
 * **중첩**: 그룹에는 0개 이상의 그룹이 포함될 수 있습니다.
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -62,7 +63,7 @@ ht-degree: 1%
 
 * **그룹 폴더**&#x200B;를 선택하여 열 수 있습니다.
 
-  열면 작성자 또는 Publish에서 만든 기존 그룹이 모두 표시됩니다.
+  열면 작성자 또는 게시에서 만든 기존 그룹이 모두 표시됩니다.
 
   이 그룹 콘솔에서 새 그룹을 작성할 수 있습니다.
 
@@ -99,7 +100,6 @@ ht-degree: 1%
    * 그룹을 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
    * 기본 URL이 `Community Group Name` 아래에 표시됩니다.
    * 유효한 URL을 보려면 &quot;.html&quot;을 추가하십시오.
-
      *예:*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **커뮤니티 그룹 템플릿** 메뉴
@@ -181,7 +181,7 @@ ht-degree: 1%
 
 썸네일은 작성 및 게시에 그룹에 대해 표시할 이미지입니다.
 
-그룹 이미지에 대한 최적의 크기는 지원되는 이미지 형식(예: JPG 또는 PNG)에서 170 x 90픽셀입니다.
+그룹 이미지의 최적 크기는 지원되는 이미지 형식(예: JPG 또는 PNG)의 170 x 90픽셀입니다.
 
 이미지가 추가되지 않으면 기본 이미지가 표시됩니다.
 
@@ -283,9 +283,9 @@ ht-degree: 1%
 
 ### 썸네일 수정 {#modify-thumbnail}
 
-[THUMBNAIL](#thumbnail) 패널을 사용하면 Publish 환경 및 작성 환경의 커뮤니티 사이트 그룹 콘솔에서 커뮤니티 그룹을 사이트 방문자에게 나타내는 이미지를 업로드할 수 있습니다.
+[THUMBNAIL](#thumbnail) 패널을 사용하면 게시 환경 및 작성 환경의 커뮤니티 사이트 그룹 콘솔에서 커뮤니티 그룹을 사이트 방문자에게 나타내는 이미지를 업로드할 수 있습니다.
 
-## Publish 더 그룹 {#publish-the-group}
+## 그룹 게시 {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 

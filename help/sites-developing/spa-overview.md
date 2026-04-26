@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 85%
 
 ---
@@ -53,7 +53,8 @@ SPA 페이지 구성 요소가 페이지 핵심 구성 요소로부터 상속받
 * 템플릿이 편집 가능한 경우 페이지 정책에 추가합니다.
 * 또는 `customfooterlibs.html`을 사용하여 범주를 추가합니다.
 
-SPA는 내보낸 모델의 각 리소스에 대한 렌더링을 수행할 실제 구성 요소를 매핑합니다. 그런 다음 JSON으로 표시된 모델은 컨테이너 내의 구성 요소 매핑을 사용하여 렌더링됩니다.
+내보낸 모델의 각 리소스에 대해 SPA는 를 수행할 실제 구성 요소를 매핑합니다.
+렌더링 중. JSON으로 표시되는 모델은 컨테이너 내 구성 요소 매핑을 통해 렌더링됩니다.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]

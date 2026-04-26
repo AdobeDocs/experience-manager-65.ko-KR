@@ -9,10 +9,10 @@ exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +28,11 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 
 ![Forms 앱 홈 화면](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **메뉴 단추**: **메뉴** 단추를 선택하여 작업, Forms, 보낼 편지함 및 설정으로 이동합니다. AEM Forms 앱이 AEM Forms JEE 서버에 연결되어 있으면 작업 옵션이 표시됩니다. 또한 작업 옵션에는 프로세스의 작업에서 생성된 초안이 저장됩니다. AEM Forms OSGi 서버의 경우 작업 옵션이 숨겨집니다. 보낼 편지함은 저장된 양식 및 초안을 서버와 동기화하기 전에 저장합니다. 앱이 [서버와 동기화됨](../../forms/using/sync-app.md)되면 보낼 편지함에 저장된 모든 양식 및 초안이 AEM Forms 서버로 업로드됩니다. 설정에 대한 자세한 내용은 [일반 설정 업데이트](../../forms/using/update-general-settings.md)를 참조하십시오.
 1. **작업 또는 양식**: 작업할 작업 또는 양식을 선택하십시오.
@@ -41,8 +43,8 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 
 ![일반 설정](assets/gen-settings.png)
 
-앱의 **[일반 설정](../../forms/using/update-general-settings.md)** 또는 Workspace HTML의 **기본 설정** 탭에서 앱의 기본 홈 화면을 변경할 수 있습니다.
+앱의 **[일반 설정](../../forms/using/update-general-settings.md)** 또는 HTML Workspace의 **기본 설정** 탭에서 앱의 기본 홈 화면을 변경할 수 있습니다.
 
 앱에서 홈 화면 설정을 변경하면 현재 로그인한 사용자 또는 현재 모바일 장치에서 사용자의 홈 화면에 영향을 줍니다.
 
-그러나 Workspace HTML의 변경 사항은 AEM Forms 서버에 로그인한 모든 AEM Forms 앱 사용자에게 영향을 줍니다.
+그러나 HTML Workspace의 변경 사항은 AEM Forms 서버에 로그인한 모든 AEM Forms 앱 사용자에게 영향을 줍니다.

@@ -8,9 +8,9 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3595'
+source-wordcount: '3637'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 조직은 자산 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 고안합니다. 올바른 메타데이터 애플리케이션은 메타데이터 기반 워크플로우 및 프로세스를 유지 관리하는 데 불가항력적입니다. 조직 전체의 메타데이터 전략 및 표준을 준수하기 위해 DAM 사용자가 조정할 수 있도록 도와주는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager]을(를) 사용하면 쉽고 유연한 방법으로 메타데이터 스키마를 만들고 유지 관리하고 적용할 수 있습니다.
@@ -50,14 +50,14 @@ ht-degree: 8%
 |---|---|---|
 | [!UICONTROL 기본값] | | 에셋의 기본 메타데이터 스키마 양식. |
 | | 다음 자식 양식은 [!UICONTROL default] 양식의 속성을 상속합니다. | |
-| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오용 스키마 양식. |
-| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png` 등 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF을 가진 자산의 스키마 양식입니다.</li></ul> |
-| | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | `application/pdf` 및 `application/zip`과(와) 같은 MIME 유형의 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]: 하위 유형 PDF이 있는 에셋의 스키마 양식입니다. |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오에 대한 스키마 양식. |
+| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png`과(와) 같은 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음과 같은 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF의 자산에 대한 스키마 양식입니다.</li></ul> |
+| | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | `application/pdf` 및 `application/zip`과(와) 같은 MIME 유형의 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]: PDF 하위 유형의 자산에 대한 스키마 양식입니다. |
 | | <ul><li>[!UICONTROL 비디오]</li></ul> | `video/avi` 및 `video/mp4`과(와) 같은 MIME 유형의 비디오 자산에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] | | [콘텐츠 조각에 대한 스키마 양식](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL 양식] | | 이 스키마 양식은 [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md)과(와) 관련이 있습니다. |
-| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 부분 및 에셋에 대한 스키마 양식입니다. |
+| [!UICONTROL ugc_contentfragment] | | 소셜 미디어에서 Experience Manager에 통합된 사용자 생성 콘텐츠 조각 및 에셋에 대한 스키마 양식입니다. |
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ ht-degree: 8%
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그를 추가합니다. |
 | [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
-| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 자산이 저장될 때 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
 | [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
 | [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
@@ -118,7 +118,7 @@ ht-degree: 8%
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset&#39;s metadata node as the property `dc:title`.
 
-* `./jcr:created`: 에셋의 생성 날짜 및 시간을 저장합니다. 보호 속성입니다. 이러한 속성을 구성하는 경우, Adobe은 해당 속성을 편집 비활성화로 표시할 것을 권장합니다. Otherwise, the error &quot;Asset(s) failed to modify&quot; occurs when you save the asset&#39;s properties.
+* `./jcr:created`: 에셋의 생성 날짜 및 시간을 저장합니다. 보호 속성입니다. 이러한 속성을 구성하는 경우 Adobe에서 해당 속성을 편집 비활성화로 표시하는 것이 좋습니다. Otherwise, the error &quot;Asset(s) failed to modify&quot; occurs when you save the asset&#39;s properties.
 
 구성 요소가 메타데이터 스키마 양식에 제대로 표시되도록 하려면 속성 경로에 공백을 포함해서는 안 됩니다.
 
@@ -134,7 +134,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->[!UICONTROL 숨김 필드] 구성 요소에 이러한 특성이 포함되어 있지 않습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성이 포함됩니다. 숨김 필드 구성 요소에 대한 값은 에셋이 저장될 때마다 POST 매개 변수로 전송됩니다. 에셋의 메타데이터로 저장되지 않습니다.
+>[!UICONTROL 숨김 필드] 구성 요소에 이러한 특성이 포함되어 있지 않습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성이 포함됩니다. 숨겨진 필드 구성 요소의 값은 자산이 저장될 때마다 POST 매개 변수로 전송됩니다. 에셋의 메타데이터로 저장되지 않습니다.
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. From the **[!UICONTROL Filters]** panel, expand the **[!UICONTROL Metadata Validation]** predicate and select the **[!UICONTROL Invalid]** option. The search results display assets missing mandatory metadata that you configured through the schema form.
 
@@ -162,7 +162,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
 ![메타데이터 스키마 편집기를 사용하여 탭을 추가하거나 삭제](assets/metadata-schema-form-new-tab.png)
 
-## 연속 메타데이터 {#cascading-metadata}
+## 계단식 메타데이터 {#cascading-metadata}
 
 에셋의 메타데이터 정보를 캡처할 때, 사용자는 다양한 이용 가능한 필드들의 정보를 제공한다. 특정 메타데이터 필드나 다른 필드에서 선택한 옵션에 따라 달라지는 필드 값을 표시할 수 있습니다. 이러한 메타데이터의 조건부 표시를 계단식 메타데이터라고 합니다. 즉, 특정 메타데이터 필드/값과 하나 이상의 필드 및/또는 해당 값 사이에 종속성을 만들 수 있습니다.
 
@@ -381,5 +381,6 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
    >
    >메타데이터 유효성 검사는 리소스를 많이 사용하며 시스템 성능에 영향을 줄 수 있습니다. 그에 따라 검사를 예약합니다. 서버가 부하를 처리할 수 없는 경우 이 작업을 비활성화하십시오.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

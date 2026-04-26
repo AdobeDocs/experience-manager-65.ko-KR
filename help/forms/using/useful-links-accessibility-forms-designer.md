@@ -6,17 +6,17 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 17db72f8-32ff-459a-ad54-c417fa9ab62f
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 3%
 
 ---
-
 
 # 유용한 링크
 
 * Adobe 접근성 리소스 센터: www.adobe.com/accessibility
 * WCAG 1.0 표준: http://www.w3.org/TR/WAI-WEBCONTENT/
 * 미국 섹션 508의 표준: http://www.section508.gov/index.cfm?FuseAction=ContentGID=12
-* 웹 컨텐츠 액세스 가능성 지침 1.0에 대한 HTML 기법: http://www.w3.org/TR/WCAG10-HTML-TECHS/
+* 웹 컨텐츠 액세스 가능성 지침을 위한 HTML 기술 1.0: http://www.w3.org/TR/WCAG10-HTML-TECHS/

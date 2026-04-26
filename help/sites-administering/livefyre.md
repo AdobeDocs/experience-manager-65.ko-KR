@@ -1,6 +1,6 @@
 ---
-title: Livefyre와 통합하기
-description: Livefyre의 업계 최고 큐레이션 기능을 AEM 6.5 인스턴스와 통합하여 소셜 네트워크에서 중요한 사용자 생성 콘텐츠(UGC)를 몇 분 만에 사이트에 게시할 수 있는 방법을 알아봅니다.
+title: Livefyre와 통합
+description: Livefyre의 업계 최고 큐레이션 기능을 AEM 6.5 인스턴스와 통합하여 소셜 네트워크에서 중요한 사용자 생성 컨텐츠(UGC)를 몇 분 만에 사이트에 게시할 수 있는 방법을 알아봅니다.
 contentOwner: ind14750
 content-type: reference
 topic-tags: integration
@@ -9,20 +9,21 @@ exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 13%
+source-wordcount: '55'
+ht-degree: 10%
 
 ---
 
-# Livefyre와 통합하기{#integrating-with-livefyre}
+# Livefyre와 통합{#integrating-with-livefyre}
 
 >[!IMPORTANT]
 >
->[Adobe Livefyre는 2021년 11월 30일에 공식적으로 서비스가 종료됩니다](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=ko).
+>[Adobe Livefyre는 2021년 11월 30일부터 공식적으로 서비스가 종료됩니다](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
-<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+<!--
+Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
 ## Getting Started {#getting-started}
 
@@ -49,7 +50,7 @@ AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package on
 
    Your Livefyre-AEM package is now installed. Before you can begin using the integration features, you must Configure AEM to use Livefyre.
 
-   For more information and release notes on feature packs, see [Feature Packs](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html?lang=ko).
+   For more information and release notes on feature packs, see [Feature Packs](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
 
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
@@ -100,7 +101,7 @@ The default authentication integration may not be perfect for every site. To bes
 1. Using CRXDE Lite, copy */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
 1. Edit and save */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* to implement a Livefyre Auth Delegate that meets your needs.
 
-   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=ko).
+   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
 
 ## Use Livefyre with AEM Sites {#use-livefyre-with-aem-sites}
 
@@ -108,7 +109,7 @@ The default authentication integration may not be perfect for every site. To bes
 
 Before adding Livefyre components to a page within Sites, you must enable Livefyre for the page by either inheriting a Livefyre cloud configuration from a parent page or by adding the configuration directly to the page. Refer to your implementation for how to include cloud services on your site.
 
-Once Livefyre is enabled for the page, containers must be configured to allow Livefyre components. See [Configuring Components in Design Mode](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html?lang=ko) for instructions on how to enable different components.
+Once Livefyre is enabled for the page, containers must be configured to allow Livefyre components. See [Configuring Components in Design Mode](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) for instructions on how to enable different components.
 
 >[!NOTE]
 >
@@ -123,7 +124,7 @@ Once Livefyre is enabled for the page, containers must be configured to allow Li
 
    If embedding an existing app, AEM asks you to select the App. If creating an App, the App must be populated before any content appears. The App will be created in the Livefyre site and network selected when Livefyre cloud configuration was enabled for the page.
 
-   For more information on inserting components, see [Editing Page Content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=ko).
+   For more information on inserting components, see [Editing Page Content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
 
 ### Edit a Livefyre Component for an AEM Page. {#edit-a-livefyre-component-for-an-aem-page}
 
@@ -142,7 +143,7 @@ You can import Twitter and Instagram user-generated content (UGC) from Livefyre 
 
 >[!NOTE]
 >
->Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html?lang=ko) for more information.
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
 To import UGC into AEM Assets:
 
@@ -230,4 +231,5 @@ After you import the product catalog, the products show up in real time in your 
 | Single Card |X |X |X |X |
 | Storify 2 |  |X |X |X |
 | Trending |  |X |X |X |
-| Upload Button |  |X |X |X | -->
+| Upload Button |  |X |X |X |
+-->

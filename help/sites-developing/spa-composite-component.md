@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -181,4 +181,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함됩니다.
+`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) 여기서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1379'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Autho
 
 다음 3분 25초 길이의 비디오에서는 AEM의 AI Assistant에 대한 단계별 연습을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475365/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEM에서 AI Assistant 액세스{#get-access}
 
@@ -115,7 +115,8 @@ AEM의 AI Assistant로부터 가장 정확한 응답을 받으려면 명확성�
 
 ## AEM에서 AI Assistant 사용 {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -128,9 +129,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### AEM 대화에서 AI 도우미 시작
@@ -198,7 +200,8 @@ AEM의 AI 도우미에는 지원되는 주제와 범주를 탐색하는 데 도�
 * **AEM의 AI 도우미가 교육 데이터에 개인 정보를 사용합니까?**\
   아니요. AEM의 AI Assistant는 교육 목적으로 개인 정보를 사용하지 않습니다. 이름이나 연락처 세부 정보를 포함하여 자신 또는 다른 사람에 대한 개인 정보를 AEM의 AI 어시스턴트와 공유하지 마십시오.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

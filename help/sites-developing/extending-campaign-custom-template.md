@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 9%
 
 ---
 
 
 # Adobe Campaign 양식 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿 만들기{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-이 페이지에서는 Geometrixx-outdoors 템플릿([)이 구현되는 방식을 검사하여 &#x200B;](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign 양식`/apps/geometrixx-outdoors/components/page_campaign_profile` 구성 요소를 사용하는 사용자 지정 페이지 템플릿을 만드는 방법에 대해 설명하고 사용자 지정 템플릿을 만들 때 필요한 중요한 정보를 안내합니다.
+이 페이지에서는 Geometrixx-outdoors 템플릿(`/apps/geometrixx-outdoors/components/page_campaign_profile`)이 구현되는 방식을 검사하여 [Adobe Campaign 양식](/help/sites-authoring/adobe-campaign-components.md) 구성 요소를 사용하는 사용자 지정 페이지 템플릿을 만드는 방법에 대해 설명하고 사용자 지정 템플릿을 만들 때 필요한 중요한 정보를 안내합니다.
 
 >[!CAUTION]
 >

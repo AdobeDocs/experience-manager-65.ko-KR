@@ -1,19 +1,20 @@
 ---
-title: 양식 접근성 테스트 기법
+title: 양식 접근성 테스트를 위한 기술
 description: Forms Designer에서 양식 액세스 가능성을 테스트하는 방법에 대해 알아봅니다
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# 양식 접근성 테스트 기법
+# 양식 접근성 테스트를 위한 기술
 
 양식에 다양한 사용자가 액세스할 수 있도록 하려면 다양한 보조 기술을 사용하여 양식을 테스트해야 합니다. 이 섹션에 설명된 기술을 사용하여 양식을 간단하고 저렴하게 테스트할 수 있습니다.
 키보드만 사용하여 양식을 채울 수 있는지 확인합니다. 전체 양식을 작성하고 모든 필드와 단추를 테스트하십시오. 양식을 작성할 때 다음 질문에 대한 답변을 기반으로 개선이 필요한지 여부를 결정합니다.
@@ -33,6 +34,3 @@ ht-degree: 0%
 * 양식의 일부가 보이지 않거나, 인식할 수 없거나, 사용하기 어렵게 됩니까?
 * 흰색 배경에 검정색으로 계속 표시되는 영역이 있습니까?
 * 요소의 크기가 적절하지 않거나 잘렸습니까?
-
-
-

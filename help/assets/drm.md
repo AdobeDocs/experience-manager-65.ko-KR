@@ -1,5 +1,5 @@
 ---
-title: 에셋 Digital Rights Management
+title: Digital Rights Management of assets
 description: ' [!DNL Experience Manager]에서 사용 허가된 자산에 대한 자산 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 role: User, Admin
@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. [!DNL Adobe Experience Manager Assets]은(는) [!DNL Experience Manager] 플랫폼과 완전히 통합되므로 자산 만료 정보 및 자산 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 자산과 연결할 수도 있습니다.
@@ -92,8 +92,8 @@ ht-degree: 8%
 [!DNL Assets] 콘솔에서는 자산의 다양한 상태를 표시할 수 있습니다. 특정 에셋의 현재 상태에 따라 해당 카드 보기에는 만료됨, 게시됨, 승인됨, 거부됨 등과 같은 에셋 상태를 설명하는 레이블이 표시됩니다.
 
 1. [!DNL Assets] 사용자 인터페이스에서 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL Publish]**&#x200B;를 클릭합니다. 도구 모음에 **Publish**&#x200B;이 표시되지 않으면 도구 모음에서 **[!UICONTROL 자세히]**&#x200B;를 클릭하고 **[!UICONTROL Publish]** ![게시 옵션](assets/do-not-localize/publish-globe.png) 옵션을 찾습니다.
-1. 메뉴에서 **[!UICONTROL Publish]**&#x200B;을(를) 선택한 다음 확인 대화 상자를 닫습니다.
+1. 도구 모음에서 **[!UICONTROL 게시]**&#x200B;를 클릭합니다. 도구 모음에 **게시**&#x200B;가 표시되지 않으면 도구 모음에서 **[!UICONTROL 자세히]**&#x200B;를 클릭하고 **[!UICONTROL 게시]** ![게시 옵션](assets/do-not-localize/publish-globe.png) 옵션을 찾습니다.
+1. 메뉴에서 **[!UICONTROL 게시]**&#x200B;를 선택한 다음 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 에셋의 게시 상태는 카드 보기의 에셋 썸네일 하단에 나타납니다. 목록 보기의 게시됨 열에는 에셋이 게시된 시간이 표시됩니다.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -119,7 +119,7 @@ ht-degree: 8%
 
 1. 상태에 따라 에셋을 검색하려면 **[!UICONTROL 검색]** ![검색 옵션](assets/do-not-localize/search_icon.png)을 클릭하여 Omnisearch 막대를 표시합니다.
 1. `Return`을(를) 선택하고 [!DNL Experience Manager]을(를) 클릭하여 검색 패널을 표시합니다.
-1. 검색 패널에서 **[!UICONTROL Publish 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시됨]**&#x200B;을(를) 선택하여 [!DNL Assets]에서 게시된 에셋을 검색합니다.
+1. 검색 패널에서 **[!UICONTROL 게시 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시됨]**&#x200B;을(를) 선택하여 [!DNL Assets]에서 게시된 에셋을 검색합니다.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -127,7 +127,7 @@ ht-degree: 8%
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. To search for assets based on their expiration status, select **[!UICONTROL Expiry Status]** in the Search panel and choose the appropriate option.
+1. 자산의 만료 상태를 기준으로 검색하려면, 검색 패널에서 **[!UICONTROL 만료 상태]**&#x200B;를 선택하고 적절한 옵션을 지정하십시오.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -146,13 +146,13 @@ ht-degree: 8%
 다음 조건 중 하나가 충족되면 자산이 보호되는 것으로 간주됩니다.
 
 * 에셋 메타데이터 속성 `xmpRights:WebStatement`은(는) 에셋에 대한 라이선스 계약이 포함된 페이지의 경로를 가리킵니다.
-* 에셋 메타데이터 HTML `adobe_dam:restrictions`의 값이 사용권 계약을 지정하는 원시 속성입니다.
+* 에셋 메타데이터 속성 `adobe_dam:restrictions`의 값은 라이선스 계약을 지정하는 원시 HTML입니다.
 
 >[!NOTE]
 >
 >[!DNL Experience Manager]의 이전 릴리스에서 라이선스를 저장하는 데 사용된 위치 `/etc/dam/drm/licenses`은(는) 더 이상 사용되지 않습니다.
 >
->Adobe 라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅하는 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses` 아래에 저장하는 것이 좋습니다.
+>라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅한 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses` 아래에 저장하는 것이 좋습니다.
 
 ### DRM 보호 에셋 다운로드 {#downloading-drm-assets}
 

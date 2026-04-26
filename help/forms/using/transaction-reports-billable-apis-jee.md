@@ -6,10 +6,10 @@ feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 3%
+source-wordcount: '805'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 트랜잭션으로 분류된 모든 API 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
 
 * 한 형식에서 다른 형식으로 문서 변환
-* 동적 PDF 문서 펼치기
+* 동적 PDF 문서 병합
 * 대화형 PDF 문서를 다른 PDF 문서와 병합
 
 과금 API는 페이지 수, 문서 또는 양식의 길이 또는 렌더링된 문서의 최종 포맷을 고려하지 않습니다.
@@ -85,7 +85,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
   </tr>
   <tr>
    <td><a>PDF 최적화</a></td>
-   <td>품질에 영향을 주지 않고 불필요한 메타데이터를 제거하여 파일 크기를 줄이도록 PDF을 최적화합니다.</td>
+   <td>PDF을 최적화하여 품질에 영향을 주지 않고 불필요한 메타데이터를 제거하여 파일 크기를 줄입니다.</td>
    <td>전환<br /> </td>
   </tr>
  </tbody>
@@ -145,7 +145,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -197,7 +197,8 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -224,7 +225,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 
 -->
 
-### PDF 서비스 변환 {#convert-pdf-service}
+### PDF 서비스 전환 {#convert-pdf-service}
 
 <table>
  <tbody>
@@ -235,7 +236,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
   </tr>
   <tr>
    <td><a>toImage2</a></td>
-   <td>PDF 문서를 이미지 문서 목록으로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG 2K, PNG 및 TIFF입니다.</td>
+   <td>PDF 문서를 이미지 문서 목록으로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2K, PNG 및 TIFF입니다.</td>
    <td>문서 변환</td>
   </tr>
   <tr>
@@ -251,7 +252,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
  </tbody>
 </table>
 
-### 바코드 Forms 서비스 {#barcoded-forms-service}
+### 바코드 양식 서비스 {#barcoded-forms-service}
 
 <table>
  <tbody>
@@ -306,14 +307,14 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 </table>
 
 다음 작업 중 하나 이상을 수행하면 호출 API 사용이 트랜잭션으로 계산됩니다.
-1. PDF 형식이 아닌 형식에서 PDF 형식으로 변환. 예를 들어 XDP 형식에서 PDF 형식으로 변환됩니다.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 비 PDF 형식에서 PDF 형식으로 변환. 예를 들어 XDP 형식에서 PDF 형식으로 변환할 수 있습니다.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. PDF 형식에서 PDF/A 형식으로 변환.
-1. PDF 형식에서 PDF 형식이 아닌 형식으로 변환. 예제에서는 PDF 형식에서 이미지 형식으로 변환하거나 PDF 형식에서 텍스트 형식으로 변환할 수 있습니다.
+1. PDF 형식에서 PDF 형식이 아닌 형식으로 변환. 예를 들면 PDF에서 이미지 형식으로 변환하거나 PDF에서 텍스트 형식으로 변환할 수 있습니다.
 
 >[!NOTE]
 >
 >* 어셈블러 서비스의 호출 API는 입력에 따라 다른 서비스의 과금 가능한 API를 내부적으로 호출할 수 있습니다. 따라서 `invoke API`은(는) 없음, 단일 또는 여러 트랜잭션으로 간주할 수 있습니다. 계산되는 트랜잭션 수는 입력 및 호출된 내부 API에 따라 다릅니다.
->* `invoke` 및 `invokeDDX`과(와) 같은 어셈블러 서비스를 사용하여 생성된 단일 PDF 문서는 없음, 단일 또는 여러 트랜잭션으로 처리할 수 있습니다. 계산되는 트랜잭션 수는 제공된 <!--DDX--> 코드에 따라 다릅니다.
+>* `invoke` 및 `invokeDDX`과(와) 같은 어셈블러 서비스를 사용하여 생성된 단일 PDF 문서는 없음, 단일 또는 다중 트랜잭션으로 처리할 수 있습니다. 계산되는 트랜잭션 수는 제공된 <!--DDX--> 코드에 따라 다릅니다.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -367,7 +368,8 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

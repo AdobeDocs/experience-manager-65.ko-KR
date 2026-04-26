@@ -5,10 +5,10 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 88%
+source-wordcount: '1993'
+ht-degree: 87%
 
 ---
 
@@ -66,7 +66,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 **권장 사항**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
 
 **추가 참조**
 
@@ -84,7 +84,7 @@ GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 
@@ -105,7 +105,8 @@ $ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+<!--
+or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache).
 -->
 
 **추가 참조**
@@ -183,11 +184,11 @@ JCR 필터(쿼리 제한 형식)를 적용한 후에 AEM 필터링을 위해 결
 AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 * [제한/오프셋 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-목록 쿼리에 사용되며, `articleList` 등의 `List`로 끝납니다.
+목록 쿼리에 사용됩니다. `List`(예: `articleList`)로 끝납니다.
 이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
-* [커서 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)(`first` 및 `after`로 표시)
-각 항목에 대한 고유 ID(커서라고도 함)를 제공합니다.
+* [커서 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)(`first` 및 `after`(으)로 표시)
+각 항목에 대한 고유한 ID를 제공합니다. 커서라고도 합니다.
 쿼리에서 사용자가 이전 페이지 마지막 항목의 커서와 페이지 크기(반환할 최대 항목 수)를 지정합니다.
 
   커서 기반 페이지 매김은 목록 기반 쿼리의 데이터 구조에 맞지 않기 때문에 AEM은 `Paginated` 쿼리 유형(예: `articlePaginated`)을 도입했습니다. 사용되는 데이터 구조 및 매개변수는 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)을 따릅니다.

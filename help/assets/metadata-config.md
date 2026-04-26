@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 3%
+source-wordcount: '2005'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -48,7 +49,7 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-제한을 변경하려면 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스하고 **[!UICONTROL Apache Sling POST 매개 변수 처리]** OSGi 구성에서 **[!UICONTROL 최대 요청 매개 변수]**&#x200B;의 값을 변경하십시오.
+제한을 변경하려면 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스하고 **[!UICONTROL Apache Sling 요청 매개 변수 처리]** OSGi 구성에서 **[!UICONTROL 최대 POST 매개 변수]**&#x200B;의 값을 변경하십시오.
 
 ## 메타데이터 프로필 {#metadata-profiles}
 
@@ -73,7 +74,7 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 
    ![메타데이터 프로필의 속성에 매핑](assets/metadata-profile-setting-map-property.png)
 
-   **[!UICONTROL 속성에 매핑]**&#x200B;에 지정한 값이 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 `./jcr:content/metadata/dc:desc`을(를) **[!UICONTROL 속성에 매핑]**&#x200B;의 이름으로 지정하는 경우 [!DNL Assets]은(는) 자산의 메타데이터 노드에 값 `dc:desc`을(를) 저장합니다. Adobe은 메타데이터 스키마의 특정 속성에 필드를 한 개만 매핑할 것을 권장합니다. 그렇지 않으면 속성에 매핑된 최신 추가 필드가 시스템에 의해 선택됩니다.
+   **[!UICONTROL 속성에 매핑]**&#x200B;에 지정한 값이 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 `./jcr:content/metadata/dc:desc`을(를) **[!UICONTROL 속성에 매핑]**&#x200B;의 이름으로 지정하는 경우 [!DNL Assets]은(는) 자산의 메타데이터 노드에 값 `dc:desc`을(를) 저장합니다. Adobe에서는 메타데이터 스키마의 특정 속성에 필드를 매핑하는 것을 권장합니다. 그렇지 않으면 속성에 매핑된 최신 추가 필드가 시스템에 의해 선택됩니다.
 
    * **[!UICONTROL 기본값]**: 메타데이터 구성 요소의 기본값을 추가하려면 이 속성을 사용합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값은 자산의 메타데이터 노드에서 `dc:desc` 속성에 할당됩니다.
 
@@ -117,8 +118,9 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 1. 도구 모음에서 **[!UICONTROL 메타데이터 프로필 삭제]**&#x200B;를 클릭합니다.
 1. 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 클릭하여 삭제 작업을 확인합니다. 메타데이터 프로필이 목록에서 삭제됩니다.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -192,7 +194,7 @@ To apply a metadata profile globally, follow these steps:
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그를 추가합니다. |
-| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 에셋이 저장될 때 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 자산이 저장될 때 POST 매개 변수로 전송됩니다. |
 
 #### 양식 항목 편집 {#editing-form-items}
 
@@ -200,13 +202,13 @@ To apply a metadata profile globally, follow these steps:
 
 **[!UICONTROL 필드 레이블]**: 폴더의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
-**[!UICONTROL 속성에 매핑]**: 이 속성은 저장되는 CRX 저장소의 폴더 노드의 상대 경로를 지정합니다. &quot;**&quot;(으)로 시작합니다./**&quot;은(는) 경로가 폴더의 노드 아래에 있음을 나타냅니다.
+**[!UICONTROL 속성에 매핑]**: 이 속성은 저장되는 CRX 저장소의 폴더 노드의 상대 경로를 지정합니다. &quot;**./**&quot;(으)로 시작하며, 이는 경로가 폴더의 노드 아래에 있음을 나타냅니다.
 
 다음은 이 속성에 유효한 값입니다.
 
 * `./jcr:content/metadata/dc:title`: 폴더의 메타데이터 노드에 있는 값을 속성 `dc:title`(으)로 저장합니다.
 
-* `./jcr:created`: 폴더의 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우, 보호되므로 Adobe은 해당 속성을 편집 비활성화로 표시하는 것을 권장합니다. 그렇지 않으면 자산의 속성을 저장할 때 오류 &#39;`Asset(s) failed to modify`&#39;이(가) 발생합니다.
+* `./jcr:created`: 폴더의 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우, Adobe에서는 보호되므로 이를 [편집 비활성화]로 표시하는 것이 좋습니다. 그렇지 않으면 자산의 속성을 저장할 때 오류 &#39;`Asset(s) failed to modify`&#39;이(가) 발생합니다.
 
 구성 요소가 메타데이터 스키마 양식에 제대로 표시되도록 하려면 속성 경로에 공백을 포함하지 마십시오.
 
@@ -278,7 +280,7 @@ Open the properties for a folder configured with a folder metadata schema. **[!U
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=ko).
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [메타데이터, 이미지 및 비디오를 처리할 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 자산을 구성하는 모범 사례](/help/assets/organize-assets.md).
 >* [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).

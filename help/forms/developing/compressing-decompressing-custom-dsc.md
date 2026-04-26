@@ -5,14 +5,14 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 
-# JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제 {#compressing-decompressing-files}
+# JEE Custom DSC에서 AEM Forms를 사용하여 파일 압축 및 압축 풀기 {#compressing-decompressing-files}
 
 ## 전제 조건 지식 {#prerequisites}
 
@@ -142,9 +142,11 @@ public class ZIPService {
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>
@@ -218,9 +220,9 @@ public class ZIPService {
 
 * 주어진 폴더에서 모든 파일을 찾아 압축 문서로 반환합니다.
 
-* 압축을 푼 후에 리더를 확장할 수 있는 여러 PDF 문서가 포함된 ZIP 파일을 제공하십시오. 이를 위해서는 AEM Forms on JEE Reader 확장 모듈이 필요합니다.
+* 압축을 푼 후에 리더를 확장할 수 있는 여러 PDF 문서가 포함된 ZIP 파일을 제공합니다. 이를 위해서는 JEE Reader 확장 모듈의 AEM Forms이 필요합니다.
 
-* PDF 생성 서비스를 사용하여 압축 풀기 및 PDF 문서로 변환할 수 있는 유형이 다른 문서가 포함된 ZIP 파일을 제공합니다.
+* PDF 생성 서비스를 사용하여 PDF 문서로 압축 풀기 및 변환할 수 있는 다른 유형의 문서가 포함된 ZIP 파일을 제공합니다.
 
 * 정책은 문서 목록을 보호하고 ZIP 파일로 반환합니다.
 

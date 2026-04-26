@@ -7,10 +7,10 @@ feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 4%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서 자신만 사용할 수 있는 개인 폴더를 만들 수 있습니다. 이 개인 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정한 권한 수준에 따라 폴더에서 다양한 작업(예: 폴더 내 에셋 보기 또는 에셋 편집)을 수행할 수 있습니다.
@@ -85,7 +85,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->CRXDE Lite에서 개인 폴더를 삭제하면 저장소에 중복된 사용자 그룹이 남게 됩니다.
+>CRXDE Lite에서 개인 폴더를 삭제하면 저장소에 중복 사용자 그룹이 남아 있습니다.
 
 >[!NOTE]
 >

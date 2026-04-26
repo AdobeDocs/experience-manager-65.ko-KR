@@ -5,16 +5,16 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 93%
+source-wordcount: '792'
+ht-degree: 91%
 
 ---
 
 # GraphiQL IDE 사용 {#graphiql-ide}
 
-표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE의 구현은 AEM(Adobe Experience Manager)의 GraphQL API와 함께 사용할 수 있습니다.
+표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE의 구현은 Adobe Experience Manager(AEM)의 GraphQL API와 함께 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 93%
 * 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
 * **[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)** 제작 및 액세스
-* 쿼리를 실행하여 결과를 즉시 확인
+* 바로 결과를 조회하기 위해 쿼리 실행
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
 * **지속 쿼리** 게시 또는 게시 취소 (예: `dev-publish`에/에서)
@@ -135,18 +135,18 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## 지속 쿼리 게시 {#publishing-persisted-queries}
 
-목록(왼쪽 패널)에서 [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)를 선택하면 **Publish** 및 **게시 취소** 액션을 사용할 수 있습니다. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 게시 환경(예: `dev-publish`)에 맞게 액션을 활성화합니다.
+목록(왼쪽 패널)에서 [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)를 선택하면 **게시** 및 **게시 취소** 액션을 사용할 수 있습니다. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 게시 환경(예: `dev-publish`)에 맞게 액션을 활성화합니다.
 
 >[!NOTE]
 >
->지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 기본값은 2시간(7,200초)입니다.
+>지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value}에 대한 기본값은 2시간(7,200초)입니다.
 
 ## URL을 복사하여 쿼리에 직접 액세스합니다. {#copy-url}
 
 **URL 복사** 옵션을 통해 지속 쿼리에 직접 액세스하고 결과를 조회하는 데 사용되는 URL을 복사하여 쿼리를 시뮬레이션할 수 있습니다. 그런 다음 테스트에 사용할 수 있습니다(예: 브라우저에서 액세스).
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

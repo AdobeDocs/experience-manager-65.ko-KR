@@ -8,16 +8,17 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 0%
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
-# OSGi의 AEM Forms에 대한 거래 보고서 {#transaction-reports-overview}
+# OSGi의 AEM Forms에 대한 트랜잭션 보고서 {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,7 +26,8 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
 거래 기록은 기본적으로 비활성화되어 있습니다. AEM 웹 콘솔에서 [트랜잭션 기록을 활성화](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports)할 수 있습니다. 작성자, 처리 또는 게시 인스턴스에 대한 거래 보고서를 볼 수 있습니다. 작성자 또는 처리 인스턴스에 대한 모든 트랜잭션의 집계된 합계에 대한 트랜잭션 보고서를 봅니다. 보고서가 실행되는 게시 인스턴스에서만 수행되는 모든 트랜잭션의 수에 대한 게시 인스턴스의 트랜잭션 보고서를 봅니다.
 
@@ -35,7 +37,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 트랜잭션은 지정된 기간(버퍼 초기화 시간 + 역방향 복제 시간) 동안 버퍼에 남아 있습니다. 기본적으로 거래 수가 거래 보고서에 반영되는 데 약 90초가 소요됩니다.
 
-PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기 또는 비표준 양식 제출 방법과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms은 이러한 트랜잭션을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 기록합니다.
+PDF 양식 제출, 에이전트 UI를 사용하여 대화형 통신 미리 보기 또는 비표준 양식 제출 방법과 같은 작업은 트랜잭션으로 계산되지 않습니다. AEM Forms은 이러한 트랜잭션을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 기록합니다.
 
 ## 지원되는 토폴로지 {#supported-topology}
 

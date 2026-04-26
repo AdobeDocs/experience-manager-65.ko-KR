@@ -8,9 +8,9 @@ feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '4019'
 ht-degree: 15%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -42,12 +42,12 @@ ht-degree: 15%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹에 속합니다.
-* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. as a Cloud Service [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager]에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service] (으)로 작동하는 방법에 대한 자세한 내용은 [Experience Manageras a Cloud Service 의 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=ko)을 참조하십시오.
+* [!DNL Adobe Experience Manager] 배포 형식의 경우 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets]은(는) [!DNL Experience Manager] as a Cloud Service에서 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service]&#x200B;(으)로 작동하는 방식에 대한 자세한 내용은 [Experience Manager as a Cloud Service에 연결된 Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)을(를) 참조하십시오.
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-  | AMS **의**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
+  | AMS **의**[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
@@ -74,7 +74,7 @@ ht-degree: 15%
 
 Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experience Manager [!DNL Sites] 배포에 연결할 수 있습니다. 그러나 원격 DAM 배포가 하나만 있는 [!DNL Sites] 배포에 연결할 수 있습니다.
 
-원격 DAM 배포에 연결할 최적의 사이트 인스턴스 수를 평가합니다. Adobe은 연결된 각 사이트 인스턴스가 원격 DAM의 데이터 트래픽에 기여하므로 사이트 인스턴스를 배포에 점진적으로 연결하고 원격 DAM에 성능에 영향을 주지 않는지 테스트할 것을 권장합니다.
+원격 DAM 배포에 연결할 최적의 사이트 인스턴스 수를 평가합니다. Adobe에서는 연결된 각 사이트 인스턴스가 원격 DAM의 데이터 트래픽에 기여하므로 사이트 인스턴스를 배포에 점진적으로 연결하고 원격 DAM에서 성능에 영향을 주지 않는지 테스트할 것을 권장합니다.
 
 다음 다이어그램은 지원되는 시나리오를 보여 줍니다.
 
@@ -93,7 +93,6 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 1. 기존 [!DNL Sites] 배포에 액세스하거나 다음 명령을 사용하여 배포를 만드십시오.
 
    1. JAR 파일의 폴더에서 터미널에서 다음 명령을 실행하여 각 [!DNL Experience Manager] 서버를 만듭니다.
-
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. 몇 분 후에 [!DNL Experience Manager] 서버가 성공적으로 시작됩니다. 이 [!DNL Sites] 배포를 웹 페이지 작성을 위한 로컬 시스템으로 간주합니다(예: `https://[local_sites]:4502`).
@@ -105,7 +104,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
    1. 구성의 **[!UICONTROL 제목]**.
    1. **[!UICONTROL 원격 DAM URL]**&#x200B;은(는) `https://[assets_servername]:[port]` 형식의 [!DNL Assets] 위치의 URL입니다.
    1. DAM 배포자의 자격 증명(기술 사용자)
-   1. **[!UICONTROL 탑재 지점]** 필드에 [!DNL Experience Manager]이(가) 자산을 가져오는 로컬 [!DNL Experience Manager] 경로를 입력합니다. 예를 들어 `remoteassets` 폴더입니다. DAM에서 가져온 자산은 [!DNL Sites] 배포의 이 폴더에 저장됩니다.
+   1. **[!UICONTROL 탑재 지점]** 필드에 [!DNL Experience Manager]이(가) 자산을 가져오는 로컬 [!DNL Experience Manager] 경로를 입력합니다. 예를 들면 `remoteassets` 폴더를 입력합니다. DAM에서 가져온 자산은 [!DNL Sites] 배포의 이 폴더에 저장됩니다.
    1. **[!UICONTROL 로컬 사이트 URL]**&#x200B;은(는) [!DNL Sites] 배포의 위치입니다. [!DNL Assets] 배포에서는 이 값을 사용하여 이 [!DNL Sites] 배포에서 가져온 디지털 자산에 대한 참조를 유지합니다.
    1. [!DNL Sites] 기술 사용자의 자격 증명입니다.
    1. **[!UICONTROL 원본 이진 전송 최적화 임계값]** 필드의 값은 원본 에셋(렌디션 포함)이 동기적으로 전송되는지 여부를 지정합니다. 파일 크기가 비교적 큰 자산이 비동기식으로 가장 잘 동기화되는 반면 파일 크기가 더 작은 Assets을 쉽게 가져올 수 있습니다. 값은 네트워크 기능에 따라 다릅니다.
@@ -119,9 +118,9 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
    1. [!DNL Sites] 배포에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 런처]**&#x200B;를 클릭합니다.
 
-   1. **[!UICONTROL DAM 자산 업데이트]** 및 **[!UICONTROL DAM 메타데이터 원본에 쓰기]**&#x200B;로 워크플로우를 사용하여 런처를 검색합니다.
+   1. **[!UICONTROL DAM 자산 업데이트]** 및 **[!UICONTROL DAM 메타데이터 원본에 쓰기]**&#x200B;로 워크플로를 사용하여 런처를 검색합니다.
 
-   1. 워크플로우 런처를 선택하고 작업 표시줄에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
+   1. 워크플로 런처를 선택하고 작업 표시줄에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
    1. [!UICONTROL 속성] 마법사에서 **[!UICONTROL 경로]** 필드를 다음 매핑으로 변경하여 마운트 지점 **[!UICONTROL connectedassets]**&#x200B;을(를) 제외하도록 정규식을 업데이트합니다.
 
@@ -135,16 +134,16 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
    >
    >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 렌디션을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
 
-1. [!DNL Assets] 배포의 CORS 구성에서 [!DNL Sites] 배포를 허용된 원본으로 추가합니다. 자세한 내용은 [CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)를 참조하십시오.
+1. [!DNL Assets] 배포의 CORS 구성에서 [!DNL Sites] 배포를 허용된 원본으로 추가합니다. 자세한 내용은 [CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)를 참조하십시오.
 
 1. [동일한 사이트 쿠키 지원 구성](/help/sites-administering/same-site-cookie-support.md).
 
 구성된 [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결을 확인할 수 있습니다.
 
-![연결된 Assets의 연결 테스트 구성 [!DNL Sites]](assets/connected-assets-multiple-config.png)
+연결된 Assets의 ![연결 테스트 구성됨 [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *그림: 연결된 Assets의 연결 테스트 구성 [!DNL Sites].*
 
-## Dynamic Media 에셋 사용 {#dynamic-media-assets}
+## Dynamic Media 자산 사용 {#dynamic-media-assets}
 
 
 연결된 Assets을 사용하면 Sites 페이지의 원격 DAM 배포에서 [!DNL Dynamic Media]에 의해 처리된 이미지 자산을 사용할 수 있으며 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 사용할 수 있습니다.
@@ -163,18 +162,18 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 [!DNL Assets] 및 [!DNL Sites] 배포에서 [!DNL Dynamic Media]을(를) 구성하려면:
 
-1. 원격 [!DNL Assets] 작성자 배포에서 [!DNL Dynamic Media]을(를) 전역 구성으로 활성화하고 구성합니다. Dynamic Media을 구성하려면 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
-원격 [!DNL Assets] 배포의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 사용]**&#x200B;을 선택합니다.
+1. 원격 [!DNL Assets] 작성자 배포에서 [!DNL Dynamic Media]을(를) 전역 구성으로 활성화하고 구성합니다. Dynamic Media를 구성하려면 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
+원격 [!DNL Assets] 배포의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 활성화됨]**&#x200B;을(를) 선택합니다.
 
 1. [사이트 및 자산 배포 간 연결 구성](#configure-a-connection-between-sites-and-assets-deployments)에 설명된 대로 연결된 Assets 구성을 만듭니다. 또한 **[!UICONTROL Dynamic Media 연결된 Assets에 대한 원본 렌디션 가져오기]** 옵션을 선택하십시오.
 
 1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에서 [!DNL Dynamic Media]을(를) 구성합니다. 지침을 따라 [구성 [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)합니다.
 
    * 모든 구성에서 동일한 회사 이름을 사용합니다.
-   * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 사용 안 함]**&#x200B;을 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
-   * 로컬 [!DNL Sites]의 **[!UICONTROL Publish Assets]** 옵션에서 **[!UICONTROL 선택적 Publish]**&#x200B;을(를) 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
+   * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 비활성화됨]**&#x200B;을(를) 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
+   * 로컬 [!DNL Sites]의 **[!UICONTROL Assets 게시]** 옵션에서 **[!UICONTROL 선택적 게시]**&#x200B;를 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
 
-1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ko#dynamic-media). 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지에서 작성자가 [!DNL Dynamic Media]개의 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)에 [!DNL Dynamic Media]개의 이미지가 표시됩니다.
+1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지에서 작성자가 [!DNL Dynamic Media]개의 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)에 [!DNL Dynamic Media]개의 이미지가 표시됩니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -192,7 +191,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 1. [!DNL Sites] 배포의 오른쪽 상단 모서리에 있는 프로필 활성자에서 **[!UICONTROL 가장 대상]**&#x200B;을 클릭합니다. `ksaner`를 사용자 이름으로 지정하고 제공된 옵션을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 사이트]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;에서 We.Retail 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`에 액세스하여 페이지를 편집합니다.
 
-   페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 전환]**&#x200B;을 클릭합니다.
+   페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 토글]**&#x200B;을 클릭합니다.
 
 1. [!UICONTROL Assets] 탭(원격 콘텐츠 파인더)을 열고 **[!UICONTROL 연결된 Assets에 로그인]**&#x200B;을 클릭합니다.
 1. 자격 증명을 제공합니다(사용자 이름: `ksaner`, 암호: `password`). 이 사용자는 [!DNL Experience Manager] 배포 모두에 대한 작성 권한이 있습니다.
@@ -315,14 +314,14 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
-* 에셋 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [Assets 통찰력](/help/assets/asset-insights.md) 기능을 구성하십시오.
+* 에셋 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [Assets Insight](/help/assets/asset-insights.md) 기능을 구성하십시오.
 
-* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ko#configure-dialog)(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
+* 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)&#x200B;(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager]개의 구성 요소가 자산을 원본에 영향을 주지 않고 편집합니다. 다른 편집 작업은 허용되지 않습니다.
-* 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
+* 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및 [!DNL Experience Fragments]은(는) 지원되지 않습니다.
 * [!DNL Experience Manager]이(가) 메타데이터 스키마를 가져오지 않습니다. 즉, 가져온 모든 메타데이터가 표시되지 않을 수 있습니다. 스키마가 [!DNL Sites] 배포에서 별도로 업데이트되면 모든 메타데이터 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 [!DNL Sites] 작성자는 가져온 복사본에 대한 읽기 권한을 갖습니다.
@@ -340,7 +339,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 ### 사용 {#usage}
 
 * 작성할 때 원격 자산을 검색하고 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
-* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기] (으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
+* 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 [!UICONTROL 콘텐츠 파인더]에서 [!UICONTROL 페이지 편집기]&#x200B;(으)로 원격 자산을 끌어 다시 시도할 수 있습니다.
 * `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트할 에셋을 다시 가져오는 다른 방법은 없습니다.
 * 자산이 DAM에서 서비스 해제된 경우 [!DNL Sites]페이지에서 계속 사용됩니다.
@@ -358,7 +357,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
   ![시크릿 모드에서 Chrome 브라우저에 쿠키 오류가 발생했습니다](assets/chrome-cookies-incognito-dialog.png)
 
-* Experience Manager Sites as a Cloud Service 사이트 배포에서 Managed Services 원격 DAM 배포 Adobe에 액세스할 수 없는 경우 원격 DAM이 Dispatcher 구성에 다음 내용을 포함하도록 `"/etc/httpd/conf.d/available_vhosts`에서 사용할 수 있는 `aem_author.vhost` 파일을 업데이트하십시오.
+* Experience Manager Sites as a Cloud Service Sites 배포에서 Adobe Managed Services 원격 DAM 배포에 액세스할 수 없는 경우 원격 DAM에 대해 `"/etc/httpd/conf.d/available_vhosts`에서 사용할 수 있는 `aem_author.vhost` 파일을 업데이트하여 Dispatcher 구성에 다음 헤더를 포함하십시오.
 
   ```xml
   Header Set Access-Control-Allow-Origin <Local Sites instance host>

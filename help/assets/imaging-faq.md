@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 스마트 이미징 기본 정보 {#what-is-smart-imaging}
 
-스마트 이미징 기술은 Adobe AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
+스마트 이미징 기술은 Adobe AI 기능을 적용하고 기존 &quot;이미지 사전 설정&quot;에서 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
 이제 AVIF 및 WebP가 모두 지원되는 향상된 스마트 이미징을 통해 LCP(최대 콘텐츠풀 페인트)에 대한 더 나은 Google 코어 웹 바이탈 점수를 얻으십시오.
 
@@ -59,12 +59,14 @@ WebP 및 AVIF를 PNG와 비교하면, WebP의 경우 84%, AVIF의 경우 87%의 
 
 [차세대 이미지 형식(WebP 및 AVIF)을 사용한 이미지 최적화](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)도 참조하세요.
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 ## 스마트 이미징의 이점 {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -88,7 +90,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
 
@@ -203,7 +205,8 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -255,7 +258,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
       * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
          1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
          1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
@@ -266,7 +269,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
       * HTTP/2에서 작동하는 데 스마트 이미징이 필요한지 여부를 지정합니다.
 
 1. Adobe 고객 지원 센터는 요청된 스마트 이미징 기능을 기본적으로 활성화하므로 매개 변수를 URL에 수동으로 추가할 필요가 없습니다.
-1. Adobe 캐싱을 통해 성능을 극대화하려면 TTL(Time To Live)을 최소 24시간으로 설정하는 것이 좋습니다.
+1. 캐싱을 통해 성능을 극대화하려면 TTL(Time To Live)을 최소 24시간으로 설정하는 것이 좋습니다.
 TTL을 조정하려면 다음을 수행하십시오.
 
    1. **Dynamic Media Classic의 경우:**
@@ -337,8 +340,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 >
 >`X-Adobe-Smart-Imaging`의 값이 -1이고 WebP가 계속 배달 중인 경우 스마트 이미징이 활성화됩니다. 그러나 캐시가 오래되어 크기 이점이 계산되지 않았습니다. 이미지의 URL에서 `cache=update`(한 번만)을 사용하여 이 문제를 해결할 수 있습니다.
 >수정자 사용의 예:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
 
 +++
 

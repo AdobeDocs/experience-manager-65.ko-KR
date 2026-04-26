@@ -7,10 +7,10 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 9%
+source-wordcount: '797'
+ht-degree: 17%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 Assets 인사이트 기능을 사용하면 서드파티 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다. 이는 성능 및 인기에 대한 통찰력을 도출하는 데 도움이 됩니다.
 
-[!DNL Assets] Insights는 이미지에 대한 평가, 클릭 횟수 및 노출 횟수(이미지가 웹 사이트에 로드되는 횟수) 등 사용자 활동 세부 정보를 캡처합니다. 이러한 통계를 기반으로 이미지에 점수를 할당합니다. 점수 및 성과 통계를 사용하여 카탈로그, 마케팅 캠페인 등에 포함할 인기 있는 이미지를 선택할 수 있습니다. 이러한 통계를 기반으로 아카이브 및 라이선스 갱신 정책을 수립할 수도 있습니다.
+[!DNL Assets] Insights는 이미지에 대한 평가, 클릭 횟수 및 노출 횟수(이미지가 웹 사이트에 로드되는 횟수) 등 사용자 활동 세부 정보를 캡처합니다. 이 통계를 바탕으로 이미지에 점수를 부여합니다. 점수와 성과 통계를 활용해 카탈로그, 마케팅 캠페인 등에 포함할 인기 있는 이미지를 선택할 수 있습니다. 이러한 통계를 기반으로 보관 및 라이선스 갱신 정책을 수립할 수도 있습니다.
 
 [!DNL Assets] Insights에서 웹 사이트의 이미지에 대한 사용 통계를 캡처하려면 웹 사이트 코드에 이미지에 대한 포함 코드를 포함해야 합니다.
 
-Assets Insights를 통해 에셋에 대한 사용 통계를 표시하도록 하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오도록 기능을 구성합니다. 자세한 내용은 [Assets Insights 구성](/help/assets/configure-asset-insights.md)을 참조하십시오. 온-프레미스 설치에서 이 기능을 사용하려면 별도로 [!DNL Adobe Analytics] 라이선스를 구입하세요. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 번들로 제공되는 [!DNL Analytics] 라이선스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하세요.
+Assets Insights에 자산 사용 통계를 표시하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오도록 기능을 구성합니다. 자세한 내용은 [Assets Insights 구성](/help/assets/configure-asset-insights.md)을 참조하십시오. 온-프레미스 설치에서 이 기능을 사용하려면 별도로 [!DNL Adobe Analytics] 라이선스를 구입하세요. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 번들로 제공되는 [!DNL Analytics] 라이선스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하세요.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 
 ## 백그라운드 작업 예약 {#scheduling-background-job}
 
-Assets Insights는 정기적으로 Adobe Analytics 보고서 세트의 자산에 대한 사용 데이터를 가져옵니다. 기본적으로 Assets Insights는 오전 2시에 24시간마다 백그라운드 작업을 실행하여 데이터 가져오기를 수행합니다. 하지만 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
+Assets Insights는 정기적으로 Adobe Analytics 보고서 세트의 자산에 대한 사용 데이터를 가져옵니다. 기본적으로 Assets Insights는 오전 2시에 24시간마다 백그라운드 작업을 실행하여 데이터 가져오기를 수행합니다. 그러나 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
 
 1. [!DNL Experience Manager] 로고를 클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**(으)로 이동합니다.
 1. **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.

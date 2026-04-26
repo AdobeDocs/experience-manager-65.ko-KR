@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -107,13 +107,14 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Cloud Service 구성 {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!--
+TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
-프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy`)에 대해 `/etc/cloudservices/proxy/workername` 아래에 노드를 추가해야 합니다.
+프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
 
 >[!NOTE]
 >
@@ -182,7 +183,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >[!DNL Assets] 프록시 프레임워크에서 기본적으로 제공하지 않는 것은 풀 메커니즘입니다.
 >
->[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL InDesign] 프록시 프레임워크의 일부가 아니라 [!DNL Assets] 통합에만 적용됩니다.
+>[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL Assets] 프록시 프레임워크의 일부가 아니라 [!DNL InDesign] 통합에만 적용됩니다.
 
 >[!NOTE]
 >

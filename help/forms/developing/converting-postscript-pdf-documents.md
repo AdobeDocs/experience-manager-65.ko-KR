@@ -1,5 +1,5 @@
 ---
-title: 포스트스크립트를 PDF 문서로 변환
+title: PostScript를 PDF 문서로 변환
 description: Distiller 서비스를 사용하여 PostScript®, 캡슐화된 PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축되고 안정적이며 보다 안전한 PDF 파일로 변환할 수 있습니다. Distiller 서비스는 Java API 및 Web Service API를 사용하여 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환합니다.
 contentOwner: admin
 content-type: reference
@@ -9,20 +9,20 @@ role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 0%
+source-wordcount: '1323'
+ht-degree: 1%
 
 ---
 
-# 포스트스크립트를 PDF 문서로 변환 {#converting-postscript-to-pdf-documents}
+# PostScript를 PDF 문서로 변환 {#converting-postscript-to-pdf-documents}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 ## Distiller 서비스 정보 {#about-the-distiller-service}
 
-Distiller® 서비스는 PostScript®, 캡슐화된 PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축되고 안정적이며 보다 안전한 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업에서 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다.
+® 서비스는 PostScript®, 캡슐화된 PostScript(EPS) 및 PRN 파일을 네트워크를 통해 압축되고, 안정적이며, 보다 안전한 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 문서를 PDF으로 변환하면 기업은 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다.
 
 >[!NOTE]
 >
@@ -111,11 +111,11 @@ Distiller 서비스 API(Java)를 사용하여 PostScript 파일을 PDF 문서로
    * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
    * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
 
-   `createPDF` 메서드가 새 PDF 문서와 생성될 수 있는 로그 파일을 포함하는 `CreatePDFResult` 개체를 반환합니다. 로그 파일에는 일반적으로 전환 요청에 의해 생성된 오류 또는 경고 메시지가 포함되어 있습니다.
+   `createPDF` 메서드는 새 PDF 문서와 생성될 수 있는 로그 파일이 포함된 `CreatePDFResult` 개체를 반환합니다. 로그 파일에는 일반적으로 전환 요청에 의해 생성된 오류 또는 경고 메시지가 포함되어 있습니다.
 
 1. PDF 문서를 저장합니다.
 
-   새로 만든 PDF 문서를 가져오려면 다음 작업을 수행합니다.
+   새로 만든 PDF 문서를 가져오려면 다음 작업을 수행하십시오.
 
    * `CreatePDFResult` 개체의 `getCreatedDocument` 메서드를 호출합니다. `com.adobe.idp.Document` 개체를 반환합니다.
    * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 PDF 문서를 추출하십시오.
@@ -192,7 +192,8 @@ Distiller 서비스 API(웹 서비스)를 사용하여 PostScript 파일을 PDF 
 
 [단계 요약](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

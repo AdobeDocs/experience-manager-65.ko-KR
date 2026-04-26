@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록을 포함합니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 자산을 쉽게 식별하고 검색할 수 있습니다.
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 태그가 교육되고 준비되면 이제 서비스는 태그 지정 작업 과정을 통해 자산에 이러한 태그를 적용할 수 있습니다.
 
-배경에서 스마트 컨텐츠 서비스는 Adobe AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 콘텐츠 인텔리전스를 사용하여 다른 에셋 세트에 관련 태그를 적용합니다.
+배경에서 스마트 컨텐츠 서비스는 Adobe AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 이 콘텐츠 인텔리전스는 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다.
 
 스마트 컨텐츠 서비스는 [!DNL Adobe Developer Console]에서 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Experience Manager]에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 배포를 [!DNL Adobe Developer Console]과(와) 통합해야 합니다.
 
@@ -200,4 +200,4 @@ ht-degree: 1%
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그 지정 구성](config-smart-tagging.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
