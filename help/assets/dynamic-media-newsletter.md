@@ -49,7 +49,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
     * Fast-track your Adobe expertise with Adobe Experience League.
     -->
 
-* **[2020년 4월, 문제 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
+* **[2020년 4월, 문제 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=ko)**
 
   이 문제에서:
 
@@ -60,7 +60,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Adobe의 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오 .
    * Adobe 고객 솔루션의 수석 프로그램 관리자인 `Jon Monroe`을(를) 만나보십시오.
 
-* **[2020년 2월, 문제 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[2020년 2월, 문제 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=ko)**
 
   이 문제에서:
 
@@ -71,7 +71,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Dynamic Media Classic의 새로운 사용자 인터페이스에 대해 알아봅니다.
    * Adobe Experience Cloud용 Adobe 계정 팀의 `Georgia Myers`을(를) 만나보십시오.
 
-* **[2020년 1월, 문제 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
+* **[2020년 1월, 문제 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=ko)**
 
   이 문제에서:
 
@@ -81,7 +81,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 오늘의 요구 사항을 충족하고 내일 리치 미디어의 새로운 기능을 준비할 수 있는 DAM(Digital Asset Manager) 선택 안내서입니다.
    * 디지털 미디어 전문가 `Mark Dean`을(를) 만나보십시오.
 
-* **[2019년 11월, 문제 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[2019년 11월, 문제 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html?lang=ko)**
 
   이 문제에서:
 
@@ -91,7 +91,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 뉴스레터를 동료와 공유하여 팀 전문 지식을 구축합니다.
    * `Apoorva Gupta`, Dynamic Media의 수석 제품 관리자를 만나보십시오.
 
-* **[2019년 10월, 문제 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[2019년 10월, 문제 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html?lang=ko)**
 
   이 문제에서:
 
@@ -102,7 +102,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * `Nick Peters`, 관리자, 사이트 안정성 엔지니어링, Adobe Experience Manager을 만나보십시오.
    * Experience League의 Dynamic Media 및 Dynamic Media Classic에 대한 최신 정보를 얻으십시오.
 
-* **[2019년 9월, 문제 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[2019년 9월, 문제 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html?lang=ko)**
 
   이 문제에서:
 
@@ -113,7 +113,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Experience Manager Assets의 수석 제품 마케팅 관리자인 `Bridget Roman`을(를) 만나보십시오.
    * Experience League의 Dynamic Media 및 Dynamic Media Classic에 대한 최신 정보를 얻으십시오.
 
-* **[2019년 8월, 문제 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[2019년 8월, 문제 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html?lang=ko)**
 
   이 문제에서:
 
@@ -123,7 +123,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 방문자가 리치 미디어와 상호 작용하는 방식을 분석할 수 있는 강력한 통합 기능을 올해 9월에 간단히 살펴보십시오.
    * `PieterJan Pieper`, Dynamic Media 기술 지원 마법사를 만나보십시오.
 
-* **[2019년 7월, 문제 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[2019년 7월, 문제 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html?lang=ko)**
 
   이 문제에서:
 
@@ -134,7 +134,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 웹 사이트에 360도 비디오 및 사용자 지정 비디오 썸네일을 추가합니다.
    * Experience Manager Assets 내의 Dynamic Media에 대한 수석 솔루션 컨설턴트인 `Andrew Hathaway`을(를) 만나보십시오.
 
-* **[2019년 6월, 문제 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[2019년 6월, 문제 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html?lang=ko)**
 
   이 문제에서:
 
@@ -145,7 +145,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * AI 기반 스마트 자르기 for images에 대해 알아봅니다.
    * Dynamic Media 및 Dynamic Media Classic의 다양한 기능과 혁신을 이끄는 동력 중 하나인 `Alex Thiers`을(를) 만나보십시오.
 
-* **[2019년 5월, 문제 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[2019년 5월, 문제 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=ko)**
 
   이 문제에서:
 
@@ -155,7 +155,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 리치 미디어 전략을 업데이트하려면 3부로 구성된 블로그 시리즈를 읽어 보십시오.
    * AI 기반 비디오 스마트 자르기에 대해 알아봅니다.
 
-* **[2019년 4월, 문제 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[2019년 4월, 문제 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=ko)**
 
   Dynamic Media 뉴스레터 창간호에 오신 것을 환영합니다. Adobe의 새로운 월간 뉴스레터는 뉴스와 이벤트, 리소스로 가득 차 있습니다. 이 콘텐츠는 Experience Manager Assets 및 Adobe Dynamic Media Classic 내의 Dynamic Media 사용자를 위한 것입니다.
 

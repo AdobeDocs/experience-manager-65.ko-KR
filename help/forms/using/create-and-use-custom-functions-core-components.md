@@ -355,7 +355,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### AEM Project Archetype을 사용하여 클라이언트 라이브러리 만들기{#create-client-library-archetype}
 
-[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
+[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
 기존 프로젝트 <!--and have already the project structure as shown in the image below,-->이(가) 있는 경우 [사용자 지정 함수](#create-add-custom-function)를 로컬 프로젝트에 직접 추가할 수 있습니다.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -572,7 +572,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 
