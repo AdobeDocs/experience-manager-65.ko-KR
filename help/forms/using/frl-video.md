@@ -1,10 +1,13 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+title: '비디오 스크립트: AEM Forms에서 Adobe Acrobat에 대한 FLL(Feature Restricted Licensing) 설정'
+description: AEM Forms에서 Adobe Acrobat에 대한 기능 제한 라이선스(FRL) 설정
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
+
 # 비디오 스크립트: AEM Forms에서 Adobe Acrobat에 대한 FLL(Feature Restricted Licensing) 설정
 
 | 비주얼 | 제목 | 스피커 스크립트 |

@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 3%
@@ -887,8 +887,6 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 
 >[!ENDTABS]
 
-
-
 ### Acrobat에서 시작 시 보호 모드 비활성화
 
 FLL(Feature Restricted Licensing)을 활성화하고 Acrobat 활성화를 확인한 후에는 AEM Forms PDF Generator과의 호환성을 위해 Adobe Acrobat에서 &quot;시작 시 보호 모드&quot;를 비활성화하는 것이 좋습니다.
@@ -1543,7 +1541,6 @@ Microsoft Windows Server 2019에서 Microsoft Excel 2019를 PDF으로 변환할 
 이 문제를 해결하려면 [Windows에서 기능별 레지스트리 키를 만듭니다](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## 다음 단계 {#next-steps}
 
