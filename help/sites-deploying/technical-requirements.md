@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: bbbbf1549f1a44f4613f6c02c33bada5a0980179
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3755'
 ht-degree: 5%
 
 ---
@@ -491,6 +491,8 @@ Windows x86의 경우:
 
 >[!NOTE]
 >
+>* PDF Generator은 Microsoft® Office 2024를 지원합니다.
+>* PDF Generator에서 변환을 수행하려면 Adobe Acrobat Pro DC(32비트)가 필요합니다.
 >* PDF Generator은 지원되는 운영 체제 및 애플리케이션의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
 >* PDF Generator에서 변환을 수행하려면 Adobe Acrobat Pro DC(32비트)가 필요합니다.
 >* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 버전만 지원합니다.
