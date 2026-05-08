@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 13%
@@ -95,7 +95,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 하드 드라이브에 **JEE 서비스 팩의 AEM Forms 설치 관리자 보관**&#x200B;을(를) 추출합니다.
 
    * **Windows**
-복사한 하드 디스크의 설치 미디어 또는 폴더로 이동합니다     설치 관리자에서 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
+설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하여 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
 
       * (Windows 32비트) `Windows\Disk1\InstData\VM`
       * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -177,7 +177,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 [!DNL ExperienceManager] 서비스 팩을 자동으로 설치하는 데 사용할 수 있는 두 가지 방법이 있습니다.<!--       UPDATE FOR EACH NEW RELEASE -->
 
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다.
-패키지는 입니다.      자동으로 설치됩니다.
+패키지가 자동으로 설치됩니다.
 
 * 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
@@ -190,7 +190,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
    1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다.
-   1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 사용).     콘솔: `/system/console/bundles`).
+   1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
    1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
 
 +++
@@ -251,7 +251,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 [!DNL Experience Manager] 서비스 팩을 자동으로 설치하는 데 사용할 수 있는 두 가지 방법이 있습니다.<!--  UPDATE FOR EACH NEW RELEASE -->
 
-* 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지는 입니다.      자동으로 설치됩니다.
+* 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 * 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
   >[!NOTE]
