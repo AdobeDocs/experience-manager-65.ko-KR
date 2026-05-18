@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 사이트 방문자가 로그인하면 구성에 따라 다음과 같은 작업을 수행할 수 있습니다.
 
-* Post a new review
+* 새 리뷰 게시
 * 자체 리뷰 편집
 * 자신의 리뷰 삭제
 * 다른 사람의 리뷰 댓글에 플래그 지정
