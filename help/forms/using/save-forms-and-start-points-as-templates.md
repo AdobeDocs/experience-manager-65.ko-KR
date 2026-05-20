@@ -9,14 +9,18 @@ exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
 # 양식을 템플릿으로 저장 {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 사용자가 양식을 채울 때 일부 필드에 대한 입력이 동일하게 유지되는 경우가 있습니다. 이러한 경우 모든 인스턴스에서 동일한 값이 필요한 필드를 채우고 양식 또는 초안을 템플릿으로 저장할 수 있습니다. 이제 템플릿의 인스턴스를 만들 때마다 지정된 필드가 템플릿에 지정된 값으로 이미 채워집니다. 양식을 작성하는 데 필요한 시간과 노력을 절약하는 데 도움이 됩니다.
 

@@ -7,14 +7,18 @@ exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 2%
+source-wordcount: '977'
+ht-degree: 4%
 
 ---
 
 # Visual Studio 프로젝트 설정 및 Windows 앱 빌드{#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 지정 작업 영역 응용 프로그램을 빌드하기 위한 모든 구성 요소가 포함되어 있습니다. 원본 코드 보관 `adobe-lc-mobileworkspace-src-<version>.zip`은(는) 소프트웨어 배포의 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 패키지에 포함되어 있습니다.
 

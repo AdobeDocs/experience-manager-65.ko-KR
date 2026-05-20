@@ -9,14 +9,18 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 0%
+source-wordcount: '583'
+ht-degree: 1%
 
 ---
 
 # 첨부 파일 추가{#adding-attachments}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 ## AEM Forms 워크플로 서버(JEE의 AEM Forms)와 동기화된 양식에서 첨부 파일 추가 {#adding-annotations}
 
@@ -71,7 +75,7 @@ AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이
 
    ![스크리블 인터페이스](assets/scribble-ui.png)
 
-   낙서
+   스크리블
 
    스크리블 인터페이스에서 다음 옵션을 사용할 수 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: 테마 맞춤화
-description: AEM Forms 애플리케이션의 테마를 맞춤화하는 방법에 대해 알아봅니다. 조직별 모양과 느낌을 제공하도록 HTML 코드 및 CSS 파일을 사용자 지정할 수 있습니다.
+title: 테마 사용자 정의
+description: AEM Forms 애플리케이션의 테마를 맞춤화하는 방법에 대해 알아봅니다. HTML 코드 및 CSS 파일을 사용자 정의하여 조직별 모양과 느낌을 제공할 수 있습니다.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,18 @@ exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 4%
+source-wordcount: '254'
+ht-degree: 5%
 
 ---
 
-# 테마 맞춤화 {#theme-customization}
+# 테마 사용자 정의 {#theme-customization}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 HTML 코드 및 CSS 파일을 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양과 느낌을 제공할 수 있습니다. 예를 들어 작업 또는 시작점의 배경색 및 높이를 변경할 수 있습니다. 다음 예에서는 변경 지침을 제공합니다.
 

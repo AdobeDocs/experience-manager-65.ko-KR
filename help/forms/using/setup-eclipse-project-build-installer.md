@@ -8,14 +8,18 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 3%
+source-wordcount: '752'
+ht-degree: 5%
 
 ---
 
 # AEM Forms Android 앱 빌드 {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms용 Android 앱을 빌드하려면 권장 시퀀스에서 다음 단계를 수행하십시오.
 
@@ -49,8 +53,8 @@ AEM Forms 앱 Source 코드 패키지가 `adobe-lc-mobileworkspace-src-<version>
 AEM Forms 앱에 대한 빌드 프로세스를 시작하기 전에 다음 환경 변수를 설정하십시오.
 
 * JAVA_HOME 환경 변수를 로컬 파일 시스템에서 JDK 소프트웨어 위치로 설정합니다. 예: C:\Program Files\Java\jdk1.8.0_181
-* `ANDROID_SDK_ROOT` 시스템 환경 변수를 Android의 SDK 위치로 설정합니다. 예: C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Android의 platform-tools 및 tools 폴더 위치를 포함하도록 `Path` 시스템 환경 변수를 설정하십시오. 예: C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools 및 C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools
+* `ANDROID_SDK_ROOT` 시스템 환경 변수를 Android의 SDK 위치로 설정합니다. 예: C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Android의 platform-tools 및 tools 폴더 위치를 포함하도록 `Path` 시스템 환경 변수를 설정하십시오. 예: C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools 및 C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## 표준 AEM Forms 앱 빌드 {#set-up-the-xcode-project}
 
@@ -77,7 +81,7 @@ Android Studio를 사용하여 AEM Forms 앱을 빌드하려면 다음 단계를
    개발 환경을 성공적으로 빌드하면 이제 앱에 사용자 지정을 적용할 수 있습니다. 다음 문서를 사용하여 앱을 사용자 지정합니다.
 
    * [브랜딩 사용자 지정](/help/forms/using/branding-customization.md)
-   * [테마 맞춤화](/help/forms/using/theme-customization.md)
+   * [테마 사용자 정의](/help/forms/using/theme-customization.md)
    * [제스처 사용자 지정](/help/forms/using/gesture-customization.md)
 
    앱에 적절한 사용자 지정을 적용한 후 배포할 .apk 파일을 생성할 수 있습니다.

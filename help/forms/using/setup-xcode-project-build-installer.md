@@ -9,14 +9,18 @@ exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 3%
+source-wordcount: '839'
+ht-degree: 5%
 
 ---
 
 # Xcode 프로젝트 설정 및 iOS 앱 빌드{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 지정 AEM Forms 앱을 빌드하기 위한 모든 구성 요소가 포함되어 있습니다. 원본 코드 보관 `adobe-lc-mobileworkspace-src-<version>.zip`은(는) 소프트웨어 배포의 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 패키지에 포함되어 있습니다.
 
@@ -71,7 +75,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 1. Xcode에서 프로젝트를 설정하고 서명 ID를 제공하려면 다음 단계를 수행하십시오.
 
-   Xcode 및 iOS SDK가 설치 및 구성된 Mac 컴퓨터에 로그인합니다.
+   Xcode 및 iOS SDK이 설치 및 구성된 Mac 컴퓨터에 로그인합니다.
 
 1. 다운로드 폴더에서 `[User_Home]/Projects/`(으)로 `adobe-lc-mobileworkspace-src-<version>.zip` 보관 파일을 복사합니다.
 1. `[User_Home]/Projects/[your-project]` 디렉터리에서 보관 파일의 압축을 풉니다.
@@ -85,7 +89,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. **빌드 설정** 탭에서 **모두**&#x200B;를 클릭한 다음 **결합**&#x200B;을 클릭합니다.
 1. **설정** 목록에서 **코드 서명**&#x200B;을 확장합니다.
 1. **코드 서명 ID**&#x200B;에 대해 적절한 서명을 선택하십시오. 새 서명 만들기에 대한 자세한 내용은 [개발 프로비전 프로필 만들기 및 다운로드](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)를 참조하십시오.
-1. **Debug**, **Release** 및 **모든 iOS SDK**&#x200B;에 대해 동일한 서명을 선택해야 합니다.
+1. **디버그**, **릴리스** 및 **모든 iOS SDK**&#x200B;에 대해 동일한 서명을 선택해야 합니다.
 1. `AEM Forms-info.plist` 파일에서 다음 코드를 바꿉니다.
 
    ```xml
@@ -126,7 +130,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
    >
    >이 단계는 AEM Forms 앱이 앱 전송 보안 요구 사항을 따르지 않는 서버에 연결해야 하는 경우에만 필요합니다.
 
-1. **프로젝트**&#x200B;에서 **AEM Forms**&#x200B;을(를) 선택하고 **코드 서명 ID**, **디버그**, **릴리스** 및 **모든 iOS SDK**&#x200B;에 대해 적절한 서명이 선택되었는지 확인하십시오.
+1. **프로젝트**&#x200B;에서 **AEM Forms**&#x200B;을(를) 선택하고 **코드 서명 ID**, **디버그**, **릴리스** 및 **모든 iOS SDK**&#x200B;에 대해 적절한 서명이 선택되었는지 확인합니다.
 1. 프로비저닝된 iPad을 Mac 시스템에 연결합니다.
 1. **AEM Forms** 프로젝트에 대해 프로비전된 장치를 선택하십시오.
 

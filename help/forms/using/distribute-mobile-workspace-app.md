@@ -8,14 +8,18 @@ exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '259'
+ht-degree: 3%
 
 ---
 
 # AEM Forms 앱 배포 {#distribute-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 모바일 장치 관리(MDM)를 사용하면 모바일 장치에서 앱을 대규모 배포할 수 있습니다.
 
