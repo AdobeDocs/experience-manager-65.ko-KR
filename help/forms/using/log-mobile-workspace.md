@@ -9,14 +9,18 @@ exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager Forms 앱에 로그인{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 Adobe Experience Manager(AEM) Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서버 URL을 제공해야 합니다.
 

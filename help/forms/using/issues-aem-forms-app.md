@@ -8,22 +8,26 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
 # AEM Forms 앱 문제 해결 {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 이 문서에서는 AEM Forms 앱을 빌드하는 동안 표시될 수 있는 오류 메시지와 이를 해결하는 단계에 대해 설명합니다.
 
 이 문서의 섹션은 다음과 같습니다.
 
 * [iOS 사용자의 첨부 파일 손실](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
-* [workspace 사용자가 제출한 HTML5 양식 초안은 포털에 표시되지 않습니다](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
-* [AEM Forms 앱에서 HTML 5 양식(캐시되지 않음) 로드 실패](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
+* [작업 영역 사용자가 제출한 HTML5 양식 초안은 포털에 표시되지 않습니다](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
+* [HTML5 양식(캐시되지 않음)이 AEM Forms 앱에서 로드되지 않음](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
 * [AEM Forms이 Windows에서 동기화되지 않음](/help/forms/using/issues-aem-forms-app.md#aem-forms-do-not-sync-on-windows)
 * [지원되지 않는 Gradle 버전](/help/forms/using/issues-aem-forms-app.md#unsupported-version-of-gradle)
 * [Gradle 및 Android Gradle 플러그인 호환성 문제](/help/forms/using/issues-aem-forms-app.md#gradle-and-android-gradle-plug-in-compatibility-issues)
@@ -40,9 +44,9 @@ OSGi에서 AEM Forms과 동기화하도록 구성된 iOS용 AEM Forms 앱은 필
 
 1. **저장**&#x200B;을 클릭합니다.
 
-## workspace 사용자가 제출한 HTML5 양식 초안은 포털에 표시되지 않습니다 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## 작업 영역 사용자가 제출한 HTML5 양식 초안은 포털에 표시되지 않습니다 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-**초안으로 저장** HTML 렌더링 프로필과 함께 AEM Forms 앱에서 활성화된 HTML5 양식의 경우 저장된 초안이 작업 영역 사용자에게 표시되지 않습니다. 포털에서 작업 영역 사용자가 제출한 HTML5 양식의 저장된 초안을 보려면 다음 단계를 수행하십시오.
+**초안으로 저장** HTML 렌더링 프로필이 있는 AEM Forms 앱에서 활성화된 HTML5 양식의 경우 저장된 초안은 작업 영역 사용자에게 표시되지 않습니다. 포털에서 작업 영역 사용자가 제출한 HTML5 양식의 저장된 초안을 보려면 다음 단계를 수행하십시오.
 
 1. CRXDE를 열고 관리자 자격 증명으로 로그인합니다.
 
@@ -58,7 +62,7 @@ OSGi에서 AEM Forms과 동기화하도록 구성된 iOS용 AEM Forms 앱은 필
 
 1. **확인**&#x200B;을 클릭합니다.
 
-## AEM Forms 앱에서 HTML 5 양식(캐시되지 않음) 로드 실패 {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
+## HTML5 양식(캐시되지 않음)이 AEM Forms 앱에서 로드되지 않음 {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
 AEM Forms 앱이 이전 버전의 AEM Forms 서버에 연결된 경우 캐시되지 않은 HTML5 양식이 AEM Forms 앱에서 로드되지 않습니다.
 

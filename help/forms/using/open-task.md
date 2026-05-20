@@ -8,16 +8,20 @@ exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
 # 작업 열기 {#opening-a-task}
 
-Adobe Experience Manager(AEM) Forms 앱이 AEM Forms 서버와 동기화되는 경우 할당된 작업으로 작업할 수 있습니다. 작업은 Workbench에 정의된 워크플로 또는 AEM 워크플로 편집기의 단계입니다.
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
+
+Adobe Experience Manager(AEM) Forms 앱이 AEM Forms 서버와 동기화되는 경우 할당된 작업으로 작업할 수 있습니다. 작업은 워크벤치에 정의된 워크플로우 또는 AEM 워크플로우 편집기의 단계입니다.
 
 다른 양식은 초안 탭에 초안으로 저장됩니다. [초안 저장](/help/forms/using/save-as-draft.md)을 참조하세요.
 

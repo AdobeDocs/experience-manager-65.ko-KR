@@ -1,5 +1,5 @@
 ---
-title: 시작 지점 작업
+title: 시작점 작업
 description: Workbench에 정의된 모바일 장치에서 Adobe Experience Manager Forms 프로세스를 사용하는 단계입니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,15 +9,19 @@ exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: dd8748cee7a4b3ba91795a51928bd8590c47ef27
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 2%
 
 ---
 
 
-# 시작 지점 작업{#working-with-startpoints}
+# 시작점 작업{#working-with-startpoints}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 시작점은 Workbench에서 생성된 프로세스를 호출합니다. 양식 제출 시 프로세스를 호출하는 양식과 연결됩니다.
 

@@ -10,14 +10,18 @@ exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 0%
+source-wordcount: '388'
+ht-degree: 2%
 
 ---
 
 # 앱 동기화{#synchronizing-the-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 ## 앱 동기화 {#synchronizing-the-app-1}
 
@@ -44,6 +48,6 @@ AEM Forms 서버를 사용하여 온라인 상태이면 기본적으로 앱은 1
 ### 기술 사양 {#technical-specifications}
 
 * 오프라인 앱 데이터를 AEM Forms 서버에 제출하는 기본 논리는 runtime/offline/util/offline.js에 포함되어 있습니다.
-* .js에서 processOfflineSubmittedSavedTasks(...) 함수 호출은 저장된 / 제출된 작업을 서버로 전송합니다. 또한 동기화 프로세스의 모든 오류나 충돌을 처리합니다. 작업 제출이 실패하면 앱의 작업이 실패로 표시됩니다. 또한 작업은 보낼 편지함에 남아 있습니다.
+* .js에서 processOfflineSubmittedSavedTasks(...)를 호출합니다. 함수, 저장 또는 제출된 작업을 서버로 전송합니다. 또한 동기화 프로세스의 모든 오류나 충돌을 처리합니다. 작업 제출이 실패하면 앱의 작업이 실패로 표시됩니다. 또한 작업은 보낼 편지함에 남아 있습니다.
 * syncSubmittedTask() 및 syncSavedTask() 함수는 개별 작업에 대한 작업을 수행합니다.
 * 사용자가 오프라인 상태를 서버에 동기화하거나 백그라운드 스레드에 의해 자동 동기화하도록 선택한 후 작업 목록 구성 요소에 의해 processOfflineSubmittedSavedTasks() 함수 호출이 시작됩니다.

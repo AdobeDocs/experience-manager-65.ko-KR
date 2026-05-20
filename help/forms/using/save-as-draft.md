@@ -8,20 +8,24 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '511'
+ht-degree: 3%
 
 ---
 
 # 작업 또는 양식을 초안으로 저장 {#saving-a-task-or-form-as-a-draft}
 
+>[!NOTE]
+>
+>AEM Forms 앱은 현재 더 이상 사용되지 않습니다. 질문이 있거나 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
+
 초안으로 저장 옵션은 작업 또는 양식의 스냅샷을 연관된 양식에 입력된 데이터와 함께 저장합니다. 템플릿으로 초안을 생성할 수도 있습니다. 초안은 모바일 장치에 저장되고 나중에 검색할 수 있도록 Adobe Experience Manager Forms 서버와 동기화됩니다.
 
 [양식을 업데이트](/help/forms/using/working-with-form.md)하고, [사진에 주석을 달고](/help/forms/using/add-attachments.md)할 수 있습니다. 양식을 계속 업데이트하므로 초안으로 저장하는 것이 좋습니다. 채워진 양식을 나중에 제출하기로 결정하는 경우 초안으로 저장하는 것이 유용합니다.
 
-양식 포털에 저장된 양식에 대해 초안으로 저장 기능을 사용하려면 [HTML 5 양식을 초안으로 저장](/help/forms/using/saving-html5-form-draft.md)을 참조하십시오.
+양식 포털에 저장된 양식에 대해 초안으로 저장 기능을 사용하려면 [HTML5 양식을 초안으로 저장](/help/forms/using/saving-html5-form-draft.md)을 참조하십시오.
 적응형 양식 제출을 구성하려면 [초안 및 제출 구성 요소](/help/forms/using/draft-submission-component.md)를 참조하십시오. (AEM Forms JEE 서버와 동기화된 양식에 유효하지 않습니다.)
 
 초안을 만들려면 양식을 열고 **초안으로 저장** ![초안으로 저장](assets/save-as-draft.png)을 선택합니다. 초안 이름을 입력하고 **저장**&#x200B;을 선택하세요. 초안이 [초안] 폴더에 저장되고 서버와 동기화됩니다. 앱이 오프라인 상태인 경우 보낼 편지함 폴더에 저장됩니다.
