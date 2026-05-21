@@ -53,7 +53,7 @@ AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Autho
 
 다음 3분 25초 분량의 비디오는 AEM 내 AI 어시스턴트의 단계별 워크스루를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475365/?captions=kor&learn=on&enablevpops)
 
 ## AEM 내 AI 어시스턴트 액세스{#get-access}
 
