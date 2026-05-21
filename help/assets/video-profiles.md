@@ -11,9 +11,25 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+autotag-review: '2026-05-18T18:37:44.170Z'
+TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
+product_v2:
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: 3779
 ht-degree: 8%
 
 ---
@@ -109,7 +125,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * 초당 30프레임(FPS).
 * 300MB의 파일 크기입니다.
 
-Adobe AI는 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe AI와 스마트 자르기를 지원하려면 60FPS 비디오가 2분 30초여야 합니다.
+Adobe AI은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe AI 및 스마트 자르기에서 지원되려면 2분 30초 정도 있어야 합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -281,7 +297,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300이어야 합니다.<br /> <br /> 낮은 키프레임 간격은 응용 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하며 동작이 많은 비디오의 품질을 향상시킬 수도 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
+   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임이면 키프레임 간격은 60-300.<br /> <br />이어야 합니다 낮은 키프레임 간격은 적응형 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하고, 움직임이 많은 비디오의 품질을 향상시킬 수도 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
    <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 60-90입니다.</p> </td>
   </tr>

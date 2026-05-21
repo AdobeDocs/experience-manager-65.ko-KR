@@ -10,20 +10,30 @@ role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+autotag-review: '2026-05-18T18:45:05.823Z'
+TQID: 'https://experienceleague.adobe.com/a5ifneRAYCIMHKCGJHGQu9aoQt3EWZu1hiGYItlPZOE'
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 19%
+source-wordcount: 324
+ht-degree: 20%
 
 ---
 
 # Dynamic Media 자산 전송{#delivering-dynamic-media-assets}
 
-Dynamic Media 에셋(비디오와 이미지 모두)을 전달하는 방법은 웹 사이트가 구현되는 방식에 따라 다릅니다.
+Dynamic Media 자산(비디오와 이미지 모두)을 전달하는 방법은 웹 사이트가 구현되는 방식에 따라 다릅니다.
 
 Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
-* 웹 사이트가 Adobe Experience Manager에서 호스팅되는 경우 Dynamic Media 에셋을 페이지에 바로 추가하려 합니다.
+* 웹 사이트가 Adobe Experience Manager에서 호스팅되는 경우 Dynamic Media 에셋을 페이지에 바로 추가할 수 있습니다.
 * 웹 사이트가 Experience Manager에 없는 경우 다음 중 하나를 선택할 수 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지를 포함합니다.
@@ -41,13 +51,13 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * [Dynamic Media의 핫링크 보호 활성화](/help/assets/hotlink-protection.md)
 * [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md)
-* [컨텐츠의 HTTP2 전달](/help/assets/http2.md)
+* [콘텐츠의 HTTP2 전송](/help/assets/http2.md)
 * [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Dynamic Media 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media 자산의 HTTP/2 게재 {#http-delivery-of-dynamic-media-assets}
 
-이제 Experience Manager은 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지 또는 비디오에 대한 게시된 URL 또는 포함 코드를 호스팅된 에셋을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 그런 다음 게시된 에셋은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 에셋의 응답 및 로드 시간을 향상시킵니다.
+Experience Manager은 이제 HTTP/2를 통해 모든 Dynamic Media 콘텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지 또는 비디오에 대한 게시된 URL 또는 포함 코드를 호스팅된 에셋을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 그런 다음 게시된 에셋은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 에셋의 응답 및 로드 시간을 향상시킵니다.
 
 자세한 내용은 [HTTP/2 콘텐츠 배달 FAQ](/help/sites-administering/scene7-http2faq.md)를 참조하세요.
