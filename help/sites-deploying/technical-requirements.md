@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: b8be2ca14bdc6c6f21a2a33c893841a9aa201112
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '3746'
+source-wordcount: '3790'
 ht-degree: 5%
 
 ---
@@ -470,7 +470,7 @@ Windows x86의 경우:
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>(연속 트랙, 최신 버전)</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML 및 HTM</td>
   </tr>
 
@@ -492,7 +492,7 @@ Windows x86의 경우:
 >[!NOTE]
 >
 >* PDF Generator은 지원되는 운영 체제 및 애플리케이션의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
->* PDF Generator을 전환하려면 32비트 Adobe Acrobat Pro DC 및 Microsoft® Office Professional Plus가 필요합니다.
+>* PDF Generator은 Microsoft® Windows에서 Acrobat 기반 기본 변환을 위해 지원되는 32비트 Windows 빌드의 Adobe Acrobat Pro DC(Continuous track, 최신 버전)와 Office 기반 변환을 위해 32비트 Microsoft® Office Professional Plus가 필요합니다. Acrobat Pro DC의 설치 및 기능 제한 라이선스(FRL)에 대해서는 문서 서비스 설치 문서에서 [Adobe Acrobat Pro DC 설치](../forms/using/install-configure-document-services.md#install-adobe-acrobat-pro-dc)를 참조하십시오.
 >* ® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
 >* 볼륨 라이선스가 있는 설치에서 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 ® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 부여하고 다시 활성화할 때까지 전환이 실패할 수 있습니다.
 >* PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
