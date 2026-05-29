@@ -5,38 +5,38 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
 
-# Microsoft® Office 365 메일 서버 프로토콜과 AEM Forms 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# ® Office 365 메일 서버 프로토콜과 AEM Forms 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-조직에서 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위한 OAuth 2.0 지원을 제공합니다. Azure AD(Azure Active Directory) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP 등의 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증할 Microsoft® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
+조직에서 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위한 OAuth 2.0 지원을 제공합니다. Azure Active Directory(Azure AD) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP 등의 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증할 ® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
 
-1. [https://portal.azure.com/](https://portal.azure.com/)에 로그인하고 검색 창에서 **Azure Active Directory**&#x200B;를 검색한 다음 결과를 클릭합니다.
+1. [https://portal.azure.com/](https://portal.azure.com/)에 로그인하고 검색 창에서 **Azure Active Directory**를 검색한 다음 결과를 클릭합니다.
 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)에서 바로 검색할 수 있습니다.
 1. **추가** > **앱 등록** > **새 등록**&#x200B;을 클릭합니다.
 
    ![앱 등록](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
-1. 요구 사항에 따라 정보를 입력한 다음, **등록**&#x200B;을 클릭합니다.
+1. 요구 사항에 따라 정보를 입력한 다음, **등록**을 클릭합니다.
    ![지원되는 계정](/help/forms/using/assets/azure_suuportedaccountype.png)
-위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정 및 개인 Microsoft® 계정(예: Skype, Xbox)** 옵션이 선택됩니다.
+위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정 및 개인 Microsoft® 계정(예: Skype, Xbox)** 옵션이 선택되어 있습니다.
 
    >[!NOTE]
    >
-   > * Adobe **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)** 응용 프로그램의 계정의 경우 개인 전자 메일 계정이 아닌 작업 계정을 사용하는 것이 좋습니다.
-   > * **개인 Microsoft® 계정만** 응용 프로그램은 지원되지 않습니다.
-   > * Adobe **다중 테넌트 및 개인 Microsoft® 계정** 응용 프로그램을 사용하는 것이 좋습니다.
+   > * **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)** 응용 프로그램의 계정에는 개인 전자 메일 계정이 아닌 작업 계정을 사용하는 것이 좋습니다.
+   > * **개인 ® 계정만** 응용 프로그램은 지원되지 않습니다.
+   > * Adobe에서는 **다중 테넌트 및 개인 Microsoft® 계정** 응용 프로그램을 사용하는 것이 좋습니다.
 
 1. 그런 다음 **증명서 및 보안**&#x200B;으로 이동하고, **신규 클라이언트 보안**&#x200B;을 클릭한 후 화면에 표시되는 단계에 따라 보안을 생성합니다. 나중에 사용할 수 있도록 이 암호 값을 메모해 두십시오.
 
    ![비밀 키](/help/forms/using/assets/azure_secretkey.png)
 
-1. 권한을 추가하려면 새로 만든 앱으로 이동하여 **API 권한** > **권한 추가** > **Microsoft® 그래프** > **위임된 권한**&#x200B;을(를) 선택하십시오.
+1. 권한을 추가하려면 새로 만든 앱으로 이동하여 **API 권한** > **권한 추가** > **® 그래프** > **위임된 권한**&#x200B;을(를) 선택하십시오.
 1. 앱의 아래 사용 권한에 대한 확인란을 선택하고 **사용 권한 추가**&#x200B;를 클릭합니다.
 
    * `IMAP.AccessUser.All`
@@ -54,7 +54,7 @@ ht-degree: 5%
 
    이 경우 `https://login.microsoftonline.com/common/oauth2/nativeclient`은(는) 리디렉션 URI로 사용됩니다.
 
-1. 각 URL을 추가한 후 **구성**&#x200B;을 클릭하고 요구 사항에 따라 설정을 구성합니다.
+1. 각 URL을 추가한 후 **구성**을 클릭하고 요구 사항에 따라 설정을 구성합니다.
    ![리디렉션 URI](/help/forms/using/assets/azure_redirecturi.png)
 
    >[!NOTE]
@@ -71,7 +71,7 @@ ht-degree: 5%
 
 1. `clientID`을(를) `<client_id>`(으)로, `redirect_uri`을(를) 애플리케이션의 리디렉션 URI로 바꾼 후 브라우저에서 다음 URL을 엽니다.
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
@@ -151,7 +151,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=ko#create-an-email-endpoint-for-the-complete-task-service).
+   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 이메일 엔드포인트를 구성하려면 {#configure_email_endpoint}
 
@@ -165,7 +165,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=ko)을 클릭하세요.
+   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html)을 클릭하세요.
 
 ## 문제 해결 {#troubleshooting}
 
