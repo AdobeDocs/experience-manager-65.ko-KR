@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
 workflow-type: tm+mt
-source-wordcount: '3958'
+source-wordcount: '3839'
 ht-degree: 3%
 
 ---
@@ -250,7 +250,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <tbody>
  <tr>
   <th>데이터베이스 </th>
-  <th><p><strong>플랫폼</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>지원되는 패치 정의</strong></p> </th>
  </tr>
   <tr>
@@ -288,7 +288,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <table>
 <tbody>
  <tr>
-  <td><p><strong> 플랫폼</strong></p> </td>
+  <td><p><strong> Platform</strong></p> </td>
   <td><p><strong>지원 수준</strong></p> </td>
   <td><p><strong>지원되는 패치 정의</strong></p> </td>
  </tr>

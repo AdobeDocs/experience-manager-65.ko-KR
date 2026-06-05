@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 60cc4096c4fd1b51e1d37b6e6f4cdb8806fd79eb
+source-git-commit: 17a9c95166644a2a4e665e97c71b5fb744af6362
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 54%
+source-wordcount: '1388'
+ht-degree: 43%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 54%
 
 먼저 다음 단계를 수행한 다음 외부 웹 사이트에 적응형 양식을 임베드합니다.
 
-* Publish은 AEM Forms 서버의 Publish 인스턴스에 임베드할 적응형 양식입니다.
+* AEM Forms 서버의 게시 인스턴스에 임베드할 적응형 양식을 게시합니다.
 * 웹 사이트에서 적응형 양식을 호스팅할 수 있는 웹 페이지를 만들거나 식별합니다. 웹 페이지에서 CDN의 [jQuery 파일을 읽을 수 있는지](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) 또는 jQuery의 로컬 복사본이 포함되어 있는지 확인하십시오. 적응형 양식을 렌더링하는 데 jQuery가 필요합니다.
-* AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 섹션에 나열된 단계를 수행합니다. [AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공하도록 설정](#cross-site).
+* AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 [GuideBridge로 절대 요청 URL 구성](#configure-base-url) 및 [AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공하도록 설정](#cross-site) 섹션에 나열된 단계를 수행하십시오.
 
 ## 임베드된 적응형 양식 {#embed-adaptive-form}
 
@@ -104,7 +104,7 @@ ht-degree: 54%
 
 1. 임베드된 코드에서
 
-   * *options.path* 변수의 값을 적응형 양식의 게시 URL 경로로 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장을 포함한 적응형 양식의 전체 이름을 항상 언급하십시오. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식 `/content/forms/af/locbasic.html`의 컨텍스트 경로를 사용합니다.
+   * *options.path* 변수의 값을 적응형 양식의 게시 URL 경로로 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장명을 포함하여 항상 적응형 양식의 전체 이름을 표시합니다. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식 `/content/forms/af/locbasic.html`의 컨텍스트 경로를 사용합니다.
    * *options.dataRef*&#x200B;을(를) URL로 전달할 특성으로 바꾸십시오. dataref 변수를 사용하여 [적응형 양식을 미리 채우기](/help/forms/using/prepopulate-adaptive-form-fields.md)할 수 있습니다.
    * *options.themePath*&#x200B;을(를) 적응형 양식에서 구성한 테마가 아닌 다른 테마에 대한 경로로 바꾸십시오. 또는 요청 속성을 사용하여 테마 경로를 지정할 수 있습니다.
    * CSS 선택기는 적응형 양식이 임베드된 양식 컨테이너의 CSS 선택기입니다. 예: 위 예에서 .customafsection css 클래스는 CSS 선택기입니다.
@@ -118,11 +118,39 @@ ht-degree: 54%
 * 원래 적응형 양식에 구성된 경험 타깃팅 및 A/B 테스트는 임베드된 양식에서 작동하지 않습니다.
 * Adobe Analytics이 원래 양식에 구성된 경우, 분석 데이터가 Adobe Analytics 서버에 의해 캡처됩니다. 단, 양식 분석 보고서에서 사용할 수 없습니다.
 
+## GuideBridge를 사용하여 절대 요청 URL 구성 {#configure-base-url}
+
+AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 GuideBridge API를 사용하여 guideruntime 라이브러리에서 생성한 요청에 절대 AEM 게시 원본 을 추가할 수 있습니다. `baseUrl` 구성을 사용하여 양식 제출, 데이터 검색 미리 채우기, 기록 문서 생성, 파일 업로드 및 내부 제출 작업과 같은 요청에 지정된 절대 원본을 미리 추가하도록 안내합니다.
+
+기존 `guideBridge.connect` 구현과 함께 포함 웹 페이지에 다음 코드 조각을 추가합니다.
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+`https://publish.example.com`을(를) AEM Forms 서버의 게시 URL로 바꿉니다.
+
+이 구성에서 요청 URL은 다음 예와 유사합니다.
+
+```text
+/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+는 다음과 같이 AEM 서버로 전송됩니다.
+
+```text
+https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 AEM 게시 인스턴스에서도 CORS를 구성해야 합니다. 섹션에 나열된 단계를 수행합니다. [AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 설정](#cross-site).
+
 ## 샘플 토폴로지 {#sample-topology}
 
 적응형 양식을 임베드하는 외부 웹 페이지에서는 일반적으로 비공개 네트워크 방화벽 뒤에 있는 AEM 서버로 요청을 보냅니다. 요청이 AEM 서버로 안전하게 이동되도록 하려면 역방향 프록시 서버를 설정하는 것이 좋습니다.
 
-Dispatcher 없이 Apache 2.4 역방향 프록시 서버를 설정하는 방법의 예를 살펴보겠습니다. 이 예에서는 역방향 프록시에 대해 `/forms` 컨텍스트 경로와 맵 `/forms`을(를) 사용하여 AEM 서버를 호스팅합니다. Apache 서버의 `/forms`에 대한 모든 요청이 AEM 인스턴스로 이동되도록 합니다. 이 토폴로지를 사용하면 모든 요청에 AEM 서버로 가는 `/forms` 경로가 접두사로 추가되므로 Dispatcher 계층의 규칙 수를 줄이는 데 도움이 됩니다.
+Dispatcher 없이 Apache 2.4 역방향 프록시 서버를 설정하는 방법의 예를 살펴보겠습니다. 이 예에서는 역방향 프록시에 대해 `/forms` 컨텍스트 경로 및 맵 `/forms`을(를) 사용하여 AEM 서버를 호스팅합니다. Apache 서버의 `/forms`에 대한 모든 요청이 AEM 인스턴스로 이동되도록 합니다. 이 토폴로지를 사용하면 모든 요청에 AEM 서버로 가는 `/forms` 경로가 접두사로 추가되므로 Dispatcher 계층의 규칙 수를 줄이는 데 도움이 됩니다.
 
 1. `httpd.conf`구성 파일을 열고 다음 코드 라인의 주석 해제합니다. 또는 파일에서 이 코드 라인을 추가할 수 있습니다.
 
@@ -171,6 +199,25 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 활성화 {#cross-site}
 
+AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 다음 옵션 중 하나를 사용하여 AEM 게시 인스턴스를 구성합니다.
+
+>[!BEGINTABS]
+
+>[!TAB GuideBridge baseUrl 구성 사용]
+
+[GuideBridge `baseUrl` 구성](#configure-base-url)을 사용하는 경우 AEM 서버가 제출, 미리 채우기 및 기록 문서 엔드포인트에 대한 적절한 헤더를 반환하도록 AEM 게시 인스턴스에서 CORS를 구성하십시오.
+
+1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
+1. **Adobe Granite 원본 간 리소스 공유 정책** 구성(`com.adobe.granite.cors.impl.CORSPolicyImpl`)을 찾아 엽니다.
+1. 포함 웹 페이지의 원본을 허용된 원본에 추가합니다. 예: `https://www.example.com`
+1. 허용되는 경로에 `/content/forms/af/` 아래의 제출, 미리 채우기 및 기록 문서 URL과 같은 포함된 적응형 양식에서 사용되는 AEM Forms 끝점이 포함되어 있는지 확인하십시오.
+
+>[!TAB Apache Sling Referrer 필터]
+
+역방향 프록시를 사용하거나 GuideBridge `baseUrl` 구성 없이 적응형 양식을 포함하는 경우 AEM 게시 인스턴스에서 Apache Sling Referrer 필터를 구성합니다.
+
 1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
 1. **Apache Sling 레퍼러 필터** 구성을 찾아 엽니다.
 1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 호스트는 AEM 서버에 POST를 요청할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 애플리케이션 도메인을 지정할 수도 있습니다.
+
+>[!ENDTABS]
