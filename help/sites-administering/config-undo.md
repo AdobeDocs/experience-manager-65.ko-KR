@@ -1,5 +1,5 @@
 ---
-title: 페이지 편집을 위해 실행 취소 구성
+title: 페이지 편집을 위한 실행 취소 구성
 description: AEM에서 페이지 편집에 대한 실행 취소 지원을 구성하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 2%
+source-wordcount: '701'
+ht-degree: 3%
 
 ---
 
-# 페이지 편집을 위해 실행 취소 구성{#configuring-undo-for-page-editing}
+# 페이지 편집을 위한 실행 취소 구성{#configuring-undo-for-page-editing}
 
 [OSGi 서비스](/help/sites-deploying/configuring-osgi.md) **일 CQ WCM 실행 취소 구성**( `com.day.cq.wcm.undo.UndoConfigService`)은(는) 페이지 편집을 위해 실행 취소 및 다시 실행 명령의 동작을 제어하는 여러 속성을 표시합니다.
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-이 노드에는 `cq.wcm.undo.whitelist` 및 `cq.wcm.undo.blacklist` 속성이 포함되어 있습니다. 다른 속성에는 기본값이 사용됩니다.
+이 노드에는 `cq.wcm.undo.whitelist` 및 `cq.wcm.undo.blacklist` 속성이 있습니다. 다른 속성의 경우 기본값이 적용됩니다.
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+>AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
 다음은 웹 콘솔에 표시되는 등록 정보, 해당 OSGi 매개 변수의 이름, 설명 및 기본값(해당되는 경우)을 나열합니다.
 
@@ -111,7 +111,7 @@ ht-degree: 2%
 * **좋은 구성 요소**
 ( `cq.wcm.undo.whitelist`)
 
-   * **설명**: 실행 취소 및 다시 실행 명령의 영향을 받을 구성 요소 목록입니다. 구성 요소 경로가 실행 취소/다시 실행에서 올바르게 작동하는 경우 이 목록에 추가합니다. 별표(&ast;)를 추가하여 구성 요소 그룹을 지정합니다.
+   * **설명**: 실행 취소 및 다시 실행 명령의 영향을 받을 구성 요소 목록입니다. 구성 요소 경로가 실행 취소/다시 실행에서 올바르게 작동하는 경우 이 목록에 추가합니다. 별표(&amp;ast;)를 추가하여 구성 요소 그룹을 지정합니다.
 
       * 다음 값은 기초 텍스트 구성 요소를 지정합니다.
 
@@ -147,3 +147,4 @@ ht-degree: 2%
 
    * **기본값**: 속성이 여러 구성 요소 작업으로 채워집니다.
    * **유형**: `String[]`
+
