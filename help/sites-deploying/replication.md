@@ -25,7 +25,7 @@ ht-degree: 3%
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * 게시 환경의 사용자 입력(예: 양식 입력)을 작성자 환경(작성자 환경의 제어 아래)으로 반환합니다.
 
-요청을 처리할 적절한 에이전트에 대해 [큐에 ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
+요청을 처리할 적절한 에이전트에 대해 [큐에 &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 >* 게시의 에이전트 : 역방향 복제(보낼 편지함)
 >
 >에이전트나 큐의 상태를 확인하려면 **도구** 콘솔을 사용하십시오.
->복제 에이전트 모니터링](#monitoring-your-replication-agents)을 참조하세요.[
+>복제 에이전트 모니터링[&#128279;](#monitoring-your-replication-agents)을 참조하세요.
 
 #### 복제(작성자-게시) {#replication-author-to-publish}
 
