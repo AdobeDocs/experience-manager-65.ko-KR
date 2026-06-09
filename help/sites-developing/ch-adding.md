@@ -5,10 +5,10 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '924'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Context Hub 저장소는 다음 지속성 모드 중 하나를 사용합니다.
 * **Window.name:** window.name 속성을 사용하여 데이터를 유지합니다.
 * **메모리:** JavaScript 개체를 사용하여 데이터를 유지합니다.
 
-기본적으로 Context Hub는 로컬 지속성 모드를 사용합니다. 브라우저가 localStorage를 지원하지 않거나 허용하지 않으면 HTML 지속성이 사용됩니다. 브라우저에서 HTML5 sessionStorage를 지원하지 않거나 허용하지 않는 경우 Window.name 지속성이 사용됩니다.
+기본적으로 Context Hub는 로컬 지속성 모드를 사용합니다. 브라우저가 HTML5 localStorage를 지원하지 않거나 허용하지 않으면 세션 지속성이 사용됩니다. 브라우저에서 HTML5 sessionStorage를 지원하지 않거나 허용하지 않는 경우 Window.name 지속성이 사용됩니다.
 
 ### 데이터 저장 {#store-data}
 
@@ -110,7 +110,7 @@ ContextHub에서는 JavaScript 개체를 조작하기 위한 [`ContextHub.Utils.
 
 >[!NOTE]
 >
->ContextHub는 기본적으로 게시 서버에서 현재 사용된 로그인 정보를 인식하지 못하며 이러한 사용자는 ContextHub에서 &quot;익명&quot;으로 간주됩니다.
+>ContextHub는 기본적으로 게시 서버에 현재 로그인한 사용자를 인식하지 못하며 이러한 사용자는 &quot;익명&quot;으로 간주됩니다.
 >
 >프로필 스토어를 로드하여 ContextHub에서 로그인한 사용자를 인식하도록 할 수 있습니다. GitHub의 [샘플 코드](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)를 참조하세요.
 

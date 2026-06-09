@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 8%
 
 ---
@@ -168,4 +168,4 @@ ht-degree: 8%
 
 * 더 이상 필요하지 않은 보고서를 제거합니다. DAM 보고서 제거 서비스의 구성 옵션을 사용하여 보고서 제거 기준을 구성합니다.
 
-* 디스크 사용량 보고서가 생성되지 않고 [!DNL Dynamic Media]을(를) 사용 중인 경우 모든 자산이 올바르게 진행되는지 확인하십시오. 해결하려면 에셋을 재처리한 다음 보고서를 다시 생성합니다.
+* 디스크 사용량 보고서가 생성되지 않고 [!DNL Dynamic Media]을(를) 사용 중인 경우 모든 자산이 올바르게 처리되었는지 확인하십시오. 해결하려면 에셋을 재처리한 다음 보고서를 다시 생성합니다.
