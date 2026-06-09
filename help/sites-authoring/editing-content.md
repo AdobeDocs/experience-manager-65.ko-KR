@@ -10,10 +10,10 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 47%
+source-wordcount: '3030'
+ht-degree: 45%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 47%
 >
 >페이지를 편집하려면 계정에 [적절한 액세스 권한](/help/sites-administering/security.md) 및 [권한](/help/sites-administering/security.md#permissions)이 필요합니다.
 >
->Adobe 문제가 발생하면 시스템 관리자에게 문의하는 것이 좋습니다.
+>문제가 발생하면 시스템 관리자에게 문의하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ ht-degree: 47%
 단락 구성 요소 이동
 
 1. 선택-및-유지 또는 클릭-및-유지로 이동할 단락을 선택합니다.
-1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
+1. 단락을 새 위치로 드래그합니다. AEM은 단락을 배치할 수 있는 위치를 나타냅니다. 원하는 위치에 드롭합니다.
 
    ![단락 구성 요소 이동](assets/screen_shot_2018-03-22at121821.png)
 
@@ -450,9 +450,9 @@ ht-degree: 47%
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
-페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/templates.md#editing-templates-template-authors)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/author-environment-tools.md#page-information)(으)로 쉽게 전환할 수 있습니다.
+페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)(으)로 쉽게 전환할 수 있습니다.
 
-페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/default-components-designmode.md)를 사용하여 [디자인 모드](/help/sites-authoring/author-environment-tools.md#page-modes)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
+페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
 
 [열 보기](/help/sites-authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.
 
@@ -524,13 +524,13 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
    1. 메뉴를 열려면 **페이지 정보** 아이콘을 선택합니다.
    1. **페이지 잠금** 옵션을 선택합니다.
 
-페이지가 잠기면 콘솔 보기 정보가 업데이트되며, 편집 시에는 잠금 기호가 도구 모음에 표시됩니다.
+잠기면 콘솔 보기 정보가 업데이트되고, 편집 시 잠금 기호가 도구 모음에 표시됩니다.
 
 ![기호 잠금](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
->[사용자를 가장할 때](/help/sites-administering/security.md#impersonating-another-user) 페이지를 잠글 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장한 사용자 또는 관리자 사용자에 의해서만 잠금 해제할 수 있습니다.
+>[사용자를 가장할 때](/help/sites-administering/security.md#impersonating-another-user) 페이지를 잠글 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장한 사용자나 관리자 사용자만 잠금 해제할 수 있습니다.
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
 

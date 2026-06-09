@@ -1,6 +1,6 @@
 ---
 title: 검색 양식 구성
-description: 검색 Forms을 사용하여 AEM 콘솔과 작성 환경의 패널에서 사용할 수 있는 검색 패널에 사용되는 검색 조건자 선택을 사용자 지정하는 방법을 알아봅니다.
+description: 검색 Forms을 사용하여 AEM 콘솔 및 작성 환경의 패널에서 사용할 수 있는 검색 패널에 사용되는 검색 조건자 선택을 맞춤화하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -9,10 +9,10 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 6%
+source-wordcount: '2079'
+ht-degree: 7%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 6%
 
 * **페이지 편집기(Dynamic Media Classic [이전 Scene7] 검색)**:
 
-  이 구성은 에셋 브라우저에서 Scene7 리소스를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
+  이 구성은 자산 브라우저에서 Scene7 리소스를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **사이트 관리자 검색 레일**:
 
@@ -109,7 +109,7 @@ ht-degree: 6%
  <tbody>
   <tr>
    <th>조건자</th>
-   <th>용도</th>
+   <th>목적</th>
    <th>설정</th>
   </tr>
   <tr>
@@ -244,7 +244,7 @@ ht-degree: 6%
    <td>없음</td>
   </tr>
   <tr>
-   <td>Publish 상태 </td>
+   <td>게시 상태 </td>
    <td>게시 상태를 기반으로 자산 검색</td>
    <td>
     <ul>
@@ -343,7 +343,7 @@ ht-degree: 6%
 
 ### 조건자 설정 {#predicate-settings}
 
-구성에 사용할 수 있는 설정은 조건자에 따라 다릅니다.
+술어에 따라 구성에 대해 다양한 설정을 사용할 수 있습니다.
 
 * **필드 레이블**
 
@@ -361,7 +361,7 @@ ht-degree: 6%
 
   검색할 속성입니다. 상대 경로를 사용하며 와일드카드 `*/*/*`은(는) `jcr:content` 노드에 상대적인 속성의 깊이를 지정합니다(각 별표는 하나의 노드 수준을 나타냄).
 
-  `jcr:content` 노드에 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`을(를) 사용하십시오.
+  `jcr:content` 노드에 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`을(를) 사용하십시오
 
 * **속성 깊이**
 
@@ -394,7 +394,7 @@ ht-degree: 6%
 * **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
-* **설정** 탭의 필드 레이블에 있는 &ast;는 필드가 필수이며 비워 두면 오류 메시지가 표시됨을 의미합니다.
+* **설정** 탭의 필드 레이블에 있는 &amp;ast;는 필드가 필수이며 비워 두면 오류 메시지가 표시됨을 의미합니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 
@@ -468,7 +468,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 >[!NOTE]
 >
->기본 구성 중 하나는 삭제할 수 없습니다.
+>기본 구성은 삭제할 수 없습니다.
 
 사용자 정의된 구성을 삭제하는 작업은 콘솔에서 수행됩니다.
 
@@ -482,7 +482,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
 
 옵션 술어(옵션, 옵션 속성)를 사용하면 검색할 항목을 구성할 수 있습니다. 페이지 바로 아래에서 검색할 때 사용됩니다(예: 페이지 노드의 속성).
 
-페이지를 만드는 데 사용된 템플릿에 따라 검색할 수 있는 다음 예제는 관련 단계를 보여 줍니다.
+페이지를 만드는 데 사용된 템플릿에 따라 검색하는 다음 예제는 관련 단계를 보여 줍니다.
 
 1. 검색할 속성을 정의하는 노드를 만듭니다.
 
@@ -553,7 +553,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
   </tr>
   <tr>
    <td>미리보기</td>
-   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한입니다.<br /> <code>/apps</code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
+   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한을 사용합니다.<br /> <code>/apps</code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
   </tr>
  </tbody>
 </table>

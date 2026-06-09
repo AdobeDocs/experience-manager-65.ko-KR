@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics 연결 및 프레임워크 만들기
+title: Adobe Analytics 연결 및 프레임워크 생성
 description: AEM을 SiteCatalyst에 연결하고 프레임워크를 만드는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 1%
+source-wordcount: '1491'
+ht-degree: 7%
 
 ---
 
-# Adobe Analytics 연결 및 프레임워크 만들기 {#connecting-to-adobe-analytics-and-creating-frameworks}
+# Adobe Analytics 연결 및 프레임워크 생성 {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 Adobe Analytics의 AEM 페이지에서 웹 데이터를 추적하려면 Adobe Analytics Cloud 서비스 구성 및 Adobe Analytics 프레임워크를 만듭니다.
 
@@ -43,7 +43,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-계속하기 전에 자격 증명을 통해 Adobe Analytics에 로그인할 수 있는지 확인하십시오. 다음 중 하나를 통해
+계속하기 전에 자격 증명을 통해 다음 중 하나를 통해 Adobe Analytics에 로그인할 수 있는지 확인하십시오.
 
 * [Adobe Experience Cloud 로그인](https://experience.adobe.com/#/@login/home)
 
@@ -51,7 +51,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ko) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
+Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
 
 필요한 경우 `https://api.omniture.com/`을(를) 사용하여 올바른 데이터 센터로 라우팅합니다.
 
@@ -63,7 +63,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 | 싱가포르 | `https://api4.omniture.com/` |
 | 오리건 | `https://api5.omniture.com/` |
 
-[웹 콘솔을 사용하여 OSGi 번들을 구성하십시오](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **AEM Analytics HTTP 클라이언트 Adobe**. AEM 페이지에서 데이터를 수집하는 보고서 세트를 호스팅하는 데이터 센터에 대한 **데이터 센터 URL**&#x200B;을(를) 추가합니다.
+[웹 콘솔을 사용하여 OSGi 번들 구성](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP 클라이언트**. AEM 페이지에서 데이터를 수집하는 보고서 세트를 호스팅하는 데이터 센터에 대한 **데이터 센터 URL**&#x200B;을(를) 추가합니다.
 
 ![aa-07](assets/aa-07.png)
 
@@ -74,7 +74,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
    >
    >이 콘솔에 대한 액세스 권한이 있는지 확인하려면 사이트 관리자에게 문의하십시오.
 
-1. 이름이 **AEM Analytics HTTP 클라이언트 Adobe**&#x200B;인 구성 항목을 선택하십시오.
+1. 이름이 **Adobe AEM Analytics HTTP 클라이언트**&#x200B;인 구성 항목을 선택하십시오.
 1. 데이터 센터의 URL을 추가하려면 **데이터 센터 URL** 목록 옆에 있는 + 단추를 누르고 상자에 URL을 입력하십시오.
 
 1. 목록에서 URL을 제거하려면 URL 옆에 있는 - 버튼을 클릭합니다.
@@ -84,17 +84,17 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
-## Activity Map 구성 {#configuring-for-the-activity-map}
+## Activity Map에 대한 구성 {#configuring-for-the-activity-map}
 
 >[!CAUTION]
 >
->Adobe Analytics API의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -102,15 +102,15 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **모두**: 작성자와 게시 인스턴스의 정보가 보고서 세트를 채웁니다.
 * **작성자**: 작성자 인스턴스의 정보만 보고서 세트를 채웁니다.
-* **Publish**: 게시 인스턴스의 정보만 보고서 세트를 채웁니다.
+* **게시**: 게시 인스턴스의 정보만 보고서 세트를 채웁니다.
 
 >[!NOTE]
 >
 >서버 인스턴스 유형을 선택해도 Adobe Analytics에 대한 호출은 제한되지 않으며 RSID를 포함하는 호출만 제어합니다.
 >
->예를 들어 프레임워크는 *diweretail* 보고서 세트를 사용하도록 구성되어 있고 작성자는 선택한 서버 인스턴스입니다. 페이지가 프레임워크와 함께 게시되면 호출은 여전히 Adobe Analytics에 수행되지만 이러한 호출에는 RSID가 포함되지 않습니다. 작성자 인스턴스의 호출만 RSID를 포함합니다.
+>예를 들어 프레임워크는 *diweretail* 보고서 세트를 사용하도록 구성되어 있고 작성자는 선택한 서버 인스턴스입니다. 페이지가 프레임워크와 함께 게시되면 호출이 여전히 Adobe Analytics에 수행됩니다. 그러나 이러한 호출에는 RSID가 포함되어 있지 않습니다. 작성자 인스턴스의 호출만 RSID를 포함합니다.
 
-1. **탐색**&#x200B;을 사용하여 **도구**, **Cloud Service**, **기존 Cloud Service**&#x200B;을 선택하십시오.
+1. **탐색**&#x200B;을 사용하여 **도구**, **클라우드 서비스**, **레거시 클라우드 서비스**&#x200B;를 선택하십시오.
 1. **Adobe Analytics**(으)로 스크롤한 다음 **구성 표시**&#x200B;를 선택합니다.
 1. Adobe Analytics 구성 옆에 있는 **[+]** 링크를 클릭합니다.
 
@@ -174,17 +174,17 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. **사이트** 콘솔에서 추적을 설정할 페이지를 선택합니다.
 1. 콘솔 또는 페이지 편집기에서 직접 **[페이지 속성](/help/sites-authoring/editing-page-properties.md)**&#x200B;을 엽니다.
-1. **&#x200B; Cloud Service** 탭을 엽니다.
+1. ** Cloud Services** 탭을 엽니다.
 
 1. **구성 추가** 드롭다운을 사용하여 사용 가능한 옵션에서 **Adobe Analytics**&#x200B;을(를) 선택합니다. 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
 
 1. **Adobe Analytics**&#x200B;에 대한 드롭다운 선택기가 사용 가능한 옵션에 추가됩니다. 필요한 프레임워크 구성을 선택합니다.
 
 1. **저장 후 닫기**&#x200B;를 선택합니다.
-1. 페이지 및 연결된 구성/파일을 활성화하려면 페이지를 **[Publish](/help/sites-authoring/publishing-pages.md)**&#x200B;하세요.
+1. 페이지 및 연결된 구성/파일을 활성화하려면 페이지를 **[게시](/help/sites-authoring/publishing-pages.md)**&#x200B;하십시오.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 **검색** 구성 요소를 사용하여 키워드(예: 에그플랜트)를 검색하는 것입니다.
-1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
-1. 제공된 예를 사용하면 호출에는 event7에 입력한 값(즉, 가지)이 포함되어야 하며 eVar 목록에는 event3이 있어야 합니다.
+1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
+1. 제공된 예제를 사용하면 호출에는 eVar7에 입력한 값(즉, 가지)이 포함되어야 하며 이벤트 목록에는 event3이 포함되어야 합니다.
 
 ### 페이지 조회수 {#page-views}
 
@@ -194,7 +194,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 ### 가져오기 간격 구성 {#configuring-the-import-interval}
 
-**Adobe AEM Analytics 보고서 Sling 가져오기** 서비스의 해당 인스턴스를 구성합니다.
+**Adobe AEM Analytics 보고서 Sling 가져오기** 서비스의 적절한 인스턴스를 구성합니다.
 
 * **가져오기 시도**:
 대기 중인 보고서 가져오기 시도 횟수.
@@ -206,13 +206,13 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **가져오기 빈도**:
 Analytics 보고서를 가져오는 빈도를 결정하는 `cron` 식입니다.
-기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 가져오기에 해당합니다.
+기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 페치에 해당합니다.
 
 이 OSGi 서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 저장소의 [osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)를 사용할 수 있습니다(서비스 PID는 `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
 ## Adobe Analytics 구성 및/또는 프레임워크 편집 {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Adobe Analytics 구성 또는 프레임워크를 만들 때와 마찬가지로 (기존) **Cloud Service** 화면으로 이동합니다. **구성 표시**&#x200B;를 선택한 다음 업데이트하려는 특정 구성에 대한 링크를 클릭합니다.
+Adobe Analytics 구성 또는 프레임워크를 만들 때와 마찬가지로 (레거시) **Cloud Services** 화면으로 이동합니다. **구성 표시**&#x200B;를 선택한 다음 업데이트하려는 특정 구성에 대한 링크를 클릭합니다.
 
 Adobe Analytics 구성을 편집할 때 구성 페이지 자체에서는 **편집**&#x200B;을 눌러 **구성 요소 편집** 대화 상자를 엽니다.
 

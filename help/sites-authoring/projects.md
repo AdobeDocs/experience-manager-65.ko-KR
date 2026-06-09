@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 28%
+source-wordcount: '1373'
+ht-degree: 31%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 28%
 
 ## 액세스 요구 사항 {#access-requirements}
 
-표준 AEM 기능을 프로젝트하므로 추가 설정이 필요하지 않습니다.
+프로젝트는 표준 AEM 기능이며 추가 설정이 필요하지 않습니다.
 
 그러나 프로젝트의 사용자가 프로젝트를 만들 때, 작업/워크플로를 만들 때, 팀을 보고 관리할 때와 같이 프로젝트를 사용하는 동안 다른 사용자/그룹을 보려면 해당 사용자가 `/home/users` 및 `/home/groups`에 대한 읽기 액세스 권한을 보유해야 합니다.
 
@@ -37,7 +37,7 @@ ht-degree: 28%
 
 ![프로젝트 콘솔](assets/screen-shot_2019-03-05at125110.png)
 
-프로젝트 콘솔은 AEM의 다른 콘솔과 유사하므로 개별 프로젝트에서 여러 작업을 허용하고 프로젝트 보기를 조정할 수 있습니다.
+프로젝트 콘솔은 AEM의 다른 콘솔과 유사합니다. 이를 통해 개별 프로젝트에 대해 여러 작업을 수행할 수 있으며 프로젝트 보기를 조정할 수 있습니다.
 
 ### 모드 전환 {#modes}
 
@@ -81,7 +81,7 @@ ht-degree: 28%
 
 프로젝트는 함께 관리하려는 다양한 유형의 정보로 구성됩니다. 이 정보는 다른 **타일**&#x200B;로 표시됩니다.
 
-다음과 같은 타일을 프로젝트와 연결할 수 있습니다.
+다음 타일을 프로젝트와 연결할 수 있습니다.
 
 * [자산](#assets)
 * [자산 컬렉션](#asset-collections)
@@ -105,7 +105,7 @@ ht-degree: 28%
 
 ![자산 타일](assets/project-tile-assets.png)
 
-타일에서 바로 에셋을 업로드할 수 있습니다.
+타일에서 바로 자산을 업로드할 수 있습니다.
 
 ### 자산 컬렉션 {#asset-collections}
 
@@ -162,7 +162,7 @@ ht-degree: 28%
 
 ![랜딩 페이지 타일](assets/project-tile-landing.png)
 
-이 워크플로는 문서[랜딩 페이지 만들기 워크플로에 설명되어 있습니다.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+이 워크플로는 [랜딩 페이지 만들기 워크플로에 설명되어 있습니다.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### 이메일 {#emails}
 
@@ -203,14 +203,14 @@ ht-degree: 28%
 * **[번역 프로젝트](/help/sites-administering/translation.md)** - 번역 관련 활동 관리에 대한 참조 샘플입니다. 여기에는 기본 역할과 번역 관리를 위한 워크플로가 포함되어 있습니다.
 * **간단한 프로젝트** - 다른 범주에 맞지 않는 모든 프로젝트에 대한 참조 샘플입니다. 여기에는 세 개의 기본 역할과 네 개의 일반 AEM 워크플로가 포함됩니다.
 
-선택하는 템플릿에 따라, 프로젝트 내에서 제공되는 사용자 역할 및 워크플로와 같은 다양한 옵션을 사용할 수 있습니다.
+선택하는 템플릿에 따라, 제공된 사용자 역할 및 워크플로와 같이 프로젝트 내에서 사용할 수 있는 다양한 옵션이 있습니다.
 
 ## 프로젝트의 사용자 역할 {#user-roles-in-a-project}
 
 서로 다른 사용자 역할은 프로젝트 템플릿에서 정의되며 다음과 같은 두 가지 주요 이유로 사용됩니다.
 
 1. 권한: 사용자 역할은 나열된 세 가지 범주(관찰자, 편집자, 소유자) 중 하나에 속합니다. 예를 들어 사진 작가나 카피라이터는 편집자와 동일한 권한을 갖습니다. 권한은 사용자가 프로젝트의 콘텐츠에 수행할 수 있는 작업을 결정합니다.
-1. 워크플로: 워크플로는 프로젝트에서 작업을 할당할 사용자를 결정합니다. 작업은 프로젝트 역할과 연결할 수 있습니다. 예를 들어 작업을 사진사에게 할당할 수 있으므로 사진사 역할을 하는 모든 팀원이 작업을 받게 됩니다.
+1. 워크플로: 워크플로는 프로젝트에서 작업을 할당할 사용자를 결정합니다. 작업은 프로젝트 역할과 연결할 수 있습니다. 예를 들어 작업을 사진사에게 지정할 수 있으므로 사진사 역할을 하는 모든 팀원이 작업을 지정할 수 있습니다.
 
 모든 프로젝트는 보안 및 제어 권한을 관리할 수 있도록 다음과 같은 기본 역할을 지원합니다.
 
@@ -224,11 +224,11 @@ ht-degree: 28%
 
 ### 자동 그룹 만들기 {#auto-group-creation}
 
-프로젝트를 만들고 사용자를 다양한 역할에 추가하면 연결된 권한을 관리하기 위해 프로젝트와 연결된 그룹이 자동으로 만들어집니다.
+프로젝트를 생성하고 다양한 역할에 사용자를 추가하면 프로젝트와 연결된 그룹이 자동으로 생성되어 관련 권한을 관리합니다.
 
-예를 들어 Myproject라는 프로젝트에는 세 개의 그룹이 있습니다. **Myproject 소유자**, **Myproject 편집기**, **Myproject 관찰자**.
+예를 들어 Myproject라는 프로젝트에는 **Myproject 소유자**, **Myproject 편집기**, **Myproject 관찰자**, 이렇게 세 개의 그룹이 있습니다.
 
-프로젝트를 삭제할 때 적절한 옵션 [을(를) 선택한 경우에만 해당 그룹이 삭제됩니다.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 **도구** > **보안** > **그룹**&#x200B;에서 그룹을 수동으로 삭제할 수도 있습니다.
+프로젝트가 삭제되면 해당 그룹은 프로젝트를 삭제할 때 [적절한 옵션을 선택하는 경우에만 삭제됩니다.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 **도구** > **보안** > **그룹**&#x200B;에서 그룹을 수동으로 삭제할 수도 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
