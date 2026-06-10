@@ -28,7 +28,7 @@ AEM Forms workspace 는 AEM Forms의 일부입니다. Workspace은 PDF forms 외
 
 ## 친숙해지기 {#getting-familiar}
 
-비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습에 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 애플리케이션을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 응용 프로그램 만들기](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html)를 참조하십시오.
+비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습에 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 애플리케이션을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 응용 프로그램 만들기](https://help.adobe.com/ko_KR/livecycle/11.0/CreateFirstApp/index.html)를 참조하십시오.
 
 ## 기능 개요 {#functional-overview}
 
