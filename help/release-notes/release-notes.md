@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7e225038e925468f6e4dbdcf1d3dce6eceee9292
+source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
 workflow-type: tm+mt
-source-wordcount: '7156'
+source-wordcount: '8148'
 ht-degree: 4%
 
 ---
@@ -43,9 +43,22 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 콘텐츠 조각 및 GraphQL API는 또한 포함된 이미지 참조, 지속 쿼리 처리 및 편집기 현지화에 대해 포함하여 안정성이 개선되었습니다.
 
+
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!-- ## Key features and enhancements -->
+### Forms의 주요 기능 및 개선 사항
+
+* [다중 스레드 PDF Generator 전환](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): AEM Forms이 구성된 단일 사용자 계정에서 Windows 서비스로 실행될 때 Microsoft Word(doc/docx) 및 Excel(xls/xlsx) 동시 전환을 실행할 수 있는 지원이 추가되었습니다.
+
+* [XFA 기반 PDF에 대한 계층 구조 책갈피](https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): 이제 출력 서비스 및 AEM Forms Designer에서 정적 대화형 및 플랫 XFA 기반 PDF에 구조화된 책갈피 계층을 생성합니다. 책갈피는 텍스트 상자의 접근성 속성에 설정된 제목 수준(H1~H6)을 따르므로 H2~H6 항목은 병렬로 표시되지 않고 올바른 상위 항목 아래에 중첩됩니다.
+
+* [JEE 트랜잭션 로그의 양식 수준 세부 정보](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): 이제 JEE의 AEM Forms은 기존 서비스 및 작업 정보와 더불어 각 트랜잭션에 대해 `transaction_log.log`에 양식 수준 세부 정보를 기록합니다. 관리자는 제출, 변환 및 변환을 분석할 때 트랜잭션 보고 데이터를 특정 양식과 상호 연관시킬 수 있습니다. (FORMS-21574)
+
+* [지원되는 플랫폼 매트릭스를 업데이트했습니다](/help/forms/using/aem-forms-jee-supported-platforms.md): JEE 서비스 팩 6.5.25.0의 AEM Forms은 다음 최신 기술과의 호환성을 지원합니다.
+   * JBoss® EAP(Enterprise Application Platform) 7.4.23
+   * ® Content Manager 클라이언트 8.7
+   * ® Windows Terminal Server 2025의 AEM Forms Designer
+
 
 
 ## 서비스 팩 25의 문제가 해결되었습니다. {#fixed-issues}
@@ -274,41 +287,43 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 ### [!DNL Forms]{#forms-6525}
 
->[!NOTE]
->
->[!DNL Experience Manager] Forms의 수정 사항은 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다. 이 경우 추가 기능 패키지는 2026년 5월 28일 목요일에 릴리스될 예정입니다. 또한 Forms 수정 사항 및 개선 사항 목록이 이 섹션에 추가됩니다.
+* 이제 대화형 통신 미리 보기가 AEM Forms 서비스 팩 6.5.24.0 후에 콘텐츠를 올바르게 로드합니다. 텍스트가 더 이상 공백이 누락된 상태로 느리게 로드되지 않으므로 미리 보기가 작성된 콘텐츠와 일치하고 더 쉽게 읽을 수 있습니다. (FORMS-25346)
+* 이제 유효성 검사 패턴을 구성하고 양식을 저장하면 유효성 검사 세부 사항이 적응형 Forms 핵심 구성 요소에 표시됩니다. 패턴은 작성 인터페이스에 계속 표시됩니다. (FORMS-25236)
+* 이제 문서 생성이 AEM Forms 6.5 서비스 팩 23 및 AEM Forms 서비스 팩 6.5.24.0 환경에서 중첩된 XDP(Extensible Forms Description Language) 조각을 올바르게 처리합니다. (FORMS-25234)
+* 이제 Rhino 엔진을 사용하여 적응형 Forms 서버측 유효성 재검사 중에 양식 조각 외부에 현지화된 텍스트가 올바른 언어로 표시됩니다. 제출 후 텍스트가 더 이상 기본 언어로 되돌려지지 않습니다. (FORMS-25224)
+* AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 Red Hat Enterprise Linux(RHEL) 8에서 잘못된 명령 오류로 인해 출력 서비스가 더 이상 충돌하지 않습니다. 갑작스러운 서비스 중지 없이 문서 생성 및 양식 출력 처리가 완료되었습니다. (FORMS-25192)
+* 이제 초기 인스턴스 수가 0으로 설정되면 적응형 Forms에서 addInstance() 함수를 사용하여 동적으로 추가된 패널 및 컨텐츠가 표시됩니다. (FORMS-25169, FORMS-25124)
+* 이제 AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 중국어 번체(홍콩)가 작성자 및 게시 환경에 올바르게 표시됩니다. 현지화된 zh-HK 콘텐츠가 더 이상 잘못된 언어로 표시되지 않거나 예기치 않게 기본 문자열로 대체됩니다. (FORMS-25042)
+* 이제 적응형 Forms의 스크리블 서명 필드에서 키보드 탐색이 양식을 탭 처리하는 동안 포커스를 서명 영역 안과 밖으로 일관되게 이동합니다. (FORMS-25011)
+* 이제 구성 및 업데이트 작업 중에 웹 서비스 호출 단계에서 WSDL(웹 서비스 설명 언어) 파일이 올바르게 로드됩니다. (FORMS-24992, FORMS-24789, FORMS-24188)
+* 이제 텍스트 조각에 조건을 적용할 때 편지 초안에는 줄바꿈이 유지됩니다. 여러 줄 컨텐츠가 더 이상 하나의 연속 줄로 표시되지 않습니다. (FORMS-24602)
+* Adobe Sign 단계에 도달한 후 서명 상태 응답이 반환되지 않으면 AEM Forms on Adobe Managed Services(AMS)의 Adobe Sign 워크플로가 더 이상 중단되지 않습니다. (FORMS-24514)
+* HTML에서 Portable Document Format(PDF)으로 변환하는 작업이 더 크거나 복잡한 변환 작업을 포함하여 AEM Forms 서비스 팩 6.5.24.0에서 더 이상 간헐적으로 시간 초과되지 않습니다. (FORMS-23978)
+* 패치 AEMForms-6.5.0-0112를 설치한 후 관리 사용자 인터페이스에서 안전 백업 모드 관리가 올바르게 작동합니다. 옵션을 사용할 수 있는 경우 사용자가 안전 백업 모드를 비활성화하거나 끌 수 있습니다. (FORMS-23976, FORMS-23718)
+* 양식 데이터 모델 데이터 소스 검색이 더 이상 실패하거나 검색 결과에 원시 HTML(HyperText Markup Language) 태그를 표시하지 않습니다. 결과는 읽을 수 있는 텍스트를 표시합니다. (FORMS-23875)
+* 적응형 Forms이 AEM Forms 서비스 팩 6.5.24.0에서 지원되는 핵심 구성 요소 버전을 사용하여 Sites 페이지에 포함되면 이제 사용자 지정 함수가 런타임에 로드됩니다. (FORMS-23802)
+* 이제 대화형 통신 숫자 규칙은 업데이트된 Sling Commons JavaScript 개체 표기법(JSON) 라이브러리를 사용하여 구문 분석할 때 값을 올바르게 평가합니다. 숫자 필드는 BigDecimal 구문 분석 변경 사항을 일관되게 처리합니다. (FORMS-23733)
+* 이제 버전 6.5.0 이상 릴리스에서 작업할 때 기록 문서 비헤이비어가 일관됩니다. 양식 출력 및 관련 처리가 최신 환경의 예상 동작과 일치합니다. (FORMS-23338)
 
+#### FORMS JEE {#forms-jee-6525}
 
+* org.owasp.eapi.reference.JavaLogFactory 오류에 대한 클래스를 찾을 수 없는 로깅 구성 요소를 로드할 때 응용 프로그램 시작이 더 이상 실패하지 않습니다. 영향을 받는 환경은 서비스를 다시 시작하거나 재구성하지 않고 올바르게 초기화됩니다. (FORMS-25348)
+* 서비스 팩 25를 적용하면 시작이 성공적으로 완료됩니다. 초기화가 완료되기 전에 시스템 부트스트랩 프로세스가 더 이상 실패하지 않습니다. (FORMS-25347)
+* 이제 코어 CPDF(Portable Document Format) 구성 요소가 실행 중에 예기치 않게 중단되지 않고 Linux 환경에서 올바르게 빌드 및 실행됩니다. (FORMS-25115)
+* 바코드 추출 중에 특정 PDF(Portable Document Format) 파일을 처리할 때 DecodingException 오류로 인해 바코드 디코딩이 더 이상 실패하지 않습니다. (FORMS-23534, FORMS-23449)
 
-<!-- ALL THE FORMS BUG FIXES LISTED BELOW GO WITH AEM 6.5.25 FORMS MAY 28 2026 RELEASE!! UNHIDE THEM!! -->
+#### Forms Designer {#forms-designer-6525}
 
-
-
-
-<!-- #### Forms Designer {#forms-designer-6525} -->
-
-<!-- 
-* The Output API now handles dynamic form content consistently when PDF generation uses client rendering. Generated PDFs retain scripted description text across affected sections instead of leaving some fields blank. (LC-3928858)
-* Document of Record generation now handles repeated panel pagination correctly when parent and child panels use the same "Place Top of Next Page" configuration. Authors no longer lose child panel data during the first repeated panel instance in generated output documents. (LC-3923274)
-* Long multiline text fields in PDF preview now flow correctly across pages. The generated PDF no longer duplicates page content or drops hidden text during printing. (LC-3924324)
-* Fillable PDFs now reset accessibility data when users clear form fields. Screen readers announce the cleared state correctly instead of reading old field values that no longer appear in the form. (LC-3923872)
-* The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988) 
--->
-
-<!-- #### XMLFM {#forms-xmlfm-6525} -->
-
-<!-- 
-* Generated PDFs now include proper tags for supported form fields that use borders in the template. Screen readers can identify numeric fields, date fields, text fields, and checkboxes more reliably. (LC-3923534)
-* Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265)
--->
-
-<!-- #### XTG {#forms-xtg-6525} -->
-
-<!-- 
-* Forms output now merges XML data correctly when generatePDFOutputBatch generates PDFs in batch mode. The batch process no longer creates documents with blank or missing merged fields. (LC-3924192) 
-* Document of Record output now includes nested child panels in the first occurrence of a repeatable panel. Forms that use Top of Next Page pagination no longer drop child panel data from the generated output. (LC-3923923)
-* Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079) 
--->
+* 이제 버전 6.5에서 ExportData를 사용할 때 ExportData 출력이 양식 데이터와 일치합니다. 내보낸 XML(Extensible Markup Language) 필드는 원래 양식에 표시된 값에 맞게 정렬됩니다. (LC-3922791)
+* 이제 출력 서비스에서 AEM Forms 서비스 팩 6.5.22.0에 만든 Portable Document Format(PDF) 파일에 올바른 접근성 태그를 생성합니다. 보조 기술은 요소를 건너뛰지 않고 올바른 순서로 콘텐츠를 읽습니다. (LC-3922756)
+* 이제 태깅이 활성화된 Portable Document Format(PDF) 양식을 병합할 때 출력 서비스에 숨겨진 필드 상태나 비활성화된 필드 상태가 올바르게 반영됩니다. (LC-3922708)
+* 이제 Workbench의 하단 캡션이 있는 필드에 올바른 태깅을 적용하여 생성된 문서의 일관성과 접근성을 개선합니다. (LC-3922619)
+* AEM Forms 서비스 팩 6.5.20.0(으)로 업그레이드한 후에도 양식의 QR 코드는 계속 스캔할 수 있습니다. 표준 스캐너는 생성된 QR 코드를 안정적으로 읽습니다. (LC-3922551)
+* 이제 Forms 서비스 렌더링은 서로 다른 서비스 팩에서 동일한 입력을 사용할 때 일관된 출력을 생성합니다. 렌더링된 값은 AEM Forms 서비스 팩 6.5.17.0과(와) AEM Forms 서비스 팩 6.5.18.0 간에 더 이상 다르지 않습니다. (LC-3922461)
+* XDP(XML Data Package) 템플릿에서 생성된 PDF/A 문서는 이제 기울어진 정사각형 테두리 스타일을 올바르게 렌더링합니다. 양식 필드 모양이 디자인된 레이아웃과 일치합니다. (LC-3922180)
+* 병합된 portable Document Format(PDF) 제출은 이제 모든 섹션의 데이터를 유지합니다. 입력한 값은 병합된 최종 문서에 남아 있습니다. (LC-3922008)
+* 변환된 정적 Portable Document Format(PDF) 파일은 더 이상 원본 XDP 템플릿의 단일 링크에서 여러 링크 태그를 생성하지 않습니다. (LC-3921997)
+* 이제 AEM Forms에서 제출을 내보내면 내보낸 출력 파일의 모든 필드가 포함됩니다. (LC-3921983)
 
 
 ### 기초 {#foundation-6525}

@@ -9,7 +9,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
+source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 72%
@@ -40,7 +40,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-authoring/search.md) 호출 |
 |  | `Alt+`&lt;`Number`> | 보려는 [레일 선택기 옵션](/help/sites-authoring/basic-handling.md#rail-selector)을 전환합니다. |
-|  | `Backtick` | 레일 숨기기 |
+|  | `` ` `` | 레일 숨기기 |
 |  | `e` | 편집 |
 |  | `p` | 속성 |
 |  | `m` | 이동 |

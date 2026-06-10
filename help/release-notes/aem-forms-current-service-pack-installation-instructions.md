@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2144'
 ht-degree: 13%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 13%
 
 | 제품 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 버전 | 6.5.24.0 |
+| 버전 | 6.5.25.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2025년 12월 4일 |
+| 날짜 | 2026년 6월 10일 |
 | 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) |
 
 >[!NOTE]

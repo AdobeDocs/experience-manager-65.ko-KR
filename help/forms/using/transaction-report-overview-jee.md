@@ -5,9 +5,9 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: cf6705707554894deeb0315d3e9c7252af211e54
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,10 @@ TransactionRecord
     transactionOperationType='...', 
     transactionCount=..., 
     elapsedTime=..., 
-    transactionDate=...
+    transactionDate=...,
+    formName='...',
+    formPath='...',
+    formTitle='...'
 }
 ```
 
@@ -108,6 +111,15 @@ TransactionRecord
 * **transactionCount**: 총 트랜잭션 수입니다.
 * **elapsedTime**: 호출 시작과 수신된 응답 사이의 시간입니다.
 * **transactionDate**: 서비스가 호출된 시기를 나타내는 타임스탬프입니다.
+* **formName**, **formPath**, **formTitle**: 양식 컨텍스트를 사용할 수 있는 경우 양식 수준 세부 정보(AEM Forms 서비스 팩 6.5.25.0 이상). 해당되지 않는 경우 생략합니다.
+
+<a id="form-level-details-transaction-log-jee"></a>
+
+>[!NOTE]
+>
+> 양식 수준 세부 사항이 있는 경우 예:
+>
+> `[2026-05-14 14:23:25] [INFO] TransactionRecord{service='FormsService', operation='render', internalService='FormsService', internalOperation='render', transactionOperationType='RENDER', transactionCount=1, elapsedTime=1250, transactionDate=Wed May 14 14:23:23 UTC 2026, formName='Loan.xdp', formPath='Applications/FormsApplication/1.0/FormsFolder/Loan.xdp', formTitle='Loan Application'}`
 
 **샘플 트랜잭션 로그**:
 
