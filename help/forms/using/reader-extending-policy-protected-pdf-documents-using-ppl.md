@@ -68,7 +68,7 @@ Reader 확장 서비스를 사용하여 다음 작업을 수행할 수 있습니
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p><a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> 유형의 개체를 지정합니다. usageRights 개체는 정책으로 보호된 PDF 문서에 적용할 수 있는 개별 권한을 나타냅니다.</p> </td>
+   <td><p><a href="https://help.adobe.com/ko_KR/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> 유형의 개체를 지정합니다. usageRights 개체는 정책으로 보호된 PDF 문서에 적용할 수 있는 개별 권한을 나타냅니다.</p> </td>
   </tr>
  </tbody>
 </table>

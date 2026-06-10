@@ -79,7 +79,7 @@ ht-degree: 1%
    </DDX>
    ```
 
-   워터마크 모양, 텍스트 및 맞춤 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) 문서에서 워터마크 및 배경 추가 및 제거를 참조하십시오.
+   워터마크 모양, 텍스트 및 맞춤 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/ko_KR/livecycle/11.0/ddxRef.pdf) 문서에서 워터마크 및 배경 추가 및 제거를 참조하십시오.
 
    >[!NOTE]
    >

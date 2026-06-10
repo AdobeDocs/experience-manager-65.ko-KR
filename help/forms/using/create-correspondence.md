@@ -367,7 +367,7 @@ AEM Forms 서신 관리에서 서신 만들기 UI에 편지를 HTML으로 표시
 * **페이지 나누기**: PDF 미리 보기에서 편지의 페이지 나누기가 출력에 미치는 영향을 정확히 볼 수 있습니다.
 * **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 나타나는 정확한 서식과 모양을 볼 수 있습니다.
 
-PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/ko_KR/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
 
 HTML5 양식의 스크립팅 지원에 대한 자세한 내용은 [HTML5 양식에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
 
