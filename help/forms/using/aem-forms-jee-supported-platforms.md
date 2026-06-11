@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '4096'
 ht-degree: 3%
 
 ---
@@ -923,7 +923,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
 | ® Office 2024 | | ® Office 2021 |
-| PDF Generator 및 관련 문서 서비스용 Adobe Acrobat Pro DC (Continuous track, 최신 버전) | Adobe Acrobat 2020 (클래식 트랙) |  |
+| PDF Generator 및 관련 문서 서비스용 Adobe Acrobat Pro DC (Continuous track, 최신 버전) | Adobe Acrobat 2020 (클래식 트랙) | JBoss® EAP(엔터프라이즈 응용 프로그램 플랫폼) 7.4.10 |
 
 ### 릴리스 6.5.23.0(2025년 6월 6일)
 
@@ -934,6 +934,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | ® SQL Server 2022 | 센토스 | ® SQL Server 2019 |
 | ® SQL Server JDBC 드라이버 12.10.0 | Red Hat® Enterprise Linux® 7(커널 4.x)(64비트) | ® SQL Server JDBC 드라이버 8.2 |
 | Red Hat® Enterprise Linux® 9(커널 5.x)(64비트) | | Red Hat® Enterprise Linux® 8(커널 4.x)(64비트) |
+| PDF Generator 및 관련 문서 서비스용 Adobe Acrobat 2020(클래식 트랙) | | ® Office 2019 |
 
 ### 릴리스 6.5.22.0(2024년 11월 29일)
 
@@ -946,7 +947,9 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
-| ® Office 2021 |  |  |
+| ® Office 2021 | ® Office Visio 2019 |  |
+|  | ® Publisher 2019 |  |
+|  | ® Project 2019 |  |
 
 ### 릴리스 6.5.19.1(2023년 12월 15일)
 
@@ -963,6 +966,21 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016(64비트) | ® Windows Server 2019(64비트) |
+| Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | ® Active Directory 2016 |
+| 내 SQL JDBC 커넥터 8 | Oracle Database 12c 릴리스 2(12.2.0.1.0) |  |
+| Active Directory | MySQL 5.7.35 |  |
+| ® Windows Server 2022(64비트) | ® SQL Server 2016 |  |
+|  | JBoss® EAP 7.1.4 |  |
+|  | 내 SQL JDBC 커넥터 5.1.44 |  |
+|  | ® SQL Server JDBC 드라이버 6.2.1.0 |  |
+|  | ® SQL Server JDBC 드라이버 6.2.2.0 |  |
+|  | SQL Server용 ® JDBC 드라이버 8.x |  |
+|  | ® Sharepoint 2016 |  |
+|  | ® Office 2016 |  |
+|  | ® Office Visio 2016 |  |
+|  | ® Publisher 2016 |  |
+|  | ® Project 2016 |  |
+|  | OpenOffice 4.1.2 |  |
 |  | Acrobat 2017(클래식 트랙) 버전 17.011.30078 이상 |  |
 
 ### 릴리스 6.5.13.0(2022년 6월 2일)
@@ -978,6 +996,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
 |  | ® J9 가상 시스템(빌드 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
+|  | Oracle Database 12c 릴리스 1 | MongoDB Enterprise 4.2 |
+|  | Oracle 데이터베이스 18c | ® DB2® 11.1 |
+|  | Oracle OUD(Unified Directory) 11g 릴리스 2 | Oracle Database 12c 릴리스 2 |
+|  | ® Lotus Domino 9.0 | MySQL 5.7.35 |
+|  | ® FileNet 5.2 | ® SQL Server JDBC 드라이버 6.2.1.0 |
+|  | Adobe Flash Player | JBoss® EAP(Enterprise Application Platform) 7.1.4 |
+|  | | ® Content Manager Server 8.5 수정 팩 2 |
+|  | | ® Content Manager 클라이언트 8.5 |
 |  | | ® SQL Server 2016 |
 |  | | ® 윈도우 서버 2016 |
 
@@ -986,7 +1012,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
-| 응용 프로그램 서버 JBoss™ EAP 7.4용 Oracle Java® SE 11(64비트) SDK | | [Adobe Acrobat 2017 - Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다.](https://helpx.adobe.com/kr/support/programs/eol-matrix.html) |
+| 응용 프로그램 서버 JBoss™ EAP 7.4용 Oracle Java® SE 11(64비트) SDK | | Adobe Acrobat 2017 |
+|  | | Red Hat® Enterprise Linux® 7(커널 3.x)(64비트) |
+|  | | ® Windows Server 2016(64비트) |
+|  | | ® Office 2016 |
 |  | | OpenOffice 4.1.2 |
 
 >[!NOTE]
