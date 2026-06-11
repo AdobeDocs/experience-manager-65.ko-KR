@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 652162941dd716ae797ce50709e91757dad99054
+source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
 workflow-type: tm+mt
-source-wordcount: '8272'
+source-wordcount: '8270'
 ht-degree: 96%
 
 ---
@@ -587,8 +587,8 @@ ht-degree: 96%
          + [JBoss 턴키용 JEE의 AEM Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_kr)
          + [WebSphere용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_kr)
          + [WebLogic용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_kr)
-         + [JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
-         + [JBoss EAP 클러스터를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
+         + [JEE의 AEM Forms용 JBoss를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+         + [JEE의 AEM Forms용 JBoss 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + AEM Forms 관리 {#manage-administer-aem-forms}
       + [OSGi 그룹 및 권한에 대한 AEM Forms](/help/forms/using/forms-groups-privileges-tasks.md)
       + [양식을 분류하기 위한 새 폴더 만들기](/help/forms/using/creating-new-folders-categorize-forms.md)
