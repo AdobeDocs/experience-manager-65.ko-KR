@@ -1,11 +1,15 @@
 ---
 title: JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드
 description: JBoss EAP를 7.4.10에서 7.4.23 for AEM Forms on JEE 독립형 환경으로 업그레이드하는 절차.
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: installing
+geptopics: SG_AEMFORMS/categories/jee
 exl-id: 8f4c2a91-6b3d-4e7f-9c12-5d8e1f0a2b34
 solution: Experience Manager, Experience Manager Forms
-feature: AEM Forms on JEE
+feature: AEM Forms Upgrade,AEM Forms on JEE
 role: User, Developer
-source-git-commit: 8f8aed4c653cc286b32c83a38382f2b10370cdc8
+source-git-commit: 652162941dd716ae797ce50709e91757dad99054
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 3%
