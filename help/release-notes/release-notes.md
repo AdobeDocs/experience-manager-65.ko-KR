@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
+source-git-commit: 1a73ae15f03a427f33a748ad2c6c789541206579
 workflow-type: tm+mt
-source-wordcount: '8148'
+source-wordcount: '8188'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,11 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
    * ® Content Manager 클라이언트 8.7
    * ® Windows Terminal Server 2025의 AEM Forms Designer
 
-
+  >[!NOTE]
+  >
+  > JBoss EAP를 7.4.10에서 7.4.23으로 업그레이드하려면 다음을 참조하십시오.
+  > * [독립형 환경의 경우 JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md).
+  > * [JEE의 AEM Forms용 JBoss EAP 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) 클러스터 환경용.
 
 ## 서비스 팩 25의 문제가 해결되었습니다. {#fixed-issues}
 
