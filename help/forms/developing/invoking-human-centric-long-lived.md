@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Java 서블릿은 다음 작업을 수행합니다.
 
 ### 웹 프로젝트 만들기 {#create-a-web-project}
 
-웹 응용 프로그램을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. *index.html* HTML 페이지와 Java 서블릿을 프로젝트에 추가합니다.
+웹 응용 프로그램을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. *index.html*(이)라는 HTML 페이지와 Java 서블릿을 프로젝트에 추가합니다.
 
 다음 목록은 웹 프로젝트에 포함할 JAR 파일을 지정합니다.
 
@@ -132,7 +132,7 @@ Java 서블릿은 다음 작업을 수행합니다.
 
 1. 프로젝트 탐색기 창에서 `InvokePreLoanProcess` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;를 선택합니다.
 1. **Web** 폴더를 확장하고 **HTML**&#x200B;을 선택한 후 **다음**&#x200B;을 클릭합니다.
-1. 새 HTML 대화 상자에서 파일 이름을 `index.html`으로 입력한 다음 **마침**&#x200B;을 클릭합니다.
+1. 새 HTML 대화 상자에서 파일 이름에 `index.html`을(를) 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
@@ -357,7 +357,7 @@ Invocation API를 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를
 
 ### 웹 응용 프로그램의 웹 페이지를 만듭니다. {#create-the-web-page-for-the-web-application}
 
-*index.html* 웹 페이지는 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿에 대한 진입점을 제공합니다. 이 웹 페이지는 HTML 양식과 제출 단추를 포함하는 기본 HTML 양식입니다. 사용자가 제출 단추를 클릭하면 양식 데이터가 `SubmitXML` Java 서블릿에 게시됩니다.
+*index.html* 웹 페이지는 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿에 대한 진입점을 제공합니다. 이 웹 페이지는 HTML 양식과 제출 버튼을 포함하는 기본 HTML 양식입니다. 사용자가 제출 단추를 클릭하면 양식 데이터가 `SubmitXML` Java 서블릿에 게시됩니다.
 
 Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시된 데이터를 캡처합니다.
 
@@ -848,7 +848,7 @@ FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex으로 
 
 1. 새 Flex 프로젝트를 시작합니다.
 1. 프로젝트의 클래스 경로에 adobe-remoting-provider.swc 파일을 포함합니다. ([AEM Forms Flex 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)을 참조하십시오.)
-1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. ([mx:RemoteObject 인스턴스 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md) 참조)
+1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. ([mx 만들기:RemoteObject 인스턴스 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md) 참조)
 1. AEM Forms과 통신할 `ChannelSet` 인스턴스를 설정하고 `mx:RemoteObject` 인스턴스와 연결하십시오. ([AEM Forms에 채널 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md)를 참조하세요.)
 1. 사용자 식별자 값 및 암호를 지정하려면 ChannelSet의 `login` 메서드 또는 서비스의 `setCredentials` 메서드를 호출하십시오. [SSO(Single Sign-On) 사용](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on)을 참조하세요.
 1. XML 인스턴스를 만들어 `FirstAppSolution/PreLoanProcess` 프로세스에 전달할 XML 데이터 원본을 만드십시오. (이 응용 프로그램 논리는 다음 코드 예제에 나와 있습니다.)

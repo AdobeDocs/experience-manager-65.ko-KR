@@ -1,6 +1,6 @@
 ---
-title: 구성 요소 및 서비스 Java&trade; APIQuick 시작(SOAP)
-description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법을 알아봅니다.
+title: 구성 요소 및 서비스 Java&trade, APIQuick Start(SOAP)
+description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,27 +11,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
 # 구성 요소 및 서비스 Java™ API 빠른 시작(SOAP) {#components-and-services-java-apiquick-start-soap}
 
-Java™ API 빠른 시작(SOAP)은 구성 요소 및 서비스에 사용할 수 있습니다.
+구성 요소 및 서비스에 Java™ API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
 
-[빠른 시작(SOAP 모드): Java를 사용하여 구성 요소 배포](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 배포](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 실행 컨텍스트 설정](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 실행 컨텍스트 설정](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 보안 비활성화](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 보안 비활성화](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 시작](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 시작](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 구성 값 수정](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 구성 값 수정](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 구성 요소 제거](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 제거](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
@@ -42,11 +42,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
+>AEM Forms를 사용한 프로그래밍의 빠른 시작은 JBoss® 및 Windows 운영 체제에 배포 중인 Forms 서버를 기반으로 합니다. 그러나 UNIX®와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 >[!NOTE]
 >
->사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하는 경우 업그레이드 후 해당 호출이 작동하지 않는 경우 VM 내 호출 전략을 사용하십시오. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 않습니다.
+>사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하는 경우 업그레이드 후 해당 호출이 작동하지 않는 경우 VM 내 호출 전략을 사용하십시오. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 방법을 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 않습니다.
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 배포 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

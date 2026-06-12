@@ -1,5 +1,5 @@
 ---
-title: PDF 서비스 Java&trade; API 빠른 시작(SOAP) 변환
+title: PDF 서비스 Java&trade 변환, API 빠른 시작(SOAP)
 description: PDF 변환 서비스에서 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,18 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-# PDF 서비스 Java™ API 빠른 시작(SOAP) 변환 {#convert-pdf-service-java-api-quickstart-soap}
+# PDF 서비스 Java™ API 빠른 시작 변환(SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 PDF 서비스 API 변환에 사용할 수 있는 빠른 시작은 다음과 같습니다.
 
-[빠른 시작(SOAP 모드): Java를 사용하여 PDF 문서를 PostScript으로 변환](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF 문서를 PostScript으로 변환](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 PDF 문서를 JPEG 파일로 변환](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF 문서를 JPEG 파일로 변환](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
@@ -147,7 +147,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF 문서를 JPEG 파일로 변환 {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 *Loan.pdf*&#x200B;이라는 PDF 문서를 JPEG 파일 집합으로 변환하여 C:\Adobe 디렉터리에 저장합니다. 각 파일의 이름은 `tempFile[index].jpg`입니다. 여기서 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*&#x200B;입니다. ([PDF 문서를 이미지 형식으로 변환](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)을 참조하십시오.)
+다음 Java™ 코드 예제에서는 *Loan.pdf*&#x200B;이라는 PDF 문서를 JPEG 파일 세트로 변환하여 C:\Adobe 디렉터리에 저장합니다. 각 파일의 이름은 `tempFile[index].jpg`입니다. 여기서 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*&#x200B;입니다. ([PDF 문서를 이미지 형식으로 변환](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)을 참조하십시오.)
 
 ```java
  /*

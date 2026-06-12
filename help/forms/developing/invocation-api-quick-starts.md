@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 3%
+source-wordcount: '1272'
+ht-degree: 4%
 
 ---
 
@@ -87,20 +87,20 @@ ht-degree: 3%
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">빠른 시작: Java 프로젝트에서 DIME를 사용하여 서비스 호출</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">(AEM Forms에서 더 이상 사용되지 않는 기능)AEM Forms 원격을 사용하여 AEM Forms 호출</a></p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">를 사용하여 AEM Forms 호출(AEM Forms에서는 더 이상 사용되지 않음) AEM Forms 원격</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">빠른 시작: (AEM Forms에서 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">원격을 사용하여 프로세스를 호출할 보안 문서 전달</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">빠른 시작: (AEM Forms에서 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">원격을 사용하여 사용자 지정 구성 요소 서비스 호출</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms 원격을 사용하여 고객 사용자 지정 서비스 호출</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">빠른 시작: (AEM forms에서 더 이상 사용되지 않는 기능)AEM Forms 원격을 사용하여 고객 사용자 지정 서비스 호출</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
@@ -115,7 +115,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: 호출 API를 사용하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
-다음 Java 코드 예제에서는 `MyApplication/EncryptDocument`(이)라는 단기 프로세스를 호출합니다. 이 프로세스는 동기적으로 호출됩니다. 이 프로세스에 대한 입력 매개 변수의 이름은 `inDoc`입니다. 이 프로세스의 출력 매개 변수 이름은 `outDoc`입니다. 암호로 암호화된 PDF 문서가 `EncryptLoan.pdf`(이)라는 PDF 파일로 저장됩니다. ([호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)을(를) 참조하십시오.)
+다음 Java 코드 예제에서는 `MyApplication/EncryptDocument`(이)라는 단기 프로세스를 호출합니다. 이 프로세스는 동기적으로 호출됩니다. 이 프로세스에 대한 입력 매개 변수의 이름은 `inDoc`입니다. 이 프로세스의 출력 매개 변수 이름은 `outDoc`입니다. 암호로 암호화된 PDF 문서가 이름이 `EncryptLoan.pdf`인 PDF 파일로 저장됩니다. ([호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)을(를) 참조하십시오.)
 
 ```java
  /*
@@ -231,7 +231,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 C# 코드 예제에서는 Base64 인코딩을 사용하여 Microsoft .NET 프로젝트에서 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 참조하십시오.
 
-이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *EncryptedPDF.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서가 반환됩니다. 이 문서는 PDF 파일(*EncryptedPDF.pdf*)로 저장됩니다.
 
 ```java
  /*
@@ -312,7 +312,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 JAX-WS 및 Base64 인코딩을 사용하여 만든 Java 프록시 파일을 사용하여 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 참조하십시오.
 
-이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *EncryptedDocument.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서가 반환됩니다. 이 문서는 이름이 *EncryptedDocument.pdf*&#x200B;인 PDF 파일로 저장됩니다.
 
 ```java
  /**
@@ -394,7 +394,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작: (AEM Forms에서는 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
+## 빠른 시작: (AEM Forms에서 더 이상 사용되지 않음) AEM Forms Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
 다음 Flex 코드 예제에서는 이름이 `MyApplication/EncryptDocument`인 단기 프로세스를 호출합니다. ([을(를) 사용하여 AEM Forms 호출(AEM Forms에서는 더 이상 사용되지 않음) AEM Forms 원격](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 참조하십시오.)
 
@@ -555,7 +555,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 C# 코드 예제에서는 Dime을 사용하여 Microsoft .NET 프로젝트에서 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 참조하십시오.
 
-이름이 *map.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 DIME을 사용하여 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *mapEncrypt.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *map.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 DIME을 사용하여 AEM Forms 프로세스에 전달됩니다. 이 프로세스는 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *mapEncrypt.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
 
 ```java
  /**
@@ -761,7 +761,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 HTTP를 통해 데이터를 사용하여 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. ([HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)을 참조하십시오.)
 
-*Loan.pdf* PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 HTTP를 통해 SOAP을 사용하여 AEM Forms 프로세스에 전달됩니다. PDF 파일이 URL `https://'[server]:[port]'/FormsQS`에 있습니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *EncryptedDocument.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 HTTP를 통해 SOAP을 사용하여 AEM Forms 프로세스로 전달됩니다. PDF 파일이 URL `https://'[server]:[port]'/FormsQS`에 있습니다. 암호로 암호화된 PDF 문서가 반환됩니다. 이 문서는 이름이 *EncryptedDocument.pdf*&#x200B;인 PDF 파일로 저장됩니다.
 
 ```java
  /**
@@ -836,7 +836,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 C# 코드 예제에서는 HTTP를 통해 데이터를 사용하여 Microsoft .NET 프로젝트에서 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. ([HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)을 참조하십시오.)
 
-이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 HTTP를 통해 BLOB를 사용하여 AEM Forms 프로세스로 전달됩니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *EncryptedPDF.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 HTTP를 통해 BLOB를 사용하여 AEM Forms 프로세스로 전달됩니다. 암호로 암호화된 PDF 문서가 반환됩니다. 이 문서는 PDF 파일(*EncryptedPDF.pdf*)로 저장됩니다.
 
 ```java
  /*
@@ -936,7 +936,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 C# 코드 예제에서는 MTOM을 사용하여 Microsoft .NET 프로젝트에서 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)을 참조하십시오.
 
-이름이 *loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 MTOM을 사용하여 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서를 반환합니다. 이 문서는 *EncryptedDocument.pdf*&#x200B;라는 PDF 파일로 저장됩니다.
+이름이 *loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 MTOM을 사용하여 AEM Forms 프로세스에 전달됩니다. 암호로 암호화된 PDF 문서가 반환됩니다. 이 문서는 이름이 *EncryptedDocument.pdf*&#x200B;인 PDF 파일로 저장됩니다.
 
 ```java
  ???/**
@@ -1026,7 +1026,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 Java 프로젝트에서 이름이 `MyApplication/EncryptDocument`인 프로세스를 호출합니다. JAX-WS 및 SwaRef를 인코딩 유형으로 사용하여 만든 프록시 클래스를 사용하는 이 Java 프로젝트입니다. ([SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)을 참조하십시오.)
 
-*Loan.pdf*&#x200B;이라는 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 SwaRef를 사용하여 AEM Forms 프로세스에 전달됩니다. 암호화된 PDF 문서가 *EncryptedDocument.pdf*(이)라는 PDF 파일로 저장됩니다.
+이름이 *Loan.pdf*&#x200B;인 PDF 파일을 기반으로 하는 보안되지 않은 PDF 문서가 SwaRef를 사용하여 AEM Forms 프로세스에 전달됩니다. 암호화된 PDF 문서가 *EncryptedDocument.pdf*(이)라는 PDF 파일로 저장됩니다.
 
 ```java
  /**

@@ -1,6 +1,6 @@
 ---
-title: LiveCycleProcess Java API(SOAP)Quick Start
-description: LiveCycleProcess SOAP(Java API) 빠른 시작을 사용하여 프로세스 인스턴스 검색, 프로세스 인스턴스 일시 중단, 일시 중단된 프로세스 인스턴스 시작, 프로세스 인스턴스 종료, 프로세스 데이터 제거 및 작업 상태 검색을 수행합니다.
+title: LiveCycleProcess Java API(SOAP) 빠른 시작
+description: LiveCycleProcess Java API(SOAP) 빠른 시작을 사용하여 프로세스 인스턴스 검색, 프로세스 인스턴스 일시 중단, 일시 중단된 프로세스 인스턴스 시작, 프로세스 인스턴스 종료, 프로세스 데이터 제거 및 작업 상태 검색을 수행합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '424'
+ht-degree: 1%
 
 ---
 
-# LiveCycleProcess SOAP(Java API) 빠른 시작 {#livecycleprocess-java-api-soap-quick-start}
+# LiveCycleProcess Java API(SOAP) 빠른 시작 {#livecycleprocess-java-api-soap-quick-start}
 
 Java API(SOAP) 빠른 시작은 프로세스에 사용할 수 있습니다. *프로세스 인스턴스*&#x200B;은(는) Invocation API와 같은 호출 방법 또는 Workspace 내에서 시작된 특정 프로세스의 발생입니다.
 
@@ -28,7 +28,7 @@ Java API(SOAP) 빠른 시작은 프로세스에 사용할 수 있습니다. *프
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 종료](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 삭제](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 제거](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 작업 상태 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
@@ -427,7 +427,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 삭제 {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 제거 {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
 다음 Java 코드는 *SecureDocument*(이)라는 프로세스의 데이터를 삭제합니다. 이름이 *inValue*&#x200B;인 프로세스 변수가 200보다 큰 프로세스 인스턴스의 데이터를 제거하도록 지정하는 필터가 사용됩니다.
 

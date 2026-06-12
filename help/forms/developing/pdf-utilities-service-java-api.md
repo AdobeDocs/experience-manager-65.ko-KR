@@ -1,5 +1,5 @@
 ---
-title: PDF 유틸리티 서비스 Java APIQuick 시작(SOAP)
+title: PDF 유틸리티 서비스 Java API 빠른 시작(SOAP)
 description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서에 대한 저장 스타일을 설정하고, PDF 문서를 정리합니다.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
@@ -239,7 +239,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 속성 검색 {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, 문서가 있으면 읽을 수 있는 가장 빠른 Acrobat 버전을 확인합니다. ([PDF 문서 속성 검색](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)을 참조하십시오.)
+다음 코드 예제에서는 문서가 PDF 문서인지, 그리고 문서가 있으면 읽을 수 있는 가장 빠른 Acrobat 버전인지 여부를 확인합니다. ([PDF 문서 속성 검색](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)을 참조하십시오.)
 
 ```java
  /*

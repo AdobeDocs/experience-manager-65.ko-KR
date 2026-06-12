@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '406'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 {{ue-over-mobile}}
 
-온디맨드 앱을 클라우드 구성에 연결하면 Adobe Experience Manager(AEM)가 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 앱을 Mobile On-Demand 프로젝트에 연결하면 AEM 내에서 문서, 배너 및 컬렉션과 같은 콘텐츠 작성을 수행할 수 있지만 해당 콘텐츠를 Mobile On-Demand에 제공할 수도 있습니다.
+온디맨드 앱을 클라우드 구성에 연결하면 Adobe Experience Manager(AEM)가 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 앱을 Mobile On-Demand 프로젝트에 연결하면 AEM 내에서 문서, 배너 및 컬렉션과 같은 콘텐츠 작성을 수행할 수 있지만 해당 콘텐츠를 Mobile On-Demand에도 제공할 수 있습니다.
 
 거기서부터 콘텐츠 게시, 미리보기, 관리 등이 가능해진다. 기존 Mobile On-Demand 콘텐츠를 AEM으로 가져오고 콘텐츠 편집을 수행할 수도 있습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 >
 >자세한 내용은 관리 섹션에서 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md)을 참조하십시오.
 
-Mobile On-Demand Cloud Service을 구성하려면 앱 대시보드에서 **연결 관리** 타일의 오른쪽 상단 모서리에 있는 톱니바퀴를 클릭합니다.
+Mobile On-Demand Cloud Services를 구성하려면 앱 대시보드에서 **연결 관리** 타일의 오른쪽 상단 모서리에 있는 톱니바퀴를 클릭합니다.
 
 앱 대시보드 및 사용 가능한 타일에 익숙해야 합니다. 자세한 내용은 [AEM Mobile 응용 프로그램 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md)를 참조하세요.
 

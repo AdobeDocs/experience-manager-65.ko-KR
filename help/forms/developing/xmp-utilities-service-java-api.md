@@ -1,5 +1,5 @@
 ---
-title: XMP 유틸리티 서비스 Java APIQuick 시작(SOAP)
+title: XMP 유틸리티 서비스 Java API 빠른 시작(SOAP)
 description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 빠른 시작은 Forms 서버를 기반으로 합니다. UNIX와 같은 다른 운영 체제를 사용하는 경우 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
+>UNIX와 같은 다른 운영 체제를 사용하는 경우 AEM Forms를 사용한 프로그래밍의 빠른 시작은 Forms 서버를 기반으로 합니다. windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 XMP 메타데이터 내보내기 {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
