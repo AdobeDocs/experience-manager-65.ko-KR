@@ -1,6 +1,6 @@
 ---
-title: Document Security Service JavaAPI 빠른 시작(SOAP)
-description: Document Security Service JavaAPI 빠른 시작(SOAP)
+title: 문서 보안 서비스 Java API 빠른 시작(SOAP)
+description: 문서 보안 서비스 Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 0%
+source-wordcount: '1076'
+ht-degree: 1%
 
 ---
 
 # Document Security Service Java API 빠른 시작(SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Rights Management 서비스에는 SOAP(Java API Quick Start)를 사용할 수 있습니다.
+Java API 빠른 시작(SOAP)은 Rights Management 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 정책 만들기](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -374,7 +374,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 정책 적용 {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 *복사 허용* 정책을 *Loan.pdf* PDF 문서에 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.pdf라는 PDF 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)을 참조하십시오.)
+다음 Java 코드 예제에서는 *복사 허용* 정책을 *Loan.pdf*(이)라는 PDF 문서에 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.pdf라는 PDF 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents) 참조)
 
 ```java
  /*
@@ -480,7 +480,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에서 정책 제거 {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 PDF 문서 *PolicyProtectedLoanDoc.pdf*&#x200B;에서 정책을 제거합니다. 보안되지 않은 PDF 문서가 *unProtectedLoan.pdf*(으)로 저장됩니다. ([PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.)
+다음 코드 예제에서는 PDF 문서 *PolicyProtectedLoanDoc.pdf*&#x200B;에서 정책을 제거합니다. 보안되지 않은 PDF 문서가 *unProtectedLoan.pdf*(으)로 저장됩니다. [PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.
 
 ```java
  /*
@@ -701,7 +701,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 정책으로 보호된 PDF 문서 검사 {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-다음 Java 코드 예제에서는 *PolicyProtectedLoanDoc.pd* f라는 정책으로 보호된 PDF 문서를 검사합니다. ([정책으로 보호된 PDF 문서 검사](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)를 참조하십시오.)
+다음 Java 코드 예제에서는 정책으로 보호된 *PolicyProtectedLoanDoc.pd* f라는 PDF 문서를 검사합니다. ([정책으로 보호된 PDF 문서 검사](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)를 참조하십시오.)
 
 ```java
  /*
@@ -1530,7 +1530,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP): Java API를 사용하여 Word 문서에 정책 적용 {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 *Loan.doc*&#x200B;이라는 Word 문서에 *복사 허용*&#x200B;이라는 정책을 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.doc라는 DOC 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)을 참조하십시오.)
+다음 Java 코드 예제에서는 *Loan.doc*&#x200B;이라는 Word 문서에 *복사 허용*&#x200B;이라는 정책을 적용합니다. 정책이 추가되는 정책 집합의 이름은 *전역 정책 집합*&#x200B;입니다. 정책으로 보호된 문서는 *PolicyProtectedLoanDoc.doc라는 DOC 파일로 저장됩니다. *([PDF 문서에 정책 적용](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents) 참조)
 
 ```java
  /*
@@ -2054,7 +2054,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Protect은 Java API를 사용하여 기존 사용자에 대한 명령문 워크플로의 PDF을 생성합니다 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 기존 사용자에 대한 PDF in Statement 워크플로 보호 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 다음 Java 코드 예제에서는 기존 사용자에 대해 Statement Workflow의 문서를 보호하는 방법을 보여 줍니다.
 
@@ -2162,7 +2162,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Protect은 Java API를 사용하여 새 사용자에 대한 명령문 워크플로의 PDF을 생성합니다 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 새 사용자에 대한 PDF in 문 워크플로 보호 {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 다음 Java 코드 예제에서는 Statement Workflow에서 문서를 보호하는 방법을 보여 줍니다. 2단계 프로세스입니다.
 

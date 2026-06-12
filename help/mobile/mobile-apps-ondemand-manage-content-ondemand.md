@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 컨텐츠 개요 {#content-overview}
 
-온라인 잡지를 떠올리면 주요 내용에는 기사, 광고, 표지가 포함된다. Mobile On-Demand 콘텐츠의 세 가지 주요 유형은 AEM 내에서 만들 수 있습니다.
+온라인 잡지를 떠올리면 주요 내용에는 기사, 광고, 표지가 포함된다. AEM 내에서 다음과 같은 세 가지 주요 유형의 Mobile On-Demand 콘텐츠를 만들 수 있습니다.
 
 * **기사**: 정보를 전달하기 위해 아트와 함께 텍스트 기반
 * **배너:** 일반적으로 그래픽 홍보 링크
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
 
 ## 컨텐츠 만들기 및 관리 {#creating-and-managing-content}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)
 * [컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)
 * [공유 리소스 업로드](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish 컨텐츠 게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [게시 취소 컨텐츠](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >

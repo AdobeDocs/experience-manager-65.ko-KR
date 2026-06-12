@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 서명 필드 추가 {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;이라는 PDF 파일을 기반으로 하는 PDF 문서에 *SignatureField1*&#x200B;이라는 서명 필드를 추가합니다. 새 서명 필드가 포함된 PDF 문서가 *LoanSig.pdf*(이)라는 PDF 파일로 저장됩니다. ([서명 필드 추가](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)를 참조하십시오.)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;이라는 PDF 파일을 기반으로 하는 PDF 문서에 *SignatureField1*&#x200B;이라는 서명 필드를 추가합니다. 새 서명 필드가 포함된 PDF 문서는 *LoanSig.pdf*(이)라는 PDF 파일로 저장됩니다. ([서명 필드 추가](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)를 참조하십시오.)
 
 ```java
  /*
@@ -164,7 +164,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 이름 검색 {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서의 서명 필드 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)을 참조하십시오.)
+다음 Java 코드 예제에서는 PDF 문서 *LoanSig.pdf*&#x200B;의 서명 필드 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)을 참조하십시오.)
 
 ```java
  /*
@@ -270,7 +270,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 수정 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제에서는 서명 서비스에 전달되는 PDF 파일을 덮어씁니다.) ([서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)을 참조하십시오.)
+다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제는 서명 서비스에 전달되는 PDF 파일을 덮어씁니다.) ([서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)을 참조하십시오.)
 
 ```java
  /*

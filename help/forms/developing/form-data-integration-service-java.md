@@ -1,5 +1,5 @@
 ---
-title: 양식 데이터 통합 서비스 JavaAPI 빠른 시작(SOAP)
+title: 양식 데이터 통합 서비스 Java API 빠른 시작(SOAP)
 description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API를 사용하여 PDF 양식에서 데이터를 내보냅니다.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
+source-wordcount: '251'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 가져오기 {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 XML 파일 *Loan_data.xml*&#x200B;에 있으며 PDF 양식은 PDF 파일 *ResultLoanForm.pdf*&#x200B;로 저장됩니다. [양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.
+다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터가 *Loan_data.xml* XML 파일에 있고 PDF 양식은 *ResultLoanForm.pdf*(이)라는 PDF 파일로 저장됩니다. [양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.
 
 ```java
  /*
@@ -134,7 +134,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 내보내기 {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-다음 Java 코드 예제에서는 PDF 양식에서 데이터를 내보냅니다. 양식 데이터가 *Loan_data.xml*(이)라는 XML 파일로 저장됩니다. ([양식 데이터 내보내기](/help/forms/developing/importing-exporting-data.md#exporting-form-data)를 참조하십시오.)
+다음 Java 코드 예제는 PDF 양식에서 데이터를 내보냅니다. 양식 데이터가 *Loan_data.xml*(이)라는 XML 파일로 저장됩니다. ([양식 데이터 내보내기](/help/forms/developing/importing-exporting-data.md#exporting-form-data)를 참조하십시오.)
 
 ```java
  /*

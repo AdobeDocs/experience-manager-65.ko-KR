@@ -1,5 +1,5 @@
 ---
-title: 백업 및 복원 서비스 API빠른 시작
+title: 백업 및 복원 서비스 API 빠른 시작
 description: AEM Forms 백업 및 복원 API 빠른 시작을 통해 효율적인 백업 생성 및 복원 프로세스를 활성화하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-SOAP(Java™ API Quick Start)는 백업 및 복원 서비스 API에 사용할 수 있습니다.
+Java™ API 빠른 시작(SOAP)은 백업 및 복원 서비스 API에 사용할 수 있습니다.
 
-[빠른 시작: Java를 사용하여 백업 모드 시작](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[빠른 시작: Java™ API(SOAP)를 사용하여 백업 모드 시작](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[빠른 시작: Java를 사용하여 백업 모드 종료](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[빠른 시작: Java™ API(SOAP)를 사용하여 백업 모드 종료](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 

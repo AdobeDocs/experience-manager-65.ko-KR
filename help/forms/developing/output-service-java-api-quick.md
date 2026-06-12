@@ -1,6 +1,6 @@
 ---
 title: 출력 서비스 Java API 빠른 시작(SOAP)
-description: 출력 서비스 SOAP(Java API 빠른 시작)을 사용하여 PDF 문서 생성, 애플리케이션 XDP 파일 기반 PDF 문서 생성, PDF/A 문서 생성, 문서를 출력 서비스로 전달, AEM Forms 저장소의 문서를 출력 서비스로 전달, 조각을 기반으로 PDF 문서 생성, 파일로 인쇄, 네트워크 프린터로 인쇄 스트림 전송, 여러 PDF 파일 생성, 검색 규칙 생성, PDF 문서 변형
+description: 출력 서비스 Java API 빠른 시작(SOAP)을 사용하여 PDF 문서 생성, 애플리케이션 XDP 파일 기반 PDF 문서 생성, PDF/A 문서 생성, 문서를 출력 서비스로 전달, AEM Forms 저장소의 문서를 출력 서비스로 전달, 조각을 기반으로 PDF 문서 생성, 파일로 인쇄, 네트워크 프린터로 인쇄 스트림 전송, 여러 PDF 파일 생성, 검색 규칙 생성, PDF 문서 변형
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
 
 # 출력 서비스 Java API 빠른 시작(SOAP) {#output-service-java-api-quick-start-soap}
 
-SOAP(Java API Quick Start)는 출력 서비스에 사용할 수 있습니다.
+출력 서비스에 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 생성](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 XDP 파일 기반 PDF 문서 생성](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 생성](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 만들기](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 문서를 출력 서비스에 전달](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
@@ -48,7 +48,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 >
 >AEM Forms를 사용한 프로그래밍의 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 생성 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 *Loan.pdf*(이)라는 PDF 문서를 만듭니다. 이 PDF 문서는 *Loan.xdp* 양식 디자인과 *Loan.xml* XML 데이터 파일을 기반으로 합니다. *Loan.pdf*&#x200B;은(는) 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 있는 C:\Adobe 폴더에 기록됩니다. ([PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)를 참조하십시오.)
 
@@ -441,7 +441,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 생성 {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기 {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
 다음 Java 코드 예제에서는 *Loan.pdf*(이)라는 PDF 문서를 만듭니다. 이 PDF 문서는 *Loan.xdp* 양식 디자인과 *Loan.xml* XML 데이터 파일을 기반으로 합니다. *Loan.pdf*&#x200B;은(는) 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 있는 C:\Adobe 폴더에 기록됩니다. ([PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)를 참조하십시오.)
 
@@ -551,7 +551,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 생성 {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 만들기 {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 *LoanArchive.pdf*(이)라는 PDF/A 문서를 만듭니다. 이 PDF 문서는 *Loan.xdp* 양식 디자인과 *Loan.xml* XML 데이터 파일을 기반으로 합니다. *LoanArchive.pdf*&#x200B;이(가) 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 있는 C:\Adobe 폴더에 작성되었습니다. ([PDF/A 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents)를 참조하십시오.)
 
@@ -810,7 +810,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기 {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-다음 Java 코드 예제에서는 어셈블러 서비스에서 어셈블한 양식 디자인을 기반으로 하는 PDF 문서를 만듭니다. 어셈블러 서비스는 여러 XDP 파일의 조각을 단일 양식 디자인으로 어셈블합니다. 어셈블러 서비스를 호출하는 응용 프로그램 논리가 `GetFormDesign`(이)라는 사용자 정의 메서드에 있습니다. 비대화형 양식은 클라이언트 컴퓨터에 *Loan.pdf *라는 PDF 파일로 저장됩니다. [조각을 사용하여 PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)를 참조하십시오.
+다음 Java 코드 예제에서는 어셈블러 서비스로 어셈블된 양식 디자인을 기반으로 하는 PDF 문서를 만듭니다. 어셈블러 서비스는 여러 XDP 파일의 조각을 단일 양식 디자인으로 어셈블합니다. 어셈블러 서비스를 호출하는 응용 프로그램 논리가 `GetFormDesign`(이)라는 사용자 정의 메서드에 있습니다. 비대화형 양식은 클라이언트 컴퓨터에 *Loan.pdf *라는 PDF 파일로 저장됩니다. [조각을 사용하여 PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)를 참조하십시오.
 
 ```java
  /*
@@ -1255,7 +1255,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 여러 PDF 파일 만들기 {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-다음 Java 코드는 XML 데이터 파일 *Loan_data_batch.xml*&#x200B;에 있는 각 데이터 레코드에 대해 여러 PDF 파일을 만듭니다. 파일은 C:\Adobe 디렉토리에 기록됩니다. PDF 파일은 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 있는 C:\Adobe 폴더에 기록됩니다. ([여러 출력 파일 만들기](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)를 참조하십시오.)
+다음 Java 코드는 XML 데이터 파일 *Loan_data_batch.xml*&#x200B;에 있는 각 데이터 레코드에 대해 여러 PDF 파일을 만듭니다. 파일은 C:\Adobe 디렉토리에 기록됩니다. PDF 파일은 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에 있는 C:\Adobe 폴더에 기록됩니다. ([여러 출력 파일 만들기](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)를 참조하십시오.)
 
 ```java
  /*
@@ -1508,7 +1508,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 변환 {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 대화형 PDF 문서 *Loan.pdf*&#x200B;을(를) 비대화형 PDF 문서 *NonInteractiveLoan.pdf*(으)로 변환합니다. ([PDF 문서 병합](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)을(를) 참조하십시오.)
+다음 Java 코드 예제에서는 대화형 PDF 문서 *Loan.pdf*&#x200B;을(를) 비대화형 PDF 문서 *NonInteractiveLoan.pdf*(으)로 변환합니다. ([PDF 문서 병합](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)을 참조하십시오.)
 
 ```java
  /*

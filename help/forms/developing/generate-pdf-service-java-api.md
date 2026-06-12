@@ -1,6 +1,6 @@
 ---
-title: PDF 서비스 Java API 빠른 시작 생성(SOAP)
-description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 컨텐츠를 PDF 문서로 변환하고, PDF 문서를 Java API를 사용하여 RTF 파일로 변환할 수 있습니다.
+title: PDF 생성 서비스 Java API 빠른 시작(SOAP)
+description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 컨텐츠를 PDF 문서로 변환하고, Java API를 사용하여 PDF 문서를 RTF 파일로 변환할 수 있습니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
 
 # PDF 서비스 Java API 빠른 시작 생성(SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
-SOAP(Java API Quick Start)는 PDF 생성 서비스에 사용할 수 있습니다.
+Java API 빠른 시작(SOAP)은 PDF 생성 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 RTF 파일로 변환(SOAP 모드)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
@@ -146,7 +146,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 콘텐츠를 *AdobeHTML.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)을 참조하십시오.)
 

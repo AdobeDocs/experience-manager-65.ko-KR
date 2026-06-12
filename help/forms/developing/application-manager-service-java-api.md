@@ -1,6 +1,6 @@
 ---
-title: Application Manager Service JavaAPI 빠른 시작(SOAP)
-description: Application Manager Service JavaAPI 빠른 시작(SOAP)
+title: 애플리케이션 관리자 서비스 Java API 빠른 시작(SOAP)
+description: 애플리케이션 관리자 서비스 Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,15 +12,15 @@ feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 # Application Manager Service JavaAPI 빠른 시작(SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-SOAP(Java API Quick Start)는 Application Manager 서비스에 사용할 수 있습니다.
+Java API 빠른 시작(SOAP)은 Application Manager 서비스에서 사용할 수 있습니다.
 
-[빠른 시작: SOAP(Java API)를 사용하여 애플리케이션 배포](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[빠른 시작: Java API(SOAP)를 사용하여 애플리케이션 배포](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
 [빠른 시작: Java API(SOAP)를 사용하여 애플리케이션 제거](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
@@ -32,7 +32,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍의 SOAP(Java API) 빠른 시작은 Forms을 기반으로 합니다. Unix와 같은 다른 운영 체제를 사용하는 경우 windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
+>AEM Forms를 사용한 프로그래밍의 Java API(SOAP) 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 합니다. windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하세요.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 애플리케이션 배포 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

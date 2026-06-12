@@ -1,5 +1,5 @@
 ---
-title: 작업 관리자 서비스 Java API QuickStart(SOAP)
+title: 작업 관리자 서비스 Java API 빠른 시작(SOAP)
 description: 작업 관리자 서비스를 사용하여 작업 할당, 작업 잠금, 사용자에게 할당된 작업 검색, 작업에서 양식 데이터 검색, 양식 데이터 수정, 첨부 파일 검색 및 작업 정보 검색
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '525'
+ht-degree: 1%
 
 ---
 

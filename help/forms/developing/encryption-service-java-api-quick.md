@@ -1,5 +1,5 @@
 ---
-title: 암호화 서비스 Java&trade; API 빠른 시작(SOAP)
+title: 암호화 서비스 Java&trade, API QuickStart(SOAP)
 description: SOAP 모드에서 Java&trade; API를 사용하여 암호/인증서 기반 암호화를 암호화, 제거, 잠금 해제 및 PDF 문서의 암호화 유형을 결정하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
 # 암호화 서비스 Java™ API 빠른 시작(SOAP) {#encryption-service-java-api-quickstart-soap}
 
-[빠른 시작(SOAP 모드): Java를 사용하여 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 암호 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 암호 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 인증서로 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 인증서로 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 인증서 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 인증서 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 암호화된 PDF 문서 잠금 해제](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 암호화된 PDF 문서 잠금 해제](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 암호화 유형 확인](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 암호화 유형 확인](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
@@ -38,7 +38,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF 문서 암호화 {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 암호 값이 `OpenPassword`인 *Loan.pdf* PDF 문서를 암호화합니다. 기본 암호는 `PermissionPassword`입니다. 보안 PDF 문서가 *EncryptLoan.pdf*(이)라는 PDF 파일로 저장됩니다. [암호를 사용하여 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)를 참조하십시오.
+다음 Java™ 코드 예제에서는 암호 값이 `OpenPassword`인 *Loan.pdf* PDF 문서를 암호화합니다. 기본 암호는 `PermissionPassword`입니다. 보안 PDF 문서가 *EncryptLoan.pdf*(이)라는 PDF 파일로 저장됩니다. ([암호를 사용하여 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)를 참조하십시오.)
 
 ```java
  /*
@@ -255,7 +255,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java™ API를 사용하여 인증서로 PDF 문서 암호화 {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 *Encryption.cer*(이)라는 인증서로 *Loan.pdf* PDF 문서를 암호화합니다. 암호화된 PDF 문서가 *EncryptLoanCert.pdf*(이)라는 PDF 파일로 저장됩니다. [인증서를 사용하여 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)를 참조하십시오.
+다음 Java™ 코드 예제에서는 *Encryption.cer*&#x200B;라는 인증서를 사용하여 *Loan.pdf*&#x200B;이라는 PDF 문서를 암호화합니다. 암호화된 PDF 문서가 *EncryptLoanCert.pdf*(이)라는 PDF 파일로 저장됩니다. [인증서로 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)를 참조하십시오.
 
 ```java
  /*
