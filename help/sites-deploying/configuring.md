@@ -180,7 +180,7 @@ AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 [사
 
 Dispatcher은 캐싱, 로드 밸런싱 또는 둘 모두를 위한 Adobe Experience Manager의 도구입니다. 엔터프라이즈급 웹 서버와 함께 사용할 수 있습니다.
 
-자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)을 참조하십시오.
+자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)을 참조하십시오.
 
 ### AEM LiveCycle Connector 구성 {#configuring-aem-livecycle-connector}
 
