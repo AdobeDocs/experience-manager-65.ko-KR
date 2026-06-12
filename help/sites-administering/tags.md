@@ -9,10 +9,10 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 10%
+source-wordcount: '1795'
+ht-degree: 11%
 
 ---
 
@@ -224,13 +224,13 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 >
 >병합 후 원래 선택한 **경로**&#x200B;이(가) 더 이상 존재하지 않습니다.
 >
->참조된 태그를 이동하거나 병합할 때 태그가 실제로 삭제되지 않으므로 참조를 유지할 수 있습니다.
+>참조된 태그가 이동하거나 병합되더라도 태그가 물리적으로 삭제되지는 않으므로 참조를 유지할 수 있습니다.
 
 ### 태그 게시 {#publishing-tags}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-네임스페이스나 다른 태그를 선택한 경우 **Publish** 아이콘을 선택하여 게시 환경에서 태그를 활성화합니다. 페이지 콘텐츠와 마찬가지로 컨테이너 태그인지 여부에 관계없이 선택한 태그만 게시됩니다.
+네임스페이스 또는 다른 태그를 선택한 경우 **게시** 아이콘을 선택하여 게시 환경에서 태그를 활성화합니다. 페이지 콘텐츠와 마찬가지로 컨테이너 태그인지 여부에 관계없이 선택한 태그만 게시됩니다.
 
 분류법(네임스페이스 및 하위 태그)을 게시하려면 네임스페이스의 [패키지](/help/sites-administering/package-manager.md)를 만드는 것이 좋습니다([분류법 루트 노드](/help/sites-developing/framework.md#taxonomy-root-node) 참조). 패키지를 만들기 전에 네임스페이스에 [권한을 적용](#setting-tag-permissions)하십시오.
 
@@ -285,7 +285,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 다음은 **Animals** 태그의 `title`을(를) 영어에서 독어와 프랑스어로 번역하는 방법을 설명합니다.
 
-먼저 **Stock Photography** 네임스페이스 아래에서 태그를 선택하고 **`Edit`**&#x200B;아이콘을 선택합니다([태그 편집](#editing-tags) 섹션 참조).
+**스톡 사진** 네임스페이스 아래에서 태그를 선택하고 **`Edit`** 아이콘을 선택하여 시작합니다([태그 편집](#editing-tags) 섹션 참조).
 
 [태그 편집] 패널에서는 태그 제목을 현지화할 언어를 선택할 수 있습니다.
 
@@ -311,4 +311,5 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
   태깅 프레임워크에 대한 정보와 사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 정보입니다.
 
-* [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)
+* [클래식 UI 태그 지정 콘솔](/help/sites-administering/classic-console.md)
+
