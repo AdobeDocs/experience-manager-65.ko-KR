@@ -258,7 +258,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
       * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
 
    * 왼쪽 창에서 [읽기 권한](/help/sites-administering/security.md#permissions)을 부여할 그룹을 선택합니다
-   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**를 찾습니다
+   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**&#x200B;를 찾습니다
 
       * 예: `/content/cq:tags/mycommunity`
 
