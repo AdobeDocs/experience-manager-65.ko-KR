@@ -12,8 +12,8 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->AEM 6.3 이전에는 콘텐츠 조각이 모델이 아닌 템플릿을 기반으로 생성되었습니다.
+>이전에는 AEM 6.3 콘텐츠 조각이 모델이 아닌 템플릿을 기반으로 생성되었습니다.
 >
 >콘텐츠 조각 템플릿은 이제 더 이상 사용되지 않습니다. 조각을 만드는 데 계속 사용할 수 있지만 대신 콘텐츠 조각 모델 을 사용하는 것이 좋습니다. 조각 템플릿에 새로운 기능이 추가되지 않으며 이후 버전에서 제거됩니다.
 
@@ -158,7 +158,7 @@ conf
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
-     <td><p>콘텐츠 조각 요소의 정의가 포함된 노드입니다. 필수 항목이며 <strong>Main</strong> 요소에 대해 자식 노드를 하나 이상 포함해야 하지만 [1...n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 볼 때)는 자동으로 <i>main</i> 요소로 간주됩니다. 노드 이름은 관련이 없으며 노드 자체에는 특별한 의미가 없습니다. 주 자산으로 표시되지만 다른 요소는 하위 자산으로 처리됩니다.</p> </td>
+     <td><p>콘텐츠 조각 요소의 정의가 포함된 노드입니다. 필수 항목이며 <strong>Main</strong> 요소에 대해 자식 노드를 하나 이상 포함해야 하지만 [1..n] 자식 노드를 포함할 수 있습니다.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 볼 수 있음)는 자동으로 <i>main</i> 요소로 간주됩니다. 노드 이름은 관련이 없으며 노드 자체에는 특별한 의미가 없습니다. 주 자산으로 표시된다는 점과 다른 요소는 하위 자산으로 처리됩니다.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -234,7 +234,7 @@ conf
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>변형 노드가 있는 경우 필요합니다.</p> </td>
-     <td><p>초기 변형을 정의합니다.<br /> 기본적으로 변형은 콘텐츠 조각의 모든 요소에 추가됩니다.</p> <p>변형은 각 요소와 동일한 초기 콘텐츠를 갖습니다(<code class="code">defaultContent/
+     <td><p>초기 변형을 정의합니다.<br /> 변형은 기본적으로 콘텐츠 조각의 모든 요소에 추가됩니다.</p> <p>변형은 각 요소와 동일한 초기 콘텐츠를 갖습니다(<code class="code">defaultContent/
        initialContentType</code> 참조).</p> </td>
     </tr>
     <tr>

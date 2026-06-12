@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 1%
 >
 >AEM Mobile 앱의 다음 항목에 대한 자세한 내용은 온라인 도움말의 다음 리소스를 참조하십시오.
 >
->* [디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)
+>* [디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [배너 만들기](https://helpx.adobe.com/kr/digital-publishing-solution/help/creating-banners.html)
+>* [배너 만들기](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## 배너 만들기 {#creating-a-banner}
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ## 배너 편집 {#editing-a-banner}
 
-기본 제공 AEM 드래그 앤 드롭 편집기를 사용하여 문서를 추가하거나 변경합니다. 텍스트 및 이미지와 같은 구성 요소를 추가/제거할 수 있습니다. DAM Assets의 이미지를 삽입할 수 있습니다.
+내장된 AEM 드래그 앤 드롭 편집기를 사용하여 문서를 추가하거나 변경합니다. 텍스트 및 이미지와 같은 구성 요소를 추가/제거할 수 있습니다. DAM Assets의 이미지를 삽입할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ ht-degree: 1%
 문서를 편집하는 워크플로:
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. **&#x200B; 배너 관리 타일에서 AEM 소스 배너** 선택합니다.
+1. 배너 관리 **&#x200B; 타일에서 AEM 소스 배너** 선택합니다.
 1. 목록 보기에서 강조 표시된 배너를 클릭하여 콘텐츠 편집기에서 엽니다.
 1. 콘텐츠 편집기를 사용하여 배너 콘텐츠(원고, 이미지, 텍스트 등)를 드래그합니다.
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 ## 배너 삭제 {#deleting-a-banner}
 
-이 작업은 선택한 배너를 Mobile On-Demand와 로컬 AEM 인스턴스(선택 사항)에서 삭제합니다.
+이 작업은 선택한 배너를 Mobile On-Demand 및 선택적으로 로컬 AEM 인스턴스에서 삭제합니다.
 
 배너를 삭제하는 일반 워크플로:
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 1. **배너 관리** 타일에서 삭제할 배너를 선택하십시오.
 1. 목록에서 선택되었는지 확인합니다(필요에 따라 삭제할 다른 항목 선택).
 1. 작업 표시줄에서 **삭제**&#x200B;를 클릭합니다.
-1. AEM 및 Mobile On-Demand에서 삭제하시겠습니까?
+1. AEM 및 Mobile On-Demand에서 을 삭제하시겠습니까?
 1. **삭제**&#x200B;를 클릭합니다.
 1. 이제 배너가 목록에서 제거됩니다.
 

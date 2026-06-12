@@ -1,5 +1,5 @@
 ---
-title: SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항
+title: SharePoint 커넥터 라이선스, 저작권 고지 및 면책 조항
 description: SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '406'
+ht-degree: 4%
 
 ---
 
-# SharePoint 커넥터 라이선스, 저작권 공지 및 면책조항{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint 커넥터 라이선스, 저작권 고지 및 면책 조항{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 이 섹션에는 MS® SharePoint용 Day JCR Connector에 명시적으로 명시해야 하는 모든 라이선스, 저작권 공지 및 면책조항이 나열되어 있습니다.
 
