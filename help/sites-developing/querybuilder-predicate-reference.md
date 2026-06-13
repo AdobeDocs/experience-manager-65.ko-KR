@@ -381,7 +381,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
 * **깊이**
 
-  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&amp;ast;/size 및 node/&amp;ast;/&amp;ast;/size 확인).
+  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&ast;/size 및 node/&ast;/&ast;/size 확인).
 
 ### rangeproperty {#rangeproperty}
 
