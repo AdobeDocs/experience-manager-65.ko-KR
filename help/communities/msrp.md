@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ AEM Communities이 MSRP를 공통 저장소로 사용하도록 구성된 경우 
 
    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     외부 ZooKeeper로 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper에 대해 `HOST:PORT`(예: *my.server.com:2181*)로 설정하십시오.
+     외부 ZooKeeper와 함께 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper의 `HOST:PORT`(예: *my.server.com:2181*)로 설정하십시오.
 
      Zookeeper Ensemble의 경우 *host1:2181,host2:2181*&#x200B;과 같이 쉼표로 구분된 `HOST:PORT` 값을 입력하십시오.
 
@@ -222,7 +222,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 저장소 옵션의 구성을 확인하여 MSRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 JSRP입니다.
 
-모든 작성자 및 게시 AEM 인스턴스에서 [저장소 구성 콘솔](srp-config.md)을 다시 방문하거나 AEM 저장소를 확인하십시오.
+모든 작성자 및 게시 AEM 인스턴스에서 [저장소 구성 콘솔](srp-config.md)을 다시 방문하거나 AEM 저장소를 확인합니다.
 
 * JCR에서, [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)인 경우
 
@@ -262,11 +262,11 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 클래스 정의가 누락되어 MongoDB 서버에 보안 연결을 시도하지 못한 경우 공용 Maven 저장소에서 사용할 수 있는 MongoDB 드라이버 번들 `mongo-java-driver`을(를) 업데이트해야 합니다.
 
-1. [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar)(버전 2.13.2 이상)에서 드라이버를 다운로드합니다.
+1. [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar)&#x200B;(버전 2.13.2 이상)에서 드라이버를 다운로드합니다.
 1. AEM 인스턴스의 &quot;crx-quickstart/install&quot; 폴더에 번들을 복사합니다.
 1. AEM 인스턴스를 다시 시작합니다.
 
 ## 리소스 {#resources}
 
-* [MongoDB와 AEM](../../help/sites-deploying/aem-with-mongodb.md)
+* [MongoDB를 사용한 AEM](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB 설명서](https://docs.mongodb.org/)

@@ -1,6 +1,6 @@
 ---
-title: 문서 관리 서비스(사용하지 않음)Java API 빠른 시작(SOAP)
-description: 문서 관리 서비스(사용하지 않음)Java API 빠른 시작(SOAP)
+title: 문서 관리 서비스(더 이상 사용되지 않음) Java API 빠른 시작(SOAP)
+description: 문서 관리 서비스(더 이상 사용되지 않음) Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 2%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2011년 8월 5일부터 Adobe은 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션하고 있습니다. Content Services를 사용하는 고객을 위한 제품 로드맵은 새로운 AEP Experience Services - Core로 이전하는 것입니다. 이 서비스에는 Day Software의 Adobe 획득 과정에서 획득한 최신 모듈식 CRX 아키텍처에 구축된 네이티브 콘텐츠 저장소가 포함되어 있습니다.
+>2011년 8월 5일부터 Adobe은 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션하고 있습니다. 컨텐츠 서비스를 사용하는 고객을 위한 제품 로드맵은 새로운 AEP Experience Services - Core로 이전하는 것입니다. 이 서비스에는 최신 모듈식 CRX 아키텍처를 기반으로 구축된 기본 컨텐츠 저장소가 포함되어 있으며 Adobe의 Day Software 인수 과정에서 획득됩니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 공간 만들기](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 삭제](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 삭제합니다](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 이동](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 나열](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠를 나열합니다.](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 Content Services 콘텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
@@ -244,7 +244,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스에 콘텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 *MortgageForm.pdf*&#x200B;이라는 PDF 파일을 /Company Home/Test Directory라는 폴더에 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 콘텐츠의 식별 값이 콘솔에 작성됩니다.
+다음 Java 코드 예제에서는 /Company Home/Test Directory라는 폴더에 *MortgageForm.pdf*&#x200B;이라는 PDF 파일을 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 콘텐츠의 식별 값이 콘솔에 작성됩니다.
 
 ```java
  /*
@@ -907,7 +907,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 연결 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-다음 Java 코드는 XML 데이터 파일과 PDF 양식에 대한 연결을 만듭니다. 이 연결 형식의 이름은 LinkedBy입니다. PDF 문서에는 연결 가능한 양상이 적용되어 있어야 합니다.
+다음 Java 코드는 XML 데이터 파일과 PDF 양식의 연결을 만듭니다. 이 유형의 연결은 LinkedBy로 명명됩니다. PDF 문서에는 연결 가능한 측면이 적용되어야 합니다.
 
 ```java
  /*
