@@ -121,7 +121,7 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 
    * Touch UI에는 &quot;Touch UI 래퍼&quot; 내에서 클래식 UI 대화 상자를 여는 호환성 레이어가 있지만, 이 기능은 제한적이며 장기적으로는 권장되지 않습니다.
 
-* [Touch UI에서 대화 상자 필드 맞춤화](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Touch UI에서 대화 상자 필드 맞춤화](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [새로운 Granite UI 필드 구성 요소 만들기](/help/sites-developing/granite-ui-component.md)
 * [페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md)(터치 사용 UI 사용)
 
@@ -136,8 +136,8 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 연습 방법이므로 동시에 고려할 만한 관련 문제가 있습니다.
 
 * [템플릿](/help/sites-developing/templates.md) - [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)
 
 >[!NOTE]
 >
@@ -149,9 +149,9 @@ AEM 개발에 대한 전체 정보는 아래의 리소스 컬렉션을 참조하
 
 * [개발 사용 안내서](/help/sites-developing/getting-started.md)
 * [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites 튜토리얼 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [AEM 6.5 Sites 튜토리얼 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=ko)
 * [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=ko)
 * [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

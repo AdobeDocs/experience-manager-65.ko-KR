@@ -87,6 +87,6 @@ Adobe Experience Manager(AEM) Assets 관리자는 자산과 폴더를 조직의 
 
 1. 에셋의 현재 게시 상태를 보려면 목록 보기 ![목록 보기](assets/list-view.svg)(으)로 전환하십시오.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![생성된 보고서 상태](assets/report-status.JPG)
