@@ -1,5 +1,5 @@
 ---
-title: JMX 콘솔을 사용한 서버 리소스 모니터링
+title: JMX 콘솔을 사용하여 서버 리소스 모니터링
 description: JMX 콘솔을 사용하여 서버 리소스를 모니터링하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4969'
+ht-degree: 1%
 
 ---
 
-# JMX 콘솔을 사용한 서버 리소스 모니터링{#monitoring-server-resources-using-the-jmx-console}
+# JMX 콘솔을 사용하여 서버 리소스 모니터링{#monitoring-server-resources-using-the-jmx-console}
 
 JMX 콘솔을 사용하여 CRX 서버의 서비스를 모니터링하고 관리할 수 있습니다. 다음 섹션에서는 JMX 프레임워크를 통해 노출되는 속성 및 작업을 요약합니다.
 
@@ -426,7 +426,7 @@ CRX 저장소에 대한 정보
    <td>true는 저장소가 XML 코드를 컨텐트로 가져오기를 지원함을 나타냅니다.</td>
   </tr>
   <tr>
-   <td>node.type.management.same.name.siblings.supported</td>
+   <td>node.type.management.same.name.siblines.supported</td>
    <td>true는 저장소가 동일한 이름의 동위 노드(동일한 상위를 가진 노드)를 지원함을 나타냅니다.</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ CRX 저장소에 대한 정보
    <td>true는 option.xml.export.support가 true이고 query.languages의 길이가 0이 아님을 나타냅니다.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfile.content.supported</td>
    <td>true는 저장소가 분류되지 않은 콘텐츠를 지원함을 나타냅니다. 분류되지 않은 노드는 저장소 계층의 일부가 아닙니다.</td>
   </tr>
   <tr>
@@ -691,7 +691,7 @@ CRX 저장소에 대한 정보
 * **도메인:** com.adobe.granite.replication
 * **유형:** 에이전트
 * **이름:** 값 없음
-* **속성:** {id=&quot;*이름*&quot;}. 여기서 *이름*&#x200B;은(는) 에이전트 이름 속성의 값입니다.
+* **속성:** {id="*Name*"}. 여기서 *이름*&#x200B;은(는) 에이전트 이름 속성의 값입니다.
 
 ### 속성 {#attributes-3}
 

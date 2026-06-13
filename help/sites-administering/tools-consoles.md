@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 25%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 25%
    <td>번역 구성</td>
   </tr>
   <tr>
-   <td>워크플로우</td>
+   <td>워크플로</td>
    <td> </td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>통찰력 구성</td>
+   <td>인사이트 구성</td>
   </tr>
   <tr>
    <td> </td>
@@ -310,7 +310,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>소셜 로그인 구성 twitter<br /> </td>
+   <td>Twitter 소셜 로그인 구성<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -365,7 +365,7 @@ ht-degree: 25%
  <tbody>
   <tr>
    <th>페이지 또는 폴더</th>
-   <th>용도</th>
+   <th>목적</th>
   </tr>
   <tr>
    <td>MSM 제어 센터</td>
@@ -373,11 +373,11 @@ ht-degree: 25%
   </tr>
   <tr>
    <td>클라이언트 컨텍스트 구성<br /> </td>
-   <td>Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다. 기본 및 Experience Cloud 구성은 여기에 보관됩니다.<br /> </td>
+   <td>Client Context는 동적으로 조립된 사용자 데이터의 컬렉션을 나타냅니다. 기본 및 Experience Cloud 구성은 여기에 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td>Cloud Service 구성<br /> </td>
-   <td>Adobe Experience Cloud과의 통합과 관련된 구성을 보유하고 있습니다.</td>
+   <td>클라우드 서비스 구성<br /> </td>
+   <td>Adobe Experience Cloud와의 통합과 관련된 구성을 보유하고 있습니다.</td>
   </tr>
   <tr>
    <td>클라우드 설정<br /> </td>
@@ -425,11 +425,11 @@ ht-degree: 25%
   </tr>
   <tr>
    <td>복제 - 복제 에이전트</td>
-   <td>페이지를 게시할 때 작성자 인스턴스에서 Publish으로 데이터를 복제하거나 역방향 복제와 함께 게시 환경의 사용자 주석을 작성자에게 반환하는 데 사용됩니다.</td>
+   <td>페이지를 게시할 때 작성자 인스턴스의 데이터를 게시로 복제하거나 역방향 복제와 함께 게시 환경의 사용자 주석을 작성자에게 반환하는 데 사용됩니다.</td>
   </tr>
   <tr>
    <td>보고서</td>
-   <td>AEM은 다양한 사용자 지정 보고서를 제공하며 사용자 지정 보고서를 만들거나 직접 개발할 수 있도록 해줍니다.</td>
+   <td>AEM은 다양한 맞춤형 보고서를 제공하여 맞춤형 보고서를 생성하거나 직접 개발할 수 있도록 해줍니다.</td>
   </tr>
   <tr>
    <td>기본 페이지 스캐폴딩</td>
