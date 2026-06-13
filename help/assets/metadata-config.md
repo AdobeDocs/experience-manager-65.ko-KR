@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets]을(를) 사용하면 관리자가 메타데이터 기능을 구성하고 사용자 지정하여 기본 Adobe 서비스를 수정할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]은 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 경우에 도움이 됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성 및 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets]을(를) 사용하면 관리자가 메타데이터 기능을 구성하고 사용자 지정하여 기본 Adobe 서비스를 수정할 수 있습니다.
 
 ## 메타데이터 스키마 편집 {#metadata-schema}
 

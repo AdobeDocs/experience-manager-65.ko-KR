@@ -1,5 +1,5 @@
 ---
-title: 어셈블러 서비스 Java&trade; API QuickStart(SOAP)
+title: 어셈블러 서비스 Java&trade, API QuickStart(SOAP)
 description: 어셈블러 서비스 Java&trade; API 빠른 시작(SOAP)을 사용하여 PDF 문서를 어셈블, 디스어셈블 및 동적으로 만드는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
 
-# 어셈블러 서비스 Java™ API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
+# 어셈블러 서비스 Java™ API 빠른 시작(SOAP) {#assembler-service-java-api-quickstart-soap}
 
 어셈블러 서비스에 Java API 빠른 시작(SOAP)을 사용할 수 있습니다
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 암호화된 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용하여 페이지 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 베이트 번호가 있는 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 비대화형 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
@@ -34,11 +34,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 DDX 문서 유효성 검사](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 책갈피로 PDF 문서 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 책갈피로 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 동적으로 DDX 문서 만들기](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF Portfolio 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 포트폴리오 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 여러 XDP 조각 어셈블](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
@@ -50,7 +50,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 *map.pdf* 및 *directions.pdf*&#x200B;라는 두 PDF 소스 문서를 단일 PDF 문서로 병합합니다. 단일 PDF 문서의 이름은 *AssemblerResultPDF.pdf*&#x200B;입니다. DDX 문서의 이름은 *shell.xml*&#x200B;입니다. ([프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents)을 참조하세요.)
+다음 Java 코드 예제에서는 *map.pdf* 및 *directions.pdf*&#x200B;라는 두 PDF 소스 문서를 하나의 PDF 문서로 병합합니다. 단일 PDF 문서의 이름은 *AssemblerResultPDF.pdf*&#x200B;입니다. DDX 문서의 이름은 *shell.xml*&#x200B;입니다. ([프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -194,7 +194,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 분해 {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 *AssemblerResultPDF.pdf* PDF 문서를 디스어셈블합니다. DDX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 `ResultPDF[Number].pdf`입니다. 즉, 분해된 첫 번째 PDF 문서의 이름은 *ResultPDF1.pdf입니다.* 이 코드 예제에 사용된 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 [프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)을 참조하십시오.
+다음 Java 코드 예제에서는 이름이 *AssemblerResultPDF.pdf*&#x200B;인 PDF 문서를 디스어셈블합니다. DDX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 `ResultPDF[Number].pdf`입니다. 즉, 분해된 첫 번째 PDF 문서의 이름은 *ResultPDF1.pdf.*&#x200B;입니다. 이 코드 예제에 사용된 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 [프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)을 참조하십시오.
 
 ```java
  /*
@@ -454,7 +454,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 번호 매기기를 사용하여 페이지 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 베이트 번호가 있는 PDF 문서 어셈블 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
 다음 Java 코드 예제에서는 고유한 페이지 식별자(bates 번호 매기기)를 사용하여 PDF 문서를 어셈블합니다. DDX 문서의 이름은 *shell_Bates.xml*&#x200B;입니다. 어셈블러 서비스에서 반환된 PDF 문서는 *AssemblerResultBatesPDF.pdf*&#x200B;라는 PDF 파일로 저장됩니다. [Bates 번호를 사용하여 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering)을 참조하세요.
 
@@ -738,7 +738,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A를 준수하는지 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. 어셈블러 서비스에 전달되는 입력 PDF 문서의 이름은 *Loan.pdf*&#x200B;입니다. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되고 입력 PDF 문서가 PDF/A 규격 문서인지 여부를 지정하는 XML 문서가 result.xml이라는 XML 파일로 저장됩니다. 이 코드 예제에 사용된 *shell_PDFA.xml* DDX 문서에 대한 자세한 내용은 [문서가 PDF/A와 호환되는지 확인](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant)을 참조하십시오.
+다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A를 준수하는지 여부를 확인합니다. 어셈블러 서비스에 전달되는 입력 PDF 문서의 이름은 *Loan.pdf*&#x200B;입니다. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되고 입력 PDF 문서가 PDF/A 규격을 따르는지 여부를 지정하는 XML 문서가 result.xml이라는 XML 파일로 저장됩니다. 이 코드 예제에 사용된 *shell_PDFA.xml* DDX 문서에 대한 자세한 내용은 [문서가 PDF/A와 호환되는지 여부 확인](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant)을 참조하십시오.
 
 ```java
  /*
@@ -1013,9 +1013,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 책갈피로 PDF 문서 어셈블 {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 책갈피로 어셈블 {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
 
-다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DDX 문서의 이름은 *bookmarkDDX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmark.xml입니다. 결과 PDF 문서는 AssemblerResultBookmark.pdf라는 PDF 파일로 저장됩니다. ([책갈피로 PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)을(를) 참조하십시오.)
+다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DDX 문서의 이름은 *bookmarkDDX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmark.xml입니다. 결과 PDF 문서는 AssemblerResultBookmark.pdf라는 PDF 파일로 저장됩니다. ([책갈피로 PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)을 참조하십시오.)
 
 ```java
  /*
@@ -1185,7 +1185,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 동적으로 DDX 문서 만들기 {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 PDF 문서를 디스어셈블하는 DDX 문서를 동적으로 만듭니다. 입력 PDF 문서의 레벨 1 책갈피마다 새 PDF 문서가 만들어집니다. 이 코드 예에는 두 개의 사용자 정의 메서드가 포함되어 있습니다.
+다음 Java 코드 예제에서는 PDF 문서를 디스어셈블하는 DDX 문서를 동적으로 만듭니다. 입력된 PDF 문서의 레벨 1 책갈피마다 새 PDF 문서가 만들어집니다. 이 코드 예에는 두 개의 사용자 정의 메서드가 포함되어 있습니다.
 
 * `createDDX`: 어셈블러 서비스로 전송되는 DDX 문서를 나타내는 `org.w3c.dom.Document` 개체를 만듭니다. 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체를 반환합니다.
 * `convertDDX`: `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환합니다. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 수락하고 `com.adobe.idp.Document` 개체를 반환합니다.
@@ -1380,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF Portfolio 어셈블 {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 포트폴리오 어셈블 {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-다음 Java 코드 예제에서는 PDF 포트폴리오를 만듭니다. PDF 포트폴리오가 *AssemblerResultPortfolio.pdf*(이)라는 PDF 파일로 저장됩니다. ([PDF Portfolio 어셈블](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)을 참조하십시오.)
+다음 Java 코드 예제에서는 PDF 포트폴리오를 만듭니다. PDF 포트폴리오는 *AssemblerResultPortfolio.pdf*(이)라는 PDF 파일로 저장됩니다. ([PDF 포트폴리오 수집](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)을 참조하세요.)
 
 ```java
  /*
@@ -1690,7 +1690,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 
 >[!NOTE]
 >
->`PDFUtility`은(는) Acrobat을 사용하여 교정 표시된 PDF만 수정할 수 있습니다.
+>`PDFUtility`은(는) Acrobat을 사용하여 수정하도록 표시된 PDF만 수정할 수 있습니다.
 
 ```java
 /*

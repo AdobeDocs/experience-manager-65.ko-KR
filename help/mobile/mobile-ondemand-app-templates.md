@@ -1,6 +1,6 @@
 ---
 title: 템플릿 및 구성 요소 생성 및 추가
-description: 이 페이지를 따라 템플릿 및 구성 요소를 만들고 앱에 추가하는 방법에 대해 알아보십시오. 이 페이지에서는 샘플 앱 템플릿과 페이지 템플릿을 포함하는 앱으로 Geometrixx Unlimited 앱을 사용합니다.
+description: 이 페이지를 따라 템플릿 및 구성 요소를 만들고 앱에 추가하는 방법에 대해 알아보십시오. 이 페이지에서는 Geometrixx Unlimited 앱을 샘플 앱 템플릿과 페이지 템플릿을 포함하는 앱으로 사용합니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ AEM 템플릿에 따라 기본 속성이나 자식 노드를 템플릿의 ***jcr
 
 >[!NOTE]
 >
->AEM에서 구성 요소를 만들고 [CRXDE Lite으로 개발](/help/sites-developing/developing-with-crxde-lite.md)을 사용하여 사용자 지정할 수 있습니다. 기존 구성 요소를 요구 사항으로 사용자 지정했으면 위의 그림과 같이 **문서 관리**&#x200B;의 **편집** 옵션을 사용하여 페이지에 추가할 수 있습니다.
+>AEM에서 구성 요소를 만들고 [CRXDE Lite을 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 사용하여 사용자 지정할 수 있습니다. 기존 구성 요소를 요구 사항으로 사용자 지정했으면 위의 그림과 같이 **문서 관리**&#x200B;의 **편집** 옵션을 사용하여 페이지에 추가할 수 있습니다.
 
 >[!NOTE]
 >

@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 0%
+source-wordcount: '3826'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 데이터 사전은 단순, 복합 및 컬렉션 요소의 세 가지 유형 요소로 구성됩니다. 단순 DDE는 문자열, 숫자, 날짜 및 도시 이름과 같은 정보를 포함하는 부울 값과 같은 기본 요소입니다. 복합 DDE에는 기본, 복합 또는 컬렉션 유형의 다른 DDE가 포함되어 있습니다. 예를 들어, 주소(거리 주소, 시, 도, 국가 및 우편 번호)가 있습니다. 컬렉션은 유사한 단순 또는 복합 DDE 목록입니다. 예를 들어 여러 위치 또는 청구 및 배송 주소가 다른 고객의 경우.
 
-서신 관리는 데이터 사전의 구조에 따라 저장된 백엔드, 고객 또는 수신자 특정 데이터를 사용하여 다른 고객을 위한 서신을 만듭니다. 예를 들어 &quot;Dear {First Name}&quot;,&quot;Mr.&quot;과 같은 친숙한 이름으로 문서를 만들 수 있습니다. {Last Name}&quot;.
+서신 관리는 데이터 사전의 구조에 따라 저장된 백엔드, 고객 또는 수신자 특정 데이터를 사용하여 다른 고객을 위한 서신을 만듭니다. 예를 들어 &quot;Dear {First Name}&quot;,&quot;Mr {Last Name}&quot;과 같은 친숙한 이름으로 문서를 만들 수 있습니다.
 
 일반적으로 비즈니스 사용자는 XSD(XML 스키마) 및 Java 클래스와 같은 메타데이터 표현에 대한 지식이 필요하지 않습니다. 그러나 솔루션을 빌드하려면 일반적으로 이러한 데이터 구조 및 속성에 액세스해야 합니다.
 
@@ -362,7 +362,7 @@ XSD를 내보내려면 다음 표에 자세히 설명되어 있는 특정 데이
   </tr>
   <tr>
    <td><p>xs:element 여기서 maxOccurs &gt; 1<br /> </p> </td>
-   <td>형식의 DDE - COLLECTION-<br /> 상위 COLLECTION 노드의 정보를 캡처하는 COLLECTION DDE 옆에 DDE 노드가 만들어집니다. 단순/복합 데이터 유형의 컬렉션에도 동일하게 만들어집니다. 유형 복합 컬렉션이 있을 때마다 데이터 사전 트리는 유형 정보를 캡처하기 위해 만든 DDE의 하위 항목에 있는 구성 필드를 캡처합니다.<br /> - DDE(컬렉션)<br /> - DDE(유형 정보에 대한 합성)<br /> - DDE(문자열) 필드1<br /> - DDE(문자열) 필드2<br /> <br /> </p> </td>
+   <td>형식의 DDE - COLLECTION-<br /> 상위 COLLECTION 노드의 정보를 캡처하는 COLLECTION DDE 옆에 DDE 노드가 만들어집니다. 단순/복합 데이터 유형의 컬렉션에도 동일하게 만들어집니다. 형식 복합 컬렉션이 있을 때마다 데이터 사전 트리는 형식 정보를 캡처하기 위해 만든 DDE의 자식 항목에서 구성 필드를 캡처합니다.<br /> - DDE(컬렉션)<br /> - DDE(유형 정보에 대한 합성)<br /> - DDE(문자열) 필드1<br /> - DDE(문자열) 필드2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>

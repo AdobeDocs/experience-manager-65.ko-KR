@@ -1,5 +1,5 @@
 ---
-title: 자산 목록 보기에 사용자 지정 작업 추가
+title: 자산 목록 보기에 사용자 정의 작업 추가
 description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법에 대해 설명합니다
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
-# 자산 목록 보기에 사용자 지정 작업 추가{#add-custom-action-to-the-asset-listing-view}
+# 자산 목록 보기에 사용자 정의 작업 추가{#add-custom-action-to-the-asset-listing-view}
 
 ## 개요 {#overview}
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 * 하나 이상의 에셋 유형 또는 문자
 * 단일, 여러 에셋/문자를 선택하거나 선택하지 않을 때 실행(작업/명령이 활성화됨)
 
-PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Download Flat Asset&quot; 명령을 추가하는 시나리오에서 보여 줍니다. 이 사용자 지정 시나리오에서는 사용자가 선택한 단일 편지의 플랫 PDF을 다운로드할 수 있습니다.
+이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Download Flat PDF&quot; 명령을 추가하는 시나리오에서 표시됩니다. 이 사용자 지정 시나리오에서는 사용자가 선택한 단일 편지의 플랫 PDF을 다운로드할 수 있습니다.
 
 ### 사전 요구 사항 {#prerequisites}
 
@@ -37,9 +37,9 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 * JavaScript
 * Java™
 
-## 시나리오: 문자 목록 사용자 인터페이스에 명령을 추가하여 문자의 플랫 PDF 버전을 다운로드합니다. {#addcommandtoletters}
+## 시나리오: 편지 목록 사용자 인터페이스에 명령을 추가하여 편지의 PDF 버전을 다운로드합니다. {#addcommandtoletters}
 
-아래 단계에서는 편지의 에셋 목록 보기에 &quot;플랫 PDF 다운로드&quot; 명령을 추가하고 사용자가 선택한 편지의 플랫 PDF을 다운로드할 수 있습니다. 이러한 단계를 적절한 코드 및 매개 변수와 함께 사용하면 데이터 사전이나 텍스트와 같은 다른 에셋에 대한 다른 기능을 추가할 수 있습니다.
+아래 단계에서는 편지의 에셋 목록 보기에 &quot;Flat PDF 다운로드&quot; 명령을 추가하고 사용자가 선택한 편지의 Flat PDF을 다운로드할 수 있도록 합니다. 이러한 단계를 적절한 코드 및 매개 변수와 함께 사용하면 데이터 사전이나 텍스트와 같은 다른 에셋에 대한 다른 기능을 추가할 수 있습니다.
 
 사용자가 편지의 PDF을 다운로드할 수 있도록 서신 관리를 사용자 정의하려면 다음 단계를 완료하십시오.
 
@@ -133,7 +133,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
         <tr>
         <td>제목</td>
         <td>문자열</td>
-        <td>선택한 글자(또는 다른 레이블/대체 텍스트)의 일반 PDF을 다운로드합니다.<br /> <br /> 제목은 사용자가 사용자 지정 명령을 마우스로 가리키면 서신 관리가 표시하는 대체 텍스트입니다.</td>
+        <td>선택한 문자의 플랫 PDF(또는 다른 레이블/대체 텍스트)를 다운로드합니다.<br /> <br /> 제목은 사용자가 사용자 지정 명령을 마우스로 가리키면 서신 관리가 표시하는 대체 텍스트입니다.</td>
         </tr>
         </tbody>
        </table>
@@ -264,7 +264,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
       |---|---|---|
       | sling:resourceType | 문자열 | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. 다음 위치에서 명령의 작업 처리를 위해 코드가 있는 POST.jsp라는 파일을 만듭니다.
+1. 다음 위치에서 명령의 작업 처리를 위한 코드가 포함된 POST.jsp라는 파일을 생성합니다.
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -272,7 +272,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-      파일 이름을 POST.jsp로 지정합니다. (파일 이름은 POST.jsp로만 지정할 수 있습니다.)
+      파일 이름을 POST.jsp로 지정합니다. (파일 이름은 POST.jsp만 사용해야 합니다.)
 
    1. **POST.jsp** 파일을 두 번 클릭하여 CRX에서 엽니다.
    1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**&#x200B;을 클릭합니다.
@@ -346,7 +346,7 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
       %>
       ```
 
-## 사용자 지정 기능을 사용하여 편지의 단순 PDF 다운로드 {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## 사용자 지정 기능을 사용하여 편지의 플랫 PDF 다운로드 {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
 편지의 플랫 PDF을 다운로드하는 사용자 정의 기능을 추가한 후 다음 단계를 사용하여 선택한 편지의 플랫 PDF 버전을 다운로드할 수 있습니다.
 
@@ -354,11 +354,11 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
 1. **Forms > 편지**&#x200B;를 선택합니다. 서신 관리에서는 시스템에서 사용할 수 있는 문자를 나열합니다.
 1. **선택**&#x200B;을 클릭한 다음 문자를 클릭하여 선택합니다.
-1. **자세히** > **&lt;일반 PDF 다운로드>**&#x200B;을(를) 선택합니다(이 문서의 지침을 사용하여 만든 사용자 지정 기능). 편지를 PDF으로 다운로드 대화 상자가 나타납니다.
+1. **자세히** > **&lt;일반 PDF 다운로드>**(이 문서의 지침을 사용하여 만든 사용자 지정 기능)을 선택합니다. 편지를 PDF으로 다운로드 대화 상자가 나타납니다.
 
-   메뉴 항목 이름, 기능 및 대체 텍스트는 [시나리오: 문자 목록 사용자 인터페이스에 명령을 추가하여 단어의 일반 PDF 버전을 다운로드합니다.](#addcommandtoletters)
+   메뉴 항목 이름, 기능 및 대체 텍스트는 [시나리오: 일반 PDF 버전의 문자를 다운로드하려면 문자 목록 사용자 인터페이스에 명령을 추가하십시오.](#addcommandtoletters)
 
-   ![사용자 지정 기능: 일반 PDF 다운로드](assets/5_downloadflatpdf.png)
+   ![사용자 지정 기능: 기본 PDF 다운로드](assets/5_downloadflatpdf.png)
 
 1. 편지를 PDF으로 다운로드 대화 상자에서 PDF의 데이터를 채울 관련 XML을 선택합니다.
 
@@ -368,4 +368,4 @@ PDF 이 사용자 지정은 편지에 대한 에셋 목록 보기에 &quot;Downl
 
    ![편지를 PDF으로 다운로드](assets/6_downloadflatpdf.png)
 
-   편지는 컴퓨터에 플랫 PDF으로 다운로드됩니다.
+   편지는 평평한 PDF으로 컴퓨터에 다운로드됩니다.

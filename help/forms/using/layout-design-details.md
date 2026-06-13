@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ XDP는 Adobe Forms Designer에서 디자인되었습니다. 이 문서에서는 
 
 ## 문자 또는 대화형 통신의 인쇄 채널용 레이아웃 만들기 {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-레이아웃은 대화형 통신의 편지/인쇄 채널의 그래픽 레이아웃을 정의합니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 또한 대상 영역을 나타내는 빈 하위 양식도 포함되어 있습니다. 양식 디자이너에서 레이아웃을 만들고 완료되면 응용 프로그램 전문가가 AEM 서버에 업로드합니다. 여기에서 대화형 통신의 서신 템플릿 또는 인쇄 채널을 만들 때 레이아웃을 선택할 수 있습니다.
+레이아웃은 대화형 통신의 편지/인쇄 채널의 그래픽 레이아웃을 정의합니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 또한 대상 영역을 나타내는 빈 하위 양식도 포함되어 있습니다. 양식 디자이너에서 레이아웃을 만들고 완료되면 애플리케이션 전문가가 AEM 서버에 업로드합니다. 여기에서 대화형 통신의 서신 템플릿 또는 인쇄 채널을 만들 때 레이아웃을 선택할 수 있습니다.
 
 ![Designer: 레이아웃 만들기](assets/claimsubrogationlayout.png)
 
