@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 18%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 5%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | 이 문서 |
 
-기본적으로 Forms 포털 구성 요소는 사용할 수 없습니다. 구성 요소가 AEM 사이드 킥에서 사용 가능한 구성 요소 목록에 표시되도록 하려면 다음 단계를 수행하십시오.
+기본적으로 Forms 포털 구성 요소는 사용할 수 없습니다. AEM 사이드 킥에서 사용 가능한 구성 요소 목록에 구성 요소가 표시되도록 하려면 다음 단계를 수행하십시오.
 
 1. 웹 사이트의 작성자 인스턴스에 로그인하고 AEM Sites 페이지를 엽니다.
 
@@ -51,6 +51,6 @@ ht-degree: 5%
 * [API를 사용하여 웹 페이지의 목록 양식](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [초안 및 제출 구성 요소 사용](/help/forms/using/draft-submission-component.md)
 * [초안 및 제출된 양식의 스토리지 사용자 지정](/help/forms/using/draft-submission-component.md)
-* [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
-* [Forms 포털 구성 요소에 대한 템플릿 맞춤화](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
+* [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
+* [Forms 포털 구성 요소에 대한 템플릿 사용자 정의](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)

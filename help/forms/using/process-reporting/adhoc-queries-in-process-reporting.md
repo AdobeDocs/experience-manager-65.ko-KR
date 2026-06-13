@@ -1,5 +1,5 @@
 ---
-title: 프로세스 보고의 임시 쿼리
+title: 프로세스 보고의 애드 혹 쿼리
 description: 맞춤형 쿼리를 만들어 JEE 프로세스의 AEM Forms 및 프로세스 보고의 작업 세부 정보를 검색합니다.
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
 
-# 프로세스 보고의 임시 쿼리{#ad-hoc-queries-in-process-reporting}
+# 프로세스 보고의 애드 혹 쿼리{#ad-hoc-queries-in-process-reporting}
 
 ## 프로세스 보고의 임시 쿼리 {#ad-hoc-queries-in-process-reporting-1}
 
@@ -149,7 +149,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 왼쪽 상단의 레일 단추 ![lc_pr_rail_button](assets/lc_pr_rail_button.png)을 클릭하여 **내 필터** 창을 축소하고 **보고서** 패널에 사용할 수 있는 공간을 확장합니다.
-1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**&#x200B;패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
+1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
 
    * **새로 고침**: 저장소에 있는 최신 데이터로 보고서를 새로 고칩니다.
 

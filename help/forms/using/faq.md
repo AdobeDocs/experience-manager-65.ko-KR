@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 0%
+source-wordcount: '1982'
+ht-degree: 1%
 
 ---
 

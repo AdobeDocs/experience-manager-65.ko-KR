@@ -1,5 +1,5 @@
 ---
-title: '자습서: 대화형 통신 계획'
+title: '튜토리얼: 인터랙티브 커뮤니케이션 계획'
 description: 대화형 커뮤니케이션에 대한 구조 계획
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 4%
 
 ---
 
-# 자습서: 대화형 통신 계획 {#tutorial-plan-the-interactive-communication}
+# 튜토리얼: 인터랙티브 커뮤니케이션 계획 {#tutorial-plan-the-interactive-communication}
 
 대화형 커뮤니케이션에 대한 구조 계획
 
@@ -73,7 +73,7 @@ ht-degree: 2%
      <li>청구 일자</li>
      <li>청구 기간</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>고객 세부 정보</td>
@@ -92,7 +92,7 @@ ht-degree: 2%
      <li>상태 코드</li>
      <li>연결 수</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>청구 요약</td>
@@ -106,7 +106,7 @@ ht-degree: 2%
      <li>미수금</li>
      <li>기한</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>청구 요약</td>
@@ -124,7 +124,7 @@ ht-degree: 2%
      <li>총 AP(usagecharges 계산 필드)</li>
     </ul> <p>테이블 - 청구서</p> </td>
    <td>필드 없음</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>항목별 통화 - 발신</td>
@@ -138,20 +138,20 @@ ht-degree: 2%
     </ul> </td>
    <td><p>모든 값</p> <p>테이블 - 호출</p> </td>
    <td>필드 없음</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>지금 결제</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>부가 가치 서비스</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

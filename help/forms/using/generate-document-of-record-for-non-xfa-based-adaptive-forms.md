@@ -11,18 +11,18 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
+source-wordcount: '4312'
 ht-degree: 4%
 
 ---
 
 # 적응형 양식 또는 적응형 양식 단편을 위한 기록 문서 생성 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -276,7 +276,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
-1. 속성 창에서 **양식 모델**&#x200B;을(를) 선택합니다.
+1. 속성 창에서 **양식 모델**을(를) 선택합니다.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -434,7 +434,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
       * 가로
       * 적응형 양식과 동일
      >[!NOTE]
-     > 세로 및 가로 정렬은 에만 적용할 수 있습니다.     라디오 단추 및 확인란
+     > 세로 및 가로 정렬은 라디오 단추와 확인란에만 적용할 수 있습니다
 * **[!UICONTROL 기본 페이지 속성]** [기본 페이지 속성](#master-page-properties-master-page-properties)에 대한 자세한 내용을 보려면 클릭하세요.
 
 ## 기록 문서에서 페이지 나누기 적용 {#apply-page-breaks-in-dor}
@@ -465,7 +465,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png)을(를) 선택하십시오.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
-1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**을 선택합니다.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 이후]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
 1. **[!UICONTROL 페이지로 이동]**&#x200B;을 선택하고 세 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
