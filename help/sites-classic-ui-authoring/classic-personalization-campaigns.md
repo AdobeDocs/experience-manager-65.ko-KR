@@ -1,5 +1,5 @@
 ---
-title: Campaign Management
+title: 캠페인 관리
 description: 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다. 웹, 이메일 및 모바일 서비스에서 마케팅 캠페인을 오케스트레이션하여 방문자를 참여시킬 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
 
 
-# Campaign Management{#campaign-management}
+# 캠페인 관리{#campaign-management}
 
 캠페인 관리는 디지털 마케터에게 개인화된 콘텐츠를 제공하여 방문자를 위한 전용 경험을 만들 수 있는 기회를 제공합니다.
 
@@ -25,27 +25,26 @@ ht-degree: 0%
 
 이 문서에서는 캠페인을 구성하는 다양한 요소에 대해 설명합니다. 자세한 내용은 다음 문서에서 확인할 수 있습니다.
 
-* [티저 및 전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+* [티저와 전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [이메일 마케팅](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [마케팅 캠페인 관리자 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Marketing Campaign Manager 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [세분화 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [캠페인 설정](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 캠페인 관리는 다양한 요소로 구성됩니다.
 
-* **브랜드**
+* **개 브랜드**
 Adobe Experience Manager(AEM)에서 브랜드는 최상위 단위이며 **캠페인**&#x200B;의 컬렉션을 구성합니다.
 
 * **캠페인**
 캠페인은 개별 **경험**&#x200B;의 컬렉션입니다.
 
-* **경험**
+* **개 경험**
 포커스가 있는 콘텐츠는 **터치포인트**&#x200B;에서 방문자에게 표시되는 다양한 경험을 형성합니다. 사용 가능한 경험에는 몇 가지 유형이 있습니다.
 
    * **티저**
-
      [티저 페이지/단락](#teasers)은(는) 특정 방문자 **세그먼트**&#x200B;를 관심사에 집중된 콘텐츠로 안내하는 데 사용됩니다.
 
      티저 페이지는 다음과 같은 작업을 수행할 수 있습니다.
@@ -79,7 +78,7 @@ Adobe Experience Manager(AEM)에서 브랜드는 최상위 단위이며 **캠페
 
   리드는 목록으로 그룹화되어 그에 대해 공동 작업을 수행할 수 있습니다. 참고: **참고:** Adobe은 이 기능을 더 향상시킬 계획이 없습니다.
 
-  권장 사항은 [Adobe Campaign 및 AEM에 통합을 사용하는 것입니다.](/help/sites-administering/campaign.md)
+  권장 사항은 [Adobe Campaign을 사용하고 AEM에 통합하는 것입니다.](/help/sites-administering/campaign.md)
 
 * **세그먼트**
 

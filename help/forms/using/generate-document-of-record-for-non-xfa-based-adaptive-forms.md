@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
+source-wordcount: '4312'
 ht-degree: 4%
 
 ---
@@ -434,7 +434,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
       * 가로
       * 적응형 양식과 동일
      >[!NOTE]
-     > 세로 및 가로 정렬은 에만 적용할 수 있습니다.     라디오 단추 및 확인란
+     > 세로 및 가로 정렬은 라디오 단추와 확인란에만 적용할 수 있습니다
 * **[!UICONTROL 기본 페이지 속성]** [기본 페이지 속성](#master-page-properties-master-page-properties)에 대한 자세한 내용을 보려면 클릭하세요.
 
 ## 기록 문서에서 페이지 나누기 적용 {#apply-page-breaks-in-dor}

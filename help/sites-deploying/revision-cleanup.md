@@ -252,7 +252,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 수정 버전 정리 기간을 결정하는 요소는 무엇입니까?</strong></td>
-   <td>요인은 다음과 같습니다.<br />
+   <td>요소는 <br />입니다.
     <ul>
      <li>저장소 크기</li>
      <li>시스템 로드(분당 요청, 특히 쓰기 작업)</li>
@@ -465,7 +465,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>상태 검사 및 로그 항목에 따르면 온라인 수정 정리 가 세 번 연속 완료되지 않았습니다. 온라인 개정 정리를 성공적으로 완료하는 데 필요한 사항은 무엇입니까?</strong></td>
-   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다.<br />
+   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다. <br />
     <ul>
      <li>먼저 로그 항목 <br />을(를) 확인합니다. </li>
      <li>로그의 정보에 따라 적절한 조치를 취합니다.

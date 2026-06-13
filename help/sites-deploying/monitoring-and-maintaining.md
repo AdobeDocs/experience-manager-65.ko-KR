@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5755'
-ht-degree: 0%
+source-wordcount: '5992'
+ht-degree: 1%
 
 ---
 
@@ -90,7 +90,7 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
 온라인 &quot;핫&quot; 백업을 만드는 방법에 대한 자세한 내용은 [온라인 백업 만들기](/help/sites-administering/backup-and-restore.md#online-backup)를 참조하십시오.
 
-## 버전 삭제 {#version-purging}
+## 버전 제거 {#version-purging}
 
 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
@@ -340,15 +340,15 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >`org.apache.sling.commons.log.pattern`은(는) 최대 6개의 인수를 지원합니다.
    >
-   >{0} `java.util.Date` 유형의 타임스탬프
+   >`java.util.Date` {0} 유형의 타임스탬프
    >
    >{1} 로그 마커
    >
-   >{2} 현재 스레드 이름
+   >현재 스레드 이름 {2}
    >
    >{3} 로거의 이름
    >
-   >{4} 로그 수준
+   >로그 수준 {4}
    >
    >로그 메시지 {5}
    >
@@ -435,7 +435,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >* 숫자로 크기 제한을 지정할 수 있습니다. 크기 표시기가 제공되지 않으면 바이트 수로 간주하거나 크기 표시기 중 하나(`KB`, `MB` 또는 `GB`)를 추가할 수 있습니다(대/소문자가 무시됨).
    >* 시간/날짜 일정을 `java.util.SimpleDateFormat` 패턴으로 지정할 수 있습니다. 파일이 회전된 후 기간을 정의합니다. 또한 회전된 파일에 추가되는 접미사(식별용)입니다.
    >
-   >기본값은 &#39;.&#39;입니다.yyyy-MM-dd(일별 로그 회전용)
+   >기본값은 &#39;.&#39;yyyy-MM-dd(일별 로그 회전)입니다.
    >
    >예를 들어 2010년 1월 20일 자정(또는 이 날짜 이후의 첫 번째 로그 메시지가 정확하게 표시되는 경우)에 ../logs/error.log의 이름이 ../logs/error.log.2010-01-20으로 바뀝니다. 1월 21일에 대한 로깅은 다음 일 변경 시 롤오버될 때까지 (새 항목 및 빈 항목) ../logs/error.log에 출력됩니다.
    >
@@ -695,7 +695,7 @@ Adobe에서는 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-특정 기간(예: 다양한 24시간 기간) 내에 모든 GET 항목을 합계함으로써 웹 사이트의 평균 트래픽에 대해 설명을 만들 수 있습니다.
+특정 기간(예: 다양한 24시간 기간) 내에 모든 GET 항목을 합계함으로써 웹 사이트의 평균 트래픽에 대해 진술할 수 있습니다.
 
 #### request.log로 응답 시간 모니터링 {#monitoring-response-times-with-the-request-log}
 
@@ -719,7 +719,7 @@ Adobe에서는 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다
 * 요청(오른쪽을 가리키는 화살표)인지 아니면 응답(왼쪽을 가리키는 화살표)인지를 나타내는 화살표입니다.
 * 요청의 경우 행에 다음이 포함됩니다.
 
-   * 메서드(일반적으로 GET, HEAD 또는 POST)
+   * 방법(일반적으로 GET, HEAD 또는 POST)
    * 요청된 페이지
    * 프로토콜
 
@@ -914,7 +914,7 @@ Percentage of the requests served within a certain time (ms)
 도구 명령 `jconsole`은(는) JDK에서 사용할 수 있습니다.
 
 1. AEM 인스턴스를 시작합니다.
-1. `jconsole.` 실행
+1. `jconsole.`를 실행합니다.
 1. AEM 인스턴스와 **연결**&#x200B;을 선택하세요.
 
 1. `Local` 응용 프로그램 내에서 `com.day.crx.quickstart.Main`을(를) 두 번 클릭합니다. 기본적으로 개요가 표시됩니다.
@@ -1143,7 +1143,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [메모리 부족](#outofmemory)
 * 기술 자료:
 
-   * [리소스 확인자가 닫히지 않았습니다](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [리소스 확인자가 닫히지 않았습니다.](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM 조정 {#jvm-tuning}
 

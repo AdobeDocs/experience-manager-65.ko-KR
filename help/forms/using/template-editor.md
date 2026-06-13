@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 3%
+source-wordcount: '1956'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 템플릿 작업 {#working-with-templates}
 
-**Adobe Experience Manager > 도구 > 템플릿**(으)로 이동하여 도구 메뉴에서 템플릿 편집기에 액세스할 수 있습니다. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다. AEM에서는 템플릿을 구성할 수 있는 전역 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](/help/sites-developing/page-templates-editable.md)를 참조하십시오.
+**Adobe Experience Manager > 도구 > 템플릿**(으)로 이동하여 도구 메뉴에서 템플릿 편집기에 액세스할 수 있습니다. 여기에서 템플릿은 편집 가능한 템플릿을 사용할 수 있도록 설정된 폴더로 구성됩니다. AEM은 템플릿을 구성할 수 있는 글로벌 폴더를 제공합니다. 그러나 기본적으로 활성화되어 있지는 않습니다. 전역 폴더를 활성화하거나 템플릿용 폴더를 만들도록 관리자에게 요청할 수 있습니다. 폴더를 만드는 방법에 대한 자세한 내용은 [템플릿 폴더](/help/sites-developing/page-templates-editable.md)를 참조하십시오.
 
 폴더를 열도록 선택하면 적응형 양식용 템플릿을 만들 수 있는 만들기 버튼이 표시됩니다.
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 ### 템플릿 편집기 UI {#template-editor-ui}
 
-편집할 템플릿을 열면 다음 AEM Editor 구성 요소를 볼 수 있습니다.
+편집할 템플릿을 열면 다음 AEM 편집기 구성 요소를 볼 수 있습니다.
 
 * **페이지 도구 모음**
 다음 옵션을 포함합니다.

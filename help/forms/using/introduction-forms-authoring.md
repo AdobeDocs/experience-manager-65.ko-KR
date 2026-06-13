@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3155'
 ht-degree: 53%
 
 ---
@@ -90,7 +90,7 @@ Click to enlarge
 
    * **데이터 모델 개체**
 양식 모델 계층 구조를 볼 수 있습니다.
-적응형 양식에 양식 모델 요소를 끌어다 놓을 수 있습니다. 추가된 요소는 원래 속성을 유지하면서 양식 구성 요소로 자동으로 변환됩니다. 양식에서 XML 스키마, JSON 스키마 또는 XDP 템플릿을 사용하는 경우 데이터 모델 오브젝트를 확인할 수 있습니다.
+적응형 양식에 양식 모델 요소를 끌어다 놓을 수 있습니다. 추가된 요소는 원래 속성을 유지하면서 자동으로 양식 구성 요소로 변환됩니다. 양식에서 XML 스키마, JSON 스키마 또는 XDP 템플릿을 사용하는 경우 데이터 모델 개체를 볼 수 있습니다.
 
 * **속성 브라우저**
 
@@ -157,8 +157,8 @@ Click to enlarge
    <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
-   <td>첨부 파일</td>
-   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**&#x200B;을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함하는 파일. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
+   <td>파일 첨부</td>
+   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**&#x200B;을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함합니다. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
   </tr>
   <tr>
    <td>첨부 파일 나열</td>

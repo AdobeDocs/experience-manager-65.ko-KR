@@ -1,6 +1,6 @@
 ---
 title: SRP를 사용하여 UGC에 액세스
-description: 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC는 AEM의 노드 저장소(JCR)에 저장되지 않습니다
+description: 사이트가 ASRP 또는 MSRP를 사용하도록 구성된 경우 실제 UGC가 AEM의 노드 저장소(JCR)에 저장되지 않습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,7 +12,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 커뮤니티 사이트를 만들기 전에 기본 [토폴로지](/help/communities/topologies.md)와(과) 일치하는 구현을 선택하도록 [SRP(저장소 리소스 공급자)](/help/communities/working-with-srp.md)을(를) 구성해야 합니다. SRP 구현은 세 가지 스토리지 옵션을 기반으로 합니다.
 
-1. [ASRP](/help/communities/asrp.md) - 주문형 Adobe 저장소
+1. [ASRP](/help/communities/asrp.md) - Adobe 온디맨드 저장소
 1. [MSRP](/help/communities/msrp.md) - Mongodb
 1. [JSRP](/help/communities/jsrp.md) - JCR
 

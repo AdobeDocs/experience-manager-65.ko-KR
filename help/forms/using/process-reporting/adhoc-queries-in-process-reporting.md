@@ -1,5 +1,5 @@
 ---
-title: 프로세스 보고의 임시 쿼리
+title: 프로세스 보고의 애드 혹 쿼리
 description: 맞춤형 쿼리를 만들어 JEE 프로세스의 AEM Forms 및 프로세스 보고의 작업 세부 정보를 검색합니다.
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
 
-# 프로세스 보고의 임시 쿼리{#ad-hoc-queries-in-process-reporting}
+# 프로세스 보고의 애드 혹 쿼리{#ad-hoc-queries-in-process-reporting}
 
 ## 프로세스 보고의 임시 쿼리 {#ad-hoc-queries-in-process-reporting-1}
 

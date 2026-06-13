@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3263'
 ht-degree: 14%
 
 ---
@@ -120,8 +120,8 @@ TBD: Add some info about XD integration and possibly info about DA v2.0.
 * [!DNL Experience Manager]에 저장된 자산은 복사본이 아니며 [!DNL Adobe Stock]에 다시 연결되는 링크가 아닙니다.
 
 **자산을 [!DNL Adobe Stock]에서[!DNL Creative Cloud]**&#x200B;의 [!DNL Experience Manager]&#x200B;(으)로 저장한 상태로 작업. 이 통합은 [!DNL Adobe Asset Link]과(와) 독립적이지만 [!DNL Adobe Asset Link]은(는) 이러한 방식으로 [!DNL Stock]에서 저장된 이러한 자산을 인식하고 [!DNL Photoshop], [!DNL Illustrator] 또는 [!DNL InDesign]의 [!DNL Adobe Asset Link] 확장 UI에서 이러한 자산에 추가 메타데이터 및 [!DNL Adobe Stock] 로고를 표시합니다. 파일은 [!DNL Experience Manager]에 저장될 때 일반 자산이므로 탐색, 열기 등에 사용할 수 있습니다.
-[!DNL Creative Cloud] 앱에서 [!DNL Adobe Asset Link] 확장을 사용하여 작업하는 Creative 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager]&#x200B;(으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
-[!DNL Adobe Stock]의 [!DNL Assets] 라이선스가 부여되고 [!DNL Experience Manager]에 저장된 값은 [!DNL Experience Manager Assets] 배포에 액세스하는 더 광범위한 팀에서 사용할 수 있게 되지만 [!DNL Adobe Stock]에서 [!DNL Creative Cloud] 라이브러리 패널을 통해 자산을 라이선스하는 크리에이티브 팀은 기본적으로 [!DNL Creative Cloud] 계정에서만 사용할 수 있도록 합니다.
+[!DNL Adobe Asset Link] 확장이 있는 [!DNL Creative Cloud] 앱에서 작업 중인 Creative 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager]&#x200B;(으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
+[!DNL Adobe Stock]에서 [!DNL Assets]이(가) 라이선스가 부여되고 [!DNL Experience Manager]에 저장되면 [!DNL Experience Manager Assets] 배포에 액세스하는 더 광범위한 팀에서 사용할 수 있게 되지만 [!DNL Creative Cloud] 라이브러리 패널을 통해 [!DNL Adobe Stock]에서 에셋을 라이선스가 부여된 creative에서는 기본적으로 [!DNL Creative Cloud] 계정에서만 사용할 수 있게 됩니다.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -135,7 +135,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 DAM에 에셋을 저장하면 에셋에 쉽게 액세스하고 검색할 수 있습니다. 파트너, 고객 등을 포함하여 조직 또는 생태계 전반에 걸쳐 수많은 사용자가 에셋을 사용할 수 있도록 합니다.
 
-대부분의 조직에서는 다운스트림 마케팅/LOB 프로세스와 관련된 자산만 저장하도록 선택합니다. [!DNL Experience Manager Sites]을(를) 통해 웹 채널과 같은 채널에 게시하거나 Adobe Experience Cloud에서 제공하는 다른 채널(Marketing Cloud, Advertising Cloud)을 통해 측정한 후 사용자/파트너에게 제공하는 방식 등)은 다음과 같습니다. 또한 조직에서는 검토/승인 프로세스가 수행될 수 있는 에셋을 DAM에 저장합니다. 이처럼 DAM은 활용 가능성이 높은 자산을 대부분 저장하고, 유휴 자산의 저장을 회피한다.
+대부분의 조직에서는 다운스트림 마케팅/LOB 프로세스와 관련된 자산만 저장하도록 선택합니다. [!DNL Experience Manager Sites]을(를) 통해 웹 채널과 같은 채널에 게시하거나 Adobe Experience Cloud에서 제공하는 다른 채널(Marketing Cloud, Advertising Cloud)을 통해 측정한 다음 사용자/파트너에게 제공하는 등의 작업을 수행합니다. 또한 조직에서는 검토/승인 프로세스가 수행될 수 있는 에셋을 DAM에 저장합니다. 이처럼 DAM은 활용 가능성이 높은 자산을 대부분 저장하고, 유휴 자산의 저장을 회피한다.
 
 에셋 저장에도 기술 및 리소스 사용률 고려 사항이 적용됩니다. DAM은 메타데이터 추출, 버전 관리, 미리보기/트랜스코딩 생성, 참조 관리 및 액세스 제어 정보 추가 등 저장된 에셋에 대한 추가 서비스를 제공합니다. 이러한 서비스는 추가 시간 및 인프라 리소스를 사용합니다.
 

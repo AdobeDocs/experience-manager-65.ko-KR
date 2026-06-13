@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3628'
 ht-degree: 2%
 
 ---
@@ -380,7 +380,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 프로세스 단계를 OSGI 서비스 구성 요소(Java 번들)로 정의하려면 다음을 수행합니다.
 
-1. 번들을 만들고 OSGI 컨테이너에 배포합니다. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 또는 [Eclipse](/help/sites-developing/howto-projects-eclipse.md)을 사용하여 번들을 만드는 방법에 대한 설명서를 참조하세요.
+1. 번들을 만들고 OSGI 컨테이너에 배포합니다. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 또는 [Eclipse](/help/sites-developing/howto-projects-eclipse.md)을(를) 사용하여 번들을 만드는 방법에 대한 설명서를 참조하세요.
 
    >[!NOTE]
    >
@@ -527,7 +527,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 스크립트를 사용하려면:
 
-1. 스크립트를 만들고(예: CRXDE Lite 사용) `//apps/workflow/scripts/` 아래 리포지토리에 저장하십시오.
+1. 스크립트를 만들고(예: CRXDE Lite 사용) `//apps/workflow/scripts/` 아래 저장소에 저장합니다.
 1. **프로세스 단계** 편집 대화 상자에서 스크립트를 식별하는 제목을 지정하려면 스크립트의 `jcr:content` 노드에 다음 속성을 추가하십시오.
 
    | 이름 | 유형 | 값 |
@@ -644,7 +644,7 @@ function getParticipant() {
 }
 ```
 
-1. 스크립트를 만들고(예: CRXDE Lite 사용) `//apps/workflow/scripts` 아래 리포지토리에 저장하십시오.
+1. 스크립트를 만들고(예: CRXDE Lite 사용) `//apps/workflow/scripts` 아래 저장소에 저장합니다.
 1. **프로세스 단계** 편집 대화 상자에서 스크립트를 식별하는 제목을 지정하려면 스크립트의 `jcr:content` 노드에 다음 속성을 추가하십시오.
 
    | 이름 | 유형 | 값 |
@@ -838,11 +838,11 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
      다음 중 하나여야 합니다.
 
-      * 협업 워크플로우
-      * DAM 워크플로우
-      * 양식 워크플로우
+      * 협업 워크플로
+      * DAM 워크플로
+      * 양식 워크플로
       * 프로젝트
-      * WCM 워크플로우
+      * WCM 워크플로
       * 워크플로
 
    ![wf-35](assets/wf-35.png)
@@ -1031,7 +1031,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >클래식 UI 모델 편집기 대화 상자는 여전히 터치 사용이 가능한 표준 UI 편집기에서 작동합니다.
 >
->AEM에 [현대화 도구](/help/sites-developing/modernization-tools.md)가 있지만 클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려면 이 도구를 사용하십시오. 변환 후에도 특정 경우에 대해 대화 상자에 수행할 수 있는 몇 가지 수동 개선 사항이 있습니다.
+>클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려면 AEM에 [현대화 도구](/help/sites-developing/modernization-tools.md)가 있습니다. 변환 후에도 특정 경우에 대해 대화 상자에 수행할 수 있는 몇 가지 수동 개선 사항이 있습니다.
 >
 >* 업그레이드된 대화 상자가 비어 있는 경우 솔루션을 제공하는 방법의 예제와 유사한 기능을 가진 `/libs`의 대화 상자를 볼 수 있습니다. 예:
 >

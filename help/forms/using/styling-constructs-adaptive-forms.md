@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식에 대한 스타일 구성
+title: 적응형 양식에 대한 구성 스타일 지정
 description: 적응형 양식의 모양을 사용자 지정하려면 LESS 프레임워크를 사용하십시오.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 5%
+source-wordcount: '2378'
+ht-degree: 6%
 
 ---
 
-# 적응형 양식에 대한 스타일 구성{#styling-constructs-for-adaptive-forms}
+# 적응형 양식에 대한 구성 스타일 지정{#styling-constructs-for-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -140,7 +140,7 @@ CSS 속성을 사용한 적응형 양식의 전체 모양 변경은 일반적으
 
 ## 레이블 스타일 지정 {#label-styling}
 
-필드에 사용된 HTML 요소 **label**&#x200B;은(는) 레이블이 맨 위에 있는지 아니면 왼쪽에 있는지에 따라 클래스 **left** 또는 **top**&#x200B;을(를) 포함합니다.
+필드에 사용된 HTML 요소 **label**&#x200B;에는 레이블이 맨 위에 있는지 아니면 왼쪽에 있는지에 따라 클래스 **left** 또는 **top**&#x200B;이(가) 포함됩니다.
 
 <table>
  <tbody>
@@ -355,7 +355,7 @@ CSS 속성을 사용한 적응형 양식의 전체 모양 변경은 일반적으
 버튼은 위젯이기도 합니다. 하지만 그들의 스타일은 위젯과 약간 다릅니다. 적응형 양식에서는 다음 중 하나가 버튼을 구성합니다.
 
 * 입력[유형 = 텍스트]
-* 단추
+* 버튼
 * 클래스 .button이 있는 요소
 
 단추에 대한 HTML 코드:
@@ -508,7 +508,7 @@ CSS 속성을 사용한 적응형 양식의 전체 모양 변경은 일반적으
  </tbody>
 </table>
 
-## 표 {#table}
+## 테이블 {#table}
 
 다음 변수를 사용하여 테이블의 머리글 및 본문 행에 대한 색상 테마를 변경할 수 있습니다.
 
@@ -599,7 +599,7 @@ CSS 속성을 사용한 적응형 양식의 전체 모양 변경은 일반적으
  </tbody>
 </table>
 
-다음은 부트스트랩 탭과 유사한 탭 네비게이터 요소에 대한 HTML 코드입니다.
+다음은 tab navigator 요소에 대한 HTML 코드입니다(부트스트랩 탭과 유사).
 
 `<li>`
 

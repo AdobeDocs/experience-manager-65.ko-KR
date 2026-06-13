@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5에서 Assets 저장소 재구성
+title: AEM 6.5의 Assets 저장소 재구성
 description: Assets용 Adobe Experience Manager(AEM) 6.5에서 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 2%
+source-wordcount: '1083'
+ht-degree: 3%
 
 ---
 
-# AEM 6.5에서 Assets 저장소 재구성 {#assets-repository-restructuring-in-aem}
+# AEM 6.5의 Assets 저장소 재구성 {#assets-repository-restructuring-in-aem}
 
 AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 저장소 재구성 페이지에 설명된 대로 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Assets 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
@@ -83,7 +83,7 @@ AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
       </ol> </li>
      <li>폴더 내의 전자 메일 템플릿을 이동한 후 <strong><code>/etc/dam/notification/email/default</code></strong> 폴더를 제거합니다.<br />
       <ol>
-       <li><strong> <code>/etc/notification/email/default</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원본 전자 메일 템플릿이 AEM 4 설치의 일부로 <strong><code>/libs/settings/notification/email/default</code></strong>에 있으므로 폴더를 제거할 수 있습니다.</li>
+       <li><strong> <code>/etc/notification/email/default</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원래 전자 메일 템플릿이 AEM 4 설치의 일부로 <strong><code>/libs/settings/notification/email/default</code></strong>에 있으므로 폴더를 제거할 수 있습니다.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -146,7 +146,7 @@ AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
       </ol> </li>
      <li><code>/etc/dam/workflow/notification/email/downloadasset </code> 폴더 내의 전자 메일 서식 파일을 이동한 후 폴더를 제거합니다.<br />
       <ol>
-       <li><strong> <code>/etc</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원본 전자 메일 템플릿이 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong>에 있으므로 폴더를 제거할 수 있습니다.</li>
+       <li><strong> <code>/etc</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원래 전자 메일 템플릿이 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong>에 존재하므로 폴더를 제거할 수 있습니다.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -187,7 +187,7 @@ AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
       </ol> </li>
      <li>폴더 내의 전자 메일 템플릿을 이동한 후 <strong><code>/etc/dam/adhocassetshare</code></strong> 폴더를 제거합니다.<br />
       <ol>
-       <li><strong> <code>/etc</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원본 전자 메일 템플릿이 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/adhocassetshare</code></strong>에 있으므로 폴더를 제거할 수 있습니다.</li>
+       <li><strong> <code>/etc</code></strong>의 전자 메일 템플릿이 업데이트되지 않은 경우 원래 전자 메일 템플릿이 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/adhocassetshare</code></strong>에 존재하므로 폴더를 제거할 수 있습니다.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -246,7 +246,7 @@ AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>프로젝트 수준 사용자 지정은 해당하는 <code>/apps</code> 또는 <code>/conf</code> 경로에서 잘라내고 붙여 넣어야 합니다.</p> <p>AEM 6.4 저장소 구조를 맞추려면 다음을 수행합니다.</p>
+   <td><p>프로젝트 수준 사용자 지정은 해당하는 <code>/apps</code> 또는 <code>/conf</code> 경로에서 잘라내고 붙여 넣어야 합니다.</p> <p>AEM 6.4 저장소 구조를 맞추려면 다음을 수행하십시오.</p>
     <ol>
      <li><code>/etc/dam/video</code>에서 수정된 비디오 구성 복사 <code>/apps/settings/dam/video</code></li>
      <li>제거 <code>/etc/dam/video</code></li>

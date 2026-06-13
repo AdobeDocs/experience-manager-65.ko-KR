@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 71%
+source-wordcount: '2121'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 >[!NOTE]
 >
->번역 언어에 필요한 언어 구조는 콘텐츠 구조의 [정의의 일부로 이미 생성되었다고 간주됩니다.](getting-started.md#content-structure) 이 작업은 콘텐츠 설계자와 공동 작업을 통해 수행해야 합니다.
+>번역 언어에 필요한 언어 구조는 콘텐츠 구조의 [정의의 일부로 이미 만들어진 것으로 간주됩니다.](getting-started.md#content-structure) 이 작업은 콘텐츠 설계자와 공동 작업을 통해 수행해야 합니다.
 >
 >언어 폴더를 미리 만들지 않으면 이전 단계에 설명된 대로 언어 사본을 만들 수 없습니다.
 

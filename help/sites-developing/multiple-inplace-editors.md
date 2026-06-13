@@ -8,7 +8,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '467'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 ### 리치 텍스트 편집기에 대한 추가 구성 {#additional-configuration-for-rich-text-editors}
 
-각 개별 RTE 인스턴스를 개별적으로 구성할 수 있으므로 여러 리치 텍스트 편집기에 대한 구성은 약간 다릅니다. 자세한 내용은 [리치 텍스트 편집기 구성](/help/sites-administering/rich-text-editor.md)을 참조하십시오. 여러 RTE를 통해 각 즉석 RTE에 대한 구성을 만들 수 있습니다. Adobe은 각 개별 RTE의 구성이 서로 다를 수 있으므로 `cq:InplaceEditingConfig` 아래에 새 구성 노드를 만들 것을 권장합니다. 새 노드 아래에 각 개별 RTE 구성을 만듭니다.
+각 개별 RTE 인스턴스를 개별적으로 구성할 수 있으므로 여러 리치 텍스트 편집기에 대한 구성은 약간 다릅니다. 자세한 내용은 [리치 텍스트 편집기 구성](/help/sites-administering/rich-text-editor.md)을 참조하십시오. 여러 RTE를 통해 각 즉석 RTE에 대한 구성을 만들 수 있습니다. 각 개별 RTE의 구성이 서로 다를 수 있으므로 Adobe에서는 `cq:InplaceEditingConfig` 아래에 새 구성 노드를 만들 것을 권장합니다. 새 노드 아래에 각 개별 RTE 구성을 만듭니다.
 
 ```xml
     texttext
@@ -113,7 +113,7 @@ ht-degree: 1%
 
 ## 코드 샘플 {#code-samples}
 
-이 페이지의 코드는 GitHub의 [aem-authoring-hybrideditors 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)에서 찾을 수 있습니다. 전체 프로젝트를 [ZIP 보관](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)(으)로 다운로드할 수 있습니다.
+이 페이지의 코드는 GitHub의 [aem-authoring-hybrideditors 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)에서 찾을 수 있습니다. 전체 프로젝트를 [ZIP 보관](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)&#x200B;(으)로 다운로드할 수 있습니다.
 
 ## 즉석 편집기 추가 {#add-an-in-place-editor}
 
@@ -121,4 +121,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager에서 서식 있는 텍스트 편집기를 구성합니다](/help/sites-administering/rich-text-editor.md).
+>* [Experience Manager에서 리치 텍스트 편집기를 구성합니다](/help/sites-administering/rich-text-editor.md).

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 
 >[!NOTE]
 >
->콜드 대기 기능은 **작성자** 인스턴스에서 고가용성이 필요한 시나리오를 보호하기 위한 것입니다. Adobe Tar 마이크로 커널을 사용하는 **게시** 인스턴스에서 고가용성이 필요한 경우 게시 팜을 사용하는 것이 좋습니다.
+>콜드 대기 기능은 **작성자** 인스턴스에서 고가용성이 필요한 시나리오를 보호하기 위한 것입니다. Tar 마이크로 커널을 사용하는 **게시** 인스턴스에서 고가용성이 필요한 경우 게시 팜을 사용하는 것이 좋습니다.
 >
 >사용 가능한 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지를 참조하십시오.
 
@@ -86,8 +86,8 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >
 >AEM 6.3에서 세그먼트 노드 저장소 및 대기 저장소 서비스의 PID가 이전 버전과 비교하여 다음과 같이 변경되었습니다.
 >
->* from org.apache.jackrabbit.oak.org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService에 대한 **plugins**.segment.standby.store.StandbyStoreService
->* from org.apache.jackrabbit.oak.org.apache.jackrabbit.oak.segment.SegmentNodeStoreService에 대한 **plugins**.segment.SegmentNodeStoreService
+>* org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService에서 org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService로
+>* org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService에서 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService로
 >
 >이 변경 사항을 반영하도록 필요한 구성을 조정합니다.
 
@@ -102,7 +102,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 
    1. `aem-primary/crx-quickstart/install` 아래에 있을 수 있는 이전 OSGi 구성을 확인하고 삭제합니다.
 
-   1. `install.primary` 아래에 `aem-primary/crx-quickstart/install` 폴더 만들기
+   1. `aem-primary/crx-quickstart/install` 아래에 `install.primary` 폴더 만들기
 
    1. `aem-primary/crx-quickstart/install/install.primary` 아래에 기본 설정 노드 저장소 및 데이터 저장소에 필요한 구성을 만듭니다.
    1. 같은 위치에 `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`이라는 파일을 만든 다음 적절하게 구성하십시오. 구성 옵션에 대한 자세한 내용은 [구성](/help/sites-deploying/tarmk-cold-standby.md#configuration)을 참조하십시오.
@@ -155,14 +155,14 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 1. 그런 다음 대기 인스턴스를 준비합니다. 기본 인스턴스와 동일한 단계를 수행하여 이 작업을 수행할 수 있습니다.
 
    1. `aem-standby/crx-quickstart/install`에 포함될 수 있는 모든 파일을 삭제합니다.
-   1. `install.standby` 아래에 `aem-standby/crx-quickstart/install` 폴더 만들기
+   1. `aem-standby/crx-quickstart/install` 아래에 `install.standby` 폴더 만들기
 
    1. 라는 두 개의 구성 파일을 만듭니다.
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
 
-   1. `crx3` 아래에 `aem-standby/crx-quickstart/install` 폴더 만들기
+   1. `aem-standby/crx-quickstart/install` 아래에 `crx3` 폴더 만들기
 
    1. 데이터 저장소 구성을 만들어 `aem-standby/crx-quickstart/install/crx3` 아래에 배치합니다. 이 예제에서 만들어야 하는 파일은 다음과 같습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 폐쇄된 사용자 그룹 생성
+title: 폐쇄형 사용자 그룹 생성
 description: 폐쇄된 사용자 그룹을 만드는 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 1%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
-# 폐쇄된 사용자 그룹 생성{#creating-a-closed-user-group}
+# 폐쇄형 사용자 그룹 생성{#creating-a-closed-user-group}
 
 폐쇄된 사용자 그룹(CUG)은 게시된 인터넷 사이트 내에 있는 특정 페이지에 대한 액세스를 제한하는 데 사용됩니다. 이러한 페이지는 지정된 구성원이 로그인하고 보안 자격 증명을 제공해야 합니다.
 
@@ -134,8 +134,7 @@ CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.co
 
 >[!NOTE]
 >
->Dispatcher 팜에 세션 관리가 활성화되어 있으면 팜이 처리하는 모든 페이지가 캐시되지 않습니다. CUG 외부에 있는 페이지를 캐시하려면 dispatcher.any에서 두 번째 팜을 만듭니다
->비 CUG 페이지를 처리합니다.
+>Dispatcher 팜에 세션 관리가 활성화되어 있으면 팜이 처리하는 모든 페이지가 캐시되지 않습니다. CUG 외부에 있는 페이지를 캐시하려면 dispatcher.any>에서 CUG가 아닌 페이지를 처리하는 두 번째 팜을 만드십시오.
 
 1. `/directory`을(를) 정의하여 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-secure-sessions-sessionmanagement)을(를) 구성합니다. 예:
 

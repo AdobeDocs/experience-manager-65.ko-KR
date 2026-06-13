@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 * `publish` + `intranet`
 
-* 필요에 따라 . .
+* 필요에 따라 . . .
 
 각 시작 시 사용자 정의된 실행 모드를 선택할 수도 있습니다.
 
@@ -120,9 +120,9 @@ nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니
 
 여러 실행 모드에 대한 구성을 정의한 경우 시작 시 사용할 구성을 정의해야 합니다. 사용할 실행 모드를 지정하는 방법에는 몇 가지가 있습니다. 해결 순서는 다음과 같습니다.
 
-1. [시스템 속성(](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [시스템 속성(`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties`개 파일](#using-the-sling-properties-file)
+1. [`-r` 옵션](#using-the-r-option)
 1. [파일 이름 감지](#filename-detection-renaming-the-jar-file)
 
 응용 프로그램 서버를 사용하는 경우 [web.xml에서 실행 모드를 정의](#defining-the-run-mode-in-web-xml-with-application-server)할 수도 있습니다.
@@ -180,6 +180,6 @@ jar 파일은 명명 규칙을 사용해야 합니다.
 
 `WEB-INF/web.xml`
 
-이 파일은 AEM `war` 파일에 있으며 배포 전에 업데이트해야 합니다.
+AEM `war` 파일에 있으며 배포 전에 업데이트해야 합니다.
 
 자세한 내용은 [응용 프로그램 서버에 AEM 설치](/help/sites-deploying/application-server-install.md)를 참조하십시오.
