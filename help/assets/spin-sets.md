@@ -1,6 +1,6 @@
 ---
 title: 스핀 세트
-description: Dynamic Media에서 스핀 세트를 만들어 세부 정보를 볼 수 있도록 임의의 각도에서 개체를 돌려 보는 실제 작업을 시뮬레이션하는 방법에 대해 알아봅니다.
+description: Dynamic Media에서 스핀 세트를 만들어 세부 정보를 볼 수 있도록 임의의 각도에서 오브젝트를 보려고 회전시키는 실제 작업을 시뮬레이션하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2001'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 스핀 세트는 물체를 돌아서 그것을 살펴보는 실제 행동을 시뮬레이션한다. 스핀 세트를 사용하면 모든 각도에서 항목을 볼 수 있으므로 모든 각도에서 주요 시각적 세부 정보를 얻을 수 있습니다.
 
-회전 세트는 360도 보기 환경을 시뮬레이션합니다. Dynamic Media은 뷰어가 항목을 회전할 수 있는 단일 축 스핀 세트를 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 &quot;자유 형식&quot;으로 보기를 확대/축소하고 이동할 수 있습니다. 이러한 방식으로, 사용자는 특정 관점에서 항목을 더 가까이 검사할 수 있다.
+회전 세트는 360도 보기 환경을 시뮬레이션합니다. Dynamic Media는 뷰어가 항목을 회전할 수 있는 단일 축 스핀 세트를 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 &quot;자유 형식&quot;으로 보기를 확대/축소하고 이동할 수 있습니다. 이러한 방식으로, 사용자는 특정 관점에서 항목을 더 가까이 검사할 수 있다.
 
 회전 집합은 배너에 의해 **[!UICONTROL SPINSET]** 단어로 지정됩니다. 또한 회전 집합이 게시되면 **[!UICONTROL World]** 아이콘으로 표시된 게시 날짜가 **[!UICONTROL Pencil]** 아이콘으로 표시된 마지막 수정 날짜와 함께 배너에 표시됩니다.
 
@@ -31,11 +31,11 @@ ht-degree: 9%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md)를 참조하십시오.
 
-회전 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+회전 집합을 만들 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000년 |
+| 2D 세트당 최대 행/열 수 | 세트당 12~18개 이미지 | 1000 |
 
 [Dynamic Media 제한 사항](/help/assets/limitations.md)도 참조하세요.
 
@@ -57,7 +57,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **중요:** 일괄 처리 집합은 IPS(이미지 프로덕션 시스템)에 의해 자산 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+   >You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **중요:** 일괄 처리 집합은 자산 수집의 일부로 IPS(이미지 프로덕션 시스템)에 의해 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 1. 필요에 따라 [회전 집합 뷰어 사전 설정](/help/assets/managing-viewer-presets.md)을 설정합니다.
 
@@ -75,7 +75,7 @@ ht-degree: 9%
 
    회전 세트를 선택하면 미리 볼 수 있습니다. 회전 세트를 회전합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [회전 집합 Publish](/help/assets/publishing-dynamicmedia-assets.md).
+1. [회전 집합을 게시](/help/assets/publishing-dynamicmedia-assets.md)합니다.
 
    회전 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정을 게시](/help/assets/managing-viewer-presets.md)해야 합니다.
 
@@ -109,20 +109,20 @@ ht-degree: 9%
 
 ## 회전 집합 만들기 {#creating-spin-sets}
 
-이 섹션에서는 Experience Manager에서 회전 집합을 만드는 방법을 설명합니다.
+이 섹션에서는 Experience Manager에서 스핀 세트를 만드는 방법을 설명합니다.
 
 >[!NOTE]
 >
->You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **중요:** 일괄 처리 집합은 IPS(이미지 프로덕션 시스템)에 의해 자산 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **중요:** 일괄 처리 집합은 자산 수집의 일부로 IPS(이미지 프로덕션 시스템)에 의해 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 >
->[Dynamic Media 구성 - Scene7 모드](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)에서 &quot;이미지 집합 및 스핀 집합을 자동으로 생성하는 일괄처리 집합 사전 설정 만들기&quot;를 참조하십시오.
+>[Dynamic Media 구성 - Scene7 모드](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)에서 &quot;이미지 세트 및 스핀 세트를 자동으로 생성하는 일괄처리 집합 사전 설정 만들기&quot;를 참조하십시오.
 >
 
 >[!NOTE]
 >
 >회전 집합에 이미지가 나타나는 순서입니다. 스핀이 360도 부드럽게 보이도록 주문하십시오.
 
-회전 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+회전 집합을 만들 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한적 부과 |
 | --- | --- | --- |
@@ -142,7 +142,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >회전 세트를 만들 때 회전 세트 축소판을 변경하거나 회전 세트의 에셋에 따라 Experience Manager이 축소판을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 회전 집합에서 썸네일을 생성하도록 Experience Manager을 결정한 경우 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
+   >회전 세트를 만들 때 회전 세트 썸네일을 변경하거나 Experience Manager에서 회전 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택하고 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 Experience Manager에서 회전 집합에서 썸네일을 생성하도록 결정한 경우 **[!UICONTROL 자동 썸네일로 전환]**&#x200B;을 선택합니다.
 
 1. 다음 중 하나를 수행합니다.
 
@@ -188,7 +188,7 @@ ht-degree: 9%
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. From a member image of any set. **[!UICONTROL 집합]** 메뉴를 선택하여 자산이 구성원인 집합을 표시합니다.
+1. 어떤 세트의 멤버 이미지에서도 시작할 수 있습니다. **[!UICONTROL 집합]** 메뉴를 선택하여 자산이 구성원인 집합을 표시합니다.
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
@@ -221,12 +221,11 @@ ht-degree: 9%
 
    * 이미지 순서를 조정하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 조정 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 선택합니다.
-   * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 자산으로 이동하여 선택한 다음 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
-Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+   * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 에셋으로 이동하여 선택한 다음 오른쪽 상단 모서리 근처에서 **[!UICONTROL 선택]**을 선택합니다.
+Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 [사전 설정] 아이콘을 선택하고 사전 설정을 선택합니다.
    * 회전 집합 전체를 삭제하려면 회전 집합으로 이동하여 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 선택합니다
-
    >[!NOTE]
    >
    >회전 집합으로 이동하여 왼쪽 레일에서 **[!UICONTROL 구성원 설정]**&#x200B;을 선택한 다음 개별 자산에서 연필 아이콘을 선택하여 편집 창을 열면 회전 집합의 이미지를 편집할 수 있습니다.
@@ -237,6 +236,6 @@ Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로
 
 [자산 미리 보기](/help/assets/previewing-assets.md)를 참조하세요.
 
-## Publish a 스핀 세트 {#publishing-spin-sets}
+## 회전 집합 게시 {#publishing-spin-sets}
 
-[Publish 자산](/help/assets/publishing-dynamicmedia-assets.md)을 참조하세요.
+[자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.

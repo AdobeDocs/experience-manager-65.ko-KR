@@ -11,8 +11,8 @@ exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 16%
+source-wordcount: '211'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 관리자로서 뷰어 사전 설정을 관리, 만들기, 정렬 및 삭제해야 하는 경우 [뷰어 사전 설정 관리](managing-viewer-presets.md)를 참조하십시오.
 
-[Publish 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)도 참조하세요.
+[뷰어 사전 설정 게시](managing-viewer-presets.md#publishing-viewer-presets)도 참조하세요.
 
 사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없습니다.
 뷰어 사전 설정에 문제가 있으면 [Dynamic Media 문제 해결 - Scene7](troubleshoot-dms7.md#viewers)을 참조하세요.

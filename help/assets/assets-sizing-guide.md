@@ -8,7 +8,7 @@ exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1645'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 시스템에 로드되는 에셋의 크기와 수를 결정합니다.
 1. [!DNL Experience Manager]&#x200B;(으)로 업로드할 대표적인 자산 샘플을 얻습니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 형식의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡성을 나타냅니다.
 1. 사용할 렌디션을 정의합니다.
-1. [!DNL Experience Manager] 또는 [!DNL ImageMagick] 응용 프로그램을 사용하여 [!DNL Adobe Creative Cloud]에서 렌디션을 만듭니다. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media를 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
+1. [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램을 사용하여 [!DNL Experience Manager]에서 렌디션을 만듭니다. 사용자가 지정하는 렌디션 외에도 기본 렌디션을 만듭니다. Dynamic Media를 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장할 PTIFF 표현물을 생성할 수 있습니다.
 1. 하위 에셋을 사용하려는 경우 적절한 파일 형식에 대해 하위 에셋을 생성합니다.
 1. 출력 이미지, 렌디션 및 하위 에셋의 크기를 원본 이미지와 비교합니다. 시스템이 로드될 때 예상 증가 계수를 생성할 수 있습니다. 예를 들어, 1GB의 에셋을 처리한 후 조합 크기가 3GB인 렌디션과 하위 에셋을 생성하는 경우 렌디션 증가 인자는 3입니다.
 1. 시스템에서 에셋 버전을 유지 관리할 최대 시간을 결정합니다.
@@ -104,7 +104,7 @@ NodeStore 또는 DocumentStore의 정확한 크기 조정 수치에 도달하기
 
 ## 네트워크 {#network}
 
-[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [!DNL Experience Manager]사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항[에서 &#x200B;](/help/assets/assets-network-considerations.md)에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
+[!DNL Assets]에는 많은 [!DNL Experience Manager] 프로젝트보다 네트워크 성능을 더 중요하게 만드는 여러 사용 사례가 있습니다. 고객의 서버 속도가 빠를 수 있지만, 시스템에서 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 네트워크 연결이 크지 않으면 여전히 속도가 느린 것으로 표시됩니다. [사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지에 대한 Assets 고려 사항](/help/assets/assets-network-considerations.md)에서 [!DNL Experience Manager]에 대한 사용자의 네트워크 연결에서 제한점을 확인하는 데 좋은 방법이 있습니다.
 
 ## 제한 사항 {#limitations}
 

@@ -1,5 +1,5 @@
 ---
-title: 관련 에셋
+title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 에셋의 연결 방법을 알아봅니다. 또한 디지털 에셋 간의 소스 파생 관계를 만듭니다.
 contentOwner: AG
 role: User
@@ -8,16 +8,16 @@ exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 3%
+source-wordcount: '644'
+ht-degree: 45%
 
 ---
 
-# 관련 에셋 {#related-assets}
+# 관련 자산 {#related-assets}
 
-[!DNL Adobe Experience Manager Assets]을(를) 사용하면 관련 에셋 기능을 사용하여 조직의 필요에 따라 에셋을 수동으로 연결할 수 있습니다. 예를 들어 유사한 주제에 대한 에셋 또는 이미지/비디오와 라이선스 파일을 연결할 수 있습니다. 특정 공통 속성을 공유하는 에셋의 관계를 설정할 수 있습니다. 이 기능을 사용하여 에셋 간의 소스/파생 관계를 만들 수도 있습니다. 예를 들어 INDD 파일에서 생성된 PDF 파일이 있는 경우 PDF 파일을 해당 소스 INDD 파일과 연결할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]에서 관련 에셋 기능을 사용하여 조직의 필요에 따라 에셋을 수동으로 연결할 수 있습니다. 예를 들어 유사한 주제에 대한 에셋 또는 이미지/비디오와 라이선스 파일을 연결할 수 있습니다. 특정 공통 속성을 공유하는 에셋의 관계를 설정할 수 있습니다. 이 기능을 사용하여 에셋 간의 소스/파생 관계를 만들 수도 있습니다. 예를 들어 INDD 파일에서 생성된 PDF 파일이 있는 경우 PDF 파일을 해당 소스 INDD 파일과 연결할 수 있습니다.
 
-이 기능을 사용하면 저해상도 PDF 파일 또는 JPG 파일을 공급업체 또는 에이전시와 공유할 수 있으며 고해상도 INDD 파일을 요청 시에만 사용할 수 있도록 하는 유연성이 있습니다.
+이 기능을 사용하면 저해상도 PDF 파일 또는 JPG 파일을 공급업체 또는 에이전시와 공유할 수 있으며 고해상도 INDD 파일을 요청 시에만 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -25,9 +25,9 @@ ht-degree: 3%
 
 ## 에셋 관계 설정 {#relating-assets}
 
-1. [!DNL Experience Manager] 인터페이스에서 연결할 자산의 **[!UICONTROL 속성]** 페이지를 엽니다.
+1. [!DNL Experience Manager] 인터페이스에서 연결할 에셋의 **[!UICONTROL 속성]** 페이지를 엽니다.
 
-   ![에셋과 연결할 에셋의 속성 페이지를 엽니다](assets/asset-properties-relate-assets.png)
+   ![에셋과 연결할 에셋의 속성 페이지 열기](assets/asset-properties-relate-assets.png)
 
    *그림: [!DNL Assets] 자산을 연결할 [!UICONTROL 속성] 페이지.*
 
@@ -51,7 +51,7 @@ ht-degree: 3%
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-1. 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요. 3단계에서 선택한 관계에 따라 관련 에셋이 **[!UICONTROL 관련]** 섹션의 적절한 범주 아래에 나열됩니다. 예를 들어 관련된 에셋이 현재 에셋의 원본 파일인 경우 **[!UICONTROL Source]** 아래에 나열됩니다.
+1. 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요. 3단계에서 선택한 관계에 따라 관련 에셋이 **[!UICONTROL 관련]** 섹션의 적절한 범주 아래에 나열됩니다. 예를 들어 관련된 에셋이 현재 에셋의 소스 파일인 경우 **[!UICONTROL 소스]** 아래에 나열됩니다.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -65,11 +65,11 @@ ht-degree: 3%
 
 ## 관련 에셋 번역 {#translating-related-assets}
 
-관련 에셋 기능을 사용하여 에셋 간의 소스/파생 관계를 만드는 것도 번역 워크플로에서 유용합니다. 파생된 에셋에서 번역 워크플로우를 실행하면 [!DNL Experience Manager Assets]에서 원본 파일이 참조하는 모든 에셋을 자동으로 가져와서 번역을 위해 포함합니다. 이렇게 하면 소스 에셋에서 참조하는 에셋이 소스 및 파생된 에셋과 함께 번역됩니다. 예를 들어 영어 사본에 표시된 대로 파생된 에셋과 소스 파일이 포함된 시나리오를 생각해 보십시오.
+관련 에셋 기능을 사용하여 에셋 간의 소스/파생 관계를 만드는 것 또한 번역 워크플로에서 유용합니다. 파생된 에셋에서 번역 워크플로를 실행하면 [!DNL Experience Manager Assets]에서 원소스 파일이 참조하는 모든 에셋을 자동으로 가져와서 번역을 위해 포함합니다. 이렇게 하면 소스 에셋에서 참조하는 에셋이 소스 및 파생된 에셋과 함께 번역됩니다. 예를 들어 영어 사본에 표시된 대로 파생된 에셋과 소스 파일이 포함된 시나리오를 생각해 보십시오.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-원본 파일이 다른 에셋과 관련된 경우 [!DNL Experience Manager Assets]은(는) 참조된 에셋을 가져와서 번역을 위해 포함시킵니다.
+소스 파일이 다른 에셋과 관련된 경우 [!DNL Experience Manager Assets]은 참조된 에셋을 가져와서 번역을 위해 포함합니다.
 
 ![자산 속성 페이지에 번역을 위해 포함할 관련 자산의 원본 파일이 표시됨](assets/asset-properties-source-asset.png)
 
