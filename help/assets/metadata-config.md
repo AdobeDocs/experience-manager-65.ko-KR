@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]은(는) 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람들에게 도움이 됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets]을(를) 사용하면 관리자가 메타데이터 기능을 구성하고 사용자 지정하여 기본 Adobe 서비스를 수정할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]은 모든 에셋에 대한 메타데이터를 유지합니다. 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 경우에 도움이 됩니다. 에셋으로 메타데이터를 보관하고 관리할 수 있으므로 에셋의 메타데이터를 기반으로 에셋을 자동으로 구성 및 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets]을(를) 사용하면 관리자가 메타데이터 기능을 구성하고 사용자 지정하여 기본 Adobe 서비스를 수정할 수 있습니다.
 
 ## 메타데이터 스키마 편집 {#metadata-schema}
 
@@ -120,7 +120,7 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -280,7 +280,7 @@ Open the properties for a folder configured with a folder metadata schema. **[!U
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=ko).
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [메타데이터, 이미지 및 비디오를 처리할 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 자산을 구성하는 모범 사례](/help/assets/organize-assets.md).
 >* [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).

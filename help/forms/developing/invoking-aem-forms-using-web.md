@@ -97,7 +97,7 @@ AEM Forms은 다음과 같은 웹 서비스 표준을 지원합니다.
    <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Forms</p></td>
+   <td><p>양식</p></td>
    <td><p><code>http://localhost:8080/soap/services/FormsService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -1487,7 +1487,7 @@ bindings node="//wsdl:portType[@name='GeneratePDFService']/wsdl:operation[@name=
 
 JAX-WS를 사용하여 Java 프록시 파일을 생성할 때 이 XML 파일을 사용하십시오. ([JAX-WS를 사용하여 Java 프록시 클래스 만들기](#creating-java-proxy-classes-using-jax-ws)를 참조하십시오.)
 
-&#x200B;- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정하십시오.
+- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정하십시오.
 
 비동기 호출이 작동하도록 하려면 끝점 URL 값을 수정하고 `async=true`을(를) 지정하십시오. 예를 들어 JAX-WS로 만든 Java 프록시 파일의 경우 `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`에 대해 다음을 지정하십시오.
 

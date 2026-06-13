@@ -9,7 +9,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5414'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 비디오 형식은 조직의 디지털 에셋에 중요한 부분입니다. [!DNL Adobe Experience Manager]은(는) 생성 후 비디오 자산의 전체 라이프사이클을 관리하는 완성도 높은 서비스와 기능을 제공합니다.
@@ -44,7 +44,7 @@ ht-degree: 8%
 [!DNL Assets] 구성 외에 다음 구성을 변경하여 큰 에셋을 업로드하십시오.
 
 * 토큰 만료 시간을 늘립니다. `https://[aem_server]:[port]/system/console/configMgr`의 웹 콘솔에서 [!UICONTROL Adobe Granite CSRF 서블릿]을(를) 참조하십시오. 자세한 내용은 [CSRF 보호](/help/sites-developing/csrf-protection.md)를 참조하십시오.
-* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#renders-options)을 참조하십시오.
+* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ Experience Manager에서 메타데이터 처리 프로필을 만들어 선택적
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
+   * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보]**&#x200B;를 선택합니다.
@@ -371,7 +371,7 @@ Experience Manager에서 메타데이터 처리 프로필을 만들어 선택적
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
+   * **[!UICONTROL 선택 항목]**에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
 복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. 메타데이터 스키마 편집기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 취소]**&#x200B;를 클릭합니다.
@@ -439,7 +439,7 @@ Experience Manager에서 메타데이터 처리 프로필을 만들어 선택적
 1. 비디오 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
 
-   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ko)도 참조하세요.
+   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)도 참조하세요.
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 

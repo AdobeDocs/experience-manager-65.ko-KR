@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## PDF 문서 어셈블 {#assemble-pdf-documents}
 
-어셈블러 서비스를 사용하여 두 개 이상의 PDF 문서를 단일 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. 탐색을 돕거나 보안을 강화하는 기능을 PDF 문서에 적용할 수도 있습니다. 다음은 PDF 문서를 어셈블할 수 있는 몇 가지 방법입니다.
+어셈블러 서비스를 사용하여 둘 이상의 PDF 문서를 단일 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. 탐색을 지원하거나 보안을 향상시키는 PDF 문서에 기능을 적용할 수도 있습니다. 다음은 PDF 문서를 어셈블할 수 있는 몇 가지 방법입니다.
 
 ### 간단한 PDF 문서 어셈블 {#assemble-a-simple-pdf-document}
 
@@ -54,9 +54,9 @@ ht-degree: 6%
 
 ### PDF 포트폴리오 만들기 {#create-a-pdf-portfolio}
 
-어셈블러 서비스는 문서 컬렉션 및 자체 포함된 PDF 인터페이스를 포함하는 Portfolio을 만들 수 있습니다. 이 인터페이스를 PDF Portfolio 레이아웃 또는 PDF Portfolio 탐색기(네비게이터)라고 합니다. PDF Portfolio은 네비게이터, 폴더 및 시작 페이지를 추가하여 PDF 패키지의 기능을 확장합니다. 인터페이스는 현지화된 텍스트 문자열, 사용자 정의 색상 구성표 및 그래픽 리소스를 활용하여 사용자 경험을 향상시킬 수 있습니다. PDF Portfolio은 포트폴리오에서 파일을 구성하기 위한 폴더를 포함할 수도 있습니다.
+어셈블러 서비스는 문서 컬렉션 및 자체 포함된 사용자 인터페이스가 포함된 PDF 포트폴리오를 만들 수 있습니다. 이 인터페이스를 PDF Portfolio 레이아웃 또는 PDF Portfolio 네비게이터(네비게이터)라고 합니다. PDF 포트폴리오는 탐색기, 폴더 및 시작 페이지를 추가하여 PDF 패키지의 기능을 확장합니다. 인터페이스는 현지화된 텍스트 문자열, 사용자 정의 색상 구성표 및 그래픽 리소스를 활용하여 사용자 경험을 향상시킬 수 있습니다. PDF Portfolio에는 포트폴리오에 파일을 구성하기 위한 폴더가 포함될 수도 있습니다.
 
-어셈블러 서비스는 다음 DDX 문서를 해석하면 PDF Portfolio 탐색기와 두 개의 파일 패키지가 포함된 PDF Portfolio을 어셈블합니다. 이 서비스는 myNavigator 소스로 지정된 위치에서 탐색기를 가져옵니다. 탐색기의 기본 색상 구성표를 pinkScheme 색상 구성표로 변경합니다.
+어셈블러 서비스는 다음 DDX 문서를 해석하고 PDF Portfolio 탐색기와 두 개의 파일 패키지가 포함된 PDF Portfolio을 어셈블합니다. 이 서비스는 myNavigator 소스로 지정된 위치에서 탐색기를 가져옵니다. 탐색기의 기본 색상 구성표를 pinkScheme 색상 구성표로 변경합니다.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -75,7 +75,7 @@ ht-degree: 6%
 
 ### 암호화된 문서 어셈블 {#assemble-encrypted-documents}
 
-문서를 어셈블할 때 암호로 PDF 문서를 암호화할 수도 있습니다. PDF 문서가 암호로 암호화되면 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 확인해야 합니다. 암호로 PDF 문서를 암호화하려면 DDX 문서에 PDF 문서를 암호화하는 데 필요한 암호화 요소 값이 들어 있어야 합니다.
+문서를 어셈블할 때 암호로 PDF 문서를 암호화할 수도 있습니다. PDF 문서가 암호로 암호화되면 사용자는 Adobe Reader 또는 Acrobat에서 PDF 문서를 보기 위한 암호를 지정해야 합니다. 암호로 PDF 문서를 암호화하려면 DDX 문서에 PDF 문서를 암호화하는 데 필요한 암호화 요소 값이 포함되어 있어야 합니다.
 
 암호로 PDF 문서를 암호화하기 위해 암호화 서비스가 LiveCycle 설치의 일부가 아니어도 됩니다.
 
@@ -95,7 +95,7 @@ ht-degree: 6%
 
 어셈블러 서비스를 사용하여 대화형 PDF 문서(예: 양식)를 비대화형 PDF 문서로 변환할 수 있습니다. 대화형 PDF 문서를 사용하면 PDF 문서 필드에 데이터를 입력하거나 수정할 수 있습니다. 대화형 PDF 문서를 비대화형 PDF 문서로 변환하는 프로세스를 병합이라고 합니다. PDF 문서가 병합되면 양식 필드는 그래픽 모양을 유지하지만 더 이상 대화형이 아닙니다. PDF 문서를 병합하는 한 가지 이유는 데이터를 수정할 수 없도록 하기 위해서입니다. 또한 필드와 연결된 스크립트가 더 이상 작동하지 않습니다.
 
-대화형 PDF 문서에서 어셈블된 PDF 문서를 만들면 어셈블러 서비스는 해당 양식을 결과 문서로 어셈블하기 전에 병합합니다.
+대화형 PDF 문서에서 어셈블된 PDF 문서를 만들 때 어셈블러 서비스는 결과 문서로 어셈블하기 전에 해당 양식을 병합합니다.
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ source="myFragmentSource"/>
 </DDX
 ```
 
-### XDP 문서를 PDF으로 패키징 {#package-an-xdp-document-as-pdf}
+### XDP 문서를 PDF으로 패키지 {#package-an-xdp-document-as-pdf}
 
 이 DDX 문서에 표시된 대로 어셈블러 서비스를 사용하여 XDP 문서를 PDF 문서로 패키징할 수 있습니다.
 
@@ -326,7 +326,7 @@ source="myFragmentSource"/>
    * 문서의 각 페이지에 있는 각 단락의 문장
 
 * 페이지 번호, 제목, 대상 및 모양을 포함하는 책갈피입니다. 내보낼 수 있습니다.\
-  PDF 문서의 데이터를 가져온 다음 PDF 문서로 가져옵니다.
+  PDF 문서의 데이터를 가져와 PDF 문서로 가져옵니다.
 
 * 파일 정보를 포함한 첨부 파일. 페이지 수준 첨부 파일의 경우\
   첨부 파일 주석의 위치입니다. PDF 문서에서 이 데이터를 내보내고\
@@ -342,7 +342,7 @@ source="myFragmentSource"/>
 
 어셈블러 서비스에서 다음 LiveC 주기 서비스를 호출하도록 하는 DDX 문서를 사용할 수 있습니다. 어셈블러 서비스는 LiveCycle과 함께 설치된 서비스만 호출할 수 있습니다.
 
-**Reader 확장 서비스**: Adobe Reader 사용자가 결과 PDF 문서에 디지털 서명할 수 있습니다.
+**Reader 확장 서비스**: Adobe Reader 사용자는 결과 PDF 문서에 디지털 서명할 수 있습니다.
 
 **Forms 서비스**: XDP 파일과 XML 데이터 파일을 병합하여 채워진 대화형 양식이 포함된 PDF 문서를 만듭니다.
 

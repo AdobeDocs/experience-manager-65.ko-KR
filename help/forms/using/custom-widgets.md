@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에서 사용자 정의 표시 만들기
+title: HTML5 양식에서 사용자 정의 모양 만들기
 description: 모바일 Forms에 사용자 정의 위젯을 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 사용자 정의 위젯을 개발할 수 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -13,11 +13,11 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# HTML5 양식에서 사용자 정의 표시 만들기{#create-custom-appearances-in-html-forms}
+# HTML5 양식에서 사용자 정의 모양 만들기{#create-custom-appearances-in-html-forms}
 
 모바일 Forms에 사용자 정의 위젯을 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양새 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 [적응형 및 HTML5 양식에 대한 모양 프레임워크](/help/forms/using/introduction-widgets.md)를 참조하십시오.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 기본 및 사용자 정의 위젯의 예
 
-## HTML 5 양식과 사용자 정의 위젯 통합 {#integrating-custom-widgets-with-html-forms}
+## HTML5 양식과 사용자 정의 위젯 통합 {#integrating-custom-widgets-with-html-forms}
 
 ### 프로필 만들기  {#create-a-profile-nbsp}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 위젯 만들기 {#create-a-widget}
 
-HTML5 양식은 새 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 새 위젯을 작성하기 위해 확장할 수 있는 jQuery 위젯 *abstractWidget*&#x200B;입니다. 새로운 위젯은 아래에 언급된 기능들을 확장/재정의해야만 기능할 수 있다.
+HTML5 forms는 새 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 새 위젯을 작성하기 위해 확장할 수 있는 jQuery 위젯 *abstractWidget*&#x200B;입니다. 새로운 위젯은 아래에 언급된 기능들을 확장/재정의해야만 기능할 수 있다.
 
 <table>
  <tbody>
@@ -104,5 +104,5 @@ window.formBridge.registerConfig("widgetConfig",
 | 식별자 유형 | 식별자 | 설명 |
 |---|---|---|
 | 필드 이름이 인 특정 필드 | 식별자:&quot;div.fieldname&quot; | &quot;fieldname&quot;이라는 이름의 모든 필드는 위젯을 사용하여 렌더링됩니다. |
-| &#39;type&#39; 유형의 모든 필드(type이 NumericField, DateField 등임).: | 식별자: &quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이 필드는 지원되지 않으므로 이 유형은 textfield입니다. |
+| &#39;type&#39; 유형의 모든 필드(type이 NumericField, DateField 등임): | 식별자: &quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이 필드는 지원되지 않으므로 이 유형은 textfield입니다. |
 | 모든 필드 | 식별자: &quot;div.field&quot; |  |

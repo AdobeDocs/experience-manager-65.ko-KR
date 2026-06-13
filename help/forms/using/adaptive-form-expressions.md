@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2779'
 ht-degree: 2%
 
 ---
 
 # 적응형 양식 표현식{#adaptive-form-expressions}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 적응형 양식은 동적 스크립팅 기능을 갖춘 최종 사용자에게 최적화되고 간소화된 양식 작성 환경을 제공합니다. 동적 표시/숨기기 필드 및 패널과 같은 다양한 동작을 추가하는 표현식을 작성할 수 있습니다. 또한 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 논리를 추가하는 등 다양한 작업을 수행할 수 있습니다. 동적 동작은 사용자 입력 또는 미리 채워진 데이터를 기반으로 합니다.
 
@@ -71,13 +71,13 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 표현식 계산 {#calculate-expression}
 
-계산 표현식은 표현식을 사용하여 필드의 값을 자동 계산하는 데 사용됩니다. 일반적으로 이러한 표현식은 다른 필드의 값 속성을 사용합니다. 예, `field2.value + field3.value`. `field2` 또는 `field3`의 값이 변경될 때마다 식이 다시 시도되고 값이 다시 계산됩니다.
+계산 표현식은 표현식을 사용하여 필드의 값을 자동 계산하는 데 사용됩니다. 일반적으로 이러한 표현식은 다른 필드의 값 속성을 사용합니다. 예를 들어, `field2.value + field3.value`과 같이 입력합니다. `field2` 또는 `field3`의 값이 변경될 때마다 식이 다시 시도되고 값이 다시 계산됩니다.
 
 **적용 대상**: 필드
 
 **반환 형식**: 식이 식 결과가 표시되는 필드(예: 십진수)와 호환되는 값을 반환합니다.
 
-**예**: **field1**&#x200B;에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
+**예**: **field1**에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
 `field2.value + field3.value`
 
 ### 표현식 클릭 {#click-expression}
@@ -137,7 +137,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **적용 대상**: 필드
 
-**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**&#x200B;은(는) 필드가 유효함을 나타냅니다.
+**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**은(는) 필드가 유효함을 나타냅니다.
 **예**: 영국의 우편 번호를 나타내는 필드의 경우 유효성 검사 식은 다음과 같습니다.
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -199,7 +199,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 유효성 검사 패턴 {#validation-patterns}
 
-필드에 사용할 수 있는 기본 유효성 검사 패턴이 여러 개 있습니다. 유효성 검사 패턴을 선택하려면 구성 요소의 **편집** 대화 상자에서 **패턴** 섹션을 찾아 **패턴**&#x200B;을 선택하십시오. **패턴** 텍스트 상자에 사용자 지정 유효성 검사 패턴을 만들 수 있습니다. 채워진 데이터가 유효성 검사 패턴을 준수하는 경우에만 유효성 검사 상태가 **True** 반환되고 그렇지 않으면 **False**&#x200B;이 반환됩니다. 자신만의 사용자 지정 유효성 검사 패턴을 작성하려면 [Picture 절에서 HTML 5 양식 지원](/help/forms/using/picture-clause-support.md)을 참조하세요.
+필드에 사용할 수 있는 기본 유효성 검사 패턴이 여러 개 있습니다. 유효성 검사 패턴을 선택하려면 구성 요소의 **편집** 대화 상자에서 **패턴** 섹션을 찾아 **패턴**&#x200B;을 선택하십시오. **패턴** 텍스트 상자에 사용자 지정 유효성 검사 패턴을 만들 수 있습니다. 채워진 데이터가 유효성 검사 패턴을 준수하는 경우에만 유효성 검사 상태가 **True** 반환되고 그렇지 않으면 **False**&#x200B;이 반환됩니다. 사용자 지정 유효성 검사 패턴을 작성하려면 [HTML5 양식에 대한 그림 절 지원](/help/forms/using/picture-clause-support.md)을 참조하세요.
 
 ### 유효성 검사 표현식 {#validation-expressions}
 
@@ -273,7 +273,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### 필드에 대한 사용자 정의 패턴 만들기 {#creating-custom-patterns-for-a-field}
 
-위에서 언급했듯이 적응형 양식을 사용하여 작성자는 유효성 검사 또는 디스플레이 형식에 대한 패턴을 제공할 수 있습니다. 즉시 사용 가능한 패턴을 사용할 수 있을 뿐만 아니라 적응형 양식 구성 요소에 대해 재사용 가능한 사용자 정의 패턴을 정의할 수 있습니다. 예를 들어 텍스트 필드나 숫자 필드를 정의할 수 있습니다. 정의된 후에는 모든 양식에서 지정된 유형의 구성 요소에 이러한 패턴을 사용할 수 있습니다. 예를 들어 텍스트 필드에 대한 사용자 정의 패턴을 만들어 적응형 양식의 텍스트 필드에 사용할 수 있습니다. 구성 요소의 편집 대화 상자에서 패턴 섹션에 액세스하여 사용자 정의 패턴을 선택할 수 있습니다. 패턴 정의 또는 형식에 대한 자세한 내용은 [HTML 5 형식에 대한 그림 절 지원](/help/forms/using/picture-clause-support.md)을 참조하십시오.
+위에서 언급했듯이 적응형 양식을 사용하여 작성자는 유효성 검사 또는 디스플레이 형식에 대한 패턴을 제공할 수 있습니다. 즉시 사용 가능한 패턴을 사용할 수 있을 뿐만 아니라 적응형 양식 구성 요소에 대해 재사용 가능한 사용자 정의 패턴을 정의할 수 있습니다. 예를 들어 텍스트 필드나 숫자 필드를 정의할 수 있습니다. 정의된 후에는 모든 양식에서 지정된 유형의 구성 요소에 이러한 패턴을 사용할 수 있습니다. 예를 들어 텍스트 필드에 대한 사용자 정의 패턴을 만들어 적응형 양식의 텍스트 필드에 사용할 수 있습니다. 구성 요소의 편집 대화 상자에서 패턴 섹션에 액세스하여 사용자 정의 패턴을 선택할 수 있습니다. 패턴 정의 또는 형식에 대한 자세한 내용은 [HTML5 양식에 대한 그림 절 지원](/help/forms/using/picture-clause-support.md)을 참조하십시오.
 
 특정 필드 유형에 대한 사용자 정의 패턴을 만들고 동일한 유형의 다른 필드에 다시 사용하려면 다음 단계를 수행하십시오.
 
