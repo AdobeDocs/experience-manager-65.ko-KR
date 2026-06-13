@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ## 튜토리얼 정보  {#about-the-tutorial}
 
-테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
+테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
 
 자습서가 끝날 때까지 다음 작업을 수행할 수 있습니다.
 
@@ -480,7 +480,7 @@ ht-degree: 10%
 9. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
 10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
 11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
-    ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 변경 사항을 저장합니다.
 
 >[!NOTE]

@@ -11,8 +11,8 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
@@ -96,7 +96,7 @@ I18N.js
 
 ### 로케일에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
-`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`(으)로, 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`(으)로 설정되어 있습니다. &quot;
+`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`이고 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`입니다. &quot;
 
 클라이언트 라이브러리에 다음 파일을 추가합니다.
 
@@ -124,11 +124,11 @@ LogMessages.js
 
 ### 서버 다시 시작 {#restart-the-server}
 
-추가된 로케일을 적용하려면 AEM 서버를 다시 시작합니다.
+추가된 로케일을 적용하려면 AEM 서버를 다시 시작하십시오.
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## 스페인어 지원 추가용 샘플 라이브러리 {#sample-libraries-for-adding-support-for-spanish}
 
