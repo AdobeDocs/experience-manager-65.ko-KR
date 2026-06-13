@@ -1,6 +1,6 @@
 ---
 title: 상호 SSL을 사용하여 복제
-description: 작성자 인스턴스의 복제 에이전트가 상호 SSL(MSSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성하는 방법에 대해 알아봅니다. 게시 인스턴스에서 MSSL을 사용하는 복제 에이전트와 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
+description: 작성자 인스턴스의 복제 에이전트가 MSSL(상호 SSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성하는 방법에 대해 알아봅니다. 게시 인스턴스에서 MSSL을 사용하는 복제 에이전트와 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1409'
 ht-degree: 4%
 
 ---
@@ -25,10 +25,10 @@ ht-degree: 4%
 1. 작성자 및 게시 인스턴스에 대한 개인 키 및 인증서를 만들거나 가져옵니다.
 1. 작성자 및 게시 인스턴스에 키 및 인증서를 설치합니다.
 
-   * 작성자: 작성자의 개인 키 및 Publish의 인증서
-   * 게시: Publish의 개인 키 및 작성자 인증서. 인증서는 복제 에이전트로 인증된 사용자 계정과 연결됩니다.
+   * 작성자: 작성자의 개인 키 및 게시의 인증서.
+   * 게시: 게시의 개인 키 및 작성자의 인증서. 인증서는 복제 에이전트로 인증된 사용자 계정과 연결됩니다.
 
-1. Publish 인스턴스에서 Jetty 기반 HTTP 서비스를 구성합니다.
+1. 게시 인스턴스에서 Jetty 기반 HTTP 서비스를 구성합니다.
 1. 복제 에이전트의 전송 및 SSL 속성을 구성합니다.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -162,7 +162,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. [openSSL](https://
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Publish 인증서 설치 {#install-the-publish-certificate}
+### 게시 인증서 설치 {#install-the-publish-certificate}
 
 1. 작성자 인스턴스의 사용자 관리 페이지를 엽니다. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭합니다.
@@ -177,7 +177,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. [openSSL](https://
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Publish에 개인 키 및 TrustStore 설치 {#install-private-key-and-truststore-on-publish}
+## 게시할 때 개인 키 및 TrustStore 설치 {#install-private-key-and-truststore-on-publish}
 
 게시 인스턴스에 다음 항목을 설치합니다.
 
@@ -206,7 +206,7 @@ pkcs#12 형식의 개인 키와 인증서를 생성합니다. [openSSL](https://
 1. 인증서를 사용자에게 매핑 옵션이 선택되어 있는지 확인합니다. 인증서 파일 선택 을 클릭하고 author.cer 를 선택한 다음 열기 를 클릭합니다.
 1. 제출을 클릭한 다음 TrustStore 관리 대화 상자를 닫습니다.
 
-## Publish에서 HTTP 서비스 구성 {#configure-the-http-service-on-publish}
+## 게시할 때 HTTP 서비스 구성 {#configure-the-http-service-on-publish}
 
 Granite 키 저장소에 액세스하는 동안 HTTPS를 사용하도록 게시 인스턴스에서 Apache Felix Jetty 기반 HTTP 서비스의 속성을 구성합니다. 서비스의 PID는 `org.apache.felix.http`입니다.
 

@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 22%
+source-wordcount: '689'
+ht-degree: 24%
 
 ---
 
@@ -29,7 +29,7 @@ AEM에서는 작성 인스턴스의 콘솔(및 [페이지 작성 기능](/help/s
 Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 지정할 때 `/apps.`에서 고유한 clientlib을 만들 수 있습니다. 예를 들어 사용자 지정 구성 요소에 필요한 코드를 저장할 수 있습니다.
 
 * 오버레이
-오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. Sling 리소스 병합으로 상속이 허용되므로 오버레이를 만들 때 원본의 1:1 사본이 필요하지 않습니다.
+오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. Sling 리소스 병합으로 상속이 허용되므로 오버레이를 만들 때 원본의 1:1 복사본이 필요하지 않습니다.
 
 여러 가지 방법으로 AEM 콘솔을 확장할 수 있습니다. 아래에 소량의 선택 항목이 있습니다(높은 수준에서).
 
@@ -64,7 +64,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 >[!NOTE]
 >
->추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
+>추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
 
 ## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 ### 도구 모음에 새 작업 추가 {#add-new-action-to-the-toolbar}
 
-1. 고유한 구성 요소를 빌드하고 사용자 지정 작업에 해당하는 클라이언트 라이브러리를 포함할 수 있습니다. 예를 들어 다음 위치의 **Twitter로 승격** 작업을 참조하십시오.
+1. 고유한 구성 요소를 빌드하고 사용자 정의 작업을 위한 해당 클라이언트 라이브러리를 포함시킬 수 있습니다. 예를 들어 다음 위치의 **Twitter로 승격** 작업을 참조하십시오.
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 1. 선택적으로:
 
    * 추가 데이터를 연결하려면 [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
-
      `pageInfoProviderType` 속성입니다.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.

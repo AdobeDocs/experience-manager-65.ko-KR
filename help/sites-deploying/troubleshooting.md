@@ -11,7 +11,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -67,12 +67,12 @@ jar 파일이 유비쿼터스 ZIP 형식을 사용하므로 일부 보관 프로
 
 >[!NOTE]
 >
->[메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)도 참조하세요.
+>[메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)도 참조하세요.
 
 
 CRX 자체의 메모리 풋프린트가 낮습니다. CRX 내에서 실행 중인 응용 프로그램에 더 큰 메모리 요구 사항이 있거나 메모리 사용량이 많은 작업(예: 큰 트랜잭션)을 요청하는 경우 CRX이 실행되는 JVM 인스턴스는 적절한 메모리 설정으로 시작해야 합니다.
 
-Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다(예: heapsize를 512MB로 설정하려면 java -Xmx512m -jar crx&ast;.jar).
+Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다(예: heapsize를 512MB로 설정하려면 java -Xmx512m -jar crx&amp;ast;.jar).
 
 명령줄에서 AEM WCM을 시작하는 동안 메모리 설정 옵션을 지정합니다. AEM WCM 시작/중지 스크립트 또는 AEM WCM 시작 관리를 위한 사용자 지정 스크립트를 수정하여 필요한 메모리 설정을 정의할 수도 있습니다.
 
@@ -80,7 +80,7 @@ Java™ 명령 옵션을 사용하여 JVM의 메모리 설정을 정의합니다
 
 메모리가 부족할 때 힙 덤프를 자동으로 만들려면 다음 명령을 사용합니다.
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 이 메서드는 프로세스에 메모리가 부족할 때마다 힙 덤프 파일(**java_...hprof**)을 생성합니다. 힙 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다.
 
@@ -101,11 +101,11 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 저장소 자체가 성공적으로 실행 중인 경우에도 AEM WCM 시작 화면이 자동으로 표시되지 않는 경우가 있습니다. 이 문제는 운영 체제 설정, 브라우저 구성 또는 유사한 요소에 따라 달라질 수 있습니다.
 
-일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트나 인스턴스가 실행 중인 포트(http://localhost:4502/)를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다.
+일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트 또는 인스턴스가 실행 중인 포트를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다. http://localhost:4502/.
 
 또한 로그에 브라우저가 시작되지 않는 이유가 표시될 수 있습니다.
 
-경우에 따라 AEM WCM 빠른 시작 창에 &quot;http://localhost:port/에서 실행 중인 AEM WCM&quot;이라는 메시지가 표시되고 브라우저가 자동으로 시작되지 않습니다. 이 경우 AEM WCM 빠른 시작 창(하이퍼링크임)에서 URL을 클릭하거나 브라우저에 URL을 수동으로 입력합니다.
+경우에 따라 AEM WCM 빠른 시작 창에 &quot;http://localhost:port/&quot;에서 실행 중인 AEM WCM이라는 메시지가 표시되고 브라우저가 자동으로 시작되지 않습니다. 이 경우 AEM WCM 빠른 시작 창(하이퍼링크임)에서 URL을 클릭하거나 브라우저에 URL을 수동으로 입력합니다.
 
 다른 모든 것이 실패하면 로그를 확인하여 발생한 사항을 확인합니다.
 

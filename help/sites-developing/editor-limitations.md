@@ -11,14 +11,14 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 10%
 
 ---
 
 # 편집기 제한 사항{#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 
@@ -46,7 +46,7 @@ ht-degree: 6%
 
 ### vh 단위 {#vh-units}
 
-iframe 높이는 AEM(Adobe Experience Manager)에서 자동으로 조정해야 하므로 `vh` 단위가 지원되지 않습니다.
+iframe 높이는 Adobe Experience Manager(AEM)에서 자동으로 조정해야 하므로 `vh` 단위가 지원되지 않습니다.
 
 ### 고정 배경 이미지 {#fixed-background-images}
 

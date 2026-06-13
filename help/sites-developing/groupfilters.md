@@ -1,5 +1,5 @@
 ---
-title: 장치 그룹 필터 만들기
+title: 디바이스 그룹 필터 만들기
 description: 장치 그룹 필터를 만들어 장치 기능 요구 사항 집합을 정의합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '782'
+ht-degree: 1%
 
 ---
 
-# 장치 그룹 필터 만들기{#creating-device-group-filters}
+# 디바이스 그룹 필터 만들기{#creating-device-group-filters}
 
 {{ue-over-mobile}}
 
@@ -255,4 +255,4 @@ DeviceGroup 및 DeviceGroupFilter 인터페이스는 Day Communique 5 WCM 모바
 </project>
 ```
 
-[콘텐츠 패키지 Maven 플러그인 가져오기](/help/sites-developing/vlt-mavenplugin.md) 섹션에서 제공하는 프로필을 Maven 설정 파일에 추가하여 공개 Adobe 저장소를 사용합니다.
+[콘텐츠 패키지 Maven 플러그인 가져오기](/help/sites-developing/vlt-mavenplugin.md) 섹션에서 제공하는 프로필을 Maven 설정 파일에 추가하여 공용 Adobe 저장소를 사용합니다.

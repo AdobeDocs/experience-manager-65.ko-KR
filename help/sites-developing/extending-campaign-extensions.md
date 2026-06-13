@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 Adobe Campaign 확장
+title: 사용자 정의 Adobe Campaign 확장
 description: AEM 또는 Adobe Campaign에서 Adobe Campaign으로 AEM에서 사용자 지정 코드를 호출할 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Developing
 role: Developer
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
 
-# 사용자 지정 Adobe Campaign 확장{#creating-custom-extensions}
+# 사용자 정의 Adobe Campaign 확장{#creating-custom-extensions}
 
 일반적으로 프로젝트를 구현할 때에는 AEM과 Adobe Campaign 모두에 사용자 지정 코드가 있습니다. 기존 API를 사용하면 AEM 또는 AEM에서 Adobe Campaign으로 Adobe Campaign에서 사용자 지정 코드를 호출할 수 있습니다. 이 문서에서는 그 방법에 대해 설명합니다.
 

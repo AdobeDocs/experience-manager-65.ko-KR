@@ -11,8 +11,8 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 0%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 프록시 서버는 클라이언트와 서버 간 요청을 중계하는 중간 서버 역할을 합니다. 프록시 서버는 모든 클라이언트-서버 상호 작용을 추적하고 전체 TCP 통신의 로그를 출력합니다. 이렇게 하면 주 서버에 액세스하지 않고도 진행 중인 상황을 정확하게 모니터링할 수 있습니다.
 
-AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다.
+프록시 서버는 AEM 설치에서 찾을 수 있습니다.
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
@@ -31,7 +31,7 @@ AEM 설치에서 프록시 서버는 다음 위치에서 찾을 수 있습니다
 * 전자 메일 메시지용 SMTP
 * 사용자 관리를 위한 LDAP
 
-예를 들어 웹 브라우저와 AEM과 같은 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이렇게 하면 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
+예를 들어 웹 브라우저와 AEM과 같이 TCP/IP 네트워크를 통해 통신하는 두 애플리케이션 사이에 프록시 서버를 배치할 수 있습니다. 이렇게 하면 CQ 페이지를 요청할 때 발생하는 상황을 정확하게 모니터링할 수 있습니다.
 
 ## 프록시 서버 도구 시작 {#starting-the-proxy-server-tool}
 

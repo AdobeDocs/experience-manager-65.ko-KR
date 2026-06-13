@@ -1,5 +1,5 @@
 ---
-title: 정적 개체의 만료
+title: 정적 오브젝트 만료
 description: 정적 개체가 적절한 기간 동안 만료되지 않도록 Adobe Experience Manager을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
-# 정적 개체의 만료{#expiration-of-static-objects}
+# 정적 오브젝트 만료{#expiration-of-static-objects}
 
 정적 객체(예: 아이콘)는 변경되지 않습니다. 따라서 시스템이 (적절한 기간 동안) 만료되지 않고 불필요한 트래픽을 줄이도록 구성되어야 합니다.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >이 구성은 Dispatcher과 별도이며 (이 경우 작동하지 않습니다.)
 >
->Dispatcher의 목적은 AEM(Adobe Experience Manager) 앞에 데이터를 캐시하는 것입니다.
+>Dispatcher의 목적은 Adobe Experience Manager(AEM) 앞에 데이터를 캐시하는 것입니다.
 
 동적이지 않고 시간이 지나도 변경되지 않는 모든 파일은 캐시할 수 있으며 캐시되어야 합니다. Apache HTTPD 서버에 대한 구성은 환경에 따라 다음 중 하나와 비슷할 수 있습니다.
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    사이트의 다른 섹션은 언제든지 변경될 수 있으므로 작성자 인스턴스에 캐시해서는 안 됩니다.
 
-1. **Publish 인스턴스의 경우:**
+1. **게시 인스턴스의 경우:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -75,7 +75,7 @@ ht-degree: 0%
 
    이렇게 하면 중간 캐시(예: 브라우저 캐시)가 최대 하루 동안 CSS, JavaScript, PNG 및 GIF 파일을 클라이언트 캐시에 저장할 수 있습니다. 이 예제는 `/content` 및 `/etc/designs` 아래의 모든 항목에 대한 전역 설정을 보여 주지만 좀 더 세분화해야 합니다.
 
-   사이트 업데이트 빈도에 따라 HTML 페이지 캐싱을 고려할 수도 있습니다. 적절한 기간은 1시간입니다.
+   사이트가 업데이트되는 빈도에 따라 HTML 페이지를 캐시하는 것도 고려할 수 있습니다. 적절한 기간은 1시간입니다.
 
    ```xml
    <Location /content>

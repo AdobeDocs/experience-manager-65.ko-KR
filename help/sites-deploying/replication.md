@@ -25,7 +25,7 @@ ht-degree: 3%
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * 게시 환경의 사용자 입력(예: 양식 입력)을 작성자 환경(작성자 환경의 제어 아래)으로 반환합니다.
 
-요청을 처리할 적절한 에이전트에 대해 [큐에 &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
+요청을 처리할 적절한 에이전트에 대해 [큐에 ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)있습니다.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 >* 게시의 에이전트 : 역방향 복제(보낼 편지함)
 >
 >에이전트나 큐의 상태를 확인하려면 **도구** 콘솔을 사용하십시오.
->복제 에이전트 모니터링[&#128279;](#monitoring-your-replication-agents)을 참조하세요.
+>복제 에이전트 모니터링](#monitoring-your-replication-agents)을 참조하세요.[
 
 #### 복제(작성자-게시) {#replication-author-to-publish}
 
@@ -108,7 +108,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 작성자에서 게시로 복제하는 데 사용됩니다.
 
 * Dispatcher 플러시
-Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance)를 참조하십시오.
+Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)를 참조하십시오.
 
 * [역방향 복제](#reverse-replication-publish-to-author)
 게시에서 작성자로 복제하는 데 사용됩니다. 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에는 역방향 복제가 사용되지 않습니다. 보낼 편지함이 활성화되지 않아 사실상 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
@@ -356,7 +356,7 @@ MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 
 
 >[!NOTE]
 >
->Dispatcher이 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에는 PATH 헤더가 포함되어야 합니다. 다음 절차 외에 PATH 헤더를 클라이언트 헤더의 Dispatcher 목록에 추가해야 합니다. [/clientheaders(클라이언트 헤더)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#specifying-the-http-headers-to-pass-through-clientheaders)을(를) 참조하십시오.
+>Dispatcher이 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에는 PATH 헤더가 포함되어야 합니다. 다음 절차 외에 PATH 헤더를 클라이언트 헤더의 Dispatcher 목록에 추가해야 합니다. [/clientheaders(클라이언트 헤더)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)을(를) 참조하십시오.
 >
 
 1. AEM에서 **도구** 탭에 액세스합니다.
