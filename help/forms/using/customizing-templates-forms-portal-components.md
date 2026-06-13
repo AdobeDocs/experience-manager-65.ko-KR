@@ -88,11 +88,11 @@ Forms 포털은 자리 표시자가 사용자 지정/기본 제공 메타데이�
 
 반복 가능한 항목을 포함하려면 특성 **data-repeatable**&#x200B;의 값을 **true**(으)로 구성하십시오.
 
-*설명한 예제에서 두 개의 Div 요소가 사용자 지정 템플릿의 맨 위에 있습니다. 첫 번째는 &quot;__FP_boxes-container&quot; CSS 클래스와 함께 나열되는 양식의 컨테이너 요소로 작동합니다. 두 번째는 &quot;__FP_boxes&quot; CSS 클래스와 함께 기본 엔터티용 템플릿이며, 이 경우 폼입니다. Div 요소에 있는&#x200B;**data-repeatable**특성의 값은&#x200B;**true**.*&#x200B;입니다.
+*설명한 예제에서 두 개의 Div 요소가 사용자 지정 템플릿의 맨 위에 있습니다. 첫 번째는 &quot;__FP_boxes-container&quot; CSS 클래스와 함께 나열되는 양식의 컨테이너 요소로 작동합니다. 두 번째는 &quot;__FP_boxes&quot; CSS 클래스와 함께 기본 엔터티용 템플릿이며, 이 경우 폼입니다. Div 요소에 있는&#x200B;**data-repeatable**&#x200B;특성의 값은&#x200B;**true**.*&#x200B;입니다.
 
 각 자리 표시자에는 배타적인 기본 메타데이터 세트가 있습니다. 양식의 특정 위치에 사용자 지정 메타데이터를 표시하려면 해당 위치에 **${metadata_prop} 속성**&#x200B;을(를) 추가하십시오.
 
-*이 예제에서 메타데이터 속성은 여러 인스턴스에 사용됩니다. 예를들어,**description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**및&#x200B;**path**에서 지정된 방식으로 사용됩니다.*
+*이 예제에서 메타데이터 속성은 여러 인스턴스에 사용됩니다. 예를들어,**description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;및&#x200B;**path**&#x200B;에서 지정된 방식으로 사용됩니다.*
 
 ## 기본 제공 메타데이터 {#out-of-the-box-metadata}
 

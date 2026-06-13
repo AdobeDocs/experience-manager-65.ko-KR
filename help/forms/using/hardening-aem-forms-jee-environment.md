@@ -262,7 +262,7 @@ Configuration Manager는 애플리케이션 서버에 배포된 서블릿을 사
 1. AEM Forms 서버를 시작합니다.
 1. 변경 사항을 테스트하고 더 이상 작동하지 않는지 확인하려면 브라우저에 아래 URL을 입력합니다.
 
-   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
 **Trust Store에 대한 원격 액세스 차단**
 
