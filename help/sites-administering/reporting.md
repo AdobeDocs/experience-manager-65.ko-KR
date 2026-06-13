@@ -12,14 +12,14 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
 # 보고 {#reporting}
 
-인스턴스 상태를 모니터링하고 분석하는 데 도움이 되도록 Adobe Experience Manager(AEM)는 개별 요구 사항에 맞게 구성할 수 있는 기본 보고서 선택을 제공합니다.
+Adobe Experience Manager(AEM)에서는 인스턴스 상태를 모니터링하고 분석하는 데 도움이 되도록 개별 요구 사항에 맞게 구성할 수 있는 다양한 기본 보고서를 제공합니다.
 
 * [구성 요소 보고서](#component-report)
 * [디스크 사용량](#disk-usage)
@@ -27,7 +27,7 @@ ht-degree: 3%
 * [페이지 활동 보고서](#page-activity-report)
 * [사용자 생성 컨텐츠 보고서](#user-generated-content-report)
 * [사용자 보고서](#user-report)
-* [워크플로우 상속 보고서](#workflow-instance-report)
+* [워크플로 상속 보고서](#workflow-instance-report)
 * [워크플로우 보고서](#workflow-report)
 
 >[!NOTE]
@@ -50,7 +50,7 @@ ht-degree: 3%
 * [페이지 활동 보고서](#page-activity-report)
 * [사용자 생성 컨텐츠 보고서](#user-generated-content-report)
 * [사용자 보고서](#user-report)
-* [워크플로우 상속 보고서](#workflow-instance-report)
+* [워크플로 상속 보고서](#workflow-instance-report)
 
 >[!NOTE]
 >
@@ -304,7 +304,7 @@ ht-degree: 3%
 * 작성자
 * 구성 요소 경로
 * 구성 요소 유형
-* 마지막 수정일
+* 마지막으로 수정됨
 * 페이지
 
 즉, 다음을 볼 수 있습니다.
@@ -484,7 +484,7 @@ ht-degree: 3%
 
 ![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
-### 워크플로우 상속 보고서 {#workflow-instance-report}
+### 워크플로 상속 보고서 {#workflow-instance-report}
 
 이렇게 하면 실행 중인 워크플로우와 완료된 워크플로우의 개별 인스턴스에 대한 정보를 제공하는 간결한 개요를 제공합니다.
 
@@ -510,13 +510,13 @@ ht-degree: 3%
 
 ![reportworkflow](assets/reportworkflow.png)
 
-## Publish 환경에서 보고서 사용 {#using-reports-in-a-publish-environment}
+## 게시 환경에서 보고서 사용 {#using-reports-in-a-publish-environment}
 
 특정 요구 사항에 맞게 보고서를 구성한 경우 보고서를 활성화하여 구성을 게시 환경에 전송할 수 있습니다.
 
 >[!CAUTION]
 >
->Publish 환경에 대해 **내역 데이터**&#x200B;를 사용하려면 페이지를 활성화하기 전에 작성자 환경에서 보고서를 **완료**&#x200B;하십시오.
+>게시 환경에 **내역 데이터**&#x200B;를 사용하려면 페이지를 활성화하기 전에 작성자 환경에서 보고서를 **완료**&#x200B;하십시오.
 
 그런 다음 아래에서 해당 보고서에 액세스할 수 있습니다.
 
@@ -526,15 +526,15 @@ ht-degree: 3%
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-이제 Publish 환경에서 수집된 데이터에 대해 보고합니다.
+이제 게시 환경에서 수집된 데이터에 대해 보고합니다.
 
-Publish 환경에서는 보고서 구성이 허용되지 않으므로 **편집** 및 **완료** 단추를 사용할 수 없습니다. 그러나 스냅숏이 수집되는 경우 **내역 데이터** 보고서에 대해 **기간** 및 **간격**&#x200B;을 선택할 수 있습니다.
+게시 환경에서는 보고서 구성이 허용되지 않으므로 **편집** 및 **마침** 단추를 사용할 수 없습니다. 그러나 스냅숏이 수집되는 경우 **내역 데이터** 보고서에 대해 **기간** 및 **간격**&#x200B;을 선택할 수 있습니다.
 
 ![reportsuckpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->이러한 보고서에 대한 액세스는 보안 문제일 수 있습니다. 따라서 Adobe은 외부 방문자가 `/etc/reports`을(를) 사용할 수 없도록 Dispatcher을 구성할 것을 권장합니다. 자세한 내용은 [보안 검사 목록](security-checklist.md)을 참조하세요.
+>이러한 보고서에 대한 액세스는 보안 문제일 수 있습니다. 따라서 Adobe에서는 외부 방문자가 `/etc/reports`을(를) 사용할 수 없도록 Dispatcher을 구성할 것을 권장합니다. 자세한 내용은 [보안 체크리스트](security-checklist.md)를 참조하십시오.
 
 ## 보고서 실행에 필요한 권한 {#permissions-needed-for-running-reports}
 

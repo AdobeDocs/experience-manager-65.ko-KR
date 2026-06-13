@@ -11,8 +11,8 @@ feature: Configuring
 role: Admin
 source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 8%
+source-wordcount: '2182'
+ht-degree: 9%
 
 ---
 
@@ -205,9 +205,9 @@ subject=<text_1>
 >
 >여기서 `<text_x>`은(는) 정적 텍스트와 동적 문자열 변수의 혼합일 수 있습니다. `<text_x>` 항목의 각 줄은 `<text_x>` 문자열 변수의 끝을 나타내는 경우 마지막 인스턴스를 제외하고 백슬래시(`\`)로 끝나야 합니다.
 >
->템플릿 형식에 대한 자세한 내용은 Properties.load() [&#128279;](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 메서드의 javadocs에서 찾을 수 있습니다.
+>템플릿 형식에 대한 자세한 내용은 Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 메서드의 [javadocs에서 찾을 수 있습니다.
 
-`${payload.path.open}` 메서드가 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지에 대해 `payload.path.open`은(는) `/bin/wcmcommand?cmd=open&path=…`과(와) 유사합니다.; 이는 서버 이름이 없기 때문에 템플릿에서 `${host.prefix}` 앞에 추가합니다.
+`${payload.path.open}` 메서드가 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지의 경우 `payload.path.open`은(는) `/bin/wcmcommand?cmd=open&path=…`과(와) 유사합니다. 이는 서버 이름이 없기 때문에 템플릿에서 `${host.prefix}` 앞에 추가합니다.
 
 이메일 템플릿 내에서 사용할 수 있는 변수는 다음과 같습니다.
 

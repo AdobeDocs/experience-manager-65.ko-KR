@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 62%
+source-wordcount: '1173'
+ht-degree: 61%
 
 ---
 

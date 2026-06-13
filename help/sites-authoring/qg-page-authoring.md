@@ -12,7 +12,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1558'
 ht-degree: 63%
 
 ---
@@ -68,7 +68,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지 찾기에 대한 여러 측면이 있습니다. 탐색 및/또는 검색할 수 있습니다.
 
-1. **사이트** 콘솔을 엽니다(**전역 탐색**&#x200B;에서 [사이트](/help/sites-authoring/basic-handling.md#global-navigation) 옵션 사용) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
+1. **사이트** 콘솔을 엽니다([전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation)에서 **사이트** 옵션 사용) - Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거됩니다(드롭다운).
 
 1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
 
@@ -91,7 +91,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. 이렇게 하면 [새 페이지를 만들 때 &#x200B;](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따릅니다.
+1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따릅니다.
 
 ### 추가 작업을 수행할 페이지 선택 {#selecting-your-page-for-further-action}
 
