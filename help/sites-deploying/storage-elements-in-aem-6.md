@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5의 저장소 요소
+title: AEM 6.5의 스토리지 요소
 description: AEM 6.5에서 사용할 수 있는 노드 저장소 구현 및 저장소 유지 관리 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 0%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
-# AEM 6.5의 저장소 요소{#storage-elements-in-aem}
+# AEM 6.5의 스토리지 요소{#storage-elements-in-aem}
 
 이 문서에서는 다음 사항을 다룹니다.
 
@@ -36,7 +36,7 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 
 >[!CAUTION]
 >
->세그먼트 노드 저장소의 PID가 org.apache.jackrabbit.oak에서 변경되었습니다.AEM AEM 6.3의 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService에 대한 이전 버전의 **plugins**.segment.SegmentNodeStoreService. 변경 사항이 반영되도록 필요한 구성을 조정해야 합니다.
+>세그먼트 노드 저장소의 PID가 이전 버전의 AEM 6에서 org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService에서 AEM 6.3의 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService로 변경되었습니다. 변경 사항이 반영되도록 필요한 구성을 조정해야 합니다.
 
 기본적으로 AEM 6은 기본 구성 옵션을 사용하여 Tar 저장소를 사용하여 노드 및 바이너리를 저장합니다. 다음을 수행하여 저장소 설정을 수동으로 구성할 수 있습니다.
 
@@ -58,12 +58,12 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 
 ### Mongo 스토리지 {#mongo-storage}
 
-#### Mongo Storage로 새로 설치된 AEM 인스턴스 실행 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
+#### Mongo 스토리지로 새로 설치한 AEM 인스턴스 실행 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM 6은 다음 절차에 따라 MongoDB 스토리지로 실행되도록 구성할 수 있습니다.
+다음 절차에 따라 AEM 6을 MongoDB 스토리지로 실행하도록 구성할 수 있습니다.
 
 1. AEM 6 quickstart jar를 다운로드하여 새 폴더에 저장합니다.
-1. 다음 명령을 실행하여 AEM 압축을 해제합니다.
+1. 다음 명령을 실행하여 AEM 압축을 풉니다.
 
    `java -jar cq-quickstart-6.jar -unpack`
 

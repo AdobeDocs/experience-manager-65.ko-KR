@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 SocialComponents는 AEM Communities 기능에 대한 리소스를 나타내는 POJO입니다. 이상적으로 각 SocialComponent는 리소스에 정확하게 표현되도록 클라이언트에 데이터를 제공하는 노출된 GETter가 있는 특정 resourceType을 나타냅니다. 모든 비즈니스 및 보기 논리는 필요한 경우 사이트 방문자의 세션 정보를 포함하여 SocialComponent에 캡슐화됩니다.
 
-인터페이스는 리소스를 나타내는 데 필요한 기본 GETter 집합을 정의합니다. 중요한 점은 인터페이스가 Handlebars 템플릿을 렌더링하고 리소스에 대한 GET JSON 끝점을 표시하는 데 필요한 Map&lt;String, Object> getAsMap() 및 String toJSONString() 메서드를 규정하고 있다는 것입니다.
+인터페이스는 리소스를 나타내는 데 필요한 기본 GETter 집합을 정의합니다. 중요한 점은 인터페이스가 Handlebars 템플릿을 렌더링하고 리소스에 대한 GET JSON 끝점을 노출하는 데 필요한 Map&lt;String, Object> getAsMap() 및 String toJSONString() 메서드를 규정하고 있다는 것입니다.
 
 모든 SocialComponent 클래스는 `com.adobe.cq.social.scf.SocialComponent` 인터페이스를 구현해야 합니다.
 
@@ -68,7 +68,7 @@ SocialComponentFactoryManager는 OSGi 서비스이며 생성자를 통해 Social
 
 HTTP API POST 끝점은 `SlingPostOperation` 인터페이스(패키지 `org.apache.sling.servlets.post`)를 구현하여 정의된 PostOperation 클래스입니다.
 
-`PostOperation` 끝점 구현은 `sling.post.operation`을(를) 작업이 응답하는 값으로 설정합니다. 해당 값으로 설정된 an:operation 매개 변수를 사용하는 모든 POST 요청은 이 구현 클래스로 위임됩니다.
+`PostOperation` 끝점 구현은 `sling.post.operation`을(를) 작업이 응답하는 값으로 설정합니다. :operation 매개 변수가 해당 값으로 설정된 모든 POST 요청은 이 구현 클래스에 위임됩니다.
 
 `PostOperation`은(는) 작업에 필요한 작업을 수행하는 `SocialOperation`을(를) 호출합니다.
 

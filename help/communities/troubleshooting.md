@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Dispatcher 4.1.6 이상을 사용하면 이 문제가 해결됩니다.
 
-### CQ 5.4에서 업그레이드한 후 포럼 Post에 액세스할 수 없음 {#cannot-access-forum-post-after-upgrading-from-cq}
+### CQ 5.4에서 업그레이드한 후 포럼 게시물에 액세스할 수 없음 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 CQ 5.4에 포럼을 만들고 주제를 게시한 다음 사이트를 AEM 5.6.1 이상으로 업그레이드한 경우 기존 게시물을 보려고 하면 페이지에 오류가 발생할 수 있습니다.
 
@@ -49,7 +49,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 * 보낸 사람: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 받는 사람: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-실패는 작성자와 Publish에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. Publish에서 페이지에 오류가 발생합니다.
+실패는 작성자와 게시에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시 시 페이지에 오류가 발생합니다.
 
 자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
 
@@ -61,7 +61,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'`이(가) `com.adobe.cq.social.handlebars.I18nHelper@15bac645`(으)로 대체되었습니다.
 
-[SCF](scf.md#handlebarsjavascripttemplatinglanguage)에서 사용하는 `jknack.handlebars.Handlebars`에 자체 i18n 도우미 유틸리티가 포함되어 있으므로 이 경고는 무시해도 됩니다. 시작할 때 AEM 관련 [i18n 도우미](handlebars-helpers.md#i-n)(으)로 대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 서드파티 라이브러리에서 생성됩니다.
+[SCF](scf.md#handlebarsjavascripttemplatinglanguage)에서 사용하는 `jknack.handlebars.Handlebars`에 자체 i18n 도우미 유틸리티가 포함되어 있으므로 이 경고는 무시해도 됩니다. 시작 시 AEM 관련 [i18n helper](handlebars-helpers.md#i-n)(으)로 대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 서드파티 라이브러리에서 생성됩니다.
 
 ### 로그의 경고: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

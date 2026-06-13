@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 2%
+source-wordcount: '2381'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,7 @@ JCR 부울 속성에서 일치합니다. 값 &quot; `true`&quot; 및 &quot; `fal
 
 * **작업**
 
-  정확히 일치하는 항목의 경우 &quot; `equals`&quot;, 같지 않음 비교의 경우 &quot; `!=`&quot;, property1의 경우 property2보다 큼, property1의 경우 &quot; `>=`&quot;이 property2보다 크거나 같음. `greater` 기본값은 &quot; `equals`&quot;입니다.
+  정확히 일치하는 항목의 경우 &quot; `equals`&quot;, 같지 않음 비교의 경우 &quot; `!=`&quot;, property1의 경우 property2보다 큼, property1의 경우 &quot; `>=`&quot;이 property2보다 크거나 같음. `greater`기본값은 &quot; `equals`&quot;입니다.
 
 ### 다터랑주 {#daterange}
 
@@ -381,7 +381,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
 * **깊이**
 
-  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&ast;/size 및 node/&ast;/&ast;/size 확인).
+  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&amp;ast;/size 및 node/&amp;ast;/&amp;ast;/size 확인).
 
 ### rangeproperty {#rangeproperty}
 
@@ -483,7 +483,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
    * **선택적**:
 
-     `p.properties`에 지정된 속성만 상대 경로의 공백으로 구분(URL에 &quot;+&quot; 사용). 상대 경로의 깊이가 1보다 큰 경우 하위 개체로 표시되며, 특수 jcr:path 속성에는 히트의 경로가 포함됩니다
+     상대 경로의 공백으로 구분된 `p.properties`에 지정된 속성만(URL에 &quot;+&quot; 사용). 상대 경로의 깊이가 1보다 큰 경우 자식 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
 
 ### savedquery {#savedquery}
 
