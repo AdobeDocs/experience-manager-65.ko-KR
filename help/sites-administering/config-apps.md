@@ -25,7 +25,7 @@ Adobe Experience Manager 앱을 사용하면 애플리케이션 OTA의 콘텐츠
 레퍼러 필터 서비스를 구성하려면 다음 작업을 수행하십시오.
 
 * 다음 위치에서 Apache Felix 콘솔(**구성**)을 엽니다.
-* https://<server>:<port_number>/system/console/configMgr
+* https://&lt;server>:<port_number>/system/console/configMgr
 * 관리자로 로그인합니다.
 * **구성** 메뉴에서 다음을 선택합니다. *Apache Sling Referrer 필터*
 * 빈/누락된 레퍼러 헤더를 허용할 수 있도록 빈 허용 필드를 선택합니다.
