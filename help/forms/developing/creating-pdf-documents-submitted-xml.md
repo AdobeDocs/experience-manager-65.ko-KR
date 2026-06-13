@@ -1,5 +1,5 @@
 ---
-title: SubmittedXML 데이터를 사용하여 PDF 문서 생성
+title: SubmittedXML 데이터로 PDF 문서 만들기
 description: Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 양식 데이터를 검색합니다. 양식 데이터를 다른 AEM Forms 서비스 작업에 전달하고 데이터를 사용하여 PDF 문서를 만듭니다.
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 0%
+source-wordcount: '1334'
+ht-degree: 1%
 
 ---
 
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 ![cd_cd_finsrv_architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-사용자가 클라이언트 웹 브라우저에서 양식을 제출하면 비대화형 PDF 문서가 Content Services에 저장됩니다(더 이상 사용되지 않음). 다음 그림은 Content Services(더 이상 사용되지 않음)에 저장된 PDF 문서를 보여 줍니다.
+사용자가 클라이언트 웹 브라우저에서 양식을 제출하면 비대화형 PDF 문서가 Content Services에 저장됩니다(더 이상 사용되지 않음). 다음 그림은 Content Services(더 이상 사용되지 않음)에 저장된 PDF 문서를 보여줍니다.
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
 ### 단계 요약 {#summary-of-steps}
 
-제출된 XML 데이터로 비대화형 PDF 문서를 만들고 Content Services(더 이상 사용되지 않음)의 PDF 문서에 저장하려면 다음 작업을 수행합니다.
+제출된 XML 데이터로 비대화형 PDF 문서를 만들고 Content Services의 PDF 문서에 저장하려면(더 이상 사용되지 않음) 다음 작업을 수행합니다.
 
 1. 프로젝트 파일을 포함합니다.
 1. Forms, 출력 및 문서 관리 객체를 만듭니다.
@@ -80,11 +80,11 @@ Document Management 서비스 API를 사용하여 컨텐츠 서비스에 PDF 문
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ### Java API를 사용하여 제출된 XML 데이터로 PDF 문서 생성 {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
-Forms, 출력 및 Document Management API(Java)를 사용하여 제출된 XML 데이터로 PDF 문서를 생성합니다.
+Forms, 출력 및 Document Management API(Java)를 사용하여 제출된 XML 데이터가 있는 PDF 문서를 생성합니다.
 
 1. 프로젝트 파일 포함
 

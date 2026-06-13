@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
   추적기 ID를 메시지 본문에 추가하면 이 접두사가 사용됩니다. 기본값은 `Please do not remove this:`입니다.
 
-* **[!UICONTROL 전자 메일을 HTML으로]**: 확인 표시가 되어 있으면 전자 메일의 콘텐츠 유형이 `"text/html;charset=utf-8"`(으)로 설정됩니다. 기본값은 선택되어 있습니다.
+* **[!UICONTROL HTML으로 전자 메일]**: 확인 표시가 되어 있으면 전자 메일의 콘텐츠 유형이 `"text/html;charset=utf-8"`(으)로 설정됩니다. 기본값은 선택되어 있습니다.
 
 * **[!UICONTROL 기본 사용자 이름]**
 
@@ -182,11 +182,11 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 * **[!UICONTROL URL]**
 
-  *(필수)* 아웃바운드 메일 서버입니다. 예: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`
+  *(필수)* 아웃바운드 메일 서버입니다. 예: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL 경로로 가져오기]**&ast;
+* **[!UICONTROL 경로로 가져오기]**&amp;ast;
 
-  *(필수)*&#x200B;이(가) `/content/usergenerated/mailFolder/postEmails`(으)로 설정됨
+  *(필수)* 설정 `/content/usergenerated/mailFolder/postEmails`
 `postEmails`폴더를 찾아 **확인**&#x200B;을 선택합니다.
 
 * **[!UICONTROL 업데이트 간격(초)]**
@@ -209,7 +209,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 사용:
 
-* 관리자 권한으로 기본 게시자에 로그인하고 [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)(으)로 이동합니다.
+* 관리자 권한으로 기본 게시자에 로그인하고 [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)&#x200B;(으)로 이동합니다.
 * 새로 생성된 구성을 선택하고 다음 속성을 수정합니다.
 
    * **feedType**: `pop3s`을(를) **`emailreply`**(으)로 바꾸기
