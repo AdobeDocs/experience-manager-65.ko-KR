@@ -40,7 +40,7 @@ API를 사용하면 Adobe Experience Manager 프론트엔드 애플리케이션�
 
 예를 들어 프레임워크 기반 또는 사용자 지정 SPA(단일 페이지 애플리케이션)에서는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 이러한 목적에 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연하며 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 모든 SPA 개발 조직에서 이러한 지식을 직접 액세스할 수 있는 것은 아닙니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 이러한 목적에 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연하며 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 모든 SPA 개발 조직에서 이러한 지식을 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 
@@ -153,8 +153,8 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)에서 CORS용 개발
+>* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)
+>* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko)에서 CORS용 개발
 >
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
@@ -395,4 +395,4 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 자세한 내용은 다음을 참조하십시오.
 
 * [Assets HTTP API 설명서](/help/assets/mac-api-assets.md)
-* [AEM Gem 세션: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem 세션: OAuth](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
