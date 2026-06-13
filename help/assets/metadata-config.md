@@ -120,7 +120,7 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -280,7 +280,7 @@ Open the properties for a folder configured with a folder metadata schema. **[!U
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=ko).
 >* [메타데이터, 이미지 및 비디오를 처리할 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 자산을 구성하는 모범 사례](/help/assets/organize-assets.md).
 >* [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).
