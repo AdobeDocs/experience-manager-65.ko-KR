@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 온디맨드 애플리케이션 생성 {#creating-an-on-demand-application}
 
-앱을 만드는 것은 AEM Mobile 온디맨드 콘텐츠를 만들고 관리하기 위한 첫 번째 단계이며 AEM 관리자 수준에서 수행되는 경우가 많습니다. 문서, 이미지 및 컬렉션과 같이 작성자가 만든 콘텐츠를 표시할 준비가 된 모바일 디바이스에서 볼 수 있는 콘텐츠 셸을 나타냅니다.
+앱을 만드는 것은 AEM Mobile 온디맨드 콘텐츠를 만들고 관리하는 첫 번째 단계이며, AEM 관리자 수준에서 수행되는 경우가 많습니다. 문서, 이미지 및 컬렉션과 같이 작성자가 만든 콘텐츠를 표시할 준비가 된 모바일 디바이스에서 볼 수 있는 콘텐츠 셸을 나타냅니다.
 
 앱의 세부 정보는 대시보드 또는 AEM Mobile 제어 센터에서 볼 수 있습니다.
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 프로세스를 사용하면 AEM에서 앱 인스턴스를 만들 수 있습니다.
+>이 프로세스를 통해 AEM에서 앱 인스턴스를 만들 수 있습니다.
 
 ## 앱 템플릿 사용 {#using-app-templates}
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 * [배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)
 * [컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)
 * [공유 리소스 업로드](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish 컨텐츠 게시 취소](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [게시 취소 컨텐츠](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 

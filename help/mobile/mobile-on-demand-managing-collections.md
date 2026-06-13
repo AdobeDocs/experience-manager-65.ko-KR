@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 1%
 >
 >AEM Mobile 앱의 다음 항목에 대한 자세한 내용은 온라인 도움말의 다음 리소스를 참조하십시오.
 >
->* [디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)
+>* [디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [컬렉션 관리](https://helpx.adobe.com/kr/digital-publishing-solution/help/creating-collections.html)
+>* [컬렉션 관리](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## 컬렉션 만들기 {#creating-a-collection}
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ## 컬렉션 편집 {#editing-a-collection}
 
-기본 제공 AEM 드래그 앤 드롭 편집기를 사용하여 문서를 추가하거나 변경합니다. 텍스트 및 이미지와 같은 구성 요소를 추가/제거할 수 있습니다. DAM Assets의 이미지를 삽입할 수 있습니다.
+내장된 AEM 드래그 앤 드롭 편집기를 사용하여 문서를 추가하거나 변경합니다. 텍스트 및 이미지와 같은 구성 요소를 추가/제거할 수 있습니다. DAM Assets의 이미지를 삽입할 수 있습니다.
 
 컬렉션을 편집하는 워크플로:
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 1. **컬렉션 관리** 타일에서 삭제할 문서를 선택하십시오.
 1. 목록에서 선택되었는지 확인하고, 필요에 따라 삭제할 다른 항목을 선택하십시오.
 1. 작업 표시줄에서 **삭제**&#x200B;를 클릭합니다.
-1. AEM 및 Mobile On-Demand에서 삭제하시겠습니까?
+1. AEM 및 Mobile On-Demand에서 을 삭제하시겠습니까?
 1. **삭제**&#x200B;를 클릭합니다.
 1. 이제 컬렉션이 목록에서 제거됩니다.
 

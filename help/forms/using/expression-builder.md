@@ -1,5 +1,5 @@
 ---
-title: Expression Builder의 원격 함수
+title: 표현식 빌더의 원격 기능
 description: 서신 관리의 표현식 빌더 를 사용하여 표현식과 원격 함수를 만들 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '797'
+ht-degree: 2%
 
 ---
 
-# Expression Builder의 원격 함수{#remote-functions-in-expression-builder}
+# 표현식 빌더의 원격 기능{#remote-functions-in-expression-builder}
 
 표현식 빌더를 사용하여 데이터 사전이나 최종 사용자가 제공한 데이터 값에 대한 계산을 수행하는 표현식 또는 조건을 만들 수 있습니다. 서신 관리는 표현식 평가 결과를 사용하여 텍스트, 이미지, 목록 및 조건 등의 에셋을 선택하고 필요에 따라 서신에 삽입합니다.
 
@@ -35,8 +35,8 @@ ht-degree: 1%
 다음은 서신 관리 솔루션에서 사용할 수 있는 일반적으로 사용되는 JSP EL 예입니다.
 
 * 두 개의 숫자를 추가하려면: ${number1 + number2}
-* 두 문자열(${str1} ${str2})을 연결하려면
-* 두 숫자를 비교하려면 ${age &lt; 18}
+* 두 문자열(${str1} $)을 연결하려면{str2}
+* 두 숫자 비교: ${age &lt; 18}
 
 자세한 내용은 [JSP EL 사양](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)을 참조하십시오. 클라이언트측 표현식 관리자는 JSP EL 사양의 특정 변수 및 함수, 특히
 
@@ -48,7 +48,7 @@ ht-degree: 1%
    * Char
    * java.lang.Boolean
    * 부울
-   * java.lang.Integer
+   * java.lang.정수
    * 정수
    * java.util.list
    * java.lang.Short
@@ -101,7 +101,7 @@ ht-degree: 1%
    * Char
    * java.lang.Boolean
    * 부울
-   * java.lang.Integer
+   * java.lang.정수
    * 정수
    * java.lang.Short
    * 짧음
@@ -126,7 +126,7 @@ ht-degree: 1%
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-exm.service=true 항목은 Expression Manager에게 해당 서비스에 표현식에 사용하기에 적합한 원격 함수가 포함되어 있음을 알립니다. &lt;service_id> 값은 유효한 Java 식별자(영숫자,$, _(다른 특수 문자 없음)여야 합니다. REMOTE_ 키워드 접두사가 있는 이 값은 표현식 내에서 사용되는 접두사를 형성합니다. 예를 들어 서비스 속성에서 서비스 ID foo 및 주석이 달린 인터페이스는 REMOTE_foo:bar()를 사용하여 표현식 내에서 참조할 수 있습니다.
+exm.service=true 항목은 Expression Manager에게 해당 서비스에 표현식에 사용하기에 적합한 원격 함수가 포함되어 있음을 알립니다. &lt;service_id> 값은 유효한 Java 식별자(영숫자,$, _(다른 특수 문자 없음)여야 합니다. REMOTE_ 키워드 접두사가 있는 이 값은 표현식 내에서 사용되는 접두사를 형성합니다. 예를 들어 서비스 속성에서 서비스 ID foo와 함께 주석이 달린 인터페이스는 REMOTE_foo:bar()를 사용하여 표현식 내에서 참조할 수 있습니다.
 
 ```java
 package mergeandfuse.com;

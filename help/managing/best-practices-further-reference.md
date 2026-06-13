@@ -11,7 +11,7 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3750'
 ht-degree: 100%
 
 ---
@@ -28,12 +28,12 @@ ht-degree: 100%
 
 ### AEM에서 제공되는 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
+AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
 
 사용 중인 다음과 같은 AEM 기능과 디자인에 미치는 영향을 고려하십시오.
 
 * [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [자산](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)

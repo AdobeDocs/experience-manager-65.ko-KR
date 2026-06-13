@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 명령 센터의 **모바일 지표 타일**&#x200B;은(는) 모바일 응용 프로그램에 대한 실시간 분석을 제공합니다.
 
-[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK은 PhoneGap 플러그인을 통해 사용할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집되고 캐시되며, 이 때 데이터가 보고 및 분석을 위해 Adobe Mobile Services 클라우드로 푸시됩니다.
+[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK은 PhoneGap 플러그인을 통해 사용할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집되고 캐시되며, 이 때 보고 및 분석을 위해 데이터가 Adobe Mobile Services 클라우드로 푸시됩니다.
 
 Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
@@ -46,11 +46,11 @@ AEM Command Center 지표 타일
 
 Adobe Mobile Services Analytics를 활용하려면 Adobe Analytics 계정 정보로 AEM Mobile Analytics Cloud 서비스를 구성해야 합니다.
 
-1. 앱 대시보드의 **Cloud Service 관리** 타일에서 Cloud Service을 추가하거나 편집하려면 오른쪽 상단 아이콘을 클릭합니다.
+1. 앱 대시보드의 **클라우드 서비스 관리** 타일에서 클라우드 서비스를 추가하거나 편집하려면 오른쪽 상단 아이콘을 클릭합니다.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. **Cloud Service 추가 또는 편집** 화면이 표시됩니다. **Mobile Services Adobe**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. **클라우드 서비스 추가 또는 편집** 화면이 표시됩니다. **Adobe Mobile Services**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
