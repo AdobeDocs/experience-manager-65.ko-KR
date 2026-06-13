@@ -1,5 +1,5 @@
 ---
-title: 단일 사인온
+title: Single Sign On
 description: Adobe Experience Manager(AEM) 인스턴스에 대한 SSO(Single Sign-On)를 구성하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 2%
 
 ---
 
-# 단일 사인온 {#single-sign-on}
+# Single Sign On {#single-sign-on}
 
-SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 암호 등)을 한 번 제공한 후 여러 시스템에 액세스할 수 있습니다. 별도의 시스템(신뢰할 수 있는 인증자라고도 함)이 인증을 수행하고 Experience Manager에게 사용자 자격 증명을 제공합니다. Experience Manager은 사용자에 대한 액세스 권한을 확인하고 적용합니다(즉, 사용자가 액세스할 수 있는 리소스를 결정합니다).
+SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 암호 등)을 한 번 제공한 후 여러 시스템에 액세스할 수 있습니다. 별도의 시스템(신뢰할 수 있는 인증자라고도 함)이 인증을 수행하고 Experience Manager에 사용자 자격 증명을 제공합니다. Experience Manager은 사용자에 대한 액세스 권한을 확인하고 적용합니다(즉, 사용자가 액세스할 수 있는 리소스를 결정합니다).
 
 SSO 인증 처리기 서비스(`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`)는 신뢰할 수 있는 인증자가 제공하는 인증 결과를 처리합니다. SSO 인증 처리기는 다음 위치에서 SSO 식별자(SSID)를 특수 속성의 값으로 이 순서로 검색합니다.
 
@@ -39,7 +39,7 @@ SSO 인증 처리기 서비스(`com.adobe.granite.auth.sso.impl.SsoAuthenticatio
 
 AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)를 구성합니다.
 
-1. AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+1. AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
    예를 들어 NTLM 세트의 경우:
 
@@ -67,7 +67,7 @@ AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/s
 >
 >SSO가 구성된 경우 사용자가 AEM에 직접 액세스할 수 없는지 확인하십시오.
 >
->사용자가 SSO 시스템의 에이전트를 실행하는 웹 서버를 통과해야 하므로 어떤 사용자도 헤더, 쿠키 또는 매개 변수를 직접 전송할 수 없으므로 이러한 정보는 외부에서 전송되면 에이전트가 필터링하여 AEM에서 사용자를 신뢰할 수 있습니다.
+>사용자가 SSO 시스템의 에이전트를 실행하는 웹 서버를 통과해야 하므로 어떤 사용자도 헤더, 쿠키 또는 AEM에서 사용자를 신뢰할 수 있는 매개 변수를 직접 전송할 수 없습니다. 이러한 정보는 에이전트에서 외부에서 전송하면 필터링됩니다.
 >
 >웹 서버를 통하지 않고 AEM 인스턴스에 직접 액세스할 수 있는 모든 사용자는 이름이 알려진 경우 헤더, 쿠키 또는 매개 변수를 전송하여 사용자 역할을 할 수 있습니다.
 >
@@ -80,13 +80,12 @@ AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/s
 
 >[!NOTE]
 >
->Microsoft® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
+>® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
 >* `disp_iis.ini`
 >* IIS
 >
->`disp_iis.ini` 집합:
->자세한 내용은 [Microsoft® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko#microsoft-internet-information-server)를 참조하십시오.
+>`disp_iis.ini`에서 다음을 설정합니다.>(자세한 내용은 [® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko#microsoft-internet-information-server) 참조)
 >
 >* `servervariables=1`(IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달함)
 >* `replaceauthorization=1`(&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꾸기)
@@ -154,7 +153,7 @@ Transfer-Encoding: chunked
 
 >[!NOTE]
 >
->브라우저에서 요청 매개 변수를 사용할 때 CSS 없이 일부 HTML만 표시됩니다. 이것은 HTML의 모든 요청이 요청 매개 변수 없이 수행되기 때문입니다.
+>브라우저에서 요청 매개 변수를 사용할 때 CSS가 없는 일부 HTML만 표시됩니다. 이는 HTML의 모든 요청이 요청 매개 변수 없이 수행되기 때문입니다.
 
 ## AEM 로그아웃 링크 제거 {#removing-aem-sign-out-links}
 

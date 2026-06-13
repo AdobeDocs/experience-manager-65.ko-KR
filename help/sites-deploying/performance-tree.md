@@ -1,6 +1,6 @@
 ---
 title: 성능 트리
-description: AEM의 성능 문제를 해결하기 위해 수행해야 하는 단계에 대해 알아봅니다.
+description: AEM에서 성능 문제를 해결하기 위해 수행해야 하는 절차에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 2%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 전제 조건 및 가정 {#prerequisites-and-assumptions}
 
-특정 페이지(AEM 콘솔 또는 웹 페이지)에서 성능 문제가 관찰되며 일관되게 재현될 수 있다고 가정합니다. 성과를 테스트하거나 모니터링할 수 있는 방법을 갖추는 것은 조사를 시작하기 전에 반드시 요구되는 사항입니다.
+주어진 페이지(AEM 콘솔 또는 웹 페이지)에서 성능 문제가 관찰되며 일관되게 재현될 수 있다고 가정합니다. 성과를 테스트하거나 모니터링할 수 있는 방법을 갖추는 것은 조사를 시작하기 전에 반드시 요구되는 사항입니다.
 
 분석은 0단계에서 시작됩니다. 목표는 성능 문제에 대한 책임이 있는 엔티티(Dispatcher, 외부 호스트 또는 AEM)를 확인한 다음 조사해야 하는 영역(서버 또는 네트워크)을 결정하는 것입니다.
 
@@ -82,7 +82,7 @@ ht-degree: 2%
   <tr>
    <td><strong>5단계</strong></td>
    <td>Dispatcher에서 AEM을 통해 각 요청을 인증하려고 합니까?</td>
-   <td>캐시된 리소스를 전달하기 전에 Dispatcher에서 인증을 위해 AEM에 <code>HEAD</code> 요청을 보내는지 확인하십시오. AEM <code>access.log</code>에서 <code>HEAD</code>개의 요청을 찾습니다. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br />을 참조하십시오. </td>
+   <td>캐시된 리소스를 전달하기 전에 Dispatcher이 인증을 위해 AEM에 <code>HEAD</code>개의 요청을 전송하는지 확인하십시오. AEM <code>access.log</code>에서 <code>HEAD</code>개의 요청을 찾습니다. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br />을 참조하십시오. </td>
   </tr>
   <tr>
    <td><strong>6단계</strong></td>
@@ -177,7 +177,7 @@ ht-degree: 2%
   <tr>
    <td><strong>23단계</strong></td>
    <td>느린 쿼리</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인 생성에 대한 우수 사례</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인화 모범 사례</a></td>
   </tr>
   <tr>
    <td><strong>24단계</strong></td>
@@ -266,7 +266,7 @@ ht-degree: 2%
    <td><br />
     <ul>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-the-authoring-environment">작성자 계층에 대한 캐시 무효화</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance">Publish 계층에 대한 캐시 무효화.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance">게시 계층에 대한 캐시 무효화.</a></li>
     </ul> </td>
   </tr>
   <tr>

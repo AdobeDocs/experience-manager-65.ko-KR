@@ -12,8 +12,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4832'
-ht-degree: 77%
+source-wordcount: '4886'
+ht-degree: 78%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 77%
 
 시작하기 전에 고려해야 할 사항은 다음과 같습니다.
 
-* 템플릿을 만들려면 공동 작업이 필요합니다. 따라서 각 작업에 대해 [역할](#roles)이(가) 표시됩니다.
+* 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
 
 * 인스턴스 구성 방식에 따라 이제 AEM에서 [두 가지 기본 템플릿 유형](/help/sites-authoring/templates.md#editable-and-static-templates)을 제공합니다. 이는 실제로 [템플릿을 사용하여 페이지를 만드는 방법](#using-a-template-to-create-a-page)에는 영향을 주지 않지만, 만들 수 있는 템플릿 유형과 페이지가 해당 템플릿과 관련되는 방식에는 영향을 줍니다.
 
@@ -98,7 +98,7 @@ ht-degree: 77%
 
 * [편집 가능한 템플릿](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 템플릿 작성자가 [템플릿](#creatinganewtemplate) 콘솔 및 편집기를 사용하여 [생성](#editingatemplate) 및 **편집**&#x200B;할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
+   * 템플릿 작성자가 **템플릿** 콘솔 및 편집기를 사용하여 [생성](#creatinganewtemplate) 및 [편집](#editingatemplate)할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
 
    * 새 페이지가 만들어지면 페이지와 템플릿 간에 동적 연결이 유지됩니다. 즉, 템플릿 구조 및/또는 잠긴 콘텐츠에 대한 변경 사항이 해당 템플릿으로 만든 페이지에 반영됩니다. 잠금 해제된(즉, 초기) 콘텐츠에 대한 변경 사항은 반영되지 않습니다.
    * 템플릿 편집기에서 콘텐츠 정책을 정의하여 디자인 속성을 유지할 수 있습니다. 페이지 편집기 내의 디자인 모드는 더 이상 편집 가능한 템플릿에 사용되지 않습니다.
@@ -250,7 +250,7 @@ ht-degree: 77%
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
-1. 이제 필요에 따라 [템플릿을 편집](/help/sites-authoring/managing-pages.md#creating-a-new-page)할 수 있지만 [페이지를 만들](#editingatemplate)때 템플릿을 사용할 수 있습니다.
+1. 이제 필요에 따라 [템플릿을 편집](#editingatemplate)할 수 있지만 [페이지를 만들](/help/sites-authoring/managing-pages.md#creating-a-new-page)때 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -416,7 +416,7 @@ ht-degree: 77%
 
   콘텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-  구성 요소에 대해 컨텐츠 정책을 만들거나 기존 컨텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
+  구성 요소에 대해 콘텐츠 정책을 만들거나 기존 콘텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -451,7 +451,7 @@ ht-degree: 77%
 
   >[!NOTE]
   >
-  >동일한 유형의 여러 구성 요소가 초기 콘텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 정적 템플릿&#x200B;[**에 대해**&#x200B;디자인 모드](/help/sites-authoring/default-components-designmode.md)에서 동일한 제한을 미러링합니다.
+  >동일한 유형의 여러 구성 요소가 초기 콘텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 정적 템플릿[&#128279;](/help/sites-authoring/default-components-designmode.md)에 대해 **디자인 모드**&#x200B;에서 동일한 제한을 미러링합니다.
 
   ***속성***
 

@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
@@ -115,12 +115,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 웹 사이트 관리 콘솔을 열고 사이트를 탐색하면 브라우저가 콘솔을 빌드하는 데 사용되는 JSON 개체를 가져오기 위해 Ajax 호출을 실행합니다. 예를 들어 `/content/geometrixx` 폴더를 찾으면 다음 요청이 AEM 서버로 전송되어 콘솔을 빌드합니다.
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 새 서비스가 포함된 번들을 배포한 후 실행되고 있는지 확인하려면 다음을 수행하십시오.
 
 1. 브라우저를 다음 URL로 지정합니다.
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. 응답에는 다음과 같이 새 속성이 표시됩니다.
 
@@ -138,7 +138,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
    * **pageText** 제거
 
-   * **pathRegex**&#x200B;을(를) `/content/geometrixx(/.*)?`(으)로 설정
+   * **pathRegex** 설정 `/content/geometrixx(/.*)?`
 이렇게 하면 모든 Geometrixx 웹 사이트에 대해 그리드 구성이 활성화됩니다.
 
    * **storeProxySuffix**&#x200B;을(를) `.pages.json`(으)로 설정

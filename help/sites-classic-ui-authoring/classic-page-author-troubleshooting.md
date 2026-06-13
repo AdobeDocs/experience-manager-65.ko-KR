@@ -1,5 +1,5 @@
 ---
-title: 작성 시 AEM 문제 해결
+title: 작성 시의 AEM 문제 해결
 description: 다음 섹션에서는 AEM 사용 시 발생할 수 있는 문제들과 이러한 문제의 해결 방법에 대한 제안 사항을 다룹니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->관리자 권한이 있고 AEM 문제를 해결하려는 사용자는 [AEM 문제 해결(관리자용)](/help/sites-administering/troubleshoot.md)에 설명된 문제 해결 방법을 사용할 수 있습니다. 충분한 권한이 없는 경우 AEM 문제 해결에 대해 시스템 관리자에게 문의하십시오.
+>관리자 권한이 있고 AEM 문제를 해결하려는 사용자는 [AEM 문제 해결(관리자용)](/help/sites-administering/troubleshoot.md)에 설명된 문제 해결 방법을 사용할 수 있습니다. 충분한 권한이 없는 경우 시스템 관리자에게 AEM 문제 해결에 대해 문의하십시오.
 
 ## 게시된 사이트에 이전 페이지 버전이 여전히 있음 {#old-page-version-still-on-published-site}
 
@@ -43,7 +43,7 @@ ht-degree: 34%
    * 여기에는 다양한 가능성이 있습니다.
    * 페이지가 올바르게 복제되었는지 확인합니다. 페이지 상태를 확인하고 필요한 경우 복제 큐의 상태를 확인합니다.
    * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
+   * 페이지 URL 끝에 `?`을(를) 추가합니다. 예:
 
      `http://localhost:4502/sites.html/content?`
 
@@ -55,7 +55,7 @@ ht-degree: 34%
 
 * **문제**:
 
-   * 작성 환경에서 Sidekick 페이지를 편집할 때 콘텐츠가 표시되지 않습니다.
+   * 작성 환경에서 컨텐츠 페이지를 편집할 때 Sidekick이 표시되지 않습니다.
 
 * **이유**:
 
@@ -63,7 +63,7 @@ ht-degree: 34%
 
 * **솔루션**:
 
-   * 현재 세션에서 로그아웃하고 다시 로그인합니다. Sidekick은 기본 위치로 돌아갑니다.
+   * 현재 세션에서 로그아웃하고 다시 로그인합니다. Sidekick이 기본 위치로 돌아갑니다.
 
 ## 찾기 및 바꾸기 - 일부 인스턴스는 바뀌지 않음 {#find-replace-not-all-instances-are-replaced}
 

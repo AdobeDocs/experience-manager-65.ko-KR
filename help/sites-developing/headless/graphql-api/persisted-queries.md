@@ -7,8 +7,8 @@ feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 86%
+source-wordcount: '1390'
+ht-degree: 85%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 86%
 
 지속 쿼리는 항상 [적절한 Sites 구성](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)과 관련된 엔드포인트를 사용해야 합니다. 따라서 다음 중 하나 또는 둘 다를 사용할 수 있습니다.
 
-* 전역 구성 및 엔드포인트
+* 전역 구성 및 끝점
 쿼리는 모든 콘텐츠 조각 모델에 액세스할 수 있습니다.
-* 특정 Sites 구성 및 엔드포인트
-특정 Sites 구성에 대한 지속 쿼리를 만들려면 (관련 콘텐츠 조각 모델에 대한 액세스를 제공하기 위해) 해당 Sites 구성별 엔드포인트가 필요합니다.
-예를 들어 WKND Sites 구성을 위해 특별히 지속 쿼리를 만들려면 해당 WKND별 Sites 구성 및 WKND별 엔드포인트를 미리 만들어야 합니다.
+* 특정 Sites 구성 및 끝점
+특정 Sites 구성에 대한 지속 쿼리를 만들려면 (관련 콘텐츠 조각 모델에 대한 액세스를 제공하기 위해) 해당 Sites 구성별 끝점이 필요합니다.
+예를 들어 WKND Sites 구성을 위해 특별히 지속 쿼리를 만들려면 해당 WKND별 Sites 구성 및 WKND별 끝점을 미리 만들어야 합니다.
 
 >[!NOTE]
 >
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### OSGi 구성으로 캐시 관리 {#cache-osgi-configration}
 
-캐시를 전체적으로 관리하려면 [지속 쿼리 서비스 구성](/help/sites-deploying/configuring-osgi.md)에 대해 **OSGi 설정을 구성**&#x200B;할 수 있습니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances)을 사용합니다.
+캐시를 전체적으로 관리하려면 **지속 쿼리 서비스 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/sites-deploying/configuring-osgi.md)하면 됩니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances)을 사용합니다.
 
 >[!NOTE]
 >

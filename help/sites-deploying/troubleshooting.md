@@ -11,7 +11,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -101,11 +101,11 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 저장소 자체가 성공적으로 실행 중인 경우에도 AEM WCM 시작 화면이 자동으로 표시되지 않는 경우가 있습니다. 이 문제는 운영 체제 설정, 브라우저 구성 또는 유사한 요소에 따라 달라질 수 있습니다.
 
-일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트나 인스턴스가 실행 중인 포트(http://localhost:4502/)를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다.
+일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트 또는 인스턴스가 실행 중인 포트를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다. http://localhost:4502/.
 
 또한 로그에 브라우저가 시작되지 않는 이유가 표시될 수 있습니다.
 
-경우에 따라 AEM WCM 빠른 시작 창에 &quot;http://localhost:port/에서 실행 중인 AEM WCM&quot;이라는 메시지가 표시되고 브라우저가 자동으로 시작되지 않습니다. 이 경우 AEM WCM 빠른 시작 창(하이퍼링크임)에서 URL을 클릭하거나 브라우저에 URL을 수동으로 입력합니다.
+경우에 따라 AEM WCM 빠른 시작 창에 &quot;http://localhost:port/&quot;에서 실행 중인 AEM WCM이라는 메시지가 표시되고 브라우저가 자동으로 시작되지 않습니다. 이 경우 AEM WCM 빠른 시작 창(하이퍼링크임)에서 URL을 클릭하거나 브라우저에 URL을 수동으로 입력합니다.
 
 다른 모든 것이 실패하면 로그를 확인하여 발생한 사항을 확인합니다.
 
