@@ -1,6 +1,6 @@
 ---
-title: HTML 5 양식과 PDF forms 간의 차별화된 기능
-description: HTML 5 양식과 PDF forms 간의 기능 차이점에 대해 알아봅니다.
+title: HTML5 양식과 PDF 양식 간의 기능 차별화
+description: HTML5 Forms와 PDF forms 간의 기능 차이점에 대해 알아봅니다.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
-# HTML 5 양식과 PDF forms 간의 차별화된 기능 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5 양식과 PDF 양식 간의 기능 차별화 {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-다음 표는 HTML5 양식 및 PDF forms에 대해 제공되는 기능 지원을 지정합니다.
+다음 표는 HTML5 forms 및 PDF forms에 대해 제공되는 기능 지원을 지정합니다.
 
 <table>
  <tbody>
@@ -50,12 +50,12 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>페이지 매김<br /> </td>
-   <td><p>HTML5 폼은 패널과 상자로 나뉘어 PDF forms과 비슷한 모양을 제공합니다. 페이지 크기는 동적으로 계산됩니다. HTML5 양식에 있는 페이지의 모든 콘텐츠가 삭제되거나 숨겨진 것으로 표시되면 빈 페이지가 숨겨집니다. 빈 페이지의 위와 아래에 있는 페이지 사이에는 빈 공간(빈 공간)이 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 콘텐츠를 추가하는 경우, 새로 추가된 콘텐츠에 맞게 페이지 길이가 확장됩니다. 새로 추가된 콘텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong>참고:</strong> HTML5 양식의 모든 페이지 내용을 삭제하거나 숨김으로 표시하면 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 사이에는 표시되지 않습니다.</p> </td>
+   <td><p>HTML5 양식은 PDF forms과 유사한 모양을 제공하기 위해 패널과 상자로 나뉩니다. 페이지 크기는 동적으로 계산됩니다. HTML5 양식에 있는 페이지의 모든 콘텐츠가 삭제되거나 숨겨진 것으로 표시되면 빈 페이지가 숨겨집니다. 빈 페이지의 위와 아래에 있는 페이지 사이에는 빈 공간(빈 공간)이 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 콘텐츠를 추가하는 경우, 새로 추가된 콘텐츠에 맞게 페이지 길이가 확장됩니다. 새로 추가된 콘텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong>참고:</strong> HTML5 양식의 모든 페이지 내용을 삭제하거나 숨김으로 표시하면 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 사이에는 표시되지 않습니다.</p> </td>
    <td>PDF의 페이지 매김 은 병합된 데이터 콘텐츠 또는 사용자 콘텐츠에 따라 다르며 페이지 수는 그에 따라 증가/감소합니다.</td>
   </tr>
   <tr>
    <td>머리글/바닥글 </td>
-   <td>지원됨. <br /> <br /> Page5 Mobile Forms에서는 HTML 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 모바일 양식 미리 보기의 여러 위치에 나타나도록 레이아웃에서 설정할 수 있습니다.<br /> </td>
+   <td>지원됨. <br /> <br /> HTML5 모바일 양식은 페이지 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 모바일 양식 미리 보기의 여러 위치에 나타나도록 레이아웃에서 설정할 수 있습니다.<br /> </td>
    <td>지원됨</td>
   </tr>
   <tr>
@@ -70,8 +70,8 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>Acrobat 스크립트 API </td>
-   <td>HTML 5 양식은 가장 일반적으로 사용되는 API를 지원합니다. 자세한 내용은 <a href="/help/forms/using/scripting-support.md">스크립팅 지원</a>을 참조하십시오.</td>
-   <td>PDF 파일이 Acrobat 또는 Reader 내에서 열려 있는 경우 Acrobat에서 제공하는 모든 스크립트 API도 지원합니다.</td>
+   <td>HTML5 forms는 가장 일반적으로 사용되는 API를 지원합니다. 자세한 내용은 <a href="/help/forms/using/scripting-support.md">스크립팅 지원</a>을 참조하십시오.</td>
+   <td>PDF 파일이 Acrobat 또는 Reader 내에서 열려 있으면 Acrobat에서 제공하는 모든 스크립트 API도 지원합니다.</td>
   </tr>
   <tr>
    <td>오른쪽에서 왼쪽 쓰기 언어 지원 </td>

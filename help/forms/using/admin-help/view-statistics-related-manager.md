@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '1215'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
 # 작업 관리자와 관련된 통계 보기 {#view-statistics-related-to-work-manager}
 
-작업 관리자 탭에는 작업 관리자 항목과 관련된 통계가 표시됩니다. 해당 작업 항목은 프로세스의 어느 단계에 있는지에 따라 다른 상태에 있습니다. ([상태(기본, 워크플로, 이벤트 카테고리에만 해당)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)를 참조하십시오. ) 제공되는 다양한 옵션(예: 상태 또는 카테고리)을 사용하여 항목의 하위 집합만 볼 수 있도록 정보를 필터링할 수 있습니다. 열 머리글 중 하나를 클릭하면 결과 작업 또는 작업 항목을 오름차순 또는 내림차순으로 정렬할 수 있습니다. 또한 작업 항목 목록 위에 표시되는 작업 도구를 사용하여 작업 항목을 관리할 수 있습니다.
+작업 관리자 탭에는 작업 관리자 항목과 관련된 통계가 표시됩니다. 해당 작업 항목은 프로세스의 어느 단계에 있는지에 따라 다른 상태에 있습니다. [상태(기본값, 워크플로 또는 이벤트 범주의 경우에만)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)를 참조하십시오. 사용 가능한 다양한 옵션(예: 상태 또는 범주)을 사용하여 항목의 하위 집합만 표시하도록 정보를 필터링할 수 있습니다. 열 머리글 중 하나를 클릭하면 결과 작업 또는 작업 항목을 오름차순 또는 내림차순으로 정렬할 수 있습니다. 또한 작업 항목 목록 위에 표시되는 작업 도구를 사용하여 작업 항목을 관리할 수 있습니다.
 
 ## 작업 항목 필터링 {#filter-the-work-items}
 

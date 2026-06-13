@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '147'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 어셈블러 서비스는 여러 PDF 문서를 하나의 PDF 문서로 어셈블하거나 하나의 PDF 문서를 여러 PDF 문서로 디스어셈블할 수 있습니다. 어셈블러 서비스는 페이지 크기 변경, 내용 회전 등 다양한 방식으로 문서를 조작할 수 있습니다. 머리글, 바닥글 및 목차와 같은 추가 콘텐츠를 삽입할 수 있으며 주석, 첨부 파일 및 책갈피와 같은 기존 콘텐츠를 유지, 가져오기 또는 내보낼 수 있습니다.
 
-LiveCycle ES 8.0 이상부터 어셈블러 서비스에서 PDF 패키지에 대한 지원을 사용할 수 있습니다.
+LiveCycle ES 8.0 이상부터 PDF 패키지에 대한 지원은 어셈블러 서비스에서 사용할 수 있습니다.
 
 >[!NOTE]
 >

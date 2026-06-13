@@ -11,20 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
+source-wordcount: '7653'
 ht-degree: 0%
 
 ---
 
 # xtype 사용(클래식 UI){#using-xtypes-classic-ui}
 
-이 페이지에서는 AEM(Adobe Experience Manager)에서 사용할 수 있는 모든 xtype에 대해 설명합니다.
+이 페이지에서는 Adobe Experience Manager(AEM)에서 사용할 수 있는 모든 xtype에 대해 설명합니다.
 
 ExtJS 언어에서 xtype은 클래스에 제공되는 기호 이름입니다. xtype의 정의와 사용 방법에 대한 자세한 설명은 [ExtJS 2 개요](https://www.sencha.com/learn/overview-of-extjs-2)의 &quot;구성 요소 XTypes&quot; 단락을 읽을 수 있습니다.
 
 AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)를 참조하십시오.
 
-특정 xtype이 AEM에서 사용되는 구성 요소를 확인하려면 &#39;checkbox&#39;를 원하는 xtype으로 바꾸어 CRXDE에서 다음 Xpath 쿼리를 사용할 수 있습니다.
+지정된 xtype이 AEM에서 사용되는 구성 요소를 확인하려면 &#39;checkbox&#39;를 원하는 xtype으로 교체하여 CRXDE에서 다음 Xpath 쿼리를 사용할 수 있습니다.
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -32,7 +32,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 >
 >이 페이지에서는 클래식 UI 내에서 ExtJS xtype 사용에 대해 설명합니다.
 >
->Adobe은 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)를 기반으로 하는 표준, 최신 [터치 사용 UI](/help/sites-developing/touch-ui-concepts.md)을(를) 사용할 것을 권장합니다.
+>Adobe에서는 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)를 기반으로 하는 최신 [터치 사용 UI](/help/sites-developing/touch-ui-concepts.md)를 사용할 것을 권장합니다.
 
 ## xtypes {#xtypes}
 
@@ -50,7 +50,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   이전에 &quot;SimpleStore&quot;라고 했습니다.
 
-  Array 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)을(를) 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. ArrayStore는 [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader)(으)로 자동으로 구성됩니다.
+  Array 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)을(를) 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. ArrayStore는 [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader)&#x200B;(으)로 자동으로 구성됩니다.
 
 * asseteditor
 
@@ -98,11 +98,11 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * 벌키터
 
-  [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)
+  [CQ.wcm.Bulk편집기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)
 
   BulkEditor는 검색 결과를 편집할 수 있는 검색 엔진 및 그리드를 제공합니다.
 
-  BulkEditor는 HTML 양식에 삽입해야 합니다(가져오기 기능에 필요). 이 기능은 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)에서 완벽하게 작동합니다.
+  BulkEditor는 HTML 양식으로 삽입해야 합니다(가져오기 기능에 필요). 이 기능은 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)에서 완벽하게 작동합니다.
 
 * 벌케디토르폼
 
@@ -110,7 +110,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   BulkEditorForm은 HTML 양식으로 둘러싸인 [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)를 제공합니다. [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)의 독립 실행형 버전입니다. 가져오기 단추에는 HTML 양식이 필요합니다.
 
-* 단추
+* 버튼
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -332,7 +332,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * 편집기 격자
 
-  [CQ.Ext.Grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
+  [CQ.Ext.grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
 
   이 클래스는 [GridPanel 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)을(를) 확장하여 선택한 [열](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column)에서 셀 편집을 제공합니다. 편집 가능한 열은 [열 구성](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column)에서 [editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)을(를) 제공하여 지정합니다.
 
@@ -344,7 +344,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * 사료용 어구
 
-  [CQ.wcm.FeedImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
+  [CQ.wcm.Feedimporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
 
   FeedImporter를 사용하면 사용자가 RSS 또는 Atom 피드를 가져오고 각 피드 항목에 대한 페이지를 만들 수 있습니다.
 
@@ -442,7 +442,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
 
-  JSON 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)를 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. JsonStore는 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)(으)로 자동으로 구성됩니다.
+  JSON 데이터에서 [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)를 더 쉽게 만들 수 있는 작은 도우미 클래스입니다. JsonStore는 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)&#x200B;(으)로 자동으로 구성됩니다.
 
 * 레이블
 
@@ -580,7 +580,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  OfflineImporter는 Microsoft® Word 문서를 가져와 AEM 페이지로 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
+  OfflineImporter는 ® Word 문서를 AEM 페이지로 가져오고 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
 
 * ownerdraw
 
@@ -636,7 +636,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * propertygrid
 
-  [CQ.Ext.Grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
+  [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
   개발 IDE에서 일반적으로 표시되는 기존 속성 격자를 모방하도록 설계된 특수 격자 구현입니다. 그리드의 각 행은 일부 개체의 속성을 나타내며, 데이터는 [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)의 이름/값 쌍 집합으로 저장됩니다.
 
@@ -698,7 +698,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * rolloutwizard
 
-  [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
+  [CQ.wcm.msm.롤아웃 마법사](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
 
   롤아웃 마법사는 페이지를 롤아웃하는 마법사를 제공합니다. RolloutWizard가 [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan)을(를) 시작합니다.
 
@@ -718,7 +718,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-  Sidekick은 사용자에게 페이지 편집을 위한 일반적인 도구를 제공하는 부동 도우미입니다.
+  Sidekick은 사용자에게 페이지 편집에 대한 일반적인 도구를 제공하는 부동 도우미입니다.
 
 * siteadmin
 
@@ -758,7 +758,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   SmartFile은 지능형 파일 업로더입니다.
 
-  Flash 플러그인(버전 >= 9)이 설치되어 있으면 업로드를 편리하게 처리할 수 있는 SWFupload 라이브러리를 사용하여 업로드가 실행됩니다.
+  Flash 플러그인(버전 > 9)이 설치되어 있으면 업로드를 편리하게 처리할 수 있는 SWFupload 라이브러리를 사용하여 업로드가 실행됩니다.
 
 * 스마티마게
 
@@ -790,7 +790,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
-  정적 을 사용하여 임의의 텍스트나 HTML을 표시할 수 있습니다.
+  정적 을 사용하여 임의의 텍스트 또는 HTML을 표시할 수 있습니다.
 
 * 통계
 

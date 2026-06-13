@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1361'
 ht-degree: 96%
 
 ---
@@ -142,7 +142,7 @@ AEM을 업데이트하고 구성하면 로컬 개발 및 테스트를 위해 로
 1. Node.js 버전 20 이상을 설치합니다.
 1. [소프트웨어 배포](https://experienceleague.adobe.com/ko/docs/experience-cloud/software-distribution/home)에서 최신 범용 편집기 서비스를 다운로드하고 압축을 풉니다.
 1. 환경 변수 또는 `.env` 파일을 통해 범용 편집기 서비스를 구성합니다.
-   * [자세한 내용은 범용 편집기의 AEM as a Cloud Service 설명서를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [자세한 내용은 AEM as a Cloud Service 유니버설 편집기 설명서 를 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 내부 IP를 다시 작성해야 하는 경우 `UES_MAPPING` 옵션을 사용해야 할 수도 있습니다.
 1. `universal-editor-service.cjs`를 실행합니다.
 

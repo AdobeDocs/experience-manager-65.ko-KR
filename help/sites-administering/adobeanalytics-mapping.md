@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 0%
+source-wordcount: '1458'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Adobe Analytics으로 전송할 데이터를 수집하는 프레임워크에 구
 
 ## 제품 관련 변수 매핑 {#mapping-product-related-variables}
 
-AEM에서는 Adobe Analytics 제품 관련 속성에 매핑될 제품 관련 변수와 이벤트의 이름을 지정하는 규칙을 사용합니다.
+AEM은 Adobe Analytics 제품 관련 속성에 매핑되는 제품 관련 변수와 이벤트의 이름을 지정하는 규칙을 사용합니다.
 
 | CQ 변수 | Analytics 변수 | 설명 |
 |--- |--- |--- |
@@ -105,7 +105,7 @@ AEM에서는 Adobe Analytics 제품 관련 속성에 매핑될 제품 관련 변
 RSID를 선택하면 해당 RSID에 속하는 모든 변수가 목록에 추가됩니다.\
 Analytics 변수를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하려면 `cf#`이(가) 필요합니다. 기본 추적을 위한 프레임워크 설정을 참조하십시오.
 
-프레임워크에 대해 선택한 보기에 따라 컨텐츠 파인더는 Analytics 변수(AEM 보기의 경우) 또는 CQ 변수(Analytics 보기의 경우)로 채워집니다.
+프레임워크에 대해 선택한 보기에 따라 컨텐츠 파인더는 Analytics 변수(AEM 보기의)나 CQ 변수(Analytics 보기의)로 채워집니다.
 
 목록은 다음과 같은 방법으로 조작할 수 있습니다.
 
@@ -147,7 +147,7 @@ Analytics 변수를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하
 
 ![aa-23](assets/aa-23.png)
 
-위의 이미지를 예로 들자면 **AEM 보기**&#x200B;에는 다음 속성이 있습니다.
+위의 이미지를 예로 들면 **AEM 보기**&#x200B;에는 다음 속성이 있습니다.
 
 1. 프레임워크가 열릴 때의 기본 보기입니다.
 1. 왼쪽: 콘텐츠 파인더(cf#)는 선택한 RSID를 기반으로 Adobe Analytics 변수로 채워집니다.
@@ -198,8 +198,7 @@ Analytics 변수를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하
 >
 >필드를 두 번 클릭하고 텍스트를 추가하여 테이블의 CQ 변수 열도 인라인으로 채울 수 있습니다. 이러한 필드는 JavaScript을 입력으로 받아들입니다.
 >
->예를 들어 `prop3` 옆에 다음을 추가할 수 있습니다.
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>예를 들어 `prop3` 옆에 > `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`을(를) 추가할 수 있습니다.\
 >*:*(콜론)을 사용하여 *sitesection*&#x200B;과(와) 연결된 페이지의 *title*&#x200B;을(를) 보내고 `prop3`(으)로 *Adobe* 접두사가 추가됨
 >
 

@@ -1,5 +1,5 @@
 ---
-title: 이메일을 통해 양식 제출 승인 보내기
+title: 이메일을 통해 양식 제출 확인서 보내기
 description: AEM Forms을 사용하면 양식 제출 시 사용자에게 승인을 보내는 이메일 제출 액션을 구성할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,24 +11,24 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
-# 이메일을 통해 양식 제출 승인 보내기 {#sending-a-form-submission-acknowledgement-via-email}
+# 이메일을 통해 양식 제출 확인서 보내기 {#sending-a-form-submission-acknowledgement-via-email}
 
 ## 적응형 양식 데이터 제출 {#adaptive-form-data-submission}
 
 적응형 양식은 양식 데이터를 다양한 끝점에 제출하기 위한 몇 가지 기본 [작업 제출](../../forms/using/configuring-submit-actions.md) 워크플로우를 제공합니다.
 
-예를 들어 **[!UICONTROL 전자 메일 보내기]** 제출 액션은 적응형 양식을 성공적으로 제출하면 전자 메일을 보냅니다. 양식 데이터 및 PDF을 이메일에 보내도록 구성할 수도 있습니다.
+예를 들어 **[!UICONTROL 전자 메일 보내기]** 제출 액션은 적응형 양식을 성공적으로 제출하면 전자 메일을 보냅니다. 양식 데이터 및 PDF을 이메일로 보내도록 구성할 수도 있습니다.
 
 이 문서에서는 적응형 양식 및 적응형 양식이 제공하는 다양한 구성에서 이메일 작업을 활성화하는 단계에 대해 자세히 설명합니다.
 
 >[!NOTE]
 >
->**[!UICONTROL 이메일을 통해 PDF 보내기]** 옵션을 사용하여 완료된 양식을 전자 메일로 PDF 첨부 파일로 보낼 수도 있습니다. 이 작업에 사용할 수 있는 구성 옵션은 **[!UICONTROL 전자 메일 보내기]** 작업에 사용할 수 있는 옵션과 동일합니다. 이메일 PDF 작업은 XFA 기반 적응형 양식에만 사용할 수 있습니다
+>**[!UICONTROL 이메일을 통해 PDF 보내기]** 옵션을 사용하여 완성된 양식을 PDF 첨부 파일로 이메일로 보낼 수도 있습니다. 이 작업에 사용할 수 있는 구성 옵션은 **[!UICONTROL 전자 메일 보내기]** 작업에 사용할 수 있는 옵션과 동일합니다. 이메일 PDF 작업은 XFA 기반 적응형 양식에만 사용할 수 있습니다
 
 ## 이메일 전송 작업 {#email-action}
 

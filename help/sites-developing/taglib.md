@@ -11,7 +11,7 @@ feature: Developing,Tagging
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -250,14 +250,14 @@ JSP에서 `<cq:text>` 태그를 사용하는 방법에 대한 몇 가지 예는 
 
 `<cq:include>` 또는 `<sling:include>`을(를) 사용하시겠습니까?
 
-* AEM Adobe 구성 요소를 개발할 때는 `<cq:include>`을(를) 사용하는 것이 좋습니다.
+* AEM 구성 요소를 개발할 때는 `<cq:include>`을(를) 사용하는 것이 좋습니다.
 * `<cq:include>`에서 script 특성을 사용할 때 해당 이름으로 스크립트 파일을 직접 포함할 수 있습니다. 이는 구성 요소 및 리소스 유형 상속을 고려하며, 선택기 및 확장을 사용하여 Sling의 스크립트 해상도를 엄격히 준수하는 것보다 간단한 경우가 많습니다.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` AEM 5.6 이후 사용되지 않습니다. 대신 [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib)을(를) 사용해야 합니다.
+>`<cq:includeClientLib>`은(는) AEM 5.6 이후 더 이상 사용되지 않습니다. 대신 [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib)을(를) 사용해야 합니다.
 
 `<cq:includeClientLib>` 태그에는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리가 포함되어 있습니다. 다른 유형의 여러 포함(예: js 및 css)의 경우, 이 태그는 jsp에서 여러 번 사용해야 합니다. 이 태그는 `com.day.cq.widget.HtmlLibraryManager` 서비스 인터페이스의 편리한 래퍼입니다.
 
@@ -511,7 +511,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 >
 >`/libs/foundation/global.jsp` 파일이 스크립트에 포함되면 sling taglib이 자동으로 선언됩니다.
 
-### &lt;sling:include> {#sling-include}
+### &lt;sling:include {#sling-include}
 
 `<sling:include>` 태그에 현재 페이지에 대한 리소스가 포함되어 있습니다.
 
@@ -576,7 +576,7 @@ Sling 태그 라이브러리에는 유용한 Sling 기능이 포함되어 있습
 <sling:include replaceSelectors="content" />
 ```
 
-### &lt;sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineObjects {#sling-defineobjects}
 
 `<sling:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 규칙적으로 사용되는 스크립팅 개체를 노출합니다.
 
