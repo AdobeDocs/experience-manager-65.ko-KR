@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
+source-wordcount: '5796'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 *그림: [!DNL Experience Manager Assets] 검색 결과 인터페이스를 이해합니다.*
 
-**A.** 검색을 스마트 컬렉션으로 저장합니다. **B.** 검색 결과의 범위를 좁히기 위한 필터 또는 조건자입니다. **C.** 파일, 폴더 또는 둘 다를 표시합니다. **D.** Click Filters to open or close the left rail. **E.** 검색 위치가 DAM입니다. **F.** 사용자가 제공한 검색 키워드가 있는 Omnisearch 필드. **G.** 로드된 검색 결과를 선택합니다. **시간.** 총 검색 결과 중 표시된 검색 결과 수입니다. **I.** 검색을 닫습니다. **J.** 카드 보기와 목록 보기 간에 전환합니다.
+**A.** 검색을 스마트 컬렉션으로 저장합니다. **B.** 검색 결과의 범위를 좁히기 위한 필터 또는 조건자입니다. **C.** 파일, 폴더 또는 둘 다를 표시합니다. **D.** Click Filters to open or close the left rail. **E.** 검색 위치가 DAM입니다. 사용자가 제공한 검색 키워드가 있는 **F.** Omnisearch 필드. **G.** 로드된 검색 결과를 선택합니다. **시간.** 총 검색 결과 중 표시된 검색 결과 수입니다. **I.** 검색을 닫습니다. **J.** 카드 보기와 목록 보기 간에 전환합니다.
 
 ### 동적 검색 패싯 {#dynamicfacets}
 

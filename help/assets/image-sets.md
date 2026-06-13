@@ -1,6 +1,6 @@
 ---
 title: 이미지 세트
-description: Dynamic Media에서 이미지 세트로 작업하는 방법을 알아봅니다
+description: Dynamic Media에서 이미지 세트로 작업하는 방법에 대해 알아봅니다
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 이미지 세트는 사용자에게 썸네일 이미지를 선택하여 항목의 다양한 보기를 볼 수 있는 통합된 보기 환경을 제공합니다. 이미지 집합을 사용하면 항목의 대체 보기를 표시할 수 있으며 뷰어는 이미지를 면밀하게 검사하는 확대/축소 도구를 제공합니다.
 
-이미지 집합은 배너에 의해 `IMAGESET` 단어로 지정됩니다. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+이미지 집합은 배너에 의해 `IMAGESET` 단어로 지정됩니다. 또한 이미지 세트가 게시된 경우, **[!UICONTROL 지구본]** 아이콘으로 표시된 게시 날짜와 **[!UICONTROL 연필]** 아이콘으로 표시된 마지막 수정 날짜가 배너에 함께 표시됩니다.
 
 ![이미지 집합](assets/chlimage_1-339.png)
 
@@ -35,12 +35,12 @@ ht-degree: 5%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md)를 참조하십시오.
 
-이미지 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+이미지 집합을 생성할 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
-| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+| 세트당 중복 에셋 수 | 중복 요소 없음 | 20‡ |
+| 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
 
 ‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 1. [다중 보기를 위해 기본 소스 이미지를 업로드합니다](#uploading-assets-in-image-sets).
 
-   이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 차원에서 최소 2000픽셀인지 확인하십시오. Dynamic Media은 각각 최대 25MP(메가픽셀)의 이미지를 렌더링할 수 있습니다. 예를 들어 5000 x 5000MP 이미지나 다른 크기의 조합을 최대 25MP까지 사용할 수 있습니다.
+   이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 차원에서 최소 2000픽셀인지 확인하십시오. Dynamic Media는 이미지를 각각 최대 25MP(메가픽셀)까지 렌더링할 수 있습니다. 예를 들어 5000 x 5000MP 이미지나 다른 크기의 조합을 최대 25MP까지 사용할 수 있습니다.
 
    이미지 집합에서 지원하는 형식 목록은 [Dynamic Media - 지원되는 래스터 이미지 형식](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)을 참조하십시오.
 
@@ -67,7 +67,7 @@ ht-degree: 5%
    [일괄처리 집합 사전 설정](/help/assets/config-dms7.md)을 통해 이미지 집합을 자동으로 만들 수도 있습니다.
    >[!IMPORTANT]
    >
-   >배치 세트는 IPS(이미지 프로덕션 시스템)에 의해 에셋 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+   >배치 세트는 IPS(이미지 프로덕션 시스템)에 의해 자산 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
    [파일을 업로드하고 업로드할 이미지 집합 자산 준비](#uploading-assets-in-image-sets)를 참조하세요.
 
@@ -84,7 +84,7 @@ ht-degree: 5%
 
    이미지 세트를 선택하면 미리 볼 수 있습니다. 선택한 뷰어에서 이미지 세트를 검사할 수 있도록 축소판 아이콘을 선택합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [Publish 이미지 집합](/help/assets/publishing-dynamicmedia-assets.md).
+1. [이미지 집합을 게시](/help/assets/publishing-dynamicmedia-assets.md)합니다.
 
    이미지 집합을 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 만든 사용자 지정 뷰어 사전 설정을 [게시](/help/assets/managing-viewer-presets.md)해야 합니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
@@ -92,7 +92,7 @@ ht-degree: 5%
 
    Experience Manager Assets은 이미지 세트에 대한 URL 호출을 생성하고 이미지 세트를 게시한 후 활성화합니다. 에셋을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
-   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   이미지 세트를 선택하고 왼쪽 레일 드롭다운 메뉴에서 **[!UICONTROL 뷰어]**&#x200B;를 선택하세요.
 
    [웹 페이지에 이미지 집합 연결](/help/assets/linking-urls-to-yourwebapplication.md) 및 [비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하세요.
 
@@ -102,7 +102,7 @@ ht-degree: 5%
 
 ## 이미지 세트의 자산 업로드 {#uploading-assets-in-image-sets}
 
-이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. 가장 큰 차원에서 이미지가 2000픽셀 이상인지 확인하십시오. 이미지 세트는 다양한 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
+이미지 세트의 이미지를 업로드하여 시작합니다. 이미지를 선택할 때는 고객이 이미지 세트 뷰어에서 이미지를 확대할 수 있다는 것을 기억하십시오. 이미지는 가장 큰 변 기준으로 최소 2000픽셀이어야 합니다. 이미지 세트는 다양한 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
 [Assets의 다른 에셋을 업로드](/help/assets/manage-assets.md#uploading-assets)하는 것처럼 이미지 집합에 대한 이미지를 업로드할 수 있습니다.
 
@@ -140,11 +140,11 @@ ht-degree: 5%
 >
 >파일 이름에 &quot;,&quot;(쉼표)가 있는 자산은 이미지 세트가 지원되지 않습니다.
 
-이미지 집합을 만들 때 Adobe은 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
+이미지 집합을 생성할 때 Adobe에서는 다음 모범 사례를 권장하며 다음 제한을 적용합니다.
 
 | 제한 유형 | 모범 사례 | 제한 적용됨 |
 | --- | --- | --- |
-| 세트당 중복 에셋 수 | 중복 항목 없음 | 20‡ |
+| 세트당 중복 에셋 수 | 중복 요소 없음 | 20‡ |
 | 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
 
 ‡ 가장 좋은 방법은 집합에 중복 에셋이 없는 것입니다. 단일 자산에 대한 중복 횟수는 20회로 제한됩니다. 해당 에셋에 대해 다른 중복을 추가하면 해당 세트 내에서 요청에 오류가 발생하거나 중복을 무시합니다.
@@ -155,7 +155,7 @@ ht-degree: 5%
 
 1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 탐색]** > **[!UICONTROL Assets]**(으)로 이동합니다. 이미지 집합을 만들 위치로 이동한 다음 **[!UICONTROL 만들기]** > **[!UICONTROL 이미지 집합]**(으)로 이동하여 이미지 집합 편집기 페이지를 엽니다.
 
-   에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
+   You can also create the set from inside a folder that contains your assets.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -193,7 +193,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >이미지 세트를 만들 때 이미지 세트 썸네일을 변경하거나 Experience Manager이 이미지 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 이미지 집합 편집기 페이지의 제목 필드 위에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택한 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 Experience Manager이 이미지 집합에서 썸네일을 생성하도록 결정하는 경우 **[!UICONTROL 다음으로 전환]** > **[!UICONTROL 자동 썸네일]**&#x200B;을 선택합니다.
+   >이미지 세트를 만들 때 이미지 세트 썸네일을 변경하거나 Experience Manager에서 이미지 세트의 에셋에 따라 썸네일을 자동으로 선택하도록 할 수 있습니다. 썸네일을 선택하려면 이미지 집합 편집기 페이지의 제목 필드 위에서 **[!UICONTROL 썸네일 변경]**&#x200B;을 선택한 다음 이미지를 선택합니다(다른 폴더로 이동하여 이미지를 찾을 수도 있음). 썸네일을 선택한 다음 Experience Manager에서 이미지 집합에서 썸네일을 생성하도록 결정하는 경우 **[!UICONTROL 다음으로 전환]** > **[!UICONTROL 자동 썸네일]**&#x200B;을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 이미지 세트가 작성한 폴더에 나타납니다.
 
@@ -211,11 +211,11 @@ ht-degree: 5%
 
   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* From a member image of any set. **[!UICONTROL 집합]** 메뉴를 선택하여 자산이 구성원인 집합을 표시합니다.
+* 어떤 세트의 멤버 이미지에서도 시작할 수 있습니다. **[!UICONTROL 집합]** 메뉴를 선택하여 자산이 구성원인 집합을 표시합니다.
 
   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;을 확장하고 **[!UICONTROL 설정]**&#x200B;을 선택할 수 있습니다.
+* 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;를 확장하고 **[!UICONTROL 설정]**&#x200B;을 선택할 수 있습니다.
 
   UI에서 수동으로 만들었거나 일괄처리 집합 사전 설정을 통해 자동으로 만든 일치 세트가 검색 결과에 반환됩니다. 자동화된 세트의 경우 검색 쿼리는 &quot;포함&quot; 검색 기준을 사용하는 Experience Manager 검색과는 다른 &quot;다음으로 시작&quot; 검색 기준을 사용하여 수행됩니다. 필터를 **[!UICONTROL 집합]**(으)로 설정하는 것은 자동화된 집합을 검색하는 유일한 방법입니다.
 
@@ -248,10 +248,9 @@ ht-degree: 5%
    * 에셋 순서를 변경하려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 변경 아이콘을 선택합니다.).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 머리글을 선택합니다.
    * 자산을 추가하거나 기존 자산을 업데이트하려면 **[!UICONTROL 자산 추가]**&#x200B;를 선택하십시오. 자산으로 이동하여 선택한 다음 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
-
      >[!NOTE]
      >
-     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제해도 원래 에셋이 계속 표시됩니다.
+     >Experience Manager이 썸네일에 사용하는 이미지를 다른 이미지로 교체하여 삭제하면 원본 에셋이 계속 표시됩니다.
    * 자산을 삭제하려면 자산을 선택하고 **[!UICONTROL 자산 삭제]**&#x200B;를 선택합니다.
    * 사전 설정을 적용하려면 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 사전 설정]**&#x200B;을 선택한 다음 뷰어 사전 설정을 선택합니다.
    * 썸네일을 추가하거나 변경하려면 에셋 오른쪽 옆에 있는 썸네일 아이콘을 선택합니다. 새 썸네일 또는 견본 자산으로 이동하여 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
@@ -267,6 +266,6 @@ ht-degree: 5%
 
 [자산 미리 보기](/help/assets/previewing-assets.md)를 참조하세요.
 
-## Publish an 이미지 세트 {#publishing-image-sets}
+## 이미지 세트 게시 {#publishing-image-sets}
 
 [Assets 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.

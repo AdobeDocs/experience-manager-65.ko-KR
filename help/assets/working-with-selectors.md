@@ -28,7 +28,7 @@ ht-degree: 6%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-핫스팟이나 이미지 맵이 이동할 위치를 수동으로 입력하지 않고 선택하는 경우에는 선택기를 사용합니다. 사이트 선택기는 Experience Manager Sites 고객인 경우에만 작동합니다. 제품 선택기에도 Commerce Experience Manager이 필요합니다.
+핫스팟이나 이미지 맵이 이동할 위치를 수동으로 입력하지 않고 선택하는 경우에는 선택기를 사용합니다. 사이트 선택기는 Experience Manager Sites 고객인 경우에만 작동합니다. 제품 선택기에도 Experience Manager Commerce이 필요합니다.
 
 ## 제품 선택기 사용 {#selecting-products}
 
@@ -48,11 +48,11 @@ ht-degree: 6%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   **[!UICONTROL 찾아보기]**&#x200B;를 탭하고 다른 폴더로 이동하여 Experience Manager이 제품 데이터를 검색하는 위치를 변경합니다.
+   **[!UICONTROL 찾아보기]**&#x200B;를 탭하고 다른 폴더로 이동하여 Experience Manager에서 제품 데이터를 검색하는 위치를 변경합니다.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   **[!UICONTROL 정렬]**&#x200B;을(를) 선택하여 Experience Manager이 가장 최근에서 가장 오래된 순으로 정렬하는지 또는 가장 오래된 항목에서 가장 최근으로 정렬하는지 여부를 변경합니다.
+   **[!UICONTROL 정렬]**&#x200B;을(를) 선택하여 Experience Manager이 가장 최근에서 가장 오래된 순으로 정렬하는지 또는 가장 오래된 항목에서 가장 최근으로 정렬하는지를 변경합니다.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -103,7 +103,7 @@ ht-degree: 6%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   **[!UICONTROL 경로]** 필드의 다른 폴더로 이동하여 Experience Manager이 자산을 검색하는 위치를 변경합니다.
+   **[!UICONTROL 경로]** 필드의 다른 폴더로 이동하여 Experience Manager에서 자산을 검색하는 위치를 변경합니다.
 
    컬렉션 내의 자산만 검색하려면 **[!UICONTROL 컬렉션]**&#x200B;을(를) 선택하십시오.
 

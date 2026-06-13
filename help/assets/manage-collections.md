@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 14%
+source-wordcount: '2170'
+ht-degree: 15%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 14%
 참조된 에셋 또는 폴더 목록이 포함된 컬렉션에 에셋을 추가할 수 있습니다. 스마트 컬렉션은 검색 쿼리를 사용하여 자산을 채웁니다. 따라서 에셋 및 폴더에 대한 정적 참조를 에셋 및 폴더에 적용할 수 없습니다.
 
 1. [!DNL A]세트 사용자 인터페이스에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 컬렉션에 추가]** ![컬렉션에 추가](assets/do-not-localize/add-to-collection.png)를 클릭합니다.
-또는 에셋을 인터페이스의 **[!UICONTROL 컬렉션에 놓기]** 영역으로 드래그할 수 있습니다. 지역 레이블을 **[!UICONTROL 삭제]**(으)로 변경하면 자산을 추가합니다.
+또는 에셋을 인터페이스의 **[!UICONTROL 컬렉션 저장]** 영역으로 드래그할 수 있습니다. 지역 레이블이 **[!UICONTROL 삭제]**(으)로 변경되면 자산을 추가합니다.
 
 1. **[!UICONTROL 컬렉션에 추가]** 페이지에서 에셋을 추가할 컬렉션을 선택합니다.
 

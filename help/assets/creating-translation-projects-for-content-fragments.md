@@ -57,7 +57,7 @@ AEM을 사용하면 다양한 유형의 미디어 에셋 및 컬렉션을 포함
 
 혼합 미디어를 포함하는 콘텐츠 조각을 번역하려면 먼저 기본 번역 프레임워크를 편집하여 콘텐츠 조각과 연결된 인라인 에셋 및 컬렉션의 번역을 활성화하십시오.
 
-1. AEM 로고를 클릭하고 **[!UICONTROL 도구 > 배포 > Cloud Service]**(으)로 이동합니다.
+1. AEM 로고를 클릭하고 **[!UICONTROL 도구 > 배포 > 클라우드 서비스]**(으)로 이동합니다.
 1. **[!UICONTROL Adobe Marketing Cloud]**&#x200B;에서 **[!UICONTROL 번역 통합]**&#x200B;을 찾은 다음 **[!UICONTROL 구성 표시]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
