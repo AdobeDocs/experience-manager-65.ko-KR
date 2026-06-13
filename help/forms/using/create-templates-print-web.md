@@ -1,5 +1,5 @@
 ---
-title: '자습서: 템플릿 만들기'
+title: '튜토리얼: 템플릿 만들기'
 description: 대화형 통신을 위한 인쇄 및 웹 템플릿 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,26 +10,26 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
 
 ---
 
-# 자습서: 템플릿 만들기{#tutorial-create-templates}
+# 튜토리얼: 템플릿 만들기{#tutorial-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 이 자습서는 [첫 번째 대화형 통신 만들기](/help/forms/using/create-your-first-interactive-communication.md) 시리즈의 단계입니다. 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-대화형 통신을 만들려면 인쇄 및 웹 채널에 대해 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
+대화형 통신을 만들려면 AEM 서버에서 인쇄 및 웹 채널에 사용할 수 있는 템플릿이 있어야 합니다.
 
-인쇄 채널의 템플릿은 Forms Designer Adobe에서 만들어 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
+인쇄 채널의 템플릿은 Adobe Forms Designer에서 만들어 AEM 서버에 업로드합니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
-웹 채널에 대한 템플릿은 AEM에서 만들어집니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 이러한 템플릿을 만들고 활성화하면 대화형 통신을 만드는 동안 사용할 수 있습니다.
+웹 채널에 대한 템플릿은 AEM에서 만듭니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 이러한 템플릿을 만들고 활성화하면 대화형 통신을 만드는 동안 사용할 수 있습니다.
 
 이 자습서에서는 대화형 통신을 만드는 동안 사용할 수 있도록 인쇄 및 웹 채널용 템플릿을 만드는 단계를 안내합니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
-* Forms Designer Adobe을 사용하여 인쇄 채널용 XDP 템플릿 만들기
+* Adobe Forms Designer을 사용하여 인쇄 채널용 XDP 템플릿 만들기
 * AEM Forms 서버에 XDP 템플릿 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 

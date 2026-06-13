@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 적응형 양식 테마 만들기
+title: 사용자 정의 적응형 양식 테마 만들기
 description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 Adobe Experience Manager 클라이언트 라이브러리입니다. 사용자 지정 적응형 양식 테마를 만드는 방법을 알아봅니다.
 content-type: reference
 topic-tags: customization
@@ -10,12 +10,12 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
-# 사용자 지정 적응형 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
+# 사용자 정의 적응형 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음 절차에서는 노드, 등록 정보 및 폴더와 같은 AEM 객체에 대한 샘플 이름을 사용하여 설명합니다.
+>다음 절차에서는 노드, 속성 및 폴더와 같은 AEM 객체에 대한 샘플 이름을 사용하여 설명합니다.
 >
 >이름을 사용하여 이 단계를 수행하면 결과 템플릿이 다음 스냅샷과 유사하게 표시됩니다.
 
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    1. **선택 사항**: 사용자 지정 페이지에서 필요에 따라 header.jsp, footer.jsp 및 body.jsp를 재정의합니다.
 
-1. jcr:content가 이전 단계에서 만든 사용자 지정 페이지(예: `myAfCustomizations/myAfPages/forestPage)`)를 가리키는 사용자 지정 템플릿(예: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)을 만듭니다.
+1. jcr:content이(가) 이전 단계에서 만든 사용자 지정 페이지(예: `myAfCustomizations/myAfPages/forestPage)`)를 가리키는 사용자 지정 템플릿(예: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)을 만듭니다.
 
    ![CRX 저장소 스냅숏](assets/2-1.png)
 

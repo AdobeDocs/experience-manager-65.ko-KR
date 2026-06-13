@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식의 표
+title: 적응형 양식의 테이블
 description: AEM Forms의 표 구성 요소를 사용하여 모바일 레이아웃에 응답하는 적응형 양식에서 표를 만들 수 있으며, XDP 표 구성 요소를 사용할 수도 있습니다.
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 2%
+source-wordcount: '2541'
+ht-degree: 3%
 
 ---
 
-# 적응형 양식의 표{#tables-in-adaptive-forms}
+# 적응형 양식의 테이블{#tables-in-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 

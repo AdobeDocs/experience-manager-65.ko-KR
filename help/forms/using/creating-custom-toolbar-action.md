@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 도구 모음 작업 만들기
+title: 사용자 정의 도구 모음 작업 만들기
 description: 양식 개발자는 AEM Forms에서 적응형 양식에 대한 사용자 지정 도구 모음 작업을 만들 수 있습니다. 양식 작성자가 사용자 지정 작업을 사용하면 최종 사용자에게 더 많은 워크플로와 옵션을 제공할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,16 +11,16 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 2%
 
 ---
 
-# 사용자 지정 도구 모음 작업 만들기{#creating-a-custom-toolbar-action}
+# 사용자 정의 도구 모음 작업 만들기{#creating-a-custom-toolbar-action}
 
 ## 사전 요구 사항 {#prerequisite}
 
-사용자 지정 도구 모음 작업을 만들기 전에 [클라이언트측 CRXDE Lite 사용](/help/sites-developing/clientlibs.md) 및 [라이브러리를 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 숙지하십시오.
+사용자 지정 도구 모음 작업을 만들기 전에 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md) 및 [CRXDE Lite을 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 숙지하십시오.
 
 ## 동작이란? {#what-is-an-action-br}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 1. `reviewbeforesubmit` 노드에서 `cq:template` 노드를 선택하십시오. `guideNodeClass` 속성의 값이 `guideButton`인지 확인하고 그에 따라 `jcr:title` 속성을 변경합니다.
 1. `cq:Template` 노드의 형식 속성을 변경합니다. 현재 예제에서는 type 속성을 button으로 변경합니다.
 
-   유형 값이 생성된 구성 요소 HTML에서 CSS 클래스로 추가됩니다. 사용자는 해당 CSS 클래스를 사용하여 작업의 스타일을 지정할 수 있습니다. 모바일 장치와 데스크탑 장치 모두에 대한 기본 스타일은 버튼, 제출, 재설정 및 저장 유형 값에 제공됩니다.
+   유형 값이 구성 요소에 대해 생성된 HTML에서 CSS 클래스로 추가됩니다. 사용자는 해당 CSS 클래스를 사용하여 작업의 스타일을 지정할 수 있습니다. 모바일 장치와 데스크탑 장치 모두에 대한 기본 스타일은 버튼, 제출, 재설정 및 저장 유형 값에 제공됩니다.
 
 1. 적응형 양식 편집 도구 모음 대화 상자에서 사용자 지정 작업을 선택합니다. 패널의 도구 모음에 검토 버튼이 표시됩니다.
 
