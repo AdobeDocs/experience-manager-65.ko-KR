@@ -320,7 +320,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 >
 >Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항을 보려면, Adobe에서 클라우드 공급자와 직접 작업하는 것이 좋습니다. 또는 원하는 클라우드 환경에서 AEM 배포를 지원하는 Adobe 파트너 중 하나와 협력합니다. 선택한 클라우드 공급업체 또는 파트너는 고객의 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하도록 지원하는 아키텍처의 크기 조정 사양, 설계 및 구현을 담당합니다.
 >
->>[기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지도 참조하세요.
+>&#x200B;>[기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지도 참조하세요.
 
 ### 검색 {#search-features}
 
