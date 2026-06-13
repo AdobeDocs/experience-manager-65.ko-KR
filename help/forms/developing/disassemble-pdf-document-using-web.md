@@ -1,6 +1,6 @@
 ---
 title: 웹 서비스 API를 사용하여 PDF 문서 디스어셈블
-description: 어셈블러 서비스 API를 사용하여 PDF 문서를 디스어셈블합니다.
+description: 어셈블러 서비스 API를 사용하여 PDF 문서를 디스어셈블합니다
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 0%
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
    * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
 
-1. 분해하려면 PDF 문서를 참조합니다.
+1. 분해하려면 PDF 문서를 참조하십시오.
 
    * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 입력 PDF 문서를 저장하는 데 사용됩니다. 이 `BLOB` 개체는 `invokeOneDocument`에 인수로 전달됩니다.
    * 해당 생성자를 호출하고 입력 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
@@ -60,7 +60,7 @@ ht-degree: 0%
    * `MTOM` 필드에 바이트 배열의 내용을 할당하여 `BLOB` 개체를 채웁니다.
    * `MyMapOf_xsd_string_To_xsd_anyType` 개체를 만듭니다. 이 컬렉션 개체는 분해할 PDF을 저장하는 데 사용됩니다.
    * `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 만듭니다.
-   * `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `key` 필드에 키 이름을 나타내는 문자열 값을 지정하십시오. 이 값은 DDX 문서에 지정된 PDF 원본 요소의 값과 일치해야 합니다.
+   * `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `key` 필드에 키 이름을 나타내는 문자열 값을 지정하십시오. 이 값은 DDX 문서에 지정된 PDF 소스 요소의 값과 일치해야 합니다.
    * PDF 문서를 저장하는 `BLOB` 개체를 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체의 `value` 필드에 할당합니다.
    * `MyMapOf_xsd_string_To_xsd_anyType` 개체에 `MyMapOf_xsd_string_To_xsd_anyType_Item` 개체를 추가합니다. `MyMapOf_xsd_string_To_xsd_anyType` 개체의 `Add` 메서드를 호출하고 `MyMapOf_xsd_string_To_xsd_anyType` 개체를 전달하십시오.
 
@@ -74,14 +74,14 @@ ht-degree: 0%
    `AssemblerServiceClient` 개체의 `invokeDDX` 메서드를 호출하고 다음 값을 전달하십시오.
 
    * PDF 문서를 디스어셈블하는 DDX 문서를 나타내는 `BLOB` 개체입니다
-   * 디스어셈블할 PDF 문서가 포함된 `MyMapOf_xsd_string_To_xsd_anyType` 개체
+   * 디스어셈블할 PDF 문서가 포함된 `MyMapOf_xsd_string_To_xsd_anyType` 개체입니다.
    * 런타임 옵션을 지정하는 `AssemblerOptionSpec` 개체
 
    `invokeDDX` 메서드가 작업 결과와 발생한 모든 예외를 포함하는 `AssemblerResult` 개체를 반환합니다.
 
 1. 분해된 PDF 문서를 저장합니다.
 
-   새로 생성된 PDF 문서를 가져오려면 다음 작업을 수행합니다.
+   새로 만든 PDF 문서를 가져오려면 다음 작업을 수행하십시오.
 
    * 분해된 PDF 문서가 포함된 `Map` 개체인 `AssemblerResult` 개체의 `documents` 필드에 액세스합니다.
    * `Map` 개체를 반복하여 각 결과 문서를 가져옵니다. 그런 다음 해당 배열 멤버의 `value`을(를) `BLOB`(으)로 캐스팅합니다.

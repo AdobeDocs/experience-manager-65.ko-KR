@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
 # 문서 보안 | 사용자 데이터 처리 {#document-security-handling-user-data}
 
-AEM Forms document security를 사용하면 미리 정의된 보안 설정을 만들어 저장하고 문서에 적용할 수 있습니다. 권한이 부여된 사용자만 문서를 사용할 수 있도록 합니다. 정책을 사용하여 문서를 보호할 수 있습니다. 정책은 보안 설정 및 인가된 사용자 목록을 포함하는 정보의 모음입니다. 하나 이상의 문서에 정책을 적용할 수 있으며 AEM Forms JEE 사용자 관리에 추가된 사용자에게 권한을 부여합니다.
+AEM Forms document security를 사용하면 미리 정의된 보안 설정을 만들어 저장하고 문서에 적용할 수 있습니다. 권한이 부여된 사용자만 문서를 사용할 수 있도록 합니다. 정책을 사용하면 문서를 보호할 수 있습니다. 정책은 보안 설정 및 인가된 사용자 목록을 포함하는 정보의 모음입니다. 하나 이상의 문서에 정책을 적용할 수 있으며 AEM Forms JEE 사용자 관리에 추가된 사용자에게 권한을 부여합니다.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -99,7 +99,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 >[!NOTE]
 >
->다음 명령은 My SQL 및 IBM® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 `EdcPolicySetPrincipalEntity`을(를) `EdcPolicySetPrincipalEnt`(으)로 바꾸십시오.
+>다음 명령은 My SQL 및 ® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. Oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 `EdcPolicySetPrincipalEntity`을(를) `EdcPolicySetPrincipalEnt`(으)로 바꾸십시오.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -209,5 +209,5 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    >
    >관리자는 관리 콘솔을 사용하여 **[!UICONTROL 서비스 > 문서 보안 > 내 정책]**&#x200B;에서 다른 사용자의 개인 정책에서 사용자 데이터를 검색, 액세스 및 삭제할 수 있습니다.
 
-1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터 &#x200B;](/help/forms/using/user-management-handling-user-data.md)을(를) 처리하고 있습니다.
+1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 단계는 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
 1. AEM Forms 서버를 시작합니다.

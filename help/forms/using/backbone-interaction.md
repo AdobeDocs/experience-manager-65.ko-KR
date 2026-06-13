@@ -11,7 +11,7 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 백본 뷰에는 사용자 인터페이스 상호 작용으로 인해 발생할 수 있는 다양한 이벤트를 해당 핸들러와 매핑하는 이벤트 맵이 있습니다. 이 매핑은 구성 요소가 초기화되면 시작됩니다.
 
-뷰가 초기화되면 뷰는 해당 모델을 호출하여 서버에서 데이터를 가져옵니다. 뷰에 필요한 모든 데이터를 사용할 수 있으면 뷰는 HTML 템플릿에서 지정한 형식으로 데이터를 렌더링합니다. 다수의 뷰들이 통신을 위해 동일한 모델을 공유할 수 있다.
+뷰가 초기화되면 뷰는 해당 모델을 호출하여 서버에서 데이터를 가져옵니다. 보기에 필요한 모든 데이터를 사용할 수 있게 되면 보기는 HTML 템플릿에서 지정한 형식으로 데이터를 렌더링합니다. 다수의 뷰들이 통신을 위해 동일한 모델을 공유할 수 있다.
 
 ![AEM forms 백본 보기](do-not-localize/aem_forms_workflow.png)
 

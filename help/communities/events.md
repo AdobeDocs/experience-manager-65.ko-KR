@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 ## 개요 {#overview}
 
-구성원이 커뮤니티 기능과 상호 작용할 때 알림 또는 게임화(점수 및 배지)와 같은 비동기 리스너를 트리거할 수 있는 OSGi 이벤트가 전송됩니다.
+구성원이 커뮤니티 기능과 상호 작용할 때 알림이나 gamification(점수 및 배지)와 같은 비동기 리스너를 트리거할 수 있는 OSGi 이벤트가 전송됩니다.
 
 구성 요소의 [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 인스턴스가 `topic`에 대해 발생하는 이벤트를 `actions`(으)로 기록합니다. SocialEvent에는 작업과 연결된 `verb`을(를) 반환하는 메서드가 포함되어 있습니다. `actions`과(와) `verbs` 사이에 *n-1* 관계가 있습니다.
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 ## 주제 및 동사 {#topics-and-verbs}
 
-[달력 구성 요소](calendar-basics-for-developers.md)
+[일정 구성 요소](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **동사** | **설명** |
@@ -90,7 +90,7 @@ SocialEvent `topic` = com/adobe/cq/social/q
 | 선택 취소 | 멤버의 답변이 선택 해제되었습니다. |
 | 삭제 | 멤버의 Q&amp;A 질문 또는 답변이 삭제되었습니다. |
 
-[구성 요소 검토](reviews-basics.md)
+[리뷰 구성 요소](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **동사** | **설명** |
@@ -99,7 +99,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | 업데이트 | 구성원의 리뷰가 편집됨 |
 | 삭제 | 구성원의 검토 삭제됨 |
 
-[구성 요소 평가](rating-basics.md)
+[등급 구성 요소](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **동사** | **설명** |
@@ -242,7 +242,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 활동 스트림에 나타나는 것을 수정하기 위한 목적으로 이벤트를 들을 수 있다.
 
-다음 의사 코드 샘플은 활동 스트림에서 Comments 구성 요소에 대한 DELETE 이벤트를 제거합니다.
+다음 의사 코드 샘플은 활동 스트림에서 댓글 구성 요소에 대한 DELETE 이벤트를 제거합니다.
 
 ### EventListener용 의사 코드 {#pseudo-code-for-eventlistener}
 

@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 0%
+source-wordcount: '628'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ AEM Communities이 관계형 데이터베이스를 공통 저장소로 사용하
 
 ### MySQL 구성 {#mysql-configuration}
 
-MySQL 설치는 서로 다른 데이터베이스(스키마) 이름과 서로 다른 연결(server:port)을 사용하여 동일한 연결 풀 내의 지원 기능과 DSRP(공용 저장소) 간에 공유할 수 있습니다.
+MySQL 설치는 다른 데이터베이스(스키마) 이름과 다른 연결(서버:port)을 사용하여 동일한 연결 풀 내의 사용 기능 및 DSRP(공용 저장소) 간에 공유할 수 있습니다.
 
 설치 및 구성에 대한 자세한 내용은 [DSRP에 대한 MySQL 구성](dsrp-mysql.md)을 참조하십시오.
 
@@ -68,7 +68,7 @@ Oak 및 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의
 
      >[!NOTE]
      >
-     >이제 기본 저장소 구성이 conf 경로(`/conf/global/settings/community/srpc/defaultconfiguration`)에 저장됩니다.      `etc` 경로(`/etc/socialconfig/srpc/defaultconfiguration`) 대신 [마이그레이션 단계](#zerodt-migration-steps)를 따라 defaultsrp가 예상대로 작동하도록 하는 것이 좋습니다.
+     >이제 기본 저장소 구성이 `etc` 경로(`/etc/socialconfig/srpc/defaultconfiguration`) 대신 conf 경로(`/conf/global/settings/community/srpc/defaultconfiguration`)에 저장됩니다. [마이그레이션 단계](#zerodt-migration-steps)를 따라 defaultsrp가 예상대로 작동하도록 하는 것이 좋습니다.
 
   ![dsrp-config](assets/dsrp-config.png)
 
@@ -91,7 +91,7 @@ Oak 및 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의
 
    * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-     내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. 또는 외부 ZooKeeper를 사용하여 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행할 때 이 값을 ZooKeeper의 URI(예: *my.server.com:80*)로 설정하십시오.
+     내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. 또는 외부 ZooKeeper와 함께 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper의 URI(예: *my.server.com:80*)로 설정하십시오.
 
      *기본값*: *&lt;비어 있음>*
 
@@ -107,10 +107,10 @@ Oak 및 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의
 
 ### defaultsrp에 대한 다운타임 없는 마이그레이션 단계 {#zerodt-migration-steps}
 
-defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)이(가) 예상대로 작동하는지 확인하려면 다음 단계를 수행하십시오.
+defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)이(가) 예상대로 작동하는지 확인하려면 다음 단계를 수행합니다.
 
 1. 시스템 구성이 jsrp(기본값)로 대체되도록 경로 이름을 `/etc/socialconfig`에서 `/etc/socialconfig_old`(으)로 바꾸십시오.
-1. jsrp가 구성된 defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)(으)로 이동합니다. **[!UICONTROL 제출]** 단추를 클릭하여 `/conf/global/settings/community/srpc`에 새 기본 구성 노드를 만듭니다.
+1. jsrp가 구성된 defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)&#x200B;(으)로 이동합니다. **[!UICONTROL 제출]** 단추를 클릭하여 `/conf/global/settings/community/srpc`에 새 기본 구성 노드를 만듭니다.
 1. 만든 기본 구성 `/conf/global/settings/community/srpc/defaultconfiguration`을(를) 삭제합니다.
 1. 이전 단계에서 삭제된 노드(`/conf/global/settings/community/srpc/defaultconfiguration`) 대신 이전 구성 `/etc/socialconfig_old/srpc/defaultconfiguration`을(를) 복사합니다.
 1. 이전 `etc` 노드 `/etc/socialconfig_old`을(를) 삭제합니다.
