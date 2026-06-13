@@ -1,13 +1,13 @@
 ---
 title: 클라이언트측 장치 픽셀 비율이 있는 스마트 이미징 사용
-description: Dynamic Media을 사용하는 Adobe Experience Manager as a Cloud Service에서 스마트 이미징과 함께 클라이언트측 장치 픽셀 비율을 사용하는 방법에 대해 알아봅니다.
+description: Dynamic Media를 사용하여 Adobe Experience Manager as a Cloud Service에서 스마트 이미징과 함께 클라이언트측 장치 픽셀 비율을 사용하는 방법에 대해 알아봅니다.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe은 서비스 작업자가 즉시 초기화를 시작할 수 있도록 이 스크립트를 _이전_&#x200B;에 로드할 것을 권장합니다.
+   Adobe은 서비스 작업자가 즉시 초기화를 시작할 수 있도록 이 스크립트를 _이전_&#x200B;에 로드하는 것을 권장합니다.
 
 1. HTML 페이지의 본문 섹션 맨 위에 다음 DPR 이미지 태그 코드를 포함합니다.
 
@@ -43,7 +43,7 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   이 DPR 이미지 태그 코드 _이전_&#x200B;의 모든 정적 이미지를 HTML 페이지에 포함해야 합니다.
+   HTML 페이지의 모든 정적 이미지에 이 DPR 이미지 태그 코드 _이전_&#x200B;을(를) 포함해야 합니다.
 
 **클라이언트측 렌더링된 앱**
 
@@ -57,7 +57,7 @@ ht-degree: 0%
    여러 네트워크 요청을 방지하기 위해 두 DPR 스크립트를 하나로 결합할 수 있습니다.
 
    Adobe은 이러한 스크립트를 HTML 페이지의 다른 스크립트로 _이전_에 로드할 것을 권장합니다.
-또한 Adobe은 본문 요소보다는 diff HTML 태그에서 앱을 Bootstrap 하는 것을 권장합니다. 그 이유는 `dprImageInjection.js`이(가) HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입하기 때문입니다.
+Adobe은 또한 본문 요소보다는 diff HTML 태그 아래에 앱을 Bootstrap 하는 것을 권장합니다. 그 이유는 `dprImageInjection.js`이(가) HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입하기 때문입니다.
 
 ## JavaScript 파일 다운로드 {#client-side-dpr-script}
 

@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '508'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
    * SCF 재생 - 재생할 기본 페이지의 하위 항목.
 
-이 자습서에서는 [언어 사본](../../help/sites-administering/tc-prep.md)을 다루지 않습니다. 대신 루트 페이지가 HTML 헤더를 통해 사용자의 기본 언어 감지를 구현하고 해당 언어의 적절한 메인 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
+이 자습서에서는 [언어 사본](../../help/sites-administering/tc-prep.md)을 다루지 않습니다. 대신 루트 페이지가 HTML 헤더를 통해 사용자의 기본 언어 감지를 구현하고 해당 언어의 적절한 기본 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
 
 ## 첫 페이지 만들기 {#create-first-pages}
 

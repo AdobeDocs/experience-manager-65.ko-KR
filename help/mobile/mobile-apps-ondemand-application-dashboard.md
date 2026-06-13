@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '590'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 * 제목
 * 설명
 * 아이콘
-* 마지막 수정일
+* 마지막으로 수정됨
 * 마지막 수정자
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
@@ -70,7 +70,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 * **문서**
 * **컬렉션**
 
-각 타일은 오른쪽 아래 모서리의 생략 부호(...)를 클릭하여 더 자세한 목록 보기를 제공하도록 확장할 수 있습니다. 이러한 목록 보기는 속성 삭제, 업로드 및 편집과 같은 일반적인 Mobile On-Demand 작업에 액세스하는 대체 방법을 제공합니다.
+각 타일은 생략 부호(...)를 클릭하여 더 자세한 목록 보기를 제공하도록 확장할 수 있습니다. 오른쪽 하단에 있습니다. 이러한 목록 보기는 속성 삭제, 업로드 및 편집과 같은 일반적인 Mobile On-Demand 작업에 액세스하는 대체 방법을 제공합니다.
 
 ### 배너 관리 타일 {#the-manage-banners-tile}
 
@@ -100,7 +100,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 * **수정됨**: AEM에서 마지막으로 수정됨
 * **업로드됨**: AEM에서 마지막으로 업로드됨
 * **게시됨**: AEM에서 마지막으로 게시된 요청
-* **SOURCE**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
+* **SOURCE**: 원본(Mobile On-Demand에서 AEM 로컬 또는 원격)
 
 다음 이미지는 AEM Mobile 응용 프로그램 대시보드의 **문서 관리** 타일을 보여 줍니다.
 
@@ -119,7 +119,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 * **수정됨**: AEM에서 마지막으로 수정됨
 * **업로드됨**: AEM에서 마지막으로 업로드됨
 * **게시됨**: AEM에서 마지막으로 게시된 요청
-* **SOURCE**: 소스(AEM 로컬 또는 Mobile On-Demand의 원격)
+* **SOURCE**: 원본(Mobile On-Demand에서 AEM 로컬 또는 원격)
 
 다음 이미지는 AEM Mobile 응용 프로그램 대시보드의 **컬렉션 관리** 타일을 보여 줍니다.
 

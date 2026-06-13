@@ -1,6 +1,6 @@
 ---
 title: Adobe Mobile Analytics로 앱 성능 추적
-description: Adobe Mobile Services를 사용하면 모바일 앱에 대한 사용 현황, 앱 충돌, 장치 세부 정보 및 기타 많은 중요 지표를 추적하여 사용자가 모바일 앱을 어떻게 사용하고 있는지 파악할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
+description: Adobe Mobile Services를 사용하면 모바일 앱에 대한 사용 현황, 앱 충돌, 장치 세부 정보 및 기타 많은 중요 지표를 추적하여 사용자가 모바일 앱을 사용하는 방식에 대한 insight을 얻을 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1043'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,9 @@ AEM Mobile 앱이 마케팅 캠페인에 어떤 작업을 수행합니까?
 
 모바일 애플리케이션을 미세 조정하여 사용자에게 최상의 경험을 제공하려면 어떻게 해야 합니까?
 
-Adobe Mobile Services를 사용하면 모바일 앱에 대한 사용 현황, 앱 충돌, 장치 세부 정보 및 기타 많은 중요 지표를 추적하여 사용자가 모바일 앱을 어떻게 사용하고 있는지 파악할 수 있습니다.
+Adobe Mobile Services를 사용하면 모바일 앱에 대한 사용 현황, 앱 충돌, 장치 세부 정보 및 기타 많은 중요 지표를 추적하여 사용자가 모바일 앱을 사용하는 방식에 대한 insight을 얻을 수 있습니다.
 
-Adobe Experience Manager Mobile에서는 AEM Mobile 애플리케이션 대시보드에서 바로 모바일 분석에 대한 세부 정보를 볼 수 있습니다. 대시보드의 **모바일 지표 타일**&#x200B;은(는) 모바일 애플리케이션용 Real-Time Analytics을 제공하므로 개발자, 작성자 및 관리자가 모바일 앱의 상태를 한 눈에 볼 수 있습니다. 표지 아래에서 분석을 지원하는 것은 [모바일 분석 Adobe](https://business.adobe.com/kr/products/analytics/mobile-marketing.html) SDK입니다. Adobe Mobile Analytics SDK은 기본적으로 또는 웹 보기용 PhoneGap Bridge 플러그인을 통해 애플리케이션에 연결할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집 및 캐시되며, 이때 보고 및 분석을 위해 데이터가 Adobe Mobile Services 클라우드로 푸시됩니다.
+Adobe Experience Manager Mobile에서는 AEM Mobile 애플리케이션 대시보드에서 바로 모바일 분석에 대한 세부 정보를 볼 수 있습니다. 대시보드의 **모바일 지표 타일**&#x200B;은(는) 모바일 애플리케이션용 Real-Time Analytics을 제공하므로 개발자, 작성자 및 관리자가 모바일 앱의 상태를 한 눈에 볼 수 있습니다. 표지에서 분석을 지원하는 것은 [Adobe Mobile Analytics](https://business.adobe.com/kr/products/analytics/mobile-marketing.html) SDK입니다. Adobe Mobile Analytics SDK은 기본적으로 또는 웹 보기용 PhoneGap Bridge 플러그인을 통해 애플리케이션에 연결할 수 있습니다. 지표는 장치가 연결될 때까지 장치에서 수집 및 캐시되며, 이때 보고 및 분석을 위해 데이터가 Adobe Mobile Services Cloud로 푸시됩니다.
 
 Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
@@ -45,7 +45,7 @@ Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
 마지막으로 [AEM 관리자](#administrators)는 다음 방법을 배웁니다.
 
-* 클라우드 서비스를 만들어 Mobile Services Adobe
+* Adobe Mobile Services에 대한 클라우드 서비스 만들기
 * 모바일 서비스 구성 만들기 및 보고서 세트 연결
 * 모바일 서비스 구성을 모바일 앱에 연결
 * AEM 앱 명령 센터를 통해 지표 보기
@@ -57,7 +57,7 @@ Adobe Mobile Analytics SDK은 다음을 제공합니다.
 
 개발자는 [AEM Mobile 앱에 분석을 추가](/help/mobile/phonegap-add-analytics-to-apps.md)하여 사용자가 모바일 앱 콘텐츠에 어떻게 참여하는지를 추적, 보고 및 이해하고 시작, 앱 내 시간, 충돌률과 같은 주요 라이프사이클 지표를 측정할 책임이 있습니다.
 
-## 관리자용 - Mobile Services Adobe Cloud Service 구성 {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
+## 관리자용 - Adobe Mobile Services Cloud Service 구성 {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
 Adobe Mobile Services를 활용하려면 Adobe Analytics 계정 정보로 AEM Adobe Mobile Services Cloud Service을 구성해야 합니다. 앱 명령 센터에서는 클라우드 서비스를 만들고 모바일 앱과 연결할 수 있는 **지표 분석** 타일을 제공합니다.
 
@@ -69,7 +69,7 @@ Adobe Mobile Services를 활용하려면 Adobe Analytics 계정 정보로 AEM Ad
 
 Adobe Mobile Service 클라우드 서비스를 만들려면 서비스에 연결하는 단계와 구성에 할당할 보고 세트를 선택하는 단계가 있습니다.
 
-시작하려면 대시보드의 Cloud Service 관리 타일에서 &#39;+&#39; 버튼을 클릭하십시오.
+시작하려면 대시보드의 클라우드 서비스 관리 타일에서 &#39;+&#39; 버튼을 클릭하십시오.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 

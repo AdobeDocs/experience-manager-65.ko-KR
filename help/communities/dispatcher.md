@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 11%
+source-wordcount: '666'
+ht-degree: 12%
 
 ---
 
@@ -84,7 +84,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - Max Age**&#x20
 >[!NOTE]
 >
 >**속성 이름 예제**
->**/0050** 및 **/0170**&#x200B;과(와) 같이 표시된 모든 속성 이름은 기존 `dispatcher.any` 구성 파일에 맞게 조정해야 합니다.
+>표시된 모든 속성 이름(예: **/0050** 및 **/0170**)은 기존 `dispatcher.any` 구성 파일에 맞게 조정해야 합니다.
 >
 
 >[!CAUTION]

@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6444'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로 사용됨]** - 폴더만 제외하도록 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로 비활성화됨]** - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성이 폴더에 적용되지 않습니다.
-선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. *다음 세 가지 옵션은 이전에&#x200B;**[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택한 경우 사용할 수 없습니다.* [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/selective-publishing.md)도 참조하세요.
+선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. *이전에&#x200B;**[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택한 경우 이 세 가지 옵션을 사용할 수 없습니다.* 또한 [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 의 자세한 상태는 도구 설명을 통해 표시됩니다.
          * **[!UICONTROL 하위 폴더에 대해 사용]** - Dynamic Media와의 동기화를 위해 이 하위 트리의 모든 항목을 포함합니다. 폴더별 설정은 클라우드 구성의 기본 모드를 재정의합니다.
          * **[!UICONTROL 하위 폴더에 대해 사용 안 함]** - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 못하도록 제외합니다.
