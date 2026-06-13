@@ -372,7 +372,7 @@ AEM에서 아래 설명된 기준과 일치하지 않는 문제가 발생하는 
    * 이렇게 해도 문제가 해결되지 않고 `AsyncIndexUpdate` 예외가 지속되는 경우:
 
       1. 오류 인덱스를 [다시 인덱싱](#how-to-re-index)
-      1. [Adobe 지원](https://helpx.adobe.com/support.html) 티켓도 제출하세요.
+      1. [Adobe 지원](https://helpx.adobe.com/kr/support.html) 티켓도 제출하세요.
 
 ### 색인 재지정 방법 {#how-to-re-index}
 

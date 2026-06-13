@@ -304,7 +304,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 >[!CAUTION]
 >
->관계형 데이터베이스 마이크로 커널은 제한된 지원을 받고 있습니다. 이 유형의 마이크로 커널을 사용하기 전에 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)에 문의하십시오.
+>관계형 데이터베이스 마이크로 커널은 제한된 지원을 받고 있습니다. 이 유형의 마이크로 커널을 사용하기 전에 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)에 문의하십시오.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -316,7 +316,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 >[!NOTE]
 >
->Adobe에서는 Adobe Managed Services을 사용하여 Azure 또는 Amazon Web Services(AWS)에 AEM을 배포하는 옵션을 선택할 것을 권장합니다. 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영할 수 있는 경험과 기술을 보유한 팀의 혜택을 받을 수 있습니다. [Adobe Managed Services에 대한 추가 설명서](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)를 참조하세요.
+>Adobe에서는 Adobe Managed Services을 사용하여 Azure 또는 Amazon Web Services(AWS)에 AEM을 배포하는 옵션을 선택할 것을 권장합니다. 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영할 수 있는 경험과 기술을 보유한 팀의 혜택을 받을 수 있습니다. [Adobe Managed Services에 대한 추가 설명서](https://business.adobe.com/kr/products/experience-manager/managed-services.html?aemClk=t)를 참조하세요.
 >
 >Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항을 보려면, Adobe에서 클라우드 공급자와 직접 작업하는 것이 좋습니다. 또는 원하는 클라우드 환경에서 AEM 배포를 지원하는 Adobe 파트너 중 하나와 협력합니다. 선택한 클라우드 공급업체 또는 파트너는 고객의 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하도록 지원하는 아키텍처의 크기 조정 사양, 설계 및 구현을 담당합니다.
 >
