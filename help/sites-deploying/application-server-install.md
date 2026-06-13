@@ -1,5 +1,5 @@
 ---
-title: Application Server 설치
+title: 애플리케이션 서버 설치
 description: 애플리케이션 서버에 Adobe Experience Manager을 설치하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +11,24 @@ feature: Deploying
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
 
-# Application Server 설치{#application-server-install}
+# 애플리케이션 서버 설치{#application-server-install}
 
 >[!NOTE]
 >
->`JAR` 및 `WAR`은(는) AEM(Adobe Experience Manager)가 출시된 파일 유형입니다. 이러한 형식은 Adobe이 약속한 지원 수준에 맞게 품질 보증을 받고 있습니다.
+>`JAR` 및 `WAR`은(는) Adobe Experience Manager(AEM)가 출시된 파일 유형입니다. 이러한 포맷은 Adobe이 약속한 지원 수준에 맞게 품질 보증을 받고 있습니다.
 >
 
 이 섹션에서는 애플리케이션 서버와 함께 Adobe Experience Manager(AEM)를 설치하는 방법을 설명합니다. 개별 애플리케이션 서버에 대해 제공된 특정 지원 수준에 대한 자세한 내용은 [지원되는 플랫폼](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) 섹션을 참조하십시오.
 
 다음 애플리케이션 서버의 설치 단계가 설명되어 있습니다.
 
-* [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
+* [WebSphere® 8.5](#websphere)
+* [JBoss® EAP 6.3.0/6.4.0](#jboss-eap)
 * [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 
@@ -36,13 +36,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->WAR 배포에서 Dynamic Media을 사용하는 경우 [Dynamic Media 설명서](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하세요.
+>WAR 배포에서 Dynamic Media를 사용하는 경우 [Dynamic Media 설명서](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오.
 
 ## 일반 설명 {#general-description}
 
-### 응용 프로그램 서버에 AEM 설치 시 기본 동작 {#default-behaviour-when-installing-aem-in-an-application-server}
+### 애플리케이션 서버에 AEM 설치 시 기본 동작 {#default-behaviour-when-installing-aem-in-an-application-server}
 
-AEM은 단일 war 파일로 제공되며,
+AEM은 단일 war 파일로 제공됩니다.
 
 배포된 경우 기본적으로 다음 상황이 발생합니다.
 
@@ -61,7 +61,7 @@ AEM은 단일 war 파일로 제공되며,
 
 * 컨텍스트 루트: AEM war 파일 이름 바꾸기
 
-#### Publish 설치 {#publish-installation}
+#### 설치 게시 {#publish-installation}
 
 게시 인스턴스를 배포하려면 실행 모드를 게시로 설정해야 합니다.
 
@@ -106,7 +106,7 @@ AEM은 단일 war 파일로 제공되며,
    * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 보안 > 전역 보안으로 이동하여 관리 보안 활성화 확인란을 선택 취소하고 서버를 저장한 다음 다시 시작합니다.
 
 * `"JAVA_OPTS= -Xmx2048m"` 설정
-* 컨텍스트 루트 = / 를 사용하여 AEM을 설치하려면 기존 기본 웹 응용 프로그램의 컨텍스트 루트를 변경합니다.
+* 컨텍스트 루트 = /를 사용하여 AEM을 설치하려면 기존 기본 웹 애플리케이션의 컨텍스트 루트를 변경합니다.
 
 **AEM 웹 응용 프로그램 배포**
 

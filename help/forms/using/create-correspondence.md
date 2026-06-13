@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3902'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ ht-degree: 0%
 
    ![편지 미리 보기](assets/8_previewcustomdatafile.png)
 
-1. 편지 HTML 미리 보기(모바일 양식 미리 보기)는 기본적으로 데이터 탭에 초점이 맞춰져 열립니다.
+1. 편지 HTML 미리 보기(모바일 양식 미리 보기)가 기본적으로 데이터 탭에 초점이 맞춰져 열립니다.
 
-   모바일 양식과 모바일 양식에서 지원하는 기능에 대한 자세한 내용은 [모바일 Forms과 PDF forms 간의 기능 차이점](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)을 참조하세요.
+   모바일 양식 및 모바일 양식에서 지원하는 기능에 대한 자세한 내용은 [Mobile Forms과 PDF forms의 기능 차이점](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)을 참조하세요.
 
    탭에는 데이터, 컨텐트 및 첨부 파일의 세 가지가 있습니다. 데이터 요소(자리 표시자 변수 및 레이아웃 필드)가 없는 경우 문자가 콘텐츠 탭이 표시된 로 직접 열립니다. 첨부 파일 탭은 첨부 파일이 있거나 라이브러리 액세스가 활성화된 경우에만 사용할 수 있습니다.
 
    >[!NOTE]
    >
-   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오. <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오. <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### 데이터 입력 {#enterdata}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   컨텐츠 또는 데이터 탭에서 HTML 편지 미리 보기의 왼쪽 상단에 있는 선택한 모듈 강조 표시(![highlightselectedmoduleseincontentccr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 선택할 때 컨텐츠/데이터 모듈로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
+   컨텐츠 또는 데이터 탭에서 HTML 편지 미리 보기의 왼쪽 상단에 있는 선택한 모듈 강조 표시(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드가 선택되면 컨텐츠/데이터 모듈로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
    응답 만들기 사용자 인터페이스의 다양한 모듈에서 사용할 수 있는 작업에 대한 자세한 내용은 [응답 만들기 사용자 인터페이스에서 사용할 수 있는 작업 및 정보](#actions-and-info-available-in-the-create-correspondence-content-tab)를 참조하십시오.
 
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 1. 콘텐츠 탭에서 필요에 따라 콘텐츠 모듈을 편집합니다. 컨텐츠 계층의 관련 컨텐츠 모듈에 초점을 맞추려면 편지 미리 보기에서 관련 행이나 단락을 선택하거나 컨텐츠 계층에서 컨텐츠 모듈을 직접 선택할 수 있습니다.
 
-   예를 들어 아래 그래픽에서 &quot;To allow us to access...&quot; 줄을 선택하고 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
+   예를 들어 &quot;To allow us to access...&quot;라는 줄은 을(를) 아래 그래픽에서 선택하고 을(를) 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
 
    콘텐츠의 선택한 모듈 강조 표시(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 탭할 때 콘텐츠 탭에서 콘텐츠 모듈을 강조 표시하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
@@ -237,7 +237,7 @@ ht-degree: 0%
 
 1. 편지에 페이지 나누기를 추가하려면 페이지 나누기를 삽입할 위치를 선택하고 다음 페이지 나누기 전 또는 다음 페이지 나누기를 선택합니다(![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   명시적 페이지 나누기 자리 표시자가 편지에 삽입됩니다. 명시적 페이지 나누기가 문자에 미치는 영향을 보려면 병합된 PDF 미리 보기를 참조하십시오.
+   명시적 페이지 나누기 자리 표시자가 편지에 삽입됩니다. 명시적 페이지 나누기가 편지에 미치는 영향을 보려면 병합된 PDF 미리 보기를 참조하십시오.
 
    >[!NOTE]
    >
@@ -251,15 +251,15 @@ ht-degree: 0%
 
    편지 인스턴스 ID가 포함된 초안 편지 이름 대화 상자가 나타납니다. 선택적으로 이 ID를 편집할 수 있습니다. 편지 ID를 메모한 다음 **완료**&#x200B;를 선택합니다. 나중에 이 ID를 사용하여 [초안 편지를 다시 로드합니다](submit-letter-topostprocess.md#reloaddraft).
 
-1. 편지를 전송할 때 정확한 레이아웃과 페이지 나누기를 사용하여 편지가 병합된 PDF으로 미리 보려면 미리 보기(![미리 보기](assets/preview.png))를 선택하십시오.
+1. 편지를 제출할 때 정확한 레이아웃과 페이지 나누기를 사용하여 편지가 병합된 PDF으로 미리 보려면 미리 보기(![미리 보기](assets/preview.png))를 선택하십시오.
 
-   편지는 병합된 PDF으로 나타납니다. 병합된 PDF은 올바른 글자 모양, 줄바꿈 및 레이아웃으로 제출될 때 글자를 정확하게 표현한 것입니다.
+   편지는 병합된 PDF으로 나타납니다. 병합된 PDF은 올바른 글자 글꼴, 줄바꿈 및 레이아웃으로 제출되므로 글자가 정확하게 표현됩니다.
 
    >[!NOTE]
    >
-   >Mozilla Firefox 및 HTML 렌디션 유형을 사용하는 경우 편지를 병합된 PDF으로 미리 보려면 Acrobat 플러그인이 아닌 기본 브라우저 플러그인을 사용해야 합니다. 기본 브라우저 플러그인을 선택하려면 Mozilla Firefox의 설정으로 이동하고 컨텐츠 유형 PDF에 대해 Firefox에서 미리 보기 를 선택합니다.
+   >Mozilla Firefox 및 HTML 렌디션 유형을 사용하는 경우 문자를 병합된 PDF으로 미리 보려면 Acrobat 플러그인이 아닌 기본 브라우저 플러그인을 사용해야 합니다. 기본 브라우저 플러그인을 선택하려면 Mozilla Firefox의 설정으로 이동하고 컨텐츠 유형 PDF에 대해 Firefox에서 미리 보기 를 선택합니다.
 
-1. 병합된 PDF 미리 보기가 만족스럽다면 **제출**&#x200B;을 선택하여 편지를 제출하세요. 또는 편지를 변경하려면 **미리 보기 종료**&#x200B;를 선택하여 편지의 서신 UI 미리 보기 만들기 로 돌아가 편지를 변경합니다. 제출을 선택할 때 Publish 인스턴스에서 편지 인스턴스 관리 구성이 활성화되어 있으면 제출 편지 인스턴스가 생성됩니다.
+1. 병합된 PDF 미리 보기가 만족스럽다면 **제출**&#x200B;을 선택하여 편지를 제출하세요. 또는 편지를 변경하려면 **미리 보기 종료**&#x200B;를 선택하여 편지의 서신 UI 미리 보기 만들기 로 돌아가 편지를 변경합니다. 제출을 선택할 때 게시 인스턴스에서 편지 인스턴스 관리 구성을 사용할 수 있는 경우 제출 편지 인스턴스가 생성됩니다.
 
    자세한 내용은 초안 저장 및 편지 인스턴스 제출의 초안 인스턴스 를 참조하십시오.
 
@@ -267,7 +267,7 @@ ht-degree: 0%
 
    필요한 변경 작업을 수행한 후 HTML5 미리 보기에서 문자를 제출하거나 미리 보기를 다시 선택하여 병합된 PDF 출력을 검토할 수 있습니다.
 
-   HTML5 양식과 PDF forms 간의 차이점에 대한 자세한 내용은 [HTML5 양식과 PDF forms 간의 기능 차이점](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)을 참조하세요.
+   HTML5 양식과 PDF forms의 차이점에 대한 자세한 내용은 [HTML5 양식과 PDF forms의 기능 차이점](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)을 참조하세요.
 
 ## 초안 저장 및 편지 인스턴스 제출 {#savingdrafts}
 
@@ -275,9 +275,9 @@ ht-degree: 0%
 
 저장할 수 있는 문자 인스턴스에는 초안 인스턴스와 제출 인스턴스의 두 가지 유형이 있습니다.
 
-* **초안 인스턴스**: 초안 인스턴스는 미리 보고 있는 편지의 현재 상태를 캡처합니다. 초안 인스턴스를 저장하려면 먼저 편지와 그 편지가 참조하는 모든 에셋이 게시됨 상태인지 확인하십시오. 편지 게시에 대한 자세한 내용은 [에셋 Publish](../../forms/using/publishing-unpublishing-forms.md#publishanasset)를 참조하세요. 편지를 게시하면 해당 시점에 편지 버전, 해당 종속 에셋 및 데이터가 생성되므로 초안으로 저장하려면 먼저 편지를 Publish 해야 합니다. 편지의 게시된 버전은 사용자 또는 다른 사용자가 편집할 수 없으며 나중에 게시된 버전과 예기치 않은 불일치 없이 복원할 수 있습니다. 나중에 이 인스턴스로 돌아가서 이전 위치에서 계속 진행할 수 있습니다.
+* **초안 인스턴스**: 초안 인스턴스는 미리 보고 있는 편지의 현재 상태를 캡처합니다. 초안 인스턴스를 저장하려면 먼저 편지와 그 편지가 참조하는 모든 에셋이 게시됨 상태인지 확인하십시오. 편지 게시에 대한 자세한 내용은 [자산 게시](../../forms/using/publishing-unpublishing-forms.md#publishanasset)를 참조하십시오. 편지를 게시하면 해당 시점에 편지 버전, 해당 종속 에셋 및 데이터가 만들어지므로 초안으로 저장하려면 먼저 편지를 게시해야 합니다. 편지의 게시된 버전은 사용자 또는 다른 사용자가 편집할 수 없으며 나중에 게시된 버전과 예기치 않은 불일치 없이 복원할 수 있습니다. 나중에 이 인스턴스로 돌아가서 이전 위치에서 계속 진행할 수 있습니다.
 
-* **인스턴스 제출**: 제출 인스턴스는 제출되는 편지 상태를 캡처합니다. 제출 인스턴스는 사용자가 서신 작성 사용자 인터페이스에서 입력한 데이터와 함께 게시물이 처리된 후 편지 인스턴스의 PDF 상태를 저장합니다.
+* **인스턴스 제출**: 제출 인스턴스는 제출되는 편지 상태를 캡처합니다. 제출 인스턴스는 사용자가 응답 만들기 사용자 인터페이스에서 입력한 데이터와 함께 게시물이 처리된 후 편지 인스턴스의 PDF 상태를 저장합니다.
 
 게시 인스턴스에서 편지를 보고 있는 경우에만 이러한 인스턴스를 저장할 수 있습니다. 기본적으로 인스턴스 저장은 해제되어 있습니다. 편지 인스턴스 저장을 활성화하려면 다음 단계를 수행하십시오.
 
@@ -309,7 +309,7 @@ ht-degree: 0%
 
 1. 저장을 클릭합니다.
 
-![Publish 인스턴스](/help/forms/using/assets/correspondencemanagement.png)
+![인스턴스 게시](/help/forms/using/assets/correspondencemanagement.png)
 
 편지 인스턴스 저장이 활성화되면 편지 인스턴스를 저장할 위치를 선택할 수 있습니다. 편지 인스턴스를 저장하는 방법에는 로컬 저장 또는 원격 저장의 두 가지가 있습니다.
 
@@ -319,7 +319,7 @@ ht-degree: 0%
 
 ### 원격 저장 {#remote-save}
 
-이 옵션은 일반적으로 회사 방화벽 외부에 있는 게시 인스턴스에 사용자 데이터를 저장할 우려가 있는 사용자를 위해 제공됩니다. 원격 저장이 켜지면 편지 인스턴스가 게시 인스턴스에 저장되지 않지만 LiveCycle 클라이언트 SDK 구성을 통해 지정된 처리 작성자에 원격으로 저장됩니다.
+이 옵션은 일반적으로 회사 방화벽 외부에 있는 게시 인스턴스에 사용자 데이터를 저장할 우려가 있는 사용자를 위해 제공됩니다. 원격 저장이 켜지면 편지 인스턴스는 게시 인스턴스에 저장되지 않지만 LiveCycle Client SDK 구성을 통해 지정된 처리 작성자에게는 원격으로 저장됩니다.
 
 #### 원격 저장 사용 {#enable-remote-save}
 
@@ -333,9 +333,9 @@ ht-degree: 0%
 
    ![Adobe Experience Manager 웹 콘솔 구성](assets/2configmanager.png)
 
-1. 이 페이지에서 Adobe LiveCycle 클라이언트 SDK 구성을 찾아 클릭하여 확장합니다.
+1. 이 페이지에서 Adobe LiveCycle Client SDK 구성 을 찾아 클릭하여 확장합니다.
 
-1. 처리 서버 URL에서 LiveCycle 서버의 이름을 입력하고 로그인 정보를 제공한 다음 **저장**&#x200B;을 클릭합니다.
+1. 처리 서버 URL에서 LiveCycle 서버 이름을 입력하고 로그인 정보를 입력한 다음 **저장**&#x200B;을 클릭합니다.
 
    ![LiveCycle 서버의 이름 및 로그인 정보를 입력하십시오](assets/3configmanager.png)
 
@@ -343,42 +343,42 @@ ht-degree: 0%
 
 #### 첨부 파일 게재 {#attachmentdelivery}
 
-* 편지 첨부는 편지 제출 후 생성되는 PDF에서 사후 프로세스를 사용할 수 있습니다.
+* 편지 첨부 파일은 편지 제출 후 생성되는 PDF에서 사후 프로세스를 사용할 수 있습니다.
 * 서버측 API를 사용하여 편지를 대화형 또는 비대화형 PDF으로 렌더링하면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
 * 편지 템플릿과 연결된 사후 프로세스가 서신 작성 사용자 인터페이스를 사용하여 서신 제출 또는 서신 완료 작업의 일부로 로드되면 첨부 파일이 AttachmentDocs 매개 변수의 List&lt;com.adobe.idp.Document>로 전달됩니다.
-* 전자 메일 및 인쇄와 같은 기본 제공 게재 메커니즘에서도 생성된 서신의 PDF과 함께 첨부 파일을 게재합니다.
+* 이메일 및 인쇄와 같은 기본 제공 게재 메커니즘은 생성된 서신의 PDF과 함께 첨부 파일도 전달합니다.
 
 ## 편지 미리 보기의 렌디션 모드: 모바일 양식 미리 보기 및 PDF 미리 보기 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms 서신 관리에서 서신 만들기 UI에 편지를 HTML으로 표시합니다. 하지만 서신 관리에서는 여전히 HTML 미리 보기 대신 PDF 미리 보기로 되돌릴 수 있습니다. 미리 보기의 HTML 모드와 PDF 모드 간 전환에 대한 자세한 내용은 [편지의 렌디션 모드 변경](#changerenditionmode)을 참조하십시오.
+AEM Forms 서신 관리에서는 서신 만들기 UI에서 문자를 HTML으로 표시합니다. 하지만 서신 관리에서는 여전히 HTML 미리 보기 대신 PDF 미리 보기로 되돌릴 수 있습니다. HTML과 PDF 미리 보기 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오.
 
-다음은 HTML 및 PDF 미리 보기에서 사용할 수 있는 이점 및 기능입니다.
+다음은 HTML 및 PDF 미리보기에서 사용할 수 있는 이점 및 기능입니다.
 
 **모바일 양식/HTML 미리 보기의 이점**
 
 * **해당 데이터 필드를 강조 표시할 데이터 필드 값을 선택하십시오**: 서신 만들기 사용자 인터페이스에서 편지의 데이터 필드 값을 선택하여 데이터 탭에서 해당 데이터 필드를 강조 표시할 수 있습니다. 자세한 내용은 [데이터 입력](#enterdata)을 참조하세요.
 
-* **브라우저 지원**: 브라우저는 NPAPI에 대한 지원을 단계적으로 철회할 수 있으며, 이는 편지의 PDF 미리 보기에 영향을 줍니다. 편지의 HTML/모바일 양식 미리 보기는 이 영향을 받지 않습니다.
+* **브라우저 지원**: 브라우저에서 NPAPI에 대한 지원이 점진적으로 취소되어 PDF 편지 미리 보기에 영향을 줍니다. 편지의 HTML/모바일 양식 미리 보기는 이 영향을 받지 않습니다.
 * **편지에서 편집 가능한 콘텐츠를 강조 표시**: 서신 만들기 사용자 인터페이스에서 [편집 가능한 콘텐츠 강조 표시]를 선택하여 편지에 있는 모든 편집 가능한 콘텐츠를 회색으로 강조 표시할 수 있습니다. 자세한 내용은 [콘텐츠 관리](#managecontent)를 참조하십시오.
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **PDF 미리 보기의 이점**
 
 * **페이지 나누기**: PDF 미리 보기에서 편지의 페이지 나누기가 출력에 미치는 영향을 정확히 볼 수 있습니다.
-* **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 나타나는 정확한 서식과 모양을 볼 수 있습니다.
+* **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 표시될 때 편지의 정확한 서식과 모양을 볼 수 있습니다.
 
-PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/ko_KR/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
 
-HTML5 양식의 스크립팅 지원에 대한 자세한 내용은 [HTML5 양식에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
+HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
 
 ### 편지의 렌디션 모드 변경 {#changerenditionmode}
 
-기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한은 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제를 생성할 수 있습니다.
+기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한으로 인해 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제가 발생할 수 있습니다.
 
-편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 편지의 미리보기 모드를 변경하려면 다음 단계를 완료하십시오.
 
 1. `https://[system]:'port'/system/console/configMgr`(으)로 이동한 다음 필요한 경우 관리자로 로그인합니다.
-1. **[!UICONTROL 서신 관리 구성]** > **[!UICONTROL 렌디션 유형]**(으)로 이동한 다음 **렌디션 HTML**(기본값) 또는 **렌디션 PDF**&#x200B;을 선택합니다.
+1. **[!UICONTROL 서신 관리 구성]** > **[!UICONTROL 렌디션 유형]**(으)로 이동한 다음 **HTML 렌디션**(기본값) 또는 **PDF 렌디션**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.

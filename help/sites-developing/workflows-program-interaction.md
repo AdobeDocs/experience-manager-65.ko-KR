@@ -1,5 +1,5 @@
 ---
-title: 프로그래밍 방식으로 워크플로우와 상호 작용
+title: 프로그래밍 방식으로 워크플로와 상호 작용
 description: Adobe Experience Manager에서 프로그래밍 방식으로 워크플로우와 상호 작용하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
 
-# 프로그래밍 방식으로 워크플로우와 상호 작용{#interacting-with-workflows-programmatically}
+# 프로그래밍 방식으로 워크플로와 상호 작용{#interacting-with-workflows-programmatically}
 
 [워크플로 사용자 지정 및 확장](/help/sites-developing/workflows-customizing-extending.md)할 때 워크플로 개체에 액세스할 수 있습니다.
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## ECMA 스크립트에서 워크플로우 개체 가져오기 {#obtaining-workflow-objects-in-ecma-scripts}
 
-[스크립트 찾기](/help/sites-developing/the-basics.md#locating-the-script)에 설명된 대로 AEM(Apache Sling을 통해)은 서버측 ECMA 스크립트를 실행하는 ECMA 스크립트 엔진을 제공합니다. [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) 클래스는 스크립트에서 `sling` 변수로 즉시 사용할 수 있습니다.
+[스크립트 찾기](/help/sites-developing/the-basics.md#locating-the-script)에 설명된 대로 AEM(Apache Sling을 통해)는 서버측 ECMA 스크립트를 실행하는 ECMA 스크립트 엔진을 제공합니다. [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) 클래스는 스크립트에서 `sling` 변수로 즉시 사용할 수 있습니다.
 
 `ScriptHelper` 클래스는 `WorkflowSession` 개체를 얻는 데 사용할 수 있는 `SlingHttpServletRequest`에 대한 액세스를 제공합니다. 예:
 
@@ -131,7 +131,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>인스턴스의 상태를 변경합니다. 새 상태가 매개 변수 <code>state</code>(으)로 전송되며 <code>RUNNING</code>, <code>SUSPENDED</code> 또는 <code>ABORTED</code> 값 중 하나를 가져야 합니다.<br /> 새 상태에 연결할 수 없는 경우(예: 종료된 인스턴스를 일시 중단하는 경우) <code>409</code>(<code>CONFLICT</code>) 응답이 클라이언트로 다시 전송됩니다.</td>
+   <td>인스턴스의 상태를 변경합니다. 새 상태가 매개 변수 <code>state</code>(으)로 전송되며 <code>RUNNING</code>, <code>SUSPENDED</code> 또는 <code>ABORTED</code> 중 하나의 값을 가져야 합니다.<br /> 새 상태에 연결할 수 없는 경우(예: 종료된 인스턴스를 일시 중단하는 경우) <code>409</code>(<code>CONFLICT</code>) 응답이 클라이언트로 다시 전송됩니다.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>새 워크플로우 모델을 만듭니다. 매개 변수 <code>title</code>을(를) 보내면 지정된 제목으로 새 모델이 만들어집니다. JSON 모델 정의를 매개 변수 <code>model</code>(으)로 첨부하면 제공된 정의에 따라 새 워크플로 모델이 만들어집니다.<br /> 새 워크플로 모델 리소스의 URL이 포함된 위치 헤더로 <code>201</code> 응답(<code>CREATED</code>)이 다시 전송됩니다.<br /> 모델 정의가 <code>modelfile</code>(이)라는 파일 매개 변수로 첨부된 경우에도 마찬가지입니다.<br /> <code>model</code> 및 <code>modelfile</code> 매개 변수의 경우 모두 serialization 형식을 정의하려면 <code>type</code>이라는 추가 매개 변수가 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 표준 JSON 직렬 변환기는 워크플로우 엔진과 함께 제공됩니다. 유형은 JSON입니다. 형식의 예는 아래를 참조하십시오.</td>
+   <td>새 워크플로우 모델을 만듭니다. 매개 변수 <code>title</code>을(를) 보내면 지정된 제목으로 새 모델이 만들어집니다. JSON 모델 정의를 매개 변수 <code>model</code>(으)로 첨부하면 제공된 정의에 따라 새 워크플로 모델이 만들어집니다.<br /> 새 워크플로우 모델 리소스의 URL이 포함된 위치 헤더로 <code>201</code> 응답(<code>CREATED</code>)이 다시 전송됩니다.<br /> 모델 정의가 <code>modelfile</code>.<br />(이)라는 파일 매개 변수로 첨부된 경우에도 마찬가지입니다. <code>model</code> 및 <code>modelfile</code> 매개 변수의 경우 모두 serialization 형식을 정의하려면 <code>type</code>이라는 추가 매개 변수가 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 표준 JSON 직렬 변환기는 워크플로우 엔진과 함께 제공됩니다. 유형은 JSON입니다. 형식의 예는 아래를 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -239,11 +239,11 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>모델의 <code>HEAD</code> 버전을 업데이트합니다(새 버전을 만듭니다).<br /> 새 버전의 모델에 대한 전체 모델 정의를 <code>model</code> 매개 변수로 추가해야 합니다. 또한 새 모델을 만들 때와 마찬가지로 <code>type</code> 매개 변수가 필요하며 값은 <code>JSON</code>.<br />이어야 합니다. </td>
+   <td>모델의 <code>HEAD</code> 버전을 업데이트합니다(새 버전을 만듭니다).<br /> 새 버전의 모델에 대한 전체 모델 정의를 <code>model</code>(이)라는 매개 변수로 추가해야 합니다. 또한 새 모델을 만들 때와 마찬가지로 <code>type</code> 매개 변수가 필요하며 값은 <code>JSON</code>.<br />이어야 합니다. </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>PUT과 동일한 비헤이비어. AEM 위젯이 <code>PUT</code> 작업을 지원하지 않으므로 필요합니다.</td>
+   <td>PUT과 동일한 동작. AEM 위젯은 <code>PUT</code> 작업을 지원하지 않으므로 필요합니다.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +358,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>URI가 매개 변수 <code>item</code>(으)로 전송되는 작업 항목을 완료하고 단계를 거치는 경우 해당 워크플로 인스턴스를 <code>route</code> 또는 <code>backroute</code> 매개 변수로 정의된 다음 노드로 진행합니다.<br /> 매개 변수 <code>delegatee</code>이(가) 전송되면 <code>item</code> 매개 변수로 식별된 작업 항목이 지정된 참가자에게 위임됩니다.</td>
+   <td>URI가 <code>item</code> 매개 변수로 전송된 작업 항목을 완료하고 해당 워크플로 인스턴스를 <code>route</code> 또는 <code>backroute</code> 매개 변수로 정의되는 다음 노드로 진행합니다. 단계를 다시 시작하는 경우.<br /> <code>delegatee</code> 매개 변수를 전송하면 <code>item</code> 매개 변수로 식별된 작업 항목이 지정된 참가자에게 위임됩니다.</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +377,7 @@ REST API에서는 다음 작업이 지원됩니다.
 
 ### ID를 사용하여 실행 중인 모든 워크플로우 목록을 가져오는 방법 {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-실행 중인 모든 워크플로 목록을 가져오려면 GET으로 다음을 수행하십시오.
+실행 중인 모든 워크플로우 목록을 가져오려면 다음을 수행합니다.
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -425,7 +425,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### 모든 워크플로우 모델을 나열하는 방법 {#how-to-list-all-workflow-models}
 
-사용 가능한 모든 워크플로 모델 목록을 가져오려면 GET을 수행하여 다음을 수행합니다.
+사용 가능한 모든 워크플로우 모델 목록을 가져오려면 다음을 수행합니다.
 
 `http://localhost:4502/etc/workflow/models.json`
 
@@ -566,7 +566,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 이 매개 변수는 관련 결과에서 시스템 워크플로를 제외하도록 `true`(으)로 설정할 수 있습니다.
 
-[OSGi 구성을 업데이트할 수 있습니다](/help/sites-deploying/configuring-osgi.md) **Adobe Granite 워크플로 PayloadMapCache**. 이 워크플로는 시스템 워크플로로 간주할 워크플로 `Models`을(를) 지정합니다. 기본(런타임) 워크플로우 모델은 다음과 같습니다.
+[OSGi 구성을 업데이트할 수 있습니다](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache**&#x200B;에서 시스템 워크플로로 간주할 워크플로 `Models`을(를) 지정합니다. 기본(런타임) 워크플로우 모델은 다음과 같습니다.
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
