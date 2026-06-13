@@ -273,7 +273,7 @@ JSON을 비활성화하지 마십시오.
 
 >[!CAUTION]
 >
->**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html)를 참조하세요.
+>**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >
