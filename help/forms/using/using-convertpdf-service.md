@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-PDF 변환 서비스는 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환합니다. PDF 문서를 PostScript으로 변환하면 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
+PDF 변환 서비스는 PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄를 하는 데 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
 
 PDF 변환 서비스를 사용하여 다음을 수행할 수 있습니다.
 
@@ -36,7 +36,7 @@ ConvertPDF 서비스는 다음 두 가지 API를 제공합니다.
 
 * **[toPS](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: PDF 문서를 PostScript 파일로 변환합니다.
 
-* **[toImage](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG 2000, PNG 및 TIFF 입니다.
+* **[toImage](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2000, PNG 및 TIFF입니다.
 
 ### JSP 또는 서블릿에서 toPS API 사용 {#using-tops-api-with-a-jsp-or-servlets}
 
@@ -129,7 +129,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### AEM 워크플로에서 ConvertPDF 서비스 사용 {#using-convertpdf-service-with-aem-workflows}
+### AEM 워크플로우에서 ConvertPDF 서비스 사용 {#using-convertpdf-service-with-aem-workflows}
 
 워크플로우에서 ConvertPDF 서비스를 실행하는 것은 JSP/Servlet에서 실행하는 것과 비슷합니다.
 
