@@ -232,7 +232,7 @@ ht-degree: 3%
 
 1. 다음으로 이동합니다.
 
-   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
@@ -486,7 +486,7 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 양식 전환 도구와 올바로 통신하도록 서비스를 구성하려면 사용자는 Identity Management System(IMS) 서비스를 구성하여 Adobe I/O에 등록할 수 있어야 합니다.
 
-1. https://<aemserver>:<port> > Adobe Experience로 이동합니다.
+1. https://&lt;aemserver>:&lt;port> > Adobe Experience로 이동합니다.
 왼쪽 상단의 관리자 > 도구 > 보안 > Adobe IMS 구성.
 
 1. 만들기를 클릭합니다.
