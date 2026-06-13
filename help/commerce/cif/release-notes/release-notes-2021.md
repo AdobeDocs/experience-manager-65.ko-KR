@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 14%
+source-wordcount: '1512'
+ht-degree: 17%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 14%
    * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
    * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
-* 사전 정의된 또는 즉시 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe AI 제품 권장 사항, Adobe Commerce AI 기반](https://business.adobe.com/ai/adobe-genai.html) 지원
+* 사전 정의된 또는 즉시 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe AI에서 제공하는 Adobe Commerce AI 제품 권장 사항](https://business.adobe.com/ai/adobe-genai.html) 지원
 
 ## 릴리스 날짜: 2021년 6월
 
@@ -180,7 +180,7 @@ ht-degree: 14%
 
 * 카테고리 UID 지원 - 카테고리 ID에 문자열을 사용하는 시스템에 대한 서드파티 상거래 통합 잠금 해제
 
-* PWA Studio용 AEM 확장 포함. 통합 예
+* PWA Studio용 AEM 확장(통합 예 포함)
 
 * WCM 탐색 핵심 구성 요소를 확장하는 새로운 CIF 탐색 핵심 구성 요소
 
