@@ -30,7 +30,7 @@ ht-degree: 1%
 
 외부 브라우저 인증을 구성하기 전에 다음 요구 사항이 충족되는지 확인하십시오.
 
-* 서비스 팩 6.5.25.0이(가) 배포된 JEE의 AEM Forms 6.5 또는 지원되는 애플리케이션 서버(JBoss, WebLogic 또는 WebSphere)에 해당 JEE 핫픽스 패치가 설치된 서비스 팩 6.5.24.0. AEM Forms JEE 핫픽스2 6.5.24.0](#software-distribution-links)에 대한 [소프트웨어 배포 링크를 참조하십시오.
+* 서비스 팩 6.5.25.0이(가) 배포된 JEE의 AEM Forms 6.5 또는 지원되는 애플리케이션 서버(JBoss, WebLogic 또는 WebSphere)에 해당 JEE 핫픽스 패치가 설치된 서비스 팩 6.5.24.0. AEM Forms JEE 핫픽스2 6.5.24.0[&#128279;](#software-distribution-links)에 대한 소프트웨어 배포 링크를 참조하십시오.
 * 확장 인증(타사 인증)이 이미 활성화되었으며 IDP에서 작동합니다. [서버 구성 설정](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) 및 [확장 인증 공급자 추가](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider)를 참조하십시오.
 * 최신 업데이트를 사용하여 클라이언트 Windows PC에 설치된 Adobe Acrobat Pro 또는 Adobe Acrobat Reader(64비트)
 
