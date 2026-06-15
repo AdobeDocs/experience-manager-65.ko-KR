@@ -9,7 +9,7 @@ role: Admin,User
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
-source-git-commit: 652162941dd716ae797ce50709e91757dad99054
+source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 6%
@@ -42,3 +42,4 @@ JEE의 AEM 6.5.18.0 Forms에서는 전체 설치 관리자 및 패치 설치 관
    * [JBoss EAP 클러스터를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
 
 LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms에서 AEM 6.5 Forms으로 직접 업그레이드할 수 없습니다. 하나 이상의 LiveCycle 또는 AEM Forms 버전으로 중간 업그레이드를 수행한 다음 AEM 6.5 Forms으로 업그레이드할 수 있습니다. 중간 버전 목록 및 해당 업그레이드 지침은 [업그레이드 경로 선택](upgrade.md)을 참조하세요.
+
