@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 98a772829d3568a5826ea9e3ae65760f1587040f
+source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,13 @@ ht-degree: 1%
 
 외부 브라우저 인증을 구성하기 전에 다음 요구 사항이 충족되는지 확인하십시오.
 
-* 서비스 팩 6.5.25.0이(가) 배포된 JEE의 AEM Forms 6.5 또는 지원되는 애플리케이션 서버(JBoss, WebLogic 또는 WebSphere)에 해당 JEE 핫픽스 패치가 설치된 서비스 팩 6.5.24.0. AEM Forms JEE 핫픽스2 6.5.24.0[&#128279;](#software-distribution-links)에 대한 소프트웨어 배포 링크를 참조하십시오.
+* 서비스 팩 6.5.25.0이(가) 배포된 JEE의 AEM Forms 6.5 또는 지원되는 애플리케이션 서버(JBoss, WebLogic 또는 WebSphere)에 해당 JEE 핫픽스 패치가 설치된 서비스 팩 6.5.24.0. AEM Forms JEE 핫픽스2 6.5.24.0](#software-distribution-links)에 대한 [소프트웨어 배포 링크를 참조하십시오.
 * 확장 인증(타사 인증)이 이미 활성화되었으며 IDP에서 작동합니다. [서버 구성 설정](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) 및 [확장 인증 공급자 추가](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider)를 참조하십시오.
 * 최신 업데이트를 사용하여 클라이언트 Windows PC에 설치된 Adobe Acrobat Pro 또는 Adobe Acrobat Reader(64비트)
+
+>[!NOTE]
+>
+> 외부 브라우저 인증에는 클라이언트에서 지원되는 버전의 Adobe Acrobat 또는 Adobe Acrobat Reader이 필요합니다. 버전 세부 사항 및 업데이트는 [Acrobat 릴리스 노트(2026년 3월 연속 추적)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)를 참조하십시오.
 
 ### AEM Forms JEE 핫픽스2 6.5.24.0에 대한 소프트웨어 배포 링크 {#software-distribution-links}
 
@@ -115,7 +119,7 @@ To disable external browser authentication on specific client machines (forcing 
 ### 시스템 브라우저 대신 포함된 브라우저가 열립니다 {#embedded-browser-opens-instead-of-system-browser}
 
 * 서버에 외부 브라우저 인증이 활성화되어 있는지 확인합니다. [외부 브라우저 인증 사용](#enable-external-browser-authentication)을 참조하세요.
-* Acrobat 또는 Reader 버전에서 이 기능을 지원하는지 확인합니다.
+* Acrobat 또는 Reader 버전에서 이 기능을 지원하는지 확인합니다. [Acrobat](#acrobat)을(를) 참조하세요.
 
 ### 브라우저에서 인증이 성공하지만 문서가 잠금 해제되지 않음 {#authentication-succeeds-but-document-does-not-unlock}
 
