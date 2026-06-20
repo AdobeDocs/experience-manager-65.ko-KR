@@ -1549,7 +1549,7 @@ ht-degree: 95%
          + [다음 릴리스...](/help/sites-developing/the-next-release.md)
          + [체크리스트](/help/sites-developing/checklists.md)
          + [Tough Day](/help/sites-developing/tough-day.md)
-         + [UI 테스트](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/hobbes.html)
+         + [UI 테스트](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/hobbes.html?lang=ko)
       + 모범 사례 {#bestpractices}
          + [모범 사례 개요](/help/sites-developing/best-practices.md)
          + [AEM 개발 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=ko)
