@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 6af329d2faa778c3cdbb83854fb36066242e14d5
+source-git-commit: ec3941675081255879065c3be9d5af77474b2072
 workflow-type: tm+mt
-source-wordcount: '8279'
-ht-degree: 96%
+source-wordcount: '8286'
+ht-degree: 95%
 
 ---
 
@@ -564,6 +564,7 @@ ht-degree: 96%
          + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_kr)
          + [WebSphere 클러스터에서 JEE의 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65_kr)
          + [WebLogic 클러스터에서 JEE의 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65_kr)
+         + [AEM Forms JEE의 직렬화 문제 완화](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
       + AEM Forms 구성 {#configure-aem-forms}
          + [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
          + [적응형 양식 캐시 구성](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -1434,13 +1435,13 @@ ht-degree: 96%
             + [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-managing.html?lang=ko)
             + [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations.html?lang=ko)
             + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-markdown.html?lang=ko)
-            + [관련 콘텐츠 사용](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [관련 콘텐츠 사용](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-assoc-content.html?lang=ko)
             + [메타데이터 - 조각 속성](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-metadata.html?lang=ko)
             + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-structure-tree.html?lang=ko)
             + [미리보기 - JSON 표현](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
          + 배달 API{#delivery-api}
             + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html?lang=ko)
-            + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
+            + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=ko)
             + [컨텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html?lang=ko)
             + [GraphQL 엔드포인트 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
             + [GraphiQL IDE 사용](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html?lang=ko)
@@ -1469,7 +1470,7 @@ ht-degree: 96%
          + [RemotePage 구성 요소](/help/sites-developing/spa-remote-page.md)
          + [AEM에서 외부 SPA 편집](/help/sites-developing/spa-edit-external.md)
          + [SPA의 복합 구성 요소](/help/sites-developing/spa-composite-component.md)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html?lang=ko)
          + [실행 통합](/help/sites-developing/spa-launch.md)
          + [SPA 참조 자료](/help/sites-developing/spa-reference-materials.md)
       + 개발 도구 {#devtools}
