@@ -7,9 +7,9 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 힘든 하루 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot;는 AEM 인스턴스의 제한을 강조할 수 있는 애플리케이션입니다. 기본 테스트 도구 모음을 사용하여 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다. 응용 프로그램 프레젠테이션을 위해 [이 녹화](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=ko)를 볼 수 있습니다.
+&quot;Tough Day 2&quot;는 AEM 인스턴스의 제한을 강조할 수 있는 애플리케이션입니다. 기본 테스트 도구 모음을 사용하여 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다.
 
 >[!CAUTION]
 >
