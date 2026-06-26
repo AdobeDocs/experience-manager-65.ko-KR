@@ -8,9 +8,9 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7800'
+source-wordcount: '7949'
 ht-degree: 2%
 
 ---
@@ -807,6 +807,20 @@ CSRF 필터에 의해 적합한 서버 요청이 차단되는 경우 다음 중 
 * 거부된 요청에 레퍼러 헤더가 없는 경우 레퍼러 헤더를 포함하도록 클라이언트 애플리케이션을 수정합니다.
 * 클라이언트에서 브라우저에서 작업할 수 있는 경우 해당 배포 모델을 시도하십시오.
 * 마지막 수단으로 리소스를 허용 URI 목록에 추가할 수 있습니다. 이 설정은 권장되지 않습니다.
+
+### 직렬화 문제 완화 {#mitigating-serialization-issues}
+
+Java deserialization 공격은 신뢰할 수 없는 데이터를 deserialize하는 애플리케이션을 활용하여 서버에서 원격 코드 실행을 허용할 수 있습니다. AEM Forms on JEE에는 개체를 deserialize하기 전에 Preflight 검사를 수행하는 deserialization 방화벽이 포함되어 있습니다. 이 검사는 방화벽 스타일 허용 목록에 추가하다, 차단 목록에 추가하다 또는 둘 다에 대해 클래스 이름을 테스트하며 serialization 공격을 통해 악용할 수 있는 것으로 알려진 클래스를 거부합니다.
+
+**JDK 11 이상**&#x200B;을 실행하는 설치에서 이 보호는 플랫폼의 기본 직렬화 필터링에 의해 활성화되며 수동 단계는 필요하지 않습니다. **JDK 8**&#x200B;을 실행하는 설치에서는 네이티브 직렬화 필터링이 효과적이지 않으므로 시작할 때 NotSoSerial 에이전트를 JVM에 명시적으로 연결해야 합니다.
+
+역직렬화 필터 상태 검사로 이동하여 보호가 활성화되어 있는지 확인합니다.
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+상태 검사가 JDK 8 인스턴스에서 실패하는 것으로 보고하면 [AEM Forms JEE의 직렬화 문제 완화](/help/forms/using/mitigating-serialization-issues-forms-jee.md)에 설명된 대로 에이전트를 연결하고 구성합니다.
 
 ## 보안 네트워크 구성 {#secure-network-configuration}
 
