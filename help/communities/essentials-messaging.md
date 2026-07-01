@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 2%
 * [메시징 구성](/help/communities/configure-messaging.md)
 * SCF 구성 요소용 [메시징 클라이언트 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html)
 * 서비스에 대한 [메시징 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html)
-* [메시징 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [메시징 엔드포인트](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [서버측 사용자 지정](/help/communities/server-customize.md)
 
 >[!CAUTION]

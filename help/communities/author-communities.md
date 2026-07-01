@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## 소개 {#introduction}
 
-AEM Communities에 라이센스가 부여되면 커뮤니티 사이트를 만들 수 있을 뿐만 아니라 표준 AEM 작성 도구를 사용하여 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
+AEM Communities 라이선스가 부여되면 커뮤니티 사이트를 만들 수 있을 뿐만 아니라 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
 
 커뮤니티 사이트 만들기에 대한 자세한 내용은 다음을 참조하십시오.
 

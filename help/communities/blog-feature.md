@@ -1,6 +1,6 @@
 ---
 title: 블로그 기능
-description: 블로그 기능이 저널링 형식으로 커뮤니티 정보 제공을 지원하는 방법에 대해 알아봅니다. 승인된 사용자는 Publish 환경에서 항목을 작성합니다.
+description: 블로그 기능이 저널링 형식으로 커뮤니티 정보 제공을 지원하는 방법에 대해 알아봅니다. 승인된 사용자는 게시 환경에서 항목을 작성합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-AEM Communities의 블로그 기능은 작성 활동에서 Publish 환경에서 발생하는 진정한 커뮤니티 활동으로 변환되었습니다.
+AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 발생하는 실제 커뮤니티 활동으로 변환되었습니다.
 
-블로그 기능은 저널링 형식으로 커뮤니티 정보 제공을 지원합니다. 블로그 항목은 승인된 구성원(등록된, 로그인한 사용자)이 Publish 환경에서 만듭니다.
+블로그 기능은 저널링 형식으로 커뮤니티 정보 제공을 지원합니다. 블로그 항목은 승인된 구성원(등록된, 로그인한 사용자)에 의해 게시 환경에서 만들어집니다.
 
 블로그 기능은 를 제공합니다.
 
-* Publish 측 블로그 문서 및 댓글 작성
+* 블로그 기사 및 댓글의 게시측 작성
 * 리치 텍스트 편집
 * 인라인 이미지(끌어서 놓기 지원)
 * 포함된 소셜 네트워킹 콘텐츠([임베드 지원](/help/communities/blog-developer-basics.md#allowing-rich-media))
@@ -290,9 +290,9 @@ AEM Communities의 블로그 기능은 작성 활동에서 Publish 환경에서 
 
 블로그 문서를 만들 때 다음을 수행할 수 있습니다.
 
-1. Publish 즉시
-1. Publish a Draft
-1. 예약된 날짜 및 시간의 Publish
+1. 즉시 게시
+1. 초안 게시
+1. 예약된 날짜 및 시간에 게시
 
 블로그 문서는 게시할 때 작성할 수 있는 구성원에게 적절한 탭(게시됨, 초안 또는 예약됨) 아래에 표시됩니다.
 
@@ -309,8 +309,8 @@ AEM Communities의 블로그 기능은 작성 활동에서 Publish 환경에서 
 특히 다음과 같은 경우가 있습니다.
 
 * 블로그 문서 만들기
-* 다른 구성원을 대신하여 새 블로그 문서 Post
-* Post 블로그 기사에 대한 댓글
+* 다른 구성원을 대신하여 새 블로그 게시물
+* 블로그 기사에 댓글 게시
 * 자신의 블로그 기사 또는 댓글 편집
 * 자신의 블로그 기사 또는 댓글 삭제
 * 다른 사람의 블로그 기사 또는 댓글에 플래그 지정

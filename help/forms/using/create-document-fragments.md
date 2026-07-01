@@ -1,5 +1,5 @@
 ---
-title: '자습서: 문서 조각 만들기'
+title: '튜토리얼: 문서 조각 만들기'
 description: 대화형 커뮤니케이션용 문서 조각 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 3%
 
 ---
 
-# 자습서: 문서 조각 만들기{#tutorial-create-document-fragments}
+# 튜토리얼: 문서 조각 만들기{#tutorial-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-이 자습서는 [첫 번째 대화형 통신 만들기](/help/forms/using/create-your-first-interactive-communication.md) 시리즈의 단계입니다. Adobe은 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하기 위해 연대순으로 시리즈를 따르는 것을 권장합니다.
+이 자습서는 [첫 번째 대화형 통신 만들기](/help/forms/using/create-your-first-interactive-communication.md) 시리즈의 단계입니다. Adobe에서는 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
 문서 조각은 대화형 통신을 구성하는 데 사용되는 서신의 재사용 가능한 구성 요소입니다. 문서 조각은 다음과 같은 유형입니다.
 
@@ -164,7 +164,7 @@ BOM 상세내역 문서 조각에는 다음 필드가 포함됩니다.
    ![고객 세부 정보 정적 텍스트](assets/customer_details_static_text_new.png)
 
 1. **모바일 번호** 필드 옆에 커서를 놓고 **고객** > **mobileenum** 속성을 두 번 클릭합니다.
-1. **대체 연락처 번호** 필드 옆에 커서를 놓고 **&#x200B; 고객** > **대체 모바일 번호** 속성을 두 번 클릭합니다.
+1. **대체 연락처 번호** 필드 옆에 커서를 놓고 **고객** > **대체 모바일 번호** 속성을 두 번 클릭합니다.
 1. **관계 번호** 필드 옆에 커서를 놓고 **customer** > **relationshipnumber** 속성을 두 번 클릭합니다.
 1. **변수** 탭을 선택하고 **공급 위치** 필드 옆에 커서를 놓고 **Placesupply** 변수를 두 번 클릭합니다.
 1. **상태 코드** 필드 옆에 커서를 놓고 **상태 코드** 변수를 두 번 클릭합니다.

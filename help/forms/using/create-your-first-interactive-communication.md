@@ -10,18 +10,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 0%
+source-wordcount: '1046'
+ht-degree: 1%
 
 ---
 
-# 자습서: 첫 번째 대화형 통신 만들기 {#tutorial-create-your-first-interactive-communication}
+# 튜토리얼: 첫 번째 인터랙티브 커뮤니케이션 만들기 {#tutorial-create-your-first-interactive-communication}
 
 첫 번째 대화형 커뮤니케이션을 만드는 방법을 알아봅니다.
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다. 대화형 커뮤니케이션은 인쇄와 웹의 두 가지 채널을 사용하여 제공할 수 있습니다. 인쇄 채널은 PDF 및 종이 문서 통신을 만드는 데 사용되며 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
+Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다. 대화형 커뮤니케이션은 인쇄와 웹의 두 가지 채널을 사용하여 제공할 수 있습니다. 인쇄 채널은 PDF 및 종이 문서를 만드는 데 사용되며 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
 
 이 자습서에서는 대화형 통신을 만드는 통합 프레임워크를 제공합니다. 자습서는 사용 사례와 여러 안내서로 구성됩니다. 각 안내서는 대화형 커뮤니케이션을 만들기 위한 빌딩 블록으로 사용되는 기능을 만드는 데 도움이 됩니다.
 
@@ -32,7 +32,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
 * 빌딩 블록 작성(양식 데이터 모델, 문서 단편 및 템플릿)
-* 대화형 통신 만들기
+* 인터랙티브 커뮤니케이션 만들기
 * 대화형 통신 테스트 및 게시
 
 ## 사용 사례 {#use-case}
@@ -41,7 +41,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 통신사는 매달 요금을 이메일로 고객들에게 보낸다. 그 청구서는 쌍방향 통신이다. 이메일에는 다음이 포함됩니다.
 
-* 암호로 보호된 PDF. 이 자습서에서는 인쇄 채널이라고도 합니다. 고객 세부 정보, 청구서 세부 정보, 요금 요약, 청구서 결제 시 편리한 모드, 사용 세부 정보 등이 포함됩니다.
+* 암호로 보호된 PDF(이 자습서에서는 인쇄 채널이라고 함). 고객 세부 정보, 청구서 세부 정보, 요금 요약, 청구서 결제 시 편리한 모드, 사용 세부 정보 등이 포함됩니다.
 * 이 자습서에서 웹 채널이라고 하는 BOM의 웹 버전에 대한 링크입니다. 청구서의 웹 버전은 PDF 버전에서 다루는 세부 정보 외에도 Adobe Target을 기반으로 하는 사용 세부 정보 및 개인화된 오퍼를 그래픽으로 표시합니다. 웹 버전에는 온라인 결제 양식도 포함되어 있습니다. IC를 벗어나지 않고도 온라인 결제가 가능하도록 돕는다.
 * 온라인 스토리지, 음악 구독 및 온디맨드 비디오 구독과 같은 부가 가치 서비스에 대한 링크.
 
@@ -68,7 +68,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 조건부 데이터
 * 이미지
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## 2단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 샘플 데이터 편집
 * 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스 테스트
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## 3단계: 문서 단편 만들기 {#step-create-document-fragments}
 
@@ -101,25 +101,25 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 변수 만들기
 * 규칙 만들기 및 적용
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## 4단계: 템플릿 만들기 {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-대화형 통신을 만들려면 인쇄 및 웹 채널에 대해 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
+대화형 통신을 만들려면 AEM 서버에서 인쇄 및 웹 채널에 사용할 수 있는 템플릿이 있어야 합니다.
 
-인쇄 채널의 템플릿은 Forms Designer Adobe에서 만들어 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
+인쇄 채널의 템플릿은 Adobe Forms Designer에서 만들어 AEM 서버에 업로드합니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
-웹 채널에 대한 템플릿은 AEM에서 만들어집니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 이러한 템플릿을 만들고 활성화하면 대화형 통신을 만드는 동안 사용할 수 있습니다.
+웹 채널에 대한 템플릿은 AEM에서 만듭니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 이러한 템플릿을 만들고 활성화하면 대화형 통신을 만드는 동안 사용할 수 있습니다.
 
 **목표:**
 
-* Forms Designer Adobe을 사용하여 인쇄 채널용 XDP 템플릿 만들기
+* Adobe Forms Designer을 사용하여 인쇄 채널용 XDP 템플릿 만들기
 * AEM Forms 서버에 XDP 템플릿 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## 5단계: 대화형 통신 만들기 {#step-create-an-interactive-communication}
 
@@ -138,9 +138,9 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 대화형 통신의 웹 버전에서 차트 만들기
 * 대화형 통신의 웹 버전에서 하이퍼링크 만들기
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## 6단계: 대화형 통신 Publish {#step-publish-your-interactive-communication}
+## 6단계: 대화형 통신 게시 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
