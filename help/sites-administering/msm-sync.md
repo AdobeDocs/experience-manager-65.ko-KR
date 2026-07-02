@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 26%
+source-wordcount: '2681'
+ht-degree: 27%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 26%
 
 ### 설치된 롤아웃 구성 {#installed-rollout-configurations}
 
-다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 이 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
+다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 테이블에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -170,7 +170,7 @@ ht-degree: 26%
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>라이브 카피에서 이 동기화 작업은 링크 등의 참조를 업데이트합니다.<br /> Live Copy 페이지에서 블루프린트 내의 리소스를 가리키는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스를 구성</a>하여 제외할 노드 형식, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
+   <td><p>이 동기화 작업은 라이브 카피에서 링크 등의 참조를 업데이트합니다.<br /> 라이브 카피에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스를 구성</a>하여 제외할 노드 형식, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -229,8 +229,7 @@ ht-degree: 26%
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.
-    <ul>
+   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.<ul>
      <li>카탈로그(또는 카탈로그 섹션) 생성 또는 롤아웃</li>
      <li>사용자가 제품 구성 요소에 대한 동기화 상속을 복원합니다.</li>
     </ul> </td>
@@ -267,9 +266,9 @@ ht-degree: 26%
 
 특정 노드 유형 및 속성에 영향을 주지 않도록 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다. 예를 들어 AEM의 내부 기능과 관련된 많은 속성 및 하위 노드를 라이브 카피에 포함할 수 없습니다. 페이지 사용자와 관련된 콘텐츠만 복사해야 합니다.
 
-AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
-다음 표에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
+다음 테이블에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 테이블은 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
 | 동기화 작업 | 웹 콘솔의 서비스 이름 | 서비스 PID |
 |---|---|---|
@@ -279,7 +278,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 | PageMoveAction | CQ MSM 페이지 이동 작업 | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
 | referencesUpdate | CQ MSM 참조 업데이트 작업 | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
-다음 표는 구성할 수 있는 속성을 설명합니다.
+다음 테이블은 구성할 수 있는 속성을 설명합니다.
 
 <table>
  <tbody>
@@ -332,9 +331,9 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 참조 업데이트와 관련된 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다.
 
-AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
-다음 표에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
+다음 테이블에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 테이블은 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
 <table>
  <tbody>
