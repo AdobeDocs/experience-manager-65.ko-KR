@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media 문제 해결 - Scene7 모드
-description: Scene7 모드에서 실행 중일 때 Dynamic Media에서 설정, 구성 및 일반 문제를 해결하고 해결하는 방법에 대해 알아봅니다.
+title: Dynamic Media - Scene7 모드 문제 해결
+description: Dynamic Media가 Scene7 모드에서 실행될 때 Dynamic Media의 설정, 구성 및 일반 문제를 해결하고 해결하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,26 +13,26 @@ mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 1%
 
 ---
 
-# Dynamic Media 문제 해결 - Scene7 모드{#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media - Scene7 모드 문제 해결{#troubleshooting-dynamic-media-scene-mode}
 
 다음 문서에서는 **dynamicmedia_scene7** 실행 모드를 실행하는 Dynamic Media의 문제 해결에 대해 설명합니다.
 
 ## 설정 및 구성 {#setup-and-configuration}
 
-다음을 수행하여 Dynamic Media이 제대로 설정되었는지 확인합니다.
+다음을 수행하여 Dynamic Media가 제대로 설정되었는지 확인합니다.
 
 * 시작 명령에 `-r dynamicmedia_scene7` 실행 모드 인수가 포함되어 있습니다.
-* 모든 Adobe Experience Manager 6.4 CFP(누적 수정 팩)가 사용 가능한 모든 Dynamic Media 기능 팩의 *이전*&#x200B;에 처음 설치되었습니다.
+* 모든 Adobe Experience Manager 6.4 CFP(누적 수정 팩)가 사용 가능한 모든 Dynamic Media 기능 팩에 대해 *이전*&#x200B;에 처음 설치되었습니다.
 * 선택적 기능 팩 18912이 설치되어 있습니다.
 
-  이 선택적 기능 팩은 FTP 지원용 또는 Dynamic Media Classic에서 Dynamic Media으로 자산을 마이그레이션하는 경우에 사용됩니다.
+  이 선택적 기능 팩은 FTP 지원용 또는 Dynamic Media Classic에서 Dynamic Media로 자산을 마이그레이션하는 경우에 사용됩니다.
 
-* Cloud Service 사용자 인터페이스로 이동하여 프로비전된 계정이 **[!UICONTROL 사용 가능한 구성]**&#x200B;에 표시되는지 확인합니다.
+* 클라우드 서비스 사용자 인터페이스로 이동하여 프로비저닝된 계정이 **[!UICONTROL 사용 가능한 구성]**&#x200B;에 표시되는지 확인합니다.
 * `Dynamic Media Asset Activation (scene7)` 복제 에이전트가 활성화되어 있는지 확인하십시오.
 
   이 복제 에이전트는 작성자의 에이전트에서 찾을 수 있습니다.
@@ -43,18 +43,18 @@ ht-degree: 0%
 
 ### 에셋 동기화 상태 속성 {#asset-synchronization-status-properties}
 
-CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 Dynamic Media으로 에셋이 성공적으로 동기화되었는지 확인할 수 있습니다.
+CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 Dynamic Media로의 에셋의 성공적인 동기화를 확인할 수 있습니다.
 
 | **속성** | **예** | **설명** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기입니다. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 또는 오류 텍스트 | Dynamic Media에 대한 에셋 업로드 상태입니다. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media의 원격 자산에 대한 URL을 생성하려면 채워야 합니다. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **성공** 또는 **실패:`<error text>`** | 에셋에 대한 세트(스핀 세트, 이미지 세트 등), 이미지 사전 설정, 뷰어 사전 설정, 이미지 맵 업데이트 또는 편집된 이미지의 동기화 상태입니다. |
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘려 자세한 정보를 수집할 수 있습니다.
+동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 자세한 정보를 수집하기 위해 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
 
 ### 이동, 복사, 삭제 {#move-copy-delete}
 
@@ -66,7 +66,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
 
 ### 버전 제어 {#version-control}
 
-기존 Dynamic Media 에셋(동일한 이름 및 위치)을 바꿀 때 두 에셋을 모두 유지하거나 버전을 대체/만들 수 있습니다.
+기존 Dynamic Media 자산(동일한 이름 및 위치)을 바꿀 때 두 자산을 모두 유지하거나 버전을 대체/만들 수 있습니다.
 
 * 둘 다 유지하면 게시된 에셋 URL에 대해 고유한 이름의 에셋이 만들어집니다. 예를 들어 `image.jpg`은(는) 원본 자산이고 `image1.jpg`은(는) 새로 업로드한 자산입니다.
 
@@ -95,7 +95,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
     </ol> </td>
    <td><p>페이지 새로 고침/다른 페이지로 이동한 다음 돌아가기(사이드 레일 JSP를 다시 컴파일해야 함)</p> <p>작동하지 않는 경우:</p>
     <ul>
-     <li>Publish 에셋.</li>
+     <li>자산을 게시합니다.</li>
      <li>에셋을 다시 업로드하고 게시합니다.</li>
     </ul> </td>
   </tr>
@@ -175,8 +175,8 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
     </ul> </td>
    <td>
     <ol>
-     <li>다음으로 Experience Manager 인스턴스 확인 <code>-r dynamicmedia_scene7</code></li>
-     <li>Cloud Service 아래의 Dynamic Media 구성이 올바르게 설정되었는지 확인합니다.</li>
+     <li>다음을 사용하여 Experience Manager 인스턴스 확인 <code>-r dynamicmedia_scene7</code></li>
+     <li>클라우드 서비스 아래의 다이내믹 미디어 구성이 제대로 설정되어 있는지 확인하십시오.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인합니다.</li>
     </ol> </td>
   </tr>
@@ -205,7 +205,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
  </tbody>
 </table>
 
-## 뷰어 {#viewers}
+## Viewers {#viewers}
 
 뷰어에 문제가 있는 경우 다음 문제 해결 지침을 참조하십시오.
 
@@ -218,14 +218,14 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
 
    >[!NOTE]
    >
-   >뷰어 에셋이 동기화되려면 Dynamic Media 클라우드 설정 구성 후 약 10분 정도 걸릴 수 있습니다.
+   >뷰어 에셋이 동기화되도록 Dynamic Media 클라우드 설정을 구성한 후 약 10분 정도 걸릴 수 있습니다.
 
 1. 활성화되지 않은 자산이 남아 있는 경우 **활성화되지 않은 모든 Assets 나열** 단추 중 하나를 선택하여 세부 정보를 확인하십시오.
 
 **솔루션**
 
 1. 관리 도구의 뷰어 사전 설정 목록으로 이동: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. 모든 뷰어 사전 설정을 선택한 다음 **Publish**&#x200B;을(를) 선택합니다.
+1. 모든 뷰어 사전 설정을 선택한 다음 **게시**&#x200B;를 선택합니다.
 1. 다시 샘플 관리자로 이동하여 활성화되지 않은 자산 수가 이제 0인지 확인합니다.
 
 ### 문제: 뷰어 사전 설정 아트워크가 자산 세부 사항의 미리보기 또는 URL/포함 코드 복사에서 404를 반환함 {#viewer-preset-404}
@@ -249,14 +249,13 @@ CRXDE Lite에서 다음을 수행합니다.
 
 샘플 에셋 또는 뷰어 사전 설정 아트웍이 동기화되거나 게시되지 않은 경우 전체 복사/동기화 프로세스를 다시 시작합니다.
 
-1. CRXDE Lite 로 이동합니다.
+1. CRXDE Lite으로 이동합니다.
 1. `<sync-folder>/_CSS/_OOTB` 삭제.
 1. CRX 패키지 관리자 `https://localhost:4502/crx/packmgr/`(으)로 이동합니다.
 1. 목록에서 뷰어 패키지를 검색합니다. `cq-dam-scene7-viewers-content`(으)로 시작합니다.
 1. **다시 설치**&#x200B;를 선택합니다.
-1. Cloud Service에서 Dynamic Media 구성 페이지로 이동한 다음, Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
-1. 변경하지 말고 **저장**&#x200B;을 선택하세요.
-이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
+1. 클라우드 서비스에서 Dynamic Media 구성 페이지로 이동한 다음 Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
+1. 변경하지 말고 **저장**&#x200B;을 선택하세요.이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
 
 ### 문제: 뷰어 사전 설정 작성에서 이미지 미리 보기를 로드할 수 없음 {#image-preview-not-loading}
 
@@ -275,4 +274,4 @@ CRXDE Lite에서 다음을 수행합니다.
 1. `viewer` 폴더를 삭제합니다.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리 근처에서 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 1. CRXDE Lite 페이지의 왼쪽 상단 모서리에서 **홈으로 돌아가기** 아이콘을 선택합니다.
-1. Cloud Service[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)에서 Dynamic Media 구성을 다시 만드십시오.
+1. 클라우드 서비스에서 [Dynamic Media 구성을 다시 만듭니다](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

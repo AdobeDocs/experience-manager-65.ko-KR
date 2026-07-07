@@ -1,5 +1,5 @@
 ---
-title: 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기
+title: 에이전트 UI를 사용하여 인터랙티브 커뮤니케이션 준비 및 전송
 description: 에이전트는 에이전트 UI를 통해 대화형 통신을 준비하고 게시 프로세스로 보낼 수 있습니다. 에이전트는 필요에 따라 수정하고 대화형 커뮤니케이션을 이메일 또는 인쇄와 같은 사후 프로세스에 제출합니다.
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 2%
+source-wordcount: '2029'
+ht-degree: 3%
 
 ---
 
-# 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기 {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# 에이전트 UI를 사용하여 인터랙티브 커뮤니케이션 준비 및 전송 {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 에이전트는 에이전트 UI를 통해 대화형 통신을 준비하고 게시 프로세스로 보낼 수 있습니다. 에이전트는 필요에 따라 수정하고 대화형 커뮤니케이션을 이메일 또는 인쇄와 같은 사후 프로세스에 제출합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ### 데이터 입력 {#enter-data}
 
-1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&ast;)로 표시된 필수 필드를 모두 채워 **제출** 단추를 사용하도록 설정합니다.
+1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 필수 필드를 모두 채워 **제출** 단추를 사용하도록 설정합니다.
 
    대화형 통신 미리 보기에서 데이터 필드 값을 선택하여 데이터 탭에서 해당 데이터 필드를 강조 표시하거나 반대로 선택합니다.
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 #### 첨부 파일 게재 {#attachmentdelivery}
 
-* 대화형 통신이 서버측 API를 대화형 또는 비대화형 PDF으로 사용하여 렌더링될 때 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
+* 대화형 통신이 서버측 API를 사용하여 대화형 또는 비대화형 PDF으로 렌더링되면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
 * 대화형 통신과 연결된 사후 프로세스가 에이전트 UI를 사용하여 제출의 일부로 로드되면 첨부 파일이 List&lt;com.adobe.idp.Document> inAttachmentDocs 매개 변수로 전달됩니다.
 * 이메일 및 인쇄와 같은 게재 메커니즘 워크플로는 또한 대화형 통신의 PDF 버전과 함께 첨부 파일을 전달합니다.
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 ### 문서 단편 {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **위쪽/아래쪽 화살표**: 대화형 통신에서 문서 조각을 위아래로 이동하는 화살표입니다.
 * **삭제**: 허용되는 경우 대화형 통신에서 문서 단편을 삭제하십시오.
@@ -174,13 +174,13 @@ ht-degree: 2%
 
 에이전트 UI를 사용하여 각 대화형 커뮤니케이션에 대해 하나 이상의 초안을 저장하고 나중에 초안을 검색하여 계속 작업할 수 있습니다. 각 초안의 다른 이름을 지정하여 해당 초안을 식별할 수 있습니다.
 
-Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하기 위해 이러한 명령을 순서대로 실행하는 것을 권장합니다.
+Adobe에서는 대화형 커뮤니케이션을 초안으로 성공적으로 저장하려면 이러한 명령을 순서대로 실행하는 것이 좋습니다.
 
 ### 초안으로 저장 기능 활성화 {#before-save-as-draft}
 
-초안으로 저장(Save as a Draft) 기능은 기본적으로 활성화되어 있지 않습니다. 기능을 활성화하려면 다음 단계를 수행하십시오.
+초안으로 저장(Save as a Draft) 기능은 기본적으로 활성화되어 있지 않습니다. 해당 기능을 활성화하려면 다음 단계를 수행합니다.
 
-1. [ccrDocumentInstance](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
+1. [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
 
    SPI를 사용하면 대화형 통신의 초안 버전을 고유 식별자로 초안 ID를 사용하여 데이터베이스에 저장할 수 있습니다. 이러한 지침은 Maven 프로젝트를 사용하여 OSGi 번들을 작성하는 방법에 대한 사전 지식이 있다고 가정합니다.
 
@@ -324,7 +324,7 @@ public class CCRDraftService implements CCRDocumentInstanceService {
    </tr>
   <tr>
    <td><p>대화형 커뮤니케이션용 초안을 만들거나 직접 제출할 수 있습니다. 저장 작업에 대한 API는 대화형 커뮤니케이션이 초안으로 제출되고 초안 이름이 포함되어 있는지 확인합니다. 그런 다음 API는 입력 메서드로 Save를 사용하여 mySQLDataBaseServiceCRUD 서비스를 호출합니다.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
-   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 저장을 확인하고 자동 생성된 초안 ID를 생성하여 AEM에 반환합니다. 초안 ID를 생성하는 논리는 데이터베이스에 따라 달라질 수 있습니다.</p></br><img src="assets/save-operation-service.png"/></td>
+   <td><p>mySQLDataBaseServiceCRUD 서비스는 입력 메서드로 저장을 확인하고 자동 생성된 초안 ID를 생성하여 AEM으로 반환합니다. 초안 ID를 생성하는 논리는 데이터베이스에 따라 달라질 수 있습니다.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
    <td><p>업데이트 작업에 대한 API는 대화형 통신 초안의 상태를 검색하고 대화형 통신에 초안 이름이 포함되어 있는지 확인합니다. API는 mySQLDataBaseServiceCRUD 서비스를 호출하여 데이터베이스의 해당 상태를 업데이트합니다.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
