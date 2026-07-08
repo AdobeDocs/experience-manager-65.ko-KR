@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
+source-wordcount: '8354'
 ht-degree: 95%
 
 ---
@@ -1213,6 +1213,7 @@ ht-degree: 95%
       + [AEM Forms 서버가 완전히 실행되지 않은 경우에도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [출력 서비스, 양식 서비스, DoR(기록 문서) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Experience Manager Forms에 대한 Struts 2 RCE 취약점 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [JEE의 Experience Manager Forms에 대한 Apache Axis Document Security 웹 서비스 취약성 완화](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [MySQL 6.5.12.0으로 업그레이드하는 동안 데이터베이스 백업 실패](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF 생성 시 워크벤치에서 많은 수의 PDF를 인쇄하지 못함](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK를 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
