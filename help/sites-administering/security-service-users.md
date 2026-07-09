@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 0%
+source-wordcount: '1802'
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 * `service-id`이(가) 인증을 위해 리소스 확인자 및/또는 JCR 저장소 사용자 ID에 매핑됩니다.
 * `service-name`은(는) 서비스를 제공하는 번들의 기호 이름입니다.
 
-## 기타 Recommendations {#other-recommendations}
+## 기타 권장 사항 {#other-recommendations}
 
 ### admin-session을 service-user로 바꾸기 {#replacing-the-admin-session-with-a-service-user}
 
@@ -118,7 +118,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 ## 서비스 사용자 만들기 {#creating-a-new-service-user}
 
-AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용자가 없고 해당 RTC 문제가 승인되었음을 확인한 후 새 사용자를 기본 콘텐츠에 추가합니다.
+AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용자가 없고 해당 RTC 문제가 승인되었음을 확인한 후에는 새 사용자를 기본 콘텐츠에 추가합니다.
 
 권장 접근 방법은 *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*&#x200B;에서 저장소 탐색기를 사용할 서비스 사용자를 만드는 것입니다.
 
