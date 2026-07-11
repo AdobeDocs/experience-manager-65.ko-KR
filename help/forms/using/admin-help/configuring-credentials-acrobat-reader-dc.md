@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '558'
+workflow-type: tm+mt
+source-wordcount: '583'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Trust Store에는 두 개 이상의 Acrobat Reader DC 확장 프로그램 자격
 
 >[!NOTE]
 >
->자격 증명을 프로그래밍 방식으로 가져오거나 삭제할 수도 있습니다. ([AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)을 참조하십시오.)
+>자격 증명을 프로그래밍 방식으로 가져오거나 삭제할 수도 있습니다. ([AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)을 참조하십시오.)
 
 ## Acrobat Reader DC 확장 프로그램 자격 증명 가져오기 {#import-a-acrobat-reader-dc-extensions-credential}
 
