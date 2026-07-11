@@ -12,8 +12,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다.
 
 * [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
-* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)(으)로 다운로드
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)&#x200B;(으)로 다운로드
 
 ### 술어 평가기 세부 정보 {#predicate-evaluator-in-detail}
 
@@ -105,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->Maven을 사용한 새 AEM(Adobe Experience Manager) 프로젝트 설정은 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md)에 의해 문서화되었습니다.
+>Maven을 사용한 새 Adobe Experience Manager(AEM) 프로젝트 설정은 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md)에 의해 문서화되었습니다.
 
 먼저 프로젝트의 Maven 종속성을 업데이트합니다. `PredicateEvaluator`은(는) `cq-search` 아티팩트의 일부이므로 Maven pom.xml 파일에 추가해야 합니다.
 

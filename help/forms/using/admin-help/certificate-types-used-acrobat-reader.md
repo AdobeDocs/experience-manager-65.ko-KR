@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '944'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '947'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ARE 2D 바코드 전체 프로덕션 V6.1 P8 0002054
 
 **배포 유형:** 프로덕션과 같이 인증서의 용도를 나타냅니다. 이 값은 평가 또는 프로덕션일 수 있습니다. 각 인증서 유형과 연결된 배포 유형 목록은 인증서 프로필 섹션의 표에서 배포 유형 열을 참조하십시오.
 
-**사용 권한 버전:** V6.1과 같이 인증서를 사용할 수 있는 사용 권한 알고리즘의 버전을 설명합니다. 이 버전은 Acrobat 또는 Acrobat Reader DC 확장 프로그램의 버전을 나타내는 것이 아닙니다.
+**사용 권한 버전:** 인증서를 사용할 수 있는 사용 권한 알고리즘 버전(예: V6.1)을 설명합니다. 이 버전은 Acrobat 또는 Acrobat Reader DC 확장 버전을 나타내지 않습니다.
 
 **프로필 코드:** 프로필 코드는 P8과 같이 전체 인증서 속성을 간단히 설명합니다. 각 파일 유형과 연결된 프로필 코드 목록은 인증서 프로필 섹션의 표에서 프로필 코드 열을 참조하십시오.
 

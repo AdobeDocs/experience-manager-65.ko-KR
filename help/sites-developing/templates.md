@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '943'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 템플릿 - 페이지 {#templates-pages}
 
-이제 AEM에서는 페이지를 만들기 위한 두 가지 기본 템플릿 유형을 제공합니다.
+이제 AEM은 페이지를 만들기 위한 두 가지 기본 템플릿 유형을 제공합니다.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### 편집 가능한 템플릿 {#editable-templates}
 
-이제 편집 가능한 템플릿은 AEM을 사용하여 개발하는 우수 사례로 간주됩니다.
+이제 편집 가능한 템플릿은 AEM을 사용한 개발 우수 사례로 간주됩니다.
 
 편집 가능한 템플릿의 장점:
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[편집 가능한 페이지 템플릿을 사용하여 Experience Manager 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko-KR)을 참조하십시오.
+>[편집 가능한 페이지 템플릿을 사용하여 Experience Manager 사이트 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=ko)을 참조하십시오.
 
 ### 정적 템플릿 {#static-templates}
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM 6.5부터는 정적 템플릿을 사용하는 것이 우수 사례로 간주되지 않습니다. 대신 편집 가능한 템플릿을 사용하십시오.
+>AEM 6.5부터는 정적 템플릿을 사용하는 것이 모범 사례로 간주되지 않습니다. 대신 편집 가능한 템플릿을 사용하십시오.
 >
 >[AEM 현대화](modernization-tools.md) 도구를 사용하면 정적 템플릿에서 편집 가능한 템플릿으로 마이그레이션할 수 있습니다.
 
@@ -85,9 +85,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM은 **Sites**&#x200B;에서 허용되는 템플릿을 제어할 수 있는 여러 속성을 제공합니다. 하지만 이를 결합하면 추적 및 관리가 어려운 복잡한 규칙이 발생할 수 있다.
+>AEM에서는 **사이트**&#x200B;에서 허용되는 템플릿을 제어할 수 있는 여러 속성을 제공합니다. 하지만 이를 결합하면 추적 및 관리가 어려운 복잡한 규칙이 발생할 수 있다.
 >
->따라서 Adobe은 다음을 정의하여 단순하게 시작하는 것을 권장합니다.
+>따라서 Adobe에서는 다음을 정의하여 간단하게 시작하는 것이 좋습니다.
 >
 >* `cq:allowedTemplates` 속성만
 >
