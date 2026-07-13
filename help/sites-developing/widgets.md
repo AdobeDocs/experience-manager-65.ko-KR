@@ -492,7 +492,7 @@ RTE 플러그인:
 1. **사용자 지정 위젯** 구성 요소의 대화 상자를 **리치 텍스트 편집기(RTE) 플러그인** 기반 대화 상자로 바꿉니다.
 [예제 2: 단일 패널 대화 상자](#example-single-panel-dialog)에 설명된 단계를 따릅니다.
 1. 구성 요소를 편집합니다.
-1. 오른쪽(네 개의 화살표가 있는 아이콘)의 마지막 아이콘을 클릭합니다. 경로를 입력하고 **확인**을 클릭하세요.
+1. 오른쪽(네 개의 화살표가 있는 아이콘)의 마지막 아이콘을 클릭합니다. 경로를 입력하고 **확인**&#x200B;을 클릭하세요.
 대괄호([) 안에 경로를 표시합니다. ]).
 1. 서식 있는 텍스트 편집기를 닫으려면 **확인**&#x200B;을 클릭하세요.
 
@@ -639,7 +639,7 @@ RTE 플러그인:
 * 서블릿을 호출하여 저장소에서 검색한 데이터를 기반으로 합니다.
 * 마지막 열의 셀을 편집할 수 있습니다. 값은 첫 번째 열에 표시된 경로에 의해 정의된 노드 아래의 `test` 속성에서 유지됩니다.
 
-앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
+앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**&#x200B;구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
 
 구성 요소 jsp에서 참조되는 .js 파일 전환:
 
