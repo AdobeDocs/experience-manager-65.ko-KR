@@ -11,8 +11,8 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 1%
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. **일반 텍스트** 필드에 보호할 중요 데이터의 텍스트를 입력합니다.
-1. **Protect**&#x200B;을(를) 선택합니다. 보호된 텍스트는 암호화된 텍스트로 표시됩니다.
+1. **보호**&#x200B;를 선택합니다. 보호된 텍스트는 암호화된 텍스트로 표시됩니다.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
