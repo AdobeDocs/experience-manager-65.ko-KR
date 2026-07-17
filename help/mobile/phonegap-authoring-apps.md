@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 
 ### PhoneGap Build 타일 {#the-phonegap-build-tile}
 
-**PhoneGap Build 타일**&#x200B;이 `https://build.phonegap.com`과(와) 연결하여 원격 빌드를 빌드하고 호스팅합니다. 빌드가 빌드되면 다운로드로 사용하거나 QR 코드를 통해 디바이스에 직접 사용할 수 있습니다.
+**PhoneGap 빌드 타일**&#x200B;이 `https://build.phonegap.com`과(와) 연결하여 원격 빌드를 빌드하고 호스팅합니다. 빌드가 빌드되면 다운로드로 사용하거나 QR 코드를 통해 디바이스에 직접 사용할 수 있습니다.
 
 또는 PhoneGap CLI(`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`)를 통해 로컬로 빌드할 장치 원본을 다운로드할 수 있습니다.
 
@@ -104,7 +104,7 @@ AEM Sites 내에서 동일한 작업을 수행하는 것과 거의 동일한 방
 >
 >자세한 내용은 [Adobe Mobile Services Cloud Service 구성](/help/mobile/configure-adobe-mobile-cloud-service.md)을 참조하십시오.
 
-AEM Mobile은 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ko)(AMS)를 통해 Adobe Analytics과 통합됩니다.
+AEM Mobile은 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=ko)&#x200B;(AMS)를 통해 Adobe Analytics과 통합됩니다.
 
 컨트롤 센터 **지표 타일**&#x200B;은 응용 프로그램에 대해 AMS에서 가져온 요약 분석을 표시합니다. 오른쪽 하단에 있는 &#39;...&#39;를 클릭하여 분석 대시보드로 드릴다운할 수 있습니다.
 
