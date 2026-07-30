@@ -1,5 +1,5 @@
 ---
-title: SAP와 함께 AEM 사용 Commerce Cloud
+title: SAP Commerce Cloud과 함께 AEM 사용
 description: SAP Commerce Cloud과 함께 Adobe Experience Manager을 사용하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -10,12 +10,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 2%
+source-wordcount: '1769'
+ht-degree: 1%
 
 ---
 
-# SAP COMMERCE CLOUD{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 설치 후 인스턴스를 구성할 수 있습니다.
 
@@ -25,13 +25,13 @@ ht-degree: 2%
 1. [로드할 제품 특성을 구성하십시오](#configure-the-product-attributes-to-load).
 1. [제품 데이터를 가져오는 중](#importing-the-product-data).
 1. [카탈로그 가져오기를 구성합니다](#configure-the-catalog-importer).
-1. [가져오기를 사용하여 &#x200B;](#catalog-import) 카탈로그를 AEM의 특정 위치로 가져옵니다.
+1. [가져오기를 사용하여 카탈로그](#catalog-import)를 AEM의 특정 위치로 가져옵니다.
 
-## Geometrixx Outdoors에 대한 면처리 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Geometrixx Outdoors에 대한 패싯된 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
->hybris 5.3.0.1 이상에서는 필요하지 않습니다.
+>Hybris 5.3.0.1 이상에는 필요하지 않습니다.
 
 1. 브라우저에서 다음 위치의 **하이브리드 관리 콘솔**(으)로 이동합니다.
 
@@ -173,7 +173,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 1. OSGi 번들을 구성합니다.
 
    **일 CQ Commerce Hybris 기본 응답 파서**
-(`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
+   (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    여기에서 로드 및 매핑에 필요한 다양한 옵션과 속성을 정의할 수 있습니다.
 
@@ -246,7 +246,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
 ### 증분 가져오기 {#incremental-import}
 
-1. 아래의 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
+1. 아래 해당 하위 트리에서 AEM에 있는 정보 중 관련 제품에 대한 정보를 확인하십시오.
 
    `/etc/commerce/products`
 
@@ -267,7 +267,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 1. **증분 가져오기** 확인란을 선택합니다.
 1. 가져오기를 시작하려면 **카탈로그 가져오기**&#x200B;를 클릭하세요.
 
-   완료되면 아래 AEM에서 업데이트된 데이터를 확인할 수 있습니다.
+   완료되면 AEM에서 업데이트된 데이터를 아래에서 확인할 수 있습니다.
 
    ```
        /etc/commerce/products
@@ -278,7 +278,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 
 가져오기 프로세스에 시간이 오래 걸릴 수 있으므로 제품 동기화 를 확장하여 수동으로 트리거되는 빠른 업데이트에 대해 카탈로그의 특정 영역을 선택할 수 있습니다. 표준 속성 구성과 함께 내보내기 피드를 사용합니다.
 
-1. 아래의 해당 하위 트리에서 AEM에 있는 관련 제품 정보를 확인하십시오.
+1. 아래 해당 하위 트리에서 AEM에 있는 정보 중 관련 제품에 대한 정보를 확인하십시오.
 
    `/etc/commerce/products`
 
@@ -303,7 +303,7 @@ hybris에서 가져온 실제 제품 정보는 다음 저장소의 저장소에 
 1. **빠른 업데이트** 확인란을 선택하십시오.
 1. 가져오기를 시작하려면 **카탈로그 가져오기**&#x200B;를 클릭하세요.
 
-   완료되면 아래 AEM에서 업데이트된 데이터를 확인할 수 있습니다.
+   완료되면 AEM에서 업데이트된 데이터를 아래에서 확인할 수 있습니다.
 
    ```
        /etc/commerce/products
@@ -412,7 +412,7 @@ hybris에 구성된 기본 저장소의 식별자입니다.
 1. 다음 방법 중 하나를 사용하여 [클라이언트 컨텍스트 디자인 페이지](/help/sites-administering/client-context.md)를 엽니다.
 
    * 편집할 페이지를 연 다음 **Ctrl-Alt-c**(windows) 또는 **control-option-c**(Mac)을 사용하여 클라이언트 컨텍스트를 엽니다. 클라이언트 컨텍스트의 왼쪽 상단 모서리에 있는 연필 아이콘을 사용하여 **ClientContext 디자인 페이지를 엽니다**.
-   * [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)(으)로 직접 이동
+   * [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)&#x200B;(으)로 직접 이동
 
 1. [클라이언트 컨텍스트의 **Shopping Car** t 구성 요소에 **주문 내역** 구성 요소 추가](/help/sites-administering/client-context.md#adding-a-property-component).
 1. Client Context에 주문 내역의 세부 사항이 표시되는지 확인할 수 있습니다. 예:
@@ -431,7 +431,7 @@ hybris에 구성된 기본 저장소의 식별자입니다.
    >
    >이 메시지는 다음 방법으로 실현됩니다.
    >
-   >* [http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html](http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html)(으)로 이동
+   >* [http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html](http://localhost:4502/content/campaigns/geometrixx-outdoors/hybris-returning-customer.html)&#x200B;(으)로 이동
    >
    >  이 캠페인은 하나의 경험으로 구성됩니다.
    >

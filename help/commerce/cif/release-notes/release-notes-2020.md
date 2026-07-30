@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 9%
+source-wordcount: '1471'
+ht-degree: 18%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 9%
 
 * 비즈니스 사용자가 AEM 콘텐츠 페이지에서 이 구성 요소를 드래그 앤 드롭하여 상거래 데이터로 콘텐츠 페이지를 보강할 수 있도록 새 카테고리 캐러셀 구성 요소를 추가했습니다.
 
-* 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어를 하이드레이션하도록 확장된 CIF 핵심 구성 요소입니다. Adobe 클라이언트 데이터 계층 은 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki)를 참조하십시오.
+* CIF 핵심 구성 요소는 상거래 데이터를 전송하여 Adobe 클라이언트 데이터 레이어 하이드레이션합니다. Adobe 클라이언트 데이터 레이어 는 데이터를 수집하고 데이터를 Digital Analytics 및 보고 서버에 전달하는 표준화된 방법입니다. 자세한 내용은 [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer/wiki)를 참조하십시오.
 
 * Adobe Commerce 관리 UI 내에서 구성된 SEO 메타데이터(예: 제목, 메타 설명, 메타 키워드)를 자동으로 채우도록 제품 세부 사항 및 제품 목록 페이지가 확장되었습니다
 
@@ -98,7 +98,7 @@ ht-degree: 9%
 
 * 제품 및 제품 티저 구성 요소에 유연성을 추가하여 간편한 맞춤화를 지원합니다.
 
-* 제품 티저 구성 요소에 대한 기본 CTA 버튼 레이블을 재정의하고 구성할 수 있는 유연성이 추가되었습니다.
+* 제품 티저 구성 요소의 기본 CTA 버튼 레이블을 재정의하고 구성할 수 있는 유연성이 추가되었습니다.
 
 * 주소록 구성 요소는 체크아웃 중에 등록된 구매자가 주소록에 저장된 배송 및 청구 주소를 선택할 수 있도록 개선되었습니다.
 
@@ -120,7 +120,7 @@ ht-degree: 9%
 
 * 로그인한 사용자가 주소를 관리할 수 있도록 주소록 관리가 추가되었습니다.
 
-* CIF Cloud 구성 UI는 게시/게시 취소 작업을 지원합니다.
+* CIF 클라우드 구성 UI는 게시/게시 취소 작업을 지원합니다.
 
 ### 개선 사항 {#what-is-improved-july}
 
@@ -154,7 +154,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 * 패싯된 검색은 카테고리 쿼리를 제품 검색 쿼리와 결합하여 최적화됩니다.
 
-* 페이지 미리보기에 대한 범주/제품 선택기는 cq:catalogPath를 수행합니다.
+* 페이지 미리 보기에 대한 범주/제품 선택기가 cq:catalogPath을(를) 수행합니다.
 
 * 여러 버그 수정.
 
@@ -192,7 +192,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 ### 새로운 기능 {#what-is-new-april}
 
-* CIF Connector에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크 아웃 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=ko) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=ko)을 참조하십시오.
+* CIF 커넥터에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크 아웃 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)을 참조하십시오.
 
 ### 개선 사항 {#what-is-improved-april}
 
