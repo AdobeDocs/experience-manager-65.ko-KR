@@ -9,10 +9,10 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c29c24f3e8b05d12689536376ce1a07798f784e6
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 프로세스 보고는 다음과 같은 모듈을 기반으로 구축됩니다.
 
 * AEM Forms 데이터베이스에서 프로세스 데이터 읽기
-* Publish 프로세스 데이터를 포함된 Process Reporting 저장소로
+* 포함된 Process Reporting 저장소에 프로세스 데이터 게시
 * 보고서를 볼 수 있는 브라우저 기반 사용자 인터페이스를 제공합니다.
 
 ## 주요 기능 {#key-capabilities}
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 임시 보고서 {#adhoc-reports}
 
-![인쇄 및 색상](assets/print-&-colour.png)
+![인쇄 및 색상](assets/print-and-colour.png)
 
 필터를 사용하여 특정 데이터 보기를 얻을 수 있습니다.
 
