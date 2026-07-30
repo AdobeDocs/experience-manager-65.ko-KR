@@ -8,8 +8,8 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Digital Asset Management 는 더 많은 시나리오에서 사용되고 있습�
 
 이러한 자산 중심 애플리케이션은 직원들이 무역 박람회 방문 또는 공공 웹사이트의 프레스 센터에서 사진을 업로드할 수 있는 인트라넷의 간단한 사진 갤러리가 될 수 있습니다. 자산 중심 애플리케이션은 장바구니, 체크아웃 및 확인 프로세스를 포함한 완전한 솔루션으로도 확장할 수 있습니다.
 
-에셋 중심 애플리케이션을 만들면 코딩이 필요 없고 사용자 그룹과 해당 요구 사항에 대한 지식과 사용 중인 메타데이터에 대한 지식만 있으면 되는 구성 프로세스가 됩니다. [!DNL Assets] (으)로 만든 자산 중심 응용 프로그램은 확장 가능합니다. 자산 검색, 보기 및 수정을 위한 재사용 가능한 구성 요소를 중간 코딩 작업으로 만들 수 있습니다.
+에셋 중심 애플리케이션을 만들면 코딩이 필요 없고 사용자 그룹과 해당 요구 사항에 대한 지식과 사용 중인 메타데이터에 대한 지식만 있으면 되는 구성 프로세스가 됩니다. [!DNL Assets]&#x200B;(으)로 만든 자산 중심 응용 프로그램은 확장 가능합니다. 자산 검색, 보기 및 수정을 위한 재사용 가능한 구성 요소를 중간 코딩 작업으로 만들 수 있습니다.
 
 [!DNL Experience Manager]의 자산 중심 응용 프로그램은 특정 자산을 자세히 보는 데 사용할 수 있는 자산 편집기 페이지로 구성되어 있습니다. 에셋에 액세스하는 사용자에게 필요한 권한이 있는 경우 에셋 편집기 페이지에서 메타데이터를 편집할 수도 있습니다.
 
@@ -210,11 +210,11 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-Geometrixx 에셋 편집기 템플릿을 사용하여 만든 기본 페이지는 다음과 같습니다.
+Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는 다음과 같습니다.
 
 ![assetshare5](assets/assetshare5.png)
 
-자산 편집기 페이지를 사용자 지정하려면 사이드 킥의 요소를 사용하십시오. **Geometrixx 프레스 센터**&#x200B;에서 액세스되는 자산 편집기 페이지는 다음 템플릿을 기반으로 하는 사용자 지정된 페이지 버전입니다.
+자산 편집기 페이지를 사용자 지정하려면 사이드 킥의 요소를 사용하십시오. **Geometrixx Press Center**&#x200B;에서 액세스하는 자산 편집기 페이지는 다음 템플릿을 기반으로 하는 사용자 지정된 페이지 버전입니다.
 
 ![assetshare6](assets/assetshare6.png)
 
@@ -393,7 +393,7 @@ Geometrixx 에셋 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 에셋 편집기 페이지를 사용하여 에셋을 다중 편집하려면 다음과 같이 하십시오.
 
-1. **Press Center** Geometrixx 열기:
+1. Geometrixx **Press Center** 페이지를 엽니다.
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. 에셋 선택:

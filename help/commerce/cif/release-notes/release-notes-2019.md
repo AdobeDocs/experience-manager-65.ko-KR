@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 7%
+source-wordcount: '1070'
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 7%
 
 * 장바구니에 추가된 쿠폰 지원 추가/제거.
 
-* AEM Venia 스토어 전면에 Braintree 결제 지원이 추가되었습니다.
+* Braintree 결제 지원이 AEM Venia 스토어 전면에 추가되었습니다.
 
 ### 개선 사항 {#what-is-improved-november}
 
@@ -106,7 +106,7 @@ ht-degree: 7%
 
 * Commerce 티저는 작성자가 CTA 필드를 제품 세부 사항 페이지 또는 제품 목록 페이지에 추가할 수도 있도록 WCM 티저 구성 요소를 확장합니다.
 
-* 작성자가 AEM 페이지에 배치하고 AEM 페이지, 제품 세부 사항 페이지, 제품 목록 페이지 또는 외부 링크에 연결할 수 있는 단추입니다.
+* 작성자가 AEM 페이지에 배치할 수 있고 AEM 페이지, 제품 세부 사항 페이지, 제품 목록 페이지 또는 외부 링크에 연결할 수 있는 버튼입니다.
 
 ### 개선 사항 {#what-is-improved-august}
 
@@ -147,14 +147,14 @@ ht-degree: 7%
 
 ### 새로운 기능 {#what-is-new-june}
 
-* 모바일 최초 Venia CSS 스타일링, 랜딩 페이지, 제품 및 카테고리 페이지를 통한 동적 카탈로그 탐색, 제품 검색 페이지, 장바구니 기능을 갖춘 AEM B2C 스토어프론트로 상거래 프로젝트를 시작하고 가속화합니다.
+* AEM B2C 상점 첫 번째 모바일 베니아 CSS 스타일, 랜딩 페이지, 제품 및 카테고리 페이지를 통한 동적 카탈로그 탐색, 제품 검색 페이지, 장바구니 기능을 통해 상거래 프로젝트를 시작하고 가속화할 수 있습니다.
 
 * CIF 커넥터 및 작성 도구(제품 콘솔, 제품 선택기 및 카테고리 선택기)를 사용하여 작성자는 상거래 콘텐츠가 있는 AEM에서 경험을 만들 수 있습니다.
 
 * Adobe Commerce 2.3.1과 호환되는 CIF 핵심 구성 요소의 첫 번째 버전:
-   * 제품 세부 사항
-   * 제품 목록
-   * 제품 티저
-   * 탐색
-   * 제품 검색
-   * 장바구니(REST)
+  * 제품 세부 정보
+  * 제품 목록
+  * 제품 티저
+  * 탐색
+  * 제품 검색
+  * 장바구니(REST)

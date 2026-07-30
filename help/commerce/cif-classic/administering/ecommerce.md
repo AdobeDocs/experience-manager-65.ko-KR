@@ -1,6 +1,6 @@
 ---
 title: eCommerce 통합 프레임워크
-description: AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 전반에서 브랜딩되고 개인화된 쇼핑 경험을 제공할 수 있도록 지원합니다.
+description: AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트에서 개인화되고 브랜드화된 쇼핑 경험을 제공할 수 있도록 지원합니다.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
@@ -10,12 +10,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
 
-# eCommerce{#ecommerce}
+# 전자 상거래{#ecommerce}
 
 * [개념](/help/commerce/cif-classic/administering/concepts.md)
 * [관리(일반)](/help/commerce/cif-classic/administering/generic.md)
@@ -31,7 +31,7 @@ Adobe은 두 가지 버전의 Commerce integration framework을 제공합니다.
   </tr>
   <tr>
    <td><p>지원되는 AEM 버전</p> </td>
-   <td><p>AEM 온-프레미스 또는 AMS 6.x</p> </td>
+   <td><p>AEM 온프레미스 또는 AMS 6.x</p> </td>
    <td>AEM AMS 6.4 및 6.5</td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@ Adobe은 두 가지 버전의 Commerce integration framework을 제공합니다.
   </tr>
   <tr>
    <td><p>프론트엔드</p> </td>
-   <td><p>AEM 서버측 렌더링 페이지</p> </td>
+   <td><p>AEM 서버측 렌더링된 페이지</p> </td>
    <td>혼합 페이지 애플리케이션(하이브리드 렌더링)</td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ Adobe은 두 가지 버전의 Commerce integration framework을 제공합니다.
    <td>
     <ul>
      <li>제품 가져오기, 편집기, AEM의 캐싱</li>
-     <li>AEM 또는 프록시 페이지가 있는 일반 카탈로그</li>
+     <li>AEM 또는 프록시 페이지가 포함된 일반 카탈로그</li>
     </ul> </td>
    <td>
     <ul>
@@ -88,7 +88,7 @@ Adobe은 두 가지 버전의 Commerce integration framework을 제공합니다.
   </tr>
   <tr>
    <td>사용 가능</td>
-   <td><p>예. SAP Commerce Cloud(AEM 6.4 및 Hybris 5(기본값)를 지원하도록 업데이트되었으며 Hybris 4와의 호환성을 유지합니다.</p> <p>Salesforce Commerce Cloud(AEM 6.4를 지원하도록 오픈 소스로 제공되는 커넥터)</p> </td>
+   <td><p>예. SAP Commerce Cloud(AEM 6.4 및 Hybris 5(기본값)를 지원하도록 확장이 업데이트되었으며 Hybris 4와의 호환성을 유지합니다.</p> <p>Salesforce Commerce Cloud(AEM 6.4를 지원하도록 오픈 소스로 제공되는 커넥터)</p> </td>
    <td>GitHub를 통해 오픈 소스를 통해 지원. Adobe Commerce(2.3.2(기본값)를 지원하고 2.3.1과 호환)</td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ eCommerce는 제품 정보 관리(PIM)와 함께 온라인 스토어를 통해 �
 * 라이브 및 중앙 집중식 스토리지 레코드
 * 웹 인터페이스
 
-AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 전반에서 브랜딩되고 개인화된 쇼핑 경험을 제공할 수 있도록 지원합니다. AEM 작성 환경에서는 타겟 방문자 컨텍스트 및 머천다이징 전략에 따라 페이지 및 구성 요소를 사용자 지정할 수 있습니다. 예를 들면 다음과 같습니다.
+AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트에서 개인화되고 브랜드화된 쇼핑 경험을 제공할 수 있도록 지원합니다. AEM 작성 환경에서는 타겟 방문자 컨텍스트 및 머천다이징 전략에 따라 페이지 및 구성 요소를 사용자 지정할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * 제품 페이지
 * 장바구니 구성 요소
@@ -133,12 +133,12 @@ AEM eCommerce는 다음을 제공합니다.
 
 * 프로젝트에 달성할 수 있는 작업을 보여 주는 **바로 사용 가능한 AEM 구성 요소**&#x200B;의 수입니다.
 
-   * 제품 표시
-   * 장바구니
-   * 체크아웃
-   * 최근에 본 제품
-   * 바우처
-   * 외
+  * 제품 표시
+  * 장바구니
+  * 체크아웃
+  * 최근에 본 제품
+  * 바우처
+  * 외
 
   ![geometrixx 구성 요소 예제](/help/sites-administering/assets/chlimage_1-130.png)
 
@@ -148,10 +148,10 @@ AEM eCommerce는 다음을 제공합니다.
 
 * **검색** - 다음 중 하나를 사용합니다.
 
-   * AEM 검색
-   * eCommerce 시스템 검색
-   * 서드파티 검색
-   * 또는 둘의 조합.
+  * AEM 검색
+  * eCommerce 시스템 검색
+  * 서드파티 검색
+  * 또는 둘의 조합.
 
   ![검색 예](/help/sites-administering/assets/chlimage_1-131.png)
 
@@ -159,14 +159,14 @@ AEM eCommerce는 다음을 제공합니다.
 
   ![모바일 보기 예](/help/sites-administering/assets/chlimage_1-132.png)
 
-* **AEM 전자 상거래 프레임워크[&#128279;](#the-framework)**&#x200B;를 기반으로 고유한 통합 구현을 개발하는 기능.
+* **AEM 전자 상거래 프레임워크[&#128279;](#the-framework)**&#x200B;를 기반으로 고유한 통합 구현을 개발하는 기능
 
   현재 사용할 수 있는 두 구현은 모두 일반 API(프레임워크)를 기반으로 동일한 기반으로 구축됩니다. 새 통합 구현에는 통합에 필요한 기능 구현만 포함됩니다. 프론트엔드 구성 요소는 인터페이스를 사용하기 때문에 새로운 구현에서 사용할 수 있습니다(따라서 구현과 독립적).
 
 * 쇼핑객 데이터 및 활동을 기반으로 **경험 기반 상거래를 개발할 수 있습니다**. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
 
-   * 예를 들어 총 주문이 특정 금액을 초과할 경우 배송 비용을 절감할 수 있습니다.
-   * 또 다른 방법에서는 프로필 데이터(예: 위치)를 사용하는 시즌 오퍼를 제공할 수 있습니다. 그런 다음 필요할 때 다른 요인에 따라 다시 강조할 수 있습니다.
+  * 예를 들어 총 주문이 특정 금액을 초과할 경우 배송 비용을 절감할 수 있습니다.
+  * 또 다른 방법에서는 프로필 데이터(예: 위치)를 사용하는 시즌 오퍼를 제공할 수 있습니다. 그런 다음 필요할 때 다른 요인에 따라 다시 강조할 수 있습니다.
 
   아래 예에는 장바구니의 콘텐츠가 $75 미만인 하나의 티저가 표시됩니다.
 
@@ -178,9 +178,9 @@ AEM eCommerce는 다음을 제공합니다.
 
 * 및 다음을 포함한 기타 기능:
 
-   * 여러 세션에 걸쳐 유지되는 장바구니 콘텐츠
-   * 전체 주문 내역
-   * 빠른 카탈로그 업데이트
+  * 여러 세션에 걸쳐 유지되는 장바구니 콘텐츠
+  * 전체 주문 내역
+  * 빠른 카탈로그 업데이트
 
 ## 프레임워크 {#the-framework}
 

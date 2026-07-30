@@ -1,5 +1,5 @@
 ---
-title: 타깃팅된 컨텐츠를 위한 개발
+title: 타기팅된 콘텐츠를 위한 개발
 description: 콘텐츠 타겟팅에 사용할 구성 요소 개발에 대한 항목
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1296'
 ht-degree: 4%
 
 ---
 
-# 타깃팅된 컨텐츠를 위한 개발{#developing-for-targeted-content}
+# 타기팅된 콘텐츠를 위한 개발{#developing-for-targeted-content}
 
 이 섹션에서는 콘텐츠 타겟팅에 사용할 구성 요소를 개발하는 방법에 대해 설명합니다.
 
@@ -204,7 +204,7 @@ mbox를 만드는 데 사용되는 기본 mbox.js 파일은 /etc/clientlibs/foun
 >
 >사용자 지정 mbox가 Target 구성에 정의된 경우 모든 사용자는 게시 서버의 **/etc/cloudservices**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이 액세스 권한이 없으면 게시 웹 사이트에서 mbox.js 파일을 로드하면 404 오류가 발생합니다.
 
-1. CQ **Cloud Service** 페이지로 이동하여 **도구**&#x200B;를 선택합니다. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. CQ **도구** 페이지로 이동하여 **클라우드 서비스**&#x200B;를 선택합니다. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. 트리에서 Adobe Target을 선택하고 구성 목록에서 Target 구성을 두 번 클릭합니다.
 1. 구성 페이지에서 편집을 클릭합니다.
 1. 사용자 지정 mbox.js 속성에 대해 찾아보기 를 클릭하고 파일을 선택합니다.
@@ -218,7 +218,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. �
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-컨텍스트 메뉴에서 Target 명령을 제거하려면 다음 속성을 구성 요소의 cq:editConfig 노드에 추가합니다.
+컨텍스트 메뉴에서 Target 명령을 제거하려면 구성 요소의 cq:editConfig 노드에 다음 속성을 추가하십시오.
 
 * 이름: cq:disableTargeting
 * 유형: 부울
@@ -234,7 +234,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. �
 >
 >DTM을 사용하지 않는 경우 주문 확인을 Adobe Target으로 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. [orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가를 참조하십시오.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=ko)) Adobe Target은 MBox 이름이 `orderConfirmPage`인 경우 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. ([orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)를 참조하십시오.) Adobe Target은 MBox 이름이 `orderConfirmPage`일 때 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
 
 * productPurchasedId: 구매한 제품을 식별하는 ID 목록입니다.
 * orderId: 주문 ID입니다.
@@ -253,7 +253,7 @@ mbox를 만드는 렌더링된 HTML 페이지의 코드는 다음 예제와 유�
 
 각 매개 변수의 값은 각 순서에 따라 다릅니다. 따라서 구매 속성을 기반으로 코드를 생성하는 구성 요소가 필요합니다. CQ [eCommerce Integration Framework](/help/commerce/cif-classic/administering/ecommerce.md)를 통해 제품 카탈로그와 통합하고 장바구니 및 체크아웃 페이지를 구현할 수 있습니다.
 
-Geometrixx Outdoors 샘플은 방문자가 제품을 구매할 때 다음 확인 페이지를 표시합니다.
+Geometrixx Outdoors 샘플에는 방문자가 제품을 구매할 때 다음과 같은 확인 페이지가 표시됩니다.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -353,4 +353,4 @@ Adobe Target이 콘텐츠 타겟팅을 구동하면 engine_tnt.jsp 스크립트�
 * testandtarget.init
 * testandtarget.util
 * testandtarget.atjs
-* testandtarget.atjs-integration
+* testandtarget.atjs-통합

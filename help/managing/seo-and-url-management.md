@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
-source-wordcount: '3522'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3793'
+ht-degree: 98%
 
 ---
 
@@ -39,52 +39,52 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 하이픈을 사용하여 단어를 구분합니다.
 
-   * 하이픈(-)을 구분 기호로 사용하여 페이지의 이름을 지정합니다.
-   * 카멜 표기법, 밑줄 및 공백을 사용하면 안 됩니다.
+  * 하이픈(-)을 구분 기호로 사용하여 페이지의 이름을 지정합니다.
+  * 카멜 표기법, 밑줄 및 공백을 사용하면 안 됩니다.
 
 * 가능하면 쿼리 매개변수를 사용하지 않습니다. 필요할 경우 두 개 이하로 제한합니다.
 
-   * 사용 가능한 경우 디렉터리 구조를 사용하여 정보 아키텍처를 나타냅니다.
-   * 디렉터리 구조가 옵션이 아닌 경우 쿼리 문자열보다 URL의 Sling 선택기를 사용합니다. Sling 선택기를 사용하면 SEO 값이 제공될 뿐 아니라 Dispatcher의 페이지도 캐시할 수 있습니다.
+  * 사용 가능한 경우 디렉터리 구조를 사용하여 정보 아키텍처를 나타냅니다.
+  * 디렉터리 구조가 옵션이 아닌 경우 쿼리 문자열보다 URL의 Sling 선택기를 사용합니다. Sling 선택기를 사용하면 SEO 값이 제공될 뿐 아니라 Dispatcher의 페이지도 캐시할 수 있습니다.
 
 * URL은 사용자가 읽기 쉬울수록 더 좋습니다. 따라서 URL에 키워드가 있으면 값이 높아집니다.
 
-   * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
-   * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
-   * 예:
-     `mybrand.com/products/product-detail.product-category.product-name.html`이 `mybrand.com/products/product-detail.1234.html`보다 선호됩니다.
+  * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
+  * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
+  * 예:
+    `mybrand.com/products/product-detail.product-category.product-name.html`이 `mybrand.com/products/product-detail.1234.html`보다 선호됩니다.
 
 * 검색 엔진이 사이트의 SEO 값을 조각화하여 하위 도메인을 다른 엔터티로 취급하므로 가능한 경우에는 항상 하위 도메인을 사용하면 안 됩니다.
 
-   * 대신 첫 번째 수준 하위 경로를 사용합니다. 예를 들어 `es.mybrand.com/home.html` 대신 `www.mybrand.com/es/home.html`을 사용합니다.
+  * 대신 첫 번째 수준 하위 경로를 사용합니다. 예를 들어 `es.mybrand.com/home.html` 대신 `www.mybrand.com/es/home.html`을 사용합니다.
 
-   * 이 지침에 따라 콘텐츠의 흐름과 일치하도록 콘텐츠 계층 구조를 계획합니다.
+  * 이 지침에 따라 콘텐츠의 흐름과 일치하도록 콘텐츠 계층 구조를 계획합니다.
 
 * URL의 키워드 효과는 URL의 길이와 키워드 위치가 증가하면 감소합니다. 즉, 짧을수록 좋습니다.
 
-   * AEM에서 제공하는 URL 단축 기법 및 기능을 사용하여 불필요한 URL 조각을 제거합니다.
-   * 예를 들어 `mybrand.com/en/myPage.html`이 `mybrand.com/content/my-brand/en/myPage.html`보다 좋습니다.
+  * AEM에서 제공하는 URL 단축 기법 및 기능을 사용하여 불필요한 URL 조각을 제거합니다.
+  * 예를 들어 `mybrand.com/en/myPage.html`이 `mybrand.com/content/my-brand/en/myPage.html`보다 좋습니다.
 
 * 정식 URL을 사용합니다.
 
-   * 어떤 URL이 다른 경로나 다른 매개변수 또는 선택기에서 제공될 수 있는 경우 페이지에서 `rel=canonical` 태그를 사용해야 합니다.
+  * 어떤 URL이 다른 경로나 다른 매개변수 또는 선택기에서 제공될 수 있는 경우 페이지에서 `rel=canonical` 태그를 사용해야 합니다.
 
-   * AEM 템플릿 코드에 정식 URL을 포함합니다.
+  * AEM 템플릿 코드에 정식 URL을 포함합니다.
 
 * 가능하면 페이지 제목과 URL을 일치시킵니다.
 
-   * 콘텐츠 작성자는 이 방법을 따라야 합니다.
+  * 콘텐츠 작성자는 이 방법을 따라야 합니다.
 
 * URL 요청에서 대소문자를 구분하지 않습니다.
 
-   * 모든 인바운드 요청을 소문자로 다시 작성하도록 Dispatcher를 구성합니다.
-   * 모든 페이지를 소문자를 사용하여 만들도록 콘텐츠 작성자를 교육합니다.
+  * 모든 인바운드 요청을 소문자로 다시 작성하도록 Dispatcher를 구성합니다.
+  * 모든 페이지를 소문자를 사용하여 만들도록 콘텐츠 작성자를 교육합니다.
 
 * 각 페이지가 하나의 프로토콜에서만 제공되어야 합니다.
 
-   * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고, 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
+  * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고, 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 액세스하는 경우 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
 
-   * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 이 페이지는 모든 사용자가 `https`를 통해 전체 사이트를 더 쉽게 이용할 수 있도록 도와줍니다.
+  * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 이 페이지는 모든 사용자가 `https`를 통해 전체 사이트를 더 쉽게 이용할 수 있도록 도와줍니다.
 
 ### 서버 구성 {#server-configuration}
 
@@ -92,7 +92,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 인덱싱해서는 안 되는 콘텐츠의 크롤링을 차단하려면 `robots.txt` 파일을 사용하십시오.
 
-   * 테스트 환경의 **모든** 크롤링을 차단하십시오.
+  * 테스트 환경의 **모든** 크롤링을 차단하십시오.
 
 * 업데이트된 URL로 새 사이트를 시작할 때 기존 SEO 등급을 잃지 않도록 301 리디렉션을 구현하십시오.
 * 귀하의 사이트에 대한 favicon을 포함하십시오.
@@ -215,15 +215,15 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 >[!NOTE]
 >
->`sling:alias` 속성은 [ 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
+>`sling:alias` 속성은 [&#x200B; 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
 
 #### /etc/map {#etc-map}
 
 표준 AEM 설치에서
 
 * OSGi 구성
-  **Apache Sling Resource Resolver Factory**
-(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)의 경우
+  **Apache Sling Resource Resolver 팩토리**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * 속성
   **매핑 위치**(`resource.resolver.map.location`)의
@@ -244,7 +244,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 1. Dispatcher가 `/my-page.html`에서 응답을 캐시하고 응답을 사용자에게 반환합니다.
 1. 콘텐츠 작성자는 이 페이지를 변경하고 활성화합니다.
-1. Dispatcher 플러시 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.** Dispatcher에는 이 경로에 캐시된 페이지가 없으므로 이전 콘텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
+1. Dispatcher 플러시 에이전트가 `/content/my-brand/my-page`**.**&#x200B;에 대한 무효화 요청을 보냅니다. Dispatcher에는 이 경로에 캐시된 페이지가 없으므로 이전 콘텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않습니다.
 
 짧은 URL을 긴 URL에 매핑하는 사용자 정의 발송-플러시 규칙을 구성하여 캐시를 무효화하는 방법이 있습니다.
 
