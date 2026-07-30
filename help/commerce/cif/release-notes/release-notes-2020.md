@@ -192,7 +192,7 @@ Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번�
 
 ### 새로운 기능 {#what-is-new-april}
 
-* CIF 커넥터에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크 아웃 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)을 참조하십시오.
+* CIF 커넥터에 대한 구성 설정이 통합 및 단순화되었습니다. 자세한 내용은 체크 아웃 [시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=ko) 또는 [새 AEM CIF 프로젝트 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=ko)을 참조하십시오.
 
 ### 개선 사항 {#what-is-improved-april}
 
