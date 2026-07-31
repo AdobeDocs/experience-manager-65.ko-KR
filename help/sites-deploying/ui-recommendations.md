@@ -12,14 +12,14 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 0%
+source-wordcount: '790'
+ht-degree: 1%
 
 ---
 
 # 고객을 위한 사용자 인터페이스 권장 사항{#user-interface-recommendations-for-customers}
 
-Adobe Experience Manager에는 통합 Experience Cloud UI(터치 지원 UI라고도 함)와 클래식 UI의 두 가지 UI가 제공됩니다.
+Adobe Experience Manager에는 통합 Experience Cloud UI(터치 지원 UI라고도 함)와 클래식 UI라는 두 가지 UI가 제공됩니다.
 
 이 문서는 고객이 상황에 따라 사용할 UI를 선택할 수 있도록 안내하기 위한 것입니다.
 
@@ -40,12 +40,12 @@ Adobe Experience Manager에는 통합 Experience Cloud UI(터치 지원 UI라고
 * **DAM/Assets 관리자**
 디지털 에셋(이미지, 비디오, 문서, 다운로드 포함)을 관리하는 기능입니다.
 
-* **ContextHub**
+* **컨텍스트 허브**
 방문자에 대한 정보를 집계하여 다양한 용도로 사용하는 기능입니다. 사이트를 방문하는 사용자를 시뮬레이션할 수 있는 사용자 인터페이스를 제공합니다. AEM 6.2부터 ContextHub는 이전 기술인 Client Context를 대체했습니다.
 
 ## 일반 {#general}
 
-지난 몇 년 동안 Adobe은 통합 사용자 인터페이스로 모든 Adobe Experience Cloud 솔루션을 업데이트했습니다. Experience Cloud 솔루션 전반의 사용자는 애플리케이션 사용 및 운영 방법에 대한 일반적인 패턴을 통해 일관된 경험을 누릴 수 있습니다. Adobe은 릴리스가 나올 때마다 다양한 솔루션에서 작업 중인 고객의 피드백을 기반으로 사용자 인터페이스를 개선했습니다.
+지난 몇 년 동안 Adobe은 통합 사용자 인터페이스로 모든 Adobe Experience Cloud 솔루션을 업데이트했습니다. Experience Cloud 솔루션의 사용자는 애플리케이션 사용 및 운영 방법에 대한 일반적인 패턴을 사용하여 일관된 경험을 누릴 수 있습니다. Adobe은 릴리스가 나올 때마다 다양한 솔루션에서 작업 중인 고객의 피드백을 기반으로 사용자 인터페이스를 개선했습니다.
 
 2008년에 출시되고 버전 5.0-5.6.1을 실행하는 고객이 사용하는 Adobe Experience Manager(이전 이름: CQ5)의 원래 사용자 인터페이스는 AEM 6.5에 있습니다. 이를 통해 고객은 6.5로 업데이트할 수 있으며 동일한 사용자 인터페이스를 계속 사용하면서도 새로운 기능을 갖춘 업데이트된 플랫폼의 이점을 누릴 수 있습니다.
 
@@ -72,7 +72,7 @@ Adobe은 2018/19에 새로운 UI로 전환할 것을 권장합니다. 이 작업
    <td>
     <ol>
      <li>6.5로 업데이트</li>
-     <li>사이트 관리, 에셋 등에 기본 UI를 사용합니다. 등<br /> </li>
+     <li>사이트 관리, 자산 등에 기본 UI를 사용합니다.<br /> </li>
      <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. <a href="#selecting-your-ui">내 UI 선택</a>을 참조하세요.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>
@@ -84,7 +84,7 @@ Adobe은 2018/19에 새로운 UI로 전환할 것을 권장합니다. 이 작업
    <td>
     <ol>
      <li>6.5로 업데이트</li>
-     <li>사이트 관리, 에셋 등에 기본 UI를 사용합니다. 등</li>
+     <li>사이트 관리, 에셋 등에 기본 UI를 사용합니다.</li>
      <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 작업을 구성하십시오. <a href="#selecting-your-ui">내 UI 선택</a>을 참조하세요.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>

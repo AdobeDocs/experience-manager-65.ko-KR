@@ -11,33 +11,33 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '695'
 ht-degree: 1%
 
 ---
 
 # 초기 설정 {#initial-setup}
 
-## 작성자 및 Publish 인스턴스 시작 {#start-author-and-publish-instances}
+## 작성자 및 게시 인스턴스 시작 {#start-author-and-publish-instances}
 
 개발 및 데모를 위해 작성자 하나와 게시 인스턴스 하나를 실행해야 합니다.
 
 이렇게 하려면 기본 Adobe Experience Manager(AEM) [시작하기](../../help/sites-deploying/deploy.md#getting-started) 지침을 따르십시오. 그러면 다음과 같은 결과가 나타납니다.
 
 * [localhost:4502](http://localhost:4502/)의 작성자 환경
-* [localhost:4503](http://localhost:4503/)의 Publish 환경
+* [localhost:4503](http://localhost:4503/)에 환경 게시
 
 AEM Communities의 경우
 
 * 작성 환경은 다음과 같습니다.
 
-   * 사이트, 템플릿 및 구성 요소 개발
-   * 관리 및 구성 작업.
+  * 사이트, 템플릿 및 구성 요소 개발
+  * 관리 및 구성 작업.
 
-* Publish 환경은 다음과 같습니다.
+* 게시 환경은 다음과 같습니다.
 
-   * 콘텐츠 게시 및 중재에 대한 커뮤니티 경험.
-   * 커뮤니티 그룹, 구성원 및 구성원 그룹 만들기
+  * 콘텐츠 게시 및 중재에 대한 커뮤니티 경험.
+  * 커뮤니티 그룹, 구성원 및 구성원 그룹 만들기
 
 >[!NOTE]
 >
@@ -67,9 +67,9 @@ Adobe Analytics과의 통합은 선택 사항입니다.
 
 ## 터널 서비스 활성화 {#enable-the-tunnel-service}
 
-작성 환경에서 커뮤니티 사이트를 만들 때 터널 서비스를 사용하면 Publish 환경에 등록된 신뢰할 수 있는 커뮤니티 구성원에게 역할을 할당할 수 있습니다. 또한 터널 서비스를 통해 작성자 환경의 [구성원 및 그룹 콘솔](members.md)에서 커뮤니티 구성원에 액세스할 수 있습니다.
+작성 환경에서 커뮤니티 사이트를 만들 때 터널 서비스를 사용하면 게시 환경에 등록된 신뢰할 수 있는 커뮤니티 구성원에게 역할을 할당할 수 있습니다. 또한 터널 서비스를 통해 작성자 환경의 [구성원 및 그룹 콘솔](members.md)에서 커뮤니티 구성원에 액세스할 수 있습니다.
 
-이 규칙은 작성자 환경에서 *다시 만들 수 없음*&#x200B;을 위해 Publish 환경에서 만든 구성원 및 구성원 그룹을 위한 것입니다. 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
+규칙은 작성 환경에서 다시 만들 *not*&#x200B;에 게시 환경에서 만든 구성원 및 구성원 그룹을 위한 것입니다. 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
 
 **작성자** 인스턴스에서 터널 서비스를 사용하도록 설정하는 간단한 지침은 [터널 서비스](deploy-communities.md#tunnel-service-on-author)를 참조하십시오.
 
@@ -83,23 +83,23 @@ Adobe Analytics과의 통합은 선택 사항입니다.
 
 * 작성자 인스턴스에서
 
-   * 예: [http://localhost:4502/](http://localhost:4503/)
+  * 예: [http://localhost:4502/](http://localhost:4503/)
 
 * 관리자 권한으로 로그인
 
-   * 예를 들어 사용자 이름 &#39;admin&#39; / 암호 &#39;admin&#39;입니다.
+  * 예를 들어 사용자 이름 &#39;admin&#39; / 암호 &#39;admin&#39;입니다.
 
 * 기본 콘솔에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;로 이동합니다.
 * **편집** 메뉴에서 **[!UICONTROL 사용자 추가]**&#x200B;를 선택합니다.
 
 * `Create New User` 대화 상자에서 다음을 입력합니다.
 
-   * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL 전자 메일 주소]**: sirius.nilson@mailinator.com
-   * **[!UICONTROL 암호]**: 암호
-   * **[!UICONTROL 암호 확인&ast;]**: 암호
-   * **[!UICONTROL 이름]**: Sirius
-   * **[!UICONTROL 성]**: 닐슨
+  * **[!UICONTROL ID]**: sirius
+  * **[!UICONTROL 전자 메일 주소]**: sirius.nilson@mailinator.com
+  * **[!UICONTROL 암호]**: 암호
+  * **[!UICONTROL 암호 확인&amp;ast;]**: 암호
+  * **[!UICONTROL 이름]**: Sirius
+  * **[!UICONTROL 성]**: 닐슨
 
 ### 커뮤니티 관리자 그룹에 Sirius 할당 {#assign-sirius-to-community-administrators-group}
 
@@ -107,8 +107,8 @@ Adobe Analytics과의 통합은 선택 사항입니다.
 
 * 검색하려면 &#39;C&#39;를 입력하십시오.
 
-   * `Community Administrators` 선택
-   * `Community Enablement Managers` 선택
+  * `Community Administrators` 선택
+  * `Community Enablement Managers` 선택
 
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -116,14 +116,14 @@ Adobe Analytics과의 통합은 선택 사항입니다.
 
 ## 소셜 로그인 활성화 {#enable-social-login}
 
-facebook 및 Twitter을 사용하는 소셜 로그인의 데모 버전을 사용하려면 먼저 다음을 수행해야 합니다.
+Facebook 및 Twitter를 사용한 소셜 로그인 데모 버전을 사용하기 전에 다음을 수행해야 합니다.
 
 1. 수정 팩 또는 [최신 기능 팩](deploy-communities.md#latestfeaturepack)을 설치하십시오(2017년 3월 Facebook API 변경용).
 1. 게시 환경에서 [OAuth 공급자를 사용](social-login.md#adobe-granite-oauth-authentication-handler)합니다.
 
 프로덕션 서버의 경우 소셜 로그인을 제공하는 데 필요한 클라우드 서비스를 만들어야 합니다.
 
-[Facebook 및 Twitter을 사용한 소셜 로그인](social-login.md)을 참조하세요.
+[Facebook 및 Twitter로 소셜 로그인](social-login.md)을 참조하세요.
 
 ## 튜토리얼 태그 만들기 {#create-tutorial-tags}
 
@@ -143,9 +143,9 @@ facebook 및 Twitter을 사용하는 소셜 로그인의 데모 버전을 사용
 그런 다음 지침에 따라 다음을 수행합니다.
 
 1. [태그 권한을 설정합니다](../../help/sites-administering/tags.md#setting-tag-permissions).
-1. [태그를 Publish](../../help/sites-administering/tags.md#publishing-tags)합니다.
+1. [태그를 게시합니다](../../help/sites-administering/tags.md#publishing-tags).
 
-AEM Communities 시작 Tutorials을 위해 만들어진 태그의 샘플 패키지
+AEM Communities 시작 튜토리얼용으로 만들어진 태그 샘플 패키지
 
 [파일 가져오기](assets/tutorial_tags-v63.zip)
 

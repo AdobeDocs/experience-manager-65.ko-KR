@@ -1,5 +1,5 @@
 ---
-title: 양식의 효율성 및 전환 측정 및 개선
+title: 양식의 효과와 전환 측정 및 향상
 description: AEM Forms은 양식의 성능 및 전환율을 측정하고 개선할 수 있도록 하는 Adobe Target 및 Adobe Analytics 솔루션과 통합됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
-# 양식의 효율성 및 전환 측정 및 개선{#measure-and-improve-effectiveness-and-conversion-of-forms}
+# 양식의 효과와 전환 측정 및 향상{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## 과제 {#the-challenge-br}
 
@@ -114,7 +114,7 @@ AEM 내에서 분석 지원 양식에 대한 보고서를 보고 데이터를 �
 
 >[!NOTE]
 >
->Adobe Marketing Cloud의 Analytics 계정에서 세부 보고서를 보고 고객 및 양식과의 상호 작용에 대한 자세한 통찰력을 얻을 수 있습니다.
+>Adobe Marketing Cloud의 Analytics 계정에서 세부 보고서를 보고 고객 및 양식과의 상호 작용에 대한 자세한 insight을 얻을 수 있습니다.
 
 #### 3단계: 데이터 포인트 분석 {#step-analyze-data-points}
 
