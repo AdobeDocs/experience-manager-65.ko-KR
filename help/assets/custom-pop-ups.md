@@ -1,5 +1,5 @@
 ---
-title: 빠른 보기를 사용하여 사용자 정의 팝업 제작
+title: 빠른 보기를 사용하여 사용자 정의 팝업 만들기
 description: 기본 빠른 보기는 전자 상거래 경험에서 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 데 사용됩니다. 팝업에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,12 +11,12 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '1279'
+ht-degree: 1%
 
 ---
 
-# 빠른 보기를 사용하여 사용자 정의 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 사용자 정의 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
 기본 빠른 보기는 전자 상거래 경험에서 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 데 사용됩니다. 하지만 사용자 지정 콘텐츠를 트리거하여 팝업에 표시할 수 있습니다. 이 기능을 사용하면 뷰어에 따라 핫스팟, 썸네일 이미지 또는 이미지 맵에서 선택하여 정보 또는 관련 콘텐츠를 볼 수 있습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 2%
     <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">비디오에 대화형 기능을 추가</a>.</td>
     </tr>
     <tr>
-    <td>회전 배너</td>
+    <td>슬라이드 배너</td>
     <td><a href="/help/assets/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">배너에 핫스팟 또는 이미지 맵 추가</a>.<br /> </td>
     </tr>
     </tbody>
@@ -82,8 +82,8 @@ ht-degree: 2%
 
    뷰어에서 `QuickViewActive`(이)라는 처리기를 사용합니다.
 
-   **예**
-대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
+   **예제**
+   대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +114,7 @@ ht-degree: 2%
    `quickViewActivate` 처리기는 뷰어에서 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수 및 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
 
    **변수 매핑**
-웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
+   웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +130,7 @@ ht-degree: 2%
    ```
 
    **함수 호출**
-처리기가 작동하려면 Quickview에 대한 함수 호출도 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있는 것으로 간주됩니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+   처리기가 작동하려면 Quickview에 대한 함수 호출도 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있는 것으로 간주됩니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
@@ -147,7 +147,7 @@ ht-degree: 2%
    * 포함 코드의 setHandlers 섹션의 주석 처리를 제거합니다.
    * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
-      * 변수를 더 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
+     * 변수를 더 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
 
    * 뷰어 외부의 페이지에 간단한 `loadQuickView`() 함수를 만듭니다.
 
@@ -176,7 +176,7 @@ ht-degree: 2%
    </style>
    ```
 
-1. 팝업 `DIV`을(를) HTML 페이지의 본문에 넣습니다.
+1. 팝업 `DIV`을(를) HTML 페이지의 본문에 배치합니다.
 
    요소 중 하나는 사용자가 빠른 보기를 호출할 때 SKU 값으로 업데이트되는 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 버튼도 포함되어 있습니다.
 
@@ -260,8 +260,8 @@ ht-degree: 2%
 
    `*viewerInstance.*init()`
 
-   **예**
-이 예제에서는 대화형 이미지 뷰어를 사용합니다.
+   **예제**
+   이 예제에서는 대화형 이미지 뷰어를 사용합니다.
 
    `s7interactiveimageviewer.init()`
 

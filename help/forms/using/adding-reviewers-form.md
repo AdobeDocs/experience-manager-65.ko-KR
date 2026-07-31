@@ -1,5 +1,5 @@
 ---
-title: 제출 서류 검토자를 양식과 연결
+title: 제출 검토자와 양식 연결
 description: AEM Forms에서 제출 서류 검토자를 양식과 연결하는 방법을 알아봅니다. 관련 검토자는 Forms 포털을 통해 제출된 양식을 검토합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 9%
+source-wordcount: '470'
+ht-degree: 17%
 
 ---
 
-# 제출 서류 검토자를 양식과 연결 {#associating-submission-reviewers-with-a-form}
+# 제출 검토자와 양식 연결 {#associating-submission-reviewers-with-a-form}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -34,7 +34,7 @@ AEM Forms을 사용하면 검토자 그룹을 양식과 연결할 수 있습니�
 메타데이터 스키마를 편집하려면:
 
 1. 작성자 모드의 Experience Manager에서 **도구** > **Assets** > **메타데이터 스키마**&#x200B;를 클릭합니다.
-1. 스키마 Forms 페이지에서 **Forms** > **AEM에서 작성된 Forms**&#x200B;으로 이동합니다.
+1. 스키마 Forms 페이지에서 **Forms** > **AEM에서 작성된 Forms으로 이동합니다.**
 
    페이지의 URL은 다음과 같습니다.
 
@@ -52,7 +52,7 @@ AEM Forms을 사용하면 검토자 그룹을 양식과 연결할 수 있습니�
 
    적응형 양식의 고급 속성에 있는 제출 검토자 그룹 필드는 필드 레이블 아래에 지정한 이름으로 활성화됩니다.
 
-## 제출 서류 검토자를 양식과 연결 {#associating-submission-reviewers-with-a-form-1}
+## 제출 검토자와 양식 연결 {#associating-submission-reviewers-with-a-form-1}
 
 제출 검토자를 적응형 양식과 연결하려면 검토자 그룹을 만들고 사용자를 추가하십시오. 양식의 고급 속성에서 양식 제출 검토자 필드 아래에 작성된 검토자 그룹을 추가합니다.
 사용자 그룹을 사용하면 다양한 제출 검토자 세트를 다른 적응형 양식에 연결할 수 있습니다. 이 기능은 권한이 없는 사용자의 제출 검토를 방지합니다.

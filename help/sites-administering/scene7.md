@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5405'
+source-wordcount: '5545'
 ht-degree: 1%
 
 ---
@@ -199,8 +199,8 @@ Assets(디지털 에셋 관리) 기능을 사용하거나 Dynamic Media Classic 
 * Experience Manager Assets에서 아직 지원하지 않는 Dynamic Media Classic 자산 유형은 Dynamic Media Classic 컨텐츠 브라우저를 통해 Dynamic Media Classic에서 Experience Manager 웹 사이트에 직접 추가해야 합니다. 예를 들어 이미지 템플릿입니다.
 * Experience Manager Assets과 Dynamic Media Classic에서 모두 지원되는 에셋 유형의 경우, 업로드 방법은 다음에 따라 결정됩니다.
 
-   * 현재 에셋 위치 및
-   * 공통 저장소에서 이러한 파일을 관리하는 것의 중요성
+  * 현재 에셋 위치 및
+  * 공통 저장소에서 이러한 파일을 관리하는 것의 중요성
 
 자산이 이미 Dynamic Media Classic에 있고 공통 저장소에서 관리하는 것은 중요하지 않다고 가정합니다. 이 경우 에셋을 Experience Manager Assets으로 내보내고 게재를 위해 Dynamic Media Classic으로 다시 동기화하는 것은 불필요한 왕복 이동입니다. Adobe에서는 자산을 단일 저장소에 보관하고 게재를 위해 Dynamic Media Classic과 동기화하는 것이 좋습니다.
 
@@ -602,8 +602,8 @@ Experience Manager과 Dynamic Media Classic을 통합하는 데 문제가 있는
 * 자동 업로드를 활성화하도록 Cloud Services 구성을 구성했는지 그리고 Dynamic Media Classic 업로드를 포함하도록 DAM 자산 워크플로우를 업데이트하고 저장했는지 확인하십시오.
 * Dynamic Media Classic 대상 폴더의 하위 폴더에 이미지를 업로드할 때 다음 중 하나를 수행해야 합니다.
 
-   * 위치에 관계없이 모든 에셋의 이름이 고유한지 확인합니다. 그렇지 않으면 기본 대상 폴더의 자산이 삭제되고 하위 폴더의 자산만 유지됩니다.
-   * Dynamic Media Classic 계정의 설정 영역에서 Dynamic Media Classic이 자산을 덮어쓰는 방법을 변경합니다. 하위 폴더에서 이름이 같은 자산을 사용하는 경우 위치에 관계없이 자산을 덮어쓰도록 Dynamic Media Classic을 설정하지 마십시오.
+  * 위치에 관계없이 모든 에셋의 이름이 고유한지 확인합니다. 그렇지 않으면 기본 대상 폴더의 자산이 삭제되고 하위 폴더의 자산만 유지됩니다.
+  * Dynamic Media Classic 계정의 설정 영역에서 Dynamic Media Classic이 자산을 덮어쓰는 방법을 변경합니다. 하위 폴더에서 이름이 같은 자산을 사용하는 경우 위치에 관계없이 자산을 덮어쓰도록 Dynamic Media Classic을 설정하지 마십시오.
 
 **삭제된 에셋 또는 폴더가 Dynamic Media Classic과 Experience Manager 간에 동기화되지 않는 경우:**
 

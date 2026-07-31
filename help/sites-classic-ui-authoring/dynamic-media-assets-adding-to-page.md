@@ -11,16 +11,16 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 38%
+source-wordcount: '1708'
+ht-degree: 37%
 
 ---
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **[!UICONTROL Dynamic Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 페이지에 바로 추가할 수 있습니다. **[!UICONTROL 디자인]** 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. Then you can add these components to the page and add assets to the component. Dynamic Media 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 사용 가능한 옵션이 그에 따라 변경됩니다.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **[!UICONTROL Dynamic Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 페이지에 바로 추가할 수 있습니다. **[!UICONTROL 디자인]** 모드를 시작하고 Dynamic Media 구성 요소를 활성화하십시오. Then you can add these components to the page and add assets to the component. Dynamic Media 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 사용 가능한 옵션이 그에 따라 변경됩니다.
 
-Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 에셋을 페이지에 직접 추가합니다.
+Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다.
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 에셋�
 
 [!UICONTROL Dynamic Media] 또는 [!UICONTROL 대화형 미디어] 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. [!UICONTROL Dynamic Media] 및 [!UICONTROL I대화형 미디어] 구성 요소는 다음 섹션에서 자세히 설명합니다.
 
-페이지에 Dynamic Media 구성 요소/뷰어를 추가하려면 다음 작업을 수행하십시오.
+Dynamic Media 구성 요소/뷰어를 페이지에 추가하려면 다음 작업을 수행하십시오.
 
 1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
-1. 사용 가능한 Dynamic Media 구성 요소가 없는 경우 [!UICONTROL Sidekick]에서 눈금자를 선택하여 **[!UICONTROL 디자인]** 모드에 들어갑니다.
+1. 사용 가능한 Dynamic Media 구성 요소가 없는 경우 [!UICONTROL Sidekick]에서 눈금자를 선택하여 **[!UICONTROL 디자인]** 모드로 전환하십시오.
 1. **[!UICONTROL 편집]** parsys를 선택합니다.
-1. Dynamic Media 구성 요소를 사용할 수 있도록 **[!UICONTROL Dynamic Media]**&#x200B;을(를) 선택하십시오.
+1. Dynamic Media 구성 요소를 사용할 수 있도록 **[!UICONTROL Dynamic Media]**&#x200B;를 선택하십시오.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 에셋�
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] 및 [!UICONTROL 대화형 미디어]는 **[!UICONTROL Dynamic Media]**&#x200B;의 [!UICONTROL Sidekick]에서 사용할 수 있습니다. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 다른 모든 Dynamic Media 구성 요소의 경우 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
+[!UICONTROL Dynamic Media] 및 [!UICONTROL 대화형 미디어]는 **[!UICONTROL Dynamic Media]**&#x200B;의 [!UICONTROL Sidekick]에서 사용할 수 있습니다. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 기타 모든 Dynamic Media 구성 요소의 경우 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -65,8 +65,8 @@ Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아�
 >
 >[!UICONTROL Dynamic Media] 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
 >
->* [Dynamic Media을 사용](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
->* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media이 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+>* [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
+>* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media가 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 >
 
 #### 이미지 작업 시 {#when-working-with-images}

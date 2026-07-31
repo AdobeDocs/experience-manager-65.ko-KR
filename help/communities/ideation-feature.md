@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-관념화 기능은 Publish 환경에서 로그인한 사이트 방문자(커뮤니티 구성원)가 다음과 같은 작업을 수행할 수 있는 영역을 제공합니다.
+관념화 기능은 게시 환경의 로그인한 사이트 방문자(커뮤니티 구성원)가 다음 작업을 수행할 수 있는 영역을 제공합니다.
 
 * 커뮤니티와 공유할 아이디어를 만듭니다.
 * 아이디어를 보고 댓글을 남깁니다.

@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 43%
+source-wordcount: '962'
+ht-degree: 36%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 43%
 
 ## 시스템 요구 사항 개요
 
-현재 사용 중이거나 향후 사용할 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
+현재 사용 중이거나 향후 사용할 예정인 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
@@ -141,9 +141,9 @@ ht-degree: 43%
 * 향상된 myAccount 구성 요소
 * 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
 * **위시리스트**
-   * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
-   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
-   * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
-   * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
+  * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
+  * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
+  * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
+  * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
 
 ![위시리스트](/help/assets/CIF/wishlist.png)

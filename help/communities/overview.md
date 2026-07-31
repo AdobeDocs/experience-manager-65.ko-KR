@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 2%
+source-wordcount: '1332'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,8 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 * 블로그, Q&amp;A 및 이벤트 일정을 통해 **알림**,
 * 포럼, 댓글 및 UGC(사용자 생성 컨텐츠)라고도 하는 기타 커뮤니티 컨텐츠를 통해 **통찰력을 얻는 중**.
-* Publish 환경의 신뢰할 수 있는 구성원이 **중재**&#x200B;할 수 있도록 허용합니다.
-* **소셜 로그인**(Twitter 및 Facebook 포함),
+* 게시 환경의 신뢰할 수 있는 구성원이 **중재**&#x200B;할 수 있도록 허용합니다.
+* Twitter와 Facebook을 사용한 **소셜 로그인**,
 * 커뮤니티 콘텐츠의 **인라인 번역**,
 * 게시된 커뮤니티 사이트에서 **커뮤니티 그룹 만들기**,
 * **점수**&#x200B;를 매겨 배지를 수여합니다.
@@ -40,40 +40,40 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 ## 커뮤니티 사이트 {#community-sites}
 
-커뮤니티 사이트는 간단한 마법사를 사용하여 만든 AEM 사이트입니다. 이 마법사를 사용하면 사이트에 미리 연결되어 있는 여러 가지 공통 기능이 있는 웹 사이트가 생성됩니다.
+커뮤니티 사이트는 간단한 마법사를 사용하여 만든 AEM 사이트로, 사이트에 미리 연결되어 있는 많은 공통 기능이 있는 웹 사이트를 만듭니다.
 
 [사이트 만들기 마법사](/help/communities/sites-console.md):
 
 * 선택한 [커뮤니티 사이트 템플릿](/help/communities/sites.md)을(를) 기반으로 사이트의 기능을 어셈블합니다.
 
-   * [커뮤니티 기능](#community-functions)에서 빌드됨
-   * 선택적 [커뮤니티 그룹](#communitygroups) 기능
+  * [커뮤니티 기능](#community-functions)에서 빌드됨
+  * 선택적 [커뮤니티 그룹](#communitygroups) 기능
 
 * 설정을 사용하여 다음을 구성합니다.
 
-   * 중재
-   * 로그인
-   * 번역
+  * 중재
+  * 로그인
+  * 번역
 
 * 다음과 같은 필수 기능을 제공합니다.
 
-   * 반응형 디자인: [Twitter Bootstrap 테마](https://getbootstrap.com)를 사용합니다.
+  * 반응형 디자인: [Twitter Bootstrap 테마](https://getbootstrap.com)를 사용합니다.
 
-   * 로그인 : 자가 등록, [소셜 로그인](/help/communities/social-login.md), 사용자 프로필
+  * 로그인 : 자가 등록, [소셜 로그인](/help/communities/social-login.md), 사용자 프로필
 
-      * 알림:
-구성원은 해당 구성원과 관련된 이벤트 및 사용자가 생성한 컨텐츠를 볼 수 있으며 해당 컨텐츠는 [@mentioned](/help/communities/overview.md#mentionssupport)입니다.
+    * 알림:
+      구성원은 해당 구성원과 관련된 이벤트 및 사용자가 생성한 컨텐츠를 볼 수 있으며 해당 컨텐츠는 [@mentioned](/help/communities/overview.md#mentionssupport)입니다.
 
-      * 메시징: 구성원은 커뮤니티 사이트 내에서 메시지를 보내거나 받을 수 있습니다.
-      * 검색: 커뮤니티 사이트 내에서 검색할 수 있습니다.
-      * 언어 전환: [다국어 사이트](/help/sites-administering/translation.md)의 언어를 선택하는 기능.
+    * 메시징: 구성원은 커뮤니티 사이트 내에서 메시지를 보내거나 받을 수 있습니다.
+    * 검색: 커뮤니티 사이트 내에서 검색할 수 있습니다.
+    * 언어 전환: [다국어 사이트](/help/sites-administering/translation.md)의 언어를 선택하는 기능.
 
-      * 관리: 권한이 있는 구성원이 커뮤니티 사이트 내에서 사용자를 중재하고 관리할 수 있도록 액세스할 수 있습니다.
+    * 관리: 권한이 있는 구성원이 커뮤니티 사이트 내에서 사용자를 중재하고 관리할 수 있도록 액세스할 수 있습니다.
 
 * 다음과 같은 많은 페이지 수준 작성 단계를 생략할 수 있습니다.
 
-   * 브랜딩: 커뮤니티 사이트의 모든 페이지에 표시할 배너 이미지 업로드(선택 사항)
-   * 탐색 메뉴: 커뮤니티 사이트 템플릿에 포함된 기능에 대한 탐색 링크가 제공됩니다.
+  * 브랜딩: 커뮤니티 사이트의 모든 페이지에 표시할 배너 이미지 업로드(선택 사항)
+  * 탐색 메뉴: 커뮤니티 사이트 템플릿에 포함된 기능에 대한 탐색 링크가 제공됩니다.
 
 커뮤니티 사이트를 쉽게 만들려면 [AEM Communities 시작](/help/communities/getting-started.md)을 방문하세요.
 
@@ -95,47 +95,47 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 * [Sites](/help/communities/sites-console.md) 콘솔
 
-   * 사이트 생성
-   * 사이트 편집
-   * 사이트 관리
-   * [커뮤니티 그룹](/help/communities/groups.md) 콘솔
+  * 사이트 생성
+  * 사이트 편집
+  * 사이트 관리
+  * [커뮤니티 그룹](/help/communities/groups.md) 콘솔
 
 * [중재](/help/communities/moderation.md) 콘솔
 
-   * 작성자 및 Publish 환경을 위한 일반적인 벌크 중재 UI.
-   * 새로운 필터링 기준.
+  * 작성자 및 게시 환경에 대한 일반적인 벌크 중재 UI.
+  * 새로운 필터링 기준.
 
 * [구성원 및 그룹](/help/communities/members.md) 관리 콘솔
 
-   * 작성자 환경에서 게시측 사용자(구성원)를 만들고 관리할 수 있습니다.
-   * 구성원을 금지할 수 있습니다.
-   * 작성 환경에서 게시측 사용자 그룹(구성원 그룹)을 만들고 관리할 수 있습니다.
+  * 작성자 환경에서 게시측 사용자(구성원)를 만들고 관리할 수 있습니다.
+  * 구성원을 금지할 수 있습니다.
+  * 작성 환경에서 게시측 사용자 그룹(구성원 그룹)을 만들고 관리할 수 있습니다.
 
 * [보고서](/help/communities/reports.md) 콘솔
 
-   * 할당, 게시물 및 보기에 대한 보고서를 생성할 수 있습니다.
+  * 할당, 게시물 및 보기에 대한 보고서를 생성할 수 있습니다.
 
 전역 도구 콘솔에서는 다음 Communities 도구에 액세스할 수 있습니다.
 
 * [사이트 템플릿](/help/communities/tools.md#sitetemplatesconsole) 콘솔
 
-   * 커뮤니티 사이트 템플릿을 만들고 관리합니다.
+  * 커뮤니티 사이트 템플릿을 만들고 관리합니다.
 
 * [그룹 템플릿](/help/communities/tools.md#grouptemplatesconsole) 콘솔
 
-   * 커뮤니티 그룹 템플릿을 만들고 관리합니다.
+  * 커뮤니티 그룹 템플릿을 만들고 관리합니다.
 
 * [커뮤니티 기능](/help/communities/tools.md#communityfunctionsconsole) 콘솔
 
-   * 커뮤니티 기능을 만들고 관리합니다.
+  * 커뮤니티 기능을 만들고 관리합니다.
 
 * [저장소 구성](/help/communities/tools.md#storageconfiguratonconsole) 콘솔
 
-   * 사이트에 대한 [공용 저장소](/help/communities/working-with-srp.md)를 선택하고 구성하십시오.
+  * 사이트에 대한 [공용 저장소](/help/communities/working-with-srp.md)를 선택하고 구성하십시오.
 
 * [구성 요소 가이드](/help/communities/components-guide.md)
 
-   * 샘플 사이트 [커뮤니티 구성 요소](https://localhost:4502/editor.html/content/community-components/en.html)는 모든 커뮤니티 구성 요소의 샘플에서 기본 구성과 이를 실험할 수 있는 기능을 제공합니다.
+  * 샘플 사이트 [커뮤니티 구성 요소](https://localhost:4502/editor.html/content/community-components/en.html)는 모든 커뮤니티 구성 요소의 샘플에서 기본 구성과 이를 실험할 수 있는 기능을 제공합니다.
 
 ## 커뮤니티 사이트 템플릿 {#community-site-templates}
 
@@ -169,7 +169,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 ## 커뮤니티 구성 요소 {#community-components}
 
-커뮤니티 사이트를 만든 [커뮤니티 구성 요소](/help/communities/author-communities.md)를 사용하여 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
+커뮤니티 사이트를 만든 [커뮤니티 구성 요소](/help/communities/author-communities.md)를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수 있습니다.
 
 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)를 사용하여 해당 구성 요소를 대화식으로 탐색할 수 있습니다.
 
@@ -199,7 +199,7 @@ AEM Communities을 사용하면 사이트 방문자와의 관계를 다음과 �
 
 ## AEM 데모 컴퓨터 {#aem-demo-machine}
 
-[AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine)는 AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [앱](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) 및 [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)에 대한 데모를 관리 및 실행하며, 이를 위해서는 단순히 QuickStart 인스턴스를 시작하는 것 이상의 설정이 필요합니다. AEM 데모 컴퓨터는 MongoDB, Solr, MySQL, FFmpeg 및 전자 메일 서버와 같은 추가 [인프라](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure)를 설정합니다.
+[AEM 데모 컴퓨터](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine)는 AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [앱](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) 및 [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)에 대한 데모를 관리 및 실행하며, 이를 위해서는 QuickStart 인스턴스를 시작하는 것 이상의 설정이 필요합니다. AEM 데모 컴퓨터는 MongoDB, Solr, MySQL, FFmpeg 및 전자 메일 서버와 같은 추가 [인프라](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure)를 설정합니다.
 
 AEM 데모 시스템에는 다음이 포함됩니다.
 
@@ -208,9 +208,9 @@ AEM 데모 시스템에는 다음이 포함됩니다.
 
 * 설치할 패키지.
 
-AEM 데모 머신은 Windows, macOS 및 Linux®에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4로 성공적으로 테스트되었습니다.
+AEM 데모 머신은 Windows, macOS 및 Linux®에서 CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 및 AEM 6.4를 사용하여 성공적으로 테스트되었습니다.
 
-AEM 데모 컴퓨터에는 유효한 AEM 라이센스가 필요합니다.
+AEM 데모 컴퓨터에는 유효한 AEM 라이선스가 필요합니다.
 
 >[!NOTE]
 >
