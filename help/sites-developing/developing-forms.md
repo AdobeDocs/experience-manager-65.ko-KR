@@ -39,7 +39,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
+>이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
