@@ -93,7 +93,7 @@ Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아�
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-**[!UICONTROL 이미지 수정자]** - 추가 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 명령은 [이미지 사전 설정 관리](/help/assets/managing-viewer-presets.md) 및 [명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
+**[!UICONTROL 이미지 수정자]** - 추가 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 명령은 [이미지 사전 설정 관리](/help/assets/managing-viewer-presets.md) 및 [명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko)에 설명되어 있습니다.
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
@@ -139,7 +139,7 @@ Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아�
 
 Experience Manager 6.2에서 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)을(를) 설치할 때 보안 SSL 연결(HTTPS) 또는 비보안 연결(HTTP)을 통해 비디오가 전달되는지 여부를 제어할 수 있습니다. 기본적으로 비디오 전달 프로토콜은 포함된 웹 페이지의 프로토콜에서 자동으로 상속됩니다. 웹 페이지가 HTTPS를 통해 로드되면 비디오도 HTTPS를 통해 전달됩니다. 반대로 웹 페이지가 HTTP를 사용하는 경우에는 비디오가 HTTP를 통해 전달됩니다. 일반적으로 이 기본 동작은 양호하며 구성을 변경할 필요가 없습니다. 그러나 이 기본 동작을 재정의할 수 있습니다. URL 경로의 끝이나 포함 코드 조각의 다른 뷰어 구성 매개 변수 목록에 `VideoPlayer.ssl=on`을(를) 추가합니다. 두 작업 중 하나는 보안 비디오 전송을 강제합니다.
 
-보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html)을 참조하십시오. 비디오 뷰어 이외에 혼합 비디오 뷰어와 대화형 비디오 뷰어에 보안 비디오를 게재할 수 있습니다.
+보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=ko)을 참조하십시오. 비디오 뷰어 이외에 혼합 비디오 뷰어와 대화형 비디오 뷰어에 보안 비디오를 게재할 수 있습니다.
 
 ### 대화형 미디어 구성 요소 {#interactive-media-component}
 
