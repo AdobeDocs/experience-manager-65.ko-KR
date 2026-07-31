@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 
 ## InDesign 서버와 통합 {#integrating-with-indesign-server}
 
-통합 프로세스의 일부로 InDesign과의 통합에 적합한 **DAM 자산 업데이트** 워크플로우를 구성하십시오. 또한 InDesign 서버에 대한 프록시 작업자를 구성합니다. 자세한 내용은 [AEM Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하세요.
+통합 프로세스의 일부로 InDesign과의 통합에 적합한 **DAM 자산 업데이트** 워크플로우를 구성하십시오. 또한 InDesign 서버에 대한 프록시 작업자를 구성합니다. 자세한 내용은 [AEM Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
 
 >[!NOTE]
 >
->AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/kr/indesign/using/files-templates.html)을 참조하세요.
+>AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/indesign/using/files-templates.html)을 참조하세요.
 >
->InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠에 태그 지정](https://helpx.adobe.com/kr/indesign/using/tagging-content-xml.html)을 참조하세요.
+>InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠 태그 지정](https://helpx.adobe.com/indesign/using/tagging-content-xml.html)을 참조하세요.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 1. 마법사에서 페이지의 InDesign 템플릿을 선택합니다. 그런 다음 **다음**&#x200B;을 클릭합니다.
 1. 페이지 이름과 설명(선택 사항)을 지정합니다. 태그(있는 경우)를 지정합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 클릭합니다. 그런 다음 대화 상자에서 **열기**&#x200B;를 클릭합니다. 왼쪽 창에 제품 속성이 표시됩니다. InDesign 템플릿에 대한 사전 정의된 속성이 오른쪽 창에 나타납니다.
-1. 왼쪽 창에서 제품 속성을 InDesign 템플릿 속성으로 드래그하고 이들 속성 간에 매핑을 만듭니다.
+1. 왼쪽 창에서 제품 속성을 InDesign 템플릿 속성으로 드래그하고 두 속성 간에 매핑을 만듭니다.
 
    페이지가 실시간으로 표시되는 방식을 보려면 오른쪽 창의 **미리 보기** 탭을 클릭하십시오.
 
@@ -92,10 +92,10 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 1. 카탈로그의 페이지를 다시 정렬하려면 도구 모음에서 **만들기** 아이콘을 클릭한 다음 메뉴에서 **병합**&#x200B;을(를) 선택하십시오. 마법사에서 맨 위의 슬라이드를 사용하면 페이지를 드래그하여 순서를 변경할 수 있습니다. 페이지를 제거할 수도 있습니다.
 
 1. **다음**&#x200B;을 클릭합니다. 기존 InDesign 파일을 표지로 추가하려면 **표지 선택** 상자 옆의 **찾아보기**&#x200B;를 클릭하고 표지 템플릿의 경로를 지정하십시오.
-1. **저장**&#x200B;을 클릭한 다음 **완료**&#x200B;를 클릭하여 확인 대화 상자를 닫습니다.
+1. **저장**&#x200B;을 클릭한 다음 **완료**를 클릭하여 확인 대화 상자를 닫습니다.
 **완료** 옵션을 선택하면 .pdf 렌디션을 원하는지 여부를 선택하는 대화 상자가 열립니다.
    ![pdf로 내보내기](assets/CatalogPDF.png)
-Acrobat(PDF) 옵션을 선택하면 indesign 렌디션 외에 **/jcr:content/renditions**&#x200B;에서 pdf 렌디션이 만들어집니다. 다운로드 대화 상자에서 &quot;렌디션&quot; 확인란을 선택하여 모든 렌디션을 다운로드할 수 있습니다.
+   Acrobat(PDF) 옵션을 선택하면 indesign 렌디션 외에 **/jcr:content/renditions**&#x200B;에서 pdf 렌디션이 만들어집니다. 다운로드 대화 상자에서 &quot;렌디션&quot; 확인란을 선택하여 모든 렌디션을 다운로드할 수 있습니다.
 
 1. 만든 카탈로그의 미리 보기를 생성하려면 **카탈로그** 콘솔에서 미리 보기를 선택한 다음 도구 모음에서 **미리 보기** 아이콘을 클릭합니다.
 

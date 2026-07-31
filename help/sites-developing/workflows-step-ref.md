@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3276'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 2%
 * **시간 초과**
 
   이후 단계가 &quot;시간 초과&quot;되는 기간입니다.
-다음 중 하나를 선택할 수 있습니다. **해제**, **즉시**, **1h**, **6h**, **12h**, **24h**.
+  다음 중 하나를 선택할 수 있습니다. **해제**, **즉시**, **1h**, **6h**, **12h**, **24h**.
 
 * **시간 제한 처리기**
 
@@ -68,15 +68,15 @@ ht-degree: 2%
 
 * **전자 메일로 사용자에게 알림**
 
-   * 워크플로우가 단계에 도달하면 이메일을 보내어 참가자에게 알립니다.
-   * 활성화된 경우 **사용자/그룹** 속성으로 정의된 사용자에게 전자 메일이 전송되거나 그룹이 정의된 경우 그룹의 각 구성원에게 전자 메일이 전송됩니다.
+  * 워크플로우가 단계에 도달하면 이메일을 보내어 참가자에게 알립니다.
+  * 활성화된 경우 **사용자/그룹** 속성으로 정의된 사용자에게 전자 메일이 전송되거나 그룹이 정의된 경우 그룹의 각 구성원에게 전자 메일이 전송됩니다.
 
 * **사용자/그룹**
 
-   * 드롭다운 선택 상자를 사용하여 사용자 또는 그룹으로 이동하여 선택할 수 있습니다.
-   * 특정 사용자에게 단계를 할당하면 이 사용자만 단계에서 작업을 수행할 수 있습니다.
-   * 단계를 전체 그룹에 할당한 경우 워크플로가 이 단계에 도달하면 이 그룹의 모든 사용자는 **워크플로 받은 편지함**&#x200B;에서 작업을 수행할 수 있습니다.
-   * 자세한 내용은 [워크플로에 참여](/help/sites-authoring/workflows-participating.md)를 참조하십시오.
+  * 드롭다운 선택 상자를 사용하여 사용자 또는 그룹으로 이동하여 선택할 수 있습니다.
+  * 특정 사용자에게 단계를 할당하면 이 사용자만 단계에서 작업을 수행할 수 있습니다.
+  * 단계를 전체 그룹에 할당한 경우 워크플로가 이 단계에 도달하면 이 그룹의 모든 사용자는 **워크플로 받은 편지함**&#x200B;에서 작업을 수행할 수 있습니다.
+  * 자세한 내용은 [워크플로에 참여](/help/sites-authoring/workflows-participating.md)를 참조하십시오.
 
 ## AND 분할 {#and-split}
 
@@ -90,8 +90,8 @@ ht-degree: 2%
 
 * **AND 분할 속성**&#x200B;을(를) 편집합니다.
 
-   * **분할 이름**: 설명을 위해 이름을 지정하십시오.
-   * 필요한 분기 수를 선택합니다(2, 3, 4 또는 5).
+  * **분할 이름**: 설명을 위해 이름을 지정하십시오.
+  * 필요한 분기 수를 선택합니다(2, 3, 4 또는 5).
 
 * 필요에 따라 분기에 워크플로우 단계를 추가합니다.
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 * [일반](#step-properties-common-tab)
 * **컨테이너**
 
-   * **하위 워크플로**: 시작할 워크플로를 선택하십시오.
+  * **하위 워크플로**: 시작할 워크플로를 선택하십시오.
 
 ## 이동 단계 {#goto-step}
 
@@ -130,12 +130,12 @@ ht-degree: 2%
 * [일반](#step-properties-common-tab)
 * **프로세스**
 
-   * **대상 단계**: 라우팅 식의 조건을 평가한 후 실행할 단계를 선택합니다.
-   * **라우팅 식**: **대상 단계**&#x200B;를 실행할지 여부를 결정하는 규칙 정의, 외부 스크립트 또는 ECMA 스크립트를 선택하십시오.
+  * **대상 단계**: 라우팅 식의 조건을 평가한 후 실행할 단계를 선택합니다.
+  * **라우팅 식**: **대상 단계**&#x200B;를 실행할지 여부를 결정하는 규칙 정의, 외부 스크립트 또는 ECMA 스크립트를 선택하십시오.
 
-      * **규칙 정의:** [표현식 편집기](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor)를 사용하여 규칙을 정의합니다.
-      * **외부 스크립트:** 외부 스크립트의 경로입니다.
-      * **ECMA 스크립트**: **이동 단계**&#x200B;를 실행할지 여부를 결정하는 스크립트.
+    * **규칙 정의:** [표현식 편집기](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor)를 사용하여 규칙을 정의합니다.
+    * **외부 스크립트:** 외부 스크립트의 경로입니다.
+    * **ECMA 스크립트**: **이동 단계**&#x200B;를 실행할지 여부를 결정하는 스크립트.
 
 #### for 루프 시뮬레이션 {#simulating-a-for-loop}
 
@@ -188,7 +188,7 @@ function check(){
 
 >[!NOTE]
 >
->[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=ko#use-a-variable)를 참조하십시오.
+>[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)를 참조하십시오.
 
 ![OR 분할을 사용하여 분기](assets/variables_orsplit_new.png)
 
@@ -198,18 +198,18 @@ function check(){
 
 * **OR 분할 속성**&#x200B;을(를) 편집합니다.
 
-   * **공통**
+  * **공통**
 
-      * 분할 이름을 지정합니다.
+    * 분할 이름을 지정합니다.
 
-   * **분기(*x)***
+  * **분기(*x)***
 
-      * **분기 추가:** 단계에 분기를 더 추가합니다.
-      * **라우팅 식 선택**: 활성 분기를 계산하려면 라우팅 식을 선택하십시오. 가능한 값은 규칙 정의, 외부 스크립트 및 ECMA 스크립트입니다.
-      * **식을 추가하려면 클릭하세요**: 라우팅 식으로 **규칙 정의**&#x200B;를 선택한 경우 활성 분기를 평가할 식을 추가합니다.
-      * **스크립트 경로**: 라우팅 식으로 **외부 스크립트**&#x200B;를 선택하는 경우 활성 분기를 평가하는 스크립트가 포함된 파일의 경로입니다.
-      * **스크립트**: 라우팅 식으로 **ECMA 스크립트**&#x200B;를 선택하는 경우 활성 분기를 평가하도록 상자에 스크립트를 추가합니다.
-      * **기본 경로**: 여러 분기가 있는 경우 기본 분기가 적용됩니다. 하나의 분기만 기본값으로 지정할 수 있습니다.
+    * **분기 추가:** 단계에 분기를 더 추가합니다.
+    * **라우팅 식 선택**: 활성 분기를 계산하려면 라우팅 식을 선택하십시오. 가능한 값은 규칙 정의, 외부 스크립트 및 ECMA 스크립트입니다.
+    * **식을 추가하려면 클릭하세요**: 라우팅 식으로 **규칙 정의**&#x200B;를 선택한 경우 활성 분기를 평가할 식을 추가합니다.
+    * **스크립트 경로**: 라우팅 식으로 **외부 스크립트**&#x200B;를 선택하는 경우 활성 분기를 평가하는 스크립트가 포함된 파일의 경로입니다.
+    * **스크립트**: 라우팅 식으로 **ECMA 스크립트**&#x200B;를 선택하는 경우 활성 분기를 평가하도록 상자에 스크립트를 추가합니다.
+    * **기본 경로**: 여러 분기가 있는 경우 기본 분기가 적용됩니다. 하나의 분기만 기본값으로 지정할 수 있습니다.
 
   >[!NOTE]
   >
@@ -269,7 +269,7 @@ function check(){
 * [사용자/그룹](#step-properties-user-group-tab)
 * **대화 상자**
 
-   * **대화 상자 경로**: 사용자가 만든 [대화 상자](#dialog-participant-step-creating-a-dialog)의 대화 상자 노드 경로
+  * **대화 상자 경로**: 사용자가 만든 [대화 상자](#dialog-participant-step-creating-a-dialog)의 대화 상자 노드 경로
 
 #### 대화 상자 참가자 단계 - 대화 상자 만들기 {#dialog-participant-step-creating-a-dialog}
 
@@ -284,20 +284,18 @@ function check(){
 
 * **페이로드로 데이터 저장**
 
-   * 위젯 데이터를 워크플로 페이로드의 속성으로 저장하려면 위젯 노드의 이름 속성 값에 다음 형식을 사용합니다.
+  * 위젯 데이터를 워크플로 페이로드의 속성으로 저장하려면 위젯 노드의 이름 속성 값에 다음 형식을 사용합니다.
+    `./jcr:content/nodename`
 
-     `./jcr:content/nodename`
-
-   * 데이터는 페이로드 노드의 `nodename` 속성에 저장됩니다. 노드에 해당 속성이 없으면 속성이 만들어집니다.
-   * 페이로드와 함께 저장되는 경우 동일한 페이로드를 사용하는 대화 상자의 후속 사용은 속성 값을 덮어씁니다.
+  * 데이터는 페이로드 노드의 `nodename` 속성에 저장됩니다. 노드에 해당 속성이 없으면 속성이 만들어집니다.
+  * 페이로드와 함께 저장되는 경우 동일한 페이로드를 사용하는 대화 상자의 후속 사용은 속성 값을 덮어씁니다.
 
 * **작업 항목으로 데이터 저장**
 
-   * 위젯 데이터를 작업 항목 메타데이터의 속성으로 저장하려면 이름 속성 값에 다음 형식을 사용합니다.
+  * 위젯 데이터를 작업 항목 메타데이터의 속성으로 저장하려면 이름 속성 값에 다음 형식을 사용합니다.
+    `nodename`
 
-     `nodename`
-
-   * 데이터가 작업 항목 `metadata`의 `nodename` 속성에 저장됩니다. 대화 상자가 나중에 동일한 페이로드와 함께 사용되는 경우 데이터가 유지됩니다.
+  * 데이터가 작업 항목 `metadata`의 `nodename` 속성에 저장됩니다. 대화 상자가 나중에 동일한 페이로드와 함께 사용되는 경우 데이터가 유지됩니다.
 
 #### 대화 상자 참가자 단계 - 대화 상자 정의 {#dialog-participant-step-dialog-definition}
 
@@ -387,13 +385,13 @@ function check(){
 * [일반](#step-properties-common-tab)
 * **참가자 선택기**
 
-   * **참가자 선택기**: 만든 [참가자 선택기의 이름](#developingtheparticipantchooser).
-   * **인수**: 필요한 모든 인수.
-   * **전자 메일**: 사용자에게 전자 메일 알림을 전송할지 여부입니다.
+  * **참가자 선택기**: 만든 [참가자 선택기의 이름](#developingtheparticipantchooser).
+  * **인수**: 필요한 모든 인수.
+  * **전자 메일**: 사용자에게 전자 메일 알림을 전송할지 여부입니다.
 
 * **대화 상자**
 
-   * **대화 경로**: **대화 참가자 단계**&#x200B;에서와 같이 사용자가 만드는 [대화 상자의 대화 노드에 대한 경로](#dialog-participant-step-creating-a-dialog).
+  * **대화 경로**: **대화 참가자 단계**&#x200B;에서와 같이 사용자가 만드는 [대화 상자의 대화 노드에 대한 경로](#dialog-participant-step-creating-a-dialog).
 
 #### 동적 참가자 단계 - 참가자 선택기 개발 {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -432,9 +430,9 @@ function check(){
 
   서비스는 [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스를 구현해야 합니다. 인터페이스는 다음 멤버를 정의합니다.
 
-   * `SERVICE_PROPERTY_LABEL` 필드: 참가자 선택기의 이름을 지정하려면 이 필드를 사용하십시오. **동적 참가자 단계** 속성의 사용 가능한 참가자 선택기 목록에 이름이 나타납니다.
+  * `SERVICE_PROPERTY_LABEL` 필드: 참가자 선택기의 이름을 지정하려면 이 필드를 사용하십시오. **동적 참가자 단계** 속성의 사용 가능한 참가자 선택기 목록에 이름이 나타납니다.
 
-   * `getParticipant` 메서드: 동적으로 확인된 사용자 ID를 `String` 값으로 반환합니다.
+  * `getParticipant` 메서드: 동적으로 확인된 사용자 ID를 `String` 값으로 반환합니다.
 
   >[!CAUTION]
   >
@@ -443,7 +441,7 @@ function check(){
   >
   >하지만 참가자 목록이 반환되면 **참가자 단계**&#x200B;에 대해서만 그룹 ID를 사용할 수 있습니다. **동적 참가자 단계**&#x200B;의 경우 빈 목록이 반환되어 위임에 사용할 수 없습니다.
 
-  **동적 참가자 단계** 구성 요소에서 구현을 사용할 수 있도록 하려면 서비스를 내보내는 OSGi 번들에 Java™ 클래스를 추가하고 AEM 서버에 번들을 배포합니다.
+  **동적 참가자 단계** 구성 요소에서 구현을 사용할 수 있도록 하려면 서비스를 내보내는 OSGi 번들에 Java™ 클래스를 추가하고 해당 번들을 AEM 서버에 배포합니다.
 
   >[!NOTE]
   >
@@ -506,7 +504,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->이 섹션에서는 페이지 작성을 위한 기초 구성 요소 [&#128279;](/help/sites-authoring/default-components-foundation.md#form)의 Forms 섹션에 대해 설명합니다.
+>이 섹션에서는 페이지 작성을 위한 기초 구성 요소 ](/help/sites-authoring/default-components-foundation.md#form)의 [Forms 섹션에 대해 설명합니다.
 
 #### 양식 참가자 단계 - 구성 {#form-participant-step-configuration}
 
@@ -516,7 +514,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [사용자/그룹](#step-properties-user-group-tab)
 * **양식**
 
-   * **양식 경로**: 만든 [양식의 경로](#form-participant-step-creating-the-form).
+  * **양식 경로**: 만든 [양식의 경로](#form-participant-step-creating-the-form).
 
 #### 양식 참가자 단계 - 양식 만들기 {#form-participant-step-creating-the-form}
 
@@ -555,9 +553,9 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [일반](#step-properties-common-tab)
 * **인수**
 
-   * **참가자**: 선택할 수 있는 사용자 목록을 지정합니다. 목록에 사용자를 추가하려면 **항목 추가**&#x200B;를 클릭하고 사용자 노드의 홈 경로 또는 사용자 ID를 입력하십시오. 사용자의 순서는 작업 항목이 할당될 가능성에 영향을 주지 않습니다.
+  * **참가자**: 선택할 수 있는 사용자 목록을 지정합니다. 목록에 사용자를 추가하려면 **항목 추가**&#x200B;를 클릭하고 사용자 노드의 홈 경로 또는 사용자 ID를 입력하십시오. 사용자의 순서는 작업 항목이 할당될 가능성에 영향을 주지 않습니다.
 
-### 워크플로우 개시자 참가자 선택기 {#workflow-initiator-participant-chooser}
+### 워크플로 개시자 참가자 선택기 {#workflow-initiator-participant-chooser}
 
 **워크플로 개시자 참가자 선택기** 단계는 생성된 작업 항목을 워크플로를 시작한 사용자에게 할당하는 참가자 선택기입니다. **Common** 속성 외에 구성할 속성이 없습니다.
 
@@ -580,14 +578,14 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [일반](#step-properties-common-tab)
 * **프로세스**
 
-   * **프로세스**: 실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한 정보:
+  * **프로세스**: 실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한 정보:
 
-      * 표준 ECMAScript 및 OSGi 서비스에서는 [프로세스 단계에 내장된 프로세스](/help/sites-developing/workflows-process-ref.md)를 참조하십시오.
-      * 프로세스 단계에 대한 ECMAScript를 만들려면 [ECMAScript를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)을 참조하십시오.
-      * 프로세스 단계에 대한 OSGi 서비스를 만드는 중입니다. [Java™ 클래스를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)을 참조하세요.
+    * 표준 ECMAScript 및 OSGi 서비스에서는 [프로세스 단계에 내장된 프로세스](/help/sites-developing/workflows-process-ref.md)를 참조하십시오.
+    * 프로세스 단계에 대한 ECMAScript를 만들려면 [ECMAScript를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)을 참조하십시오.
+    * 프로세스 단계에 대한 OSGi 서비스를 만드는 중입니다. [Java™ 클래스를 사용하여 프로세스 단계 구현](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)을 참조하세요.
 
-   * **핸들러 진행**: 실행 후 워크플로우를 자동으로 다음 단계로 진행하려면 이 옵션을 선택하십시오. 선택하지 않은 경우 구현 스크립트는 워크플로우 개선을 처리해야 합니다.
-   * **인수**: 프로세스에 전달할 인수.
+  * **핸들러 진행**: 실행 후 워크플로우를 자동으로 다음 단계로 진행하려면 이 옵션을 선택하십시오. 선택하지 않은 경우 구현 스크립트는 워크플로우 개선을 처리해야 합니다.
+  * **인수**: 프로세스에 전달할 인수.
 
 ## 변수 설정 {#set-variable}
 
@@ -602,15 +600,15 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [일반](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **매핑**
 
-   * **변수 선택:** 이 옵션을 사용하여 값을 설정할 변수를 선택합니다.
-   * **매핑 모드 선택:** 변수에 대한 값을 설정하려면 매핑 모드를 선택하십시오. 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
+  * **변수 선택:** 이 옵션을 사용하여 값을 설정할 변수를 선택합니다.
+  * **매핑 모드 선택:** 변수에 대한 값을 설정하려면 매핑 모드를 선택하십시오. 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
 
-      * **리터럴:** 지정할 정확한 값을 알고 있는 경우 옵션을 사용하십시오.
-      * **식:** 사용할 값이 식을 기반으로 계산되는 경우 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 생성됩니다.
-      * **JSON 점 표기법:** 옵션을 사용하여 JSON 또는 FDM 형식 변수에서 값을 검색합니다.
-      * **XPATH:** 옵션을 사용하여 XML 형식 변수에서 값을 검색합니다.
-      * **페이로드 관련 값:** 변수에 저장할 값을 페이로드 관련 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
-      * **절대 경로:** 변수에 저장할 값을 절대 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
+    * **리터럴:** 지정할 정확한 값을 알고 있는 경우 옵션을 사용하십시오.
+    * **식:** 사용할 값이 식을 기반으로 계산되는 경우 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 생성됩니다.
+    * **JSON 점 표기법:** 옵션을 사용하여 JSON 또는 FDM 형식 변수에서 값을 검색합니다.
+    * **XPATH:** 옵션을 사용하여 XML 형식 변수에서 값을 검색합니다.
+    * **페이로드 관련 값:** 변수에 저장할 값을 페이로드 관련 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
+    * **절대 경로:** 변수에 저장할 값을 절대 경로에서 사용할 수 있는 경우 옵션을 사용합니다.
 
-   * **값 지정:** 변수에 매핑하려면 값을 지정하십시오. 이 필드에서 지정하는 값은 매핑 모드에 따라 다릅니다.
-   * **매핑 추가:** 이 옵션을 사용하여 더 많은 매핑을 추가하여 변수의 값을 설정하십시오.
+  * **값 지정:** 변수에 매핑하려면 값을 지정하십시오. 이 필드에서 지정하는 값은 매핑 모드에 따라 다릅니다.
+  * **매핑 추가:** 이 옵션을 사용하여 더 많은 매핑을 추가하여 변수의 값을 설정하십시오.
