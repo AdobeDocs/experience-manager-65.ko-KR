@@ -504,7 +504,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->이 섹션에서는 페이지 작성을 위한 기초 구성 요소 ](/help/sites-authoring/default-components-foundation.md#form)의 [Forms 섹션에 대해 설명합니다.
+>이 섹션에서는 페이지 작성을 위한 기초 구성 요소 [&#128279;](/help/sites-authoring/default-components-foundation.md#form)의 Forms 섹션에 대해 설명합니다.
 
 #### 양식 참가자 단계 - 구성 {#form-participant-step-configuration}
 
