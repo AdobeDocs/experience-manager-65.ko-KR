@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5796'
+source-wordcount: '5853'
 ht-degree: 5%
 
 ---
@@ -124,9 +124,9 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 1. **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 중에 나타납니다.
 
-타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/search-and-discovery/search-boost)을 참조하세요.
+타겟팅된 키워드에 대한 검색 결과에서 일부 에셋의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 정보는 [다음 위치에서 검색 [!DNL Experience Manager]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)을 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410339/?captions=kor&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *비디오: 검색 결과의 등급과 등급에 영향을 줄 수 있는 방법을 이해합니다.*
 
@@ -214,11 +214,11 @@ TBD: Where are the limit, size, orderby properties defined?
 
 ### [!DNL Experience Manager] 데스크톱 앱에서 디지털 자산 검색 {#desktop-app}
 
-Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/ko/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets)를 참조하세요.
+Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets)를 참조하세요.
 
 ### [!DNL Brand Portal]에서 디지털 자산 검색 {#brand-portal}
 
-LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/ko/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching)을 참조하세요.
+LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 에셋을 확장된 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유합니다. [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching)을 참조하세요.
 
 ### [!DNL Adobe Stock]개 이미지 검색 {#adobe-stock1}
 
@@ -366,11 +366,11 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
    변경 사항을 저장합니다.
 
 1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`에 액세스하고 값이 `true`인 `Boolean` 형식의 `similarityTags` 속성을 추가하십시오.
-1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/configuring/tagging#configuring)을 참조하세요.
+1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring)을 참조하세요.
 1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 `reindex` 속성을 `true`(으)로 설정합니다. 변경 사항을 저장합니다.
 1. (선택 사항) 검색 양식을 사용자 지정한 경우 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 노드를 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`에 복사합니다. 변경 사항을 저장합니다.
 
-관련 정보는 [Experience Manager의 스마트 태그 이해](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/metadata/image-smart-tags) 및 [스마트 태그를 관리하는 방법](/help/assets/enhanced-smart-tags.md)을 참조하십시오.
+관련 정보는 [Experience Manager의 스마트 태그 이해](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags) 및 [스마트 태그를 관리하는 방법](/help/assets/enhanced-smart-tags.md)을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -493,6 +493,6 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] 구현 안내서 검색](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [검색 결과를 늘리는 고급 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 
