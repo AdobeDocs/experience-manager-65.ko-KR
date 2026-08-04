@@ -148,36 +148,36 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 * 새 프로젝트의 단일 페이지 App Maven Project Archetype 1.0.6+는 [GitHub 릴리스 노트](https://github.com/adobe/aem-spa-project-archetype/releases)를 참조하십시오.
 * HTL 버전 1.4의 경우 [GitHub 릴리스 노트](https://github.com/adobe/htl-spec/releases/tag/1.4)를 참조하십시오.
 
-   * 문자열, 배열 및 개체의 &quot;in&quot; 연산자:
+  * 문자열, 배열 및 개체의 &quot;in&quot; 연산자:
 
-     ```html
-     ${'a' in 'abc'}
-     ${100 in myArray}
-     ${'a' in myObject}
-     ```
+    ```html
+    ${'a' in 'abc'}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-   * data-sly-set을 사용한 변수 선언:
-     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * data-sly-set을 사용한 변수 선언:
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * 목록 및 반복 제어 매개 변수: begin, step, end:
-     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * 목록 및 반복 제어 매개 변수: begin, step, end:
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * data-sly-unwrap용 식별자:
+  * data-sly-unwrap용 식별자:
 
-     ```html
-     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-     </div>
-     ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-   * 음수 지원
+  * 음수 지원
 
 * 핵심 구성 요소 2.3.2+의 경우 [GitHub 릴리스 노트](https://github.com/adobe/aem-core-wcm-components/releases)를 참조하십시오.
 * 레이아웃 컨테이너 그리드 시스템의 경우 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)을(를) 참조하십시오.
 * Clientlib Manager: Google Closure Compiler가 JavaScript clientlibs(이전 기본값은 Yahoo YUI)를 축소하고 v20190121 버전으로 Google Closure Compiler를 업데이트했습니다.
 * 템플릿 편집기 및 정책
 
-   * JS SDK(SPA 편집기라고도 함)를 사용하는 단일 페이지 앱에 대한 템플릿 생성 및 편집
+  * JS SDK(SPA 편집기라고도 함)를 사용하는 단일 페이지 앱에 대한 템플릿 생성 및 편집
 
 * Reference Site We.Retail 4.0의 경우 [GitHub 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)를 참조하십시오.
 * 기존 사이트를 업그레이드하여 최신 편집기 기능을 사용할 수 있는 도구는 [GitHub 저장소](https://github.com/adobe/aem-modernize-tools)를 참조하십시오.
@@ -457,17 +457,17 @@ Adobe에는 고객 중심의 버그 해결 및 개선 요청 개발을 위한 �
 * We.Retail 참조 구현([자세히 보기](/help/sites-developing/we-retail.md))
 * Maven 프로젝트 원형:
 
-   * 전체 스택 사이트의 경우: [GitHub 프로젝트](https://github.com/adobe/aem-project-archetype)
-   * React/Angular이 있는 단일 페이지 앱의 경우: [GitHub 프로젝트](https://github.com/adobe/aem-spa-project-archetype)
+  * 전체 스택 사이트의 경우: [GitHub 프로젝트](https://github.com/adobe/aem-project-archetype)
+  * React/Angular이 있는 단일 페이지 앱의 경우: [GitHub 프로젝트](https://github.com/adobe/aem-spa-project-archetype)
 
 * 다양한 대상 플랫폼에 대한 AEM Screens 플레이어([다운로드](https://download.macromedia.com/screens/))
 
 * 스마트 컨텐츠 언어 모델. 영어가 사전 설치되어 더 많은 언어를 다운로드할 수 있습니다.
 
-   * [독일어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [스페인어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [이탈리아어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [프랑스어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+  * [독일어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+  * [스페인어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+  * [이탈리아어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+  * [프랑스어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM 대화 상자 변환 도구 등 도구 세트 현대화. ([GitHub 프로젝트](https://github.com/adobe/aem-modernize-tools))
 
@@ -526,9 +526,9 @@ Adobe은 제품 및 시간의 경과에 따라 기능을 보다 강력한 버전
 
   다음 각 작업에서 `htmllibmanager.fileSystemOutputCacheLocation` 속성이 빈 문자열이 아닌지 확인하십시오.
 
-   1. `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`을(를) 호출하고 있습니다.
-   2. AEM 6.5로 업그레이드
-   3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot; 실행.
+  1. `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`을(를) 호출하고 있습니다.
+  2. AEM 6.5로 업그레이드
+  3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot; 실행.
 
 * AEM 6.5 인스턴스에서 JDK 11을 사용하는 경우 일부 패키지를 배포한 후 일부 페이지가 공백으로 표시될 수 있습니다. 로그 파일에 다음 오류 메시지가 표시됩니다.
 
@@ -575,13 +575,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 적응형 양식이 구성 요소의 값을 동적으로 업데이트하도록 구성되어 있고 양식을 호스팅하는 게시 인스턴스가 Dispatcher을 통해 액세스되는 경우 필드의 값을 동적으로 업데이트하는 기능이 작동하지 않습니다. 이 문제를 해결하려면 게시 인스턴스에서 CRXDE를 열고 `/libs/fd/af/runtime/clientlibs/guideChartReducer`(으)로 이동한 다음 아래에 나열된 속성을 만듭니다.
 
-   * 이름: allowProxy
-   * 유형: 부울
-   * 값: true
-   * 보호: False
-   * 필수: False
-   * 다중: False
-   * 자동 생성됨: False
+  * 이름: allowProxy
+  * 유형: 부울
+  * 값: true
+  * 보호: False
+  * 필수: False
+  * 다중: False
+  * 자동 생성됨: False
 
   이 속성으로 런타임 폴더 아래의 클라이언트 라이브러리가 프록시에 액세스할 수 있습니다. (CQ-4268679)
 
