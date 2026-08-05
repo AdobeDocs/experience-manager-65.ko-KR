@@ -20,7 +20,7 @@ ht-degree: 10%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
 | AEM 6.5 | 이 문서 |
 
 이 문서에는 개요, 샘플 사용 사례, 만들기 워크플로 및 대화형 커뮤니케이션과 편지 간의 차이점이 포함되어 있습니다.
