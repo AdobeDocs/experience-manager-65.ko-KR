@@ -8,15 +8,20 @@ exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 2e13a0cd09477ccd5374f1850efad882c8222f0a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 7%
+source-wordcount: '526'
+ht-degree: 10%
 
 ---
 
 
 # 대화형 통신 개요 {#interactive-communications-overview}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM 6.5 | 이 문서 |
 
 이 문서에는 개요, 샘플 사용 사례, 만들기 워크플로 및 대화형 커뮤니케이션과 편지 간의 차이점이 포함되어 있습니다.
 
