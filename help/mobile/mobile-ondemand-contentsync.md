@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 기본 모바일 애플리케이션에서 사용할 수 있도록 컨텐츠 동기화를 사용하여 컨텐츠를 패키징합니다. Adobe Experience Manager(AEM)에서 작성된 페이지는 장치가 오프라인 상태인 경우에도 앱 콘텐츠로 사용할 수 있습니다. 또한 AEM 페이지는 웹 표준을 기반으로 하므로 플랫폼 간에 작동하므로 기본 래퍼에 포함할 수 있습니다. 이 전략을 사용하면 개발 노력을 줄이고 앱 콘텐츠를 쉽게 업데이트할 수 있습니다.
 
-컨텐츠 동기화 프레임워크는 웹 컨텐츠를 포함하는 아카이브 파일을 만듭니다. 컨텐츠는 간단한 페이지, 이미지 및 PDF 파일 또는 전체 웹 애플리케이션에서 사용할 수 있습니다. 콘텐츠 동기화 API는 콘텐츠를 검색하고 앱에 포함할 수 있도록 모바일 앱 또는 빌드 프로세스에서 보관 파일에 대한 액세스를 제공합니다.
+컨텐츠 동기화 프레임워크는 웹 컨텐츠를 포함하는 아카이브 파일을 만듭니다. 컨텐츠는 단순 페이지, 이미지 및 PDF 파일 또는 전체 웹 애플리케이션에서 사용할 수 있습니다. 콘텐츠 동기화 API는 콘텐츠를 검색하고 앱에 포함할 수 있도록 모바일 앱 또는 빌드 프로세스에서 보관 파일에 대한 액세스를 제공합니다.
 
 다음 단계는 Content Sync의 일반적인 사용 사례를 보여 줍니다.
 
@@ -39,7 +39,7 @@ Content Sync Handler 개발에 대한 몇 가지 지침은 다음과 같습니�
 
 * 처리기는 *com.day.cq.contentsync.handler.ContentUpdateHandler*&#x200B;을(를) 구현하거나 이 작업을 수행하는 클래스를 확장해야 합니다.
 * 처리기는 *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*&#x200B;를 확장할 수 있습니다.
-* 처리기는 ContentSync 캐시를 업데이트하는 경우에만 true를 보고해야 합니다. true를 잘못 보고하면 업데이트가 실제로 발생하지 않았을 때 AEM에서 업데이트를 만들게 됩니다.
+* 처리기는 ContentSync 캐시를 업데이트하는 경우에만 true를 보고해야 합니다. false reporting true로 설정하면 업데이트가 실제로 발생하지 않은 경우 AEM에서 업데이트를 만듭니다.
 * 처리기는 콘텐츠가 변경된 경우에만 캐시를 업데이트해야 합니다. 흰색이 필요하지 않은 경우 캐시에 쓰지 마십시오. 따라서 불필요한 업데이트가 생성됩니다.
 
 >[!NOTE]
@@ -50,9 +50,9 @@ Content Sync Handler 개발에 대한 몇 가지 지침은 다음과 같습니�
 
 콘텐츠 동기화 구성을 만들어 클라이언트에 제공되는 ZIP 파일의 콘텐츠를 지정합니다. 콘텐츠 동기화 구성을 원하는 수만큼 만들 수 있습니다. 각 구성에는 식별을 위한 이름이 있습니다.
 
-콘텐츠 동기화 구성을 만들려면 `sling:resourceType` 속성이 `contentsync/config`(으)로 설정된 상태에서 `cq:ContentSyncConfig` 노드를 리포지토리에 추가하십시오. `cq:ContentSyncConfig` 노드는 저장소의 어느 곳에나 있을 수 있지만 AEM 게시 인스턴스의 사용자가 노드에 액세스할 수 있어야 합니다. 따라서 `/content` 아래에 노드를 추가해야 합니다.
+콘텐츠 동기화 구성을 만들려면 `sling:resourceType` 속성이 `contentsync/config`(으)로 설정된 상태에서 `cq:ContentSyncConfig` 노드를 리포지토리에 추가하십시오. `cq:ContentSyncConfig` 노드는 리포지토리의 어느 곳에나 있을 수 있지만 AEM 게시 인스턴스의 사용자가 노드에 액세스할 수 있어야 합니다. 따라서 `/content` 아래에 노드를 추가해야 합니다.
 
-콘텐츠 동기화 ZIP 파일의 콘텐츠를 지정하려면 cq:ContentSyncConfig 노드에 하위 노드를 추가합니다. 각 하위 노드의 다음 속성은 포함할 콘텐츠 항목과 이 항목을 추가할 때 처리되는 방법을 식별합니다.
+콘텐츠 동기화 ZIP 파일의 콘텐츠를 지정하려면 cq:ContentSyncConfig 노드에 하위 노드를 추가하십시오. 각 하위 노드의 다음 속성은 포함할 콘텐츠 항목과 이 항목을 추가할 때 처리되는 방법을 식별합니다.
 
 * `path`: 콘텐츠의 위치입니다.
 * `type`: 콘텐츠 처리에 사용할 구성 형식의 이름입니다. 몇 가지 형식을 사용할 수 있으며 *구성 형식* 섹션에 설명되어 있습니다.
@@ -224,7 +224,7 @@ Day CQ Content Sync Manager 서비스는 콘텐츠 동기화에 대한 액세스
 
 이 예제에서 이벤트 목록 페이지는 초기 페이지로 가정됩니다. 이 정보는 **indexPage** 속성에 제공되므로 언제든지 쉽게 변경할 수 있습니다. 두 번째 속성은 *events.plist* 파일의 경로를 정의합니다. 나중에 볼 수 있듯이 클라이언트 애플리케이션은 이제 매니페스트를 읽고 그에 따라 작동할 수 있습니다.
 
-구성이 설정되면 콘텐츠는 브라우저나 다른 HTTP 클라이언트를 통해 다운로드할 수 있습니다. 또는 iOS용으로 개발하는 경우 전용 WAppKitSync 클라이언트 라이브러리를 사용할 수 있습니다. 다운로드 위치는 구성의 경로 및 *.zip* 확장으로 구성됩니다. 예를 들어, 로컬 AEM 인스턴스로 작업하는 경우: *http://localhost:4502/content/weretail_go.zip*
+구성이 설정되면 콘텐츠는 브라우저나 다른 HTTP 클라이언트를 통해 다운로드할 수 있습니다. 또는 iOS용으로 개발하는 경우 전용 WAppKitSync 클라이언트 라이브러리를 사용할 수 있습니다. 다운로드 위치는 구성의 경로 및 *.zip* 확장 기능으로 구성됩니다(예: 로컬 AEM 인스턴스 *http://localhost:4502/content/weretail_go.zip* 사용 시).
 
 ### 콘텐츠 동기화 콘솔 {#the-content-sync-console}
 
@@ -282,7 +282,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 사용자 지정 업데이트 처리기 구현 {#implementing-a-custom-update-handler}
 
-모든 We.Retail 모바일 페이지에는 zip 파일에 포함되어야 하는 로고가 왼쪽 상단 모서리에 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소의 이미지 파일 실제 위치를 참조하지 않으므로 **복사** 구성 유형을 사용하지 못합니다. 대신 AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 고유한 **로고** 구성 유형을 제공해야 합니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
+모든 We.Retail 모바일 페이지에는 zip 파일에 포함되어야 하는 로고가 왼쪽 상단 모서리에 있습니다. 그러나 캐시 최적화를 위해 AEM은 리포지토리에서 이미지 파일의 실제 위치를 참조하지 않으므로 **복사** 구성 유형을 사용할 수 없습니다. 대신 AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 고유한 **로고** 구성 유형을 제공해야 합니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -329,7 +329,7 @@ AEM WCM에 대해 SSO를 활성화하려면 먼저 AEM WCM에서 제공한 신�
 
 AEM WCM에서 SSO를 활성화하려면 AEM WCM의 Apache Felix 웹 관리 콘솔(OSGi)에서 관련 구성 항목에 액세스합니다.
 
-1. https://&lt;AEM-host>:&lt;port>/system/console의 URI를 통해 콘솔에 액세스합니다.
+1. https://<AEM-host>:<port>/system/console의 URI를 통해 콘솔에 액세스합니다.
 1. 구성 메뉴에서 SSO 인증 핸들러를 선택합니다. 이 예에서 SSO 처리기는 AEM 포틀릿에서 제공한 쿠키를 기반으로 모든 경로에 대한 SSO 요청을 수락합니다. 구성이 다를 수 있습니다.
 
    | 경로 | / | 모든 요청에 대해 SSO 처리기 활성화 |
@@ -389,7 +389,7 @@ AEM 컨텐츠 포틀릿의 기본 인라인 편집 기능을 사용하지 않지
    </LoginModule>
    ```
 
-1. OSGi 구성 콘솔의 기본적으로 https://localhost:4502/system/console/configMgr에 있으며 드롭다운 메뉴에서 **CQ PIN 인증 처리기**&#x200B;를 선택합니다.
+1. OSGi 구성 콘솔의 기본 위치 https://localhost:4502/system/console/configMgr에서 드롭다운 메뉴에서 **CQ PIN 인증 처리기**&#x200B;를 선택합니다.
 1. 단일 값 **/**&#x200B;을(를) 포함하도록 **URL 루트 경로** 매개 변수를 편집하십시오.
 
 ### 권한 {#privileges}
@@ -730,7 +730,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
 
 AEM WCM에서 제공하는 콘텐츠에 액세스하려면 포털 서버에 AEM 포털 디렉터 포틀릿을 설치해야 합니다. 이 섹션에 제공된 단계를 사용하여 포틀릿을 설치, 구성 및 포털 페이지에 추가하면 됩니다.
 
-기본적으로 포틀릿은 localhost:4503의 게시 인스턴스와 localhost:4502의 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 사용하기 전에 애플리케이션 war 파일을 다운로드하십시오.
+기본적으로 포틀릿은 localhost:4503에 있는 게시 인스턴스와 localhost:4502에 있는 작성자 인스턴스에 연결됩니다. 이러한 값은 포틀릿을 배포하는 동안 변경할 수 있습니다. 포털 디렉터는 /libs/portal/directory 아래에 있는 저장소에서 콘텐츠로 사용할 수 있습니다. 사용하기 전에 애플리케이션 war 파일을 다운로드하십시오.
 
 ### war 파일 다운로드 {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ AEM WCM에서 제공하는 콘텐츠에 액세스하려면 포털 서버에 AEM 
    * **작성자 기본 URL**: AEM 작성자 인스턴스의 기본 URL입니다.
    * **게시 기본 URL**: AEM 게시 인스턴스의 기본 URL입니다.
    * **작성자가 게시로 사용됨**: 게시로 사용되는 작성자 인스턴스입니다.
-인스턴스(개발용)
+     인스턴스(개발용)
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

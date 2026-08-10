@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager과 Adobe PhoneGap Enterprise용 Content Sync
-description: Adobe Experience Manager을 사용하는 Adobe PhoneGap Enterprise용 Content Sync에 대해 알아봅니다.
+title: Adobe PhoneGap Enterprise와 Adobe Experience Manager의 컨텐츠 동기화
+description: Adobe Experience Manager과의 Adobe PhoneGap Enterprise용 Content Sync에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >AEM 도구를 사용하여 만드는 PhoneGap 앱은 이미 콘텐츠 동기화를 통해 AEM 페이지를 콘텐츠로 사용하도록 구성되어 있습니다.
 
-컨텐츠 동기화 프레임워크는 웹 컨텐츠를 포함하는 아카이브 파일을 만듭니다. 컨텐츠는 간단한 페이지, 이미지 및 PDF 파일 또는 전체 웹 애플리케이션에서 사용할 수 있습니다. 콘텐츠 동기화 API는 콘텐츠를 검색하고 앱에 포함할 수 있도록 모바일 앱 또는 빌드 프로세스에서 보관 파일에 대한 액세스를 제공합니다.
+컨텐츠 동기화 프레임워크는 웹 컨텐츠를 포함하는 아카이브 파일을 만듭니다. 컨텐츠는 단순 페이지, 이미지 및 PDF 파일 또는 전체 웹 애플리케이션에서 사용할 수 있습니다. 콘텐츠 동기화 API는 콘텐츠를 검색하고 앱에 포함할 수 있도록 모바일 앱 또는 빌드 프로세스에서 보관 파일에 대한 액세스를 제공합니다.
 
 다음 단계는 Content Sync의 일반적인 사용 사례를 보여 줍니다.
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 콘텐츠 동기화 구성을 만들어 클라이언트에 제공되는 ZIP 파일의 콘텐츠를 지정합니다. 콘텐츠 동기화 구성을 원하는 수만큼 만들 수 있습니다. 각 구성에는 식별을 위한 이름이 있습니다.
 
-콘텐츠 동기화 구성을 만들려면 `sling:resourceType` 속성이 `contentsync/config`(으)로 설정된 상태에서 `cq:ContentSyncConfig` 노드를 리포지토리에 추가하십시오. `cq:ContentSyncConfig` 노드는 저장소의 어느 곳에나 있을 수 있지만 AEM 게시 인스턴스의 사용자가 노드에 액세스할 수 있어야 합니다. 따라서 `/content` 아래에 노드를 추가해야 합니다.
+콘텐츠 동기화 구성을 만들려면 `sling:resourceType` 속성이 `contentsync/config`(으)로 설정된 상태에서 `cq:ContentSyncConfig` 노드를 리포지토리에 추가하십시오. `cq:ContentSyncConfig` 노드는 리포지토리의 어느 곳에나 있을 수 있지만 AEM 게시 인스턴스의 사용자가 노드에 액세스할 수 있어야 합니다. 따라서 `/content` 아래에 노드를 추가해야 합니다.
 
-콘텐츠 동기화 ZIP 파일의 콘텐츠를 지정하려면 cq:ContentSyncConfig 노드에 하위 노드를 추가합니다. 각 하위 노드의 다음 속성은 포함할 콘텐츠 항목과 이 항목을 추가할 때 처리되는 방법을 식별합니다.
+콘텐츠 동기화 ZIP 파일의 콘텐츠를 지정하려면 cq:ContentSyncConfig 노드에 하위 노드를 추가하십시오. 각 하위 노드의 다음 속성은 포함할 콘텐츠 항목과 이 항목을 추가할 때 처리되는 방법을 식별합니다.
 
 * `path`: 콘텐츠의 위치입니다.
 * `type`: 콘텐츠 처리에 사용할 구성 형식의 이름입니다. 몇 가지 유형을 사용할 수 있으며 구성 유형에 설명되어 있습니다.
@@ -135,11 +135,11 @@ cq:ContentSyncConfig 노드에 `updateuser` 속성이 없으면 기본 익명 �
 * **path** - /content/dam 아래의 자산 폴더의 경로입니다.
 * **렌디션** - Type은 사용자가 기본 이미지 대신 사용할 렌디션을 지정할 수 있는 문자열 배열입니다. 다음 목록은 일부 기본 변환을 요약하지만, 워크플로우에서 만든 모든 변환을 사용할 수도 있습니다.
 
-   * *원본*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *cq5dam.web.1280.1280.png*
+  * *원본*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *cq5dam.web.1280.1280.png*
 
 **이미지** - 이미지를 수집합니다.
 
@@ -230,7 +230,7 @@ cq:ContentSyncConfig 노드에 `updateuser` 속성이 없으면 기본 익명 �
 
 이 예제에서 이벤트 목록 페이지는 초기 페이지로 가정됩니다. 이 정보는 **indexPage** 속성에 제공되므로 언제든지 쉽게 변경할 수 있습니다. 두 번째 속성은 *events.plist* 파일의 경로를 정의합니다. 나중에 볼 수 있듯이 클라이언트 애플리케이션은 이제 매니페스트를 읽고 그에 따라 작동할 수 있습니다.
 
-구성이 설정되면 콘텐츠는 브라우저나 다른 HTTP 클라이언트를 통해 다운로드할 수 있습니다. 또는 iOS용으로 개발하는 경우 전용 WAppKitSync 클라이언트 라이브러리를 사용할 수 있습니다. 다운로드 위치는 구성의 경로 및 *.zip* 확장으로 구성됩니다. 예를 들어, 로컬 AEM 인스턴스로 작업하는 경우: *https://localhost:4502/content/weretail_go.zip*
+구성이 설정되면 콘텐츠는 브라우저나 다른 HTTP 클라이언트를 통해 다운로드할 수 있습니다. 또는 iOS용으로 개발하는 경우 전용 WAppKitSync 클라이언트 라이브러리를 사용할 수 있습니다. 다운로드 위치는 구성의 경로 및 *.zip* 확장 기능으로 구성됩니다(예: 로컬 AEM 인스턴스 *https://localhost:4502/content/weretail_go.zip* 사용 시).
 
 ### 콘텐츠 동기화 콘솔 {#the-content-sync-console}
 
@@ -288,7 +288,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 사용자 지정 업데이트 처리기 구현 {#implementing-a-custom-update-handler}
 
-모든 We.Retail 모바일 페이지에는 zip 파일에 포함할 왼쪽 상단 모서리에 로고가 있습니다. 그러나 캐시 최적화를 위해 AEM은 저장소의 이미지 파일 실제 위치를 참조하지 않으므로 **복사** 구성 유형을 사용하지 못합니다. 대신 AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 고유한 **로고** 구성 유형을 제공해야 합니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
+모든 We.Retail 모바일 페이지에는 zip 파일에 포함할 왼쪽 상단 모서리에 로고가 있습니다. 그러나 캐시 최적화를 위해 AEM은 리포지토리에서 이미지 파일의 실제 위치를 참조하지 않으므로 **복사** 구성 유형을 사용할 수 없습니다. 대신 AEM에서 요청한 위치에서 이미지를 사용할 수 있도록 하는 고유한 **로고** 구성 유형을 제공해야 합니다. 다음 코드 목록은 로고 업데이트 처리기의 전체 구현을 보여 줍니다.
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -388,5 +388,5 @@ iOS 기반 AEM Mobile 앱의 일반적인 실행 경로:
 
 관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 
-* [AEM을 사용하여 Adobe PhoneGap Enterprise용 작성](/help/mobile/phonegap.md)
+* [AEM을 사용하여 Adobe PhoneGap Enterprise 작성](/help/mobile/phonegap.md)
 * [AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리](/help/mobile/administer-phonegap.md)
