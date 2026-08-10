@@ -11,15 +11,15 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 0%
+source-wordcount: '5297'
+ht-degree: 1%
 
 ---
 
 
 # 보고서 개발 {#developing-reports}
 
-Adobe Experience Manager(AEM)에서는 대부분의 보고서가 보고 프레임워크를 기반으로 하는 [표준 보고서](/help/sites-administering/reporting.md)를 선택할 수 있습니다.
+Adobe Experience Manager(AEM)는 대부분의 보고서 프레임워크를 기반으로 하는 [표준 보고서](/help/sites-administering/reporting.md)를 제공합니다.
 
 프레임워크를 사용하여 이러한 표준 보고서를 확장하거나 고유한 새 보고서를 개발할 수 있습니다. 보고 프레임워크는 개발자가 CQ5에 대한 기존 지식을 보고서 개발의 발판으로 사용할 수 있도록 기존 CQ5 개념 및 원리와 긴밀하게 통합됩니다.
 
@@ -27,16 +27,16 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 
 * 이러한 보고서는 보고 프레임워크를 기반으로 구축됩니다.
 
-   * [구성 요소 보고서](/help/sites-administering/reporting.md#component-report)
-   * [페이지 활동 보고서](/help/sites-administering/reporting.md#page-activity-report)
-   * [사용자 보고서](/help/sites-administering/reporting.md#user-report)
-   * [워크플로우 상속 보고서](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [구성 요소 보고서](/help/sites-administering/reporting.md#component-report)
+  * [페이지 활동 보고서](/help/sites-administering/reporting.md#page-activity-report)
+  * [사용자 보고서](/help/sites-administering/reporting.md#user-report)
+  * [워크플로 상속 보고서](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * 다음 보고서는 개별 원칙을 기반으로 하므로 확장할 수 없습니다.
 
-   * [디스크 사용량](/help/sites-administering/reporting.md#disk-usage)
-   * [상태 검사](/help/sites-administering/reporting.md#health-check)
-   * [워크플로우 보고서](/help/sites-administering/reporting.md#workflow-report)
+  * [디스크 사용량](/help/sites-administering/reporting.md#disk-usage)
+  * [상태 검사](/help/sites-administering/reporting.md#health-check)
+  * [워크플로우 보고서](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 >  `P:<name> = <value>` : `<value>` 값으로 설정해야 하는 `<name>` 속성을 설명합니다.
 >
 >* 들여쓰기는 노드 간의 계층적 종속성을 보여 줍니다.
->* 다음으로 구분된 항목 | 가능한 항목의 목록을 나타냅니다(예: 형식 또는 이름). 예를 들어 `String|String[]`은(는) 속성이 String 또는 String[]일 수 있음을 의미합니다.
+>* 다음으로 구분된 항목 |은(는) 가능한 항목의 목록을 나타냅니다. 예: 형식 또는 이름; 예를 들어 `String|String[]`은(는) 속성이 String 또는 String[]일 수 있음을 의미합니다.
 >
 >* `[]`은(는) String[] 또는 [쿼리 정의](#query-definition)와 같은 노드 배열과 같은 배열을 나타냅니다.
 >
@@ -113,15 +113,15 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 
 * 일반적으로 다음으로 구성됩니다.
 
-   * 루트 경로.
+  * 루트 경로.
 
-     검색할 저장소의 하위 트리를 지정합니다.
+    검색할 저장소의 하위 트리를 지정합니다.
 
-     성능에 미치는 영향을 최소화하려면 쿼리를 저장소의 특정 하위 트리로 제한(시도)하는 것이 좋습니다. 루트 경로는 [보고서 템플릿](#report-template)에 미리 정의하거나 [구성(편집) 대화 상자](#configuration-dialog)에서 사용자가 설정할 수 있습니다.
+    성능에 미치는 영향을 최소화하려면 쿼리를 저장소의 특정 하위 트리로 제한(시도)하는 것이 좋습니다. 루트 경로는 [보고서 템플릿](#report-template)에 미리 정의하거나 [구성(편집) 대화 상자](#configuration-dialog)에서 사용자가 설정할 수 있습니다.
 
-   * [하나 이상의 기준](#query-definition).
+  * [하나 이상의 기준](#query-definition).
 
-     이는 (초기) 결과 세트를 생성하기 위해 적용되며, 예를 들어 노드 유형에 대한 제한 또는 속성 제한을 포함합니다.
+    이는 (초기) 결과 세트를 생성하기 위해 적용되며, 예를 들어 노드 유형에 대한 제한 또는 속성 제한을 포함합니다.
 
 **여기서 핵심은 쿼리의 결과 집합에서 반환된 각 단일 노드가 보고서에서 단일 행(예: 1:1 관계)을 생성하는 데 사용된다는 것입니다.**
 
@@ -139,7 +139,7 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 
 * 추출된 값 해결. 이 작업은 다양한 방법으로 수행할 수 있습니다.
 
-  예를 들어 각각의 *jcr:title* 속성의 사람이 읽을 수 있는 콘텐츠에서처럼 경로를 제목에 매핑할 수 있습니다.
+  예를 들어 각각의 *jcr:title* 속성의 사람이 읽을 수 있는 콘텐츠에서와 같이 경로를 제목에 매핑할 수 있습니다.
 
 * 다양한 지점에서 필터 적용.
 * 필요한 경우 조합 값 생성.
@@ -315,68 +315,68 @@ N:charting
 
   활성 차트에 대한 정의를 저장합니다.
 
-   * `active`
+  * `active`
 
-     여러 설정을 정의할 수 있으므로 이 옵션을 사용하여 현재 활성화된 설정을 정의할 수 있습니다. 이러한 노드는 노드 배열로 정의됩니다. 이러한 노드에 대한 필수 명명 규칙은 없지만 표준 보고서는 종종 `0`, `1`을(를) 사용합니다. `x`), 각각 다음 속성이 있습니다.
+    여러 설정을 정의할 수 있으므로 이 옵션을 사용하여 현재 활성화된 설정을 정의할 수 있습니다. 이러한 노드는 노드 배열로 정의됩니다. 이러한 노드에 대한 필수 명명 규칙은 없지만 표준 보고서는 종종 `0`, `1`... `x`을(를) 사용하며, 각 노드에는 다음 속성이 있습니다.
 
-      * `id`
+    * `id`
 
-        활성 차트에 대한 식별. 차트 `definitions` 중 하나의 ID와 일치해야 합니다.
+      활성 차트에 대한 식별. 차트 `definitions` 중 하나의 ID와 일치해야 합니다.
 
 * `definitions`
 
   보고서에 사용할 수 있는 차트 유형을 정의합니다. 사용할 `definitions`이(가) `active` 설정에 의해 지정되었습니다.
 
-  노드 배열을 사용하여 정의를 지정합니다(`0`, `1`(으)로 이름이 지정됨). `x`), 각각 다음 속성이 있습니다.
+  노드 배열(`0`, `1`... `x`)을 사용하여 정의가 지정되었으며, 각 노드에는 다음 속성이 있습니다.
 
-   * `id`
+  * `id`
 
-     차트의 식별.
+    차트의 식별.
 
-   * `type`
+  * `type`
 
-     사용 가능한 차트 유형. 다음 중에서 선택:
+    사용 가능한 차트 유형. 다음 중에서 선택:
 
-      * `pie`
-파이 차트 현재 데이터에서만 생성됩니다.
+    * `pie`
+      파이 차트 현재 데이터에서만 생성됩니다.
 
-      * `lineseries`
-일련의 선(실제 스냅샷을 나타내는 점을 연결함). 내역 데이터에서만 생성됩니다.
+    * `lineseries`
+      일련의 선(실제 스냅샷을 나타내는 점을 연결함). 내역 데이터에서만 생성됩니다.
 
-   * 차트 유형에 따라 추가 등록 정보를 사용할 수 있습니다.
+  * 차트 유형에 따라 추가 등록 정보를 사용할 수 있습니다.
 
-      * 차트 종류 `pie`의 경우:
+    * 차트 종류 `pie`의 경우:
 
-         * `maxRadius`( `Double/Long`)
+      * `maxRadius` ( `Double/Long`)
 
-           파이 차트에 허용되는 최대 반경. 따라서 차트에 허용되는 최대 크기(범례 없음). `fixedRadius`이(가) 정의된 경우 무시됩니다.
+        파이 차트에 허용되는 최대 반경. 따라서 차트에 허용되는 최대 크기(범례 없음). `fixedRadius`이(가) 정의된 경우 무시됩니다.
 
-         * `minRadius`( `Double/Long`)
+      * `minRadius` ( `Double/Long`)
 
-           파이 차트에 허용되는 최소 반경입니다. `fixedRadius`이(가) 정의된 경우 무시됩니다.
+        파이 차트에 허용되는 최소 반경입니다. `fixedRadius`이(가) 정의된 경우 무시됩니다.
 
-         * `fixedRadius`( `Double/Long`)
-파이 차트의 고정 반경을 정의합니다.
+      * `fixedRadius` ( `Double/Long`)
+        파이 차트의 고정 반경을 정의합니다.
 
-      * 차트 종류 [`lineseries`](/help/sites-administering/reporting.md#display-limits)의 경우:
+    * 차트 종류 [`lineseries`](/help/sites-administering/reporting.md#display-limits)의 경우:
 
-         * `totals`( `Boolean`)
+      * `totals` ( `Boolean`)
 
-           **합계**&#x200B;를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
-기본값: `false`
+        **합계**를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
+        기본값: `false`
 
-         * `series`( `Long`)
+      * `series` ( `Long`)
 
-           표시할 라인/시리즈의 수입니다.
-기본값: `9`(허용되는 최대값이기도 함)
+        표시할 라인/시리즈의 수입니다.
+        기본값: `9`(허용되는 최대값이기도 함)
 
-         * `hoverLimit`( `Long`)
+      * `hoverLimit` ( `Long`)
 
-           팝업이 표시될 최대 집계된 스냅샷 수(각 수평선에 점이 표시되어 고유한 값을 나타냄) 즉, 사용자가 차트 범례에서 고유 값 또는 해당 레이블을 마우스로 가리키면 표시됩니다.
+        팝업이 표시될 최대 집계된 스냅샷 수(각 수평선에 점이 표시되어 고유한 값을 나타냄) 즉, 사용자가 차트 범례에서 고유 값 또는 해당 레이블을 마우스로 가리키면 표시됩니다.
 
-           기본값: `35`(즉, 현재 차트 설정에 35개 이상의 고유 값을 적용할 수 있는 경우 팝업이 전혀 표시되지 않음).
+        기본값: `35`(즉, 현재 차트 설정에 35개 이상의 고유 값을 적용할 수 있는 경우 팝업이 전혀 표시되지 않음).
 
-           동시에 표시할 수 있는 추가 팝업은 10개로 제한됩니다(범례 텍스트를 마우스로 가리키면 여러 팝업이 표시될 수 있음).
+        동시에 표시할 수 있는 추가 팝업은 10개로 제한됩니다(범례 텍스트를 마우스로 가리키면 여러 팝업이 표시될 수 있음).
 
 ### 구성 대화 상자 {#configuration-dialog}
 
@@ -463,8 +463,8 @@ N:charting
 
   다음을 통해 지정할 수 있습니다.
 
-   * [보고서 템플릿](#report-template)(고정 값 또는 구성 대화 상자의 기본값)입니다.
-   * 사용자(이 매개 변수 사용)
+  * [보고서 템플릿](#report-template)(고정 값 또는 구성 대화 상자의 기본값)입니다.
+  * 사용자(이 매개 변수 사용)
 
 ## 열 기본 구성 요소 {#column-base-component}
 
@@ -523,7 +523,7 @@ N:definitions
 
   실제 셀 값을 계산하는 데 사용할 속성을 정의합니다.
 
-  속성이 String[] (으)로 정의된 경우 실제 값을 찾기 위해 여러 속성을 차례로 검사합니다.
+  속성이 String[]&#x200B;(으)로 정의된 경우 실제 값을 찾기 위해 여러 속성을 차례로 검사합니다.
 
   예를 들어 다음과 같은 경우:
 
@@ -531,8 +531,8 @@ N:definitions
 
   해당 값 추출기(여기서 제어):
 
-   * 사용 가능한 jcr:lastModified 속성이 있는지 확인하고 있는 경우 이 속성을 사용합니다.
-   * 사용 가능한 jcr:lastModified 속성이 없으면 jcr:created의 콘텐츠가 대신 사용됩니다.
+  * 사용 가능한 jcr:lastModified 속성이 있는지 확인하고 있는 경우 사용합니다.
+  * 사용 가능한 jcr:lastModified 속성이 없는 경우 jcr:created의 콘텐츠가 대신 사용됩니다.
 
 * `subPath`
 
@@ -599,81 +599,81 @@ N:definitions
 
   사용할 확인자를 정의합니다. 다음 해결자를 사용할 수 있습니다.
 
-   * `const`
+  * `const`
 
-     값을 다른 값에 매핑합니다. 예를 들어 해당 값 `English`에 대한 `en`과(와) 같은 상수를 확인하는 데 사용됩니다.
+    값을 다른 값에 매핑합니다. 예를 들어 해당 값 `English`에 대한 `en`과(와) 같은 상수를 확인하는 데 사용됩니다.
 
-   * `default`
+  * `default`
 
-     기본 해결자입니다. 이것은 실제로 아무것도 해결하지 않는 더미 해결자입니다.
+    기본 해결자입니다. 이것은 실제로 아무것도 해결하지 않는 더미 해결자입니다.
 
-   * `page`
+  * `page`
 
-     경로 값을 적절한 페이지의 경로로 확인합니다. 더 정확히 말하면 해당 `jcr:content` 노드에 대한 경로입니다. 예를 들어 `/content/.../page/jcr:content/par/xyz`은(는) `/content/.../page/jcr:content`(으)로 확인됩니다.
+    경로 값을 적절한 페이지의 경로로 확인합니다. 더 정확히 말하면 해당 `jcr:content` 노드에 대한 경로입니다. 예를 들어 `/content/.../page/jcr:content/par/xyz`은(는) `/content/.../page/jcr:content`(으)로 확인됩니다.
 
-   * `path`
+  * `path`
 
-     필요한 경우 하위 경로를 추가하고 확인된 경로에서 노드의 속성(`resolverConfig`(으)로 정의됨)에서 실제 값을 가져와서 경로 값을 확인합니다. 예를 들어 `/content/.../page/jcr:content`의 `path`을(를) `jcr:title` 속성의 콘텐츠로 확인할 수 있습니다. 이는 페이지 경로가 페이지 제목으로 확인됨을 의미합니다.
+    필요한 경우 하위 경로를 추가하고 확인된 경로에서 노드의 속성(`resolverConfig`(으)로 정의됨)에서 실제 값을 가져와서 경로 값을 확인합니다. 예를 들어 `/content/.../page/jcr:content`의 `path`을(를) `jcr:title` 속성의 콘텐츠로 확인할 수 있습니다. 이는 페이지 경로가 페이지 제목으로 확인됨을 의미합니다.
 
-   * `pathextension`
+  * `pathextension`
 
-     경로 앞에 추가하고 확인된 경로에 있는 노드의 속성에서 실제 값을 가져와 값을 확인합니다. 예를 들어 `language` 속성에서 값을 가져와 `/libs/wcm/core/resources/languages` 같은 경로 앞에 `de` 값을 추가하여 국가 코드 `de`을(를) 언어 설명 `German`(으)로 확인할 수 있습니다.
+    경로 앞에 추가하고 확인된 경로에 있는 노드의 속성에서 실제 값을 가져와 값을 확인합니다. 예를 들어 `language` 속성에서 값을 가져와 `/libs/wcm/core/resources/languages` 같은 경로 앞에 `de` 값을 추가하여 국가 코드 `de`을(를) 언어 설명 `German`(으)로 확인할 수 있습니다.
 
 * `resolverConfig`
 
   해결자에 대한 정의를 제공합니다. 사용 가능한 옵션은 선택한 `resolver`에 따라 다릅니다.
 
-   * `const`
+  * `const`
 
-     속성을 사용하여 해결할 상수를 지정합니다. 속성의 이름은 확인할 상수를 정의하고, 속성의 값은 확인된 값을 정의합니다.
+    속성을 사용하여 해결할 상수를 지정합니다. 속성의 이름은 확인할 상수를 정의하고, 속성의 값은 확인된 값을 정의합니다.
 
-     예를 들어 **이름**= `1` 및 **값** `=One`인 속성은 1을 1로 확인합니다.
+    예를 들어 **이름**= `1` 및 **값** `=One`인 속성은 1을 1로 확인합니다.
 
-   * `default`
+  * `default`
 
-     사용 가능한 구성이 없습니다.
+    사용 가능한 구성이 없습니다.
 
-   * `page`
+  * `page`
 
-      * `propertyName` (옵션)
+    * `propertyName` (옵션)
 
-        값 확인에 사용해야 하는 속성의 이름을 정의합니다. 지정하지 않으면 *jcr:title*(페이지 제목)의 기본값이 사용됩니다. `page` 해결 프로그램의 경우, 먼저 경로가 페이지 경로로 확인되고 이후에 페이지 제목으로 확인됩니다.
+      값 확인에 사용해야 하는 속성의 이름을 정의합니다. 지정하지 않으면 기본값 *jcr:title*(페이지 제목)이 사용됩니다. `page` 확인자의 경우 먼저 경로가 페이지 경로로 확인되고 이후에 페이지 제목으로 확인됩니다.
 
-   * `path`
+  * `path`
 
-      * `propertyName` (옵션)
+    * `propertyName` (옵션)
 
-        값 확인에 사용해야 하는 속성의 이름을 지정합니다. 지정하지 않으면 `jcr:title`의 기본값이 사용됩니다.
+      값 확인에 사용해야 하는 속성의 이름을 지정합니다. 지정하지 않으면 `jcr:title`의 기본값이 사용됩니다.
 
-      * `subPath` (옵션)
+    * `subPath` (옵션)
 
-        이 속성을 사용하여 값을 확인하기 전에 경로에 추가할 접미사를 지정할 수 있습니다.
+      이 속성을 사용하여 값을 확인하기 전에 경로에 추가할 접미사를 지정할 수 있습니다.
 
-   * `pathextension`
+  * `pathextension`
 
-      * `path`(필수)
+    * `path`(필수)
 
-        앞에 추가할 경로를 정의합니다.
+      앞에 추가할 경로를 정의합니다.
 
-      * `propertyName`(필수)
+    * `propertyName`(필수)
 
-        실제 값이 있는 해결된 경로의 속성을 정의합니다.
+      실제 값이 있는 해결된 경로의 속성을 정의합니다.
 
-      * `i18n`(선택 사항, 유형 부울)
+    * `i18n`(선택 사항, 유형 부울)
 
-        확인된 값이 *국제화*&#x200B;되어야 하는지 여부를 결정합니다(즉, [CQ5의 국제화 서비스 사용](/help/sites-administering/tc-manage.md)).
+      확인된 값이 *국제화*&#x200B;되어야 하는지 여부를 결정합니다(즉, [CQ5의 국제화 서비스 사용](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
   전처리는 선택 사항이며 처리 단계 *apply* 또는 *applyAfter*&#x200B;에 (별도로) 바인딩할 수 있습니다.
 
-   * `apply`
+  * `apply`
 
-     초기 전처리 단계([&#128279;](#processing-queue) 처리 큐 표시의 단계 3).
+    초기 전처리 단계(](#processing-queue) 처리 큐 표시의 [단계 3).
 
-   * `applyAfter`
+  * `applyAfter`
 
-     전처리 후 적용합니다([&#128279;](#processing-queue) 처리 큐 표시의 9단계).
+    전처리 후 적용합니다(](#processing-queue) 처리 큐 표시의 [9단계).
 
 #### 해결자 {#resolvers}
 
@@ -694,7 +694,7 @@ N:data
 
 **페이지**
 
-해당 페이지의 jcr:content (하위) 노드에서 jcr:description 속성에 대한 경로 값을 확인합니다.
+해당 페이지의 jcr:content(하위) 노드에서 jcr:description 속성에 대한 경로 값을 확인합니다.
 
 `/libs/cq/reporting/components/compreport/pagecol/definitions/data`을(를) 참조하십시오.
 
@@ -785,23 +785,23 @@ N:definitions
 
 * 다음 두 속성이 있는 `definitions/data/preprocessing/apply` 노드의 경우:
 
-   * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+  * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
+  * `replace`: `$1`
 
 * 문자열은 다음과 같이 도착합니다.
 
-   * `/content/geometrixx/en/services/jcr:content/par/text`
+  * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * 다음 네 개의 섹션으로 분류됩니다.
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+  * `$1` - `(.*)` - `/content/geometrixx/en/services`
+  * `$2` - `(/jcr:content)` - `/jcr:content`
+  * `$3` - `(/|$)` - `/`
+  * `$4` - `(.*)` - `par/text`
 
 * `$1`이(가) 나타내는 문자열로 대체되었습니다.
 
-   * `/content/geometrixx/en/services`
+  * `/content/geometrixx/en/services`
 
 #### 사전 처리 - 데이터 유형 포맷터 {#preprocessing-data-type-formatters}
 
@@ -815,17 +815,17 @@ N:definitions
 
   데이터 형식 포맷터:
 
-   * `duration`
+  * `duration`
 
-     기간은 정의된 두 날짜 사이의 시간 범위입니다. 예를 들어, 2/13/11 11:23h에서 시작하여 1시간 후 2/13/11 12:23h에 끝나는 1시간이 걸린 워크플로 작업의 시작 및 끝입니다.
+    기간은 정의된 두 날짜 사이의 시간 범위입니다. 예를 들어, 2/13/11 11:23h에서 시작하여 1시간 후 2/13/11 12:23h에 끝나는 1시간이 걸린 워크플로 작업의 시작 및 끝입니다.
 
-     숫자 값(밀리초로 해석됨)을 기간 문자열로 변환합니다. 예를 들어 `30000`의 형식은 * `30s`.*
+    숫자 값(밀리초로 해석됨)을 기간 문자열로 변환합니다. 예를 들어 `30000`의 형식은 * `30s`.*
 
-   * `datedelta`
+  * `datedelta`
 
-     Datadelta는 과거 날짜부터 &quot;지금&quot;까지의 시간 범위입니다(따라서 나중에 보고서를 볼 경우 다른 결과가 표시됨).
+    Datadelta는 과거 날짜부터 &quot;지금&quot;까지의 시간 범위입니다(따라서 나중에 보고서를 볼 경우 다른 결과가 표시됨).
 
-     숫자 값(일 단위 시간 차이로 해석됨)을 상대적 날짜 문자열로 변환합니다. 예를 들어 1의 형식은 하루 전으로 지정됩니다.
+    숫자 값(일 단위 시간 차이로 해석됨)을 상대적 날짜 문자열로 변환합니다. 예를 들어 1의 형식은 하루 전으로 지정됩니다.
 
 다음 예제에서는 `min` 및 `max` 집계에 대한 `datedelta` 형식을 정의합니다.
 
@@ -868,18 +868,18 @@ N:definitions
 
   다음은 표준 옵션으로 사용할 수 있습니다.
 
-   * `string`
-   * `number`
-   * `int`
-   * `date`
-   * `diff`
-   * `timeslot`
+  * `string`
+  * `number`
+  * `int`
+  * `date`
+  * `diff`
+  * `timeslot`
 
-     합계에 필요한 날짜 중 일부를 추출하는 데 사용됩니다(예: 연도별 그룹화하여 각 연도의 데이터를 집계함).
+    합계에 필요한 날짜 중 일부를 추출하는 데 사용됩니다(예: 연도별 그룹화하여 각 연도의 데이터를 집계함).
 
-   * `sortable`
+  * `sortable`
 
-     정렬 및 표시에 다른 값(다른 속성에서 가져옴)을 사용하는 값에 사용됩니다.
+    정렬 및 표시에 다른 값(다른 속성에서 가져옴)을 사용하는 값에 사용됩니다.
 
   또한 위의 모든 값은 다중 값으로 정의할 수 있습니다. 예를 들어 `string[]`은(는) 문자열 배열을 정의합니다.
 
@@ -887,16 +887,16 @@ N:definitions
 
   형식은 매개 변수를 사용할 수 있습니다(선택적). 예를 들어 `timeslot:year`은(는) 날짜 필드에서 연도를 추출합니다. 매개 변수가 있는 형식:
 
-   * `timeslot` - 값이 `java.utils.Calendar`의 해당 상수와 비슷합니다.
+  * `timeslot` - 값이 `java.utils.Calendar`의 해당 상수와 비슷합니다.
 
-      * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+    * `timeslot:year` - `Calendar.YEAR`
+    * `timeslot:month-of-year` - `Calendar.MONTH`
+    * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
+    * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
+    * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
+    * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
+    * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
+    * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
 * `groupable`
 
@@ -906,77 +906,77 @@ N:definitions
 
   필터 정의.
 
-   * `filterType`
+  * `filterType`
 
-     사용 가능한 필터는 다음과 같습니다.
+    사용 가능한 필터는 다음과 같습니다.
 
-      * `string`
+    * `string`
 
-        문자열 기반 필터입니다.
+      문자열 기반 필터입니다.
 
-   * `id`
+  * `id`
 
-     필터 식별자.
+    필터 식별자.
 
-   * `phase`
+  * `phase`
 
-     사용 가능한 단계:
+    사용 가능한 단계:
 
-      * `raw`
+    * `raw`
 
-        필터가 원시 데이터에 적용됩니다.
+      필터가 원시 데이터에 적용됩니다.
 
-      * `preprocessed`
+    * `preprocessed`
 
-        필터가 사전 처리된 데이터에 적용됩니다.
+      필터가 사전 처리된 데이터에 적용됩니다.
 
-      * `resolved`
+    * `resolved`
 
-        필터는 해결된 데이터에 적용됩니다.
+      필터는 해결된 데이터에 적용됩니다.
 
 * `aggregates`
 
   합계 정의.
 
-   * `text`
+  * `text`
 
-     집계의 텍스트 이름입니다. `text`을(를) 지정하지 않으면 집계의 기본 설명이 사용됩니다. 예를 들어 `minimum`은(는) `min` 집계에 사용됩니다.
+    집계의 텍스트 이름입니다. `text`을(를) 지정하지 않으면 집계의 기본 설명이 사용됩니다. 예를 들어 `minimum`은(는) `min` 집계에 사용됩니다.
 
-   * `type`
+  * `type`
 
-     집계 유형. 사용 가능한 합계는 다음과 같습니다.
+    집계 유형. 사용 가능한 합계는 다음과 같습니다.
 
-      * `count`
+    * `count`
 
-        행 수를 계산합니다.
+      행 수를 계산합니다.
 
-      * `count-nonempty`
+    * `count-nonempty`
 
-        비어 있지 않은 행의 수를 계산합니다.
+      비어 있지 않은 행의 수를 계산합니다.
 
-      * `min`
+    * `min`
 
-        최소값을 제공합니다.
+      최소값을 제공합니다.
 
-      * `max`
+    * `max`
 
-        최대값을 제공합니다.
+      최대값을 제공합니다.
 
-      * `average`
+    * `average`
 
-        평균 값을 제공합니다.
+      평균 값을 제공합니다.
 
-      * `sum`
+    * `sum`
 
-        모든 값의 합계를 제공합니다.
+      모든 값의 합계를 제공합니다.
 
-      * `median`
+    * `median`
 
-        중간값을 제공합니다.
+      중간값을 제공합니다.
 
-      * `percentile95`
+    * `percentile95`
 
-        모든 값의 95번째 백분위수를 사용합니다.
+      모든 값의 95번째 백분위수를 사용합니다.
 
 ### 열 기본값 {#column-default-values}
 
@@ -1023,21 +1023,21 @@ N:cq:editConfig [cq:EditConfig]
 
 * 열의 `definition` 노드의 `type` 속성을 `generic`(으)로 설정합니다.
 
-  `/libs/cq/reporting/components/userreport/genericcol/definitions` 보기
+  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
 * 열의 `definition` 노드 아래에 (표준) 대화 상자 정의를 지정하십시오.
 
-  `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog` 보기
+  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * 대화 상자의 필드는 해당 구성 요소 속성의 경로 등 동일한 이름을 참조해야 합니다.
+  * 대화 상자의 필드는 해당 구성 요소 속성의 경로 등 동일한 이름을 참조해야 합니다.
 
-     예를들어 대화 상자를 통해 일반 열의 형식을 구성할 수 있도록 하려면 이름이 `./definitions/type`인 필드를 사용합니다.
+    예를들어 대화 상자를 통해 일반 열의 형식을 구성할 수 있도록 하려면 이름이 `./definitions/type`인 필드를 사용합니다.
 
-   * UI/대화 상자를 사용하여 정의된 속성이 `columnbase` 구성 요소에 정의된 속성보다 우선합니다.
+  * UI/대화 상자를 사용하여 정의된 속성이 `columnbase` 구성 요소에 정의된 속성보다 우선합니다.
 
 * 구성 편집을 정의합니다.
 
-  `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig` 보기
+  자세한 내용은 `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
 * 표준 AEM 방법론을 사용하여 (추가적인) 열 속성을 정의합니다.
 
@@ -1045,13 +1045,13 @@ N:cq:editConfig [cq:EditConfig]
 
   일반 열에 사용할 수 있는 등록 정보는 다음과 같습니다.
 
-   * `jcr:title` - 열 이름
-   * `definitions/aggregates` - 집계
-   * `definitions/filters` - 필터
-   * `definitions/type`- 열의 유형(선택기/콤보 상자 또는 숨겨진 필드를 사용하여 대화 상자에서 정의해야 함)
-   * `definitions/data/resolver` 및 `definitions/data/resolverConfig`(`definitions/data/preprocessing` 또는 `.../clientFilter`은(는) 아님) - 확인자 및 구성
-   * `definitions/queryBuilder` - 쿼리 빌더 구성
-   * `defaults/aggregate` - 기본 집계
+  * `jcr:title` - 열 이름
+  * `definitions/aggregates` - 집계
+  * `definitions/filters` - 필터
+  * `definitions/type`- 열의 유형(선택기/콤보 상자 또는 숨겨진 필드를 사용하여 대화 상자에서 정의해야 함)
+  * `definitions/data/resolver` 및 `definitions/data/resolverConfig`(`definitions/data/preprocessing` 또는 `.../clientFilter`은(는) 아님) - 확인자 및 구성
+  * `definitions/queryBuilder` - 쿼리 빌더 구성
+  * `defaults/aggregate` - 기본 집계
 
   **사용자 보고서**&#x200B;에 일반 열의 새 인스턴스가 있는 경우 대화 상자로 정의된 속성이 다음 아래에 유지됩니다.
 
@@ -1061,7 +1061,7 @@ N:cq:editConfig [cq:EditConfig]
 
 디자인은 보고서를 만드는 데 사용할 수 있는 열 유형을 정의합니다. 또한 열이 추가되는 단락 시스템을 정의합니다.
 
-Adobe은 각 보고서에 대해 개별 디자인을 만들 것을 권장합니다. 이렇게 하면 완전한 유연성을 확보할 수 있습니다. [새 보고서 정의](#defining-your-new-report)를 참조하세요.
+Adobe에서는 각 보고서에 대해 개별 디자인을 만들 것을 권장합니다. 이렇게 하면 완전한 유연성을 확보할 수 있습니다. [새 보고서 정의](#defining-your-new-report)를 참조하세요.
 
 기본 보고 구성 요소는 `/etc/designs/reports` 아래에 유지됩니다.
 
@@ -1105,7 +1105,7 @@ Adobe은 각 보고서에 대해 개별 디자인을 만들 것을 권장합니�
 
 >[!NOTE]
 >
->Adobe은 표준 보고서 디자인을 변경하지 않는 것을 권장합니다. 이는 핫픽스를 업그레이드하거나 설치할 때 변경 사항이 손실되지 않도록 하기 위한 것입니다.
+>Adobe에서는 표준 보고서 디자인을 변경하지 않는 것이 좋습니다. 이는 핫픽스를 업그레이드하거나 설치할 때 변경 사항이 손실되지 않도록 하기 위한 것입니다.
 >
 >표준 보고서를 사용자 지정하려면 보고서 및 해당 디자인을 복사합니다.
 
@@ -1157,7 +1157,7 @@ Adobe은 각 보고서에 대해 개별 디자인을 만들 것을 권장합니�
 
 기본 보고 템플릿은 `/libs/cq/reporting/templates` 아래에 있습니다.
 
-그러나 Adobe은 이러한 노드를 업데이트하지 않는 것이 좋습니다. 대신 `/apps/cq/reporting/templates` 또는 더 적절한 경우 `/apps/<yourProject>/reports/templates`에 자체 구성 요소 노드를 만드십시오.
+그러나 Adobe에서는 이러한 노드를 업데이트하지 않는 것이 좋습니다. 대신 `/apps/cq/reporting/templates` 또는 더 적절한 경우 `/apps/<yourProject>/reports/templates`에 자체 구성 요소 노드를 만드십시오.
 
 여기서 예를 들면 [보고서 구성 요소 위치](#location-of-report-components)도 참조하십시오.
 
@@ -1386,7 +1386,7 @@ N:apps
 
 이 섹션에서는 보고서 프레임워크를 구현하는 OSGi 서비스에 대한 고급 구성 옵션에 대해 설명합니다.
 
-웹 콘솔의 구성 메뉴를 사용하여 볼 수 있습니다(예: `http://localhost:4502/system/console/configMgr`에서 사용 가능). AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 보려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+웹 콘솔의 구성 메뉴를 사용하여 볼 수 있습니다(예: `http://localhost:4502/system/console/configMgr`에서 사용 가능). AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을 관리할 수 있는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 사례를 확인하려면 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 참조하십시오.
 
 ### 기본 서비스(일별 CQ 보고 구성) {#basic-service-day-cq-reporting-configuration}
 

@@ -7,7 +7,7 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지, `.js` 및 `.css` 파일
 
    * 하위 폴더 `content`은(는) 저장소의 페이지 경로를 반영하는 일련의 하위 폴더의 루트입니다.
 
-      * 이 구조에는 선택한 페이지(`<page-name>.html`)에 대한 html 파일이 있습니다.
+     * 이 구조에는 선택한 페이지(`<page-name>.html`)에 대한 html 파일이 있습니다.
 
    * 기타 리소스(`.js`개 파일, `.css`개 파일, 이미지 등)는 내보내기 템플릿의 설정에 따라 배치됩니다.
 
@@ -119,16 +119,16 @@ For more details about the type property, see the Overview of configuration type
 * `page`
 페이지 노드는 페이지 html을 zip 파일로 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
 
-   * 필수 노드입니다.
-   * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
-   * `Name` 속성이 `page`(으)로 설정된 상태에서 정의됩니다.
-   * 노드 유형은 `nt:unstructured`입니다.
+  * 필수 노드입니다.
+  * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
+  * `Name` 속성이 `page`(으)로 설정된 상태에서 정의됩니다.
+  * 노드 유형은 `nt:unstructured`입니다.
 
   `page` 노드에는 다음 속성이 있습니다.
 
-   * 값이 `pages`인 `type` 속성이 설정되었습니다.
+  * 값이 `pages`인 `type` 속성이 설정되었습니다.
 
-   * 현재 페이지 경로가 구성에 동적으로 복사되므로 `path` 속성이 없습니다.
+  * 현재 페이지 경로가 구성에 동적으로 복사되므로 `path` 속성이 없습니다.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ For more details about the type property, see the Overview of configuration type
 * `design`
 디자인 노드는 내보낸 페이지에 사용된 디자인을 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
 
-   * 선택 사항입니다.
-   * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
-   * `Name` 속성이 `design`(으)로 설정된 상태에서 정의됩니다.
-   * 노드 유형은 `nt:unstructured`입니다.
+  * 선택 사항입니다.
+  * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
+  * `Name` 속성이 `design`(으)로 설정된 상태에서 정의됩니다.
+  * 노드 유형은 `nt:unstructured`입니다.
 
   `design` 노드에는 다음 속성이 있습니다.
 
-   * `type` 속성이 `copy` 값으로 설정되어 있습니다.
+  * `type` 속성이 `copy` 값으로 설정되어 있습니다.
 
-   * 현재 페이지 경로가 구성에 동적으로 복사되므로 `path` 속성이 없습니다.
+  * 현재 페이지 경로가 구성에 동적으로 복사되므로 `path` 속성이 없습니다.
 
 * `generic`
 일반 노드는 clientlib `.js` 또는 `.css` 파일과 같은 리소스를 zip 파일로 복사하는 데 사용됩니다. 다음과 같은 특징이 있습니다.
 
-   * 선택 사항입니다.
-   * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
-   * 특정 이름이 없습니다.
-   * 노드 유형은 `nt:unstructured`입니다.
-   * `type` 속성과 `type` 관련 속성이 있습니다. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * 선택 사항입니다.
+  * `/etc/contentsync/templates/<mysite>` 아래에 있습니다.
+  * 특정 이름이 없습니다.
+  * 노드 유형은 `nt:unstructured`입니다.
+  * `type` 속성과 `type` 관련 속성이 있습니다. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   예를 들어 다음 구성 노드는 `mysite.clientlibs.js` 파일을 zip 파일에 복사합니다.
 

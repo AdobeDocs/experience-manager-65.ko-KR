@@ -112,9 +112,9 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 * `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. MIME 유형을 추가하려면 이 인터페이스를 구현해야 합니다. 인터페이스에는 특정 문서를 가져오고 내보내는 방법, 축소판을 만들고 메타데이터를 추출하는 방법이 포함되어 있습니다.
 * `com.day.cq.dam.core.AbstractAssetHandler` 클래스: 이 클래스는 다른 모든 에셋 처리기 구현의 기본 역할을 하며 일반적으로 사용되는 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
-   * 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 일반적으로 사용되는 기능과 하위 에셋 추출에 일반적으로 사용되는 기능을 제공합니다.
-   * 구현을 시작하는 가장 좋은 방법은 대부분의 항목을 처리하고 적절한 기본 동작을 제공하는 제공된 추상 구현에서 상속하는 것입니다. com.day.cq.dam.core.AbstractAssetHandler 클래스.
-   * 이 클래스는 이미 추상 서비스 설명자를 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 상속 플래그를 true로 설정해야 합니다.
+  * 이 클래스는 다른 모든 에셋 처리기 구현의 기초 역할을 하며 일반적으로 사용되는 기능과 하위 에셋 추출에 일반적으로 사용되는 기능을 제공합니다.
+  * 구현을 시작하는 가장 좋은 방법은 대부분의 항목을 처리하고 적절한 기본 동작을 제공하는 제공된 추상 구현에서 상속하는 것입니다. com.day.cq.dam.core.AbstractAssetHandler 클래스.
+  * 이 클래스는 이미 추상 서비스 설명자를 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 상속 플래그를 true로 설정해야 합니다.
 
 다음 메서드를 구현해야 합니다.
 
@@ -124,7 +124,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 다음은 예제 템플릿입니다.
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the related parts }
 
 인터페이스 및 클래스는 다음과 같습니다.
 
