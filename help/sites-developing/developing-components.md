@@ -364,7 +364,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 동일)의 필드 유효성 �
 
 ## 자산을 드래그하여 구성 요소 인스턴스를 만들도록 단락 시스템 구성 {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM에서는 사용자가 (적절한) 에셋을 ](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui)의 인스턴스로 드래그하면(항상 빈 구성 요소를 페이지로 드래그할 필요 없이) [새 구성 요소의 인스턴스가 자동으로 만들어지도록 페이지에서 단락 시스템을 구성할 수 있습니다.
+AEM에서는 사용자가 (적절한) 에셋을 [&#128279;](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui)의 인스턴스로 드래그하면(항상 빈 구성 요소를 페이지로 드래그할 필요 없이) 새 구성 요소의 인스턴스가 자동으로 만들어지도록 페이지에서 단락 시스템을 구성할 수 있습니다.
 
 이 동작과 필요한 에셋-구성 요소 관계를 구성할 수 있습니다.
 

@@ -362,7 +362,7 @@ N:charting
 
       * `totals` ( `Boolean`)
 
-        **합계**를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
+        **합계**&#x200B;를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
         기본값: `false`
 
       * `series` ( `Long`)
@@ -669,11 +669,11 @@ N:definitions
 
   * `apply`
 
-    초기 전처리 단계(](#processing-queue) 처리 큐 표시의 [단계 3).
+    초기 전처리 단계([&#128279;](#processing-queue) 처리 큐 표시의 단계 3).
 
   * `applyAfter`
 
-    전처리 후 적용합니다(](#processing-queue) 처리 큐 표시의 [9단계).
+    전처리 후 적용합니다([&#128279;](#processing-queue) 처리 큐 표시의 9단계).
 
 #### 해결자 {#resolvers}
 
