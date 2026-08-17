@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 게시된 게시�
 
 ## 예 {#example}
 
-[AEM Communities을 시작](getting-started.md)할 때 만든 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트를 사용하면 포럼에서 스레드를 설정하여 Publish 환경에서 다양한 중재 활동을 경험할 수 있습니다. 아래를 참조하십시오.
+[Geometrixx을 시작](getting-started.md)할 때 만든 [AEM Communities 참여](http://localhost:4503/content/sites/engage/en.html) 사이트를 사용하면 포럼에서 게시 환경에서 다양한 중재 활동을 경험할 스레드를 설정할 수 있습니다. 아래를 참조하십시오.
 
 Aaron McDonald(`aaron.mcdonald@mailinator.com`)가 사이트를 만들 때 커뮤니티 참여 중재자 그룹에 추가되어 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
 
@@ -50,40 +50,40 @@ Rebekah Larsen(`rebekah.larsen@trashymail.com`)은 [구성원 콘솔](members.md
 
 * Rebekah Larsen(rebekah.larsen@trashymail.com)으로 로그인
 
-   * 포럼 선택
-   * 새 Post 선택
-   * 제목 입력
+  * 포럼 선택
+  * 새 게시물 선택
+  * 제목 입력
 
-     Humming Bird Feeder에서 꿀을 교체하는 시기
+    Humming Bird Feeder에서 꿀을 교체하는 시기
 
-   * 본문 입력
+  * 본문 입력
 
-     나는 매년 벌새 먹이통을 매달아 놓았을 때 그다지 성공하지 못했다. 하루 이틀 오는 것 같은데 그게 다예요. 1주일에 한 번 바꾸면 너무 긴 건가요? 더 빨리 바꿔야 하나요?
+    나는 매년 벌새 먹이통을 매달아 놓았을 때 그다지 성공하지 못했다. 하루 이틀 오는 것 같은데 그게 다예요. 1주일에 한 번 바꾸면 너무 긴 건가요? 더 빨리 바꿔야 하나요?
 
-   * Post 선택
-   * 로그아웃 선택
+  * 게시물 선택
+  * 로그아웃 선택
 
 * Aaron McDonald(aaron.mcdonald@mailinator.com)로 로그인합니다.
 
-   * 포럼 선택
-   * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
-   * Post 회신에 대한 댓글 입력
+  * 포럼 선택
+  * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
+  * 답글 게시를 위한 댓글 입력
 
-     나는 일주일에 한 번 교체하고 5월부터 10월까지 받아.
+    나는 일주일에 한 번 교체하고 5월부터 10월까지 받아.
 
-   * 답변 선택
-   * 로그아웃 선택
+  * 답변 선택
+  * 로그아웃 선택
 
 * Andrew Schaeffer(andrew.schaeffer@trashymail.com)로 로그인
 
-   * 포럼 선택
-   * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
-   * Post 회신에 대한 댓글 입력
+  * 포럼 선택
+  * Hummingbird 주제에 대해 자세히 보기 를 선택합니다.
+  * 답글 게시를 위한 댓글 입력
 
-     나는 꿀과 피더를 판매합니다 - https://my.viral.url/ 방문
+    나는 꿀과 피더를 판매합니다 - https://my.viral.url/ 방문
 
-   * 답변 선택
-   * 로그아웃 선택
+  * 답변 선택
+  * 로그아웃 선택
 
 ### 익명 사이트 방문자(#5) {#anonymous-site-visitor}
 
@@ -122,9 +122,9 @@ Boid가 Andrew가 게시한 콘텐츠에 플래그를 지정하려면 Flag를 �
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Publish 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
+게시 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
 
-관리자의 경우, Geometrixx 참여 커뮤니티 사이트의 콘텐츠뿐만 아니라 중재 가능한 모든 콘텐츠가 표시됩니다.
+관리자의 경우, Geometrixx Engage 커뮤니티 사이트의 콘텐츠뿐만 아니라 중재 가능한 모든 콘텐츠가 표시됩니다.
 
 검색 필터는 열거나 닫는 사이드 패널입니다.
 
@@ -145,9 +145,9 @@ Publish 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도�
 
 ![커뮤니티 포럼 중재자](assets/community-forum-moderator.png)
 
-Publish 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
+게시 환경에서 [중재 콘솔](moderation.md)에 액세스할 수 있도록 관리 메뉴 항목을 선택하십시오.
 
-커뮤니티 중재자의 경우 Geometrixx 참여 커뮤니티 사이트의 중재 가능한 콘텐츠만 표시됩니다.
+커뮤니티 중재자의 경우 Geometrixx Engage 커뮤니티 사이트의 중재 가능한 콘텐츠만 표시됩니다.
 
 커뮤니티 중재자에는 관리자와 동일한 옵션(이미지가 검색 사이드바를 닫은 상태로 전환됨)이 있지만 다른 AEM 콘솔에는 액세스할 수 없습니다.
 

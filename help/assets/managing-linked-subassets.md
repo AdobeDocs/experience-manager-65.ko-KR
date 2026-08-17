@@ -8,7 +8,7 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 [!DNL Adobe Illustrator] 파일 내에서 기존 디지털 자산을 참조할 수 있습니다.
 
-1. [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
+1. [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더에서 [!DNL Illustrator] 파일로 자산을 끌어 옵니다.
 
 1. 탑재된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [!DNL Experience Manager] 저장소에 [업로드](/help/assets/manage-assets.md#uploading-assets)하십시오.
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL InDesign Server]이(가) 프록시되는 경우 [!DNL InDesign] 파일의 미리 보기가 XMP 메타데이터 내에 포함되어 있습니다. 이 경우 썸네일 추출이 명시적으로 필요하지 않습니다. 그러나 [!DNL InDesign Server]이(가) 프록시되지 않으면 [!DNL InDesign] 파일에 대해 썸네일을 명시적으로 추출해야 합니다.
+>[!DNL InDesign Server]이(가) 프록시되는 경우 [!DNL InDesign] 파일의 미리 보기가 XMP 메타데이터 내에 포함됩니다. 이 경우 썸네일 추출이 명시적으로 필요하지 않습니다. 그러나 [!DNL InDesign Server]이(가) 프록시되지 않으면 [!DNL InDesign] 파일에 대해 썸네일을 명시적으로 추출해야 합니다.
 
 INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:DocumentID` 속성이 있는 자산을 쿼리하여 참조를 가져옵니다.
 
@@ -65,14 +65,14 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 ### ZIP 파일을 내보내어 에셋에 대한 참조 만들기 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. [워크플로 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행하여 워크플로를 만듭니다.
-1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/kr/indesign/how-to/indesign-package-files-for-handoff.html)을(를) 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign]에서 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 같은 폴더에 있습니다.
+1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)을(를) 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign]에서 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 같은 폴더에 있습니다.
 1. ZIP 파일을 만들어 [!DNL Experience Manager] 리포지토리에 업로드합니다.
 1. `Unarchiver` 워크플로를 시작합니다.
 1. 워크플로우가 완료되면 링크 폴더의 참조가 자동으로 하위 자산으로 참조됩니다. 참조된 자산 목록을 보려면 [!DNL InDesign] 자산의 자산 세부 정보 페이지로 이동하여 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫으십시오.
 
 ## [!DNL Adobe Photoshop]: 디지털 에셋을 참조로 추가 {#refps}
 
-1. [!DNL Experience Manager] 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스하세요. 로컬 파일 시스템에서 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용하십시오. [데스크톱 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#place-assets-in-native-documents)를 참조하십시오.
+1. [!DNL Experience Manager] 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스하세요. 로컬 파일 시스템에서 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용하십시오. [데스크톱 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)를 참조하십시오.
 
 1. 탑재된 드라이브에 [!DNL Photoshop] 파일을 저장하거나 [!DNL Experience Manager] 저장소에 [업로드](/help/assets/manage-assets.md#uploading-assets)하십시오.
 1. 워크플로우가 완료되면 기존 [!DNL Experience Manager]개의 자산에 대한 참조가 자산 세부 정보 페이지에 나열됩니다.
@@ -100,8 +100,8 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 * 새 자산: [!DNL Experience Manager]에 업로드된 새 자산에 대해 [!UICONTROL DAM Assets 업데이트] 워크플로우가 실행됩니다. 새 다중 페이지 자산에 대해 하위 자산이 자동으로 생성됩니다.
 * 기존 다중 페이지 자산: 다음 단계 중 하나에 따라 [!UICONTROL DAM Assets 업데이트] 워크플로우를 수동으로 실행합니다.
 
-   * 자산을 선택하고 [!UICONTROL 타임라인]을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키 `alt + 3`을(를) 사용합니다. [!UICONTROL 워크플로 시작]을 클릭하고 [!UICONTROL DAM 자산 업데이트]를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
-   * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 워크플로]를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산 업데이트] 워크플로우를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
+  * 자산을 선택하고 [!UICONTROL 타임라인]을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키 `alt + 3`을(를) 사용합니다. [!UICONTROL 워크플로 시작]을 클릭하고 [!UICONTROL DAM 자산 업데이트]를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
+  * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 워크플로]를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산 업데이트] 워크플로우를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
 
 특히 Microsoft Word 문서의 경우 **[!UICONTROL DAM Word 문서 구문 분석]** 워크플로우를 실행하십시오. Microsoft Word 문서의 콘텐츠에서 `cq:Page` 구성 요소를 생성합니다. 문서에서 추출된 이미지가 `cq:Page` 구성 요소에서 참조됩니다. 이러한 이미지는 하위 에셋 생성이 비활성화된 경우에도 추출됩니다.
 
@@ -125,7 +125,7 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 
 다음 옵션은 도구 모음, 왼쪽 레일 및 페이지 뷰어 컨트롤에서 사용할 수 있습니다.
 
-* [!DNL Experience Manager] 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시하는 **[!UICONTROL 데스크톱 작업]**. [!DNL Experience Manager] 데스크톱 앱을 사용하는 경우 [데스크톱 작업을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#desktopactions-v2)을 참조하세요.
+* [!DNL Experience Manager] 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시하는 **[!UICONTROL 데스크톱 작업]**. [!DNL Experience Manager] 데스크톱 앱을 사용하는 경우 [데스크톱 작업을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)을 참조하세요.
 
 * **[!UICONTROL 속성]** 옵션을 사용하면 특정 하위 자산의 [!UICONTROL 속성] 페이지가 열립니다.
 
@@ -141,7 +141,7 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크톱 앱 사용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)
->* [Adobe Experience Manager에서 데스크톱 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#desktopactions-v2)
->* [Adobe Photoshop에서 연결된 스마트 개체 만들기](https://helpx.adobe.com/kr/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/kr/indesign/using/placing-graphics.html)
+>* [Adobe Experience Manager 데스크톱 앱 사용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Adobe Experience Manager에서 데스크톱 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Adobe Photoshop에서 연결된 스마트 개체 만들기](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)

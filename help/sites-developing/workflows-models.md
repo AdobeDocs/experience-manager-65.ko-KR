@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
+>클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
 
 [워크플로 모델](/help/sites-developing/workflows.md#model)을(를) 만들어 사용자가 워크플로를 시작할 때 실행되는 일련의 단계를 정의합니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다.
 
@@ -85,9 +85,9 @@ ht-degree: 2%
 * 단계 브라우저를 사용할 수 없습니다(왼쪽).
 * 도구 모음(오른쪽)에서 **편집** 작업을 사용할 수 있습니다.
 * 처음에는 모델 및 해당 속성이 다음과 같이 읽기 전용 모드로 표시됩니다.
-   * 기본 워크플로는 `/libs`에 있습니다.
-   * 레거시 워크플로가 `/etc`에 있습니다.
-**편집**&#x200B;을(를) 선택하면 다음이 수행됩니다.
+  * 기본 워크플로는 `/libs`에 있습니다.
+  * 레거시 워크플로는에 있습니다. `/etc`
+    **편집**&#x200B;을(를) 선택하면 다음이 수행됩니다.
 * `/conf`(으)로 워크플로 복사본 가져오기
 * 단계 브라우저 사용 가능
 * 변경할 수 있도록 설정
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 ### 모델에 단계 추가 {#adding-a-step-to-a-model}
 
-모델에 단계를 추가하여 수행할 활동을 나타냅니다. 각 단계는 특정 활동을 수행합니다. 표준 AEM 인스턴스에서 여러 단계 구성 요소를 사용할 수 있습니다.
+모델에 단계를 추가하여 수행할 활동을 나타냅니다. 각 단계는 특정 활동을 수행합니다. 표준 AEM 인스턴스에서 다양한 단계 구성 요소를 사용할 수 있습니다.
 
 모델을 편집하면 사용 가능한 단계가 **단계 브라우저**&#x200B;의 다양한 그룹에 나타납니다. 예:
 
@@ -190,7 +190,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 도구 > 일반 > 태그 지정]**&#x200B;을 통해 이동합니다. **[!UICONTROL 워크플로]**&#x200B;를 선택하십시오.
 
-1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**을 선택합니다.
    ![워크플로 모델에서 태그를 만듭니다](assets/workflow_create_tag.png)
 
 1. **[!UICONTROL 도구 > 워크플로 > 모델]**(으)로 이동합니다. **[!UICONTROL 활성화 요청]**&#x200B;을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
@@ -199,7 +199,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 태그]** 필드에 `Workflow : DAM`을(를) 추가합니다. 확인(확인 표시)을 사용하여 선택 내용을 확인합니다.
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 사용하여 태그의 추가를 확인합니다.
+1. **[!UICONTROL 저장 및 닫기]**를 사용하여 태그의 추가를 확인합니다.
    ![모델의 페이지 속성 편집](assets/workflow_model_edit_activation1.png)
 
 1. **[!UICONTROL 동기화]**&#x200B;를 사용하여 프로세스를 완료합니다. 이제 터치 지원 UI에서 워크플로를 사용할 수 있습니다.
@@ -391,7 +391,7 @@ ht-degree: 2%
 
    ![wf-13](assets/wf-13.png)
 
-1. 이 워크플로를 페이지에 적용하면 사용자가 **콘텐츠 유효성 검사** 단계를 **완료**(으)로 이동할 때 **요청한 대로 Publish 페이지**&#x200B;를 사용할지 또는 **Publish 요청 거부**&#x200B;를 사용할지 여부를 선택할 수 있습니다.
+1. 이 워크플로를 페이지에 적용하면 사용자가 **콘텐츠 유효성 검사** 단계를 **완료**(으)로 이동할 때 **요청된 대로 페이지 게시**&#x200B;를 할지 **게시 요청 거부**&#x200B;를 할지 선택할 수 있습니다.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -415,7 +415,6 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
    * **값**&#x200B;을(를) `true`(으)로 설정하여 **기본 경로**(으)로 정의합니다.
 
    * **규칙**(으)로 경로를 스크립트로 설정합니다. 예:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +424,6 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
 1. **OR 분할**&#x200B;의 **분기 2**&#x200B;의 속성을 편집합니다.
 
    * **규칙**(으)로 경로를 다른 스크립트로 설정합니다. 예:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. 각 분기의 개별 단계 속성을 설정합니다. **사용자/그룹**&#x200B;이(가) 설정되어 있는지 확인하십시오.

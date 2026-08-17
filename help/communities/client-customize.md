@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 구성 요소를 확장(오버라이드)하는 것은 기본값을 사용하는 모든 인스턴스에 영향을 주지 않고 특정 사용을 위해 수정하는 방법입니다. 확장 구성 요소는 /apps 폴더에서 고유하게 이름이 지정되고 /libs 폴더의 기본 구성 요소를 참조하므로 구성 요소의 기본 디자인과 동작이 수정되지 않습니다.
 
-이는 Sling의 특성이 libs/ 폴더에서 검색하기 전에 앱/폴더에 대한 상대 참조를 확인하는 기본 구성 요소와 다르므로 구성 요소의 디자인 또는 동작이 전역적으로 수정됩니다.[&#128279;](#overlays)
+이는 Sling의 특성이 libs/ 폴더에서 검색하기 전에 앱/폴더에 대한 상대 참조를 확인하는 기본 구성 요소와 다르므로 구성 요소의 디자인 또는 동작이 전역적으로 수정됩니다.[](#overlays)
 
 주석 구성 요소를 확장하는 간단한 예를 보려면 [주석 구성 요소 확장 자습서](extend-comments.md)를 사용해 보십시오.
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 구성 요소 JavaScript 구현을 확장하려면 다음을 수행해야 합니다.
 
-1. jcr:resourceSuperType이 확장 구성 요소의 jcr:resourceType 값(예: social/forum/components/hbs/forum)으로 설정된 앱용 구성 요소를 만듭니다.
+1. jcr:resourceSuperType이(가) 확장 구성 요소의 jcr:resourceType 값으로 설정된 앱용 구성 요소를 만듭니다(예: social/forum/components/hbs/forum).
 1. 기본 SCF 구성 요소의 JavaScript을 검사하여 SCF.registerComponent()를 사용하여 등록해야 하는 메서드를 결정합니다.
 1. 확장 구성 요소의 JavaScript을 복사하거나 처음부터 시작합니다.
 1. 메서드를 확장합니다.
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 스크립트 태그는 클라이언트측 프레임워크의 고유한 부분입니다. 서버측에서 생성된 마크업을 클라이언트측의 모델 및 보기와 바인딩하는 데 도움이 되는 접착제입니다.
 
-구성 요소를 오버레이하거나 재정의할 때 SCF 스크립트의 스크립트 태그를 제거해서는 안 됩니다. HTML에 JSON을 삽입하기 위해 자동으로 만들어진 SCF 스크립트 태그는 `data-scf-json=true` 속성으로 식별됩니다.
+구성 요소를 오버레이하거나 재정의할 때 SCF 스크립트의 스크립트 태그를 제거해서는 안 됩니다. HTML에서 JSON을 삽입하기 위해 자동으로 만들어진 SCF 스크립트 태그는 `data-scf-json=true` 속성으로 식별됩니다.
 
 ## SCF용 Clientlibs {#clientlibs-for-scf}
 
@@ -161,7 +161,7 @@ SCF용 clientlib은 범주 이름에 &#39;작성자&#39;가 있는 경우에만 
 
 ### 전체 Clientlibs {#complete-clientlibs}
 
-전체(작성자가 아닌) clientlib에는 종속성이 포함되어 있으며 ui:includeClientLib에 를 포함하기에 편리합니다.
+작성자가 아닌 전체 clientlib에는 종속성이 포함되어 있으며 ui:includeClientLib에 포함하기에 편리합니다.
 
 이들 버전은 다음 위치에 있습니다.
 

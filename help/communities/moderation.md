@@ -12,16 +12,16 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
 
 ---
 
 # 관리 콘솔 {#moderation-console}
 
-AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당된 신뢰할 수 있는 커뮤니티 구성원)가 작성자와 Publish 환경 모두에서 커뮤니티 콘텐츠를 일괄 [중재](/help/communities/moderate-ugc.md)할 수 있습니다.
+AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당된 신뢰할 수 있는 커뮤니티 구성원)가 작성자와 게시 환경 모두에서 커뮤니티 콘텐츠를 일괄 [중재](/help/communities/moderate-ugc.md)할 수 있습니다.
 
-관리자와 커뮤니티 중재자는 Publish 환경에서 [컨텍스트 내 중재](/help/communities/in-context.md)를 수행할 수도 있습니다.
+관리자 및 커뮤니티 중재자는 게시 환경에서 [컨텍스트 내 중재](/help/communities/in-context.md)를 수행할 수도 있습니다.
 
 모든 [커뮤니티 사이트](/help/communities/sites-console.md)의 기능은 관리자 권한으로 로그인하는 사용자가 사용할 수 있는 `Administration` 메뉴 항목입니다. `Administration` 링크를 통해 중재 콘솔에 액세스할 수 있습니다.
 
@@ -38,7 +38,7 @@ AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당
 
 관리자 또는 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`이(가) 있는 구성원으로 로그인한 경우에만 중재 작업을 수행할 수 있습니다.
 
-## Publish 환경 액세스 {#publish-environment-access}
+## 게시 환경 액세스 {#publish-environment-access}
 
 게시된 커뮤니티 사이트에서 중재 콘솔에 대한 액세스는 커뮤니티 중재자가 로그인할 때 표시되는 관리 링크를 통해 수행됩니다.
 
@@ -58,13 +58,13 @@ AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당
 
 >[!NOTE]
 >
->Publish 환경의 UGC는 선택한 SRP가 일반 저장소를 구현하는 경우에만 작성자에게 표시됩니다. 예를 들어 기본적으로 저장소는 JSRP이며, 이는 Author 및 Publish에 대한 공통 저장소가 아닙니다. [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)를 참조하세요.
+>게시 환경의 UGC는 선택한 SRP가 일반 저장소를 구현하는 경우에만 작성자에 표시됩니다. 예를 들어 기본적으로 저장소는 JSRP이며 Author 및 Publish에 대한 일반 저장소가 아닙니다. [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)를 참조하세요.
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## 중재 콘솔 UI {#moderation-console-ui}
 
-왼쪽 탐색 레일(작성자에게는 표시되지만 Publish에는 표시되지 않음)을 제외하고 중재 UI에는 다음과 같은 기본 영역이 있습니다.
+왼쪽 탐색 레일(작성자에게는 표시되지만 게시에는 표시되지 않음)을 제외하고 중재 UI에는 다음과 같은 기본 영역이 있습니다.
 
 * **[위쪽 탐색 모음](#top-navigation-bar)**
 * **[도구 모음](#toolbar)**
@@ -150,7 +150,7 @@ AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당
 >
 >관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 만들기 마법사](/help/communities/sites-console.md)를 사용하여 만들지 않은 사이트를 포함하여 UGC에 대한 모든 참조가 표시됩니다.
 >
->신뢰할 수 있는 커뮤니티 회원이 Publish에서 벌크 중재 콘솔에 액세스하면 해당 회원이 중재하도록 승인된 커뮤니티 사이트에 대해 생성된 UGC에 대한 참조만 표시됩니다. 또한 사이트 필터로 필터링할 수도 있습니다.
+>신뢰할 수 있는 커뮤니티 회원이 게시에서 벌크 중재 콘솔에 액세스하면 해당 회원이 중재하도록 승인된 커뮤니티 사이트에 대해 작성된 UGC에 대한 참조만 표시됩니다. 또한 사이트 필터로 필터링할 수도 있습니다.
 
 #### 콘텐츠 유형 {#content-type}
 
@@ -182,9 +182,9 @@ AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당
 * 편집 모드에서 열 수 있도록 구성을 선택합니다.
 * 필터링할 구성 요소의 ResourceType을 입력합니다.
 
-   * 예를 들어 포함된 투표 구성 요소를 필터링하려면 다음을 입력합니다.
+  * 예를 들어 포함된 투표 구성 요소를 필터링하려면 다음을 입력합니다.
 
-     `Voting=social/tally/components/hbs/voting`
+    `Voting=social/tally/components/hbs/voting`
 
   ![additional-contenttype](assets/additional-contenttype.png)
 
@@ -227,7 +227,7 @@ AEM Communities에서는 관리자와 커뮤니티 중재자(중재자로 할당
 
 #### 감정 {#sentiment}
 
-[감정](/help/communities/moderate-ugc.md#sentiment)은(는) 양수, 음수 또는 중립 감정 값이 있는 게시물에 표시되는 참조된 UGC를 제한합니다.
+[감정](/help/communities/moderate-ugc.md#sentiment)은(는) 감정 값이 양수, 음수 또는 중립인 게시물에 표시되는 참조된 UGC를 제한합니다.
 
 ![감정](assets/sentiment.png)
 
@@ -241,11 +241,11 @@ GitHub의 [샘플 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-com
 
 태그 필터용 샘플을 설치하려면:
 
-1. AEM 작성자(`https://[aem-author]:4502/crx/packmgr/index.jsp`) 인스턴스 및 AEM Publish(`https://[aem-publish]:4503/crx/packmgr/index.jsp`) 인스턴스에서 패키지 관리자를 엽니다.
+1. AEM 작성자(`https://[aem-author]:4502/crx/packmgr/index.jsp`) 인스턴스 및 AEM 게시(`https://[aem-publish]:4503/crx/packmgr/index.jsp`) 인스턴스에서 패키지 관리자를 엽니다.
 1. GitHub 코드에서 패키지 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip`을(를) 빌드하고 설치 및 활성화합니다.
-1. AEM 작성자(`https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM Publish(`https://[aem-publish]:4503/system/console/bundles`) 인스턴스에서 번들 콘솔을 엽니다.
+1. AEM 작성자(`https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM 게시(`https://[aem-publish]:4503/system/console/bundles`) 인스턴스에서 번들 콘솔을 엽니다.
 1. GitHub에서 패키지(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`)를 빌드하고 동일한 패키지를 설치하고 활성화합니다.
-1. AEM 작성자(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 및 AEM Publish(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 인스턴스의 **/apps/social/moderation/facet** 노드로 이동합니다.
+1. AEM 작성자(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 및 AEM 게시(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 인스턴스의 **/apps/social/moderation/facet** 노드로 이동합니다.
 1. `jcr:read` 권한이 있는 기술 사용자 **communities-utility-reader**&#x200B;를 추가합니다.
 
 기존 커뮤니티 사이트에 사용자 지정 필터를 노출하려면 다음을 수행하십시오.

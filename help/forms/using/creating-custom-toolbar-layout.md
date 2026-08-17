@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 도구 모음 레이아웃 만들기
+title: 사용자 정의 도구 모음 레이아웃 만들기
 description: 양식에 대한 도구 모음 레이아웃을 지정할 수 있습니다. 도구 모음 레이아웃은 양식에 있는 도구 모음의 명령과 레이아웃을 정의합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
-# 사용자 지정 도구 모음 레이아웃 만들기{#creating-custom-toolbar-layout}
+# 사용자 정의 도구 모음 레이아웃 만들기{#creating-custom-toolbar-layout}
 
 ## 도구 모음 레이아웃 {#layout}
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 적응형 양식은 다음과 같은 기본 레이아웃 세트를 제공합니다.
 
-![도구 모음 레이아웃을 즉시 사용할 수 있음 &#x200B;](assets/toolbar1.png)
+![도구 모음 레이아웃을 즉시 사용할 수 있음 ](assets/toolbar1.png)
 
 즉시 사용 가능한 도구 모음 레이아웃
 
@@ -65,7 +65,7 @@ CustomToolbarLayoutDemo.zip
 
 1. 복사된 노드 `mobileFixedToolbarLayout`의 이름을 `customToolbarLayout.`(으)로 변경합니다.
 
-   또한 노드에 대한 관련 설명을 제공합니다. 예를 들어 노드의 jcr:description을 **도구 모음에 대한 사용자 지정 레이아웃**(으)로 변경합니다.
+   또한 노드에 대한 관련 설명을 제공합니다. 예를 들어 노드의 jcr:description을(를) **도구 모음에 대한 사용자 지정 레이아웃**(으)로 변경합니다.
 
    노드의 `guideComponentType` 속성은 레이아웃 유형을 결정합니다. 이 경우 레이아웃 유형은 도구 모음이므로 도구 모음 레이아웃 선택 드롭다운에 표시됩니다.
 

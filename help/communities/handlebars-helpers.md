@@ -9,7 +9,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1531'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ Then content-loadmore would return
 // returns "03-18-2015"
 ```
 
-## 다음과 같음 {#equals}
+## 등호 {#equals}
 
 같음 조건에 따라 콘텐츠를 반환할 도우미.
 
@@ -237,7 +237,7 @@ Then content-loadmore would return
 
 일부 Communities 구성 요소만 포함할 수 있습니다. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-서버측에만 적합한 이 도우미는 JSP 스크립트용 [cq:include](../../help/sites-developing/taglib.md)과(와) 유사한 기능을 제공합니다.
+서버측에서만 적합한 이 도우미는 JSP 스크립트용 [cq:include](../../help/sites-developing/taglib.md)과(와) 유사한 기능을 제공합니다.
 
 ### 매개변수 {#parameters-6}
 
@@ -458,10 +458,10 @@ XSS를 방지하기 위해 HTML href 또는 소스 속성 값으로 작성하기
 
 * Handlebars는 &#39;options&#39;라는 도우미에 최종 매개 변수를 제공합니다. &quot;options&quot; 특수 객체에는 다음이 포함됩니다
 
-   * 개인 데이터(선택 사항)(options.data)
-   * 호출의 선택적 키 값 속성(options.hash)
-   * 자체 호출 기능(options.fn())
-   * 자신의 역(options.inverse())을 호출하는 기능
+  * 개인 데이터(선택 사항)(options.data)
+  * 호출의 선택적 키 값 속성(options.hash)
+  * 자체 호출 기능(options.fn())
+  * 자신의 역(options.inverse())을 호출하는 기능
 
 * 도우미에서 반환된 HTML 문자열 콘텐츠는 SafeString인 것이 좋습니다.
 
@@ -488,7 +488,7 @@ template(context);
 렌더링됨:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>게시물!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Handlebars.js 설명서의 블록 도우미의 예: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -519,7 +519,7 @@ template(data);
 
 ## 사용자 지정 SCF 도우미 {#custom-scf-helpers}
 
-특히 데이터를 전달할 때 서버측과 클라이언트측에 사용자 정의 도우미를 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 주어진 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿이 서버측에서 컴파일되고 렌더링됩니다.
+특히 데이터를 전달할 때 서버측과 클라이언트측에 사용자 정의 도우미를 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 특정 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿이 서버측에서 컴파일되고 렌더링됩니다.
 
 ### 서버측 사용자 정의 도우미 {#server-side-custom-helpers}
 

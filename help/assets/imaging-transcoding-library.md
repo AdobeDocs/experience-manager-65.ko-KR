@@ -1,6 +1,6 @@
 ---
 title: 이미징 코드 변환 라이브러리
-description: 인코딩, 코드 변환, 이미지 리샘플링 및 이미지 크기 조정을 비롯한 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 코드 변환 라이브러리를 구성하고 사용하는 방법에 대해 알아봅니다.
+description: 인코딩, 트랜스코딩, 이미지 리샘플링 및 이미지 크기 조정을 비롯한 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성하고 사용하는 방법에 대해 알아봅니다.
 contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
@@ -8,14 +8,14 @@ exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 0%
+source-wordcount: '1015'
+ht-degree: 1%
 
 ---
 
 # 이미징 코드 변환 라이브러리 {#imaging-transcoding-library}
 
-Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리 기능을 수행할 수 있는 독점 이미지 처리 솔루션입니다.
+Adobe의 이미징 코드 변환 라이브러리는 다음을 포함한 핵심 이미지 처리 기능을 수행할 수 있는 독점 이미지 처리 솔루션입니다.
 
 * 인코딩
 * 코드 변환(지원되는 형식 변환)
@@ -31,7 +31,7 @@ Adobe Imaging Transcoding Library는 다음을 포함한 핵심 이미지 처리
 * **파일 크기 또는 해상도가 증가하면서 크기 조절**: 크기 조절은 주로 파일을 디코딩하는 동안 크기를 다시 조정할 수 있는 이미징 코드 변환 라이브러리의 특허 받은 기능을 통해 이루어집니다. 이 기능은 런타임 메모리 사용이 항상 최적이고 파일 크기 또는 해상도 메가픽셀을 증가시키는 2차 함수가 아님을 보장합니다. 이미징 코드 변환 라이브러리는 더 큰 고해상도(더 높은 메가픽셀 포함) 파일을 처리할 수 있습니다. ImageMagick와 같은 타사 도구는 대용량 파일을 처리할 수 없으며 이러한 파일을 처리하는 동안 충돌이 발생합니다.
 * **Photoshop 품질 압축 및 크기 조정 알고리즘**: 다운 샘플링(매끄러움, 선명함 및 자동 바이큐빅) 품질 및 압축 품질 측면에서 업계 표준과 일치합니다. 이미징 코드 변환 라이브러리는 입력 이미지의 품질 요인을 추가로 평가하고 출력 이미지에 대한 최적의 테이블 및 품질 설정을 지능적으로 사용합니다. 이 기능은 시각적 품질을 손상시키지 않고 최적의 크기를 갖는 파일을 생성합니다.
 * **높은 처리량:** 응답 시간이 짧고 처리량이 ImageMagick보다 일관되게 높습니다. 따라서 이미징 코드 변환 라이브러리는 사용자의 대기 시간과 호스팅 비용을 줄여야 합니다.
-* **동시 부하로 더 잘 확장:** 이미징 코드 변환 라이브러리는 동시 부하 조건에서 최적으로 수행됩니다. 최적의 CPU 성능, 메모리 사용량, 낮은 응답 시간으로 높은 처리량을 제공하여 호스팅 비용을 절감하는 데 도움이 됩니다.
+* **동시 부하로 더 잘 확장:** 이미징 코드 변환 라이브러리는 동시 부하 조건에서 최적으로 수행됩니다. 최적의 CPU 성능, 메모리 사용량, 낮은 응답 시간으로 높은 처리량을 제공하여 호스팅 비용을 줄이는 데 도움이 됩니다.
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -122,7 +122,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
 
 1. 사이드 패널을 전환하고 단계 목록에서 **[!UICONTROL SWitchEngine 처리기]**&#x200B;를 추가합니다.
 
-1. 사용자 지정 요구 사항에 따라 [!UICONTROL SwitchEngine 처리기]에 명령을 추가합니다. 요구 사항을 충족하도록 지정하는 명령의 매개변수를 조정합니다. 예를 들어 JPEG 이미지의 색 프로필을 유지하려면 **[!UICONTROL 명령]** 목록에 다음 명령을 추가합니다.
+1. 사용자 지정 요구 사항에 따라 [!UICONTROL SwitchEngine 처리기]에 명령을 추가합니다. 요구 사항을 충족하도록 지정하는 명령의 매개변수를 조정합니다. 예를 들어 JPEG 이미지의 색상 프로파일을 유지하려면 **[!UICONTROL 명령]** 목록에 다음 명령을 추가합니다.
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
