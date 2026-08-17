@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
+>클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
 
 [워크플로 모델](/help/sites-developing/workflows.md#model)을(를) 만들어 사용자가 워크플로를 시작할 때 실행되는 일련의 단계를 정의합니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다.
 

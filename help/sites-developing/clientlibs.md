@@ -66,7 +66,7 @@ HTL은 AEM 사이트 개발을 위한 기본 기술이므로 AEM에 클라이언
 
 ### HTL 사용 {#using-htl}
 
-HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)을(를) 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. 이 파일에는 [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)을(를) 통해 호출할 수 있는 세 가지 템플릿이 있습니다.
+HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adobe.com/kr/experience-manager/htl/using/block-statements.html#use)을(를) 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. 이 파일에는 [`data-sly-call`](https://helpx.adobe.com/kr/experience-manager/htl/using/block-statements.html#template-call)을(를) 통해 호출할 수 있는 세 가지 템플릿이 있습니다.
 
 * **css** - 참조된 클라이언트 라이브러리의 CSS 파일만 로드합니다.
 * **js** - 참조된 클라이언트 라이브러리의 JavaScript 파일만 로드합니다.
@@ -74,7 +74,7 @@ HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adob
 
 각 도우미 템플릿에는 원하는 클라이언트 라이브러리를 참조하기 위한 `categories` 옵션이 필요합니다. 해당 옵션은 문자열 값의 배열이거나 쉼표로 구분된 값 목록을 포함하는 문자열일 수 있습니다.
 
-자세한 내용과 사용 예는 [HTML 템플릿 언어 시작하기](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries) 문서를 참조하십시오.
+자세한 내용과 사용 예는 [HTML 템플릿 언어 시작하기](https://helpx.adobe.com/kr/experience-manager/htl/using/getting-started.html#loading-client-libraries) 문서를 참조하십시오.
 
 ### JSP 사용 {#using-jsp}
 

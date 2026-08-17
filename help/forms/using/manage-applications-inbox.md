@@ -140,7 +140,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
      | allowExplicitSharing | allowExplicitSharing | 부울 |
 
 
-   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
+   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +150,8 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [속성 인덱스를 만들고 true로 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [속성 인덱스를 만들고 true로 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=ko#the-property-index).
 
 1. CRX DE에서 인덱스를 구성하거나 패키지를 통해 배포한 후 [저장소를 다시 인덱싱합니다](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=ko
