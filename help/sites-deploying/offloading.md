@@ -1,5 +1,5 @@
 ---
-title: 작업 오프로드
+title: 오프로딩 작업
 description: 토폴로지에서 AEM 인스턴스를 구성 및 사용하여 특정 유형의 처리를 수행하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,18 +9,18 @@ feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2386'
 ht-degree: 1%
 
 ---
 
-# 작업 오프로드{#offloading-jobs}
+# 오프로딩 작업{#offloading-jobs}
 
 ## 소개 {#introduction}
 
-오프로드는 토폴로지의 Experience Manager 인스턴스 간에 처리 작업을 분산합니다. 오프로딩을 사용하면 특정 유형의 처리를 수행하기 위해 특정 Experience Manager 인스턴스를 사용할 수 있습니다. 특화된 처리를 통해 사용 가능한 서버 리소스의 사용을 극대화할 수 있습니다.
+오프로드는 토폴로지의 Experience Manager 인스턴스 간에 처리 작업을 배포합니다. 오프로딩을 사용하면 특정 유형의 처리를 수행하기 위해 특정 Experience Manager 인스턴스를 사용할 수 있습니다. 특화된 처리를 통해 사용 가능한 서버 리소스의 사용을 극대화할 수 있습니다.
 
 오프로딩은 [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) 및 Sling JobManager 기능을 기반으로 합니다. 오프로딩을 사용하려면 토폴로지에 Experience Manager 클러스터를 추가하고 클러스터가 처리하는 작업 항목을 식별합니다. 클러스터는 하나 이상의 Experience Manager 인스턴스로 구성되므로 단일 인스턴스가 클러스터로 간주됩니다.
 
@@ -52,7 +52,7 @@ JobManager가 작업을 생성할 때 오프로딩 프레임워크는 토폴로�
 
 ## 토폴로지 관리 {#administering-topologies}
 
-토폴로지는 오프로딩에 참여하는 느슨하게 결합된 Experience Manager 클러스터입니다. 클러스터는 하나 이상의 Experience Manager 서버 인스턴스로 구성됩니다(단일 인스턴스는 클러스터로 간주됨).
+토폴로지는 오프로드에 참여하는 Experience Manager 클러스터와 느슨하게 연결됩니다. 클러스터는 하나 이상의 Experience Manager 서버 인스턴스로 구성됩니다(단일 인스턴스는 클러스터로 간주됨).
 
 각 Experience Manager 인스턴스는 다음 오프로딩 관련 서비스를 실행합니다.
 
@@ -67,7 +67,7 @@ JobManager가 작업을 생성할 때 오프로딩 프레임워크는 토폴로�
 
 ### 토폴로지 보기 {#viewing-the-topology}
 
-토폴로지 브라우저를 사용하여 Experience Manager 인스턴스가 참여하고 있는 토폴로지의 상태를 살펴봅니다. 토폴로지 브라우저에는 토폴로지의 클러스터 및 인스턴스가 표시됩니다.
+토폴로지 브라우저를 사용하여 Experience Manager 인스턴스가 참여하고 있는 토폴로지의 상태를 살펴볼 수 있습니다. 토폴로지 브라우저에는 토폴로지의 클러스터 및 인스턴스가 표시됩니다.
 
 각 클러스터에 대해 각 멤버가 클러스터에 가입된 순서와 리더인 멤버를 나타내는 클러스터 멤버 목록이 표시됩니다. Current 속성은 현재 관리 중인 인스턴스를 나타냅니다.
 
@@ -111,7 +111,7 @@ Apache Sling 리소스 기반 검색 서비스는 각 인스턴스에서 실행�
 * 인스턴스를 토폴로지에 연결하려면 루트 멤버의 토폴로지 커넥터 서비스 URL을 지정하십시오.
 * 인스턴스가 토폴로지에 연결할 수 있도록 하려면 루트 멤버의 토폴로지 커넥터 서비스 허용 목록에 인스턴스를 추가하십시오.
 
-웹 콘솔 또는 sling:OsgiConfig 노드를 사용하여 org.apache.sling.discovery.impt.Config 서비스의 다음 속성을 구성합니다.
+웹 콘솔 또는 sling:OsgiConfig 노드를 사용하여 org.apache.sling.discovery.impt.Config 서비스의 다음 속성을 구성하십시오.
 
 <table>
  <tbody>
@@ -176,7 +176,7 @@ Apache Sling 리소스 기반 검색 서비스는 각 인스턴스에서 실행�
 
 ## 주제 사용량 구성 {#configuring-topic-consumption}
 
-오프로딩 브라우저를 사용하여 토폴로지의 Experience Manager 인스턴스에 대한 항목 소비를 구성합니다. 각 인스턴스에 대해 인스턴스가 사용하는 주제를 지정할 수 있습니다. 예를 들어 하나의 인스턴스만 특정 유형의 주제를 사용하도록 토폴로지를 구성하려면 하나를 제외한 모든 인스턴스에서 주제를 비활성화합니다.
+오프로딩 브라우저를 사용하여 토폴로지에서 Experience Manager 인스턴스에 대한 항목 소비를 구성합니다. 각 인스턴스에 대해 인스턴스가 사용하는 주제를 지정할 수 있습니다. 예를 들어 하나의 인스턴스만 특정 유형의 주제를 사용하도록 토폴로지를 구성하려면 하나를 제외한 모든 인스턴스에서 주제를 비활성화합니다.
 
 작업은 라운드 로빈 논리를 사용하여 관련 주제가 활성화된 인스턴스에 배포됩니다.
 
@@ -203,7 +203,7 @@ Apache Sling 리소스 기반 검색 서비스는 각 인스턴스에서 실행�
 
 ### 설치된 작업 소비자 {#installed-job-consumers}
 
-Experience Manager과 함께 여러 JobConsumer 구현이 설치됩니다. 이러한 JobConsumer가 등록된 항목이 오프로딩 브라우저에 나타납니다. 표시되는 추가 항목은 사용자 정의 JobConsumer가 등록한 항목입니다. 다음 표에서는 기본 JobConsumer에 대해 설명합니다.
+Experience Manager에는 여러 JobConsumer 구현이 설치됩니다. 이러한 JobConsumer가 등록된 항목이 오프로딩 브라우저에 나타납니다. 표시되는 추가 항목은 사용자 정의 JobConsumer가 등록한 항목입니다. 다음 표에서는 기본 JobConsumer에 대해 설명합니다.
 
 | 작업 항목 | 서비스 PID | 설명 |
 |---|---|---|
@@ -216,7 +216,7 @@ Experience Manager과 함께 여러 JobConsumer 구현이 설치됩니다. 이�
 
 ### 인스턴스에 대한 항목 비활성화 및 활성화 {#disabling-and-enabling-topics-for-an-instance}
 
-Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 차단 목록 속성을 제공합니다. Experience Manager 인스턴스에서 특정 항목의 처리를 활성화 또는 비활성화하도록 이러한 속성을 구성합니다.
+Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 차단 목록 속성을 제공합니다. Experience Manager 인스턴스의 특정 항목 처리를 활성화하거나 비활성화하려면 이러한 속성을 구성하십시오.
 
 **참고:** 인스턴스가 토폴로지에 속해 있으면 토폴로지의 모든 컴퓨터에서 오프로딩 브라우저를 사용하여 항목을 사용하거나 사용하지 않도록 설정할 수 있습니다.
 
@@ -226,7 +226,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 | 웹 콘솔의 속성 이름 | OSGi ID | 설명 |
 |---|---|---|
-| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. &ast;의 기본값은 모든 주제를 등록된 TopicConsumer 서비스로 보냅니다. |
+| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. 기본값인 &ast;를 사용하면 모든 항목이 등록된 TopicConsumer 서비스로 전송됩니다. |
 | 주제 차단 목록 | job.consumermanager.blacklist | 로컬 JobManager 서비스가 처리하지 않는 항목 목록입니다. |
 
 ## 오프로드용 복제 에이전트 생성 {#creating-replication-agents-for-offloading}

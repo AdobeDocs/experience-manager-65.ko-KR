@@ -9,9 +9,9 @@ exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ AEM에서는 워크플로우 모델을 만드는 데 사용할 수 있는 몇 �
 >
 >단기 솔루션은 코드를 변경할 수 없는 경우 이전 버전과의 호환성을 위해서도 사용할 수 있습니다.
 >
->* 웹 콘솔(`/system/console/configMgr`)을 사용하여 **Adobe Granite 워크플로 구성 서비스를 찾습니다**
+>* 웹 콘솔(`/system/console/configMgr`)을 사용하여 **Adobe Granite 워크플로 구성 서비스**&#x200B;를 찾습니다.
 >
 >* **워크플로 프로세스 레거시 모드** 사용
 >
@@ -115,7 +115,7 @@ AEM에서는 워크플로우 모델을 만드는 데 사용할 수 있는 몇 �
 
 * **Java™ 클래스**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **페이로드**: DAM 자산, AEM 페이지 또는 페이로드 없음(하위 프로세스의 요구 사항에 따라 다름)
+* **페이로드**: DAM 자산, AEM 페이지이거나 페이로드가 없습니다(하위 프로세스의 요구 사항에 따라 다름).
 * **인수**:
 
 ```
@@ -231,7 +231,7 @@ null 프로세스입니다. 작업을 수행하지 않지만 디버그 메시지
 
 ### CreateVersionProcess {#createversionprocess}
 
-워크플로 페이로드(AEM 페이지 또는 DAM 에셋)의 버전을 만듭니다.
+워크플로 페이로드 버전(AEM 페이지 또는 DAM 에셋)을 만듭니다.
 
 * **Java™ 클래스**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

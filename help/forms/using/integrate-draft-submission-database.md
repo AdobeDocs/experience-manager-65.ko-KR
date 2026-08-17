@@ -1,5 +1,5 @@
 ---
-title: 초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플
+title: 초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플
 description: 사용자 지정된 데이터 및 메타데이터 서비스의 구현을 참조하여 초안 및 제출 구성 요소를 데이터베이스와 통합합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,18 +8,18 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 1%
+source-wordcount: '1537'
+ht-degree: 6%
 
 ---
 
-# 초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플 {#sample-for-integrating-drafts-submissions-component-with-database}
+# 초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플 {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## 샘플 개요 {#sample-overview}
 
-AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식을 초안으로 저장하고 나중에 모든 장치에서 제출할 수 있습니다. 또한 사용자는 포털에서 제출된 양식을 볼 수 있습니다. 이 기능을 활성화하기 위해 AEM Forms에서는 사용자가 양식에 입력한 데이터와 초안 및 제출된 양식과 관련된 양식 메타데이터를 저장할 수 있는 데이터 및 메타데이터 서비스를 제공합니다. 이 데이터는 기본적으로 CRX 저장소에 저장됩니다. 그러나 일반적으로 엔터프라이즈 방화벽 외부에 있는 AEM 게시 인스턴스를 통해 사용자가 양식과 상호 작용할 때 조직은 보다 안전하고 신뢰할 수 있도록 데이터 스토리지를 사용자 정의하고자 할 수 있습니다.
+AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식을 초안으로 저장하고 나중에 모든 장치에서 제출할 수 있습니다. 또한 사용자는 포털에서 제출된 양식을 볼 수 있습니다. 이 기능을 활성화하기 위해 AEM Forms에서는 사용자가 양식에 입력한 데이터와 초안 및 제출된 양식과 관련된 양식 메타데이터를 저장할 수 있는 데이터 및 메타데이터 서비스를 제공합니다. 이 데이터는 기본적으로 CRX 저장소에 저장됩니다. 그러나 일반적으로 엔터프라이즈 방화벽 외부에 있는 AEM 게시 인스턴스를 통해 사용자가 양식과 상호 작용할 때 조직은 보다 안전하고 신뢰할 수 있도록 데이터 저장소를 사용자 정의하고자 할 수 있습니다.
 
 이 문서에서 설명하는 샘플은 초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 사용자 지정된 데이터 및 메타데이터 서비스의 참조 구현입니다. 샘플 구현에 사용된 데이터베이스는 **MySQL 5.6.24**&#x200B;입니다. 그러나 초안 및 제출 구성 요소를 선택한 데이터베이스와 통합할 수 있습니다.
 
@@ -37,15 +37,15 @@ AEM Forms 포털 초안 및 제출 구성 요소를 통해 사용자는 양식�
 
    데이터베이스 통합을 위한 샘플 패키지
 
-[파일 가져오기](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [파일 가져오기](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. https://[*host*]:[*port*]/crx/packmgr/에서 AEM 패키지 관리자로 이동합니다.
 1. **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭합니다.
 
 1. **aem-fp-db-integration-sample-pkg-6.1.2.zip** 패키지를 찾아 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 패키지를 설치하려면 패키지 옆에 있는 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL AEM 웹 콘솔 구성]**(으)로 이동
-https://[*host*]:[*port*]/system/console/configMgr에서 페이지를 만듭니다.
+1. **[!UICONTROL AEM 웹 콘솔 구성으로 이동]**
+https://[*host*]:[*port*]/system/console/configMgr의 페이지입니다.
 1. 편집 모드에서 **[!UICONTROL Forms 포털 초안 및 제출 구성]**&#x200B;을 열려면 클릭하세요.
 
 1. 다음 표에 설명된 대로 등록 정보 값을 지정합니다.
@@ -121,7 +121,7 @@ https://[*host*]:[*port*]/system/console/configMgr에서 페이지를 만듭니�
   </tr>
   <tr>
    <td>최대 활성 연결</td>
-   <td>1000년</td>
+   <td>1000</td>
   </tr>
   <tr>
    <td>최대 유휴 연결</td>
@@ -315,7 +315,7 @@ https://[*host*]:[*port*]/system/console/configMgr에서 페이지를 만듭니�
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## Forms 포털 데이터 및 메타데이터 서비스용 샘플 코드 {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -330,7 +330,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md)를 만들고 스크립트를 사용하려면 다음 단계를 수행하십시오.
 
 1. CRXDE에 로그인하고 /etc/clientlibs/ 로 이동합니다.
-1. **cq:ClientLibraryFolder** 유형의 노드를 만들고 노드의 이름을 제공합니다. 예: `validation`
+1. **cq:ClientLibraryFolder** 유형의 노드를 만들고 노드 이름을 제공하십시오. 예: `validation`
 
    **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
@@ -343,7 +343,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
    위의 코드에서 `util`은(는) 폴더 이름이며 `util` 폴더에 있는 파일의 `util.js` 이름입니다. `util` 폴더 및 `util.js` 파일이 이어지는 단계에서 만들어집니다.
 
-1. 2단계에서 만든 `cq:ClientLibraryFolder` 노드를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 만들기를 선택합니다. `util` 폴더를 만듭니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. `util` 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 파일 만들기를 선택합니다. 이름이 `util.js`인 파일을 만듭니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. 2단계에서 만든 `cq:ClientLibraryFolder` 노드를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 만들기를 선택합니다. `util`라는 이름의 폴더를 만듭니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. `util` 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 파일 만들기를 선택합니다. 이름이 `util.js`인 파일을 생성합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 1. util.js 파일에 다음 코드를 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. 파일 이름의 코드 유효성 검사 길이입니다.
 
@@ -420,4 +420,4 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
    >
    >guideRuntime 및 guideRuntimeWithXfa 클라이언트 라이브러리 대신 사용자 지정 클라이언트 라이브러리를 사용하는 경우 카테고리 이름을 사용하여 이 절차에서 만든 클라이언트 라이브러리를 런타임 시 로드되는 사용자 지정 라이브러리에 포함합니다.
 
-1. **[!UICONTROL 모두 저장 을 클릭합니다.]** 이제 파일 이름이 150자(확장명 포함)보다 크면 메시지가 표시됩니다.
+1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. 이제 파일 이름이 150자(확장명 포함)보다 크면 메시지가 표시됩니다.

@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 5%
+source-wordcount: '1208'
+ht-degree: 6%
 
 ---
 
@@ -29,22 +29,22 @@ ht-degree: 5%
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&ast; |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&ast; |
+| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&Ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&Ast; |
 | 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&ast; |
 | 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
 | 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&ast; |
-| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스&ast; |
+| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
 | 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&Ast; |
 
 >[!NOTE]
 >
->&#39;&ast;&#39;로 표시된 단축키는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 >[!NOTE]
 >
@@ -60,13 +60,13 @@ ht-degree: 5%
 |---|---|---|
 | 테마에서 선택한 구성 요소의 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
 | 테마에서 선택한 구성 요소의 속성 브라우저를 닫습니다. | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&Ast; |
 | 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&ast; |
 | 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&ast; |
 
 >[!NOTE]
 >
->&#39;&ast;&#39;로 표시된 단축키는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 

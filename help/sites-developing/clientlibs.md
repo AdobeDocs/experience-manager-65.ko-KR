@@ -12,8 +12,8 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
+source-wordcount: '2898'
+ht-degree: 2%
 
 ---
 
@@ -101,7 +101,7 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 특성을 포함
 
 >[!CAUTION]
 >
->이전에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 `<cq:includeClientLib>`은(는) AEM 5.6 이후 더 이상 사용되지 않습니다. 위에서 자세히 설명한 대로 대신 [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)을(를) 사용해야 합니다.
+>이전에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 `<cq:includeClientLib>`은(는) AEM 5.6 이후 더 이상 사용되지 않습니다. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)은(는) 위에서 자세히 설명한 대로 대신 사용해야 합니다.
 
 ## 클라이언트 라이브러리 폴더 만들기 {#creating-client-library-folders}
 
@@ -446,7 +446,7 @@ AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하기
 
    * 웹 브라우저에서 다음 URL을 엽니다(필요에 따라 다른 호스트 및 포트 사용).
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    기본 페이지에는 categories 속성에 대한 값이 없는 태그의 출력이 표시됩니다.
 

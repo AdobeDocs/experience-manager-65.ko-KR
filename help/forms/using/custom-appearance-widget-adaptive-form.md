@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식 필드에 대한 사용자 정의 표시 만들기
+title: 적응형 양식 필드에 대한 사용자 정의 모양 만들기
 description: 적응형 Forms에서 즉시 사용 가능한 구성 요소의 모양을 사용자 지정합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 1%
 
 ---
 
-# 적응형 양식 필드에 대한 사용자 정의 표시 만들기{#create-custom-appearances-for-adaptive-form-fields}
+# 적응형 양식 필드에 대한 사용자 정의 모양 만들기{#create-custom-appearances-for-adaptive-form-fields}
 
 ## 소개 {#introduction}
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 **jQuery 플러그인** jQuery 위젯 프레임워크를 기반으로 대체 모양을 구현하는 표준 메커니즘을 제공합니다.
 
-**ClientLib** 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 AEM 클라이언트측 처리의 클라이언트측 라이브러리 시스템입니다. 자세한 내용은 클라이언트측 라이브러리 사용을 참조하십시오.
+**ClientLib** 복잡한 JavaScript 및 CSS 코드로 구동되는 AEM 클라이언트측 처리에 있는 클라이언트측 라이브러리 시스템입니다. 자세한 내용은 클라이언트측 라이브러리 사용을 참조하십시오.
 
 **Archetype** Maven 프로젝트의 원래 패턴 또는 모델로 정의된 Maven 프로젝트 템플릿 도구 키트 자세한 내용은 Archetype 소개를 참조하십시오.
 
@@ -132,7 +132,7 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
    <td><code>getEventMap</code></td>
    <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> 이 예제는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
+      &rbrace;</code><br /> 이 예제에서는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

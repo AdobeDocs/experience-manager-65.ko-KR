@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 2%
 
 ## 그룹 템플릿 콘솔 {#group-templates-console}
 
-AEM Author 환경의 그룹 템플릿 콘솔에 도달하려면 다음을 수행하십시오.
+AEM 작성 환경의 그룹 템플릿 콘솔에 도달하려면 다음을 수행하십시오.
 
-* **도구 선택 | 커뮤니티 | 전역 탐색에서** 그룹 서식 파일입니다.
+* **도구 선택 | 커뮤니티 | 그룹 템플릿,**(전역 탐색).
 
 이 콘솔에는 [커뮤니티 사이트](/help/communities/sites-console.md)를 만들 수 있는 템플릿이 표시되며 새 그룹 템플릿을 만들 수 있습니다.
 
@@ -75,7 +75,7 @@ AEM Author 환경의 그룹 템플릿 콘솔에 도달하려면 다음을 수행
 
 >[!CAUTION]
 >
->AEM 6.1 Communities FP4 또는 이전 버전에서 작업하는 경우 그룹 템플릿에 그룹 함수를 추가하지 마십시오.
+>AEM 6.1 커뮤니티 FP4 이전 버전에서 작업하는 경우 그룹 템플릿에 그룹 기능을 추가하지 마십시오.
 >
 >중첩된 그룹 기능은 커뮤니티 [FP1](/help/communities/communities.md#latestfeaturepack)부터 사용할 수 있습니다.
 >

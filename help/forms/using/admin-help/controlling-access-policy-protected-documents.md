@@ -9,10 +9,10 @@ feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '2167'
-ht-degree: 100%
+source-git-commit: 'null'
+workflow-type: tm+mt
+source-wordcount: '2196'
+ht-degree: 96%
 
 ---
 
@@ -194,13 +194,13 @@ Adobe가 아닌 PDF 뷰어를 사용하는 경우 문서 보안으로 보호된 
 
 워크벤치에서 다음 프로세스를 사용합니다.
 
-**표지가
-포함된 문서 보호:** 지정된 정책으로 PDF 문서를 보호하고 문서에 표지를 추가합니다.
+**보호
+표지가 있는 문서:** 지정된 정책으로 PDF 문서를 보호하고 문서에 표지를 추가합니다
 
 **보호된 문서 추출:** 표지가 포함된 PDF 문서에서 정책으로 보호된 PDF 문서를 추출합니다.
 
 다음과 같은 문서 보안 API를 사용합니다.
 
-**protectDocumentWithCoverPage:** 지정된 정책으로 특정 PDF를 보호하고 표지와 보호된 문서가 첨부 파일로 포함된 문서를 반환합니다. 
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** 표지가 포함된 문서의 첨부 파일인 보호된 문서를 추출합니다. 표지가 포함된 문서는 protectDocumentWithCoverPage 메서드를 사용하여 만들 수 있습니다.
+**protectDocumentWithCoverPage:** 지정된 정책으로 지정된 PDF을 보호하고, 표지가 있는 문서와 보호된 문서를 첨부 파일로 반환합니다
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** 표지가 있는 문서의 첨부 파일인 보호된 문서를 추출합니다. protectDocumentWithCoverPage 메서드를 사용하여 표지가 있는 문서를 만들 수 있습니다
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

@@ -10,9 +10,9 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 * **추가** 클릭
 * **모두 저장** 클릭
 
-참고: 카테고리 값에 &#39;앱&#39;을 앞에 붙입니다. 는 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 `js.tx`t 및 **`css.txt`** 파일을 추가하십시오. (이러한 폴더가 없는 공식적으로 cq:ClientLibraryFolder는 아닙니다.)
+참고: 카테고리 값에 &#39;apps&#39;를 앞에 붙이는 것은 &#39;소유 애플리케이션&#39;을 /libs가 아닌 /apps 폴더에 있는 것으로 식별하는 규칙입니다. 중요: 자리 표시자 `js.tx`t 및 **`css.txt`** 파일을 추가하십시오. (이러한 항목이 없는 공식적으로 cq:ClientLibraryFolder은(는) 아닙니다.)
 
 1. **`/etc/designs/an-scf-sandbox/clientlibs`**&#x200B;을(를) 마우스 오른쪽 단추로 클릭
 1. **파일 만들기...** 선택
@@ -89,16 +89,16 @@ css.txt의 콘텐츠를 다음으로 설정
 * **`Multi`** 클릭
 * 값: **`cq.social.scf`**
 
-   * 대화창이 뜨고
-다음 clientlib 범주를 추가하려면 각 항목 뒤에 있는 **`+`**&#x200B;을(를) 클릭하십시오.
+  * 대화창이 뜨고
+    다음 clientlib 범주를 추가하려면 각 항목 뒤에 있는 **`+`**&#x200B;을(를) 클릭하십시오.
 
-      * **`cq.ckeditor`**
-      * **`cq.social.author.hbs.comments`**
-      * **`cq.social.author.hbs.forum`**
-      * **`cq.social.author.hbs.rating`**
-      * **`cq.social.author.hbs.reviews`**
-      * **`cq.social.author.hbs.voting`**
-      * **확인** 클릭
+    * **`cq.ckeditor`**
+    * **`cq.social.author.hbs.comments`**
+    * **`cq.social.author.hbs.forum`**
+    * **`cq.social.author.hbs.rating`**
+    * **`cq.social.author.hbs.reviews`**
+    * **`cq.social.author.hbs.voting`**
+    * **확인** 클릭
 
 * **모두 저장** 클릭
 
@@ -124,7 +124,7 @@ include 문은 `html` 스크립트의 `head` 섹션에 속합니다. 기본 **`f
 
 **headlibs.jsp 복사 및 clientlibs 포함:**
 
-1. **CRXDE Lite**&#x200B;을(를) 사용하여 **`/libs/foundation/components/page/headlibs.jsp`**&#x200B;을(를) 선택하십시오.
+1. **CRXDE Lite**&#x200B;을(를) 사용하여 **`/libs/foundation/components/page/headlibs.jsp`**&#x200B;을(를) 선택합니다.
 
 1. 마우스 오른쪽 단추를 클릭하고 **복사**&#x200B;를 선택하거나 도구 모음에서 복사 를 선택합니다.
 1. **`/apps/an-scf-sandbox/components/playpage`** 선택
@@ -162,26 +162,26 @@ include 문은 `html` 스크립트의 `head` 섹션에 속합니다. 기본 **`f
 * CRXDE Lite에서 [패키지 아이콘](https://localhost:4502/crx/packmgr/)을 클릭하세요.
 * **패키지 만들기** 클릭
 
-   * 패키지 이름: an-scf-sandbox-minimal-pkg
-   * 버전: 0.1
-   * 그룹: `leave as default`
-   * **확인** 클릭
+  * 패키지 이름: an-scf-sandbox-minimal-pkg
+  * 버전: 0.1
+  * 그룹: `leave as default`
+  * **확인** 클릭
 
 * **편집** 클릭
 
-   * **필터** 탭 선택
+  * **필터** 탭 선택
 
-      * **필터 추가** 클릭
-      * 루트 경로: `/apps/an-scf-sandbox` 찾아보기
-      * **완료** 클릭
-      * **필터 추가** 클릭
-      * 루트 경로: `/etc/designs/an-scf-sandbox` 찾아보기
-      * **완료** 클릭
-      * **필터 추가** 클릭
-      * 루트 경로: `/content/an-scf-sandbox**` 찾아보기
-      * **완료** 클릭
+    * **필터 추가** 클릭
+    * 루트 경로: `/apps/an-scf-sandbox` 찾아보기
+    * **완료** 클릭
+    * **필터 추가** 클릭
+    * 루트 경로: `/etc/designs/an-scf-sandbox` 찾아보기
+    * **완료** 클릭
+    * **필터 추가** 클릭
+    * 루트 경로: `/content/an-scf-sandbox**` 찾아보기
+    * **완료** 클릭
 
-   * **저장** 클릭
+  * **저장** 클릭
 
 * **빌드** 클릭
 

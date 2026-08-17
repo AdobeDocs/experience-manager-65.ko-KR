@@ -5,10 +5,10 @@ role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
+source-wordcount: '1165'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ Rights Management 서비스에 대한 외부 사용자 초대 핸들러를 만�
 
 개발 환경을 설정하려면 Eclipse 프로젝트와 같은 Java 프로젝트를 만들어야 합니다. 지원되는 Eclipse 버전은 `3.2.1` 이상입니다.
 
-Rights Management SPI를 사용하려면 프로젝트의 클래스 경로에 `edc-server-spi.jar` 파일을 설정해야 합니다. 이 JAR 파일을 참조하지 않으면 Java 프로젝트에서 Rights Management SPI를 사용할 수 없습니다. 이 JAR 파일은 `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` 폴더에 AEM Forms SDK와 함께 설치됩니다.
+Rights Management SPI를 사용하려면 프로젝트의 클래스 경로에 `edc-server-spi.jar` 파일을 설정해야 합니다. 이 JAR 파일을 참조하지 않으면 Java 프로젝트에서 Rights Management SPI를 사용할 수 없습니다. 이 JAR 파일은 `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` 폴더에 AEM Forms SDK과 함께 설치됩니다.
 
 프로젝트의 클래스 경로에 `edc-server-spi.jar` 파일을 추가하는 것 외에 Rights Management 서비스 API를 사용하는 데 필요한 JAR 파일도 추가해야 합니다. 이러한 파일은 외부 사용자 초대 핸들러에서 Rights Management 서비스 API를 사용하는 데 필요합니다.
 
@@ -215,7 +215,7 @@ AEM Forms에 외부 사용자 초대 핸들러를 배포하려면 Java 프로젝
 
 ![사용자 초대](assets/ci_ci_InviteUsers.png)
 
-A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
+A. 구성 요소 B에 필요한 외부 JAR 파일. JAVA 파일
 
 외부 사용자 초대 핸들러를 JAR 파일로 패키징합니다. 이전 다이어그램에서는 .JAVA 파일이 나열되어 있습니다. JAR 파일에 패키지된 후에는 해당 .CLASS 파일도 지정해야 합니다. .CLASS 파일이 없으면 권한 부여 처리기가 작동하지 않습니다.
 
@@ -234,11 +234,11 @@ A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
 관리 콘솔을 사용하여 초대할 외부 사용자를 추가하려면 다음 작업을 수행하십시오.
 
 1. Workbench를 사용하여 외부 사용자 초대 핸들러의 JAR 파일을 배포합니다.
-1. 응용 프로그램 서버를 다시 시작합니다.
+1. 애플리케이션 서버를 다시 시작합니다.
 
    >[!NOTE]
    >
-   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 1. 관리 콘솔에 로그인합니다.
 1. **[!UICONTROL 서비스]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 구성]** > 초대됨 **[!UICONTROL 사용자 등록]**&#x200B;을 클릭합니다.

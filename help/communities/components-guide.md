@@ -11,20 +11,20 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
 
 # 커뮤니티 구성 요소 안내서  {#community-components-guide}
 
-커뮤니티 구성 요소 안내서는 [SCF(소셜 구성 요소 프레임워크)](scf.md)에 대한 대화형 개발 도구입니다. 사용 가능한 AEM(Adobe Experience Manager) 커뮤니티 구성 요소 목록 또는 여러 구성 요소로 구성된 보다 복잡한 기능을 제공합니다.
+커뮤니티 구성 요소 안내서는 [SCF(소셜 구성 요소 프레임워크)](scf.md)에 대한 대화형 개발 도구입니다. 사용 가능한 Adobe Experience Manager(AEM) 커뮤니티 구성 요소 목록 또는 여러 구성 요소로 구성된 보다 복잡한 기능을 제공합니다.
 
 안내서에서는 각 구성 요소에 대한 기본 정보와 함께 SCF 구성 요소/기능의 작동 방식과 구성 또는 사용자 지정 방법에 대해 실험할 수 있습니다.
 
 각 구성 요소와 관련된 개발 필수 요소에 대한 자세한 내용은 [기능 및 구성 요소 필수 요소](essentials.md)를 참조하십시오.
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 이 안내서는 작성자 인스턴스(localhost:4502) 및 게시 인스턴스(localhost:4503)의 개발 설치에 사용하기 위한 것입니다.
 
@@ -103,19 +103,19 @@ ht-degree: 0%
 
 ![community-component4](assets/community-component4.png)
 
-* **sling:include**&#x200B;에 하위 구성 요소 포함
+* **sling으로 하위 구성 요소 포함:include**
 
   이 옵션을 선택하지 않으면 구성 요소 안내서는 저장소의 기존 리소스(부분 노드의 하위 노드인 jcr 노드)를 사용합니다.
 
-   * 표시되는 텍스트: &quot;이 구성 요소는 par 노드를 통해 포함됩니다.&quot;
+  * 표시되는 텍스트: &quot;이 구성 요소는 par 노드를 통해 포함됩니다.&quot;
 
   선택하면 구성 요소 안내서에서 sling을 사용하여 하위 노드의 resourceType(존재하지 않는 리소스)의 구성 요소를 동적으로 포함합니다.
 
-   * 표시되는 텍스트: &quot;이 구성 요소는 동적으로 포함됩니다.&quot;
+  * 표시되는 텍스트: &quot;이 구성 요소는 동적으로 포함됩니다.&quot;
 
   기본값은 선택 취소되어 있습니다.
 
-### Publish 상호 작용 {#publish-interactions}
+### 상호 작용 게시 {#publish-interactions}
 
 게시 인스턴스에서 안내서를 사용할 때 사이트 방문자(로그인되지 않음) 및 로그인 시 다양한 권한을 가진 구성원으로 구성 요소 및 기능을 경험할 수 있습니다.
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 작성자 또는 게시 인스턴스에서 주석 구성 요소를 예로 사용하여 관리자 권한으로 로그인합니다.
 
-1. [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 찾아보기
+1. [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)(으)로 이동
 
    예: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 

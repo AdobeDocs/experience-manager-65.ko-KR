@@ -10,10 +10,10 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 8%
+source-wordcount: '2564'
+ht-degree: 9%
 
 ---
 
@@ -23,13 +23,13 @@ Adobe Campaign과 통합하면 뉴스레터 및 양식으로 작업할 때 사�
 
 >[!CAUTION]
 >
->AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 즉시 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 정의 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
+>AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 병합하는 이메일의 특성상 AEM에서 기본적으로 제공하는 이메일 구성 요소는 프로젝트에 필요한 모든 구성 요소로 사용자 지정 스타일을 구현해야 하므로 고객이 제한적으로 재사용할 수 있습니다.
 >
 >이메일 구성 요소는 프로젝트 수준에서 구현할 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여 줍니다. 그러나 프로젝트에서 이러한 사용되지 않는 구성 요소는 사용하지 마십시오.
 
 ## Adobe Campaign 뉴스레터 구성 요소 {#adobe-campaign-newsletter-components}
 
-모든 Campaign 구성 요소는 [전자 메일 템플릿에 대한 우수 사례](/help/sites-administering/best-practices-for-email-templates.md)에 설명된 우수 사례를 따르며 Adobe 마크업 언어 [HTL](https://helpx.adobe.com/kr/experience-manager/htl/using/overview.html)을 기반으로 합니다.
+모든 Campaign 구성 요소는 [전자 메일 템플릿 모범 사례](/help/sites-administering/best-practices-for-email-templates.md)에 설명된 모범 사례를 따르며 Adobe 마크업 언어 [HTL](https://helpx.adobe.com/kr/experience-manager/htl/using/overview.html)을 기반으로 합니다.
 
 Adobe Campaign과 통합되도록 구성된 뉴스레터/이메일을 열면 **Adobe Campaign 뉴스레터** 섹션에 다음 구성 요소가 표시됩니다.
 
@@ -62,7 +62,7 @@ Adobe Campaign과 통합되도록 구성된 뉴스레터/이메일을 열면 **A
 페이지 제목 이외의 이름을 사용하려면 여기에 입력합니다.
 
 * **제목 수준(1, 2, 3, 4)**
-HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
+HTML 제목 크기를 기반으로 하는 제목 수준은 1-4입니다.
 
 다음 예는 표시 중인 제목 (캠페인) 구성 요소를 보여 줍니다.
 
@@ -100,7 +100,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 * **대체 텍스트**
 액세스 가능한 컨텐츠를 만들 때 사용할 대체 텍스트입니다.
 
-* **링크**
+* **링크 대상**
 웹 사이트 내의 자산 또는 기타 페이지에 대한 링크를 만듭니다.
 
 * **설명**
@@ -134,7 +134,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 * **도구 설명 연결**
 링크 사용 방법에 대한 추가 정보를 추가합니다.
 
-* **LinkType**
+* **링크 유형**
 드롭다운 목록에서 **사용자 지정 URL**&#x200B;과(와) **적응형 문서** 중에서 선택합니다. 이 필드는 필수입니다. 사용자 지정 URL을 선택하는 경우 링크 URL을 제공할 수 있습니다. 적응형 문서를 선택하면 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수**
@@ -176,20 +176,20 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 * **이미지 속성**(**고급 이미지 속성**)
 다음을 지정할 수 있습니다.
 
-   * **제목**
-블록의 제목입니다. 마우스를 올려 놓으면 표시됩니다.
+  * **제목**
+    블록의 제목입니다. 마우스를 올려 놓으면 표시됩니다.
 
-   * **대체 텍스트**
-이미지를 표시할 수 없는 경우 표시할 대체 텍스트입니다.
+  * **대체 텍스트**
+    이미지를 표시할 수 없는 경우 표시할 대체 텍스트입니다.
 
-   * **링크**
-웹 사이트 내의 자산 또는 기타 페이지에 대한 링크를 만듭니다.
+  * **링크 대상**
+    웹 사이트 내의 자산 또는 기타 페이지에 대한 링크를 만듭니다.
 
-   * **설명**
-이미지에 대한 설명.
+  * **설명**
+    이미지에 대한 설명.
 
-   * **크기**
-이미지의 높이와 너비를 설정합니다.
+  * **크기**
+    이미지의 높이와 너비를 설정합니다.
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 
 ### 텍스트 및 개인화(캠페인) {#text-personalization-campaign}
 
-텍스트 및 Personalization(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능을 사용하여 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드 및 개인화 블록을 사용할 수 있습니다. [Personalization 삽입](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)도 참조하세요.
+텍스트 및 Personalization(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드 및 개인화 블록을 사용할 수 있습니다. [Personalization 삽입](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)도 참조하세요.
 
 아이콘을 선택하면 글꼴 특성, 정렬, 링크, 목록, 들여쓰기 등 텍스트 서식을 지정할 수 있습니다.
 
@@ -216,7 +216,7 @@ HTML 제목 크기 1-4를 기반으로 하는 제목 수준입니다.
 
 >[!NOTE]
 >
->**nms:seedMember** 스키마 또는 확장 중 하나에 정의된 필드만 고려합니다. `nms:seedMember`에 연결된 테이블의 특성을 사용할 수 없습니다.
+>**nms:seedMember** 스키마 또는 해당 확장 중 하나에 정의된 필드만 고려됩니다. `nms:seedMember`에 연결된 테이블의 특성을 사용할 수 없습니다.
 
 ## Adobe Campaign 양식 구성 요소 {#adobe-campaign-form-components}
 

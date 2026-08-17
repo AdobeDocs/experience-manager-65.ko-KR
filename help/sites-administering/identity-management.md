@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * 웹 사이트에서 자가 등록
 
-  방문자가 자신의 Facebook 또는 Twitter 계정으로 직접 등록하거나 로그인할 수 있도록 [커뮤니티 사이트](/help/communities/sites-console.md)를 구성할 수 있습니다.
+  방문자가 Facebook 또는 Twitter 계정에 직접 등록하거나 로그인할 수 있도록 [커뮤니티 사이트](/help/communities/sites-console.md)를 구성할 수 있습니다.
 
 * 웹 사이트에 등록 요청
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 ## 프로필 보기 및 업데이트 {#viewing-and-updating-a-profile}
 
-등록 양식에 따라 방문자가 프로필에 정보를 등록했을 수 있습니다. 이후 단계에서 이를 보거나 업데이트할 수 있어야 합니다. 이 작업은 유사한 형식으로 수행할 수 있습니다(예: Geometrixx:
+등록 양식에 따라 방문자가 프로필에 정보를 등록했을 수 있습니다. 이후 단계에서 이를 보거나 업데이트할 수 있어야 합니다. 이 작업은 유사한 양식으로 수행할 수 있습니다(예: Geometrixx:
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
@@ -120,7 +120,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 프로필 정의에 필드를 추가할 수 있습니다. 예를 들어 Geometrixx 프로필에 &quot;즐겨 찾는 색상&quot; 필드를 추가하려면 다음을 수행합니다.
 
-1. 웹 사이트 콘솔에서 Geometrixx Outdoors 사이트 > 영어 > 사용자 > 내 프로필로 이동합니다.
+1. 웹 사이트 콘솔에서 Geometrixx Outdoors 사이트 > 영어 > 사용자 > 내 프로필 로 이동합니다.
 1. **내 프로필** 페이지를 두 번 클릭하여 편집할 수 있도록 엽니다.
 1. 사이드 킥의 **구성 요소** 탭에서 **Form** 섹션을 확장합니다.
 1. **드롭다운 목록**&#x200B;을(를) 사이드 킥에서 **내 정보** 필드 바로 아래에 있는 양식으로 끌어 놓습니다.
@@ -162,7 +162,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
   상태와 관련된 작업을 관리합니다.
 
-여러 상태를 정의할 수 있습니다. 예를 들어 Geometrixx에서 다음과 같은 항목을 정의할 수 있습니다.
+여러 상태를 정의할 수 있습니다. 예를 들어 Geometrixx에서 다음과 같은 상태가 있습니다.
 
 * 뉴스레터 또는 댓글 스레드에서 알림 구독(또는 구독 취소)
 * 친구에게 연결 추가 및 제거
@@ -171,7 +171,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 상태 제공자는 해당 속성의 현재 상태를 가능한 두 상태 간의 전환과 함께 관리합니다.
 
-상태 공급자는 구성 요소로 구현되므로 프로젝트에 맞게 사용자 지정할 수 있습니다. Geometrixx에서 다음 항목을 포함합니다.
+상태 공급자는 구성 요소로 구현되므로 프로젝트에 맞게 사용자 지정할 수 있습니다. Geometrixx에서 이러한 요소는 다음과 같습니다.
 
 * 포럼 주제 탈퇴/가입
 * 친구 추가/제거

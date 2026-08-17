@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식에서 양식 데이터 모델 서비스를 호출하기 위한 API
+title: 적응형 양식에서 양식 데이터 모델 서비스 호출을 위한 API
 description: 적응형 양식 필드 내에서 WSDL로 작성된 웹 서비스를 호출하는 데 사용할 수 있는 invokeWebServices API에 대해 설명합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -8,14 +8,14 @@ feature: Adaptive Forms,Foundation Components
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 10%
+source-wordcount: '543'
+ht-degree: 15%
 
 ---
 
-# 적응형 양식에서 양식 데이터 모델 서비스를 호출하기 위한 API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# 적응형 양식에서 양식 데이터 모델 서비스 호출을 위한 API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 

@@ -8,10 +8,10 @@ exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 0%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 

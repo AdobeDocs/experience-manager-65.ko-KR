@@ -9,10 +9,10 @@ role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 0%
+source-wordcount: '933'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>웹 서비스</p></td>
-   <td><p>AEM Forms은 SOAP/HTTP와 같은 웹 서비스 표준을 지원합니다. WSDL은 W3C에서 정의한 웹 서비스 표준을 준수하므로 서비스가 웹 서비스로 노출될 수 있습니다.</p><p>.NET Framework 및 Sun™ Web Services SDK를 비롯한 모든 웹 서비스 스택에서 서비스를 호출할 수 있습니다. <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">웹 서비스를 사용하여 AEM Forms 호출</a>을 참조하십시오.</p></td>
+   <td><p>AEM Forms은 SOAP/HTTP와 같은 웹 서비스 표준을 지원합니다. WSDL은 W3C에서 정의한 웹 서비스 표준을 준수하므로 서비스가 웹 서비스로 노출될 수 있습니다.</p><p>서비스는 .NET Framework 및 Sun™ Web Services SDK을 비롯한 모든 웹 서비스 스택에서 호출할 수 있습니다. <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">웹 서비스를 사용하여 AEM Forms 호출</a>을 참조하십시오.</p></td>
   </tr>
   <tr>
    <td><p>REST 요청</p></td>
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms SDK를 사용하여 AEM Forms 서비스를 호출할 수 있는 클라이언트 응용 프로그램을 만들 수 있을 뿐만 아니라 서비스 컨테이너에 배포할 수 있는 구성 요소를 만들 수도 있습니다. 예를 들어 프로세스에 사용할 수 있는 사용자 지정 데이터 유형을 포함하는 Bank 구성 요소를 만들 수 있습니다. 즉, `com.adobe.idp.BankAccount`과(와) 같은 데이터 형식을 만들 수 있습니다. 그런 다음 클라이언트 응용 프로그램에서 `com.adobe.idp.BankAccount`개의 인스턴스를 만들 수 있습니다.
+>AEM Forms SDK을 사용하여 AEM Forms 서비스를 호출할 수 있는 클라이언트 응용 프로그램을 만들 수 있을 뿐만 아니라 서비스 컨테이너에 배포할 수 있는 구성 요소를 만들 수도 있습니다. 예를 들어 프로세스에 사용할 수 있는 사용자 지정 데이터 유형을 포함하는 Bank 구성 요소를 만들 수 있습니다. 즉, `com.adobe.idp.BankAccount`과(와) 같은 데이터 형식을 만들 수 있습니다. 그런 다음 클라이언트 응용 프로그램에서 `com.adobe.idp.BankAccount`개의 인스턴스를 만들 수 있습니다.
 
 서비스 컨테이너는 다음 기능을 제공합니다.
 
@@ -78,15 +78,15 @@ ht-degree: 0%
 
   클라이언트 애플리케이션이 서비스를 호출할 때 다음 세 가지 이벤트가 발생합니다.
 
-   1. 클라이언트 응용 프로그램은 호출 요청을 서비스로 보냅니다.
-   1. 서비스는 호출 요청에 지정된 작업을 수행합니다.
-   1. 서비스 컨테이너는 호출 응답을 클라이언트 애플리케이션에 반환한다.
+  1. 클라이언트 응용 프로그램은 호출 요청을 서비스로 보냅니다.
+  1. 서비스는 호출 요청에 지정된 작업을 수행합니다.
+  1. 서비스 컨테이너는 호출 응답을 클라이언트 애플리케이션에 반환한다.
 
 **추가 참조**
 
 [AEM Forms 프로세스 이해](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
 
-[(AEM Forms에서 더 이상 사용되지 않는 기능)AEM Forms 원격을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
+[를 사용하여 AEM Forms 호출(AEM Forms에서는 더 이상 사용되지 않음) AEM Forms 원격](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
 [Java API를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 

@@ -9,16 +9,16 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1546'
+ht-degree: 3%
 
 ---
 
 # Cloud Service 프레임워크를 사용한 Analytics {#analyticsusingcloudframework}
 
-AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목표는 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고
 >
 >추가 기능 패키지 외에도 AEM 인스턴스에 대한 Adobe Analytics 계정 및 관리자 권한이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)을(를) 참조하십시오.
 
-Adobe Launch를 사용하여 분석을 수행할 수도 있습니다. AEM Forms을 Adobe Launch와 통합하는 방법에 대한 자세한 내용은 [Adobe Launch를 사용하여 분석](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)을 참조하세요.
+Adobe Launch를 사용하여 분석을 수행할 수도 있습니다. AEM Forms을 Adobe Launch와 통합하는 방법에 대한 자세한 내용은 [Adobe Launch를 사용하여 분석](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)을 참조하십시오.
 
 ## 개요 {#overview}
 
-Adobe Analytics을 사용하여 적응형 양식, HTML 5 양식 및 대화형 커뮤니케이션을 사용하는 동안 사용자가 직면한 상호 작용 패턴 및 문제를 발견할 수 있습니다. 기본적으로 Adobe 분석은 다음 매개 변수에 대한 정보를 추적하고 저장합니다.
+Adobe Analytics을 사용하여 적응형 양식, HTML5 양식 및 대화형 커뮤니케이션을 사용하는 동안 사용자가 직면한 상호 작용 패턴 및 문제를 발견할 수 있습니다. 기본적으로 Adobe analytics는 다음 매개 변수에 대한 정보를 추적하고 저장합니다.
 
 * **평균 채우기 시간**: 양식을 채우는 데 걸린 평균 시간입니다.
 * **렌디션**: 양식을 연 횟수입니다.
@@ -38,7 +38,7 @@ Adobe Analytics을 사용하여 적응형 양식, HTML 5 양식 및 대화형 �
 * **제출**: 양식을 제출한 횟수입니다.
 * **중단**: 양식을 완료하지 않고 사용자가 나가는 횟수입니다.
 
-Adobe Analytics을 사용자 지정하여 매개 변수를 더 추가하거나 제거할 수 있습니다. 위의 정보와 함께 보고서에는 HTML 5의 모든 패널과 적응형 양식에 대한 다음 정보가 포함되어 있습니다.
+Adobe Analytics을 사용자 지정하여 매개 변수를 더 추가하거나 제거할 수 있습니다. 위의 정보와 함께 보고서에는 HTML5의 모든 패널과 적응형 양식에 대한 다음 정보가 포함되어 있습니다.
 
 * **시간**: 패널 및 패널의 필드에서 보낸 시간입니다.
 * **오류**: 패널 및 패널의 필드에서 발생한 오류 수입니다.
@@ -102,7 +102,7 @@ Analytics 데이터는 보고서 세트라는 고객별 저장소에 저장됩�
 
    >[!NOTE]
    >
-   >AEM Forms 분석을 구성하는 데 사용되는 이벤트 번호 및 prop 번호는 [AEM analytics](/help/sites-administering/adobeanalytics.md) 구성에 사용되는 이벤트 번호 및 prop 번호와 달라야 합니다.
+   >AEM Forms Analytics 구성에 사용되는 이벤트 번호 및 prop 번호는 [AEM Analytics](/help/sites-administering/adobeanalytics.md) 구성에 사용되는 이벤트 번호 및 prop 번호와 달라야 합니다.
 
 1. Adobe Marketing Cloud 계정에서 로그아웃합니다.
 
@@ -111,7 +111,7 @@ Analytics 데이터는 보고서 세트라는 고객별 저장소에 저장됩�
 Cloud Service 구성은 Adobe Analytics 계정에 대한 정보입니다. 이 구성을 통해 Adobe Experience Manager(AEM)가 Adobe Analytics에 연결할 수 있습니다. 사용하는 각 Analytics 계정에 대해 별도의 구성을 만듭니다.
 
 1. 관리자로 AEM 작성자 인스턴스에 로그인합니다.
-1. 왼쪽 상단 모서리에서 **Adobe Experience Manager** > **도구** ![망치 아이콘](/help/forms/using/assets/tools.png) > **Cloud Service** > **기존 Cloud Service**&#x200B;을 클릭합니다.
+1. 왼쪽 상단 모서리에서 **Adobe Experience Manager** > **도구** ![망치 아이콘](/help/forms/using/assets/tools.png) > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 클릭합니다.
 1. **Adobe Analytics** 아이콘을 찾습니다. **구성 표시**&#x200B;를 클릭한 다음 **[+]**&#x200B;을 클릭하여 새 구성을 추가합니다.
 
    처음 사용하는 사용자는 **지금 구성**&#x200B;을 클릭하세요.
@@ -147,13 +147,13 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 1. **other** 범주의 **Form Analytics 구성 요소**&#x200B;를 Sidekick에서 프레임워크로 끌어옵니다.
 1. Analytics 변수를 구성 요소에 정의된 변수와 매핑하려면 AEM Content Finder에서 추적 구성 요소의 필드로 변수를 드래그합니다.
 
-   ![AEM 변수를 Adobe Analytics 변수와 매핑](assets/analytics_new.png)
+   ![AEM 변수와 Adobe Analytics 변수 매핑](assets/analytics_new.png)
 
 1. 사이드 킥의 **페이지 탭**&#x200B;을 사용하여 프레임워크를 활성화하려면 **프레임워크 활성화**&#x200B;를 클릭하십시오.
 
 ## AEM Forms Analytics 구성 서비스 구성 {#configuring-aem-forms-analytics-configuration-service}
 
-1. 작성자 인스턴스에서 `https://<server>:<port>;/system/console/configMgr`에 있는 AEM 웹 콘솔 구성 관리자를 엽니다.
+1. 작성자 인스턴스에서 `https://<server>:<port>;/system/console/configMgr`에서 AEM 웹 콘솔 구성 관리자를 엽니다.
 1. AEM Forms Analytics 구성 찾기 및 열기
 
    ![AEM Forms Analytics 구성 서비스](assets/analytics_configuration.png)
@@ -162,7 +162,7 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 
 1. 다음 필드에 적절한 값을 지정하고 **저장**&#x200B;을 클릭합니다.
 
-   * **SiteCatalyst 프레임워크**: 추적 프레임워크 설정 섹션에서 정의한 프레임워크/구성을 선택합니다.
+   * **SiteCatalyst 프레임워크**: 추적할 프레임워크 설정 섹션에서 정의한 프레임워크/구성을 선택합니다.
    * **필드 시간 추적 기준**: 필드 방문을 추적해야 하는 기간(초)을 지정합니다. 기본값은 0입니다. 값이 0보다 크면 두 개의 개별 추적 이벤트가 Adobe Analytics 서버로 전송됩니다. 첫 번째 이벤트는 Analytics 서버에 종료한 필드 추적을 중지하도록 지시합니다. 두 번째 이벤트는 지정된 기간이 지난 후에 전송됩니다. 두 번째 이벤트는 Analytics 서버에 방문한 필드 추적을 시작하도록 지시합니다. 두 개의 개별 이벤트를 사용하면 필드에서 보낸 시간을 정확하게 측정할 수 있습니다. 값이 0(영)이면 단일 추적 이벤트가 Adobe Analytics 서버로 전송됩니다.
 
    * **Analytics 보고서 동기화 cron**: Adobe Analytics에서 보고서를 가져오기 위한 cron 식을 지정하십시오. 기본값은 0 0 2 입니다. &#42; &#42;.
@@ -179,7 +179,7 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 
 ## 양식 또는 문서에 대한 분석 활성화 {#enabling-analytics-for-a-form-or-document}
 
-1. `https://[hostname]:'port'`에 AEM 포털에 로그인합니다.
+1. `https://[hostname]:'port'`에서 AEM 포털에 로그인합니다.
 1. **Forms > Forms 및 문서**&#x200B;를 클릭하고 양식 또는 문서를 선택한 다음 **Analytics 사용**&#x200B;을 클릭합니다. 분석이 활성화됩니다.
 
    ![양식 또는 문서에 대한 분석 사용](assets/enable-analytics-1.png)

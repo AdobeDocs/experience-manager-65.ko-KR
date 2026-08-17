@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 이 문서에서는 다음 사항을 설명합니다.
 
-* AEM 사이트에 활동 스트림 구성 요소 추가
+* AEM 사이트에 Activity Streams 구성 요소 추가
 * 활동 스트림 구성 요소에 대한 구성 설정
 
 ### 페이지에 활동 스트림 추가 {#adding-activity-streams-to-a-page}
@@ -89,11 +89,11 @@ ht-degree: 0%
 * 다른 구성원의 프로필을 볼 때
 * 포럼, QnA 및 블로그 등 주요 기능 페이지
 
-   * 해당 일반 기능에 대한 모든 활동을 따릅니다.
+  * 해당 일반 기능에 대한 모든 활동을 따릅니다.
 
 * 포럼 주제, QnA 질문 또는 블로그 문서와 같은 특정 항목의 경우
 
-   * 해당 특정 항목에 대한 모든 활동을 따릅니다.
+  * 해당 특정 항목에 대한 모든 활동을 따릅니다.
 
 ### 추가 정보 {#additional-information}
 

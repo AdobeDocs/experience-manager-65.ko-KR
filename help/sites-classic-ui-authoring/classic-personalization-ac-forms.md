@@ -1,5 +1,5 @@
 ---
-title: AEM에서 Adobe Campaign Forms 만들기
+title: AEM에서 Adobe Campaign 양식 작성
 description: AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 0%
+source-wordcount: '1231'
+ht-degree: 1%
 
 ---
 
-# AEM에서 Adobe Campaign Forms 만들기{#creating-adobe-campaign-forms-in-aem}
+# AEM에서 Adobe Campaign 양식 작성{#creating-adobe-campaign-forms-in-aem}
 
 AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 
@@ -81,7 +81,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 이 섹션에서는 Adobe Campaign에 대한 특정 링크만 자세히 설명합니다. Adobe Experience Manager에서 양식을 사용하는 방법에 대한 보다 일반적인 개요는 [편집 모드 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)를 참조하십시오.
 
 1. 편집할 양식으로 이동합니다.
-1. 도구 상자에서 **페이지** > **페이지 속성...**&#x200B;을 선택한 다음 팝업 창의 **Cloud Service** 탭으로 이동합니다.
+1. 도구 상자에서 **페이지** > **페이지 속성...**&#x200B;을 선택한 다음 팝업 창의 **클라우드 서비스** 탭으로 이동합니다.
 1. **서비스 추가**&#x200B;를 클릭한 다음 서비스의 드롭다운 목록에서 Adobe Campaign 인스턴스에 해당하는 구성을 선택하여 Adobe Campaign 서비스를 추가하십시오. 이 구성은 인스턴스 간 연결을 설정할 때 수행됩니다. 자세한 내용은 [Adobe Campaign에 AEM 연결](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign)을 참조하십시오.
 
    >[!NOTE]
@@ -90,7 +90,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 
 1. 양식 시작 부분에 있는 **편집** 단추를 사용하여 양식의 일반 매개 변수에 액세스합니다. **양식** 탭에서는 양식의 유효성을 검사한 후 사용자가 리디렉션될 감사 페이지를 선택할 수 있습니다.
 
-   **고급** 양식을 사용하여 양식 유형을 선택할 수 있습니다. **Post 옵션** 필드에서는 다음 세 가지 유형의 Adobe Campaign 양식 중에서 선택할 수 있습니다.
+   **고급** 양식을 사용하여 양식 유형을 선택할 수 있습니다. **게시물 옵션** 필드에서는 다음 세 가지 유형의 Adobe Campaign 양식 중에서 선택할 수 있습니다.
 
    * **Adobe Campaign: 프로필 저장**: Adobe Campaign에서 받는 사람을 만들거나 업데이트할 수 있습니다(기본값).
    * **Adobe Campaign: 서비스에 가입**: Adobe Campaign에서 받는 사람의 구독을 관리할 수 있습니다.

@@ -8,7 +8,7 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL InDesign Server]이(가) 프록시되는 경우 [!DNL InDesign] 파일의 미리 보기가 XMP 메타데이터 내에 포함되어 있습니다. 이 경우 썸네일 추출이 명시적으로 필요하지 않습니다. 그러나 [!DNL InDesign Server]이(가) 프록시되지 않으면 [!DNL InDesign] 파일에 대해 썸네일을 명시적으로 추출해야 합니다.
+>[!DNL InDesign Server]이(가) 프록시되는 경우 [!DNL InDesign] 파일의 미리 보기가 XMP 메타데이터 내에 포함됩니다. 이 경우 썸네일 추출이 명시적으로 필요하지 않습니다. 그러나 [!DNL InDesign Server]이(가) 프록시되지 않으면 [!DNL InDesign] 파일에 대해 썸네일을 명시적으로 추출해야 합니다.
 
 INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:DocumentID` 속성이 있는 자산을 쿼리하여 참조를 가져옵니다.
 
@@ -100,8 +100,8 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 * 새 자산: [!DNL Experience Manager]에 업로드된 새 자산에 대해 [!UICONTROL DAM Assets 업데이트] 워크플로우가 실행됩니다. 새 다중 페이지 자산에 대해 하위 자산이 자동으로 생성됩니다.
 * 기존 다중 페이지 자산: 다음 단계 중 하나에 따라 [!UICONTROL DAM Assets 업데이트] 워크플로우를 수동으로 실행합니다.
 
-   * 자산을 선택하고 [!UICONTROL 타임라인]을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키 `alt + 3`을(를) 사용합니다. [!UICONTROL 워크플로 시작]을 클릭하고 [!UICONTROL DAM 자산 업데이트]를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
-   * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 워크플로]를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산 업데이트] 워크플로우를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
+  * 자산을 선택하고 [!UICONTROL 타임라인]을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키 `alt + 3`을(를) 사용합니다. [!UICONTROL 워크플로 시작]을 클릭하고 [!UICONTROL DAM 자산 업데이트]를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
+  * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 워크플로]를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산 업데이트] 워크플로우를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
 
 특히 Microsoft Word 문서의 경우 **[!UICONTROL DAM Word 문서 구문 분석]** 워크플로우를 실행하십시오. Microsoft Word 문서의 콘텐츠에서 `cq:Page` 구성 요소를 생성합니다. 문서에서 추출된 이미지가 `cq:Page` 구성 요소에서 참조됩니다. 이러한 이미지는 하위 에셋 생성이 비활성화된 경우에도 추출됩니다.
 

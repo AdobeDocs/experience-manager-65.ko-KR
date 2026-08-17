@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ AEM 컨텐츠 및 Commerce 작성은 AEM 작성자 및 마케터가 상거래 �
 
 카테고리 선택기는 제품 선택기와 유사한 방식으로 구성 요소 대화 상자에서도 사용할 수 있습니다.
 
-cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
+다음 코드 조각은 cq:dialog 구성에 사용할 수 있습니다.
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 
