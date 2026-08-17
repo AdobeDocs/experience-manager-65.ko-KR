@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '3051'
-ht-degree: 1%
+source-wordcount: '3098'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
 
 인덱스가 **Oak:index** 노드 아래에 리포지토리의 노드로 구성되어 있습니다.
 
-인덱스 노드의 형식은 **oak:QueryIndexDefinition이어야 합니다.** 각 인덱서에 대해 노드 속성으로 몇 가지 구성 옵션을 사용할 수 있습니다. 자세한 내용은 아래 각 인덱서 유형에 대한 구성 세부 정보를 참조하십시오.
+인덱스 노드의 형식은 **oak:QueryIndexDefinition.**&#x200B;이어야 합니다. 각 인덱서에 대해 노드 속성으로 몇 가지 구성 옵션을 사용할 수 있습니다. 자세한 내용은 아래 각 인덱서 유형에 대한 구성 세부 정보를 참조하십시오.
 
 ### 속성 색인 {#the-property-index}
 
@@ -117,8 +117,8 @@ Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6에서 사용할 수 
 
 아래 절차에 따라 Lucene 전체 텍스트 인덱스를 구성할 수 있습니다.
 
-1. CRXDE를 열고 **oak:index** 아래에 노드를 만드십시오.
-1. 노드 이름을 **LuceneIndex**(으)로 지정하고 노드 유형을 **oak:QueryIndexDefinition**(으)로 설정합니다.
+1. CRXDE를 열고 **oak:index** 아래에 노드를 만듭니다.
+1. **LuceneIndex** 노드의 이름을 지정하고 노드 유형을 **oak:QueryIndexDefinition**(으)로 설정합니다.
 1. 노드에 다음 속성을 추가합니다.
 
    * **유형:** `lucene`(유형 문자열)
@@ -159,13 +159,13 @@ Lucene 색인에는 다음과 같은 구성 옵션이 있습니다.
 
 | <b>토큰</b> | <b>문서 ID</b> |
 | --- | --- |
-| 194 | 200개... |
-| 브랜드 | 100개... |
+| 194 | ..., 200,... |
+| 브랜드 | ..., 100,... |
 | 큐브 | ..., 200, 300,... |
 | 차원 | 300 |
-| 마침 | 100개... |
+| 마침 | ..., 100,... |
 | 발명 | 200 |
-| 개체 | 300,... |
+| 개체 | ..., 300,... |
 | 루비크 | ..., 100, 200,... |
 
 문서 목록이 정렬됩니다. 쿼리할 때 편리합니다.
@@ -316,39 +316,39 @@ select * from [nt:base] where [alias] = '/admin'
 
 * **이름:** `analyzers`
 
-   * **이름:** `default`
+  * **이름:** `default`
 
-      * **이름:** `charFilters`
-      * **유형:** `nt:unstructured`
+    * **이름:** `charFilters`
+    * **유형:** `nt:unstructured`
 
-         * **이름:** `HTMLStrip`
-         * **이름:** `Mapping`
+      * **이름:** `HTMLStrip`
+      * **이름:** `Mapping`
 
-      * **이름:** `tokenizer`
+    * **이름:** `tokenizer`
 
-         * **속성 이름:** `name`
+      * **속성 이름:** `name`
 
-            * **유형:** `String`
-            * **값:** `Standard`
+        * **유형:** `String`
+        * **값:** `Standard`
 
-      * **이름:** `filters`
-      * **유형:** `nt:unstructured`
+    * **이름:** `filters`
+    * **유형:** `nt:unstructured`
 
-         * **이름:** `LowerCase`
-         * **이름:** `Stop`
+      * **이름:** `LowerCase`
+      * **이름:** `Stop`
 
-            * **속성 이름:** `words`
+        * **속성 이름:** `words`
 
-               * **유형:** `String`
-               * **값:** `stop1.txt, stop2.txt`
+          * **유형:** `String`
+          * **값:** `stop1.txt, stop2.txt`
 
-            * **이름:** `stop1.txt`
+        * **이름:** `stop1.txt`
 
-               * **유형:** `nt:file`
+          * **유형:** `nt:file`
 
-            * **이름:** `stop2.txt`
+        * **이름:** `stop2.txt`
 
-               * **유형:** `nt:file`
+          * **유형:** `nt:file`
 
 필터 이름, charFilters 및 토큰화기는 공장 접미사를 제거하여 형성됩니다. 따라서:
 
@@ -425,7 +425,7 @@ AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 
 1. **Oak Solr** 서버 공급자의 드롭다운 목록에서 **원격 Solr**&#x200B;을(를) 선택하십시오.
 
 1. CRXDE로 이동한 다음 관리자로 로그인합니다.
-1. **oak:index** 아래에 **solrIndex** 노드를 만들고 다음 속성을 설정합니다.
+1. **oak:index**&#x200B;에 **solrIndex** 노드를 만들고 다음 속성을 설정합니다.
 
    * **유형:** 문자열(유형 문자열)
    * **비동기:** 비동기(유형 문자열)

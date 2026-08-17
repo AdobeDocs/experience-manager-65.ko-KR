@@ -9,9 +9,9 @@ feature: Context Hub,Developing,Personalization
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4976'
 ht-degree: 2%
 
 ---
@@ -51,14 +51,14 @@ ContextHub JavaScript API에서 정의하는 상수 값입니다.
 | ContextHub.Constants.EVENT_UI_MODE_REGISTERED | 모드가 등록되면 실행됩니다. | ui 모드 등록됨 |
 | ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED | 모드가 등록 취소되면 실행됩니다. | ui 모드 등록 취소됨 |
 | ContextHub.Constants.EVENT_UI_MODE_RENDERER_REGISTERED | 모드 렌더러가 등록되면 실행됩니다. | ui-mode-renderer-registered |
-| ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED | 모드 렌더러가 등록 취소되면 실행됩니다. | ui-mode-renderer-unregistered |
+| ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTER | 모드 렌더러가 등록 취소되면 실행됩니다. | ui-mode-renderer-unregistered |
 | ContextHub.Constants.EVENT_UI_MODE_ADDED | 새 모드가 추가되면 실행됩니다. | ui 모드 추가됨 |
 | ContextHub.Constants.EVENT_UI_MODE_REMOVED | 모드가 제거되면 실행됩니다. | ui 모드 제거됨 |
 | ContextHub.Constants.EVENT_UI_MODE_SELECTED | 사용자가 모드를 선택하면 실행됩니다. | ui 모드 선택됨 |
 | ContextHub.Constants.EVENT_UI_MODULE_REGISTERED | 새 모듈이 등록되면 실행됩니다. | ui-module-registered |
 | ContextHub.Constants.EVENT_UI_MODULE_UNREGISTERED | 모듈이 등록 취소되면 실행됩니다. | ui-module이 등록되지 않음 |
 | ContextHub.Constants.EVENT_UI_MODULE_RENDERER_REGISTERED | 모듈 렌더러가 등록되면 실행됩니다. | ui-module-renderer-registered |
-| ContextHub.Constants.EVENT_UI_MODULE_RENDERER_UNREGISTERED | 모듈 렌더러가 등록 취소될 때 실행됨 | ui-module-renderer-unregistered |
+| ContextHub.Constants.EVENT_UI_MODULE_RENDERER_UNREGISTER | 모듈 렌더러가 등록 취소될 때 실행됨 | ui-module-renderer-unregistered |
 | ContextHub.Constants.EVENT_UI_MODULE_ADDED | 새 모듈이 추가되면 실행됩니다. | ui-module-added |
 | ContextHub.Constants.EVENT_UI_MODULE_REMOVED | 모듈이 제거되면 실행됩니다. | ui-module이 제거됨 |
 | ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | UI 컨테이너가 페이지에 추가되면 실행됩니다 | ui-container-added |
@@ -271,9 +271,9 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 * **이름:** 저장소의 이름입니다.
 * **config:** 구성 속성이 포함된 개체:
 
-   * eventDefering: 기본값은 32입니다.
-   * 이벤트: 이 저장소에 대한 [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체입니다. 기본값은 ContextHub.eventing 개체에서 사용하는 ContextHub.eventing입니다.
-   * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본값은 ContextHub.persistence 개체입니다.
+  * eventDefering: 기본값은 32입니다.
+  * 이벤트: 이 저장소에 대한 [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체입니다. 기본값은 ContextHub.eventing 개체에서 사용하는 ContextHub.eventing입니다.
+  * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본값은 ContextHub.persistence 개체입니다.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -303,7 +303,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 * **key:**(문자열) 제거할 키의 이름입니다.
 * **options:**(개체) 옵션의 개체입니다. 다음 개체 속성이 유효합니다.
 
-   * silent: `true` 값은 `data` 이벤트를 트리거하지 못하도록 합니다. 기본값은 `false`입니다.
+  * silent: `true` 값은 `data` 이벤트를 트리거하지 못하도록 합니다. 기본값은 `false`입니다.
 
 **반환**
 
@@ -376,7 +376,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 * **key:**(문자열) 키 이름입니다.
 * **options:**(개체) 옵션의 개체입니다. 다음 개체 속성이 유효합니다.
 
-   * silent: `true` 값은 `data` 이벤트를 트리거하지 못하도록 합니다. 기본값은 `false`입니다.
+  * silent: `true` 값은 `data` 이벤트를 트리거하지 못하도록 합니다. 기본값은 `false`입니다.
 
 * **value:**(개체) 키와 연결할 값입니다.
 
@@ -387,7 +387,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 * 값이 `true`이면 데이터 개체가 저장되었음을 나타냅니다.
 * 값이 `false`이면 데이터 저장소가 변경되지 않았음을 나타냅니다.
 
-## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
+## ContextHub.Store.JSONPtore {#contexthub-store-jsonpstore}
 
 JSON 데이터가 포함된 저장소입니다. 데이터는 외부 JSONP 서비스 또는 JSON 데이터를 반환하는 서비스에서 검색됩니다. 이 클래스의 인스턴스를 만들 때 [`init`](/help/sites-developing/contexthub-api.md#init-name-config) 함수를 사용하여 서비스 세부 정보를 지정하십시오.
 
@@ -405,16 +405,16 @@ ContextHub.Store.JSONPtore는 [ContextHub.Store.Core](/help/sites-developing/con
 
 * **serviceConfig:** 다음 속성을 포함하는 개체입니다.
 
-   * host: (문자열) 서버 이름 또는 IP 주소입니다.
-   * jsonp: (부울) 값이 true 이면 서비스가 JSONP 서비스이고 그렇지 않으면 false 입니다. true인 경우 {callback: &quot;ContextHub.Callbacks.*Object.name*} 개체가 service.params 개체에 추가되었습니다.
-   * params: (오브젝트) 오브젝트 속성으로 표시되는 URL 매개 변수입니다. 매개 변수 이름은 속성 이름이고 매개 변수 값은 속성 값입니다.
-   * path: (문자열) 서비스 경로입니다.
-   * port: (숫자) 서비스의 포트 번호입니다.
-   * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
+  * host: (문자열) 서버 이름 또는 IP 주소입니다.
+  * jsonp: (부울) 값이 true 이면 서비스가 JSONP 서비스이고 그렇지 않으면 false 입니다. true인 경우 {callback: &quot;ContextHub.Callbacks.*Object.name*} 개체가 service.params 개체에 추가됩니다.
+  * params: (오브젝트) 오브젝트 속성으로 표시되는 URL 매개 변수입니다. 매개 변수 이름은 속성 이름이고 매개 변수 값은 속성 값입니다.
+  * path: (문자열) 서비스 경로입니다.
+  * port: (숫자) 서비스의 포트 번호입니다.
+  * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-      * 자동: //
-      * true: https://
-      * false: https://
+    * 자동: //
+    * true: https://
+    * false: https://
 
 * **재정의:**(부울). 값이 `true`이면 기존 서비스 구성이 `serviceConfig`의 속성으로 대체됩니다. 값이 `false`이면 기존 서비스 구성 속성이 `serviceConfig`의 속성과 병합됩니다.
 
@@ -435,16 +435,16 @@ JSONP 서비스에 대한 마지막 호출 이후 캐시된 원시 응답을 반
 다음 속성을 갖는 객체:
 
 * **host:** (문자열) 서버 이름 또는 IP 주소입니다.
-* **jsonp:**(부울) 값이 true이면 서비스가 JSONP 서비스이고 그렇지 않으면 false입니다. true인 경우 {callback: &quot;ContextHub.Callbacks.*Object.name*} 개체가 service.params 개체에 추가되었습니다.
+* **jsonp:**(부울) 값이 true이면 서비스가 JSONP 서비스이고 그렇지 않으면 false입니다. true인 경우 {callback: &quot;ContextHub.Callbacks.*Object.name*} 개체가 service.params 개체에 추가됩니다.
 
 * **params:**(개체) URL 매개 변수가 개체 속성으로 표시됩니다. 매개 변수 이름은 속성 이름이고 매개 변수 값은 속성 값입니다.
 * **path:**(문자열) 서비스 경로입니다.
 * **port:**(숫자) 서비스의 포트 번호입니다.
 * **보안:**(문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-   * 자동: //
-   * true: https://
-   * false: https://
+  * 자동: //
+  * true: https://
+  * false: https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -467,24 +467,24 @@ JSONP 서비스의 URL을 검색합니다.
 * **name:**(문자열) 저장소의 이름입니다.
 * **config:**(개체) 서비스 속성을 포함하는 개체입니다. JSONPtore 개체는 `service` 개체의 속성을 사용하여 JSONP 서비스의 URL을 구성합니다.
 
-   * eventDefering: 32.
-   * 이벤트: 이 저장소의 ContextHub.Utils.Eventing 개체입니다. 기본값은 `ContextHub.eventing` 개체입니다.
-   * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(JavaScript 개체).
-   * service: (객체)
+  * eventDefering: 32.
+  * 이벤트: 이 저장소의 ContextHub.Utils.Eventing 개체입니다. 기본값은 `ContextHub.eventing` 개체입니다.
+  * 지속성: 이 저장소의 ContextHub.Utils.Persistence 개체입니다. 기본적으로 메모리 지속성이 사용됩니다(JavaScript 개체).
+  * service: (객체)
 
-      * host: (문자열) 서버 이름 또는 IP 주소입니다.
-      * jsonp: (부울) 값이 true 이면 서비스가 JSONP 서비스이고 그렇지 않으면 false 입니다. true이면 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 `service.params`에 추가됩니다.
-      * params: (오브젝트) 오브젝트 속성으로 표시되는 URL 매개 변수입니다. 매개 변수 이름과 값은 각각 개체 속성 이름과 값입니다.
-      * path: (문자열) 서비스 경로입니다.
-      * port: (숫자) 서비스의 포트 번호입니다.
-      * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
+    * host: (문자열) 서버 이름 또는 IP 주소입니다.
+    * jsonp: (부울) 값이 true 이면 서비스가 JSONP 서비스이고 그렇지 않으면 false 입니다. true이면 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 `service.params`에 추가됩니다.
+    * params: (오브젝트) 오브젝트 속성으로 표시되는 URL 매개 변수입니다. 매개 변수 이름과 값은 각각 개체 속성 이름과 값입니다.
+    * path: (문자열) 서비스 경로입니다.
+    * port: (숫자) 서비스의 포트 번호입니다.
+    * secure: (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-         * 자동: //
-         * true: https://
-         * false: https://
+      * 자동: //
+      * true: https://
+      * false: https://
 
-      * timeout: (숫자) 시간 초과 전에 JSONP 서비스가 응답할 때까지 대기하는 시간(밀리초)입니다.
-      * ttl: JSONP 서비스 호출 사이에 경과되는 최소 시간(밀리초)입니다. ([queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) 함수 참조).
+    * timeout: (숫자) 시간 초과 전에 JSONP 서비스가 응답할 때까지 대기하는 시간(밀리초)입니다.
+    * ttl: JSONP 서비스 호출 사이에 경과되는 최소 시간(밀리초)입니다. ([queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) 함수 참조).
 
 #### queryService(다시 로드) {#queryservice-reload}
 
@@ -510,7 +510,7 @@ JSONP 서비스의 URL을 검색합니다.
 
 지정된 매개 변수를 확인합니다.
 
-## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
+## ContextHub.Store.PersistedJSONPtore {#contexthub-store-persistedjsonpstore}
 
 ContextHub.Store.PersistedJSONPtore는 [ContextHub.Store.JSONPtore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)를 확장하므로 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색하는 데이터는 ContextHub 지속성 구성에 따라 지속됩니다. [지속성 모드](/help/sites-developing/ch-adding.md#persistence-modes)를 참조하십시오.
 
@@ -580,10 +580,10 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 
 * (선택 사항) 쿠키 키와 일치하는 **필터:** 기준입니다. 모든 쿠키를 반환하려면 값을 지정하지 마십시오. 지원되는 유형은 다음과 같습니다.
 
-   * 문자열: 문자열은 쿠키 키와 비교됩니다.
-   * 배열: 배열의 각 항목은 필터입니다.
-   * RegExp 개체: 개체의 테스트 함수는 쿠키 키를 일치시키는 데 사용됩니다.
-   * 함수: 일치 항목에 대한 쿠키 키를 테스트하는 함수입니다. 함수는 쿠키 키를 매개 변수로 사용하고, 테스트에서 일치하는 것이 확인되면 true를 반환해야 합니다.
+  * 문자열: 문자열은 쿠키 키와 비교됩니다.
+  * 배열: 배열의 각 항목은 필터입니다.
+  * RegExp 개체: 개체의 테스트 함수는 쿠키 키를 일치시키는 데 사용됩니다.
+  * 함수: 일치 항목에 대한 쿠키 키를 테스트하는 함수입니다. 함수는 쿠키 키를 매개 변수로 사용하고, 테스트에서 일치하는 것이 확인되면 true를 반환해야 합니다.
 
 **반환**
 
@@ -621,10 +621,10 @@ ContextHub.Utils.Cookie.getItem("name");
 
 * **필터:** 일치하는 쿠키 키에 대한 기준입니다. 지원되는 유형은 다음과 같습니다.
 
-   * 문자열: 문자열은 쿠키 키와 비교됩니다.
-   * 배열: 배열의 각 항목은 필터입니다.
-   * RegExp 개체: 개체의 테스트 함수는 쿠키 키를 일치시키는 데 사용됩니다.
-   * 함수: 일치 항목에 대한 쿠키 키를 테스트하는 함수입니다. 함수는 쿠키 키를 매개 변수로 사용하고 테스트에서 일치하는 것으로 확인되면 `true`을(를) 반환해야 합니다.
+  * 문자열: 문자열은 쿠키 키와 비교됩니다.
+  * 배열: 배열의 각 항목은 필터입니다.
+  * RegExp 개체: 개체의 테스트 함수는 쿠키 키를 일치시키는 데 사용됩니다.
+  * 함수: 일치 항목에 대한 쿠키 키를 테스트하는 함수입니다. 함수는 쿠키 키를 매개 변수로 사용하고 테스트에서 일치하는 것으로 확인되면 `true`을(를) 반환해야 합니다.
 
 **반환**
 
@@ -666,9 +666,9 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 * **값:** 쿠키 값을 포함하는 문자열입니다.
 * **options:** (선택 사항) 쿠키 특성을 구성하는 다음 속성을 포함하는 개체입니다.
 
-   * expires: 쿠키가 만료되는 시기를 지정하는 `date` 또는 `number` 값입니다. 날짜 값은 절대 만료 시간을 지정합니다. 숫자(일)는 만료 시간을 현재 시간과 숫자를 더한 값으로 설정합니다. 기본값은 `undefined`입니다.
-   * secure: 쿠키의 `Secure` 특성을 지정하는 `boolean` 값입니다. 기본값은 `false`입니다.
-   * 경로: 쿠키의 `Path` 특성으로 사용할 `String` 값입니다. 기본값은 `undefined`입니다.
+  * expires: 쿠키가 만료되는 시기를 지정하는 `date` 또는 `number` 값입니다. 날짜 값은 절대 만료 시간을 지정합니다. 숫자(일)는 만료 시간을 현재 시간과 숫자를 더한 값으로 설정합니다. 기본값은 `undefined`입니다.
+  * secure: 쿠키의 `Secure` 특성을 지정하는 `boolean` 값입니다. 기본값은 `false`입니다.
+  * 경로: 쿠키의 `Path` 특성으로 사용할 `String` 값입니다. 기본값은 `undefined`입니다.
 
 **반환**
 

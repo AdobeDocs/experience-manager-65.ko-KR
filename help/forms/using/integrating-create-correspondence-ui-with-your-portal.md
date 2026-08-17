@@ -1,5 +1,5 @@
 ---
-title: 서신 만들기 UI를 사용자 정의 포털과 통합
+title: 서신 UI 만들기를 사용자 정의 포털과 통합
 description: 서신 만들기 UI를 사용자 정의 포털과 통합하는 방법을 알아봅니다
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 4%
+source-wordcount: '414'
+ht-degree: 8%
 
 ---
 
-# 서신 만들기 UI를 사용자 정의 포털과 통합{#integrating-create-correspondence-ui-with-your-custom-portal}
+# 서신 UI 만들기를 사용자 정의 포털과 통합{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 개요 {#overview}
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->이러한 방식으로 호출하는 것은 필요한 매개 변수가 URL에 동일한 매개 변수(명확하게 표시됨)를 노출하여 GET 요청으로 전달되기 때문에 안전하지 않습니다.
+>이러한 방식으로 호출하는 것은 URL에 동일한 매개 변수(명확하게 표시됨)를 노출함으로써 GET 요청으로 전달되기 때문에 안전하지 않습니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 ## 인라인 데이터 기반 호출 {#inline-data-based-invocation}
 
-응답 만들기 응용 프로그램을 호출하는 다른(및 보다 안전한) 방법은 매개 변수와 데이터를 전송하여 응답 만들기 응용 프로그램을 POST 요청으로(최종 사용자에게 숨기기) 호출하는 동안 https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html에서 URL을 히트하는 것입니다. 즉, 이전 접근 방법에서는 불가능하거나 이상적이지 않았던 서신 작성 애플리케이션 인라인(cmData 매개 변수를 사용하여 동일한 요청의 일부로)에 대한 XML 데이터를 전달할 수 있습니다.
+응답 만들기 애플리케이션을 호출하는 또 다른(및 보다 안전한) 방법은 POST 요청으로 응답 만들기 애플리케이션을 호출하기 위해 매개 변수 및 데이터를 보내는 동안(최종 사용자에게 숨기기) https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html에서 URL을 히트하는 것입니다. 즉, 이전 접근 방법에서는 불가능하거나 이상적이지 않았던 서신 작성 애플리케이션 인라인(cmData 매개 변수를 사용하여 동일한 요청의 일부로)에 대한 XML 데이터를 전달할 수 있습니다.
 
 ### 편지 지정을 위한 매개변수 {#parameters-for-specifying-letter}
 

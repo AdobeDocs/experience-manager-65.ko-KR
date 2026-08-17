@@ -9,10 +9,10 @@ exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 1%
+source-wordcount: '956'
+ht-degree: 3%
 
 ---
 
@@ -35,9 +35,9 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 터치에 적합한 UI의 *
 
   **사용자** 콘솔 목록:
 
-   * 사용자 이름
-   * 사용자 로그인 이름(계정 이름)
-   * 계정에 지정된 모든 제목
+  * 사용자 이름
+  * 사용자 로그인 이름(계정 이름)
+  * 계정에 지정된 모든 제목
 
 * [그룹 관리](#group-administration)
 
@@ -45,9 +45,9 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 터치에 적합한 UI의 *
 
   **그룹** 콘솔 목록:
 
-   * 그룹 이름
-   * 그룹 설명
-   * 그룹의 사용자/그룹 수
+  * 그룹 이름
+  * 그룹 설명
+  * 그룹의 사용자/그룹 수
 
 ## 사용자 관리 {#user-administration}
 
@@ -91,8 +91,8 @@ Granite 사용자 및 그룹 관리 콘솔은 모두 터치에 적합한 UI의 *
    * **정보**
    * **계정 설정**
 
-      * **상태**
-계정에 **활성** 또는 **비활성** 중 하나로 플래그를 지정할 수 있습니다.
+     * **상태**
+       계정에 **활성** 또는 **비활성** 중 하나로 플래그를 지정할 수 있습니다.
 
    * **사진**
 

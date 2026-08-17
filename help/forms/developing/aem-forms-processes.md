@@ -9,10 +9,10 @@ role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 0%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 이 단기 프로세스가 호출되면 다음 작업을 수행합니다.
 
-1. 프로세스에 전달되는 비보안 PDF 문서를 입력 값으로 가져옵니다.
+1. 프로세스에 전달되는 보안되지 않은 PDF 문서를 입력 값으로 가져옵니다.
 1. 암호로 PDF 문서를 암호화합니다. 이 프로세스에 대한 입력 매개 변수의 이름은 `inDoc`이고 데이터 형식은 document입니다.
 1. 암호로 암호화된 PDF 문서를 로컬 파일 시스템에 PDF 파일로 저장합니다. 이 프로세스는 암호화된 PDF 문서를 출력 값으로 반환합니다. 이 프로세스에 대한 출력 매개 변수의 이름은 `outDoc`이고 데이터 형식은 document입니다.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
    >
    >일반적으로 단기 프로세스는 세 가지 이상의 작업으로 구성됩니다. 워크벤치를 사용하여 프로세스를 생성합니다. [워크벤치 사용](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하세요.
 
-   *AEM Forms를 사용한 프로그래밍*&#x200B;에서는 이 단기 프로세스를 프로그래밍 방식으로 호출할 수 있는 다음과 같은 방법에 대해 설명합니다.
+   *AEM 양식을 사용한 프로그래밍*&#x200B;에서는 이 단기 프로세스를 프로그래밍 방식으로 호출할 수 있는 다음과 같은 방법에 대해 설명합니다.
 
    * [AEM Forms Remoting을 사용하여 안전하지 않은 문서를 전달하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)(Flex 응용 프로그램 사용)
    * [Invocation API를 사용하여 단기 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)(Java™ Invocation API)

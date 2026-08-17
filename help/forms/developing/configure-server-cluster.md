@@ -5,9 +5,9 @@ exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '3945'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ GemFire는 GemFire 캐시에서 어떤 클러스터 멤버가 발견되고 채�
 
 기업 네트워크를 공유하는 각 클러스터는 TCP 로케이터를 사용하는 경우 별도의 TCP 로케이터 집합을 사용하고, 멀티캐스트 UDP 구성을 사용하는 경우에는 별도의 UDP 포트 번호를 사용해야 합니다. UDP 자동 검색은 JEE의 AEM Forms에 대한 기본 구성이며 여러 클러스터에서 동일한 기본 포트를 사용하고 33456 때문에 통신을 시도하지 않아야 하는 클러스터가 예기치 않게 그럴 수 있습니다. 예를 들어, 프로덕션 클러스터와 QA 클러스터는 별도로 유지되어야 하지만 UDP 멀티캐스트를 통해 서로 연결될 수 있습니다.
 
-GemFire가 부적절하게 클러스터링하는 네트워크에서 중복 포트를 발견할 수 있는 가장 일반적인 상황은 클러스터 Bootstrap 중에 발생합니다. Bootstrap 프로세스가 명확한 원인 없이 실패한다는 것을 알 수 있습니다. 일반적으로 다음과 같은 오류가 표시됩니다.
+GemFire가 부적절하게 클러스터링하는 네트워크에서 중복 포트를 발견할 수 있는 가장 일반적인 상황은 클러스터의 Bootstrap 도중 발생합니다. Bootstrap 프로세스가 명확한 원인 없이 실패할 수 있습니다. 일반적으로 다음과 같은 오류가 표시됩니다.
 
 ```xml
 Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com.adobe.pof.schema.ObjectTypeNotFoundException: Object Type: dsc.sc_service_configuration not found.
@@ -226,7 +226,7 @@ JEE 클러스터에서 성공적인 AEM Forms을 만들려면 애플리케이션
 
 * [JBoss® 클러스터를 통한 고가용성 엔터프라이즈 서비스](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic 서버 사용 클러스터](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server-Using 클러스터](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### JBoss®가 올바르게 클러스터링되는지 어떻게 확인할 수 있습니까? {#check-jboss-clustering}
 
@@ -249,7 +249,7 @@ and ones like:
 
 일반적으로 AEM Forms on JEE가 클러스터에서 내부 Quartz 스케줄러를 사용하는 것은 일반적으로 AEM Forms on JEE의 전역 클러스터 구성을 자동으로 따르도록 하기 위한 것입니다. 그러나 TCP 로케이터가 멀티캐스트 자동 검색 대신 Gemfire에 사용되는 경우 Quartz의 자동 클러스터 구성이 실패하는 버그가 #2794033. 이 경우 Quartz가 비클러스터형 모드에서 잘못 실행됩니다. 이로 인해 쿼츠 테이블에 교착 상태와 데이터 손상이 발생합니다. 버전 8.2.x가 9.0보다 부작용이 더 심한데, 이는 석영을 많이 사용하지 않지만 여전히 있기 때문이다.
 
-이 문제에 대한 수정 사항은 다음과 같습니다. 8.2.1.2 QF2.143 및 9.0.0.2 QF2.44.
+이 문제에 대해 8.2.1.2 QF2.143 및 9.0.0.2 QF2.44와 같이 수정할 수 있습니다.
 
 다음 두 속성을 모두 설정하는 해결 방법도 있습니다.
 
@@ -320,7 +320,7 @@ JEE의 AEM Forms 내의 특정 파일 경로 설정은 클러스터 전체에서
 다음 설정을 선택해야 합니다.
 
 1. 임시 디렉토리 위치
-1. Adobe 서버 글꼴 디렉토리 위치
+1. Adobe Server Fonts 디렉토리 위치
 1. Customer Fonts 디렉토리 위치
 1. 시스템 글꼴 디렉토리 위치
 1. 데이터 서비스 구성 파일의 위치

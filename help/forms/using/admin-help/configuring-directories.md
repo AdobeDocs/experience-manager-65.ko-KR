@@ -9,10 +9,10 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
-workflow-type: ht
-source-wordcount: '3241'
-ht-degree: 100%
+source-git-commit: 'null'
+workflow-type: tm+mt
+source-wordcount: '3263'
+ht-degree: 99%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 100%
 
 기본 DN은 관리 콘솔에서 필수 설정이지만 IBM Domino Enterprise Server와 같은 일부 디렉터리 서버에서는 비어 있는 BaseDN이 필요할 수 있습니다. 비어 있는 기본 DN을 지정하려면 config. xml 파일을 내보내고 config. xml 파일의 설정을 편집한 후 다시 가져옵니다. ([구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)를 참조하십시오.)
 
-**검색 필터:** (필수) 사용자와 연결된 레코드를 찾는 데 사용할 검색 필터입니다. 한 수준 검색이나 하위 수준 검색을 수행할 수 있습니다. (검색 필터 구문 또는 RFC 2254를 참조하십시오.) Microsoft AD 스키마에 대한 추가 정보는 Active Directory 스키마를 참조하십시오.
+**검색 필터:** (필수) 사용자와 연결된 레코드를 찾는 데 사용할 검색 필터입니다. 한 수준 검색이나 하위 수준 검색을 수행할 수 있습니다. ( 검색 필터 구문 또는 RFC 2254를 참조하십시오.) Microsoft AD 스키마에 대한 추가 정보는 Active Directory 스키마를 참조하십시오.
 
 **설명:** 사용자 설명에 대한 스키마 속성입니다.
 

@@ -9,10 +9,10 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '607'
-ht-degree: 100%
+source-git-commit: 'null'
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ SAML(Security Assertion Markup Language)은 엔터프라이즈 또는 하이브�
 SAML에 대한 설명은 [SAML(Security Assertion Markup Language) V2.0 기술 개요](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)를 참조하십시오.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > SAML 서비스 공급자 설정을 클릭합니다.
-1. 서비스 공급자 엔터티 ID 상자에 AEM Forms 서비스 공급자 구현에 대한 식별자로 사용할 고유 ID를 입력합니다. IDP를 구성할 때도 이 고유 ID를 지정합니다(예: `um.lc.com`). AEM Forms에 액세스하는 데 사용되는 URL을 사용할 수도 있습니다(예: `https://AEMformsserver`).
+1. 서비스 공급자 엔터티 ID 상자에 AEM Forms 서비스 공급자 구현에 대한 식별자로 사용할 고유 ID를 입력합니다. 또한 IDP를 구성할 때 이 고유 ID를 지정합니다(예: `um.lc.com`). AEM 양식에 액세스하는 데 사용되는 URL을 사용할 수도 있습니다(예: `https://AEMformsserver`).
 1. 서비스 공급자 기본 URL 상자에 Forms 서버의 기본 URL을 입력합니다(예: `https://AEMformsserver:8080`).
 1. (선택 사항) AEM Forms가 IDP에 서명된 인증 요청을 보낼 수 있도록 하려면 다음 작업을 수행합니다.
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1334'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ AEM Forms 디지털 서명은 HSM에 저장된 자격 증명을 사용하여 서
 
 1. 관리 콘솔에서 설정 > Trust Store 관리 > HSM 자격 증명을 클릭한 후 추가를 클릭합니다.
 1. 프로필 이름 상자에 별칭을 식별하는 데 사용되는 문자열을 입력합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
-1. PKCS11 라이브러리 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예, `c:\Program Files\LunaSA\cryptoki.dll`. 클러스터링된 환경에서 해당 경로는 클러스터의 모든 서버에서 동일해야 합니다.
+1. PKCS11 라이브러리 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예를 들어, `c:\Program Files\LunaSA\cryptoki.dll`과 같이 입력합니다. 클러스터링된 환경에서 해당 경로는 클러스터의 모든 서버에서 동일해야 합니다.
 1. 오프라인 프로필 만들기 확인란을 선택합니다. 다음을 클릭합니다.
 1. HSM 장치 목록에서 자격 증명이 저장된 HSM 장치의 제조업체를 선택합니다.
 1. 슬롯 유형 목록에서 슬롯 ID, 슬롯 색인 또는 토큰 이름을 선택하고 슬롯 정보 상자에 값을 지정합니다. AEM Forms에서 해당 설정을 사용하여 자격 증명이 HSM에 저장되는 위치를 결정합니다.
@@ -107,4 +107,4 @@ AEM Forms는 웹 서비스 기반 IPC/RPC 메커니즘을 사용합니다. 이 �
 이 메커니즘은 HSM 프로필의 온라인 생성이나 상태 확인을 지원하지 않습니다. 하지만 HSM 프로필을 만들고 상태 확인을 수행하는 두 가지 방법이 있습니다.
 
 * 서명자 인증서를 전달하여 AEM Forms 클라이언트 자격 증명을 만듭니다. [Sun JDK를 사용하여 Windows 64비트 플랫폼에서 AEM Forms ES에 대한 HSM 지원 구성](https://kb2.adobe.com/cps/808/cpsid_80835.html)에 나와 있는 단계를 따릅니다. 웹 서비스 위치가 자격 증명 속성으로 전달됩니다. 인증서 DER 또는 인증서 SHA-1 16진수를 사용하여 생성된 오프라인 HSM 프로필도 지원됩니다. 하지만 이전 버전의 AEM Forms에서 AEM Forms로 업그레이드한 경우 자격 증명에 인증서와 웹 서비스 정보가 포함되어 있으므로 클라이언트를 변경해야 합니다.
-* 웹 서비스 위치는 서명 서비스의 관리 콘솔에서 지정됩니다. ([서명 서비스 설정](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)을 참조하십시오.) 여기에서 클라이언트는 Trust Store에 HSM 프로필의 별칭만을 포함하고 있습니다. 이전 버전의 AEM Forms에서 AEM Forms로 업그레이드한 경우에도 클라이언트를 변경하지 않고 이 옵션을 원활하게 사용할 수 있습니다. 이 옵션은 인증서 SHA-1을 사용하는 HSM 프로필을 지원하지 않습니다.
+* 웹 서비스 위치는 서명 서비스의 관리 콘솔에서 지정됩니다. [서명 서비스 설정](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)을 참조하세요. 여기서 클라이언트는 트러스트 스토어에서 HSM 프로필의 별칭만 전달했습니다. 이전 버전의 AEM Forms에서 AEM Forms로 업그레이드한 경우에도 클라이언트를 변경하지 않고 이 옵션을 원활하게 사용할 수 있습니다. 이 옵션은 인증서 SHA-1을 사용하는 HSM 프로필을 지원하지 않습니다.

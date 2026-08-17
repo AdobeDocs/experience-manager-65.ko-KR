@@ -7,10 +7,10 @@ role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 0%
+source-wordcount: '2298'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 누가 이 문서를 읽어야 합니까? {#who-should-read-this-doc}
 
-이 문서는 Workbench의 설치, 구성, 관리 또는 배포를 담당하는 관리자 또는 개발자를 위한 것입니다. 업그레이드된 AEM Forms 프로세스를 지원하도록 시스템을 구성하는 정보도 포함되어 있습니다. 제공된 정보는 이 문서를 읽는 모든 사람이 Microsoft® Windows® 운영 체제에 익숙하다는 가정을 기반으로 합니다.
+이 문서는 Workbench의 설치, 구성, 관리 또는 배포를 담당하는 관리자 또는 개발자를 위한 것입니다. 업그레이드된 AEM Forms 프로세스를 지원하도록 시스템을 구성하는 정보도 포함되어 있습니다. 제공된 정보는 이 문서를 읽는 모든 사람이 ® Windows® 운영 체제에 익숙하다는 가정을 기반으로 합니다.
 
 ## 추가 정보 {#additional-information}
 
@@ -37,11 +37,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>AEM Forms 및 다른 Adobe 제품과 통합하는 방법에 대한 일반 정보</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=ko">AEM Forms 개요</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 개요</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms에 사용할 수 있는 모든 설명서</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=ko">AEM Forms 설명서</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 설명서</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 참고 사항 및 추가 정보</p> </td>
@@ -76,7 +76,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 최소 하드웨어 및 소프트웨어 요구 사항 {#minimum-hardware-software-requirements}
 
-**워크벤치**
+**Workbench**
 다음 요구 사항이 최소값으로 권장됩니다.
 설치할 디스크 공간:
 * 680MB(Workbench 전용)
@@ -100,7 +100,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
-[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_kr)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
+[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
 
 ## Designer 설치 고려 사항 {#designer-installation-considerations}
 
@@ -130,7 +130,7 @@ Workbench 설치는 Acrobat Pro 또는 Acrobat Pro Extended와 함께 설치된 
 ### Windows 10에서 Designer(독립 실행형)를 제거하려면 {#uninstall-designer-standalone-windows10}
 
 1. **Campaign 컨트롤 패널 > 프로그램 > 프로그램 및 기능으로 이동**
-1. 현재 설치된 프로그램 목록에서 **Designer Adobe**&#x200B;를 선택합니다.
+1. 현재 설치된 프로그램 목록에서 **Adobe Designer**&#x200B;을(를) 선택합니다.
 1. **제거**&#x200B;를 클릭한 다음 **예**&#x200B;를 클릭합니다.
 
 ## Workbench 설치 {#installing-workbench}
@@ -153,7 +153,7 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 
    >[!NOTE]
    >
-   >&quot;Java™ 가상 컴퓨터를 만들 수 없습니다.&quot; 오류가 발생하면 값이 -Xmx512M인 _JAVA_VARIABLES라는 환경 OPTIONS을 만들고 설치 관리자를 실행합니다.
+   >&quot;Java™ 가상 컴퓨터를 만들 수 없습니다.&quot; 오류가 발생하면 값이 -Xmx512M인 _JAVA_OPTIONS라는 환경 변수를 만들고 설치 관리자를 실행합니다.
 
 1. 소개 화면에서 다음을 클릭합니다.
 1. 제품 사용권 계약을 읽고 I accept the terms of the License Agreement 를 선택한 후 Next 를 클릭합니다.
@@ -173,8 +173,8 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 1. 설치 요약을 검토합니다. AEM Forms Workbench 시작을 선택하여 Workbench를 시작한 후 다음을 클릭합니다.
 1. 릴리스 정보를 검토하고 완료 를 클릭합니다.
 1. 이제 다음 항목이 컴퓨터에 설치됩니다.
-   * **Workbench**: 바로 가기 폴더를 저장하기로 선택한 경우 시작 메뉴에서 Workbench를 실행하려면 모든 프로그램 > AEM Forms > Workbench를 선택합니다. 자세한 내용은   <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">워크벤치 사용</a> 설명서를 참조하십시오.
-   * **Designer**: Workbench 내에서 Designer에 액세스할 수 있습니다. 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer 도움말</a>의 시작 항목을 참조하십시오.
+   * **Workbench**: 바로 가기 폴더를 저장하기로 선택한 경우 시작 메뉴에서 Workbench를 실행하려면 모든 프로그램 > AEM Forms > Workbench를 선택합니다. 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">워크벤치 사용</a> 설명서를 참조하십시오.
+   * **Designer**: Workbench 내에서 Designer에 액세스할 수 있습니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer 도움말</a>의 시작 항목을 참조하십시오.
    * **AEM Forms SDK**: SDK 사용에 대한 자세한 내용은 <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">AEM Forms을 사용한 프로그래밍</a>을 참조하십시오.
 
 ## 프로세스 업그레이드 {#upgrading-processes}
@@ -187,11 +187,11 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행 �
 
 >[!NOTE]
 >
->EMC Documentum® 또는 IBM® FileNet Repository Provider를 사용하도록 AEM Forms을 구성한 경우 AEM Forms 관리 콘솔에서 기본값으로 구성된 저장소 이외의 저장소에 로그인하려면 사용자 이름을 username@Repository으로 입력합니다.
+>EMC Documentum® 또는 IBM® FileNet Repository Provider를 사용하도록 AEM Forms을 구성한 경우 AEM forms 관리 콘솔에서 기본값으로 구성된 저장소 이외의 저장소에 로그인하려면 사용자 이름을 username@Repository으로 입력합니다.
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
 
-기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=ko">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
+기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
 
 ### HTTPS를 통해 연결하도록 Workbench 구성 {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -214,7 +214,7 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 
 1. 명령 프롬프트 창을 열고 [Workbench_HOME]/workbench/jre/bin으로 이동한 후 다음 명령을 입력합니다.
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-위치:
+   위치:
    * `changeit`은(는) cacerts 키 저장소의 기본 암호입니다.
    * certname은 1단계에서 선택한 인증서입니다.
    * 인증서에 대해 선택하는 별칭을 예로 들 수 있습니다. 이 값은 변경할 수 있습니다.
@@ -258,8 +258,8 @@ UUID 및 콘텐츠 루트가 캐시 키로 사용되는 수동 문서의 경우 
 * 수동화되지 않은 입력 템플릿의 경우 캐싱은 문서가 생성된 컨텐츠 루트와 파일 이름에 따라 다릅니다.
 동일한 캐시는 콘텐츠 루트 및 템플릿 파일 이름이 동일한 요청에만 사용됩니다.
 다음 모범 사례에서는 동적으로 생성된 템플릿을 Forms 서비스에 전달할 때 캐시가 끊임없이 증가하지 않도록 합니다.
-   * 동적으로 생성된 모든 템플릿에서 UUID를 삭제하거나 동일한 UUID를 전달합니다.
-   * 템플릿 바이트 또는 디스크의 동일한 파일 이름에서 문서를 생성합니다.
+  * 동적으로 생성된 모든 템플릿에서 UUID를 삭제하거나 동일한 UUID를 전달합니다.
+  * 템플릿 바이트 또는 디스크의 동일한 파일 이름에서 문서를 생성합니다.
 
 ### Workbench 제거 {#uninstalling-workbench}
 

@@ -9,10 +9,10 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
+source-wordcount: '1015'
+ht-degree: 63%
 
 ---
 
@@ -93,12 +93,13 @@ ht-degree: 66%
 
 ## 워크플로 인스턴스 실패 해결 {#fixing-workflow-instance-failures}
 
-워크플로가 실패하면 AEM은 **실패** 콘솔을 제공하므로 원래 원인을 처리하고 나면 이를 조사하고 적절한 조치를 취할 수 있습니다.
+워크플로우가 실패하면 AEM에서는 원래 원인을 처리하고 나면 조사하고 적절한 조치를 취할 수 있는 **실패** 콘솔을 제공합니다.
 
 * **실패 세부 정보**
 **실패 메시지**, **단계** 및 **실패 스택**&#x200B;을 표시하는 창을 엽니다.
 
-* **내역 열기** - 워크플로 내역의 세부 정보를 표시합니다.
+* **내역 열기**
+워크플로 내역의 세부 정보를 표시합니다.
 
 * **단계 다시 시도** - 스크립트 단계 구성 요소 인스턴스를 다시 실행합니다. 원래 오류의 원인을 해결한 다음 단계 다시 시도 명령을 사용합니다. 예를 들어 프로세스 단계에서 실행되는 스크립트에서 버그를 수정하고 단계를 다시 시도할 수 있습니다.
 * **종료** - 오류로 인해 워크플로에 해결할 수 없는 상황이 발생한 경우 워크플로를 종료합니다. 예를 들어 워크플로는 워크플로 인스턴스에 대해 더 이상 유효하지 않은 저장소의 정보와 같은 환경 조건에 의존할 수 있습니다.
@@ -120,7 +121,7 @@ ht-degree: 66%
 
 여러 서비스 구성을 생성하여 서로 다른 기준을 충족하는 워크플로 인스턴스를 제거할 수도 있습니다. 예를 들어 특정 워크플로 모델의 인스턴스가 예상 시간보다 오래 실행될 때 해당 인스턴스를 제거하는 구성을 생성할 수 있습니다. 저장소 크기를 최소화하기 위해 특정 일수가 지난 후 완료된 모든 워크플로를 제거하는 다른 구성을 생성할 수도 있습니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성을 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)할 수 있습니다. 다음 표에서는 두 가지 방법에 필요한 속성을 설명합니다.
+서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성을 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)할 수 있습니다. 다음 테이블에서는 두 가지 방법에 필요한 속성을 설명합니다.
 
 >[!NOTE]
 >
@@ -168,7 +169,7 @@ ht-degree: 66%
 
 ## 받은 편지함의 최대 크기 설정 {#setting-the-maximum-size-of-the-inbox}
 
-[웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성을 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)하여 **Adobe Granite 워크플로 서비스**&#x200B;를 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. 다음 표에서는 두 메서드에 대해 구성하는 속성을 설명합니다.
+[웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성을 추가](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)하여 **Adobe Granite Workflow Service**&#x200B;을(를) 구성하여 받은 편지함의 최대 크기를 설정할 수 있습니다. 다음 표에서는 두 메서드에 대해 구성하는 속성을 설명합니다.
 
 >[!NOTE]
 >
@@ -188,7 +189,7 @@ ht-degree: 66%
 
 워크플로 모델 수준에서는 모델(및 런타임 인스턴스)에 메타데이터의 외부 스토리지가 있음을 나타내는 플래그가 제공됩니다. 워크플로 변수는 외부 스토리지로 표시된 모델의 워크플로 인스턴스에 대해 JCR에서 유지되지 않습니다.
 
-*userMetadataPersistenceEnabled* 속성은 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
+*userMetadataPersistenceEnabled* 속성이 워크플로 모델의 *jcr:content 노드*&#x200B;에 저장됩니다. 이 플래그는 워크플로 메타데이터에서 *cq:userMetaDataCustomPersistenceEnabled*(으)로 유지됩니다.
 
 아래 일러스트레이션에서는 워크플로에 플래그를 설정하는 방법을 보여 줍니다.
 

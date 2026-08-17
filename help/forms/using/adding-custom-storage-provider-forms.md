@@ -1,5 +1,5 @@
 ---
-title: 초안 및 제출 구성 요소에 대한 사용자 지정 저장소
+title: 초안 및 제출 구성 요소를 위한 사용자 정의 스토리지
 description: 초안 및 제출용 사용자 데이터 저장소를 사용자 지정하는 방법을 참조하십시오.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,20 +8,20 @@ feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '337'
+ht-degree: 4%
 
 ---
 
-# 초안 및 제출 구성 요소에 대한 사용자 지정 저장소 {#custom-storage-for-drafts-and-submissions-component}
+# 초안 및 제출 구성 요소를 위한 사용자 정의 스토리지 {#custom-storage-for-drafts-and-submissions-component}
 
 ## 개요 {#overview}
 
 AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 모든 장치에서 나중에 작성 및 제출할 수 있는 진행 중인 양식 을 유지 관리할 수 있습니다.
 
-기본적으로 AEM Forms은 Publish 인스턴스의 `/content/forms/fp` 노드에 양식 초안 및 제출과 관련된 사용자 데이터를 저장합니다. 또한 AEM Forms 포털 구성 요소는 데이터 서비스를 제공합니다. 이 데이터 서비스를 사용하여 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
+기본적으로 AEM Forms은 초안 및 양식 제출과 관련된 사용자 데이터를 게시 인스턴스의 `/content/forms/fp` 노드에 저장합니다. 또한 AEM Forms 포털 구성 요소는 데이터 서비스를 제공합니다. 이 데이터 서비스를 사용하여 초안 및 제출에 대한 사용자 데이터 저장 구현을 사용자 지정할 수 있습니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
 
 ## 사전 요구 사항  {#prerequisites}
 
@@ -97,7 +97,7 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->초안 ID 필드의 최소 값은 26자입니다. Adobe은 초안 ID 길이를 26자 이상으로 설정할 것을 권장합니다.
+>초안 ID 필드의 최소 값은 26자입니다. Adobe에서는 초안 ID 길이를 26자 이상으로 설정할 것을 권장합니다.
 
 ## 제출 데이터 서비스 {#submission-data-service}
 

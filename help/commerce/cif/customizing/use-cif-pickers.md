@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,13 @@ AEM 컨텐츠 및 Commerce 작성은 AEM 작성자 및 마케터가 상거래 �
 >
 >CIF 핵심 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid`(으)로 대체되었습니다. Adobe에서는 `sku` 또는 `slug`을(를) 제품 식별자로 사용하는 것이 좋습니다. Adobe은 CIF 핵심 구성 요소 버전 1.x를 사용하는 프로젝트에 대해서만 `id`을(를) 계속 지원합니다.
 
-`cifproductfield`의 전체 작동 예는 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다. AEM 핵심 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko#customizing-dialogs)도 참조하십시오.
+`cifproductfield`의 전체 작동 예는 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다. AEM 핵심 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)도 참조하십시오.
 
 ## 범주 선택기 {#category-picker}
 
 카테고리 선택기는 제품 선택기와 유사한 방식으로 구성 요소 대화 상자에서도 사용할 수 있습니다.
 
-cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
+다음 코드 조각은 cq:dialog 구성에 사용할 수 있습니다.
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 
@@ -78,7 +78,7 @@ cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
 
 >[!CAUTION]
 >
->`cifproductfield` 구성 요소와 마찬가지로 `cifcategoryfield` 구성 요소에도 `cif.shell.picker` clientlib이 필요합니다. 대화 상자에 clientlib을 추가하려면 `extraClientlibs` 속성을 사용합니다. AEM 핵심 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko#customizing-dialogs)을 참조하십시오.
+>`cifproductfield` 구성 요소와 마찬가지로 `cifcategoryfield` 구성 요소에도 `cif.shell.picker` clientlib이 필요합니다. 대화 상자에 clientlib을 추가하려면 `extraClientlibs` 속성을 사용합니다. AEM 핵심 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)을 참조하십시오.
 >[!CAUTION]
 >
 >CIF 핵심 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid`(으)로 대체되었습니다. Adobe에서는 `uid` 또는 `urlPath`을(를) 범주 식별자로 사용하는 것이 좋습니다. Adobe은 CIF 핵심 구성 요소 버전 1.x를 사용하는 프로젝트에 대해서만 `id` 및 `idAndUrlPath`을(를) 계속 지원합니다.
