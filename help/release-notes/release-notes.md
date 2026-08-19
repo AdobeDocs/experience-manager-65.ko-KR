@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
 workflow-type: tm+mt
-source-wordcount: '7373'
+source-wordcount: '7412'
 ht-degree: 5%
 
 ---
@@ -55,9 +55,9 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * [JEE 트랜잭션 로그의 양식 수준 세부 정보](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): 이제 JEE의 AEM Forms은 기존 서비스 및 작업 정보와 더불어 각 트랜잭션에 대해 `transaction_log.log`에 양식 수준 세부 정보를 기록합니다. 관리자는 제출, 변환 및 변환을 분석할 때 트랜잭션 보고 데이터를 특정 양식과 상호 연관시킬 수 있습니다. (FORMS-21574)
 
 * [지원되는 플랫폼 매트릭스를 업데이트했습니다](/help/forms/using/aem-forms-jee-supported-platforms.md): JEE 서비스 팩 6.5.25.0의 AEM Forms은 다음 최신 기술과의 호환성을 지원합니다.
-   * JBoss® EAP(Enterprise Application Platform) 7.4.23
-   * ® Content Manager 클라이언트 8.7
-   * ® Windows Terminal Server 2025의 AEM Forms Designer
+  * JBoss® EAP(Enterprise Application Platform) 7.4.23
+  * ® Content Manager 클라이언트 8.7
+  * ® Windows Terminal Server 2025의 AEM Forms Designer
 
   >[!NOTE]
   >
@@ -462,7 +462,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -537,13 +537,13 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
   이 예외를 해결하려면 다음을 수행합니다.
 
-   1. `crx-quickstart/repository/`에서 다음 두 폴더 삭제
+  1. `crx-quickstart/repository/`에서 다음 두 폴더 삭제
 
-      * `cache`
-      * `diff-cache`
+     * `cache`
+     * `diff-cache`
 
-   1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service을 다시 시작합니다.
-`cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `error.log`에서 더 이상 `mvstore`과(와) 관련된 예외가 발생하지 않습니다.
+  1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service을 다시 시작합니다.
+     `cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `error.log`에서 더 이상 `mvstore`과(와) 관련된 예외가 발생하지 않습니다.
 
 * 콘텐츠 모델의 기본 이름을 대신 사용하도록 콘텐츠 모델에 대해 사용자 지정 API 이름을 사용했을 수 있는 GraphQL 쿼리를 업데이트합니다.
 
@@ -551,17 +551,17 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 
   문제를 해결하려면 `/indexRules/dam:Asset/properties` 아래에 다음 두 속성을 포함하도록 `damAssetLucene`을(를) 구성해야 합니다.
 
-   * `contentFragment`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/contentFragment"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="Boolean"`
-   * `model`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/data/cq:model"`
-      * `ordered="{Boolean}true"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="String"`
+  * `contentFragment`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/contentFragment"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="Boolean"`
+  * `model`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/data/cq:model"`
+    * `ordered="{Boolean}true"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="String"`
 
   인덱스 정의를 변경한 후에는 리인덱싱이 필요합니다(`reindex` = `true`).
 
@@ -582,12 +582,12 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 * 사용자는 [!DNL Assets]의 계층 구조에서 폴더의 이름을 바꾸고 중첩된 폴더를 [!DNL Brand Portal]에 게시할 수 있습니다. 그러나 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
 
 * [!DNL Experience Manager] 6.5.x.x를 설치하는 동안 다음 오류 및 경고 메시지가 표시될 수 있습니다.
-   * &quot;Target Standard API(IMS 인증)를 사용하여 [!DNL Experience Manager]에서 Adobe Target 통합이 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. Target에서는 &quot;경험 조각&quot;/소스 &quot;Adobe Experience Manager&quot; 유형 대신 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형의 여러 오퍼를 만듭니다.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: `granite/operations/maintenance`에 유지 관리 창이 없습니다.
-   * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : `granite/operations/maintenance`에 유지 관리 창이 없습니다.
-   * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경이 등록 취소를 완료할 때까지 기다리는 동안 시간이 초과되었습니다.
+  * &quot;Target Standard API(IMS 인증)를 사용하여 [!DNL Experience Manager]에서 Adobe Target 통합이 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. Target에서는 &quot;경험 조각&quot;/소스 &quot;Adobe Experience Manager&quot; 유형 대신 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형의 여러 오퍼를 만듭니다.
+  * `com.adobe.granite.maintenance.impl.TaskScheduler`: `granite/operations/maintenance`에 유지 관리 창이 없습니다.
+  * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
+  * `com.adobe.granite.maintenance.impl.TaskScheduler` : `granite/operations/maintenance`에 유지 관리 창이 없습니다.
+  * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경이 등록 취소를 완료할 때까지 기다리는 동안 시간이 초과되었습니다.
 
 * AEM 6.5.15부터 `org.apache.servicemix.bundles.rhino` 번들에서 제공한 Rhino JavaScript 엔진에 새로운 호스팅 동작이 있습니다. 엄격 모드(`use strict;`)를 사용하는 스크립트는 올바른 변수를 선언해야 합니다. 그렇지 않으면 실행되지 않고 결국 런타임 오류가 발생합니다.
 
@@ -606,16 +606,15 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 다음 문제에는 다운로드 및 설치에 사용할 수 있는 핫픽스가 있습니다. [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하여 다음 문제를 해결할 수 있습니다.
 
 * **NPR-44100** WAR/JEE 배포에 AEM 6.5 서비스 팩 25(JEE의 AEM Forms 포함)를 설치한 후 `com.adobe.cq.screens.sessions` 번들은 [설치됨] 상태로 유지되며 활성화되지 않습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-23491** AEM Forms 6.5.24.0 JEE 배포(JBoss, WebLogic, WebSphere)에 다중 부분 요청 처리에서 Apache Struts 서비스 거부 취약점인 CVE-2025-64775의 영향을 받습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.24.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * **FORMS-14926** AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더 아래에서 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목을 찾으면 다음 단계를 수행하여 문제를 해결하십시오.
 
-   1. 로케이터가 실행 중인 경우 중지합니다.
-   2. AEM 서버를 중지합니다.
-   3. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
-   4. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
-   5. 관리자 모드에서 명령 프롬프트를 엽니다.
-   6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
-
-   * 이제 AEM Forms에 양식 구성 요소에 대한 Struts 버전을 2.5.33에서 6.x로 업그레이드하는 기능이 포함됩니다. 이 업그레이드는 SP24에 포함되지 않은 이전에 누락된 Struts 변경 사항을 제공합니다. 최신 버전의 Struts에 대한 지원을 추가하기 위해 다운로드하여 설치할 수 있는 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 지원이 추가되었습니다.
+  1. 로케이터가 실행 중인 경우 중지합니다.
+  2. AEM 서버를 중지합니다.
+  3. `<AEM_Forms_Installation>/lib/caching/lib`(으)로 이동합니다.
+  4. `geode-*-1.15.1.2.jar`을(를) 제외한 모든 Geode 패치 파일을 제거합니다. `version 1.15.1.2`이(가) 있는 Geode jar만 있는지 확인합니다.
+  5. 관리자 모드에서 명령 프롬프트를 엽니다.
+  6. `geode-*-1.15.1.2.jar` 파일을 사용하여 Geode 패치를 설치합니다.
 
 ## OSGi 번들 및 콘텐츠 패키지 포함됨{#osgi-bundles-and-content-packages-included}
 
@@ -631,11 +630,11 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
