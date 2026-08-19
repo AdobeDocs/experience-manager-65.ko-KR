@@ -1,5 +1,5 @@
 ---
-title: Analytics에 대한 서버측 페이지 이름 지정 구현
+title: Analytics에 대한 서버측 페이지 명명 구현
 description: Adobe Analytics은 s.pageName 속성을 사용하여 페이지를 고유하게 식별하고 페이지에 대해 수집된 데이터를 연결합니다
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
-# Analytics에 대한 서버측 페이지 이름 지정 구현{#implementing-server-side-page-naming-for-analytics}
+# Analytics에 대한 서버측 페이지 명명 구현{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics은 `s.pageName` 속성을 사용하여 페이지를 고유하게 식별하고 페이지에 대해 수집된 데이터를 연결합니다. 일반적으로 AEM에서 다음 작업을 수행하여 AEM이 Analytics에 전송하는 이 속성에 값을 할당합니다.
 
@@ -24,11 +24,11 @@ Adobe Analytics은 `s.pageName` 속성을 사용하여 페이지를 고유하게
 
 * `s.pageName` 속성에 매핑하는 CQ 변수를 포함하도록 페이지 구성 요소를 디자인합니다. ([사용자 지정 구성 요소에 대한 Adobe Analytics 추적 구현](/help/sites-developing/extending-analytics-components.md)을 참조하세요.)
 
-Sites 콘솔 및 Content Insight에서 Analytics 보고서 데이터를 노출하려면 AEM에 각 페이지의 `s.pageName` 속성 값이 필요합니다. AEM Analytics Java API는 사이트 콘솔 및 콘텐츠 인사이트에 `s.pageName` 속성의 값을 제공하기 위해 구현하는 `AnalyticsPageNameProvider` 인터페이스를 정의합니다. `AnaltyicsPageNameProvider` 서비스는 추적 목적으로 클라이언트의 JavaScript을 사용하여 동적으로 설정할 수 있으므로 보고 목적으로 서버의 pageName 속성을 확인합니다.
+Sites 콘솔 및 Content Insight에서 Analytics 보고서 데이터를 노출하려면 AEM에 각 페이지에 대한 `s.pageName` 속성 값이 필요합니다. AEM Analytics Java API는 사이트 콘솔 및 콘텐츠 인사이트에 `s.pageName` 속성의 값을 제공하기 위해 구현하는 `AnalyticsPageNameProvider` 인터페이스를 정의합니다. `AnaltyicsPageNameProvider` 서비스는 추적 목적으로 클라이언트의 JavaScript을 사용하여 동적으로 설정할 수 있으므로 보고 목적으로 서버의 pageName 속성을 확인합니다.
 
 ## 기본 Analytics 페이지 이름 공급자 서비스 {#the-default-analytics-page-name-provider-service}
 
-`DefaultPageNameProvider` 서비스는 페이지의 Analytics 데이터를 검색하는 데 사용할 `s.pageName` 속성의 값을 결정하는 기본 서비스입니다. 이 서비스는 AEM Foundation 페이지 구성 요소(`/libs/foundation/components/page`)와 함께 작동합니다. 이 페이지 구성 요소는 `s.pageName` 속성에 매핑되는 다음 CQ 변수를 정의합니다.
+`DefaultPageNameProvider` 서비스는 페이지의 Analytics 데이터를 검색하는 데 사용할 `s.pageName` 속성의 값을 결정하는 기본 서비스입니다. 이 서비스는 AEM 기본 페이지 구성 요소(`/libs/foundation/components/page`)와 함께 작동합니다. 이 페이지 구성 요소는 `s.pageName` 속성에 매핑되는 다음 CQ 변수를 정의합니다.
 
 * `pagedata.path`: 값이 페이지 경로로 설정되어 있습니다.
 * `pagedata.title`: 값이 페이지 제목으로 설정되어 있습니다.
@@ -75,7 +75,7 @@ CQ 변수를 프레임워크의 `s.pageName` 속성에 매핑하지 않으면 `s
 
 ### Analytics 페이지 이름 공급자 서비스 구현 {#implementing-an-analytics-page-name-provider-service}
 
-`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` 인터페이스를 OSGi 서비스로 구현하여 `s.pageName` 속성 값을 검색하는 논리를 사용자 지정합니다. 사이트 페이지 분석 및 컨텐츠 인사이트는 이 서비스를 사용하여 Analytics에서 보고서 데이터를 검색합니다.
+`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` 인터페이스를 OSGi 서비스로 구현하여 `s.pageName` 속성 값을 검색하는 논리를 사용자 지정합니다. 사이트 페이지 분석 및 컨텐츠 Insight은 이 서비스를 사용하여 Analytics에서 보고서 데이터를 검색합니다.
 
 AnalyticsPageNameProvider 인터페이스는 구현해야 하는 두 가지 메서드를 정의합니다.
 

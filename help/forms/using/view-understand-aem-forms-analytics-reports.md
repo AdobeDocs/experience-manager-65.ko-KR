@@ -11,14 +11,14 @@ role: Admin, User, Developer
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
+source-wordcount: '1082'
+ht-degree: 3%
 
 ---
 
 # AEM Forms 분석 보고서 보기 및 이해 {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 ## 분석 설정 {#setting-up-analytics}
 
@@ -50,7 +50,7 @@ AEM Forms 추가 기능 패키지 및 Adobe Analytics 계정이 있는 경우 [�
 
 분석 보고서를 보려면 다음 단계를 수행하십시오.
 
-1. `https://[hostname]:'port'`에 AEM 포털에 로그인합니다.
+1. `https://[hostname]:'port'`에서 AEM 포털에 로그인합니다.
 1. **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 분석 보고서를 보려는 양식을 선택합니다.
 1. **자세히 > 분석 보고서**&#x200B;를 선택합니다.
@@ -63,7 +63,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 
 ![적응형 양식의 요약 보고서](assets/analyticsdashboard_callout.png)
 
-**A.** 전환 **B.** 양식 수준 요약 **C.** 패널 수준 요약 **D.** 방문자의 브라우저 - 필터 **E.** 방문자의 OS - 필터 **F.** 방문자의 언어 - 필터
+**A.** 전환 **B.** 양식 수준 요약 **C.** 패널 수준 요약 **D.** 방문자의 브라우저 - 필터 **E.** 방문자 OS - 필터 **F.** 방문자 언어 - 필터
 
 기본적으로 지난 7일 동안의 분석 보고서가 표시됩니다. 최근 15일, 최근 1달 등에 대한 보고서를 보거나 날짜 범위를 지정할 수 있습니다.
 
@@ -75,7 +75,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 
 ### 적응형 및 HTML5 양식에 대한 전환 그래프 {#conversions-graph-for-adaptive-and-html-forms}
 
-양식 수준 전환 그래프는 다음 주요 성과 지표(KPI)에서 양식의 성과를 확인할 수 있도록 합니다.
+양식 수준 전환 그래프는 다음 주요 성과 지표(KPI)에서 양식의 성과를 보여 주는 insight을 제공합니다.
 
 * **렌디션**: 양식을 연 횟수
 * **방문자**: 양식에 대한 방문자 수
@@ -85,7 +85,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 
 ### 적응형 및 HTML5 양식에 대한 Analytics 보고서 {#analytics-report-for-adaptive-and-html-forms}
 
-양식 수준 요약 섹션은 다음 주요 성과 지표(KPI)에서 양식의 성과를 파악할 수 있도록 합니다.
+양식 수준 요약 섹션은 다음 주요 성과 지표(KPI)에서 양식의 성과를 보여 주는 insight을 제공합니다.
 
 * **평균 채우기 시간**: 양식을 채우는 데 소요된 평균 시간입니다. 사용자가 양식에 시간을 투자했지만 제출하지 않은 경우, 이 시간은 이 계산에 포함되지 않습니다.
 * **렌디션**: 양식이 렌더링되거나 열린 횟수입니다.

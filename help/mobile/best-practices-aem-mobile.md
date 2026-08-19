@@ -1,6 +1,6 @@
 ---
 title: AEM Mobile On-demand Services 우수 사례
-description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 사이트에 대해 유능한 Adobe Experience Manager(AEM) 개발자를 지원하는 모범 사례 및 지침에 대해 알아봅니다.
+description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 사이트에 대해 유능한 Adobe Experience Manager(AEM) 개발자를 지원하는 모범 사례 및 지침에 대해 알아보십시오.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap) 셸에서 직접 실행되는 앱을 빌드하는 것과 다릅니다. 개발자는 다음 사항에 익숙해야 합니다.
 
-* 즉시 지원되는 플러그인 및 Adobe Experience Manager(AEM) 모바일 특정 플러그인입니다.
+* 즉시 지원되는 플러그인 및 Adobe Experience Manager(AEM) 모바일 특정 플러그인.
 
 >[!NOTE]
 >
 >플러그인에 대해 자세히 알아보려면 다음 리소스를 참조하십시오.
 >
->* [AEM Mobile에서 Cordova 플러그인 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/cordova-api.html)
->* [AEM Mobile 전용 Cordova 사용 플러그인 사용](https://helpx.adobe.com/kr/digital-publishing-solution/help/app-runtime-api.html)
+>* [AEM Mobile에서 Cordova 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [AEM Mobile 전용 Cordova 사용 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * 플러그인 기능을 사용하는 템플릿은 플러그인 브리지가 없어도 브라우저에서 계속 작성할 수 있는 방식으로 작성되어야 합니다.
 
-   * 예를 들어 플러그 인의 API에 액세스하기 전에 *deviceready* 함수를 기다려야 합니다.
+  * 예를 들어 플러그 인의 API에 액세스하기 전에 *deviceready* 함수를 기다려야 합니다.
 
 ## AEM 개발자를 위한 지침 {#guidelines-for-aem-developers}
 
@@ -44,12 +44,12 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 * 단일 모놀리식 스크립트보다 여러 구성 요소 스크립트 파일 선호
 
-   * *customheaderlibs.html* 및 *customfooterlibs.html*&#x200B;과 같은 빈 확장 지점이 제공되어 개발자가 가능한 한 적은 수의 코어 코드를 복제하는 동안 페이지 템플릿을 변경할 수 있습니다
-   * 그런 다음 Sling의 *sling:resourceSuperType* 메커니즘을 통해 템플릿을 확장하고 사용자 지정할 수 있습니다.
+  * *customheaderlibs.html* 및 *customfooterlibs.html*&#x200B;과 같은 빈 확장 지점이 제공되어 개발자가 가능한 한 적은 수의 코어 코드를 복제하는 동안 페이지 템플릿을 변경할 수 있습니다
+  * 그런 다음 Sling의 *sling:resourceSuperType* 메커니즘을 통해 템플릿을 확장하고 사용자 지정할 수 있습니다
 
 * 템플릿 언어로서 JSP보다 Sightly/HTL 선호
 
-   * 이를 사용하면 마크업에서 코드가 분리되고, 내장된 XSS 보호를 제공하며, 더 익숙한 구문이 있습니다
+  * 이를 사용하면 마크업에서 코드가 분리되고, 내장된 XSS 보호를 제공하며, 더 익숙한 구문이 있습니다
 
 **온디바이스 성능 최적화**
 
