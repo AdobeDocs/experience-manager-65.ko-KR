@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 1%
+source-wordcount: '1102'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ ${ myHtlVariable }
 
 ## Analytics 통합 문제 {#analytics-integration-issues}
 
-### 보고서 임포터로 인해 CPU/메모리 사용량이 많음 {#the-report-importer-causes-high-cpu-memory-usage}
+### Report Importer로 인해 CPU/메모리 사용량이 많음 {#the-report-importer-causes-high-cpu-memory-usage}
 
 보고서 가져오기로 인해 CPU/메모리 사용량이 많거나 `OutOfMemoryError` 예외가 발생합니다.
 
@@ -61,14 +61,14 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### PollingImporter로 인해 종료가 오래 걸립니다. {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 [Cloud Service](/help/sites-developing/extending-cloud-config.md) 탭 내에서 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 사용하도록 설정합니다. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 여러 개의 노드(AEM 6.3 및 이전 버전의 경우 12, AEM 6.4의 경우 6)도 자동으로 만들어집니다   Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화하는 `cq;PollConfig` 형식의 버전)입니다. 그 결과는 다음과 같습니다.
+Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md) 탭 내에서 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 사용하도록 설정합니다. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화하는 `cq;PollConfig` 형식의 여러 노드(AEM 6.3 이하 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다. 그 결과는 다음과 같습니다.
 
 * Analytics를 참조하는 페이지가 많으면 PollingImporter가 많습니다.
 * 또한 Analytics 구성을 참조하여 페이지를 복사하고 붙여넣으면 해당 PollingImporter가 중복됩니다.
 
 #### 솔루션 {#solution-1}
 
-먼저 [error.log](/help/sites-deploying/configure-logging.md)을(를) 분석하면 활성 또는 등록된 PollingImporter 양에 대한 통찰력을 얻을 수 있습니다. 예:
+먼저 [error.log](/help/sites-deploying/configure-logging.md)을(를) 분석하면 활성 또는 등록된 PollingImporter의 양에 대한 일부 insight을 얻을 수 있습니다. 예:
 
 ```
 # Count PollingImporter entries
@@ -90,7 +90,7 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### DTM 스크립트 태그가 페이지 소스에서 렌더링되지 않습니다 {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-페이지 속성 [Cloud Service](/help/sites-developing/extending-cloud-config.md) 탭에서 구성을 참조했지만 [DTM](/help/sites-administering/dtm.md) 스크립트 태그가 페이지에 제대로 포함되지 않았습니다.
+페이지 속성 [Cloud Services](/help/sites-developing/extending-cloud-config.md) 탭에서 구성을 참조했지만 [DTM](/help/sites-administering/dtm.md) 스크립트 태그가 페이지에 제대로 포함되지 않았습니다.
 
 #### 솔루션 {#solution-2}
 
@@ -100,11 +100,11 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 * `/etc/cloudservices/dynamictagmanagement`에 있는 구성 다시 게시
 * `/etc/cloudservices`에서 ACL을 확인합니다. ACL은 다음과 같아야 합니다.
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
 
 ACL 관리에 대한 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md#permissions-in-aem) 페이지를 참조하십시오.
 
@@ -166,11 +166,11 @@ var s=s_gi(s_account)
 다음 솔루션을 시도할 수 있습니다.
 
 * DTM과 유사한 라이브러리를 로드하는 고객 코드(결과적으로 Target 라이브러리를 로드함)가 [페이지 헤드](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages)에서 동기적으로 실행되는지 확인하십시오.
-* 사이트가 DTM을 사용하여 Target 라이브러리를 전달하도록 구성된 경우, [사이트에 대한 Target 구성](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/target-configuring.html)에서 **DTM에 의해 전달된 Clientlib** 옵션이 선택되어 있는지 확인하십시오.
+* 사이트가 DTM을 사용하여 Target 라이브러리를 전달하도록 구성된 경우, [사이트에 대한 Target 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html)에서 **DTM에 의해 전달된 Clientlib** 옵션이 선택되어 있는지 확인하십시오.
 
 ### AT.js 1.3+를 사용할 때 올바른 오퍼 대신 항상 기본 오퍼가 표시됩니다 {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
-즉시 사용 가능한 AEM 6.2 및 6.3은 AT.js 버전 1.3.0+와 호환되지 않습니다. AT.js 버전 1.3.0에서 해당 API에 대한 매개 변수 유효성 검사를 도입하면 `adobe.target.applyOffer()`에 `atjs-itegration.js` 코드에서 제공하지 않는 &quot;mbox&quot; 매개 변수가 필요합니다.
+기본적으로 AEM 6.2 및 6.3은 AT.js 버전 1.3.0+와 호환되지 않습니다. AT.js 버전 1.3.0에서 해당 API에 대한 매개 변수 유효성 검사를 도입하면 `adobe.target.applyOffer()`에 `atjs-itegration.js` 코드에서 제공하지 않는 &quot;mbox&quot; 매개 변수가 필요합니다.
 
 #### 솔루션 {#solution-6}
 
@@ -195,7 +195,7 @@ adobe.target.getOffer({
 
 #### 솔루션 {#solution-7}
 
-AEM에 다음 확인 요청을 실행하여 Target 계정에 대해 A4T가 제대로 활성화되었는지 확인해야 합니다.
+AEM에 다음 확인 요청을 발행하여 Target 계정에 대해 A4T가 제대로 활성화되었는지 확인해야 합니다.
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-응답에 줄 `a4tEnabled:false`이(가) 포함된 경우 [고객 지원 센터 Adobe](https://helpx.adobe.com/kr/contact.html)에 연락하여 계정이 올바르게 프로비저닝되도록 하십시오.
+응답에 줄 `a4tEnabled:false`이(가) 포함된 경우 [Adobe 고객 지원 센터](https://helpx.adobe.com/contact.html)에 연락하여 계정이 올바르게 프로비저닝되도록 하십시오.
 
 ### 유용한 Target API {#helpful-target-apis}
 

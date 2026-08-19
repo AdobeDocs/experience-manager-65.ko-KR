@@ -22,11 +22,11 @@ ht-degree: 2%
 1. [Assets 인사이트 구성](configure-asset-insights.md)의 지침을 사용하여 Assets 인사이트를 구성합니다.
 1. 아래에서 샘플 Assets 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
 
-[파일 가져오기](assets/insightsdemo.zip)
+   [파일 가져오기](assets/insightsdemo.zip)
 
 1. 아래에서 샘플 웹 페이지가 포함된 ZIP 파일을 다운로드하여 로컬 파일 시스템에서 추출하십시오.
 
-[파일 가져오기](assets/demosite.zip)
+   [파일 가져오기](assets/demosite.zip)
 
 1. 웹 브라우저에서 열리는 웹 페이지를 클릭합니다.
 
