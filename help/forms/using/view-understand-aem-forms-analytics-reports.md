@@ -126,7 +126,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 
 분석 데이터를 추가로 필터링하려면 테이블에서 항목을 클릭할 수 있습니다. 예를 들어 브라우저 배포 테이블에서 Google Chrome 를 클릭하면 보고서가 다음과 같이 Google Chrome 브라우저와 관련된 데이터로 다시 렌더링됩니다.
 
-Analytics 보고서에 적용된 ![필터 - Google Chrome ](assets/filter-1.png)
+Analytics 보고서에 적용된 ![필터 - Google Chrome &#x200B;](assets/filter-1.png)
 
 필터를 적용한 후 패널 보고서를 보면 적용된 필터에 따라 패널 보고서 데이터도 표시됩니다.
 
