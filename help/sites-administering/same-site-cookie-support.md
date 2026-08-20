@@ -8,8 +8,8 @@ feature: Security
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 77%
+source-wordcount: '232'
+ht-degree: 78%
 
 ---
 

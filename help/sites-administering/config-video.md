@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video)를 사용하면 미리 정의된 기본 비디오 자산을 페이지에 배치할 수 있습니다.
 
-적절한 코드 변환이 일어나도록 관리자가 FFmpeg를 별도로 설치합니다. [FFmpeg 설치 및 AEM 구성](#install-ffmpeg)을 참조하십시오. 관리자는 또한 [비디오 프로필을 구성](#configure-video-profiles)하여 HTML5 요소와 함께 사용할 수 있습니다.
+적절한 코드 변환이 일어나도록 관리자가 FFmpeg를 별도로 설치합니다. [FFmpeg 설치 및 AEM 구성](#install-ffmpeg)을 참조하십시오. 또한 관리자는 HTML5 요소와 함께 사용할 [비디오 프로필을 구성](#configure-video-profiles)합니다.
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 대신 [핵심 구성 요소 임베드 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=ko)를 사용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe에서는 대신 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)를 사용하는 것이 좋습니다.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ HTML5 요소를 사용하려면 비디오 프로필을 정의합니다. 여기�
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-이 대화 상자에서 [!UICONTROL 재생], [!UICONTROL Flash] 및 [!UICONTROL 고급]에 대한 비디오 구성 요소와 매개 변수의 디자인을 구성할 수도 있습니다.
+이 대화 상자에서 [!UICONTROL 재생], [!UICONTROL Flash] 및 [!UICONTROL 고급]에 대한 비디오 구성 요소 및 매개 변수의 디자인을 구성할 수도 있습니다.
 
 ## FFmpeg 설치 및 AEM 구성 {#install-ffmpeg}
 
@@ -84,4 +84,4 @@ Video 구성 요소는 비디오 트랜스코딩을 위한 타사 오픈 소스 
 
 >[!NOTE]
 >
->AEM 인스턴스를 업그레이드할 때 기본 기본 워크플로우 모델에 대한 변경 사항은 유지되지 않습니다. Adobe은 수정된 워크플로우 모델을 편집하기 전에 복사하는 것을 권장합니다. 예를 들어 [!UICONTROL DAM 자산 업데이트] 모델에서 FFmpeg 코드 변환 단계를 편집하기 전에 기본 제공 [!UICONTROL DAM 자산 업데이트] 모델을 복사하여 업그레이드 전에 있었던 비디오 프로필 이름을 선택합니다. 그런 다음 `/apps` 노드를 오버레이하여 AEM에서 기본 제공 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 할 수 있습니다.
+>AEM 인스턴스를 업그레이드할 때 기본 기본 워크플로우 모델에 대한 변경 사항이 유지되지 않습니다. Adobe에서는 수정된 워크플로우 모델을 편집하기 전에 복사하는 것을 권장합니다. 예를 들어 [!UICONTROL DAM 자산 업데이트] 모델에서 FFmpeg 코드 변환 단계를 편집하기 전에 기본 제공 [!UICONTROL DAM 자산 업데이트] 모델을 복사하여 업그레이드 전에 있었던 비디오 프로필 이름을 선택합니다. 그런 다음 `/apps` 노드를 오버레이하여 AEM에서 기본 제공 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 할 수 있습니다.

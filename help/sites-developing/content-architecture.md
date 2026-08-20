@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -46,22 +46,22 @@ David의 모델은 Jackrabbit wiki의 [https://wiki.apache.org/jackrabbit/Davids
 
 ### 새 노드 유형을 정의하지 마십시오 {#avoid-defining-new-node-types}
 
-노드 유형은 인프라 레이어에서 낮은 수준에서 작동하며 대부분의 요구 사항은 nt:unstructured, oak:Unstructured, sling:Folder 또는 cq:Page 노드 유형에 할당된 sling:resourceType 을 사용하여 충족할 수 있습니다. 노드 유형은 저장소의 스키마와 동일하며, 노드 유형을 변경하는 것은 비용이 많이 들 수 있습니다.
+노드 유형은 인프라 계층에서 낮은 수준에서 작동하며 nt:unstructured, oak:Unstructured, sling:Folder 또는 cq:Page 노드 유형에 할당된 sling:resourceType을(를) 사용하여 대부분의 요구 사항을 충족할 수 있습니다. 노드 유형은 저장소의 스키마와 동일하며, 노드 유형을 변경하는 것은 비용이 많이 들 수 있습니다.
 
 ### JCR의 명명 규칙 준수 {#adhere-to-naming-conventions-in-the-jcr}
 
-명명 규칙을 준수하면 코드 베이스에 일관성이 추가되어 결함 발생률이 낮아지고 시스템에서 작업하는 개발자의 속도가 빨라집니다. Adobe은 AEM 개발 시 다음 규칙을 사용합니다.
+명명 규칙을 준수하면 코드 베이스에 일관성이 추가되어 결함 발생률이 낮아지고 시스템에서 작업하는 개발자의 속도가 빨라집니다. Adobe은 AEM을 개발할 때 다음 규칙을 사용합니다.
 
 * 노드 이름
 
-   * 모든 소문자
-   * 하이픈을 사용한 단어 분리
+  * 모든 소문자
+  * 하이픈을 사용한 단어 분리
 
 * 속성 이름
 
-   * 카멜 대/소문자, 소문자로 시작
+  * 카멜 대/소문자, 소문자로 시작
 
 * 구성 요소(JSP/HTML)
 
-   * 모든 소문자
-   * 하이픈을 사용한 단어 분리
+  * 모든 소문자
+  * 하이픈을 사용한 단어 분리

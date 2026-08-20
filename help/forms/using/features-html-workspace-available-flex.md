@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역의 기능을 Flex 작업 영역에서 사용할 수 없음
+title: Flex Workspace에서 사용할 수 없는 AEM Forms Workspace 기능
 description: AEM Forms workspace는 Flex 기반 Workspace을 넘어 혁신적입니다. 기능 및 기능의 차이점에 대해 알아보십시오.
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 5%
 
 ---
 
-# AEM Forms 작업 영역의 기능을 Flex 작업 영역에서 사용할 수 없음 {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
+# Flex Workspace에서 사용할 수 없는 AEM Forms Workspace 기능 {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 AEM Forms workspace는 Flex 기반 workspace를 넘어 비즈니스 통합과 사용자 생산성을 개선하는 데 도움이 되는 기능과 기능을 제공하기 위해 혁신합니다.
 
@@ -40,4 +40,4 @@ AEM Forms workspace는 Flex 기반 workspace를 넘어 비즈니스 통합과 �
 
 ## 최종 사용자의 장치를 기반으로 한 사용자 정의 작업 렌더링 지원 {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms 작업 영역은 XDP 양식의 HTML 렌디션을 지원합니다. 이 지원을 장치 또는 사용자 에이전트를 기반으로 다른 XDP 표현물로 라우팅하는 렌더링 프로세스에 사용할 경우, 사용자는 XDP 양식을 모바일 장치에서는 HTML으로, 데스크톱에서는 PDF으로 볼 수 있습니다. 따라서 다양한 디바이스에서 다양한 환경에서 작업하는 사용자에게 프로세스 관리를 원활하게 제공할 수 있습니다.
+AEM Forms 작업 영역은 XDP 양식의 HTML 렌디션을 지원합니다. 이 지원을 장치 또는 사용자 에이전트를 기반으로 다른 XDP 표현물로 라우팅하는 렌더링 프로세스에 사용할 경우, 사용자는 모바일 장치에서는 XDP 양식을 HTML으로 보고 데스크톱에서는 PDF으로 볼 수 있습니다. 따라서 다양한 디바이스에서 다양한 환경에서 작업하는 사용자에게 프로세스 관리를 원활하게 제공할 수 있습니다.

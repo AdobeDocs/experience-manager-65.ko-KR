@@ -1,5 +1,5 @@
 ---
-title: 랜딩 페이지용 디자인 Importer 확장 및 구성
+title: 랜딩 페이지를 위한 디자인 가져오기 확장 및 구성
 description: 랜딩 페이지용 디자인 가져오기 도구를 구성하는 방법을 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
+source-wordcount: '3524'
+ht-degree: 1%
 
 ---
 
-# 랜딩 페이지용 디자인 Importer 확장 및 구성{#extending-and-configuring-the-design-importer-for-landing-pages}
+# 랜딩 페이지를 위한 디자인 가져오기 확장 및 구성{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 이 섹션에서는 랜딩 페이지의 디자인 임포터를 구성하고 원하는 경우 확장하는 방법을 설명합니다. 가져오기 후 랜딩 페이지 작업은 [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)에서 다룹니다.
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 >
 >랜딩 페이지 [을(를) 가져오는 데 사용되는 디자인 가져오기는 AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)에서 더 이상 사용되지 않습니다.
 
-## 가져오기 HTML 준비 {#preparing-the-html-for-import}
+## 가져오기를 위한 HTML 준비 {#preparing-the-html-for-import}
 
 Importer 페이지를 만든 후 전체 HTML 랜딩 페이지를 가져올 수 있습니다. HTML 랜딩 페이지를 가져오려면 먼저 해당 콘텐츠를 디자인 패키지에 압축해야 합니다. 디자인 패키지에는 참조된 에셋(이미지, css, 아이콘, 스크립트 등)과 함께 HTML 랜딩 페이지가 포함되어 있습니다.
 
-다음 치트 시트는 가져올 HTML을 준비하는 방법에 대한 샘플을 제공합니다.
+다음 치트 시트는 HTML 가져오기를 준비하는 방법에 대한 샘플을 제공합니다.
 
 랜딩 페이지 치트 시트
 
@@ -72,13 +72,13 @@ zip의 샘플 레이아웃은 다음과 같습니다.
 >
 >최소한 디자인 패키지 **must**&#x200B;에는 루트 수준에서 **index.html** 파일이 포함되어 있습니다. 가져올 랜딩 페이지에 모바일 버전도 있는 경우, zip에는 루트 수준에서 **mobile.index.html**&#x200B;과 **index.html**&#x200B;이(가) 포함되어야 합니다.
 
-### 랜딩 페이지 HTML 준비 {#preparing-the-landing-page-html}
+### 랜딩 페이지 준비 HTML {#preparing-the-landing-page-html}
 
-HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 합니다.
+HTML을 가져오려면 랜딩 페이지 HTML에 캔버스 div를 추가해야 합니다.
 
-캔버스 div는 `id="cqcanvas"`이(가) 있는 html **div**&#x200B;이며, HTML `<body>` 태그 내에 삽입해야 하며 변환을 위한 콘텐츠를 둘러싸야 합니다.
+캔버스 div는 HTML `<body>` 태그 내에 삽입해야 하며 변환을 위해 콘텐츠를 둘러싸야 하는 `id="cqcanvas"`이(가) 있는 html **div**&#x200B;입니다.
 
-캔버스 div 추가 후 랜딩 페이지 HTML의 샘플 조각은 다음과 같습니다.
+캔버스 div 추가 후 랜딩 페이지 HTML의 샘플 스니펫은 다음과 같습니다.
 
 ```xml
 <!doctype html>
@@ -100,7 +100,7 @@ HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 �
 
 랜딩 페이지를 가져올 때 페이지를 있는 그대로 가져올 수 있습니다. 즉, 랜딩 페이지를 가져온 후에는 AEM에서 가져온 항목을 편집할 수 없습니다(페이지에 AEM 구성 요소를 추가할 수 있음).
 
-랜딩 페이지를 가져오기 전에 랜딩 페이지의 일부 부분을 편집 가능한 AEM 구성 요소로 변환할 수 있습니다. 이를 통해 랜딩 페이지 디자인을 가져온 후에도 랜딩 페이지의 일부를 빠르게 편집할 수 있습니다.
+랜딩 페이지를 가져오기 전에 랜딩 페이지의 일부 부분을 AEM 구성 요소에서 편집할 수 있도록 변환해야 할 수 있습니다. 이를 통해 랜딩 페이지 디자인을 가져온 후에도 랜딩 페이지의 일부를 빠르게 편집할 수 있습니다.
 
 가져온 HTML 파일의 적절한 구성 요소에 `data-cq-component`을(를) 추가하면 됩니다.
 
@@ -114,7 +114,7 @@ HTML을 가져오려면 캔버스 div를 랜딩 페이지 HTML에 추가해야 �
 
 가져오기 전에 다음 제한 사항에 유의하십시오.
 
-### &lt;body> 태그에 적용된 클래스 또는 ID와 같은 모든 속성은 유지되지 않습니다 {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### &lt;body> 태그에 적용된 클래스 또는 ID와 같은 속성은 유지되지 않습니다 {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 ID 또는 클래스와 같은 특성이 본문 태그에 적용되면(예: `<body id="container">`) 가져오기 후에는 유지되지 않습니다. 따라서 가져올 디자인에는 `<body>` 태그에 적용된 특성에 대한 종속성이 없어야 합니다.
 
@@ -132,13 +132,13 @@ Internet Explorer 및 Firefox 버전 3.6 이하에서는 드래그/드롭 zip �
 
 디자인 패키지를 가져오기 전에 페이지(빈 랜딩 페이지 템플릿을 사용)에 대해 설정된 모든 페이지 속성(예: 사용자 지정 도메인, HTTPS 적용 등)은 디자인을 가져온 후에 손실됩니다. 따라서 디자인 패키지를 가져온 후 페이지 속성을 설정하는 것이 좋습니다.
 
-### HTML 전용 마크업 가정 {#html-only-markup-assumed}
+### HTML 마크업만 가정 {#html-only-markup-assumed}
 
 가져올 때 보안상의 이유로 잘못된 마크업을 가져와서 게시하지 않도록 마크업이 정리됩니다. 이는 HTML 전용 마크업과 인라인 SVG 또는 웹 구성 요소와 같은 다른 모든 형식의 요소가 필터링된다고 가정합니다.
 
 ### 텍스트 {#text}
 
-디자인 패키지 내의 HTML에 텍스트 구성 요소(`foundation/components/text`)를 삽입하는 HTML 마크업:
+디자인 패키지 내에서 HTML에 텍스트 구성 요소(`foundation/components/text`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -178,7 +178,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 ### 제목 {#title}
 
-디자인 패키지 내의 HTML에 제목 구성 요소(`wcm/landingpage/components/title`)를 삽입하는 HTML 마크업:
+디자인 패키지 내에서 HTML에 제목 구성 요소(`wcm/landingpage/components/title`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -200,7 +200,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 ### 이미지 {#image}
 
-디자인 패키지 내의 HTML에 이미지 구성 요소(foundation/components/image)를 삽입하는 HTML 마크업:
+디자인 패키지 내에서 HTML에 이미지 구성 요소(foundation/components/image)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="image">
@@ -235,9 +235,9 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 그렇지 않으면 이미지 구성 요소 div의 일부가 아닌 img 태그에 대해 절대 URL 이미지가 지원됩니다.
 
-### 클릭 유도 문안 구성 요소 {#call-to-action-components}
+### Call-to-action 구성 요소 {#call-to-action-components}
 
-가져오기할 랜딩 페이지의 일부를 &quot;편집 가능한 콜 투 액션 구성 요소&quot;로 표시할 수 있습니다. 가져온 콜 투 액션 구성 요소는 랜딩 페이지를 가져온 후 편집할 수 있습니다. AEM에는 다음 CTA 구성 요소가 포함되어 있습니다.
+가져오기할 랜딩 페이지의 일부를 &quot;편집 가능한 Call to action 구성 요소&quot;로 표시할 수 있습니다. 이러한 가져온 call-to-action 구성 요소는 랜딩 페이지를 가져온 후 편집할 수 있습니다. AEM에는 다음 CTA 구성 요소가 포함되어 있습니다.
 
 * 클릭스루 링크 - 클릭할 때 방문자를 대상 URL로 안내하는 텍스트 링크를 추가할 수 있습니다.
 * 그래픽 링크 - 클릭하면 방문자를 대상 URL로 안내하는 이미지를 추가할 수 있습니다.
@@ -276,7 +276,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 #### 그래픽 링크 {#graphical-link}
 
-이 CTA 구성 요소를 사용하여 랜딩 페이지에 링크가 있는 모든 그래픽 이미지를 추가할 수 있습니다. 이미지는 간단한 버튼일 수 있거나 배경으로서의 모든 그래픽 이미지일 수 있습니다. 이미지를 클릭하면 구성 요소 속성에 지정된 대상 URL로 이동합니다. &quot;콜 투 액션&quot; 그룹의 일부입니다.
+이 CTA 구성 요소를 사용하여 랜딩 페이지에 링크가 있는 모든 그래픽 이미지를 추가할 수 있습니다. 이미지는 간단한 버튼일 수 있거나 배경으로서의 모든 그래픽 이미지일 수 있습니다. 이미지를 클릭하면 구성 요소 속성에 지정된 대상 URL로 이동합니다. &quot;Call to action&quot; 그룹의 일부입니다.
 
 지원되는 속성
 
@@ -323,7 +323,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 **지원되는 기능**
 
 * 사전 정의된 리드 필드 - 이름, 성, 주소, dob, 성별, 정보, userId, emailId, 제출 버튼 은 사이드 킥에서 사용할 수 있습니다. 리드 양식에서 필요한 구성 요소를 드래그/드롭하기만 하면 됩니다.
-* 이러한 구성 요소를 통해 작성자는 독립형 리드 양식을 디자인할 수 있으며 이러한 필드는 리드 양식 필드에 해당합니다. 독립형 또는 가져온 zip 애플리케이션에서 사용자는 cq:form 또는 cta 리드 양식 필드를 사용하여 필드를 추가하고 요구 사항에 따라 이름을 지정하고 디자인할 수 있습니다.
+* 이러한 구성 요소를 통해 작성자는 독립형 리드 양식을 디자인할 수 있으며 이러한 필드는 리드 양식 필드에 해당합니다. 독립 실행형 또는 가져온 zip 애플리케이션에서 사용자는 cq:form 또는 cta 리드 양식 필드를 사용하여 필드를 추가하고 요구 사항에 따라 디자인할 수 있습니다.
 * CTA 리드 양식의 미리 정의된 특정 이름(예: 리드 양식의 이름에 대한 - firstName 등)을 사용하여 리드 양식 필드를 매핑합니다.
 * 리드 양식에 매핑되지 않은 필드는 cq:form 구성 요소(텍스트, 라디오, 확인란, 드롭다운, 숨김, 암호)에 매핑됩니다.
 * 사용자는 &quot;label&quot; 태그를 사용하여 제목을 제공하고 스타일 속성 &quot;class&quot;(CTA 리드 양식 구성 요소에만 사용 가능)를 사용하여 스타일을 제공할 수 있습니다.
@@ -335,7 +335,7 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 * 각 구성 요소의 편집 구성에서 - 필수 와 같은 제한을 제공할 수 있습니다.
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 &quot;firstName&quot;은 잠재 고객 양식 firstName에 매핑됩니다. 확인란 외에는 이 두 개의 확인란이 cq:form 드롭다운 구성 요소에 매핑됩니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기에서 &quot;firstName&quot;은 잠재 고객 양식 firstName에 매핑됩니다. 확인란 외에 이 두 개의 확인란은 cq:form 드롭다운 구성 요소에 매핑됩니다.
 
 ```xml
 <div id="cqcanvas">
@@ -368,11 +368,11 @@ RTE 편집기에서 편집할 수 있는 색상(분홍색)의 텍스트를 추�
 
 ### Parsys {#parsys}
 
-AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨테이너 구성 요소입니다. 가져온 HTML에 Parsys 구성 요소를 추가할 수 있습니다. 이를 통해 사용자는 편집 가능한 AEM 구성 요소를 가져온 후에도 랜딩 페이지에 추가/삭제할 수 있습니다.
+AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨테이너 구성 요소입니다. 가져온 HTML에서 Parsys 구성 요소를 추가할 수 있습니다. 이를 통해 사용자는 편집 가능한 AEM 구성 요소를 가져온 후에도 랜딩 페이지에 추가/삭제할 수 있습니다.
 
 단락 시스템은 사용자에게 사이드 킥을 사용하여 구성 요소를 추가할 수 있는 기능을 제공합니다.
 
-디자인 패키지 내의 HTML에 Parsys 구성 요소(`foundation/components/parsys`)를 삽입하는 HTML 마크업:
+디자인 패키지 내에서 HTML에 Parsys 구성 요소(`foundation/components/parsys`)를 삽입하는 HTML 마크업:
 
 ```xml
 <div data-cq-component="parsys">
@@ -381,9 +381,9 @@ AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨
 </div>
 ```
 
-위의 마크업을 HTML에 포함하면 다음 작업이 수행됩니다.
+위의 마크업을 HTML에 포함하면 다음 작업을 수행할 수 있습니다.
 
-* 디자인 패키지를 가져온 후 생성된 랜딩 페이지에 AEM Parsys 구성 요소(foundation/components/parsys)를 삽입합니다.
+* 디자인 패키지를 가져온 후 만든 랜딩 페이지에 AEM Parsys 구성 요소(foundation/components/parsys)를 삽입합니다.
 * 기본 구성 요소로 사이드 킥을 초기화합니다. 사이드 킥에서 Parsys 구성 요소로 구성 요소를 드래그하여 새 구성 요소를 랜딩 페이지에 추가할 수 있습니다.
 * 두 개의 제목 구성 요소도 Parsys의 일부입니다.
 
@@ -411,19 +411,19 @@ AEM Parsys 구성 요소는 다른 AEM 구성 요소를 포함할 수 있는 컨
 
 ## 추가 가져오기 옵션 {#additional-importing-options}
 
-가져온 구성 요소가 편집 가능한 AEM 구성 요소인지 여부를 지정하는 것 외에 디자인 패키지를 가져오기 전에 다음을 구성할 수도 있습니다.
+가져온 구성 요소가 편집 가능한 AEM 구성 요소인지 여부를 지정하는 것 외에도 디자인 패키지를 가져오기 전에 다음을 구성할 수 있습니다.
 
-* 가져온 페이지에 정의된 메타데이터를 추출하여 HTML 속성을 설정합니다.
+* 가져온 HTML에 정의된 메타데이터를 추출하여 페이지 속성을 설정합니다.
 * HTML에서 charset 인코딩을 지정합니다.
 * Importer 페이지 템플릿을 오버레이합니다.
 
-### HTML 가져온 페이지에 정의된 메타데이터를 추출하여 페이지 속성 설정 {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### 가져온 HTML에 정의된 메타데이터를 추출하여 페이지 속성 설정 {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-가져온 HTML의 헤드에 선언된 다음 메타데이터는 디자인 임포터에 의해 속성 &quot;jcr:description&quot;으로 추출 및 보존됩니다.
+가져온 HTML의 헤드에 선언된 다음 메타데이터는 디자인 임포터에서 속성 &quot;jcr:description&quot;(으)로 추출하고 보존합니다.
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-HTML 태그에 설정된 Lang 속성은 디자인 임포터에서 &quot;jcr:language&quot; 속성으로 추출 및 보존됩니다.
+HTML 태그에 설정된 Lang 특성은 디자인 Importer에 의해 속성 &quot;jcr:language&quot;(으)로 추출 및 보존됩니다.
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -447,7 +447,7 @@ AEM에서 템플릿을 만드는 단계는 [템플릿](/help/sites-developing/te
 
 ### 랜딩 페이지에서 구성 요소 참조 {#referring-a-component-from-landing-page}
 
-data-cq-component 속성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예를들어, 테이블 구성 요소(`resourceType = /libs/foundation/components/table`)를 참조합니다. HTML에 다음을 추가해야 합니다.
+data-cq-component 특성을 사용하여 HTML에서 참조할 구성 요소가 있어서 디자인 임포터가 여기에 포함된 구성 요소를 렌더링한다고 가정해 보십시오. 예를들어, 테이블 구성 요소(`resourceType = /libs/foundation/components/table`)를 참조합니다. HTML에 다음을 추가해야 합니다.
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -470,7 +470,7 @@ data-cq-component의 경로는 구성 요소의 resourceType이어야 합니다.
 가져오기 후 생성된 HTML에 &lt;div> 태그와 같은 추가 html 요소가 추가되기 때문입니다.
 
 * 위와 유사한 구조에 의존하는 스크립트도 AEM 구성 요소로 전환되도록 표시된 요소와 함께 사용하지 않는 것이 좋습니다.
-* &lt;div data-cq-component=&quot;&ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하는 것은 권장되지 않습니다.
+* &lt;div data-cq-component=&quot;&amp;ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하는 것은 권장되지 않습니다.
 * 디자인 레이아웃은 HTML5 Boilerplate의 모범 사례를 따라야 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## OSGI 모듈 구성 {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
   <tr>
    <td>랜딩 페이지 디자인 가져오기</td>
    <td>필터 추출</td>
-   <td>추출 시 파일을 필터링하는 데 사용할 정규 표현식 목록입니다. 지정된 패턴과 일치하는 <br />개의 Zip 항목이 추출에서 제외됨</td>
+   <td>추출 시 파일을 필터링하는 데 사용할 정규 표현식 목록입니다. <br /> 지정된 패턴과 일치하는 Zip 항목은 추출에서 제외됩니다.</td>
   </tr>
   <tr>
    <td>랜딩 페이지 빌더</td>
@@ -519,19 +519,19 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
   <tr>
    <td> </td>
    <td>패턴 바꾸기</td>
-   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 확인되는 {designPath}과(와) 같은 키워드를 지원합니다.</td>
+   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 정규 표현식 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 확인되는 {designPath}와 같은 키워드를 지원합니다.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->**랜딩 페이지 항목 전처리기의 현재 제한:**
+>**랜딩 페이지 항목 전처리기의 현재 제한 사항:**
 >검색 패턴을 변경해야 하는 경우 felix 속성 편집기를 열 때 regex 메타문자를 이스케이프하려면 백슬래시 문자를 수동으로 추가해야 합니다. 백슬래시 문자를 수동으로 추가하지 않으면 정규 표현식은 유효하지 않은 것으로 간주되며 이전 문자를 대체하지 않습니다.
 >
 >예를 들어 기본 구성이
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >검색 패턴에서 `CQ_DESIGN_PATH`을(를) `VIPURL`(으)로 바꾸어야 검색 패턴이 다음과 같습니다.
 >
@@ -554,7 +554,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 
 ### 가져오기 후 표시되는 경고 {#warnings-displayed-after-import}
 
-경고(예: HTML은 패키지 내에 존재하지 않는 이미지를 참조)가 있는 경우 디자인 임포터는 zip을 가져오지만 동시에 결과 창에 문제/경고 목록이 표시됩니다. 문제 링크를 클릭하면 디자인 패키지 내에 문제가 있음을 나타내는 경고 목록이 표시됩니다. 디자인 임포터에 의해 경고가 포착되고 표시되는 다양한 시나리오는 다음과 같습니다.
+경고가 있는 경우(예: HTML은 패키지 내에 존재하지 않는 이미지를 참조) 디자인 임포터는 zip을 가져오지만 동시에 결과 창에 문제/경고 목록이 표시됩니다. 문제 링크를 클릭하면 디자인 패키지 내에 문제가 있음을 나타내는 경고 목록이 표시됩니다. 디자인 임포터에 의해 경고가 포착되고 표시되는 다양한 시나리오는 다음과 같습니다.
 
 * HTML은 패키지 내에 존재하지 않는 이미지를 나타냅니다.
 * HTML은 패키지 내에 존재하지 않는 스크립트를 나타냅니다.
@@ -591,7 +591,7 @@ height="116" /></div>Some Text </p>
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-`box img`이(가) 디자인 Importer에서 사용되면 결과 랜딩 페이지의 형식이 유지되지 않은 것으로 보입니다. 이 문제를 해결하기 위해 AEM은 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성합니다. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
+`box img`이(가) 디자인 Importer에서 사용되면 결과 랜딩 페이지의 형식이 유지되지 않은 것으로 보입니다. 이를 해결하기 위해 AEM은 CSS에 div 태그를 추가하고 그에 따라 코드를 다시 작성합니다. 그렇지 않으면 일부 CSS 규칙이 올바르지 않습니다.
 
 ```xml
 .box img
