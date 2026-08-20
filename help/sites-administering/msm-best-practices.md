@@ -39,7 +39,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >[참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference)를 사용하여 하나의 페이지나 단락을 다시 사용할 수도 있습니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하고 동기화된 콘텐츠 및 시기를 세부적으로 제어할 수 있습니다.
->* 이제 기초 구성 요소에 대해 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 사용하는 것이 좋습니다.
+>* 이제 기초 구성 요소에 대해 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 사용하는 것이 좋습니다.
 >
 
 ## Live Copy 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}

@@ -385,4 +385,4 @@ AEM 인스턴스의 새로운 언어에 대한 사전을 정의한 후 작성자
 
 >[!NOTE]
 >
->Dispatcher을 사용하는 경우 렌더링된 구성 요소 문자열에 새 사전 문자열을 포함하려면 캐시된 페이지를 [무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)해야 합니다.
+>Dispatcher을 사용하는 경우 렌더링된 구성 요소 문자열에 새 사전 문자열을 포함하려면 캐시된 페이지를 [무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)해야 합니다.
