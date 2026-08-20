@@ -1,5 +1,5 @@
 ---
-title: 성능 테스트 우수 사례
+title: 성능 테스트 모범 사례
 description: 성능 테스트에 사용되는 전반적인 전략 및 방법론과 프로세스에 도움이 되는 몇 가지 도구에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1827'
+ht-degree: 2%
 
 ---
 
-# 성능 테스트 우수 사례{#best-practices-for-performance-testing}
+# 성능 테스트 모범 사례{#best-practices-for-performance-testing}
 
 ## 소개 {#introduction}
 
@@ -62,8 +62,8 @@ ht-degree: 0%
 * [Vercara](https://vercara.com/website-performance-management)과(와) 같은 웹 사이트 로드 테스트 도구를 사용할 수도 있습니다.
 * 모바일 또는 반응형 웹 사이트를 테스트할 때 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하거나 3G 또는 EDGE과 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 보다 널리 사용되는 도구 중 하나는 다음과 같습니다.
 
-   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)** - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS 버전이 포함됩니다.
-   * [**Charles**](https://www.charlesproxy.com/) - 다른 여러 사용 외에 네트워크 제한을 제공하는 웹 디버깅 프록시 응용 프로그램입니다. Windows, OS X 및 Linux®용 버전이 제공됩니다.
+  * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)** - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS 버전이 포함됩니다.
+  * [**Charles**](https://www.charlesproxy.com/) - 다른 여러 사용 외에 네트워크 제한을 제공하는 웹 디버깅 프록시 응용 프로그램입니다. Windows, OS X 및 Linux®용 버전이 제공됩니다.
 
 #### 최적화 도구 {#optimization-tools}
 

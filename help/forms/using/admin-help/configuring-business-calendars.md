@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1912'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 89%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM Forms는 비즈니스 캘린더를 사용하여 일자 및 시간을 계산할 때 실행 중인 서버의 일자 및 시간을 사용하며 시간대 차이에 따라 조정하지 않습니다. 예를 들어 작업 미리 알림이 런던에서 실행되는 서버에서 오전 10:00에 발생하도록 예약되어 있지만, 미리 알림을 받는 사용자가 뉴욕시에 있는 경우 사용자는 현지 시간을 기준으로 오전 5:00에 미리 알림을 받게 됩니다.
+>AEM Forms는 비즈니스 캘린더를 사용하여 일자 및 시간을 계산할 때 실행 중인 서버의 일자 및 시간을 사용하며 시간대 차이에 따라 조정하지 않습니다. 예를 들어, 작업 미리 알림이 런던에서 실행 중인 서버에서 오전 10시에 발생하도록 예약되어 있지만 미리 알림을 받는 사용자가 뉴욕에 있는 경우, 사용자는 현지 시간으로 오전 5시에 미리 알림을 받게 됩니다.
 
 ## 기본 비즈니스 캘린더 사용 {#using-the-default-business-calendar}
 
@@ -46,9 +46,9 @@ AEM Forms는 *기본 제공 캘린더*&#x200B;라는 기본 비즈니스 캘린�
 
    사용자에게 비즈니스 캘린더 키를 할당하는 방법은 엔터프라이즈, 로컬 또는 하이브리드 도메인을 사용하는지에 따라 달라집니다. 도메인 설정에 대한 자세한 내용은 [도메인 추가](/help/forms/using/admin-help/adding-domains.md#adding-domains)를 참조하십시오.
 
-   로컬 또는 하이브리드 도메인을 사용하는 경우 사용자 정보는 사용자 관리 데이터베이스에만 저장됩니다. 해당 사용자에 대한 비즈니스 캘린더 키를 설정하려면 사용자 관리에서 사용자를 추가하거나 편집할 때 비즈니스 캘린더 키 필드에 문자열을 입력합니다. ([사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)을 참조하십시오. ) 그런 다음, 비즈니스 캘린더 키(문자열)를 Forms Workflow의 비즈니스 캘린더에 매핑합니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
+   로컬 또는 하이브리드 도메인을 사용하는 경우 사용자 정보는 사용자 관리 데이터베이스에만 저장됩니다. 해당 사용자에 대한 비즈니스 캘린더 키를 설정하려면 사용자 관리에서 사용자를 추가하거나 편집할 때 비즈니스 캘린더 키 필드에 문자열을 입력합니다. ([사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)을 참조하십시오.) 그런 다음 비즈니스 캘린더 키(문자열)를 Forms Workflow의 비즈니스 캘린더에 매핑합니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
 
-   엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 서드파티 스토리지 시스템에 저장되고 사용자 관리에서 해당 정보를 사용자 관리 데이터베이스와 동기화합니다. 이를 통해 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 &#39;국가&#39; 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 경우 디렉터리의 사용자 설정을 지정할 때 비즈니스 캘린더 키 필드에 &#39;국가&#39; 필드 이름을 지정합니다. ([디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)을 참조하십시오. ) 그런 다음, 비즈니스 캘린더 키(LDAP 디렉터리의 &#39;국가&#39; 필드에 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
+   엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 서드파티 스토리지 시스템에 저장되고 사용자 관리에서 해당 정보를 사용자 관리 데이터베이스와 동기화합니다. 이를 통해 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 &#39;국가&#39; 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 경우 디렉터리의 사용자 설정을 지정할 때 비즈니스 캘린더 키 필드에 &#39;국가&#39; 필드 이름을 지정합니다. [디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)을 참조하십시오. 그런 다음 비즈니스 캘린더 키(LDAP 디렉토리의 &quot;국가&quot; 필드에 대해 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
 
 1. Forms Workflow에서 동일한 비영업일을 공유하는 각 사용자 집합에 대해 캘린더를 정의합니다. ([비즈니스 캘린더 만들기 또는 업데이트](configuring-business-calendars.md#create-or-update-a-business-calendar)를 참조하십시오.)
 1. Forms Workflow에서 각 캘린더에 대한 비즈니스 캘린더 키 또는 그룹 멤버십을 매핑합니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
@@ -78,7 +78,7 @@ AEM Forms는 *기본 제공 캘린더*&#x200B;라는 기본 비즈니스 캘린�
 
    이 옵션을 선택하면 지정된 시간 범위 이전에 발생하는 이벤트는 해당 시간 범위의 시작으로 이동하고, 시간 범위 이후에 발생하는 이벤트는 다음 영업일의 시작 시간으로 이동합니다.
 
-   예를 들어 화요일 오전 2:00에 사용자에게 작업이 할당되고 해당 작업의 미리 알림이 영업일 기준 2일로 설정되어 있는 상황을 생각해 보십시오. 영업 시간이 없으면 미리 알림은 목요일 오전 2:00에 발생합니다. 영업 시간을 오전 8:00~오후 5:00로 설정하면 목요일 오전 8:00에 미리 알림이 푸시됩니다. 영업 시간이 없는 상태에서 화요일 오후 6:00에 미리 알림 이벤트가 생성되면 목요일 영업 시간 이후에 미리 알림이 발생합니다. 영업 시간을 오전 8:00~오후 5:00로 설정하면 금요일 오전 8:00에 미리 알림이 발생합니다.
+   예를 들어, 사용자가 화요일 오전 2시에 작업이 할당되고 해당 작업에 대한 미리 알림이 업무일 기준 2일로 설정된 상황을 생각해 보겠습니다. 영업 시간이 없을 경우, 미리 알림은 목요일 오전 2시에 발송됩니다. 업무 시간을 오전 8시에서 오후 5시로 설정하면 목요일 오전 8시로 미리 알림이 푸시됩니다. 업무 시간이 없을 경우, 미리 알림 이벤트가 화요일 오후 6시에 만들어지면 목요일의 업무 시간 이후에 미리 알림이 발생합니다. 업무 시간이 오전 8시에서 오후 5시로 설정되어 있는 경우 금요일 오전 8시에 미리 알림이 전송됩니다.
 
 5. 왼쪽 캘린더에서 공휴일과 같은 다른 비영업일을 두 번 클릭합니다. 과거 일자는 선택할 수 없습니다. 선택한 비영업일이 오른쪽 목록에 표시되며 일자는 한 줄에 두 번 표시됩니다. 왼쪽 일자를 선택하여 비영업일의 이름이나 설명을 입력합니다.
 

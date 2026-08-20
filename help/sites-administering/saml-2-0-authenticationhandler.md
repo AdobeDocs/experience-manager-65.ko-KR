@@ -11,8 +11,8 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 2%
+source-wordcount: '864'
+ht-degree: 1%
 
 ---
 
@@ -115,7 +115,7 @@ SAML 어설션에 서명하고 선택적으로 암호화할 수 있습니다. �
 >
 >아래 단계는 핸들러가 메시지를 서명하거나 해독할 수 있어야 하는 경우에만 필요합니다.
 
-1. AEM용 인증서/키 쌍을 만듭니다. openssl을 통해 생성하는 명령은 아래 예와 유사해야 합니다.
+1. AEM에 대한 인증서/키 쌍을 만듭니다. openssl을 통해 생성하는 명령은 아래 예와 유사해야 합니다.
 
    `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
 

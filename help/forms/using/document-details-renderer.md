@@ -10,8 +10,8 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
+source-wordcount: '675'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms 작업 영역에서는 여러 양식 유형이 원활하게 지원됩니다. 여기에는 다음이 포함됩니다.
 
-* PDF forms(XDP / Acroform / Flat PDF)
+* PDF forms (XDP / Acroform / Flat PDF)
 * 새 HTML 양식
 * 이미지
 * 서드파티 애플리케이션(예: 서신 관리)
@@ -32,7 +32,7 @@ AEM Forms 작업 영역에서는 여러 양식 유형이 원활하게 지원됩�
 
 PDF forms은 `PdfTaskForm View`에 의해 렌더링됩니다.
 
-XDP 양식이 PDF으로 렌더링되면 FormsAugmenter 서비스에서 `FormBridge` JavaScript™을 추가합니다. 이 JavaScript™(PDF 양식 내)는 양식 제출, 양식 저장, 양식 오프라인 수행과 같은 작업을 수행하는 데 도움이 됩니다.
+XDP 양식이 PDF으로 렌더링되면 FormsAugmenter 서비스에 의해 `FormBridge` JavaScript™이 추가됩니다. 이 ™(PDF 양식 내)는 양식 제출, 양식 저장, 양식 오프라인 수행과 같은 작업을 수행하는 데 도움이 됩니다.
 
 AEM Forms 작업 영역에서 PDFTaskForm 보기는 `/lc/libs/ws/libs/ws/pdf.html`에 있는 중간 HTML을 통해 `FormBridge`JavaScript과 통신합니다. 흐름은 다음과 같습니다.
 
@@ -40,13 +40,13 @@ AEM Forms 작업 영역에서 PDFTaskForm 보기는 `/lc/libs/ws/libs/ws/pdf.htm
 
 `window.postMessage`/`window.attachEvent('message')`을(를) 사용하여 통신
 
-이 방법은 상위 프레임과 iframe 간의 표준 통신 방법입니다. 이전에 연 PDF forms의 기존 이벤트 리스너는 새 이벤트를 추가하기 전에 제거됩니다. 이 경우 작업 세부 정보 보기의 양식 탭과 내역 탭 간 전환도 고려됩니다.
+이 방법은 상위 프레임과 iframe 간의 표준 통신 방법입니다. 이전에 연 PDF forms의 기존 이벤트 리스너는 새 이벤트 리스너를 추가하기 전에 제거됩니다. 이 경우 작업 세부 정보 보기의 양식 탭과 내역 탭 간 전환도 고려됩니다.
 
-**pdf.html - `FormBridge`렌더링된 PDF 내의 JavaScript**
+**pdf.html - `FormBridge`렌더링된 PDF 내부의 JavaScript**
 
 `pdfObject.postMessage`/`pdfObject.messageHandler`을(를) 사용하여 통신
 
-이 메서드는 HTML에서 PDFJavaScript와 통신하는 표준 방법입니다. PdfTaskForm 뷰도 플랫 PDF을 처리하고 일반 렌더링합니다.
+이 메서드는 HTML의 PDFJavaScript와 통신하는 표준 방법입니다. PdfTaskForm 보기도 플랫 PDF을 처리하고 일반 렌더링합니다.
 
 >[!NOTE]
 >
@@ -54,15 +54,15 @@ AEM Forms 작업 영역에서 PDFTaskForm 보기는 `/lc/libs/ws/libs/ws/pdf.htm
 
 ## 새 HTML Forms {#new-html-forms}
 
-새 HTML 양식은 NewHTMLTaskForm View에 의해 렌더링됩니다.
+새 HTML 양식은 NewHTMLTaskForm 보기에서 렌더링됩니다.
 
-XDP Form이 CRX에 배포된 모바일 양식 패키지를 사용하여 HTML으로 렌더링되면 양식에 `FormBridge`JavaScript을 추가하여 양식 데이터를 저장하고 제출하는 다양한 방법을 표시합니다.
+XDP Form이 CRX에 배포된 모바일 양식 패키지를 사용하여 HTML으로 렌더링되면 양식에 `FormBridge`JavaScript이 추가되어 양식 데이터를 저장하고 제출하는 다양한 방법이 표시됩니다.
 
-이 JavaScript은 위의 PDF forms에서 언급한 것과는 다르지만 유사한 목적을 제공합니다.
+이 JavaScript은 위의 PDF forms에서 참조된 것과 다르지만 유사한 목적을 제공합니다.
 
 >[!NOTE]
 >
->Adobe은 NewHTMLTaskForm 보기의 내용을 편집하지 않는 것이 좋습니다.
+>Adobe에서는 NewHTMLTaskForm 보기의 내용을 편집하지 않는 것이 좋습니다.
 
 ## Flex Forms 및 안내서 {#flex-forms-and-guides}
 
@@ -72,7 +72,7 @@ AEM Forms 작업 영역에서 이러한 보기는 `/lc/libs/ws/libs/ws/WSNextAda
 
 `swfObject.postMessage`/`window.flexMessageHandler`을(를) 사용하여 통신합니다.
 
-이 프로토콜은 `WsNextAdapter.swf`에 의해 정의됩니다. 이전에 연 SWF 양식의 기존 `flexMessageHandlers`on 창 개체는 새 양식을 추가하기 전에 제거됩니다. 또한 작업 세부 사항 보기의 양식 탭과 내역 탭 간 전환을 고려합니다. `WsNextAdapter.swf`은(는) 저장 또는 제출과 같은 다양한 양식 작업을 수행하는 데 사용됩니다.
+이 프로토콜은 `WsNextAdapter.swf`에 의해 정의됩니다. 이전에 연 SWF 양식의 기존 `flexMessageHandlers`on 창 개체는 새 개체를 추가하기 전에 제거됩니다. 또한 작업 세부 사항 보기의 양식 탭과 내역 탭 간 전환을 고려합니다. `WsNextAdapter.swf`은(는) 저장 또는 제출과 같은 다양한 양식 작업을 수행하는 데 사용됩니다.
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ AEM Forms 작업 영역에서 이러한 보기는 `/lc/libs/ws/libs/ws/WSNextAda
 
 AEM Forms 작업 영역은 `window.global.postMessage([Message],[Payload])`에서 수신 대기합니다.
 
-[메시지]은(는) `SubmitMessage`(으)로 지정된 문자열일 수 있습니다.| `CancelMessage`| `ErrorMessage`| `runtimeMap`의 `actionEnabledMessage`입니다. 서드파티 애플리케이션은 필요에 따라 이 인터페이스를 사용하여 AEM Forms 작업 영역에 알려야 합니다. AEM Forms 작업 영역은 작업이 제출될 때 작업 창을 정리할 수 있음을 알아야 하므로 이 인터페이스를 사용해야 합니다.
+[메시지]은(는) `runtimeMap`에서 `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`(으)로 지정된 문자열일 수 있습니다. 서드파티 애플리케이션은 필요에 따라 이 인터페이스를 사용하여 AEM Forms 작업 영역에 알려야 합니다. AEM Forms 작업 영역은 작업이 제출될 때 작업 창을 정리할 수 있음을 알아야 하므로 이 인터페이스를 사용해야 합니다.
 
 **AEM Forms 작업 영역과 타사 응용 프로그램 통신**
 

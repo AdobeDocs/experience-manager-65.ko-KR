@@ -1,5 +1,5 @@
 ---
-title: We.Retail에서 경험 조각 시험 사용
+title: We.Retail에서 경험 조각 체험
 description: We.Retail을 사용하여 Adobe Experience Manager에서 경험 조각 을 테스트하는 방법을 알아봅니다.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ feature: Experience Fragments,Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 25%
+source-wordcount: '244'
+ht-degree: 35%
 
 ---
 
-# We.Retail에서 경험 조각 시험 사용{#trying-out-experience-fragments-in-we-retail}
+# We.Retail에서 경험 조각 체험{#trying-out-experience-fragments-in-we-retail}
 
-We.Retail에서 경험 조각 시험 사용
+We.Retail에서 경험 조각 체험
 
 [경험 조각](/help/sites-authoring/experience-fragments.md)은(는) 페이지 내에서 참조할 수 있는 콘텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
@@ -37,7 +37,7 @@ We.Retail에서 경험 조각 시험 사용
 
 ## We.Retail에서 경험 조각을 만드는 위치 {#where-to-create-experience-fragments-in-we-retail}
 
-전역 탐색에서 **경험 조각**&#x200B;을(를) 선택합니다. 여기서 경험 조각 및 관련 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)을(를) 구성, [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)할 수 있습니다.
+전역 탐색에서 **경험 조각**&#x200B;을 선택합니다. 여기서 경험 조각 및 관련 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)을(를) 구성, [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)할 수 있습니다.
 
 ## We.Retail에서 경험 조각을 사용하는 위치 {#where-to-use-experience-fragments-in-we-retail}
 

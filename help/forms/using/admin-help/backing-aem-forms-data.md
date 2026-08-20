@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -55,10 +55,10 @@ AEM Forms를 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용)
 
   작성자 인스턴스 및 게시 인스턴스를 백업할 때 다음 사항을 고려하십시오.
 
-   * 작성자 인스턴스 및 게시 인스턴스의 백업이 동시에 시작되도록 동기화해야 합니다. 백업이 수행되는 동안에도 작성자 인스턴스 및 게시 인스턴스를 계속 사용할 수 있지만, 변경 사항이 캡처되지 않는 것을 방지하기 위해 백업 중에는 자산을 게시하지 않는 것이 좋습니다. 새 자산을 게시하기 전에 작성자 인스턴스 및 게시 인스턴스의 백업이 끝날 때까지 기다리십시오.
-   * 작성자 노드의 전체 백업에는 Forms Manager와 AEM Forms Workspace 데이터 백업이 포함됩니다.
-   * 워크벤치 개발자는 로컬에서 프로세스 작업을 계속할 수 있습니다. 백업 단계에서는 새 프로세스를 배포해서는 안 됩니다.
-   * 각 백업 세션 길이(롤링 백업 모드의 경우)는 AEM Forms의 모든 데이터(DB, GDS, AEM 저장소 및 기타 추가 사용자 정의 데이터)를 백업하는 데 걸리는 총 시간을 기준으로 결정해야 합니다.
+  * 작성자 인스턴스 및 게시 인스턴스의 백업이 동시에 시작되도록 동기화해야 합니다. 백업이 수행되는 동안에도 작성자 인스턴스 및 게시 인스턴스를 계속 사용할 수 있지만, 변경 사항이 캡처되지 않는 것을 방지하기 위해 백업 중에는 자산을 게시하지 않는 것이 좋습니다. 새 자산을 게시하기 전에 작성자 인스턴스 및 게시 인스턴스의 백업이 끝날 때까지 기다리십시오.
+  * 작성자 노드의 전체 백업에는 Forms Manager와 AEM Forms Workspace 데이터 백업이 포함됩니다.
+  * 워크벤치 개발자는 로컬에서 프로세스 작업을 계속할 수 있습니다. 백업 단계에서는 새 프로세스를 배포해서는 안 됩니다.
+  * 각 백업 세션 길이(롤링 백업 모드의 경우)는 AEM Forms의 모든 데이터(DB, GDS, AEM 저장소 및 기타 추가 사용자 정의 데이터)를 백업하는 데 걸리는 총 시간을 기준으로 결정해야 합니다.
 
 모든 트랜잭션 로그를 포함하여 AEM Forms 데이터베이스를 백업합니다. [AEM Forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)를 참조하십시오.
 
@@ -66,7 +66,7 @@ AEM Forms를 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용)
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [AEM Forms용 Oracle 백업 및 복구](https://www.adobe.com/go/kb403624)
 * [AEM Forms용 MySQL 백업 및 복구](https://www.adobe.com/go/kb403625)
-* [AEM Forms용 Microsoft® SQL Server 백업 및 복구](https://www.adobe.com/go/kb403623)
+* [® AEM Forms용 SQL Server 백업 및 복구](https://www.adobe.com/go/kb403623)
 * [AEM Forms용 DB2® 백업 및 복구](https://www.adobe.com/go/kb403626)
 
 이러한 문서에서는 데이터 백업 및 복구를 위한 기본 데이터베이스 기능에 대한 지침을 제공합니다. 해당 문서는 특정 공급업체의 데이터베이스 백업 및 복구 기능에 대한 모든 정보를 포괄하는 기술 안내서가 아닙니다. 여기에는 AEM Forms 애플리케이션 데이터에 대한 안정적인 데이터베이스 백업 전략을 만드는 데 필요한 명령이 간략하게 설명되어 있습니다.

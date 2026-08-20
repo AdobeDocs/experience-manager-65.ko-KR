@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '790'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 98%
 
 ---
 
@@ -193,19 +193,19 @@ EMC Documentum 콘텐츠 서버에서 필요한 백업 작업을 수행하려면
    * 명령 프롬프트를 열고 `[NetWorker_root]\Legato\nsr\bin`으로 변경합니다.
    * 다음 명령을 실행합니다. `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. 데이터베이스를 백업하는 데 사용되는 실행 가능한 배치 파일(. bat)을 만듭니다. (NetWorker 설명서를 참조하십시오.) 설치에 맞게 배치 파일에서 세부 정보를 설정합니다.
+1. 데이터베이스를 백업하는 데 사용되는 실행 가능한 배치 파일(. bat)을 만듭니다. NetWorker 설명서를 참조하십시오. 설치에 따라 배치 파일에서 세부 사항을 설정합니다.
 
    * 전체 데이터베이스 백업(nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * 증분 데이터베이스 백업(nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l 1 -R`*&lt;database_name>*
 
    * 데이터베이스 로그 백업(nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`&#x200B;`<NetWorker_Server_Name>` `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l incr -R`*&lt;database_name>*
 
      위치:
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
-workflow-type: ht
-source-wordcount: '1774'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ GDS 디렉터리에 대한 자세한 내용은 [AEM Forms(단일 서버) 설치 
 
 **FIPS 활성화:** *ndash; FIPS 모드를 활성화하려면 이 옵션을 선택합니다. 연방 정보 처리 표준(FIPS) 140-2는 미국 정부에서 정의한 암호화 표준입니다. FIPS 모드에서 실행할 경우 AEM Forms는 RSA BSAFE Crypto-C 2.1 암호화 모듈을 사용하여 데이터 보호를 FIPS 140-2 승인 알고리즘으로 제한합니다.
 
-FIPS 모드는 Adobe Acrobat® 7.0 이전 버전에서 사용되는 암호화 알고리즘을 지원하지 않습니다. FIPS 모드가 활성화되어 있고 암호화 서비스를 통해 호환성 수준이 Acrobat 5로 설정된 암호를 사용하여 PDF를 암호화하는 경우 암호화 시도가 오류와 함께 실패합니다.
+FIPS 모드는 7.0 이전 버전의 ®에서 사용되는 암호화 알고리즘을 지원하지 않습니다. FIPS 모드가 활성화되어 있고, 암호화 서비스를 사용하여 호환성 수준이 Acrobat 5로 설정된 암호를 사용하여 PDF을 암호화할 경우, 암호화 시도가 실패하고 오류가 발생합니다.
 
 일반적으로 FIPS가 활성화된 경우 어셈블러 서비스는 어떤 문서에도 암호 암호화를 적용하지 않습니다. 이를 시도하면 “FIPS 모드에서는 암호 암호화가 허용되지 않습니다.”라는 FIPSModeException이 발생합니다. 또한 기본 문서가 암호로 암호화된 경우 FIPS 모드에서는 DDX(Document Description XML) PDFsFromBookmarks 요소가 지원되지 않습니다.
 

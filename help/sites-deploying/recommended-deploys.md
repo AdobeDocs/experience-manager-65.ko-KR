@@ -1,6 +1,6 @@
 ---
 title: 권장 배포
-description: 이 문서에서는 AEM의 권장 토폴로지에 대해 설명합니다.
+description: 이 문서에서는 AEM에 대해 권장되는 토폴로지에 대해 설명합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 0%
+source-wordcount: '1805'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 MicroKernel은 AEM 6.2부터 지속성 관리자 역할을 합니다. 필요에 맞게 인스턴스를 선택하는 방법은 인스턴스의 목적과 고려 중인 배포 유형에 따라 다릅니다.
 
-아래 예제는 가장 일반적인 AEM 설정에서 권장되는 사용을 표시하기 위한 것입니다.
+아래 예제는 가장 일반적인 AEM 설정에서 권장되는 사용이 무엇인지 보여 줍니다.
 
 ## 배포 시나리오 {#deployment-scenarios}
 
@@ -97,13 +97,13 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ### 단일 데이터 센터에서 고가용성을 위한 MongoMK 장애 조치 기능이 있는 Oak 클러스터 {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-이 방법은 여러 Oak 인스턴스가 단일 데이터 센터 내의 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB의 복제본 세트는 하드웨어나 네트워크 장애 시 고가용성과 이중화를 제공하는 데 사용됩니다.
+이 접근 방식은 여러 Oak 인스턴스가 단일 데이터 센터 내의 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB의 복제본 세트는 하드웨어나 네트워크 장애 시 고가용성과 이중화를 제공하는 데 사용됩니다.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
 장점:
 
-* 새 AEM 작성자 인스턴스를 사용하여 수평 확장 가능
+* 새로운 AEM 작성자 인스턴스를 사용하여 수평 확장 기능
 * 데이터 계층의 고가용성, 이중화 및 자동 페일오버
 
 단점은 다음과 같습니다.
@@ -112,18 +112,18 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 ### 여러 데이터 센터에서 MongoMK 장애 조치를 사용하는 Oak 클러스터 {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
 
-이 방법은 여러 Oak 인스턴스가 여러 데이터 센터에 걸쳐 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB 복제는 여러 데이터 센터를 통해 동일한 고가용성 및 이중화를 제공하지만, 이제는 데이터 센터 가동 중단을 처리할 수 있는 기능도 제공합니다.
+이 접근 방식은 여러 Oak 인스턴스가 여러 데이터 센터에 걸쳐 MongoDB 복제본 세트에 액세스하는 것을 의미하며, 결과적으로 AEM 작성 환경에 대한 활성-활성 클러스터를 생성합니다. MongoDB 복제는 여러 데이터 센터를 통해 동일한 고가용성 및 이중화를 제공하지만, 이제는 데이터 센터 가동 중단을 처리할 수 있는 기능도 제공합니다.
 
 ![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
 
 장점:
 
-* 새 AEM 작성자 인스턴스를 사용하여 수평 확장 가능
+* 새로운 AEM 작성자 인스턴스를 사용하여 수평 확장 기능
 * 데이터 계층의 고가용성, 이중화 및 자동 페일오버(데이터 센터 중단 포함)
 
 >[!NOTE]
 >
->위의 다이어그램에서 AEM Server 3 및 AEM Server 4는 데이터 센터 2의 AEM 서버와 데이터 센터 1의 MongoDB 기본 노드 사이에서 [MongoDB가 있는 Adobe Experience Manager - 확인 목록](/help/sites-deploying/aem-with-mongodb.md#checklists)에 설명된 요구 사항보다 네트워크 지연이 높다고 가정하는 비활성 상태로 표시됩니다. 예를 들어 가용성 영역을 사용하여 최대 지연 시간이 요구 사항과 호환되는 경우 데이터 센터 2의 AEM 서버도 활성 상태가 되어 여러 데이터 센터에 걸쳐 활성 상태의 AEM 클러스터가 생성될 수 있습니다.
+>위의 다이어그램에서 AEM Server 3 및 AEM Server 4는 데이터 센터 2의 AEM 서버와 데이터 센터 1의 MongoDB 기본 노드 사이에서 [MongoDB가 있는 Adobe Experience Manager - 확인 목록](/help/sites-deploying/aem-with-mongodb.md#checklists)에 설명된 요구 사항보다 네트워크 지연이 있다고 가정하는 비활성 상태로 표시됩니다. 예를 들어 가용성 영역을 사용하여 최대 지연 시간이 요구 사항과 호환되는 경우 데이터 센터 2의 AEM 서버도 활성 상태가 되어 여러 데이터 센터에 걸쳐 활성 상태의 AEM 클러스터가 생성될 수 있습니다.
 
 >[!NOTE]
 >
@@ -135,13 +135,13 @@ AEM Communities의 경우 UGC(사용자 생성 컨텐츠)는 복제되지 않습
 
 이러한 의사 결정 행렬을 사용하여 요구 사항에 맞는 최적의 배포 유형을 설정할 수 있습니다.
 
-Adobe은 아래에 요약된 사용 사례를 제외하고 AEM Author 및 Publish 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 TarMK를 강력히 권장합니다.
+Adobe은 아래에 요약된 사용 사례를 제외하고 AEM 작성자 및 게시 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 TarMK를 강력히 권장합니다.
 
 ### 작성자 인스턴스에서 TarMK보다 AEM MongoMK를 선택하기 위한 예외 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
-TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스의 크기를 수평으로 확장하기 위해서입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 두 개 이상의 작성자 인스턴스를 실행해야 하는 이유는 일반적으로 모든 동시 작성 작업을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속적이지 않기 때문입니다.
+TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스의 크기를 수평으로 확장하기 위해서입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 두 개 이상의 작성자 인스턴스를 실행해야 하는 이유는 일반적으로 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속 가능하지 않기 때문입니다.
 
-새로운 사이트가 생기고 난 후 정확한 동시성 모델이 무엇인지 예상하는 것은 거의 불가능하다. Adobe 따라서 MongoMK 및 둘 이상의 작성자 활성 노드 사용 여부를 평가할 때는 다음 기준을 고려하는 것이 좋습니다.
+새로운 사이트가 생기고 난 후 정확한 동시성 모델이 무엇인지 예상하는 것은 거의 불가능하다. 따라서 Adobe에서는 MongoMK 및 둘 이상의 작성자 활성 노드 사용 여부를 평가할 때 다음 기준을 고려하는 것이 좋습니다.
 
 1. 하루에 연결된 명명된 사용자 수(천 명 이상).
 1. 동시 사용자 수: 100명 이상
@@ -164,22 +164,22 @@ MongoDB를 사용하는 최소 배포에는 일반적으로 다음 토폴로지�
 
 배포 후 처음 18개월 동안 상기 기준을 충족하지 못할 것으로 예상되는 경우 먼저 TarMK를 사용하여 AEM을 배포한 다음 나중에 상기 기준이 적용될 때 구성을 다시 평가하고 TarMK에 남아 있는지 또는 MongoMK로 마이그레이션할지를 최종적으로 결정하는 것이 좋습니다.
 
-### Publish 인스턴스에서 TarMK보다 AEM MongoMK를 선택하기 위한 예외 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### 게시 인스턴스에서 TarMK보다 AEM MongoMK를 선택하는 예외 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
 게시 인스턴스용으로 MongoMK를 배포하지 않는 것이 좋습니다. 배포의 게시 계층은 거의 항상 작성자 인스턴스의 콘텐츠를 복제하여 동기화 상태를 유지하는 TarMK를 실행하는 완전히 독립적인 게시 인스턴스의 팜으로 배포됩니다. 게시 인스턴스에 적절한 이 &quot;공유되지 않는&quot; 아키텍처를 사용하면 게시 계층의 배포가 선형 방식으로 수평으로 확장할 수 있습니다. 또한 팜 토폴로지를 사용하면 게시 계층을 변경하지 않아도 되도록 업데이트 또는 업그레이드를 순차적으로 게시 인스턴스에 적용할 수 있습니다.
 
 게시자가 둘 이상일 때마다 게시 계층에서 MongoMK 클러스터를 사용하는 AEM Communities에는 적용되지 않습니다. JSRP([커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) 참조)를 선택하면 MongoDB 또는 RDB와 같이 선택한 MK에 관계없이 게시측 클러스터와 마찬가지로 MongoMK 클러스터가 적절합니다.
 
-### MongoMK와 함께 AEM 배포 시 사전 요구 사항 및 Recommendations {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
+### MongoMK와 함께 AEM 배포 시 사전 요구 사항 및 권장 사항 {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
 AEM용 MongoMK 배포를 고려하는 경우 사전 요구 사항 및 권장 사항 세트를 사용할 수 있습니다.
 
 **MongoDB 배포에 대한 필수 필수 사전 요구 사항:**
 
-1. MongoDB 배포 아키텍처 및 크기 조정은 AEM에 익숙한 Adobe Consulting 또는 MongoDB 설계자의 도움을 받아 프로젝트 구현의 일부여야 합니다.
+1. MongoDB 배포 아키텍처 및 크기 조정은 Adobe Consulting 또는 AEM에 익숙한 MongoDB 설계자의 도움을 받아 프로젝트 구현의 일부여야 합니다.
 1. 기존 또는 새로운 MongoDB 환경을 유지 및 유지할 수 있다는 자신감을 갖도록 파트너 또는 고객 팀 내에 MongoDB 전문 지식이 있어야 합니다.
-1. MongoDB의 상용 또는 오픈 소스 버전을 배포하도록 선택할 수 있지만(AEM은 두 버전 모두 지원), MongoDB 유지 관리 및 지원 계약은 MongoDB Inc.에서 직접 구매해야 합니다.
-1. 전체 AEM 및 MongoDB 아키텍처와 인프라는 Adobe AEM Architect가 잘 정의하고 검증해야 합니다.
+1. MongoDB의 상업용 또는 오픈 소스 버전을 배포하도록 선택할 수 있지만(AEM은 두 버전 모두 지원), MongoDB 유지 관리 및 지원 계약은 MongoDB Inc.에서 직접 구매해야 합니다.
+1. 전체 AEM 및 MongoDB 아키텍처와 인프라는 Adobe AEM Architect에서 잘 정의하고 검증해야 합니다.
 1. MongoDB가 포함된 AEM 배포에 대한 지원 모델을 검토하십시오.
 
 **MongoDB 배포에 대한 강력한 권장 사항:**
@@ -190,7 +190,7 @@ AEM용 MongoMK 배포를 고려하는 경우 사전 요구 사항 및 권장 사
 
 >[!NOTE]
 >
->이 지침, 사전 요구 사항 및 권장 사항에 대한 모든 추가 질문은 [고객 지원 Adobe](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의하십시오.
+>이 지침, 사전 요구 사항 및 권장 사항에 대한 모든 추가 질문은 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의하십시오.
 
 ### AEM Communities에 대한 고려 사항 {#considerations-for-aem-communities}
 
@@ -212,7 +212,7 @@ AEM용 MongoMK 배포를 고려하는 경우 사전 요구 사항 및 권장 사
 >
 >MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.org/about/licensing/) 페이지를 참조하십시오.
 >
->AEM Adobe 배포를 최대한 활용하려면 MongoDB Enterprise 버전에 라이센스를 부여하여 전문적인 지원을 받는 것이 좋습니다.
+>Adobe에서는 AEM 배포를 최대한 활용하기 위해 MongoDB Enterprise 버전에 라이선스를 부여하여 전문적인 지원을 받을 것을 권장합니다.
 >
 >라이센스에는 작성자 또는 게시 배포에 사용할 수 있는 하나의 기본 인스턴스와 두 개의 보조 인스턴스로 구성된 표준 복제본 세트가 포함되어 있습니다.
 >

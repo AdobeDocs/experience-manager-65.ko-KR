@@ -10,12 +10,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
-# AEM Forms 작업 영역에서 서드파티 애플리케이션 통합{#integrating-third-party-applications-in-aem-forms-workspace}
+# AEM Forms Workspace에 서드파티 애플리케이션 통합{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 활동 관리를 지원합니다. 이러한 양식 및 문서는 XDP, PDF, HTML 또는 Flex 형식으로 렌더링된 XDP Forms, Flex® 양식 또는 안내서(더 이상 사용되지 않음)일 수 있습니다.
 
@@ -101,12 +101,12 @@ AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 
    ```
 
    [파일 가져오기](assets/dscsample.zip)
-DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)을 참조하십시오.
+   DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)을 참조하십시오.
 
    활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 **확인**&#x200B;을 클릭합니다.
 
 1. 응용 프로그램을 배포합니다. 메시지가 표시되면 자산을 체크인하고 저장합니다.
-1. https://&#39;[server]:[port]&#39;/lc/content/ws에서 AEM Forms 작업 영역에 로그인합니다.
+1. https://'[server]:[port]'/lc/content/ws에서 AEM 양식 작업 영역에 로그인합니다.
 1. 추가한 작업, CMRenderer를 엽니다. 서신 관리 편지가 나타납니다.
 
    ![cminworkspace](assets/cminworkspace.png)

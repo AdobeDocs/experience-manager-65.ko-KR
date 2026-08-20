@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 작업 영역 JSON 개체 설명
-description: 사용자 지정, 확장, 수정 및 재사용을 위해 AEM Forms 작업 영역 LiveCycle에 사용되는 JSON JavaScript 개체에 대한 개념 정보입니다.
+title: AEM Forms Workspace JSON 오브젝트 설명
+description: 사용자 지정, 확장, 수정 및 재사용을 위해 LiveCycle AEM Forms 작업 영역에서 사용되는 JSON JavaScript 개체에 대한 개념 정보입니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,12 +10,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2168'
 ht-degree: 8%
 
 ---
 
-# AEM Forms 작업 영역 JSON 개체 설명 {#aem-forms-workspace-json-object-description}
+# AEM Forms Workspace JSON 오브젝트 설명 {#aem-forms-workspace-json-object-description}
 
 AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어 있습니다.
 
@@ -193,7 +193,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   <tr>
    <td>우선 순위<br /> </td>
    <td>금</td>
-   <td>여기에는 작업의 우선 순위가 포함되어 있습니다.<br /> 1 = 최고 우선 순위<br /> 2 = 최고 우선 순위<br /> 3 = 보통 우선 순위<br /> 4 = 최저 우선 순위<br /> 5 = 최저 우선 순위<br /> </td>
+   <td>작업의 우선 순위를 포함합니다.<br /> 1 = 최고 우선 순위<br /> 2 = 최고 우선 순위<br /> 3 = 보통 우선 순위<br /> 4 = 최저 우선 순위<br /> 5 = 최저 우선 순위<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -238,7 +238,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   <tr>
    <td>상태<br /> </td>
    <td>금</td>
-   <td>1 = 생성됨(작업이 시작 지점에서 생성됨)<br /> 2 = 생성 및 저장됨(작업이 시작 지점에서 생성되어 저장됨)<br /> 3 = 할당됨(프로세스가 시작된 후 작업이 사용자에게 할당됨)<br /> 4 = 할당 및 저장됨(작업이 할당 및 저장됨)<br /> 100 = 완료됨(작업이 완료되었습니다.)<br /> 101 = 기한 지남(작업이 기한에 도달했습니다.)<br /> 102 = 종료됨<br /> </td>
+   <td>1 = 생성됨(작업이 시작 지점에서 생성됨)<br /> 2 = 생성 및 저장됨(작업이 시작 지점에서 생성되어 저장됨)<br /> 3 = 할당됨(프로세스가 시작된 후 작업이 사용자에게 할당됨)<br /> 4 = 할당 및 저장(작업이 할당 및 저장됨)<br /> 100 = 완료됨(작업이 완료되었습니다.)<br /> 101 = 기한 지남(작업이 기한에 도달했습니다.)<br /> 102 = 종료됨<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -331,7 +331,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
    <td>여기에는 작업에 사용 가능한 경우 전달, 공유 및 확인과 같은 명령이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td>availableCommands.otherCommands<br /> </td>
+   <td>availableCommands.otherCommand<br /> </td>
    <td>화</td>
    <td>여기에는 잠금, 잠금 해제, 포기, 반환, 클레임 등의 명령이 포함되어 있습니다.<br /> </td>
   </tr>
@@ -412,7 +412,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   <tr>
    <td>유형</td>
    <td>금</td>
-   <td>여기에는 대기열 유형이 포함되어 있습니다.<br /> 0 - 사용자 큐.<br /> 1. 공유 큐.<br /> 2. 그룹 큐.<br type="_moz" /> </td>
+   <td>큐 유형이 포함되어 있습니다.<br /> 0 - 사용자 큐.<br /> 1. 공유 큐.<br /> 2. 그룹 큐.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>쿼리</td>
@@ -606,7 +606,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>금</td>
-   <td>0 = 초기 할당<br /> 1 = 전달(작업이 작업의 현재 소유자에게 전달되었습니다.)<br /> 2 = 반환됨(이전 작업 소유자가 작업을 현재 작업 소유자에게 반환함)<br /> 3 = 요청됨(작업의 현재 소유자가 작업을 요청했습니다.)<br /> 4 = 에스컬레이션(에스컬레이션 후 작업이 작업의 현재 소유자에게 할당됨)<br /> 5 = 관리자 할당됨(작업이 관리자에 의해 현재 작업 소유자에게 할당됨)<br /> 6 = 확인됨(작업이 현재 작업 소유자에게 확인되었습니다.)<br type="_moz" /> </td>
+   <td>0 = 초기 할당<br /> 1 = 전달(작업이 작업의 현재 소유자에게 전달되었습니다.)<br /> 2 = 반환됨(작업의 이전 소유자가 작업의 현재 소유자에게 작업을 반환했습니다.)<br /> 3 = 요청됨(작업의 현재 소유자가 작업을 요청했습니다.)<br /> 4 = 에스컬레이션(에스컬레이션 후 작업이 작업의 현재 소유자에게 할당되었습니다.)<br /> 5 = 관리자 할당됨(작업이 관리자에 의해 작업의 현재 소유자에게 할당됨)<br /> 6 = 컨설팅됨( 작업이 현재 작업 소유자에게 컨설팅되었습니다.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>

@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 구성 {#configuration}
 
-제품 카탈로그는 AEM에서 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](/help/commerce/cif/getting-started.md#catalog)을 참조하세요.
+AEM에서 제품 카탈로그를 구성해야 합니다. 자세한 내용은 [저장소 및 카탈로그 구성](/help/commerce/cif/getting-started.md#catalog)을 참조하세요.
 
 단계적 카탈로그 기능을 활성화하려면 인증이 필요합니다. 자세한 내용은 [시작하기](/help/commerce/cif/getting-started.md)를 참조하십시오.
 
@@ -76,12 +76,12 @@ ht-degree: 1%
 
 ### Commerce 탭 {#tabs}
 
-일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 이 데이터(포함) 레코드 시스템이 상거래 백엔드이므로 variables)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
+일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 레코드 시스템이 상거래 백엔드이므로 이 데이터(변형 포함)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
 
 ![카탈로그 속성](/help/commerce/cif/assets/catalog-properties.png)
 
 ### AEM 컨텐츠 탭 {#content-tabs}
 
-AEM 콘텐츠 유형(경험 조각, 콘텐츠 조각, 연관된 Assets)별로 그룹화된 이 탭에는 상거래 오브젝트와 연관된 AEM 콘텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
+AEM 컨텐츠 유형(경험 조각, 컨텐츠 조각, 연관된 Assets)별로 그룹화된 이 탭에는 상거래 오브젝트와 연관된 AEM 컨텐츠가 표시됩니다. &#39;세부 정보 보기&#39; 작업을 수행하면 선택한 콘텐츠로 새 브라우저 탭이 열립니다.
 
 ![콘텐츠 속성](/help/commerce/cif/assets/content-properties.png)

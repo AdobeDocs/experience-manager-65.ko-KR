@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 40%
+source-wordcount: '1461'
+ht-degree: 41%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 
 AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만듭니다.
 
-AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-administering/tc-msconf.md)하는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)에서 찾을 수 있습니다.
+AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-administering/tc-msconf.md)할 수 있는 기능이 포함되어 있습니다. Adobe Exchange 파트너 프로그램의 회원인 AEM 커넥터를 사용하는 다른 번역 기술 공급업체는 [여기](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)에서 찾을 수 있습니다.
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md)을 참조합시오.
 
@@ -161,7 +161,7 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-adminis
  </tbody>
 </table>
 
-1. 사이드바에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭합니다.
+1. 사이드바에서 도구 > 작업 > 클라우드 > 클라우드 서비스 를 클릭합니다.
 1. 번역 통합 영역에서 구성이 생성되었는지 여부에 따라 표시되는 링크가 달라집니다.
 
    * 구성이 생성되지 않은 경우 지금 구성 을 클릭합니다.
@@ -190,7 +190,7 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-adminis
 페이지와 하위 페이지를 번역하기 위해 이용하는 번역 공급업체에 페이지를 연결합니다.
 
 1. 사이트 콘솔에서 페이지를 선택해 구성하고 속성 보기 를 클릭합니다.
-1. 편집 을 클릭한 다음 Cloud Service 탭을 클릭합니다.
+1. 편집 을 클릭한 다음 클라우드 서비스 탭을 클릭합니다.
 1. 구성 추가 > 번역 통합 을 클릭합니다.
 1. 사용할 번역 공급업체를 선택한 다음 완료를 클릭합니다.
 
@@ -199,6 +199,6 @@ AEM에는 기본적으로 [Microsoft® Translator에 연결](/help/sites-adminis
 페이지와 하위 페이지 번역의 수행 방법을 정의하는 번역 통합 프레임워크와 페이지를 연결합니다.
 
 1. 사이트 콘솔에서 페이지를 선택해 구성하고 속성 보기 를 클릭합니다.
-1. 편집 을 클릭한 다음 Cloud Service 탭을 클릭합니다.
+1. 편집 을 클릭한 다음 클라우드 서비스 탭을 클릭합니다.
 1. 구성 추가 > 번역 통합 을 클릭합니다.
 1. 사용할 번역 통합 프레임워크를 선택한 다음 완료를 클릭합니다.
