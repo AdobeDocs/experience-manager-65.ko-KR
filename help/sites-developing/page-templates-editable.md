@@ -132,7 +132,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 >[!TIP]
 >
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능을 사용하는 것이 좋습니다.
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내재화를 위해 핵심 구성 요소 [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 현지화 기능을 사용하는 것이 좋습니다.
 
 >[!NOTE]
 >
