@@ -12,7 +12,7 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
@@ -22,7 +22,7 @@ HTML5 양식을 초안으로 저장하고 나중에 양식 채우기를 다시 �
 
 ## 초안으로 저장 기능을 허용하는 사용자 지정 프로필 {#custom-profile-to-allow-save-as-draft-feature}
 
-기본적으로 AEM Forms에서는 **초안으로 저장** 프로필을 제공합니다. 초안으로 저장 프로필이 있는 양식을 렌더링하여 HTML5 양식에 대한 초안 기능을 활성화할 수 있습니다. [Forms 관리자](/help/forms/using/introduction-managing-forms.md)에서 양식에 대한 HTML 렌더링 프로필을 지정할 수 있습니다.
+기본적으로 AEM Forms에서는 **초안으로 저장** 프로필을 제공합니다. 초안으로 저장 프로필이 있는 양식을 렌더링하여 HTML5 양식에 대한 초안 기능을 활성화할 수 있습니다. [HTML 관리자](/help/forms/using/introduction-managing-forms.md)에서 양식에 대한 Forms 렌더링 프로필을 지정할 수 있습니다.
 
 기존 [사용자 지정 프로필](/help/forms/using/custom-profile.md)에 대해 초안으로 저장 기능을 활성화하려면 사용자 지정 프로필 노드에 다음 속성을 추가하십시오.
 
@@ -72,4 +72,4 @@ HTML5 양식을 초안으로 저장하고 나중에 양식 채우기를 다시 �
  </tbody>
 </table>
 
-기본적으로 AEM Forms은 Publish 인스턴스의 /content/forms/fp 노드에 양식 초안 및 제출과 관련된 사용자 데이터를 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](/help/forms/using/adding-custom-storage-provider-forms.md)를 참조하십시오.
+기본적으로 AEM Forms은 양식 초안 및 제출과 관련된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소](/help/forms/using/adding-custom-storage-provider-forms.md)를 참조하십시오.

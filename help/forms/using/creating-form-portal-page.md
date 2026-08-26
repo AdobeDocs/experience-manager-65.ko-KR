@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 2%
+source-wordcount: '1702'
+ht-degree: 6%
 
 ---
 
@@ -119,7 +119,7 @@ Forms 포털 구성 요소 범주
   <tr>
    <td><span class="uicontrol"><strong>양식 링크</strong></code></td>
    <td>렌더링 유형</td>
-   <td>지정된 렌더링 형식을 기반으로 양식 목록을 제어합니다. 사용 가능한 옵션은 PDF 및 HTML 입니다. 예를 들어 렌더링 유형으로 HTML 만 선택하면 PDF forms이 필터링됩니다.</td>
+   <td>지정된 렌더링 형식을 기반으로 양식 목록을 제어합니다. 사용 가능한 옵션은 PDF 및 HTML입니다. 예를 들어 렌더링 유형으로 HTML만 선택하면 PDF forms이 필터링됩니다.</td>
   </tr>
   <tr>
    <td> </td>
@@ -139,7 +139,7 @@ Forms 포털 구성 요소 범주
   <tr>
    <td> </td>
    <td>HTML 렌더링 작업 도구 팁</td>
-   <td>포인터를 <img height="16" src="assets/aem6forms_panel-html.png" width="13" />(HTML 5 아이콘) 위로 가져가면 표시되는 도구 설명에 대한 텍스트를 구성합니다.</td>
+   <td>포인터를 <img height="16" src="assets/aem6forms_panel-html.png" width="13" />(HTML5 아이콘) 위로 가져가면 표시되는 도구 설명에 대한 텍스트를 구성합니다.</td>
   </tr>
   <tr>
    <td> </td>
@@ -161,7 +161,7 @@ Forms 포털 구성 요소 범주
 
 ### 검색 창 {#search-pane}
 
-검색 창에서는 AEM Sidekick의 문서 서비스 술어 범주에서 날짜 술어, 전체 텍스트 술어, 속성 술어 및 태그 술어 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 사용자가 나열된 양식에서 검색을 수행할 수 있는 검색 기능을 구현합니다.
+검색 창에서는 AEM Sidekick의 문서 서비스 술어 카테고리에서 날짜 술어, 전체 텍스트 술어, 속성 술어 및 태그 술어 구성 요소를 추가할 수 있습니다. 이러한 구성 요소는 사용자가 나열된 양식에서 검색을 수행할 수 있는 검색 기능을 구현합니다.
 
 **팁:** *미리 설정된 기준에 따라 양식 포털에 표시되는 양식 목록을 제어하고 최종 사용자를 위한 검색 기능을 숨길 수 있습니다. 양식 목록을 제어하려면 술어 구성 요소를 사용하여 검색 필터를 적용합니다. 구성 요소 편집 대화 상자의 표시 탭에서 기본 필터 값을 지정하고 검색을 비활성화할 수도 있습니다.*
 
@@ -198,7 +198,7 @@ Forms 포털 구성 요소 범주
 1. **주 제목** 필드에 제목을 지정합니다.
 1. **확인** 선택
 
-#### 속성 조건자 {#properties-predicate}
+#### 속성 설명 {#properties-predicate}
 
 속성 설명 구성 요소는 제목, 작성자 및 설명과 같은 양식 속성을 기반으로 양식 검색을 구현합니다.
 
@@ -260,6 +260,6 @@ AEM Forms UI를 사용하면 사용자 지정 메타데이터를 양식에 추�
 * [API를 사용하여 웹 페이지의 목록 양식](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [초안 및 제출 구성 요소 사용](/help/forms/using/draft-submission-component.md)
 * [초안 및 제출된 양식의 스토리지 사용자 지정](/help/forms/using/draft-submission-component.md)
-* [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
-* [Forms 포털 구성 요소에 대한 템플릿 맞춤화](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
+* [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
+* [Forms 포털 구성 요소에 대한 템플릿 사용자 정의](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)

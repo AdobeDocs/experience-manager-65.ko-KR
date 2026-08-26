@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ AEM Forms 서신 관리를 사용하면 안전하고 개인화된 고객 서신�
 
 >[!NOTE]
 >
->AEM 6.5 Forms에서는 서신 관리를 즉시 사용할 수 없습니다. 이전 AEM Forms 버전에서 업그레이드하는 경우 호환성 패키지를 설치하고 서신 관리 에셋을 마이그레이션하여 AEM 6.5 Forms에서 계속 사용하십시오. 자세한 내용은 [호환성 패키지](/help/forms/using/compatibility-package.md)를 참조하십시오.
+>AEM 6.5 Forms에서는 즉시 서신 관리를 사용할 수 없습니다. 이전 AEM Forms 버전에서 업그레이드하는 경우 호환성 패키지를 설치하고 서신 관리 에셋을 마이그레이션하여 AEM 6.5 Forms에서 계속 사용하십시오. 자세한 내용은 [호환성 패키지](/help/forms/using/compatibility-package.md)를 참조하십시오.
 
 ## 사용자 데이터 및 데이터 저장소 {#data}
 
@@ -82,4 +82,4 @@ AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 �
 * 편지 인스턴스 이름 또는 초안을 저장하거나 서신을 제출한 사용자가 알려진 경우 서신 관리 API를 사용합니다
 * 이메일 ID 또는 이름과 같은 개인 식별 정보를 사용하여 AEM 저장소 검색을 사용하여 정보가 저장된 노드를 찾습니다
 
-AEM 시스템에서 초안 및 제출된 연락처에서 사용자 데이터를 완전히 삭제하려면 적용 가능한 모든 AEM 인스턴스에서 편지 인스턴스 노드를 수동으로 삭제해야 합니다.
+AEM 시스템에서 초안 및 제출된 연락처에서 사용자 데이터를 완전히 삭제하려면 해당하는 모든 AEM 인스턴스에서 편지 인스턴스 노드를 수동으로 삭제해야 합니다.

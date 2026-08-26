@@ -1,5 +1,5 @@
 ---
-title: AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 현지화
+title: AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 지역화
 description: AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서를 현지화하는 방법에 대해 알아봅니다.
 content-type: reference
 topic-tags: develop
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 20%
+source-wordcount: '814'
+ht-degree: 24%
 
 ---
 
-# AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 현지화 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 지역화 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -46,9 +46,9 @@ ht-degree: 20%
 
    기록 문서 설정 및 구성에 대한 자세한 내용은 다음을 참조하십시오.
 
-[기록 문서 템플릿 구성](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [기록 문서 템플릿 구성](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[기록 문서 설정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [기록 문서 설정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [기록 문서의 브랜딩 정보를 사용자 지정합니다](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md). 브라우저 로케일이 컴퓨터 언어를 사용하여 적응형 양식을 지역화한 언어와 동일한 언어로 설정되어 있는지 확인하십시오. 브라우저 로케일은 기록 문서의 브랜딩 정보를 현지화하는 데 도움이 됩니다.
 1. 현지화된 기록 문서를 보려면 미리보기 생성을 선택합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.

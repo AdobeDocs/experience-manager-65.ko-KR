@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 3%
+source-wordcount: '854'
+ht-degree: 4%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>CCR PDF 강조 표시 활성화</p> </td>
-   <td><p>서신 작성 애플리케이션에서 PDF 시 강조 표시를 활성화합니다.</p> </td>
+   <td><p>서신 작성 애플리케이션에서 PDF을 강조 표시할 수 있습니다.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -127,7 +127,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>PDF 제출 유형</p> </td>
-   <td><p>PDF 제출 유형(서신 작성 애플리케이션에서 제출 시 생성된 PDF 유형)</p> </td>
+   <td><p>PDF 제출 유형(서신 작성 애플리케이션에서 제출할 때 생성된 PDF 유형)</p> </td>
    <td><p>비대화형</p> </td>
    <td><p>대화식/비대화식</p> </td>
   </tr>
@@ -152,18 +152,18 @@ ht-degree: 3%
   <tr>
    <td><p>데이터 표시 형식</p> </td>
    <td><p>데이터에 대한 로케일별 표시 형식 지정</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>—</p> </td>
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=, numberGroupSeparator= ; numberUseGroupSeparator=dd-yyyy; numberDecimalSeparator=; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>데이터 편집 형식</p> </td>
    <td><p>데이터의 형식을 편집합니다. 데이터를 문자열로 쓰거나 문자열에서 데이터를 구문 분석할 때 사용됩니다.</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Publish에서 편지 인스턴스 관리</p> </td>
-   <td><p>편지 관리 기능 활성화/비활성화(Publish 서버에만 적용 가능)</p> </td>
+   <td><p>게시할 때 편지 인스턴스 관리</p> </td>
+   <td><p>편지 관리 기능 활성화/비활성화(게시 서버에만 적용 가능)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ ht-degree: 3%
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Publish 감사 활성화</p> </td>
+   <td><p>게시 감사 활성화</p> </td>
    <td><p>자산 게시를 위한 감사 기능 활성화/비활성화</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -242,7 +242,7 @@ ht-degree: 3%
   <tr>
    <td><p>CM 사용자 루트</p> </td>
    <td><p>모든 서신 관리 사용자 자산이 포함된 폴더의 URL</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>유효한 폴더 위치</p> </td>
   </tr>
   <tr>

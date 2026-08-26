@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 4%
+source-wordcount: '3283'
+ht-degree: 5%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 * 전문 작성자가 [템플릿을 만들고 편집](/help/sites-authoring/templates.md)할 수 있도록 허용합니다.
 
-   * 이러한 전문 작성자를 **템플릿 작성자**&#x200B;라고 합니다.
-   * 템플릿 작성자는 `template-authors` 그룹의 구성원이어야 합니다.
+  * 이러한 전문 작성자를 **템플릿 작성자**&#x200B;라고 합니다.
+  * 템플릿 작성자는 `template-authors` 그룹의 구성원이어야 합니다.
 
 * 템플릿에서 만든 모든 페이지에 대한 동적 연결을 유지하는 템플릿을 제공합니다. 이렇게 하면 템플릿에 대한 모든 변경 사항이 페이지 자체에 반영됩니다.
 * 맞춤화 없이 핵심 페이지 구성 요소를 사용할 수 있도록 페이지 구성 요소를 보다 일반화하십시오.
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 * 편집 가능한 템플릿 만들기에 대한 개요를 제공합니다.
 
-   * 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md)를 참조하세요.
+  * 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md)를 참조하세요.
 
 * 편집 가능한 템플릿을 만드는 데 필요한 관리/개발자 작업에 대해 설명합니다.
 * 편집 가능한 템플릿의 기술 정보를 설명합니다
@@ -55,7 +55,7 @@ ht-degree: 4%
 
 편집 가능한 템플릿 만들기는 주로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 수행합니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=ko)를 참조하십시오.
+AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478)를 참조하십시오.
 
 편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
@@ -73,7 +73,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    * 이 구조를 사용하여 템플릿의 구성 요소와 콘텐츠를 정의할 수 있습니다.
    * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 
-      * `We.Retail` 샘플 콘텐츠 외부의 사용자 지정 폴더에서 템플릿을 만드는 경우 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)를 사용할 수 있습니다.
+     * `We.Retail` 샘플 콘텐츠 외부의 사용자 지정 폴더에서 템플릿을 만드는 경우 기초 구성 요소를 선택하거나 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)를 사용할 수 있습니다.
 
    * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
    * 초기 콘텐츠를 정의할 수 있도록 하려면 구성 요소 잠금을 해제했다가 다시 잠글 수 있습니다.
@@ -86,7 +86,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    * 콘텐츠 정책은 구성 요소의 디자인 속성을 정의합니다.
 
-      * 예를 들어 사용 가능한 구성 요소 또는 최소/최대 차원이 있습니다.
+     * 예: 사용 가능한 구성 요소 또는 최소/최대 크기.
 
    * 이러한 정책은 템플릿(및 템플릿으로 만든 페이지)에 적용할 수 있습니다.
 
@@ -187,7 +187,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더(/conf 아래에)를 만들 수 있습니다.
+1. 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 인스턴스에 대해 새 폴더( /conf 아래에)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -374,18 +374,18 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 
 * 템플릿 유형은 템플릿에 템플릿을 효과적으로 제공합니다. 템플릿을 만들 때 선택한 템플릿 유형의 구조 및 초기 콘텐츠를 사용하여 템플릿을 만듭니다.
 
-   * 템플릿 유형이 복사되어 템플릿이 생성됩니다.
-   * 복사가 발생하면 템플릿과 템플릿 유형 간의 유일한 연결은 정보 제공을 위한 정적 참조입니다.
+  * 템플릿 유형이 복사되어 템플릿이 생성됩니다.
+  * 복사가 발생하면 템플릿과 템플릿 유형 간의 유일한 연결은 정보 제공을 위한 정적 참조입니다.
 
 * 템플릿 유형을 사용하면 다음을 정의할 수 있습니다.
 
-   * 페이지 구성 요소의 리소스 유형입니다.
-   * 템플릿 편집기에서 허용되는 구성 요소를 정의하는 루트 노드의 정책입니다.
-   * Adobe은 템플릿 유형에서 응답형 격자에 대한 중단점을 정의하고 모바일 에뮬레이터를 설정하는 것을 권장합니다. 개별 템플릿에서도 구성을 정의할 수 있으므로 이 단계는 선택 사항입니다([템플릿 유형 및 모바일 장치 그룹](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p) 참조).
+  * 페이지 구성 요소의 리소스 유형입니다.
+  * 템플릿 편집기에서 허용되는 구성 요소를 정의하는 루트 노드의 정책입니다.
+  * Adobe에서는 템플릿 유형에서 응답형 격자에 대한 중단점과 모바일 에뮬레이터의 설정을 정의하는 것을 권장합니다. 개별 템플릿에서도 구성을 정의할 수 있으므로 이 단계는 선택 사항입니다([템플릿 유형 및 모바일 장치 그룹](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p) 참조).
 
 * AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같이 바로 사용할 수 있는 다양한 템플릿 유형을 제공합니다.
 
-   * 추가 예제는 [`We.Retail`](/help/sites-developing/we-retail.md) 샘플 콘텐츠의 일부로 제공됩니다.
+  * 추가 예제는 [`We.Retail`](/help/sites-developing/we-retail.md) 샘플 콘텐츠의 일부로 제공됩니다.
 
 * 템플릿 유형은 일반적으로 개발자에 의해 정의됩니다.
 
@@ -435,7 +435,7 @@ CRXDE를 통해 또는 구성 브라우저를 사용하여 템플릿 폴더를 �
 다른 템플릿의 기반으로 사용할 수 있는 템플릿을 생성한 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
 1. 편집 가능한 템플릿과 마찬가지로 템플릿을 만듭니다. [페이지 템플릿 만들기](/help/sites-authoring/templates.md#creating-a-new-template-template-author)를 참조하십시오. 이 작업은 템플릿 유형의 기반으로 사용할 수 있습니다.
-1. CRXDE Lite을 사용하여 `templates` 노드에서 새로 만든 템플릿을 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders) 아래의 `template-types` 노드로 복사합니다.
+1. CRXDE Lite을 사용하여 새로 만든 템플릿을 `templates` 노드에서 [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders) 아래의 `template-types` 노드로 복사합니다.
 1. [템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders) 아래의 `templates` 노드에서 템플릿을 삭제하십시오.
 1. `template-types` 노드 아래에 있는 템플릿의 복사본에서 모든 `jcr:content` 노드에서 모든 `cq:template` 및 `cq:templateType` 속성을 삭제합니다.
 
@@ -446,7 +446,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-sites-example-custom-template-type 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* 프로젝트를 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)(으)로 다운로드
+* 프로젝트를 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)&#x200B;(으)로 다운로드
 
 ## 템플릿 정의 {#template-definitions}
 
@@ -492,11 +492,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
 ### jcr:content {#jcr-content}
 
@@ -506,9 +506,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **이름**: `status`
 
-   * **유형**: `String`
+  * **유형**: `String`
 
-   * **값**: `draft`, `enabled` 또는 `disabled`
+  * **값**: `draft`, `enabled` 또는 `disabled`
 
 ### 구조 {#structure}
 
@@ -518,10 +518,10 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 * 구조에 대한 변경 사항은 템플릿으로 만든 모든 페이지에 반영됩니다.
 * `root`( `structure/jcr:content/root`) 노드는 결과 페이지에서 사용할 수 있는 구성 요소 목록을 정의합니다.
 
-   * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 없습니다.
-   * 구성 요소 잠금을 해제하면 `editable` 속성이 `true`(으)로 설정됩니다.
+  * 템플릿 구조에 정의된 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 없습니다.
+  * 구성 요소 잠금을 해제하면 `editable` 속성이 `true`(으)로 설정됩니다.
 
-   * 이미 콘텐츠가 들어 있는 구성 요소의 잠금이 해제되면 이 콘텐츠가 `initial` 분기로 이동됩니다.
+  * 이미 콘텐츠가 들어 있는 구성 요소의 잠금이 해제되면 이 콘텐츠가 `initial` 분기로 이동됩니다.
 
 * `cq:responsive` 노드에는 응답형 레이아웃에 대한 정의가 있습니다.
 
@@ -545,7 +545,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * `root` 노드의 속성 `cq:policy`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-페이지의 단락 시스템에 대한 콘텐츠 정책에 대한 상대 참조를 제공합니다.
+  페이지의 단락 시스템에 대한 콘텐츠 정책에 대한 상대 참조를 제공합니다.
 
 * `root` 아래의 구성 요소 명시적 노드의 `cq:policy` 속성은 개별 구성 요소의 정책에 대한 링크를 제공합니다.
 
@@ -580,23 +580,21 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
    * `jcr:content` 노드에서 상태 속성을 설정하는 중입니다.
 
-      * 예를 들어,
+     * 예를 들어,
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * 속성을 정의합니다.
 
-      * 속성을 정의합니다.
-
-         * 이름: 상태
-         * 유형: 문자열
-         * 값: `enabled`
+       * 이름: 상태
+       * 유형: 문자열
+       * 값: `enabled`
 
 1. **허용된 템플릿**
 
    * [하위 분기의 해당 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-authoring/templates.md#allowing-a-template-author)&#x200B;에서 허용된 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
-
      `cq:allowedTemplates`
-필요한 분기의 `jcr:content` 노드에서.
+     필요한 분기의 `jcr:content` 노드에서.
 
    예를 들어, 값이 다음과 같은 경우:
 
@@ -610,11 +608,11 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * 템플릿 및 템플릿 유형에 보관된 정보에 대한 참조가 있습니다. 속성을 가진 `jcr:content` 노드에서 이 기능을 사용할 수 있습니다.
 
-   * `cq:template`
-실제 템플릿에 대한 동적 참조를 제공합니다. 템플릿의 변경 사항을 실제 페이지에 반영할 수 있습니다.
+  * `cq:template`
+    실제 템플릿에 대한 동적 참조를 제공합니다. 템플릿의 변경 사항을 실제 페이지에 반영할 수 있습니다.
 
-   * `cq:templateType`
-템플릿 유형에 대한 참조를 제공합니다.
+  * `cq:templateType`
+    템플릿 유형에 대한 참조를 제공합니다.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -636,15 +634,15 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * **템플릿**:
 
-   * 해당 `jcr:content` 노드의 `cq:template` 속성이 해당 페이지에 해당하는 템플릿에 액세스하기 위해 참조됩니다.
+  * 해당 `jcr:content` 노드의 `cq:template` 속성이 해당 페이지에 해당하는 템플릿에 액세스하기 위해 참조됩니다.
 
 * **구성 요소**:
 
-   * 페이지 구성 요소가 템플릿의 `structure/jcr:content` 트리를 페이지의 `jcr:content` 트리와 병합합니다.
+  * 페이지 구성 요소가 템플릿의 `structure/jcr:content` 트리를 페이지의 `jcr:content` 트리와 병합합니다.
 
-   * 작성자는 페이지 구성 요소를 통해 편집 가능한 것으로 플래그가 지정된 템플릿 구조의 노드(및 하위 항목 포함)만 편집할 수 있습니다.
-   * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다. 그런 다음 템플릿의 `policies/jcr:content` 노드 아래에 있는 동일한 경로가 검색됩니다.
+  * 작성자는 페이지 구성 요소를 통해 편집 가능한 것으로 플래그가 지정된 템플릿 구조의 노드(및 하위 항목 포함)만 편집할 수 있습니다.
+  * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다. 그런 다음 템플릿의 `policies/jcr:content` 노드 아래에 있는 동일한 경로가 검색됩니다.
 
-      * 이 노드의 `cq:policy` 속성은 실제 콘텐츠 정책을 가리킵니다(즉, 해당 구성 요소에 대한 디자인 구성을 보유함).
+    * 이 노드의 `cq:policy` 속성은 실제 콘텐츠 정책을 가리킵니다(즉, 해당 구성 요소에 대한 디자인 구성을 보유함).
 
-      * 이 기능을 사용하면 동일한 콘텐츠 정책 구성을 재사용하는 여러 템플릿을 사용할 수 있습니다.
+    * 이 기능을 사용하면 동일한 콘텐츠 정책 구성을 재사용하는 여러 템플릿을 사용할 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: 포털에 양식 게시 소개
+title: 포털에서 양식 게시 소개
 description: Adobe Experience Manager Forms은 Forms 포털을 빌드하는 데 사용할 수 있는 구성 요소를 제공합니다. 이 문서에서는 사용 가능한 Forms 포털 구성 요소를 소개합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 1%
+source-wordcount: '1066'
+ht-degree: 6%
 
 ---
 
-# 포털에 양식 게시 소개{#introduction-to-publishing-forms-on-a-portal}
+# 포털에서 양식 게시 소개{#introduction-to-publishing-forms-on-a-portal}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -51,7 +51,7 @@ AEM Forms은 관리 오버헤드와 프로덕션 지연을 줄이는 포털 구�
 
 AEM Forms은 **문서 서비스** 및 **문서 서비스 조건자** 구성 요소 그룹 아래에 그룹화된 다음과 같은 포털 구성 요소를 즉시 제공합니다.
 
-### Search &amp; Lister {#search-amp-lister}
+### 검색 및 목록 작성자 {#search-amp-lister}
 
 검색 및 목록 구성 요소를 사용하면 양식 저장소의 양식을 포털 페이지에 나열할 수 있고 지정된 기준에 따라 양식을 나열하는 구성 옵션을 제공할 수 있습니다. 또한 포털 사용자가 양식 목록에서 검색할 수 있도록 검색 조건을 지정할 수 있습니다.
 
@@ -68,7 +68,7 @@ AEM Forms은 **문서 서비스** 및 **문서 서비스 조건자** 구성 요�
 Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 나열할 수 있습니다. 또한 포털 사용자가 양식 목록에서 검색할 수 있도록 검색 조건을 지정할 수 있습니다. 초안 및 제출 구성 요소를 사용하여 나중에 제출한 양식을 완성하기 위해 초안으로 저장된 양식을 표시할 수도 있습니다. Sites 페이지에서 이러한 기능을 사용할 수 있게 되기 전에 특정 작업 세트를 수행합니다. 나열된 시퀀스의 단계를 수행하여 구성 요소 및 해당 기능을 사이트 페이지에서 사용할 수 있도록 합니다.
 
 1. **Forms 포털 구성 요소 사용**: 기본적으로 Forms 포털 구성 요소를 사용할 수 없습니다. AEM Sites 페이지에 대해 [AEM 사이드 킥에서 구성 요소를 활성화](/help/forms/using/enabling-forms-portal-components.md)합니다.
-1. **페이지에 양식 나열(Forms 포털 페이지 만들기):** AEM Sites 페이지와 비 AEM 사이트 페이지에 양식을 모두 나열할 수 있습니다. 이 목록에는 게시 인스턴스에서 사용할 수 있는 양식이 포함되어 있습니다. 사용자는 양식을 열고 작성을 시작할 수 있습니다. 사용자가 양식을 열 때마다 양식의 새 인스턴스가 만들어집니다.
+1. **페이지에 양식 나열(Forms 포털 페이지 만들기):** AEM Sites 페이지와 AEM 이외의 사이트 페이지에 양식을 나열할 수 있습니다. 이 목록에는 게시 인스턴스에서 사용할 수 있는 양식이 포함되어 있습니다. 사용자는 양식을 열고 작성을 시작할 수 있습니다. 사용자가 양식을 열 때마다 양식의 새 인스턴스가 만들어집니다.
 
    1. **AEM Sites 페이지의 목록 양식**: 페이지에 **[검색 및 목록](../../forms/using/creating-form-portal-page.md)** 구성 요소를 추가하고 해당 페이지에서 **[목록 창](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**&#x200B;을(를) 구성하여 페이지에 양식을 나열합니다. **검색 창** 구성 요소를 **검색 및 목록** 구성 요소에 추가 및 구성하여 페이지에 검색 기능을 추가하십시오. Forms 포털 구성 요소가 있는 페이지를 [Forms 포털 페이지](../../forms/using/creating-form-portal-page.md)라고 합니다.
 
@@ -81,7 +81,7 @@ Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 �
 1. **초안 및 제출된 양식 데이터의 저장소를 구성합니다.** 기본적으로 초안 및 제출 데이터는 AEM 저장소에 저장됩니다. 프로덕션 환경에서는 초안 또는 제출된 양식 데이터를 AEM 저장소에 저장하지 않는 것이 좋습니다. [데이터를 보안 위치에 저장하도록 Forms 포털 구성 요소를 구성](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(선택 사항) Forms 포털 구성 요소 사용자 지정:** [Forms 포털 페이지 템플릿 사용자 지정](../../forms/using/customizing-templates-forms-portal-components.md) 구성 요소에 고유한 모양을 제공합니다.
 1. **(선택 사항) 사용자 지정 메타데이터를 양식에 추가:** [사용자 지정 메타데이터를 양식에 추가](../../forms/using/customizing-templates-forms-portal-components.md)하여 목록 및 검색 환경을 개선합니다.
-1. **Forms 포털 페이지의 Publish:** Forms 포털 페이지가 준비되었습니다. 페이지를 Publish으로 이동합니다.
+1. **Forms 포털 페이지 게시:** 이제 Forms 포털 페이지가 준비되었습니다. 페이지를 게시합니다.
 
 ## 관련 문서 {#related-articles}
 
@@ -90,6 +90,6 @@ Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 �
 * [API를 사용하여 웹 페이지의 목록 양식](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [초안 및 제출 구성 요소 사용](../../forms/using/draft-submission-component.md)
 * [초안 및 제출된 양식의 스토리지 사용자 지정](../../forms/using/draft-submission-component.md#customizing-the-storage)
-* [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](integrate-draft-submission-database.md)
+* [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](integrate-draft-submission-database.md)
 * [Forms 포털 구성 요소에 대한 템플릿 맞춤화](../../forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md)
+* [포털에서 양식 게시 소개](../../forms/using/introduction-publishing-forms.md)

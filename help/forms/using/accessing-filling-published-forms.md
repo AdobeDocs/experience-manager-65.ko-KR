@@ -1,6 +1,6 @@
 ---
-title: 게시된 양식에 액세스 및 채우기
-description: Forms 포털은 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다.
+title: 게시된 양식 액세스 및 채우기
+description: Forms 포털은 웹 개발자에게 Adobe Experience Manager(AEM)을 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -11,18 +11,18 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '942'
+ht-degree: 1%
 
 ---
 
-# 게시된 양식에 액세스 및 채우기{#accessing-and-filling-published-forms}
+# 게시된 양식 액세스 및 채우기{#accessing-and-filling-published-forms}
 
 양식 중심 포털 배포 설정에서 양식 개발 및 포털 개발은 두 개의 고유한 활동입니다. 양식 디자이너는 리포지토리에서 양식을 디자인하고 저장하는 동안 웹 개발자는 해당 목록 양식에 대한 웹 응용 프로그램을 만들고 제출을 처리합니다. 그런 다음 양식 저장소와 웹 애플리케이션 간에 통신이 없으므로 Forms이 웹 계층에 복사됩니다.
 
 이로 인해 설정 및 프로덕션 지연 관리에 문제가 발생하는 경우가 많습니다. 예를 들어 저장소에서 최신 버전의 양식을 사용할 수 있는 경우 양식 Designer은 웹 계층의 양식을 대체하고 웹 애플리케이션을 수정한 다음 공개 사이트에서 양식을 재배포합니다. 웹 애플리케이션을 다시 배포하면 일부 서버 다운타임이 발생할 수 있습니다. 서버 다운타임은 계획된 작업이므로 변경 사항을 즉시 공개 사이트로 푸시할 수 없습니다.
 
-Forms 포털은 관리 오버헤드와 프로덕션 지연을 줄입니다. 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있는 구성 요소를 갖추도록 합니다.
+Forms 포털은 관리 오버헤드와 프로덕션 지연을 줄입니다. 웹 개발자에게 Adobe Experience Manager(AEM)를 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다.
 
 Forms 포털 및 해당 기능에 대한 자세한 내용은 [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)를 참조하십시오.
 
@@ -30,7 +30,7 @@ Forms 포털 및 해당 기능에 대한 자세한 내용은 [포털에서 양�
 
 게시된 Forms 포털 페이지로 이동합니다. Forms 포털 페이지 만들기에 대한 자세한 내용은 [Forms 포털 페이지 만들기](../../forms/using/creating-form-portal-page.md)를 참조하십시오.
 
-Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 Publish 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
+Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 게시 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
 
 ![샘플 양식 포털 페이지 &#x200B;](assets/forms-portal-page.png)
 
@@ -42,7 +42,7 @@ Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 Publish 인�
 
 * 즉시 사용할 수 있는 패널, 카드 또는 그리드 보기의 목록 양식입니다. 또한 Forms Manager의 특정 폴더에서 사용자 지정 templatesList 양식을 지원합니다.
 * 양식이 렌더링되는 방법(HTML 5, PDF 또는 둘 다)을 지정합니다.
-* PDF 및 XFA-Forms가 렌더링되는 방법(HTML 5, PDF 또는 둘 다)을 지정합니다. 비 XFA 양식은 HTML 5입니다.
+* PDF 및 XFA-Forms가 렌더링되는 방법(HTML5, PDF 또는 둘 다)을 지정합니다. HTML5로 비 XFA 양식.
 * 양식 속성, 메타데이터 및 태그와 같은 기준을 기반으로 양식 검색을 활성화합니다.
 * 서블릿에 양식 데이터를 제출합니다.
 * 사용자 지정 스타일 시트(CSS)를 사용하여 포털의 모양과 느낌을 사용자 지정합니다.

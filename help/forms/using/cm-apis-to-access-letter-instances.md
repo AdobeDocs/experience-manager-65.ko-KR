@@ -1,5 +1,5 @@
 ---
-title: 편지 인스턴스에 액세스하기 위한 API
+title: 문자 인스턴스에 액세스하기 위한 API
 description: API를 검색하고 이를 사용하여 AEM Forms 환경의 문자 인스턴스에 프로그래밍 방식으로 액세스합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 2%
 
 ---
 
-# 편지 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
+# 문자 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
 
 ## 개요 {#overview}
 
@@ -137,7 +137,7 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 편지 인스턴스는 제출됨 또는 초안 유형일 수 있습니다. 두 문자 인스턴스 유형을 모두 열면 서로 다른 동작이 표시됩니다.
 
-* 제출된 편지 인스턴스가 있으면 편지 인스턴스를 나타내는 PDF이 열립니다. 서버에서 지속되는 제출된 Letter 인스턴스에는 dataXML 및 처리된 XDP도 포함되어 있으며, 이를 사용하여 PDF/A 작성과 같은 맞춤형 사용 사례를 완수하고 추가로 사용할 수 있습니다.
+* 제출된 편지 인스턴스가 있으면 편지 인스턴스를 나타내는 PDF이 열립니다. 서버에서 지속되는 제출된 Letter 인스턴스에는 dataXML 및 처리된 XDP도 포함되어 있습니다. 이 인스턴스는 PDF/A 작성과 같은 맞춤형 사용 사례를 완수하고 추가로 사용하는 데 사용할 수 있습니다.
 * 초안 편지 인스턴스가 있는 경우 응답 만들기 UI가 초안을 만들 때의 정확한 이전 상태로 다시 로드됩니다
 
 ### 초안 편지 인스턴스 열기  {#opening-draft-letter-instance-nbsp}

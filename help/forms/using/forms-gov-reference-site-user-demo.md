@@ -9,14 +9,14 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
 
 # We.Gov 및 We.Finance 참조 사이트 안내 {#we-gov-reference-site-walkthrough}
 
-## 전제 조건 {#pre-requisites}
+## 사전 요구 사항 {#pre-requisites}
 
 [We.Gov 및 We.Finance 참조 사이트 설정 및 구성](../../forms/using/forms-install-configure-gov-reference-site.md)에 설명된 대로 참조 사이트를 설정합니다.
 
@@ -24,22 +24,22 @@ ht-degree: 1%
 
 * AEM Forms
 
-   * 자동 양식 변환
-   * 작성
-   * 양식 데이터 모델/데이터 소스
+  * 자동 양식 변환
+  * 작성
+  * 양식 데이터 모델/데이터 소스
 
 * AEM Forms
 
-   * 데이터 캡처
-   * (선택 사항) 데이터 통합(MS® Dynamics)
-   * (선택 사항) Adobe Sign
+  * 데이터 캡처
+  * (선택 사항) 데이터 통합(MS® Dynamics)
+  * (선택 사항) Adobe Sign
 
 * 워크플로
 * 이메일 알림
 * (선택 사항) 고객 커뮤니케이션
 
-   * 인쇄 채널
-   * 웹 채널
+  * 인쇄 채널
+  * 웹 채널
 
 * Adobe Analytics
 * Data Source 통합
@@ -64,14 +64,14 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
 
 * **We.Gov Forms 사용자**
 
-   * George Lang(멤버)
-   * Camila Santos(멤버)
+  * George Lang(멤버)
+  * Camila Santos(멤버)
 
 * **We.Gov 사용자**
 
-   * George Lang(멤버)
-   * Camila Santos(멤버)
-   * Aya Tan(멤버)
+  * George Lang(멤버)
+  * Camila Santos(멤버)
+  * Aya Tan(멤버)
 
 ### 데모 개요 용어 범례 {#demo-overview-terms-legend}
 
@@ -89,20 +89,20 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Adobe We.Gov 사이트**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **받은 편지함 Adobe**: AEM 백엔드의 상단 메뉴 모음 [벨 아이콘](assets/bell.svg)이(가) 있습니다.
+1. **Adobe 받은 편지함**: AEM 백엔드의 맨 위 메뉴 모음 [벨 아이콘](assets/bell.svg)이(가) 있습니다.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **전자 메일 클라이언트**: 전자 메일을 보는 기본 방법(Gmail, Outlook)
-1. **CTA**: 클릭 유도 문안
+1. **CTA**: Call to action
 1. **탐색**: 브라우저 페이지에서 특정 참조 지점을 찾습니다.
-1. **AFC**: Automated forms conversion
+1. **AFC**: 자동 양식 전환
 
-## Automated forms conversion(카밀라) {#automated-forms-conversion}
+## 자동 양식 전환(카밀라) {#automated-forms-conversion}
 
-**이 섹션**: CX 잠재 고객의 Camila에 종이 기반 프로세스의 일부로 사용된 기존 PDF 기반 양식이 있습니다. 현대화 노력의 일환으로 Camila는 이 PDF 양식을 사용하여 자동으로 최신 적응형 Forms을 만들려고 합니다.
+**이 섹션**: CX Lead인 Camila에 종이 기반 프로세스의 일부로 사용된 기존 PDF 기반 양식이 있습니다. 현대화 작업의 일환으로 Camila는 이 PDF 양식을 사용하여 자동으로 최신 적응형 Forms을 만들려고 합니다.
 
-### Automated forms conversion - We.Gov (카밀라) {#automated-forms-conversion-wegov}
+### 자동 양식 전환 - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. *https://&lt;aemserver>:&lt;port>/aem/start.html*(으)로 이동
 
@@ -110,11 +110,11 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
    * **사용자**: camila.santos
    * **암호**: 암호
 1. 메인 페이지에서 Forms > Forms 및 문서 > AEM Forms We.gov Forms > AFC를 선택합니다.
-1. Camila가 AEM Forms에 PDF을 업로드합니다.
+1. 카밀라는 PDF을 AEM Forms에 업로드합니다.
 
    ![양식 업로드](assets/aftia-upload-form.jpg)
 
-1. 그런 다음 Camilla가 PDF 양식을 선택하고 **자동화된 전환 시작**&#x200B;을 클릭하여 전환 프로세스를 시작합니다. 양식을 전환한 경우 **전환 덮어쓰기**&#x200B;를 클릭해야 할 수 있습니다.
+1. 그런 다음 Camilla가 PDF 양식을 선택하고 **자동화된 변환 시작**&#x200B;을 클릭하여 변환 프로세스를 시작합니다. 양식을 전환한 경우 **전환 덮어쓰기**&#x200B;를 클릭해야 할 수 있습니다.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
 
 **이 섹션**: 문서가 변환되고 적응형 양식이 생성되면 Camila는 적응형 양식을 데이터 원본에 연결해야 합니다.
 
-1. Camila는 [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov)에서 변환된 양식에서 속성을 엽니다.
+1. Camila는 [자동 양식 전환 - We.Gov](#automated-forms-conversion-wegov)에서 전환된 양식의 속성을 엽니다.
 
 1. 그런 다음 Camila는 양식 모델 > 선택 출처 드롭다운에서 양식 데이터 모델 선택 > 선택 옵션 목록에서 We.gov 등록 FDM을 선택합니다.
 
@@ -227,7 +227,7 @@ Aya는 서비스 요청 신청을 완료하기 전에 집에서 몇 가지 문�
    1. **기혼**: 결혼 여부 패널 표시
    1. **이혼**: 다음 친족 패널 표시
    1. **홀드됨**: 다음 친족 패널 표시
-   1. **자녀가 있습니까?**:(예/아니요) 라디오 단추를 클릭하여 자식 종속 패널을 표시합니다.
+   1. **하위 항목이 있습니까?**: (예/아니요) 라디오 단추를 사용하여 하위 종속 패널을 표시합니다.
 
       1. (추가/제거) 단추를 사용하여 여러 하위 종속 패널을 추가/제거합니다.
 
@@ -254,7 +254,7 @@ Aya는 서비스 요청 신청을 완료하기 전에 집에서 몇 가지 문�
 
    **사용자 지침:**
 
-1. 원 CTA를 마우스 오른쪽 버튼으로 클릭하여 다음 섹션으로 이동합니다.
+1. CTA 원을 마우스 오른쪽 단추로 클릭하여 다음 섹션으로 이동합니다.
 
    ![오른쪽 원 CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
@@ -266,14 +266,14 @@ Aya는 서비스 요청 신청을 완료하기 전에 집에서 몇 가지 문�
    >
    >아야는 전화번호 필드를 작성할 때 대시, 공백 또는 하이픈이 없는 연속 11자리 숫자로 작성해야 합니다.
 
-   제출 후 Aya는 감사 인사 페이지를 받습니다. 선택적으로, Aya는 Adobe Sign을 사용하여 기록 문서에 전자 방식으로 서명하기 위해 열 수 있는 이메일을 수신하기도 합니다.
+   제출 후 Aya는 감사 인사 페이지를 받습니다. 선택적으로 Aya는 Adobe Sign을 통해 기록 문서에 전자 방식으로 서명하기 위해 열 수 있는 이메일도 받습니다.
 
-### 선택 사항: Adobe Sign (Aya) {#adobe-sign}
+### 선택 사항: Adobe Sign(Aya) {#adobe-sign}
 
 **사용자 지침:**
 
 1. 이메일 클라이언트로 이동하여 Adobe Sign 이메일을 찾습니다.
-1. Adobe Sign 링크를 클릭합니다.
+1. Adobe Sign에 대한 링크를 클릭합니다.
 
    ![Adobe 서명 링크](/help/forms/using/assets/adobe_sign_link.png)
 
@@ -395,7 +395,7 @@ George는 Aya의 애플리케이션을 승인하며, 기존의 자동화된 워�
 
 ## (선택 사항) Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
-**이 섹션:** Aya는 자신의 이점을 요약하고 채울 양식 필드를 포함하는 대화형 커뮤니케이션에 대한 링크가 포함된 이메일을 수신합니다. PDF 혜택 문구가 첨부되어 있고, 대화형 통신과 동일한 테마/브랜딩을 사용하여 메일에 대화형 통신 편지에 연결됩니다.
+**이 섹션:** Aya는 자신의 이점을 요약하고 채울 양식 필드를 포함하는 대화형 커뮤니케이션에 대한 링크가 포함된 이메일을 수신합니다. PDF 혜택 선언이 첨부되고 대화형 통신과 동일한 테마/브랜딩을 사용하여 메일에 대화형 통신 편지에 연결됩니다.
 
 ### 이메일 클라이언트 알림(Aya) {#aya-user-story-email-client}
 
@@ -408,7 +408,7 @@ George는 Aya의 애플리케이션을 승인하며, 기존의 자동화된 워�
 
    1. 이렇게 하면 동일한 문서의 웹 채널 버전이 열립니다.
 
-1. PDF에 대한 빠른 참조를 보려면 다음 작업을 수행하십시오.
+1. PDF에 대한 빠른 참조는 다음과 같습니다.
 
    *https://&lt;aemserver>:&lt;port>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
@@ -486,7 +486,7 @@ George는 Aya의 애플리케이션을 승인하며, 기존의 자동화된 워�
 
 1. *https://&lt;aemserver>:&lt;port>/sites.html/content*(으)로 이동
 1. 사이트 페이지를 보려면 **AEM Forms We.Gov 사이트**&#x200B;를 선택하십시오.
-1. 사이트 페이지 중 하나(예: 홈)를 선택하고 **Analytics &amp; Recommendations**&#x200B;을(를) 선택합니다.
+1. 사이트 페이지 중 하나(예: 홈)를 선택하고 **분석 및 권장 사항**&#x200B;을 선택하세요.
 
    ![분석 및 권장 사항](/help/forms/using/assets/analytics_recommendation.jpg)
 

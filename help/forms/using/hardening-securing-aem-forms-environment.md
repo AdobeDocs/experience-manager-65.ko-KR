@@ -1,5 +1,5 @@
 ---
-title: OSGi 환경에서 AEM Forms 강화 및 보안
+title: OSGi 환경에서 AEM Forms 강화 및 보호
 description: OSGi 서버에서 AEM Forms을 보호하기 위한 권장 사항과 모범 사례를 알아봅니다.
 topic-tags: Security
 role: Admin,User
@@ -8,12 +8,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: '1470'
+ht-degree: 1%
 
 ---
 
-# OSGi 환경에서 AEM Forms 강화 및 보안 {#hardening-and-securing-aem-forms-on-osgi-environment}
+# OSGi 환경에서 AEM Forms 강화 및 보호 {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 OSGi 서버에서 AEM Forms을 보호하기 위한 권장 사항과 모범 사례를 알아봅니다.
 
@@ -42,7 +42,7 @@ AEM Forms은 사용자 정의가 용이하며 다양한 환경에서 작업할 �
 
 #### 외부 방화벽 구성  {#configure-external-firewall}
 
-특정 AEM Forms URL이 인터넷에 액세스할 수 있도록 외부 방화벽을 구성할 수 있습니다. 다음 URL에 액세스하려면 적응형 양식, HTML 5, 서신 관리 편지를 작성하거나 제출하거나 AEM Forms 서버에 로그인해야 합니다.
+특정 AEM Forms URL이 인터넷에 액세스할 수 있도록 외부 방화벽을 구성할 수 있습니다. 다음 URL에 액세스하려면 적응형 양식, HTML5, 서신 관리 편지를 작성하거나 제출하거나 AEM Forms 서버에 로그인해야 합니다.
 
 <table> 
  <tbody>
@@ -61,7 +61,7 @@ AEM Forms은 사용자 정의가 용이하며 다양한 환경에서 작업할 �
     </ul> </td> 
   </tr>
   <tr>
-   <td>HTML5 양식</td> 
+   <td>HTML 양식</td> 
    <td>
     <ul> 
      <li>/content/forms/formsets/profiles/</li> 
@@ -105,7 +105,7 @@ AEM Forms은 사용자 정의가 용이하며 다양한 환경에서 작업할 �
    <td>URI</td> 
   </tr>
   <tr>
-   <td>Publish 팜(게시 노드)</td> 
+   <td>팜 게시(노드 게시)</td> 
    <td>/bin/receive</td> 
   </tr>
   <tr>
@@ -152,7 +152,7 @@ AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여
 
 **사전 처리 권한 부여:** 실행 전에 사전 처리 권한을 사용하여 요청의 신뢰성을 확인할 수 있습니다. 입력, 서비스 및 요청 세부 정보를 사용하여 요청 실행을 허용하거나 중지할 수 있습니다. 실행이 중지된 경우 데이터 통합 예외 OPERATION_ACCESS_DENIED를 반환할 수 있습니다. 실행을 위해 클라이언트 요청을 보내기 전에 수정할 수도 있습니다. 예: 입력 변경 및 추가 정보 추가.
 
-**Post 프로세스 인증:** 결과를 요청자에게 반환하기 전에 사후 프로세스 인증을 사용하여 결과를 확인하고 제어할 수 있습니다. 추가 데이터를 필터링하고, 정리하고, 결과에 삽입할 수도 있습니다.
+**사후 프로세스 인증:** 사후 프로세스 인증을 사용하여 결과를 요청자에게 반환하기 전에 결과를 확인하고 제어할 수 있습니다. 추가 데이터를 필터링하고, 정리하고, 결과에 삽입할 수도 있습니다.
 
 ### 사용자 액세스 제한 {#limit-user-access}
 
@@ -168,23 +168,23 @@ AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여
 
 * 모든 담당자에 대해 특정 권한을 가진 사전 정의된 다른 그룹 세트가 있습니다. 그룹에 사용자를 할당합니다.
 
-   * forms-user 그룹의 사용자:
+  * forms-user 그룹의 사용자:
 
-      * 양식을 작성, 작성, 게시 및 제출할 수 있습니다.
-      * xdp 기반 적응형 양식을 만들 수 없습니다.
-      * 적응형 양식용 스크립트를 작성할 수 있는 권한이 없습니다.
-      * xdp 또는 XDP가 포함된 패키지를 가져올 수 없음
+    * 양식을 작성, 작성, 게시 및 제출할 수 있습니다.
+    * xdp 기반 적응형 양식을 만들 수 없습니다.
+    * 적응형 양식용 스크립트를 작성할 수 있는 권한이 없습니다.
+    * xdp 또는 XDP가 포함된 패키지를 가져올 수 없음
 
-   * forms-power-user 그룹의 사용자는 모든 유형의 양식을 작성, 작성, 게시 및 제출하고, 적응형 양식에 대한 스크립트를 작성하고, XDP가 포함된 패키지를 가져옵니다.
-   * 템플릿 작성자 및 템플릿 고급 사용자는 템플릿을 미리 보고 만들 수 있습니다.
-   * fdm-authors 사용자는 양식 데이터 모델을 만들고 수정할 수 있습니다.
-   * cm-user-agent 그룹의 사용자는 서신 관리 문자를 만들고, 미리 보고, 게시할 수 있습니다.
-   * 워크플로우 편집기 그룹의 사용자는 받은 편지함 애플리케이션 및 워크플로우 모델을 만들 수 있습니다.
+  * forms-power-user 그룹의 사용자는 모든 유형의 양식을 작성, 작성, 게시 및 제출하고, 적응형 양식에 대한 스크립트를 작성하고, XDP가 포함된 패키지를 가져옵니다.
+  * 템플릿 작성자 및 템플릿 고급 사용자는 템플릿을 미리 보고 만들 수 있습니다.
+  * fdm-authors 사용자는 양식 데이터 모델을 만들고 수정할 수 있습니다.
+  * cm-user-agent 그룹의 사용자는 서신 관리 문자를 만들고, 미리 보고, 게시할 수 있습니다.
+  * 워크플로우 편집기 그룹의 사용자는 받은 편지함 애플리케이션 및 워크플로우 모델을 만들 수 있습니다.
 
 **작성자 처리 중:**
 
 * 원격 저장 및 제출 사용 사례의 경우 crx-repository의 content/form/fp 경로에 대한 읽기, 만들기 및 수정 권한이 있는 사용자를 만듭니다.
-* 워크플로우 사용자 그룹에 사용자를 추가하여 사용자가 AEM 받은 편지함 애플리케이션을 사용할 수 있도록 합니다.
+* 사용자가 AEM 받은 편지함 애플리케이션을 사용할 수 있도록 하려면 워크플로우 사용자 그룹에 사용자를 추가하십시오.
 
 ## AEM Forms 환경의 인트라넷 요소 보안 {#secure-intranet-elements-of-an-aem-forms-environment}
 
