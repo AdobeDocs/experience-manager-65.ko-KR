@@ -8,23 +8,23 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 24%
+source-wordcount: '2961'
+ht-degree: 26%
 
 ---
 
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 이 문서 |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 AEM Forms를 사용하여 적응형 양식을 웹 페이지에 원활하게 통합할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
-AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화 등 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
+AEM 페이지 편집기 를 사용하여 여러 양식을 신속하게 만들고 AEM Sites 페이지에 추가할 수 있습니다. 콘텐츠 작성자는 AEM 페이지 편집기를 사용하여 동적 동작, 유효성 검사, 데이터 통합, 기록 문서 생성 및 비즈니스 프로세스 자동화를 비롯한 적응형 양식 구성 요소의 기능을 사용하여 Sites 페이지 내에서 매끄러운 데이터 캡처 경험을 만들 수 있습니다. 또한 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
 AEM Forms는 적응형 양식 컨테이너와 적응형 양식 – 임베드 구성 요소를 제공합니다. 적응형 양식 컨테이너를 사용하여 경험 조각 또는 AEM Sites 페이지에서 양식을 만들 수 있습니다. 반면 적응형 Forms - 임베드 구성 요소를 사용하여 기존 적응형 양식을 추가하거나 적응형 Forms 편집기를 사용하여 양식을 만들 수 있습니다.
 
@@ -49,7 +49,7 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 
 * **[AEM Sites 페이지에 사용자 지정 적응형 양식 추가:](#create-an-adaptive-form-in-sites-editor)** 처음부터 새로운 양식을 작성하고 요구 사항과 디자인 환경 설정에 맞게 맞춤화합니다.
 
-* **[경험 조각에 사용자 지정 적응형 양식 추가:](#create-an-adaptive-form-in-experience-fragment)** AEM Experience Fragments에 추가하여 양식을 확장하면 여러 페이지 또는 사이트에서 원활하게 재사용할 수 있습니다.
+* **[경험 조각에 사용자 지정 적응형 양식 추가:](#create-an-adaptive-form-in-experience-fragment)** 여러 페이지나 사이트에서 원활하게 재사용할 수 있도록 AEM 경험 조각에 추가하여 양식의 범위를 확장합니다.
 
 * **[적응형 양식을 경험 조각으로 변환:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** AEM Sites 페이지에 추가된 적응형 양식을 여러 AEM Sites 페이지에서 양식을 재사용하기 위한 경험 조각으로 변환.
 
@@ -63,18 +63,18 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 
 * 적응형 양식 컨테이너를 사용하여 양식을 만들거나 추가하는 경우 AEM Sites 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 각 언어별로 사이트 페이지와 해당 양식의 별도 사본(언어 사본)을 생성하고, 콘텐츠 작성자가 상위 페이지의 양식에서 규칙을 수정하는 경우 양식의 모든 언어 사본에 대해 동일한 변경을 수행해야 합니다. 또한 적응형 양식 컨테이너를 사용하여 버전 관리, 타기팅, 번역 및 다중 사이트 관리자와 같은 AEM Sites 페이지의 다양한 기능을 사용할 수 있습니다.
 
-* 적응형 양식 임베디드 구성 요소를 사용하여 양식을 만들거나 추가하는 경우 AEM Forms 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 이 경우 Sites 페이지의 모든 언어 사본에서 단일 양식을 관리하고 참조하십시오. 적응형 양식 임베디드 구성 요소는 버전 관리, 타겟팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능에 대한 액세스 권한을 제공하지 않습니다.
+* 적응형 양식 임베드 구성 요소를 사용하여 양식을 만들거나 추가하는 경우 AEM Forms 번역 흐름을 통해 양식을 번역하고 현지화를 수행합니다. 이 경우 Sites 페이지의 모든 언어 사본에서 단일 양식을 관리하고 참조하십시오. 적응형 양식 임베드 구성 요소는 버전 관리, 타깃팅, 번역 및 다중 사이트 관리자 등 AEM Sites 페이지의 다양한 기능에 대한 액세스 권한을 제공하지 않습니다.
 
 
 ## 시작하기 전 {#before-you-start}
 
 +++  내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화
 
-[적응형 Forms 핵심 구성 요소가 환경에 대해 활성화되어 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=ko).
+[적응형 Forms 핵심 구성 요소가 환경에 대해 활성화되어 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
-+++
++++ 
 
-+++  AEM Sites 페이지 및 경험 조각 페이지 구성 요소에 적응형 Forms 클라이언트 라이브러리 추가
++++  AEM Sites 페이지 및 경험 조각 페이지 구성 요소에 적응형 Forms 클라이언트 라이브러리 추가 
 
 적응형 양식 컨테이너 구성 요소의 전체 기능을 활성화하려면 배포 파이프라인을 사용하여 AEM Sites 페이지에 Customheaderlibs 및 Customfooterlibs 클라이언트 라이브러리를 추가합니다. 라이브러리를 추가하려면:
 
@@ -116,9 +116,9 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
        </sly> 
    ```
 
-1. 사용자 환경의 모든 작성자 및 Publish 인스턴스에서 위의 단계를 반복합니다.
+1. 환경의 모든 작성자 및 게시 인스턴스에서 위의 단계를 반복합니다.
 
-+++
++++ 
 
 +++ 적응형 Forms 컨테이너 활성화
 
@@ -202,7 +202,7 @@ AEM Sites 페이지의 적응형 양식을 경험 조각으로 변환하려면 �
 
 ## 양식에 대한 스키마 또는 양식 데이터 모델 구성 {#configure-schema-or-data-model-for-form}
 
-양식 데이터 모델을 사용하면 양식을 데이터 소스에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 사전 정의된 형식으로 제출된 데이터를 받을 수도 있습니다.
+양식 데이터 모델을 사용하면 양식을 데이터 소스에 연결하여 사용자 작업에 따라 데이터를 보내고 받을 수 있습니다. 양식을 JSON 스키마에 연결하여 미리 정의된 형식으로 제출된 데이터를 받을 수도 있습니다.
 
 양식을 스키마 또는 양식 데이터 모델에 연결하기 전에
 

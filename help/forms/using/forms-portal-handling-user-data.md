@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
 # Forms 포털 | 사용자 데이터 처리 {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] 포털은 [!DNL AEM Sites] 페이지에 적응형 양식, HTML5 양식 및 기타 Forms 자산을 나열하는 데 사용할 수 있는 구성 요소를 제공합니다. 또한 로그인한 사용자의 초안 및 제출된 적응형 양식과 HTML 5 양식을 표시하도록 구성할 수 있습니다. Forms 포털에 대한 자세한 내용은 [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)를 참조하십시오.
+[!DNL AEM Forms] 포털은 [!DNL AEM Sites] 페이지에 적응형 양식, HTML5 양식 및 기타 Forms 자산을 나열하는 데 사용할 수 있는 구성 요소를 제공합니다. 또한 로그인한 사용자의 초안 및 제출된 적응형 양식과 HTML5 양식을 표시하도록 구성할 수 있습니다. Forms 포털에 대한 자세한 내용은 [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)를 참조하십시오.
 
 로그인한 사용자가 적응형 양식을 초안으로 저장하거나 제출하면 Forms 포털의 초안 및 제출 탭에 표시됩니다. 초안 또는 제출된 양식의 데이터는 AEM 배포용으로 구성된 데이터 저장소에 저장됩니다. 익명 사용자의 초안 및 제출은 Forms 포털 페이지에 표시되지 않지만 데이터는 구성된 데이터 저장소에 저장됩니다. [초안 및 제출을 위한 저장소 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)을 참조하십시오.
 
@@ -45,7 +45,7 @@ Forms 포털은 로그인 사용자와 익명 사용자의 초안 및 제출된 
   </tr>
   <tr>
    <td><p>기본값</p> </td>
-   <td><p>작성자 및 Publish 인스턴스의 AEM 저장소</p> </td>
+   <td><p>작성자 및 게시 인스턴스의 AEM 저장소</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ Forms 포털은 로그인 사용자와 익명 사용자의 초안 및 제출된 
 
 ### 데이터베이스 {#database}
 
-AEM이 데이터베이스에 데이터를 저장하도록 구성된 경우 Forms 포털 초안 및 제출 데이터는 로그인한 사용자와 익명 사용자 모두에 대해 다음 데이터베이스 테이블에 저장됩니다.
+AEM이 데이터베이스에 데이터를 저장하도록 구성되면 Forms 포털 초안 및 제출 데이터는 로그인한 사용자와 익명 사용자 모두에 대해 다음 데이터베이스 테이블에 저장됩니다.
 
 * 데이터
 * 메타데이터

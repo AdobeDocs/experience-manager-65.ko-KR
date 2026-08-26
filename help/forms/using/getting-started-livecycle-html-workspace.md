@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역 시작하기
+title: AEM Forms Workspace 시작
 description: LiveCycle AEM Forms 작업 영역을 사용하여 비즈니스 자동화 프로세스를 관리하는 방법
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
-# AEM Forms 작업 영역 시작하기 {#getting-started-with-aem-forms-workspace}
+# AEM Forms Workspace 시작 {#getting-started-with-aem-forms-workspace}
 
 AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -40,11 +40,11 @@ AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니
 
 ## 화면 판독기에서 AEM Forms 작업 영역 사용 {#using-html-workspace-with-screen-readers}
 
-AEM Forms workspace 는 웹 기반 HTML 애플리케이션이며 화면 판독기와 호환됩니다. 키보드를 사용하여 AEM Forms 작업 공간 인터페이스를 탐색할 수 있습니다.
+AEM Forms 작업 영역은 웹 기반 HTML 애플리케이션이며 화면 판독기와 호환됩니다. 키보드를 사용하여 AEM Forms 작업 공간 인터페이스를 탐색할 수 있습니다.
 
 화면 판독기와 함께 AEM Forms 작업 영역을 사용하려면 다음 사항에 유의하십시오.
 
-* AEM Forms workspace는 표준 화면 판독기 도구를 준수하는 표준 HTML 애플리케이션입니다. 화면 판독기 도구를 실행하기 위해 특정 스크립트가 필요하지 않습니다.
+* AEM Forms 작업 영역은 표준 화면 판독기 도구를 준수하는 표준 HTML 애플리케이션입니다. 화면 판독기 도구를 실행하기 위해 특정 스크립트가 필요하지 않습니다.
 * AEM Forms 작업 영역의 모든 탐색은 탭을 통해 쉽게 액세스할 수 있는 앵커 태그를 통해 이루어집니다.
 * Forms을 로드하는 데 몇 초 정도 걸릴 수 있습니다. 화면 판독기는 양식이 로드 중이므로 기다려야 함을 청각적으로 알려주지 않습니다.
 
@@ -77,5 +77,5 @@ AEM Forms workspace 는 웹 기반 HTML 애플리케이션이며 화면 판독�
 * **날짜 형식:** AEM Forms 작업 영역에서 사용되는 날짜 표시 형식을 지정합니다.
 * **시간 형식**: AEM Forms 작업 영역에서 사용되는 시간 표시 형식을 지정합니다.
 * **전자 메일을 통해 작업 이벤트 알림:** 할 일 목록 및 그룹 할 일 목록의 작업에 대한 작업 할당, 미리 알림 및 기한을 비롯한 작업 이벤트에 대한 전자 메일 알림을 받는지 여부를 지정합니다.
-* **전자 메일에 Forms 첨부:** 전자 메일 알림 메시지에 양식 복사본을 첨부할지 여부를 지정합니다. 첨부 파일은 PDF 및 XDP 양식에만 지원됩니다.
+* **전자 메일에 Forms 첨부:** 전자 메일 알림 메시지에 양식 복사본을 첨부할지 여부를 지정합니다. 첨부 파일은 PDF 및 XDP 양식에서만 지원됩니다.
 * **정기적으로 초안 저장:** 양식 초안을 정기적으로 자동 저장할지 여부를 지정합니다. 정기적으로 초안을 저장하려면 이 옵션을 활성화하고 1분에서 30분 사이의 자동 저장 기간을 설정하십시오. 자동 저장이 활성화되고 사용자가 초안에서 작업할 때 초안은 지정된 시간(분) 후 주기적으로 저장됩니다. 마지막 저장 또는 자동 저장 이후에 초안이 변경된 경우에만 초안이 자동으로 저장됩니다. 초안이 저장되면 화면에 경고 메시지가 나타납니다.

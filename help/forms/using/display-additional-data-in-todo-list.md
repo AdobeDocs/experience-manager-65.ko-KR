@@ -1,6 +1,6 @@
 ---
-title: 할 일 목록에 추가 데이터 표시
-description: LiveCycle AEM Forms 작업 영역의 할 일 목록 표시를 사용자 지정하여 기본값 외에 추가 정보를 표시하는 방법
+title: ToDo 목록에 추가 데이터 표시
+description: LiveCycle AEM Forms 작업 영역의 할 일 목록 표시를 사용자 정의하여 기본값 외에 더 많은 정보를 표시하는 방법.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -11,16 +11,16 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 4%
 
 ---
 
-# 할 일 목록에 추가 데이터 표시{#displaying-additional-data-in-todo-list}
+# ToDo 목록에 추가 데이터 표시{#displaying-additional-data-in-todo-list}
 
 기본적으로 AEM Forms 작업 영역 할 일 목록에는 작업 표시 이름과 설명이 표시됩니다. 그러나 생성 날짜, 기한 날짜 등 다른 정보를 추가할 수 있습니다. 아이콘을 추가하고 디스플레이 스타일을 변경할 수도 있습니다.
 
-![기본 구성을 표시하는 Workspace 할 일 HTML 탭 확인](assets/html-todo-list.png)
+![기본 구성을 표시하는 HTML Workspace 할 일 탭 확인](assets/html-todo-list.png)
 
 이 문서에서는 할 일 목록의 각 작업에 대해 표시할 정보를 추가하는 단계에 대해 자세히 설명합니다.
 

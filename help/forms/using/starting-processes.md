@@ -1,6 +1,6 @@
 ---
-title: 시작 프로세스
-description: AEM Forms 작업 공간 LiveCycle을 사용하는 방법 - 프로세스 선택, 메모 및 첨부 파일 추가, 초안 복사본 저장, 즐겨찾기에 추가
+title: 프로세스 시작
+description: LiveCycle AEM Forms 작업 영역을 사용하는 방법 - 프로세스 선택, 메모 및 첨부 파일 추가, 초안 복사본 저장, 즐겨찾기에 추가
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
 
-# 시작 프로세스 {#starting-processes}
+# 프로세스 시작 {#starting-processes}
 
 AEM Forms workspace는 관리자 또는 프로세스 디자이너가 설정한 카테고리별로 프로세스를 구성합니다. 자주 사용하는 프로세스를 즐겨찾기 카테고리에 배치하여 빠르게 찾을 수도 있습니다.
 
@@ -46,7 +46,7 @@ Adobe PDF, HTML 및 SWF 파일을 포함하여 다양한 파일 형식 Forms이 
 
 1. 작업을 클릭하여 프로세스를 선택합니다. 프로세스와 연결된 양식이 양식 탭에서 열립니다.
 
-   프로세스의 모든 양식에는 고유한 URL이 있습니다. 고유한 URL을 사용하여 특정 프로세스 및 양식과 함께 HTML Workspace을 직접 시작할 수 있습니다. URL의 형식은 https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>입니다. &lt;ApplicationName>%2F&lt;ProcessName> 문자열은 항상 URL로 인코딩됩니다. 예제 URL은 http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess입니다. 이 예제의 ApplicationName%2FProcessName 문자열은 URL로 인코딩되어 있습니다.
+   프로세스의 모든 양식에는 고유한 URL이 있습니다. 고유 URL을 사용하여 특정 프로세스 및 양식과 함께 HTML Workspace을 직접 시작할 수 있습니다. URL의 형식은 https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>입니다. &lt;ApplicationName>%2F&lt;ProcessName> 문자열은 항상 URL로 인코딩됩니다. 예제 URL은 http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess입니다. 이 예제의 ApplicationName%2FProcessName 문자열은 URL로 인코딩되어 있습니다.
 
 1. 함께 제공된 지침에 따라 양식을 작성하십시오. 필요한 경우 **최대화**&#x200B;를 클릭하여 양식의 표시 영역을 늘립니다.
 1. 첨부 파일 탭을 사용할 수 있는 경우 필요에 따라 첨부 파일을 추가합니다.
@@ -58,11 +58,11 @@ Adobe PDF, HTML 및 SWF 파일을 포함하여 다양한 파일 형식 Forms이 
 
    프로세스 관리는 프로세스를 시작하고 프로세스에서 다음 작업을 완료해야 하는 해당 직원의 할 일 목록으로 양식을 보냅니다.
 
-   양식을 제출하기 전에 닫아야 하고 입력한 데이터를 손실하지 않으려면 초안을 저장하고 나중에 프로세스에서 허용하는 경우 완료합니다. 양식 및 프로세스에서 허용하면 **오프라인**&#x200B;을 클릭하고 나중에 Adobe® Reader® Adobe® Acrobat® Professional 또는 Acrobat Standard에서 제출할 수도 있습니다.
+   양식을 제출하기 전에 닫아야 하고 입력한 데이터를 손실하지 않으려면 초안을 저장하고 나중에 프로세스에서 허용하는 경우 완료합니다. 양식 및 프로세스에서 허용하면 **오프라인**&#x200B;을 클릭하고 나중에 ® Reader® 또는 Adobe® Acrobat® Professional 또는 Acrobat Standard에서 제출할 수도 있습니다.
 
    >[!NOTE]
    >
-   >오프라인 옵션은 PDF forms에 대해서만 사용할 수 있습니다.
+   >오프라인 옵션은 PDF forms에만 사용할 수 있습니다.
 
 ## 메모 및 첨부 파일 추가 {#adding-notes-and-attachments}
 

@@ -1,5 +1,5 @@
 ---
-title: We.Retail에서 세계화된 사이트 구조 시험 사용
+title: We.Retail에서 세계화된 사이트 구조 체험
 description: We.Retail을 사용하여 Adobe Experience Manager에서 전역 사이트 구조를 시도하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 5%
+source-wordcount: '436'
+ht-degree: 8%
 
 ---
 
-# We.Retail에서 세계화된 사이트 구조 시험 사용{#trying-out-the-globalized-site-structure-in-we-retail}
+# We.Retail에서 세계화된 사이트 구조 체험{#trying-out-the-globalized-site-structure-in-we-retail}
 
 We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 마스터를 제공하는 전역 사이트 구조로 빌드되었습니다. 모든 것이 기본 설정되어 있으므로 이 구조와 기본 제공 번역 기능을 실험해 볼 수 있습니다.
 
@@ -53,7 +53,7 @@ We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 �
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. 번역 프로젝트의 세부 정보를 보려면 독일어를 클릭하십시오. 상태가 **초안**&#x200B;입니다. Microsoft®의 번역 서비스로 번역을 시작하려면 **번역 작업** 제목 옆에 있는 V자형 화살표를 클릭하고 **시작**&#x200B;을 선택합니다.
+1. 번역 프로젝트의 세부 정보를 보려면 독일어를 클릭하십시오. 상태가 **초안**&#x200B;입니다. ®의 번역 서비스로 번역을 시작하려면 **번역 작업** 제목 옆에 있는 V자형 화살표를 클릭하고 **시작**&#x200B;을 선택합니다.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -67,7 +67,7 @@ We.Retail은 국가별 웹 사이트에 라이브 복사할 수 있는 언어 �
 
 >[!NOTE]
 >
->이 절차에서는 Microsoft® 기계 번역과의 내장된 통합을 보여 주었습니다. [AEM 번역 통합 프레임워크](/help/sites-administering/translation.md)를 사용하여 다양한 표준 번역 서비스와 통합하여 AEM 번역을 오케스트레이션할 수 있습니다.
+>이 절차에서는 ® 기계 번역과의 내장된 통합을 보여 주었습니다. [AEM 번역 통합 프레임워크](/help/sites-administering/translation.md)를 사용하여 다양한 표준 번역 서비스와 통합하여 AEM 번역을 오케스트레이션할 수 있습니다.
 
 ## 추가 정보 {#further-information}
 

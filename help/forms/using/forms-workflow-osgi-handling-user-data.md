@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
 
 # OSGi의 Forms 중심 워크플로 | 사용자 데이터 처리 {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Forms 중심 AEM 워크플로우를 통해 실제 Forms 중심 비즈니스 프로세스를 자동화할 수 있습니다. 워크플로우는 연결된 워크플로 모델에 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등의 특정 작업을 수행합니다. 워크플로우는 저장소, 사용자 계정 및 서비스의 에셋과 상호 작용할 수 있습니다. 따라서 워크플로우는 Experience Manager의 모든 측면을 포함하는 복잡한 활동을 조정할 수 있습니다.
+Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니스 프로세스를 자동화할 수 있습니다. 워크플로우는 연결된 워크플로 모델에 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등의 특정 작업을 수행합니다. 워크플로우는 저장소, 사용자 계정 및 서비스의 에셋과 상호 작용할 수 있습니다. 따라서 워크플로우는 Experience Manager의 모든 측면과 관련된 복잡한 활동을 조정할 수 있습니다.
 
 양식 중심 워크플로우는 다음 방법 중 하나를 통해 트리거하거나 시작할 수 있습니다.
 
@@ -26,7 +26,7 @@ Forms 중심 AEM 워크플로우를 통해 실제 Forms 중심 비즈니스 프�
 * 감시 폴더 사용
 * 대화형 통신 또는 편지 제출
 
-Forms 중심 AEM 워크플로 및 기능에 대한 자세한 내용은 [OSGi의 Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)를 참조하십시오.
+Forms 중심의 AEM 워크플로 및 기능에 대한 자세한 내용은 [OSGi의 Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)를 참조하십시오.
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
@@ -61,7 +61,7 @@ Forms 중심 AEM 워크플로 및 기능에 대한 자세한 내용은 [OSGi의 
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
-   <td><strong>이력</strong></td>
+   <td><strong>기록</strong></td>
    <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
   </tr>
@@ -75,7 +75,7 @@ Forms 중심 AEM 워크플로 및 기능에 대한 자세한 내용은 [OSGi의 
 하지만 다음 시나리오에서 초기자와 연결된 워크플로우를 식별할 수 없거나 결과가 모호할 수 있습니다.
 
 * **감시 폴더를 통해 워크플로우가 트리거됨**: 감시 폴더에서 워크플로우를 트리거하는 경우 해당 초기자를 사용하여 워크플로우 인스턴스를 식별할 수 없습니다. 이 때, 사용자 정보는 저장된 데이터에 부호화된다.
-* **게시 AEM 인스턴스에서 시작된 워크플로**: 적응형 양식, 대화형 통신 또는 편지를 AEM 게시 인스턴스에서 제출하면 모든 워크플로 인스턴스가 서비스 사용자를 사용하여 만들어집니다. 이러한 경우 로그인한 사용자의 사용자 이름은 워크플로우 인스턴스 데이터에 캡처되지 않습니다.
+* **AEM 인스턴스 게시에서 시작된 워크플로**: 모든 워크플로 인스턴스는 적응형 양식, 대화형 통신 또는 편지를 AEM 게시 인스턴스에서 제출하면 서비스 사용자를 사용하여 만들어집니다. 이러한 경우 로그인한 사용자의 사용자 이름은 워크플로우 인스턴스 데이터에 캡처되지 않습니다.
 
 ### 사용자 데이터 액세스 {#access}
 
@@ -158,4 +158,4 @@ API를 사용하여 노드 및 속성에 액세스하고 제거할 수도 있습
 
 * [프로그래밍 방식으로 AEM JCR에 액세스하는 방법](/help/sites-developing/access-jcr.md)
 * [노드 및 속성 제거](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API 참조](https://helpx.adobe.com/kr/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API 참조](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

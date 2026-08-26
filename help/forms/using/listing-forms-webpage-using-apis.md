@@ -10,8 +10,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
+source-wordcount: '693'
+ht-degree: 6%
 
 ---
 
@@ -174,6 +174,6 @@ orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 * [API를 사용하여 웹 페이지의 목록 양식](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [초안 및 제출 구성 요소 사용](/help/forms/using/draft-submission-component.md)
 * [초안 및 제출된 양식의 스토리지 사용자 지정](/help/forms/using/draft-submission-component.md)
-* [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
-* [Forms 포털 구성 요소에 대한 템플릿 맞춤화](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
+* [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
+* [Forms 포털 구성 요소에 대한 템플릿 사용자 정의](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)

@@ -1,5 +1,5 @@
 ---
-title: We.Gov 참조 사이트 FOIA 연습
+title: We.Gov 참조 사이트 FOIA 둘러보기
 description: We.Gov 참조 사이트 안내 문서를 참조하여 AEM Forms이 정보 자유법에 따라 개인이 요청한 정보를 정부가 어떻게 받고 제공하는지 이해할 수 있습니다.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 1%
 
 ---
 
-# We.Gov 참조 사이트 FOIA 연습 {#we-gov-reference-site-foia-walkthrough}
+# We.Gov 참조 사이트 FOIA 둘러보기 {#we-gov-reference-site-foia-walkthrough}
 
 ## 참조 사이트 정보의 자유 법률 시나리오 {#reference-site-freedom-of-information-act-scenario}
 
@@ -50,7 +50,7 @@ Sarah가 **적용**&#x200B;을 클릭하고 정보 자유 법안 요청 양식 �
 
 * **기관:** Sarah는 법무부 - 정보 정책 담당자로 요청을 처리한 기관을 지정합니다.
 
-* **최대 지불 예정**: Sarah는 인쇄 및 우편 요금에 대해 최대 USD 100을 지불할 준비가 되어 있다고 지정합니다.
+* **최대 결제 예정**: Sarah는 인쇄 및 우편 요금을 USD 100까지 결제할 준비가 되어 있다고 지정합니다.
 * **요청을 자세히 설명하십시오**: Sarah가 &quot;2013년부터 2016년까지 회계 연도의 하위 항목 및 가족 관리 사례 로그에 대한 복사본 요청&quot;을 지정합니다.
 
 ![2013~2016 회계 연도의 아동 및 가족 관리 사례 로그 복사본 요청](assets/sarahfiosform.png)
@@ -73,7 +73,7 @@ Sarah가 FOIA 신청서를 작성하여 제출하면, 신청서에 대한 기록
 
 ### 직접 확인 {#see-it-yourself-1}
 
-https://&lt;***호스트 이름***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. John Jacobs의 사용자 이름/암호로 jjacobs/password를 사용하여 AEM Inbox에 로그인하고 FOIA 애플리케이션을 참조하십시오. 양식 중심의 워크플로 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](/help/forms/using/manage-applications-inbox.md)를 참조하십시오.
+https://<***호스트 이름***>:<***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. John Jacobs의 사용자 이름/암호로 jjacobs/password를 사용하여 AEM 받은 편지함에 로그인하고 FOIA 애플리케이션을 참조하십시오. 양식 중심의 워크플로 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 [AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](/help/forms/using/manage-applications-inbox.md)를 참조하십시오.
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -95,11 +95,11 @@ John Jacobs는 애플리케이션 대시보드에서 애플리케이션을 보�
 
 ### 작동 방식 {#how-it-works-2}
 
-John Jacobs가 FOIA 요청을 승인하면 해당 응용 프로그램의 PDF 또는 기록 문서가 작성되어 Gloria Rios의 받은 편지함으로 전송됩니다. 글로리아는 제출된 요청을 보고 승인하거나 거부할 수 있습니다.
+존 제이콥스가 FOIA 요청을 승인하면 해당 신청서의 PDF 또는 기록 문서가 작성되어 글로리아 리오스의 받은 편지함으로 보내진다. 글로리아는 제출된 요청을 보고 승인하거나 거부할 수 있습니다.
 
 ### 직접 보기 {#see-for-yourself}
 
-https://&lt;***호스트 이름***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 AEM Inbox에 로그인하고 FOIS 요청을 확인합니다.
+https://<***호스트 이름***>:<***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. Gloria Rios의 사용자 이름/암호로 grios/password를 사용하여 AEM 받은 편지함에 로그인하고 FOIS 요청을 확인합니다.
 
 Gloria는 그 요청을 열고 FOIA 요청의 세부사항들을 조사합니다. Gloria는 요청의 세부사항을 검토하고 필요한 문서를 제공할 가능성을 확인한 후 요청을 승인합니다.
 

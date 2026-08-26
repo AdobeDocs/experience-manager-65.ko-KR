@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 0%
+source-wordcount: '242'
+ht-degree: 3%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 * 서신 관리
 
-   * AEM Forms Workflow 구성용
-   * 초안/제출의 원격 저장에 Forms 포털 사용 중
+  * AEM Forms Workflow 구성용
+  * 초안/제출의 원격 저장에 Forms 포털 사용 중
 
 * 적응형 양식의 경우, 게시 인스턴스에서 적응형 양식을 제출하는 경우
 
-**[!UICONTROL AEM DS 설정]**&#x200B;을 구성하는 단계는 다음과 같습니다.
+다음은 **[!UICONTROL AEM DS 설정]**&#x200B;을 구성하는 단계입니다.
 
 1. 다음 URL을 사용하여 게시 인스턴스에서 구성 관리자를 엽니다.\
    *https://localhost:port/system/console/configMgr*.
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 각 필드에 다음 정보를 추가합니다.
 
-   **[!UICONTROL 처리 서버 URL]**: 처리 서버는 Forms 또는 AEM 워크플로를 트리거해야 하는 서버입니다. AEM 작성자 인스턴스의 URL 또는 다른 서버 URL(즉, https://localhost:port/)과 동일할 수 있습니다.
+   **[!UICONTROL 처리 서버 URL]**: 처리 서버는 Forms 또는 AEM 워크플로를 트리거해야 하는 서버입니다. AEM 작성자 인스턴스의 URL 또는 다른 서버 URL(즉, https://localhost:port/)과 같을 수 있습니다.
 
    **[!UICONTROL 처리 서버 사용자 이름]**: 사용 중인 서버 URL을 기반으로 하는 워크플로 사용자의 사용자 이름 [입니다.]
 
