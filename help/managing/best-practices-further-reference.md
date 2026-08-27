@@ -9,10 +9,10 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 5158640898e2671a36daf04f54ac02703be020ca
+source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 98%
+source-wordcount: '3750'
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 98%
 
 ### AEM에서 제공되는 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
+AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
 
 사용 중인 다음과 같은 AEM 기능과 디자인에 미치는 영향을 고려하십시오.
 
 * [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [자산](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
@@ -582,25 +582,3 @@ Adobe는 모든 단계와 대상자를 위한 다음과 같은 추가 모범 사
 * [관리](/help/sites-administering/administer-best-practices.md)
 * [개발](/help/sites-developing/best-practices.md)
 * [프로젝트 관리](/help/managing/best-practices.md)
-
-**임시 서식 테스트 - 무시하십시오**
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" | "DEV" | "DEV_443" | "STAGE" | "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| 항목 | 항목 | 항목 | 항목 | 항목 |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` (&quot;QA&quot; \| &quot;DEV&quot; \| &quot;DEV_443&quot; \| &quot;STAGE&quot; \| &quot;PROD&quot;) | 아니요 | | 포함된 대화 상자를 위한 배포 환경. 제공하지 않는 경우 현재 페이지의 호스트 이름에서 추론합니다. |
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" `|` "DEV" `|` "DEV_443" `|` "STAGE" `|` "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| 항목 | 항목 | 항목 | 항목 | 항목 |
-|--- |--- |--- |--- |--- |
-| `env` | `Env ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD")` | 아니요 | | 포함된 대화 상자를 위한 배포 환경. 제공하지 않는 경우 현재 페이지의 호스트 이름에서 추론합니다. |
