@@ -9,10 +9,10 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1208'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ Workspace에 대한 검색 템플릿 정의와 전역 설정을 가져오고 내
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 예를 들어 특정 환경에서 검색 템플릿 정의와 전역 설정을 내보내고 다른 환경으로 가져와서 개발 환경에서 프로덕션 환경으로 이동할 수 있습니다.
 
@@ -70,7 +70,7 @@ Workspace에 대한 검색 템플릿 정의와 전역 설정을 가져오고 내
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 
@@ -78,13 +78,13 @@ Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 
 *specialRoutes* 설정은 Workspace에서 승인 및 거부라는 특수 경로의 속성을 지정합니다. 특정 상황에서는 특수 경로에 대한 버튼이 Workspace의 작업 카드에 나타나고 사용자는 양식을 열지 않고도 해당 버튼을 선택할 수 있습니다. 전역 설정 파일에서 specialRoutes 설정을 수정하여 승인 및 거부에 대한 사용자 정의 이름을 추가하거나 추가 경로를 만들 수 있습니다.
 
-**client_specialRoutes_routes_approve_style:** Workspace 테마에 있는 스타일 이름으로, 승인 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 정의 버튼의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다. 
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Workspace CSS 파일은 adobe-workspace-client.ear > adobe-workspace-client.war 파일에 있는 workspace-theme.swf 파일에 임베드되어 있습니다. Workspace의 모양을 변경하려면 workspace-theme.swf 파일을 다시 컴파일해야 합니다.
+**client_specialRoutes_routes_approve_style:** Workspace 테마에 있는 스타일 이름으로, 승인 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 지정 단추의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다.
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Workspace CSS 파일이 workspace-theme.swf 파일에 포함되어 있습니다. 이 파일은 adobe-workspace-client.ear > adobe-workspace-client.war 파일에 있습니다. Workspace의 모양을 변경하려면 workspace-theme.swf 파일을 다시 컴파일해야 합니다.
 
 **client_specialRoutes_routes_deny_names:** 워크벤치 사용자가 &#39;거부&#39;로 해석하는 데 사용할 수 있는 다양한 문자열입니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 거부입니다. 워크벤치 사용자가 프로세스에서 거부라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 거부라는 단어를 추가해야 합니다.
 
-**client_specialRoutes_routes_deny_style:** Workspace 테마 파일에 있는 스타일 이름으로, 거부 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 정의 버튼의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다. 
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** 워크벤치 사용자가 &#39;승인&#39;으로 해석하는 데 사용할 수 있는 다양한 문자열입니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 승인입니다. 워크벤치 사용자가 프로세스에서 승인이라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 승인이라는 단어를 추가해야 합니다.
+**client_specialRoutes_routes_deny_style:** Workspace 테마 파일에 있는 스타일 이름으로, 거부 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 지정 단추의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다.
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_approve_names:** Workbench 사용자가 사용할 수 있는 다양한 문자열은 &quot;approve&quot;로 해석됩니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 승인입니다. 워크벤치 사용자가 프로세스에서 승인이라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 승인이라는 단어를 추가해야 합니다.
 
 **client_specialRoutes_names:** 리소스 파일에서 사용자 정의 문자열 값을 찾는 데 사용되는 키입니다. 이 설정의 각 항목에는 이름 및 스타일 값이 포함되어야 합니다.
 

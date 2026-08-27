@@ -9,8 +9,8 @@ exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Workspace를 통해 사용자는 비즈니스 프로세스를 시작하고 참�
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 >[!NOTE]
 >

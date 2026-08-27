@@ -7,10 +7,10 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '1771'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -169,7 +169,7 @@ MySQL을 사용할 때 사용자 ID에 확장 문자가 포함될 수 있습니�
 * 서신 관리 솔루션
 * AEM Forms Workspace
 
-  ***참고&#x200B;**: Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.*
+  ***참고&#x200B;**: Flex Workspace은 AEM forms 릴리스에서 더 이상 사용되지 않습니다.*
 
 * Forms Manager
 * 프로세스 보고
