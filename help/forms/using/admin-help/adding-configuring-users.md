@@ -7,10 +7,10 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '1771'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 사용자를 만들면 해당 사용자를 그룹에 추가하고 역할을 할당할 수 있습니다.
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**&#x200B;를 클릭합니다.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**를 클릭합니다.
 .
 1. **[!UICONTROL 일반 설정]**&#x200B;에서 필요한 정보를 입력한 후 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 설정에 대한 자세한 내용은 [사용자 설정](adding-configuring-users.md#user-settings)을 참조하십시오.
 1. (선택 사항) 사용자를 그룹에 추가하려면 **[!UICONTROL 그룹 찾기]**&#x200B;를 클릭하고 다음 작업을 수행합니다.
@@ -169,7 +169,7 @@ MySQL을 사용할 때 사용자 ID에 확장 문자가 포함될 수 있습니�
 * 서신 관리 솔루션
 * AEM Forms Workspace
 
-  ***참고&#x200B;**: Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.*
+  ***참고&#x200B;**: Flex Workspace은 AEM forms 릴리스에서 더 이상 사용되지 않습니다.*
 
 * Forms Manager
 * 프로세스 보고

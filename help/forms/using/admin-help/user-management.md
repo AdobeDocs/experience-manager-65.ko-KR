@@ -9,9 +9,9 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '484'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '493'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,4 @@ SSL이 활성화된 LDAP 서버가 있는 경우 사용자 관리를 구성하�
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
