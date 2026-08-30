@@ -10,9 +10,9 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 86ce8d1ead6f2b760eb0d037042ddfc2af418913
 workflow-type: tm+mt
-source-wordcount: '2785'
+source-wordcount: '2821'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Adobe Analytics이 AEM Communities에 대해 구성될 수 있으므로, 구성�
 
 * 게시 환경에서:
 
-   * 커뮤니티 [트렌드](/help/communities/trends.md)에 대한 보고
-   * 사이트 방문자가 &quot;가장 많이 본 항목&quot;, &quot;가장 많이 사용한 항목&quot;, &quot;가장 많이 링크된 항목&quot;을 기준으로 정렬할 수 있음
-   * UGC(사용자 생성 콘텐츠) 목록에 대한 카운트 보기
+  * 커뮤니티 [트렌드](/help/communities/trends.md)에 대한 보고
+  * 사이트 방문자가 &quot;가장 많이 본 항목&quot;, &quot;가장 많이 사용한 항목&quot;, &quot;가장 많이 링크된 항목&quot;을 기준으로 정렬할 수 있음
+  * UGC(사용자 생성 콘텐츠) 목록에 대한 카운트 보기
 
 * 작성 환경에서는 다음을 수행합니다.
 
-   * [구성원 관리 콘솔](/help/communities/members.md)에 참여 데이터 표시(보기, 게시물, 팔로우, 좋아요)
-   * 지원 리소스 [보고서](/help/communities/reports.md)에 대한 트렌드 요약, 비디오 하트비트 및 비디오 장치
+  * [구성원 관리 콘솔](/help/communities/members.md)에 참여 데이터 표시(보기, 게시물, 팔로우, 좋아요)
+  * 지원 리소스 [보고서](/help/communities/reports.md)에 대한 트렌드 요약, 비디오 하트비트 및 비디오 장치
 
 지원되는 커뮤니티 기능은 다음과 같습니다.
 
@@ -71,7 +71,7 @@ Analytics for Communities 기능을 구성하려면 계정 담당자와 함께 A
 * **사용자 이름**
 
   Analytics 계정을 관리할 권한이 있는 사용자의 로그인 사용자 이름
-(웹 서비스 액세스 권한을 포함해야 합니다.)
+  (웹 서비스 액세스 권한을 포함해야 합니다.)
 
 * **암호**
 
@@ -87,37 +87,37 @@ Analytics for Communities 기능을 구성하려면 계정 담당자와 함께 A
 
 ## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
-Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=ko)를 사용하면 커뮤니티 사이트에서 커뮤니티 기능에 대한 보고서를 제공하도록 Analytics 보고서 세트를 구성할 수 있습니다.
+Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)를 사용하면 커뮤니티 사이트에서 커뮤니티 기능에 대한 보고서를 제공하도록 Analytics 보고서 세트를 구성할 수 있습니다.
 
-[회사 이름 및 사용자 이름](/help/communities/analytics.md#prerequisites)을(를) 사용하여 [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ko)에 로그인하면 새 보고서 세트 또는 기존 보고서 세트를 다음과 같이 구성할 수 있습니다.
+[회사 이름 및 사용자 이름](/help/communities/analytics.md#prerequisites)을(를) 사용하여 [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)에 로그인하면 새 보고서 세트 또는 기존 보고서 세트를 다음과 같이 구성할 수 있습니다.
 
-* [11개의 전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=ko)&#x200B;(eVars)
+* [11개의 전환 변수](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)&#x200B;(eVars)
 
-   * **`evar1`**&#x200B;에서 **`evar11`** 사용
+  * **`evar1`**&#x200B;에서 **`evar11`** 사용
 
-   * 기존 eVar를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 eVar를 만들 수 있음
+  * 기존 eVar를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 eVar를 만들 수 있음
 
-* [7 성공 이벤트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=ko)&#x200B;(이벤트)
+* [7 성공 이벤트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)&#x200B;(이벤트)
 
-   * **`event1`**&#x200B;에서 **`event7`** 사용
+  * **`event1`**&#x200B;에서 **`event7`** 사용
 
-   * 유형 **`Counter`**
+  * 유형 **`Counter`**
 
-      * **`Counter (no subrelations)`** 아님
+    * **`Counter (no subrelations)`** 아님
 
-   * 기존 이벤트를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 이벤트를 만들 수 있음
+  * 기존 이벤트를 용도 변경(이름 변경)하거나 커뮤니티 기능에 사용할 이벤트를 만들 수 있음
 
-* [비디오 관리](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko)
+* [비디오 관리](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
-   * 비디오 보고 콘솔
+  * 비디오 보고 콘솔
 
-      * `Video Core` 사용
-      * 저장 선택
+    * `Video Core` 사용
+    * 저장 선택
 
-   * 비디오 코어 측정 콘솔
+  * 비디오 코어 측정 콘솔
 
-      * `Use Solution Variables` 선택
-      * 저장 선택
+    * `Use Solution Variables` 선택
+    * 저장 선택
 
 **새 보고서 세트**&#x200B;를 사용하는 경우 새 보고서 세트에는 4개의 evar와 6개의 이벤트 변수만 있을 수 있지만 커뮤니티에는 11개의 evar와 7개의 이벤트 변수가 필요합니다.
 
@@ -159,6 +159,10 @@ Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.
 
 ## AEM Analytics Cloud 서비스 구성 {#aem-analytics-cloud-service-configuration}
 
+>[!CAUTION]
+>
+>[Adobe Analytics 1.4 API가 수명이 종료되었습니다](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). 따라서 사용자 자격 증명(사용자 이름 및 암호)을 사용하는 Adobe Analytics 구성은 더 이상 지원되지 않습니다.
+
 작성자 인스턴스의 표준 UI를 사용하여 Adobe Analytics을 AEM 커뮤니티 사이트와 통합하는 Analytics 통합을 만들려면 다음을 수행하십시오.
 
 * 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드 서비스]**
@@ -177,11 +181,13 @@ Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.
 
 * **제목**
 
-  (필수) 구성의 표시 제목입니다.예를 들어 *커뮤니티 분석*&#x200B;을 입력하십시오.
+  (필수) 구성의 표시 제목입니다.
+  예를 들어 *커뮤니티 분석*&#x200B;을 입력하십시오.
 
 * **이름**
 
-  (선택 사항) 지정하지 않으면 기본적으로 제목에서 파생된 유효한 노드 이름이 사용됩니다.예를 들어 *communities*&#x200B;을(를) 입력하십시오.
+  (선택 사항) 지정하지 않으면 기본적으로 제목에서 파생된 유효한 노드 이름이 사용됩니다.
+  예를 들어 *communities*&#x200B;을(를) 입력하십시오.
 
 * **템플릿**
 
@@ -189,7 +195,7 @@ Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.
 
 * **만들기**&#x200B;를 선택합니다.
 
-   * 구성 페이지를 시작하고 `Analytics Settings` 대화 상자를 엽니다.
+  * 구성 페이지를 시작하고 `Analytics Settings` 대화 상자를 엽니다.
 
 ### 분석 설정 대화 상자 {#analytics-settings-dialog}
 
@@ -233,10 +239,10 @@ Adobe Experience Cloud의 [보고서 세트 관리자](https://experienceleague.
 
 * **Analytics에 연결** 선택
 
-   * 성공하지 못하면
+  * 성공하지 못하면
 
-      * 항목에 선행 공백이 없는지 확인합니다.
-      * 다른 데이터 센터를 사용해 보십시오.
+    * 항목에 선행 공백이 없는지 확인합니다.
+    * 다른 데이터 센터를 사용해 보십시오.
 
 * **확인**&#x200B;을 선택합니다.
 
@@ -253,11 +259,12 @@ Adobe Analytics에 대한 기본 연결이 성공적으로 구성되면 커뮤�
 * **제목**
 
   (필수) 프레임워크의 표시 제목
-예를들어 *커뮤니티 프레임워크*&#x200B;를 입력하십시오.
+  예를들어 *커뮤니티 프레임워크*&#x200B;를 입력하십시오.
 
 * **이름**
 
-  (선택 사항) 지정하지 않으면 기본적으로 제목에서 파생된 유효한 노드 이름이 사용됩니다.예를 들어 *communities*&#x200B;을(를) 입력합니다.
+  (선택 사항) 지정하지 않으면 기본적으로 제목에서 파생된 유효한 노드 이름이 사용됩니다.
+  예를 들어 *communities*&#x200B;을(를) 입력합니다.
 
 * *템플릿*
 
@@ -316,8 +323,8 @@ Sidekick은 필요하지 않으며, 보고서 세트 설정에 대한 액세스�
 [커뮤니티 사이트를 만드는 동안](/help/communities/sites-console.md) Analytics Cloud 서비스를 추가하려면:
 
 * 3단계, [ANALYTICS 탭](/help/communities/sites-console.md#analytics) 아래:
-   * **Analytics 사용** 확인란을 선택하십시오.
-   * 드롭다운 상자에서 프레임워크를 선택합니다.
+  * **Analytics 사용** 확인란을 선택하십시오.
+  * 드롭다운 상자에서 프레임워크를 선택합니다.
 
 * 필요한 경우 Analytics 프레임워크 구성으로 돌아가서 변수 매핑을 조정합니다.
 
@@ -329,8 +336,8 @@ Sidekick은 필요하지 않으며, 보고서 세트 설정에 대한 액세스�
 * 커뮤니티 사이트의 사이트 편집 아이콘을 선택합니다.
 * 설정을 선택합니다.
 * Analytics 섹션에서 다음을 수행합니다.
-   * **Analytics 사용** 확인란을 선택하십시오.
-   * 드롭다운 상자에서 프레임워크를 선택합니다.
+  * **Analytics 사용** 확인란을 선택하십시오.
+  * 드롭다운 상자에서 프레임워크를 선택합니다.
 
 * 필요한 경우 Analytics 프레임워크 구성으로 돌아가서 변수 매핑을 조정합니다.
 
@@ -634,27 +641,28 @@ Analytics 사용 커뮤니티 사이트가 게시되면 CRXDE에서 개별적으
 * 기본 게시자에서 관리 권한으로 로그인합니다.
 * [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)(으)로 이동합니다. 예: [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* 언어 루트의 `jcr:content` 노드(예: `/content/sites/engage/en/jcr:content`) 아래에서 Analytics 보고에 대해 구성된 구성 요소로 이동합니다.예, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* 언어 루트의 `jcr:content` 노드(예: `/content/sites/engage/en/jcr:content`) 아래에서 Analytics 보고에 대해 구성된 구성 요소로 이동합니다.
+예, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * 생성된 기간에 주목합니다.
 
-   * `last30Days`
-   * `last90Days`
-   * `thisYear`
+  * `last30Days`
+  * `last90Days`
+  * `thisYear`
 
 * `total`노드를 확인합니다.
 
-   * **`interval`** 속성을 수정하면 보고서 가져오기 간격이 재정의됩니다.
-   * 값은 초 단위이며 4시간(14400초)으로 설정됩니다.
+  * **`interval`** 속성을 수정하면 보고서 가져오기 간격이 재정의됩니다.
+  * 값은 초 단위이며 4시간(14400초)으로 설정됩니다.
 
 ![구성 요소 보고서](assets/component-report.png)
 
 ## Analytics에서 사용자 데이터 관리 {#manage-user-data-in-analytics}
 
-Adobe Analytics에서는 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=ko)을 참조하십시오.
+Adobe Analytics에서는 사용자 데이터에 액세스하고, 내보내고, 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)을 참조하십시오.
 
 ## 리소스 {#resources}
 
-* Adobe Experience Cloud: [Analytics 도움말 및 참조](https://experienceleague.adobe.com/docs/analytics.html?lang=ko)
+* Adobe Experience Cloud: [Analytics 도움말 및 참조](https://experienceleague.adobe.com/docs/analytics.html)
 * AEM: [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md)
 * AEM: [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)

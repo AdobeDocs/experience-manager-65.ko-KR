@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 7%
+source-wordcount: '1582'
+ht-degree: 8%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ko) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
+Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
 
 필요한 경우 `https://api.omniture.com/`을(를) 사용하여 올바른 데이터 센터로 라우팅합니다.
 
@@ -84,9 +84,13 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
+>[Adobe Analytics 1.4 API가 수명이 종료되었습니다](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). 따라서 사용자 자격 증명(사용자 이름 및 암호)을 사용하는 Adobe Analytics 구성은 더 이상 지원되지 않습니다.
+
+>[!CAUTION]
+>
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
 ## Activity Map에 대한 구성 {#configuring-for-the-activity-map}
 
@@ -94,7 +98,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -150,21 +154,21 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **추적 서버**
 
-   * Adobe Analytics 호출을 전송하는 데 사용되는 URL을 포함합니다.
+  * Adobe Analytics 호출을 전송하는 데 사용되는 URL을 포함합니다.
 
-      * `cname` - 기본값은 Adobe Analytics 계정의 *회사 이름*&#x200B;입니다.
-      * `d1` - 정보가 전송되는 데이터 센터(`d1`, `d2` 또는 `d3`)에 해당합니다.
-      * `sc.omtrdc.net` - 도메인 이름
+    * `cname` - 기본값은 Adobe Analytics 계정의 *회사 이름*&#x200B;입니다.
+    * `d1` - 정보가 전송되는 데이터 센터(`d1`, `d2` 또는 `d3`)에 해당합니다.
+    * `sc.omtrdc.net` - 도메인 이름
 
 * **보안 추적 서버**
 
-   * 추적 서버와 동일한 세그먼트 있음
-   * 보안 페이지(`https://`)에서 데이터를 보내는 데 사용됨
+  * 추적 서버와 동일한 세그먼트 있음
+  * 보안 페이지(`https://`)에서 데이터를 보내는 데 사용됨
 
 * **방문자 네임스페이스**
 
-   * 네임스페이스는 추적 URL의 첫 번째 부분을 결정합니다.
-   * 예를 들어 네임스페이스를 **CNAME**(으)로 변경하면 Adobe Analytics에 대한 호출이 기본값이 아닌 **CNAME.d1.omtrdc.net**&#x200B;과(와) 같이 표시됩니다.
+  * 네임스페이스는 추적 URL의 첫 번째 부분을 결정합니다.
+  * 예를 들어 네임스페이스를 **CNAME**(으)로 변경하면 Adobe Analytics에 대한 호출이 기본값이 아닌 **CNAME.d1.omtrdc.net**&#x200B;과(와) 같이 표시됩니다.
 
 ## 페이지를 Adobe Analytics 프레임워크와 연결 {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -174,7 +178,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. **사이트** 콘솔에서 추적을 설정할 페이지를 선택합니다.
 1. 콘솔 또는 페이지 편집기에서 직접 **[페이지 속성](/help/sites-authoring/editing-page-properties.md)**&#x200B;을 엽니다.
-1. **&#x200B; Cloud Services** 탭을 엽니다.
+1. ** Cloud Services** 탭을 엽니다.
 
 1. **구성 추가** 드롭다운을 사용하여 사용 가능한 옵션에서 **Adobe Analytics**&#x200B;을(를) 선택합니다. 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
 
@@ -183,7 +187,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 1. **저장 후 닫기**&#x200B;를 선택합니다.
 1. 페이지 및 연결된 구성/파일을 활성화하려면 페이지를 **[게시](/help/sites-authoring/publishing-pages.md)**&#x200B;하십시오.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 **검색** 구성 요소를 사용하여 키워드(예: 에그플랜트)를 검색하는 것입니다.
-1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
+1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
 1. 제공된 예제를 사용하면 호출에는 eVar7에 입력한 값(즉, 가지)이 포함되어야 하며 이벤트 목록에는 event3이 포함되어야 합니다.
 
 ### 페이지 조회수 {#page-views}
@@ -206,7 +210,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **가져오기 빈도**:
 Analytics 보고서를 가져오는 빈도를 결정하는 `cron` 식입니다.
-기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 페치에 해당합니다.
+기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 가져오기에 해당합니다.
 
 이 OSGi 서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 저장소의 [osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)를 사용할 수 있습니다(서비스 PID는 `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
