@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 7%
+source-wordcount: '1582'
+ht-degree: 8%
 
 ---
 
@@ -84,6 +84,10 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
+>[Adobe Analytics 1.4 API가 수명이 종료되었습니다](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). 따라서 사용자 자격 증명(사용자 이름 및 암호)을 사용하는 Adobe Analytics 구성은 더 이상 지원되지 않습니다.
+
+>[!CAUTION]
+>
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
 >이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
@@ -150,21 +154,21 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **추적 서버**
 
-   * Adobe Analytics 호출을 전송하는 데 사용되는 URL을 포함합니다.
+  * Adobe Analytics 호출을 전송하는 데 사용되는 URL을 포함합니다.
 
-      * `cname` - 기본값은 Adobe Analytics 계정의 *회사 이름*&#x200B;입니다.
-      * `d1` - 정보가 전송되는 데이터 센터(`d1`, `d2` 또는 `d3`)에 해당합니다.
-      * `sc.omtrdc.net` - 도메인 이름
+    * `cname` - 기본값은 Adobe Analytics 계정의 *회사 이름*&#x200B;입니다.
+    * `d1` - 정보가 전송되는 데이터 센터(`d1`, `d2` 또는 `d3`)에 해당합니다.
+    * `sc.omtrdc.net` - 도메인 이름
 
 * **보안 추적 서버**
 
-   * 추적 서버와 동일한 세그먼트 있음
-   * 보안 페이지(`https://`)에서 데이터를 보내는 데 사용됨
+  * 추적 서버와 동일한 세그먼트 있음
+  * 보안 페이지(`https://`)에서 데이터를 보내는 데 사용됨
 
 * **방문자 네임스페이스**
 
-   * 네임스페이스는 추적 URL의 첫 번째 부분을 결정합니다.
-   * 예를 들어 네임스페이스를 **CNAME**(으)로 변경하면 Adobe Analytics에 대한 호출이 기본값이 아닌 **CNAME.d1.omtrdc.net**&#x200B;과(와) 같이 표시됩니다.
+  * 네임스페이스는 추적 URL의 첫 번째 부분을 결정합니다.
+  * 예를 들어 네임스페이스를 **CNAME**(으)로 변경하면 Adobe Analytics에 대한 호출이 기본값이 아닌 **CNAME.d1.omtrdc.net**&#x200B;과(와) 같이 표시됩니다.
 
 ## 페이지를 Adobe Analytics 프레임워크와 연결 {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -206,7 +210,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **가져오기 빈도**:
 Analytics 보고서를 가져오는 빈도를 결정하는 `cron` 식입니다.
-기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 페치에 해당합니다.
+기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 가져오기에 해당합니다.
 
 이 OSGi 서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 저장소의 [osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)를 사용할 수 있습니다(서비스 PID는 `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
