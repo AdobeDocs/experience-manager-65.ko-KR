@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
+source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7444'
 ht-degree: 5%
 
 ---
@@ -372,7 +372,8 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### 보안{#foundation-security-6525}
 
-이제 AEM은 클라이언트 암호가 포함된 추가 키워드를 허용 목록 합니다. 지원되는 통합이 이러한 클라이언트 암호 이름 지정 패턴을 사용하는 경우 구성 만들기가 더 이상 실패하지 않습니다. (GRANITE-66495)
+* 이제 AEM은 클라이언트 암호가 포함된 추가 키워드를 허용 목록 합니다. 지원되는 통합이 이러한 클라이언트 암호 이름 지정 패턴을 사용하는 경우 구성 만들기가 더 이상 실패하지 않습니다. (GRANITE-66495)
+* 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 데이터를 다른 API로 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
@@ -462,7 +463,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
 
@@ -630,11 +631,11 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
