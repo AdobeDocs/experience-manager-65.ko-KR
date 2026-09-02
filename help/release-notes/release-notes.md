@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
+source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7444'
 ht-degree: 5%
 
 ---
@@ -372,7 +372,8 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### 보안{#foundation-security-6525}
 
-이제 AEM은 클라이언트 암호가 포함된 추가 키워드를 허용 목록 합니다. 지원되는 통합이 이러한 클라이언트 암호 이름 지정 패턴을 사용하는 경우 구성 만들기가 더 이상 실패하지 않습니다. (GRANITE-66495)
+* 이제 AEM은 클라이언트 암호가 포함된 추가 키워드를 허용 목록 합니다. 지원되는 통합이 이러한 클라이언트 암호 이름 지정 패턴을 사용하는 경우 구성 만들기가 더 이상 실패하지 않습니다. (GRANITE-66495)
+* 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 데이터를 다른 API로 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
