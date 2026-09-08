@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
 workflow-type: tm+mt
-source-wordcount: '2961'
-ht-degree: 26%
+source-wordcount: '3002'
+ht-degree: 25%
 
 ---
 
@@ -88,6 +88,10 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
        </sly> 
    ```
+
+   >[!NOTE]
+   >
+   >`core.forms.components.runtime.all`에 기본 제공(OOTB) 구성 요소가 모두 포함되어 있습니다. 대신 디자인 정책의 일부이며 양식에 포함하려는 구성 요소만 포함하는 사용자 지정 클라이언트 라이브러리를 만들고 페이지에 추가합니다.
 
 1. `/apps/[your-sites-project]/components/page/customfooterlibs.html` 파일을 열고 다음 코드를 파일에 추가합니다.
 
