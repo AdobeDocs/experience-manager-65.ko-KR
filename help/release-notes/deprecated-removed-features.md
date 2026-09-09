@@ -23,7 +23,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 알리기 위해 다음 규칙이 적용됩니다.
 
-1. 사용 중지 공지가 먼저 표시됩니다. 사용 중지 중에도 기능이 계속 지원되지만 더 이상 개선되지는 않습니다.
+1. 사용 중지 공지가 먼저 표시됩니다. 더 이상 사용되지 않지만 기능은 계속 사용할 수 있으며 더 이상 개선되지는 않습니다.
 1. 더 이상 사용되지 않는 기능은 이른 시일 내에 후속 주 릴리스에서 제거됩니다. 제거에 대한 실제 목표 날짜는 나중에 발표될 예정입니다.
 
 이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
@@ -55,12 +55,12 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 | 구성 요소(AEM Sites) | 디자인 가져오기 구성 요소 `/libs/wcm/designimporter/components`이(가) 6.5부터 더 이상 사용되지 않는 것으로 표시되었습니다. Adobe은 디자인 임포터의 해당 구현을 더 이상 개선할 계획이 없습니다. | Adobe은 향후 릴리스에서 사용 사례에 대한 대체 구현을 제공할 계획입니다. |  |
 | 기초 | Granite 오프로딩 프레임워크. Adobe은 자산 처리를 외부화하기 위해 CQ 5.6.1에 도입된 오프로딩 프레임워크를 추가로 개선할 계획이 없습니다. | Adobe은 차세대 클라우드 기반 오프로딩 프레임워크에서 작업 중입니다. |  |
 | 개발자 | `Hobbes.js`. Adobe은 `hobbes.js` 사용자 인터페이스 테스트 프레임워크를 추가로 개선할 계획이 없습니다. | 고객이 Selenium 자동화를 사용하는 것이 좋습니다. |  |
-| 개발자 | jQuery UI 클라이언트 라이브러리 Adobe은 향후 배포(빠른 시작)의 일부로 제공되는 jQuery UI 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery UI가 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |  |
+| 개발자 | jQuery UI 클라이언트 라이브러리 Adobe은 향후 배포(빠른 시작)의 일부로 제공되는 jQuery UI 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery UI가 필요한 고객은 이를 프로젝트 코드 베이스에 추가하는 것이 좋습니다. |  |
 | 개발자 | jQuery Animation 클라이언트 라이브러리(`granite.jquery.animation`). Adobe은 향후 배포(빠른 시작)의 일부로 제공되는 jQuery Animation 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery Animation이 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |  |
 | 개발자 | Handlebars 클라이언트 라이브러리. Adobe은 배포(빠른 시작)의 일부로 제공되는 Handlebar 클라이언트 라이브러리를 더 이상 유지 관리하고 업데이트할 계획이 없습니다. | Adobe에서는 코드에 여전히 `Handlebars`이(가) 필요한 고객에게 해당 코드를 프로젝트 코드 베이스에 추가하도록 권장합니다. |  |
 | 개발자 | Lawnchair 클라이언트 라이브러리 Adobe은 배포(빠른 시작)의 일부로 제공되는 Lawnchair 클라이언트 라이브러리를 더 이상 유지 관리하고 업데이트할 계획이 없습니다. | 코드에 여전히 Lawnchair가 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |  |
 | 개발자 | `Granite.Sling.js` 클라이언트 라이브러리입니다. Adobe은 배포(빠른 시작)의 일부로 제공되는 Granite.Sling.js 클라이언트 라이브러리를 더 강화하지 않을 계획입니다. | 코드를 리팩토링하는 라이브러리 기능에 의존하고 있는 고객들은 더 이상 해당 기능을 사용할 수 없습니다. |  |
-| 개발자 | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/최소화. Adobe는 YUI 라이브러리를 추가로 업데이트할 계획이 없습니다. AEM 6.4가 출시되기 이전까지, YUI는 기본적으로 GCC(Google Closure Compiler)로 전환할 수 있는 옵션과 함께 JavaScript를 축소할 수 있었습니다. AEM 6.5부터는 GCC가 기본값입니다. | 고객은 이러한 구현에 따라 GCC로 전환하기 위해 AEM 6.5로 업그레이드하는 것이 좋습니다. |  |
+| 개발자 | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/최소화. Adobe는 YUI 라이브러리를 추가로 업데이트할 계획이 없습니다. AEM 6.4까지는 JavaScript를 축소하는 기본값이 YUI였으며, Google Closure Compiler(GCC)로 전환하는 옵션도 있었습니다. AEM 6.5부터는 GCC가 기본값입니다. | Adobe는 AEM 6.5로 업그레이드하는 고객에게 구현을 위해 GCC로 전환할 것을 권장합니다. |  |
 | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe은 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 더 이상 향상시킬 계획이 없습니다 | 대체할 수 없습니다. |  |
 | 양식 | AEM Mobile과 AEM Forms 통합은 더 이상 사용되지 않습니다. | 대체할 수 없습니다. |  |
 | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe은 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 더 이상 향상시킬 계획이 없습니다 | 대체할 수 없습니다. |  |
@@ -73,10 +73,10 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic이 제거되었습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. 여전히 CIF Classic이 필요한 경우 호환성 패키지를 만들었습니다. [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General#support)하십시오. | 6.5.22.0 |
-| [!DNL Experience Cloud]과(와) 통합 | [!DNL Adobe I/O]을(를) 통해 구성을 사용하여 자산을 [!DNL Experience Cloud]과(와) 동기화할 수 있습니다. [!DNL Adobe Experience Cloud]은(는) 이전에 [!DNL Adobe Experience Cloud]&#x200B;(으)로 불렸습니다. | 질문이 있는 경우 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General#support)하십시오. |  |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics에서 제공한 [ActivityMap 플러그인을 사용하십시오](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko). |  |
-| 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |  |
+| Commerce | AEM CIF Classic이 제거되었습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. 여전히 CIF Classic이 필요한 경우 호환성 패키지를 만들었습니다. [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. | 6.5.22.0 |
+| [!DNL Experience Cloud]과(와) 통합 | [!DNL Adobe I/O]을(를) 통해 구성을 사용하여 자산을 [!DNL Experience Cloud]과(와) 동기화할 수 있습니다. [!DNL Adobe Experience Cloud]은(는) 이전에 [!DNL Adobe Experience Cloud]&#x200B;(으)로 불렸습니다. | 질문이 있는 경우 [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General#support)하십시오. |  |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics에서 제공한 [ActivityMap 플러그인을 사용하십시오](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
+| 통합 | ExactTarget 통합이 기본 배포(Quickstart)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |  |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 설치할 추가 패키지입니다. | 기능은 계속 사용할 수 있습니다. |  |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central 마이그레이션 Bridge 서비스에 대한 지원이 제거되었습니다. | 교체 없음. |  |
 | 양식 | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음. |  |

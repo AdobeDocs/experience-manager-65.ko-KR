@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '891'
 ht-degree: 88%
 
 ---
@@ -62,7 +62,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 가치 창출 시간 (TTV)
 
-[AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 PWA(Headless Content 및 Commerce)의 통합 패턴을 사용하여 프로젝트 개발을 가속화합니다.
+[AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA(Headless Content 및 Commerce)의 통합 패턴을 사용하여 프로젝트 개발을 가속화합니다.
 
 지속적인 혁신을 위해 CIF를 항상 최신 상태를 유지하는 추가 기능으로 빌드하면 고객은 새로운 기능과 개선 사항에 액세스할 수 있습니다.
 
@@ -75,8 +75,8 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 CIF는 모범 사례를 기반으로 표준화된 통합 패턴을 사용하여 고객을 지원합니다. 이렇게 하면 고객은 현재 고객과 더불어 성공적으로 성장하고 미래의 요구 사항에 적응할 수 있습니다.
 
 * 가능한 제품 카탈로그 통합과 관련된 일반적인 문제를 제거합니다. 예:
-   * 카탈로그 볼륨 또는 복잡성이 높아진 성능 문제
-   * 스테이징된 데이터에 대한 액세스 권한 없음
-   * 실시간 제품 데이터 및 경험이 필요함
+  * 카탈로그 볼륨 또는 복잡성이 높아진 성능 문제
+  * 스테이징된 데이터에 대한 액세스 권한 없음
+  * 실시간 제품 데이터 및 경험이 필요함
 * 디지털 성숙도가 높아지면 경험 관리가 필요합니다. CIF는 추가 IT 작업 없이 점진적으로 통합 가능한 제품 경험 관리 기능과 함께 제공됩니다.
 * 옴니채널 준비: CIF는 패턴, 가속기와 핵심 구성 요소로 다양한 터치포인트 기술(서버측, 하이브리드, 클라이언트측)을 지원합니다.

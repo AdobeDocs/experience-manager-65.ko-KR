@@ -127,9 +127,9 @@ ht-degree: 17%
 ### 새로운 기능 {#what-is-new-july}
 
 * CIF 핵심 구성 요소 v2
-   * PDP/PLP URL 및 SEO에 대한 간소화된 개선된 구성
-   * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
-   * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
+  * PDP/PLP URL 및 SEO에 대한 간소화된 개선된 구성
+  * 향후 변경 사항에 대한 가시성을 개선하기 위해 작성 모드에서 스테이징된 제품 데이터에 대한 시각적 표시기
+  * 콘텐츠 및 상거래 페이지를 위한 새 사이트맵 구성 요소
 
 * 사전 정의된 또는 즉시 생성된 권장 사항을 사용하여 AEM Storefront에서 [Adobe AI에서 제공하는 Adobe Commerce AI 제품 권장 사항](https://business.adobe.com/ai/adobe-genai.html) 지원
 
