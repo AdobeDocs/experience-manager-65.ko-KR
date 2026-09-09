@@ -215,7 +215,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 >[!NOTE]
 >
->`sling:alias` 속성은 [ 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
+>`sling:alias` 속성은 [&#x200B; 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
 
 #### /etc/map {#etc-map}
 
