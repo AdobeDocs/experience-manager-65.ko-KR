@@ -11,8 +11,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 3%
+source-wordcount: '941'
+ht-degree: 16%
 
 ---
 
@@ -31,25 +31,25 @@ CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것�
 
 >[!NOTE]
 >
->다음 지침은 AEM 6.5에 포커스가 있는 CIF을 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=ko) 설명서를 참조하십시오.
+>다음 지침은 AEM 6.5에 중점을 둔 CIF을 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=ko) 설명서를 참조하십시오.
 
 AEM 6.5용 AEM Commerce 추가 기능(예: CIF 추가 기능은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
 
 ### 필수 소프트웨어
 
-다음은 로컬에 설치해야 합니다.
+다음 항목이 로컬에 설치되어 있어야 합니다.
 
 - 로컬 AEM 6.5
 - [AEM 6.5 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 이상
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/)(3.3.9 이상)
+- [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 - [노드 LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
 ### CIF 추가 기능 액세스
 
-CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드하여 &#39;AEM Commerce 추가 기능&#39;을 검색할 수 있습니다.
+[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 CIF 추가 기능을 다운로드하고 &#39;AEM Commerce 추가 기능&#39;을 검색하십시오.
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.co
 
 AEM 및 CIF 추가 기능을 사용하여 로컬 CIF 프로젝트를 개발하는 경우 다음 단계를 수행하십시오.
 
-1. AEM 6.5 릴리스를 가져와 AEM 6.5 서비스 팩을 설치합니다. AEM Adobe 6.5 서비스 팩 7이 필요하지만 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
+1. AEM 6.5 릴리스를 가져와 AEM 6.5 서비스 팩을 설치합니다. AEM 6.5 서비스 팩 7이 필요하지만 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
 
 1. AEM .jar 압축을 풀고 `crx-quickstart` 폴더를 만들려면 다음을 실행하십시오.
 
@@ -75,9 +75,9 @@ AEM 및 CIF 추가 기능을 사용하여 로컬 CIF 프로젝트를 개발하�
 >
 >또는 패키지 관리자를 통해 CIF 추가 기능 패키지를 설치할 수도 있습니다.
 
-1. AEM 빠른 시작 시작
+1. AEM 빠른 시작
 
-OSGI 콘솔을 통해 설정을 확인합니다. `http://localhost:4502/system/console/osgi-installer`. 목록에는 CIF 추가 기능 관련 번들, 콘텐츠 패키지 및 OSGI 구성이 포함되어야 합니다. 모든 번들이 시작되었는지 확인하십시오.
+OSGI 콘솔을 통해 설정을 확인합니다. `http://localhost:4502/system/console/osgi-installer`. 이 목록에는 CIF 추가 기능 관련 번들, 콘텐츠 패키지 및 OSGI 구성이 포함되어야 합니다. 모든 번들이 시작되었는지 확인하십시오.
 
 ## 프로젝트 설정 {#project}
 
@@ -85,7 +85,7 @@ CIF을 사용하여 AEM Commerce 프로젝트를 시작하는 방법에는 두 �
 
 ### AEM Project Archetype 사용
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) CIF을 시작하기 위해 미리 구성된 프로젝트를 부트스트랩하는 기본 도구입니다. CIF 핵심 구성 요소와 필요한 모든 구성은 하나의 추가 옵션과 함께 생성된 프로젝트에 포함될 수 있습니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)은(는) CIF을 시작하기 위해 사전 구성된 프로젝트를 부트스트랩하는 기본 도구입니다. CIF 핵심 구성 요소와 필요한 모든 구성을 하나의 추가 옵션으로 생성된 프로젝트에 포함할 수 있습니다.
 
 >[!TIP]
 >
@@ -140,9 +140,9 @@ CIF 핵심 구성 요소는 제공된 `all` 패키지를 포함하거나 CIF 콘
 </dependency>
 ```
 
-### AEM Venia 참조 저장소 사용
+### AEM Venia 참조 스토어 사용
 
-CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)를 복제하여 사용하는 것입니다. AEM Venia 참조 저장소는 AEM용 CIF 핵심 구성 요소의 사용을 보여 주는 샘플 참조 상점 응용 프로그램입니다. 모범 사례 세트 및 고유한 기능을 개발하기 위한 잠재적인 시작점으로 설계되었습니다.
+CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)를 복제하여 사용하는 것입니다. AEM Venia Reference Store는 AEM용 CIF 핵심 구성 요소의 사용을 보여 주는 샘플 참조 상점 첫 번째 애플리케이션입니다. 모범 사례 세트 및 고유한 기능을 개발하기 위한 잠재적인 시작점으로 설계되었습니다.
 
 Venia 참조 저장소를 시작하려면 [Git 저장소](https://github.com/adobe/aem-cif-guides-venia)를 복제하고 필요에 따라 프로젝트를 사용자 지정하기만 하면 됩니다.
 
@@ -150,7 +150,7 @@ Venia 참조 저장소를 시작하려면 [Git 저장소](https://github.com/ado
 >
 >Venia 참조 스토어 프로젝트에는 AEM as a Cloud Service 및 AEM 6.5용 빌드 프로필이 두 개 포함되어 있습니다. 사용 방법을 확인하려면 [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md)을(를) 확인하십시오. AEM 6.5의 경우 `classic` 프로필을 사용합니다.
 
-### Commerce 시스템에 AEM 연결
+### AEM을 Commerce 시스템에 연결
 
 프로젝트를 상거래 시스템에 연결하려면 상거래 시스템의 GraphQL 끝점을 사용하여 AEM을 구성해야 합니다.
 
@@ -158,7 +158,7 @@ Venia 참조 저장소를 시작하려면 [Git 저장소](https://github.com/ado
 
 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`의 `url` 값을 프로젝트에서 사용하는 상거래 시스템의 GraphQL 끝점으로 바꾸십시오.
 
-AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해, 그리고 브라우저를 통해 commerce GraphQL 엔드포인트에 직접 연결합니다. 기본적으로 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 제작 도구는 `/api/graphql`에 연결합니다. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
+AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해, 그리고 브라우저를 통해 직접 상거래 GraphQL 엔드포인트에 연결합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 제작 도구는 기본적으로 `/api/graphql`에 연결됩니다. 필요한 경우 CIF Cloud Service 구성(아래 참조)을 통해 조정할 수 있습니다.
 
 CIF 추가 기능은 `/api/graphql`에서 GraphQL 프록시 서블릿을 제공합니다. 로컬 AEM Dispatcher을 사용하지 않을 계획이라면 GraphQL 프록시 서블릿도 구성하는 것이 좋습니다.
 
@@ -167,4 +167,4 @@ http://localhost:4502/system/console/configMgr으로 이동하여 `Adobe CIF Gra
 ## 추가 리소스
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia 참조 스토어](https://github.com/adobe/aem-cif-guides-venia)

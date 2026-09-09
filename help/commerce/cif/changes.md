@@ -7,14 +7,14 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 0%
+source-wordcount: '339'
+ht-degree: 2%
 
 ---
 
 # Commerce integration framework(CIF) 추가 기능의 주요 변경 사항{#notable-changes}
 
-이 문서에서는 Commerce integration framework(CIF) 추가 기능과 이전 CIF 버전(주로 CIF Classic(빠른 시작) 및 CIF Open-source로 알려짐) 간의 중요한 차이점을 조명합니다.
+이 문서에서는 Commerce integration framework(CIF) 추가 기능과 이전 CIF 버전(주로 CIF Classic(Quickstart) 및 CIF Open-source로 알려짐) 간의 중요한 차이점을 조명합니다.
 
 ## 설치 및 업데이트
 
@@ -40,7 +40,7 @@ AEM CIF 추가 기능 패키지가 AEM 패키지 관리자에 설치되고 업�
 
 **이전 CIF 버전**
 
-* CIF Classic: AEM 패키지 설치를 통해
+* CIF Classic: AEM 패키지 설치 사용
 
 ## 제품 카탈로그 데이터
 
@@ -48,16 +48,16 @@ AEM CIF 추가 기능 패키지가 AEM 패키지 관리자에 설치되고 업�
 
 **이전 CIF 버전**
 
-* CIF Classic: 라이브 및 스테이징된 제품 데이터를 가져와 전체 또는 델타 제품 가져오기를 통해 AEM Author의 JCR에서 지속됩니다. 라이브 제품 데이터가 AEM Publish에 복제됩니다.
+* CIF Classic: 라이브 및 스테이징된 제품 데이터를 가져와 전체 또는 델타 제품 가져오기를 통해 AEM Author의 JCR에서 지속됩니다. 라이브 제품 데이터가 AEM 게시로 복제됩니다.
 
-## AEM 렌더링을 통한 제품 카탈로그 경험
+## AEM 렌더링을 사용한 제품 카탈로그 경험
 
 AEM은 제품 및 범주에 할당된 AEM 카탈로그 템플릿을 사용하여 제품 카탈로그 경험을 즉시 렌더링합니다. 복제 불필요.
 
 **이전 CIF 버전**
 
-* CIF Classic: AEM 작성자는 카탈로그 블루프린트 도구를 사용하여 모든 카테고리/제품에 대한 AEM 페이지를 만듭니다. 이러한 페이지는 AEM Publish에 복제됩니다.
+* CIF Classic: AEM 작성자는 카탈로그 블루프린트 도구를 사용하여 모든 카테고리/제품에 대한 AEM 페이지를 만듭니다. 이러한 페이지는 AEM 게시로 복제됩니다.
 
 >[!NOTE]
 >
->AEM Managed Service 또는 AEM On-Premise와 함께 CIF을 사용하는 방법에 대한 추가 설명서는 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)을(를) 참조하십시오
+>AEM Managed Service 또는 AEM On-Premise와 함께 CIF을 사용하는 방법에 대한 추가 설명서는 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)을(를) 참조하십시오.

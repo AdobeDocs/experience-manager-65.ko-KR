@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 15%
+source-wordcount: '238'
+ht-degree: 20%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 ## 시스템 요구 사항 개요
 
-현재 사용 중이거나 향후 사용할 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
+현재 사용 중이거나 향후 사용할 예정인 CIF 버전에 대한 아래 표의 최소 시스템 요구 사항을 검토하십시오.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----------------------------------------------------------------------------------------------:|
@@ -33,7 +33,7 @@ ht-degree: 15%
 ### 버그 수정 {#bug-fixes-december}
 
 * 페이지 v3 리소스 유형에 등록된 제품 및 범주 리디렉션 서블릿
-* CIF AEP Extension 라이브 검색 이벤트 수정
+* CIF AEP 확장 라이브 검색 이벤트 수정
 
 ## 릴리스 날짜: 2023년 11월
 

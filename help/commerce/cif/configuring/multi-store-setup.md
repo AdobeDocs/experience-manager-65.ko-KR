@@ -11,7 +11,7 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '416'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ AEM CIF 핵심 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 
 
 여러 Adobe Commerce 스토어 보기를 Adobe Experience Manager Sites과 통합하기 위한 옵션을 자세히 설명하는 비디오 연습입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32829/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32829/?captions=kor&quality=12)
 
-라이브 카피 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용하여 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
+Live Copy 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용되어 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
 
 권장되는 설정은 AEM 사이트와 Adobe Commerce 스토어 보기 간에 1:1 관계를 사용하는 것입니다.
 
@@ -59,6 +59,6 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 ## 추가 리소스
 
 * [Adobe Commerce 웹 사이트, 스토어 및 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko)
-* [AEM CIF 핵심 구성 요소 - 다중 저장소/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [AEM CIF 핵심 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=ko)
 * [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
