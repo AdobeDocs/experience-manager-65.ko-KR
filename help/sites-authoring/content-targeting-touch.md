@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 79%
-
 ---
-
 # 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성{#authoring-targeted-content-using-targeting-mode}
 
 타겟팅 모드를 사용하여 AEM에 대한 타겟팅된 콘텐츠를 작성할 수 있습니다. 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
@@ -521,7 +519,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
   </tr>
   <tr>
    <td><strong>증분 카운트, 사용자 해제 및 재입력 금지</strong></td>
-   <td>활동 컨텐츠 대신 사용자에게 표시되는 컨텐츠를 결정합니다.
+   <td>활동 콘텐츠 대신 사용자에게 표시되는 콘텐츠를 결정합니다.
     <ul>
      <li>동일 경험, 추적 없음</li>
      <li>기본 컨텐츠 또는 기타 활동 컨텐츠</li>
