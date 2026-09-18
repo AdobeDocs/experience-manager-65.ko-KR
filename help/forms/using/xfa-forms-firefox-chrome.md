@@ -53,6 +53,6 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 >[!NOTE]
 > 
 > LiveCycle ES4는 HTML5에서 XFA 기반 양식을 렌더링할 수 있도록 지원하므로 iPad과 같은 모바일 디바이스에서 실행되는 양식을 포함하여 HTML5가 지원되는 브라우저에서 양식을 열 수 있습니다. 양식의 HTML5 렌디션은 양식 디자인의 레이아웃을 유지 관리하고 XFA 양식 템플릿에 포함된 대부분의 양식 논리(예: JavaScript, 양식 계산 및 양식 유효성 검사)를 지원합니다. 이러한 방식으로 XFA 양식에 대한 기술 투자는 Adobe Reader 플러그인의 실행이 불가능한 장치로 쉽게 이전됩니다.
->자세한 내용은 [LiveCycle 제품 설명서](https://business.adobe.com/products/experience-manager/forms/aem-forms.html)를 참조하십시오.
+>자세한 내용은 [LiveCycle 제품 설명서](https://business.adobe.com/kr/products/experience-manager/forms/aem-forms.html)를 참조하십시오.
 
 [법적 고지 사항](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [온라인 개인정보 처리방침](https://www.adobe.com/kr/privacy.html)
