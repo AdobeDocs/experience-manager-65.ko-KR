@@ -8,15 +8,13 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 61cce7cd8290156bec6dcc351a59093f545a4ec7
+exl-id: f704b58a-7bd8-401e-8d7e-2cc3b580c570
+source-git-commit: d2ae4817720cae92b038789804124e0c2465f9c8
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 1%
-
+source-wordcount: '672'
+ht-degree: 6%
 ---
-
-
-# JEE에서 AEM Forms의 스프링 프레임워크 취약점 완화
+# JEE의 AEM Forms에 대한 Spring Framework 취약점 완화
 
 이 문서에서는 JEE의 AEM Forms에 영향을 주는 두 가지 중요한 스프링 프레임워크 취약점을 해결하는 방법에 대한 지침을 제공합니다.
 
@@ -34,9 +32,9 @@ ht-degree: 1%
 
 | AEM Forms 버전 | 필수 작업 |
 |-------------------|-----------------|
-| 6.5.22.0 | 1. [환경을 위한 핫픽스를 다운로드](/help/release-notes/aem-forms-hotfix.md). </br> 2. 이 수정 사항을 설치하려면 지침에 따라 [JEE의 AEM 양식에 서비스 팩을 설치](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)하십시오. |
+| 6.5.22.0 | &#x200B;1. [환경을 위한 핫픽스를 다운로드](/help/release-notes/aem-forms-hotfix.md)합니다. </br> 2. 이 수정 사항을 설치하려면 지침에 따라 [JEE의 AEM 양식에 서비스 팩을 설치](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)하십시오. |
 | 6.5.17.0 - 6.5.21.0 | [수동 완화 단계 적용](#manual-mitigation-steps). |
-| 6.5 - 6.5.16.0 | 1. [최신 서비스 팩을 설치합니다](/help/release-notes/release-notes.md)<br>2. 업데이트된 버전을 기반으로 [적절한 솔루션을 구현](#version-specific-solutions)합니다. |
+| 6.5 - 6.5.16.0 | &#x200B;1. [최신 서비스 팩을 설치합니다](/help/release-notes/release-notes.md)<br>2. 업데이트된 버전을 기반으로 [적절한 솔루션을 구현](#version-specific-solutions)합니다. |
 
 > **참고**: AEM Forms은 공식적으로 최신 서비스 팩 6개만 지원합니다. 이전 버전의 사용자는 먼저 최신 서비스 팩으로 업그레이드한 다음 필요한 핫픽스를 설치해야 합니다.
 
@@ -68,19 +66,19 @@ ht-degree: 1%
    1. 다음으로 이동 `[Adobe_Experience_Manager_Forms installation directory]/deploy`.
    1. 보관 관리자 도구를 사용하여 `adobe-core-<appserver>.ear` 파일을 엽니다. 환경에 따라 `<appserver>`이(가) JBoss, WebLogic 또는 WebSphere일 수 있습니다.
    - **JBoss:**&#x200B;의 경우 `ear/lib` 폴더로 이동하여 다음 JAR 파일을 삭제합니다.
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
    - **WebLogic 또는 WebSphere의 경우:** EAR의 루트에서 다음 JAR 파일을 삭제합니다.
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
    - **모든 응용 프로그램 서버의 경우:** `adobe-core-<appserver>.ear`의 루트 수준에서 `adobe-dscf.jar` 파일을 열고 `META-INF/MANIFEST.MF` 파일을 편집하여 다음 JAR 파일에 대한 참조를 제거하십시오.
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
 1. Geode 배포에서 JAR 파일 바꾸기:
-   1. `<Adobe_Experience_Manager_Forms>/lib/caching/lib`(으)로 이동
+   1. 다음으로 이동 `<Adobe_Experience_Manager_Forms>/lib/caching/lib`
    1. 기존 JAR 파일을 업데이트된 버전으로 바꿉니다.
    - `spring-context-<version>.jar` → `spring-context-6.1.14.jar`
    - `spring-beans-<version>.jar` → `spring-beans-6.1.14.jar`
@@ -99,11 +97,11 @@ ht-degree: 1%
    - `META-INF/MANIFEST.MF` 파일을 찾아 추출합니다.
    - 텍스트 편집기에서 MANIFEST.MF 파일 편집
    - &quot;Class-Path&quot; 섹션을 찾아 모든 Spring 프레임워크 참조를 업데이트합니다.
-      - `spring-core-<version>.jar` - `spring-core-6.1.14.jar`
-      - `spring-web-<version>.jar` - `spring-web-6.1.14.jar`
-      - `spring-context-<version>.jar` - `spring-context-6.1.14.jar`
-      - `spring-beans-<version>.jar` - `spring-beans-6.1.14.jar`
-      - `spring-jcl-<version>.jar` - `spring-jcl-6.1.14.jar`
+     - `spring-core-<version>.jar` - `spring-core-6.1.14.jar`
+     - `spring-web-<version>.jar` - `spring-web-6.1.14.jar`
+     - `spring-context-<version>.jar` - `spring-context-6.1.14.jar`
+     - `spring-beans-<version>.jar` - `spring-beans-6.1.14.jar`
+     - `spring-jcl-<version>.jar` - `spring-jcl-6.1.14.jar`
    - 수정된 MANIFEST.MF 파일을 저장합니다.
    - JAR의 원래 MANIFEST.MF를 업데이트된 버전으로 바꿉니다
    - JAR 파일을 저장합니다.
