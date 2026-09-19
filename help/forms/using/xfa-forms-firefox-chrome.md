@@ -1,6 +1,6 @@
 ---
-title: Firefox 및 Chrome에서 XFA 기반 PDF forms을 여는 방법
-description: Firefox 및 Chrome에서 XFA 기반 PDF forms을 여는 방법
+title: Firefox 및 Chrome에서 XFA 기반 PDF 양식을 여는 방법
+description: Firefox 및 Chrome에서 XFA 기반 PDF 양식을 여는 방법
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
@@ -8,14 +8,13 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ebb61f2c5056a780e829e64031f8eba69a8ae25b
+exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
+source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
-
+source-wordcount: '334'
+ht-degree: 11%
 ---
-
-# Firefox 및 Chrome에서 XFA 기반 PDF forms을 여는 방법
+# Firefox 및 Chrome에서 XFA 기반 PDF 양식을 여는 방법
 
 ## 문제
 
@@ -49,11 +48,11 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 
 1. Chrome PDF 뷰어 아래에서 비활성화 를 클릭하고 Adobe PDF 플러그인 아래에서 활성화 를 클릭합니다.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-자세한 내용은 Google의 [Adobe PDF 플러그인](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) 설명서를 참조하십시오.
+   자세한 내용은 Google의 [Adobe PDF 플러그인](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) 설명서를 참조하십시오.
 
 >[!NOTE]
 > 
 > LiveCycle ES4는 HTML5에서 XFA 기반 양식을 렌더링할 수 있도록 지원하므로 iPad과 같은 모바일 디바이스에서 실행되는 양식을 포함하여 HTML5가 지원되는 브라우저에서 양식을 열 수 있습니다. 양식의 HTML5 렌디션은 양식 디자인의 레이아웃을 유지 관리하고 XFA 양식 템플릿에 포함된 대부분의 양식 논리(예: JavaScript, 양식 계산 및 양식 유효성 검사)를 지원합니다. 이러한 방식으로 XFA 양식에 대한 기술 투자는 Adobe Reader 플러그인의 실행이 불가능한 장치로 쉽게 이전됩니다.
 >자세한 내용은 [LiveCycle 제품 설명서](https://business.adobe.com/kr/products/experience-manager/forms/aem-forms.html)를 참조하십시오.
 
-[법적 고지 사항](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [온라인 개인정보 처리방침](https://www.adobe.com/kr/privacy.html)
+[법적 고지 사항](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [온라인 개인정보 처리방침](https://www.adobe.com/kr/privacy.html)
