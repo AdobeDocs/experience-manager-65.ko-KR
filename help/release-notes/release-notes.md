@@ -63,7 +63,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
   > * [독립형 환경의 경우 JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md).
   > * [JEE의 AEM Forms용 JBoss EAP 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) 클러스터 환경용.
 
-* **LCM(구성 관리자) 빠른 모드 자격 증명 프롬프트:** 빠른 모드에서 LCM(구성 관리자)을 사용하여 JEE에서 AEM Forms을 구성할 때 LCM에 기본 자격 증명을 사용하는 대신 구성 중에 AEM 관리자 자격 증명을 입력하라는 새 화면이 표시됩니다. 이 변경 사항은 AEM 서비스 팩 6.5.25.0용 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 사용할 수 있습니다. 구성 단계는 [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)를 참조하십시오. (FORMS-26365)
+* **LCM(구성 관리자) 빠른 모드 자격 증명 프롬프트:** 빠른 모드에서 LCM(구성 관리자)을 사용하여 JEE에서 AEM Forms을 구성할 때 LCM에 기본 자격 증명을 사용하는 대신 구성 중에 AEM 관리자 자격 증명을 입력하라는 새 화면이 표시됩니다. 이 변경 사항은 AEM 서비스 팩 6.5.25.0용 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 사용할 수 있습니다. 구성 단계는 [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_kr)를 참조하십시오. (FORMS-26365)
 
 ## 서비스 팩 25의 문제가 해결되었습니다. {#fixed-issues}
 
@@ -635,11 +635,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
