@@ -1,18 +1,16 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 6.5 릴리스 정보'
-description: ' [!DNL Adobe Experience Manager] 6.5에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 목록을 찾으십시오.'
+title: '[!DNL Adobe Experience Manager] 6.5 릴리스 정보'
+description: '[!DNL Adobe Experience Manager] 6.5에 대한 릴리스 정보, 새로운 기능, 설치 방법 및 자세한 변경 사항 목록을 확인합니다.'
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '7444'
+source-wordcount: '7679'
 ht-degree: 5%
-
 ---
-
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
@@ -64,6 +62,8 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
   > JBoss EAP를 7.4.10에서 7.4.23으로 업그레이드하려면 다음을 참조하십시오.
   > * [독립형 환경의 경우 JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md).
   > * [JEE의 AEM Forms용 JBoss EAP 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) 클러스터 환경용.
+
+* **LCM(구성 관리자) 빠른 모드 자격 증명 프롬프트:** 빠른 모드에서 LCM(구성 관리자)을 사용하여 JEE에서 AEM Forms을 구성할 때 LCM에 기본 자격 증명을 사용하는 대신 구성 중에 AEM 관리자 자격 증명을 입력하라는 새 화면이 표시됩니다. 이 변경 사항은 AEM 서비스 팩 6.5.25.0용 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 사용할 수 있습니다. 구성 단계는 [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_kr)를 참조하십시오. (FORMS-26365)
 
 ## 서비스 팩 25의 문제가 해결되었습니다. {#fixed-issues}
 
@@ -508,7 +508,7 @@ Adobe은 서비스 종료 공지가 있을 때까지 이러한 이전 끝점을 
 
 [SPA 편집기](/help/sites-developing/spa-overview.md)는 AEM 6.5의 릴리스 6.5.25부터 새 프로젝트에 대해 더 이상 사용되지 않습니다. SPA 편집기는 기존 프로젝트에 대해 계속 지원되지만 새 프로젝트에 사용해서는 안 됩니다.
 
-AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
+AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다.
 
 * 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)
 * 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/sites-developing/universal-editor/introduction.md)
@@ -607,6 +607,10 @@ AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음�
 다음 문제에는 다운로드 및 설치에 사용할 수 있는 핫픽스가 있습니다. [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하여 다음 문제를 해결할 수 있습니다.
 
 * **NPR-44100** WAR/JEE 배포에 AEM 6.5 서비스 팩 25(JEE의 AEM Forms 포함)를 설치한 후 `com.adobe.cq.screens.sessions` 번들은 [설치됨] 상태로 유지되며 활성화되지 않습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-26802** SOAP SDK 인증을 강화한 후 `/soap/sdk` 끝점이 인증되지 않은 요청을 거부하므로 LCM Configuration Manager, Workbench 및 Designer이 JEE 서버의 AEM Forms에 연결하지 못했습니다. 오류: `ALC-LCM-200-001`. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-26679** AEM Forms Document Security에서 MFA(Microsoft Entra ID) 리디렉션 후 인증 쿠키가 삭제되어 정책으로 보호된 문서를 열 때 &quot;쿠키가 활성화되지 않을 수 있습니다&quot; 오류가 발생합니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-26617** WebLogic이 있는 JEE의 AEM Forms에서 Microsoft SQL Server JDBC 드라이버 12.10.0을 사용할 때 구성 관리자를 통한 데이터베이스 구성이 &quot;적합한 드라이버를 찾을 수 없음&quot;과 함께 실패합니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* 최신 AEM Forms 6.5 빌드를 설치한 후 **FORMS-27869** PDF가 느리게 열립니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * **FORMS-23491** AEM Forms 6.5.24.0 JEE 배포(JBoss, WebLogic, WebSphere)에 다중 부분 요청 처리에서 Apache Struts 서비스 거부 취약점인 CVE-2025-64775의 영향을 받습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.24.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * **FORMS-14926** AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더 아래에서 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목을 찾으면 다음 단계를 수행하여 문제를 해결하십시오.
 

@@ -5,13 +5,11 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 7%
-
+source-wordcount: '4751'
+ht-degree: 6%
 ---
-
 # Adobe Experience Manager Forms 핫픽스{#aem-form-hotfix}
 
 이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 향상시키며, AEM Forms의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
@@ -19,6 +17,8 @@ ht-degree: 7%
 >[!NOTE]
 >
 > 핫픽스는 이전의 모든 수정 사항을 포함하여 누적되도록 설계되었습니다. 릴리스에 최신 핫픽스를 적용하면 최신 문제를 해결할 수 있을 뿐만 아니라 이전의 모든 버그 수정 및 개선 사항이 통합되어 있습니다.
+>
+> 핫픽스는 누적되므로 이전 서비스 팩에 적용할 경우 해당 핫픽스에 대해 나열된 문제뿐만 아니라 핫픽스가 빌드된 서비스 팩을 포함한 모든 수정 사항이 최신 상태로 전환되어 배포가 업데이트됩니다.
 
 ## AEM Forms용 핫픽스 {#hotfix-for-aem-forms}
 
@@ -28,6 +28,52 @@ ht-degree: 7%
     <td><strong>날짜</strong></td>
     <td><strong>핫픽스 다운로드 링크(AEM 소프트웨어 배포 링크)</strong></td>
     <td><strong>해결된 문제</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>2026년 9월 18일</strong><br>
+      <em>적용 대상:</em> AEM 6.5.25.0 Forms JEE 배포(JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>이 핫픽스를 설치하려면 다음 단계를 순서대로 완료하십시오.</strong></p>
+    <p><strong>1단계: 패치 설치</strong></p>
+    <ul>
+    <strong>JBos:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-win-jboss.zip">JBoss JEE 서버용 Windows의 AEM 서비스 팩 6.5.25.0용 핫픽스</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-jboss.tar.gz">JBoss JEE 서버용 Linux의 AEM 서비스 팩 6.5.25.0용 핫픽스</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-win-weblogic.zip">Weblogic JEE 서버용 Windows에서 AEM 서비스 팩 6.5.25.0용 핫픽스</a></li>
+    <li>Linux- Weblogic JEE 서버용 Linux에서 AEM 서비스 팩 6.5.25.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-weblogic.tar.gz">핫픽스</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix2-6.5.25.0-win-websphere.zip">Websphere JEE 서버용 Windows에서 AEM 서비스 팩 6.5.25.0용 핫픽스</a></li>
+    <li>Linux- Websphere JEE 서버용 Linux에서 AEM 서비스 팩 6.5.25.0용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz">핫픽스</a></li>
+    </ul>
+    <p>표준 <a href="/help/release-notes/jee-patch-installer-65.md">AEM Forms JEE 패치 설치 지침</a>을 따르십시오.</p>
+    <p><strong>2단계: 취약성 수정 번들 설치</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/SP25Bundles_VULN-36670.zip">AEM 6.5.25.0용 취약성 수정 번들</a></li>
+    </ul>
+    <ol>
+    <li><code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>에서 OSGi 콘솔을 엽니다.</li>
+    <li><strong>설치/업데이트</strong>를 클릭합니다.</li>
+    <li><strong>번들 시작</strong> 및 <strong>패키지 새로 고침</strong> 확인란을 선택하십시오.</li>
+    <li><strong>파일 선택</strong>을 클릭한 다음 다운로드한 번들을 업로드하십시오.</li>
+    <li>로그가 설정되고 번들이 <strong>활성</strong>(으)로 표시될 때까지 기다리십시오.</li>
+    </ol>
+    <p><strong>3단계: AEM Forms Workbench 설치 관리자 업데이트</strong></p>
+    <p>최신 AEM Forms Workbench 설치 관리자(6.5.25.0)로 업데이트해야 합니다. 자세한 내용은 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">AEM Forms 릴리스</a>를 참조하십시오.</p>
+    <p><strong>4단계: 클라이언트 라이브러리 파일 업데이트(개발자)</strong></p>
+    <p>이 패치에는 SDK 클라이언트 라이브러리 <code>adobe-livecycle-client.jar</code>에 대한 주요 업데이트가 포함되어 있습니다(<a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">AEM Forms Java 라이브러리 파일 포함</a> 참조). 프로젝트에서 이 JAR 파일을 사용하는 경우 핫픽스를 설치한 후 프로젝트의 클래스 경로에서 <code>adobe-livecycle-client.jar</code>을(를) 업데이트합니다. <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>에서 최신 버전을 사용할 수 있습니다.</p>
+    <p>핫픽스는 누적되므로 먼저 서비스 팩 25를 설치하지 않고도 서비스 팩 25(6.5.25.0) 또는 이전 서비스 팩에 적용할 수 있습니다.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26802</b> SOAP SDK 인증이 강화된 후 LCM Configuration Manager, Workbench 및 Designer이 <code>ALC-LCM-200-001</code> 오류로 인해 서버에 연결할 수 없습니다(<code>/soap/sdk</code> 끝점이 인증되지 않은 요청을 거부함). 이 핫픽스는 끝점에 적용된 인증을 유지하면서 연결을 복원합니다.</li>
+    <li><b>FORMS-26679</b> AEM Forms Document Security에서 MFA(Microsoft Entra ID) 리디렉션 후 인증 쿠키가 삭제되어 정책으로 보호된 문서를 열 때 "쿠키가 활성화되지 않을 수 있습니다" 오류가 발생합니다. 이 핫픽스는 사이트 간 리디렉션에서 세션 쿠키를 유지합니다.</li>
+    <li><b>FORMS-26617</b> Microsoft SQL Server JDBC 드라이버 12.10.0을 사용할 때 WebLogic에서 구성 관리자를 통한 데이터베이스 구성이 "적합한 드라이버를 찾을 수 없음"과 함께 실패합니다. 이 핫픽스는 성공적인 데이터 소스 구성을 복원합니다.</li>
+    <li>최신 AEM Forms 6.5 빌드를 설치한 후 <b>FORMS-27869</b> PDF가 느리게 열립니다. 이 핫픽스는 문서 열기 성능을 향상시킵니다.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
