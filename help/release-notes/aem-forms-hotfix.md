@@ -14,7 +14,7 @@ ht-degree: 6%
 
 이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 향상시키며, AEM Forms의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
 
-이 문서는 AEM 6.5 Forms(비 LTS)에 적용됩니다. AEM 6.5 LTS 배포의 경우 [Adobe Experience Manager Forms 6.5 LTS 핫픽스](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes)를 참조하십시오.
+이 문서는 AEM 6.5 Forms(비 LTS)에 적용됩니다. AEM 6.5 LTS 배포의 경우 [Adobe Experience Manager Forms 6.5 LTS 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes)를 참조하십시오.
 
 >[!NOTE]
 >
