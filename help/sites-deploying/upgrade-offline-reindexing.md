@@ -178,7 +178,7 @@ AEM 6.4 이상 버전에서는 AEM에 시작 시퀀스 시 디스크에서 인�
 
 ### Runbook 및 체험판 실행 준비 {#prepare-a-runbook-and-trial-run}
 
-프로덕션에서 업그레이드를 실행하기 전에 [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
+프로덕션에서 업그레이드를 실행하기 전에 [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=ko#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
 
 ### 오프라인 색인화가 있는 문서 순회 모드 {#doc-traversal-mode-with-offline-indexing}
 
