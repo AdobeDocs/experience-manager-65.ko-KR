@@ -1,5 +1,5 @@
 ---
-title: 업그레이드 중 다운타임을 줄이기 위해 오프라인 리인덱싱을 사용
+title: 업그레이드 중 가동 중지 시간을 줄이기 위한 오프라인 재색인화 사용
 description: AEM 업그레이드를 수행할 때 오프라인 리인덱싱 방식을 사용하여 시스템 다운타임을 줄이는 방법을 알아봅니다.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,18 +11,16 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 0%
-
+source-wordcount: '1384'
+ht-degree: 2%
 ---
-
-# 업그레이드 중 다운타임을 줄이기 위해 오프라인 리인덱싱을 사용 {#offline-reindexing-to-reduce-downtime-during-upgrades}
+# 업그레이드 중 가동 중지 시간을 줄이기 위한 오프라인 재색인화 사용 {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
 ## 소개 {#introduction}
 
 Adobe Experience Manager 업그레이드의 주요 문제 중 하나는 바로 내 업그레이드를 수행할 때 작성 환경과 관련된 다운타임입니다. 업그레이드 중에는 콘텐츠 작성자가 환경에 액세스할 수 없습니다. 따라서 업그레이드를 수행하는 데 소요되는 시간을 최소화하는 것이 바람직합니다. 대형 저장소, 특히 일반적으로 데이터 저장소가 많고 시간당 높은 수준의 에셋 업로드가 있는 AEM Assets 프로젝트의 경우 Oak 색인을 다시 색인화하는 데 업그레이드 시간의 상당 부분이 소요됩니다.
 
-이 섹션에서는 Oak 실행 도구를 사용하여 업그레이드를 수행하기 전에 **먼저** 리포지토리를 다시 인덱싱함으로써 실제 업그레이드 중 다운타임을 줄이는 방법에 대해 설명합니다. 제공된 단계는 AEM 6.4 이상 버전의 [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) 인덱스에 적용할 수 있습니다.
+이 섹션에서는 Oak 실행 도구를 사용하여 업그레이드를 수행하기 전에 **먼저** 리포지토리를 다시 인덱싱함으로써 실제 업그레이드 중 다운타임을 줄이는 방법에 대해 설명합니다. 표시된 단계는 AEM 6.4 이상 버전의 [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) 인덱스에 적용할 수 있습니다.
 
 ## 개요 {#overview}
 
@@ -30,11 +28,11 @@ AEM의 새 버전에서는 기능 세트가 확장될 때 Oak 색인 정의가 �
 
 업그레이드 중 대부분의 고객이 직면한 문제는 가동 중지 시간 창을 줄이는 것입니다. 해결 방법은 업그레이드 중에 리인덱싱 활동을 **건너뛰기**&#x200B;하는 것입니다. 업그레이드를 수행할 새 인데임 **이전**&#x200B;을(를) 만든 다음 업그레이드하는 동안 가져오기만 하면 됩니다.
 
-## 접근 방식 {#approach}
+## 접근법 {#approach}
 
 ![오프라인 리인덱싱 업그레이드 텍스트 추출](assets/offline-reindexing-upgrade-process.png)
 
-업그레이드 전에 [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) 도구를 사용하여 대상 AEM 버전의 인덱스 정의에 대해 인덱스를 만드는 것이 좋습니다. 위의 다이어그램은 오프라인 리인덱싱 접근 방식을 보여 줍니다.
+업그레이드 전에 [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) 도구를 사용하여 대상 AEM 버전의 인덱스 정의에 따라 인덱스를 만드는 것이 좋습니다. 위의 다이어그램은 오프라인 리인덱싱 접근 방식을 보여 줍니다.
 
 또한 접근 방식에 설명된 대로 단계 순서는 다음과 같습니다.
 
@@ -168,7 +166,7 @@ MongoMK가 있는 경우, 이 단계가 MongoDB 인스턴스에 더 가까운 �
 
 ### 인덱스 가져오기 {#importing-indexes}
 
-AEM 6.4 이상 버전에서는 AEM에 시작 시퀀스 시 디스크에서 인덱스를 가져오는 기능이 내장되어 있습니다. 시작하는 동안 `<repository>/indexing-result/indexes` 폴더에서 인덱스 데이터가 있는지 확인합니다. **target** AEM jar의 새 버전으로 시작하기 전에 [업그레이드 프로세스](in-place-upgrade.md#performing-the-upgrade)를 진행하는 동안 미리 만든 인덱스를 위의 위치에 복사할 수 있습니다. AEM은 이를 저장소로 가져오고 시스템에서 해당 체크포인트를 제거합니다. 따라서 색인 재지정은 완전히 방지됩니다.
+AEM 6.4 이상 버전에서는 AEM에 시작 시퀀스 시 디스크에서 인덱스를 가져올 수 있는 기본 기능이 있습니다. 시작하는 동안 `<repository>/indexing-result/indexes` 폴더에서 인덱스 데이터가 있는지 확인합니다. **target** AEM jar의 새 버전으로 시작하기 전에 [업그레이드 프로세스](in-place-upgrade.md#performing-the-upgrade) 중에 미리 만든 인덱스를 위의 위치에 복사할 수 있습니다. AEM은 이를 저장소로 가져오고 시스템에서 해당 체크포인트를 제거합니다. 따라서 색인 재지정은 완전히 방지됩니다.
 
 ## 추가 팁 및 문제 해결 {#troubleshooting}
 
@@ -178,9 +176,9 @@ AEM 6.4 이상 버전에서는 AEM에 시작 시퀀스 시 디스크에서 인�
 
 운영 시스템을 복제하고 클론을 사용하여 오프라인 인덱스를 만드는 것이 좋습니다. 이렇게 하면 운영 시스템에 미치는 잠재적 영향이 제거됩니다. 하지만 인덱스를 가져오는 데 필요한 체크포인트는 프로덕션 시스템에 있어야 합니다. 따라서 클론을 만들기 전에 체크포인트를 만드는 것은 매우 중요합니다.
 
-### Runbook 및 평가판 실행 준비 {#prepare-a-runbook-and-trial-run}
+### Runbook 및 체험판 실행 준비 {#prepare-a-runbook-and-trial-run}
 
-프로덕션에서 업그레이드를 실행하기 전에 [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=ko#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
+프로덕션에서 업그레이드를 실행하기 전에 [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
 
 ### 오프라인 색인화가 있는 문서 순회 모드 {#doc-traversal-mode-with-offline-indexing}
 
