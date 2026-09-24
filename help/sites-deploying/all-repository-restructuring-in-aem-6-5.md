@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5의 일반적인 저장소 재구성
+title: AEM 6.5의 공통 저장소 재구성
 description: AEM 6.5에서 AEM의 모든 영역에 공통적인 새 저장소 구조로 마이그레이션하는 데 필요한 변경 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,35 +11,33 @@ feature: Upgrading
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 2%
-
+source-wordcount: '2770'
+ht-degree: 4%
 ---
+# AEM 6.5의 공통 저장소 재구성 {#common-repository-restructuring-in-aem}
 
-# AEM 6.5의 일반적인 저장소 재구성 {#common-repository-restructuring-in-aem}
-
-AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restructuring.md) 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 모든 솔루션에 영향을 줄 수 있는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 저장소 재구성 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 모든 솔루션에 영향을 줄 수 있는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 
 * [ContextHub 구성](#contexthub-6.5)
 * [워크플로 인스턴스](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
-* [워크플로우 모델](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
+* [워크플로 모델](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [워크플로 런처](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
 * [워크플로우 스크립트](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-scripts)
 
 **향후 업그레이드 전**
 
 * [ContextHub 구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
-* [클래식 Cloud Service 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
+* [클래식 클라우드 서비스 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
 * [클래식 대시보드 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [클래식 보고서 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [기본 디자인](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
-* [DTM JavaScript 끝점 Adobe](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
-* [DTM 웹 후크 끝점 Adobe](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
+* [Adobe DTM JavaScript 엔드포인트](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
+* [Adobe DTM 웹 후크 끝점](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
 * [받은 편지함 작업](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#inbox-tasks)
 * [다중 사이트 관리자 블루프린트 구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
-* [AEM Projects 대시보드 가젯 구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
+* [AEM 프로젝트 대시보드 가젯 구성](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
 * [복제 알림 전자 메일 템플릿](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
 * [태그](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
 * [번역 클라우드 서비스](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
@@ -47,7 +45,7 @@ AEM 6.5의 상위 [저장소 재구성](/help/sites-deploying/repository-restruc
 * [번역 규칙](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [번역 위젯 클라이언트 라이브러리](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
 * [트리 활성화 웹 콘솔](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
-* [공급업체 번역 커넥터 Cloud Service](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
+* [공급업체 번역 커넥터 클라우드 서비스](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [워크플로우 알림 이메일 템플릿](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## 6.5 업그레이드 포함 {#with-upgrade}
@@ -67,7 +65,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 즉, ContextHub 구성의 `sling:resourceType`은(는) 절대적이기보다는 상대적이어야 합니다.
 
-### 워크플로우 모델 {#workflow-models}
+### 워크플로 모델 {#workflow-models}
 
 <table style="table-layout:auto">
  <tbody>
@@ -84,7 +82,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
    <td><p>새 워크플로우 모델 또는 수정된 워크플로우 모델은 /conf/global/workflow/models로 마이그레이션해야 합니다.</p>
     <ol>
      <li>수정된 워크플로우 모델을 이전 위치에 존재하도록 로컬 AEM 6.5 개발 인스턴스에 배포합니다.</li>
-     <li>AEM &gt; 도구 &gt; 워크플로 &gt; 모델에서 AEM의 워크플로 모델 편집기를 사용하여 워크플로 모델을 편집합니다.</li>
+     <li>AEM &gt; 도구 &gt; 워크플로우 &gt; 모델에서 AEM의 워크플로우 모델 편집기를 사용하여 워크플로우 모델을 편집합니다.</li>
      <li>수정된 AEM 제공 워크플로 모델 마이그레이션 시
       <ol>
        <li>워크플로우 모델 편집기를 연 상태에서 브라우저의 주소 URL을 수정하고 경로 세그먼트 /libs/settings/workflow/models를 /etc/workflow/models로 바꿉니다.
@@ -168,7 +166,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
      <li><code>/conf/global/settings/workflow/launcher</code></li>
      <li><code>/libs/settings/workflow/launcher</code></li>
      <li><code>/etc/workflow/launcher</code></li>
-    </ol> <p>따라서 이전 위치에서 유지된 AEM 제공 워크플로 시작 관리자의 사용자 지정은 새 위치(<code>/conf/global/settings/workflow/launcher</code>)로 이동해야 합니다(유지해야 하는 경우). 그렇지 않으면 <code>/libs/settings/workflow/launcher</code>에서 AEM 제공 워크플로 시작 관리자 정의로 대체됩니다.</p> </td>
+    </ol> <p>따라서 이전 위치에서 유지된 AEM 제공 워크플로 시작 관리자의 사용자 지정은 새 위치(<code>/conf/global/settings/workflow/launcher</code>)로 이동해야 합니다. 그렇지 않으면 <code>/libs/settings/workflow/launcher</code>의 AEM 제공 워크플로 시작 관리자 정의로 대체됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -189,7 +187,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
    <td><strong>구조 조정 지침</strong></td>
    <td><p>새 워크플로우 스크립트나 수정된 워크플로우 스크립트를 새 위치로 마이그레이션하고 참조하는 워크플로우 모델을 새 위치를 반영하도록 업데이트해야 합니다.</p>
     <ol>
-     <li>이전 위치에서 새 위치에 새 워크플로우 스크립트나 수정된 워크플로우 스크립트를 복사합니다.<br />
+     <li>이전 위치에서 새 위치로 새 워크플로우 스크립트 또는 수정된 워크플로우 스크립트를 복사합니다.<br />
       <ul>
        <li><code>/apps/workflow/scripts</code> 는 SCM에서 유지 관리해야 합니다.</li>
       </ul> </li>
@@ -229,7 +227,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
       <ol>
        <li><strong>AEM Sites &gt; 페이지 &gt; 페이지 속성 &gt; 고급 탭 &gt; 클라우드 구성을 통한 AEM Sites 페이지 계층</strong>.</li>
       </ol> </li>
-     <li>마이그레이션된 이전 ContextHub 구성을 위의 AEM 콘텐츠 계층에서 연결 해제합니다.</li>
+     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 ContextHub 구성을 연결 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -239,7 +237,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
  </tbody>
 </table>
 
-### 클래식 Cloud Service 디자인 {#classic-cloud-services-designs}
+### 클래식 클라우드 서비스 디자인 {#classic-cloud-services-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -257,7 +255,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
     <ol>
      <li>이전 위치의 디자인을 새 위치(<code>/apps</code>)에 복사합니다.</li>
      <li>디자인의 모든 CSS, JavaScript 및 정적 리소스를 <code>allowProxy = true</code>이(가) 있는 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">클라이언트 라이브러리</a>(으)로 변환합니다.</li>
-     <li><span class="code">의 이전 위치에 대한 참조 업데이트
+     <li>의 이전 위치에 대한 참조 업데이트 <span class="code">
        <code>
         cq
        </code>:
@@ -265,7 +263,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
         designPath
        </code></span> 속성입니다.</li>
      <li>새 클라이언트 라이브러리 범주를 사용하도록 이전 위치를 참조하는 페이지를 업데이트합니다(이렇게 하려면 페이지 구현 코드를 업데이트해야 함).</li>
-     <li>AEM Dispatcher 규칙을 업데이트하여 /etc.clientlibs/...를 통해 클라이언트 라이브러리를 제공할 수 있도록 합니다. 프록시 서블릿.</li>
+     <li>/etc.clientlibs/.. 프록시 서블릿을 통해 클라이언트 라이브러리를 제공할 수 있도록 AEM Dispatcher 규칙을 업데이트합니다.</li>
     </ol> <p>SCM에서 관리되지 않는 모든 디자인 및 디자인 대화 상자를 통해 런타임 수정.</p>
     <ul>
      <li>작성자 가능 디자인을 <code>/etc</code> 밖으로 이동하지 마십시오.</li>
@@ -304,7 +302,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
        designPath
       </code> 속성입니다.</li>
      <li>새 클라이언트 라이브러리 범주를 사용하도록 이전 위치를 참조하는 페이지를 업데이트합니다(이렇게 하려면 페이지 구현 코드를 업데이트해야 함).</li>
-     <li>AEM Dispatcher 규칙을 업데이트하여 /etc.clientlibs/...를 통해 클라이언트 라이브러리를 제공할 수 있도록 합니다. 프록시 서블릿.</li>
+     <li>/etc.clientlibs/.. 프록시 서블릿을 통해 클라이언트 라이브러리를 제공할 수 있도록 AEM Dispatcher 규칙을 업데이트합니다.</li>
     </ol> <p>SCM에서 관리되지 않는 모든 디자인 및 디자인 대화 상자를 통해 런타임 수정.</p>
     <ul>
      <li>작성자 가능 디자인을 <code>/etc</code> 밖으로 이동하지 마십시오.</li>
@@ -343,7 +341,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
        designPath
       </code> 속성입니다.</li>
      <li>새 클라이언트 라이브러리 범주를 사용하도록 이전 위치를 참조하는 페이지를 업데이트합니다(이렇게 하려면 페이지 구현 코드를 업데이트해야 함).</li>
-     <li>AEM Dispatcher 규칙을 업데이트하여 /etc.clientlibs/...를 통해 클라이언트 라이브러리를 제공할 수 있도록 합니다. 프록시 서블릿.</li>
+     <li>/etc.clientlibs/.. 프록시 서블릿을 통해 클라이언트 라이브러리를 제공할 수 있도록 AEM Dispatcher 규칙을 업데이트합니다.</li>
     </ol> <p>SCM에서 관리되지 않는 모든 디자인 및 디자인 대화 상자를 통해 런타임 수정.</p>
     <ul>
      <li>작성자 가능 디자인을 <code>/etc</code> 밖으로 이동하지 마십시오.</li>
@@ -382,7 +380,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
        designPath
       </code> 속성입니다.</li>
      <li>새 클라이언트 라이브러리 범주를 사용하도록 이전 위치를 참조하는 페이지를 업데이트합니다(이렇게 하려면 페이지 구현 코드를 업데이트해야 함).</li>
-     <li>AEM Dispatcher 규칙을 업데이트하여 /etc.clientlibs/...를 통해 클라이언트 라이브러리를 제공할 수 있도록 합니다. 프록시 서블릿.</li>
+     <li>/etc.clientlibs/.. 프록시 서블릿을 통해 클라이언트 라이브러리를 제공할 수 있도록 AEM Dispatcher 규칙을 업데이트합니다.</li>
     </ol> <p>SCM에서 관리되지 않는 모든 디자인 및 디자인 대화 상자를 통해 런타임 수정.</p>
     <ul>
      <li>작성자 가능 디자인을 <code>/etc</code> 밖으로 이동하지 마십시오.</li>
@@ -395,7 +393,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
  </tbody>
 </table>
 
-### DTM JavaScript 끝점 Adobe {#adobe-dtm-javascript-endpoint}
+### Adobe DTM JavaScript 엔드포인트 {#adobe-dtm-javascript-endpoint}
 
 <table style="table-layout:auto">
  <tbody>
@@ -418,7 +416,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
  </tbody>
 </table>
 
-### DTM 웹 후크 끝점 Adobe {#adobe-dtm-web-hook-endpoint}
+### Adobe DTM 웹 후크 끝점 {#adobe-dtm-web-hook-endpoint}
 
 <table style="table-layout:auto">
  <tbody>
@@ -495,7 +493,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
  </tbody>
 </table>
 
-### AEM Projects 대시보드 가젯 구성 {#aem-projects-dashboard-gadget-configurations}
+### AEM 프로젝트 대시보드 가젯 구성 {#aem-projects-dashboard-gadget-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -509,13 +507,13 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>새로 만들거나 수정한 모든 AEM Projects 대시보드 가젯 구성은 새 위치(<code>/apps</code>)로 마이그레이션해야 합니다.</p>
+   <td><p>새로 만들거나 수정한 AEM 프로젝트 대시보드 가젯 구성은 새 위치(<code>/apps</code>)로 마이그레이션해야 합니다.</p>
     <ol>
-     <li>이전 위치에서 새 위치(<code>/apps</code>)로 새 AEM Projects 대시보드 가젯 구성 또는 수정된 구성을 복사합니다.
+     <li>이전 위치에서 새 위치(<code>/apps</code>)로 새 AEM 프로젝트 대시보드 가젯 구성 또는 수정된 구성을 복사합니다.
       <ol>
-       <li>수정되지 않은 AEM Projects 대시보드 가젯 구성은 새 위치(<code>/libs</code>)에 있으므로 복사하지 마십시오.</li>
+       <li>수정되지 않은 AEM 프로젝트 대시보드 가젯 구성은 새 위치(<code>/libs</code>)에 있으므로 복사하지 마십시오.</li>
       </ol> </li>
-     <li>적절한 새 위치를 가리키도록 이전 위치를 참조하는 AEM Projects 템플릿을 업데이트합니다.</li>
+     <li>적절한 새 위치를 가리키도록 이전 위치를 참조하는 모든 AEM 프로젝트 템플릿을 업데이트합니다.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -606,33 +604,33 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>새 번역 Cloud Service은 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다.</p>
+   <td><p>새 번역 클라우드 서비스는 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다.</p>
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ul>
-       <li><strong>도구 &gt; Cloud Service &gt; 번역 Cloud Service</strong>에서 AEM 제작 UI를 통해 새 번역 Cloud Service 구성을 수동으로 다시 만듭니다.<br /> 또는 </li>
-       <li>이전 위치에서 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 새 번역 Cloud Service 구성을 복사합니다.</li>
+       <li><strong>도구 &gt; 클라우드 서비스 &gt; 번역 클라우드 서비스</strong>에서 AEM 제작 UI를 통해 새 번역 클라우드 서비스 구성을 수동으로 다시 만듭니다.<br /> 또는 </li>
+       <li>이전 위치에서 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 새 번역 클라우드 서비스 구성을 복사합니다.</li>
       </ul> </li>
      <li>해당 AEM 구성을 AEM 콘텐츠 계층과 연결합니다.
       <ol>
        <li><strong>AEM Sites &gt; 페이지 &gt; 페이지 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>을 통한 AEM Sites 페이지 계층.</li>
-       <li><strong>AEM Experience Fragments &gt; Experience Fragment &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>을 통한 AEM Experience Fragment 계층</li>
-       <li><strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>을 통한 AEM Experience Fragment 폴더 계층 구조<br /> </li>
-       <li><strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Service 탭 &gt; 구성</strong>을 통한 AEM Assets 폴더 계층 구조.</li>
-       <li><strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성을 통한 AEM 프로젝트</strong>.</li>
+       <li><strong>AEM 경험 조각 &gt; 경험 조각 &gt; 속성 &gt; 클라우드 서비스 탭 &gt; 클라우드 구성</strong>을 통한 AEM 경험 조각 계층</li>
+       <li><strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; 클라우드 서비스 탭 &gt; 클라우드 구성을 통한 AEM Experience Fragment 폴더 계층 구조</strong>.<br /> </li>
+       <li><strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; 클라우드 서비스 탭 &gt; 구성</strong>을 통한 AEM Assets 폴더 계층 구조.</li>
+       <li><strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>을 통해 AEM 프로젝트.</li>
       </ol> </li>
-     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Service의 연결을 해제합니다.</li>
+     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 클라우드 서비스의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>번역 Cloud Service 해결은 다음 순서로 수행됩니다.</p>
+   <td><p>번역 클라우드 서비스 해결은 다음 순서로 수행됩니다.</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>마이그레이션된 번역 Cloud Service은 AEM 6.4와 호환되어야 합니다.</p> </td>
+    </ol> <p>마이그레이션된 번역 클라우드 서비스는 AEM 6.4와 호환되어야 합니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -725,7 +723,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
        designPath
       </code> 속성입니다.</li>
      <li>새 클라이언트 라이브러리 범주를 사용하도록 이전 위치를 참조하는 페이지를 업데이트합니다(이렇게 하려면 페이지 구현 코드를 업데이트해야 함).</li>
-     <li>AEM Dispatcher 규칙을 업데이트하여 /etc.clientlibs/...를 통해 클라이언트 라이브러리를 제공할 수 있도록 합니다. 프록시 서블릿.</li>
+     <li>/etc.clientlibs/.. 프록시 서블릿을 통해 클라이언트 라이브러리를 제공할 수 있도록 AEM Dispatcher 규칙을 업데이트합니다.</li>
     </ol> <p>SCM에서 관리되지 않는 모든 디자인 및 디자인 대화 상자를 통해 런타임 수정.</p>
     <ul>
      <li>작성자 가능 디자인을 <code>/etc</code> 밖으로 이동하지 마십시오.</li>
@@ -748,7 +746,7 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 {style="table-layout:auto"}
 
-### 공급업체 번역 커넥터 Cloud Service {#vendor-translation-connector-cloud-services}
+### 공급업체 번역 커넥터 클라우드 서비스 {#vendor-translation-connector-cloud-services}
 
 <table style="table-layout:auto">
  <tbody>
@@ -764,27 +762,27 @@ AEM 6.4 이상에서는 기본 ContextHub 구성이 없습니다. 따라서 사�
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>새 공급업체 번역 커넥터 Cloud Service은 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다.</p>
+   <td><p>새 공급업체 번역 커넥터 클라우드 서비스는 새 위치(<code>/apps</code>, <code>/conf/global</code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 마이그레이션해야 합니다.</p>
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ul>
-       <li>도구 &gt; Cloud Service &gt; 번역 Cloud Service</strong>의 <strong>AEM 작성 UI를 통해 새로운 공급업체 번역 커넥터 Cloud Service 구성을 수동으로 만듭니다.<br /> 또는 </li>
-       <li>새 공급업체 번역 커넥터 Cloud Service 구성을 이전 위치에서 새 위치(<code>/apps</code>, <code>/conf/global </code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 복사합니다.</li>
+       <li><strong>도구 &gt; 클라우드 서비스 &gt; 번역 클라우드 서비스의 AEM 작성 UI</strong>를 통해 새로운 공급업체 번역 커넥터 클라우드 서비스 구성을 수동으로 만듭니다.<br /> 또는 </li>
+       <li>새 공급업체 번역 커넥터 클라우드 서비스 구성을 이전 위치에서 새 위치(<code>/apps</code>, <code>/conf/global </code> 또는 <code>/conf/&lt;tenant&gt;</code>)로 복사합니다.</li>
       </ul> </li>
      <li>해당 AEM 구성을 AEM 콘텐츠 계층과 연결합니다.
       <ol>
        <li><strong>AEM Sites &gt; 페이지 &gt; 페이지 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>을 통한 AEM Sites 페이지 계층.</li>
-       <li><strong>AEM Experience Fragments &gt; Experience Fragment &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>을 통한 AEM Experience Fragment 계층</li>
-       <li><strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; Cloud Service 탭 &gt; 클라우드 구성</strong>을 통한 AEM Experience Fragment 폴더 계층 구조.</li>
-       <li><strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; Cloud Service 탭 &gt; 구성</strong>을 통한 AEM Assets 폴더 계층 구조.</li>
-       <li><strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성을 통한 AEM 프로젝트</strong>.</li>
+       <li><strong>AEM 경험 조각 &gt; 경험 조각 &gt; 속성 &gt; 클라우드 서비스 탭 &gt; 클라우드 구성</strong>을 통한 AEM 경험 조각 계층</li>
+       <li><strong>AEM Experience Fragments &gt; 폴더 &gt; 속성 &gt; 클라우드 서비스 탭 &gt; 클라우드 구성</strong>을 통한 AEM Experience Fragment 폴더 계층 구조.</li>
+       <li><strong>AEM Assets &gt; 폴더 &gt; 폴더 속성 &gt; 클라우드 서비스 탭 &gt; 구성</strong>을 통한 AEM Assets 폴더 계층 구조.</li>
+       <li><strong>AEM 프로젝트 &gt; 프로젝트 &gt; 프로젝트 속성 &gt; 고급 탭 &gt; 클라우드 구성</strong>을 통해 AEM 프로젝트.</li>
       </ol> </li>
-     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 Cloud Service의 연결을 해제합니다.</li>
+     <li>위의 AEM 콘텐츠 계층에서 마이그레이션된 기존 번역 클라우드 서비스의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>메모</strong></td>
-   <td><p>번역 Cloud Service 해결은 다음 순서로 수행됩니다.</p>
+   <td><p>번역 클라우드 서비스 해결은 다음 순서로 수행됩니다.</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>

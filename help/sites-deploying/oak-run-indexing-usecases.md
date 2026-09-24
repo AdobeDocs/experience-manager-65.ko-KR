@@ -11,11 +11,9 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1435'
 ht-degree: 0%
-
 ---
-
 # Oak-run.jar 색인화 사용 사례{#oak-run-jar-indexing-use-cases}
 
 Oak-run은 AEM의 JMX 콘솔을 통해 이러한 사용 사례의 실행을 오케스트레이션하지 않고도 명령줄에서 인덱싱 사용 사례를 지원합니다.
@@ -73,7 +71,7 @@ Valid indexes :
 
 ## 사용 사례 2 - 색인 통계 {#usecase2indexstatistics}
 
-쿼리 성능 Adobe과 관련된 일부 사례를 진단하기 위해 종종 기존 색인 정의, 고객 설정의 색인 관련 통계가 필요합니다. 지금까지 이 정보는 여러 자원에 분산되어 있었습니다. 보다 쉽게 문제를 해결할 수 있도록 Adobe은 다음과 같은 도구를 만들었습니다.
+쿼리 성능에 대한 일부 사례를 진단하기 위해 Adobe에서는 종종 기존 색인 정의, 고객 설정의 색인 관련 통계를 요구했습니다. 지금까지 이 정보는 여러 자원에 분산되어 있었습니다. Adobe에서는 문제 해결을 더 쉽게 하기 위해 다음과 같은 도구를 만들었습니다.
 
 1. 시스템에 있는 모든 인덱스 정의를 단일 JSON 파일로 덤프합니다.
 
@@ -116,10 +114,10 @@ java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstor
 * 리인덱싱은 `DocumentNodeStore` 설정에서 모든 콘텐츠가 로컬인 `SegmentNodeStore` 설정에 비해 훨씬 느립니다.
 
 * 현재 디자인에서는 리인덱싱이 발생하는 동안 비동기 인덱서가 차단되고 다른 모든 비동기 인덱스가 부실해지며 인덱싱 중에 업데이트되지 않습니다. 이러한 이유로 시스템이 사용 중이면 사용자에게 최신 결과가 표시되지 않을 수 있습니다.
-* 리인덱싱에는 AEM 설정에 높은 부하를 줄 수 있으므로 최종 사용자 경험에 영향을 줄 수 있는 전체 저장소 순회가 포함됩니다.
+* 리인덱싱에는 전체 리포지토리를 트래버스하는 작업이 포함되며, 이렇게 하면 AEM 설정에 높은 부하가 걸려 최종 사용자 경험에 영향을 줄 수 있습니다.
 * 리인덱싱하는 데 상당한 시간이 소요될 수 있는 `DocumentNodeStore` 설치의 경우 작업 중간에 Mongo 데이터베이스 연결이 실패하면 인덱싱을 처음부터 다시 시작해야 합니다.
 
-* 경우에 따라 텍스트 추출로 인해 리인덱싱하는 데 시간이 오래 걸릴 수 있습니다. 이는 텍스트 추출에 소요된 시간이 인덱싱 시간에 영향을 줄 수 있는 PDF 파일이 많은 설정에 적용됩니다.
+* 경우에 따라 텍스트 추출로 인해 리인덱싱하는 데 시간이 오래 걸릴 수 있습니다. 이는 텍스트 추출에 걸리는 시간이 색인 지정 시간에 영향을 줄 수 있는 PDF 파일이 많은 설정에 적용됩니다.
 
 이러한 목표를 달성하기 위해 oak-run 인덱스 툴은 필요에 따라 사용할 수 있는 다양한 리인덱싱 모드를 지원합니다. oak-run index 명령은 다음과 같은 이점을 제공합니다.
 
@@ -159,7 +157,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 여기에는 다음과 같은 항목이 포함됩니다.
 
 1. 단계 텍스트
-1. 읽기 전용 모드로 AEM에서 사용하는 동일한 저장소에 `oak-run`을(를) 연결하고 인덱싱을 수행합니다. 이를 수행하는 방법의 예:
+1. 읽기 전용 모드로 AEM에서 사용하는 리포지토리에 `oak-run`을(를) 연결하고 인덱싱을 수행합니다. 이를 수행하는 방법의 예:
 
    ```shell
    java -jar oak-run-1.7.6.jar index --fds-path=/Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/datastore/ --checkpoint 26b7da38-a699-45b2-82fb-73aa2f9af0e2 --reindex --index-paths=/oak:index/lucene /Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/segmentstore/
@@ -179,7 +177,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/
 ```
 
-이 접근 방식과 위에서 설명한 접근 방식의 차이점은 체크포인트 생성과 인덱스 가져오기가 자동으로 수행된다는 것입니다. 단점은 이 과정에서 AEM이 다운돼야 한다는 점이다.
+이 접근 방식과 위에서 설명한 접근 방식의 차이점은 체크포인트 생성과 인덱스 가져오기가 자동으로 수행된다는 것입니다. 이 과정에서 AEM이 다운돼야 한다는 단점이 있다.
 
 #### 대역 외 리인덱스 - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
