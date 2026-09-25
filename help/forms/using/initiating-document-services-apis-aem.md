@@ -1,6 +1,6 @@
 ---
-title: AEM Workflow에서 문서 서비스 API 시작
-description: DDX 또는 제공된 입력에서 AEM Document Services를 호출하는 방법에 대해 알아봅니다. 또한 PDF을 PDF/A로 변환하는 방법도 알아보십시오.
+title: AEM 워크플로에서 문서 서비스 API 시작
+description: DDX 또는 제공된 입력에서 AEM 문서 서비스를 호출하는 방법을 알아봅니다. PDF을 PDF/A로 변환하는 방법도 알아보십시오.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -10,12 +10,10 @@ feature: Interactive Communication
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 0%
-
+source-wordcount: '1173'
+ht-degree: 1%
 ---
-
-# AEM Workflow에서 문서 서비스 API 시작  {#initiate-document-services-apis-from-aem-workflow}
+# AEM 워크플로에서 문서 서비스 API 시작  {#initiate-document-services-apis-from-aem-workflow}
 
 ## 어셈블러 {#assembler}
 
@@ -28,7 +26,7 @@ AEM Forms은 다음 어셈블러 서비스 API를 호출하는 사용자 지정 
 
 **DDX 호출** 워크플로는 `Invoke` 어셈블러 서비스 API를 호출합니다. 이 API를 사용하여 문서를 어셈블하거나 디스어셈블하고, PDF에 워터마크를 추가하는 등의 작업을 수행할 수 있습니다.
 
-1. Sidekick의 Forms Workflow 탭 아래에 있는 **[!UICONTROL DDX 호출]** 워크플로 단계를 끌어옵니다.
+1. Sidekick의 Forms Workflow 탭에서 **[!UICONTROL DDX 호출]** 워크플로 단계를 드래그합니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 환경 옵션 및 출력 문서를 구성하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -38,9 +36,9 @@ DDX 호출 워크플로에는 다음 입력 문서가 필요합니다.
 
 * **DDX**: DDX 호출 워크플로 단계의 필수 입력이며 DDX 입력 드롭다운에서 다음 옵션 중 하나를 선택하여 지정할 수 있습니다.
 
-   * *페이로드 관련*: DDX 입력 파일은 워크플로 항목의 페이로드 폴더에 관련됩니다.
-   * *페이로드 사용*: 워크플로 항목에 대한 페이로드가 입력 DDX 문서로 사용됩니다.
-   * *절대 경로*: CRX 저장소의 DDX 문서에 대한 절대 경로입니다.
+  * *페이로드 관련*: DDX 입력 파일은 워크플로 항목의 페이로드 폴더에 관련됩니다.
+  * *페이로드 사용*: 워크플로 항목에 대한 페이로드가 입력 DDX 문서로 사용됩니다.
+  * *절대 경로*: CRX 저장소의 DDX 문서에 대한 절대 경로입니다.
 
 * **PayLoad에서 맵 만들기**: 이 옵션을 선택하면 페이로드 폴더의 모든 문서가 어셈블러의 `invoke` API에 대한 입력 문서 맵에 추가됩니다. 각 문서의 노드 이름은 맵에서 키로 사용됩니다.
 
@@ -66,16 +64,16 @@ DDX 호출 워크플로에는 다음 입력 문서가 필요합니다.
 
 ### PDF/A 워크플로우로 전환 {#convert-to-pdf-a-workflow}
 
-PDF/A로 변환 워크플로 단계는 `toPDFA` 어셈블러 서비스 API를 호출합니다. PDF 문서를 PDF/A 규격 문서로 변환하는 데 사용됩니다.
+PDF/A로 변환 워크플로우 단계는 `toPDFA` 어셈블러 서비스 API를 호출합니다. PDF 문서를 PDF/A 준수 문서로 변환하는 데 사용됩니다.
 
-1. Sidekick의 Forms Workflow 탭 아래에 있는 **[!UICONTROL ConvertToPDFA]** 워크플로 단계를 드래그합니다.
+1. Sidekick의 Forms Workflow 탭에서 **[!UICONTROL ConvertToPDFA]** 워크플로 단계를 드래그합니다.
 
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 변환 옵션 및 출력 문서를 구성하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 #### 입력 문서 {#input-documents-1}
 
-다음 방법 중 하나로 PDF/A 규격 문서로 변환할 문서의 소스를 지정합니다.
+다음 방법 중 하나로 PDF/A 호환 문서로 변환할 문서의 소스를 지정합니다.
 
 * *페이로드 관련*: 입력 문서는 워크플로 항목의 페이로드 폴더에 관련됩니다.
 * *페이로드 사용*: 워크플로 항목에 대한 페이로드가 입력 문서로 사용됩니다.
@@ -89,7 +87,7 @@ PDF/A로 변환 워크플로 단계는 `toPDFA` 어셈블러 서비스 API를 �
 * *결과 수준* : PDF/A 전환 로그에 사용할 로그 수준을 지정합니다.
 * *서명* : 변환 중에 입력 문서의 서명을 처리하는 방법을 지정합니다.
 * *색상 공간* : 출력 PDF/A 문서에 사용할 미리 정의된 색상 공간을 지정합니다.
-* *확인* 변환: 변환 후 변환된 PDF/A 문서의 PDF/A 준수 여부를 확인합니다.
+* *확인* 변환: 변환 후 변환된 PDF/A 문서에서 PDF/A 규정 준수 여부를 확인할지 여부를 지정합니다.
 * *작업 로그 수준* : 로그 처리에 사용할 로그 수준을 지정합니다.
 
 * *메타데이터 확장 스키마* : PDF 문서 메타데이터의 XMP 속성에 사용할 메타데이터 확장 스키마의 경로를 지정합니다.
@@ -101,13 +99,13 @@ PDF/A로 변환 워크플로 단계는 `toPDFA` 어셈블러 서비스 API를 �
 * *PDFA 문서*: 변환된 PDF/A 문서를 저장할 위치를 지정합니다. 페이로드 문서를 덮어쓰거나 페이로드 폴더에 저장할 수 있습니다.
 * *전환 로그*: 전환 로그가 저장되는 위치를 지정합니다. 페이로드 문서를 덮어쓰거나 페이로드 폴더에 저장할 수 있습니다.
 
-## Forms {#forms}
+## 양식 {#forms}
 
 PDF 양식 렌더링 워크플로는 XDP 템플릿과 데이터 xml을 사용하여 PDF 양식을 만들기 위한 `renderPDFForm` Forms 서비스 API에 대한 래퍼입니다.
 
-### 렌더링 PDF 양식 워크플로 {#render-pdf-form-workflow}
+### PDF 양식 워크플로우 렌더링 {#render-pdf-form-workflow}
 
-1. Sidekick의 Forms Workflow 탭 아래에 있는 PDF 양식 렌더링 워크플로 단계를 드래그합니다.
+1. Sidekick의 PDF 탭 아래에 있는 Forms Workflow 양식 렌더링 워크플로우 단계를 드래그합니다.
 1. 추가된 워크플로 단계를 두 번 클릭하여 구성 요소를 편집합니다.
 1. 구성 요소 편집 대화 상자에서 입력 문서, 출력 문서 및 추가 매개 변수를 구성하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -124,15 +122,15 @@ PDF 양식 렌더링 워크플로는 XDP 템플릿과 데이터 xml을 사용하
 #### 추가 매개 변수 {#additional-parameters}
 
 * *콘텐츠 루트*: 입력 XDP 템플릿에서 사용된 조각이나 이미지가 저장되는 저장소의 폴더에 대한 경로를 지정합니다.
-* *전송 URL*: 생성된 PDF 양식의 기본 전송 URL을 지정합니다.
-* *로케일*: 생성된 PDF 양식에 대한 기본 로케일을 지정합니다.
-* *Acrobat 버전*: 생성된 PDF 양식에 대해 타깃팅된 Acrobat 버전을 지정합니다.
+* *제출 URL*: 생성된 PDF 양식의 기본 제출 URL을 지정합니다.
+* *로케일*: 생성된 PDF 양식의 기본 로케일을 지정합니다.
+* *Acrobat 버전*: 생성된 PDF 양식의 대상 Acrobat 버전을 지정합니다.
 * *태그가 지정된 PDF*: 생성된 PDF에 액세스할 수 있게 할지 여부를 지정합니다.
 * *XCI 문서*: XCI 파일의 경로를 지정합니다.
 
 ## 출력 {#output}
 
-비대화형 PDF 생성 워크플로는 `generatePDFOutput` 출력 서비스 API에 대한 래퍼입니다. XDP 템플릿과 데이터 xml에서 비대화형 PDF 문서를 생성하는 데 사용됩니다.
+비대화형 PDF 생성 워크플로는 `generatePDFOutput` 출력 서비스 API에 대한 래퍼입니다. XDP 템플릿 및 데이터 xml에서 비대화형 PDF 문서를 생성하는 데 사용됩니다.
 
 ### 비대화형 PDF 출력 워크플로우 생성   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
@@ -153,8 +151,8 @@ PDF 양식 렌더링 워크플로는 XDP 템플릿과 데이터 xml을 사용하
 #### 추가 매개 변수 {#additional-parameters-1}
 
 * *콘텐츠 루트*: 입력 XDP 템플릿에서 사용된 조각이나 이미지가 저장되는 저장소의 폴더에 대한 경로를 지정합니다.
-* *로케일*: 생성된 PDF 양식에 대한 기본 로케일을 지정합니다.
-* *Acrobat 버전*: 생성된 PDF 양식에 대해 타깃팅된 Acrobat 버전을 지정합니다.
+* *로케일*: 생성된 PDF 양식의 기본 로케일을 지정합니다.
+* *Acrobat 버전*: 생성된 PDF 양식의 대상 Acrobat 버전을 지정합니다.
 * 선형화된 PDF: 웹 보기를 위해 생성된 PDF을 최적화할지 여부를 지정합니다.
 * *태그가 지정된 PDF*: 생성된 PDF에 액세스할 수 있게 할지 여부를 지정합니다.
 * *XCI 문서*: XCI 파일의 경로를 지정합니다.

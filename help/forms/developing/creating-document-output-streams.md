@@ -1,6 +1,6 @@
 ---
 title: 문서 출력 스트림 만들기
-description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, PCL(프린터 제어 언어), Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 형식으로 변환합니다.
+description: 출력 서비스를 사용하여 PDF(PDF/A 문서 포함), PostScript, PCL(프린터 제어 언어), Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 형식으로 문서를 변환합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,21 +8,20 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '18860'
+source-wordcount: '19156'
 ht-degree: 0%
-
 ---
-
 # 문서 출력 스트림 만들기  {#creating-document-output-streams}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **출력 서비스 정보**
 
-출력 서비스를 사용하면 문서를 PDF(PDF/A 문서 포함), PostScript, 프린터 제어 언어(PCL) 및 다음 레이블 형식으로 출력할 수 있습니다.
+출력 서비스를 사용하면 문서를 PDF(PDF/A 문서 포함), PostScript, PCL(프린터 제어 언어) 및 다음 레이블 형식으로 출력할 수 있습니다.
 
 * 얼룩말 - ZPL
 * Intermec - IPL
@@ -35,12 +34,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Output 서비스는 응용 프로그램 개체별 스크립트가 포함된 Acroform PDF 문서를 지원하지 않습니다. 애플리케이션 개체별 스크립트가 포함된 Acroform PDF 문서는 렌더링되지 않습니다.
+>Output 서비스는 애플리케이션 개체별 스크립트가 포함된 Acroform PDF 문서를 지원하지 않습니다. 애플리케이션 개체별 스크립트가 포함된 Acroform PDF 문서는 렌더링되지 않습니다.
 
 다음 섹션에서는 URI 값을 사용하여 양식 디자인을 출력 서비스로 전달하는 방법을 보여줍니다.
 
 * [PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents)
-* [PDF/A 문서 생성](creating-document-output-streams.md#creating-pdf-a-documents)
+* [PDF/A 문서 만들기](creating-document-output-streams.md#creating-pdf-a-documents)
 
 다음 섹션에서는 `com.adobe.idp.Document` 인스턴스 내에서 양식 디자인을 전달하는 방법을 보여 줍니다.
 
@@ -58,7 +57,7 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 출력 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * [PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents)
-* [PDF/A 문서 생성](creating-document-output-streams.md#creating-pdf-a-documents)
+* [PDF/A 문서 만들기](creating-document-output-streams.md#creating-pdf-a-documents)
 * [컨텐츠 서비스(사용 중단됨)의 문서를 출력 서비스로 전달](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [조각을 사용하여 PDF 문서 생성](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 * [파일로 인쇄](creating-document-output-streams.md#printing-to-files)
@@ -73,7 +72,7 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 
 ## PDF 문서 만들기 {#creating-pdf-documents}
 
-출력 서비스를 사용하여 사용자가 제공하는 양식 디자인과 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력 서비스에서 만든 PDF 문서는 대화형 PDF 문서가 아닙니다. 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다.
+출력 서비스를 사용하여 사용자가 제공하는 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력 서비스에서 만든 PDF 문서는 대화형 PDF 문서가 아닙니다. 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다.
 
 장기 저장을 위한 PDF 문서를 만들려면 PDF/A 문서를 만드는 것이 좋습니다. ([PDF/A 문서 만들기](creating-document-output-streams.md#creating-pdf-a-documents)를 참조하십시오.)
 
@@ -160,7 +159,7 @@ PDF 문서를 만들 때 파일 URI 옵션을 설정합니다. 이 옵션은 출
 
 >[!NOTE]
 >
->파일 URI 런타임 옵션을 설정하는 대신 출력 서비스에서 반환되는 복잡한 데이터 형식에서 프로그래밍 방식으로 PDF 문서를 검색할 수 있습니다. 그러나 파일 URI 런타임 옵션을 설정하면 프로그래밍 방식으로 PDF 문서를 검색하는 응용 프로그램 논리를 만들 필요가 없습니다.
+>파일 URI 런타임 옵션을 설정하는 대신 출력 서비스에서 반환되는 복잡한 데이터 형식에서 PDF 문서를 프로그래밍 방식으로 검색할 수 있습니다. 그러나 파일 URI 런타임 옵션을 설정하면 PDF 문서를 프로그래밍 방식으로 검색하는 응용 프로그램 논리를 만들 필요가 없습니다.
 
 **렌더링 런타임 옵션 설정**
 
@@ -174,7 +173,7 @@ PDF 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니�
 
 **PDF 문서 생성**
 
-양식 데이터가 포함된 유효한 XML 데이터 소스를 참조하고 런타임 옵션을 설정한 후 출력 서비스를 호출할 수 있으므로 PDF 문서가 생성됩니다.
+양식 데이터가 포함된 유효한 XML 데이터 소스를 참조하고 런타임 옵션을 설정한 후 출력 서비스를 호출할 수 있습니다. 그러면 PDF 문서가 생성됩니다.
 
 PDF 문서를 생성할 때 출력 서비스에서 PDF 문서를 만드는 데 필요한 URI 값을 지정합니다. 양식 디자인은 서버 파일 시스템과 같은 위치나 AEM Forms 애플리케이션의 일부로 저장할 수 있습니다. 콘텐츠 루트 URI 값 `repository:///`을(를) 사용하여 Forms 응용 프로그램의 일부로 존재하는 양식 디자인(또는 이미지 파일과 같은 기타 리소스)을 참조할 수 있습니다. 예를 들어 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램 내에 있는 *Loan.xdp*&#x200B;이라는 양식 디자인을 생각해 보십시오.
 
@@ -238,11 +237,11 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 메서드를 사용하여 PDF 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서는 원래 PDF 버전을 유지합니다. 마찬가지로, 입력 문서가 Acrobat 양식이나 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF` 메서드를 호출하여 태그가 지정된 Adobe PDF 옵션을 설정할 수 없습니다.
+   >입력 문서가 PDF 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 메서드를 사용하여 Acrobat 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서에는 원래 PDF 버전이 유지됩니다. 마찬가지로, 입력 문서가 Acrobat 양식이나 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF` 메서드를 호출하여 태그가 지정된 Adobe PDF 옵션을 설정할 수 없습니다.
 
    >[!NOTE]
    >
-   >입력 PDF 문서가 인증되었거나 디지털 서명된 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형 PDF 옵션을 설정할 수 없습니다. ([PDF 문서에 디지털 서명하기&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*를 참조하십시오.)*
+   >입력 PDF 문서가 인증되었거나 디지털 서명된 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. ([PDF 문서에 디지털 서명하기&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*를 참조하십시오.)*
 
 1. PDF 문서를 생성합니다.
 
@@ -259,7 +258,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >`generatePDFOutput` 메서드를 호출하여 PDF 문서를 생성할 때 서명되거나 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. ([디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*를 참조하십시오.)*
+   >`generatePDFOutput` 메서드를 호출하여 PDF 문서를 생성할 때 데이터를 서명 또는 인증된 XFA PDF 양식과 병합할 수 없습니다. ([디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*를 참조하십시오.)*
 
    >[!NOTE]
    >
@@ -275,7 +274,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
    * 작업 결과를 포함하는 `java.io.File` 개체를 만듭니다. 파일 이름 확장명이 .xml인지 확인합니다.
    * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 내용을 파일에 복사합니다(`getStatusDoc` 메서드에서 반환된 `com.adobe.idp.Document` 개체를 사용하는지 확인).
 
-   출력 서비스에서 `PDFOutputOptionsSpec` 개체의 `setFileURI` 메서드에 전달된 인수에 의해 지정된 위치에 PDF 문서를 쓰지만 `OutputResult` 개체의 `getGeneratedDoc` 메서드를 호출하여 프로그래밍 방식으로 PDF/A 문서를 검색할 수 있습니다.
+   출력 서비스에서 `PDFOutputOptionsSpec` 개체의 `setFileURI` 메서드에 전달되는 인수에 의해 지정된 위치에 PDF 문서를 쓰지만 `OutputResult` 개체의 `getGeneratedDoc` 메서드를 호출하여 프로그래밍 방식으로 PDF/A 문서를 검색할 수 있습니다.
 
 **추가 참조**
 
@@ -283,7 +282,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 [빠른 시작(EJB 모드): Java API를 사용하여 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -309,10 +308,10 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -334,7 +333,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 메서드를 사용하여 PDF 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서는 원래 PDF 버전을 유지합니다. 마찬가지로, 입력 문서가 Acrobat 양식이나 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 메서드를 호출하여 태그가 지정된 Adobe PDF 옵션을 설정할 수 없습니다.*
+   >입력 문서가 PDF 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 메서드를 사용하여 Acrobat 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서에는 원래 PDF 버전이 유지됩니다. 마찬가지로, 입력 문서가 Acrobat 양식이나 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 메서드를 호출하여 태그가 지정된 Adobe PDF 옵션을 설정할 수 없습니다.*
 
    >[!NOTE]
    >
@@ -356,7 +355,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    >[!NOTE]
    >
-   >`generatePDFOutput` 메서드를 호출하여 PDF 문서를 생성할 때 서명되거나 인증된 XFA PDF 양식과 데이터를 병합할 수 없습니다. ([디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*를 참조하십시오.)*
+   >`generatePDFOutput` 메서드를 호출하여 PDF 문서를 생성할 때 데이터를 서명 또는 인증된 XFA PDF 양식과 병합할 수 없습니다. ([디지털 서명 및 인증 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*를 참조하십시오.)*
 
    >[!NOTE]
    >
@@ -371,29 +370,29 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
    추가 참조
 
-[단계 요약](creating-document-output-streams.md#summary-of-steps)
+   [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
    >`OutputServiceService` 개체의 `generateOutput` 메서드가 더 이상 사용되지 않습니다.
 
-## PDF/A 문서 생성 {#creating-pdf-a-documents}
+## PDF/A 문서 만들기 {#creating-pdf-a-documents}
 
-출력 서비스를 사용하여 PDF/A 문서를 만들 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 임베드되고 파일이 압축 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다. 다른 출력 서비스 작업과 마찬가지로 양식 디자인과 데이터를 모두 제공하여 양식 디자인과 병합하여 PDF/A 문서를 만듭니다.
+출력 서비스를 사용하여 PDF/A 문서를 만들 수 있습니다. PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 임베드되고 파일이 압축 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되어 있지 않습니다. 다른 출력 서비스 작업과 마찬가지로 양식 디자인과 데이터를 모두 제공하여 양식 디자인과 병합하여 PDF/A 문서를 만듭니다.
 
-PDF/A-1 사양은 두 가지 적합성 수준, 즉 a와 b로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리적 구조(접근성) 지원에 대한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서에 포함되었음을 나타냅니다.
+PDF/A-1 사양은 두 가지 적합성 수준, 즉 a와 b로 구성됩니다. 두 요소의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리적 구조(접근성) 지원에 관한 것입니다. 적합성 수준에 관계없이 PDF/A-1은 모든 글꼴이 생성된 PDF/A 문서에 임베드되도록 지시합니다.
 
-PDF/A가 PDF 문서를 보관하는 표준이지만 표준 PDF 문서가 회사의 요구 사항에 부합하는 경우 PDF/A를 보관에 사용해야 하는 것은 아닙니다. PDF/A 표준은 장기간 보관이 가능하고 문서 보존 요건을 충족하는 PDF 파일을 구축하는 것이 목적이다. 예를 들어 시간이 지남에 따라 URL이 유효하지 않게 될 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
+PDF/A가 PDF 문서를 보관하는 표준이지만 표준 PDF 문서가 회사의 요구 사항을 충족하는 경우 PDF/A를 보관에 사용해야 하는 것은 아닙니다. PDF/A 표준의 목적은 장기간 저장할 수 있고 문서 보존 요구 사항을 충족하는 PDF 파일을 설정하는 것입니다. 예를 들어 시간이 지남에 따라 URL이 유효하지 않게 될 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
 
-조직은 자체 요구 사항, 문서를 보관하려는 기간, 파일 크기 고려 사항을 평가하고 자체 보관 전략을 결정해야 합니다. DocConverter 서비스를 사용하여 PDF 문서가 PDF/A를 준수하는지 여부를 프로그래밍 방식으로 확인할 수 있습니다. ([프로그래밍 방식으로 PDF/A 준수 확인](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)을 참조하십시오.)
+조직은 자체 요구 사항, 문서를 보관하려는 기간, 파일 크기 고려 사항을 평가하고 자체 보관 전략을 결정해야 합니다. DocConverter 서비스를 사용하여 PDF 문서가 PDF/A를 준수하는지 여부를 프로그래밍 방식으로 확인할 수 있습니다. ([프로그래밍 방식으로 PDF/A 규정 준수 확인](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)을 참조하십시오.)
 
-PDF/A 문서는 양식 디자인에 지정된 글꼴을 사용해야 하며 글꼴은 대체할 수 없습니다. 따라서 PDF 문서 내에 있는 글꼴을 호스트 OS에서 사용할 수 없는 경우에는 예외가 발생합니다.
+PDF/A 문서는 양식 디자인에 지정된 글꼴을 사용해야 하며 글꼴은 대체할 수 없습니다. 따라서 PDF 문서 내에 있는 글꼴을 호스트 운영 체제(OS)에서 사용할 수 없으면 예외가 발생합니다.
 
-Acrobat에서 PDF/A 문서를 열면 다음 그림과 같이 해당 문서가 PDF/A 문서임을 확인하는 메시지가 표시됩니다.
+Acrobat에서 PDF/A 문서를 열면 다음 그림과 같이 문서가 PDF/A 문서임을 확인하는 메시지가 표시됩니다.
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
@@ -414,7 +413,7 @@ PDF/A 문서를 만들려면 다음 단계를 수행하십시오.
 1. XML 데이터 소스를 참조합니다.
 1. PDF/A 런타임 옵션을 설정합니다.
 1. 렌더링 런타임 옵션을 설정합니다.
-1. PDF/문서 생성.
+1. PDF/A 문서를 생성합니다.
 1. 작업 결과를 검색합니다.
 
 **프로젝트 파일 포함**
@@ -441,7 +440,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 **PDF/A 런타임 옵션 설정**
 
-PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에 상대적입니다. 즉, C:\Adobe을 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스가 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
+PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버에 상대적입니다. 즉, C:\Adobe을 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스에서 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
 
 **렌더링 런타임 옵션 설정**
 
@@ -453,7 +452,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 >
 >PDF/A 1A 문서를 만들 때 태그가 지정된 Adobe PDF 옵션을 `false`(으)로 설정할 수 없습니다. PDF/A 1A는 항상 태그가 지정된 PDF 문서입니다. 또한 PDF/A 1B 문서를 만들 때 태그가 지정된 Adobe PDF 옵션을 `true`(으)로 설정할 수 없습니다. PDF/A 1B는 항상 태그가 지정되지 않은 PDF 문서입니다.
 
-**PDF/문서 생성**
+**PDF/A 문서 생성**
 
 양식 데이터가 포함된 유효한 XML 데이터 소스를 참조하고 런타임 옵션을 설정한 후 출력 서비스를 호출하여 PDF/A 문서를 생성할 수 있습니다.
 
@@ -504,9 +503,9 @@ Output API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
    >[!NOTE]
    >
-   >`RenderOptionsSpec` 개체의 `setPdfVersion`*메서드에 지정한 값에 관계없이 PDF/A 문서의 PDF 버전은 1.4입니다.*
+   >`RenderOptionsSpec` 개체의 `setPdfVersion`*메서드에 대해 지정한 값에 관계없이 PDF/A 문서의 PDF 버전은 1.4입니다.*
 
-1. PDF/문서 생성.
+1. PDF/A 문서를 생성합니다.
 
    `OutputClient` 개체의 `generatePDFOutput` 메서드를 호출하고 다음 값을 전달하여 PDF/A 문서를 만듭니다.
 
@@ -541,7 +540,7 @@ Output API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 생성](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -567,10 +566,10 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -593,9 +592,9 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
 
    >[!NOTE]
    >
-   >PDF/A 문서의 PDF 버전은 지정한 값에 관계없이 1.4입니다.
+   >지정한 값에 관계없이 PDF/A 문서의 PDF 버전은 1.4입니다.
 
-1. PDF/문서 생성.
+1. PDF/A 문서를 생성합니다.
 
    `OutputServiceService` 개체의 `generatePDFOutput` 메서드를 호출하고 다음 값을 전달하여 PDF 문서를 만듭니다.
 
@@ -647,7 +646,7 @@ Content Services(더 이상 사용되지 않음)에서 가져온 문서를 출�
 1. 프로젝트 파일을 포함합니다.
 1. 출력 및 Document Management 클라이언트 API 객체를 작성합니다.
 1. 콘텐츠 서비스에서 양식 디자인을 검색합니다(더 이상 사용되지 않음).
-1. 비대화형 PDF 양식 렌더링.
+1. 비대화형 PDF 양식을 렌더링합니다.
 1. 데이터 스트림으로 작업을 수행합니다.
 
 **프로젝트 파일 포함**
@@ -712,7 +711,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
    `retrieveContent` 메서드가 XDP 파일이 포함된 `CRCResult` 개체를 반환합니다. `CRCResult` 개체의 `getDocument` 메서드를 호출하여 `com.adobe.idp.Document` 인스턴스를 검색합니다.
 
-1. 비대화형 PDF 양식 렌더링.
+1. 비대화형 PDF 양식을 렌더링합니다.
 
    `OutputClient` 개체의 `generatePDFOutput2` 메서드를 호출하고 다음 값을 전달하십시오.
 
@@ -767,9 +766,9 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -789,7 +788,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
    * 콘텐츠 특성을 저장하는 `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` 출력 매개 변수입니다.
    * `CRCResult` 출력 매개 변수입니다. 이 개체를 사용하는 대신 `BLOB` 출력 매개 변수를 사용하여 콘텐츠를 검색할 수 있습니다.
 
-1. 비대화형 PDF 양식 렌더링.
+1. 비대화형 PDF 양식을 렌더링합니다.
 
    `OutputServiceClient` 개체의 `generatePDFOutput2` 메서드를 호출하고 다음 값을 전달하십시오.
 
@@ -831,9 +830,9 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 AEM Forms 저장소에서 프로그래밍 방식으로 Loan.xdp를 검색하여 `com.adobe.idp.Document` 개체 내의 출력 서비스로 전달할 수 있습니다.
 
-다음 두 가지 방법 중 하나를 사용하여 저장소의 XDP 파일을 기반으로 PDF을 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 프로그래밍 방식으로 XDP를 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
+두 가지 방법 중 하나를 사용하여 저장소의 XDP 파일을 기반으로 PDF을 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 프로그래밍 방식으로 XDP를 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
 
-[빠른 시작(EJB 모드): Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF 문서를 만듭니다](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)(참조에 의해 XDP 파일의 위치를 전달하는 방법을 보여 줍니다).
+[빠른 시작(EJB 모드): Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF 문서를 만드는 중](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)(참조에 의해 XDP 파일의 위치를 전달하는 방법을 보여 줌).
 
 [빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 `com.adobe.idp.Document` 인스턴스 내의 출력 서비스로 전달하는 방법을 보여 줌). (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
 
@@ -848,7 +847,7 @@ AEM Forms 저장소에서 가져온 문서를 출력 서비스로 전달하려�
 1. 프로젝트 파일을 포함합니다.
 1. 출력 및 Document Management 클라이언트 API 객체를 작성합니다.
 1. AEM Forms 저장소에서 양식 디자인을 검색합니다.
-1. 비대화형 PDF 양식 렌더링.
+1. 비대화형 PDF 양식을 렌더링합니다.
 1. 데이터 스트림으로 작업을 수행합니다.
 
 **프로젝트 파일 포함**
@@ -905,9 +904,9 @@ ResourceRepositoryClient
 
 1. AEM Forms 저장소에서 양식 디자인을 검색합니다.
 
-   `ResourceRepositoryClient` 개체의 `readResourceContent` 메서드를 호출하고 URI 위치를 지정하는 문자열 값을 XDP 파일에 전달합니다. 예, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. 이 값은 필수입니다. 이 메서드는 XDP 파일을 나타내는 `com.adobe.idp.Document` 인스턴스를 반환합니다.
+   `ResourceRepositoryClient` 개체의 `readResourceContent` 메서드를 호출하고 URI 위치를 지정하는 문자열 값을 XDP 파일에 전달합니다. 예를 들어, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`과 같이 입력합니다. 이 값은 필수입니다. 이 메서드는 XDP 파일을 나타내는 `com.adobe.idp.Document` 인스턴스를 반환합니다.
 
-1. 비대화형 PDF 양식 렌더링.
+1. 비대화형 PDF 양식을 렌더링합니다.
 
    `OutputClient` 개체의 `generatePDFOutput2` 메서드를 호출하고 다음 값을 전달하십시오.
 
@@ -948,7 +947,7 @@ ResourceRepositoryClient
 
 >[!NOTE]
 >
->어셈블러 서비스에서 어셈블한 양식 디자인을 출력 서비스 대신 Forms 서비스로 전달할 수도 있습니다. Output 서비스와 Forms 서비스의 주요 차이점은 Forms 서비스가 대화형 PDF 문서를 생성하고 Output 서비스가 비대화형 PDF 문서를 생성한다는 것입니다. 또한 Forms 서비스는 ZPL과 같은 프린터 기반 출력 스트림을 생성할 수 없습니다.
+>어셈블러 서비스에서 어셈블한 양식 디자인을 출력 서비스 대신 Forms 서비스로 전달할 수도 있습니다. Output 서비스와 Forms 서비스의 주요 차이점은 Forms 서비스가 대화형 PDF 문서를 생성하고 Output 서비스는 비대화형 PDF 문서를 생성한다는 것입니다. 또한 Forms 서비스는 ZPL과 같은 프린터 기반 출력 스트림을 생성할 수 없습니다.
 
 >[!NOTE]
 >
@@ -978,7 +977,7 @@ ResourceRepositoryClient
 
 **출력 서비스를 사용하여 PDF 문서 생성**
 
-출력 서비스를 사용하여 어셈블러 서비스에서 만든 양식 디자인을 사용하여 PDF 문서를 생성할 수 있습니다. 어셈블러 서비스에서 반환된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달합니다.
+출력 서비스를 사용하면 어셈블러 서비스에서 만든 양식 디자인을 사용하여 PDF 문서를 생성할 수 있습니다. 어셈블러 서비스에서 반환된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달합니다.
 
 **PDF 문서를 PDF 파일로 저장**
 
@@ -1091,9 +1090,9 @@ ResourceRepositoryClient
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 해당 암호 값을 `OutputServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
-      * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 상수 값 `HttpClientCredentialType.Basic`을(를) 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 해당 암호 값을 `OutputServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
+     * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 상수 값 `HttpClientCredentialType.Basic`을(를) 할당합니다.
 
    * `BasicHttpBindingSecurity.Security.Mode` 필드에 `BasicHttpSecurityMode.TransportCredentialOnly` 상수 값을 할당합니다.
 
@@ -1111,7 +1110,7 @@ ResourceRepositoryClient
 
    `invokeDDX` 메서드가 작업 결과와 발생한 모든 예외를 포함하는 `AssemblerResult` 개체를 반환합니다. 새로 만든 XDP 문서를 가져오려면 다음 작업을 수행합니다.
 
-   * 결과 PDF 문서를 포함하는 `Map` 개체인 `AssemblerResult` 개체의 `documents` 필드에 액세스합니다.
+   * 결과 PDF 문서가 포함된 `Map` 개체인 `AssemblerResult` 개체의 `documents` 필드에 액세스합니다.
    * `Map` 개체를 반복하여 어셈블된 양식 디자인을 검색합니다. 해당 배열 구성원의 `value`을(를) `BLOB`(으)로 캐스팅합니다. 이 `BLOB` 인스턴스를 출력 서비스에 전달합니다.
 
 1. 출력 서비스를 사용하여 PDF 문서를 생성합니다.
@@ -1299,10 +1298,10 @@ Output 서비스는 작업을 수행한 후 작업이 성공했는지 여부를 
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -1416,9 +1415,9 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 인쇄 스트림을 검색하여 프린터로 보냅니다. 예를 들어 PostScript 파일을 검색하여 프린터로 보낼 수 있습니다.
 
-프린터가 PDF을 지원하는 경우 PDF 파일을 보내도록 선택할 수 있습니다. 그러나 프린터에 PDF 문서를 보낼 때 발생하는 문제는 각 프린터 제조업체가 PDF 인터프리터의 다른 구현을 가지고 있다는 것입니다. 즉, 일부 인쇄 제조업체는 Adobe PDF 해석을 사용하지만 프린터에 따라 다릅니다. 다른 프린터에는 자체 PDF 인터프리터가 있습니다. 따라서 인쇄 결과가 달라질 수 있습니다.
+프린터가 PDF을 지원하는 경우 PDF 파일을 보내도록 선택할 수 있습니다. 그러나 PDF 문서를 프린터로 보낼 때 발생하는 문제는 각 프린터 제조업체에 PDF 인터프리터의 구현이 다르다는 것입니다. 즉, 일부 인쇄 제조업체는 Adobe PDF 해석을 사용하지만 프린터에 따라 다릅니다. 다른 프린터에는 자체 PDF 인터프리터가 있습니다. 따라서 인쇄 결과가 달라질 수 있습니다.
 
-프린터로 PDF 문서를 보내는 또 다른 제한 사항은 프린터에서 설정을 통하지 않는 한 인쇄만 한다는 것입니다.
+PDF 문서를 프린터로 보내는 또 다른 제한은 프린터에서 설정을 통하지 않으면 인쇄가 된다는 것입니다. 프린터에서 양면 인쇄, 용지함 선택 및 스테이플링에 액세스할 수 없습니다.
 
 인쇄할 문서를 검색하려면 `generatePrintedOutput` 메서드를 사용합니다. 다음 표에서는 `generatePrintedOutput` 메서드를 사용할 때 지정된 인쇄 스트림에 대해 설정된 콘텐츠 형식을 지정합니다.
 
@@ -1511,7 +1510,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 >[!NOTE]
 >
->네트워크 프린터를 사용하고 있고 액세스 메커니즘이 SharedPrinter인 경우 프린터의 전체 네트워크 경로를 지정해야 합니다.Java API를 사용하여 네트워크 프린터로 인쇄 스트림을 보냅니다
+>네트워크 프린터를 사용하고 있고 액세스 메커니즘이 SharedPrinter인 경우 프린터의 전체 네트워크 경로를 지정해야 합니다.Java API를 사용하여 네트워크 프린터로 인쇄 스트림 보내기
 
 출력 API(Java)를 사용하여 네트워크 프린터로 인쇄 스트림 보내기:
 
@@ -1541,12 +1540,12 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
    * `OutputClient` 개체의 `generatePrintedOutput` 메서드를 호출하고 다음 값을 전달하여 인쇄할 문서를 검색합니다.
 
-      * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
-      * 양식 디자인의 이름을 지정하는 문자열 값입니다.
-      * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
-      * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
-      * 파일로 인쇄하는 데 필요한 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
-      * 양식 디자인과 병합할 양식 데이터가 포함된 XML 데이터 원본을 나타내는 `com.adobe.idp.Document` 개체입니다.
+     * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
+     * 양식 디자인의 이름을 지정하는 문자열 값입니다.
+     * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
+     * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
+     * 파일로 인쇄하는 데 필요한 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
+     * 양식 디자인과 병합할 양식 데이터가 포함된 XML 데이터 원본을 나타내는 `com.adobe.idp.Document` 개체입니다.
 
      이 메서드는 작업 결과를 포함하는 `OutputResult` 개체를 반환합니다.
 
@@ -1585,10 +1584,10 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -1610,15 +1609,15 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
    * `OutputServiceService` 개체의 `generatePrintedOutput` 메서드를 호출하고 다음 값을 전달하여 인쇄할 문서를 검색합니다.
 
-      * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
-      * 양식 디자인의 이름을 지정하는 문자열 값입니다.
-      * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
-      * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
-      * 인쇄 스트림을 네트워크 프린터로 보낼 때 사용되는 인쇄 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
-      * 양식 데이터가 포함된 XML 데이터 원본이 포함된 `BLOB` 개체입니다.
-      * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드는 이 개체를 문서를 설명하는 생성된 메타데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
-      * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드가 이 개체를 결과 데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
-      * 작업 결과가 포함된 `OutputResult` 개체입니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
+     * 양식 디자인의 이름을 지정하는 문자열 값입니다.
+     * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
+     * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
+     * 인쇄 스트림을 네트워크 프린터로 보낼 때 사용되는 인쇄 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
+     * 양식 데이터가 포함된 XML 데이터 원본이 포함된 `BLOB` 개체입니다.
+     * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드는 이 개체를 문서를 설명하는 생성된 메타데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드가 이 개체를 결과 데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * 작업 결과가 포함된 `OutputResult` 개체입니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
 
    * `OutputResult` 개체의 `generatedDoc` 메서드 값을 가져와서 프린터로 보낼 `BLOB` 개체를 만듭니다. 이 메서드는 `generatePrintedOutput` 메서드에서 반환된 PostScript 데이터가 포함된 `BLOB` 개체를 반환합니다.
 
@@ -1638,11 +1637,11 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 ## 여러 출력 파일 만들기 {#creating-multiple-output-files}
 
-출력 서비스는 XML 데이터 소스 또는 모든 레코드가 포함된 단일 파일 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다(이 기능은 기본값). 예를 들어 XML 데이터 소스 내에 10개의 레코드가 있고 출력 서비스 API를 사용하여 각 레코드에 대해 별도의 PDF 문서(또는 다른 유형의 출력)를 만들도록 출력 서비스에 지시한다고 가정해 보겠습니다. 결과적으로 출력 서비스는 10개의 PDF 문서를 생성합니다. 문서를 만드는 대신 여러 인쇄 스트림을 프린터로 보낼 수 있습니다.
+출력 서비스는 XML 데이터 소스 또는 모든 레코드가 포함된 단일 파일 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다(이 기능은 기본값). 예를 들어 XML 데이터 소스 내에 10개의 레코드가 있고 출력 서비스 API를 사용하여 각 레코드에 대해 별도의 PDF 문서(또는 다른 유형의 출력)를 만들도록 출력 서비스에 지시한다고 가정해 보겠습니다. 그 결과 출력 서비스는 10개의 PDF 문서를 생성합니다. 문서를 만드는 대신 여러 인쇄 스트림을 프린터로 보낼 수 있습니다.
 
 다음 그림에서는 출력 서비스가 여러 레코드가 포함된 XML 데이터 파일을 처리하는 모습도 보여 줍니다. 그러나 모든 데이터 레코드가 포함된 단일 PDF 문서를 만들도록 출력 서비스에 지시한다고 가정합니다. 이 경우 출력 서비스는 모든 레코드가 포함된 하나의 문서를 생성합니다.
 
-다음 그림은 출력 서비스에서 여러 레코드가 포함된 XML 데이터 파일을 처리하는 방법을 보여 줍니다. 각 데이터 레코드에 대해 별도의 PDF 문서를 생성하도록 출력 서비스에 지시한다고 가정합니다. 이 경우 출력 서비스는 각 데이터 레코드에 대해 별도의 PDF 문서를 생성합니다.
+다음 그림은 출력 서비스에서 여러 레코드가 포함된 XML 데이터 파일을 처리하는 방법을 보여 줍니다. 각 데이터 레코드에 대해 별도의 PDF 문서를 만들도록 출력 서비스에 지시한다고 가정합니다. 이 경우 출력 서비스는 각 데이터 레코드에 대해 별도의 PDF 문서를 생성합니다.
 
 ![cm_outputbatchmany](assets/cm_outputbatchmany.png)
 
@@ -1707,7 +1706,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 ### 단계 요약 {#summary_of_steps-7}
 
-XML 데이터 소스를 기반으로 여러 PDF 파일을 만들려면 다음 단계를 수행합니다.
+XML 데이터 소스를 기반으로 여러 PDF 파일을 만들려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. 출력 클라이언트 개체를 만듭니다.
@@ -1880,10 +1879,10 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -1896,7 +1895,7 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
 1. PDF 런타임 옵션을 설정합니다.
 
    * 해당 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 부울 값을 `OutputOptionsSpec` 개체의 `generateManyFiles` 데이터 멤버에 할당하여 [많은 파일] 옵션을 설정합니다. 예를 들어 이 데이터 멤버에 값 `true`을(를) 할당하여 출력 서비스에 XML 데이터 원본의 각 레코드에 대해 별도의 PDF 파일을 만들도록 지시합니다. (이 데이터 멤버에 `false`을(를) 할당하면 출력 서비스에서 모든 레코드를 포함하는 단일 PDF을 생성합니다.)
+   * 부울 값을 `OutputOptionsSpec` 개체의 `generateManyFiles` 데이터 멤버에 할당하여 [많은 파일] 옵션을 설정합니다. 예를 들어 이 데이터 멤버에 값 `true`을(를) 할당하여 출력 서비스에 XML 데이터 원본의 각 레코드에 대해 별도의 PDF 파일을 만들도록 지시합니다. (이 데이터 멤버에 `false`을(를) 할당하면 출력 서비스에서 모든 레코드가 포함된 단일 PDF을 생성합니다.)
    * 출력 서비스에서 생성하는 파일의 위치를 지정하는 문자열 값을 `OutputOptionsSpec` 개체의 `fileURI` 데이터 멤버에 할당하여 파일 URI 옵션을 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아니라 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 상대적입니다.
    * 데이터 레코드를 구분하는 데이터 원본의 XML 요소 이름을 지정하는 문자열 값을 `OutputOptionsSpec` 개체의 `recordName` 데이터 멤버에 할당하여 레코드 이름 옵션을 설정합니다.
    * 출력 서비스가 생성하는 복사본 수를 지정하는 정수 값을 `OutputOptionsSpec` 개체의 `copies` 데이터 멤버에 할당하여 복사 옵션을 설정합니다.
@@ -1937,7 +1936,7 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
 
 ## 검색 규칙 만들기 {#creating-search-rules}
 
-출력 서비스에서 입력 데이터를 검사하고 데이터 콘텐츠를 기반으로 다양한 양식 디자인을 사용하여 출력을 생성하는 검색 규칙을 만들 수 있습니다. 예를 들어 텍스트 *모기지*&#x200B;가 입력 데이터 내에 있는 경우 출력 서비스는 Mortgage.xdp라는 양식 디자인을 사용할 수 있습니다. 마찬가지로 텍스트 *automobile*&#x200B;이 입력 데이터에 있으면 출력 서비스에서 AutomobileLoan.xdp로 저장된 양식 디자인을 사용할 수 있습니다. 출력 서비스는 다른 출력 유형을 생성할 수 있지만 이 섹션에서는 출력 서비스가 PDF 파일을 생성한다고 가정합니다. 다음 다이어그램은 XML 데이터 파일을 처리하고 여러 양식 디자인 중 하나를 사용하여 PDF 파일을 생성하는 출력 서비스를 보여 줍니다.
+출력 서비스에서 입력 데이터를 검사하고 데이터 콘텐츠를 기반으로 다양한 양식 디자인을 사용하여 출력을 생성하는 검색 규칙을 만들 수 있습니다. 예를 들어 텍스트 *모기지*&#x200B;가 입력 데이터 내에 있는 경우 출력 서비스는 Mortgage.xdp라는 양식 디자인을 사용할 수 있습니다. 마찬가지로 텍스트 *automobile*&#x200B;이 입력 데이터에 있으면 출력 서비스에서 AutomobileLoan.xdp로 저장된 양식 디자인을 사용할 수 있습니다. 출력 서비스에서 다른 출력 유형을 생성할 수 있지만 이 섹션에서는 출력 서비스에서 PDF 파일을 생성한다고 가정합니다. 다음 다이어그램은 XML 데이터 파일을 처리하고 여러 양식 디자인 중 하나를 사용하여 PDF 파일을 생성하는 출력 서비스를 보여 줍니다.
 
 또한 출력 서비스는 문서 패키지를 생성할 수 있습니다. 데이터 세트에 여러 개의 레코드가 제공되고 각 레코드가 양식 디자인과 일치하며 단일 문서가 여러 개의 양식 디자인으로 구성됩니다.
 
@@ -2112,10 +2111,10 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -2153,7 +2152,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `pdfVersion` 멤버를 사용하여 PDF 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서에는 Acrobat 양식의 PDF 버전이 유지됩니다. 마찬가지로 입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `taggedPDF` 메서드를 사용하여 태그가 지정된 PDF 옵션을 설정할 수 없습니다.
+   >입력 문서가 PDF 양식인 경우 `RenderOptionsSpec` 개체의 `pdfVersion` 멤버를 사용하여 Acrobat 문서의 버전을 설정할 수 없습니다. 출력 PDF 문서에는 Acrobat 양식의 PDF 버전이 유지됩니다. 마찬가지로 입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `taggedPDF` 메서드를 사용하여 태그가 지정된 PDF 옵션을 설정할 수 없습니다.
 
    >[!NOTE]
    >
@@ -2209,7 +2208,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
 ### 단계 요약 {#summary_of_steps-9}
 
-대화형 PDF 문서를 비대화형 PDF 문서로 병합하려면 다음 단계를 수행합니다.
+대화형 PDF 문서를 비대화형 PDF 문서로 병합하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. 출력 클라이언트 개체를 만듭니다.
@@ -2251,7 +2250,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [Java API를 사용하여 PDF 문서 평면화](creating-document-output-streams.md#flatten-a-pdf-document-using-the-java-api)
 
-[웹 서비스 API를 사용하여 PDF 문서 병합](creating-document-output-streams.md#flatten-a-pdf-document-using-the-web-service-api)
+[웹 서비스 API를 사용하여 PDF 문서 평면화](creating-document-output-streams.md#flatten-a-pdf-document-using-the-web-service-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2281,11 +2280,11 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
    `OutputServiceService` 개체의 `transformPDF` 메서드를 호출하고 다음 값을 전달하여 대화형 PDF 문서를 비대화형 PDF 문서로 변환합니다.
 
-   * 대화형 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
+   * 대화형 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
    * `TransformationFormat` 열거형 값입니다. 비대화형 PDF 문서를 생성하려면 `TransformationFormat.PDF`을(를) 지정하십시오.
-   * 수정 번호를 지정하는 `PDFARevisionNumber` 열거형 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `null`을(를) 지정할 수 있습니다.
-   * 수정안 번호 및 연도를 콜론으로 구분하여 나타내는 문자열 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `null`을(를) 지정할 수 있습니다.
-   * PDF/A 적합성 수준을 나타내는 `PDFAConformance` 열거형 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `null`을(를) 지정할 수 있습니다.
+   * 수정 번호를 지정하는 `PDFARevisionNumber` 열거형 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `null`을(를) 지정할 수 있습니다.
+   * 수정안 번호 및 연도를 콜론으로 구분하여 나타내는 문자열 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `null`을(를) 지정할 수 있습니다.
+   * PDF/A 적합성 수준을 나타내는 `PDFAConformance` 열거형 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `null`을(를) 지정할 수 있습니다.
 
    `transformPDF` 메서드가 비대화형 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체를 반환합니다.
 
@@ -2306,7 +2305,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API를 사용하여 PDF 문서 병합 {#flatten-a-pdf-document-using-the-web-service-api}
+### 웹 서비스 API를 사용하여 PDF 문서 평면화 {#flatten-a-pdf-document-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 대화형 PDF 문서를 비대화형 PDF 문서로 병합합니다.
 
@@ -2326,10 +2325,10 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 대화형 PDF 문서를 검색합니다.
 
@@ -2343,13 +2342,13 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
    `OutputClient` 개체의 `transformPDF` 메서드를 호출하고 다음 값을 전달하여 대화형 PDF 문서를 비대화형 PDF 문서로 변환합니다.
 
-   * 대화형 PDF 문서를 포함하는 `BLOB` 개체입니다.
+   * 대화형 PDF 문서가 포함된 `BLOB` 개체입니다.
    * `TransformationFormat` 열거형 값입니다. 비대화형 PDF 문서를 생성하려면 `TransformationFormat.PDF`을(를) 지정하십시오.
    * 수정 번호를 지정하는 `PDFARevisionNumber` 열거형 값입니다.
-   * `PDFARevisionNumber` 열거형 값이 사용되는지 여부를 지정하는 부울 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `false`을(를) 지정할 수 있습니다.
-   * 수정안 번호 및 연도를 콜론으로 구분하여 나타내는 문자열 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `null`을(를) 지정할 수 있습니다.
+   * `PDFARevisionNumber` 열거형 값이 사용되는지 여부를 지정하는 부울 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `false`을(를) 지정할 수 있습니다.
+   * 수정안 번호 및 연도를 콜론으로 구분하여 나타내는 문자열 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `null`을(를) 지정할 수 있습니다.
    * PDF/A 적합성 수준을 나타내는 `PDFAConformance` 열거형 값입니다.
-   * `PDFAConformance` 열거형 값을 사용할지 여부를 지정하는 부울 값입니다. 이 매개 변수는 PDF/A 문서용이므로 `false`을(를) 지정할 수 있습니다.
+   * `PDFAConformance` 열거형 값을 사용할지 여부를 지정하는 부울 값입니다. 이 매개 변수는 PDF/A 문서를 위한 매개 변수이므로 `false`을(를) 지정할 수 있습니다.
 
    `transformPDF` 메서드가 비대화형 PDF 문서를 포함하는 `BLOB` 개체를 반환합니다.
 

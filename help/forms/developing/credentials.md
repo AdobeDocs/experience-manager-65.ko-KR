@@ -1,22 +1,25 @@
 ---
-title: 자격 증명을 사용한 작업
+title: 자격 증명 작업
+
 description: Trust Manager API 및 Java API를 사용하여 AEM Forms으로 자격 증명을 가져옵니다. 또한 Trust Manager API 및 Java API를 사용하여 자격 증명을 삭제하는 방법도 알아봅니다.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 0%
-
+source-wordcount: '1100'
+ht-degree: 2%
 ---
-
-# 자격 증명을 사용한 작업 {#working-with-credentials}
+# 자격 증명 작업 {#working-with-credentials}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 자격 증명에는 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. 인증서는 신뢰를 위해 구성하는 공개 키 정보입니다. AEM Forms은 여러 가지 용도로 인증서 및 자격 증명을 사용합니다.
 
-* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)을 참조하십시오.)
+* Acrobat Reader DC 확장 프로그램은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)을 참조하십시오.)
 * 서명 서비스는 PDF 문서에 디지털 서명하는 등의 작업을 수행하는 동안 인증서 및 자격 증명에 액세스합니다. ([PDF 문서에 디지털 서명하기](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)를 참조하십시오.)
 
 Trust Manager Java API를 사용하여 자격 증명 서비스와 프로그래밍 방식으로 상호 작용할 수 있습니다. 다음 작업을 수행할 수 있습니다.
@@ -118,10 +121,10 @@ Trust Manager API(Java)를 사용하여 AEM Forms에 자격 증명을 가져옵�
    * 요소 하나를 보유하는 문자열 배열을 만듭니다. `truststore.usage.type.sign` 값을 요소에 할당합니다.
    * `CredentialServiceClient` 개체의 `importCredential` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 자격 증명의 별칭 값을 지정하는 문자열 값입니다.
-      * 자격 증명을 저장하는 `com.adobe.idp.Document` 인스턴스입니다.
-      * 자격 증명과 연결된 암호를 지정하는 문자열 값입니다.
-      * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값 `truststore.usage.type.sign`을(를) 지정할 수 있습니다. Reader 확장 자격 증명을 가져오려면 `truststore.usage.type.lcre`을(를) 지정하십시오.
+     * 자격 증명의 별칭 값을 지정하는 문자열 값입니다.
+     * 자격 증명을 저장하는 `com.adobe.idp.Document` 인스턴스입니다.
+     * 자격 증명과 연결된 암호를 지정하는 문자열 값입니다.
+     * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값 `truststore.usage.type.sign`을(를) 지정할 수 있습니다. Reader 확장 자격 증명을 가져오려면 `truststore.usage.type.lcre`을(를) 지정하십시오.
 
 **추가 참조**
 
