@@ -1,6 +1,6 @@
 ---
-title: Adobe LiveCycle과 AEM Forms 연결
-description: Adobe Experience Manager(AEM) LiveCycle 커넥터를 사용하면 AEM 앱 및 워크플로 내에서 ES4 Acrobat 서비스 LiveCycle을 시작할 수 있습니다.
+title: AEM Forms를 Adobe LiveCycle에 연결
+description: Adobe Experience Manager(AEM) LiveCycle connector를 사용하면 AEM 앱 및 워크플로 내에서 LiveCycle ES4 Acrobat 서비스를 시작할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
@@ -10,20 +10,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 0%
-
+source-wordcount: '1033'
+ht-degree: 1%
 ---
+# AEM Forms를 Adobe LiveCycle에 연결 {#connecting-aem-forms-with-adobe-livecycle}
 
-# Adobe LiveCycle과 AEM Forms 연결 {#connecting-aem-forms-with-adobe-livecycle}
-
-Adobe Experience Manager(AEM) LiveCycle 커넥터를 사용하면 AEM 웹 앱 및 워크플로우 내에서 Adobe LiveCycle ES4 Acrobat Services를 원활하게 호출할 수 있습니다. LiveCycle은 클라이언트 애플리케이션이 Java™ API를 사용하여 LiveCycle 서비스를 시작할 수 있도록 해주는 리치 클라이언트 SDK를 제공합니다. AEM LiveCycle 커넥터는 OSGi 환경 내에서 이러한 API를 간단하게 사용할 수 있습니다.
+Adobe Experience Manager(AEM) LiveCycle connector를 사용하면 AEM 웹 앱 및 워크플로 내에서 Adobe LiveCycle ES4 Acrobat Services를 원활하게 호출할 수 있습니다. LiveCycle은 클라이언트 애플리케이션이 Java™ API를 사용하여 LiveCycle 서비스를 시작할 수 있도록 해주는 풍부한 클라이언트 SDK을 제공합니다. AEM LiveCycle Connector는 OSGi 환경 내에서 이러한 API를 사용하는 것을 간소화합니다.
 
 ## Adobe LiveCycle에 AEM 서버 연결 {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)의 일부입니다. AEM Forms 추가 기능 패키지를 설치한 후 LiveCycle 서버의 세부 사항을 AEM 웹 콘솔에 추가할 수 있도록 다음 단계를 수행하십시오.
+AEM LiveCycle Connector는 [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)의 일부입니다. AEM Forms 추가 기능 패키지를 설치한 후 AEM 웹 콘솔에 LiveCycle Server에 대한 세부 사항을 추가할 수 있도록 다음 단계를 수행하십시오.
 
-1. AEM 웹 콘솔 구성 관리자에서 Adobe LiveCycle 클라이언트 SDK 구성 구성 구성 요소를 찾습니다.
+1. AEM 웹 콘솔 구성 관리자에서 Adobe LiveCycle Client SDK 구성 구성 요소를 찾습니다.
 1. 구성 서버 URL, 사용자 이름 및 암호를 편집할 수 있도록 구성 요소를 클릭합니다.
 1. 설정을 검토하고 **저장**&#x200B;을 클릭하세요.
 
@@ -38,19 +36,19 @@ AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
   옵션을 선택합니다.
 
-* **사용자 이름**- AEM과 LiveCycle 간의 통신을 설정하는 데 사용되는 계정의 사용자 이름을 지정합니다. 계정은 Acrobat 서비스를 시작할 권한이 있는 LiveCycle 사용자 계정입니다.
+* **사용자 이름**- AEM과 LiveCycle 간의 통신을 설정하는 데 사용되는 계정의 사용자 이름을 지정합니다. 이 계정은 Acrobat 서비스를 시작할 권한이 있는 LiveCycle 사용자 계정입니다.
 * **암호**- 암호를 지정합니다.
-* **서비스 이름** - 사용자 이름 및 암호 필드에 제공된 사용자 자격 증명을 사용하여 시작하는 서비스를 지정합니다. LiveCycle 서비스를 시작하는 동안 기본적으로 자격 증명이 전달되지 않습니다.
+* **서비스 이름** - 사용자 이름 및 암호 필드에 제공된 사용자 자격 증명을 사용하여 시작하는 서비스를 지정합니다. 기본적으로 LiveCycle Services를 시작하는 동안에는 자격 증명이 전달되지 않습니다.
 
 ## 문서 서비스 시작 {#starting-document-services}
 
-클라이언트 애플리케이션은 프로그래밍 방식으로 Java™ API, 웹 서비스, 원격 및 REST를 사용하여 LiveCycle 서비스를 시작할 수 있습니다. Java™ 클라이언트의 경우 애플리케이션에서 LiveCycle SDK를 사용할 수 있습니다. LiveCycle SDK는 이러한 서비스를 원격으로 시작하기 위한 Java™ API를 제공합니다. 예를 들어 Microsoft® Word 문서를 PDF으로 변환하려면 클라이언트가 GeneratePDFService를 시작합니다. 호출 플로우는 다음 단계로 구성됩니다.
+클라이언트 애플리케이션은 Java™ API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 LiveCycle 서비스를 시작할 수 있습니다. Java™ 클라이언트의 경우 애플리케이션에서 LiveCycle SDK을 사용할 수 있습니다. LiveCycle SDK은 이러한 서비스를 원격으로 시작하기 위한 Java™ API를 제공합니다. 예를 들어 ® Word 문서를 PDF으로 변환하려면 클라이언트가 GeneratePDFService를 시작합니다. 호출 플로우는 다음 단계로 구성됩니다.
 
 1. ServiceClientFactory 인스턴스를 만듭니다.
 1. 각 서비스는 클라이언트 클래스를 제공합니다. 서비스를 시작하려면 서비스의 클라이언트 인스턴스를 만듭니다.
 1. 서비스를 시작하고 결과를 처리합니다.
 
-AEM LiveCycle 커넥터는 이러한 클라이언트 인스턴스를 표준 OSGi 수단을 사용하여 액세스할 수 있는 OSGi 서비스로 노출함으로써 흐름을 간소화합니다. LiveCycle 커넥터는 다음 기능을 제공합니다.
+AEM LiveCycle Connector는 표준 OSGi를 사용하여 액세스할 수 있는 OSGi 서비스로 이러한 클라이언트 인스턴스를 노출하여 흐름을 간소화합니다. LiveCycle 커넥터는 다음 기능을 제공합니다.
 
 * OSGi 서비스로서의 클라이언트 인스턴스: OSGI 번들로 패키지된 클라이언트는 [Acrobat 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) 섹션에 나열됩니다. 각 클라이언트 jar는 클라이언트 인스턴스를 OSGi 서비스 레지스트리에 OSGi 서비스로 등록합니다.
 * 사용자 자격 증명 전파: LiveCycle 서버에 연결하는 데 필요한 연결 세부 정보는 중앙 위치에서 관리됩니다.
@@ -156,7 +154,7 @@ LiveCycle의 거의 모든 Acrobat 서비스에는 인증이 필요합니다. �
 
 ### 허용 목록 구성 {#allowlist-configuration}
 
-LiveCycle 클라이언트 SDK 구성에 서비스 이름에 대한 설정이 포함되어 있습니다. 이 구성은 호출 로직이 즉시 관리자 자격 증명을 사용하는 서비스 목록입니다. 예를 들어 DirectoryManager 서비스(사용자 관리 API의 일부)를 이 목록에 추가하면 모든 클라이언트 코드에서 서비스를 직접 사용할 수 있습니다. 또한 호출 계층은 LiveCycle 서버로 전송된 요청의 일부로서 구성된 자격 증명을 자동으로 전달합니다.
+LiveCycle Client SDK 구성에는 서비스 이름에 대한 설정이 포함되어 있습니다. 이 구성은 호출 로직이 즉시 관리자 자격 증명을 사용하는 서비스 목록입니다. 예를 들어 DirectoryManager 서비스(사용자 관리 API의 일부)를 이 목록에 추가하면 모든 클라이언트 코드에서 서비스를 직접 사용할 수 있습니다. 또한 호출 계층은 LiveCycle 서버로 전송된 요청의 일부로 구성된 자격 증명을 자동으로 전달합니다.
 
 ### RunAsManager {#runasmanager}
 
@@ -213,7 +211,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 ## Acrobat 서비스 목록 {#document-services-list}
 
-### Adobe LiveCycle 클라이언트 SDK API 번들 {#adobe-livecycle-client-sdk-api-bundle}
+### Adobe LiveCycle Client SDK API 번들 {#adobe-livecycle-client-sdk-api-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -238,7 +236,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 클라이언트 SDK 번들 {#adobe-livecycle-client-sdk-bundle}
+### Adobe LiveCycle Client SDK 번들 {#adobe-livecycle-client-sdk-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -326,7 +324,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 어셈블러 클라이언트 번들 {#adobe-livecycle-assembler-client-bundle}
+### Adobe LiveCycle Assembler Client 번들 {#adobe-livecycle-assembler-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -342,7 +340,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 양식 데이터 통합 클라이언트 번들 {#adobe-livecycle-form-data-integration-client-bundle}
+### Adobe LiveCycle Form Data Integration 클라이언트 번들 {#adobe-livecycle-form-data-integration-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -374,7 +372,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle Output 클라이언트 번들 {#adobe-livecycle-output-client-bundle}
+### Adobe LiveCycle Output Client 번들 {#adobe-livecycle-output-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -394,7 +392,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 다음 서비스를 사용할 수 있습니다.
 
-* com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
+* com.adobe.livecycle.readerextendations.client.ReaderExtensionsServiceClient
 
 #### Maven 종속성 {#maven-dependencies-10}
 
@@ -406,7 +404,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 권한 관리자 클라이언트 번들 {#adobe-livecycle-rights-manager-client-bundle}
+### Adobe LiveCycle Rights Manager 클라이언트 번들 {#adobe-livecycle-rights-manager-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -428,7 +426,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 서명 클라이언트 번들 {#adobe-livecycle-signatures-client-bundle}
+### Adobe LiveCycle Signatures 클라이언트 번들 {#adobe-livecycle-signatures-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
@@ -463,12 +461,12 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 </dependency>
 ```
 
-### Adobe LiveCycle 저장소 클라이언트 번들 {#adobe-livecycle-repository-client-bundle}
+### Adobe LiveCycle Repository Client 번들 {#adobe-livecycle-repository-client-bundle}
 
 다음 서비스를 사용할 수 있습니다.
 
 * com.adobe.repository.bindings.ResourceRepository
-* com.adobe.repository.bindings.ResourceSynchronizer
+* com.adobe.repository.binding.ResourceSynchronizer
 
 #### Maven 종속성 {#maven-dependencies-14}
 

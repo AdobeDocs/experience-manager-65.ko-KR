@@ -1,26 +1,26 @@
 ---
-title: Java 소개&trade; API QuickStart
+title: Java&trade 소개, API QuickStart
 description: SOAP 연결에 활성화된 AEM Forms Java&trade; 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행하는 방법에 대해 알아봅니다.
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
+
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
-
 ---
-
 # Java™ API 빠른 시작 소개 {#introducing-java-api-quickstart}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-AEM Forms API 빠른 시작 Adobe을 통해 AEM Forms 서비스와 상호 작용하는 프로그램 개발을 위한 노력을 가속화할 수 있습니다. *빠른 시작*&#x200B;은(는) 자체 프로젝트에 복사하여 붙여 넣고 시작점으로 사용할 수 있는 완전한 프로그램입니다. 빠른 시작을 실행하여 작동 방식을 확인하고 필요에 따라 수정할 수 있습니다.
+Adobe AEM Forms API 빠른 시작을 사용하면 AEM Forms 서비스와 상호 작용하는 프로그램 개발을 위한 노력을 가속화할 수 있습니다. *빠른 시작*&#x200B;은(는) 자체 프로젝트에 복사하여 붙여 넣고 시작점으로 사용할 수 있는 완전한 프로그램입니다. 빠른 시작을 실행하여 작동 방식을 확인하고 필요에 따라 수정할 수 있습니다.
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
@@ -67,7 +67,7 @@ JAR 파일 목록은 빠른 시작 부분의 주석 섹션에 있습니다. 예�
 
 *JEE의 AEM Forms으로 프로그래밍*&#x200B;에서 가장 빠른 시작은 특정 서비스를 호출하여 작업을 수행합니다. 그러나 일부 빠른 시작은 여러 AEM Forms 서비스를 호출하여 주어진 워크플로우를 수행합니다. 다음 목록은 두 개 이상의 AEM Forms 서비스를 호출하는 Java™ 빠른 시작을 제공합니다.
 
-[빠른 시작(SOAP 모드): Java™ API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)(저장소 및 출력 서비스 호출)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 AEM Forms 저장소의 문서를 출력 서비스에 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)(저장소 및 출력 서비스 호출)
 
 [빠른 시작(SOAP 모드): Java™ API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)(어셈블러 및 출력 서비스 호출)
 

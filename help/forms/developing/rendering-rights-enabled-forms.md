@@ -1,31 +1,34 @@
 ---
-title: 렌더링 권한이 활성화된 Forms
+title: 렌더링 권한이 활성화된 양식
+
 description: Forms 서비스를 사용하여 사용 권한이 적용된 양식을 렌더링합니다. Java API 및 웹 서비스 API를 사용하여 권한이 활성화된 양식을 렌더링할 수 있습니다.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
-
+source-wordcount: '1488'
+ht-degree: 2%
 ---
+# 렌더링 권한이 활성화된 양식 {#rendering-rights-enabled-forms}
 
-# 렌더링 권한이 활성화된 Forms {#rendering-rights-enabled-forms}
+Forms 서비스는 사용 권한이 적용된 양식을 렌더링할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능과 같이 Acrobat에서 기본적으로 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능에 관련되어 있습니다. 사용 권한이 적용된 Forms을 권한 사용 양식이라고 합니다. Adobe Reader에서 권한이 활성화된 양식을 여는 사용자는 해당 양식에 대해 활성화된 작업을 수행할 수 있습니다.
 
-Forms 서비스는 사용 권한이 적용된 양식을 렌더링할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능과 같이 Acrobat에서 기본적으로 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. 사용 권한이 적용된 Forms을 권한 사용 양식이라고 합니다. Adobe Reader에서 권한이 활성화된 양식을 여는 사용자는 해당 양식에 대해 활성화된 작업을 수행할 수 있습니다.
-
-양식에 사용 권한을 적용하려면 Acrobat Reader DC 확장 서비스가 AEM Forms 설치에 포함되어야 합니다. 또한 PDF 문서에 사용 권한을 적용할 수 있는 유효한 자격 증명이 있어야 합니다. 즉, 권한이 활성화된 양식을 렌더링하려면 먼저 Acrobat Reader DC 확장 서비스를 제대로 구성해야 합니다. ([Acrobat Reader DC 확장 서비스 정보](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)를 참조하세요.)
+양식에 사용 권한을 적용하려면 Acrobat Reader DC 확장 서비스가 AEM 양식 설치의 일부여야 합니다. 또한 PDF 문서에 사용 권한을 적용할 수 있는 유효한 자격 증명이 있어야 합니다. 즉, 권한이 활성화된 양식을 렌더링하려면 먼저 Acrobat Reader DC 확장 서비스를 제대로 구성해야 합니다. [Acrobat Reader DC 확장 서비스 정보](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)를 참조하십시오.
 
 >[!NOTE]
 >
->사용 권한이 포함된 양식을 렌더링하려면 PDF 파일이 아닌 XDP 파일을 입력으로 사용해야 합니다. PDF 파일을 입력으로 사용하는 경우에도 양식이 렌더링되지만 권한이 활성화된 양식은 아닙니다.
+>사용 권한이 포함된 양식을 렌더링하려면 PDF 파일이 아닌 XDP 파일을 입력으로 사용해야 합니다. PDF 파일을 입력으로 사용하는 경우 양식이 계속 렌더링되지만 권한이 활성화된 양식이 아닙니다.
 
 >[!NOTE]
 >
@@ -79,9 +82,9 @@ Forms 서비스에서 권한이 활성화된 양식을 렌더링하면 클라이
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[대화형 PDF 양식 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -180,6 +183,6 @@ Forms API(웹 서비스)를 사용하여 권한이 활성화된 양식을 렌더
 
 **추가 참조**
 
-[렌더링 권한이 활성화된 Forms](#rendering-rights-enabled-forms)
+[렌더링 권한이 활성화된 양식](#rendering-rights-enabled-forms)
 
 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

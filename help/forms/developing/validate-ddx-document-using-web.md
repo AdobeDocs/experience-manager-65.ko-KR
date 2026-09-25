@@ -1,21 +1,24 @@
 ---
 title: 웹 서비스 API를 사용하여 DDX 문서의 유효성 검사
+
 description: 어셈블러 서비스 API를 사용하여 DDX 문서의 유효성을 검사합니다.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
-
+source-wordcount: '642'
+ht-degree: 2%
 ---
-
 # 웹 서비스 API를 사용하여 DDX 문서의 유효성 검사 {#validate-a-ddx-document-using-theweb-service-api}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -38,10 +41,10 @@ ht-degree: 0%
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `AssemblerServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `AssemblerServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 기존 DDX 문서를 참조합니다.
 
@@ -81,6 +84,6 @@ ht-degree: 0%
 
 **추가 참조**
 
-[DDX 문서 검증](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
+[DDX 문서의 유효성 검사](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

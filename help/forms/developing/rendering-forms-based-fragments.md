@@ -1,27 +1,30 @@
 ---
-title: 조각을 기반으로 Forms 렌더링
+title: 조각 기반 양식 렌더링
+
 description: Forms 서비스를 사용하여 Designer을 사용하여 만든 조각을 기반으로 하는 양식을 렌더링합니다.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 0%
-
+source-wordcount: '2204'
+ht-degree: 1%
 ---
-
-# 조각을 기반으로 Forms 렌더링 {#rendering-forms-based-on-fragments}
+# 조각 기반 양식 렌더링 {#rendering-forms-based-on-fragments}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-## 조각을 기반으로 Forms 렌더링 {#rendering-forms-based-on-fragments-inner}
+## 조각 기반 양식 렌더링 {#rendering-forms-based-on-fragments-inner}
 
 Forms 서비스는 Designer을 사용하여 만든 조각을 기반으로 하는 양식을 렌더링할 수 있습니다. *조각*&#x200B;은(는) 양식의 재사용 가능한 부분이며 여러 양식 디자인에 삽입할 수 있는 별도의 XDP 파일로 저장됩니다. 예를 들어 조각에는 주소 블록이나 법적 텍스트가 포함될 수 있습니다.
 
@@ -36,12 +39,12 @@ Forms 서비스는 Designer을 사용하여 만든 조각을 기반으로 하는
 * **콘텐츠 재사용**: 조각을 사용하여 여러 양식 디자인에서 콘텐츠를 재사용할 수 있습니다. 여러 양식에서 동일한 콘텐츠 중 일부를 사용해야 하는 경우 콘텐츠를 복사하거나 다시 만드는 것보다 조각을 사용하는 것이 더 빠르고 간단합니다. 또한 조각을 사용하면 양식 디자인에서 자주 사용되는 부분이 참조하는 모든 양식에서 일관된 내용과 모양을 갖게 됩니다.
 * **전역 업데이트**: 하나의 파일에서 여러 양식을 한 번만 전역으로 변경하는 데 조각을 사용할 수 있습니다. 조각의 콘텐츠, 스크립트 개체, 데이터 바인딩, 레이아웃 또는 스타일을 변경할 수 있으며 조각을 참조하는 모든 XDP 양식이 변경 사항을 반영합니다.
 * 예를 들어, 많은 양식에서 공통적인 요소는 해당 국가의 드롭다운 목록 개체를 포함하는 주소 블록일 수 있습니다. 드롭다운 목록 객체의 값을 업데이트해야 하는 경우 변경할 양식을 여러 개 열어야 합니다. 조각에 주소 블록을 포함하는 경우 변경할 조각 파일을 하나만 열면 됩니다.
-* PDF 양식에서 조각을 업데이트하려면 Designer에서 양식을 다시 저장해야 합니다.
+* PDF 양식의 조각을 업데이트하려면 Designer에서 양식을 다시 저장해야 합니다.
 * **공유 양식 만들기**: 조각을 사용하여 여러 리소스 간에 양식 만들기를 공유할 수 있습니다. 스크립팅 또는 Designer의 기타 고급 기능에 대한 전문 지식을 갖춘 양식 개발자는 스크립팅 및 동적 속성을 활용하는 조각을 개발하고 공유할 수 있습니다. 양식 디자이너는 이러한 조각을 사용하여 양식 디자인을 배열하고, 양식의 모든 부분이 여러 사용자가 디자인한 여러 양식에서 일관된 모양과 기능을 갖도록 할 수 있습니다.
 
 ### 조각을 사용하여 어셈블된 양식 디자인 어셈블 {#assembling-a-form-design-assembled-using-fragments}
 
-여러 조각을 기반으로 Forms 서비스에 전달할 양식 디자인을 조합할 수 있습니다. 여러 조각을 어셈블하려면 어셈블러 서비스를 사용합니다. Assemble 서비스를 사용하여 다른 Forms 서비스(출력 서비스)에서 사용하는 양식 디자인을 만드는 예를 보려면 [조각을 사용하여 PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)를 참조하십시오. 출력 서비스를 사용하는 대신 Forms 서비스를 사용하여 동일한 워크플로우를 수행할 수 있습니다.
+여러 조각을 기반으로 Forms 서비스에 전달할 양식 디자인을 조합할 수 있습니다. 여러 조각을 어셈블하려면 어셈블러 서비스를 사용합니다. 어셈블 서비스를 사용하여 다른 Forms 서비스(출력 서비스)에서 사용하는 양식 디자인을 만드는 예를 보려면 [조각을 사용하여 PDF 문서 만들기](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)를 참조하십시오. 출력 서비스를 사용하는 대신 Forms 서비스를 사용하여 동일한 워크플로우를 수행할 수 있습니다.
 
 어셈블러 서비스를 사용할 때 조각을 사용하여 어셈블된 양식 디자인을 전달합니다. 작성된 양식 디자인은 다른 조각을 참조하지 않습니다. 이와 달리 이 항목에서는 다른 조각을 참조하는 양식 디자인을 Forms 서비스로 전달하는 방법에 대해 설명합니다. 그러나 양식 디자인은 어셈블러로 어셈블되지 않았습니다. Designer에서 만들어졌습니다.
 
@@ -97,9 +100,9 @@ Forms 서비스는 양식을 렌더링할 때 클라이언트 웹 브라우저�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[대화형 PDF 양식 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -147,7 +150,7 @@ Forms API(Java)를 사용하여 조각을 기반으로 양식을 렌더링합니
 
 **추가 참조**
 
-[조각을 기반으로 Forms 렌더링](#rendering-forms-based-on-fragments)
+[조각 기반 양식 렌더링](#rendering-forms-based-on-fragments)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 양식 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
@@ -181,7 +184,7 @@ Forms API(웹 서비스)를 사용하여 조각을 기반으로 양식을 렌더
 
    * 파일 이름 확장명을 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램의 일부인 양식 디자인을 참조하는 경우 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`과 같은 전체 경로를 지정해야 합니다.
    * 양식과 병합할 데이터가 포함된 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 `null`을(를) 전달하십시오.
-   * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다. 입력 문서가 PDF 문서인 경우 태그 지정된 PDF 옵션을 설정할 수 없습니다. 입력 파일이 XDP 파일인 경우, 태그된 PDF 옵션을 설정할 수 있다.
+   * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다. 입력 문서가 PDF 문서인 경우 태그가 지정된 PDF 옵션을 설정할 수 없습니다. 입력 파일이 XDP 파일인 경우 태그된 PDF 옵션을 설정할 수 있습니다.
    * Forms 서비스에 필요한 URI 값을 포함하는 `URLSpec` 개체입니다.
    * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
    * 메서드로 채워진 빈 `com.adobe.idp.services.holders.BLOBHolder` 개체입니다. 이 매개 변수는 렌더링된 양식을 저장하는 데 사용됩니다.
@@ -203,6 +206,6 @@ Forms API(웹 서비스)를 사용하여 조각을 기반으로 양식을 렌더
 
 **추가 참조**
 
-[조각을 기반으로 Forms 렌더링](#rendering-forms-based-on-fragments)
+[조각 기반 양식 렌더링](#rendering-forms-based-on-fragments)
 
 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
