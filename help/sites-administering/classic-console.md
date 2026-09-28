@@ -1,5 +1,5 @@
 ---
-title: 클래식 UI 태깅 콘솔
+title: 클래식 UI 태그 지정 콘솔
 description: Adobe Experience Manager Classic UI 태깅 콘솔에 대해 알아봅니다.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 2%
-
+source-wordcount: '905'
+ht-degree: 3%
 ---
 
-
-# 클래식 UI 태깅 콘솔{#classic-ui-tagging-console}
+# 클래식 UI 태그 지정 콘솔{#classic-ui-tagging-console}
 
 이 섹션은 클래식 UI 태그 지정 콘솔용입니다.
 
@@ -50,19 +48,19 @@ ht-degree: 2%
 1. 두 경우 모두 다음을 입력합니다.
 
    * **제목**
-(*필수*) 태그의 표시 제목입니다. 모든 문자를 입력할 수 있지만,
-다음과 같은 특수 문자는 사용하지 않는 것이 좋습니다.
+     (*필수*) 태그의 표시 제목입니다. 모든 문자를 입력할 수 있지만,
+     다음과 같은 특수 문자는 사용하지 않는 것이 좋습니다.
 
-      * `colon (:)` - 네임스페이스 구분 기호
-      * `forward slash (/)` - 하위 태그 구분 기호
+     * `colon (:)` - 네임스페이스 구분 기호
+     * `forward slash (/)` - 하위 태그 구분 기호
 
      입력한 경우 이 문자가 표시되지 않습니다.
 
    * **이름**
-(*필수*) 태그의 노드 이름입니다.
+     (*필수*) 태그의 노드 이름입니다.
 
    * **설명**
-(*선택 사항*) 태그에 대한 설명입니다.
+     (*선택 사항*) 태그에 대한 설명입니다.
 
    * **만들기** 선택
 

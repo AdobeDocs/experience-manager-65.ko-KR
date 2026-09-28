@@ -1,6 +1,6 @@
 ---
-title: CRXDE Lite을 사용한 개발
-description: CRXDE Lite은 Adobe Experience Manager(AEM)에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해 줍니다
+title: CRXDE Lite를 사용한 개발
+description: CRXDE Lite은 Adobe Experience Manager(AEM)에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해줍니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -12,33 +12,31 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 1%
-
+source-wordcount: '2116'
+ht-degree: 2%
 ---
+# CRXDE Lite를 사용한 개발{#developing-with-crxde-lite}
 
-# CRXDE Lite을 사용한 개발{#developing-with-crxde-lite}
-
-이 섹션에서는 CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법에 대해 설명합니다.
+이 섹션에서는 CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법을 설명합니다.
 
 사용 가능한 다양한 개발 환경에 대한 자세한 내용은 개요 설명서 를 참조하십시오.
 
-CRXDE Lite은 AEM에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해줍니다. CRXDE Lite을 사용하면 로깅하는 동안 프로젝트를 만들고, 파일(.jsp 및 .java 등), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
-AEM 서버에 직접 액세스할 수 없는 경우 CRXDE Lite을 사용하는 것이 좋습니다. 또는 기본 제공 구성 요소 및 Java™ 번들을 확장 또는 수정하여 애플리케이션을 개발하거나 전용 디버거가 필요하지 않은 경우 코드 완성 및 구문 강조 표시를 참조하십시오.
+CRXDE Lite은 AEM에 내장되어 있으며, 이를 통해 브라우저에서 표준 개발 작업을 수행할 수 있습니다. CRXDE Lite을 사용하면 로그인하는 동안 프로젝트를 만들고, 파일(.jsp 및 .java 등), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
+CRXDE Lite 서버에 직접 액세스할 수 없는 경우 AEM을 사용하는 것이 좋습니다. 또는 기본 제공 구성 요소 및 Java™ 번들을 확장 또는 수정하여 애플리케이션을 개발하거나 전용 디버거가 필요하지 않은 경우 코드 완성 및 구문 강조 표시를 참조하십시오.
 
 >[!NOTE]
 >
->AEM 6.5.5.0 이상에서는 더 이상 CRXDE Lite에 대한 익명 액세스가 불가능합니다.
+>AEM 6.5.5.0부터 더 이상 CRXDE Lite에 대한 익명 액세스를 할 수 없습니다.
 >사용자가 로그인 화면으로 리디렉션됩니다.
 
 
 >[!NOTE]
 >
->Adobe은 프로젝트 개발 중에 [Eclipse용 AEM 개발자 도구](/help/sites-developing/aem-eclipse.md) 및 [AEM HTL Brackets 확장](/help/sites-developing/aem-brackets.md)을 사용할 것을 권장합니다.
+>Adobe에서는 프로젝트 개발 중에 [Eclipse용 AEM 개발자 도구](/help/sites-developing/aem-eclipse.md) 및 [AEM HTL Brackets 확장](/help/sites-developing/aem-brackets.md)을 사용할 것을 권장합니다.
 
-## CRXDE Lite 시작 {#getting-started-with-crxde-lite}
+## CRXDE Lite 시작하기 {#getting-started-with-crxde-lite}
 
-CRXDE Lite을 시작하려면 다음과 같이 진행합니다.
+CRXDE Lite을 시작하려면 다음과 같이 진행하십시오.
 
 1. AEM을 설치합니다.
 1. 브라우저에 `https://<host>:<port>/crx/de`을(를) 입력합니다. 기본적으로 `https://localhost:4502/crx/de`입니다.
@@ -72,7 +70,7 @@ CRXDE Lite은 다음 기능을 제공합니다.
   </tr>
   <tr>
    <td>편집 창</td>
-   <td><p><strong>홈</strong> 탭: 콘텐츠 및/또는 설명서를 검색하고 개발자 리소스(설명서, 개발자 블로그, 기술 자료) 및 지원(Adobe 홈페이지 및 지원 센터)에 액세스할 수 있습니다.<br /> </p> <p>내용을 표시할 수 있도록 <strong>탐색기</strong> 창에서 파일을 두 번 클릭합니다. 예: .jsp 또는 .java 파일. 그런 다음 수정 하고 변경 사항을 저장할 수 있습니다.</p> <p><strong>편집</strong> 창에서 파일을 편집하면 도구 모음에서 다음 도구를 사용할 수 있습니다.<br /> </p> - <strong>트리에 표시: </strong>저장소 트리에 파일을 표시합니다.<br /> - <strong>검색/바꾸기 ...</strong>: 검색 또는 바꾸기를 수행합니다.<br /> <br /> <strong>편집</strong> 창의 상태 줄을 두 번 클릭하면 <strong>줄로 이동</strong> 대화 상자가 열려 이동할 특정 줄 번호를 입력할 수 있습니다.<br /> </td>
+   <td><p><strong>홈</strong> 탭: 콘텐츠 및/또는 설명서를 검색하고 개발자 리소스(설명서, 개발자 블로그, 기술 자료) 및 지원(Adobe 홈페이지 및 지원 센터)에 액세스할 수 있습니다.<br /> </p> <p>내용을 표시할 수 있도록 <strong>탐색기</strong> 창에서 파일을 두 번 클릭합니다. 예: .jsp 또는 .java 파일. 그런 다음 수정 하고 변경 사항을 저장할 수 있습니다.</p> <p><strong>편집</strong> 창에서 파일을 편집하면 도구 모음에서 다음 도구를 사용할 수 있습니다.<br /> </p> - <strong>트리에 표시: </strong>저장소 트리에 파일을 표시합니다.<br /> - <strong>검색/바꾸기...</strong>: 검색 또는 바꾸기를 수행합니다.<br /> <br /> <strong>편집</strong> 창의 상태 줄을 두 번 클릭하면 <strong>줄로 이동</strong> 대화 상자가 열려 특정 줄 번호를 입력할 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>속성 탭<br /> </td>
@@ -143,7 +141,7 @@ CRXDE Lite은 다음 기능을 제공합니다.
 
 ## 폴더 만들기 {#creating-a-folder}
 
-CRXDE Lite으로 폴더를 만들려면:
+CRXDE Lite으로 폴더를 만들려면 다음 작업을 수행하십시오.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 폴더를 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기..**&#x200B;를 선택한 다음 **폴더 만들기...**&#x200B;를 선택합니다.
@@ -154,7 +152,7 @@ CRXDE Lite으로 폴더를 만들려면:
 
 ## 템플릿 만들기 {#creating-a-template}
 
-CRXDE Lite으로 템플릿을 만들려면 다음 작업을 수행하십시오.
+CRXDE Lite을 사용하여 템플릿을 만들려면 다음 작업을 수행하십시오.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 템플릿을 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기..**&#x200B;를 선택한 다음 **템플릿 만들기...**&#x200B;를 선택합니다.
@@ -240,7 +238,7 @@ CRXDE Lite으로 노드를 만들려면 다음 작업을 수행하십시오.
 
 ## 속성 만들기 {#creating-a-property}
 
-CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십시오.
+CRXDE Lite으로 속성을 만들려면 다음 작업을 수행하십시오.
 
 1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 속성을 추가할 노드를 선택합니다.
@@ -263,7 +261,7 @@ CRXDE Lite을 사용하여 속성을 만들려면 다음 작업을 수행하십�
 
 ## 노드 유형 내보내기 및 가져오기 {#exporting-and-importing-node-types}
 
-CRXDE Lite을 사용하면 [CND(Compact Namespace and Node Type Definition) 표기법](https://jackrabbit.apache.org/jcr/node-type-notation.html)으로 노드 유형 정의를 가져오거나 내보낼 수 있습니다.
+CRXDE Lite을 사용하면 [CND(Compact Namespace and Node Type Definition) 표기법으로 노드 유형 정의를 가져오거나 내보낼 수 있습니다](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 노드 유형 정의를 내보내려면 다음을 수행합니다.
 

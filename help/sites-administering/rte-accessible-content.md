@@ -8,14 +8,12 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # 액세스 가능한 웹 페이지 및 사이트를 생성하도록 RTE 구성 {#configure-rte-for-accessibility}
 
-Adobe Experience Manager은 다양한 접근성 표준에 따라 많은 표준 접근성 기능을 지원합니다. 또한 개발자는 리치 텍스트 편집기(RTE)를 사용하는 Experience Manager 구성 요소를 사용하여 액세스 가능한 컨텐츠를 만드는 데 도움이 되는 기능을 제공하도록 사용자 정의하거나 확장할 수 있습니다.
+Adobe Experience Manager은 다양한 접근성 표준에 따라 많은 표준 접근성 기능을 지원합니다. 또한 개발자는 RTE(리치 텍스트 편집기)를 사용하는 Experience Manager 구성 요소를 사용하여 액세스 가능한 콘텐츠를 만드는 데 도움이 되는 기능을 제공하도록 사용자 정의하거나 확장할 수 있습니다.
 
 웹 페이지를 디자인하고 페이지에 컨텐츠를 추가할 때 컨텐츠 개발자와 작성자는 RTE의 기능을 사용하여 접근성 관련 정보를 제공할 수 있습니다. 예를 들어 제목 및 단락 요소를 통해 구조 정보를 추가합니다.
 
@@ -62,7 +60,7 @@ AEM은 단락 형식 옵션을 통해 RTE에서 사용할 수 있는 구조적 �
 
 ## 소스 편집 기능 사용 {#use-of-the-source-edit-feature}
 
-경우에 따라 콘텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정할 필요가 있습니다. 예를 들어 RTE 내에서 만들어진 콘텐츠의 한 부분은 WCAG 2.0을 준수하기 위해 추가 마크업이 필요할 수 있습니다. 이 작업은 RTE의 [소스 편집](/help/sites-administering/rich-text-editor.md#aboutplugins) 옵션을 사용하여 수행할 수 있습니다. `misctools` 플러그 인[&#128279;](/help/sites-administering/rich-text-editor.md#aboutplugins)에서 `sourceedit` 기능을 지정할 수 있습니다.
+경우에 따라 콘텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정해야 합니다. 예를 들어 RTE 내에서 만들어진 콘텐츠의 한 부분은 WCAG 2.0을 준수하기 위해 추가 마크업이 필요할 수 있습니다. 이 작업은 RTE의 [소스 편집](/help/sites-administering/rich-text-editor.md#aboutplugins) 옵션을 사용하여 수행할 수 있습니다. `misctools` 플러그 인](/help/sites-administering/rich-text-editor.md#aboutplugins)에서 [`sourceedit` 기능을 지정할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -103,7 +101,7 @@ RTE에서는 `b` 및 `i` 대신 `strong` 및 `em` 태그를 사용할 수 있습
 
 ### 단계별 지침 {#step-by-step-instructions}
 
-1. CRXDE Lite 시작. 예: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. CRXDE Lite을 시작합니다. 예: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. 복사:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

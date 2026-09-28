@@ -8,11 +8,9 @@ exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '694'
 ht-degree: 12%
-
 ---
-
 # 자산 편집기 확장 {#extending-asset-editor}
 
 에셋 편집기 는 에셋 공유를 통해 찾은 에셋을 클릭하면 열리는 페이지로, 사용자가 에셋의 메타데이터, 썸네일, 제목 및 태그 같은 측면을 편집할 수 있도록 해 줍니다.
@@ -23,7 +21,7 @@ ht-degree: 12%
 
 ## 자산 편집기 템플릿 만들기 {#creating-an-asset-editor-template}
 
-다음 샘플 페이지가 Geometrixx에 포함되어 있습니다.
+Geometrixx에는 다음 샘플 페이지가 포함되어 있습니다.
 
 * Geometrixx 샘플 페이지: `/content/geometrixx/en/press/asseteditor.html`
 * 샘플 템플릿: `/apps/geometrixx/templates/asseteditor`
@@ -59,7 +57,7 @@ ht-degree: 12%
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx 스타일시트 {#geometrixx-style-sheet}
+### Geometrixx 스타일 시트 {#geometrixx-style-sheet}
 
 샘플 페이지 구성 요소를 사용하려면 모든 선택기가 `.asseteditor`/`static.css`(`/etc/designs/geometrixx/static.css`)로 시작해야 합니다. 모범 사례: 모든 `.asseteditor` 선택기를 스타일시트에 복사하고 원하는 대로 규칙을 조정합니다.
 
@@ -116,7 +114,7 @@ ht-degree: 12%
     }
 ```
 
-HTML 부분에서 앞의 제목 세트(에셋 또는 페이지 제목)를 사용합니다.
+HTML 부품에서 앞의 제목 세트(에셋 또는 페이지 제목)를 사용합니다.
 
 ```html
 <title><%= title %></title>

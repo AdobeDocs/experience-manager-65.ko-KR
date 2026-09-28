@@ -1,5 +1,5 @@
 ---
-title: 소극적 컨텐츠 마이그레이션
+title: 소극적 콘텐츠 마이그레이션
 description: Adobe Experience Manager 6.4의 레이지 콘텐츠 마이그레이션에 대해 알아봅니다.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 2%
-
+source-wordcount: '692'
+ht-degree: 7%
 ---
-
-# 소극적 컨텐츠 마이그레이션 {#lazy-content-migration}
+# 소극적 콘텐츠 마이그레이션 {#lazy-content-migration}
 
 이전 버전과의 호환성을 위해 Adobe Experience Manager(AEM) 6.3으로 시작하는 **/etc** 및 **/content**&#x200B;의 콘텐츠 및 구성은 업그레이드 즉시 터치하거나 변형되지 않습니다. 이는 이러한 구조에 대한 고객 애플리케이션의 종속성이 그대로 유지되도록 하기 위한 것입니다. 기본 제공 AEM 6.5의 컨텐츠가 다른 위치에서 호스팅되더라도 이러한 컨텐츠 구조와 관련된 기능은 여전히 동일합니다.
 
@@ -29,7 +27,7 @@ ht-degree: 2%
 
 이렇게 하면 마이그레이션하는 동안 `CodeUpgradeTasks`이(가) 실행됩니다.
 
-이 업그레이드 프로세스는 효율적인 실행이 목적이지만 동기적으로 수행되기 때문에 처리해야 하는 컨텐츠의 양에 따라 다운타임이 발생합니다. Adobe은 프로덕션 시스템 이전의 스테이징 환경에서 실행 시간을 평가하여 유지 관리 기간에 따라 계획을 수립하는 것을 권장합니다.
+이 업그레이드 프로세스는 효율적인 실행이 목적이지만 동기적으로 수행되기 때문에 처리해야 하는 컨텐츠의 양에 따라 다운타임이 발생합니다. Adobe에서는 프로덕션 시스템 이전의 스테이징 환경에서 실행 시간을 평가하여 유지 관리 기간에 따라 를 계획하는 것이 좋습니다.
 
 이 작업에는 일반적으로 응용 프로그램 조정이 필요하므로 이 작업은 해당 응용 프로그램 배포와 함께 수행해야 합니다.
 
@@ -59,5 +57,5 @@ ht-degree: 2%
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | 지연됨 | **/etc/cloudsettings**&#x200B;을(를) 정리합니다(ContextHub 구성 포함). 구성은 첫 번째 액세스 시 자동으로 마이그레이션됩니다. **/etc/cloudsettings**&#x200B;의 이 콘텐츠 업그레이드와 함께 레이지 콘텐츠 마이그레이션이 시작되는 경우 업그레이드 전에 패키지를 통해 보존하고 암시적 변환이 시작되도록 다시 설치하여 완료 후 패키지를 제거해야 합니다. |
 | `CQ64UsersTitleFixTask` | &lt; 6.4 | 지연됨 | 기존 제목 구조를 사용자 프로필 노드의 제목으로 조정합니다. |
 | `CQ64CommerceMigrationTask` | &lt; 6.4 | 지연됨 | 상거래 콘텐츠를 **/etc/commerce**&#x200B;에서 **/var/commerce**(으)로 마이그레이션합니다. 마이그레이션 중에 콘텐츠가 이동되고 이동된 콘텐츠에 대한 참조가 새 위치를 반영하도록 업데이트됩니다. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | 지연됨 | 레거시 카탈로그 설정 및 Dynamic Media Cloud Service 설정을 **/etc**&#x200B;에서 **/conf**(으)로 마이그레이션 |
+| `CQ65DMMigrationTask` | &lt; 6.5 | 지연됨 | 레거시 카탈로그 설정 및 Dynamic Media Cloud Services 설정을 **/etc**&#x200B;에서 **/conf**(으)로 마이그레이션 |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6.5 | 지연됨 | **/etc/clientlibs**&#x200B;에 있는 레거시 clientlibs를 정리합니다. |

@@ -1,6 +1,6 @@
 ---
-title: HTML5 양식에 대한 오류 메시지 사용자 지정
-description: 위치 및 모양을 변경하는 방법을 포함하여 HTML 5 양식에 대한 오류 메시지 표시를 사용자 지정하는 방법에 대해 알아봅니다.
+title: HTML5 양식에 대한 오류 메시지 사용자 정의
+description: 위치 및 모양을 변경하는 방법을 포함하여 HTML5 양식에 대한 오류 메시지 표시를 사용자 지정하는 방법을 알아봅니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
@@ -9,16 +9,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
-
+source-wordcount: '508'
+ht-degree: 6%
 ---
+# HTML5 양식에 대한 오류 메시지 사용자 정의 {#customizing-error-messages-for-html-forms}
 
-# HTML5 양식에 대한 오류 메시지 사용자 지정 {#customizing-error-messages-for-html-forms}
+HTML5 Forms에서는 기본적으로 오류 메시지 및 경고의 위치 및 모양(글꼴 및 색상)이 고정되어 있으며 선택한 필드에 대해서만 오류가 표시되고 하나의 오류만 표시됩니다.
 
-HTML5 양식에서는 기본적으로 오류 메시지 및 경고의 위치와 모양(글꼴과 색상)이 고정되어 있으며 선택한 필드에 대해서만 오류가 표시되고 하나의 오류만 표시됩니다.
-
-이 문서에서는 다음을 수행할 수 있도록 HTML 5 양식 오류 메시지를 사용자 지정하는 단계를 제공합니다.
+이 문서에서는 다음을 수행할 수 있도록 HTML5 양식 오류 메시지를 사용자 지정하는 단계를 제공합니다.
 
 * 오류 메시지의 모양과 위치를 변경합니다. 필드의 위쪽, 아래쪽 및 오른쪽에 표시되는 오류를 만들 수 있습니다.
 * 특정 시점에 여러 필드에 대한 오류 메시지를 표시합니다.
