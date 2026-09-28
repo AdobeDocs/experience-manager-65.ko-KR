@@ -60,7 +60,7 @@ AEM은 단락 형식 옵션을 통해 RTE에서 사용할 수 있는 구조적 �
 
 ## 소스 편집 기능 사용 {#use-of-the-source-edit-feature}
 
-경우에 따라 콘텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정해야 합니다. 예를 들어 RTE 내에서 만들어진 콘텐츠의 한 부분은 WCAG 2.0을 준수하기 위해 추가 마크업이 필요할 수 있습니다. 이 작업은 RTE의 [소스 편집](/help/sites-administering/rich-text-editor.md#aboutplugins) 옵션을 사용하여 수행할 수 있습니다. `misctools` 플러그 인](/help/sites-administering/rich-text-editor.md#aboutplugins)에서 [`sourceedit` 기능을 지정할 수 있습니다.
+경우에 따라 콘텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정해야 합니다. 예를 들어 RTE 내에서 만들어진 콘텐츠의 한 부분은 WCAG 2.0을 준수하기 위해 추가 마크업이 필요할 수 있습니다. 이 작업은 RTE의 [소스 편집](/help/sites-administering/rich-text-editor.md#aboutplugins) 옵션을 사용하여 수행할 수 있습니다. `misctools` 플러그 인[&#128279;](/help/sites-administering/rich-text-editor.md#aboutplugins)에서 `sourceedit` 기능을 지정할 수 있습니다.
 
 >[!CAUTION]
 >
