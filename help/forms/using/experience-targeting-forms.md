@@ -1,5 +1,5 @@
 ---
-title: AEM Forms에서 타깃팅된 경험 만들기
+title: AEM Forms에서 타기팅된 경험 만들기
 description: AEM Forms의 Target을 사용하여 타깃팅된 고객을 위한 사용자 지정된 경험을 만듭니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,16 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
-
+source-wordcount: '846'
+ht-degree: 2%
 ---
-
-# AEM Forms에서 타깃팅된 경험 만들기 {#create-targeted-experiences-in-aem-forms}
+# AEM Forms에서 타기팅된 경험 만들기 {#create-targeted-experiences-in-aem-forms}
 
 ## Adobe Target과 AEM Forms 통합 {#integrate-adobe-target-with-aem-forms}
 
 AEM과 통합된 Adobe Target을 통해 타겟 대상에 맞게 사용자 지정된 경험을 만들 수 있습니다. Adobe Target을 사용하면 A/B 테스트를 만들고, 사용자 응답을 측정하고, 타깃팅된 사용자에 대한 사용자 지정 웹 컨텐츠를 생성할 수 있습니다. Adobe Target을 AEM Forms과 통합하여 적응형 양식 및 대화형 커뮤니케이션의 이미지 구성 요소를 타겟팅할 수 있습니다.
 
-적응형 양식 및 대화형 통신에서 사용할 수 있도록 AEM에서 Adobe Target을 구성하십시오. [AEM에서 Target 구성 만들기](/help/sites-administering/target.md) 및 [프레임워크 추가](/help/sites-administering/target.md)를 참조하십시오.
+적응형 양식 및 대화형 통신에서 사용하도록 AEM에서 Adobe Target을 구성하십시오. [AEM에서 Target 구성 만들기](/help/sites-administering/target.md) 및 [프레임워크 추가](/help/sites-administering/target.md)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -36,8 +34,8 @@ AEM과 통합된 Adobe Target을 통해 타겟 대상에 맞게 사용자 지정
 1. 활동 페이지에서 **만들기 > 브랜드 만들기**&#x200B;를 선택합니다.
 1. 템플릿을 선택하고 속성을 입력하라는 메시지가 표시됩니다.
 
-   템플릿을 선택하고 **다음 을 선택합니다.** [속성] 섹션에 브랜드 제목을 입력하고 **만들기 를 선택합니다.**
-이제 브랜드가 활동 페이지에 나열됩니다.
+   템플릿을 선택하고 **다음**&#x200B;을(를) 선택합니다. [속성] 섹션에 브랜드 제목을 입력하고 **만들기 를 선택합니다.**
+   이제 브랜드가 활동 페이지에 나열됩니다.
 
 1. 활동 페이지에서 브랜드를 선택합니다.
 1. 브랜드의 기본 영역에서 **만들기** > **활동 만들기**&#x200B;를 선택합니다.
@@ -58,7 +56,7 @@ AEM과 통합된 Adobe Target을 통해 타겟 대상에 맞게 사용자 지정
 
 1. Target을 활성화하려면 적응형 양식 템플릿에서 사용하는 클라이언트 라이브러리를 포함하도록 .jsp 파일을 편집합니다.
 
-   예를 들어, 바로 사용 가능한 구현에서 **도구** > **CRXDE Lite**&#x200B;을 클릭합니다.
+   예를 들어 기본 구현에서 **도구** > **CRXDE Lite**&#x200B;을 클릭합니다.
 
    CRXDE Lite 주소 표시줄에 /libs/fd/af/components/page/base/head.jsp을 입력하여 head.jsp 파일을 편집합니다.
 
