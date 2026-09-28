@@ -1,6 +1,6 @@
 ---
-title: 세그먼테이션 구성
-description: AEM Campaign에 대한 세그멘테이션을 구성하는 방법을 알아봅니다.
+title: 세분화 구성
+description: AEM Campaign에 대한 세그멘테이션을 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,13 +12,11 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
 
-
-# 세그먼테이션 구성 {#configuring-segmentation}
+# 세분화 구성 {#configuring-segmentation}
 
 >[!NOTE]
 >
@@ -182,7 +180,7 @@ AEM에서 복잡한 세그먼트를 구성할 수 있습니다. 몇 가지 기�
 
 >[!NOTE]
 >
->대부분의 경우 페이지를 다시 로드할 때만 변경되지만 모든 트레이트는 즉시 해결됩니다. 마우스 위치의 변경 사항은 즉시 표시되므로 테스트 목적으로 유용합니다.
+>모든 트레이트는 즉시 결정되지만 대부분의 경우 페이지를 다시 로드할 때만 변경됩니다. 마우스 위치의 변경 사항은 즉시 표시되므로 테스트 목적으로 유용합니다.
 
 이러한 테스트는 콘텐츠 페이지에서 **티저** 구성 요소와 함께 수행할 수도 있습니다.
 

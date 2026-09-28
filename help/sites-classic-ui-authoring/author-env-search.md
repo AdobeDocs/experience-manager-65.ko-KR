@@ -1,10 +1,12 @@
 ---
 title: 검색
 description: AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
+
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
@@ -12,18 +14,16 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 13%
-
+source-wordcount: '474'
+ht-degree: 11%
 ---
-
 # 검색{#searching}
 
 AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
 
 >[!NOTE]
 >
->작성 환경 외부에서 [쿼리 빌더](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)과 같은 다른 메커니즘을 검색할 수도 있습니다.
+>작성 환경 외부에서 [쿼리 빌더](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)와 같은 다른 메커니즘을 검색할 수도 있습니다.
 
 ## 검색 기본 사항 {#search-basics}
 
@@ -92,6 +92,6 @@ Apache Felix 웹 관리 콘솔을 사용하여 범위를 변경할 수 있습니
 
 >[!NOTE]
 >
->표준 AEM 설치에서 찾기와 바꾸기는 Lucene을 사용하여 검색 기능을 제공합니다.
+>표준 AEM 설치에서 찾기 및 바꾸기는 Lucene을 사용하여 검색 기능을 제공합니다.
 >
 >Lucene은 최대 16k 길이의 문자열 속성을 인덱싱합니다. 이 값을 초과하는 문자열은 검색되지 않습니다.

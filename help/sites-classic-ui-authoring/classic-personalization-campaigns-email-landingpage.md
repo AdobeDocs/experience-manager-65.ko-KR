@@ -1,10 +1,14 @@
 ---
 title: 효과적인 뉴스레터 랜딩 페이지 만들기
+
 description: 효과적인 뉴스레터 랜딩 페이지는 최대한 많은 사람들이 뉴스레터(또는 기타 이메일 마케팅 캠페인)에 등록하도록 도와줍니다. 뉴스레터 등록에서 수집한 정보를 사용하여 리드를 받을 수 있습니다.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
-
+source-wordcount: '612'
+ht-degree: 2%
 ---
-
 # 효과적인 뉴스레터 랜딩 페이지 만들기{#creating-an-effective-newsletter-landing-page}
 
 효과적인 뉴스레터 랜딩 페이지는 최대한 많은 사람들이 뉴스레터(또는 기타 이메일 마케팅 캠페인)에 등록하도록 도와줍니다. 뉴스레터 등록에서 수집한 정보를 사용하여 리드를 받을 수 있습니다.
@@ -35,7 +37,7 @@ ht-degree: 0%
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 
-구독해야 하는 뉴스레터의 목록(예: **Geometrixx 뉴스레터**)을 MCM으로 만드십시오. 목록 만들기는 [목록 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)에 설명되어 있습니다.
+사람들이 구독해야 하는 뉴스레터의 목록(예: **Geometrixx 뉴스레터**)을 MCM으로 만드십시오. 목록 만들기는 [목록 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)에 설명되어 있습니다.
 
 다음은 목록의 예입니다.
 
@@ -43,7 +45,7 @@ ht-degree: 0%
 
 ## 등록 양식 만들기 {#create-a-sign-up-form}
 
-사용자가 태그를 구독할 수 있는 뉴스레터 등록 양식을 만듭니다. 샘플 Geometrixx 웹 사이트에서는 양식을 만들 수 있는 뉴스레터 페이지를 Geometrixx 도구 모음에 제공합니다.
+사용자가 태그를 구독할 수 있는 뉴스레터 등록 양식을 만듭니다. 샘플 Geometrixx 웹 사이트에서는 양식을 만들 수 있는 Geometrixx 도구 모음에 뉴스레터 페이지를 제공합니다.
 
 나만의 뉴스레터 양식을 만들려면 [Forms 설명서](/help/sites-authoring/default-components.md#form)에서 양식 만들기에 대한 정보를 참조하세요. 뉴스레터는 태그 라이브러리의 태그를 사용합니다. 태그를 추가하려면 [태그 관리](/help/sites-authoring/tags.md#tagadministration)를 참조하십시오.
 

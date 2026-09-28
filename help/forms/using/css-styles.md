@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 2%
-
+source-wordcount: '825'
+ht-degree: 4%
 ---
-
 # HTML5 양식용 CSS 스타일 만들기 {#creating-css-styles-for-html-forms}
 
 XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성됩니다. 이러한 요소는 순서대로 배열됩니다. 모든 요소에는 잘 정의된 CSS 클래스가 있습니다. 이러한 CSS 클래스를 사용하여 요소의 모양을 선택하고 변경할 수 있습니다.
@@ -25,7 +23,7 @@ XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성�
 >
 >CSS 클래스에서 너비, 높이, 테두리 두께, 위쪽, 왼쪽, 오른쪽, 아래쪽, 패딩, 여백 및 기타 위치 및 크기 특성의 값을 변경하지 마십시오. 위치 및 크기 특성을 변경하면 양식의 레이아웃이 변경됩니다.
 
-## CSS 클래스  요소  {#css-classes-nbsp-for-elements-nbsp}
+## 요소에 대한 CSS 클래스  {#css-classes-nbsp-for-elements-nbsp}
 
 모든 요소에는 잘 정의된 CSS 클래스가 포함되어 있습니다. 이러한 클래스를 수정하여 요소의 모양을 변경할 수 있습니다. 필드 및 그리기 요소를 제외한 모든 요소에는 두 개의 CSS 클래스(Type 클래스와 Name 클래스)가 있습니다.
 
@@ -37,7 +35,7 @@ XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성�
 >
 >일부 XFA 요소에는 이름이 없습니다. 이러한 구성 요소의 스타일을 변경하려면 해당 특정 유형의 모든 구성 요소를 수정합니다.
 
-AEM Forms Designer에서 이름이 지정되지 않은 페이지의 경우 HTML5 양식의 페이지가 해당 번호의 증가 순서로 이름이 지정됩니다. 예를 들어 페이지가 두 개인 HTML 5 양식의 경우 페이지 이름은 Page1, Page2입니다.
+AEM Forms Designer에서 이름이 지정되지 않은 페이지의 경우 HTML5 양식의 페이지가 해당 번호의 증가 순서로 이름이 지정됩니다. 예를 들어 페이지가 두 개인 HTML5 양식의 경우 페이지 이름은 Page1, Page2입니다.
 
 ## 필드 요소 {#field-element}
 
@@ -48,7 +46,7 @@ AEM Forms Designer에서 이름이 지정되지 않은 페이지의 경우 HTML5
 위젯 요소에는 사용자와의 상호 작용을 위한 사용자 인터페이스 요소가 포함됩니다. 여기에는 세 개의 CSS 클래스가 있습니다.
 
 * **위젯**: 모든 위젯에는 이 클래스가 있습니다.
-* **name**: AEM과 함께 제공되는 모든 위젯에 위젯 이름 클래스가 포함되어 있습니다. 사용자 정의 위젯의 경우 위젯 개발자는 위젯 이름 클래스를 제공합니다.
+* **이름**: AEM과 함께 제공되는 모든 위젯에 위젯 이름 클래스가 포함되어 있습니다. 사용자 정의 위젯의 경우 위젯 개발자는 위젯 이름 클래스를 제공합니다.
 * **type**: 모든 위젯에는 사용자 인터페이스 요소가 있습니다. 이 클래스는 사용자 인터페이스 요소의 유형을 정의합니다.
 
 ```xml
@@ -224,11 +222,11 @@ AEM Forms Designer은 NumericField, DecimalField 및 Date Field와 같은 양식
  </tbody>
 </table>
 
-## 다양한 Draw 요소용 CSS 클래스 {#css-classes-for-different-draw-elements}
+## 다른 그리기 요소에 대한 CSS 클래스 {#css-classes-for-different-draw-elements}
 
 AEM Forms Designer을 사용하여 텍스트 및 이미지와 같은 정적 그리기 요소를 삽입할 수 있습니다. 각 그리기 요소에 대해 별도의 CSS 클래스가 해당 요소와 연결됩니다. 그리기 요소의 CSS 클래스 목록은 아래에 나와 있습니다. 모든 그리기 요소에는 그리기 클래스가 연결되어 있습니다.
 
-| **Draw 유형** | **CSS 클래스** |
+| **그리기 형식** | **CSS 클래스** |
 |---|---|
 | 텍스트 | text |
 | 이미지 | 이미지 |
@@ -237,7 +235,7 @@ AEM Forms Designer을 사용하여 텍스트 및 이미지와 같은 정적 그�
 
 ## 양식의 다른 부분 스타일링 {#styling-other-parts-of-the-form}
 
-HTML 양식에 UI 구성 요소가 표시되는 것 외에도 인라인 오류, 인라인 경고 및 유효성 검사 오류가 있는 필드와 같은 요소의 스타일을 변경할 수 있습니다.
+HTML 양식의 UI 구성 요소 모양 외에도 인라인 오류, 인라인 경고 및 유효성 검사 오류가 있는 필드와 같은 요소의 스타일을 변경할 수 있습니다.
 
 `Styling Inline Errors`
 

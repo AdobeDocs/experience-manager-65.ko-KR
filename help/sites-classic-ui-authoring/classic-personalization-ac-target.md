@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 1%
 ---
-
 # Adobe Campaign 타기팅{#targeting-your-adobe-campaign}
 
 Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI에서만 사용할 수 있는 세그멘테이션을 설정해야 합니다. 그런 다음 Adobe Campaign에 대한 타겟팅된 경험을 만들 수 있습니다.
@@ -77,7 +75,7 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI에서만 �
 
    >[!NOTE]
    >
-   >[전자 메일 샘플은 Geometrixx](/help/sites-developing/we-retail.md#weretail)에서만 사용할 수 있습니다. 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
+   >[전자 메일 샘플은 Geometrixx에서만 사용할 수 있습니다](/help/sites-developing/we-retail.md#weretail). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
 
 1. 뉴스레터에서 텍스트 및 Personalization 구성 요소를 추가합니다.
 1. 텍스트 및 Personalization 구성 요소에 &quot;기본값입니다.&quot;와 같은 텍스트를 추가합니다.
@@ -101,7 +99,7 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI에서만 �
 
 1. Adobe Campaign에서 게재를 만듭니다. **AEM 콘텐츠가 포함된 전자 메일 게재**&#x200B;를 선택하고 로컬 AEM 계정을 적절하게 선택한 다음 변경 내용을 확인합니다.
 
-   HTML 보기에서 타겟팅된 구성 요소의 다른 경험은 Adobe Campaign 타겟팅 코드에 포함되어 있습니다.
+   HTML 보기에서는 타깃팅된 구성 요소의 다른 경험이 Adobe Campaign 타깃팅 코드에 포함되어 있습니다.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 

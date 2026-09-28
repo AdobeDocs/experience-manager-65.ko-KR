@@ -1,6 +1,6 @@
 ---
-title: HTML5 양식에 대한 사용자 지정 프로필 만들기
-description: HTML5 양식 프로필은 Apache Sling의 리소스 노드입니다. HTML5 양식 렌더링 서비스의 사용자 지정 버전을 나타냅니다.
+title: HTML5 양식용 사용자 정의 프로필 만들기
+description: HTML5 forms 프로필은 Apache Sling의 리소스 노드입니다. 이는 HTML5 forms 렌더링 서비스의 사용자 지정 버전을 나타냅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -11,20 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
+# HTML5 양식용 사용자 정의 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
 
-# HTML5 양식에 대한 사용자 지정 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
-
-프로필이 [Apache Sling](https://sling.apache.org/)의 리소스 노드입니다. 사용자 정의 버전의 HTML5 양식 렌디션 서비스를 나타냅니다. HTML5 양식 렌디션 서비스를 사용하여 HTML5 양식의 모양, 동작 및 상호 작용을 사용자 지정할 수 있습니다. 프로필 노드가 JCR 저장소의 `/content` 폴더에 있습니다. 노드를 `/content` 폴더 또는 `/content` 폴더의 하위 폴더 바로 아래에 배치할 수 있습니다.
+프로필이 [Apache Sling](https://sling.apache.org/)의 리소스 노드입니다. 이는 HTML5 양식 렌디션 서비스의 사용자 정의 버전을 나타냅니다. HTML5 양식 렌디션 서비스를 사용하여 HTML5 양식의 모양, 동작 및 상호 작용을 사용자 지정할 수 있습니다. 프로필 노드가 JCR 저장소의 `/content` 폴더에 있습니다. 노드를 `/content` 폴더 또는 `/content` 폴더의 하위 폴더 바로 아래에 배치할 수 있습니다.
 
 프로필 노드에 **sling:resourceSuperType** 속성이 있으며 기본값은 **xfaforms/profile**&#x200B;입니다. 노드에 대한 렌더링 스크립트는 /libs/xfaforms/profile에 있습니다.
 
 Sling 스크립트는 JSP 스크립트입니다. 이러한 JSP 스크립트는 요청된 양식에 대한 HTML과 필요한 JS/CSS 아티팩트를 결합하는 컨테이너 역할을 합니다. 이러한 슬링 스크립트를 **프로필 렌더러 스크립트**&#x200B;라고도 합니다. 프로필 렌더러는 Forms OSGi 서비스를 호출하여 요청된 양식을 렌더링합니다.
 
-GET 및 POST 요청에 대한 POST 스크립트는 html.jsp 및 html.profile.jsp에 있습니다. 하나 이상의 파일을 복사하고 수정하여 사용자 정의를 재정의하고 추가할 수 있습니다. 즉시 변경하지 마십시오. 패치 업데이트는 이러한 변경 사항을 덮어씁니다.
+프로필 스크립트는 GET 및 POST 요청에 대해 html.jsp 및 html.POST.jsp로 작성됩니다. 하나 이상의 파일을 복사하고 수정하여 사용자 정의를 재정의하고 추가할 수 있습니다. 즉시 변경하지 마십시오. 패치 업데이트는 이러한 변경 사항을 덮어씁니다.
 
 프로필에는 다양한 모듈이 포함되어 있습니다. 모듈은 formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp 및 footer.jsp입니다.
 
@@ -46,7 +44,7 @@ formBody.jsp 모듈은 XFA 양식의 HTML 표시를 위한 것입니다.
 
 ## nav_footer.jsp {#nav-footer-jsp}
 
-처음에는 HTML5 폼이 폼의 첫 페이지만 렌더링합니다. 사용자가 양식을 스크롤하면 나머지 양식이 로드됩니다. 로드 경험이 빨라집니다. nav_footer.jsp 구성 요소에는 스크롤할 때 페이지를 쉽게 로드할 수 있도록 모든 스타일과 필수 요소가 포함되어 있습니다.
+먼저 HTML5 양식은 양식의 첫 페이지만 렌더링합니다. 사용자가 양식을 스크롤하면 나머지 양식이 로드됩니다. 로드 경험이 빨라집니다. nav_footer.jsp 구성 요소에는 스크롤할 때 페이지를 쉽게 로드할 수 있도록 모든 스타일과 필수 요소가 포함되어 있습니다.
 
 ## footer.jsp {#footer-jsp}
 
@@ -64,7 +62,7 @@ footer.jsp 모듈이 비어 있습니다. 사용자 상호 작용에만 사용�
 
 1. 노드 기본값을 복사하고 다른 폴더(*/content/profiles*)에 *hraform* 이름을 사용하여 노드를 붙여넣습니다.
 
-1. 새 노드 *hrform*&#x200B;을(를) 선택하고 문자열 속성 *sling:resourceType*(값: *hrform/demo*)을(를) 추가합니다.
+1. 새 노드 *hrform*&#x200B;을(를) 선택하고 *hrform/demo* 값을 가진 문자열 속성 *sling:resourceType*&#x200B;을(를) 추가합니다.
 
 1. 도구 모음 메뉴에서 모두 저장 을 클릭하여 변경 사항을 저장합니다.
 
