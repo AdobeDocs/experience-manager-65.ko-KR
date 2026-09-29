@@ -1,5 +1,5 @@
 ---
-title: 대화형 PDF forms 렌더링
+title: 대화형 PDF 양식 렌더링
 description: Forms 서비스를 사용하여 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)에 렌더링하여 사용자로부터 정보를 수집합니다. Forms 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 대화형 양식을 렌더링할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -9,15 +9,14 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
-# 대화형 PDF forms 렌더링 {#rendering-interactive-pdf-forms}
+# 대화형 PDF 양식 렌더링 {#rendering-interactive-pdf-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -45,11 +44,11 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>HTML 페이지에서 <code>GetLoanForm</code> Java 서블릿이 호출됩니다. </p></td>
+   <td><p>HTML 페이지에서 <code>GetLoanForm</code> Java 서블릿을 호출합니다. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. <a href="#render-an-interactive-pdf-form-using-the-java-api">Java API를 사용하여 대화형 PDF 양식 렌더링</a>을 참조하십시오.</p></td>
+   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. (<a href="#render-an-interactive-pdf-form-using-the-java-api">Java API를 사용하여 대화형 PDF 양식 렌더링</a>을 참조하십시오.)</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -112,7 +111,7 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
 1. Forms 클라이언트 API 개체를 만듭니다.
 1. URI 값을 지정합니다.
 1. 양식에 파일 첨부(선택 사항).
-1. 대화형 PDF 양식 렌더링
+1. 대화형 PDF 양식을 렌더링합니다.
 1. 양식 데이터 스트림을 클라이언트 웹 브라우저에 작성합니다.
 
 **프로젝트 파일 포함**
@@ -168,7 +167,7 @@ Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 
 **대화형 PDF 양식 렌더링**
 
-양식을 렌더링하려면 Designer에서 작성하여 XDP 또는 PDF 파일로 저장한 양식 디자인을 사용합니다. Acrobat을 사용하여 만들고 PDF 파일로 저장된 양식을 렌더링할 수도 있습니다. 대화형 PDF 양식을 렌더링하려면 `FormsServiceClient` 개체의 `renderPDFForm` 메서드 또는 `renderPDFForm2` 메서드를 호출하십시오.
+양식을 렌더링하려면 Designer에서 작성하여 XDP 또는 PDF 파일로 저장한 양식 디자인을 사용합니다. 또한 Acrobat을 사용하여 만들고 PDF 파일로 저장된 양식을 렌더링할 수 있습니다. 대화형 PDF 양식을 렌더링하려면 `FormsServiceClient` 개체의 `renderPDFForm` 메서드 또는 `renderPDFForm2` 메서드를 호출하십시오.
 
 `renderPDFForm`이(가) `URLSpec` 개체를 사용합니다. XDP 파일에 대한 콘텐츠 루트는 `URLSpec` 개체의 `setContentRootURI` 메서드를 사용하여 Forms 서비스에 전달됩니다. 양식 디자인 이름(`formQuery`)이 별도의 매개 변수 값으로 전달됩니다. 두 값을 연결하여 양식 디자인에 대한 절대 참조를 가져옵니다.
 
@@ -176,7 +175,7 @@ Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->입력 문서가 PDF 문서인 경우 태그 지정된 PDF 런타임 옵션을 설정할 수 없습니다. 입력 파일이 XDP 파일인 경우, 태그된 PDF 옵션을 설정할 수 있다.
+>입력 문서가 PDF 문서인 경우 태그가 지정된 PDF 런타임 옵션을 설정할 수 없습니다. 입력 파일이 XDP 파일인 경우 태그된 PDF 옵션을 설정할 수 있습니다.
 
 ## Java API를 사용하여 대화형 PDF 양식 렌더링 {#render-an-interactive-pdf-form-using-the-java-api}
 
@@ -203,7 +202,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
    * 해당 생성자를 사용하여 첨부 파일을 저장할 `java.util.HashMap` 개체를 만듭니다.
    * 렌더링된 양식에 첨부할 각 파일에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출합니다. 다음 값을 이 메서드에 전달합니다.
 
-      * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값입니다.
+     * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값입니다.
 
    * 첨부 파일이 포함된 `com.adobe.idp.Document` 개체입니다.
 
@@ -258,7 +257,7 @@ Forms API(웹 서비스)를 사용하여 대화형 PDF 양식 렌더링:
    * 해당 생성자를 사용하여 첨부 파일을 저장할 `java.util.HashMap` 개체를 만듭니다.
    * 렌더링된 양식에 첨부할 각 파일에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출합니다. 다음 값을 이 메서드에 전달합니다.
 
-      * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값
+     * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값
 
    * 첨부 파일이 포함된 `BLOB` 개체
 
