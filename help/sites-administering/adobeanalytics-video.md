@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics에 대한 비디오 추적 구성
-description: SiteCatalyst을 위한 비디오 추적 구성에 대해 알아봅니다.
+title: Adobe Analytics를 위한 비디오 추적 구성
+description: SiteCatalyst에 대한 비디오 추적 구성에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,14 +10,12 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 0%
-
+source-wordcount: '1817'
+ht-degree: 1%
 ---
-
-# Adobe Analytics에 대한 비디오 추적 구성{#configuring-video-tracking-for-adobe-analytics}
+# Adobe Analytics를 위한 비디오 추적 구성{#configuring-video-tracking-for-adobe-analytics}
 
 비디오 이벤트를 추적하는 데 사용할 수 있는 몇 가지 방법이 있는데, 그 중 두 가지 방법은 이전 버전의 Adobe Analytics에 대한 레거시 옵션입니다. 이러한 레거시 옵션은 레거시 이정표 및 레거시 초입니다.
 
@@ -83,11 +81,11 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
    <td>여기에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자에게 친숙한</strong> 이름(<strong>제목</strong>)이 포함됩니다. 그렇지 않으면 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
   </tr>
   <tr>
-   <td>eventdata.videoFileName </td>
+   <td>이벤트 데이터.비디오 파일 이름 </td>
    <td>여기에 매핑된 변수에는 파일 이름이 포함됩니다. eventdata.events.a.media.view와 함께 전송된 경우에만 </td>
   </tr>
   <tr>
-   <td>eventdata.videoFilePath </td>
+   <td>이벤트 데이터.비디오 파일 경로 </td>
    <td>여기에 매핑된 변수에는 서버의 파일 경로가 포함됩니다. eventdata.events.a.media.view와 함께 전송된 경우에만 </td>
   </tr>
   <tr>
@@ -139,7 +137,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -157,11 +155,11 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
    <td>prop2</td>
   </tr>
   <tr>
-   <td>eventdata.videoFileName </td>
+   <td>이벤트 데이터.비디오 파일 이름 </td>
    <td>prop3 </td>
   </tr>
   <tr>
-   <td>eventdata.videoFilePath </td>
+   <td>이벤트 데이터.비디오 파일 경로 </td>
    <td>prop4</td>
   </tr>
   <tr>
@@ -227,7 +225,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**&#x200B;입니다.*
+*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**입니다.*
 
 * eventdata.a.media.name용 *prop1 및 eVar1,*
 * *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)가 포함된 eVar2 및 eVar3 포함*
@@ -235,9 +233,9 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Adobe Analytics에 대한&#x200B;**세 번째 호출**&#x200B;입니다.*
+*Adobe Analytics에 대한&#x200B;**세 번째 호출**입니다.*
 
-* *prop1 및 eVar1에 a.media.name;*&#x200B;이(가) 포함되어 있습니다.
+* *prop1 및 eVar1에 a.media.name;이 포함되어 있습니다.*
 * 세그먼트를 보았으므로 *event1*
 * *이벤트2가 재생된 시간 = 4*(으)로 전송됨
 * eventdata.events.milestone8에 도달했으므로 *event11이 전송됨*
@@ -274,7 +272,7 @@ eventdata.events.milestoneXX
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -293,26 +291,26 @@ eventdata.events.milestoneXX
 
    또한 Adobe Analytics으로 전송된 정보는 사용자 지정이 줄어듭니다. 매핑에 사용할 수 있는 변수는 3개뿐입니다.
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>여기에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자에게 친숙한</strong> 이름(<strong>제목</strong>)이 포함됩니다. 제목이 설정되지 않은 경우에는 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>여기에 매핑된 변수에는 파일 이름이 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>여기에 매핑된 변수에는 서버의 파일 경로가 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>여기에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자에게 친숙한</strong> 이름(<strong>제목</strong>)이 포함됩니다. 제목이 설정되지 않은 경우에는 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
+   </tr>
+   <tr>
+      <td>이벤트 데이터.비디오 파일 이름 </td>
+      <td>여기에 매핑된 변수에는 파일 이름이 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
+   </tr>
+   <tr>
+      <td>이벤트 데이터.비디오 파일 경로 </td>
+      <td>여기에 매핑된 변수에는 서버의 파일 경로가 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 완료되면 변경 사항을 저장해야 합니다.
+   >[!NOTE]
+   >
+   >DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 완료되면 변경 사항을 저장해야 합니다.
 
 1. 이러한 변수를 prop 1~3에 매핑
 
@@ -322,13 +320,13 @@ eventdata.events.milestoneXX
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *호출에서 보낸&#x200B;**pev3**&#x200B;변수에 다음 정보가 포함되어 있습니다.*
+   *호출에서 보낸&#x200B;**pev3**변수에 다음 정보가 포함되어 있습니다.*
 
    * *이름* - 비디오 파일 이름(*film.avi*)
 
    * *길이* - 비디오 파일의 길이(초)(*100*)
 
-   * *플레이어 이름* - 비디오 파일을 재생하는 데 사용되는 비디오 플레이어(*HTML 5 비디오*)
+   * *플레이어 이름* - 비디오 파일을 재생하는 데 사용되는 비디오 플레이어(*HTML5 비디오*)
 
    * *총 재생 시간(초)* - 비디오가 재생된 총 시간(초)(*25*)
 
@@ -338,7 +336,7 @@ eventdata.events.milestoneXX
 
 ## 이전(초) {#legacy-seconds}
 
-**&#x200B; 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
+** 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
 
 1. 트랙 오프셋을 초 단위로 설정합니다.
 
@@ -350,26 +348,26 @@ eventdata.events.milestoneXX
 
    Adobe Analytics으로 전송되는 정보의 맞춤화가 줄어듭니다. 매핑에 사용할 수 있는 변수는 3개뿐입니다.
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>여기에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자에게 친숙한</strong> 이름(<strong>제목</strong>)이 포함됩니다. 제목이 설정되지 않은 경우에는 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>여기에 매핑된 변수에는 파일 이름이 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>여기에 매핑된 변수에는 서버의 파일 경로가 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>여기에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자에게 친숙한</strong> 이름(<strong>제목</strong>)이 포함됩니다. 제목이 설정되지 않은 경우에는 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
+   </tr>
+   <tr>
+      <td>이벤트 데이터.비디오 파일 이름 </td>
+      <td>여기에 매핑된 변수에는 파일 이름이 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
+   </tr>
+   <tr>
+      <td>이벤트 데이터.비디오 파일 경로 </td>
+      <td>여기에 매핑된 변수에는 서버의 파일 경로가 포함됩니다. 비디오 재생 시작 시 한 번만 전송됩니다.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 완료되면 변경 사항을 저장해야 합니다.
+   >[!NOTE]
+   >
+   >DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 완료되면 변경 사항을 저장해야 합니다.
 
 1. 이러한 변수를 prop1, prop2 및 prop3에 매핑
 
@@ -383,4 +381,4 @@ eventdata.events.milestoneXX
 
 **이 자습서에 사용된 참조:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

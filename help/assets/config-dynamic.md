@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
-ht-degree: 1%
-
+source-wordcount: '8519'
+ht-degree: 2%
 ---
-
 # Dynamic Media - 하이브리드 모드 구성 {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media - 하이브리드 추가 기능 패키지(AEM 6.5.23 이상)
@@ -196,7 +194,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 콘텐츠에 대한 게�
 
 ## Dynamic Media 활성화 {#enabling-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media를 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media를 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
 
 >[!NOTE]
 >
@@ -629,7 +627,7 @@ Dynamic Media 구성(6.3 이전)을 구성하려면 이 작업을 ***전에***&#
 1. 다음 중 하나를 수행하여 패키지 설치를 확인하고 필요한 경우 디버그합니다.
 
    * **JCR을 통해 Video Analytics 사전 설정 확인**
-JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대한 액세스 권한이 있어야 합니다.
+     JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대한 액세스 권한이 있어야 합니다.
 
      Experience Manager - CRXDE Lite에서 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`(으)로 이동
 
@@ -640,7 +638,7 @@ JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대
    * **이미지 서버를 통해 Video Analytics 사전 설정을 확인**
 
      이미지 서버 req=userdata 요청을 하여 Video Analytics 사전 설정의 유효성을 직접 확인할 수 있습니다.
-예를 들어 작성자 노드에서 Analytics 사전 설정을 보려면 다음 요청을 수행할 수 있습니다.
+     예를 들어 작성자 노드에서 Analytics 사전 설정을 보려면 다음 요청을 수행할 수 있습니다.
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대
      ```
 
    * **Experience Manager의 Video Reporting 도구를 통해 Video Analytics 사전 설정을 확인합니다.**
-**[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고]**(으)로 이동
+     **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고]**(으)로 이동
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -938,14 +936,14 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 
 | 속성 | 기본 값 | 설명 |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 이미지 제공 API에서 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=ko#image-serving-api)도 참조하세요. |
-| `defaultpix` | `300,300` | 기본 보기 크기입니다. 요청에서 wid=, hei= 또는 scl=.<br>쉼표로 구분된 2개 정수(0 이상)로 지정한 경우 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=ko#image-serving-api)도 참조하십시오.<br>하지만 일반적으로 자산을 제공하기 위해 뷰어 사전 설정 또는 이미지 사전 설정을 사용합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
-| `defaultthumbpix` | `100,100` | 기본 썸네일 크기입니다. 썸네일 요청(`req=tmb`)에 대해 특성::DefaultPix 대신 사용됩니다.<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 썸네일 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.<br>쉼표로 구분된 2개의 정수(0 이상)로 지정됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=ko#image-serving-api)도 참조하십시오. |
-| `expiration` | `36000000` | 기본 클라이언트 캐시 TTL(Time to Live). 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초). 응답 이미지를 항상 즉시 만료하여 클라이언트 캐싱을 효과적으로 비활성화하려면 0으로 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나는 데 10시간이 걸립니다. 캐시를 더 빨리 정리해야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지 제공 API의 [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=ko)도 참조하세요. |
-| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 특성을 지정합니다.<br>쉼표로 구분된 정수와 플래그입니다. 첫 번째 값은 1..100 범위에 있으며 품질을 정의합니다. 두 번째 값은 정상적인 동작에 대해 0일 수 있고, JPEG 인코더에 의해 채용된 RGB 색도 다운샘플링을 비활성화하기 위해 1일 수 있다.<br>이미지 제공 API에서 [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=ko#image-serving-api)도 참조하세요. |
-| `maxpix` | `2000,2000` | 응답 이미지 크기 제한. 클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이입니다.<br>너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지를 요청하면 서버에서 오류가 반환됩니다.<br>이미지 제공 API에서 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=ko#image-serving-api)을(를) 참조하십시오. |
-| `resmode` | `SHARP2` | 기본 재샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>요청에 `resMode=`이(가) 지정되지 않은 경우 사용됩니다.<br>허용되는 값에는 `BILIN`, `BICUB` 또는 `SHARP2`.<br>열거형이 포함됩니다. `bilin`의 경우 2, `bicub`의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 사용<br>이미지 제공 API에서 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=ko#image-serving-api)도 참조하세요. |
-| `resolution` | `72` | 기본 오브젝트 확인. 특정 카탈로그 레코드에 유효한 catalog::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>실수입니다. 0보다 큽니다. 일반적으로 인치당 픽셀로 표시되지만, 미터당 픽셀과 같은 다른 단위로도 표시할 수 있습니다.<br>이미지 제공 API의 [해상도](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=ko#image-serving-api)도 참조하세요. |
+| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 이미지 제공 API에서 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api)도 참조하세요. |
+| `defaultpix` | `300,300` | 기본 보기 크기입니다. 요청에서 wid=, hei= 또는 scl=.<br>쉼표로 구분된 2개 정수(0 이상)로 지정한 경우 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api)도 참조하십시오.<br>하지만 일반적으로 자산을 제공하기 위해 뷰어 사전 설정 또는 이미지 사전 설정을 사용합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
+| `defaultthumbpix` | `100,100` | 기본 썸네일 크기입니다. 썸네일 요청(`req=tmb`)에 대해 특성::DefaultPix 대신 사용됩니다.<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 썸네일 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.<br>쉼표로 구분된 2개의 정수(0 이상)로 지정됩니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api)도 참조하십시오. |
+| `expiration` | `36000000` | 기본 클라이언트 캐시 TTL(Time to Live). 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초). 응답 이미지를 항상 즉시 만료하여 클라이언트 캐싱을 효과적으로 비활성화하려면 0으로 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나는 데 10시간이 걸립니다. 캐시를 더 빨리 정리해야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지 제공 API의 [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html)도 참조하세요. |
+| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 특성을 지정합니다.<br>쉼표로 구분된 정수와 플래그입니다. 첫 번째 값은 1..100 범위에 있으며 품질을 정의합니다. 두 번째 값은 정상적인 동작에 대해 0일 수 있고, JPEG 인코더에 의해 채용된 RGB 색도 다운샘플링을 비활성화하기 위해 1일 수 있다.<br>이미지 제공 API에서 [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api)도 참조하세요. |
+| `maxpix` | `2000,2000` | 응답 이미지 크기 제한. 클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이입니다.<br>너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지를 요청하면 서버에서 오류가 반환됩니다.<br>이미지 제공 API에서 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api)을(를) 참조하십시오. |
+| `resmode` | `SHARP2` | 기본 재샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>요청에 `resMode=`이(가) 지정되지 않은 경우 사용됩니다.<br>허용되는 값에는 `BILIN`, `BICUB` 또는 `SHARP2`.<br>열거형이 포함됩니다. `bilin`의 경우 2, `bicub`의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 사용<br>이미지 제공 API에서 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api)도 참조하세요. |
+| `resolution` | `72` | 기본 오브젝트 확인. 특정 카탈로그 레코드에 유효한 catalog::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>실수입니다. 0보다 큽니다. 일반적으로 인치당 픽셀로 표시되지만, 미터당 픽셀과 같은 다른 단위로도 표시할 수 있습니다.<br>이미지 제공 API의 [해상도](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api)도 참조하세요. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 이 값은 비디오 재생 시간의 스냅숏을 나타내며 [encoding.com](https://www.encoding.com/)에 전달됩니다. 자세한 내용은 [비디오 축소판 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode)를 참조하세요. |
 
 ## Dynamic Media 색상 관리 구성 {#configuring-dynamic-media-color-management}
@@ -960,9 +958,9 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 
 고급 사용 사례에서는 수동 구성 `icc=` 수정자를 사용하여 출력 색상 프로필을 명시적으로 선택할 수 있습니다.
 
-* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=ko](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=ko)
+* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=ko](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=ko)
+* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
@@ -1001,248 +999,248 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
 
    **색상 수정 속성 표**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>유형</strong></td>
-   <td><strong>기본값</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ko">iccprofilergb</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 RGB 색상 프로필의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ko">iccprofilecmyk</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=ko">iccprofilegray</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 회색 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=ko">iccprofilesrcrgb</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로파일의 이름</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=ko">iccprofilesrcmyk</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=ko">iccprofilescrgray</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=ko">iccblackpointcompensation</a></td>
-   <td>부울</td>
-   <td>참</td>
-   <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe에서는 이 설정이 켜져 있을 것을 권장합니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=ko">아이스디더</a></td>
-   <td>부울</td>
-   <td>거짓</td>
-   <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=ko">iccrenderintent</a></td>
-   <td>문자열</td>
-   <td>상대적</td>
-   <td><p>렌더링 의도를 지정합니다. 허용되는 값은 <strong>가시 범위, 상대, 채도, 절대입니다. </strong><i></i>Adobe에서는 기본적으로 <strong>상대 </strong><i></i>을(를) 권장합니다.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>속성</strong></td>
+      <td><strong>유형</strong></td>
+      <td><strong>기본값</strong></td>
+      <td><strong>설명</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 RGB 색상 프로필의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 회색 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로파일의 이름</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilescrgray</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
+      <td>부울</td>
+      <td>참</td>
+      <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe에서는 이 설정이 켜져 있을 것을 권장합니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">아이스디더</a></td>
+      <td>부울</td>
+      <td>거짓</td>
+      <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
+      <td>문자열</td>
+      <td>상대적</td>
+      <td><p>렌더링 의도를 지정합니다. 허용되는 값은 <strong>가시 범위, 상대, 채도, 절대입니다. </strong><i></i>Adobe에서는 기본적으로 <strong>상대 </strong><i></i>을(를) 권장합니다.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->속성 이름은 대/소문자를 구분하며 모두 소문자여야 합니다.
+   >[!NOTE]
+   >
+   >속성 이름은 대/소문자를 구분하며 모두 소문자여야 합니다.
 
-**색 프로필 표**
+   **색 프로필 표**
 
-다음 색상 프로파일이 설치됩니다.
+   다음 색상 프로파일이 설치됩니다.
 
-<table>
- <tbody>
-  <tr>
-   <th><p>이름</p> </th>
-   <th><p>색상 속도</p> </th>
-   <th><p>설명</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>애플RGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>코팅 FOGRA27(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>코팅 FOGRA39(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraaCol</td>
-   <td>CMYK</td>
-   <td>코팅 GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>색상 일치RGB</td>
-   <td>RGB</td>
-   <td>ColorMatch RGB</td>
-  </tr>
-  <tr>
-   <td>유럽 ISOC 기반</td>
-   <td>CMYK</td>
-   <td>유럽 ISO 코팅 FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>유로 스케일 코팅 v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>유로 스케일 코팅되지 않음 v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 코팅</td>
-  </tr>
-  <tr>
-   <td>일본 컬러 신문</td>
-   <td>CMYK</td>
-   <td>일본 색상 2002 신문</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 무코팅</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 웹 코팅</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>신문 인쇄2007</td>
-   <td>CMYK</td>
-   <td>미국 신문용지(SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC(1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 4 기본 CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 5 기본 CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoating</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoating</td>
-   <td>CMYK</td>
-   <td>미국 Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>코팅되지 않은 FOGRA29(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>웹 코팅</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>웹 코팅 FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 3 용지</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>웹코팅 SWOP 2006 Grade 5 용지</td>
-  </tr>
-  <tr>
-   <td>웹 코팅되지 않음</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>광영역RGB</td>
-   <td>RGB</td>
-   <td>광영역 RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>이름</p> </th>
+      <th><p>색상 속도</p> </th>
+      <th><p>설명</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>애플RGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>코팅 FOGRA27(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>코팅 FOGRA39(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraaCol</td>
+      <td>CMYK</td>
+      <td>코팅 GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>색상 일치RGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+   </tr>
+   <tr>
+      <td>유럽 ISOC 기반</td>
+      <td>CMYK</td>
+      <td>유럽 ISO 코팅 FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>유로 스케일 코팅 v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>유로 스케일 코팅되지 않음 v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 코팅</td>
+   </tr>
+   <tr>
+      <td>일본 컬러 신문</td>
+      <td>CMYK</td>
+      <td>일본 색상 2002 신문</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 무코팅</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 웹 코팅</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>신문 인쇄2007</td>
+      <td>CMYK</td>
+      <td>미국 신문용지(SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC(1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 기본 CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 기본 CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoating</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoating</td>
+      <td>CMYK</td>
+      <td>미국 Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>코팅되지 않은 FOGRA29(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>웹 코팅</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>웹 코팅 FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 용지</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>웹코팅 SWOP 2006 Grade 5 용지</td>
+   </tr>
+   <tr>
+      <td>웹 코팅되지 않음</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>광영역RGB</td>
+      <td>RGB</td>
+      <td>광영역 RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
@@ -1274,28 +1272,28 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
   </tr>
   <tr>
    <td>뷰어 URL 복사</td>
-   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
+   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
   </tr>
   <tr>
    <td>뷰어의 포함 코드 복사</td>
    <td><p>포함 코드 복사 대화 상자에는 다음과 유사한 코드 조각이 표시됩니다(코드 샘플은 데모용으로만 사용됨).</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
   </tr>
  </tbody>

@@ -4,13 +4,11 @@ description: AEM 6.5 적응형 양식 핵심 구성 요소를 사용하여 적�
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
 <!--
@@ -27,7 +25,7 @@ ht-degree: 0%
 
 ## 전제 조건 {#prerequisite-versioning}
 
-적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
+적응형 양식에서 버전 관리, 댓글 달기 및 주석 기능을 사용하려면 AEM 6.5 Forms 환경에서 [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)가 활성화되어 있는지 확인하십시오.
 
 ## 적응형 양식 버전 관리 {#adaptive-form-versioning}
 
@@ -38,7 +36,7 @@ ht-degree: 0%
 양식의 버전을 만들려면 아래 단계를 수행하십시오.
 
 1. AEM Forms 환경에서 **[!UICONTROL 양식]**>>**[!UICONTROL Forms 및 문서]**(으)로 이동하여 **양식**&#x200B;을(를) 선택합니다.
-1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**&#x200B;을 선택합니다.
+1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**을 선택합니다.
    ![양식 선택](assets/select-a-form.png)
 1. 왼쪽 하단 패널에 있는 **세 점**&#x200B;을 클릭하고 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.
 1. 양식 버전에 레이블을 입력하면 댓글을 통해 양식에 대한 정보를 추가할 수도 있습니다.
@@ -67,7 +65,8 @@ ht-degree: 0%
 검토는 한 명 이상의 검토자가 양식에 주석을 달 수 있도록 하는 메커니즘입니다. 모든 양식 사용자는 양식에 댓글을 달거나 댓글을 통해 양식을 검토할 수 있습니다. 양식에 댓글을 달려면 **[!UICONTROL 양식]**&#x200B;을(를) 선택하고 **[!UICONTROL 댓글]**&#x200B;을 양식에 추가하십시오.
 
 >[!NOTE]
-> 위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
+>
+>위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
 
 
 ![양식에 주석 추가](assets/form-comments.png)
@@ -79,10 +78,10 @@ ht-degree: 0%
 
 1. **[!UICONTROL 편집]** 모드에서 양식을 엽니다.
 
-1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭합니다.
+1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**을 클릭합니다.
    ![주석](assets/annotation.png)
 
-1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭하여 주석을 추가합니다.
+1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**을 클릭하여 주석을 추가합니다.
    ![주석 추가](assets/add-annotation.png)
 
 1. 이제 주석을 추가하고 여러 색상으로 스케치를 그려 구성 요소를 형성할 수 있습니다.

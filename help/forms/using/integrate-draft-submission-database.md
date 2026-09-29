@@ -8,13 +8,11 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 6%
-
 ---
-
 # 초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플 {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## 샘플 개요 {#sample-overview}
@@ -89,79 +87,79 @@ https://[*host*]:[*port*]/system/console/configMgr의 페이지입니다.
 1. 데이터베이스 연결은 Apache Sling 연결의 풀링된 데이터 Source을 통해 수행할 수 있습니다.
 1. Apache Sling 연결의 경우 찾아 클릭하여 웹 콘솔 구성의 편집 모드에서 **[!UICONTROL Apache Sling 연결의 풀링된 데이터 소스]**&#x200B;를 엽니다. 다음 표에 설명된 대로 등록 정보 값을 지정합니다.
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>속성</strong></td>
    <td><strong>값</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>데이터 소스 이름</td>
    <td><p>데이터 소스 풀에서 드라이버를 필터링하기 위한 데이터 소스 이름</p> <p><strong>참고: </strong><em>샘플 구현에서는 FormsPortal을 데이터 원본 이름으로 사용합니다.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC 드라이버 클래스</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC 연결 URI<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>사용자 이름</td>
    <td>데이터베이스 테이블에 대해 인증하고 작업을 수행할 사용자 이름</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>암호</td>
    <td>사용자 이름과 연계된 암호</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>트랜잭션 격리</td>
    <td>READ_COMMIT</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>최대 활성 연결</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>최대 유휴 연결</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>최소 유휴 연결</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>초기 크기</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>최대 대기</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>차입 시 테스트</td>
    <td>선택됨</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>유휴 상태 테스트</td>
    <td>선택됨</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>유효성 검사 쿼리</td>
    <td>값의 예로는 SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server)(validationQuery)이 있습니다.</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>유효성 검사 쿼리 시간 초과</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* MySQL용 JDBC 드라이버는 샘플에서 제공되지 않습니다. JDBC 연결 풀을 구성하는 데 필요한 정보를 제공하고 프로비저닝되었는지 확인합니다.
->* 작성자 및 게시 인스턴스가 동일한 데이터베이스를 사용하도록 지정합니다. JDBC 연결 URI 필드의 값은 모든 작성자 및 게시 인스턴스에 대해 동일해야 합니다.
+   >[!NOTE]
+   >
+   >* MySQL용 JDBC 드라이버는 샘플에서 제공되지 않습니다. JDBC 연결 풀을 구성하는 데 필요한 정보를 제공하고 프로비저닝되었는지 확인합니다.
+   >* 작성자 및 게시 인스턴스가 동일한 데이터베이스를 사용하도록 지정합니다. JDBC 연결 URI 필드의 값은 모든 작성자 및 게시 인스턴스에 대해 동일해야 합니다.
 
 1. 다른 구성은 그대로 두고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 

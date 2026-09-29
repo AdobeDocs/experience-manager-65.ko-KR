@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 13%
-
 ---
-
 # AEM 6.5 Forms 서비스 팩 설치 지침 {#aem-form-patch-installation-instructions}
 
 ## 릴리스 정보
@@ -21,11 +19,11 @@ ht-degree: 13%
 | 버전 | 6.5.25.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2026년 6월 10일 |
-| 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) |
+| 다운로드 URL | [최신 AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
 >
->해결된 문제의 전체 목록은 최신 [AEM 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko)를 참조하세요.
+>해결된 문제의 전체 목록은 최신 [AEM 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)를 참조하세요.
 
 ## Experience Manager Forms 6.5에 포함된 제품
 
@@ -37,7 +35,7 @@ Adobe Experience Manager(AEM) Forms 서비스 팩에는 고객이 요청한 주�
 >[!NOTE]
 >
 > * Adobe은 여섯 번째 서비스 팩마다 전체 설치 관리자를 릴리스합니다. AEM 6.5 Forms 서비스 팩 18(6.5.18.0)은 최신 JEE 전체 설치 프로그램입니다. 전체 설치 관리자는 새로운 플랫폼을 지원하며 일반 서비스 팩 설치 관리자에는 새로운 기능, 버그 수정 및 일반 개선 사항이 포함되어 있습니다. 새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, Adobe은 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM 6.5.12.0 Forms 설치 프로그램 대신 2023년 8월 31일에 릴리스된 AEM 6.5.18.0 JEE의 Forms 전체 설치 프로그램을 사용하는 것이 좋습니다. 전체 설치 관리자를 사용한 후 최신 서비스 팩을 설치합니다.
-> * [AEM 6.5 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)에서 사용할 수 있는 적응형 Forms과 같은 AEM Forms 기능은 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 용도로 사용하려면 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+> * [AEM 6.5 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)에서 사용할 수 있는 적응형 Forms과 같은 AEM Forms 기능은 탐색 및 평가 목적으로만 사용됩니다. 프로덕션 용도로 사용하려면 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 <!--
 
@@ -58,7 +56,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++&#x200B;1. 기존 환경의 백업 수행
 
-1. [CRX 저장소, 데이터베이스 스키마 및 GDS(전역 문서 저장소)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=ko)를 백업합니다.
+1. [CRX 저장소, 데이터베이스 스키마 및 GDS(전역 문서 저장소)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html)를 백업합니다.
 1. &lt;*AEM_forms_root*>/deploy 폴더를 백업합니다.
 
 >[!NOTE]
@@ -69,12 +67,12 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++&#x200B;2. 필요한 소프트웨어 다운로드
 
-* [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
+* [AEM Forms on JEE 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 * [조각 서블릿](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
-* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko)
-* [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
+* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+* [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 
 +++
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 하드 드라이브에 **JEE 서비스 팩의 AEM Forms 설치 관리자 보관**&#x200B;을(를) 추출합니다.
 
    * **Windows**
-설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하여 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
+     설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하여 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
 
-      * (Windows 32비트) `Windows\Disk1\InstData\VM`
-      * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32비트) `Windows\Disk1\InstData\VM`
+     * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-적절한 디렉터리로 이동한 다음 셸에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
+     적절한 디렉터리로 이동한 다음 셸에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 
@@ -126,9 +124,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 1. 응용 프로그램 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션의 지침을 따릅니다.
 
-   * [JBoss용 AEM 양식 설치 및 ®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
-   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
-   * [WebLogic용 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_kr)
+   * [JBoss용 AEM 양식 설치 및 ®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [WebSphere용 AEM 양식 설치 및 배포®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [WebLogic용 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
    * [JBoss® 클러스터용 AEM 양식 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
    * [WebSphere® 클러스터용 AEM 양식 설치 및 배포](https://helpx.adobe.com/kr/content/dam/help/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [WebLogic 클러스터용 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
@@ -136,7 +134,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 >[!NOTE]
 >
->* JEE 서비스 팩에 AEM Forms을 설치한 후 appserver를 다시 시작하기 전에 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 제거해야 합니다. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 최신 Forms 추가 기능 패키지를 다운로드합니다.
+>* JEE 서비스 팩에 AEM Forms을 설치한 후 appserver를 다시 시작하기 전에 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 제거해야 합니다. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 최신 Forms 추가 기능 패키지를 다운로드합니다.
 >* SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 >* JEE의 AEM Forms에 대한 스프링 프레임워크 취약점을 완화하기 위한 [핫픽스](/help/release-notes/aem-forms-hotfix.md)의 경우, 클러스터 환경에 배포할 때 로케이터가 JDK 17을 사용하여 시작되었는지 확인해야 합니다.
 
@@ -168,7 +166,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 1. 인스턴스가 업데이트 모드에 있는 경우(인스턴스가 이전 버전에서 업데이트된 경우) 설치 전에 인스턴스를 다시 시작하십시오. Adobe은 인스턴스의 현재 가동 시간이 높을 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 [!DNL Experience Manager] 인스턴스의 스냅숏 또는 새 백업을 만듭니다.
-1. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 서비스 팩을 다운로드합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 서비스 팩을 다운로드합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 1. 패키지 관리자를 연 다음 **[!UICONTROL 패키지 업로드]**&#x200B;를 선택하여 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md)를 참조하세요.
 1. 패키지를 선택한 다음 **[!UICONTROL 설치]**&#x200B;를 선택합니다.
 
@@ -179,7 +177,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다.
 패키지가 자동으로 설치됩니다.
 
-* 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
+* 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
   >[!NOTE]
   >
@@ -189,18 +187,18 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-   1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다.
-   1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
-   1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
+  1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다.
+  1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
+  1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
 
 +++
 
 +++&#x200B;7. AEM Experience Manager Forms 추가 기능 패키지 설치
 
 1. [!DNL Experience Manager] 서비스 팩을 설치했는지 확인하십시오.
-1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
-1. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
-1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 설치하십시오.
+1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 설치하십시오.
 
 +++
 
@@ -213,7 +211,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++&#x200B;1. 기존 환경의 백업 수행
 
-1. [CRX 저장소 및 데이터베이스 스키마](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=ko)를 백업합니다.
+1. [CRX 저장소 및 데이터베이스 스키마](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html)를 백업합니다.
 
 >[!NOTE]
 >
@@ -223,8 +221,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++&#x200B;2. 필요한 소프트웨어 다운로드
 
-* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko)
-* [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)
+* [AEM 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+* [Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
 
@@ -243,7 +241,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 1. 인스턴스가 업데이트 모드에 있는 경우(인스턴스가 이전 버전에서 업데이트된 경우) 설치 전에 인스턴스를 다시 시작하십시오. Adobe은 인스턴스의 현재 가동 시간이 높을 경우 다시 시작할 것을 권장합니다.
 1. 설치하기 전에 [!DNL Experience Manager] 인스턴스의 스냅숏 또는 새 백업을 만듭니다.
-1. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 서비스 팩을 다운로드합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에서 서비스 팩을 다운로드합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 1. 패키지 관리자를 연 다음 **[!UICONTROL 패키지 업로드]**&#x200B;를 선택하여 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md)를 참조하세요.
 1. 패키지를 선택한 다음 **[!UICONTROL 설치]**&#x200B;를 선택합니다.
 
@@ -252,7 +250,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 [!DNL Experience Manager] 서비스 팩을 자동으로 설치하는 데 사용할 수 있는 두 가지 방법이 있습니다.<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
-* 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
+* 패키지 관리자에서 [HTTP API 사용](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
   >[!NOTE]
   >
@@ -262,20 +260,20 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-   1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품]에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+  1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품]에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
+  1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-      1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(웹 콘솔 사용: `/system/console/bundles`).
+     1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(웹 콘솔 사용: `/system/console/bundles`).
 
 +++
 
 +++&#x200B;5. Adobe Experience Manager Forms(AEM) 추가 기능 패키지 설치
 
 1. [!DNL Experience Manager] 서비스 팩을 설치했는지 확인하십시오.
-1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
-1. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
-1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 설치하십시오.
+1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 설치하십시오.
 
 +++
 
