@@ -1,5 +1,5 @@
 ---
-title: ASRP - Adobe 저장소 리소스 제공자
+title: ASRP - Adobe 스토리지 리소스 제공자
 description: 관계형 데이터베이스를 공통 저장소로 사용하도록 AEM Communities 설정
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,10 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
-# ASRP - Adobe 저장소 리소스 제공자 {#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe 스토리지 리소스 제공자 {#asrp-adobe-storage-resource-provider}
 
 ## ASRP 정보 {#about-asrp}
 
@@ -46,7 +44,7 @@ UGC에 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다�
 
 **AEM 작성자 인스턴스:**
 
-* 전역 탐색에서 **[!UICONTROL 도구 > 커뮤니티 > 저장소 구성]**(으)로 이동하고 **[!UICONTROL ASRP(저장소 리소스 공급자) Adobe]**&#x200B;을(를) 선택합니다.
+* 전역 탐색에서 **[!UICONTROL 도구 > 커뮤니티 > 저장소 구성]**(으)로 이동하고 **[!UICONTROL Adobe ASRP(저장소 리소스 공급자)]**&#x200B;을(를) 선택합니다.
 
 ![asrp-default](assets/asrp-default.png)
 
@@ -107,7 +105,7 @@ AEM 작성자 인스턴스에서 다음을 수행합니다.
 >
 >게시된 커뮤니티 사이트에서 ASRP를 사용하도록 설정하면 온-프레미스 저장소와 클라우드 저장소 간에 데이터가 동기화되지 않으므로 [JCR](/help/communities/jsrp.md)에 이미 저장된 UGC가 더 이상 표시되지 않습니다.
 
-**`AEM Communities Extension`**&#x200B;은(는) 이전에 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 커뮤니티에서는 클라우드 구성이 필요하지 않으므로 [저장소 구성 콘솔](/help/communities/srp-config.md)에서 ASRP를 선택하면 됩니다.
+**`AEM Communities Extension`**&#x200B;은(는) 이전에 AEM 6.0 social communities as a cloud service에 도입되었습니다. AEM 6.1 커뮤니티에서는 클라우드 구성이 필요하지 않으므로 [저장소 구성 콘솔](/help/communities/srp-config.md)에서 ASRP를 선택하면 됩니다.
 
 새 저장소 구조로 인해 소셜 커뮤니티에서 커뮤니티로 업그레이드할 때 [업그레이드](/help/communities/upgrade.md#adobe-cloud-storage) 지침을 따라야 합니다.
 
@@ -122,11 +120,11 @@ AEM 작성자 인스턴스에서 다음을 수행합니다.
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
-기존 AEM 6.0 소셜 커뮤니티 사이트에서 업그레이드하는 경우 [업그레이드 지침](/help/communities/upgrade.md#adobe-cloud-storage)을(를) 따르세요. 그렇지 않으면 UGC가 손실된 것으로 표시됩니다.
+기존 AEM 6.0 소셜 커뮤니티 사이트에서 업그레이드하는 경우 [업그레이드 지침](/help/communities/upgrade.md#adobe-cloud-storage)을 따르십시오. 그렇지 않으면 UGC가 손실된 것으로 표시됩니다.
 
 ### 인증 오류 {#authentication-errors}
 
-데이터 센터 URL에 대해 인증 오류를 수신하고 AEM error.log에 부실 타임스탬프에 대한 메시지가 포함된 경우 시간 동기화가 발생하고 있는지 확인합니다.
+데이터 센터 URL에 대해 인증 오류를 수신하고 AEM error.log에 오래된 타임스탬프에 대한 메시지가 포함된 경우 시간 동기화가 발생하고 있는지 확인합니다.
 
 [NTP(네트워크 시간 프로토콜)](https://www.ntp.org/)와 같은 도구를 사용하여 모든 AEM 작성자 및 게시 서버를 시간 동기화합니다.
 
