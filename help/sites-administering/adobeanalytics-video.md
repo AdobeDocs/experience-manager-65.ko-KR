@@ -137,7 +137,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -272,7 +272,7 @@ eventdata.events.milestoneXX
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -381,4 +381,4 @@ eventdata.events.milestoneXX
 
 **이 자습서에 사용된 참조:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko)
