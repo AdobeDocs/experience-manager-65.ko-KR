@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각용 구성 요소
+title: 콘텐츠 조각용 구성 요소
 description: Adobe Experience Manager(AEM) 컨텐츠 조각은 페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,12 @@ exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1004'
+ht-degree: 5%
 ---
-
-# 컨텐츠 조각용 구성 요소{#components-for-content-fragments}
+# 콘텐츠 조각용 구성 요소{#components-for-content-fragments}
 
 ## 조각 작성을 위한 구성 요소 {#components-for-fragment-authoring}
 
@@ -28,7 +26,7 @@ ht-degree: 0%
 
 [콘텐츠 조각 관리 API - 클라이언트측](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side)을 참조하십시오.
 
-## 페이지 작성을 위한 구성 요소 {#components-for-page-authoring}
+## 페이지 작성 구성 요소 {#components-for-page-authoring}
 
 >[!CAUTION]
 >
@@ -40,7 +38,7 @@ ht-degree: 0%
 >
 >자세한 내용은 [콘텐츠 조각 렌더링용 구성 요소 구성](/help/sites-developing/content-fragments-config-components-rendering.md)을 참조하십시오.
 
-Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 만들고 관리됩니다](/help/assets/content-fragments/content-fragments.md). 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [콘텐츠 페이지를 작성할 때 이러한 조각과 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 기존 콘텐츠 조각 에셋을 [에셋 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)하여 사용할 수도 있습니다(기초 구성 요소 이미지와 같은 다른 에셋 기반 구성 요소의 경우). 기본 제공 콘텐츠 조각 구성 요소는 참조된 콘텐츠 조각 중 하나의 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)만 표시합니다. 구성 요소 대화 상자를 사용하여 페이지에 표시할 [요소, 변형 및 조각 단락 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)를 정의할 수 있습니다.
+Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 에셋으로 생성 및 관리됩니다.](/help/assets/content-fragments/content-fragments.md) 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. [콘텐츠 페이지를 작성할 때 이러한 조각과 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 기존 콘텐츠 조각 에셋을 [에셋 브라우저에서 페이지로 드래그](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)하여 사용할 수도 있습니다(기초 구성 요소 이미지와 같은 다른 에셋 기반 구성 요소의 경우). 기본 제공 콘텐츠 조각 구성 요소는 참조된 콘텐츠 조각 중 하나의 [요소](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)만 표시합니다. 구성 요소 대화 상자를 사용하여 페이지에 표시할 [요소, 변형 및 조각 단락 범위](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)를 정의할 수 있습니다.
 
 >[!NOTE]
 >
@@ -81,21 +79,21 @@ Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지에 영향을 받지
 * 세 개의 단락으로 구성된 콘텐츠 조각의 인스턴스
 * 그리고 일부 콘텐츠는 두 번째 단락 뒤에 이미 삽입되었습니다.
 
-   * 즉, 콘텐츠가 두 번째 parsys에 저장됩니다.
+  * 즉, 콘텐츠가 두 번째 parsys에 저장됩니다.
 
 기본적으로 이 인스턴스의 단락 구조가 변경되는 경우(표시된 단락의 변형, 요소 또는 범위 변경), 콘텐츠 조각 콘텐츠 시 표시되는 중간 콘텐츠에 영향을 줄 수 있습니다.
 
 * 가 편집되고 다른 단락이 두 번째 단락 앞에 추가됩니다.
 
-   * 중간 콘텐츠는 새로 만든 단락 뒤에 표시됩니다(이제 두 번째 단락에 새로 만든 단락이 포함됨).
+  * 중간 콘텐츠는 새로 만든 단락 뒤에 표시됩니다(이제 두 번째 단락에 새로 만든 단락이 포함됨).
 
 * 가 편집되고 두 번째 단락이 제거됩니다.
 
-   * 중간 콘텐츠는 이전에 세 번째 단락이었던 단락 뒤에 표시됩니다(이제 두 번째 단락에 이전 세 번째 단락이 포함됨).
+  * 중간 콘텐츠는 이전에 세 번째 단락이었던 단락 뒤에 표시됩니다(이제 두 번째 단락에 이전 세 번째 단락이 포함됨).
 
 * 첫 번째 단락만 표시되도록 가 구성됩니다.
 
-   * 중간 콘텐츠가 표시되지 않습니다(새 구성으로 인해 두 번째 parsys가 더 이상 렌더링되지 않음).
+  * 중간 콘텐츠가 표시되지 않습니다(새 구성으로 인해 두 번째 parsys가 더 이상 렌더링되지 않음).
 
 ### 콘텐츠 조각 구성 요소 맞춤화 {#customizing-the-content-fragment-component}
 
@@ -104,9 +102,9 @@ Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지에 영향을 받지
 * HTL 렌더링 스크립트와 관련 POJO를 재사용하여 중간 콘텐츠 기능이 구현되는 방식을 확인할 수 있습니다.
 * 콘텐츠 조각 노드 재사용: `cq:editConfig`
 
-   * `afterinsert`/ `afteredit`/ `afterdelete` 리스너는 JS 이벤트를 트리거하는 데 사용됩니다. 이러한 이벤트는 `cq.authoring.editor.plugin.cfm` 클라이언트 라이브러리에서 처리되어 관련 콘텐츠를 사이드 패널에 표시합니다.
-   * `cq:dropTargets`이(가) 콘텐츠 조각 에셋 드래그를 지원하도록 구성되었습니다.
-   * `cq:inplaceEditing`은(는) 페이지 편집기에서 콘텐츠 조각 작성을 지원하도록 구성되어 있습니다. 조각 원본 위치 편집기는 `cq.authoring.editor.plugin.cfm` 클라이언트 라이브러리에 정의되어 있으며 빠른 링크를 통해 [조각 편집기](/help/assets/content-fragments/content-fragments-variations.md)에서 현재 [요소/변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)을(를) 열 수 있습니다.
+  * `afterinsert`/ `afteredit`/ `afterdelete` 리스너는 JS 이벤트를 트리거하는 데 사용됩니다. 이러한 이벤트는 `cq.authoring.editor.plugin.cfm` 클라이언트 라이브러리에서 처리되어 관련 콘텐츠를 사이드 패널에 표시합니다.
+  * `cq:dropTargets`이(가) 콘텐츠 조각 에셋 드래그를 지원하도록 구성되었습니다.
+  * `cq:inplaceEditing`은(는) 페이지 편집기에서 콘텐츠 조각 작성을 지원하도록 구성되어 있습니다. 조각 원본 위치 편집기는 `cq.authoring.editor.plugin.cfm` 클라이언트 라이브러리에 정의되어 있으며 빠른 링크를 통해 [조각 편집기](/help/assets/content-fragments/content-fragments-variations.md)에서 현재 [요소/변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)을(를) 열 수 있습니다.
 
 ### 렌더링 전 자산 재작성 {#asset-rewriting-before-rendering}
 
@@ -131,4 +129,4 @@ Adobe Experience Manager(AEM) 콘텐츠 조각은 [페이지에 영향을 받지
 * `transformer-cfm-parfilter` - 단락 범위가 지정된 경우 원하지 않는 단락을 필터링합니다(콘텐츠 조각 구성 요소로 수행할 수 있음).
 * `transformer-cfm-assetprocessor` - 조각에 포함된 자산 목록을 검색하는 데 내부적으로 사용됩니다.
 
-렌더링 프로세스는 [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)을(를) 통해 노출되며 필요한 경우 사용자 지정 구성 요소에서 사용할 수 있습니다.
+렌더링 프로세스는 [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)을(를) 통해 노출되며 필요한 경우 사용자 지정 구성 요소에서 사용할 수 있습니다.

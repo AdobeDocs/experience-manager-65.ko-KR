@@ -1,22 +1,24 @@
 ---
 title: 워크플로 단계 참조
+
 description: Adobe Experience Manager의 워크플로에 대해서는 이 단계 참조 를 참조하십시오.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3288'
 ht-degree: 2%
-
 ---
-
 # 워크플로 단계 참조 {#workflow-step-reference}
 
 워크플로우 모델은 다양한 유형의 일련의 단계로 구성됩니다. 유형에 따라 이러한 단계를 매개 변수와 스크립트를 사용하여 구성하고 확장하여 필요한 기능과 컨트롤을 제공할 수 있습니다.
@@ -340,7 +342,7 @@ function check(){
 
 1. **예제 대화 상자 정의**
 
-   다음 XML 코드 조각은 페이로드 콘텐츠의 `watchEmail` 노드에 `String` 값을 저장하는 대화 상자를 나타냅니다. 제목 노드는 [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소를 나타냅니다.
+   다음 XML 코드 조각은 페이로드 콘텐츠의 `watchEmail` 노드에 `String` 값을 저장하는 대화 상자를 나타냅니다. 제목 노드는 [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소를 나타냅니다.
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -428,7 +430,7 @@ function check(){
 
 * **OSGi 서비스**
 
-  서비스는 [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스를 구현해야 합니다. 인터페이스는 다음 멤버를 정의합니다.
+  서비스는 [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스를 구현해야 합니다. 인터페이스는 다음 멤버를 정의합니다.
 
   * `SERVICE_PROPERTY_LABEL` 필드: 참가자 선택기의 이름을 지정하려면 이 필드를 사용하십시오. **동적 참가자 단계** 속성의 사용 가능한 참가자 선택기 목록에 이름이 나타납니다.
 

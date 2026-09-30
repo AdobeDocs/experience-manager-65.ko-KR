@@ -9,9 +9,9 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1189'
 ht-degree: 6%
 ---
 # 기본 처리{#basic-handling}
@@ -139,7 +139,7 @@ ht-degree: 6%
 >위치:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->자세한 내용은 CQ 위젯 API의 [SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)을 참조하십시오.
+>자세한 내용은 CQ 위젯 API의 [SiteAdmin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)을 참조하십시오.
 
 ## 웹 사이트 콘솔의 페이지 정보 {#page-information-on-the-websites-console}
 

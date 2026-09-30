@@ -9,13 +9,11 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '4096'
+source-wordcount: '4259'
 ht-degree: 3%
-
 ---
-
 
 
 # JEE에서 AEM Forms에 대해 지원되는 플랫폼 {#supported-platforms-for-aem-forms-on-jee}
@@ -107,7 +105,8 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 >[!NOTE]
 >
 >AEM Forms 고객이 소유 비용을 절감하고, 배포 아키텍처를 단순화하고, 개발 스택을 현대화할 수 있도록 Adobe Experience Manager 엔터프라이즈 플랫폼은 독립형 OSGi 기반 배포를 위해 애플리케이션 서버 기반 배포에서 탈피하고 있습니다. Adobe은 인프라 구성 요소 매트릭스가 축소된 AEM Forms JEE 스택을 계속 지원합니다.
-><br>>6.5 릴리스에서는 다음과 같이 Adobe 고객 중 사용률이 가장 낮은 인프라 구성 요소가 더 이상 지원되지 않습니다.
+><br>
+>6.5 릴리스에서는 다음과 같이 Adobe 고객 중 사용률이 가장 낮은 인프라 구성 요소가 더 이상 지원되지 않습니다.
 >
 > - ® DB2® 데이터베이스
 > - ® AIX® 및 Sun Solaris™ 운영 체제
@@ -383,6 +382,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 (2.17 이상)
 > - OpenSSL 3(OS의 기본 위치에 필요).
+> - Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오. `sudo dnf install -y libxcrypt-compat.i686`.
 
 OpenSSL 3 설치의 경우: 라이브러리 libcrypto.so.3 및 libssl.so.3은 LD_LIBRARY_PATH 환경 변수로 표시되는 기본 라이브러리 경로에서 사용할 수 있어야 합니다. 비표준 위치에 설치된 경우 서버를 시작하기 전에 이 경로가 LD_LIBRARY_PATH에 추가되었는지 확인하십시오.
 

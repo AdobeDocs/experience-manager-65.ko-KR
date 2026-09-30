@@ -7,13 +7,11 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # SCF Handlebars 도우미 {#scf-handlebars-helpers}
 
 | **[⇐ 기능 기본 사항](essentials.md)** | **[서버측 사용자 지정 ⇒](server-customize.md)** |
@@ -180,7 +178,7 @@ Then content-loadmore would return
 
 ## If-wcm 모드 {#if-wcm-mode}
 
-문자열로 구분된 모드 목록에 대해 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)의 현재 값을 테스트하는 블록 도우미입니다.
+문자열로 구분된 모드 목록에 대해 [WCM 모드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)의 현재 값을 테스트하는 블록 도우미입니다.
 
 ### 매개변수 {#parameters-4}
 
@@ -190,7 +188,7 @@ Then content-loadmore would return
 
 * **모드**: 문자열
 
-  (선택 사항) 설정된 경우 테스트할 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)의 쉼표로 구분된 목록입니다.
+  (선택 사항) 설정된 경우 테스트할 [WCM 모드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)의 쉼표로 구분된 목록입니다.
 
 ### 예 {#example-2}
 
@@ -523,7 +521,7 @@ template(data);
 
 ### 서버측 사용자 정의 도우미 {#server-side-custom-helpers}
 
-서버측에서 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java™ 인터페이스 [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html)를 구현하고 [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi)로 만든 다음 OSGi 번들의 일부로 설치하십시오.
+서버측에서 사용자 지정 SCF 도우미를 구현하고 등록하려면 Java™ 인터페이스 [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html)를 구현하고 [OSGi 서비스](../../help/sites-developing/the-basics.md#osgi)로 만든 다음 OSGi 번들의 일부로 설치하십시오.
 
 예:
 

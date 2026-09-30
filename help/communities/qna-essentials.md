@@ -9,13 +9,11 @@ exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 2%
-
+source-wordcount: '273'
+ht-degree: 1%
 ---
-
 # QnA 기본 사항 {#qna-essentials}
 
 이 페이지에서는 QnA(질문 및 답변) 포럼 기능 작업에 필요한 기본 정보를 제공합니다.
@@ -55,9 +53,9 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [QnA API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA 엔드포인트](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

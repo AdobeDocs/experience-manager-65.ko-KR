@@ -9,13 +9,11 @@ exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # 커뮤니티 문제 해결 {#troubleshooting}
 
 이 섹션에는 커뮤니티 문제 해결 시 발생하는 일반적인 문제와 알려진 문제가 포함되어 있습니다.
@@ -51,7 +49,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 실패는 작성자와 게시에서 다릅니다. 작성자의 경우 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시 시 페이지에 오류가 발생합니다.
 
-자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
+자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
 
 ## 일반적인 문제 {#common-concerns}
 

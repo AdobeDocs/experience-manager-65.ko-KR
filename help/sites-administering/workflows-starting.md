@@ -9,37 +9,35 @@ exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '821'
 ht-degree: 3%
-
 ---
-
 # 워크플로 시작{#starting-workflows}
 
 워크플로를 관리할 때 다양한 방법을 사용하여 시작할 수 있습니다.
 
 * 수동:
 
-   * [워크플로 모델](#workflow-models)에서.
-   * [일괄 처리](#workflow-packages-for-batch-processing)에 워크플로우 패키지를 사용하는 중입니다.
+  * [워크플로 모델](#workflow-models)에서.
+  * [일괄 처리](#workflow-packages-for-batch-processing)에 워크플로우 패키지를 사용하는 중입니다.
 
 * 자동:
 
-   * 노드 변경에 대한 응답으로, [런처를 사용](#workflows-launchers)합니다.
+  * 노드 변경에 대한 응답으로, [런처를 사용](#workflows-launchers)합니다.
 
 >[!NOTE]
 >
 >작성자는 다른 방법도 사용할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 >
->* [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md)
+>* [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md)
 >* [워크플로를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/kr/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [번역 프로젝트](/help/sites-administering/tc-manage.md)
 >
 
-## 워크플로우 모델 {#workflow-models}
+## 워크플로 모델 {#workflow-models}
 
 워크플로 모델 콘솔에 나열된 모델 [&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances) 중 하나를 기반으로 워크플로를 시작할 수 있습니다. 페이로드만 필수 정보이며 제목 및/또는 댓글도 추가할 수 있습니다.
 
@@ -65,7 +63,7 @@ ht-degree: 3%
 * `/var/mobile`
 * `/var/statistics`
 
-   * 예외: `/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 실행됩니다.
+  * 예외: `/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 실행됩니다.
 
 표준 설치에는 다양한 정의가 포함되어 있습니다. 이는 디지털 자산 관리 및 소셜 공동 작업 작업에 사용됩니다.
 
@@ -122,9 +120,9 @@ ht-degree: 3%
 
      워크플로우를 시작하는 이벤트 유형:
 
-      * 생성됨
-      * 수정됨
-      * 제거됨
+     * 생성일
+     * 수정됨
+     * 제거됨
 
    * **Nodetype**
 
@@ -136,7 +134,7 @@ ht-degree: 3%
 
    * **실행 모드**
 
-     워크플로 시작 관리자가 적용되는 서버 유형입니다. **작성자**, **Publish** 또는 **작성자 및 Publish**&#x200B;을(를) 선택하십시오.
+     워크플로 시작 관리자가 적용되는 서버 유형입니다. **작성자**, **게시** 또는 **작성자 및 게시**&#x200B;를 선택하십시오.
 
    * **조건**
 
@@ -164,8 +162,8 @@ ht-degree: 3%
 
      워크플로 시작 관리자 활성화 여부를 제어합니다.
 
-      * 구성 속성이 충족되면 워크플로우를 시작하려면 **사용**&#x200B;을 선택하십시오.
-      * 워크플로우를 실행하지 않으려면 **사용 안 함**&#x200B;을 선택하십시오(구성 속성이 지정된 경우에도).
+     * 구성 속성이 충족되면 워크플로우를 시작하려면 **사용**&#x200B;을 선택하십시오.
+     * 워크플로우를 실행하지 않으려면 **사용 안 함**&#x200B;을 선택하십시오(구성 속성이 지정된 경우에도).
 
    * **목록 제외**
 
@@ -173,8 +171,8 @@ ht-degree: 3%
 
      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
-      * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
-      * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
+     * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
+     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
 
      예:
 

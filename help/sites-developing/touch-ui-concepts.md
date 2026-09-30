@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2240'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager(AEM)는 터치 및 데스크톱 장치 모두에서 작동하도록 디자인된 작성 환경용 [반응형 디자인](/help/sites-authoring/responsive-layout.md)이 포함된 터치 지원 UI를 제공합니다.
@@ -28,24 +26,24 @@ Adobe Experience Manager(AEM)는 터치 및 데스크톱 장치 모두에서 작
 터치 지원 UI에는 다음이 포함됩니다.
 
 * 다음과 같은 세트 헤더입니다.
-   * 로고 표시
-   * 전역 탐색에 대한 링크를 제공합니다.
-   * 검색, 도움말, Experience Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
+  * 로고 표시
+  * 전역 탐색에 대한 링크를 제공합니다.
+  * 검색, 도움말, Experience Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
 * 왼쪽 레일(필요할 때 표시되며 숨길 수 있음)은 다음과 같이 표시할 수 있습니다.
-   * 타임라인
-   * 참조
-   * 필터
+  * 타임라인
+  * 참조
+  * 필터
 * 탐색 헤더입니다. 이 헤더는 다시 문맥을 구분하며 다음을 표시할 수 있습니다.
-   * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
-   * 왼쪽 레일 선택
-   * 이동 경로
-   * 적절한 **만들기** 작업에 액세스
-   * 선택 항목 보기
+  * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
+  * 왼쪽 레일 선택
+  * 이동 경로
+  * 적절한 **만들기** 작업에 액세스
+  * 선택 항목 보기
 * 다음과 같은 콘텐츠 영역:
-   * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
-   * 열, 카드 또는 목록과 같이 요청한 대로 형식을 지정할 수 있습니다.
-   * 반응형 디자인 사용(디스플레이는 장치 및/또는 창 크기에 따라 자동으로 크기 조정)
-   * 무한 스크롤링 사용(더 이상 페이지 매김을 하지 않음, 모든 항목이 하나의 창에 나열됨)
+  * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
+  * 열, 카드 또는 목록과 같이 요청한 대로 형식을 지정할 수 있습니다.
+  * 반응형 디자인 사용(디스플레이는 장치 및/또는 창 크기에 따라 자동으로 크기 조정)
+  * 무한 스크롤링 사용(더 이상 페이지 매김을 하지 않음, 모든 항목이 하나의 창에 나열됨)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 
 ### Granite UI Foundation 구성 요소 {#granite-ui-foundation-components}
 
-[Granite UI 기초 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 UI 구축에 필요한 기본 구성 요소를 제공합니다. 여기에는 다음과 같은 항목이 포함됩니다.
+[Granite UI 기초 구성 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 UI 구축에 필요한 기본 구성 요소를 제공합니다. 여기에는 다음과 같은 항목이 포함됩니다.
 
 * 버튼
 * 하이퍼링크
@@ -257,7 +255,7 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}
 
-[Granite UI 관리 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 모든 관리 응용 프로그램에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 기초 구성 요소를 기반으로 합니다. 여기에는 다음과 같은 것들이 포함됩니다.
+[Granite UI 관리 구성 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 모든 관리 응용 프로그램에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 기초 구성 요소를 기반으로 합니다. 여기에는 다음과 같은 것들이 포함됩니다.
 
 * 전역 탐색 막대
 * 레일(스켈레톤)

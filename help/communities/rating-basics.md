@@ -9,13 +9,11 @@ exl-id: 49456944-ff0d-4507-b3b8-143c90067573
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '308'
 ht-degree: 0%
-
 ---
-
 # 등급 기본 사항 {#rating-essentials}
 
 [tally](tally.md) 하위 클래스인 등급 구성 요소를 사용하여 로그인한 커뮤니티 구성원이 웹 사이트의 기능에 대한 등급을 지정할 수 있습니다.
@@ -59,9 +57,9 @@ ht-degree: 0%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

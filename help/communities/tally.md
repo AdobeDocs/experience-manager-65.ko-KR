@@ -9,13 +9,11 @@ exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # Tally 기본 사항 {#tally-essentials}
 
 Tally는 특정 제품과 서비스를 어떻게 중시하는지에 대한 구성원들의 피드백을 수집하는 표준 방법을 제공하는 추상 클래스이다. 익명 피드백은 지원되지 않습니다. 사이트 방문자가 참여하려면 등록하고 로그인해야 하며, 피드백을 변경하려면 로그인해야 합니다. 로그인 요구 사항은 중재를 용이하게 하고 여러 게시물을 방지하여 피드백의 가치를 향상시킵니다.
@@ -38,9 +36,9 @@ AEM 6.1부터는 폴링 구성 요소를 더 이상 사용할 수 없습니다.
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

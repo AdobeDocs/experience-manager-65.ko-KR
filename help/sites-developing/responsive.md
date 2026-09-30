@@ -10,13 +10,11 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5471'
 ht-degree: 0%
-
 ---
-
 # 웹 페이지를 위한 응답형 디자인{#responsive-design-for-web-pages}
 
 {{ue-over-mobile}}
@@ -506,7 +504,7 @@ AEM 서비스를 구성하는 방법에 대한 자세한 내용은 [OSGi 구성]
 
 #### 구현 세부 사항 {#implementation-details}
 
-`com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` 클래스는 [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스를 확장합니다. AdaptiveImageComponentServlet 소스 코드가 `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` 폴더에 있습니다.
+`com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` 클래스는 [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스를 확장합니다. AdaptiveImageComponentServlet 소스 코드가 `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` 폴더에 있습니다.
 
 이 클래스는 Felix SCR 주석을 사용하여 서블릿이 연결되는 리소스 유형 및 파일 확장자와 첫 번째 선택기의 이름을 구성합니다.
 
@@ -539,11 +537,11 @@ AEM 서비스를 구성하는 방법에 대한 자세한 내용은 [OSGi 구성]
             description = "List of widths this component is permitted to generate.")
 ```
 
-`AbstractImageServlet` 클래스는 HTTP 요청을 처리하는 `doGet` 메서드를 제공합니다. 이 메서드는 요청과 연결된 리소스를 확인하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체에 반환합니다.
+`AbstractImageServlet` 클래스는 HTTP 요청을 처리하는 `doGet` 메서드를 제공합니다. 이 메서드는 요청과 연결된 리소스를 확인하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체에 반환합니다.
 
 >[!NOTE]
 >
->[com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 리소스의 `fileReference` 속성 값을 검색하는 `getFileReference method`을(를) 제공합니다.
+>[com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 리소스의 `fileReference` 속성 값을 검색하는 `getFileReference method`을(를) 제공합니다.
 
 `AdaptiveImageComponentServlet` 클래스는 `createLayer` 메서드를 재정의합니다. 메서드는 `ImageContext` 개체에서 이미지 리소스의 경로와 요청된 이미지 너비를 가져옵니다. 그런 다음 실제 이미지 크기 조절을 수행하는 `info.geometrixx.commons.impl.AdaptiveImageHelper` 클래스의 메서드를 호출합니다.
 
@@ -611,7 +609,7 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
 #### 구현 세부 사항 {#implementation-details-1}
 
-info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래스는 [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스를 확장합니다. cq-geometrixx-commons-pkg 패키지가 설치되어 있는 경우 ImageReferenceModificationServlet 소스 코드는 `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` 폴더에 있습니다.
+info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래스는 [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 클래스를 확장합니다. cq-geometrixx-commons-pkg 패키지가 설치되어 있는 경우 ImageReferenceModificationServlet 소스 코드는 `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` 폴더에 있습니다.
 
 이 클래스는 Felix SCR 주석을 사용하여 서블릿이 연결되는 리소스 유형 및 파일 확장자와 첫 번째 선택기의 이름을 구성합니다.
 
@@ -651,12 +649,12 @@ info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet 클래�
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-`AbstractImageServlet` 클래스는 HTTP 요청을 처리하는 `doGet` 메서드를 제공합니다. 이 메서드는 호출과 연결된 리소스를 확인하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체에 저장합니다.
+`AbstractImageServlet` 클래스는 HTTP 요청을 처리하는 `doGet` 메서드를 제공합니다. 이 메서드는 호출과 연결된 리소스를 확인하고 저장소에서 리소스 속성을 검색하여 [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 개체에 저장합니다.
 
-`ImageReferenceModificationServlet` 클래스는 `createLayer` 메서드를 재정의하고 렌더링할 이미지 리소스를 결정하는 논리를 구현합니다. 메서드는 이름이 `image`인 페이지의 `jcr:content` 노드의 자식 노드를 검색합니다. 이 `image` 노드에서 [Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) 개체가 만들어지고 `getFileReference` 메서드가 이미지 노드의 `fileReference` 속성에서 이미지 파일에 대한 경로를 반환합니다.
+`ImageReferenceModificationServlet` 클래스는 `createLayer` 메서드를 재정의하고 렌더링할 이미지 리소스를 결정하는 논리를 구현합니다. 메서드는 이름이 `image`인 페이지의 `jcr:content` 노드의 자식 노드를 검색합니다. 이 `image` 노드에서 [Image](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) 개체가 만들어지고 `getFileReference` 메서드가 이미지 노드의 `fileReference` 속성에서 이미지 파일에 대한 경로를 반환합니다.
 
 >[!NOTE]
->[com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 getFileReferencemethod를 제공합니다.
+>[com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) 클래스는 getFileReferencemethod를 제공합니다.
 >
 
 ## 유체 그리드 개발 {#developing-a-fluid-grid}

@@ -9,16 +9,14 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2265'
 ht-degree: 4%
-
 ---
-
 # 일괄 처리 API를 사용하여 여러 대화형 통신 생성 {#use-batch-api-to-generate-multiple-ic}
 
-배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
+배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 인터랙티브 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 인터랙티브 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
 배치 API는 JSON 형식 및 양식 데이터 모델의 레코드(데이터)를 허용합니다. 생성된 대화형 통신의 수는 구성된 양식 데이터 모델의 입력 JSON 파일에 지정된 레코드와 같습니다. API를 사용하여 인쇄 및 웹 출력을 모두 생성할 수 있습니다. PRINT 옵션은 PDF 문서를 생성하고 WEB 옵션은 각 개별 레코드에 대한 JSON 형식의 데이터를 생성합니다.
 
@@ -87,7 +85,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 폴더의 **[!UICONTROL 이름]** 및 실제 **[!UICONTROL 경로]**&#x200B;을(를) 지정하십시오. 예: `c:\batchprocessing`
    1. **[!UICONTROL 다음을 사용하여 파일 처리]** 필드에서 **[!UICONTROL 서비스]** 옵션을 선택합니다.
    1. **[!UICONTROL 서비스 이름]** 필드에서 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 서비스를 선택합니다.
-   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=ko#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
+   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. **[!UICONTROL 고급]** 탭을 열고 다음 사용자 지정 속성을 추가하십시오.
 
@@ -147,7 +145,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 폴더의 **[!UICONTROL 이름]** 및 실제 **[!UICONTROL 경로]**&#x200B;을(를) 지정하십시오. 예: `c:\batchprocessing`
    1. **[!UICONTROL 다음을 사용하여 파일 처리]** 필드에서 **[!UICONTROL 서비스]** 옵션을 선택합니다.
    1. **[!UICONTROL 서비스 이름]** 필드에서 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 서비스를 선택합니다.
-   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=ko#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
+   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. **[!UICONTROL 고급]** 탭을 열고 다음 사용자 지정 속성을 추가하십시오.
 
@@ -171,7 +169,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 ## REST 요청을 사용하여 일괄 처리 API 호출
 
-REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html)를 호출할 수 있습니다. 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java™ 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
+REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html)를 호출할 수 있습니다. 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java™ 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
 
 Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java™ 서블릿을 만들고 배포할 수 있도록 다음 단계를 수행합니다.
 
@@ -337,7 +335,7 @@ Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 �
 **구문**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
-**예**
+**예제**
 JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 템플릿을 사용하는 경우: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 그러면 게시 노드의 다음 URL에 대화형 통신의 웹 채널이 표시됩니다

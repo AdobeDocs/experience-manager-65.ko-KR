@@ -1,37 +1,37 @@
 ---
 title: UI 테스트
-description: AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다
+description: AEM은 AEM UI에 대한 테스트 자동화를 위한 프레임워크를 제공합니다
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 3%
-
+source-wordcount: '795'
+ht-degree: 4%
 ---
-
 # UI 테스트{#testing-your-ui}
 
 >[!NOTE]
 >
->AEM 6.5 이상에서는 hobbes.js UI 테스트 프레임워크가 더 이상 사용되지 않습니다. Adobe은 추가 개선 사항을 계획하지 않으며 고객에게 Selenium 자동화를 사용할 것을 권장합니다.
+>AEM 6.5 이상에서는 hobbes.js UI 테스트 프레임워크가 더 이상 사용되지 않습니다. Adobe은 추가 개선 사항을 계획하고 있지 않으며 고객에게 Selenium 자동화를 사용할 것을 권장합니다.
 >
 >[사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하세요.
 
-AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다. 프레임워크를 사용하여 웹 브라우저에서 직접 UI 테스트를 작성하고 실행합니다. 프레임워크는 테스트 생성을 위한 JavaScript API를 제공합니다.
+AEM은 AEM UI에 대한 테스트를 자동화하는 프레임워크를 제공합니다. 프레임워크를 사용하여 웹 브라우저에서 직접 UI 테스트를 작성하고 실행합니다. 프레임워크는 테스트 생성을 위한 JavaScript API를 제공합니다.
 
-AEM 테스트 프레임워크는 JavaScript으로 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
+AEM 테스트 프레임워크는 JavaScript에서 작성된 테스트 라이브러리인 Hobbes.js를 사용합니다. Hobbes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이제 프레임워크를 AEM 애플리케이션 테스트에 공개적으로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->API에 대한 자세한 내용은 Hobbes.js [설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
+>API에 대한 자세한 내용은 Hobbes.js [설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)를 참조하십시오.
 
 ## 테스트 구조 {#structure-of-tests}
 
@@ -40,7 +40,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 | 작업 | **작업**&#x200B;은(는) 링크 또는 단추를 클릭하는 것과 같은 웹 페이지의 특정 활동입니다. |
 |---|---|
 | 테스트 사례 | **테스트 사례**&#x200B;은(는) 하나 이상의 **작업**(으)로 구성할 수 있는 특정 상황입니다. |
-| 테스트 세트 | **테스트 도구 모음**&#x200B;은(는) 특정 사용 사례를 함께 테스트하는 관련 **테스트 사례** 그룹입니다. |
+| 테스트 모음 | **테스트 도구 모음**&#x200B;은(는) 특정 사용 사례를 함께 테스트하는 관련 **테스트 사례** 그룹입니다. |
 
 ## 테스트 실행 {#executing-tests}
 
@@ -104,9 +104,9 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 다음 절차에서는 [We.Retail 콘텐츠](/help/sites-developing/we-retail.md)를 사용하여 테스트 도구 모음을 만들고 실행하는 과정을 단계별로 안내하지만, 다른 웹 페이지를 사용하도록 테스트를 쉽게 수정할 수 있습니다.
 
-고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
+고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)를 참조하십시오.
 
-1. CRXDE Lite 열기. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. CRXDE Lite를 엽니다. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. `/etc/clientlibs` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 폴더 만들기**&#x200B;를 클릭합니다. `myTests` 이름을 입력하고 **확인**&#x200B;을 클릭합니다.
 1. `/etc/clientlibs/myTests` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 노드 만들기**&#x200B;를 클릭합니다. 다음 속성 값을 사용한 다음 **확인**&#x200B;을 클릭합니다.
 

@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4567'
 ht-degree: 1%
-
 ---
-
 # 개념{#concepts}
 
 통합 프레임워크는 다음을 위한 메커니즘 및 구성 요소를 제공합니다.
@@ -60,33 +58,33 @@ ht-degree: 1%
 
 * AEM은 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 요청:
+  * 요청:
 
-      * eCommerce 엔진의 제품 정보.
+    * eCommerce 엔진의 제품 정보.
 
-   * 제공:
+  * 제공:
 
-      * 제품 정보, 장바구니 및 체크아웃에 대한 사용자 보기.
-      * 전자 상거래 엔진에 대한 장바구니 및 체크아웃 정보.
-      * SEO(검색 엔진 최적화).
-      * 커뮤니티 기능.
-      * 구조화되지 않은 마케팅 상호 작용.
+    * 제품 정보, 장바구니 및 체크아웃에 대한 사용자 보기.
+    * 전자 상거래 엔진에 대한 장바구니 및 체크아웃 정보.
+    * SEO(검색 엔진 최적화).
+    * 커뮤니티 기능.
+    * 구조화되지 않은 마케팅 상호 작용.
 
 * eCommerce 엔진은 다음을 수행할 수 있습니다.
 
-   * 제공:
+  * 제공:
 
-      * 데이터베이스의 제품 정보.
-      * 제품 변형 관리.
-      * Order Management.
-      * ERP(전사적 자원 관리).
-      * 제품 정보 내에서 검색합니다.
+    * 데이터베이스의 제품 정보.
+    * 제품 변형 관리.
+    * Order Management.
+    * ERP(전사적 자원 관리).
+    * 제품 정보 내에서 검색합니다.
 
-   * 프로세스:
+  * 프로세스:
 
-      * 장바구니.
-      * 체크아웃이요.
-      * 주문 처리.
+    * 장바구니.
+    * 체크아웃이요.
+    * 주문 처리.
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >AEM 내에서 JCR을 기반으로 하는 일반 개발을 사용하여 구현된 AEM eCommerce는 다음과 같습니다.
 >
->* API 사용을 보여주는 독립 실행형 AEM 기반 전자 상거래 예입니다. 기존 데이터 표시 및 마케팅 캠페인으로 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM(Adobe의 [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) 구현)에 고유한 저장소에 저장됩니다.
+>* API 사용을 보여주는 독립 실행형 AEM 기반 전자 상거래 예입니다. 기존 데이터 표시 및 마케팅 캠페인으로 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM(Adobe의 [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html) 구현)에 고유한 저장소에 저장됩니다.
 >
 >  표준 AEM 설치에는 [일반 전자 상거래 구현](/help/commerce/cif-classic/administering/generic.md)의 기본 사항이 포함되어 있습니다.
 
@@ -150,7 +148,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >
 >Geometrixx 가져오기는 CSV 파일을 사용합니다. 구현 위의 주석에 허용되는 스키마(허용된 사용자 지정 속성 포함)에 대한 설명이 있습니다.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)은(는) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)을(를) 통해 [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스의 구현 목록을 유지 관리합니다. 가져오기 마법사의 **Importer/Commerce 공급자** 드롭다운 필드에 나열됩니다(`commerceProvider` 속성 이름 사용).
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)은(는) [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)을(를) 통해 [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스의 구현 목록을 유지 관리합니다. 가져오기 마법사의 **Importer/Commerce 공급자** 드롭다운 필드에 나열됩니다(`commerceProvider` 속성 이름 사용).
 
 드롭다운에서 특정 Importer/Commerce 공급자를 사용할 수 있는 경우 다음 중 하나에서 필요한 보조 데이터를 정의해야 합니다(Importer 유형에 따라 다름).
 
@@ -169,24 +167,24 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 * PIM(Product Information Management) 사용자가 유지 관리:
 
-   * 제품 정보.
-   * 분류, 분류, 승인.
-   * 디지털 자산 관리와 상호 작용합니다.
-   * 가격 책정 - 일반적으로 ERP 시스템에서 발생하며 상거래 시스템에서는 명시적으로 관리되지 않습니다.
+  * 제품 정보.
+  * 분류, 분류, 승인.
+  * 디지털 자산 관리와 상호 작용합니다.
+  * 가격 책정 - 일반적으로 ERP 시스템에서 발생하며 상거래 시스템에서는 명시적으로 관리되지 않습니다.
 
 * 유지 관리하는 작성자/마케팅 관리자:
 
-   * 모든 채널에 대한 마케팅 콘텐츠.
-   * 프로모션.
-   * 바우처.
-   * 캠페인.
+  * 모든 채널에 대한 마케팅 콘텐츠.
+  * 프로모션.
+  * 바우처.
+  * 캠페인.
 
 * 서퍼/쇼핑객:
 
-   * 제품 정보를 조회합니다.
-   * 장바구니에 항목을 배치합니다.
-   * 주문을 확인합니다.
-   * 주문 이행 예상.
+  * 제품 정보를 조회합니다.
+  * 장바구니에 항목을 배치합니다.
+  * 주문을 확인합니다.
+  * 주문 이행 예상.
 
 실제 위치는 구현에 따라 달라질 수 있지만(예: 일반 또는 eCommerce 엔진 사용):
 
@@ -265,15 +263,15 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
   ERP(전사적 자원 관리) 정보
 
-   * **SKU**
+  * **SKU**
 
-     SKU(Stock Keeping Unit) 정보.
+    SKU(Stock Keeping Unit) 정보.
 
-   * **색상**
-   * **크기**
-   * **가격**
+  * **색상**
+  * **크기**
+  * **가격**
 
-     제품의 단가입니다.
+    제품의 단가입니다.
 
 * **요약**
 
@@ -394,19 +392,19 @@ AEM eCommerce 구현에서 성능 테스트를 고려해야 합니다.
 
 * 컨텐츠 볼륨
 
-   * 자산
-   * 현지화된 I18ned 제품 및 SKU
+  * 자산
+  * 현지화된 I18ned 제품 및 SKU
 
 * 사용자 활동:
 
-   * 일괄 편집
-   * 벌크 게시
-   * 집중 검색 요청
+  * 일괄 편집
+  * 벌크 게시
+  * 집중 검색 요청
 
 * 백그라운드 프로세스
 
-   * 가져오기
-   * 동기화 업데이트(예: 가격 책정)
+  * 가져오기
+  * 동기화 업데이트(예: 가격 책정)
 
 * 유지 관리 요구 사항(백업, Tar PM 최적화, 데이터스토어 가비지 수집 등)
 
@@ -505,9 +503,9 @@ AEM 내에서 업데이트하고 사용자 지정할 수 있는 각 제품에 �
 
 * 바우처 공급:
 
-   * 바우처 코드(구매자가 장바구니에 입력).
-   * 바우처 레이블(쇼핑객이 장바구니에 입력한 후 표시됨).
-   * 프로모션 경로(바우처가 적용되는 작업을 정의함).
+  * 바우처 코드(구매자가 장바구니에 입력).
+  * 바우처 레이블(쇼핑객이 장바구니에 입력한 후 표시됨).
+  * 프로모션 경로(바우처가 적용되는 작업을 정의함).
 
 * 외부 상거래 엔진은 바우처를 제공할 수도 있다.
 
@@ -516,9 +514,9 @@ AEM:
 * 바우처는 웹 사이트 콘솔로 생성/편집되는 페이지 기반 구성 요소입니다.
 * **Voucher** 구성 요소는 다음을 제공합니다.
 
-   * 바우처 관리를 위한 렌더러입니다. 현재 장바구니에 있는 바우처가 표시됩니다.
-   * 바우처를 관리(추가/제거)하기 위한 편집 대화 상자(양식).
-   * 장바구니에서 바우처를 추가/제거하는 데 필요한 작업입니다.
+  * 바우처 관리를 위한 렌더러입니다. 현재 장바구니에 있는 바우처가 표시됩니다.
+  * 바우처를 관리(추가/제거)하기 위한 편집 대화 상자(양식).
+  * 장바구니에서 바우처를 추가/제거하는 데 필요한 작업입니다.
 
 * 바우처는 날짜/시간 및 시간이 다르지만 부모 캠페인의 항목을 사용합니다.
 
@@ -541,16 +539,16 @@ AEM:
 * 프로모션은 웹 사이트 콘솔로 생성/편집되는 페이지 기반 구성 요소입니다. &quot;
 * 판촉 공급:
 
-   * 우선 순위
-   * 프로모션 핸들러 경로
+  * 우선 순위
+  * 프로모션 핸들러 경로
 
 * 프로모션을 캠페인에 연결하여 설정/해제 날짜/시간을 정의할 수 있습니다.
 * 프로모션을 경험에 연결하여 세그먼트를 정의할 수 있습니다.
 * 경험에 연결되지 않은 프로모션은 저절로 실행되지는 않지만 바우처로 실행할 수 있습니다.
 * 프로모션 구성 요소에는 다음이 포함됩니다.
 
-   * 프로모션 관리용 렌더러 및 대화 상자
-   * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링 및 편집하기 위한 하위 구성 요소
+  * 프로모션 관리용 렌더러 및 대화 상자
+  * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링 및 편집하기 위한 하위 구성 요소
 
 AEM에서 프로모션은 [캠페인 관리](/help/sites-authoring/personalization.md)에도 통합됩니다.
 
@@ -707,8 +705,8 @@ eCommerce 엔진은 컨텍스트(기본적으로 쇼핑객 정보)를 사용하�
 * 선택한 항목에 대한 제품 페이지 링크
 * 기능:
 
-   * 개별 품목의 수/수량을 업데이트합니다.
-   * 개별 항목 제거
+  * 개별 품목의 수/수량을 업데이트합니다.
+  * 개별 항목 제거
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 

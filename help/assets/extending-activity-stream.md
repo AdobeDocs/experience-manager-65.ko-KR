@@ -1,25 +1,23 @@
 ---
-title: 활동 스트림과  [!DNL Assets]  통합
-description: ' [!DNL Experience Manager] 의 기록 기능과 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.'
+title: '[!DNL Assets]을(를) 활동 스트림과 통합'
+description: '[!DNL Experience Manager]의 기록 기능 및 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.'
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets]을(를) 활동 스트림과 통합 {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets]명의 사용자가 Assets 만들기, 업로드 및 삭제와 같은 다양한 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 단원에서는 [!DNL Experience Manager]의 기록 기능 및 특정 이벤트를 기록하도록 [!DNL Experience Manager]을(를) 구성하는 방법에 대해 설명합니다.
 
 ## 성능 고려 사항 및 기본 동작 {#performance-considerations-and-default-behavior}
 
-예를 들어 일괄 가져오기를 수행할 때 이 통합은 CPU 및 디스크 공간을 소모할 수 있습니다. 이러한 이유로 활동 스트림과의 [!DNL Assets] 통합은 기본적으로 비활성화되어 있습니다.
+예를 들어 일괄 가져오기를 수행할 때 이 통합은 CPU 및 디스크 공간을 소비할 수 있습니다. 이러한 이유로 활동 스트림과의 [!DNL Assets] 통합은 기본적으로 비활성화되어 있습니다.
 
 ## 지원되는 작업 이벤트 {#supported-action-events}
 
@@ -59,4 +57,4 @@ ht-degree: 0%
 
 ## 기록된 이벤트 읽기 {#reading-recorded-events}
 
-기록된 이벤트는 활동으로 저장됩니다. [ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)를 사용하여 프로그래밍 방식으로 읽을 수 있습니다.
+기록된 이벤트는 활동으로 저장됩니다. [ActivityManager API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)를 사용하여 프로그래밍 방식으로 읽을 수 있습니다.

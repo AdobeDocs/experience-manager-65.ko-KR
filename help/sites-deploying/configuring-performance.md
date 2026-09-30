@@ -13,9 +13,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6650'
 ht-degree: 14%
 ---
 # 성능 최적화 {#performance-optimization}
@@ -225,7 +225,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 워크플로우 엔진은 작업 항목 처리를 처리하고 예약하기 위해 Apache Sling 작업 대기열을 사용합니다. 워크플로 작업을 처리하기 위해 Apache Sling 작업 큐 구성 서비스 팩토리에서 기본적으로 다음 작업 큐 서비스를 만들었습니다.
 
 * Granite 워크플로우 큐: DAM 에셋을 처리하는 워크플로우 단계와 같은 대부분의 워크플로우 단계는 Granite 워크플로우 큐 서비스를 사용합니다.
-* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특수 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 외부 대기열을 사용하여 폴링을 처리합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)을(를) 참조하십시오.)
+* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특수 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 외부 대기열을 사용하여 폴링을 처리합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)을(를) 참조하십시오.)
 
 동시에 실행되는 최대 워크플로우 프로세스 수를 제한하도록 이러한 서비스를 구성합니다.
 

@@ -7,13 +7,11 @@ role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
 # 문서 보안 | 사용자 데이터 처리 {#document-security-handling-user-data}
 
 AEM Forms document security를 사용하면 미리 정의된 보안 설정을 만들어 저장하고 문서에 적용할 수 있습니다. 권한이 부여된 사용자만 문서를 사용할 수 있도록 합니다. 정책을 사용하면 문서를 보호할 수 있습니다. 정책은 보안 설정 및 인가된 사용자 목록을 포함하는 정보의 모음입니다. 하나 이상의 문서에 정책을 적용할 수 있으며 AEM Forms JEE 사용자 관리에 추가된 사용자에게 권한을 부여합니다.
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 내보냅니다.
+>`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 내보냅니다.
 
 시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 데이터를 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md)를 참조하십시오.
 
@@ -150,7 +148,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >`EdcAuditEntity` 테이블에서 데이터를 삭제하려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 삭제합니다.
+   >`EdcAuditEntity` 테이블에서 데이터를 삭제하려면 [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 삭제합니다.
 
 1. 활성 및 보관된 정책 XML 파일은 각각 `EdcPolicyXmlEntity` 및 `EdcPolicyArchiveEntity` 데이터베이스 테이블에 저장됩니다. 이러한 테이블에서 사용자에 대한 데이터를 삭제하려면 다음을 수행합니다.
 
