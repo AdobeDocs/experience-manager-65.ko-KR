@@ -243,14 +243,14 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **노드 유형** | **Granite UI 리소스 유형** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}
