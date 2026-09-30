@@ -174,8 +174,8 @@ REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://experien
 Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java™ 서블릿을 만들고 배포할 수 있도록 다음 단계를 수행합니다.
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 제공된 샘플 코드에 언급된 대화형 통신을 사용하려면 [여기를 클릭](assets/SimpleMediumIC.zip)하십시오.
-1. AEM 인스턴스에서 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하고 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
-1. AEM 프로젝트의 POM 파일의 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을(를) 추가합니다. 예:
+1. AEM 인스턴스에서 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하고 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=ko).
+1. AEM 프로젝트의 POM 파일의 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을(를) 추가합니다. 예:
 
    ```xml
        <dependency>
@@ -325,7 +325,7 @@ Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 �
    * WEB 옵션을 지정하면 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 [웹 템플릿을 미리 채우기](#web-template)할 수 있습니다.
    * PRINT와 WEB 옵션을 모두 지정하면 레코드당 PDF 문서와 JSON 파일이 모두 생성됩니다.
 
-1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=ko).
 1. 대화형 통신을 생성하려면 배치 API를 호출하십시오. 배치 API 인쇄는 레코드 수에 따라 PDF 및 .json 파일 스트림을 반환합니다. JSON 파일을 사용하여 [웹 템플릿을 미리 채우기](#web-template)할 수 있습니다. 위의 코드를 사용하는 경우 API가 `http://localhost:4502/bin/batchServlet`에 배포됩니다. 이 코드는 PDF 및 JSON 파일의 스트림을 인쇄하고 반환합니다.
 
 ### 웹 템플릿 미리 채우기 {#web-template}
@@ -361,4 +361,4 @@ JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 
 
 >[!NOTE]
 >
->CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)을 참조하세요.
+>CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=ko)을 참조하세요.

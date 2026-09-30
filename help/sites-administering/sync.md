@@ -74,7 +74,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### &#x200B;1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
