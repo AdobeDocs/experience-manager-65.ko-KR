@@ -10,13 +10,11 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 1%
-
+source-wordcount: '2450'
+ht-degree: 2%
 ---
-
 # Adobe Experience Manager(AEM) 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
 
 클래식 UI는 ExtJS를 사용하여 구성 요소의 디자인을 제공하는 위젯을 만듭니다. 이러한 위젯의 특성으로 인해 구성 요소가 클래식 UI와 [터치 사용 UI](/help/sites-developing/developing-components.md)와 상호 작용하는 방법에는 몇 가지 차이점이 있습니다.
@@ -27,9 +25,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->HTL(HTML 템플릿 언어)과 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
+>HTML 템플릿 언어(HTL)와 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만, 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
 >
->이제 AEM에 HTL을 권장하는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
+>이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
 
 ## 구조 {#structure}
 
@@ -63,24 +61,24 @@ JSP 스크립트 파일 `global.jsp`은(는) 구성 요소를 렌더링하는 �
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - 래핑된 요청 개체( `SlingHttpServletRequest`).
-   * `slingResponse` - 래핑된 응답 개체( `SlingHttpServletResponse`).
-   * `resource` - Sling 리소스 개체( `slingRequest.getResource();`)입니다.
-   * `resourceResolver` - Sling Resource Resolver 개체( `slingRequest.getResoucreResolver();`)입니다.
-   * `currentNode` - 요청에 대해 확인된 JCR 노드입니다.
-   * `log` - 기본 로거().
-   * `sling` - Sling 스크립트 도우미입니다.
-   * `properties` - 주소가 지정된 리소스(`resource.adaptTo(ValueMap.class);`)의 속성입니다.
-   * `pageProperties` - 주소가 지정된 리소스의 페이지 속성입니다.
-   * `pageManager` - AEM 콘텐츠 페이지에 액세스하기 위한 페이지 관리자(`resourceResolver.adaptTo(PageManager.class);`)입니다.
-   * `component` - 현재 AEM 구성 요소의 구성 요소 개체입니다.
-   * `designer` - 디자인 정보를 검색하기 위한 Designer 개체(`resourceResolver.adaptTo(Designer.class);`)입니다.
-   * `currentDesign` - 주소가 지정된 리소스의 디자인입니다.
-   * `currentStyle` - 주소가 지정된 리소스의 스타일입니다.
+  * `slingRequest` - 래핑된 요청 개체( `SlingHttpServletRequest`).
+  * `slingResponse` - 래핑된 응답 개체( `SlingHttpServletResponse`).
+  * `resource` - Sling 리소스 개체( `slingRequest.getResource();`)입니다.
+  * `resourceResolver` - Sling Resource Resolver 개체( `slingRequest.getResoucreResolver();`)입니다.
+  * `currentNode` - 요청에 대해 확인된 JCR 노드입니다.
+  * `log` - 기본 로거().
+  * `sling` - Sling 스크립트 도우미입니다.
+  * `properties` - 주소가 지정된 리소스(`resource.adaptTo(ValueMap.class);`)의 속성입니다.
+  * `pageProperties` - 주소가 지정된 리소스의 페이지 속성입니다.
+  * `pageManager` - AEM 콘텐츠 페이지에 액세스하기 위한 페이지 관리자(`resourceResolver.adaptTo(PageManager.class);`)입니다.
+  * `component` - 현재 AEM 구성 요소의 구성 요소 개체입니다.
+  * `designer` - 디자인 정보를 검색하기 위한 Designer 개체(`resourceResolver.adaptTo(Designer.class);`)입니다.
+  * `currentDesign` - 주소가 지정된 리소스의 디자인입니다.
+  * `currentStyle` - 주소가 지정된 리소스의 스타일입니다.
 
 ### 컨텐츠 액세스 {#accessing-content}
 
-AEM WCM에서 콘텐츠에 액세스하는 방법에는 세 가지가 있습니다.
+AEM WCM의 콘텐츠에 액세스하는 방법에는 세 가지가 있습니다.
 
 * `global.jsp`에 도입된 속성 개체를 통해:
 
@@ -112,7 +110,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다.
 
-이 문제를 해결하기 위해 AEM에서는 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 **클라이언트측 라이브러리 폴더**&#x200B;를 제공합니다. 그런 다음 클라이언트측 라이브러리 시스템은 올바른 코드를 로드하기 위해 최종 웹 페이지에서 올바른 링크를 생성합니다.
+이 문제를 해결하는 데 도움이 되도록 AEM에서는 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 **클라이언트측 라이브러리 폴더**&#x200B;를 제공합니다. 그런 다음 클라이언트측 라이브러리 시스템은 올바른 코드를 로드하기 위해 최종 웹 페이지에서 올바른 링크를 생성합니다.
 
 자세한 내용은 [클라이언트측 HTML 라이브러리 사용](/help/sites-developing/clientlibs.md) 문서를 참조하십시오.
 
@@ -146,7 +144,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 ### 새 구성 요소 개발(기존 구성 요소 적용) {#develop-a-new-component-adapt-existing-component}
 
-기존 구성 요소를 기반으로 AEM용 새 구성 요소를 개발하려면 구성 요소를 복사하고, 새 구성 요소에 대한 JavaScript 파일을 만든 다음, AEM에서 액세스할 수 있는 위치에 저장할 수 있습니다([구성 요소 및 기타 요소 사용자 지정](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements) 참조).
+기존 구성 요소를 기반으로 AEM의 새 구성 요소를 개발하려면 구성 요소를 복사하고, 새 구성 요소에 대한 JavaScript 파일을 만든 다음, AEM에서 액세스할 수 있는 위치에 저장할 수 있습니다([구성 요소 및 기타 요소 사용자 지정](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements) 참조).
 
 1. CRXDE Lite을 사용하여에 구성 요소 폴더를 만듭니다.
 
@@ -164,8 +162,8 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 대화 상자에 필드 추가
 
-      * `cq:dialog` - 터치 사용 UI에 대한 대화 상자
-      * `dialog` - 클래식 UI 대화 상자
+     * `cq:dialog` - 터치 사용 UI에 대한 대화 상자
+     * `dialog` - 클래식 UI 대화 상자
 
    * `.jsp` 파일 바꾸기(새 구성 요소 뒤에 이름 지정)
    * 또는 원하는 경우 전체 구성 요소를 완전히 다시 작업
@@ -176,8 +174,8 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    >
    >다음에 대한 구성 요소:
    >
-   >* 터치 사용 UI에서 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소를 사용합니다.
-   >* 클래식 UI는 [ExtJS 위젯](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)을 사용합니다.
+   >* 터치 사용 UI에서 [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소를 사용합니다.
+   >* 클래식 UI는 [ExtJS 위젯](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)을 사용합니다.
 
    >[!NOTE]
    >
@@ -196,7 +194,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 1. 다음 중 하나를 수행하여 단락 시스템에서 새 구성 요소를 활성화합니다.
 
-   * CRXDE Lite을 사용하여 `/etc/designs/geometrixx/jcr:content/contentpage/par` 노드의 속성 구성 요소에 값 `<path-to-component>`(예: `/apps/geometrixx/components/myComponent`)을(를) 추가합니다
+   * CRXDE Lite을 사용하여 `/etc/designs/geometrixx/jcr:content/contentpage/par` 노드의 속성 구성 요소에 값 `<path-to-component>`(예: `/apps/geometrixx/components/myComponent`)을(를) 추가합니다.
    * [단락 시스템에 새 구성 요소 추가](#adding-a-new-component-to-the-paragraph-system-design-mode)의 지침에 따라
 
 1. AEM WCM에서 웹 사이트의 페이지를 열고 구성 요소가 제대로 작동하는지 확인하기 위해 만든 유형의 단락을 삽입합니다.
@@ -251,7 +249,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 >[!NOTE]
 >
->이 예는 더 이상 AEM과 함께 제공되지 않고 We.Retail로 대체된 Geometrixx 샘플 콘텐츠를 기반으로 합니다. Geometrixx을 다운로드하고 설치하는 방법은 [We.Retail 참조 구현](/help/sites-developing/we-retail.md#we-retail-geometrixx) 문서를 참조하십시오.
+>이 예제는 더 이상 AEM과 함께 제공되지 않고 We.Retail로 대체된 Geometrixx 샘플 콘텐츠를 기반으로 합니다. Geometrixx을 다운로드하고 설치하는 방법은 [We.Retail 참조 구현](/help/sites-developing/we-retail.md#we-retail-geometrixx) 문서를 참조하십시오.
 
 #### 기존 textimage 구성 요소 확장 {#extending-the-existing-textimage-component}
 
@@ -278,16 +276,16 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 구성 요소 이름
 
-      * `jcr:description`을(를) `Text Image Component (Extended)`(으)로 설정
-      * `jcr:title`을(를) `Text Image (Extended)`(으)로 설정
+     * `jcr:description`을(를) `Text Image Component (Extended)`(으)로 설정
+     * `jcr:title`을(를) `Text Image (Extended)`(으)로 설정
 
    * 구성 요소가 사이드 킥에 나열되는 그룹(그대로 유지)
 
-      * `componentGroup`을(를) `General`(으)로 설정
+     * `componentGroup`을(를) `General`(으)로 설정
 
    * 새 구성 요소의 상위 구성 요소(표준 Textimage 구성 요소)
 
-      * `sling:resourceSuperType`을(를) `foundation/components/textimage`(으)로 설정
+     * `sling:resourceSuperType`을(를) `foundation/components/textimage`(으)로 설정
 
    이 단계 후에 구성 요소 노드는 다음과 같이 표시됩니다.
 
@@ -305,24 +303,24 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 처음 두 탭(tab1 및 tab2)의 경우:
 
-      * xtype을 cqinclude(표준 구성 요소에서 상속)로 변경합니다.
-      * 각각 값이 `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` 및 `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`인 경로 속성을 추가하십시오.
-      * 다른 모든 속성 또는 하위 노드를 제거합니다.
+     * xtype을 cqinclude(표준 구성 요소에서 상속)로 변경합니다.
+     * 각각 값이 `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` 및 `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`인 경로 속성을 추가하십시오.
+     * 다른 모든 속성 또는 하위 노드를 제거합니다.
 
    * Tab3의 경우:
 
-      * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
-      * `tab3/items`, `cq:Widget` 유형의 노드 위치에 필드 정의 추가
-      * 새 `tab3/items/position`노드에 대해 다음 속성(문자열 유형)을 설정합니다.
+     * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
+     * `tab3/items`, `cq:Widget` 유형의 노드 위치에 필드 정의 추가
+     * 새 `tab3/items/position`노드에 대해 다음 속성(문자열 유형)을 설정합니다.
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * 이미지 배치에 대한 두 가지 선택 사항을 나타내려면 `cq:WidgetCollection` 유형의 하위 노드 `position/options`을(를) 추가하고 그 아래에 `nt:unstructured` 유형의 o1 및 o2인 두 개의 노드를 만듭니다.
-      * `position/options/o1` 노드의 경우 `text`을(를) `Left`(으)로, `value`을(를) `left.`(으)로 설정합니다.
-      * `position/options/o2` 노드의 경우 `text`을(를) `Right`(으)로, `value`을(를) `right`(으)로 설정합니다.
+     * 이미지 배치에 대한 두 가지 선택 사항을 나타내려면 `cq:WidgetCollection` 유형의 하위 노드 `position/options`을(를) 추가하고 그 아래에 `nt:unstructured` 유형의 o1 및 o2인 두 개의 노드를 만듭니다.
+     * `position/options/o1` 노드의 경우 `text`을(를) `Left`(으)로, `value`을(를) `left.`(으)로 설정합니다.
+     * `position/options/o2` 노드의 경우 `text`을(를) `Right`(으)로, `value`을(를) `right`(으)로 설정합니다.
 
    * Tab4를 삭제합니다.
 
@@ -357,7 +355,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
 구성 요소가 개발되면 단락 시스템에 구성 요소를 추가하여 작성자가 페이지를 편집할 때 구성 요소를 선택하고 사용할 수 있습니다. 다음 단계를 통해 구성 요소를 테스트할 수 있습니다.
 
-1. 영어/회사와 같은 Geometrixx에서 페이지를 엽니다.
+1. Geometrixx에서 영어/회사와 같은 페이지를 엽니다.
 1. Sidekick에서 디자인 을 클릭하여 디자인 모드로 전환합니다.
 1. 페이지 중간에 있는 단락 시스템에서 편집 을 클릭하여 단락 시스템 디자인을 편집합니다. 단락 시스템에 배치할 수 있는 구성 요소 목록이 표시되고 새로 개발된 구성 요소인 텍스트 이미지(확장) 가 포함되어야 합니다. 단락 시스템을 선택하고 확인 을 클릭하여 단락 시스템에 대해 활성화합니다.
 1. 편집 모드로 다시 전환합니다.
@@ -390,7 +388,7 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. **모두 저장**&#x200B;을 클릭합니다. 구성 요소를 테스트할 준비가 되었습니다.
-1. 영어/회사와 같은 Geometrixx에서 페이지를 엽니다.
+1. Geometrixx에서 영어/회사와 같은 페이지를 엽니다.
 1. 디자인 모드로 전환하고 이미지(확장)를 활성화합니다.
 1. 편집 모드로 다시 전환하고 단락 시스템에 추가합니다. 다음 그림에서는 원본 이미지 구성 요소와 만든 이미지 구성 요소의 차이점을 확인할 수 있습니다.
 

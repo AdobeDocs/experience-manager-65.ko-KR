@@ -9,13 +9,11 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
-
 ---
-
 # 새로운 Granite UI 필드 구성 요소 만들기{#creating-a-new-granite-ui-field-component}
 
 Granite UI는 양식에서 사용할 수 있도록 디자인된 다양한 구성 요소를 제공합니다. 이러한 구성 요소는 Granite UI 어휘에서 *필드*&#x200B;라고 합니다. 표준 Granite 양식 구성 요소는 다음에서 사용할 수 있습니다.
@@ -28,35 +26,35 @@ Granite UI는 양식에서 사용할 수 있도록 디자인된 다양한 구성
 
 >[!NOTE]
 >
->필드에 대한 자세한 내용은 [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)를 참조하십시오.
+>필드에 대한 자세한 내용은 [Granite UI 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)를 참조하십시오.
 
 Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 개발 및/또는 확장합니다. 여기에는 두 가지 요소가 있습니다.
 
 * 서버측:
 
-   * 기초 구성 요소 컬렉션
+  * 기초 구성 요소 컬렉션
 
-      * 기초 - 모듈식, 구성 가능, 레이어 가능, 재사용 가능
-      * 구성 요소 - Sling 구성 요소
+    * 기초 - 모듈식, 구성 가능, 레이어 가능, 재사용 가능
+    * 구성 요소 - Sling 구성 요소
 
-   * 애플리케이션 개발 지원 도우미
+  * 애플리케이션 개발 지원 도우미
 
 * 클라이언트측:
 
-   * 하이퍼미디어 기반 사용자 인터페이스를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다.
+  * 하이퍼미디어 기반 사용자 인터페이스를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다.
 
 일반 Granite UI 구성 요소 `field`은(는) 두 개의 관심 파일로 구성됩니다.
 
 * `init.jsp`: 일반 처리, 레이블 지정, 설명을 처리하고 필드를 렌더링할 때 필요한 양식 값을 제공합니다.
 * `render.jsp`: 필드의 실제 렌더링이 수행되며 사용자 지정 필드에 대해 재정의해야 합니다. `init.jsp`에 포함됩니다.
 
-자세한 내용은 [Granite UI 설명서 - 필드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)를 참조하십시오.
+자세한 내용은 [Granite UI 설명서 - 필드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)를 참조하십시오.
 
 예를 보려면 다음을 참조하십시오.
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
+  * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
 
 * `granite/ui/components/foundation/form`
 

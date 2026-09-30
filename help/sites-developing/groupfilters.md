@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 1%
-
 ---
-
 # 디바이스 그룹 필터 만들기{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ ht-degree: 1%
 
 ## Java™ 클래스 필터링 {#the-filter-java-class}
 
-장치 그룹 필터는 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스를 구현하는 OSGi 구성 요소입니다. 구현 클래스가 배포되면 장치 그룹 구성에 사용할 수 있는 필터 서비스를 제공합니다.
+장치 그룹 필터는 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스를 구현하는 OSGi 구성 요소입니다. 구현 클래스가 배포되면 장치 그룹 구성에 사용할 수 있는 필터 서비스를 제공합니다.
 
 이 문서에 설명된 솔루션은 Apache Felix Maven SCR 플러그인을 사용하여 구성 요소 및 서비스의 개발을 용이하게 합니다. 따라서 예제 Java™ 클래스는 `@Component` 및 `@Service` 주석을 사용합니다. 클래스의 구조는 다음과 같습니다.
 
@@ -94,7 +92,7 @@ public String getTitle() {
 * 사용자 에이전트의 이름
 * 장치 기능이 포함된 맵 개체입니다. 맵 키는 WURFL™ 기능 이름이며 값은 WURFL™ 데이터베이스의 해당 값입니다.
 
-[com.day.cq.wcm.mobile.api.devicesecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스에는 정적 필드에 WURFL™ 기능 이름의 하위 집합이 포함되어 있습니다. 장치 기능 맵에서 값을 검색할 때 이러한 필드 상수를 키로 사용합니다.
+[com.day.cq.wcm.mobile.api.devicesecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 인터페이스에는 정적 필드에 WURFL™ 기능 이름의 하위 집합이 포함되어 있습니다. 장치 기능 맵에서 값을 검색할 때 이러한 필드 상수를 키로 사용합니다.
 
 예를 들어, 다음 코드 예제에서는 디바이스가 CSS를 지원하는지 여부를 결정합니다.
 

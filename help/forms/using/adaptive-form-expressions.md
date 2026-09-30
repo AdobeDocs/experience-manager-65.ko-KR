@@ -8,20 +8,18 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 2%
-
+source-wordcount: '2871'
+ht-degree: 3%
 ---
-
 # 적응형 양식 표현식{#adaptive-form-expressions}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 적응형 양식은 동적 스크립팅 기능을 갖춘 최종 사용자에게 최적화되고 간소화된 양식 작성 환경을 제공합니다. 동적 표시/숨기기 필드 및 패널과 같은 다양한 동작을 추가하는 표현식을 작성할 수 있습니다. 또한 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 논리를 추가하는 등 다양한 작업을 수행할 수 있습니다. 동적 동작은 사용자 입력 또는 미리 채워진 데이터를 기반으로 합니다.
 
-JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 양식 클래스, 이벤트, 개체 및 공용 API의 전체 목록에 대해서는 [적응형 양식에 대한 JavaScript Library API 참조를 참조하십시오.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 이 표현식은 특정 유형의 값을 반환합니다. 적응형 양식 클래스, 이벤트, 개체 및 공용 API의 전체 목록에 대해서는 [적응형 양식에 대한 JavaScript Library API 참조를 참조하십시오.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 ## 표현식 작성 모범 사례 {#best-practices-for-writing-expressions}
 
@@ -36,13 +34,13 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 * 반복 패널을 만들려면 패널 대화 상자에서 설정을 열고 최대 개수 필드의 값을 1 이상으로 설정합니다.
 * 패널 반복 설정의 최소 개수 값은 하나 이상일 수 있지만 최대 개수 값보다 클 수 없습니다.
 * 표현식이 반복 패널의 필드를 참조하는 경우 표현식의 필드 이름은 가장 가까운 반복 요소로 확인됩니다.
-* 적응형 양식은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 양식에 대한 [JavaScript 라이브러리 API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)를 참조하십시오.
+* 적응형 양식은 sum, count, min, max, filter 등과 같은 반복 가능한 패널의 계산을 단순화하는 몇 가지 특수 기능을 제공합니다. 전체 함수 목록을 보려면 적응형 양식에 대한 [JavaScript 라이브러리 API 참조](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)를 참조하십시오.
 * 반복 패널의 인스턴스를 조작하기 위한 API는 다음과 같습니다.
 
-   * 패널 인스턴스를 추가하려면: `panel1.instanceManager.addInstance()`
-   * 패널 반복 인덱스를 가져오려면 다음을 수행하십시오. `panel1.instanceIndex`
-   * 패널의 instanceManager를 가져오려면: `_panel1 or panel1.instanceManager`
-   * 패널의 인스턴스를 제거하려면 `_panel1.removeInstance(panel1.instanceIndex)`
+  * 패널 인스턴스를 추가하려면: `panel1.instanceManager.addInstance()`
+  * 패널 반복 인덱스를 가져오려면 다음을 수행하십시오. `panel1.instanceIndex`
+  * 패널의 instanceManager를 가져오려면: `_panel1 or panel1.instanceManager`
+  * 패널의 인스턴스를 제거하려면 `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## 표현식 유형 {#expression-types}
 
@@ -77,12 +75,12 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **반환 형식**: 식이 식 결과가 표시되는 필드(예: 십진수)와 호환되는 값을 반환합니다.
 
-**예**: **field1**&#x200B;에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
+**예**: **field1**에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
 `field2.value + field3.value`
 
 ### 표현식 클릭 {#click-expression}
 
-클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)를 참조하십시오.
+클릭 표현식은 단추의 클릭 이벤트에 수행된 작업을 처리합니다. 기본적으로 GuideBridge는 클릭 표현식과 함께 사용되는 제출, 유효성 검사 등의 다양한 기능을 수행하기 위한 API를 제공합니다. 전체 API 목록은 [GuideBridge API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)를 참조하십시오.
 
 **적용 대상**: 단추 필드
 
@@ -137,7 +135,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **적용 대상**: 필드
 
-**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**&#x200B;은(는) 필드가 유효함을 나타냅니다.
+**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**은(는) 필드가 유효함을 나타냅니다.
 **예**: 영국의 우편 번호를 나타내는 필드의 경우 유효성 검사 식은 다음과 같습니다.
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -213,7 +211,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### GuideBridge - API 및 이벤트 {#guidebridge-apis-and-events}
 
-GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 양식에 대한 [JavaScript 라이브러리 API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)를 참조하십시오.
+GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호 작용하는 데 사용할 수 있는 &#39;API&#39; 컬렉션입니다. Bridge API, 클래스 메서드, 노출된 이벤트에 대한 자세한 소개는 적응형 양식에 대한 [JavaScript 라이브러리 API 참조](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -259,7 +257,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge 이벤트 {#guidebridge-events}
 
-GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 [적응형 양식용 JavaScript 라이브러리 API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)를 참조하십시오.
+GuideBridge는 또한 호스팅 페이지의 외부 스크립트에 대한 특정 이벤트를 제공합니다. 외부 스크립트는 이러한 이벤트를 수신하고 다양한 작업을 수행할 수 있습니다. 예를 들어 양식의 사용자 이름이 변경될 때마다 페이지 헤더에 표시된 이름도 변경됩니다. 이러한 이벤트에 대한 자세한 내용은 [적응형 양식용 JavaScript 라이브러리 API 참조](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)를 참조하십시오.
 
 다음 코드를 사용하여 처리기를 등록합니다.
 

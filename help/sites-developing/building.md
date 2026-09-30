@@ -13,16 +13,16 @@ feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '936'
 ht-degree: 1%
 ---
 # AEM 애플리케이션에 태깅 작성{#building-tagging-into-an-aem-application}
 
 프로그래밍 방식으로 태그를 사용하거나 사용자 지정 AEM 애플리케이션 내에서 태그를 확장하는 경우 이 페이지에서는 의 사용에 대해 설명합니다.
 
-* [태그 지정 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [태그 지정 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 와 상호 작용합니다.
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 태깅 API 개요 {#overview-of-the-tagging-api}
 
-AEM에서 [태그 지정 프레임워크](/help/sites-developing/framework.md)를 구현하면 JCR API 를 사용하여 태그 및 태그 콘텐츠를 관리할 수 있습니다. TagManager는 `cq:tags` 문자열 배열 속성에 값으로 입력된 태그가 중복되지 않도록 하고, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동하거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
+AEM에서 [태그 지정 프레임워크](/help/sites-developing/framework.md)를 구현하면 JCR API 를 사용하여 태그 및 태그 콘텐츠를 관리할 수 있습니다. TagManager는 `cq:tags` 문자열 배열 속성에 값으로 입력된 태그가 중복되지 않도록 하고, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동하거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
 
 * JcrTagManagerFactory - `TagManager`의 JCR 기반 구현을 반환합니다. 태깅 API의 참조 구현입니다.
 * `TagManager` - 경로 및 이름별로 태그를 확인하고 만들 수 있습니다.
@@ -158,7 +158,7 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 서버측 API에 지역화된 `title` 관련 메서드가 있습니다.
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
   * getLocalizedTitle(로케일)
   * getLocalizedTitlePaths()
@@ -166,7 +166,7 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
   * getTitle(로케일)
   * getTitlePath(로케일)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
   * canCreateTagByTitle(String tagTitlePath, Locale)
   * createTagByTitle(String tagTitlePath, Locale)

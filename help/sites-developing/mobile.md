@@ -11,13 +11,11 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3807'
-ht-degree: 0%
-
+source-wordcount: '3844'
+ht-degree: 1%
 ---
-
 # 모바일 디바이스용 사이트 만들기{#creating-sites-for-mobile-devices}
 
 {{ue-over-mobile}}
@@ -33,7 +31,7 @@ ht-degree: 0%
 1. 페이지 구성 요소를 만듭니다.
 
    * `sling:resourceSuperType` 속성을 다음으로 설정 `wcm/mobile/components/page`
-이러한 방식으로 구성 요소는 모바일 페이지 구성 요소를 사용합니다.
+     이러한 방식으로 구성 요소는 모바일 페이지 구성 요소를 사용합니다.
 
    * 프로젝트별 논리로 `body.jsp`을(를) 만듭니다.
 
@@ -68,11 +66,11 @@ MSM(Multi Site Manager)을 사용하여 표준 사이트에서 모바일 라이�
 
 모바일 클래스가 포함된 Java™ 패키지는 다음과 같습니다.
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - MobileConstant를 정의합니다.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - Device, DeviceGroup 및 DeviceGroupList를 정의합니다.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - DeviceCapability를 정의합니다.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - WurflQueryEngine을 정의합니다.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - WCM Mobile을 중심으로 순환하는 다양한 유틸리티 메서드를 제공하는 MobileUtil을 정의합니다.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - MobileConstant를 정의합니다.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - Device, DeviceGroup 및 DeviceGroupList를 정의합니다.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - DeviceCapability를 정의합니다.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - WurflQueryEngine을 정의합니다.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - WCM Mobile을 중심으로 순환하는 다양한 유틸리티 메서드를 제공하는 MobileUtil을 정의합니다.
 
 ### 모바일 구성 요소 {#mobile-components}
 

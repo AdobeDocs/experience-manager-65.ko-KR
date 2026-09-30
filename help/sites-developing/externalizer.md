@@ -10,20 +10,18 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # URL 표면화{#externalizing-urls}
 
 Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성된 DNS를 사용하여 경로를 접두사로 추가하여 리소스 경로(예: `/path/to/my/page`)를 외부 및 절대 URL(예: `https://www.mycompany.com/path/to/my/page`)로 프로그래밍 방식으로 변환할 수 있는 OSGI 서비스입니다.
 
 인스턴스가 웹 레이어 뒤에서 실행 중인 경우 외부로 표시되는 URL을 알 수 없고 경우에 따라 링크가 요청 범위 외부에서 만들어져야 하므로 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 
-이 페이지에서는 **외부화** 서비스를 구성하는 방법과 사용 방법을 설명합니다. 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)을 참조하세요.
+이 페이지에서는 **외부화** 서비스를 구성하는 방법과 사용 방법을 설명합니다. 자세한 내용은 [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html)을 참조하세요.
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 
@@ -51,8 +49,8 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
    * **스키마**&#x200B;은(는) http 또는 https이지만 ftp일 수도 있습니다.
 
-      * 원하는 경우 https를 사용하여 https 링크를 적용합니다
-      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
+     * 원하는 경우 https를 사용하여 https 링크를 적용합니다
+     * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
 
    * **server**&#x200B;은(는) 호스트 이름입니다(도메인 이름 또는 ip 주소일 수 있음).
    * **port**(선택 사항)은 포트 번호입니다.
@@ -74,7 +72,7 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
 >[!NOTE]
 >
->Adobe은 [저장소에 구성을 추가](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository)할 것을 권장합니다.
+>Adobe에서는 [저장소에 구성을 추가](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository)할 것을 권장합니다.
 
 ### Externalizer 서비스 사용 {#using-the-externalizer-service}
 
@@ -128,4 +126,4 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예제를 찾을 수 있습니다.
+1. [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예제를 찾을 수 있습니다.

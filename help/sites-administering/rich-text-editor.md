@@ -6,16 +6,14 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 0%
-
+source-wordcount: '3073'
+ht-degree: 1%
 ---
+# 서식 있는 텍스트 편집기 구성 {#configure-the-rich-text-editor}
 
-# 리치 텍스트 편집기 구성 {#configure-the-rich-text-editor}
-
-리치 텍스트 편집기(RTE)는 작성자가 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위해 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다.
+리치 텍스트 편집기(RTE)는 작성자가 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위한 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다.
 
 작성에 RTE 기능을 사용하는 방법은 [작성에 서식 있는 텍스트 편집기 사용](/help/sites-authoring/rich-text-editor.md)을 참조하세요. 작성 구성 요소에서 사용할 수 있는 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성할 수 있습니다. 다음 워크플로우는 Experience Manager에서 RTE 구성 작업을 완료하는 권장 순서를 보여 줍니다.
 
@@ -25,7 +23,7 @@ ht-degree: 0%
 
 ## 터치 지원 UI 및 클래식 UI 이해 {#understand-touch-enabled-ui-and-classic-ui}
 
-터치 지원 UI는 Experience Manager을 위한 표준 사용자 인터페이스입니다. Adobe은 작성 환경을 위해 [반응형 디자인](/help/sites-authoring/responsive-layout.md)이 포함된 터치 사용 UI를 도입했습니다. 터치 지원 UI는 터치 및 데스크탑 디바이스용으로 설계되었습니다. 인터페이스는 기존 클래식 UI와 상당히 다릅니다.
+터치 지원 UI는 Experience Manager의 표준 사용자 인터페이스입니다. Adobe에서는 작성 환경을 위해 [반응형 디자인](/help/sites-authoring/responsive-layout.md)이 포함된 터치 지원 UI를 도입했습니다. 터치 지원 UI는 터치 및 데스크탑 디바이스용으로 설계되었습니다. 인터페이스는 기존 클래식 UI와 상당히 다릅니다.
 
 ![터치 사용 사용자 인터페이스의 리치 텍스트 편집기 도구 모음](assets/chlimage_1-35.png)
 
@@ -69,7 +67,7 @@ ht-degree: 0%
 
 ### 전체 화면 편집 {#full-screen-editing}
 
-Experience Manager 구성 요소를 전체 화면 보기에서 열어 페이지 콘텐츠를 숨기고 사용 가능한 화면을 차지할 수 있습니다. 인라인 편집은 가장 많은 편집 옵션을 제공하므로 전체 화면 편집을 고려하십시오. 인라인 편집 모드를 사용할 때 간단한 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을(를) 클릭하여 열 수 있습니다.
+Experience Manager 구성 요소는 페이지 콘텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 인라인 편집은 가장 많은 편집 옵션을 제공하므로 전체 화면 편집을 고려하십시오. 인라인 편집 모드를 사용할 때 간단한 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을(를) 클릭하여 열 수 있습니다.
 
 대화 상자 전체 화면 모드에서는 세부 RTE 도구 모음과 함께 대화 상자에서 사용할 수 있는 옵션 및 구성 요소도 사용할 수 있습니다. 다른 구성 요소와 함께 RTE가 포함된 대화 상자에만 적용됩니다.
 
@@ -95,8 +93,8 @@ Experience Manager 구성 요소를 전체 화면 보기에서 열어 페이지 
 
 * `features` 속성:
 
-   * 해당 플러그인의 기본 기능을 활성화 또는 비활성화하는 데 사용됩니다.
-   * 표준화된 절차를 사용하여 구성할 수 있습니다
+  * 해당 플러그인의 기본 기능을 활성화 또는 비활성화하는 데 사용됩니다.
+  * 표준화된 절차를 사용하여 구성할 수 있습니다
 
 * 필요한 경우 추가 속성 및 옵션을 사용하여 특수 구성을 수행해야 합니다.
 
@@ -123,7 +121,7 @@ RTE의 기본 기능은 해당 플러그인과 관련된 노드의 `features` �
 | 맞춤법 검사 | checktext | [언어 인식 맞춤법 검사기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | 스타일 | 스타일 | CSS 클래스를 사용한 스타일링을 지원합니다. 텍스트에서 사용할 수 있도록 고유한 스타일 범위를 추가(또는 확장)하려면 [새 텍스트 스타일을 추가](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)하십시오. |
 | 부분 위 첨자 | 아래 첨자 위 첨자 | 기본 형식에 대한 확장, 하위 스크립트 및 슈퍼 스크립트 추가. |
-| 표 | 테이블 제거 가능 삽입행 제거열 제거열 제거셀 병합splitcell selectrow 선택열 | 전체 표 또는 개별 셀에 고유한 스타일을 추가하려면 [표 스타일 구성](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)을 참조하십시오. |
+| 테이블 | 테이블 제거 가능 삽입행 제거열 제거열 제거셀 병합splitcell selectrow 선택열 | 전체 표 또는 개별 셀에 고유한 스타일을 추가하려면 [표 스타일 구성](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)을 참조하십시오. |
 | 실행 취소 | 다시 실행 취소 | [실행 취소 및 다시 실행](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 작업의 기록 크기. |
 
 >[!NOTE]
@@ -183,9 +181,9 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 
 >[!NOTE]
 >
->[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
+>[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
 >
->자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=ko)를 참조하십시오.
+>자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 사용할 수 없는 경우 콘텐츠 정책이 항목을 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 콘텐츠 정책에 의해 제공되는 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
+예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
 
 ## 도구 모음 아이콘과 명령 간의 매핑 사용자 정의 {#iconstoolbar}
 
@@ -300,7 +298,7 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 
 >[!NOTE]
 >
->Adobe은 모범 사례로 권장하지 않습니다. 마지막 수단으로 CoralUI 2 RTE로 전환하십시오. CoralUI 2 RTE에 대한 사용자 지정 플러그인은 플러그인이 클래스와 같은 RTE 내부에 의존하지 않는 경우 CoralUI 3 RTE에서 작동합니다.
+>Adobe에서는 모범 사례로 권장하지 않습니다. 마지막 수단으로 CoralUI 2 RTE로 전환하십시오. CoralUI 2 RTE에 대한 사용자 지정 플러그인은 플러그인이 클래스와 같은 RTE 내부에 의존하지 않는 경우 CoralUI 3 RTE에서 작동합니다.
 >
 >CoralUI3 RTE에 사용자 지정 플러그인을 사용하는 경우 `rte.coralui3` 라이브러리를 사용하십시오.
 
@@ -325,17 +323,17 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 
 ## 추가 정보 {#further-information}
 
-RTE 구성에 대한 자세한 내용은 [AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 참조를 참조하십시오.
+RTE 구성에 대한 자세한 내용은 [AEM Widget API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) 참조를 참조하십시오.
 
 특히, 사용 가능한 플러그인 및 관련 옵션을 보려면 다음과 같이 하십시오.
 
-* [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(서식 있는 텍스트)를 편집하기 위한 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 알아보려면 구성 옵션 을 참조하십시오.
-* RichText 구성 요소는 [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)에 나열된 플러그인을 사용하여 다양한 기능을 제공합니다. 각 플러그인의 경우:
+* [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(서식 있는 텍스트)를 편집하기 위한 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 알아보려면 구성 옵션 을 참조하십시오.
+* RichText 구성 요소는 [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)에 나열된 플러그인을 사용하여 다양한 기능을 제공합니다. 각 플러그인의 경우:
 
-   * 활성화(또는 비활성화)할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
-   * 적절한 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대한 구성 옵션 을 참조하십시오
+  * 활성화(또는 비활성화)할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
+  * 적절한 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대한 구성 옵션 을 참조하십시오
 
-* 링크의 HTML 규칙에 대한 자세한 정보도 사용할 수 있습니다.
+* 링크에 대한 HTML 규칙에 대한 자세한 정보도 사용할 수 있습니다.
 
 RTE를 확장하거나 사용자 지정하는 데 사용할 수 있습니다. 예를 들어 링크를 만들 때 페이지에서 사용할 수 있는 앵커를 나열하려면 `LinkPlugin`의 고유한 구현을 제공할 수 있습니다.
 
@@ -345,7 +343,7 @@ AEM RTE 기능에는 다음과 같은 제한 사항이 있습니다.
 
 * RTE 기능은 AEM 구성 요소 대화 상자에서만 지원됩니다. RTE는 터치 사용 UI의 [페이지 속성](/help/sites-developing/page-properties-views.md) 및 [스캐폴딩](/help/sites-authoring/scaffolding.md)과 같은 마법사나 Foundation 양식에서 지원되지 않습니다.
 
-* AEM이 [하이브리드 장치](/help/release-notes/release-notes.md)에서 작동하지 않습니다.
+* AEM은 [하이브리드 장치](/help/release-notes/release-notes.md)에서 작동하지 않습니다.
 
 * RTE 구성 노드 `config`의 이름을 지정하지 마십시오. 그렇지 않으면 `content-author` 그룹의 사용자가 아닌 관리자에게만 RTE 구성이 적용됩니다.
 
@@ -375,13 +373,13 @@ AEM RTE 기능에는 다음과 같은 제한 사항이 있습니다.
 
 **소스 편집 모드에서 추가된 HTML 컨텐츠가 손실됩니다**
 
-XSS 유발 HTML을 추가하지 마십시오. RTE가 아닌 AEM은 XSS antisamy 규칙을 준수하도록 일부 HTML 콘텐츠를 제거할 수 있습니다.
+XSS 기반 HTML을 추가하지 마십시오. RTE가 아닌 AEM은 XSS antisamy 규칙을 준수하도록 일부 HTML 콘텐츠를 제거할 수 있습니다.
 
 붙여넣은 HTML이 저장되었는지 확인하려면 CRXDE(콘텐츠 노드)에 저장된 콘텐츠를 확인합니다.
 
 저장하지 않았다면 HTML이 RTE의 규칙을 준수하지 않아 RTE에서 제거했어야 합니다.
 
-CRXDE에 저장했지만 페이지에서 렌더링되지 않은 경우(렌더링을 확인하려면 페이지의 [미리 보기](/help/sites-authoring/editing-content.md#preview-mode)를 참조), AEM XSS 규칙에 의해 제거됩니다.
+CRXDE에 저장되었지만 페이지에서 렌더링되지 않은 경우(렌더링을 확인하려면 페이지의 [미리 보기](/help/sites-authoring/editing-content.md#preview-mode)를 참조) AEM XSS 규칙에 의해 제거됩니다.
 
 **다중 필드 구성 요소가 예상대로 작동하지 않습니다**
 

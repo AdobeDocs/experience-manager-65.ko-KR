@@ -9,13 +9,11 @@ exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
-
+source-wordcount: '321'
+ht-degree: 0%
 ---
-
 # 투표 기본 사항 {#voting-essentials}
 
 투표 구성 요소인 [tally](tally.md) 하위 클래스는 구성원이 의견을 표시하기 위해 위쪽 또는 아래쪽 화살표를 선택하여 특정 콘텐츠에 대한 등급을 매길 수 있는 유용한 도구입니다.
@@ -59,9 +57,9 @@ ht-degree: 1%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Tally API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally 끝점](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

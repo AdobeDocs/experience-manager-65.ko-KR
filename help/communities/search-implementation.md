@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1210'
 ht-degree: 3%
-
 ---
-
 # Essentials 검색 {#search-essentials}
 
 ## 개요 {#overview}
@@ -26,11 +24,11 @@ Communities에서 일반적으로 검색되는 두 가지 사항은 다음과 �
 
 * 커뮤니티 회원이 게시한 컨텐츠
 
-   * AEM Communities의 UGC 검색 API를 사용합니다.
+  * AEM Communities의 UGC 검색 API를 사용합니다.
 
 * 사용자 및 사용자 그룹(사용자 데이터)
 
-   * AEM 플랫폼 검색 기능을 사용합니다.
+  * AEM 플랫폼 검색 기능을 사용합니다.
 
 설명서의 이 섹션은 UGC를 만들거나 관리하는 사용자 지정 구성 요소를 만드는 개발자의 관심사입니다.
 
@@ -44,7 +42,7 @@ UGC 및 ACL 섀도 노드에 액세스하는 데 사용되는 유틸리티 메�
 
 ## UGC 검색 API {#ugc-search-api}
 
-[UGC 공용 저장소](working-with-srp.md)은(는) 다양한 SRP(저장소 리소스 공급자) 중 하나에서 제공하며, 각 SRP는 서로 다른 기본 쿼리 언어를 가지고 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드에서는 선택한 SRP에 적합한 쿼리 언어를 호출하는 [UGC API 패키지](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html)&#x200B;(*com.adobe.cq.social.ugc.api*)의 메서드를 사용해야 합니다.
+[UGC 공용 저장소](working-with-srp.md)은(는) 다양한 SRP(저장소 리소스 공급자) 중 하나에서 제공하며, 각 SRP는 서로 다른 기본 쿼리 언어를 가지고 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드에서는 선택한 SRP에 적합한 쿼리 언어를 호출하는 [UGC API 패키지](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html)&#x200B;(*com.adobe.cq.social.ugc.api*)의 메서드를 사용해야 합니다.
 
 ### ASRP 검색 {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr은 스키마를 사용하는 쿼리 언어의 예입니다.
 
 * 다중 값 형식의 경우 접미사에 &#39;s&#39;를 추가하십시오. 예를 들면 다음과 같습니다.
 
-   * `viewDate_dt`: 단일 날짜 속성
-   * `viewDates_dts`: 날짜 속성 목록
+  * `viewDate_dt`: 단일 날짜 속성
+  * `viewDates_dts`: 날짜 속성 목록
 
 ## 필터 {#filters}
 
@@ -171,13 +169,13 @@ AND 및 OR 논리에 대한 필터 구문은 다음과 같이 표현됩니다(UR
 
 * OR을 지정하려면 쉼표로 구분된 값으로 하나의 필터 매개 변수를 사용합니다.
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * 여러 필터 매개 변수를 지정하고 사용하려면 다음을 수행합니다.
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-[검색 구성 요소](search.md)의 기본 구현에서는 [커뮤니티 구성 요소 안내서](components-guide.md)에서 검색 결과 페이지를 여는 URL에 표시되는 것과 같이 이 구문을 사용합니다. 실험하려면 [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html)로 이동하세요.
+[검색 구성 요소](search.md)의 기본 구현에서는 [커뮤니티 구성 요소 안내서](components-guide.md)에서 검색 결과 페이지를 여는 URL에 표시되는 것과 같이 이 구문을 사용합니다. 실험하려면 [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html)&#x200B;(으)로 이동하세요.
 
 필터 연산자는 다음과 같습니다.
 
@@ -193,9 +191,9 @@ AND 및 OR 논리에 대한 필터 구문은 다음과 같이 표현됩니다(UR
 URL은 구성 요소가 배치된 페이지가 아니라 Communities 구성 요소(리소스)를 참조해야 합니다.
 
 * 수정: 포럼 구성 요소
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * 잘못됨: 포럼 페이지
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## SRP 도구 {#srp-tools}
 

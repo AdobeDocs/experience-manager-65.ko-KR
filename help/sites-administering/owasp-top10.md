@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 4%
-
 ---
-
 # OWASP 상위 10개{#owasp-top}
 
 [Open Web Application Security Project](https://owasp.org/)&#x200B;(OWASP)에서는 [10대 웹 응용 프로그램 보안 위험](https://owasp.org/www-project-top-ten/)에 대한 목록을 유지 관리합니다.
@@ -62,7 +60,7 @@ CSRF(크로스 사이트 요청 위조)는 모든 양식 및 AJAX 요청에 암�
 
 ## &#x200B;8. URL 액세스 제한 실패 {#failure-to-restrict-url-access}
 
-저장소를 사용하면 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 [정교하게 부여된 권한(JCR에서 지정)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있습니다. 액세스 제한은 저장소에 의해 적용됩니다.
+저장소를 사용하면 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 [정교하게 부여된 권한(JCR에서 지정)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있습니다. 액세스 제한은 저장소에 의해 적용됩니다.
 
 ## &#x200B;9. 전송 계층 보호 부족 {#insufficient-transport-layer-protection}
 

@@ -9,13 +9,11 @@ exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 2%
-
+source-wordcount: '279'
+ht-degree: 3%
 ---
-
 # 태그 기본 사항 {#tag-essentials}
 
 AEM Communities 구성 요소가 태그 지정이 활성화된 상태로 구성되면 커뮤니티 구성원은 게시 환경에서 게시하는 콘텐츠에 태그를 지정할 수 있습니다.
@@ -73,9 +71,9 @@ AEM Communities 구성 요소가 태그 지정이 활성화된 상태로 구성�
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [소셜 태그 클라우드 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [소셜 태그 클라우드 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [소셜 태그 관리자](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [소셜 태그 관리자](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

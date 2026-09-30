@@ -10,13 +10,11 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 2%
-
+source-wordcount: '475'
+ht-degree: 1%
 ---
-
 # 블로그 기본 사항 {#blog-essentials}
 
 AEM 6.1 커뮤니티에서 블로그는 커뮤니티 활동입니다. 이제 블로그 기사는 게시 환경에서 게시되며, 이전에는 작성 환경에서만 블로그 기사를 만들고 게시할 수 있었습니다.
@@ -78,9 +76,9 @@ AEM 6.1 커뮤니티에서 블로그는 커뮤니티 활동입니다. 이제 블
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [블로그 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [블로그 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [블로그 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [블로그 엔드포인트](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](/help/communities/server-customize.md)
 
@@ -112,9 +110,9 @@ AEM 6.1 커뮤니티에서 UGC에 대한 [일반 저장소](/help/communities/wo
 
 ## 리치 미디어 허용 {#allowing-rich-media}
 
-AEM 플랫폼은에 설명된 대로 XSS 공격을 방지하기 위해 다른 웹 사이트에서 링크를 차단합니다.
+AEM 플랫폼은에 설명된 대로 XSS 공격을 방지하기 위해 다른 웹 사이트에서 링크를 차단합니다
 
-* [XSS(크로스 사이트 스크립팅)에 대한 Protect](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [XSS(크로스 사이트 스크립팅)로부터 보호](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 AEM 6.2부터는 이전에 수동으로 수행해야 했던 수정 사항이 기본 AntiSamy 구성 파일에 포함되어 있습니다.
 

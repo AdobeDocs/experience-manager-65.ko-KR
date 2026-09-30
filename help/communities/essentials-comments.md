@@ -9,13 +9,11 @@ exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '373'
 ht-degree: 3%
-
 ---
-
 # 댓글 기본 사항 {#comments-essentials}
 
 이 페이지에서는 댓글 시스템(댓글 구성 요소) 작업의 기본 사항과 구성원이 댓글이나 댓글을 게시할 때 생성된 사용자 생성 콘텐츠(UGC)를 관리하는 옵션을 제공합니다.
@@ -78,9 +76,9 @@ comments 구성 요소는 각 개별 게시물이 댓글 구성 요소 (단수)�
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [댓글 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [댓글 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [댓글 끝점](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [주석 엔드포인트](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [서버측 사용자 지정](server-customize.md)
 

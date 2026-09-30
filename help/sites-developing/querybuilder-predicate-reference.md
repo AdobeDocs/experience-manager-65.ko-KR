@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
-
 ---
-
 # 쿼리 빌더 조건자 참조{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 이는 필터링 전용 술어이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -269,7 +267,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 
 ### memberOf {#memberof}
 
-특정 [sling 리소스 컬렉션](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
+특정 [sling 리소스 컬렉션](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
 
 이는 필터링 전용 술어이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -381,7 +379,7 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
 * **깊이**
 
-  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&ast;/size 및 node/&ast;/&ast;/size 확인).
+  속성/상대 경로가 존재할 수 있는 와일드카드 수준의 수입니다(예: `property=size depth=2`은(는) node/size, node/&amp;ast;/size 및 node/&amp;ast;/&amp;ast;/size 확인).
 
 ### rangeproperty {#rangeproperty}
 
@@ -473,17 +471,17 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
   (JSON 서블릿만 해당) 다음 표준 히트(ResultHitWriter 서비스를 통해 확장 가능)를 사용하여 히트가 JSON으로 기록되는 방법을 선택합니다.
 
-   * **단순**:
+  * **단순**:
 
-     `path`, `title`, `lastmodified`, `excerpt`과(와) 같은 최소 항목(설정된 경우).
+    `path`, `title`, `lastmodified`, `excerpt`과(와) 같은 최소 항목(설정된 경우).
 
-   * **전체**:
+  * **전체**:
 
-     히트의 경로를 나타내는 `jcr:path`이(가) 있는 노드의 Sling JSON 렌더링: 기본적으로 노드의 직접 속성을 나열하며, `p.nodedepth=N`이(가) 있는 더 깊은 트리를 포함합니다. 0은(는) 전체 무한 하위 트리를 의미합니다. 지정된 결과 항목에서 현재 세션의 JCR 권한을 포함하려면 `p.acls=true`을(를) 추가하십시오(매핑: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    히트의 경로를 나타내는 `jcr:path`이(가) 있는 노드의 Sling JSON 렌더링: 기본적으로 노드의 직접 속성을 나열하며, `p.nodedepth=N`이(가) 있는 더 깊은 트리를 포함합니다. 0은(는) 전체 무한 하위 트리를 의미합니다. 지정된 결과 항목에서 현재 세션의 JCR 권한을 포함하려면 `p.acls=true`을(를) 추가하십시오(매핑: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **선택적**:
+  * **선택적**:
 
-     상대 경로의 공백으로 구분된 `p.properties`에 지정된 속성만(URL에 &quot;+&quot; 사용). 상대 경로의 깊이가 1보다 큰 경우 자식 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
+    상대 경로의 공백으로 구분된 `p.properties`에 지정된 속성만(URL에 &quot;+&quot; 사용). 상대 경로의 깊이가 1보다 큰 경우 자식 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
 
 ### savedquery {#savedquery}
 

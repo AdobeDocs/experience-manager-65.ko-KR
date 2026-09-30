@@ -10,13 +10,11 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4949'
+source-wordcount: '4964'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager(AEM) 구성 요소 - 기본 사항{#aem-components-the-basics}
 
 새 구성 요소를 개발하기 시작하려면 해당 구성 요소의 구조 및 구성에 대한 기본 사항을 이해해야 합니다.
@@ -32,16 +30,16 @@ ht-degree: 1%
 구성 요소를 실제로 구성하거나 코딩하기 전에 다음 사항을 문의해야 합니다.
 
 * 새 구성 요소를 사용하려면 정확히 어떤 작업이 필요합니까?
-   * 명확한 사양은 개발, 테스트 및 인수의 모든 단계에 도움이 됩니다. 세부 사항은 시간이 지남에 따라 변경될 수 있지만 세부 사항은 업데이트할 수 있습니다(변경 사항도 문서화되어야 함).
+  * 명확한 사양은 개발, 테스트 및 인수의 모든 단계에 도움이 됩니다. 세부 사항은 시간이 지남에 따라 변경될 수 있지만 세부 사항은 업데이트할 수 있습니다(변경 사항도 문서화되어야 함).
 * 구성 요소를 처음부터 만들어야 합니까? 또는 기존 구성 요소에서 기본 사항을 상속할 수 있습니까?
-   * 시간을 낭비할 필요가 없다.
-   * AEM에서 제공하는 메커니즘에는 재정의, 오버레이 및 [Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)을(를) 포함하여 다른 구성 요소 정의에서 세부 정보를 상속하고 확장할 수 있는 몇 가지 메커니즘이 있습니다.
+  * 시간을 낭비할 필요가 없다.
+  * AEM에서 제공하는 메커니즘에는 재정의, 오버레이 및 [Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)을(를) 포함하여 다른 구성 요소 정의에서 세부 정보를 상속하고 확장할 수 있는 몇 가지 메커니즘이 있습니다.
 * 콘텐츠를 선택하거나 조작하기 위해 구성 요소에 논리가 필요합니까?
-   * 논리는 사용자 인터페이스 레이어와 별도로 유지되어야 합니다. HTL은 이러한 일이 발생하는지 확인할 수 있도록 설계되었습니다.
+  * 논리는 사용자 인터페이스 레이어와 별도로 유지되어야 합니다. HTL은 이러한 일이 발생하는지 확인할 수 있도록 설계되었습니다.
 * 구성 요소에 CSS 서식이 필요합니까?
-   * CSS 서식은 구성 요소 정의와 별도로 유지해야 합니다. 외부 CSS 파일을 통해 수정할 수 있도록 HTML 요소의 이름을 지정하는 규칙을 정의합니다.
+  * CSS 서식은 구성 요소 정의와 별도로 유지해야 합니다. 외부 CSS 파일을 통해 수정할 수 있도록 HTML 요소의 이름을 지정하는 규칙을 정의합니다.
 * 어떤 보안 측면을 고려해야 합니까?
-   * 자세한 내용은 [보안 검사 목록 - 개발 모범 사례](/help/sites-administering/security-checklist.md#development-best-practices)를 참조하세요.
+  * 자세한 내용은 [보안 검사 목록 - 개발 모범 사례](/help/sites-administering/security-checklist.md#development-best-practices)를 참조하세요.
 
 ### 터치 지원 및 클래식 UI {#touch-enabled-vs-classic-ui}
 
@@ -66,13 +64,13 @@ AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 �
 
 Adobe에서는 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 ### HTL과 JSP {#htl-vs-jsp}
 
 HTL은 AEM 6.0과 함께 도입된 HTML 템플릿 언어입니다.
 
-이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
+이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
 
 HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요소 개발에 사용할 수 있습니다. HTL은 터치 지원 UI용이고 JSP는 클래식 UI용이라고 가정하는 경향이 있을 수 있지만, 이는 잘못된 인식이며 타이밍으로 인한 더 많은 것입니다. 터치 지원 UI 및 HTL은 거의 동일한 기간에 AEM에 통합되었습니다. 이제 HTL이 권장 언어이므로 터치 지원 UI용 경향이 있는 새 구성 요소에 사용되고 있습니다.
 
@@ -108,16 +106,16 @@ HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요�
 
 * 페이지:
 
-   * AEM에 *페이지* 구성 요소(`cq:Page`)가 있습니다.
-   * 이는 콘텐츠 관리에 중요한 특정 유형의 리소스입니다.
-      * 페이지는 웹 사이트의 콘텐츠가 들어 있는 웹 페이지에 해당합니다.
+  * AEM에 *페이지* 구성 요소(`cq:Page`)가 있습니다.
+  * 이는 콘텐츠 관리에 중요한 특정 유형의 리소스입니다.
+    * 페이지는 웹 사이트의 콘텐츠가 들어 있는 웹 페이지에 해당합니다.
 
 * 단락 시스템:
 
-   * 단락 시스템은 단락 목록을 관리하기 때문에 웹 사이트의 주요 부분입니다. 실제 콘텐츠를 보관하는 개별 구성 요소를 보관하고 구성하는 데 사용됩니다.
-   * 단락 시스템에서 단락을 작성, 이동, 복사 및 삭제할 수 있습니다.
-   * 특정 단락 시스템 내에서 사용할 수 있는 구성 요소를 선택할 수도 있습니다.
-   * 표준 인스턴스(예: `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`) 내에서 다양한 단락 시스템을 사용할 수 있습니다.
+  * 단락 시스템은 단락 목록을 관리하기 때문에 웹 사이트의 주요 부분입니다. 실제 콘텐츠를 보관하는 개별 구성 요소를 보관하고 구성하는 데 사용됩니다.
+  * 단락 시스템에서 단락을 작성, 이동, 복사 및 삭제할 수 있습니다.
+  * 특정 단락 시스템 내에서 사용할 수 있는 구성 요소를 선택할 수도 있습니다.
+  * 표준 인스턴스(예: `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`) 내에서 다양한 단락 시스템을 사용할 수 있습니다.
 
 ## 구조 {#structure}
 
@@ -149,76 +147,76 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 * AEM 구성 요소는 [Sling](https://sling.apache.org/documentation.html)을(를) 기반으로 합니다.
 * AEM 구성 요소는 (일반적으로) 다음 아래에 있습니다.
 
-   * HTL: `/libs/wcm/foundation/components`
-   * JSP: `/libs/foundation/components`
+  * HTL: `/libs/wcm/foundation/components`
+  * JSP: `/libs/foundation/components`
 
 * 프로젝트/사이트별 구성 요소는 (일반적으로) 아래에 있습니다.
 
-   * `/apps/<myApp>/components`
+  * `/apps/<myApp>/components`
 
 * AEM 표준 구성 요소는 `cq:Component`(으)로 정의되어 있으며 다음과 같은 주요 요소를 가지고 있습니다.
 
-   * jcr 속성:
+  * jcr 속성:
 
-     jcr 속성 목록입니다. 이러한 속성은 변수이며, 구성 요소 노드의 기본 구조, 해당 속성 및 하위 노드가 `cq:Component` 정의에 의해 정의되어 있지만 일부는 선택 사항입니다
+    jcr 속성 목록입니다. 이러한 속성은 변수이며, 구성 요소 노드의 기본 구조, 해당 속성 및 하위 노드가 `cq:Component` 정의에 의해 정의되어 있지만 일부는 선택 사항입니다
 
-   * 리소스:
+  * 리소스:
 
-     구성 요소에서 사용하는 정적 요소를 정의합니다.
+    구성 요소에서 사용하는 정적 요소를 정의합니다.
 
-   * 스크립트:
+  * 스크립트:
 
   구성 요소의 결과 인스턴스 동작을 구현하는 데 사용됩니다.
 
 * **루트 노드**:
 
-   * `<mycomponent> (cq:Component)` - 구성 요소의 계층 노드.
+  * `<mycomponent> (cq:Component)` - 구성 요소의 계층 노드.
 
 * **중요 속성**:
 
-   * `jcr:title` - 구성 요소 제목. 예를 들어 구성 요소가 구성 요소 브라우저 또는 사이드 킥에 나열될 때 레이블로 사용됩니다.
-   * `jcr:description` - 구성 요소에 대한 설명. 구성 요소 브라우저 또는 사이드 킥에서 마우스 오버 힌트로 사용할 수 있습니다.
-   * 클래식 UI:
+  * `jcr:title` - 구성 요소 제목. 예를 들어 구성 요소가 구성 요소 브라우저 또는 사이드 킥에 나열될 때 레이블로 사용됩니다.
+  * `jcr:description` - 구성 요소에 대한 설명. 구성 요소 브라우저 또는 사이드 킥에서 마우스 오버 힌트로 사용할 수 있습니다.
+  * 클래식 UI:
 
-      * `icon.png` - 이 구성 요소의 아이콘입니다.
-      * `thumbnail.png` - 이 구성 요소가 단락 시스템 내에 나열되면 표시되는 이미지
+    * `icon.png` - 이 구성 요소의 아이콘입니다.
+    * `thumbnail.png` - 이 구성 요소가 단락 시스템 내에 나열되면 표시되는 이미지
 
-   * Touch UI
+  * Touch UI
 
-      * 자세한 내용은 [Touch UI의 구성 요소 아이콘](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) 섹션을 참조하십시오.
+    * 자세한 내용은 [Touch UI의 구성 요소 아이콘](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) 섹션을 참조하십시오.
 
 * **중요한 하위 노드**:
 
-   * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소를 구성 요소 브라우저 또는 Sidekick에 표시할 수 있습니다.
+  * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소를 구성 요소 브라우저 또는 Sidekick에 표시할 수 있습니다.
 
-     참고: 구성 요소에 대화 상자가 있으면 cq:editConfig이(가) 없는 경우에도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
+    참고: 구성 요소에 대화 상자가 있으면 cq:editConfig이(가) 없는 경우에도 구성 요소 브라우저 또는 Sidekick에 자동으로 표시됩니다.
 
-   * `cq:childEditConfig (cq:EditConfig)` - 자체 `cq:editConfig`을(를) 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다.
-   * 터치 지원 UI:
+  * `cq:childEditConfig (cq:EditConfig)` - 자체 `cq:editConfig`을(를) 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다.
+  * 터치 지원 UI:
 
-      * `cq:dialog`( `nt:unstructured`) - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성 및/또는 콘텐츠를 편집할 수 있는 인터페이스를 정의합니다.
-      * `cq:design_dialog`( `nt:unstructured`) - 이 구성 요소의 디자인 편집 중
+    * `cq:dialog`( `nt:unstructured`) - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성 및/또는 콘텐츠를 편집할 수 있는 인터페이스를 정의합니다.
+    * `cq:design_dialog`( `nt:unstructured`) - 이 구성 요소의 디자인 편집 중
 
-   * 클래식 UI:
+  * 클래식 UI:
 
-      * `dialog`( `cq:Dialog`) - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성하거나, 콘텐츠를 편집하거나, 둘 다 편집할 수 있는 인터페이스를 정의합니다.
-      * `design_dialog`( `cq:Dialog`) - 이 구성 요소에 대한 디자인 편집 중
+    * `dialog`( `cq:Dialog`) - 이 구성 요소에 대한 대화 상자. 사용자가 구성 요소를 구성하거나, 콘텐츠를 편집하거나, 둘 다 편집할 수 있는 인터페이스를 정의합니다.
+    * `design_dialog`( `cq:Dialog`) - 이 구성 요소에 대한 디자인 편집 중
 
 #### Touch UI의 구성 요소 아이콘 {#component-icon-in-touch-ui}
 
 구성 요소의 아이콘 또는 약어는 개발자가 구성 요소를 만들 때 구성 요소의 JCR 속성을 통해 정의됩니다. 이러한 속성은 다음 순서로 평가되며 발견된 첫 번째 유효한 속성이 사용됩니다.
 
-1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
+1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
    * Coral 아이콘의 HTML 속성 값을 사용합니다.
 1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성
    * 약어는 두 문자로 제한해야 합니다.
    * 빈 문자열을 제공하면 `jcr:title` 속성의 처음 두 문자에서 약어가 만들어집니다.
-      * 예: &quot;Image&quot;의 &quot;Im&quot;
-      * 지역화된 제목은 약어를 작성하는 데 사용됩니다.
+     * 예: &quot;Image&quot;의 &quot;Im&quot;
+     * 지역화된 제목은 약어를 작성하는 데 사용됩니다.
    * 구성 요소에 `abbreviation_commentI18n` 속성이 있는 경우에만 약어가 번역되며, 이 속성은 번역 힌트로 사용됩니다.
 1. `cq:icon.png` 또는 `cq:icon.svg` - 구성 요소 브라우저에 표시되는 이 구성 요소의 아이콘
    * 20 x 20 픽셀은 표준 구성 요소의 아이콘 크기입니다.
-      * 더 큰 아이콘은 크기가 줄어듭니다(클라이언트측).
+     * 더 큰 아이콘은 크기가 줄어듭니다(클라이언트측).
    * 권장 색상은 rgb(112, 112, 112) > #707070입니다.
    * 표준 구성 요소 아이콘의 배경은 투명합니다.
    * `.png` 및 `.svg` 파일만 지원됩니다.
@@ -410,13 +408,13 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 * `cq:editConfig`( `cq:EditConfig`) - 시각적 측면을 제어합니다. 예를 들어 막대 또는 위젯의 모양을 정의하거나 사용자 지정된 컨트롤을 추가할 수 있습니다
 * `cq:childEditConfig`( `cq:EditConfig`) - 자체 정의가 없는 자식 구성 요소의 시각적 측면을 제어합니다.
 * 터치 지원 UI:
-   * `cq:dialog`( `nt:unstructured`) - 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자를 정의합니다.
-   * `cq:design_dialog`( `nt:unstructured`) - 이 구성 요소의 디자인 편집 옵션을 지정합니다.
+  * `cq:dialog`( `nt:unstructured`) - 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자를 정의합니다.
+  * `cq:design_dialog`( `nt:unstructured`) - 이 구성 요소의 디자인 편집 옵션을 지정합니다.
 * 클래식 UI:
-   * `dialog`( `cq:Dialog`) - 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자를 정의합니다(클래식 UI에만 해당).
-   * `design_dialog`( `cq:Dialog`) - 이 구성 요소의 디자인 편집 옵션을 지정합니다.
-   * `icon.png` - Sidekick에서 구성 요소의 아이콘으로 사용할 그래픽 파일
-   * `thumbnail.png` - Sidekick에서 구성 요소를 드래그하는 동안 구성 요소의 썸네일로 사용할 그래픽 파일
+  * `dialog`( `cq:Dialog`) - 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자를 정의합니다(클래식 UI에만 해당).
+  * `design_dialog`( `cq:Dialog`) - 이 구성 요소의 디자인 편집 옵션을 지정합니다.
+  * `icon.png` - Sidekick에서 구성 요소의 아이콘으로 사용할 그래픽 파일
+  * `thumbnail.png` - Sidekick에서 구성 요소를 드래그하는 동안 구성 요소의 썸네일로 사용할 그래픽 파일
 
 ### 대화 상자 {#dialogs}
 
@@ -433,14 +431,14 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 >
 
 * 터치 지원 UI
-   * `cq:dialog`( `nt:unstructured`) 노드:
-      * 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자 정의
-      * 터치 지원 UI별
-      * granite UI 구성 요소를 사용하여 정의됩니다
-      * 표준 Sling 콘텐츠 구조로서 `sling:resourceType` 속성이 있습니다.
-      * 속성 `helpPath`을(를) 사용하여 도움말 아이콘(`?` 아이콘)을 선택할 때 액세스하는 상황에 맞는 도움말 리소스(절대 또는 상대 경로)를 정의할 수 있습니다.
-         * 기본 구성 요소의 경우 이 기능은 종종 설명서의 페이지를 참조합니다.
-         * `helpPath`을(를) 지정하지 않으면 기본 URL(설명서 개요 페이지)이 표시됩니다.
+  * `cq:dialog`( `nt:unstructured`) 노드:
+    * 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자 정의
+    * 터치 지원 UI별
+    * granite UI 구성 요소를 사용하여 정의됩니다
+    * 표준 Sling 콘텐츠 구조로서 `sling:resourceType` 속성이 있습니다.
+    * 속성 `helpPath`을(를) 사용하여 도움말 아이콘(`?` 아이콘)을 선택할 때 액세스하는 상황에 맞는 도움말 리소스(절대 또는 상대 경로)를 정의할 수 있습니다.
+      * 기본 구성 요소의 경우 이 기능은 종종 설명서의 페이지를 참조합니다.
+      * `helpPath`을(를) 지정하지 않으면 기본 URL(설명서 개요 페이지)이 표시됩니다.
 
   ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -449,14 +447,14 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
 
 * 클래식 UI
-   * `dialog`( `cq:Dialog`) 노드
-      * 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자 정의
-      * 클래식 UI용
-      * ExtJS 위젯을 사용하여 정의됩니다
-      * ExtJS를 참조하는 `xtype` 속성이 있습니다.
-      * **도움말** 단추를 선택할 때 액세스하는 상황에 맞는 도움말 리소스(절대 또는 상대 경로)를 정의하는 속성 `helpPath`이(가) 있을 수 있습니다.
-         * 기본 구성 요소의 경우 이 기능은 종종 설명서의 페이지를 참조합니다.
-         * `helpPath`을(를) 지정하지 않으면 기본 URL(설명서 개요 페이지)이 표시됩니다.
+  * `dialog`( `cq:Dialog`) 노드
+    * 이 구성 요소의 콘텐츠를 편집하기 위한 대화 상자 정의
+    * 클래식 UI용
+    * ExtJS 위젯을 사용하여 정의됩니다
+    * ExtJS를 참조하는 `xtype` 속성이 있습니다.
+    * **도움말** 단추를 선택할 때 액세스하는 상황에 맞는 도움말 리소스(절대 또는 상대 경로)를 정의하는 속성 `helpPath`이(가) 있을 수 있습니다.
+      * 기본 구성 요소의 경우 이 기능은 종종 설명서의 페이지를 참조합니다.
+      * `helpPath`을(를) 지정하지 않으면 기본 URL(설명서 개요 페이지)이 표시됩니다.
 
   ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -466,8 +464,8 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
   클래식 대화 상자 내에서:
 
-   * 텍스트 구성 요소에서와 같이 단일 탭을 제공하는 대화 상자를 `cq:Dialog`(으)로 만들거나, textimage 구성 요소에서와 같이 여러 탭이 필요한 경우 대화 상자를 `cq:TabPanel`(으)로 정의할 수 있습니다.
-   * `cq:WidgetCollection`( `items`)은(는) 입력 필드( `cq:Widget`) 또는 추가 탭( `cq:Widget`)의 기준을 제공하는 데 사용됩니다. 이 계층은 확장할 수 있습니다.
+  * 텍스트 구성 요소에서와 같이 단일 탭을 제공하는 대화 상자를 `cq:Dialog`(으)로 만들거나, textimage 구성 요소에서와 같이 여러 탭이 필요한 경우 대화 상자를 `cq:TabPanel`(으)로 정의할 수 있습니다.
+  * `cq:WidgetCollection`( `items`)은(는) 입력 필드( `cq:Widget`) 또는 추가 탭( `cq:Widget`)의 기준을 제공하는 데 사용됩니다. 이 계층은 확장할 수 있습니다.
 
 ### 디자인 대화 상자 {#design-dialogs}
 
@@ -512,8 +510,8 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
 * 두 UI에 대한 정의에 `name`= `./jcr:title` 속성이 있습니다.
 
-   * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
-   * `/libs/foundation/components/title/dialog/items/title`
+  * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
+  * `/libs/foundation/components/title/dialog/items/title`
 
 * 콘텐츠 내에서 작성자의 콘텐츠를 포함하는 속성 `jcr:title`이(가) 생성됩니다.
 
@@ -527,9 +525,9 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
   속성 `sling:resourceSuperType`을(를) 사용하여 구성 요소를 확장하는 데 사용됩니다. 이렇게 하면 구성 요소가 상속될 수 있습니다. 예를 들어 텍스트 구성 요소는 표준 구성 요소에서 다양한 속성을 상속합니다.
 
-   * 스크립트(Sling으로 해결됨)
-   * 대화 상자
-   * 설명(썸네일 이미지 및 아이콘 포함)
+  * 스크립트(Sling으로 해결됨)
+  * 대화 상자
+  * 설명(썸네일 이미지 및 아이콘 포함)
 
 * **컨테이너 계층**
 
@@ -555,27 +553,27 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
 * [`cq:editConfig` 노드 속성](#configuring-with-cq-editconfig-properties):
 
-   * `cq:actions`( `String array`): 구성 요소에서 수행할 수 있는 작업을 정의합니다.
-   * `cq:layout`( `String`): 클래식 UI에서 구성 요소를 편집하는 방법을 정의합니다.
-   * `cq:dialogMode`( `String`): 구성 요소 대화 상자를 클래식 UI에서 여는 방법을 정의합니다
+  * `cq:actions`( `String array`): 구성 요소에서 수행할 수 있는 작업을 정의합니다.
+  * `cq:layout`( `String`): 클래식 UI에서 구성 요소를 편집하는 방법을 정의합니다.
+  * `cq:dialogMode`( `String`): 구성 요소 대화 상자를 클래식 UI에서 여는 방법을 정의합니다
 
-      * 터치 지원 UI에서 대화 상자는 항상 데스크탑 모드에서 부동이며 모바일에서 전체 화면으로 자동으로 열립니다.
+    * 터치 지원 UI에서 대화 상자는 항상 데스크탑 모드에서 부동이며 모바일에서 전체 화면으로 자동으로 열립니다.
 
-   * `cq:emptyText`( `String`): 시각적 컨텐츠가 없을 때 표시되는 텍스트를 정의합니다.
-   * `cq:inherit`( `Boolean`): 누락된 값이 상속되는 구성 요소에서 상속되는지 여부를 정의합니다.
-   * `dialogLayout`(문자열): 대화 상자를 여는 방법을 정의합니다.
+  * `cq:emptyText`( `String`): 시각적 컨텐츠가 없을 때 표시되는 텍스트를 정의합니다.
+  * `cq:inherit`( `Boolean`): 누락된 값이 상속되는 구성 요소에서 상속되는지 여부를 정의합니다.
+  * `dialogLayout`(문자열): 대화 상자를 여는 방법을 정의합니다.
 
 * [`cq:editConfig`개의 하위 노드](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets`(노드 유형 `nt:unstructured`): 콘텐츠 파인더의 에셋에서 삭제를 수락할 수 있는 삭제 대상 목록을 정의합니다.
+  * `cq:dropTargets`(노드 유형 `nt:unstructured`): 콘텐츠 파인더의 에셋에서 삭제를 수락할 수 있는 삭제 대상 목록을 정의합니다.
 
-      * 여러 놓기 대상은 클래식 UI에서만 사용할 수 있습니다.
-      * 터치 활성화 UI에서는 단일 드롭 대상이 허용됩니다.
+    * 여러 놓기 대상은 클래식 UI에서만 사용할 수 있습니다.
+    * 터치 활성화 UI에서는 단일 드롭 대상이 허용됩니다.
 
-   * `cq:actionConfigs`(노드 유형 `nt:unstructured`): cq:actions 목록에 추가된 새 작업 목록을 정의합니다.
-   * `cq:formParameters`(노드 유형 `nt:unstructured`): 대화 상자 양식에 추가되는 추가 매개 변수를 정의합니다.
-   * `cq:inplaceEditing`(노드 유형 `cq:InplaceEditingConfig`): 구성 요소에 대한 즉석 편집 구성을 정의합니다.
-   * `cq:listeners`(노드 유형 `cq:EditListenersConfig`): 구성 요소에서 작업이 발생하기 전이나 후에 수행되는 작업을 정의합니다.
+  * `cq:actionConfigs`(노드 유형 `nt:unstructured`): cq:actions 목록에 추가된 새 작업 목록을 정의합니다.
+  * `cq:formParameters`(노드 유형 `nt:unstructured`): 대화 상자 양식에 추가되는 추가 매개 변수를 정의합니다.
+  * `cq:inplaceEditing`(노드 유형 `cq:InplaceEditingConfig`): 구성 요소에 대한 즉석 편집 구성을 정의합니다.
+  * `cq:listeners`(노드 유형 `cq:EditListenersConfig`): 구성 요소에서 작업이 발생하기 전이나 후에 수행되는 작업을 정의합니다.
 
 >[!NOTE]
 >
@@ -599,7 +597,7 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고 **&#x200B; CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고** CRXDE Lite**에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -864,8 +862,8 @@ Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 핵심 �
 
 * xtype `tbseparator`(으)로 정의된 구분 기호
 
-   * 클래식 UI에서만 사용됩니다.
-   * xtype이 무시되므로 터치 사용 UI에서 이 정의는 무시됩니다. (작업 도구 모음이 터치 사용 UI에서 다르게 구성되므로 구분 기호는 필요하지 않음).
+  * 클래식 UI에서만 사용됩니다.
+  * xtype이 무시되므로 터치 사용 UI에서 이 정의는 무시됩니다. (작업 도구 모음이 터치 사용 UI에서 다르게 구성되므로 구분 기호는 필요하지 않음).
 
 * 처리기 함수 `CQ_collab_forum_openCollabAdmin()`을(를) 실행하는 **댓글 관리** 단추.
 
@@ -1040,7 +1038,7 @@ Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 핵심 �
 
 >[!NOTE]
 >
->클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
+>클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
 
 다음 구성을 사용하면 구성 요소가 삭제, 편집, 삽입 또는 이동된 후 페이지가 새로 고쳐집니다.
 

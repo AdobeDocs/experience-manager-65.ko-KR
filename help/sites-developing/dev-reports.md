@@ -9,13 +9,11 @@ exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5297'
+source-wordcount: '5299'
 ht-degree: 1%
-
 ---
-
 
 # 보고서 개발 {#developing-reports}
 
@@ -108,7 +106,7 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 쿼리:
 
 * [`reportbase`](#report-base) 구성 요소의 일부로 정의됩니다.
-* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
+* [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
 * 보고서의 기반으로 사용되는 데이터를 검색합니다. 결과 세트(테이블)의 각 행은 쿼리에서 반환된 대로 노드에 연결됩니다. 그런 다음 이 데이터 집합에서 [개별 열](#column-base-component)에 대한 특정 정보를 추출합니다.
 
 * 일반적으로 다음으로 구성됩니다.
@@ -362,7 +360,7 @@ N:charting
 
       * `totals` ( `Boolean`)
 
-        **합계**&#x200B;를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
+        **합계**를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
         기본값: `false`
 
       * `series` ( `Long`)
@@ -382,7 +380,7 @@ N:charting
 
 모든 보고서에는 보고서에 대한 다양한 매개 변수를 지정할 수 있는 구성 대화 상자가 있습니다. 이 대화 상자는 보고서 페이지가 열려 있을 때 **편집** 단추를 통해 액세스할 수 있습니다.
 
-이 대화 상자는 표준 CQ [대화 상자](/help/sites-developing/components-basics.md#dialogs)이며 이와 같이 구성할 수 있습니다(자세한 내용은 [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) 참조).
+이 대화 상자는 표준 CQ [대화 상자](/help/sites-developing/components-basics.md#dialogs)이며 이와 같이 구성할 수 있습니다(자세한 내용은 [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) 참조).
 
 예제 대화 상자는 다음과 같습니다.
 
@@ -669,11 +667,11 @@ N:definitions
 
   * `apply`
 
-    초기 전처리 단계([&#128279;](#processing-queue) 처리 큐 표시의 단계 3).
+    초기 전처리 단계(](#processing-queue) 처리 큐 표시의 [단계 3).
 
   * `applyAfter`
 
-    전처리 후 적용합니다([&#128279;](#processing-queue) 처리 큐 표시의 9단계).
+    전처리 후 적용합니다(](#processing-queue) 처리 큐 표시의 [9단계).
 
 #### 해결자 {#resolvers}
 

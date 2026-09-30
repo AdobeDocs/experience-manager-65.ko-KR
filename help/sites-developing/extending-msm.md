@@ -10,13 +10,11 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 54%
-
+source-wordcount: '2718'
+ht-degree: 50%
 ---
-
 # 다중 사이트 관리자 확장{#extending-the-multi-site-manager}
 
 이 페이지는 다중 사이트 관리자의 기능을 확장하는 데 도움이 됩니다.
@@ -32,8 +30,8 @@ ht-degree: 54%
 >이 페이지는 [콘텐츠 재사용: 다중 사이트 관리자](/help/sites-administering/msm.md)와 함께 읽어야 합니다.
 >
 >다음 Sites 저장소 재구성 섹션도 관심을 가질 수 있습니다.
->* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=ko#multi-site-manager-blueprint-configurations)
->* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=ko#multi-site-manager-rollout-configurations)
+>* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -43,8 +41,8 @@ ht-degree: 54%
 
 다중 사이트 관리는 다음 패키지로 구성됩니다.
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 기본 MSM API 개체는 다음과 같이 상호 작용합니다([사용된 용어](/help/sites-administering/msm.md#terms-used) 참조).
 
@@ -56,28 +54,28 @@ ht-degree: 54%
 
   ![블루프린트](assets/chlimage_1-74.png)
 
-   * 블루프린트 구성(`Blueprint`) 사용은 선택 사항이며, 이 구성은 다음과 같은 역할을 합니다.
+  * 블루프린트 구성(`Blueprint`) 사용은 선택 사항이며, 이 구성은 다음과 같은 역할을 합니다.
 
-      * 작성자는 소스에서 상속되는 라이브 카피에 대해 **롤아웃** 옵션을 (명시적으로) 푸시할 수 있습니다.
-      * 작성자는 **사이트 만들기**&#x200B;를 사용할 수 있습니다. 이를 통해 사용자는 손쉽게 언어를 선택하고 라이브 카피 구조를 구성할 수 있습니다.
-      * 결과 라이브 카피에 대한 기본 롤아웃 구성을 정의합니다.
+    * 작성자는 소스에서 상속되는 라이브 카피에 대해 **롤아웃** 옵션을 (명시적으로) 푸시할 수 있습니다.
+    * 작성자는 **사이트 만들기**&#x200B;를 사용할 수 있습니다. 이를 통해 사용자는 손쉽게 언어를 선택하고 라이브 카피 구조를 구성할 수 있습니다.
+    * 결과 라이브 카피에 대한 기본 롤아웃 구성을 정의합니다.
 
 * **`LiveRelationship`**
 
   `LiveRelationship`은(는) 라이브 카피 분기에 있는 리소스와 이에 해당하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
 
-   * 이 관계는 상속 및 롤아웃을 실현할 때 사용됩니다.
-   * `LiveRelationship` 오브젝트는 관계와 관련된 롤아웃 구성(`RolloutConfig`), `LiveCopy` 및 `LiveStatus` 오브젝트에 대한 액세스(참조)를 제공합니다.
+  * 이 관계는 상속 및 롤아웃을 실현할 때 사용됩니다.
+  * `LiveRelationship` 오브젝트는 관계와 관련된 롤아웃 구성(`RolloutConfig`), `LiveCopy` 및 `LiveStatus` 오브젝트에 대한 액세스(참조)를 제공합니다.
 
-   * 예를 들어 Live Copy는 `/content/we-retail/language-masters`의 소스/블루프린트로 `/content/copy/us`에 만들어집니다. 리소스 `/content/we.retail/language-masters/en/jcr:content` 및 `/content/copy/us/en/jcr:content`는 관계를 형성합니다.
+  * 예를 들어 Live Copy는 `/content/we-retail/language-masters`의 소스/블루프린트로 `/content/copy/us`에 만들어집니다. 리소스 `/content/we.retail/language-masters/en/jcr:content` 및 `/content/copy/us/en/jcr:content`는 관계를 형성합니다.
 
 * **`LiveCopy`**
 
   `LiveCopy`은(는) Live Copy 리소스와 소스/블루프린트 리소스 간의 관계(`LiveRelationship`)에 대한 구성 세부 정보를 보관합니다.
 
-   * `LiveCopy` 클래스를 사용하여 페이지 경로, 소스/블루프린트 페이지 경로, 롤아웃 구성, `LiveCopy`에 하위 페이지도 포함되는지 여부에 액세스합니다.
+  * `LiveCopy` 클래스를 사용하여 페이지 경로, 소스/블루프린트 페이지 경로, 롤아웃 구성, `LiveCopy`에 하위 페이지도 포함되는지 여부에 액세스합니다.
 
-   * `LiveCopy` 노드는 **사이트 만들기** 또는 **Live Copy 만들기**&#x200B;를 사용할 때마다 만들어집니다.
+  * `LiveCopy` 노드는 **사이트 만들기** 또는 **Live Copy 만들기**&#x200B;를 사용할 때마다 만들어집니다.
 
 * **`LiveStatus`**
 
@@ -87,7 +85,7 @@ ht-degree: 54%
 
   `LiveAction`은(는) 롤아웃과 관련된 각 리소스에서 실행되는 작업입니다.
 
-   * LiveActions는 RolloutConfigs에서만 생성됩니다.
+  * LiveActions는 RolloutConfigs에서만 생성됩니다.
 
 * **`LiveActionFactory`**
 
@@ -97,29 +95,29 @@ ht-degree: 54%
 
   `RolloutConfig`에는 트리거될 때 사용할 `LiveActions` 목록이 있습니다. `LiveCopy`는 `RolloutConfig`를 상속하며 결과는 `LiveRelationship`에 표시됩니다.
 
-   * 처음 Live Copy를 설정하는 경우에도 LiveActions를 트리거하는 RolloutConfig를 사용합니다.
+  * 처음 Live Copy를 설정하는 경우에도 LiveActions를 트리거하는 RolloutConfig를 사용합니다.
 
 ## 새 동기화 작업 만들기 {#creating-a-new-synchronization-action}
 
 롤아웃 구성에 사용할 사용자 지정 동기화 작업을 만듭니다. [설치된 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions)이 특정 응용 프로그램 요구 사항에 맞지 않으면 동기화 작업을 만듭니다. 이렇게 하려면 다음과 같이 두 개의 클래스를 만듭니다.
 
-* 작업을 수행하는 [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 인터페이스의 구현.
-* [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스를 구현하고 `LiveAction` 클래스의 인스턴스를 만드는 OSGI 구성 요소입니다.
+* 작업을 수행하는 [`com.day.cq.wcm.msm.api.LiveAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 인터페이스의 구현.
+* [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 인터페이스를 구현하고 `LiveAction` 클래스의 인스턴스를 만드는 OSGI 구성 요소입니다.
 
 `LiveActionFactory`는 주어진 구성에 대한 `LiveAction` 클래스의 인스턴스를 만듭니다.
 
 * `LiveAction` 클래스에는 다음 메서드가 포함됩니다.
 
-   * `getName`: 작업의 이름을 반환합니다. 이 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성).
-   * `execute`: 작업의 작업을 수행합니다.
+  * `getName`: 작업의 이름을 반환합니다. 이 이름은 작업을 참조하는 데 사용됩니다(예: 롤아웃 구성).
+  * `execute`: 작업의 작업을 수행합니다.
 
 * `LiveActionFactory` 클래스에는 다음과 같은 멤버가 포함됩니다.
 
-   * `LIVE_ACTION_NAME`: 연결된 `LiveAction`의 이름이 포함된 필드입니다. 이 이름은 `LiveAction` 클래스의 `getName` 메서드에 의해 반환되는 값과 일치합니다.
+  * `LIVE_ACTION_NAME`: 연결된 `LiveAction`의 이름이 포함된 필드입니다. 이 이름은 `LiveAction` 클래스의 `getName` 메서드에 의해 반환되는 값과 일치합니다.
 
-   * `createAction`: `LiveAction`의 인스턴스를 만듭니다. 선택 사항인 `Resource` 매개변수를 사용하여 구성 정보를 제공할 수 있습니다.
+  * `createAction`: `LiveAction`의 인스턴스를 만듭니다. 선택 사항인 `Resource` 매개변수를 사용하여 구성 정보를 제공할 수 있습니다.
 
-   * `createsAction`: 연결된 `LiveAction`의 이름을 반환합니다.
+  * `createsAction`: 연결된 `LiveAction`의 이름을 반환합니다.
 
 ### LiveAction 구성 노드에 액세스 {#accessing-the-liveaction-configuration-node}
 
@@ -127,7 +125,7 @@ ht-degree: 54%
 
 예를 들어 `LiveAction`은 블루프린트 작성자의 이름을 저장해야 합니다. 구성 노드의 속성에는 정보를 저장하는 블루프린트 페이지의 속성 이름이 포함됩니다. 런타임 시 `LiveAction`이 구성에서 속성 이름을 검색한 다음 속성 값을 가져옵니다.
 
-[`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 메서드의 매개변수는 `Resource` 오브젝트입니다. 이 `Resource` 개체는 롤아웃 구성에서 이 라이브 작업에 대한 `cq:LiveSyncAction` 노드를 나타냅니다. [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)를 참조하십시오. 평소와 같이 구성 노드를 사용할 때 이를 `ValueMap` 오브젝트에 맞게 조정해야 합니다.
+[`LiveActionFactory.createAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 메서드의 매개변수는 `Resource` 오브젝트입니다. 이 `Resource` 개체는 롤아웃 구성에서 이 라이브 작업에 대한 `cq:LiveSyncAction` 노드를 나타냅니다. [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)를 참조하십시오. 평소와 같이 구성 노드를 사용할 때 이를 `ValueMap` 오브젝트에 맞게 조정해야 합니다.
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +143,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 `LiveAction` 오브젝트의 `execute` 메서드의 매개변수로 다음 오브젝트가 제공됩니다.
 
-* Live Copy의 소스를 나타내는 [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 개체입니다.
+* Live Copy의 소스를 나타내는 [`Resource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 개체입니다.
 * Live Copy 대상을 나타내는 `Resource` 개체입니다.
-* Live Copy에 대한 [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 개체입니다.
+* Live Copy에 대한 [`LiveRelationship`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) 개체입니다.
 * `autoSave` 값은 `LiveAction`이(가) 저장소에 대한 변경 내용을 저장해야 하는지 여부를 나타냅니다.
 
 * 재설정 값은 롤아웃 재설정 모드를 나타냅니다.
@@ -164,7 +162,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->`Resource` 인수는 [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 오브젝트와 같이 `Node` 오브젝트에 적응하지 않는 `null` 또는 `Resources` 오브젝트일 수 있습니다.
+>`Resource` 인수는 [`NonExistingResource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 오브젝트와 같이 `Node` 오브젝트에 적응하지 않는 `null` 또는 `Resources` 오브젝트일 수 있습니다.
 
 ## 새 롤아웃 구성 만들기 {#creating-a-new-rollout-configuration}
 
@@ -216,10 +214,10 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **이름**: `cq:trigger`
      **유형**: `String`
      **값**: 사용할 [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers). 다음 중에서 선택:
-      * `rollout`
-      * `modification`
-      * `publish`
-      * `deactivate`
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 
@@ -237,7 +235,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 다음 노드 속성이 있는 노드를 **만들기**:
 
    * **이름**: 동기화 작업의 노드 이름입니다.
-이름은 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 아래 테이블의 **작업 이름**&#x200B;과(와) 같아야 합니다(예: `contentCopy` 또는 `workflow`).
+     이름은 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 아래 테이블의 **작업 이름**&#x200B;과(와) 같아야 합니다(예: `contentCopy` 또는 `workflow`).
    * **유형**: `cq:LiveSyncAction`
 
 1. 필요한 만큼 동기화 작업 노드를 추가하고 구성합니다. 작업 노드의 순서가 원하는 순서와 일치하도록 작업 노드를 재정렬합니다. 최상위 작업 노드가 먼저 발생합니다.
@@ -659,11 +657,11 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 * 연락처 이메일:
 
-   * 이 속성은 각 국가(또는 브랜드 등)에서 다르므로 롤아웃할 필요가 없습니다.
+  * 이 속성은 각 국가(또는 브랜드 등)에서 다르므로 롤아웃할 필요가 없습니다.
 
 * 주요 시각 스타일:
 
-   * 프로젝트 요구 사항은 이 속성이 모든 국가(또는 브랜드 등)에 (일반적으로) 공통된 상태로 롤아웃되어야 한다는 것입니다.
+  * 프로젝트 요구 사항은 이 속성이 모든 국가(또는 브랜드 등)에 (일반적으로) 공통된 상태로 롤아웃되어야 한다는 것입니다.
 
 그렇다면 다음과 같이 작업해야 합니다.
 
@@ -679,28 +677,28 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 * `cq-msm-lockable`
 
-   * 터치 활성화 UI 대화 상자의 항목에 적용할 수 있습니다
-   * 대화 상자에 체인 링크 기호가 만들어집니다.
-   * 상속이 취소(체인 연결이 끊어진 경우)된 경우에만 편집할 수 있습니다.
-   * 리소스의 첫 번째 하위 수준에만 적용됩니다.
-      * **유형**: `String`
+  * 터치 활성화 UI 대화 상자의 항목에 적용할 수 있습니다
+  * 대화 상자에 체인 링크 기호가 만들어집니다.
+  * 상속이 취소(체인 연결이 끊어진 경우)된 경우에만 편집할 수 있습니다.
+  * 리소스의 첫 번째 하위 수준에만 적용됩니다.
+    * **유형**: `String`
 
-      * **값**: 고려 중인 속성의 이름을 사용하며 속성 `name`의 값과 비슷합니다. 예를 들어 다음을 참조하십시오.
-        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+    * **값**: 고려 중인 속성의 이름을 사용하며 속성 `name`의 값과 비슷합니다. 예를 들어 다음을 참조하십시오.
+      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable`이 정의된 경우 체인을 끊거나 닫으면 다음과 같은 방식으로 MSM과 상호 작용합니다.
 
 * `cq-msm-lockable`의 값이 다음과 같은 경우:
 
-   * **상대**(예: `myProperty` 또는 `./myProperty`)
+  * **상대**(예: `myProperty` 또는 `./myProperty`)
 
-      * `cq:propertyInheritanceCancelled`에서 속성을 추가하고 제거합니다.
+    * `cq:propertyInheritanceCancelled`에서 속성을 추가하고 제거합니다.
 
-   * **절대**(예: `/image`)
+  * **절대**(예: `/image`)
 
-      * 체인을 끊으면 `cq:LiveSyncCancelled` mixin을 `./image`에 추가하고 `cq:isCancelledForChildren`을(를) `true`(으)로 설정하여 상속이 취소됩니다.
+    * 체인을 끊으면 `cq:LiveSyncCancelled` mixin을 `./image`에 추가하고 `cq:isCancelledForChildren`을(를) `true`(으)로 설정하여 상속이 취소됩니다.
 
-      * 체인을 닫으면 상속이 취소됩니다.
+    * 체인을 닫으면 상속이 취소됩니다.
 
 >[!NOTE]
 >

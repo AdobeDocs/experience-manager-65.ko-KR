@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 0%
-
 ---
-
 # 사용자, 그룹 및 액세스 권한 관리{#user-group-and-access-rights-administration}
 
 CRX 저장소에 대한 액세스 활성화에는 다음과 같은 몇 가지 주제가 포함됩니다.
@@ -60,7 +58,7 @@ CRX을 사용하면 사용자 및 그룹 계정 모두에 대한 액세스 권�
 
 >[!NOTE]
 >
->CRX은 JSR-283[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에서 정의한 액세스 제어를 구현합니다.
+>CRX은 JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)에서 정의한 [액세스 제어를 구현합니다.
 >
 >CRX 저장소의 표준 설치는 리소스 기반 액세스 제어 목록을 사용하도록 구성됩니다. 이는 JSR-283 액세스 제어의 한 가지 가능한 구현과 Jackrabbit과 함께 제공되는 구현 중 하나입니다.
 
@@ -70,22 +68,22 @@ CRX은 액세스 권한을 평가할 때 두 가지 주요 개념을 사용합�
 
 * **principal**&#x200B;은(는) 액세스 권한을 가진 엔터티입니다. 주도자는 다음과 같습니다.
 
-   * 사용자 계정
-   * 그룹 계정
+  * 사용자 계정
+  * 그룹 계정
 
-     사용자 계정이 하나 이상의 그룹에 속하는 경우 해당 그룹 주도자 각각과도 연결됩니다.
+    사용자 계정이 하나 이상의 그룹에 속하는 경우 해당 그룹 주도자 각각과도 연결됩니다.
 
 * **제목**&#x200B;은(는) 요청 원본을 나타내는 데 사용됩니다.
 
   해당 요청에 적용할 수 있는 액세스 권한을 통합하는 데 사용됩니다. 다음에서 가져옵니다.
 
-   * 사용자 계정
+  * 사용자 계정
 
-     사용자 계정에 직접 지정하는 권한입니다.
+    사용자 계정에 직접 지정하는 권한입니다.
 
-   * 해당 사용자와 연계된 모든 그룹 주체
+  * 해당 사용자와 연계된 모든 그룹 주체
 
-     모든 권한은 사용자가 속한 모든 그룹에 할당됩니다.
+    모든 권한은 사용자가 속한 모든 그룹에 할당됩니다.
 
   그런 다음 요청된 리소스에 대한 액세스를 허용하거나 거부하는 데 결과가 사용됩니다.
 
@@ -124,8 +122,8 @@ CRX의 액세스 권한은 다음과 같이 평가됩니다.
 
 * 사용자 주도자는 다음에 관계없이 항상 그룹 주도자보다 우선합니다.
 
-   * 액세스 제어 목록의 순서
-   * 노드 계층에서 해당 위치
+  * 액세스 제어 목록의 순서
+  * 노드 계층에서 해당 위치
 
 * 지정된 주체에 대해 지정된 노드에 거부가 하나(최대) 있고 항목 진입을 허용하는 거부가 1개 있습니다. 구현은 항상 중복 항목을 지우고 동일한 권한이 허용 및 거부 항목 모두에 나열되지 않도록 합니다.
 
@@ -163,7 +161,7 @@ CRX의 액세스 권한은 다음과 같이 평가됩니다.
 이 경우:
 
 * `aUser`에게 `grandChildNode`에 대한 쓰기 권한이 부여되지 않았습니다.
-* `aUser`에 대한 두 번째 ACE가 중복됩니다.
+* `aUser`에 대한 두 번째 ACE이 중복됩니다.
 
 여러 그룹 주체의 액세스 권한은 계층 내 및 단일 액세스 제어 목록 내에서 해당 순서를 기반으로 평가됩니다.
 
@@ -491,7 +489,7 @@ CRXDE Lite의 **액세스 제어** 탭에서 액세스 제어 정책을 정의�
 
 ### 권한 {#privileges}
 
-액세스 제어 항목을 추가할 때 다음 권한을 선택할 수 있습니다(자세한 내용은 [보안 API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) 참조).
+액세스 제어 항목을 추가할 때 다음 권한을 선택할 수 있습니다(자세한 내용은 [보안 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) 참조).
 
 <table>
  <tbody>
