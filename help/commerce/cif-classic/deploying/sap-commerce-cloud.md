@@ -1,5 +1,5 @@
 ---
-title: SAP Commerce Cloud을 사용하여 eCommerce 구축
+title: SAP Commerce Cloud과 함께 eCommerce 구축
 description: SAP Commerce Cloud과 함께 Adobe Experience Manager eCommerce를 배포하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -10,18 +10,16 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 1%
-
+source-wordcount: '742'
+ht-degree: 2%
 ---
-
-# SAP COMMERCE CLOUD{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
 >이 페이지에는 hybris 웹 사이트에 대한 링크가 포함되어 있습니다. 특정 페이지의 경우 로그인할 계정이 필요합니다.
 
-## SAP Commerce Cloud을 사용하여 eCommerce 배포 {#deploying-ecommerce-with-sap-commerce-cloud}
+## SAP Commerce Cloud과 함께 eCommerce 배포 {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -58,25 +56,25 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 * hybris 서버
 * AEM 전자 상거래 프레임워크:
 
-   * 표준 AEM 설치의 일부입니다.
+  * 표준 AEM 설치의 일부입니다
 
-* AEM Geometrixx 전체 패키지:
+* AEM Geometrixx-all 패키지:
 
-   * `cq-geometrixx-all-pkg`
+  * `cq-geometrixx-all-pkg`
 
 * AEM hybris 콘텐츠 패키지:
 
-   * `cq-hybris-content-6.3.2`
-   * hybris별 API 구현
-   * `cq-geometrixx-hybris-content-6.3.2`
-   * hybris( `geometrixx-outdoors/en_US`) 사용을 보여 주는 참조 구현입니다.
+  * `cq-hybris-content-6.3.2`
+  * hybris별 API 구현
+  * `cq-geometrixx-hybris-content-6.3.2`
+  * hybris( `geometrixx-outdoors/en_US`) 사용을 보여 주는 참조 구현입니다.
 
 ### hybris를 사용한 eCommerce 설치 {#installation-of-ecommerce-with-hybris}
 
 데모 카탈로그, Geometrixx Outdoors을 사용하여 완전한 구성을 설치하려면 다음 기본 단계를 수행하십시오.
 
 1. [AEM 설치](/help/sites-deploying/deploy.md).
-1. Geometrixx 전체 패키지 설치
+1. Geometrixx-all 패키지 설치
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
@@ -90,7 +88,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
    1. [Geometrixx Outdoor 스토어를 설정합니다](#setup-the-geometrixx-outdoors-store).
 
-1. [작성자](/help/sites-authoring/qg-page-authoring.md) AEM에 필요한 모든 보조 페이지입니다.
+1. [작성자](/help/sites-authoring/qg-page-authoring.md) AEM에 필요한 모든 보조 페이지를 만듭니다.
 
 >[!CAUTION]
 >
@@ -143,7 +141,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    ```
 
 
-[파일 가져오기](/help/sites-deploying/assets/setup.groovy)
+   [파일 가져오기](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -151,7 +149,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
    5.6.0 이상
 
-[파일 가져오기](/help/sites-deploying/assets/setup-1.groovy)
+   [파일 가져오기](/help/sites-deploying/assets/setup-1.groovy)
 
 1. 명령줄에서 다음을 실행하여 다음을 수행합니다.
 
@@ -182,9 +180,9 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    >
    >시스템에 따라 완료하는 데 몇 분 정도 걸릴 수 있습니다.
 
-### Geometrixx Outdoors 저장소 설정 {#setup-the-geometrixx-outdoors-store}
+### Geometrixx Outdoors 스토어 설정 {#setup-the-geometrixx-outdoors-store}
 
-이 절차에서는 데모 스토어 - Geometrixx 온라인을 업로드하고 구성합니다.
+이 절차에서는 데모 스토어 - Geometrixx Online을 업로드하고 구성합니다.
 
 1. hybris 인스턴스를 시작합니다. 명령줄에서 다음을 실행합니다.
 
@@ -204,7 +202,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 1. 사이드바 탐색에서 **시스템** 및 **도구**&#x200B;를 확장합니다. **가져오기**&#x200B;를 선택하여 **마법사: CSV 가져오기** 창을 엽니다.
 1. **구성** 탭에서 **업로드** 다음 **파일 가져오기**:
 
-[파일 가져오기](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
+   [파일 가져오기](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. **로케일 설정**&#x200B;을(를) 다음으로 설정:
 
@@ -213,7 +211,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 1. **리소스** 탭을 엽니다.
 1. **다음** Media-Zip **업로드**:
 
-[파일 가져오기](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
+   [파일 가져오기](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. 지정한 파일을 가져오려면 **시작**&#x200B;을 클릭하세요. **결과** 탭에 로그 항목이 표시됩니다.
 
@@ -223,11 +221,11 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
 1. **다음**&#x200B;파일 가져오기&#x200B;**업로드**:
 
-[파일 가져오기](/help/sites-deploying/assets/base-store.csv)
+   [파일 가져오기](/help/sites-deploying/assets/base-store.csv)
 
    hybris 5.7의 경우 다음을 사용합니다.
 
-[파일 가져오기](/help/sites-deploying/assets/base-store-5_7.csv)
+   [파일 가져오기](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. **로케일 설정**&#x200B;을(를) 다음으로 설정:
 
