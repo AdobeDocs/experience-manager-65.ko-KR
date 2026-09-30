@@ -1,28 +1,30 @@
 ---
 title: Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법
+
 description: 이 안내서에서는 AEM 기반 프로젝트 개발을 위해 Eclipse를 사용하는 방법을 설명합니다
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 1%
-
+source-wordcount: '448'
+ht-degree: 4%
 ---
-
 # Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법{#how-to-develop-aem-projects-using-eclipse}
 
-이 안내서에서는 AEM 기반 프로젝트 개발을 위해 Eclipse를 사용하는 방법을 설명합니다.
+이 안내서에서는 AEM 기반 프로젝트 개발을 위해 Eclipse를 사용하는 방법에 대해 설명합니다.
 
 >[!NOTE]
 >
->이제 Adobe에서 Eclipse를 사용하여 AEM 솔루션을 개발하는 데 도움이 되는 [Eclipse용 AEM 개발 도구](/help/sites-developing/aem-eclipse.md)를 제공합니다.
+>Adobe은 이제 Eclipse를 사용하여 AEM 솔루션을 개발하는 데 도움이 되는 [Eclipse용 AEM 개발 도구](/help/sites-developing/aem-eclipse.md)를 제공합니다.
 
 ## 개요 {#overview}
 
@@ -47,14 +49,14 @@ Eclipse에서 AEM 개발을 시작하려면 다음 단계가 필요합니다.
 
 ## Maven을 기반으로 AEM 프로젝트 설정 {#set-up-your-aem-project-based-on-maven}
 
-그런 다음 [Apache Maven을 사용하여 AEM 프로젝트 빌드 방법](/help/sites-developing/ht-projects-maven.md)에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.
+그런 다음 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md)에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.
 
 ## Eclipse에 대한 JSP 지원 준비 {#prepare-jsp-support-for-eclipse}
 
 Eclipse는 JSP 작업(예: )도 지원할 수 있습니다.
 
 * 태그 라이브러리 자동 완성
-* &lt;cq:defineObjects /> 및 &lt;sling:defineObjects />로 정의된 개체의 Eclipse-insights
+* &lt;cq:defineObjects /> 및 &lt;sling:defineObjects />에 의해 정의된 개체의 Eclipse-recognition
 
 이를 위해 다음 작업을 수행합니다.
 

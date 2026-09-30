@@ -6,13 +6,11 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 10%
-
 ---
-
 # 적응형 양식 스타일 지정 {#do-not-publish-style-your-adaptive-form}
 
 사용자 지정 테마를 만들고, 개별 구성 요소의 스타일을 지정하고, 테마에서 Web Fonts을 사용하는 방법을 알아봅니다.
@@ -444,16 +442,18 @@ ht-degree: 10%
 다양한 글꼴을 사용하여 적응형 양식을 디자인할 수 있습니다. 적응형 양식을 보는 모든 장치에는 적응형 양식을 디자인하는 데 사용되는 글꼴이 없을 수 있습니다. 웹 글꼴 서비스를 사용하여 필요한 글꼴을 대상 장치에 전달할 수 있습니다.
 
 [!DNL Adobe Fonts]은(는) Web Fonts 서비스입니다. 적응형 양식에서 서비스를 구성하고 사용할 수 있습니다. 적응형 양식에서 [!DNL Adobe Fonts]을(를) 사용하려면:
-1. [Adobe 글꼴 라이브러리](https://fonts.adobe.com/)를 탐색하고 양식의 스타일을 지정할 글꼴을 선택하십시오.
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
 
->[!NOTE]
->
-> 태그나 필터를 추가하여 글꼴 목록을 구체화할 수 있습니다.
+1. [Adobe 글꼴 라이브러리](https://fonts.adobe.com/)를 탐색하고 양식의 스타일을 지정할 글꼴을 선택하십시오.
+
+   >[!NOTE]
+   >
+   > 태그나 필터를 추가하여 글꼴 목록을 구체화할 수 있습니다.
 
 1. 원하는 글꼴이 있는 경우 &lt;/> 단추를 클릭하여 웹 프로젝트에 패밀리를 추가합니다.
 
@@ -465,23 +465,25 @@ ht-degree: 10%
    >
    > &lt;/> 버튼을 사용할 수 있는 글꼴만 웹 프로젝트에 추가할 수 있습니다.
 
-2. 웹 프로젝트의 이름을 지정합니다.
-3. 포함할 글꼴 가중치와 스타일을 선택하려면 확인란을 선택합니다.
+1. 웹 프로젝트의 이름을 지정합니다.
+1. 포함할 글꼴 가중치와 스타일을 선택하려면 확인란을 선택합니다.
 
    ![글꼴 라이브러리 추가](assets/add-a-font-window.png)
 
-4. 프로젝트를 만들려면 **클릭**&#x200B;을(를) 선택하십시오.
-5. 화면에서 포함 코드와 URL을 복사합니다.
+1. 프로젝트를 만들려면 **클릭**&#x200B;을(를) 선택하십시오.
+1. 화면에서 포함 코드와 URL을 복사합니다.
    ![포함 코드 및 URL](assets/font-add-url.png)
 
-6. 웹 프로젝트 창을 닫으려면 **완료**&#x200B;를 클릭하십시오.
-7. AEM 인스턴스에 로그인하고 URL `http://server:port/crx/de/index.jsp#`(으)로 이동합니다.
-8. CRXDE에 폴더 구조를 만듭니다(예: `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`).
-9. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
-10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
-11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
-    ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. 변경 사항을 저장합니다.
+1. 웹 프로젝트 창을 닫으려면 **완료**&#x200B;를 클릭하십시오.
+1. AEM 인스턴스에 로그인하고 URL `http://server:port/crx/de/index.jsp#`(으)로 이동합니다.
+1. CRXDE에 폴더 구조를 만듭니다(예: `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`).
+1. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
+1. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
+1. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
+
+   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. 변경 사항을 저장합니다.
 
 >[!NOTE]
 >

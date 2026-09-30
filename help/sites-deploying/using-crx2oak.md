@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 0%
-
+source-wordcount: '1217'
+ht-degree: 1%
 ---
-
 # CRX2Oak 마이그레이션 도구 사용{#using-the-crx-oak-migration-tool}
 
 ## 소개 {#introduction}
@@ -29,7 +27,7 @@ Apache Jackrabbit 2를 기반으로 하는 이전 CQ 버전에서 Oak으로 데�
 
 >[!NOTE]
 >
->Apache Oak 및 AEM(Adobe Experience Manager) 지속성의 주요 개념에 대한 자세한 내용은 [AEM 플랫폼 소개](/help/sites-deploying/platform.md)를 참조하십시오.
+>Apache Oak 및 Adobe Experience Manager(AEM) 지속성의 주요 개념에 대한 자세한 내용은 [AEM 플랫폼 소개](/help/sites-deploying/platform.md)를 참조하십시오.
 
 ## 마이그레이션 사용 사례 {#migration-use-cases}
 

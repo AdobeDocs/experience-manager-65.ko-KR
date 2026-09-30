@@ -4,13 +4,11 @@ description: AEM 6.5 적응형 양식 핵심 구성 요소를 사용하여 적�
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
 <!--
@@ -67,7 +65,8 @@ ht-degree: 0%
 검토는 한 명 이상의 검토자가 양식에 주석을 달 수 있도록 하는 메커니즘입니다. 모든 양식 사용자는 양식에 댓글을 달거나 댓글을 통해 양식을 검토할 수 있습니다. 양식에 댓글을 달려면 **[!UICONTROL 양식]**&#x200B;을(를) 선택하고 **[!UICONTROL 댓글]**&#x200B;을 양식에 추가하십시오.
 
 >[!NOTE]
-> 위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
+>
+>위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
 
 
 ![양식에 주석 추가](assets/form-comments.png)

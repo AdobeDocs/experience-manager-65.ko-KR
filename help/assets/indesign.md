@@ -1,18 +1,16 @@
 ---
-title: ' [!DNL InDesign Server]과(와)  [!DNL Assets]  통합'
-description: ' [!DNL Adobe Experience Manager Assets] 을(를)  [!DNL Adobe InDesign Server]과(와) 통합하는 방법을 알아봅니다.'
+title: '[!DNL Assets]과(와) [!DNL InDesign Server] 통합'
+description: '[!DNL Adobe Experience Manager Assets]을(를) [!DNL Adobe InDesign Server]과(와) 통합하는 방법을 알아봅니다.'
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1584'
 ht-degree: 2%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]과(와) [!DNL Adobe InDesign Server] 통합 {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] 사용:
@@ -42,9 +40,9 @@ ht-degree: 2%
    * INDD 파일을 검색합니다.
    * [!DNL InDesign Server]개 명령 실행:
 
-      * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
-      * PDF 및 JPG 렌디션이 생성됩니다.
-      * HTML 및 IDML 렌디션이 생성됩니다.
+     * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
+     * PDF 및 JPG 렌디션이 생성됩니다.
+     * HTML 및 IDML 렌디션이 생성됩니다.
 
    * 결과 파일을 [!DNL Experience Manager Assets]에 다시 게시합니다.
 
@@ -137,7 +135,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **페이지 추출 처리기**: 팝업 목록에서 사용할 처리기를 선택하십시오. 추출 처리기는 관련 `RenditionPicker`에 의해 선택된 특정 렌디션에 대해 작동합니다(`ExtractionHandler` API 참조). 표준 [!DNL Experience Manager] 설치에서는 다음 항목을 사용할 수 있습니다.
-   * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 렌디션에서 작동합니다.
+  * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 렌디션에서 작동합니다.
 
 * **페이지 이름**: 결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름은 &quot;page&quot;(또는 &quot;page&quot;가 이미 있으면 파생)입니다.
 
@@ -164,7 +162,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS 풀**
-[!DNL InDesign Server]과(와) 통신하는 데 사용되는 SOAP 종단점입니다. 항목을 추가, 제거 및 주문해야 합니다.
+     [!DNL InDesign Server]과(와) 통신하는 데 사용되는 SOAP 종단점입니다. 항목을 추가, 제거 및 주문해야 합니다.
 
 1. 확인 을 클릭하여 저장합니다.
 
@@ -204,19 +202,20 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 
    [!DNL InDesign Server]을(를) 실행하는 컴퓨터가 여러 개 있는 경우 각 컴퓨터에 대해 SOAP 끝점(컴퓨터당 프로세서 수 -1)을 추가하십시오.
 
+   >[!NOTE]
+   >
+   >작업자 풀로 작업할 때 IDS 작업자 차단 목록을 활성화할 수 있습니다.
+   >
+   >이렇게 하려면 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 구성 아래에서 IDS 작업 재검색을 활성화하는 **[!UICONTROL enable.retry.name]** 확인란을 활성화하십시오.
+   >
+   >또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성 아래에서 작업 처리기 목록에서 ID를 금지하기 전에 작업 재시도 횟수를 결정하는 `max.errors.to.blacklist` 매개 변수에 양의 값을 설정하십시오.
+   >
+   >기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분)이 지나면 IDS 작업자의 유효성을 다시 검사합니다. 작업자가 온라인에서 발견되는 경우 해당 작업자는 차단 목록에서 제거됩니다.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
 
->[!NOTE]
->
->작업자 풀로 작업할 때 IDS 작업자 차단 목록을 활성화할 수 있습니다.
->
->이렇게 하려면 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 구성 아래에서 IDS 작업 재검색을 활성화하는 **[!UICONTROL enable.retry.name]** 확인란을 활성화하십시오.
->
->또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성 아래에서 작업 처리기 목록에서 ID를 금지하기 전에 작업 재시도 횟수를 결정하는 `max.errors.to.blacklist` 매개 변수에 양의 값을 설정하십시오.
->
->기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분)이 지나면 IDS 작업자의 유효성을 다시 검사합니다. 작업자가 온라인에서 발견되는 경우 해당 작업자는 차단 목록에서 제거됩니다.
 
 ## [!DNL InDesign Server] 10.0 이상에 대한 지원 사용 {#enabling-support-for-indesign-server-or-later}
 

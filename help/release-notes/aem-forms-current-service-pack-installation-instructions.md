@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 13%
-
 ---
-
 # AEM 6.5 Forms 서비스 팩 설치 지침 {#aem-form-patch-installation-instructions}
 
 ## 릴리스 정보
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 하드 드라이브에 **JEE 서비스 팩의 AEM Forms 설치 관리자 보관**&#x200B;을(를) 추출합니다.
 
    * **Windows**
-설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하여 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
+     설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하여 `aemforms65_cfp_install.exe` 파일을 두 번 클릭합니다.
 
-      * (Windows 32비트) `Windows\Disk1\InstData\VM`
-      * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32비트) `Windows\Disk1\InstData\VM`
+     * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-적절한 디렉터리로 이동한 다음 셸에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
+     적절한 디렉터리로 이동한 다음 셸에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 
@@ -189,9 +187,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-   1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다.
-   1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
-   1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
+  1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품].<!-- UPDATE FOR EACH NEW RELEASE -->에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다.
+  1. 모든 OSGi 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]** 또는 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
+  1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(WebConsole 사용: `/system/console/bundles`).
 
 +++
 
@@ -262,11 +260,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   이 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요.
 
-   1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품]에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+  1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품]에 업데이트된 버전 문자열 `Adobe Experience Manager (spversion)`이(가) 표시됩니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
+  1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-      1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(웹 콘솔 사용: `/system/console/bundles`).
+     1. OSGi 번들 `org.apache.jackrabbit.oak-core`의 버전이 1.22.14 이상입니다(웹 콘솔 사용: `/system/console/bundles`).
 
 +++
 

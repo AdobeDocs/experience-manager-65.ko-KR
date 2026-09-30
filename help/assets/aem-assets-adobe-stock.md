@@ -1,19 +1,17 @@
 ---
-title: ' [!DNL Adobe Stock] 자산 관리'
-description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이선스 및 관리합니다. 라이센스가 부여된 자산을 다른 디지털 자산으로 사용합니다.'
+title: '[!DNL Adobe Stock]개 자산 관리'
+description: '[!DNL Adobe Experience Manager] 내에서 [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이선스 및 관리합니다. 라이센스가 부여된 자산을 다른 디지털 자산으로 사용합니다.'
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2274'
 ht-degree: 4%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Stock]개 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
 
 | 버전 | 문서 링크 |
@@ -119,9 +117,9 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 자격 증명 이름]**&#x200B;을(를) 지정하고 **[!UICONTROL OAuth 서버 간]**&#x200B;이(가) 선택되었는지 확인하고 **[!UICONTROL 다음]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL AEM Assets]** **[!UICONTROL 제품 프로필]**&#x200B;을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. [!DNL Developer Console]에서 프로젝트를 만들었음을 확인하는 성공 메시지가 표시됩니다. 프로젝트 대시보드가 열리고 맨 위에 프로젝트 이름이 표시됩니다. **[!UICONTROL API]**&#x200B;에 **[!UICONTROL Adobe Stock]**, **[!UICONTROL 제품 프로필]**&#x200B;에 **[!UICONTROL AEM Assets]**, **[!UICONTROL 연결된 자격 증명]**&#x200B;에 **[!UICONTROL OAuth 서버 간]** 자격 증명 카드.
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 제품 프로필]**&#x200B;을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. [!DNL Developer Console]에서 프로젝트를 만들었음을 확인하는 성공 메시지가 표시됩니다. 프로젝트 대시보드가 열리고 맨 위에 프로젝트 이름이 표시됩니다. **[!UICONTROL API]**&#x200B;에 **[!UICONTROL Adobe Stock]**, **[!UICONTROL 제품 프로필]**&#x200B;에 **[!UICONTROL AEM Assets]**, **[!UICONTROL 연결된 자격 증명]**&#x200B;에 **[!UICONTROL OAuth 서버 간]** 자격 증명 카드입니다.
    ![aem assets와 adobe stock 통합](/help/assets/assets/adc-project-name.png)
-1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. 프로젝트의 [!DNL OAuth Server-to-Server] 자격 증명 세부 정보(예: **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]**, **[!UICONTROL 자격 증명 이름]**, **[!UICONTROL 기술 계정 ID]**, **[!UICONTROL 조직 ID]** - [AEM 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance))를 사용합니다.
+1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]**, **[!UICONTROL 자격 증명 이름]**, **[!UICONTROL 기술 계정 ID]**, **[!UICONTROL 조직 ID]**&#x200B;부터 [AEM 작성자 인스턴스에 구성을 추가](#add-configuration-in-the-aem-author-instance)까지 프로젝트의 이러한 [!DNL OAuth Server-to-Server] 자격 증명 세부 정보를 사용하십시오.
    ![aem assets 및 adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### [!DNL AEM] 작성자 인스턴스에 구성 추가 {#add-configuration-in-the-aem-author-instance}
@@ -163,6 +161,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
    * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adobe-stock-config-page.png)
+
 <!--
 old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
@@ -306,7 +305,8 @@ To configure the [!DNL Adobe Stock] cloud service:
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
 1. Click **[!UICONTROL Save & Close]**. 
- -->
+-->
+
 [!DNL Experience Manager Assets] 작성자 인스턴스가 이제 [!DNL Adobe Stock]과(와) 통합되었습니다. 여러 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성)을 만들 수 있습니다. 이제 [!DNL Experience Manager] 사용자 인터페이스 내에서 [!DNL Adobe Stock] 자산에 액세스하고, 검색하고, 라이선스를 부여할 수 있습니다.
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
@@ -340,7 +340,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 권한]**(으)로 이동합니다.
 
-1. 왼쪽 패널에서 사용자 그룹을 검색하고 Adobe Stock에 새 **[!UICONTROL ACE(액세스 제어 항목)]**&#x200B;을(를) 추가합니다.
+1. 왼쪽 패널에서 사용자 그룹을 검색하고 Adobe Stock에 새 **[!UICONTROL 액세스 제어 항목(ACE)]**&#x200B;을 추가합니다.
 
    * 경로 구성: `/conf/global/settings/stock`
    * 권한: `jcr:read`
@@ -472,7 +472,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!MORELIKETHIS]
 >
->* [자산 사용  [!DNL Adobe Stock] 에 대한 비디오 튜토리얼 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ko)
+>* [자산 사용  [!DNL Adobe Stock] 에 대한 비디오 튜토리얼 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/kr/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/kr/stock/faq.html)
 

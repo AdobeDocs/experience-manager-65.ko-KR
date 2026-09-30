@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
-ht-degree: 1%
-
+source-wordcount: '8519'
+ht-degree: 2%
 ---
-
 # Dynamic Media - 하이브리드 모드 구성 {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media - 하이브리드 추가 기능 패키지(AEM 6.5.23 이상)
@@ -629,7 +627,7 @@ Dynamic Media 구성(6.3 이전)을 구성하려면 이 작업을 ***전에***&#
 1. 다음 중 하나를 수행하여 패키지 설치를 확인하고 필요한 경우 디버그합니다.
 
    * **JCR을 통해 Video Analytics 사전 설정 확인**
-JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대한 액세스 권한이 있어야 합니다.
+     JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대한 액세스 권한이 있어야 합니다.
 
      Experience Manager - CRXDE Lite에서 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`(으)로 이동
 
@@ -640,7 +638,7 @@ JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대
    * **이미지 서버를 통해 Video Analytics 사전 설정을 확인**
 
      이미지 서버 req=userdata 요청을 하여 Video Analytics 사전 설정의 유효성을 직접 확인할 수 있습니다.
-예를 들어 작성자 노드에서 Analytics 사전 설정을 보려면 다음 요청을 수행할 수 있습니다.
+     예를 들어 작성자 노드에서 Analytics 사전 설정을 보려면 다음 요청을 수행할 수 있습니다.
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ JCR을 통해 Video Analytics 사전 설정을 확인하려면 CRXDE Lite에 대
      ```
 
    * **Experience Manager의 Video Reporting 도구를 통해 Video Analytics 사전 설정을 확인합니다.**
-**[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고]**(으)로 이동
+     **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 보고]**(으)로 이동
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -1001,248 +999,248 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
 
    **색상 수정 속성 표**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>유형</strong></td>
-   <td><strong>기본값</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ko">iccprofilergb</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 RGB 색상 프로필의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ko">iccprofilecmyk</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=ko">iccprofilegray</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>기본 회색 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=ko">iccprofilesrcrgb</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로파일의 이름</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=ko">iccprofilesrcmyk</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=ko">iccprofilescrgray</a></td>
-   <td>문자열</td>
-   <td>&lt;비어 있음&gt;</td>
-   <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=ko">iccblackpointcompensation</a></td>
-   <td>부울</td>
-   <td>참</td>
-   <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe에서는 이 설정이 켜져 있을 것을 권장합니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=ko">아이스디더</a></td>
-   <td>부울</td>
-   <td>거짓</td>
-   <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=ko">iccrenderintent</a></td>
-   <td>문자열</td>
-   <td>상대적</td>
-   <td><p>렌더링 의도를 지정합니다. 허용되는 값은 <strong>가시 범위, 상대, 채도, 절대입니다. </strong><i></i>Adobe에서는 기본적으로 <strong>상대 </strong><i></i>을(를) 권장합니다.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>속성</strong></td>
+      <td><strong>유형</strong></td>
+      <td><strong>기본값</strong></td>
+      <td><strong>설명</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ko">iccprofilergb</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 RGB 색상 프로필의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ko">iccprofilecmyk</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=ko">iccprofilegray</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>기본 회색 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=ko">iccprofilesrcrgb</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로파일의 이름</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=ko">iccprofilesrcmyk</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=ko">iccprofilescrgray</a></td>
+      <td>문자열</td>
+      <td>&lt;비어 있음&gt;</td>
+      <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=ko">iccblackpointcompensation</a></td>
+      <td>부울</td>
+      <td>참</td>
+      <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe에서는 이 설정이 켜져 있을 것을 권장합니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=ko">아이스디더</a></td>
+      <td>부울</td>
+      <td>거짓</td>
+      <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=ko">iccrenderintent</a></td>
+      <td>문자열</td>
+      <td>상대적</td>
+      <td><p>렌더링 의도를 지정합니다. 허용되는 값은 <strong>가시 범위, 상대, 채도, 절대입니다. </strong><i></i>Adobe에서는 기본적으로 <strong>상대 </strong><i></i>을(를) 권장합니다.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->속성 이름은 대/소문자를 구분하며 모두 소문자여야 합니다.
+   >[!NOTE]
+   >
+   >속성 이름은 대/소문자를 구분하며 모두 소문자여야 합니다.
 
-**색 프로필 표**
+   **색 프로필 표**
 
-다음 색상 프로파일이 설치됩니다.
+   다음 색상 프로파일이 설치됩니다.
 
-<table>
- <tbody>
-  <tr>
-   <th><p>이름</p> </th>
-   <th><p>색상 속도</p> </th>
-   <th><p>설명</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>애플RGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>코팅 FOGRA27(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>코팅 FOGRA39(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraaCol</td>
-   <td>CMYK</td>
-   <td>코팅 GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>색상 일치RGB</td>
-   <td>RGB</td>
-   <td>ColorMatch RGB</td>
-  </tr>
-  <tr>
-   <td>유럽 ISOC 기반</td>
-   <td>CMYK</td>
-   <td>유럽 ISO 코팅 FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>유로 스케일 코팅 v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>유로 스케일 코팅되지 않음 v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 코팅</td>
-  </tr>
-  <tr>
-   <td>일본 컬러 신문</td>
-   <td>CMYK</td>
-   <td>일본 색상 2002 신문</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 무코팅</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoating</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 웹 코팅</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>신문 인쇄2007</td>
-   <td>CMYK</td>
-   <td>미국 신문용지(SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC(1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 4 기본 CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 5 기본 CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoating</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoating</td>
-   <td>CMYK</td>
-   <td>미국 Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>코팅되지 않은 FOGRA29(ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>웹 코팅</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>웹 코팅 FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 3 용지</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>웹코팅 SWOP 2006 Grade 5 용지</td>
-  </tr>
-  <tr>
-   <td>웹 코팅되지 않음</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>광영역RGB</td>
-   <td>RGB</td>
-   <td>광영역 RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>이름</p> </th>
+      <th><p>색상 속도</p> </th>
+      <th><p>설명</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>애플RGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>코팅 FOGRA27(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>코팅 FOGRA39(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraaCol</td>
+      <td>CMYK</td>
+      <td>코팅 GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>색상 일치RGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+   </tr>
+   <tr>
+      <td>유럽 ISOC 기반</td>
+      <td>CMYK</td>
+      <td>유럽 ISO 코팅 FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>유로 스케일 코팅 v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>유로 스케일 코팅되지 않음 v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 코팅</td>
+   </tr>
+   <tr>
+      <td>일본 컬러 신문</td>
+      <td>CMYK</td>
+      <td>일본 색상 2002 신문</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 무코팅</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoating</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 웹 코팅</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>신문 인쇄2007</td>
+      <td>CMYK</td>
+      <td>미국 신문용지(SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC(1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 기본 CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 기본 CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoating</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoating</td>
+      <td>CMYK</td>
+      <td>미국 Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>코팅되지 않은 FOGRA29(ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>웹 코팅</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>웹 코팅 FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 용지</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>웹코팅 SWOP 2006 Grade 5 용지</td>
+   </tr>
+   <tr>
+      <td>웹 코팅되지 않음</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>광영역RGB</td>
+      <td>RGB</td>
+      <td>광영역 RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 

@@ -8,13 +8,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 9%
-
+source-wordcount: '763'
+ht-degree: 21%
 ---
-
 # 스크리블 서명을 사용하여 양식에 전자 서명 적용{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -33,13 +31,14 @@ ht-degree: 9%
 ## 서명 창에서 사용할 수 있는 다양한 옵션
 
 * **A:** 캔버스에 서명을 그리려면 **페인트 브러시** 아이콘을 클릭하세요.
-* **B:** 캔버스에서 서명을 지우려면 **지우기** 아이콘을 클릭하십시오.
-* **C:** **지리적 위치** 아이콘을 클릭하여 서명과 함께 지리적 위치를 추가하십시오.
-* **D:** 캔버스에 이름을 입력하려면 **키보드** 아이콘을 클릭하십시오.
+* **B:** 캔버스의 서명을 지우려면 **지우기** 아이콘을 클릭합니다.
+* **C:** 서명과 함께 지리적 위치를 추가하려면 **지리적 위치** 아이콘을 클릭합니다.
+* **D:** 키보드 **아이콘을 클릭하여 캔버스에 이름을 입력합니다.**
 
-스크리블 서명 창에서 완료![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하려면 현재 서명을 무시하고 위의 [페인트 브러쉬/키보드] 옵션을 사용하여 다시 서명해야 합니다.
+스크리블 서명 창에서 완료![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하고 싶은 경우, 현재 서명을 무시하고 위의 페인트 브러시/키보드 옵션을 사용하여 다시 서명해야 합니다.
 
 **구성** ![구성](assets/configure.png) 아이콘을 선택하여 스크리블 서명 캔버스의 종횡비를 설정할 수 있습니다.
+
 * 스크리블 서명 캔버스의 종횡비가 1보다 작은 경우 지리적 위치 정보가 스크리블 서명 캔버스의 맨 아래에 추가됩니다.
 
 * 스크리블 서명 캔버스의 종횡비가 1보다 큰 경우 지리적 위치 정보가 스크리블 서명 캔버스의 오른쪽에 추가됩니다.
@@ -50,7 +49,6 @@ ht-degree: 9%
 >[!NOTE]
 >
 >서명은 항상 PNG 형식으로 저장됩니다.
->
 
 ## 스크리블 서명을 사용하도록 적응형 양식 구성 {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -64,7 +62,7 @@ ht-degree: 9%
    >서명 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 차지합니다. 서명 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
    >
 
-1. 콘텐츠 브라우저에서 **양식 컨테이너**&#x200B;를 선택하고 **구성** ![구성](/help/forms/using/assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. **적응형 양식 컨테이너** > **전자 서명**(으)로 이동한 다음 **Adobe Sign 사용** 옵션의 선택을 해제합니다. 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하여 변경 사항을 저장합니다.
+1. 콘텐츠 브라우저에서 **양식 컨테이너**&#x200B;를 선택하고 **구성** ![구성](/help/forms/using/assets/configure.png) 아이콘을 선택합니다. 속성 브라우저를 열고 적응형 양식 컨테이너 속성을 표시합니다. **적응형 양식 컨테이너** > **전자 서명**(으)로 이동한 다음 **Adobe Sign 활성화** 옵션의 선택을 해제합니다. 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하여 변경 사항을 저장합니다.
 
    >[!NOTE]
    >
@@ -76,14 +74,14 @@ ht-degree: 9%
    * **요소 이름**: 구성 요소의 이름을 지정하십시오.
 
    * **제목:** 구성 요소의 고유한 제목을 지정합니다.
-   * **템플릿 메시지:** 서명 PDF을 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF을 준비하고 로드하는 데 시간이 소요됩니다.
+   * **템플릿 메시지:** 서명 PDF을 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF을 준비하고 로드하는 데 시간이 다소 소요됩니다.
    * **서명 서비스:** **스크리블 서명** 옵션을 선택하십시오.
 
    * **CSS 클래스**: 클라이언트 라이브러리의 CSS 클래스(있는 경우)를 지정합니다. CSS 클래스 대신 [테마](../../forms/using/themes.md) 및 [인라인 스타일](../../forms/using/inline-style-adaptive-forms.md)을(를) 사용하십시오.
 
    완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하여 변경 사항을 저장합니다. 서명이 구성되었습니다.
 
-   이제 양식을 채울 때 적응형 양식의 PDF 버전이 표시되고 PDF 문서에 서명할 수 있는 옵션이 제공됩니다. 자세한 내용은 [스크리블 서명을 사용하여 적응형 양식에 서명](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature)을 참조하세요.
+   이제 양식을 채울 때 PDF 버전의 적응형 양식이 표시되고 PDF 문서에 서명할 수 있는 옵션이 제공됩니다. 자세한 내용은 [스크리블 서명을 사용하여 적응형 양식에 서명](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature)을 참조하세요.
 
 ## 스크리블 서명을 사용하여 적응형 양식에 서명 {#sign-an-adaptive-form-using-scribble-signature}
 

@@ -8,13 +8,11 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 13%
-
 ---
-
 # 디지털 에셋의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
 | 버전 | 문서 링크 |
@@ -39,7 +37,7 @@ Scope of metadata articles:
 
 * 먼저 에셋을 만드는 기본 애플리케이션이 일부 메타데이터를 에셋에 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터를 PDF 파일에 추가하거나](https://helpx.adobe.com/kr/acrobat/using/pdf-properties-metadata.html) 카메라는 일부 기본 메타데이터를 사진에 추가합니다. 에셋을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 [Adobe Lightroom에서 IPTC 메타데이터를 추가](https://helpx.adobe.com/kr/lightroom-classic/help/metadata-basics-actions.html)할 수 있습니다.
 
-* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 태그 패널을 보는 방법을 참조하십시오.
+* 에셋을 [!DNL Experience Manager]에 업로드하기 전에 에셋을 만드는 데 사용되는 기본 응용 프로그램이나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 에셋을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어, [을(를)  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터로 작업하고 [!DNL Adobe Exchange]에서  [!DNL Adobe Bridge]&#x200B;[&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)에 대한 태그 패널을 보는 방법을 참조하십시오.
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 
@@ -154,7 +152,7 @@ Scope of metadata articles:
 
 1. 도구 모음에서 **[!UICONTROL 내보내기]**&#x200B;를 클릭합니다. 메타데이터 내보내기를 확인하는 메시지가 표시됩니다. 메시지를 닫습니다.
 
-1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. 메타데이터가 포함된 CSV 파일을 다운로드하려면 도구 모음에서 **[!UICONTROL CSV 다운로드]**&#x200B;를 클릭합니다. **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
+1. 내보내기 작업에 대한 받은 편지함 알림을 엽니다. Select the job and click **[!UICONTROL Open]** from the toolbar. 메타데이터가 포함된 CSV 파일을 다운로드하려면 도구 모음에서 **[!UICONTROL CSV 다운로드]**&#x200B;를 클릭합니다. **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
    ![일괄 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
 
@@ -182,7 +180,7 @@ TBD: Review this overview.
 
 이제 나중에 변경한 기존 메타데이터 프로필이 이미 있는 폴더에서 에셋을 재처리할 수 있습니다. 처리 프로필을 편집한 후 [폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
-You can apply a metadata profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply metadata profiles to folders both ways.
+You can apply a metadata profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. 이 섹션에서는 두 가지 방법으로 메타데이터 프로필을 폴더에 적용하는 방법을 설명합니다.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 

@@ -6,13 +6,11 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1920'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Launch]을(를) 사용하는 분석 {#analyticsusingadobelaunch}
 
 AEM Forms은 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ko)과(와) 통합되어 게시된 양식의 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목표는 비즈니스 사용자가 최종 사용자 동작에 대한 통찰력을 얻고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. 적응형 Forms용 Adobe Analytics을 통해 로그인한 사용자와 로그인하지 않은(익명의) 사용자의 행동을 포착하고 추적할 수 있습니다.
@@ -239,8 +237,8 @@ Adobe Launch 구성을 만들려면 다음 단계를 수행하십시오.
 적응형 양식에 대해 [!DNL Adobe Analytics]을(를) 사용하도록 설정한 후 AEM Forms과 [!DNL Adobe Analytics] 사이에 적절한 데이터 이벤트 흐름이 있으면 [유효성 검사](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ko#validate-the-page-view-beacon)할 수 있습니다. AEM Forms과 Adobe Analytics 통합이 완료되었습니다. 이제 [Adobe Analytics에서 보고서를 구성하고 볼 수 있습니다](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >[Cloud Service 프레임워크를 사용하는 분석](/help/forms/using/configure-analytics-forms-documents.md)과(와) **Adobe Launch를 사용하는 분석** 기능을 동시에 사용하도록 설정한 경우 **Adobe Launch를 사용하는 분석**&#x200B;이 우선합니다.
-> 
 
 ### 사용자 지정 이벤트 캡처를 위한 규칙 만들기(선택 사항) {#capture-custom-events}
 

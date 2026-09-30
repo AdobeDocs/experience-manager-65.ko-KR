@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 13%
-
 ---
-
 # 적응형 양식에서 CAPTCHA 사용{#using-captcha-in-adaptive-forms}
 
 | 버전 | 문서 링크 |
@@ -238,7 +236,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
 
 >[!NOTE]
 >
-> * 크기가 **[!UICONTROL 보이지 않음]** 또는 reCAPTCHA Enterprise 점수 기반 키인 reCAPTCHA v2 구성을 선택하는 경우 표시/숨기기 옵션을 적용할 수 없습니다.
+>* 크기가 **[!UICONTROL 보이지 않음]** 또는 reCAPTCHA Enterprise 점수 기반 키인 reCAPTCHA v2 구성을 선택하는 경우 표시/숨기기 옵션을 적용할 수 없습니다.
 
 ### CAPTCHA 유효성 검사 {#validate-captcha}
 

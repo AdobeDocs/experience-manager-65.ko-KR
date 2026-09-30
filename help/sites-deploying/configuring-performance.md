@@ -1,21 +1,23 @@
 ---
 title: 성능 최적화
+
 description: 성능을 최적화하기 위해 AEM의 특정 측면을 구성하는 방법에 대해 알아봅니다.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '6649'
 ht-degree: 14%
-
 ---
-
 # 성능 최적화 {#performance-optimization}
 
 >[!NOTE]
@@ -547,9 +549,9 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 #### URL로 사용자 정의 {#customize-by-url}
 
-사용자가 글꼴 크기(또는 기타 레이아웃 사용자 정의)를 변경할 수 있도록 허용하는 경우 다른 사용자 정의가 URL에 반영되었는지 확인합니다.
+사용자가 글꼴 크기(또는 기타 레이아웃 사용자 정의)를 변경할 수 있도록 허용하는 경우 다른 사용자 정의가 URL에 반영되는지 확인합니다.
 
-예를 들어 쿠키는 캐시되지 않으므로 글꼴 크기를 쿠키(또는 유사한 메커니즘)에 저장하면 캐시된 페이지에 대해 글꼴 크기가 유지되지 않습니다. 따라서 Dispatcher는 임의의 글꼴 크기 문서를 무작위로 반환합니다.
+예를 들어 쿠키는 캐시되지 않으므로 글꼴 크기를 쿠키(또는 유사한 메커니즘)에 저장하면 캐시된 페이지에 대해 글꼴 크기가 유지되지 않습니다. 따라서 Dispatcher는 어떤 글꼴 크기의 문서든 무작위로 반환합니다.
 
 URL에 글꼴 크기를 선택기로 포함하면 이 문제를 피할 수 있습니다.
 
@@ -584,7 +586,7 @@ www.myCompany.com/news/main.large.html
 
 #### 탐색에 사용된 이미지 파일 무효화 {#invalidating-image-files-used-for-navigation}
 
-탐색 항목에 사진을 사용하는 경우 메서드는 기본적으로 제목과 동일하지만 약간 더 복잡합니다. 대상 페이지와 함께 모든 탐색 이미지를 저장합니다. 일반 및 활성에 대해 두 개의 사진을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
+탐색 항목에 사진을 사용하는 경우 메서드는 기본적으로 제목과 동일하지만 약간 더 복잡합니다. 대상 페이지와 함께 모든 탐색 이미지를 저장합니다. 일반 상태와 활성 상태에 사용할 두 개의 사진을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
 
 * 페이지를 정상적으로 표시하는 스크립트.
 * “.normal” 요청을 처리하고 일반 사진을 반환하는 스크립트.

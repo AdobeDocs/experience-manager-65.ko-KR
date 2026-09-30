@@ -10,7 +10,7 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 79%
@@ -656,82 +656,82 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
 1. 다음 테이블에 설명된 대로 Target 구성 요소 설정을 구성합니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>옵션</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><strong>위치</strong></td>
-   <td><p>위치는 해당 오퍼를 배치할 페이지에서 타깃팅된 컨텐츠 위치에 이름을 지정하고 오퍼를 장소(위치 또는 구성 요소)와 연결하는 문자열입니다.</p> <p>이 필드는 일반 값입니다.</p> <p>오퍼를 구성 요소에 넣으면 오퍼는 위치 ID를 기억합니다. 페이지가 실행되면 엔진은 사용자의 세그먼트를 평가하고 이를 기반으로 하여 표시해야 하는 활성 캠페인의 경험을 해결합니다. 그런 다음, 페이지에서 위치 ID를 확인하고 해당 위치 ID를 사용하는 오퍼를 위치 ID에 대응시킵니다.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>엔진</strong></td>
-   <td>원하는 엔진에 따라 <strong>클라이언트 측 규칙(추적 없음), Adobe Target, ContextHub</strong> 및 <strong>Adobe Campaign</strong> 중에 선택하십시오.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>옵션</strong></td>
+      <td><strong>설명</strong></td>
+   </tr>
+   <tr>
+      <td><strong>위치</strong></td>
+      <td><p>위치는 해당 오퍼를 배치할 페이지에서 타깃팅된 컨텐츠 위치에 이름을 지정하고 오퍼를 장소(위치 또는 구성 요소)와 연결하는 문자열입니다.</p> <p>이 필드는 일반 값입니다.</p> <p>오퍼를 구성 요소에 넣으면 오퍼는 위치 ID를 기억합니다. 페이지가 실행되면 엔진은 사용자의 세그먼트를 평가하고 이를 기반으로 하여 표시해야 하는 활성 캠페인의 경험을 해결합니다. 그런 다음, 페이지에서 위치 ID를 확인하고 해당 위치 ID를 사용하는 오퍼를 위치 ID에 대응시킵니다.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>엔진</strong></td>
+      <td>원하는 엔진에 따라 <strong>클라이언트 측 규칙(추적 없음), Adobe Target, ContextHub</strong> 및 <strong>Adobe Campaign</strong> 중에 선택하십시오.</td>
+   </tr>
+   </tbody>
+   </table>
 
-Adobe Target을 엔진으로 선택하는 경우:
+   Adobe Target을 엔진으로 선택하는 경우:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>옵션</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><strong>정확한 타겟 지정</strong></td>
-   <td><p>정확한 타겟 지정을 사용하면 구성 요소는 요청을 Adobe Target에 전송하기 전에 Client Context 또는 Context Hub 데이터를 사용할 수 있게 될 때까지 기다리게 됩니다. 이것으로 로드 시간이 늘어날 수 있습니다. 작성을 위해 항상 정확한 타겟 지정이 활성화되어 있습니다.</p> <p><strong>정확한 타겟 지정</strong> 확인란을 선택하는 경우 mbox에서는 먼저 <code>mboxDefine</code>을 수행하고 나중에 <code>mboxUpdate</code>를 수행하므로 데이터를 사용할 수 있게 되면 Ajax 요청이 발생합니다.</p> <p><strong>정확한 타겟 지정</strong> 확인란을 선택하지 않는 경우에는 mbox가 <code>mboxCreate</code>을 수행하므로 즉시 동기 요청이 발생합니다(이 경우, 일부 컨텍스트 데이터를 사용하지 못할 수도 있습니다.).</p> <p><strong>참고:</strong> 특정 구성 요소에 대해 정확한 타겟 지정을 활성화 또는 비활성화하는 것은 전역 설정에는 영향을 주지 않습니다. 구성 요소에서 정확한 타겟 지정을 선택하여 전역 설정을 항상 무시할 수 있습니다.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>해결된 세그먼트 포함</strong></td>
-   <td><p>이 확인란을 선택하면 mbox 호출에 있는 모든 해결된 세그먼트와 페이지 및 프레임워크에 구성된 모든 매개변수가 포함됩니다.</p> <p>이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 옵션을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>상속된 컨텍스트 매개변수</strong></td>
-   <td>선택된 페이지와 연결된 경우 Adobe Target 프레임워크에서 상속된 컨텍스트 매개변수를 나열합니다.</td>
-  </tr>
-  <tr>
-   <td><strong>컨텍스트 매개변수</strong></td>
-   <td>추가 컨텍스트 매개 변수(Target 프레임워크에서 사용할 수 있는 것과 동일함)를 구성하려면 <strong>필드 추가</strong>를 클릭하십시오. 구성 요소에 추가된 컨텍스트 매개 변수는 프레임워크에 컨텍스트 매개 변수를 직접 추가한 경우처럼 해당 구성 요소에<i>만</i> 적용되고 다른 구성 요소에는 적용되지 않습니다.</td>
-  </tr>
-  <tr>
-   <td><strong>정적 매개 변수</strong></td>
-   <td>추가 정적 매개 변수(Target 프레임워크에서 사용할 수 있는 것과 동일함)를 구성하려면 <strong>필드 추가</strong>를 클릭하십시오. 구성 요소에 추가된 정적 매개 변수는 프레임워크에 정적 매개 변수를 직접 추가한 경우 그러하듯이 해당 구성 요소에<i>만</i> 적용되고 다른 구성 요소에는 적용되지 않습니다. 정적 매개 변수는 컨텍스트(컨텐츠 허브의 Client Context)에서 가져오지 않습니다.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>옵션</strong></td>
+      <td><strong>설명</strong></td>
+   </tr>
+   <tr>
+      <td><strong>정확한 타겟 지정</strong></td>
+      <td><p>정확한 타겟 지정을 사용하면 구성 요소는 요청을 Adobe Target에 전송하기 전에 Client Context 또는 Context Hub 데이터를 사용할 수 있게 될 때까지 기다리게 됩니다. 이것으로 로드 시간이 늘어날 수 있습니다. 작성을 위해 항상 정확한 타겟 지정이 활성화되어 있습니다.</p> <p><strong>정확한 타겟 지정</strong> 확인란을 선택하는 경우 mbox에서는 먼저 <code>mboxDefine</code>을 수행하고 나중에 <code>mboxUpdate</code>를 수행하므로 데이터를 사용할 수 있게 되면 Ajax 요청이 발생합니다.</p> <p><strong>정확한 타겟 지정</strong> 확인란을 선택하지 않는 경우에는 mbox가 <code>mboxCreate</code>을 수행하므로 즉시 동기 요청이 발생합니다(이 경우, 일부 컨텍스트 데이터를 사용하지 못할 수도 있습니다.).</p> <p><strong>참고:</strong> 특정 구성 요소에 대해 정확한 타겟 지정을 활성화 또는 비활성화하는 것은 전역 설정에는 영향을 주지 않습니다. 구성 요소에서 정확한 타겟 지정을 선택하여 전역 설정을 항상 무시할 수 있습니다.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>해결된 세그먼트 포함</strong></td>
+      <td><p>이 확인란을 선택하면 mbox 호출에 있는 모든 해결된 세그먼트와 페이지 및 프레임워크에 구성된 모든 매개변수가 포함됩니다.</p> <p>이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 옵션을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>상속된 컨텍스트 매개변수</strong></td>
+      <td>선택된 페이지와 연결된 경우 Adobe Target 프레임워크에서 상속된 컨텍스트 매개변수를 나열합니다.</td>
+   </tr>
+   <tr>
+      <td><strong>컨텍스트 매개변수</strong></td>
+      <td>추가 컨텍스트 매개 변수(Target 프레임워크에서 사용할 수 있는 것과 동일함)를 구성하려면 <strong>필드 추가</strong>를 클릭하십시오. 구성 요소에 추가된 컨텍스트 매개 변수는 프레임워크에 컨텍스트 매개 변수를 직접 추가한 경우처럼 해당 구성 요소에<i>만</i> 적용되고 다른 구성 요소에는 적용되지 않습니다.</td>
+   </tr>
+   <tr>
+      <td><strong>정적 매개 변수</strong></td>
+      <td>추가 정적 매개 변수(Target 프레임워크에서 사용할 수 있는 것과 동일함)를 구성하려면 <strong>필드 추가</strong>를 클릭하십시오. 구성 요소에 추가된 정적 매개 변수는 프레임워크에 정적 매개 변수를 직접 추가한 경우 그러하듯이 해당 구성 요소에<i>만</i> 적용되고 다른 구성 요소에는 적용되지 않습니다. 정적 매개 변수는 컨텍스트(컨텐츠 허브의 Client Context)에서 가져오지 않습니다.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
+   >[!NOTE]
+   >
+   >구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
 
-Client Context(클라이언트측)를 엔진으로 선택하는 경우:
+   Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>옵션</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><strong>클라이언트측 옵션 - 전략</strong></td>
-   <td><p>다음 중 하나를 선택하십시오.</p>
-    <ul>
-     <li><strong>처음</strong>: 캠페인에 정렬된 대로 목록에서 가장 높은 경험입니다.</li>
-     <li><strong>임의</strong>: 임의의 경험이 사용됩니다.</li>
-     <li><strong>Clickstream 점수</strong>: Client Context에서 추적된 태그 및 관련 태그 조회수가 사용됩니다. 티저 페이지에 정의된 태그의 조회수가 비교됩니다.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>옵션</strong></td>
+      <td><strong>설명</strong></td>
+   </tr>
+   <tr>
+      <td><strong>클라이언트측 옵션 - 전략</strong></td>
+      <td><p>다음 중 하나를 선택하십시오.</p>
+      <ul>
+      <li><strong>처음</strong>: 캠페인에 정렬된 대로 목록에서 가장 높은 경험입니다.</li>
+      <li><strong>임의</strong>: 임의의 경험이 사용됩니다.</li>
+      <li><strong>Clickstream 점수</strong>: Client Context에서 추적된 태그 및 관련 태그 조회수가 사용됩니다. 티저 페이지에 정의된 태그의 조회수가 비교됩니다.</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
-AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [AEM과 Adobe Campaign 통합](/help/sites-administering/campaign.md)을 참조하십시오.
+   AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [AEM과 Adobe Campaign 통합](/help/sites-administering/campaign.md)을 참조하십시오.
 
-타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. [ContextHub 구성](/help/sites-developing/ch-configuring.md)을 참조하십시오.
+   타겟팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. [ContextHub 구성](/help/sites-developing/ch-configuring.md)을 참조하십시오.
