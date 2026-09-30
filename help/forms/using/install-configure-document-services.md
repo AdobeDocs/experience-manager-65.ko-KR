@@ -6,13 +6,11 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '10688'
-ht-degree: 3%
-
+source-wordcount: '10825'
+ht-degree: 2%
 ---
-
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
 AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSGi 서비스를 제공합니다. 예를 들어 PDF 문서를 생성, 조합, 배포 및 보관하고, 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고, 바코드 Forms을 디코딩하는 서비스를 들 수 있습니다. 이러한 서비스는 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 이러한 서비스를 통칭하여 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
@@ -37,9 +35,9 @@ AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSG
 
 * **서명 서비스:** AEM 서버에서 디지털 서명과 문서를 사용하여 작업할 수 있습니다. 예를 들어 서명 서비스는 일반적으로 다음과 같은 경우에 사용됩니다.
 
-   * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 사용자에게 열도록 전송되기 전에 양식을 인증합니다.
-   * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 양식에 추가된 서명을 확인합니다.
-   * AEM 서버가 공증인을 대신하여 양식에 서명합니다.
+  * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 사용자에게 열도록 전송되기 전에 양식을 인증합니다.
+  * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 양식에 추가된 서명을 확인합니다.
+  * AEM 서버가 공증인을 대신하여 양식에 서명합니다.
 
   서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스](/help/forms/using/aem-document-services-programmatically.md)를 참조하세요.
 
@@ -64,18 +62,18 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 * AEM 인스턴스의 설치 경로에 공백이 포함되어 있지 않습니다.
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드의 서버에서 실행되는 AEM의 사본입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 AEM 인스턴스(작성자 또는 게시)가 하나만 필요합니다.
 
-   * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **게시**: 인터넷 또는 내부 네트워크를 통해 일반에게 게시된 콘텐츠를 제공하는 AEM 인스턴스입니다.
+  * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
+  * **게시**: 인터넷 또는 내부 네트워크를 통해 일반에게 게시된 콘텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족됩니다. AEM Forms 추가 기능 패키지를 사용하려면 다음 작업을 수행해야 합니다.
 
-   * ® Windows 기반 설치용 15GB의 임시 공간.
-   * UNIX 기반 설치의 경우 6GB의 임시 공간이 필요합니다.
+  * ® Windows 기반 설치용 15GB의 임시 공간.
+  * UNIX 기반 설치의 경우 6GB의 임시 공간이 필요합니다.
 
 * PDF Generator가 Microsoft® Windows 및 Linux®에서 변환을 수행하는 데 필요한 클라이언트 소프트웨어가 설치되어 있습니다.
 
-   * **® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 또는 [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 설치
-   * **Linux®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 설치
+  * **® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 또는 [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 설치
+  * **Linux®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 설치
 
 >[!NOTE]
 >
@@ -165,26 +163,30 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
 
 * **(PDF Generator 전용**) 32비트 버전의 libcurl, libcrypto 및 libssl 라이브러리를 설치하고 아래 symlink를 만듭니다. 심볼릭 링크는 해당 라이브러리의 최신 버전을 가리킵니다.
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **(PDF Generator 전용)** PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하기 위한 WebKit 및 WebToPDF 경로를 지원합니다. WebToPDF 경로에 대한 변환을 활성화하려면 아래에 나열된 64비트 라이브러리를 설치하십시오. 일반적으로 이러한 라이브러리는 이미 설치되어 있습니다. 라이브러리가 누락된 경우 수동으로 설치합니다.
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * 라이브러리.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * 라이브러리.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 * (PDF Generator만 해당) RHEL 8 또는 RHEL 9, SLES15 설정에서 WebKit 경로를 활성화하려면 기본적으로 32비트 `nspr` 라이브러리를 사용하지 못할 수 있습니다. 없는 경우 설치하십시오.
+
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 * (PDF Generator만 해당) Unix® 서버에서 WebToPDF 변환이 실패하고 다음 오류가 발생하는 경우:
 
@@ -212,7 +214,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 ® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 ### Adobe Acrobat Pro DC 설치 {#install-adobe-acrobat-pro-dc}
 
@@ -909,7 +911,7 @@ FLL(Feature Restricted Licensing)을 활성화하고 Acrobat 활성화를 확인
 >
 >AEM Forms PDF Generator과 같은 서버측 자동화 시나리오에는 보호 모드 비활성화가 필요합니다. 이 설정은 최종 사용자 데스크톱이 아닌 전용 서버 환경에서만 변경해야 합니다.
 
-자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/kr/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
+자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
 
 
 
@@ -1092,10 +1094,10 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -1405,13 +1407,13 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 * PDF 구성 UI에 PDF Generator 사용자가 추가되었는지 확인합니다.
 * PDF Generator 사용자가 관리자 그룹의 구성원인지, 그리고 사용자에 대해 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 권한이 설정되어 있는지 확인하십시오.
 * 사용자가 PDF Generator UI에서 구성되어 있고 다음 작업을 수행하는지 확인합니다.
-   1. PDF Generator 사용자로 Microsoft® Windows에 로그인합니다.
-   1. ® Office 또는 OpenOffice 애플리케이션을 열고 모든 대화 상자를 취소합니다.
-   1. AdobePDF를 기본 프린터로 설정합니다.
-   1. Acrobat을 PDF 파일의 기본 프로그램으로 설정합니다.
-   1. Microsoft Office 애플리케이션에서 파일 > 인쇄 및 Acrobat 리본 옵션을 사용하여 수동 변환을 수행하고 모든 대화 상자를 취소합니다.
-   1. winword.exe, powerpoint.exe 및 excel.exe와 같은 변환과 관련된 모든 프로세스를 종료합니다.
-   1. AEM Forms 서버를 다시 시작합니다.
+  1. PDF Generator 사용자로 Microsoft® Windows에 로그인합니다.
+  1. ® Office 또는 OpenOffice 애플리케이션을 열고 모든 대화 상자를 취소합니다.
+  1. AdobePDF를 기본 프린터로 설정합니다.
+  1. Acrobat을 PDF 파일의 기본 프로그램으로 설정합니다.
+  1. Microsoft Office 애플리케이션에서 파일 > 인쇄 및 Acrobat 리본 옵션을 사용하여 수동 변환을 수행하고 모든 대화 상자를 취소합니다.
+  1. winword.exe, powerpoint.exe 및 excel.exe와 같은 변환과 관련된 모든 프로세스를 종료합니다.
+  1. AEM Forms 서버를 다시 시작합니다.
 
 **Linux®**
 
@@ -1419,6 +1421,10 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 환경 변수 `OpenOffice_PATH`을(를) 만들어 [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필에 설정된 OpenOffice 설치를 가리키도록 설정합니다.
 * OpenOffice를 설치하는 데 문제가 있는 경우 OpenOffice 설치에 필요한 [32비트 라이브러리](#extrarequirements)를 사용할 수 있는지 확인하십시오.
+
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1451,29 +1457,29 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 * 최신 버전의 32비트 lib curl, libcrypto 및 libssl 라이브러리가 시스템에 설치되어 있는지 확인합니다. 각 라이브러리의 최신 버전(32비트)을 가리키는 symlink `/usr/lib/libcurl.so`(또는 AIX®용 libcurl.a), `/usr/lib/libcrypto.so`(또는 AIX®용 libcrypto.a) 및 `/usr/lib/libssl.so`(또는 AIX®용 libssl.a)도 만듭니다.
 
 * ® SSL 소켓 공급자에 대해 다음 단계를 수행합니다.
-   1. `<WAS_Installed_JAVA>\jre\lib\security`의 java.security 파일을 AEM Forms 서버의 모든 위치에 복사합니다. 기본 위치는 `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`입니다.
+  1. `<WAS_Installed_JAVA>\jre\lib\security`의 java.security 파일을 AEM Forms 서버의 모든 위치에 복사합니다. 기본 위치는 `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`입니다.
 
-   1. 복사된 위치에서 java.security 파일을 편집하고 기본 SSL 소켓 팩터리를 JSSE2 팩터리로 변경합니다(WebSphere® 대신 JSSE2 팩터리를 사용).
+  1. 복사된 위치에서 java.security 파일을 편집하고 기본 SSL 소켓 팩터리를 JSSE2 팩터리로 변경합니다(WebSphere® 대신 JSSE2 팩터리를 사용).
 
-      다음 기본 JSSE 소켓 팩토리를 변경합니다.
+     다음 기본 JSSE 소켓 팩토리를 변경합니다.
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      다음:
+     다음:
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 

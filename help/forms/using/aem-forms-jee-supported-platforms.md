@@ -9,13 +9,11 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '4096'
+source-wordcount: '4259'
 ht-degree: 3%
-
 ---
-
 
 
 # JEE에서 AEM Forms에 대해 지원되는 플랫폼 {#supported-platforms-for-aem-forms-on-jee}
@@ -26,9 +24,9 @@ ht-degree: 3%
 
 <div class="preview">
 
-Adobe은 패치 설치 프로그램과 함께 JEE에 AEM 6.5.23.0 Forms 서비스 팩 23(6.5.23.0)이 포함된 [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
+Adobe은 패치 설치 프로그램과 함께 JEE에 AEM 6.5.23.0 Forms 서비스 팩 23(6.5.23.0)이 포함된 [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
 
-새로 설치하거나 JEE의 AEM 6.5.23.0 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2023년 8월 31일에 릴리스된 AEM 6.5.18 Forms 설치 프로그램이나 2019년 4월 08일에 릴리스된 AEM 6.5.12 Adobe 설치 프로그램 대신 2025년 6월 06일에 릴리스된 [JEE의 AEM 6.5.23.0 Forms 전체 설치 프로그램](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을 사용하는 것이 좋습니다.
+새로 설치하거나 JEE의 AEM 6.5.23.0 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2023년 8월 31일에 릴리스된 AEM 6.5.18 Forms 설치 프로그램이나 2019년 4월 08일에 릴리스된 AEM 6.5.12 Adobe 설치 프로그램 대신 2025년 6월 06일에 릴리스된 [JEE의 AEM 6.5.23.0 Forms 전체 설치 프로그램](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을 사용하는 것이 좋습니다.
 
 
 </div>
@@ -107,7 +105,8 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 >[!NOTE]
 >
 >AEM Forms 고객이 소유 비용을 절감하고, 배포 아키텍처를 단순화하고, 개발 스택을 현대화할 수 있도록 Adobe Experience Manager 엔터프라이즈 플랫폼은 독립형 OSGi 기반 배포를 위해 애플리케이션 서버 기반 배포에서 탈피하고 있습니다. Adobe은 인프라 구성 요소 매트릭스가 축소된 AEM Forms JEE 스택을 계속 지원합니다.
-><br>>6.5 릴리스에서는 다음과 같이 Adobe 고객 중 사용률이 가장 낮은 인프라 구성 요소가 더 이상 지원되지 않습니다.
+><br>
+>6.5 릴리스에서는 다음과 같이 Adobe 고객 중 사용률이 가장 낮은 인프라 구성 요소가 더 이상 지원되지 않습니다.
 >
 > - ® DB2® 데이터베이스
 > - ® AIX® 및 Sun Solaris™ 운영 체제
@@ -383,6 +382,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 (2.17 이상)
 > - OpenSSL 3(OS의 기본 위치에 필요).
+> - Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오. `sudo dnf install -y libxcrypt-compat.i686`.
 
 OpenSSL 3 설치의 경우: 라이브러리 libcrypto.so.3 및 libssl.so.3은 LD_LIBRARY_PATH 환경 변수로 표시되는 기본 라이브러리 경로에서 사용할 수 있어야 합니다. 비표준 위치에 설치된 경우 서버를 시작하기 전에 이 경로가 LD_LIBRARY_PATH에 추가되었는지 확인하십시오.
 
@@ -518,7 +518,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>(연속 트랙, 최신 버전)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>(연속 트랙, 최신 버전)</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML 및 HTM</td>
   </tr>
 
@@ -604,8 +604,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-- [JEE의 단일 서버 AEM Forms 배포에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_kr)
-- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_kr)
+- [JEE의 단일 서버 AEM Forms 배포에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 
 ### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
@@ -619,7 +619,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
  </tr>
  <tr>
   <td>Adobe Acrobat Pro DC (Continuous track, 최신 버전)</td>
-  <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 및 Reader 릴리스 노트</a><br />에 설명된 최신 버전 </td>
+  <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 및 Reader 릴리스 노트</a><br />에 설명된 최신 버전 </td>
  </tr>
  </tbody>
 </table>
@@ -778,7 +778,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 ### ® Office용 Adobe 문서 보안 확장 {#adobe-rights-management-extension-for-microsoft-office}
 
 
-® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/kr/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
+® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
 
 
 ### 클라이언트 지원에 대한 예외 {#exceptions-to-client-support}
@@ -790,7 +790,7 @@ AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부
 ## 타사 패치 지원 정책 {#third-party-patch-support-policy}
 
 
-AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65_kr](https://adobe.com/go/learn_aemforms_documentation_65_kr)에서 모든 설명서에 액세스합니다.
+AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)에서 모든 설명서에 액세스합니다.
 
 
 JEE의 서드파티 참조 플랫폼인 AEM Forms은 JEE의 AEM Forms을 개발 및 릴리스하는 동안 현재 존재하는 서드파티 인프라의 특정 패치 수준과 JEE의 해당 버전의 AEM Forms에서 지원하는 인프라의 최소 패치/서비스 팩 수준을 설명합니다.
@@ -821,7 +821,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -892,7 +892,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
