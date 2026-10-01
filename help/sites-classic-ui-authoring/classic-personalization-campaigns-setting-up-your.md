@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2219'
 ht-degree: 1%
-
 ---
-
 # 캠페인 설정{#setting-up-your-campaign}
 
 새 캠페인 설정에는 다음(일반) 단계가 포함됩니다.
@@ -30,22 +28,22 @@ ht-degree: 1%
 
 * 티저를 만드는 경우:
 
-   1. [티저 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [티저에 콘텐츠 추가](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
+  1. [티저 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [티저에 콘텐츠 추가](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
 
 * 뉴스레터를 만드는 경우:
 
-   1. [뉴스레터 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
+  1. [뉴스레터 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
 
 * Adobe Target(이전 Test&amp;Target) 오퍼를 만드는 경우:
 
-   1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -90,13 +88,13 @@ ht-degree: 1%
 * **우선 순위:** 다른 캠페인과 관련된 이 캠페인의 우선 순위입니다. 여러 캠페인이 동시에 켜진 경우 우선순위가 가장 높은 캠페인이 방문자 경험을 제어합니다.
 * **설정 및 해제 시간:** 이러한 속성은 캠페인이 방문자 경험을 제어하는 기간을 제어합니다. 설정 시간 속성은 캠페인이 경험을 제어하기 시작하는 시간을 제어합니다. 해제 시간 속성은 캠페인이 경험 제어를 중지할 시기를 제어합니다.
 * **이미지:** AEM의 캠페인을 나타내는 이미지입니다.
-* **Cloud Services:** 캠페인이 통합된 Cloud Service 구성입니다. [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md)을 참조하세요.
+* **클라우드 서비스:** 캠페인이 통합된 Cloud Service 구성입니다. [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md)을 참조하세요.
 
 * Adobe Target과 통합된 캠페인을 구성하는 **Adobe Target:** 속성입니다. [Adobe Target과 통합](/help/sites-administering/target.md)을 참조하세요.
 
 1. **캠페인**&#x200B;에서 브랜드를 선택하세요. 오른쪽 창에서 캠페인을 선택하고 **속성**&#x200B;을 클릭합니다.
 
-   **제목**, **설명** 및 원하는 **Cloud Service** 등 다양한 속성을 입력할 수 있습니다.
+   **제목**, **설명** 및 원하는 **클라우드 서비스**&#x200B;를 포함하여 다양한 속성을 입력할 수 있습니다.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -122,19 +120,19 @@ ht-degree: 1%
 
 * [티저](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [티저 페이지를 방문자 세그먼트에 연결합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
+  * [티저 페이지를 방문자 세그먼트에 연결합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
 
 * [뉴스레터](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
-   * [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
+  * [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Adobe Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Adobe Target과 통합](/help/sites-administering/target.md)
+  * [Adobe Target과 통합](/help/sites-administering/target.md)
 
 ### 새 터치포인트 추가 {#adding-a-new-touchpoint}
 
@@ -152,7 +150,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe은 이 기능을 더 강화하지 않을 계획입니다 (리드 관리).
+>Adobe은 이 기능(리드 관리)을 더 강화하지 않을 계획입니다.
 >권장 사항은 [Adobe Campaign 및 AEM에 통합](/help/sites-administering/campaign.md)을 사용하는 것입니다.
 
 AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 쉼표로 구분된 목록을 가져와서 리드를 구성하고 추가할 수 있습니다. 리드를 생성하는 추가 방법은 뉴스레터 등록 또는 커뮤니티 등록에서 찾을 수 있습니다(구성된 경우, 리드를 채우는 워크플로우를 트리거할 수 있음).
@@ -200,7 +198,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   AEM 페이지와 마찬가지로 게시 상태는 **게시됨** 열에 표시됩니다.
+   AEM 페이지와 마찬가지로 게시 상태가 **게시됨** 열에 표시됩니다.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -254,7 +252,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. **도구** 메뉴에서 **목록에 추가를 선택합니다....** **목록에 추가** 창이 열립니다.
+1. **도구** 메뉴에서 **목록에 추가....**&#x200B;를 선택합니다. **목록에 추가** 창이 열립니다.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -385,7 +383,7 @@ MCM에서 기존 잠재 고객을 삭제하려면 잠재 고객 옆에 있는 �
 
 1. 멤버를 보려는 목록 옆에 있는 확인란을 선택합니다.
 
-1. **도구** 메뉴에서 **리드 표시**&#x200B;를 선택합니다. AEM은 해당 목록의 멤버인 가망 고객을 표시합니다. 목록을 검색하거나 구성원을 검색할 수 있습니다.
+1. **도구** 메뉴에서 **리드 표시**&#x200B;를 선택합니다. AEM은 해당 목록의 멤버인 잠재 고객을 표시합니다. 목록을 검색하거나 구성원을 검색할 수 있습니다.
 
    >[!NOTE]
    >

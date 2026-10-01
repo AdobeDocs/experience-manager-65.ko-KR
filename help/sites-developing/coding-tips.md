@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 코딩 팁{#coding-tips}
 
 ## 가능한 한 taglibs 또는 HTL 사용 {#use-taglibs-or-htl-as-much-as-possible}
@@ -55,7 +53,7 @@ AEM 코드 베이스에서는 다음 규칙이 사용됩니다.
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//태그 지정된 이미지 가져오기<br /> 공용 목록 getItems() {}</p> </td>
+   <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
    <td><p>공용 목록 getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
@@ -75,7 +73,7 @@ API가 더 이상 사용되지 않는 경우, 더 이상 사용되지 않는 API
 
 ### 지역화 가능 코드 작성 {#write-localizable-code}
 
-작성자가 제공하지 않는 모든 문자열은 AEM의 i18n 사전 호출에서 JSP/Java의 *I18n.get()* 및 JavaScript의 *CQ.I18n.get()*&#x200B;을 통해 래핑해야 합니다. 이 구현은 구현을 찾을 수 없는 경우 전달된 문자열을 반환하므로 기본 언어로 기능을 구현한 후 현지화를 유연하게 구현할 수 있습니다.
+작성자가 제공하지 않는 모든 문자열은 JSP/Java의 *I18n.get()* 및 JavaScript의 *CQ.I18n.get()*&#x200B;을 통해 AEM의 i18n 사전 호출에 래핑되어야 합니다. 이 구현은 구현을 찾을 수 없는 경우 전달된 문자열을 반환하므로 기본 언어로 기능을 구현한 후 현지화를 유연하게 구현할 수 있습니다.
 
 ### 안전을 위해 리소스 경로 이스케이프 처리 {#escape-resource-paths-for-safety}
 
@@ -83,7 +81,7 @@ JCR의 경로에는 공백이 없어야 하지만 공백이 있으면 코드가 
 
 ### XSS API 및/또는 HTL을 사용하여 크로스 사이트 스크립팅 공격으로부터 보호 {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM은 손쉽게 매개 변수를 정리하고 교차 사이트 스크립팅 공격으로부터 안전을 보장하기 위한 XSS API를 제공합니다. 또한 HTL은 템플릿 언어에 바로 내장된 이러한 보호 기능을 제공합니다. API 치트 시트는 [개발 - 지침 및 모범 사례](/help/sites-developing/dev-guidelines-bestpractices.md)에서 다운로드할 수 있습니다.
+AEM은 쉽게 매개 변수를 정리하고 교차 사이트 스크립팅 공격으로부터 안전을 보장하기 위한 XSS API를 제공합니다. 또한 HTL은 템플릿 언어에 바로 내장된 이러한 보호 기능을 제공합니다. API 치트 시트는 [개발 - 지침 및 모범 사례](/help/sites-developing/dev-guidelines-bestpractices.md)에서 다운로드할 수 있습니다.
 
 ### 적절한 로깅 구현 {#implement-appropriate-logging}
 
@@ -93,7 +91,7 @@ Java™ 코드의 경우 AEM은 메시지 로깅을 위한 표준 API로 slf4j�
 * 경고: 제대로 작동하지 않지만 처리가 계속되는 경우. 이는 종종 *PathNotFoundException*&#x200B;과 같이 필요한 예외로 인해 발생합니다.
 * INFO: 시스템을 모니터링할 때 유용한 정보. 이 항목은 기본값이며 대부분의 고객은 이 항목을 환경에 그대로 둡니다. 따라서 과도하게 사용하지 마십시오.
 * DEBUG: 처리에 대한 하위 수준 정보. 지원을 통해 문제를 디버깅할 때 유용합니다.
-* TRACE: 입력/종료 방법과 같은 최하위 레벨 정보입니다. 일반적으로 개발자만 사용합니다.
+* TRACE: 입력/종료 방법과 같은 최하위 레벨 정보. 일반적으로 개발자만 사용합니다.
 
 JavaScript이 있는 경우 *console.log*&#x200B;은(는) 개발 중에만 사용해야 하며 릴리스 전에 모든 로그 문을 제거해야 합니다.
 

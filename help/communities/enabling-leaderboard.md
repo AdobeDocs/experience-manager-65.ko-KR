@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '425'
 ht-degree: 2%
-
 ---
-
 # 리더보드 기능 {#leaderboard-feature}
 
 ## 소개 {#introduction}
@@ -59,22 +57,22 @@ ht-degree: 2%
 * **표시 이름**
 
   배지 및 점수를 표시하기 위해 선택한 규칙을 반영하며 보드에 대해 표시할 수사적 이름입니다.
-아무 것도 입력하지 않은 경우 기본값은 `Leaderboard`입니다.
+  아무 것도 입력하지 않은 경우 기본값은 `Leaderboard`입니다.
 
 * **배지**
 
   선택하면 배지 아이콘에 대한 열이 순위표에 포함됩니다.
-기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 * **배지 이름**
 
   선택하면 배지 이름에 대한 열이 순위표에 포함됩니다.
-기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 * **아바타 사용**
 
   선택하면, 멤버의 아바타 이미지가 리더보드에 포함되고, 리더보드는 멤버 프로필에 연결된 이름 링크 옆에 포함됩니다.
-기본값은 선택 취소되어 있습니다.
+  기본값은 선택 취소되어 있습니다.
 
 #### 규칙 탭 {#rules-tab}
 
@@ -104,19 +102,19 @@ ht-degree: 2%
 
 * 설정 탭:
 
-   * 표시 이름 = `Participation Board`
-   * `checked`:
+  * 표시 이름 = `Participation Board`
+  * `checked`:
 
-      * 배지
-      * 배지 이름
-      * 아바타 사용
+    * 배지
+    * 배지 이름
+    * 아바타 사용
 
 * 규칙 탭:
 
-   * 규칙 위치 = `/content/sites/<site name>/jcr:content`
-   * 채점 규칙 = `/libs/settings/community/scoring/rules/forums-scoring`
-   * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
-   * 표시 제한 = `10`
+  * 규칙 위치 = `/content/sites/<site name>/jcr:content`
+  * 채점 규칙 = `/libs/settings/community/scoring/rules/forums-scoring`
+  * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
+  * 표시 제한 = `10`
 
 ![참가자-순위표](assets/participants-leaderboard.png)
 
@@ -128,18 +126,18 @@ ht-degree: 2%
 
 * 설정 탭:
 
-   * 표시 이름 = `Expertise Board`
-   * `checked`:
+  * 표시 이름 = `Expertise Board`
+  * `checked`:
 
-      * 배지
-      * 아바타 사용
+    * 배지
+    * 아바타 사용
 
 * 규칙 탭:
 
-   * 규칙 위치 = `/content/sites/<site name>/jcr:content`
-   * 채점 규칙 = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * 표시 제한 = `10`
+  * 규칙 위치 = `/content/sites/<site name>/jcr:content`
+  * 채점 규칙 = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * 표시 제한 = `10`
 
 ![experts-leaderboard](assets/experts-leaderboard.png)
 

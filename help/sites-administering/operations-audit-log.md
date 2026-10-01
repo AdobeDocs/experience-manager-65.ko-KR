@@ -1,10 +1,14 @@
 ---
 title: AEM 6의 감사 로그 유지 관리
+
 description: Adobe Experience Manager(AEM)의 감사 로그 유지 관리에 대해 알아봅니다.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
@@ -12,13 +16,11 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 1%
-
+ht-degree: 3%
 ---
-
 # AEM 6의 감사 로그 유지 관리{#audit-log-maintenance-in-aem}
 
-감사 로깅에 적합한 AEM 이벤트는 많은 보관된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.
+감사 로깅에 적합한 AEM 이벤트는 많은 아카이브된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.
 
 감사 로그 유지 관리에는 특정 정책에 따라 감사 로그 유지 관리를 자동화할 수 있는 몇 가지 기능이 포함되어 있습니다.
 
@@ -56,7 +58,7 @@ AEM 웹 콘솔에서 규칙을 만들어 각 규칙을 구성할 수 있습니�
    >콘텐츠 경로는 리포지토리에 있는 `/var/audit/com.day.cq.wcm.core.page` 노드의 하위 항목에만 적용됩니다.
 
 1. 규칙을 저장합니다.
-1. 규칙을 실행하려면 만든 규칙을 작업 대시보드에 표시해야 합니다. 이렇게 하려면 AEM 시작 화면에서 **도구 - 작업 - 유지 관리**&#x200B;로 이동하세요.
+1. 규칙을 실행하려면 만든 규칙을 작업 대시보드에 표시해야 합니다. 이렇게 하려면 AEM 시작 화면에서 **도구 - 작업 - 유지 관리**&#x200B;로 이동하십시오.
 
 1. **주별 유지 관리 기간** 카드를 누릅니다.
 

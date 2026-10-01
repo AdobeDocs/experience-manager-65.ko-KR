@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
-
+source-wordcount: '266'
+ht-degree: 5%
 ---
-
 # 작업 요약 창에 정보 표시 {#displaying-information-in-the-task-summary-pane}
 
 AEM Forms 작업 영역에서 작업을 열면 작업 요약 창에 작업 요약이 표시될 수 있습니다. 작업에 대한 이러한 추가 및 관련 정보는 AEM Forms 작업 영역의 최종 사용자에게 더 많은 가치를 부여합니다.
@@ -31,7 +29,7 @@ AEM Forms 작업 영역을 사용하면 작업 요약 창에 원하는 웹 페�
 1. 작업 요약 URL 필드를 구성합니다. 리터럴 값, 템플릿, 변수 또는 XPath 표현식을 지정할 수 있습니다.
 1. 다음은 작업 요약 페이지에 정보를 표시하는 예제입니다.
 
-   * `https://'[server]:[port]'/lc/crx/de`의 CRXDE Lite 환경에 로그인합니다.
+   * `https://'[server]:[port]'/lc/crx/de`에서 CRXDE Lite 환경에 로그인합니다.
    * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
    * `/apps`의 `Create a folder`**SampleSummary**. `/apps/SampleSummary`의 액세스 제어 목록에서 `jcr:readprivileges`을(를) 허용하는 `PERM_WORKSPACE_USER`의 항목을 추가하십시오.
    * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 5%
-
 ---
-
 # 소셜 태그 클라우드 사용 {#using-social-tag-cloud}
 
 ## 소개 {#introduction}
@@ -53,8 +51,8 @@ ht-degree: 5%
 * 표시할 **[!UICONTROL 소셜 태그]**
 표시할 UGC 태그를 식별합니다. 풀다운 옵션은 다음과 같습니다.
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   기본값은 `From page and child pages`입니다. 여기서 &quot;page&quot;는 아래의 **Page** 설정을 참조합니다.
 
@@ -84,8 +82,8 @@ ht-degree: 5%
 
   예:
 
-   * 선택함: `Geometrixx Media: Gadgets / Cars`
-   * 선택 취소됨: `Cars`
+  * 선택함: `Geometrixx Media: Gadgets / Cars`
+  * 선택 취소됨: `Cars`
 
   단순 태그는 차이가 없습니다.
 
@@ -103,8 +101,8 @@ ht-degree: 5%
 
   `Geometrixx Media (the namespace)`, `Gadgets` 및 `Cars`
 
-   * 선택함: 적용된 경우 `Cars`만 표시됩니다.
-   * 선택 취소됨: `Geometrixx Media`, `Gadgets` 및 `Cars`이(가) 표시됩니다(적용된 경우).
+  * 선택함: 적용된 경우 `Cars`만 표시됩니다.
+  * 선택 취소됨: `Geometrixx Media`, `Gadgets` 및 `Cars`이(가) 표시됩니다(적용된 경우).
 
   단순 태그는 리프 태그입니다.
 

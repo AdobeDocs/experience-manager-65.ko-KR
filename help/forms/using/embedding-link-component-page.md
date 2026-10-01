@@ -1,5 +1,5 @@
 ---
-title: 페이지에 링크 구성 요소 포함
+title: 페이지에 링크 구성 요소 임베드
 description: 링크 구성 요소를 사용하여 모든 페이지에서 적응형 문서 또는 적응형 양식을 연결할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 4%
 ---
-
-# 페이지에 링크 구성 요소 포함{#embedding-link-component-in-a-page}
+# 페이지에 링크 구성 요소 임베드{#embedding-link-component-in-a-page}
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -42,7 +40,7 @@ ht-degree: 0%
 
    * **자산 경로**: 자산이 저장된 저장소 경로입니다.
 
-   * **렌더링 형식**: 렌더링 형식(PDF, HTML 또는 자동)입니다. 자동 렌더링 유형은 사용자 환경을 감지하므로 양식을 HTML 또는 PDF으로 렌더링합니다. 예를 들어, 모바일 장치에서 양식에 액세스하는 경우 자동 렌더링 유형은 HTML에서 양식을 렌더링합니다.
+   * **렌더링 형식**: 렌더링 형식(PDF, HTML 또는 자동)입니다. 자동 렌더링 유형은 사용자 환경을 감지하므로 양식을 HTML 또는 PDF으로 렌더링합니다. 예를 들어 모바일 장치에서 양식에 액세스하면 자동 렌더링 유형이 HTML에서 양식을 렌더링합니다.
    * 양식 데이터가 제출되는 서블릿에 **제출 URL:** URL을 지정합니다.
    * **HTML 프로필**: 양식을 HTML으로 렌더링하기 위한 프로필입니다.
    * **PDF 프로필**: 양식을 PDF 문서로 렌더링하기 위한 프로필입니다.
@@ -53,9 +51,9 @@ ht-degree: 0%
 
 ## 링크 구성 요소 사용에 대한 우수 사례 {#best-practices-for-using-link-component-br}
 
-* 양식 PDF에 지정된 경로가 허용된 렌더링 형식으로 PDF이 있는 문서를 가리키는 경우 경로를 렌더링 형식으로 선택해야 합니다.
+* 양식 경로에 지정된 경로가 허용된 렌더링 형식으로 PDF이 있는 문서를 가리키는 경우 PDF을 렌더링 유형으로 선택해야 합니다.
 * 양식의 제출 URL은 여러 위치에서 지정할 수 있으며, 우선 순위는 다음과 같습니다.
 
-   1. 양식(제출 단추)에 포함된 제출 URL의 우선순위가 가장 높습니다.
-   1. Forms Manager에 언급된 제출 URL은 우선 순위가 보통입니다.
-   1. Forms 포털에 언급된 제출 URL의 우선 순위가 가장 낮습니다.
+  1. 양식(제출 단추)에 포함된 제출 URL의 우선순위가 가장 높습니다.
+  1. Forms Manager에 언급된 제출 URL은 우선 순위가 보통입니다.
+  1. Forms 포털에 언급된 제출 URL의 우선 순위가 가장 낮습니다.

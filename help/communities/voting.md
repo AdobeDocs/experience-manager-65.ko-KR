@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 1%
-
 ---
-
 # 투표 사용 {#using-voting}
 
 `Voting` 구성 요소는 커뮤니티 구성원이 QnA 구성 요소 내의 답변과 같은 특정 콘텐츠에 등급을 지정할 수 있는 유용한 도구입니다. `Voting` 구성 요소에서 구성원은 의견을 나타내는 위쪽 또는 아래쪽 화살표를 선택합니다.

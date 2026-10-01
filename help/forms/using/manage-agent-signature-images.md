@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
-
+source-wordcount: '689'
+ht-degree: 3%
 ---
-
 # 에이전트 서명 이미지 관리{#manage-agent-signature-images}
 
 ## 개요 {#overview}
@@ -34,7 +32,7 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 1. 에이전트 서명 이미지의 이름이 사용자의 AEM 사용자 이름과 같은지 확인합니다. 이미지 파일 이름에는 확장명이 필요하지 않습니다.
 1. CRX의 콘텐츠 폴더에 이름이 `cmUserRoot`인 폴더를 만듭니다.
 
-   1. `https://'[server]:[port]'/crx/de`(으)로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+   1. `https://'[server]:[port]'/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 
    1. **콘텐츠** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **폴더 만들기**&#x200B;를 선택합니다.
 
@@ -48,7 +46,7 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 
 1. 콘텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 에이전트 서명 이미지를 추가합니다.
 
-   1. `https://'[server]:[port]'/crx/explorer/index.jsp`(으)로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+   1. `https://'[server]:[port]'/crx/explorer/index.jsp`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
    1. **콘텐츠 탐색기**&#x200B;를 클릭합니다. 콘텐츠 탐색기가 새 창에 열립니다.
    1. 콘텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 선택합니다. **cmUserRoot** 폴더를 마우스 오른쪽 단추로 클릭하고 **새 노드**&#x200B;를 선택합니다.
 
@@ -70,7 +68,7 @@ agentFolder DDE의 값은 서신 관리 구성 속성에 대한 CMUserRoot 구�
 
       ![jcr:content 속성](assets/3_jcrcontentntresource.png)
 
-      jcr:content의 하위 속성 중에는 흐리게 표시되는 jcr:data가 있습니다. jcr:data를 두 번 클릭합니다. 속성을 편집할 수 있고 [파일 선택] 버튼이 항목에 나타납니다. **파일 선택**&#x200B;을 클릭하고 로고로 사용할 이미지 파일을 선택합니다. 이미지 파일에는 확장명이 필요하지 않습니다.
+      jcr:content의 하위 속성 중 jcr:data은(는) 흐리게 표시됩니다. jcr:data을(를) 두 번 클릭합니다. 속성을 편집할 수 있고 [파일 선택] 버튼이 항목에 나타납니다. **파일 선택**&#x200B;을 클릭하고 로고로 사용할 이미지 파일을 선택합니다. 이미지 파일에는 확장명이 필요하지 않습니다.
 
       ![JCR 데이터](assets/5_jcrdata.png)
 

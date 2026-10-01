@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 27%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
 # 언어 복사 마법사{#language-copy-wizard}
 
 언어 복사 마법사는 다국어 콘텐츠 구조 생성 및 측정을 위한 안내형 경험입니다. 이제 언어 사본을 만드는 것이 훨씬 간단하고 빠릅니다.
@@ -50,6 +48,6 @@ ht-degree: 27%
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. **만들기** 단추를 사용하면 마법사가 종료됩니다.
+1. **만들기** 버튼을 클릭하면 마법사가 종료됩니다.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
