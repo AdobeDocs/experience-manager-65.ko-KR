@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 1%
-
 ---
-
 # 연결 사용 {#using-liking}
 
 `Liking` 구성 요소는 사용자가 포럼 내의 댓글과 같은 특정 콘텐츠에 대한 의견을 표시할 수 있는 유용한 도구입니다. `Liking` 구성 요소를 사용하여 구성원은 긍정적인 의견을 나타내는 하트 아이콘을 선택합니다.

@@ -11,11 +11,9 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
 # Adobe Analytics 프레임워크 사용자 지정{#customizing-the-adobe-analytics-framework}
 
 Adobe Analytics 프레임워크는 Adobe Analytics에서 추적하는 정보를 결정합니다. 기본 프레임워크를 사용자 지정하려면 JavaScript을 사용하여 사용자 지정 추적을 추가하고, Adobe Analytics 플러그인을 통합하고, 추적에 사용되는 프레임워크 내에서 일반 설정을 변경합니다.
@@ -288,7 +286,7 @@ AEM은 기본적으로 사용할 수 있도록 다음 Adobe Analytics 플러그�
 
 1. 모두 저장을 클릭합니다.
 
-다음 절차를 사용하여 플러그인 코드를 가져와 AEM 저장소에 코드를 저장하고 클라이언트 라이브러리 폴더에 코드를 추가합니다.
+다음 절차를 사용하여 플러그인 코드를 가져와 AEM 저장소에 코드를 저장한 다음 클라이언트 라이브러리 폴더에 코드를 추가합니다.
 
 1. Adobe Analytics 계정을 사용하여 [sc.omniture.com](https://sc.omniture.com/login/)에 로그인합니다.
 1. 랜딩 페이지에서 도움말 > 도움말 홈으로 이동합니다.

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # 검색 기능 {#search-feature}
 
 검색 기능은 포럼과 같은 다양한 다른 기능과 함께 작동하여 콘텐츠를 검색하는 기능을 제공합니다.
@@ -53,7 +51,7 @@ ht-degree: 1%
 * **[!UICONTROL 경로 검색]**
 항목 추가 버튼을 사용하여 검색 경로를 추가하면 콘텐츠 검색이 제한됩니다. 예를 들어 검색을 특정 포럼으로 제한하려면 페이지 내에 배치된 포럼 구성 요소를 선택합니다.
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL 결과 페이지]**
 `Search Results` 구성 요소가 포함된 페이지를 선택하기 위해 브라우저를 사용하여 지정된 별도의 페이지에 결과가 표시됩니다.

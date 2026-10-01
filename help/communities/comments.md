@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 1%
-
 ---
-
 # 주석 사용 {#using-comments}
 
 ## 소개 {#introduction}
@@ -190,7 +188,7 @@ ht-degree: 1%
 
 사이트 방문자가 로그인한 경우 구성에 따라 다를 수 있습니다
 
-* 새 댓글 Post
+* 새 댓글 게시
 * 자신의 댓글 편집
 * 자신의 댓글 삭제
 * 다른 사람의 의견에 플래그 지정

@@ -1,5 +1,5 @@
 ---
-title: 텍스트 편집기 사용자 지정
+title: 텍스트 편집기 사용자 정의
 description: Adobe Experience Manager Forms 환경에서 텍스트 편집기를 사용자 지정하는 방법을 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 1%
-
+source-wordcount: '623'
+ht-degree: 2%
 ---
-
-# 텍스트 편집기 사용자 지정{#customize-text-editor}
+# 텍스트 편집기 사용자 정의{#customize-text-editor}
 
 ## 개요 {#overview}
 

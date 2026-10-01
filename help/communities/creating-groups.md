@@ -1,6 +1,6 @@
 ---
 title: 커뮤니티 그룹
-description: 커뮤니티 그룹 기능을 사용하여 Publish 및 Author의 승인된 사용자에 의해 커뮤니티 사이트 내에 하위 커뮤니티를 동적으로 만드는 방법에 대해 알아봅니다.
+description: 커뮤니티 그룹 기능을 사용하여 Publish 및 Author에서 승인된 사용자에 의해 커뮤니티 사이트 내에 하위 커뮤니티를 동적으로 만드는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '565'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티 그룹 {#community-groups}
 
 커뮤니티 그룹 기능은 게시 및 작성 환경의 승인된 사용자(커뮤니티 구성원 및 작성자)가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만들 수 있는 기능입니다.

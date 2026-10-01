@@ -1,5 +1,5 @@
 ---
-title: 외부 공급자의 Analytics
+title: Analytics를 외부 제공자와 통합
 description: 고유한 일반 Analytics 조각 인스턴스를 구성하여 새로운 서비스 구성을 정의하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
-
+source-wordcount: '451'
+ht-degree: 3%
 ---
 
-
-# 외부 공급자의 Analytics {#analytics-with-external-providers}
+# Analytics를 외부 제공자와 통합 {#analytics-with-external-providers}
 
 Analytics는 웹 사이트가 사용되는 방식에 대한 중요하고 흥미로운 정보를 제공할 수 있습니다.
 
@@ -67,7 +65,7 @@ _gaq.push(['_trackPageview']);
 기본 구성의 경우:
 
 1. **도구** 콘솔을 엽니다.
-1. 왼쪽 창에서 **Cloud Service 구성**&#x200B;을 확장합니다.
+1. 왼쪽 창에서 **클라우드 서비스 구성**&#x200B;을 확장합니다.
 1. **일반 Analytics 코드 조각**&#x200B;을 두 번 클릭하여 페이지를 엽니다.
 
    ![일반 Analytics 코드 조각](assets/analytics_genericoverview.png)
@@ -87,13 +85,13 @@ _gaq.push(['_trackPageview']);
 서비스 구성을 만든 후에는 이를 사용할 필수 페이지를 구성해야 합니다.
 
 1. 페이지로 이동합니다.
-1. 사이드 킥에서 **페이지 속성**&#x200B;을 연 다음 **Cloud Service** 탭을 엽니다.
+1. 사이드 킥에서 **페이지 속성**&#x200B;을 연 다음 **클라우드 서비스** 탭을 엽니다.
 1. **서비스 추가**&#x200B;를 클릭한 다음 필요한 서비스를 선택합니다. 예를 들어 **일반 Analytics 코드 조각**&#x200B;은
 
    ![클라우드 서비스 추가](assets/analytics_selectservice.png)
 
 1. 저장하려면 **확인**&#x200B;을 클릭하세요.
-1. **Cloud Service** 탭으로 돌아갑니다. 이제 **일반 Analytics 코드 조각**&#x200B;이(가) `Configuration reference missing` 메시지와 함께 나열됩니다. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다. 예를 들어 google-analytics는
+1. **클라우드 서비스** 탭으로 돌아갑니다. 이제 **일반 Analytics 코드 조각**&#x200B;이(가) `Configuration reference missing` 메시지와 함께 나열됩니다. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다. 예를 들어 google-analytics는
 
    ![클라우드 서비스 구성 추가](assets/analytics_selectspecificservice.png)
 
