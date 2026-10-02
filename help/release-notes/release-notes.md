@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: e30b37bc03a811eca3dac08ca30c5ab32343be4e
 workflow-type: tm+mt
-source-wordcount: '7679'
+source-wordcount: '7612'
 ht-degree: 5%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -46,11 +46,11 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 ### Forms의 주요 기능 및 개선 사항
 
-* [다중 스레드 PDF Generator 전환](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): AEM Forms이 구성된 단일 사용자 계정에서 Windows 서비스로 실행될 때 Microsoft Word(doc/docx) 및 Excel(xls/xlsx) 동시 전환을 실행할 수 있는 지원이 추가되었습니다.
+* [다중 스레드 PDF Generator 전환](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): AEM Forms이 구성된 단일 서비스 계정에서 Windows 서비스로 실행될 때 Microsoft Word(doc/docx) 및 Excel(xls/xlsx) 동시 전환을 실행할 수 있는 지원이 추가되었습니다.
 
 * [XFA 기반 PDF에 대한 계층 구조 책갈피](https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): 이제 출력 서비스 및 AEM Forms Designer에서 정적 대화형 및 플랫 XFA 기반 PDF에 구조화된 책갈피 계층을 생성합니다. 책갈피는 텍스트 상자의 접근성 속성에 설정된 제목 수준(H1~H6)을 따르므로 H1~H6 항목은 병렬로 표시되지 않고 올바른 상위 항목 아래에 중첩됩니다.
 
-* [JEE 트랜잭션 로그의 양식 수준 세부 정보](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): 이제 JEE의 AEM Forms은 기존 서비스 및 작업 정보와 더불어 각 트랜잭션에 대해 `transaction_log.log`에 양식 수준 세부 정보를 기록합니다. 관리자는 제출, 변환 및 변환을 분석할 때 트랜잭션 보고 데이터를 특정 양식과 상호 연관시킬 수 있습니다. (FORMS-21574)
+* [JEE 트랜잭션 로그의 양식 수준 세부 정보](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): JEE의 AEM Forms은 서비스 및 작업 정보와 함께 각 트랜잭션에 대해 `transaction_log.log`의 양식 수준 세부 정보를 기록합니다. 관리자는 제출, 변환 및 변환을 분석할 때 트랜잭션 보고 데이터를 특정 양식과 상호 연관시킬 수 있습니다. (FORMS-21574)
 
 * [지원되는 플랫폼 매트릭스를 업데이트했습니다](/help/forms/using/aem-forms-jee-supported-platforms.md): JEE 서비스 팩 6.5.25.0의 AEM Forms은 다음 최신 기술과의 호환성을 지원합니다.
   * JBoss® EAP(Enterprise Application Platform) 7.4.23
@@ -63,7 +63,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
   > * [독립형 환경의 경우 JBoss EAP를 7.4.10에서 JEE의 AEM Forms용 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md).
   > * [JEE의 AEM Forms용 JBoss EAP 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) 클러스터 환경용.
 
-* **LCM(구성 관리자) 빠른 모드 자격 증명 프롬프트:** 빠른 모드에서 LCM(구성 관리자)을 사용하여 JEE에서 AEM Forms을 구성할 때 LCM에 기본 자격 증명을 사용하는 대신 구성 중에 AEM 관리자 자격 증명을 입력하라는 새 화면이 표시됩니다. 이 변경 사항은 AEM 서비스 팩 6.5.25.0용 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 사용할 수 있습니다. 구성 단계는 [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_kr)를 참조하십시오. (FORMS-26365)
+* **LCM(구성 관리자) 빠른 모드 자격 증명 프롬프트:** JEE에서 빠른 모드로 AEM Forms을 구성할 때 LCM에서 기본값을 사용하는 대신 AEM 관리자 자격 증명을 입력하라는 메시지를 표시합니다. 이 변경 사항은 AEM 서비스 팩 6.5.25.0용 [핫픽스](/help/release-notes/aem-forms-hotfix.md)를 통해 사용할 수 있습니다. 구성 단계는 [JBoss 턴키를 사용하여 JEE에 AEM Forms 6.5 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf)를 참조하십시오. (FORMS-26365)
 
 ## 서비스 팩 25의 문제가 해결되었습니다. {#fixed-issues}
 
@@ -85,7 +85,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * 이제 반복 가리키기 작업 후 삭제 모달의 도구 설명이 일관되게 표시됩니다. 사용자는 포인터를 멀리 이동하고 아이콘으로 돌아가 툴팁을 다시 읽을 수 있습니다. (SITES-24778)
 * 이제 사용자가 Sites 홈 페이지에서 왼쪽 레일을 열면 왼쪽 레일이 예상 순서로 포커스를 받습니다. 키보드 및 화면 판독기 사용자는 확장된 영역을 건너뛰지 않고 구성 버튼에서 레일 컨텐츠로 이동할 수 있습니다. (SITES-24754)
 * 이제 포커스 관리는 회전 모달 대화 상자에서 일관되게 작동합니다. 키보드 및 화면 판독기 사용자는 모달 머리글에서 시작하여 대화 상자를 닫은 후 원래 컨트롤로 돌아갈 수 있습니다. (SITES-24716)
-* 이제 링크 선택 대화 상자가 대화 상자를 닫은 후 링크 선택 대화 상자를 연 컨트롤로 포커스를 돌아갑니다. 대화 상자를 닫아도 키보드와 화면 판독기 사용자가 더 이상 위치를 잃지 않습니다. (SITES-24707)
+* 이제 링크 선택 대화 상자가 대화 상자를 닫은 후 링크 선택 대화 상자를 연 컨트롤로 포커스를 돌아갑니다. 키보드 및 화면 판독기 사용자는 대화 상자를 닫은 후 더 이상 탐색 컨텍스트를 손실하지 않습니다. (SITES-24707)
 * 작성자가 대화 상자를 열거나 닫을 때 이미지 모달이 더 이상 첫 번째 탭이나 기본 페이지 랜드마크로 포커스를 이동하지 않습니다. 포커스는 대화 상자 머리글로 이동한 다음 대화 상자를 연 컨트롤로 돌아갑니다. (SITES-24693)
 * 이제 모달 대화 상자가 열리면 참조 레일이 포커스를 올바르게 관리합니다. 키보드 및 화면 판독기 사용자는 대화 상자를 닫을 때까지 대화 상자 내에 남아 있다가 컨텍스트를 손실하지 않고 탐색을 계속합니다. (SITES-24683)
 * 하이퍼링크 경로 선택 모달 작성자가 열거나 닫을 때 더 이상 포커스가 잘못된 필드나 컨트롤로 이동하지 않습니다. 포커스는 모달 머리글에서 시작되고 모달을 연 버튼으로 돌아갑니다. (SITES-24672)
@@ -109,13 +109,13 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * 이제 레이아웃 편집 도구 모음에 데스크탑 버튼에 대해 선택된 상태가 선명하게 표시됩니다. 데스크탑 옵션은 다른 장치 버튼과 일치하며 활성 보기를 보다 쉽게 식별할 수 있도록 합니다. (SITES-25290)
 * 이제 레이아웃 편집 도구 모음에서 보조 기술에 대한 눈금자 영역에 레이블을 지정합니다. 화면 판독기 사용자는 레이아웃 편집 중에 더 이상 레이블이 지정되지 않은 측정 값이 발생하지 않습니다. (SITES-25287)
 * 이제 레이아웃 편집 도구 모음에 전체 iPhone 8 Plus 단추 레이블이 선택 취소 상태로 표시됩니다. 버튼 주위에 충분한 공간이 있으면 레이블이 더 이상 잘리지 않습니다. (SITES-25284)
-* 보고된 문제는 레이아웃 편집 도구 모음에 있는 포커스 표시기에 대해 설명했는데, 이 표시기는 여러 장치 컨트롤을 포함하는 것으로 보입니다. 포커스 윤곽선에 인접 단추가 들어 있을 때 활성 컨트롤을 추적하지 못할 수 있는 키보드 사용자에게 문제가 집중되었습니다. 문제가 설계대로 작동하고 있었습니다. (SITES-25283)
+* 보고된 문제는 레이아웃 편집 도구 모음에 있는 포커스 표시기에 대해 설명했는데, 이 표시기는 여러 장치 컨트롤을 포함하는 것으로 보입니다. 포커스 윤곽선에 인접 단추가 있는 경우 활성 컨트롤을 식별할 수 없는 키보드 사용자에게 문제가 집중되었습니다. 문제가 설계대로 작동하고 있었습니다. (SITES-25283)
 * 보고된 문제는 각 버튼 레이블 전에 주석을 발표한 주석 양식 버튼을 설명했습니다. 주석, 색상 견본, 삭제와 같은 작업에 대한 명확하지 않은 화면 판독기 출력에 관심이 집중되었습니다. (SITES-25277)
 * 이제 주석 단추 텍스트에 주석 모달에서 충분한 대비가 사용됩니다. 이 업데이트는 시력이 낮은 사용자의 가독성을 향상시키고 WCAG 대비 요구 사항을 지원합니다. (SITES-25267)
 * 이제 사용자가 새 구성 요소 삽입 목록을 필터링하면 화면 판독기에 상태 업데이트가 수신됩니다. 모달은 사용자가 입력하는 동안 목록이 변경되었음을 이해할 수 있도록 결과 변경 사항을 알려줍니다. (SITES-25251)
 * 기록된 문제는 주석 양식 제목에 대한 누락된 제목 의미를 설명했습니다. 문제는 화면 판독기 탐색과 양식 구조를 이해하는 기능에 중점을 둡니다. (SITES-25248)
 * 이제 페이지 편집기 측면 레일의 머리글 수준은 더 명확한 콘텐츠 계층 구조를 따릅니다. 왼쪽 레일 섹션은 더 이상 보조 기술의 기본 페이지 머리글로 표시되지 않습니다. (SITES-25222)
-* 이제 Assets 왼쪽 레일의 편집 버튼에 더 큰 터치 대상이 있습니다. 이동성이 필요한 사용자는 보다 쉽게 버튼을 활성화하고 가까운 제어 장치를 피할 수 있습니다. (SITES-25221)
+* 이제 Assets 왼쪽 레일의 편집 버튼에 더 큰 터치 대상이 있습니다. 장애가 있는 사용자는 버튼을 보다 쉽게 활성화하고 주변 제어를 피할 수 있습니다. (SITES-25221)
 * 이제 Assets 왼쪽 레일에서 편집 버튼을 누르면 새 브라우저 탭이 열립니다. 사용자는 예기치 않게 컨텍스트를 잃는 대신 탐색 변경을 예상할 수 있습니다. (SITES-25220)
 * 사용자가 텍스트 간격을 늘리면 구성 요소 제목이 올바르게 표시됩니다. 측면 레일은 읽을 수 있는 레이블을 유지하고 WCAG 텍스트 간격 요구 사항을 지원합니다. (SITES-25219)
 * 이제 사이드 레일 구성 요소의 필터 필드가 적절한 액세스 가능한 이름을 노출합니다. 이 업데이트는 화면 판독기 사용자가 자리 표시자 텍스트에 의존하지 않고 필드를 식별하는 데 도움이 됩니다. (SITES-25212)
@@ -134,7 +134,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * 이제 모달 대화 상자에서는 헤더 컨트롤에 더 정확한 접근성 마크업을 사용합니다. 도움말 및 전체 화면 전환 단추는 대화형 컨트롤로 유지되며 더 이상 화면 판독기의 제목으로 나타나지 않습니다. (SITES-24696)
 * 이제 필터 레일 랜드마크는 용도를 식별하는 고유한 레이블을 사용합니다. 화면 판독기 사용자는 여러 개의 유사한 랜드마크가 있는 페이지를 보다 자신 있게 탐색할 수 있습니다. (SITES-24686)
 * 참조 레일 메시지는 이제 충분한 텍스트 대비를 사용하는 사용자에게 가독성을 제공합니다. 보고된 문제는 배경에 비해 너무 밝게 보이는 선택 및 다중 선택 메시지와 관련되었습니다. (SITES-24666)
-* 이제 검색 모달에서 위치 제거 및 닫기 단추에 대한 더 큰 터치 대상을 제공합니다. 이러한 변화는 손 떨림, 연축 또는 저시력 사용자가 의도한 제어를 활성화하는 데 도움이 됩니다. (SITES-24530)
+* 이제 검색 모달에서 위치 제거 및 닫기 단추에 대한 더 큰 터치 대상을 제공합니다. 이러한 변경은 장애가 있거나 시력이 낮은 사용자가 의도한 제어를 활성화하는 데 도움이 됩니다. (SITES-24530)
 * Adobe Experience Manager 헤더 링크가 잘못된 ARIA 속성을 사용한다고 보고되었습니다. 테스트를 통해 링크가 확장 가능한 콘텐츠를 제어하므로 기존 액세스 가능 상태가 적절한지 확인했습니다. (SITES-24528)
 * [구성 요소] 목록에서 더 이상 [줄 바꿈] 단추의 포커스 표시기가 잘려서 나타나지 않습니다. 표시되는 윤곽선은 키보드 사용자가 편집기에서 위치를 추적하는 데 도움이 됩니다. (SITES-24503)
 * 보고된 문제는 구성 요소 패널에서 정보 툴팁 아이콘에 대한 텍스트 대체 요소가 누락된 것을 설명했습니다. 문제가 재현되지는 않았지만 검토 결과 정보 제공 아이콘에 액세스 가능한 명확한 이름이 표시되어야 합니다. (SITES-24500)
@@ -190,7 +190,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 #### [!DNL Content Fragments] - 모델 및 모델 편집기{#sites-models-model-editor-6525}
 
 * 이제 선택한 값에 유효한 모델 유형이 필요한 경우 콘텐츠 조각 모델 편집기에 현지화된 유효성 검사 메시지가 표시됩니다. 편집기에 번역되지 않은 영어 메시지가 현지화된 인터페이스에 더 이상 표시되지 않습니다. (SITES-41117)
-* 이제 콘텐츠 조각 모델 필터 패널이 상태와 제목 문자열을 현지화합니다. 모델 제목, 상태, 초안, 활성화됨 및 비활성화됨 과 같은 번역되지 않은 레이블이 사용자에게 더 이상 표시되지 않습니다. (SITES-30863)
+* 이제 콘텐츠 조각 모델 필터 패널이 상태와 제목 문자열을 현지화합니다. 모델 제목, 상태, 초안, 활성화됨 및 비활성화됨의 번역되지 않은 레이블이 사용자에게 더 이상 표시되지 않습니다. (SITES-30863)
 
 <!-- #### [!DNL Content Fragments] - REST API{#sites-restapi-6525} -->
 
@@ -203,7 +203,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 #### 핵심 구성 요소{#sites-core-components-6525}
 
 * 요청이 누락된 DAM 리소스를 타깃팅할 때 AEM이 더 이상 반복된 ThumbnailServlet 오류를 생성하지 않습니다. 서블릿은 리디렉션 후 처리를 중지하여 NullPointerException 항목이 오류 로그를 초과하지 않도록 합니다. (SITES-41238)
-* AEM은 작성자가 구성 요소 대화 상자를 다시 열 때 필요한 옵션 대화 상자 필드에 더 이상 플래그를 지정하지 않습니다. 이 대화 상자는 실제로 입력이 필요한 필드에 유효성 검사 포커스를 두어 오해의 소지가 있는 탭 수준 오류를 방지합니다. (SITES-40449)
+* AEM은 작성자가 구성 요소 대화 상자를 다시 열 때 필요한 옵션 대화 상자 필드에 더 이상 플래그를 지정하지 않습니다. 이 대화 상자는 입력이 필요한 필드에 유효성 검사를 집중시켜 오해의 소지가 있는 탭 수준 오류를 방지합니다. (SITES-40449)
 
 * AEM에는 사이트 및 관련 Cloud Services 구성 요소를 강화하는 몇 가지 배경 보안 수정 사항이 포함되어 있습니다. 이러한 수정 사항을 통해 사이트 간 스크립팅 위험을 줄이고 영향을 받는 작성 경로 전반에서 요청 처리를 개선할 수 있습니다. (SITES-38314)
 * 이제 이미지 v3 구성 요소 구성 대화 상자가 페이지 편집기에서 문자열을 현지화합니다. 작성자가 현지화된 인터페이스에서 이미지 구성 요소를 구성할 때 번역되지 않은 레이블이 더 이상 표시되지 않습니다. (SITES-38726)
@@ -214,7 +214,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### 횡단보도 {#sites-crosswalk-6525}
 
-* 횡단보도는 설치 후 더 이상 별도의 패키지와 구성 설정이 필요하지 않습니다. AEM에는 필요한 번들, 콘텐츠 패키지, 시스템 사용자, 서비스 사용자 매핑 및 기본 제공 패키지의 기능 전환이 포함됩니다. (SITES-41417)
+* 횡단보도는 설치 후 더 이상 별도의 패키지와 구성 설정이 필요하지 않습니다. AEM에는 표준 패키지에 필요한 번들, 콘텐츠 패키지, 시스템 사용자, 서비스 사용자 매핑 및 기능 전환이 포함됩니다. (SITES-41417)
 * 이제 횡단보도 워크플로우가 AEM 6.5에서 필요한 cq-wcm-core 지원과 함께 작동합니다. 작성자는 별도의 핵심 번들 업데이트 없이 템플릿 만들기 및 유니버설 편집기 열기 작업을 사용할 수 있습니다. (SITES-37666)
 
 #### 경험 조각{#sites-experiencefragments-6525}
@@ -278,7 +278,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * 이제 내 공유 클라이언트 라이브러리는 공유 에셋 제목 데이터를 페이지 마크업에 추가하기 전에 안전하게 처리합니다. 생성된 공유 페이지는 조작된 에셋 메타데이터를 통해 사용자를 더 이상 스크립트 삽입에 노출하지 않습니다. (ASSETS-60898)
 
 * 이제 Adobe Stock 라이선싱이 Assets 사용자 인터페이스에서 올바르게 작동합니다. AEM이 스톡 에셋 프로필 및 자격 데이터를 로드한 후에도 라이선스 버튼이 더 이상 비활성화된 상태로 유지되지 않습니다. (ASSETS-62610)
-* 이제 기본 에셋 만료 알림이 만료에 근접한 날짜를 올바르게 처리합니다. 미리 알림 이메일은 8일 만료로 자산을 건너뛰는 대신 남은 시간이 구성된 임계값에 도달하면 실행됩니다. (ASSETS-57857)
+* 이제 표준 자산 만료 알림이 만료에 근접한 날짜를 올바르게 처리합니다. 미리 알림 이메일은 8일 만료로 자산을 건너뛰는 대신 남은 시간이 구성된 임계값에 도달하면 실행됩니다. (ASSETS-57857)
 
 * 이제 AEM Assets은 사용자가 저장된 검색을 선택한 후 키보드 탐색을 복원합니다. 인터페이스를 사용하면 Assets 보기를 새로 고치거나 다시 시작하지 않고도 드롭다운에서 벗어날 수 있습니다. (ASSETS-52061)
 
@@ -298,7 +298,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 * AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 Red Hat Enterprise Linux(RHEL) 8에서 잘못된 명령 오류로 인해 출력 서비스가 더 이상 충돌하지 않습니다. 갑작스러운 서비스 중지 없이 문서 생성 및 양식 출력 처리가 완료되었습니다. (FORMS-25192)
 * 이제 초기 인스턴스 수가 0으로 설정되면 적응형 Forms에서 addInstance() 함수를 사용하여 동적으로 추가된 패널 및 컨텐츠가 표시됩니다. (FORMS-25169, FORMS-25124)
 * 이제 AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 중국어 번체(홍콩)가 작성자 및 게시 환경에 올바르게 표시됩니다. 현지화된 zh-HK 콘텐츠가 더 이상 잘못된 언어로 표시되지 않거나 예기치 않게 기본 문자열로 대체됩니다. (FORMS-25042)
-* 이제 적응형 Forms의 스크리블 서명 필드에서 키보드 탐색이 양식을 탭 처리하는 동안 포커스를 서명 영역 안과 밖으로 일관되게 이동합니다. (FORMS-25011)
+* 키보드 탐색은 적응형 Forms의 스크리블 서명 필드를 통해 일관되게 포커스를 이동하며 양식을 탭합니다. (FORMS-25011)
 * 이제 구성 및 업데이트 작업 중에 웹 서비스 호출 단계에서 WSDL(웹 서비스 설명 언어) 파일이 올바르게 로드됩니다. (FORMS-24992, FORMS-24789, FORMS-24188)
 * 이제 텍스트 조각에 조건을 적용할 때 편지 초안에는 줄바꿈이 유지됩니다. 여러 줄 컨텐츠가 더 이상 하나의 연속 줄로 표시되지 않습니다. (FORMS-24602)
 * Adobe Sign 단계에 도달한 후 서명 상태 응답이 반환되지 않으면 AEM Forms on Adobe Managed Services(AMS)의 Adobe Sign 워크플로가 더 이상 중단되지 않습니다. (FORMS-24514)
@@ -344,7 +344,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 <!-- #### Content distribution{#foundation-content-distribution-6525} -->
 
-#### CRX {#foundation-crx-6525}
+#### Adobe CRX {#foundation-crx-6525}
 
 이제 AEM 6.5 업그레이드 후 CRXDE Lite에서 JSP 파일 편집이 예상대로 작동합니다. CodeMirror 편집기는 JSP 탭을 비워 두지 않고 파일 콘텐츠를 로드합니다. (GRANITE-64333)
 
@@ -373,7 +373,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 #### 보안{#foundation-security-6525}
 
 * 이제 AEM은 클라이언트 암호가 포함된 추가 키워드를 허용 목록 합니다. 지원되는 통합이 이러한 클라이언트 암호 이름 지정 패턴을 사용하는 경우 구성 만들기가 더 이상 실패하지 않습니다. (GRANITE-66495)
-* 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 데이터를 다른 API로 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다. (GRANITE-63840)
+* 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 다른 API로 데이터를 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
@@ -410,7 +410,7 @@ Experience Manager 6.5.25.0에는 새로운 기능, 주요 고객 요청 개선 
 
 >[!IMPORTANT]
 >
-> Adobe에서는 [!DNL Experience Manager] 6.5.25.0 패키지를 제거하거나 제거하지 않는 것이 좋습니다. 따라서 팩을 설치하기 전에 `crx-repository`을(를) 롤백해야 하는 경우 백업을 만들어야 합니다. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe에서는 [!DNL Experience Manager] 6.5.25.0 패키지를 제거하거나 제거하지 않는 것이 좋습니다. 필요한 경우 롤백하려면 팩을 설치하기 전에 `crx-repository`의 백업을 만듭니다. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -465,9 +465,9 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
-이렇게 하면 필요한 인덱스 정의가 실제로 사용하는 기능을 기반으로 추가할 수 있습니다.
+이 옵션을 사용하면 사용된 기능을 기반으로 필요한 색인 정의를 추가할 수 있습니다.
 
-이 패키지를 설치하지 않으면 GraphQL 쿼리가 느려지거나 실패할 수 있습니다.
+이 패키지를 설치하지 않으면 GraphQL 쿼리가 느려지거나 실패합니다.
 
 >[!NOTE]
 >
@@ -546,9 +546,9 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
   1. 서비스 팩을 설치하거나 Experience Manager as a Cloud Service을 다시 시작합니다.
      `cache` 및 `diff-cache`의 새 폴더가 자동으로 만들어지고 `error.log`에서 더 이상 `mvstore`과(와) 관련된 예외가 발생하지 않습니다.
 
-* 콘텐츠 모델의 기본 이름을 대신 사용하도록 콘텐츠 모델에 대해 사용자 지정 API 이름을 사용했을 수 있는 GraphQL 쿼리를 업데이트합니다.
+* 콘텐츠 모델의 기본 이름을 대신 사용하도록 콘텐츠 모델에 대해 사용자 지정 API 이름을 사용한 GraphQL 쿼리를 업데이트합니다.
 
-* GraphQL 쿼리에서 `fragments` 인덱스 대신 `damAssetLucene` 인덱스를 사용할 수 있습니다. 이 작업으로 인해 GraphQL 쿼리가 실패하거나 실행하는 데 시간이 오래 걸릴 수 있습니다.
+* GraphQL 쿼리에서 `fragments` 인덱스 대신 `damAssetLucene` 인덱스를 사용합니다. 이 작업으로 인해 GraphQL 쿼리가 실패하거나 실행하는 데 시간이 오래 걸립니다.
 
   문제를 해결하려면 `/indexRules/dam:Asset/properties` 아래에 다음 두 속성을 포함하도록 `damAssetLucene`을(를) 구성해야 합니다.
 
@@ -566,7 +566,7 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
   인덱스 정의를 변경한 후에는 리인덱싱이 필요합니다(`reindex` = `true`).
 
-  이러한 단계 후에는 GraphQL 쿼리가 더 빨리 수행됩니다.
+  이 단계 후에 GraphQL 쿼리가 더 빨리 수행됩니다.
 
 * 콘텐츠 조각, 사이트 또는 페이지를 이동, 삭제 또는 게시하려고 할 때 콘텐츠 조각 참조를 가져올 때 문제가 있습니다. 백그라운드 쿼리가 실패하고 기능이 작동하지 않습니다.
 올바른 작업을 위해 인덱스 정의 노드 `/oak:index/damAssetLucene`에 다음 속성을 추가해야 합니다(리인덱싱이 필요하지 않음).
@@ -580,9 +580,9 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 * [!DNL Experience Manager] 인스턴스를 6.5.0 - 6.5.4에서 Java™ 11의 최신 서비스 팩으로 업그레이드하는 경우 `error.log` 파일에 `RRD4JReporter` 예외가 표시됩니다. 예외를 중지하려면 [!DNL Experience Manager]의 인스턴스를 다시 시작하십시오. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
-* 사용자는 [!DNL Assets]의 계층 구조에서 폴더의 이름을 바꾸고 중첩된 폴더를 [!DNL Brand Portal]에 게시할 수 있습니다. 그러나 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
+* 사용자는 [!DNL Assets]에서 폴더 이름을 바꾸고 중첩된 폴더를 [!DNL Brand Portal]에 게시할 수 있습니다. 그러나 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
 
-* [!DNL Experience Manager] 6.5.x.x를 설치하는 동안 다음 오류 및 경고 메시지가 표시될 수 있습니다.
+* [!DNL Experience Manager] 6.5.x.x를 설치하는 동안 다음 오류 및 경고 메시지가 나타납니다.
   * &quot;Target Standard API(IMS 인증)를 사용하여 [!DNL Experience Manager]에서 Adobe Target 통합이 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. Target에서는 &quot;경험 조각&quot;/소스 &quot;Adobe Experience Manager&quot; 유형 대신 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형의 여러 오퍼를 만듭니다.
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: `granite/operations/maintenance`에 유지 관리 창이 없습니다.
   * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
@@ -592,7 +592,7 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 * AEM 6.5.15부터 `org.apache.servicemix.bundles.rhino` 번들에서 제공한 Rhino JavaScript 엔진에 새로운 호스팅 동작이 있습니다. 엄격 모드(`use strict;`)를 사용하는 스크립트는 올바른 변수를 선언해야 합니다. 그렇지 않으면 실행되지 않고 결국 런타임 오류가 발생합니다.
 
-* 공식 업데이트 패키지를 통해 태그 지정 관련 기본 제공 콘텐츠를 설치하면 `/content/cq:tags` 노드의 언어 속성이 기본값으로 재설정됩니다. 이 작업은 서비스 팩, 보안 서비스 팩, 확장 기능 팩, 누적 기능 팩, 패치 등에 적용됩니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.
+* 공식 업데이트 패키지를 통해 태그 지정 관련 표준 콘텐츠를 설치하면 `/content/cq:tags` 노드의 언어 속성이 기본값으로 재설정됩니다. 이 작업은 서비스 팩, 보안 서비스 팩, 확장 기능 팩, 누적 기능 팩, 패치 등에 적용됩니다. 따라서 설치하기 전에 속성에서 추가해야 합니다.
 
 ### AEM Sites의 알려진 문제 {#known-issues-aem-sites-6525}
 
@@ -608,10 +608,10 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 * **NPR-44100** WAR/JEE 배포에 AEM 6.5 서비스 팩 25(JEE의 AEM Forms 포함)를 설치한 후 `com.adobe.cq.screens.sessions` 번들은 [설치됨] 상태로 유지되며 활성화되지 않습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * **FORMS-26802** SOAP SDK 인증을 강화한 후 `/soap/sdk` 끝점이 인증되지 않은 요청을 거부하므로 LCM Configuration Manager, Workbench 및 Designer이 JEE 서버의 AEM Forms에 연결하지 못했습니다. 오류: `ALC-LCM-200-001`. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
-* **FORMS-26679** AEM Forms Document Security에서 MFA(Microsoft Entra ID) 리디렉션 후 인증 쿠키가 삭제되어 정책으로 보호된 문서를 열 때 &quot;쿠키가 활성화되지 않을 수 있습니다&quot; 오류가 발생합니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
-* **FORMS-26617** WebLogic이 있는 JEE의 AEM Forms에서 Microsoft SQL Server JDBC 드라이버 12.10.0을 사용할 때 구성 관리자를 통한 데이터베이스 구성이 &quot;적합한 드라이버를 찾을 수 없음&quot;과 함께 실패합니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-26679** AEM Forms Document Security에서 MFA(Microsoft Entra ID) 리디렉션 후 인증 쿠키가 삭제되어 정책으로 보호된 문서를 열 때 &quot;쿠키가 활성화되지 않음&quot; 오류가 발생합니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* [!DNL JEE] [!DNL WebLogic] 데이터베이스 설정의 **FORMS-26617** [!DNL AEM Forms]이(가) Microsoft SQL Server JDBC 드라이버 12.10.0을 사용하여 &quot;적합한 드라이버를 찾을 수 없음&quot;으로 실패했습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * 최신 AEM Forms 6.5 빌드를 설치한 후 **FORMS-27869** PDF가 느리게 열립니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.25.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
-* **FORMS-23491** AEM Forms 6.5.24.0 JEE 배포(JBoss, WebLogic, WebSphere)에 다중 부분 요청 처리에서 Apache Struts 서비스 거부 취약점인 CVE-2025-64775의 영향을 받습니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.24.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
+* **FORMS-23491** CVE-2025-64775, 다중 파트 요청 처리에서 Apache Struts 서비스 거부 취약성이 AEM Forms 6.5.24.0 JEE 배포(JBoss, WebLogic, WebSphere)에 영향을 줍니다. 이 문제를 해결하려면 AEM 서비스 팩 6.5.24.0용 핫픽스를 [다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하십시오.
 * **FORMS-14926** AEM Forms JEE 서비스 팩 21(6.5.21.0)을 설치한 후 `<AEM_Forms_Installation>/lib/caching/lib` 폴더 아래에서 Geode jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`의 중복 항목을 찾으면 다음 단계를 수행하여 문제를 해결하십시오.
 
   1. 로케이터가 실행 중인 경우 중지합니다.
