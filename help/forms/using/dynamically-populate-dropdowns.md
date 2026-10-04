@@ -1,5 +1,5 @@
 ---
-title: 동적으로 드롭다운 목록 채우기
+title: 드롭다운 목록을 동적으로 채우기
 description: 일부 논리를 기반으로 드롭다운 목록을 동적으로 채우는 절차
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
-
+source-wordcount: '351'
+ht-degree: 3%
 ---
-
-# 동적으로 드롭다운 목록 채우기 {#dynamically-populating-drop-down-lists}
+# 드롭다운 목록을 동적으로 채우기 {#dynamically-populating-drop-down-lists}
 
 ## 사전 요구 사항 {#prerequisites}
 

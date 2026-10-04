@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # OSGi 번들{#osgi-bundles}
 
 ## 시맨틱 버전 관리 사용 {#use-semantic-versioning}

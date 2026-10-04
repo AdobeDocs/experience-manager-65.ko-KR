@@ -1,23 +1,26 @@
 ---
-title: 대화형 통신 구성 속성
+title: 인터랙티브 커뮤니케이션 구성 속성
+
 description: 대화형 커뮤니케이션에 대한 기본 구성 속성 편집
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 6%
-
+source-wordcount: '614'
+ht-degree: 9%
 ---
-
-# 대화형 통신 구성 속성{#interactive-communications-configuration-properties}
+# 인터랙티브 커뮤니케이션 구성 속성{#interactive-communications-configuration-properties}
 
 대화형 통신에는 [AEM Forms 추가 기능](../../forms/using/installing-configuring-aem-forms-osgi.md) 패키지를 설치한 후 자동으로 구성된 속성이 포함됩니다. 대화형 통신 작성자는 **Adobe Experience Manager 웹 콘솔 구성** 페이지를 사용하여 이러한 기본 구성 속성을 편집할 수 있습니다.
 
@@ -55,7 +58,7 @@ ht-degree: 6%
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>들여쓰기</td> 
@@ -104,7 +107,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td>PDF에서 글꼴 임베드 활성화</td> 
-   <td><p>PDF 문서에서 글꼴 임베딩을 활성화하려면 확인란을 선택합니다. 이 옵션을 선택하면 에이전트 UI를 사용하여 PDF 문서를 생성하거나 미리 본 후 새 글꼴을 포함할 수 있습니다. 대화형 통신의 인쇄 채널을 사용하여 PDF 문서를 생성하고 미리 볼 수 있습니다.</p> <p>PDF 문서에 글꼴을 포함하는 것은 PDF을 생성하는 데 사용되는 시스템에서 글꼴을 사용할 수 있고 PDF에 액세스하는 클라이언트 시스템에서 글꼴을 사용할 수 없는 경우에 유용합니다.</p> <p>글꼴 포함에 대한 자세한 내용은 <a href="../../forms/using/customize-text-editor.md" target="_blank">텍스트 편집기 사용자 지정</a>을 참조하십시오.</p> </td> 
+   <td><p>PDF 문서에 글꼴 임베드를 활성화하려면 확인란을 선택합니다. 이 옵션을 선택하면 에이전트 UI를 사용하여 PDF 문서를 생성하거나 미리 본 후 새 글꼴을 포함할 수 있습니다. 대화형 통신의 인쇄 채널을 사용하여 PDF 문서를 생성하고 미리 볼 수 있습니다.</p> <p>PDF 문서에 글꼴을 임베드하는 것은 PDF을 생성하는 데 사용되는 시스템에서 글꼴을 사용할 수 있고, PDF에 액세스하는 클라이언트 시스템에서 글꼴을 사용할 수 없는 경우에 유용합니다.</p> <p>글꼴 포함에 대한 자세한 내용은 <a href="../../forms/using/customize-text-editor.md" target="_blank">텍스트 편집기 사용자 지정</a>을 참조하십시오.</p> </td> 
    <td>선택되지 않음</td> 
    <td>해당되지 않음</td> 
   </tr> 

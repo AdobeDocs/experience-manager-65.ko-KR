@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 0%
-
 ---
-
 # 소셜 구성 요소 프레임워크 {#social-component-framework}
 
 SCF(소셜 구성 요소 프레임워크)를 사용하면 서버측과 클라이언트측 모두에서 커뮤니티 구성 요소를 구성, 사용자 지정 및 확장하는 프로세스를 단순화할 수 있습니다.
@@ -50,19 +48,19 @@ SocialComponent API는 클라이언트가 보기 계층 또는 HTTP 클라이언
 구성 요소를 사용자 정의하거나 확장하려면 /apps 디렉토리에 오버레이 및 확장만 작성하여 향후 릴리스로 업그레이드하는 프로세스를 간소화합니다.
 
 * 스키닝의 경우:
-   * [CSS만 편집하면 됩니다](client-customize.md#skinning-css).
+  * [CSS만 편집하면 됩니다](client-customize.md#skinning-css).
 * 디자인:
-   * JS 템플릿 및 CSS를 변경합니다.
+  * JS 템플릿 및 CSS를 변경합니다.
 * 모양, 느낌 및 UX의 경우:
-   * JS 템플릿, CSS 및 [JavaScript 확장/재정의](client-customize.md#extending-javascript)를 변경합니다.
-* JS 템플릿 또는 GET 엔드포인트에서 사용할 수 있는 정보를 수정하려면 다음을 수행합니다.
-   * [SocialComponent](server-customize.md#socialcomponent-interface)을(를) 확장합니다.
+  * JS 템플릿, CSS 및 [JavaScript 확장/재정의](client-customize.md#extending-javascript)를 변경합니다.
+* JS 템플릿 또는 GET 끝점에 사용할 수 있는 정보를 수정하려면 다음을 수행합니다.
+  * [SocialComponent](server-customize.md#socialcomponent-interface)을(를) 확장합니다.
 * 작업 중 사용자 정의 처리를 추가하려면 다음을 수행합니다.
-   * [OperationExtension](server-customize.md#operationextension-class)을(를) 작성합니다.
+  * [OperationExtension](server-customize.md#operationextension-class)을(를) 작성합니다.
 * 사용자 지정 작업을 추가하려면:
-   * [Sling Post 작업](server-customize.md#postoperation-class)을 만듭니다.
-   * 필요에 따라 기존 [OperationServices](server-customize.md#operationservice-class)을(를) 사용합니다.
-   * 필요에 따라 클라이언트측에서 작업을 호출하기 위해 JavaScript 코드를 추가합니다.
+  * [Sling Post 작업](server-customize.md#postoperation-class)을 만듭니다.
+  * 필요에 따라 기존 [OperationServices](server-customize.md#operationservice-class)을(를) 사용합니다.
+  * 필요에 따라 클라이언트측에서 작업을 호출하기 위해 JavaScript 코드를 추가합니다.
 
 ## 서버측 프레임워크 {#server-side-framework}
 
@@ -80,9 +78,9 @@ UGC 작업에 대해 알아보려면 [저장소 리소스 공급자 개요](srp.
 
 HTTP API는 PhoneGap 앱, 기본 앱 및 기타 통합 및 매쉬업에 대한 간편한 사용자 지정 및 클라이언트 플랫폼 선택을 지원합니다. 또한 HTTP API를 사용하면 커뮤니티 사이트를 클라이언트 없이 서비스로 실행할 수 있으므로 프레임워크 구성 요소를 모든 기술에 구축된 웹 페이지에 통합할 수 있습니다.
 
-### HTTP API - GET 요청 {#http-api-get-requests}
+### HTTP API - 요청 가져오기 {#http-api-get-requests}
 
-모든 SocialComponent에 대해 프레임워크는 HTTP 기반 API 끝점을 제공합니다. 끝점은 &#39;.social.json&#39; 선택기 + 확장을 사용하여 리소스에 GET 요청을 전송하여 액세스됩니다. Sling을 사용하면 요청이 `DefaultSocialGetServlet`에 전달됩니다.
+모든 SocialComponent에 대해 프레임워크는 HTTP 기반 API 끝점을 제공합니다. 끝점은 GET 요청을 &#39;.social.json&#39; 선택기 + 확장으로 리소스에 보내어 액세스됩니다. Sling을 사용하면 요청이 `DefaultSocialGetServlet`에 전달됩니다.
 
 **`DefaultSocialGetServlet`**
 
@@ -100,13 +98,13 @@ HTTP API는 PhoneGap 앱, 기본 앱 및 기타 통합 및 매쉬업에 대한 �
 
 ### HTTP API - POST 요청 {#http-api-post-requests}
 
-GET(읽기) 작업 외에도 프레임워크는 구성 요소에서 만들기, 업데이트 및 삭제를 비롯한 다른 작업을 활성화하는 엔드포인트 패턴을 정의합니다. 이러한 끝점은 입력을 수락하고 HTTP 상태 코드 또는 JSON 응답 개체로 응답하는 HTTP API입니다.
+프레임워크는 GET(읽기) 작업 외에도 만들기, 업데이트 및 삭제를 포함하여 구성 요소에서 다른 작업을 활성화하는 엔드포인트 패턴을 정의합니다. 이러한 끝점은 입력을 수락하고 HTTP 상태 코드 또는 JSON 응답 개체로 응답하는 HTTP API입니다.
 
 이 프레임워크 엔드포인트 패턴을 통해 CUD 작업을 확장, 재사용 및 테스트할 수 있습니다.
 
 **`POST Request`**
 
-모든 SocialComponent 작업에 대한 Sling POST:작업이 있습니다. 각 작업에 대한 비즈니스 논리 및 유지 관리 코드는 HTTP API를 통해 또는 다른 곳에서 OSGi 서비스로 액세스할 수 있는 OperationService에 래핑됩니다. 전/후 작업에 대한 플러그형 작업 확장을 지원하는 후크가 제공됩니다.
+모든 SocialComponent 작업에 대한 Sling POST:operation이(가) 있습니다. 각 작업에 대한 비즈니스 논리 및 유지 관리 코드는 HTTP API를 통해 또는 다른 곳에서 OSGi 서비스로 액세스할 수 있는 OperationService에 래핑됩니다. 전/후 작업에 대한 플러그형 작업 확장을 지원하는 후크가 제공됩니다.
 
 ![scf-post-request](assets/scf-post-request.png)
 
@@ -130,7 +128,7 @@ HBS 스크립트는 간단하고 논리를 사용하지 않으며, 서버와 클
 
 프레임워크는 SocialComponents를 개발할 때 유용한 몇 가지 [Handlebars 도우미](handlebars-helpers.md)를 제공합니다.
 
-서버에서 Sling은 GET 요청을 확인하면 요청에 응답하는 데 사용되는 스크립트를 식별합니다. 스크립트가 HBS 템플릿(.hbs)인 경우 Sling은 요청을 Handlebars 엔진에 위임합니다. 그런 다음 Handlebars 엔진은 적절한 SocialComponentFactory에서 SocialComponent를 가져와서 컨텍스트를 빌드하고 HTML을 렌더링합니다.
+서버에서 Sling은 GET 요청을 확인하면 요청에 응답하는 데 사용되는 스크립트를 식별합니다. 스크립트가 HBS 템플릿(.hbs)인 경우 Sling은 요청을 Handlebars 엔진에 위임합니다. 그런 다음 Handlebars 엔진은 적절한 SocialComponentFactory에서 SocialComponent를 가져오고, 컨텍스트를 빌드하고, HTML을 렌더링합니다.
 
 ### 액세스 제한 없음 {#no-access-restriction}
 
@@ -171,7 +169,7 @@ AEM Communities 구성 요소 중 선택한 일부만 동적으로 포함될 수
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**JSP를 사용할 때**, 태그 [cq:include](../../help/sites-developing/taglib.md#lt-cq-include)를 사용하여 리소스가 포함됩니다.
+**JSP를 사용하는 경우** 태그 [cq:include](../../help/sites-developing/taglib.md#lt-cq-include)을(를) 사용하여 리소스가 포함됩니다.
 
 ```
 <cq:include path="votes"
@@ -192,7 +190,7 @@ SCF에서 사용할 수 있는 사용자 지정 도우미의 목록과 설명은
 
 프레임워크에는 풍부한 대화형 구성 요소를 쉽게 개발할 수 있도록 모델 보기 JavaScript 프레임워크인 [Backbone.js](https://backbonejs.org/)의 확장이 포함되어 있습니다. 객체 지향 속성은 확장/재사용 가능한 프레임워크를 지원합니다. 클라이언트와 서버 간의 통신은 HTTP API를 통해 간소화됩니다.
 
-프레임워크는 서버측 Handlebars 템플릿을 사용하여 클라이언트의 구성 요소를 렌더링합니다. 이 모델은 HTTP API에서 생성된 JSON 응답을 기반으로 합니다. 보기는 Handlebars 템플릿에서 생성된 HTML에 바인딩되며 상호 작용을 제공합니다.
+프레임워크는 서버측 Handlebars 템플릿을 사용하여 클라이언트의 구성 요소를 렌더링합니다. 이 모델은 HTTP API에서 생성된 JSON 응답을 기반으로 합니다. 보기는 Handlebars 템플릿에서 생성한 HTML에 바인딩되며 상호 작용을 제공합니다.
 
 ### CSS 규칙 {#css-conventions}
 
