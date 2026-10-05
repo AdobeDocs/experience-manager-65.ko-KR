@@ -1,10 +1,12 @@
 ---
 title: 테스트 및 추적 도구
 description: AEM은 구성 요소 UI 테스트를 위한 프레임워크 및 구성 요소 테스트 및 디버깅을 위한 메커니즘을 제공합니다
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
+
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
-
+source-wordcount: '293'
+ht-degree: 5%
 ---
-
 # 테스트 및 추적 도구{#testing-and-tracking-tools}
 
 ## 테스트 {#testing}
