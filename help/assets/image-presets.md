@@ -11,11 +11,9 @@ exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 13%
-
 ---
-
 # Dynamic Media 이미지 사전 설정 적용 {#applying-image-presets}
 
 이미지 사전 설정을 사용하면 에셋이 다른 크기, 다른 형식 또는 동적으로 생성되는 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 이미지를 내보낼 때 사전 설정을 선택할 수 있습니다. 사전 설정은 관리자가 지정한 사양에 맞게 이미지 형식을 다시 지정합니다.
@@ -32,7 +30,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서는 이미지 에셋에 대해서만 이미지 사전 설정이 지원됩니다.
+>Dynamic Media - Scene7 모드에서 이미지 사전 설정은 이미지 자산에 대해서만 지원됩니다.
 
 **Dynamic Media 이미지 사전 설정을 적용하려면:**
 

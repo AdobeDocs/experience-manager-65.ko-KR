@@ -1,29 +1,32 @@
 ---
-title: 클라이언트에서 Forms 렌더링
-description: Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 컨텐츠 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 개선합니다
+title: 클라이언트에서 양식 렌더링
+
+description: Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 컨텐츠 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 향상시킵니다
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 0%
-
+source-wordcount: '1715'
+ht-degree: 2%
 ---
-
-# 클라이언트에서 Forms 렌더링 {#rendering-forms-at-the-client}
+# 클라이언트에서 양식 렌더링 {#rendering-forms-at-the-client}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
-## 클라이언트에서 Forms 렌더링 {#rendering-forms-at-the-client-inner}
+## 클라이언트에서 양식 렌더링 {#rendering-forms-at-the-client-inner}
 
-Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 컨텐츠 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 향상시킬 수 있습니다. 이 프로세스를 클라이언트에서의 양식 렌더링이라고 합니다. 클라이언트에서 양식을 렌더링하려면 클라이언트 장치(일반적으로 웹 브라우저)는 Acrobat 7.0 또는 Adobe Reader 7.0 이상을 사용해야 합니다.
+Acrobat 또는 Adobe Reader의 클라이언트측 렌더링 기능을 사용하여 PDF 콘텐츠의 전달을 최적화하고 Forms 서비스의 네트워크 로드 처리 기능을 향상시킬 수 있습니다. 이 프로세스를 클라이언트에서의 양식 렌더링이라고 합니다. 클라이언트에서 양식을 렌더링하려면 클라이언트 장치(일반적으로 웹 브라우저)에서 Acrobat 7.0 또는 Adobe Reader 7.0 이상을 사용해야 합니다.
 
 루트 하위 양식에 `auto`(으)로 설정된 `restoreState` 특성이 포함되어 있지 않으면 서버측 스크립트 실행으로 인한 양식 변경 내용이 클라이언트에서 렌더링되는 양식에 반영되지 않습니다. 이 특성에 대한 자세한 내용은 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
 
@@ -53,17 +56,17 @@ Forms 서비스 클라이언트 API 작업을 프로그래밍 방식으로 수�
 
 `RenderAtClient` 런타임 옵션을 `true`(으)로 설정하여 클라이언트에서 양식을 렌더링하도록 클라이언트 렌더링 런타임 옵션을 설정합니다. 이렇게 하면 양식이 렌더링되는 클라이언트 장치로 전달됩니다. `RenderAtClient`이(가) `auto`(기본값)이면 양식 디자인은 양식이 클라이언트에서 렌더링되는지 여부를 결정합니다. 양식 디자인은 흐름 가능한 레이어가 있는 양식 디자인이어야 합니다.
 
-설정할 수 있는 선택적 런타임 옵션은 `SeedPDF` 옵션입니다. `SeedPDF` 옵션은 PDF 컨테이너(시드 PDF 문서)를 양식 디자인 및 XML 데이터와 결합합니다. 양식 디자인과 XML 데이터는 모두 Acrobat 또는 Adobe Reader으로 전달되며, 여기서 양식이 렌더링됩니다. `SeedPDF` 옵션은 최종 사용자에게 양식 소유자가 사용할 수 있는 글꼴을 사용할 수 있는 권한이 없는 경우와 같이 클라이언트 컴퓨터에 양식에 사용되는 글꼴이 없는 경우에 사용할 수 있습니다.
+설정할 수 있는 선택적 런타임 옵션은 `SeedPDF` 옵션입니다. `SeedPDF` 옵션은 PDF 컨테이너(시드 PDF 문서)를 양식 디자인 및 XML 데이터와 결합합니다. 양식 디자인과 XML 데이터는 모두 Acrobat 또는 Adobe Reader로 전달되며, 여기서 양식이 렌더링됩니다. `SeedPDF` 옵션은 최종 사용자에게 양식 소유자가 사용할 수 있는 글꼴을 사용할 수 있는 권한이 없는 경우와 같이 클라이언트 컴퓨터에 양식에 사용되는 글꼴이 없는 경우에 사용할 수 있습니다.
 
 Designer을 사용하여 시드 PDF 파일로 사용할 간단한 동적 PDF 파일을 만들 수 있습니다. 이 작업을 수행하려면 다음 단계가 필요합니다.
 
-1. 시드 PDF 파일 내에 글꼴을 임베드해야 할지 여부를 결정합니다. 시드 PDF 파일에는 렌더링되는 양식에 필요한 추가 글꼴이 포함되어야 합니다. 시드 PDF 파일에 글꼴을 포함할 때 글꼴 라이센스 계약을 위반하지 않아야 합니다. Designer에서 글꼴을 합법적으로 포함할 수 있는지 여부를 결정할 수 있습니다. 저장할 때 양식에 포함할 수 없는 글꼴이 있으면 포함할 수 없는 글꼴이 나열된 메시지가 Designer에 표시됩니다. 이 메시지는 정적 PDF 문서의 Designer에 표시되지 않습니다.
-1. Designer에서 시드 PDF 파일을 만드는 경우 최소한 메시지가 포함된 텍스트 필드를 추가하는 것이 좋습니다. 이 메시지는 이전 버전의 Adobe Reader 사용자에게 문서를 보려면 Acrobat 7.0 이상 또는 Adobe Reader 7.0 이상이 필요하다는 것을 표시해야 합니다.
-1. 시드 PDF 파일을 PDF 파일 이름 확장자를 사용하여 동적 PDF 파일로 저장합니다.
+1. 시드 PDF 파일 내에 글꼴을 임베드해야 하는지 여부를 결정합니다. 시드 PDF 파일에는 렌더링되는 양식에 필요한 추가 글꼴이 포함되어야 합니다. 시드 PDF 파일에 글꼴을 포함할 때 글꼴 라이선스 계약을 위반하지 않아야 합니다. Designer에서 글꼴을 합법적으로 포함할 수 있는지 여부를 결정할 수 있습니다. 저장할 때 양식에 포함할 수 없는 글꼴이 있으면 포함할 수 없는 글꼴이 나열된 메시지가 Designer에 표시됩니다. 이 메시지는 정적 PDF 문서용 Designer에 표시되지 않습니다.
+1. Designer에서 시드 PDF 파일을 만드는 경우 최소한 메시지가 포함된 텍스트 필드를 추가하는 것이 좋습니다. 문서를 보려면 Acrobat 7.0 이상 또는 Adobe Reader 7.0 이상이 필요하다는 메시지가 이전 버전의 Adobe Reader 사용자에게 표시됩니다.
+1. 시드 PDF 파일을 PDF 파일 이름 확장명을 사용하여 동적 PDF 파일로 저장합니다.
 
 >[!NOTE]
 >
->클라이언트에서 양식을 렌더링하기 위해 시드 PDF 런타임 옵션을 정의할 필요는 없습니다. 시드 PDF을 지정하지 않으면 Forms 서비스는 COS 개체를 포함하지 않지만 실제 XDP 콘텐츠가 포함된 PDF 래퍼가 포함된 셸 pdf를 만듭니다. 이 섹션의 단계에서는 시드 PDF 런타임 옵션을 설정하지 않습니다. COS 객체에 대한 자세한 내용은 Adobe PDF 참조 안내서를 참조하십시오.
+>클라이언트에서 양식을 렌더링하기 위해 시드 PDF 런타임 옵션을 정의할 필요는 없습니다. 시드 PDF을 지정하지 않으면 Forms 서비스는 COS 오브젝트를 포함하지 않지만 실제 XDP 콘텐츠가 포함된 PDF 래퍼가 포함된 셸 pdf를 만듭니다. 이 섹션의 단계에서는 시드 PDF 런타임 옵션을 설정하지 않습니다. COS 객체에 대한 자세한 내용은 Adobe PDF 참조 안내서를 참조하십시오.
 
 **클라이언트에서 양식 렌더링**
 
@@ -83,7 +86,7 @@ Forms 서비스는 클라이언트 웹 브라우저에 작성해야 하는 양�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Forms 서비스에 문서 전달](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -183,6 +186,6 @@ Forms API(웹 서비스)를 사용하여 클라이언트에서 양식을 렌더�
 
 **추가 참조**
 
-[클라이언트에서 Forms 렌더링](#rendering-forms-at-the-client)
+[클라이언트에서 양식 렌더링](#rendering-forms-at-the-client)
 
 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
