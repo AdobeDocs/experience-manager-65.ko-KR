@@ -9,18 +9,16 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 0%
-
+source-wordcount: '1176'
+ht-degree: 1%
 ---
-
 # 자습서: 적응형 양식 필드에 규칙 적용 {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-이 자습서는 [첫 번째 적응형 양식을 만들기](/help/forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe은 전체 자습서 사용 사례를 이해하고, 수행하고, 보여주기 위해 연대순으로 시리즈를 따르는 것을 권장합니다.
+이 자습서는 [첫 번째 적응형 양식을 만들기](/help/forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe에서는 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-## 튜토리얼 기본 정보 {#about-the-tutorial}
+## 튜토리얼 정보 {#about-the-tutorial}
 
 규칙을 사용하여 적응형 양식에 대화형, 비즈니스 논리 및 스마트 유효성 검사를 추가할 수 있습니다. 적응형 양식에는 규칙 편집기가 내장되어 있습니다. 규칙 편집기는 안내식 둘러보기와 유사한 드래그 앤 드롭 기능을 제공합니다. 드래그 앤 드롭 방법은 규칙을 만드는 가장 빠르고 쉬운 방법입니다. 규칙 편집기는 코딩 기술을 테스트하거나 규칙을 다음 수준으로 이행하는 데 관심이 있는 사용자를 위한 코드 창도 제공합니다.
 

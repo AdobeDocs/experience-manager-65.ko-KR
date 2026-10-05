@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 0%
-
 ---
-
 # 개발 사례{#development-practices}
 
 ## 완료(DoD)의 정의에 따른 작업 {#work-according-to-a-definition-of-done}
@@ -61,9 +59,9 @@ Jackalope 및 Prosper와 같은 사용자 정의 프레임워크를 사용하여
 
 코드 분석 도구는 유용할 수 있지만 이로 인해 보고서가 개발 팀에서 조치를 취하는 경우에만 유용합니다. 이러한 도구가 제공하는 분석을 미세 조정하지 않으면 이러한 도구가 생성하는 권장 사항은 관련이 없게 되고 가치를 잃게 됩니다.
 
-### 소년 Scout 규칙 준수 {#follow-the-boy-scout-rule}
+### 보이스카우트 규칙 준수 {#follow-the-boy-scout-rule}
 
-소년 Scout은 &quot;발견한 것보다 더 잘 내버려두라&quot;라는 규칙을 가지고 있습니다. 개발팀의 모든 구성원이 이 규칙을 준수하고 문제가 발생했을 때 무언가를 정리하는 한, 코드는 지속적으로 개선됩니다.
+보이스카우트는 &quot;그것을 발견한 것보다 더 잘 내버려두라&quot;라는 규칙을 가지고 있다. 개발팀의 모든 구성원이 이 규칙을 준수하고 문제가 발생했을 때 무언가를 정리하는 한, 코드는 지속적으로 개선됩니다.
 
 ### YAGNI 기능 구현 방지 {#avoid-implementing-yagni-features}
 

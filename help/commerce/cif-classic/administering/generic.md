@@ -11,11 +11,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2961'
 ht-degree: 2%
-
 ---
-
 # 일반 전자 상거래 관리 {#administering-generic-ecommerce}
 
 Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 대신 저장소 내에 있는 상거래 정보를 관리하는 방법을 제공합니다. 여기에는 다음이 포함됩니다.
@@ -118,7 +116,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 
    * **Commerce 공급자**
 
-     [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)에 대한 가져오기(기본 Geometrixx).
+     [상거래 공급자](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)에 대한 가져오기. 기본적으로 Geometrixx.
 
    * **Source 파일**
 
@@ -220,7 +218,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 
 #### 검색 확장 {#extending-search}
 
-CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가할 수 있습니다.
+CRXDE Lite을 사용하여 기존 Facet을 수정하거나 새 Facet을 추가할 수 있습니다.
 
 1. 다음으로 이동합니다.
 
@@ -329,7 +327,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 >
 >종종 제품 정보는 해당 정보를 참조하는 페이지를 통해 게시됩니다. 예를 들어 제품 Y를 참조하는 페이지 X를 게시할 때 AEM은 제품 Y도 게시할지를 묻는 메시지를 표시합니다.
 >
->특수한 경우 AEM은 제품 데이터에서 직접 게시도 지원합니다.
+>AEM은 특별한 경우 제품 데이터에서 직접 게시하는 기능도 지원합니다.
 
 1. **Commerce**&#x200B;을 통해 **제품** 콘솔을 사용하여 제품 정보로 이동합니다.
 1. 다음 중 하나를 사용합니다.
@@ -337,7 +335,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   필요에 따라 **Publish** 또는 **게시 취소** 아이콘을 선택하십시오.
+   필요에 따라 **게시** 또는 **게시 취소** 아이콘을 선택하십시오.
 
    ![세계 아이콘](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![십자가가 있는 세계 아이콘 - 기호 없음](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
@@ -472,7 +470,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
    ![카탈로그 속성 마법사](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. **제목**&#x200B;과(와) **이름**&#x200B;을(를) 입력하십시오.
-1. **만들기** 단추를 선택하십시오. 카탈로그가 생성되고 대화 상자가 열립니다.
+1. **만들기** 버튼을 선택합니다. 카탈로그가 생성되고 대화 상자가 열립니다.
 
    ![카탈로그 만들기 대화 상자](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -637,7 +635,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 
 사용자가 장바구니에 바우처를 추가할 수 있도록 하려면 기본 제공 **바우처** 구성 요소(Commerce 범주)를 사용할 수 있습니다. 장바구니가 표시되는 페이지와 동일한 페이지에 추가합니다(하지만 필수 페이지는 아님). 바우처 구성 요소는 사용자가 바우처 코드를 입력할 수 있는 형식일 뿐이며, 실제로 적용된 바우처 목록과 할인을 보여 주는 장바구니 구성 요소입니다.
 
-데모 사이트(Geometrixx Outdoors - 영어)의 장바구니 페이지에 있는 실제 장바구니 아래의 바우처 양식을 볼 수 있습니다.
+데모 사이트(Geometrixx Outdoors - 영어)의 실제 장바구니 아래에 있는 장바구니 페이지에 바우처 양식이 표시됩니다.
 
 ## 주문 {#orders}
 
