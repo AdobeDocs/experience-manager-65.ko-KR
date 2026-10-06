@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '896'
 ht-degree: 0%
-
 ---
-
 # 앱 구조{#structure-an-app}
 
 {{ue-over-mobile}}
@@ -28,15 +26,15 @@ AEM Mobile 프로젝트에는 페이지, JavaScript 및 CSS 클라이언트 라�
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-AEM 규칙에 따라 앱의 첫 페이지는 앱의 기본 언어(&#39;en&#39;, Geometrixx 및 스타터 키트 사례 모두)로 사용되는 하위 페이지 중 하나로 리디렉션되어야 합니다. 최상위 로케일 페이지는 일반적으로 기본 콘텐츠 동기화 업데이트(contentInit 코드는 /etc/clientlibs/mobile/content-sync/js/contentInit.js에서 찾을 수 있음) 설치를 지원하는 데 필요한 초기화를 처리하는 기초 &#39;splash-page&#39; 구성 요소(/libs/mobileapps/components/splash-page)에서 상속됩니다.
+AEM 규칙에 따라 앱의 첫 페이지는 앱의 기본 언어 역할을 하는 하위 페이지 중 하나로 리디렉션되어야 합니다(Geometrixx 및 스타터 키트 사례 모두의 경우 &#39;en&#39;). 최상위 로케일 페이지는 일반적으로 기본 콘텐츠 동기화 업데이트(contentInit 코드는 /etc/clientlibs/mobile/content-sync/js/contentInit.js에서 찾을 수 있음) 설치를 지원하는 데 필요한 초기화를 처리하는 기초 &#39;splash-page&#39; 구성 요소(/libs/mobileapps/components/splash-page)에서 상속됩니다.
 
 ## 템플릿 및 구성 요소 {#templates-and-components}
 
 앱의 템플릿 및 구성 요소 코드는 /apps/&lt;브랜드 이름>/&lt;앱 이름>에 있어야 합니다. 규칙에 따라 /apps/&lt;브랜드 이름>/&lt;앱 이름>에 템플릿과 구성 요소 코드를 배치해야 합니다. 이 패턴은 AEM에서 이미 사이트를 사용하여 작업한 개발자에게 익숙해야 합니다. 일반적으로 /apps/ 가 게시 인스턴스에서 기본적으로 익명 액세스로 잠기므로 뒤에 옵니다. 따라서 원시 JSP 코드는 잠재적 공격자로부터 멀리 숨겨집니다.
 
-템플릿 자체의 `allowedPaths` 속성 노드를 사용하고 값을 &#39;/content/mobileapps(/)로 설정하여 앱별 템플릿을 표시만 하도록 구성할 수 있습니다.&ast;)?&#39; - 또는 템플릿을 단일 앱에만 사용할 수 있어야 하는 경우 보다 구체적인 요구 사항 `allowedParents` 및 `allowedChildren` 속성은 새 페이지가 만들어지는 위치에 따라 작성자가 사용할 수 있는 템플릿을 세밀하게 제어하는 데에도 사용할 수 있습니다.
+템플릿 자체의 `allowedPaths` 속성 노드를 사용하고 해당 값을 &#39;/content/mobileapps(/.&amp;ast;)?&#39;로 설정하거나, 템플릿을 단일 앱에만 사용할 수 있어야 하는 경우 보다 구체적인 값으로 설정하여 앱별 템플릿을 표시하도록 구성할 수 있습니다. `allowedParents` 및 `allowedChildren` 속성은 새 페이지가 만들어지는 위치에 따라 작성자가 사용할 수 있는 템플릿을 세밀하게 제어하는 데에도 사용할 수 있습니다.
 
-angular 앱 페이지 구성 요소를 처음부터 만들 때는 해당 `sling:resourceSuperType` 속성을 &#39;mobileapps/components/page/ng-page&#39;로 설정하는 것이 좋습니다. 이렇게 하면 작성 및 렌더링을 위한 페이지가 단일 페이지 앱으로 설정되고 구성 요소가 변경해야 할 수 있는 모든 .jsp 파일을 오버레이할 수 있습니다. ng-page에는 UI 프레임워크가 전혀 포함되어 있지 않으므로 일반적으로 개발자는 &quot;template.jsp&quot;(/libs/mobileapps/components/angular/ng-page/template.jsp에서 오버레이됨)를 오버레이합니다.
+앱 페이지 구성 요소를 처음부터 만들 때는 해당 `sling:resourceSuperType` 속성을 &#39;mobileapps/components/angular/ng-page&#39;로 설정하는 것이 좋습니다. 이렇게 하면 작성 및 렌더링을 위한 페이지가 단일 페이지 앱으로 설정되고 구성 요소가 변경해야 할 수 있는 모든 .jsp 파일을 오버레이할 수 있습니다. ng-page에는 UI 프레임워크가 전혀 포함되어 있지 않으므로 일반적으로 개발자는 &quot;template.jsp&quot;(/libs/mobileapps/components/angular/ng-page/template.jsp에서 오버레이됨)를 오버레이합니다.
 
 AngularJS를 사용하려는 작성 가능한 페이지 구성 요소에는 동일한 방식으로 오버레이하고 사용자 정의할 수 있는 /libs/mobileapps/components/angular/ng-component에 동등한 `sling:resourceSuperType` 구성 요소가 있습니다.
 
@@ -44,7 +42,7 @@ AngularJS를 사용하려는 작성 가능한 페이지 구성 요소에는 동�
 
 클라이언트 라이브러리에서는 개발자가 저장소에 배치할 위치에 사용할 수 있는 몇 가지 옵션이 있습니다. 다음 패턴은 지침을 위해 제공되지만 어려운 요구 사항은 아닙니다.
 
-clientside 코드가 독립적일 수 있고 응용 프로그램의 특정 구성 요소와 관련이 없는 경우(다른 응용 프로그램에서 재사용될 수 있음), Adobe은 /etc/clientlibs/&lt;brand name>/&lt;lib name>에 저장하는 것을 권장합니다. 반면 clientlib이 단일 앱에 고유한 경우 앱 디자인 노드의 하위 노드인 /etc/designs/phonegap/&lt;brand name>/&lt;app name>/clientlibs로 중첩할 수 있습니다. 이 clientlib의 범주를 다른 lib과 함께 사용하지 마십시오. 대신 필요에 따라 다른 lib을 임베드하십시오. 이 패턴을 사용하면 개발자가 클라이언트 라이브러리를 앱에 추가할 때마다 새로운 Content Sync 구성을 추가하지 않아도 됩니다. 대신 앱 디자인 clientlib의 &#39;embed&#39; 속성을 업데이트하면 됩니다. 예를 들어 /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all에서 Geometrixx clientlibs-all Content Sync 구성 노드를 살펴보십시오.
+clientside 코드가 독립적일 수 있고 애플리케이션의 특정 구성 요소와 관련이 없는 경우(다른 애플리케이션에서 다시 사용할 수 있는 경우) Adobe에서는 /etc/clientlibs/&lt;brand name>/&lt;lib name>에 저장하는 것을 권장합니다. 반면 clientlib이 단일 앱에 고유한 경우 앱 디자인 노드의 하위 노드인 /etc/designs/phonegap/&lt;brand name>/&lt;app name>/clientlibs로 중첩할 수 있습니다. 이 clientlib의 범주를 다른 lib과 함께 사용하지 마십시오. 대신 필요에 따라 다른 lib을 임베드하십시오. 이 패턴을 사용하면 개발자가 클라이언트 라이브러리를 앱에 추가할 때마다 새로운 Content Sync 구성을 추가하지 않아도 됩니다. 대신 앱 디자인 clientlib의 &#39;embed&#39; 속성을 업데이트하면 됩니다. 예를 들어 /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all의 Geometrixx clientlibs-all Content Sync 구성 노드를 참조하십시오.
 
 클라이언트측 코드가 특정 구성 요소에 밀접하게 연결되어 있는 경우 /apps/에서 구성 요소의 위치 아래에 중첩된 클라이언트 라이브러리에 해당 코드를 배치하고 해당 범주를 앱의 &#39;design&#39; clientlib에 포함하십시오.
 

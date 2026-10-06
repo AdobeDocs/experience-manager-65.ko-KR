@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식 조각이란 무엇입니까?
+title: 적응형 양식 조각이란?
 description: 적응형 Forms은 적응형 양식에서 사용할 패널 또는 필드 그룹과 같은 양식 세그먼트를 만드는 메커니즘을 제공합니다. 기존 패널을 조각으로 저장할 수도 있습니다.
 topic-tags: author
 keywords: 적응형 양식 단편 추가, 적응형 양식 단편, 양식 단편 만들기, 적응형 양식에 단편 추가, 단편 관리
@@ -9,17 +9,15 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 5%
-
+source-wordcount: '1929'
+ht-degree: 11%
 ---
-
-# 핵심 구성 요소를 기반으로 하는 적응형 양식에서 적응형 Forms 단편 만들기 및 사용 {#adaptive-form-fragments}
+# 핵심 구성 요소를 기반으로 하는 적응형 양식에서 적응형 Forms 조각 생성 및 사용 {#adaptive-form-fragments}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 이 문서 |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
 
 모든 양식은 특정 목적을 위해 디자인되었지만 대부분의 양식에는 이름 및 주소, 가족 세부 사항, 소득 세부 사항 등의 개인 세부 사항을 제공하는 것과 같은 몇 가지 일반적인 세그먼트가 있습니다. 양식 개발자는 새 양식을 만들 때마다 이러한 공통 세그먼트를 만들어야 합니다.
 
@@ -40,7 +38,7 @@ ht-degree: 5%
 
 1. https://[*호스트 이름*]:[*포트*]/aem/forms.html에서 AEM Forms 인스턴스에 로그인합니다.
 1. **만들기 > 적응형 양식 조각**&#x200B;을 클릭합니다.
-1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각을 생성하지 못합니다.
+1. 조각의 제목, 이름, 설명 및 태그를 지정합니다. 조각에 고유한 이름을 지정해야 합니다. 동일한 이름의 다른 조각이 존재하는 경우 조각은 생성되지 않습니다.
 1. 양식 템플릿을 선택합니다. 적응형 Forms 또는 기초 구성 요소 기반 적응형 Forms 또는 적응형 에 대한 양식 조각을 만들 수 있습니다.
    * 핵심 구성 요소 기반 양식에 대한 양식 조각을 만들려면 핵심 구성 요소 기반 템플릿을 선택합니다.
    * 기초 구성 요소 기반 양식에 대한 양식 조각을 생성하려면 기초 구성 요소 템플릿을 선택합니다. 예: /libs/fd/af/templateForFragment/defaultFragmentTemplate.
@@ -49,9 +47,9 @@ ht-degree: 5%
 
 1. 클릭하여 **양식 모델** 탭을 열고 **다음에서 선택** 드롭다운 메뉴에서 조각에 대해 다음 모델 중 하나를 선택합니다.
 
-   ![양식 모델 탭에 모델 유형을 표시합니다](assets/create-af-1-1.png)
+   ![양식 모델 탭에서 모델 유형 표시](assets/create-af-1-1.png)
 
-   * **없음**: 양식 모델을 사용하지 않고 조각을 처음부터 만들도록 지정합니다.
+   * **없음**: 양식 모델을 사용하지 않고 처음부터 조각을 만들도록 지정합니다.
 
      >[!NOTE]
      >
@@ -64,9 +62,9 @@ ht-degree: 5%
 
 
 
-1. [만들기&#x200B;**]를 클릭한**&#x200B;다음 [열기&#x200B;**]를 클릭하여**&#x200B;편집 모드에서 기본 템플릿 조각을 엽니다. 편집 모드에서 적응형 양식 구성 요소를 조각에 추가할 수 있습니다.
+1. **만들기**&#x200B;를 클릭한 다음 **열기**&#x200B;를 클릭하여 기본 템플릿으로 편집 모드에서 조각을 엽니다. 편집 모드에서 모든 적응형 양식 구성 요소를 조각에 추가할 수 있습니다.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 또한 XML 스키마 또는 XDP 양식 템플릿을 조각의 양식 모델로 선택한 경우 양식 모델 계층을 표시하는 새 탭이 컨텐츠 파인더에 나타납니다. 양식 모델 요소를 조각으로 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 XDP 또는 XSD의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 또한 조각에 대한 양식 모델로 XML 스키마 또는 XDP 양식 템플릿을 선택한 경우 양식 모델 계층을 표시하는 새 탭이 콘텐츠 파인더에 나타납니다. 양식 모델 요소를 조각으로 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 XDP 또는 XSD의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
 
 스키마 또는 양식 데이터 모델을 기반으로 하는 적응형 양식 조각이 생성되면 적응형 양식 편집기에 있는 콘텐츠 브라우저의 데이터 소스 탭에 양식 데이터 모델 또는 스키마 요소가 나타납니다. 양식 모델 요소를 조각에 드래그 앤 드롭할 수 있습니다. 추가된 양식 모델 요소는 연결된 스키마의 원래 속성을 유지하면서 양식 구성 요소로 변환됩니다.
 
@@ -91,9 +89,9 @@ ht-degree: 5%
 
 ### 적응형 양식에 단편 포함 {#embed-a-fragment-in-adaptive-form}
 
-추가된 조각의 패널 도구 모음인 포함![&#128279;](assets/Smock_Import_18_N.svg) 아이콘을 클릭하여 적응형 양식에 적응형 양식 조각을 포함하도록 선택할 수 있습니다
+추가된 조각의 패널 도구 모음에서 ![포함](assets/Smock_Import_18_N.svg) 아이콘을 클릭하여 적응형 양식 조각을 적응형 양식에 포함할 수 있습니다
 
-포함된 조각은 더 이상 독립형 조각과 연결되지 않습니다. 적응형 양식 내에서 포함된 조각의 구성 요소를 편집할 수 있습니다.
+임베드된 조각은 더 이상 독립형 조각과 연결되지 않습니다. 적응형 양식 내에서 임베드된 조각의 구성 요소를 편집할 수 있습니다.
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}
@@ -113,19 +111,19 @@ Perform the following steps to show complete fragments in forms:
 
 중첩된 적응형 양식 조각을 만들 수 있습니다. 즉, 다른 조각에서 조각을 드래그 앤 드롭할 수 있고 중첩된 조각 구조를 가질 수 있습니다.
 
-### 적응형 양식에서 양식 조각을 여러 번 사용 {#using-form-fragment-mutiple-times-in-af}
+### 적응형 양식에서 양식 단편 여러 번 사용 {#using-form-fragment-mutiple-times-in-af}
 
-적응형 양식에서 비기반 및 스키마 기반 양식 조각을 여러 번 사용하여 각 양식 조각 필드에 대해 데이터를 고유하게 저장할 수 있습니다. 예를 들어, 주소 양식 조각을 사용하여 영구, 통신 및 현재 거주 주소에 대한 주소 세부 정보를 대출 애플리케이션 양식으로 수집할 수 있습니다.
+적응형 양식에서 없음 기반 및 스키마 기반 양식 조각을 여러 번 사용하여 각 양식 조각 필드에 대해 고유하게 데이터를 저장할 수 있습니다. 예를 들어 주소 양식 조각을 사용하여 대출 신청 양식에 영구, 통신 및 현재 거주 주소에 대한 주소 세부 정보를 수집할 수 있습니다.
 
 ![적응형 양식에서 여러 조각 사용](assets/using-multiple-fragment-af.gif)
 
-## 데이터 바인딩을 위한 조각의 자동 매핑 {#auto-mapping-of-fragments-for-data-binding}
+## 데이터 바인딩을 위한 조각 자동 매핑 {#auto-mapping-of-fragments-for-data-binding}
 
-XFA 양식 템플릿 또는 XSD 복합 유형을 사용하여 적응형 양식 조각을 만들고 해당 조각을 적응형 양식으로 드래그 앤 드롭하면 XFA 조각 또는 XSD 복합 유형이 조각 모델 루트가 XFA 조각 또는 XSD 복합 유형에 매핑된 해당 적응형 양식 조각으로 자동 대체됩니다.
+XFA 양식 템플릿 또는 XSD 복합 유형을 사용하여 적응형 양식 조각을 만들고 이 조각을 적응형 양식으로 드래그 앤 드롭하면 조각 모델 루트가 XFA 조각 또는 XSD 복합 유형에 매핑된 해당 적응형 양식 조각으로 XFA 조각 또는 XSD 복합 유형이 자동으로 대체됩니다.
 
 구성 요소 편집 대화 상자에서 조각 에셋과 해당 바인딩을 변경할 수 있습니다.
 
-AEM 콘텐츠 파인더의 적응형 양식 단편 라이브러리에서 바인딩된 적응형 양식 단편을 드래그 앤 드롭하고 적응형 양식 단편 패널의 구성 요소 편집 대화 상자에서 올바른 바인딩 참조를 제공할 수도 있습니다.
+AEM 컨텐츠 파인더의 적응형 양식 단편 라이브러리에서 바인딩된 적응형 양식 단편을 드래그 앤 드롭하고 적응형 양식 단편 패널의 구성 요소 편집 대화 상자에서 올바른 바인딩 참조를 제공할 수도 있습니다.
 
 ## 조각 관리 {#manage-fragments}
 
@@ -159,7 +157,7 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
   </tr>
   <tr>
    <td><p>미리보기</p> </td>
-   <td><p>XML 파일의 데이터를 조각과 병합하여 조각을 HTML 또는 사용자 지정 미리 보기로 미리 보는 옵션을 제공합니다. 자세한 내용은 <a>양식 미리 보기</a>.<br /> <br />를 참조하세요. </p> </td>
+   <td><p>XML 파일의 데이터를 조각과 병합하여 조각을 HTML 또는 사용자 지정 미리 보기로 미리 볼 수 있는 옵션을 제공합니다. 자세한 내용은 <a>양식 미리 보기</a>.<br /> <br />를 참조하세요. </p> </td>
   </tr>
   <tr>
    <td><p>검토 시작/검토 관리</p> </td>
@@ -170,7 +168,7 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
    <td><p>선택한 조각을 현지화하기 위한 사전을 생성합니다. 자세한 내용은 <a>적응형 Forms 지역화</a>.<br /> <br />을(를) 참조하십시오. </p> </td>
   </tr>
   <tr>
-   <td><p>Publish / 게시 취소</p> </td>
+   <td><p>게시/게시 취소</p> </td>
    <td><p>선택한 조각을 게시/게시 취소합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -182,9 +180,9 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
 
 ## 조각을 사용하여 작업할 때 기억해야 할 주요 사항 {#key-points-to-remember-when-working-with-fragments}
 
-* 조각 이름이 고유한지 확인합니다. 같은 이름의 기존 조각이 있는 경우 조각을 만들 수 없습니다.
+* 조각 이름이 고유한지 확인하십시오. 동일한 이름의 조각이 이미 있는 경우 조각을 만들 수 없습니다.
 * XDP 기반 적응형 양식에서 다른 XDP 조각을 포함하는 조각으로 패널을 저장하면 결과 조각이 하위 XDP 조각에 자동으로 바인딩됩니다. XSD 기반 적응형 양식인 경우 결과 조각은 스키마 루트에 바인딩됩니다.
-* 적응형 양식 조각을 만들면 CRXDE Lite에서 적응형 양식에 대한 guideContainer 노드와 유사한 조각 노드가 만들어집니다.
+* 적응형 양식 조각을 만들면 CRXDE Lite의 적응형 양식에 대한 guideContainer 노드와 유사한 조각 노드가 만들어집니다.
 * 다른 양식 데이터 모델을 사용하는 적응형 양식의 조각은 지원되지 않습니다. 예를 들어 XDP 기반 조각은 XSD 기반 적응형 양식에서 지원되지 않으며, 이와 반대입니다.
 * 적응형 양식 조각은 AEM 콘텐츠 파인더의 적응형 양식 조각 탭을 통해 사용할 수 있습니다.
 * 독립형 적응형 양식 조각의 모든 표현식, 스크립트 또는 스타일은 참조로 삽입되거나 적응형 양식에 임베드될 때 유지됩니다.
@@ -192,7 +190,7 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
 * 적응형 양식을 게시할 때 적응형 양식에 참조로 삽입된 독립 실행형 적응형 양식 조각을 게시해야 합니다.
 * 업데이트된 적응형 양식 조각을 다시 게시하면 변경 사항이 조각이 사용되는 적응형 양식의 게시된 인스턴스에 반영됩니다.
 * 확인 구성 요소가 포함된 적응형 양식은 익명 사용자를 지원하지 않습니다. 또한 적응형 양식 조각에서 확인 구성 요소를 사용하는 것은 권장되지 않습니다.
-* (**Mac만 해당**) 양식 단편 기능이 모든 시나리오에서 완벽하게 작동하도록 하려면 /private/etc/hosts 파일에 다음 항목을 추가합니다.
+* (**Mac만 해당**) 양식 조각 기능이 모든 시나리오에서 완벽하게 작동하도록 하려면 다음 항목을 /private/etc/hosts 파일에 추가하십시오.
   `127.0.0.1 <Host machine>` **호스트 컴퓨터**: AEM Forms이 배포된 Apple Mac 컴퓨터입니다.
 
 ## 참조 조각 {#reference-fragments}
@@ -203,8 +201,8 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 작업을 
 ## 추가 참조 {#see-also}
 
 * [핵심 구성 요소 기반 적응형 양식 만들기](create-an-adaptive-form-core-components.md)
-* [규칙 편집기 사용하여 양식에 동적 동작 추가](rule-editor.md)
-* [핵심 구성 요소용 테마 만들기 및 사용자 지정 적응형 Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* [핵심 구성 요소 기반 적응형 Forms에 대한 템플릿 만들기](template-editor.md)
-* [적응형 양식을 AEM Sites 페이지 또는 경험 조각에 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
+* [규칙 편집기를 사용하여 양식에 동적 동작 추가](rule-editor.md)
+* [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기 또는 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
+* [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

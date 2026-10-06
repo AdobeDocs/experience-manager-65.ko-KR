@@ -1,25 +1,28 @@
 ---
 title: HTML5 양식에서 스크리블 서명 사용
-description: HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 모바일 장치에서 문서에 서명하는 것은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다.
+
+description: HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구 사항은 서명을 지원하는 것입니다. 모바일 장치에서 문서에 서명하는 것은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다.
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
+
 docset: aem65
+
 feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
 # HTML5 양식에서 스크리블 서명 사용{#using-scribble-signature-in-html-forms}
 
-HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 스크라이빙(스타일러스 또는 손가락으로 쓰기)은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다. 이제 HTML 5 Forms 및 Forms Designer을 사용하여 양식에 스크리블 서명 필드를 사용할 수 있습니다. 브라우저에서 양식을 렌더링하면 스타일러스, 마우스 또는 터치를 사용하여 이러한 필드에 로그인할 수 있습니다.
+HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구 사항은 서명을 지원하는 것입니다. 스크라이빙(스타일러스 또는 손가락으로 쓰기)은 모바일 장치에서 양식에 서명하는 허용되는 방법이 되고 있습니다. 이제 HTML 5 Forms 및 Forms Designer을 사용하여 양식에 스크리블 서명 필드를 사용할 수 있습니다. 브라우저에서 양식을 렌더링하면 스타일러스, 마우스 또는 터치를 사용하여 이러한 필드에 로그인할 수 있습니다.
 
 ## 스크리블 서명 필드를 사용하여 양식을 디자인하는 방법 {#how-to-design-a-form-using-scribble-signature-field}
 
@@ -30,7 +33,7 @@ HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으�
 
    >[!NOTE]
    >
-   >Forms Designer에서 선택한 필드의 Dimension은 필드가 렌더링될 때 반영됩니다. 그러나 렌더링된 서명 상자의 차원은 Forms Designer에 지정된 차원이 아니라 필드의 종횡비를 기반으로 계산됩니다.
+   >Forms Designer에서 선택한 필드의 차원은 필드가 렌더링될 때 반영됩니다. 그러나 렌더링된 서명 상자의 차원은 Forms Designer에 지정된 차원이 아니라 필드의 종횡비를 기반으로 계산됩니다.
 
 1. 서명 스크리블 필드를 구성합니다.
 
@@ -58,7 +61,7 @@ HTML5 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으�
 
 ## 스크리블 서명 인터페이스 {#interfacing-with-the-scribble-signatures}
 
-### 서명 {#signing}
+### Signing {#signing}
 
 서명 스크리블 필드를 양식에 추가하고 렌더링하면 필드를 클릭하거나 탭하면 대화 상자가 열립니다. 사용자는 마우스, 손가락 또는 스타일러스를 사용하여 점선 사각형으로 지정된 그리기 영역에 서명을 낙서할 수 있다.
 

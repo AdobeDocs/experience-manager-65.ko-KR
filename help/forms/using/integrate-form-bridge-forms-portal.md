@@ -1,24 +1,27 @@
 ---
-title: Form BridgeHTML 과 Form 5 Forms에 대한 사용자 정의 포털 통합
+title: HTML5 양식을 위한 사용자 정의 포털과 Form Bridge 통합
+
 description: FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
-
+source-wordcount: '394'
+ht-degree: 4%
 ---
+# HTML5 양식을 위한 사용자 정의 포털과 Form Bridge 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-# Form BridgeHTML 과 Form 5 Forms에 대한 사용자 정의 포털 통합{#integrating-form-bridge-with-custom-portal-for-html-forms}
-
-FormBridge는 양식과 상호 작용할 수 있는 HTML5 Forms Bridge API입니다. FormBridge API 참조에 대해서는 [FormBridge API 참조](/help/forms/using/form-bridge-apis.md)를 참조하십시오.
+FormBridge는 양식과 상호 작용할 수 있는 HTML5 forms bridge API입니다. FormBridge API 참조에 대해서는 [FormBridge API 참조](/help/forms/using/form-bridge-apis.md)를 참조하십시오.
 
 FormBridge API를 사용하여 HTML 페이지에서 양식 필드의 값을 가져오거나 설정하고 양식을 제출할 수 있습니다. 예를 들어 API를 사용하여 마법사와 같은 경험을 빌드할 수 있습니다.
 

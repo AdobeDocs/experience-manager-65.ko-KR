@@ -1,22 +1,25 @@
 ---
-title: 양식 및 에셋 검색
+title: 양식 및 자산 검색
+
 description: AEM 검색을 사용하여 AEM 인스턴스에서 양식 및 에셋을 검색할 수 있습니다. 기본 및 고급 검색을 사용하여 에셋을 빠르게 찾을 수 있습니다.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 5%
 ---
-
-# 양식 및 에셋 검색{#searching-for-forms-and-assets}
+# 양식 및 자산 검색{#searching-for-forms-and-assets}
 
 와일드카드와 함께 텍스트 문자열 또는 텍스트 문자열을 사용하여 양식이나 양식 에셋을 검색할 수 있습니다. 검색 패널의 다양한 카테고리에 있는 기준을 사용하여 검색 범위를 좁힐 수도 있습니다.
 
@@ -47,7 +50,7 @@ Adobe Experience Manager은 메타데이터 속성에서 입력한 텍스트를 
 
 검색 기준에서 쿼리 외에 몇 가지 검색 매개 변수를 지정하여 기본 검색을 보다 효율적으로 만들고 초점을 맞출 수 있습니다.
 
-![AEM 양식 및 에셋 검색을 위한 검색 필드 및 매개 변수 또는 필터](assets/search_forms_assets.png)
+![AEM 양식 및 에셋 검색에 대한 검색 필드 및 매개 변수 또는 필터](assets/search_forms_assets.png)
 
 검색 필드, AEM 양식 및 에셋 검색용 매개 변수 또는 필터
 
