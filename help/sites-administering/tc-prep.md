@@ -8,16 +8,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 45%
-
+source-wordcount: '681'
+ht-degree: 42%
 ---
-
 # 번역을 위한 콘텐츠 준비{#preparing-content-for-translation}
 
 일반적으로 다국어 웹 사이트는 여러 언어로 일정량의 콘텐츠를 제공합니다. 사이트는 하나의 언어로 작성된 다음 다른 언어로 번역됩니다. 일반적으로 다국어 사이트는 페이지 분기로 구성되며, 각 분기에는 서로 다른 언어로 된 사이트 페이지가 포함됩니다.
 
-샘플 Geometrixx 데모 사이트는 여러 언어 분기를 포함하며, 다음 구조를 사용합니다.
+샘플 Geometrixx 데모 사이트에는 여러 언어 분기가 포함되어 있으며 다음과 같은 구조를 사용합니다.
 
 ```xml
 /content
@@ -41,7 +39,7 @@ ht-degree: 45%
 1. 언어 마스터의 콘텐츠를 작성합니다.
 1. 사이트에 대한 각 언어 사본의 언어 루트를 만듭니다. 예를 들어 Geometrixx 샘플 사이트의 프랑스어 언어 사본은 /content/geometrixx/fr입니다.
 
-번역을 위한 콘텐츠를 준비한 다음에는 언어 사본 및 관련 번역 프로젝트에서 누락된 페이지를 자동으로 만들 수 있습니다. ([번역 프로젝트 만들기](/help/sites-administering/tc-manage.md)를 참조하십시오.) AEM 콘텐츠 번역 프로세스의 개요를 확인하려면 [다국어 웹 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)을 살펴보십시오.
+번역을 위한 콘텐츠를 준비한 다음에는 언어 사본 및 관련 번역 프로젝트에서 누락된 페이지를 자동으로 만들 수 있습니다. ([번역 프로젝트 만들기](/help/sites-administering/tc-manage.md)를 참조하십시오.) AEM의 콘텐츠 번역 프로세스에 대한 개요는 [다국어 웹 사이트를 위한 콘텐츠 번역](/help/sites-administering/translation.md)을 참조하십시오.
 
 ## 언어 루트 만들기 {#creating-a-language-root}
 
@@ -53,7 +51,7 @@ ht-degree: 45%
 
 * `<language-code>_<country-code>` 또는 `<language-code>-<country-code>`지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다(예: `en_US`, `en_us`, `en_GB`, `en-gb`).
 
-전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 이름 속성으로 `fr`이(가) 있습니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
+전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다.  예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 이름 속성으로 `fr`이(가) 있습니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
 
 다음 절차에서는 터치에 적합한 UI를 사용하여 웹 사이트의 언어 사본을 만듭니다. 클래식 UI를 사용하는 지침은 [클래식 UI를 사용하여 언어 루트 만들기](/help/sites-administering/tc-lroot-classic.md)를 참조하십시오.
 
@@ -71,7 +69,7 @@ ht-degree: 45%
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. 만들기 를 클릭합니다. 확인 대화 상자에서 사이트 콘솔로 돌아가려면 **완료**&#x200B;를 클릭하고 언어 사본을 열려면 **열기**&#x200B;를 클릭합니다.
+1. 만들기를 클릭합니다. 확인 대화 상자에서 사이트 콘솔로 돌아가려면 **완료**&#x200B;를 클릭하고 언어 사본을 열려면 **열기**&#x200B;를 클릭합니다.
 
 ## 언어 루트 상태 보기 {#seeing-the-status-of-language-roots}
 

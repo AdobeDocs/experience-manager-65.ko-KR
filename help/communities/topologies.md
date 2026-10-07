@@ -1,5 +1,5 @@
 ---
-title: 커뮤니티에 대해 권장되는 토폴로지
+title: 커뮤니티에 권장되는 토폴로지
 description: UGC(사용자 생성 컨텐츠) 처리에 대한 접근 방법
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,24 +11,22 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 1%
-
+source-wordcount: '552'
+ht-degree: 3%
 ---
-
-# 커뮤니티에 대해 권장되는 토폴로지 {#recommended-topologies-for-communities}
+# 커뮤니티에 권장되는 토폴로지 {#recommended-topologies-for-communities}
 
 AEM Communities 6.1부터 게시 환경의 사이트 방문자(구성원)가 제출한 UGC(사용자 생성 컨텐츠)를 처리하기 위해 고유한 접근 방식이 채택되었습니다.
 
 이 접근 방식은 일반적으로 작성 환경에서 관리되는 AEM 플랫폼이 사이트 콘텐츠를 처리하는 방식과 근본적으로 다릅니다.
 
-AEM 플랫폼은 작성자에서 게시로 사이트 콘텐츠를 복제하는 노드 저장소를 사용하는 반면, AEM Communities은 복제되지 않는 UGC에 대한 단일 공통 저장소를 사용합니다.
+AEM 플랫폼에서는 작성자에서 게시로 사이트 콘텐츠를 복제하는 노드 저장소를 사용하는 반면, AEM Communities에서는 복제되지 않는 UGC에 대한 단일 공통 저장소를 사용합니다.
 
 공용 UGC 저장소의 경우 [SRP(저장소 리소스 공급자)](working-with-srp.md)를 선택해야 합니다. 권장되는 선택 사항은 다음과 같습니다.
 
 * [DSRP - 관계형 데이터베이스 저장소 리소스 제공자](dsrp.md)
 * [MSRP - MongoDB 저장소 리소스 공급자](msrp.md)
-* [ASRP - Adobe 저장소 리소스 제공자](asrp.md)
+* [ASRP - Adobe 스토리지 리소스 제공자](asrp.md)
 
 다른 SRP 옵션 [JSRP - JCR 저장소 리소스 공급자](jsrp.md)는 작성자 및 게시 환경에 대한 공통 UGC 저장소를 모두 지원하지 않습니다.
 
@@ -61,7 +59,7 @@ UGC에 대한 공통 저장소를 설정하는 것은 필수적이므로 기본 
 
 Oak 마이크로커널에 대한 자세한 내용은 [권장 배포](../../help/sites-deploying/recommended-deploys.md)를 참조하세요.
 
-### TarMK Publish 팜 {#tarmk-publish-farm}
+### TarMK 게시 팜 {#tarmk-publish-farm}
 
 토폴로지가 게시 팜인 경우 중요한 관련 항목은 다음과 같습니다.
 
@@ -88,7 +86,7 @@ Oak 마이크로커널에 대한 자세한 내용은 [권장 배포](../../help/
 
 비프로덕션 환경의 경우 [JSRP](jsrp.md)은(는) 작성자 인스턴스와 게시 인스턴스 하나로 개발 환경을 간단하게 설정할 수 있습니다.
 
-프로덕션에 대해 [ASRP](asrp.md), [DSRP](dsrp.md) 또는 [MSRP](msrp.md)을(를) 선택하는 경우 주문형 Adobe 저장소 또는 MongoDB를 사용하여 유사한 개발 환경을 설정할 수도 있습니다. 예를 들어 [데모용 MongoDB를 설정하는 방법](demo-mongo.md)을 참조하세요.
+프로덕션에 대해 [ASRP](asrp.md), [DSRP](dsrp.md) 또는 [MSRP](msrp.md)을(를) 선택하는 경우 Adobe 온디맨드 저장소 또는 MongoDB를 사용하여 유사한 개발 환경을 설정할 수도 있습니다. 예를 들어 [데모용 MongoDB를 설정하는 방법](demo-mongo.md)을 참조하세요.
 
 ## 참조 {#references}
 

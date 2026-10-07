@@ -1,5 +1,5 @@
 ---
-title: 값별 Forms 렌더링
+title: 값으로 양식 렌더링
 description: Forms API(Java)를 사용하여 Java API 및 웹 서비스 API를 사용하여 값별로 양식을 렌더링합니다.
 contentOwner: admin
 content-type: reference
@@ -9,15 +9,14 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 0%
-
+source-wordcount: '1848'
+ht-degree: 1%
 ---
-
-# 값별 Forms 렌더링 {#rendering-forms-by-value}
+# 값으로 양식 렌더링 {#rendering-forms-by-value}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -35,7 +34,7 @@ Forms 서비스를 통해 양식 디자인 내에서 연결된 콘텐츠의 위�
 
 * 양식 디자인 내에 상대 연결된 콘텐츠가 있을 수 없습니다. 모든 이미지와 조각은 양식 디자인 내부에 삽입되거나 절대적으로 참조되어야 합니다.
 * 양식을 렌더링한 후에는 서버측 계산을 수행할 수 없습니다. 양식을 Forms 서비스에 다시 제출하면 서버측 계산 없이 데이터가 추출되고 반환됩니다.
-* HTML은 런타임에 연결된 이미지만 사용할 수 있으므로 포함된 이미지가 있는 HTML을 생성할 수 없습니다. 이는 Forms 서비스가 참조된 양식 디자인에서 이미지를 검색하여 HTML이 포함된 이미지를 지원하기 때문입니다. 값으로 전달된 양식 디자인에는 참조된 위치가 없으므로 HTML 페이지가 표시되면 포함된 이미지를 추출할 수 없습니다. 따라서 이미지 참조는 HTML에서 렌더링할 절대 경로여야 합니다.
+* HTML은 런타임에 연결된 이미지만 사용할 수 있으므로 포함된 이미지가 있는 HTML을 생성할 수 없습니다. Forms 서비스는 참조된 양식 디자인에서 이미지를 검색하여 HTML에 포함된 이미지를 지원하기 때문입니다. 값으로 전달된 양식 디자인에는 참조된 위치가 없으므로 HTML 페이지가 표시되면 포함된 이미지를 추출할 수 없습니다. 따라서 이미지 참조는 HTML에서 렌더링할 절대 경로여야 합니다.
 
 >[!NOTE]
 >
@@ -61,7 +60,7 @@ Forms 서비스를 통해 양식 디자인 내에서 연결된 콘텐츠의 위�
 
 **Forms 클라이언트 API 개체 만들기**
 
-프로그래밍 방식으로 PDF 양식 클라이언트 API로 데이터를 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다.
+프로그래밍 방식으로 PDF form 클라이언트 API로 데이터를 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다.
 
 **양식 디자인 참조**
 
@@ -77,7 +76,7 @@ Forms 서비스를 통해 양식 디자인 내에서 연결된 콘텐츠의 위�
 
 >[!NOTE]
 >
->양식 내에 데이터를 표시하려면 데이터를 `xfa:datasets` 요소 내에 지정해야 합니다. XFA 아키텍처에 대한 자세한 내용을 보려면 [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)(으)로 이동하십시오.
+>양식 내에 데이터를 표시하려면 데이터를 `xfa:datasets` 요소 내에 지정해야 합니다. XFA 아키텍처에 대한 자세한 내용을 보려면 [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)&#x200B;(으)로 이동하십시오.
 
 **클라이언트 웹 브라우저에 양식 데이터 스트림 작성**
 
@@ -93,7 +92,7 @@ Forms 서비스에서 값별로 양식을 렌더링하면 클라이언트 웹 �
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Forms 서비스에 문서 전달](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -142,7 +141,7 @@ Forms API(Java)를 사용하여 값별 양식 렌더링:
 
 **추가 참조**
 
-[값별 Forms 렌더링](/help/forms/developing/rendering-forms.md)
+[값으로 양식 렌더링](/help/forms/developing/rendering-forms.md)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
@@ -199,6 +198,6 @@ Forms API(웹 서비스)를 사용하여 값별로 양식을 렌더링합니다.
 
 **추가 참조**
 
-[값별 Forms 렌더링](#rendering-forms-by-value)
+[값으로 양식 렌더링](#rendering-forms-by-value)
 
 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

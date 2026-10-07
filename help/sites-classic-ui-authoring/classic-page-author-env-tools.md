@@ -1,10 +1,12 @@
 ---
 title: 작성 - 환경 및 도구
 description: 웹 사이트 콘솔을 사용하여 웹 사이트를 관리하고 탐색할 수 있습니다. 두 개의 창을 사용하면 웹 사이트의 구조를 확장하고 필요한 요소에 대해 작업을 수행할 수 있습니다.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +14,12 @@ feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 8%
-
+source-wordcount: '952'
+ht-degree: 6%
 ---
-
 # 작성 - 환경 및 도구 {#authoring-the-environment-and-tools}
 
-AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스됩니다.
+AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
 
 ## 사이트 관리 {#site-administration}
 

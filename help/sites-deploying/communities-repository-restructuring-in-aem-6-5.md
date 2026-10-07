@@ -10,14 +10,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
-
+source-wordcount: '1034'
+ht-degree: 2%
 ---
+# 6.5의 AEM Communities 저장소 재구성 {#repository-restructuring-for-aem-communities-in}
 
-# 6.5의 AEM Communities에 대한 저장소 재구성 {#repository-restructuring-for-aem-communities-in}
-
-AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 저장소 재구성 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Communities 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
+AEM 6.4](/help/sites-deploying/repository-restructuring.md)의 상위 [저장소 재구성 페이지에 설명된 대로 AEM 6.5로 업그레이드하는 고객은 이 페이지를 사용하여 AEM Communities 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. 일부 변경 사항은 AEM 6.5 업그레이드 프로세스 중에 작업이 필요하지만, 다른 변경 사항은 향후 업그레이드 전까지 연기될 수 있습니다.
 
 **6.5 업그레이드 포함**
 
@@ -33,7 +31,7 @@ AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
 
 * [Pinterest 소셜 로그인 구성](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [채점 구성](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [소셜 로그인 구성 twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Twitter 소셜 로그인 구성](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [기타](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## 6.5 업그레이드 포함 {#with-upgrade}
@@ -181,12 +179,12 @@ AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td>
-   <td><p>모든 새 Facebook 클라우드 구성은 새 위치로 마이그레이션해야 합니다.</p>
+   <td><p>새 Facebook 클라우드 구성은 새 위치로 마이그레이션해야 합니다.</p>
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li><strong>도구 &gt; Cloud Service &gt; Facebook 소셜 로그인 구성</strong>에서 AEM 제작 UI를 통해 새 Facebook 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는 <br /> </li>
-       <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 새 Facebook 클라우드 구성을 복사합니다.</li>
+       <li><strong>도구 &gt; 클라우드 서비스 &gt; Facebook 소셜 로그인 구성</strong>에서 AEM 작성 UI를 통해 새 Facebook 소셜 로그인 구성을 수동으로 다시 만드십시오.<br /> 또는 <br /> </li>
+       <li>새 Facebook 클라우드 구성을 이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 복사합니다.</li>
       </ol> </li>
      <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Facebook 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
      <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Facebook Connect Cloud Service의 연결을 해제합니다.</li>
@@ -241,7 +239,7 @@ AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li><strong>도구 &gt; Cloud Service &gt; Pinterest 소셜 로그인 구성</strong>에서 AEM 제작 UI를 통해 새 Pinterest 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는</li>
+       <li><strong>도구 &gt; 클라우드 서비스 &gt; Pinterest 소셜 로그인 구성</strong>에서 AEM 작성 UI를 통해 새 Pinterest 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는</li>
        <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code>의 적절한 새 위치로 새 Pinterest 클라우드 구성을 복사합니다.</li>
       </ol> </li>
      <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Pinterest 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
@@ -288,7 +286,7 @@ AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
  </tbody>
 </table>
 
-### 소셜 로그인 구성 twitter {#twitter-social-login-configurations}
+### Twitter 소셜 로그인 구성 {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -307,11 +305,11 @@ AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)의 상위 
     <ol>
      <li>이전 위치의 기존 구성을 새 위치로 마이그레이션합니다.
       <ol>
-       <li><strong>도구 &gt; Cloud Service &gt; 소셜 로그인 구성 Twitter</strong>에서 AEM 작성 UI를 통해 새 Twitter 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는 <br /> </li>
-       <li>이전 위치에서 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 새 Twitter 클라우드 구성을 복사합니다.</li>
+       <li><strong>도구 &gt; 클라우드 서비스 &gt; Twitter 소셜 로그인 구성</strong>에서 AEM 작성 UI를 통해 새 Twitter 소셜 로그인 구성을 수동으로 다시 만듭니다.<br /> 또는 <br /> </li>
+       <li>이전 위치에서 새 Twitter 클라우드 구성을 <code>/conf/global or /conf/&lt;tenant&gt;</code> 아래의 적절한 새 위치로 복사합니다.</li>
       </ol> </li>
      <li><code>[cq:Page]/jcr:content@cq:conf</code> 속성을 새 위치의 절대 경로로 설정하여 새 Twitter 소셜 로그인 구성을 참조하도록 AEM Communities 사이트 루트를 업데이트합니다.</li>
-     <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Twitter 연결 Cloud Service의 연결을 해제합니다.</li>
+     <li>새 위치를 참조하도록 업데이트된 AEM Communities 사이트 루트에서 기존 Twitter Connect Cloud Service의 연결을 해제합니다.</li>
     </ol> </td>
   </tr>
   <tr>
