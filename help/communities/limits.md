@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # 구성원 기여도 제한 {#member-contribution-limits}
 
 ## 개요 {#overview}
@@ -42,7 +40,7 @@ ht-degree: 0%
 * 관리자 권한으로 로그인합니다.
 * [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * `AEM Communities User Generated Content Contribution Limits Configuration` 찾기.
 * 편집 아이콘을 선택합니다.
@@ -69,11 +67,11 @@ ht-degree: 0%
 
 * **[!UICONTROL 도메인]**
 
-  허용 목록에 추가하다 하나 이상의 이메일 도메인 목록 추가 항목을 만들려면 + 아이콘을 선택합니다.
+  하나 이상의 이메일 도메인 목록 추가 항목을 만들려면 + 아이콘을 선택합니다.
 
   도메인의 허용 목록에 추가하다에 이메일 주소가 있는 사용자는 UGC 기여도 제한이 자동으로 적용될 때 영향을 받지 않습니다. 예를 들어 도메인 `mycompany.com`이(가) 도메인 목록에 추가되면 이메일 주소가 `me@mycompany.com`인 구성원의 게시가 제한되지 않습니다.
 
-  허용 목록에 추가하다 기본값은 빈 차원입니다.
+  기본값은 빈 차원입니다.
 
 * **[!UICONTROL 메시지 받는 사람]**
 

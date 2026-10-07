@@ -5,17 +5,16 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
+
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1725'
 ht-degree: 33%
-
 ---
-
 # 비디오{#video}
 
 Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 Assets으로 직접 비디오를 업로드하고, 페이지 작성을 위해 Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
@@ -27,14 +26,14 @@ Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비�
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
-기본 비디오 인코딩 프로세스는 FFMPEG 기반의 비디오 프로필 통합 사용을 기준으로 합니다. 따라서 바로 사용이 가능한 [!UICONTROL DAM 자산 업데이트] 워크플로우에는 다음과 같은 2가지 ffmpeg 기반 워크플로우 단계가 포함됩니다.
+기본 비디오 인코딩 프로세스는 FFMPEG 기반의 비디오 프로필 통합 사용을 기준으로 합니다. 따라서 바로 사용이 가능한 [!UICONTROL DAM 자산 업데이트] 워크플로에는 다음과 같은 2가지 ffmpeg 기반 워크플로 단계가 포함됩니다.
 
 * FFMPEG 썸네일
 * FFMPEG 인코딩
 
 Dynamic Media Classic 통합을 활성화하고 구성해도 바로 사용 가능한 [!UICONTROL DAM 자산 업데이트] 수집 워크플로우에서 이 두 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. Adobe Experience Manager에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 Experience Manager Assets을 사용하여 수집된 새 비디오는 FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번, 총 두 번 인코딩됩니다.
 
-Experience ManagerAdobe 의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
+Experience Manager의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
 
 ### 지원되는 형식 {#supported-formats}
 
@@ -52,9 +51,9 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 이러한 질문 중 하나 또는 둘 다에 대해 &quot;예&quot;라고 대답한 경우 비디오를 Adobe DAM에 직접 업로드하십시오. 두 질문에 대한 답변이 모두 &quot;아니요&quot;이면 비디오를 Dynamic Media Classic에 직접 업로드하십시오. 각 시나리오에 대한 워크플로우는 다음 섹션에 설명되어 있습니다.
 
-#### Assets Adobe에 직접 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Adobe Assets에 직접 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
-자산에 대한 워크플로우나 버전 관리가 필요한 경우 먼저 Assets Adobe에 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
+자산에 대한 워크플로우나 버전 관리가 필요한 경우 먼저 Adobe Assets에 업로드해야 합니다. 다음은 권장되는 워크플로입니다.
 
 1. 비디오 자산을 Adobe Assets에 업로드하고 자동으로 인코딩한 후 Dynamic Media Classic에 게시합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL 동영상]** 탭에서 WCM의 비디오 자산에 액세스합니다.
@@ -62,7 +61,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 #### Dynamic Media Classic에 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-to-scene}
 
-자산에 대해 워크플로우 또는 버전 관리가 필요하지 않은 경우 자산을 Dynamic Media Classic으로 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
+자산에 대해 워크플로 또는 버전 관리가 필요하지 않은 경우 자산을 Dynamic Media Classic으로 업로드해야 합니다. 다음은 권장되는 워크플로입니다.
 
 1. Dynamic Media Classic 데스크톱 앱에서 [Dynamic Media Classic(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-options)합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Dynamic Media Classic]** 탭에서 WCM의 비디오 자산에 액세스합니다.
@@ -70,7 +69,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 ### Dynamic Media Classic 비디오와의 통합 구성 {#configuring-integration-with-scene-video}
 
-1. **[!UICONTROL Cloud Service]**&#x200B;에서 **[!UICONTROL Dynamic Media Classic]** 구성으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 클라우드 서비스]**&#x200B;에서 **[!UICONTROL Dynamic Media Classic]** 구성으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    >[!NOTE]
@@ -98,7 +97,7 @@ Dynamic Media Classic에서 사전 설정이 업데이트된 경우 Experience M
 Adobe DAM에서 Dynamic Media Classic으로 기본 소스 비디오를 업로드하려면:
 
 1. Dynamic Media Classic 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. 기본 소스 비디오를 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 선택하십시오. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Dynamic Media Classic에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
+1. 기본 소스 비디오를 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 선택하십시오. [!UICONTROL DAM 자산 업데이트] 워크플로가 완료되고 **[!UICONTROL Dynamic Media Classic에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
 
    >[!NOTE]
    >
@@ -118,21 +117,21 @@ Dynamic Media Classic 비디오 구성 요소는 Dynamic Media Classic 비디오
 
 >[!NOTE]
 >
->곧바로 사용할 수 있는 Dynamic Media Classic 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Dynamic Media Classic에서 기본 제공 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
+>곧바로 사용할 수 있는 Dynamic Media Classic 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Dynamic Media Classic에서 곧바로 사용할 수 있는 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
 >
 
 ## Experience Manager 비디오 구성 요소 {#aem-video-component}
 
-Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Media Classic 비디오를 보는 데 권장되지만, 이 섹션에서는 완벽함을 위해 Experience Manager에서 Dynamic Media Classic 비디오를 [!UICONTROL 기본 비디오 구성 요소]와 함께 사용하는 방법에 대해 설명합니다.
+Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Media Classic 비디오를 보는 데 권장되지만, 이 섹션에서는 완벽함을 위해 Experience Manager에서 [!UICONTROL 기본 비디오 구성 요소]와 함께 Dynamic Media Classic 비디오를 사용하는 방법에 대해 설명합니다.
 
 ### Experience Manager 비디오 및 Dynamic Media Classic 비디오 비교 {#aem-video-and-scene-video-comparison}
 
-다음 표에서는 Experience Manager 파운데이션 비디오 구성 요소와 Dynamic Media Classic 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교해서 설명합니다.
+다음 표에서는 Experience Manager Foundation 비디오 구성 요소와 Dynamic Media Classic 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교합니다.
 
-|   | Experience Manager 파운데이션 비디오 | Dynamic Media Classic 비디오 |
+|   | Experience Manager Foundation 비디오 | Dynamic Media Classic 비디오 |
 |---|---|---|
-| 접근 방식 | HTML5 첫 번째 접근 방식. Flash은 비 HTML5 폴백에만 사용됩니다. | 대부분의 데스크탑에서 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
-| 제공 | 점진적 | 적응형 스트리밍 |
+| 접근법 | HTML5 첫 번째 접근 방식. Flash는 HTML5 이외 대체 요소에만 사용됩니다. | 대부분의 데스크톱에서 플래시를 사용합니다. HTML5는 모바일 및 태블릿에 사용됩니다. |
+| 게재 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
 | 확장성 | 예 | 아니요 |
 | 모바일 비디오 | 예 | 예 |

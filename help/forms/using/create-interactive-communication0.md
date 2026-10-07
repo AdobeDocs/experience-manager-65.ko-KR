@@ -1,21 +1,24 @@
 ---
-title: '자습서: 대화형 통신 만들기 '
+title: '튜토리얼: 인터랙티브 커뮤니케이션 만들기 '
+
 description: 모든 구성 요소를 사용하여 대화형 통신 만들기
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 0%
-
+source-wordcount: '1914'
+ht-degree: 1%
 ---
-
-# 자습서: 대화형 통신 만들기 {#tutorial-create-interactive-communication}
+# 튜토리얼: 인터랙티브 커뮤니케이션 만들기 {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
@@ -179,7 +182,7 @@ ht-degree: 0%
    1. **테두리** 섹션에서 **1.5px**&#x200B;을(를) **테두리 너비**(으)로 지정하고 **실선**&#x200B;을(를) **테두리 스타일**(으)로 선택하고 **46px**&#x200B;을(를) **테두리 반경**(으)로 지정합니다.
 
    1. **배경** 섹션에서 단추의 배경색으로 빨간색을 선택합니다.
-   1. **Dimension 및 위치** 섹션의 **여백** 필드에서 **동시에 편집** 아이콘을 선택하고 **오른쪽** 여백을 **450px**(으)로 설정합니다. Top, Bottom 및 Left 필드는 공백으로 설정됩니다.
+   1. **차원 및 위치** 섹션의 **여백** 필드에서 **동시에 편집** 아이콘을 선택하고 **오른쪽** 여백을 **450px**(으)로 설정합니다. Top, Bottom 및 Left 필드는 공백으로 설정됩니다.
 
    ![대화형 통신에 하이퍼링크 삽입](assets/ic_web_hyperlink_new.png)
 

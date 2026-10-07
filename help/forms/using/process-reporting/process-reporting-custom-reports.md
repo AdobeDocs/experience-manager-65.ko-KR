@@ -1,5 +1,5 @@
 ---
-title: 진행 중인 사용자 정의 보고서 보고
+title: 프로세스 보고의 사용자 정의 보고서
 description: 사용자 지정 보고서를 만들고 이러한 보고서를 JEE 프로세스 보고 UI의 AEM Forms에 추가할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
-
+source-wordcount: '1053'
+ht-degree: 15%
 ---
-
-# 진행 중인 사용자 정의 보고서 보고{#custom-reports-in-process-reporting}
+# 프로세스 보고의 사용자 정의 보고서{#custom-reports-in-process-reporting}
 
 QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사용하여 OSGi 서비스를 만들어 사용자 지정 보고서를 만들 수 있습니다.
 

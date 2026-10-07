@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1922'
 ht-degree: 0%
-
 ---
-
 # 사용자 및 사용자 그룹 관리 {#managing-users-and-user-groups}
 
 ## 개요 {#overview}
@@ -46,7 +44,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 ### 동적으로 생성된 사용자 그룹 {#dynamically-created-user-groups}
 
-새 커뮤니티 사이트가 만들어지면 작성자 환경([작성자 그룹 역할](#author-group-roles) 참조) 또는 게시 환경([Publish 그룹 역할](#publish-group-roles) 참조)에서 커뮤니티 사이트를 관리하는 데 필요한 다양한 관리 기능에 적합한 uid(고유 ID) 및 권한을 사용하여 새 사용자 그룹이 동적으로 만들어집니다.
+새 커뮤니티 사이트가 만들어지면 작성자 환경([작성자 그룹 역할](#author-group-roles) 참조) 또는 게시 환경([게시 그룹 역할](#publish-group-roles) 참조)에서 커뮤니티 사이트를 관리하는 데 필요한 다양한 관리 기능에 적합한 uid(고유 ID) 및 권한을 사용하여 새 사용자 그룹이 동적으로 만들어집니다.
 
 그룹 이름은 [커뮤니티 사이트를 만드는 동안](sites-console.md#step13asitetemplate) 사이트에 지정된 이름에서 생성됩니다. 고유 ID는 동일한 서버의 비슷한 이름의 커뮤니티 사이트 및 커뮤니티 그룹에 대한 이름 충돌을 방지합니다.
 
@@ -74,12 +72,12 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 |---|---|
 | 관리자 | 관리자 그룹은 커뮤니티 관리자의 모든 기능과 커뮤니티 관리자 그룹을 관리할 수 있는 기능을 가진 시스템 관리자로 구성됩니다. |
 | 커뮤니티 관리자 | 커뮤니티 관리자 그룹은 자동으로 모든 커뮤니티 사이트 및 사이트에서 만든 모든 커뮤니티 그룹의 구성원이 됩니다. 커뮤니티 관리자 그룹의 초기 멤버는 관리자 그룹입니다. 작성 환경에서 커뮤니티 관리자는 커뮤니티 사이트를 만들고, 사이트를 관리하고, 구성원을 관리하고(커뮤니티에서 구성원을 금지할 수 있음), 콘텐츠를 중재할 수 있습니다. |
-| 커뮤니티 &lt;*사이트 이름*> 사이트 컨텐츠 관리자 | 커뮤니티 사이트 콘텐츠 관리자는 커뮤니티 사이트에 대한 기존 AEM 작성, 콘텐츠 작성 및 페이지 수정을 수행할 수 있습니다. |
+| 커뮤니티 &lt;*사이트 이름*> 사이트 컨텐츠 관리자 | 커뮤니티 사이트 Content Manager는 커뮤니티 사이트에 대한 기존 AEM 작성, 컨텐츠 작성 및 수정 작업을 수행할 수 있습니다. |
 | 없음 | 익명 사이트 방문자는 작성 환경에 액세스할 수 없습니다. |
 
 ### 시스템 관리자 {#system-administrators}
 
-관리자 그룹의 멤버는 작성 및 게시 환경 모두에 대해 AEM 설치의 초기 설정을 수행할 수 있는 시스템 관리자입니다.
+관리자 그룹의 구성원은 작성자 및 게시 환경 모두에 대해 AEM 설치의 초기 설정을 수행할 수 있는 시스템 관리자입니다.
 
 데모 및 개발을 위해 관리자 그룹에는 사용자 ID가 *admin*&#x200B;이고 암호가 *admin*&#x200B;인 구성원이 있습니다.
 
@@ -94,18 +92,18 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 게시 환경에서 커뮤니티 사이트의 [설정](sites-console.md#user-management)에 따라 사이트 방문자는 커뮤니티 구성원이 될 수 있습니다.
 
 * 커뮤니티 사이트가 비공개인 경우(폐쇄됨):
-   * 초대에 의해
-   * 관리자의 작업
+  * 초대에 의해
+  * 관리자의 작업
 
 * 커뮤니티 사이트가 공개(공개)인 경우:
-   * 자가 등록으로
-   * facebook 및 Twitter을 사용하여 소셜 로그인
+  * 자가 등록으로
+  * Facebook 및 Twitter로 소셜 로그인
 
 >[!NOTE]
 >
 >사이트 방문자가 하나의 열린 커뮤니티 사이트의 구성원으로 등록하면 동일한 게시 환경에서 자동으로 다른 열린 커뮤니티 사이트의 구성원이 됩니다.
 
-### Publish 그룹 역할 {#publish-group-roles}
+### 게시 그룹 역할 {#publish-group-roles}
 
 | 그룹의 멤버인 경우... | 기본 역할 |
 |---|---|
@@ -116,7 +114,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 | *권한이 있는 구성원 보안 그룹* | 콘텐츠 생성을 제한할 목적으로 수동으로 생성 및 유지 관리되는 사용자 그룹. [권한이 있는 구성원 그룹](#privileged-members-group)을 참조하세요. |
 | 없음 | 사이트를 발견하는 익명 사이트 방문자는 익명 액세스를 허용하는 커뮤니티 사이트를 보고 검색할 수 있습니다. 참여하고 콘텐츠를 게시하려면 사용자가 직접 등록하고(허용된 경우) 커뮤니티 회원이 되어야 합니다. |
 
-### Publish 그룹 역할에 구성원 할당 {#assigning-members-to-publish-group-roles}
+### 게시 그룹 역할에 구성원 할당 {#assigning-members-to-publish-group-roles}
 
 작성자 환경에서 [커뮤니티 사이트를 만들거나](sites-console.md)사이트 속성을 수정하는 경우[&#128279;](sites-console.md#modifying-site-properties)명의 구성원에게 중재자, 그룹 관리자, 리소스 연락처 또는 권한이 있는 구성원 등 게시 환경에서 수행되는 다양한 역할이 할당될 수 있습니다.
 
@@ -198,7 +196,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 자체 등록�
 
 ### LDAP 통합 {#ldap-integration}
 
-AEM은 사용자 인증 및 사용자 계정 생성을 위한 LDAP 사용을 지원합니다. 자세한 내용은 [AEM 6을 사용하여 LDAP 구성](../../help/sites-administering/ldap-config.md)을 참조하십시오.
+AEM은 사용자 인증 및 사용자 계정 생성을 위해 LDAP 사용을 지원합니다. 자세한 내용은 [AEM을 사용하여 LDAP 구성](../../help/sites-administering/ldap-config.md)을 참조하십시오.
 
 다음은 커뮤니티 구성원과 구성원 그룹에 대한 몇 가지 구성 세부 정보입니다.
 
@@ -211,9 +209,9 @@ AEM은 사용자 인증 및 사용자 계정 생성을 위한 LDAP 사용을 지
 
    * 다음 속성을 설정합니다.
 
-      * **[!UICONTROL 사용자 자동 멤버십]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL 사용자 경로 접두사]**: `/community`
-      * **[!UICONTROL 그룹 경로 접두사]**: `/community`
+     * **[!UICONTROL 사용자 자동 멤버십]**: `community-<site name>-<uid>-members`
+     * **[!UICONTROL 사용자 경로 접두사]**: `/community`
+     * **[!UICONTROL 그룹 경로 접두사]**: `/community`
 
 4. [외부 로그인 모듈](../../help/sites-administering/ldap-config.md#the-external-login-module)
 

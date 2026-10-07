@@ -1,5 +1,5 @@
 ---
-title: '자습서: 첫 번째 적응형 양식 만들기'
+title: '튜토리얼: 첫 번째 적응형 양식 만들기'
 description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다.
 topic-tags: introduction
 docset: aem65
@@ -9,12 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 3%
-
+source-wordcount: '997'
+ht-degree: 8%
 ---
-
-# 자습서: 첫 번째 적응형 양식 만들기 {#tutorial-create-your-first-adaptive-form}
+# 튜토리얼: 첫 번째 적응형 양식 만들기 {#tutorial-create-your-first-adaptive-form}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -41,11 +39,11 @@ ht-degree: 3%
 
 웹 사이트에서는 다양한 고객을 위한 다양한 제품을 제공합니다. 고객은 포털을 탐색하고 제품을 선택하고 주문합니다. 모든 고객은 계정을 만들고 배송 및 청구 주소를 제공합니다. 기존 고객인 Sara Rose는 자신의 배송 주소를 웹사이트에 추가하려고 합니다. 웹사이트는 배송 주소를 추가하고 업데이트할 수 있는 온라인 양식을 제공합니다.
 
-웹 사이트는 AEM(Adobe Experience Manager)에서 실행되고 데이터 캡처 및 처리에 AEM [!DNL Forms]을(를) 사용합니다. 주소 추가 및 업데이트 양식은 적응형 양식입니다. 웹 사이트는 고객 세부 정보를 데이터베이스에 저장합니다. 주소 추가 및 업데이트 양식을 사용하여 사용 가능한 주소를 검색하고 표시합니다. 또한 적응형 양식을 사용하여 업데이트된 새 주소를 수락합니다.
+웹 사이트는 Adobe Experience Manager(AEM)에서 실행되고 데이터 캡처 및 처리에 AEM [!DNL Forms]을(를) 사용합니다. 주소 추가 및 업데이트 양식은 적응형 양식입니다. 웹 사이트는 고객 세부 정보를 데이터베이스에 저장합니다. 주소 추가 및 업데이트 양식을 사용하여 사용 가능한 주소를 검색하고 표시합니다. 또한 적응형 양식을 사용하여 업데이트된 새 주소를 수락합니다.
 
 ### 전제 조건 {#prerequisite}
 
-* [AEM 작성자 인스턴스 설정](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=ko#author-and-publish-installs)
+* [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=ko#author-and-publish-installs) 설정
 * 작성자 인스턴스에 [AEM Forms 추가 기능](../../forms/using/installing-configuring-aem-forms-osgi.md)을(를) 설치합니다.
 * 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예제는 [!DNL MySQL] 데이터베이스를 기반으로 하며 [!DNL Oracle's] [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html)를 사용합니다.
 
@@ -57,7 +55,7 @@ ht-degree: 3%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-적응형 양식은 새로운 세대의 매력적인 반응형 동적 적응형 양식입니다. 적응형 양식을 사용하여 개인화되고 타겟팅된 경험을 제공할 수 있습니다. AEM [!DNL Forms]에서는 적응형 양식을 만들 수 있는 드래그 앤 드롭 WYSIWYG 편집기를 제공합니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](../../forms/using/introduction-forms-authoring.md)를 참조하십시오.
+적응형 양식은 새로운 세대의 매력적인 반응형 동적 적응형 양식입니다. 적응형 양식을 사용하여 개인화되고 타겟팅된 경험을 제공할 수 있습니다. AEM [!DNL Forms]은(는) 적응형 양식을 만들 수 있는 드래그 앤 드롭 WYSIWYG 편집기를 제공합니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](../../forms/using/introduction-forms-authoring.md)를 참조하십시오.
 
 목표:
 
@@ -66,7 +64,7 @@ ht-degree: 3%
 * 제출 액션을 만들어 양식 콘텐츠가 포함된 이메일을 보냅니다.
 * 적응형 양식을 미리 보고 제출합니다.
 
-[![안내서 보기](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[![안내서 참조](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## 2단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
@@ -82,7 +80,7 @@ ht-degree: 3%
 * 양식 데이터 모델에 대한 읽기 및 쓰기 서비스를 구성합니다.
 * 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스를 테스트합니다.
 
-[![안내서 보기](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[![안내서 참조](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## 3단계: 적응형 양식 필드에 규칙 적용 {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +93,7 @@ ht-degree: 3%
 * 적응형 양식 필드에 규칙을 만들어 적용합니다.
 * 규칙을 사용하여 양식 데이터 모델 서비스를 트리거하여 데이터베이스에 데이터를 업데이트합니다.
 
-[![안내서 보기](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![안내서 참조](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## 4단계: 적응형 양식 스타일 지정 {#step-style-your-adaptive-form}
 
@@ -109,9 +107,9 @@ ht-degree: 3%
 * 테마 편집기를 사용하여 적응형 양식에 대한 테마를 만듭니다.
 * 사용자 지정 테마에서 Web Fonts을 사용합니다.
 
-[![안내서 보기](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![안내서 참조](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 5단계: 적응형 양식 Publish {#step-publish-your-adaptive-form}
+## 5단계: 적응형 양식 게시 {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
@@ -119,8 +117,8 @@ ht-degree: 3%
 
 목표:
 
-* 적응형 양식을 AEM 페이지로 Publish.
+* 적응형 양식을 AEM 페이지로 게시합니다.
 * AEM [!DNL Sites] 페이지에 적응형 양식을 포함하십시오.
-* 적응형 양식을 외부 웹 페이지(AEM 외부에 호스트된 비 AEM 웹 페이지)에 임베드합니다.
+* 적응형 양식을 외부 웹 페이지(AEM 외부에서 호스팅되는 AEM이 아닌 웹 페이지)에 포함합니다.
 
-[![안내서 보기](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![안내서 참조](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
