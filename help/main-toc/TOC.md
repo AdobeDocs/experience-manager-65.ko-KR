@@ -6,13 +6,11 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
+source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8305'
 ht-degree: 95%
-
 ---
-
 
 # Adobe Experience Manager 6.5 설명서 {#content}
 
@@ -96,7 +94,7 @@ ht-degree: 95%
       + [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
       + [UI 선택](/help/sites-authoring/select-ui.md)
     + 작성 {#authoring}
-      + [작성자 환경 및 도구](/help/sites-authoring/author-environment-tools.md)
+      + [저작 환경 및 도구](/help/sites-authoring/author-environment-tools.md)
       + [페이지 편집 시 주석](/help/sites-authoring/annotations.md)
       + [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md)
       + [페이지 콘텐츠 편집](/help/sites-authoring/editing-content.md)
@@ -164,7 +162,7 @@ ht-degree: 95%
     + Sites 기능 {#introduction}
       + [MSM 및 번역](/help/sites-administering/msm-and-translation.md)
       + [비동기 작업](/help/sites-administering/asynchronous-jobs.md)
-      + [콘텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
+      + [콘텐츠 재사용: Multi-Site Manager (MSM) 및 Live Copy](/help/sites-administering/msm.md)
       + [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
       + [Live Copy 동기화 구성](/help/sites-administering/msm-sync.md)
       + [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
@@ -178,7 +176,7 @@ ht-degree: 95%
       + [클래식 UI를 사용하여 언어 루트 만들기](/help/sites-administering/tc-lroot-classic.md)
       + [Microsoft Translator에 연결](/help/sites-administering/tc-msconf.md)
       + [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md)
-      + [언어 복사 마법사](/help/sites-administering/tc-wizard.md)
+      + [언어 복제 마법사](/help/sites-administering/tc-wizard.md)
       + [번역 개선 사항](/help/sites-administering/tc-enhancements.md)
       + [번역 모범 사례](/help/sites-administering/tc-bp.md)
       + [구성 및 구성 브라우저](/help/sites-administering/configurations.md)
@@ -220,10 +218,10 @@ ht-degree: 95%
       + [ClientContext](/help/sites-administering/client-context.md)
       + [ContextHub를 사용하여 세분화 구성](/help/sites-administering/segmentation.md)
       + [세분화 구성](/help/sites-administering/campaign-segmentation.md)
-      + [랜딩 페이지를 위한 디자인 가져오기 확장 및 구성](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+      + [랜딩 페이지를 위한 디자인 가져오기 도구 확장 및 구성](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
       + [랜딩 페이지를 Adobe Analytics와 통합](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
     + 통합 {#integration}
-      + [서드파티 서비스와 통합](/help/sites-administering/third-party-services.md)
+      + [제3자 서비스와 통합](/help/sites-administering/third-party-services.md)
       + [Salesforce와 통합](/help/sites-administering/salesforce.md)
       + [Adobe Target과 통합](/help/sites-administering/target.md)
       + [Adobe Learning Manager와 통합](/help/sites-administering/adobe-learningmanager.md)
@@ -232,7 +230,7 @@ ht-degree: 95%
       + [Adobe Analytics를 위한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
       + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md)
       + [Adobe Analytics를 위한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
-      + [콘텐츠 FAQ의 HTTP2 게재](/help/sites-administering/scene7-http2faq.md)
+      + [콘텐츠의 HTTP2 게재 FAQ](/help/sites-administering/scene7-http2faq.md)
       + [Adobe Campaign 통합 문제 해결](/help/sites-administering/troubleshooting-campaignintegration.md)
       + [SharePoint 커넥터](/help/sites-administering/sharepoint-connector.md)
       + [SharePoint 커넥터 라이선스, 저작권 고지 및 면책 조항](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -263,7 +261,7 @@ ht-degree: 95%
     + 모범 사례 {#bestpractices}
       + [모범 사례](/help/sites-administering/administer-best-practices.md)
       + [번역 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html?lang=ko)
-      + [MSM 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html?lang=ko)
+      + [Multi-Site Manager (MSM) 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html?lang=ko)
       + [AEM Sites - GDPR 준비 상태](/help/sites-administering/gdpr-compliance-sites.md)
       + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=ko)
       + [AEM Commerce - GDPR 준비 상태](/help/sites-administering/gdpr-compliance-commerce.md)
@@ -334,7 +332,7 @@ ht-degree: 95%
       + [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
       + [Adobe Campaign 타기팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
       + [AEM에서 Adobe Campaign 양식 작성](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-    + 클래식 UI에서 자산 작성 {#assets}
+    + 클래식 UI에서 에셋 작성 {#assets}
       + [자산 작업](/help/sites-classic-ui-authoring/classicui-assets.md)
       + [Dynamic Media 자산 제공](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
       + [페이지에 Dynamic Media 자산 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
@@ -349,7 +347,7 @@ ht-degree: 95%
   + Experience Manager Assets 사용 {#using}
     + [[!DNL Assets] 홈 페이지 환경](/help/assets/assets-home-page.md)
     + [디지털 자산 검색](/help/assets/search-assets.md)
-    + [자산 메타데이터 작업](/help/assets/metadata.md)
+    + [에셋 메타데이터 작업](/help/assets/metadata.md)
     + [다국어 자산](/help/assets/multilingual-assets.md)
     + [Assets에서 [!DNL Adobe Stock] 자산 사용](/help/assets/aem-assets-adobe-stock.md)
     + [3D 자산 미리보기](/help/assets/previewing-3d-assets.md)
@@ -384,7 +382,7 @@ ht-degree: 95%
     + [스마트 이미징](/help/assets/imaging-faq.md)
     + [클라이언트측 디바이스 픽셀 비율을 활용한 스마트 이미징](/help/assets/client-side-dpr.md)
     + [비디오](/help/assets/s7-video.md)
-    + [콘텐츠의 HTTP2 전송](/help/assets/http2.md)
+    + [콘텐츠의 HTTP2 게재](/help/assets/http2.md)
     + [Dynamic Media 자산 전송](/help/assets/delivering-dynamic-media-assets.md)
     + [Dynamic Media의 핫링크 보호 활성화](/help/assets/hotlink-protection.md)
     + [3D 지원](/help/assets/assets-3d.md)
@@ -415,7 +413,7 @@ ht-degree: 95%
     + [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)
   + 자산 확장 {#extending}
     + [&#x200B; [!DNL Assets] 사용자 정의 및 확장](/help/assets/extending-assets.md)
-    + [미디어 핸들러 및 워크플로를 사용하여 자산 처리](/help/assets/media-handlers.md)
+    + [미디어 핸들러 및 워크플로를 사용하여 에셋 처리](/help/assets/media-handlers.md)
     + [검색 기능 확장](/help/assets/searchx.md)
     + [&#x200B; [!DNL Assets]와 함께 작동하도록 [!DNL ImageMagick] 설치 및 구성](/help/assets/best-practices-for-imagemagick.md)
     + [자산과 활동 스트림 통합](/help/assets/extending-activity-stream.md)
@@ -426,7 +424,7 @@ ht-degree: 95%
     + [GraphiQL IDE 사용](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
     + [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)
     + [콘텐츠 조각의 원격 GraphQL 구문 인증](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
-    + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
+    + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
     + [[!DNL Assets] 프록시 개발](/help/assets/proxy.md)
   + 자산 관리 {#administer}
     + [지원되는 파일 형식](/help/assets/assets-formats.md)
@@ -434,8 +432,8 @@ ht-degree: 95%
     + [메타데이터 개념 이해](/help/assets/metadata-concepts.md)
     + [메타데이터 기능 구성](/help/assets/metadata-config.md)
     + [메타데이터 스키마](/help/assets/metadata-schemas.md)
-    + [표현물로 XMP 원본에 쓰기](/help/assets/xmp-writeback.md)
-    + [Asset Link 공유](/help/assets/link-sharing.md)
+    + [렌디션으로 XMP 원본에 쓰기](/help/assets/xmp-writeback.md)
+    + [에셋 링크 공유](/help/assets/link-sharing.md)
     + [자산 보고서](/help/assets/asset-reports.md)
     + [태그 지정을 위한 스마트 콘텐츠 서비스 구성](/help/assets/config-smart-tagging.md)
     + [메타데이터, 이미지 및 비디오 처리 프로필](/help/assets/processing-profiles.md)
@@ -457,9 +455,9 @@ ht-degree: 95%
     + [자산 파일 형식 모범 사례](/help/assets/assets-file-format-best-practices.md)
     + [자산 모니터링 모범 사례](/help/assets/assets-monitoring-best-practices.md)
     + [Camera Raw 지원](/help/assets/camera-raw.md)
-    + [Apache Tika를 사용하여 MIME 유형의 자산 탐지](/help/assets/detect-asset-mime-type-with-tika.md)
+    + [Apache Tika를 사용하여 에셋의 MIME 유형 탐지](/help/assets/detect-asset-mime-type-with-tika.md)
     + [이미징 코드 변환 라이브러리](/help/assets/imaging-transcoding-library.md)
-    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](/help/assets/multi-tenancy.md)
+    + [컬렉션, 코드 조각 및 코드 조각 템플릿용 멀티테넌시](/help/assets/multi-tenancy.md)
     + [자산에 워터마크 지정](/help/assets/watermarking.md)
     + [자산 템플릿](/help/assets/asset-templates.md)
   + Brand Portal {#brandportal}
@@ -551,14 +549,14 @@ ht-degree: 95%
       + [인터랙티브 커뮤니케이션 설치 및 구성](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
       + [자동 양식 전환 서비스 설치 및 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ko)
     + JEE에 AEM Forms 설치 {#jee-installation}
-      + [JEE에서 AEM Forms에 대해 지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)
+      + [JEE의 AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)
       + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_kr)
       + [AEM Forms Document Security 서버 설치 및 구성](/help/forms/using/installing-and-configuring-the-document-security-server.md)
       + [AEM Forms 설치 준비(단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65_kr)
       + [JBoss용 JEE에 Adobe Experience Manager Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
       + [WebSphere용 JEE에 Adobe Experience Manager 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
       + [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_kr)
-      + [AEM Forms Workbench 설치](/help/forms/using/install-workbench.md)
+      + [AEM Forms 워크벤치 설치](/help/forms/using/install-workbench.md)
       + [Designer 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
       + [AEM Forms(서버 클러스터) 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65_kr)
       + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_kr)
@@ -572,7 +570,7 @@ ht-degree: 95%
       + [동기화 스케줄러 구성](/help/forms/using/configure-synchronization-scheduler.md)
       + [Microsoft SharePoint용 커넥터 구성](https://help.adobe.com/ko_KR/AEMForms/6.1/SharePointConfig/index.html)
       + [AEM Forms를 Adobe LiveCycle에 연결](/help/forms/using/aem-livecycle-connector.md)
-      + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](/help/forms/using/submit-form-data-livecycle-process.md)
+      + [양식 데이터를 AEM Forms on JEE 프로세스에 제출하도록 AEM Forms 구성](/help/forms/using/submit-form-data-livecycle-process.md)
       + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
   + AEM Forms 업그레이드 {#upgrade-aem-forms}
     + [사용 가능한 업그레이드 경로](/help/forms/using/upgrade.md)
@@ -583,7 +581,7 @@ ht-degree: 95%
     + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
       + [AEM Forms 업그레이드 준비 중](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_kr)
       + [Adobe Experience Manager Forms on JEE 업그레이드 체크리스트 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_kr)
-      + [JEE에서 AEM 6.5로 업그레이드](/help/forms/using/upgrade-forms-jee.md)
+      + [JEE에서 AEM 6.5 Forms로 업그레이드](/help/forms/using/upgrade-forms-jee.md)
       + [JBoss용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_kr)
       + [JBoss 턴키용 JEE의 AEM Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_kr)
       + [WebSphere용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_kr)
@@ -591,7 +589,7 @@ ht-degree: 95%
       + [JEE의 AEM Forms용 JBoss를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
       + [JEE의 AEM Forms용 JBoss 클러스터를 7.4.10에서 7.4.23으로 업그레이드](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
   + AEM Forms 관리 {#manage-administer-aem-forms}
-    + [OSGi 그룹 및 권한에 대한 AEM Forms](/help/forms/using/forms-groups-privileges-tasks.md)
+    + [OSGi의 AEM Forms 그룹 및 권한](/help/forms/using/forms-groups-privileges-tasks.md)
     + [양식을 분류하기 위한 새 폴더 만들기](/help/forms/using/creating-new-folders-categorize-forms.md)
     + [양식 및 자산 검색](/help/forms/using/searching-forms-or-assets.md)
     + [양식 메타데이터 관리](/help/forms/using/manage-form-metadata.md)
@@ -601,6 +599,7 @@ ht-degree: 95%
     + [AEM Forms로 자산 가져오기 및 내보내기](/help/forms/using/import-export-forms-templates.md)
     + [적응형 양식 지역화를 위한 새 로케일 지원](/help/forms/using/supporting-new-language-localization.md)
     + 사용자 데이터 처리 {#handling-user-data}
+      + [AEM Forms의 데이터 유지](/help/forms/using/data-retention-aem-forms.md)
       + [OSGi의 Forms 중심 워크플로](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [Forms 사용자 관리](/help/forms/using/user-management-handling-user-data.md)
       + [Forms JEE 워크플로](/help/forms/using/forms-workflow-jee-handling-user-data.md)
@@ -627,7 +626,7 @@ ht-degree: 95%
     + [적응형 양식에서 적응형 양식 조각 만들기 및 사용](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [핵심 구성 요소 기반 적응형 양식을 위한 테마 만들기](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
     + [규칙 편집기](/help/forms/using/rule-editor-core-components.md)
-    + [적응형 양식 핵심 구성 요소의 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions-core-components.md)
+    + [적응형 양식 핵심 구성 요소에서 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [핵심 구성 요소 기반 적응형 양식에 대한 사용자 정의 오류 핸들러 만들기 및 사용](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
     + [적응형 양식에 버전 관리, 댓글 및 주석 추가](/help/forms/using/add-versioning-reviews-comments.md)
     + [적응형 양식 비교](/help/forms/using/compare-forms-core-components.md)
@@ -657,7 +656,7 @@ ht-degree: 95%
     + [양식 미리보기](/help/forms/using/previewing-forms.md)
     + [적응형 양식 재사용](/help/forms/using/reusing-adaptive-forms.md)
     + [적응형 양식의 구분자 구성 요소](/help/forms/using/separator-component-in-adaptive-forms.md)
-    + [스크리블 서명을 사용하여 양식에 전자 서명 적용](/help/forms/using/signing-forms-using-scribble.md)
+    + [자필 서명을 사용하여 양식에 전자 서명 적용](/help/forms/using/signing-forms-using-scribble.md)
     + [AEM Forms 키보드 단축키](/help/forms/using/keyboard-shortcuts.md)
     + [제출 검토자와 양식 연결](/help/forms/using/adding-reviewers-form.md)
     + [양식 필드에 대한 컨텍스트 내 도움말 작성](/help/forms/using/authoring-in-field-help.md)
@@ -680,12 +679,12 @@ ht-degree: 95%
     + [적응형 양식에서 SOM 표현식 사용](/help/forms/using/using-som-expressions-adaptive-forms.md)
     + [양식 제출 메타데이터에 사용자 데이터 정보 추가](/help/forms/using/form-submission-metadata.md)
     + [XDP 기반 적응형 양식에서 XFA 지원](/help/forms/using/xfa-api-supported-in-adaptive-form.md)
-    + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](/help/forms/using/rule-editor-access-user-groups.md)
+    + [선택한 사용자 그룹에 규칙 편집기 액세스 권한 부여](/help/forms/using/rule-editor-access-user-groups.md)
     + [AEM 번역 워크플로를 사용하여 적응형 양식 및 기록 문서 지역화](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
     + [적응형 양식에 대한 구성 스타일 지정](/help/forms/using/styling-constructs-adaptive-forms.md)
     + [적응형 양식과 XFA Forms 템플릿 동기화](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
     + [Adobe Sign을 AEM Forms와 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
-    + [Forms에서 자산 검토 만들기 및 관리](/help/forms/using/create-reviews-forms.md)
+    + [양식에서 에셋 검토 만들기 및 관리](/help/forms/using/create-reviews-forms.md)
     + [AEM Sites 단일 페이지 애플리케이션에 적응형 양식 또는 인터랙티브 커뮤니케이션 임베드](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
     + [적응형 양식에서 사용자 정의 함수 만들기 및 사용](/help/forms/using/create-and-use-custom-functions.md)
     + [적응형 양식에 대한 사용자 정의 오류 핸들러 만들기 및 사용](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
@@ -706,7 +705,7 @@ ht-degree: 95%
     + [AEM Forms 중심 워크플로 단계에 대해 동적으로 사용자 또는 그룹 선택](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md)
     + [OSGi의 Forms 중심 AEM 워크플로 및 AEM Forms JEE 워크플로의 작업 및 기능](/help/forms/using/capabilities-osgi-jee-workflows.md)
     + [AEM 워크플로에서 문서 서비스 API 시작](/help/forms/using/initiating-document-services-apis-aem.md)
-    + [AEM Forms 워크플로 로그인](/help/forms/using/forms-workflow-logs.md)
+    + [AEM Forms 워크플로 로깅](/help/forms/using/forms-workflow-logs.md)
     + [AEM 워크플로의 변수](/help/forms/using/variable-in-aem-workflows.md)
     + [사용자의 받은 편지함 항목 공유 및 액세스 요청](/help/forms/using/configure-shared-queues-osgi.md)
     + [부재중 구성](/help/forms/using/configure-out-of-office-settings.md)
@@ -722,7 +721,7 @@ ht-degree: 95%
     + [웹 애플리케이션에 AEM Forms Workspace 구성 요소 통합](/help/forms/using/integrating-html-ws-components-web.md)
     + [새로운 렌더링 및 제출 서비스](/help/forms/using/new-render-submit-service.md)
     + [폴더 구조 이해](/help/forms/using/folder-structure.md)
-    + [AEM Forms Workspace에 서드파티 애플리케이션 통합](/help/forms/using/integrating-correspondence-management-html-workspace.md)
+    + [AEM Forms 작업 영역에 제3자 애플리케이션 통합](/help/forms/using/integrating-correspondence-management-html-workspace.md)
     + [AEM Forms Workspace JSON 오브젝트 설명](/help/forms/using/html-workspace-json-object-description.md)
     + [AEM Forms Workspace 사용자 정의 소개](/help/forms/using/introduction-customizing-html-workspace.md)
     + [AEM Forms Workspace 사용자 정의를 위한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)
@@ -798,11 +797,11 @@ ht-degree: 95%
     + [HTML5 양식 최적화](/help/forms/using/optimize-html5-forms.md)
     + [HTML5 양식용 스크린 리더](/help/forms/using/screen-readers.md)
     + [HTML5 양식용 사용자 정의 프로필 만들기](/help/forms/using/custom-profile.md)
-    + [HTML5 양식의 오른쪽에서 왼쪽 방향 언어](/help/forms/using/right-left-languages.md)
+    + [HTML5 양식의 오른쪽에서 왼쪽으로 쓰는 언어](/help/forms/using/right-left-languages.md)
     + [HTML5 양식을 위한 사용자 정의 포털과 Form Bridge 통합](/help/forms/using/integrate-form-bridge-forms-portal.md)
     + [HTML5 양식에서 사용자 정의 모양 만들기](/help/forms/using/custom-widgets.md)
     + [HTML5 양식의 기본 스타일 변경](/help/forms/using/changing-default-styles.md)
-    + [HTML5 양식에 대한 그림 구절 지원](/help/forms/using/picture-clause-support.md)
+    + [HTML5 양식에 대한 피처 조항 지원](/help/forms/using/picture-clause-support.md)
     + [HTML5 양식에서 접근성 높은 복잡한 테이블 만들기](/help/forms/using/accessible-tables.md)
     + [HTML5 양식용 CSS 스타일 만들기](/help/forms/using/css-styles.md)
     + [HTML5 양식에 대한 오류 메시지 사용자 정의](/help/forms/using/customzing-errors-html5-forms.md)
@@ -810,7 +809,7 @@ ht-degree: 95%
     + [HTML5 양식에 대한 로깅 활성화](/help/forms/using/enable-logs.md)
     + [HTML5 양식 디버깅](/help/forms/using/debug.md)
     + [HTML5 양식에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)
-    + [AEM Forms의 양식 설정](/help/forms/using/formset-in-aem-forms.md)
+    + [AEM Forms의 양식 세트](/help/forms/using/formset-in-aem-forms.md)
   + 편지와 서신 {#letters-correspondences}
     + [서신 관리 개요](/help/forms/using/cm-overview.md)
     + [레이아웃 디자인](/help/forms/using/layout-design-details.md)
@@ -821,14 +820,14 @@ ht-degree: 95%
     + [표현식 빌더의 원격 기능](/help/forms/using/expression-builder.md)
     + [에이전트 서명 이미지 관리](/help/forms/using/manage-agent-signature-images.md)
     + [편지 및 인터랙티브 커뮤니케이션의 사후 처리](/help/forms/using/submit-letter-topostprocess.md)
-    + [자산 목록 보기에 사용자 정의 작업 추가](/help/forms/using/add-custom-action-asset-listing-view.md)
-    + [서신 UI 만들기에서 사용자 정의 작업/버튼 추가](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
-    + [서신 관리 자산에 사용자 정의 속성 추가](/help/forms/using/add-custom-properties-cm-assets.md)
+    + [에셋 목록 보기에 사용자 정의 작업 추가](/help/forms/using/add-custom-action-asset-listing-view.md)
+    + [Create Correspondence UI에 사용자 정의 액션/버튼 추가](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
+    + [서신 관리 에셋에 사용자 정의 속성 추가](/help/forms/using/add-custom-properties-cm-assets.md)
     + [서신 UI 만들기 사용자 정의](/help/forms/using/customize-create-correspondence-ui.md)
     + [텍스트 편집기 사용자 정의](/help/forms/using/customize-text-editor.md)
     + [서신 관리: 문제 해결](/help/forms/using/cm-troubleshooting.md)
     + [문자 인스턴스에 액세스하기 위한 API](/help/forms/using/cm-apis-to-access-letter-instances.md)
-    + [서신 UI 만들기를 사용자 정의 포털과 통합](/help/forms/using/integrating-create-correspondence-ui-with-your-portal.md)
+    + [Create Correspondence UI를 사용자 정의 포털과 통합](/help/forms/using/integrating-create-correspondence-ui-with-your-portal.md)
     + [서신 관리의 사용자 정의 특수 문자](/help/forms/using/custom-special-characters.md)
     + [편지 PDF 미리보기의 사용자 정의 워터마크](/help/forms/using/custom-watermark.md)
     + [서신 관리 솔루션 구성](/help/forms/using/configuring-a-cm-solution.md)
@@ -846,7 +845,7 @@ ht-degree: 95%
     + [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
     + [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
     + [초안 및 제출을 위한 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)
-    + [AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
+    + [AEM 받은 편지함에서 AEM Forms 애플리케이션 및 작업 관리](/help/forms/using/manage-applications-inbox.md)
     + [AEM Forms의 감시 폴더](/help/forms/using/watched-folder-in-aem-forms.md)
     + [초안 및 제출 구성 요소](/help/forms/using/draft-submission-component.md)
     + [페이지에 링크 구성 요소 임베드](/help/forms/using/embedding-link-component-page.md)
@@ -868,7 +867,7 @@ ht-degree: 95%
     + [양식 서비스](/help/forms/using/forms-service.md)
     + [출력 서비스](/help/forms/using/output-service.md)
     + [ConvertPDF 서비스](/help/forms/using/using-convertpdf-service.md)
-    + [바코드 양식 서비스](/help/forms/using/using-barcoded-forms-service.md)
+    + [바코드 형식 서비스](/help/forms/using/using-barcoded-forms-service.md)
     + [어셈블러 서비스 사용](/help/forms/using/assembler-service.md)
     + [HSM을 사용하여 문서 디지털 서명 또는 인증](/help/forms/using/hsm-certify-esign-docs.md)
     + [프로그래밍 방식으로 AEM 문서 서비스 사용](/help/forms/using/aem-document-services-programmatically.md)
@@ -887,7 +886,7 @@ ht-degree: 95%
     + [Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_kr)
     + [Designer 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_kr)
     + [Designer FormC 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65_kr)
-    + [HTML5 양식에서 스크리블 서명 사용](/help/forms/using/scribble-signature.md)
+    + [HTML5 양식에서 자필 서명 사용](/help/forms/using/scribble-signature.md)
     + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/using/changing-page-zero-content-designer.md)
     + 접근성 모범 사례 {#accessibility-best-practices}
       + {hide-from-toc}[소개](/help/forms/using/introduction-accessibility-forms-designer.md)
@@ -939,7 +938,7 @@ ht-degree: 95%
       + [도메인 정보를 미리 가져오도록 AEM Forms 구성](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
       + [인증서 기반 인증 구성](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
       + [SAML 서비스 제공자 설정 구성](/help/forms/using/admin-help/configure-saml-service-provider-settings.md)
-      + [AEM Forms에서 Single Sign-On 활성화](/help/forms/using/admin-help/enabling-single-sign-on-aem.md)
+      + [AEM Forms에서 SSO(Single Sign-On) 활성화](/help/forms/using/admin-help/enabling-single-sign-on-aem.md)
       + [SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md)
       + [구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-configuration-file.md)
       + [고급 시스템 속성 구성](/help/forms/using/admin-help/configure-advanced-system-attributes.md)
@@ -1122,7 +1121,7 @@ ht-degree: 95%
         + [어셈블러 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
         + [Acrobat Reader DC 확장 프로그램 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
         + [백업 및 복원 서비스 API 빠른 시작](/help/forms/developing/backup-restore-service-api-quick.md)
-        + [바코드 양식 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
+        + [바코드 형식 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
         + [구성 요소 및 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
         + [PDF 변환 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/convert-pdf-service-java-api.md)
         + [자격 증명 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
@@ -1137,7 +1136,7 @@ ht-degree: 95%
         + [PDF 생성 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/generate-pdf-service-java-api.md)
         + [호출 API 빠른 시작](/help/forms/developing/invocation-api-quick-starts.md)
         + [LiveCycleProcess Java API(SOAP) 빠른 시작](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
-        + [출력 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/output-service-java-api-quick.md)
+        + [Output Service Java API 빠른 시작(SOAP)](/help/forms/developing/output-service-java-api-quick.md)
         + [PDF 유틸리티 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/pdf-utilities-service-java-api.md)
         + [저장소 서비스 API 빠른 시작](/help/forms/developing/repository-service-api-quick-starts.md)
         + [서명 서비스 Java API 빠른 시작(SOAP)](/help/forms/developing/signature-service-java-api-quick.md)
@@ -1154,21 +1153,21 @@ ht-degree: 95%
       + API를 사용하여 서비스 작업 수행 {#performing-service-operations-using-apis}
         + [API를 사용하여 서비스 작업 수행](/help/forms/developing/performing-service-operations-using-apis.md)
         + [양식 렌더링](/help/forms/developing/rendering-forms.md)
-        + [PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents.md)
-        + [프로그래밍 방식으로 PDF 문서 어셈블](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+        + [PDF 문서 조합](/help/forms/developing/assembling-pdf-documents.md)
+        + [프로그래밍 방식으로 PDF 문서 조합](/help/forms/developing/programmatically-assembling-pdf-documents.md)
         + [파일 형식과 PDF 간 변환](/help/forms/developing/converting-file-formats-pdf.md)
         + [프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/programmatically-disassembling-pdf-documents.md)
         + [암호화된 PDF 문서 어셈블](/help/forms/developing/assembling-encrypted-pdf-documents.md)
         + [여러 XDP 조각 어셈블](/help/forms/developing/assembling-multiple-xdp-fragments.md)
         + [Bates 번호 매기기를 사용하여 문서 어셈블](/help/forms/developing/assembling-documents-using-bates-numbering.md)
-        + [비대화형 PDF 문서 어셈블](/help/forms/developing/assembling-non-interactive-pdf-documents.md)
-        + [책갈피를 사용하여 PDF 문서 어셈블](/help/forms/developing/assembling-pdf-documents-bookmarks.md)
+        + [비대화형 PDF 문서 조합](/help/forms/developing/assembling-non-interactive-pdf-documents.md)
+        + [책갈피를 사용한 PDF 문서 조합](/help/forms/developing/assembling-pdf-documents-bookmarks.md)
         + [사용 권한 할당](/help/forms/developing/assigning-usage-rights.md)
         + [PDF 포트폴리오 어셈블](/help/forms/developing/assembling-pdf-portfolios.md)
         + [양식 데이터 계산](/help/forms/developing/calculating-form-data.md)
         + [양식을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
         + [SubmittedXML 데이터로 PDF 문서 만들기](/help/forms/developing/creating-pdf-documents-submitted-xml.md)
-        + [웹 서비스 API를 사용하여 PDF 문서 디스어셈블](/help/forms/developing/disassemble-pdf-document-using-web.md)
+        + [웹 서비스 API를 사용하여 PDF 문서 분해](/help/forms/developing/disassemble-pdf-document-using-web.md)
         + [PDF/A 호환 문서인지 확인](/help/forms/developing/determining-whether-documents-pdf-a.md)
         + [DDX 문서를 동적으로 만들기](/help/forms/developing/dynamically-creating-ddx-documents.md)
         + [제출된 양식 처리](/help/forms/developing/handling-submitted-forms.md)
@@ -1228,7 +1227,7 @@ ht-degree: 95%
     + [JEE WebLogic Server에서 EAR 배포 실패](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
     + [CVE-2025-64775(Apache Struts) 취약성 완화](/help/forms/using/mitigating-cve-apache-struts.md)
   + 이전 설명서 {#legacy-documentation}
-    + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
+    + [JEE 워크벤치의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 빌드](/help/forms/developing/building-xml.md)
     + [JEE Custom DSC에서 AEM Forms를 사용하여 파일 압축 및 압축 풀기](/help/forms/developing/compressing-decompressing-custom-dsc.md)
     + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](/help/forms/developing/configure-server-cluster.md)
     + [동적 PDF 양식에서 해시 생성 및 작업](/help/forms/developing/hashing-forms.md)
@@ -1240,9 +1239,9 @@ ht-degree: 95%
   + AI 어시스턴트 {#ai-assistant}
     + [AEM 내 AI 어시스턴트 구성](/help/ai-assistant-in-aem-admin.md)
     + [AEM 내 AI 어시스턴트 정보](/help/ai-assistant-in-aem.md)
-+ Content 및 Commerce {#commerce}
++ Content and Commerce {#commerce}
   + [소개 및 개요](/help/commerce/cif/introduction.md)
-  + [AEM 콘텐츠 및 상거래의 주요 변경 사항](/help/commerce/cif/changes.md)
+  + [AEM Content and Commerce의 주요 변경 사항](/help/commerce/cif/changes.md)
   + 통합 {#integrations}
     + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
     + [서드파티 상거래 솔루션](/help/commerce/cif/integrating/third-party.md)
@@ -1302,15 +1301,15 @@ ht-degree: 95%
     + [모든 것을 통합하는 방법](/help/journey-headless/developer/put-it-all-together.md)
     + [헤드리스 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
     + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-  + AEM 헤드리스 콘텐츠 설계자 여정 {#architect}
-    + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
+  + AEM 헤드리스 콘텐츠 아키텍트 여정 {#architect}
+    + [AEM 헤드리스 콘텐츠 아키텍트 여정 개요](/help/journey-headless/architect/overview.md)
     + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
     + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
     + [AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
   + AEM 헤드리스 콘텐츠 작성자 여정 {#author}
-    + [AEM 헤드리스 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
+    + [AEM 헤드리스 콘텐츠 작성자 여정 - 개요](/help/journey-headless/author/overview.md)
     + [AEM을 통한 헤드리스 작성 - 소개](/help/journey-headless/author/introduction.md)
-    + [AEM을 통한 헤드리스 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
+    + [AEM을 통한 헤드리스 작성 기본 사항](/help/journey-headless/author/basics.md)
     + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
     + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
   + AEM 헤드리스 번역 여정 {#translation}
@@ -1356,7 +1355,7 @@ ht-degree: 95%
       + [명명 규칙](/help/sites-developing/naming-conventions.md)
       + [새로운 Granite UI 필드 구성 요소 만들기](/help/sites-developing/granite-ui-component.md)
       + QueryBuilder{#query-builder}
-        + [Query Builder의 사용자 지정 설명 평가기 구현](/help/sites-developing/implementing-custom-predicate-evaluator.md)
+        + [쿼리 빌더의 사용자 지정 조건자 평가기 구현](/help/sites-developing/implementing-custom-predicate-evaluator.md)
         + [쿼리 빌더 조건자 참조](/help/sites-developing/querybuilder-predicate-reference.md)
         + [쿼리 빌더 API](/help/sites-developing/querybuilder-api.md)
       + 태그 지정{#tagging}
@@ -1402,7 +1401,7 @@ ht-degree: 95%
         + [xtype 사용(클래식 UI)](/help/sites-developing/xtypes.md)
         + [양식 개발(클래식 UI)](/help/sites-developing/developing-forms.md)
     + [AEM의 헤드풀 및 헤드리스](/help/sites-developing/headful-headless.md)
-    + 헤드리스 환경 관리 {#headless}
+    + 헤드리스 경험 관리 {#headless}
       + [헤드리스 및 AEM](/help/sites-developing/headless/introduction.md)
       + Headless 여정 {#journeys}
         + Headless 개발자 여정 {#developer}
@@ -1416,7 +1415,7 @@ ht-degree: 95%
           + [모든 것을 통합하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html?lang=ko)
           + [헤드리스 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html?lang=ko)
           + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html?lang=ko)
-        + Headless 콘텐츠 설계 여정 {#architect}
+        + Headless 콘텐츠 아키텍트 여정 {#architect}
           + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html?lang=ko)
           + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html?lang=ko)
           + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html?lang=ko)
@@ -1486,7 +1485,7 @@ ht-degree: 95%
       + [IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법](/help/sites-developing/ht-intellij.md)
       + [VLT 도구 사용 방법](/help/sites-developing/ht-vlttool.md)
       + [프록시 서버 도구 사용 방법](/help/sites-developing/ht-proxy-server.md)
-      + [AEM Brackets 확장](/help/sites-developing/aem-brackets.md)
+      + [AEM Brackets 확장 기능](/help/sites-developing/aem-brackets.md)
       + [Eclipse용 AEM 개발자 도구](/help/sites-developing/aem-eclipse.md)
       + [AEM 저장소 도구](/help/sites-developing/aem-repo-tool.md)
     + 개인화 {#personlization}
@@ -1509,7 +1508,7 @@ ht-degree: 95%
       + [페이지 속성 보기 사용자 정의](/help/sites-developing/page-properties-views.md)
       + [페이지 속성의 대량 편집을 위한 페이지 구성](/help/sites-developing/bulk-editing.md)
       + [콘텐츠 조각 맞춤화 및 확장](/help/sites-developing/customizing-content-fragments.md)
-      + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/sites-developing/content-fragments-config-components-rendering.md)
+      + [콘텐츠 조각 렌더링용 구성 요소 구성](/help/sites-developing/content-fragments-config-components-rendering.md)
       + [경험 조각](/help/sites-developing/experience-fragments.md)
       + 워크플로 확장{#extending-workflows}
         + [워크플로 개발 및 확장](/help/sites-developing/workflows.md)
@@ -1521,11 +1520,11 @@ ht-degree: 95%
         + [워크플로 프로세스 참조](/help/sites-developing/workflows-process-ref.md)
         + [AEM 워크플로의 변수](/help/sites-developing/using-variables-in-aem-workflows.md)
       + [다중 사이트 관리자 확장](/help/sites-developing/extending-msm.md)
-      + 추적 및 Analytics{#extending-analytics}
+      + 추적 및 분석{#extending-analytics}
         + [이벤트 추적 확장](/help/sites-developing/extending-analytics.md)
         + [구성 요소에 Adobe Analytics 추적 추가](/help/sites-developing/extending-analytics-components.md)
         + [Adobe Analytics 프레임워크 사용자 지정](/help/sites-developing/extending-analytics-framework.md)
-        + [Analytics에 대한 서버측 페이지 명명 구현](/help/sites-developing/extending-analytics-pa-naming.md)
+        + [Analytics에 대한 서버측 페이지 이름 지정 구현](/help/sites-developing/extending-analytics-pa-naming.md)
       + 클라우드 서비스{#extending-cloud-services}
         + [클라우드 서비스 구성](/help/sites-developing/extending-cloud-config.md)
         + [사용자 지정 클라우드 서비스 만들기](/help/sites-developing/extending-cloud-config-custom-cloud.md)
@@ -1562,7 +1561,7 @@ ht-degree: 95%
         + [We.Retail에서 콘텐츠 조각 체험](/help/sites-developing/we-retail-content-fragments.md)
         + [We.Retail에서 핵심 구성 요소 체험](/help/sites-developing/we-retail-core-components.md)
         + [We.Retail에서 편집 가능한 템플릿 체험](/help/sites-developing/we-retail-editable-templates.md)
-        + [We.Retail에서 응답형 레이아웃 체험](/help/sites-developing/we-retail-responsive-layout.md)
+        + [We.Retail에서 반응형 레이아웃 체험](/help/sites-developing/we-retail-responsive-layout.md)
         + [We.Retail에서 세계화된 사이트 구조 체험](/help/sites-developing/we-retail-globalized-site-structure.md)
         + [We.Retail에서 경험 조각 체험](/help/sites-developing/we-retail-experience-fragments.md)
       + [코딩 팁](/help/sites-developing/coding-tips.md)
@@ -1574,7 +1573,7 @@ ht-degree: 95%
     + 모바일 웹 {#mobileweb}
       + [모바일 웹](/help/sites-developing/mobile-web.md)
       + [디바이스 그룹 필터 만들기](/help/sites-developing/groupfilters.md)
-      + [웹 페이지를 위한 응답형 디자인](/help/sites-developing/responsive.md)
+      + [웹 페이지를 위한 반응형 디자인](/help/sites-developing/responsive.md)
       + [모바일 디바이스용 사이트 만들기](/help/sites-developing/mobile.md)
       + [에뮬레이터](/help/sites-developing/emulators.md)
   + 배포 {#deploying}
@@ -1670,5 +1669,5 @@ ht-degree: 95%
     + [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
     + [WCAG 2.1에 대한 빠른 안내서](/help/managing/qg-wcag.md)
   + 데이터 보호 {#data-protection}
-    + [데이터 보호 및 데이터 개인 정보 보호 규정을 위한 AEM 준비 상태](/help/managing/data-protection-and-privacy.md)
+    + [데이터 보호 및 개인정보 보호 규정을 위한 AEM 준비 상태](/help/managing/data-protection-and-privacy.md)
 
