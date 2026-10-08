@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1780'
+ht-degree: 1%
 ---
-
 # 데이터 모델링 - David Nuescheler의 모델{#data-modeling-david-nuescheler-s-model}
 
 ## 소스 {#source}
@@ -46,7 +44,7 @@ David은 2010년 Adobe이 인수한 글로벌 콘텐츠 관리 및 콘텐츠 인
 
 ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것이 좋습니다. 처음에는.
 
-개발 과정에서 nt:unstructured(&amp; friends)를 사랑하는 방법을 배웁니다.
+개발 과정에서 nt:unstructured(&amp; 친구)를 사랑하는 방법을 알아봅니다.
 
 결론적으로, 구조는 비용이 많이 들고 기본 스토리지에 구조를 명시적으로 선언할 필요가 없는 경우가 많습니다.
 
@@ -173,11 +171,11 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 
 콘텐츠 모델이 파일이나 폴더와 같은 냄새를 원격으로 노출하는 경우 `nt:file`, `nt:folder` 및 `nt:resource`을(를) 사용하거나 확장하려고 합니다.
 
-경험상 많은 일반 애플리케이션은 nt:folder 및 nt:files와의 상호 작용을 묵시적으로 허용하며 추가 메타 정보로 보강된 경우 이러한 이벤트를 처리하고 표시하는 방법을 알고 있습니다. 예를 들어, JCR 위에 있는 CIFS 또는 WebDAV와 같은 파일 서버 구현과 직접적인 상호 작용은 암시적이 됩니다.
+내 경험에 따르면 많은 일반 응용 프로그램이 nt:folder 및 nt:files과(와) 암시적으로 상호 작용을 허용하며 추가 메타 정보로 보강된 경우 이러한 이벤트를 처리하고 표시하는 방법을 알고 있습니다. 예를 들어, JCR 위에 있는 CIFS 또는 WebDAV와 같은 파일 서버 구현과 직접적인 상호 작용은 암시적이 됩니다.
 
-파일 이름과 MIME 형식을 저장해야 하는 경우 `nt:file`/ `nt:resource`이(가) 일치하는 것으로 알고 있습니다. 여러 &quot;파일&quot;이 있을 수 있는 경우 nt:folder를 저장하는 것이 좋습니다.
+파일 이름과 MIME 형식을 저장해야 하는 경우 `nt:file`/ `nt:resource`이(가) 일치하는 것으로 알고 있습니다. &quot;파일&quot;이 여러 개 있을 수 있는 경우 nt:folder을(를) 저장하기에 좋습니다.
 
-리소스에 대한 메타 정보를 추가해야 하는 경우 &quot;작성자&quot; 또는 &quot;설명&quot; 속성을 예로 들면 `nt:file`이(가) 아닌 `nt:resource`을(를) 확장합니다. nt:file을 거의 확장하지 않고 `nt:resource`을(를) 자주 확장합니다.
+리소스에 대한 메타 정보를 추가해야 하는 경우 &quot;작성자&quot; 또는 &quot;설명&quot; 속성을 예로 들면 `nt:file`이(가) 아닌 `nt:resource`을(를) 확장합니다. nt:file을(를) 거의 확장하지 않고 `nt:resource`을(를) 자주 확장합니다.
 
 #### 예 {#example-6}
 
@@ -209,7 +207,7 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 
 항목은 경로로 식별할 수 있습니다. 또한 UNIX® 파일 시스템의 하드 링크보다 대부분의 사용자에게 &quot;심볼릭 링크&quot;가 훨씬 더 유용한 만큼 대부분의 애플리케이션이 타겟 노드를 참조하는 경로도 의미가 있습니다.
 
-더 중요한 것은 **mix**:referenceable이라는 것입니다. 즉, 실제로 참조해야 하는 시점에 노드에 적용할 수 있습니다.
+더 중요한 것은 **mix**:referenceable&#x200B;입니다. 즉, 실제로 참조해야 하는 시점에 노드에 적용할 수 있습니다.
 
 따라서 &quot;Document&quot; 유형의 노드를 잠재적으로 참조하고자 한다고 해서 &quot;Document&quot; 노드 유형이 정적 방식으로 `mix:referenceable`에서 확장되어야 하는 것은 아닙니다. 이는 &quot;문서&quot;의 모든 인스턴스에 동적으로 추가될 수 있기 때문입니다.
 
@@ -221,7 +219,7 @@ XML을 가져오거나 기존 XML과 상호 작용하기 위해 SNS가 필요하
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-대신:
+다음 대신에:
 
 ```xml
 [Blog]

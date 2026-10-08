@@ -1,21 +1,24 @@
 ---
 title: 양식 메타데이터 관리
+
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1998'
 ht-degree: 2%
-
 ---
-
 # 양식 메타데이터 관리{#manage-form-metadata}
 
 | 버전 | 문서 링크 |
@@ -73,14 +76,14 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    <td><p>에셋 유형을 지정하는 읽기 전용 값입니다. 다음 값 중 하나를 가질 수 있습니다.</p> 
     <ul> 
      <li>양식 템플릿</li> 
-     <li>PDF 양식, PDF 양식(Acroform) 또는 PDF 양식(Signed)</li> 
+     <li>PDF form, PDF form(Acroform) 또는 PDF form(Signed)</li> 
      <li>문서, 문서(서명됨)</li> 
      <li>적응형 양식</li> 
      <li>리소스</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>생성됨</td> 
+   <td>생성일</td> 
    <td>모두</td> 
    <td>에셋 생성 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
@@ -94,7 +97,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    <td>리소스를 제외한 모든 항목</td> 
    <td><p>양식 유형에 따라 자동으로 계산되는 읽기 전용 값입니다.</p> 
     <ul> 
-     <li>PDF/양식 템플릿/문서 - 업로드된 이진 파일에서 가져옵니다.</li> 
+     <li>PDF/Form template/Document - 업로드된 이진 파일에서 가져옵니다.</li> 
      <li>적응형 양식 - 양식 작성 시 로그인한 사용자</li> 
     </ul> </td> 
   </tr> 
@@ -114,12 +117,12 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
    <td>양식을 마지막으로 게시한 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
   <tr> 
-   <td>Publish 설정/해제 시간</td> 
+   <td>게시 설정/해제 시간</td> 
    <td>리소스를 제외한 모든 항목</td> 
    <td><p>양식이 자동으로 게시/게시 취소되도록 예약된 시간입니다. 사용자가 메타데이터 편집 시 이 값을 설정합니다.</p> 
     <ul> 
-     <li>Publish 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
-     <li>Publish 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
+     <li>게시 켜기 및 끄기 시간은 모두 현재 날짜 이후여야 합니다. </li> 
+     <li>게시 해제 시간은 게시 설정 시간 이후여야 합니다. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -135,7 +138,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
   <tr> 
    <td>HTML 렌더링 프로필</td> 
    <td>양식 템플릿</td> 
-   <td>양식 템플릿을 HTML 형식으로 렌더링하는 동안 사용되는 HTML 렌더링 프로필입니다.</td> 
+   <td>양식 템플릿을 HTML 형식으로 렌더링하는 동안 사용되는 HTML 렌더링 프로필.</td> 
   </tr> 
   <tr> 
    <td>렌더링 형식</td> 
@@ -295,11 +298,11 @@ AEM Forms은 이 도구에서 지원되는 양식 유형의 메타데이터 스�
 1. 방금 드래그한 구성 요소를 클릭합니다. 오른쪽 패널에 열리는 설정 탭에서 다음 필드에 대한 정보를 입력합니다.
 
    1. 스키마에 배치된 필드 위에 표시 이름으로 사용되는 필드 레이블 지정(예: 부서)
-   1. 속성에 매핑 필드에서 미리 채워진 값 **을(를) 볼 수 있습니다./jcr:content/metadata/default&#39;**. crx 리포지토리에 속성을 저장하는 데 사용되는 원하는 속성 이름으로 &#39;**default**&#39;을(를) 변경합니다(예: &#39;)./jcr:content/metadata/department&#39;)
+   1. 속성에 매핑 필드 아래에서 미리 채워진 값 **&#39;./jcr:content/metadata/default&#39;**&#x200B;을(를) 볼 수 있습니다. crx 리포지토리에 속성을 저장하는 데 사용되는 원하는 속성 이름으로 &#39;**default**&#39;을(를) 변경합니다(예: &#39;./jcr:content/metadata/department&#39;).
 
       >[!NOTE]
       >
-      >접두사 &#39; 을 변경하지 마십시오./jcr:content/metadata/&#39; 속성을 저장하는 경로를 정의합니다.
+      >접두사 &#39;./jcr:content/metadata/&#39;는 속성이 저장된 경로를 정의하므로 변경하지 마십시오.
       >
       >또한 저장소의 동일한 위치에 두 개 이상의 속성에 대한 값을 쓰지 않도록 하려면 속성 이름이 고유해야 합니다. 따라서 &#39;default&#39; 값을 변경하는 것이 좋습니다.
 

@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '382'
 ht-degree: 1%
-
 ---
-
 # 앱 템플릿 및 구성 요소{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -29,13 +27,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 응용 프로그램을 개발하는 방법에 대해 알아보려면 [CRXDE Lite을 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 참조하세요.
+>CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 응용 프로그램을 개발하는 방법에 대해 알아보려면 [CRXDE Lite을 사용하여 개발](/help/sites-developing/developing-with-crxde-lite.md)을 참조하십시오.
 
 템플릿은 페이지의 기초입니다.
 
 페이지를 만들려면 템플릿을 사이트 트리의 해당 위치에 복사해야 합니다(노드 트리 **/apps/&lt;myapp>/templates/&lt;mytemplate>**). 이는 **웹 사이트** 탭을 사용하여 페이지를 만드는 경우에 발생합니다.
 
-또한 이 복사 작업은 페이지에 초기 콘텐츠(일반적으로 최상위 수준의 콘텐츠만 해당) 및 속성 sling:resourceType을 제공합니다. sling:resourceType은 페이지를 렌더링하는 데 사용되는 페이지 구성 요소의 경로(하위 노드 jcr:content에 있는 모든 항목)입니다.
+이 복사 작업은 페이지에 초기 콘텐츠(일반적으로 최상위 수준의 콘텐츠만 해당)와 속성 sling:resourceType(페이지를 렌더링하는 데 사용되는 페이지 구성 요소의 경로)(하위 노드 jcr:content의 모든 것)도 제공합니다.
 
 ## 템플릿 구조 {#structure-of-a-template}
 
@@ -55,7 +53,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM의 템플릿 및 구성 요소에 대한 기본 사항을 알아보려면 아래 리소스를 참조하십시오.
+>AEM에서 템플릿 및 구성 요소에 대한 기본 사항을 알아보려면 아래 리소스를 참조하십시오.
 >
 >* [템플릿](/help/sites-developing/templates.md)
 >* [구성 요소](/help/sites-developing/components.md)

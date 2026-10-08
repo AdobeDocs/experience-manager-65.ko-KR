@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1585'
 ht-degree: 2%
-
 ---
-
 # 페이지 템플릿 - 정적{#page-templates-static}
 
 템플릿은 페이지를 만드는 데 사용되며, 선택한 범위 내에서 사용할 수 있는 구성 요소를 정의합니다. 템플릿은 만들 페이지와 구조가 동일하지만 실제 컨텐츠는 없는 노드의 계층입니다.
@@ -32,7 +30,7 @@ ht-degree: 2%
 
 ## 템플릿의 속성 및 하위 노드 {#properties-and-child-nodes-of-a-template}
 
-템플릿은 cq:Template 유형의 노드이며, 다음 속성과 하위 노드를 포함합니다.
+템플릿은 cq:Template 유형의 노드이며 다음 속성과 하위 노드를 포함합니다.
 
 <table>
  <tbody>
@@ -103,7 +101,7 @@ ht-degree: 2%
 
 페이지를 만들려면 템플릿을 사이트 트리의 해당 위치에 복사해야 합니다(노드 트리 `/apps/<myapp>/template/<mytemplate>`). **웹 사이트** 탭을 사용하여 페이지를 만드는 경우 이러한 문제가 발생합니다.
 
-또한 이 복사 작업은 페이지에 초기 콘텐츠(일반적으로 최상위 수준의 콘텐츠만 해당) 및 속성 sling:resourceType을 제공합니다. sling:resourceType은 페이지를 렌더링하는 데 사용되는 페이지 구성 요소의 경로(하위 노드 jcr:content에 있는 모든 항목)입니다.
+이 복사 작업은 페이지에 초기 콘텐츠(일반적으로 최상위 수준의 콘텐츠만 해당)와 속성 sling:resourceType(페이지를 렌더링하는 데 사용되는 페이지 구성 요소의 경로)(하위 노드 jcr:content의 모든 것)도 제공합니다.
 
 ## 템플릿 구성 방법 {#how-templates-are-structured}
 
@@ -123,7 +121,7 @@ ht-degree: 2%
 * **jcr:title** - 템플릿의 제목입니다. 페이지를 만들 때 대화 상자에 표시됩니다.
 * **jcr:description** - 템플릿에 대한 설명. 페이지를 만들 때 대화 상자에 표시됩니다.
 
-이 노드에는 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 jcr:content(cq:PageContent) 노드가 포함되어 있습니다. 이 노드는 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용되는 구성 요소인 sling:resourceType을 사용하여 을 참조합니다.
+이 노드에는 결과 페이지의 콘텐츠 노드의 기반으로 사용되는 jcr:content(cq:PageContent) 노드가 포함되어 있습니다. 이 노드는 새 페이지의 실제 콘텐츠를 렌더링하는 데 사용되는 구성 요소인 sling:resourceType을(를) 사용하여 참조합니다.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -135,20 +133,20 @@ ht-degree: 2%
 
 템플릿은 `cq:Page` 유형의 페이지를 만드는 데 사용됩니다(앞에서 언급한 대로 페이지는 특수 구성 요소 유형입니다). 각 AEM 페이지에는 구조화된 노드 `jcr:content`이(가) 있습니다. 이를 통해 다음이 가능합니다.
 
-* 은(는) cq:PageContent 유형입니다
+* 은(는) cq:PageContent 유형입니다.
 * 정의된 콘텐츠 정의를 포함하는 구조화된 노드 유형입니다.
 * 콘텐츠 렌더링에 사용된 sling 스크립트가 있는 구성 요소를 참조할 수 있는 `sling:resourceType` 속성이 있습니다.
 
 ### 기본 템플릿 {#default-templates}
 
-AEM에는 즉시 사용할 수 있는 다양한 기본 템플릿이 제공됩니다. 경우에 따라 템플릿을 그대로 사용할 수 있습니다. 이 경우 웹 사이트에서 템플릿을 사용할 수 있는지 확인해야 합니다.
+AEM에는 기본 템플릿으로 다양한 기능이 기본 제공됩니다. 경우에 따라 템플릿을 그대로 사용할 수 있습니다. 이 경우 웹 사이트에서 템플릿을 사용할 수 있는지 확인해야 합니다.
 
-예를 들어 AEM에는 contentpage 및 홈 페이지를 포함한 여러 템플릿이 제공됩니다.
+예를 들어 AEM에는 콘텐츠 페이지 및 홈 페이지를 포함한 여러 템플릿이 제공됩니다.
 
-| **제목** | **구성 요소** | **위치** | **목적** |
+| **제목** | **구성 요소** | **위치** | **용도** |
 |---|---|---|---|
 | 홈 페이지 | homepage | geometrixx | Geometrixx 홈페이지 템플릿. |
-| 컨텐츠 페이지 | contentpage | geometrixx | Geometrixx 컨텐츠 페이지 템플릿입니다. |
+| 컨텐츠 페이지 | contentpage | geometrixx | Geometrixx 콘텐츠 페이지 템플릿. |
 
 #### 기본 템플릿 표시 {#displaying-default-templates}
 
@@ -166,7 +164,7 @@ AEM에는 즉시 사용할 수 있는 다양한 기본 템플릿이 제공됩니
 
 일반적으로 기존 템플릿을 가져와 새로운 템플릿을 개발하여 사용할 수 있습니다. 자세한 내용은 [페이지 템플릿 개발](#developing-page-templates)을 참조하십시오.
 
-웹 사이트에 대한 기존 템플릿을 활성화하고 **웹 사이트** 콘솔에서 **웹 사이트** 바로 아래에 페이지를 만들 때 **페이지 만들기** 대화 상자에 표시되도록 하려면 템플릿 노드의 allowedPaths 속성을 **/content(/)로 설정하십시오.&#42;)?**
+웹 사이트에 대한 기존 템플릿을 활성화하고 **웹 사이트** 콘솔에서 **웹 사이트** 바로 아래에 페이지를 만들 때 **페이지 만들기** 대화 상자에 표시하려면 템플릿 노드의 allowedPaths 속성을 **/content(/.&#42;)?**(으)로 설정하십시오.
 
 ## 템플릿 디자인 적용 방법 {#how-template-designs-are-applied}
 
@@ -174,7 +172,7 @@ AEM에는 즉시 사용할 수 있는 다양한 기본 템플릿이 제공됩니
 
 >[!CAUTION]
 >
->Adobe은 [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 통해서만 디자인을 적용할 것을 권장합니다.
+>Adobe에서는 [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 통해서만 디자인을 적용할 것을 권장합니다.
 >
 >예를 들어 CRXDE Lite에서 디자인을 수정하는 것은 모범 사례가 아니며, 이러한 디자인의 적용은 예상되는 비헤이비어와 다를 수 있습니다.
 
@@ -265,7 +263,7 @@ AEM은 콘텐츠 노드에 대해 가장 관련성이 높은 스타일을 다음
 
 ## 페이지 템플릿 개발 {#developing-page-templates}
 
-AEM 페이지 템플릿은 페이지를 만드는 데 사용되는 모델일 뿐입니다. 필요한 초기 콘텐츠를 필요한 만큼 적게 또는 많이 포함할 수 있습니다. 초기 콘텐츠의 역할은 올바른 초기 노드 구조를 만드는 것이며, 필요한 속성(주로 sling:resourceType)은 편집 및 렌더링을 허용하도록 설정됩니다.
+AEM 페이지 템플릿은 페이지를 만드는 데 사용되는 모델일 뿐입니다. 필요한 초기 콘텐츠를 필요한 만큼 적게 또는 많이 포함할 수 있습니다. 초기 콘텐츠의 역할은 올바른 초기 노드 구조를 만드는 것입니다. 필요한 속성(주로 sling:resourceType)은 편집 및 렌더링을 허용하도록 설정됩니다.
 
 ### 템플릿 만들기(기존 템플릿 기반) {#creating-a-new-template-based-on-an-existing-template}
 
@@ -281,7 +279,7 @@ AEM 페이지 템플릿은 페이지를 만드는 데 사용되는 모델일 뿐
    >
    >사용 가능한 템플릿 목록은 새 페이지의 위치와 각 템플릿에 지정된 배치 제한에 따라 다릅니다. [템플릿 가용성](#templateavailibility)을 참조하세요.
 
-1. 새 역할을 반영하도록 새 템플릿 노드의 **jcr:title**&#x200B;을(를) 변경합니다. 필요한 경우 **jcr:description**&#x200B;을 업데이트할 수도 있습니다. 페이지의 템플릿 가용성을 적절하게 변경해야 합니다.
+1. 새 역할을 반영하도록 새 템플릿 노드의 **jcr:title**&#x200B;을(를) 변경합니다. 필요한 경우 **jcr:description**&#x200B;을(를) 업데이트할 수도 있습니다. 페이지의 템플릿 가용성을 적절하게 변경해야 합니다.
 
    >[!NOTE]
    >

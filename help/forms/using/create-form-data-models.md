@@ -1,20 +1,23 @@
 ---
 title: 양식 데이터 모델 만들기
+
 description: 구성된 데이터 소스를 사용하거나 사용하지 않고 양식 데이터 모델을 만드는 방법을 알아봅니다.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
+
 docset: aem65
+
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
-
+source-wordcount: '974'
+ht-degree: 3%
 ---
-
 # 양식 데이터 모델 만들기{#create-form-data-model}
 
 | 버전 | 문서 링크 |

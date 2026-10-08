@@ -1,22 +1,25 @@
 ---
-title: FormsService에 문서 전달
+title: Forms 서비스에 문서 전달
+
 description: 양식 디자인이 포함된 com.adobe.idp.Document 개체를 Forms 서비스에 전달합니다. Forms 서비스는 com.adobe.idp.Document 개체에서 양식 디자인을 렌더링합니다.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 0%
-
+source-wordcount: '1689'
+ht-degree: 1%
 ---
-
 # Forms 서비스에 문서 전달 {#passing-documents-to-the-formsservice}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -63,7 +66,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 **양식 데이터 스트림으로 작업을 수행합니다**
 
-클라이언트 응용 프로그램의 유형에 따라 클라이언트 웹 브라우저에 양식을 작성하거나 양식을 PDF 파일로 저장할 수 있습니다. 웹 기반 응용 프로그램은 일반적으로 웹 브라우저에 양식을 기록합니다. 그러나 데스크톱 응용 프로그램은 일반적으로 양식을 PDF 파일로 저장합니다.
+클라이언트 애플리케이션 유형에 따라 클라이언트 웹 브라우저에 양식을 작성하거나 양식을 PDF 파일로 저장할 수 있습니다. 웹 기반 응용 프로그램은 일반적으로 웹 브라우저에 양식을 기록합니다. 그러나 데스크탑 애플리케이션은 일반적으로 양식을 PDF 파일로 저장합니다.
 
 **추가 참조**
 
@@ -71,7 +74,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ## Java API를 사용하여 Forms 서비스에 문서 전달 {#pass-documents-to-the-forms-service-using-the-java-api}
 
@@ -151,9 +154,9 @@ Forms 서비스 및 Content Services(더 이상 사용되지 않음) API(웹 서
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `FormsServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `FormsServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `FormsServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `FormsServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 

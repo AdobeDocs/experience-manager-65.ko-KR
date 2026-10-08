@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 0%
-
+source-wordcount: '1651'
+ht-degree: 1%
 ---
-
 
 # AEM 태그 지정 프레임워크 {#aem-tagging-framework}
 
@@ -25,13 +23,13 @@ ht-degree: 0%
 * 콘텐츠 작성자로 콘텐츠에 태그를 지정하는 방법에 대한 자세한 내용은 문서 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 관리자의 관점은 [태그 관리](/help/sites-administering/tags.md) 문서를 참조하십시오.
 
-이 문서에서는 AEM에서 태그 지정을 지원하는 기본 프레임워크와 개발자로 사용하는 방법에 대해 중점적으로 다룹니다.
+이 문서에서는 AEM에서 태그 지정을 지원하는 기본 프레임워크와 개발자로 사용하는 방법에 중점을 둡니다.
 
 ## 소개 {#introduction}
 
 콘텐츠에 태그를 지정하고 AEM 태그 지정 인프라를 사용하려면 다음을 수행하십시오.
 
-* 태그는 [&#128279;](#taxonomy-root-node)분류 루트 노드 아래에 `[cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 있어야 합니다.
+* 태그는 [분류 루트 노드 아래에 `[cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 있어야 합니다.](#taxonomy-root-node)
 
 * 태그가 지정된 콘텐츠 노드 `NodeType`에 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin이 포함되어야 합니다.
 * [`TagID`](#tagid)이(가) 콘텐츠 노드의 [`cq:tags`](#tagged-content-cq-tags-property) 속성에 추가되고 ` [cq:Tag](#tags-cq-tag-node-type)` 유형의 노드로 확인됩니다.
@@ -129,7 +127,7 @@ TagID에 콜론(`:`)이 포함되어 있으면 콜론은 네임스페이스를 �
 * 사용자/작성자가 읽을 수 있어야 하는 모든 네임스페이스(대부분 모든 네임스페이스)에 대한 읽기 액세스를 허용합니다.
 * 사용자/작성자가 태그를 사용자/작성자가 자유롭게 정의할 수 있는 네임스페이스에 대한 쓰기 액세스 권한을 사용자/작성자가 부여합니다(`/content/cq:tags/some_namespace` 아래에 노드 추가).
 
-## 태그 지정 가능 콘텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 태그 지정 가능한 콘텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 응용 프로그램 개발자가 콘텐츠 형식에 태깅을 첨부하려면 노드의 등록([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))에 `cq:Taggable` mixin 또는 `cq:OwnerTaggable` mixin이 포함되어야 합니다.
 
@@ -137,7 +135,7 @@ TagID에 콜론(`:`)이 포함되어 있으면 콜론은 네임스페이스를 �
 
 >[!NOTE]
 >
->집계된 콘텐츠 항목의 최상위 노드(또는 `jcr:content` 노드)에서만 태그를 활성화하는 것이 좋습니다. 예를 들면 다음과 같습니다.
+>집계된 콘텐츠 항목의 최상위 노드(또는 `jcr:content` 노드)에서만 태그를 활성화하는 것이 좋습니다. 해당 예는 다음과 같습니다.
 >
 >* `jcr:content`노드가 `cq:Taggable` mixin을 포함하는 유형 `cq:PageContent`인 페이지(`cq:Page`)
 >* `jcr:content/metadata` 노드에 항상 `cq:Taggable` mixin이 있는 Assets(`cq:Asset`)
@@ -164,7 +162,7 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
     mixin
 ```
 
-## 태그가 지정된 컨텐츠: cq:tags 속성 {#tagged-content-cq-tags-property}
+## 태그된 콘텐츠: cq:tags 속성 {#tagged-content-cq-tags-property}
 
 `cq:tags` 속성은 작성자 또는 사이트 방문자가 콘텐츠에 적용할 때 하나 이상의 TagID를 저장하는 데 사용되는 `String` 배열입니다. 속성은 `[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin으로 정의된 노드에 추가되는 경우에만 의미가 있습니다.
 
@@ -178,14 +176,14 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
 
 * 태그 A를 `/content/cq:tags` 아래의 태그 B로 이동하거나 병합하는 경우:
 
-   * 태그 A가 삭제되지 않고 `cq:movedTo` 속성을 가져옵니다.
-   * 태그 B가 만들어지고(이동이 있는 경우) `cq:backlinks` 속성을 가져옵니다.
+  * 태그 A가 삭제되지 않고 `cq:movedTo` 속성을 가져옵니다.
+  * 태그 B가 만들어지고(이동이 있는 경우) `cq:backlinks` 속성을 가져옵니다.
 
 * 태그 B를 `cq:movedTo`포인트 가리킵니다.
 
-   * 이 속성은 태그 A가 태그 B로 이동되었거나 병합되었음을 의미합니다. 태그 B를 이동하면 그에 따라 이 속성이 업데이트됩니다. 따라서 태그 A는 숨겨지며 태그 A를 가리키는 콘텐츠 노드의 태그 ID를 확인하기 위해 저장소에만 보관됩니다. 태그 가비지 수집기는 더 이상 콘텐츠 노드가 이들을 가리키지 않으면 태그 A와 같은 태그를 제거합니다.
+  * 이 속성은 태그 A가 태그 B로 이동되었거나 병합되었음을 의미합니다. 태그 B를 이동하면 그에 따라 이 속성이 업데이트됩니다. 따라서 태그 A는 숨겨지며 태그 A를 가리키는 콘텐츠 노드의 태그 ID를 확인하기 위해 저장소에만 보관됩니다. 태그 가비지 수집기는 더 이상 콘텐츠 노드가 이들을 가리키지 않으면 태그 A와 같은 태그를 제거합니다.
 
-   * `cq:movedTo` 속성에 대한 특수 값은 `nirvana`입니다. 태그가 삭제되었지만 보관해야 하는 `cq:movedTo`이(가) 포함된 하위 태그가 있으므로 리포지토리에서 제거할 수 없는 경우에 적용됩니다.
+  * `cq:movedTo` 속성에 대한 특수 값은 `nirvana`입니다. 태그가 삭제되었지만 보관해야 하는 `cq:movedTo`이(가) 포함된 하위 태그가 있으므로 리포지토리에서 제거할 수 없는 경우에 적용됩니다.
 
   >[!NOTE]
   >
@@ -205,13 +203,13 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
 
 * 콘텐츠 노드의 `cq:tags` 속성을 읽으면 다음 해결 방법이 포함됩니다.
 
-   1. `/content/cq:tags`에 일치하는 항목이 없으면 태그가 반환되지 않습니다.
+  1. `/content/cq:tags`에 일치하는 항목이 없으면 태그가 반환되지 않습니다.
 
-   1. 태그에 `cq:movedTo` 속성이 설정되어 있으면 참조된 태그 ID가 적용됩니다.
+  1. 태그에 `cq:movedTo` 속성이 설정되어 있으면 참조된 태그 ID가 적용됩니다.
 
-      * 뒤에 오는 태그에 `cq:movedTo` 속성이 있는 한 이 단계를 반복합니다.
+     * 뒤에 오는 태그에 `cq:movedTo` 속성이 있는 한 이 단계를 반복합니다.
 
-   1. 뒤에 오는 태그에 `cq:movedTo` 속성이 없으면 태그를 읽습니다.
+  1. 뒤에 오는 태그에 `cq:movedTo` 속성이 없으면 태그를 읽습니다.
 
 * 태그를 이동하거나 병합할 때 변경 내용을 게시하려면 `cq:Tag` 노드 및 모든 백링크를 복제해야 합니다. 이 작업은 태그 관리 콘솔에서 태그가 활성화되면 자동으로 수행됩니다.
 

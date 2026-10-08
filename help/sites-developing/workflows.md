@@ -1,27 +1,29 @@
 ---
 title: 워크플로 개발 및 확장
-description: AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, 워크플로와 프로그래밍 방식으로 상호 작용하기 위한 여러 가지 도구와 리소스를 제공합니다
+
+description: AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, 워크플로와 프로그래밍 방식으로 상호 작용하기 위한 몇 가지 도구와 리소스를 제공합니다
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 3%
-
+source-wordcount: '1494'
+ht-degree: 4%
 ---
-
 
 # 워크플로 개발 및 확장{#developing-and-extending-workflows}
 
 AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, 워크플로와 프로그래밍 방식으로 상호 작용하기 위한 여러 가지 도구와 리소스를 제공합니다.
 
-워크플로를 사용하면 AEM 환경에서 리소스를 관리하고 콘텐츠를 게시하는 프로세스를 자동화할 수 있습니다. 워크플로우는 일련의 단계로 구성되며 각 단계는 개별 작업을 수행합니다. 논리 및 런타임 데이터를 사용하여 프로세스를 계속할 수 있는 시기를 결정하고 가능한 여러 단계 중 하나에서 다음 단계를 선택할 수 있습니다.
+워크플로를 사용하면 AEM 환경에서 리소스를 관리하고 콘텐츠를 게시하기 위한 프로세스를 자동화할 수 있습니다. 워크플로우는 일련의 단계로 구성되며 각 단계는 개별 작업을 수행합니다. 논리 및 런타임 데이터를 사용하여 프로세스를 계속할 수 있는 시기를 결정하고 가능한 여러 단계 중 하나에서 다음 단계를 선택할 수 있습니다.
 
 예를 들어 웹 페이지를 만들고 게시하기 위한 비즈니스 프로세스에는 다양한 참가자의 승인 및 승인 작업이 포함됩니다. 이러한 프로세스는 AEM 워크플로우를 사용하여 모델링하고 특정 콘텐츠에 적용할 수 있습니다.
 
@@ -29,10 +31,10 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 * [워크플로 모델 만들기](/help/sites-developing/workflows-models.md)
 * [워크플로 기능 확장](/help/sites-developing/workflows-customizing-extending.md)
-* [프로그래밍 방식으로 워크플로우와 상호 작용](/help/sites-developing/workflows-program-interaction.md)
+* [프로그래밍 방식으로 워크플로와 상호 작용](/help/sites-developing/workflows-program-interaction.md)
 * [워크플로 단계 참조](/help/sites-developing/workflows-step-ref.md)
 * [워크플로 프로세스 참조](/help/sites-developing/workflows-process-ref.md)
-* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
+* [워크플로 모범 사례](/help/sites-developing/workflows-best-practices.md)
 
 >[!NOTE]
 >
@@ -41,8 +43,8 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 >* 워크플로우에 참여하려면 [워크플로우 사용](/help/sites-authoring/workflows.md)을 참조하세요.
 >* 워크플로우 및 워크플로우 인스턴스 관리는 [워크플로우 관리](/help/sites-administering/workflows.md)를 참조하십시오.
 >* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=ko)을 참조하십시오.
->* [워크플로에 대한 AEM 전문가에게 묻기](https://communities.adobeconnect.com/p5s33iburd54/)를 참조하십시오.
->* 정보 위치를 변경하면 [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md) 및 [워크플로 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)를 참조하십시오.
+>* [워크플로우에 대한 AEM 전문가에게 문의](https://communities.adobeconnect.com/p5s33iburd54/)를 참조하십시오.
+>* 정보 위치를 변경하면 [AEM의 저장소 재구성 6.5](/help/sites-deploying/repository-restructuring.md) 및 [워크플로 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)를 참조하십시오.
 >
 
 ## 모델 {#model}

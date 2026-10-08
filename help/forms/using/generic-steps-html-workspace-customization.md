@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 공간 사용자 정의에 대한 일반 단계
+title: AEM Forms Workspace 사용자 정의를 위한 일반 단계
 description: Adobe Experience Manager Forms 작업 영역 사용자 인터페이스를 맞춤화하는 방법
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,10 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 9%
-
+source-wordcount: '302'
+ht-degree: 14%
 ---
-
-# AEM Forms 작업 공간 사용자 정의에 대한 일반 단계 {#generic-steps-for-aem-forms-workspace-customization}
+# AEM Forms Workspace 사용자 정의를 위한 일반 단계 {#generic-steps-for-aem-forms-workspace-customization}
 
 사용자 정의를 수행하는 일반 단계는 다음과 같습니다.
 
@@ -27,7 +25,7 @@ ht-degree: 9%
 1. **[!UICONTROL 저장소]** 옵션을 선택하십시오. **[!UICONTROL 액세스 제어]** 목록에서 **[!UICONTROL +]**&#x200B;을(를) 클릭하여 항목을 추가합니다. **[!UICONTROL +]**&#x200B;을(를) 다시 클릭합니다.
 1. **PERM_WORKSPACE_USER** 주체를 검색하고 선택하십시오.
 
-   ![HTML Workspace을 사용자 지정하는 일반 단계의 일부로 PERM_WORKSPACE_USER 사용자 주체를 선택하십시오](assets/perm_workspace_user.png)
+   ![HTML Workspace을 사용자 지정하는 일반 단계의 일부로 PERM_WORKSPACE_USER 보안 주체를 선택하십시오](assets/perm_workspace_user.png)
 
 1. `jcr:read` 권한을 사용자에게 부여합니다.
 1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
@@ -84,7 +82,7 @@ ht-degree: 9%
 
    1. `/libs/ws/js/libs/jqueryui` 폴더를 `/apps/ws/js/libs`(으)로 복사합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
-1. HTML 사용자 정의에 대해 다음을 수행합니다.
+1. HTML 사용자 지정에 대해 다음 작업을 수행하십시오.
 
    1. `/apps/ws/js`에서 `runtime` 폴더를 만듭니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
