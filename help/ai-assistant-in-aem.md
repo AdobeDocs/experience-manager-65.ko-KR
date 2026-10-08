@@ -77,7 +77,7 @@ AEM 내 AI 어시스턴트에 액세스하려면 고객이 다음 사항을 갖�
 
 **AEM 내 AI 어시스턴트를 액세스하려면:**
 
-1. 고객은 Adobe Experience Manager에서 다수의 AI 기반 및 에이전틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 생성 AI 활성화 방법은 [CX Enterprise 애플리케이션의 생성 AI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)를 참조하십시오.
+1. 고객은 Adobe Experience Manager에서 다수의 AI 기반 및 에이전틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 생성 AI 활성화 방법은 [CX Enterprise 애플리케이션의 생성 AI](https://experienceleague.adobe.com/ko/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)를 참조하십시오.
 
 1. 조직에서 이 계약을 체결하면 모든 사용자는 기본적으로 제품 지식에 AI Assistant를 사용할 수 있습니다. 추가적인 사용자당 또는 그룹당 권한은 필요하지 않습니다.
 
