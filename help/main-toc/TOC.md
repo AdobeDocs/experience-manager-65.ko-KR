@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
+source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
 workflow-type: tm+mt
-source-wordcount: '8305'
+source-wordcount: '8300'
 ht-degree: 95%
 ---
 
@@ -1237,7 +1237,6 @@ ht-degree: 95%
 + AEM의 AI {#ai-in-aem}
   + [개요](/help/ai-in-aem/overview.md)
   + AI 어시스턴트 {#ai-assistant}
-    + [AEM 내 AI 어시스턴트 구성](/help/ai-assistant-in-aem-admin.md)
     + [AEM 내 AI 어시스턴트 정보](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [소개 및 개요](/help/commerce/cif/introduction.md)
