@@ -10,13 +10,22 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 53%
-
+source-wordcount: '289'
+ht-degree: 59%
 ---
-
 # Adobe Analytics와 통합{#integrating-with-adobe-analytics}
 
 Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있습니다.
@@ -33,10 +42,10 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 
 다음 페이지는 통합을 구성하는 데 도움이 됩니다.
 
-* [Adobe Analytics 연결 및 프레임워크 만들기](/help/sites-administering/adobeanalytics-connect.md)
-* [Adobe Analytics에 대한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
+* [Adobe Analytics 연결 및 프레임워크 생성](/help/sites-administering/adobeanalytics-connect.md)
+* [Adobe Analytics를 위한 링크 추적 구성](/help/sites-administering/adobeanalytics-link.md)
 * [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](/help/sites-administering/adobeanalytics-mapping.md)
-* [Adobe Analytics에 대한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
+* [Adobe Analytics를 위한 비디오 추적 구성](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
 
 [옵트인 마법사](/help/sites-administering/opt-in.md)를 사용하여 쉽게 통합을 수행할 수도 있습니다.
@@ -56,8 +65,8 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 >If you are using Adobe Analytics with a custom proxy configuration, you need to [configure two OSGi bundles](/help/sites-deploying/configuring-osgi.md) (for example, with the Web console) required for the **Apache HTTP Client** proxy configurations. Both are required as some functionalities of AEM use the 3.x APIs, while others use the 4.x APIs. 다음을 구성하십시오.
 >
 >* 3.x API 구성을 위한 **Day Commons HTTP 클라이언트 3.1**
->  &#x200B;>  (예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient))
+>  예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* 4.x API 구성을 위한 **Apache HTTP 구성 요소 프록시 구성**
->  &#x200B;>  (예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator))
+>  예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

@@ -10,20 +10,27 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '912'
 ht-degree: 0%
-
 ---
-
 # SRP - 커뮤니티 콘텐츠 저장소 {#srp-community-content-storage}
 
 ## 소개 {#introduction}
 
 AEM Communities 6.1부터 UGC(사용자 생성 컨텐츠)는 SRP(저장소 리소스 제공자)가 제공하는 하나의 공통 저장소에 저장됩니다. ASRP, MSRP 및 JSRP와 같이 선택할 수 있는 여러 SRP 옵션이 있습니다.
 
-이전 릴리스와 달리 AEM 인스턴스에는 UGC의 역방향/순방향 복제가 없습니다. 대신 SRP는 JSRP를 제외하고 모든 작성자 및 게시 인스턴스에서 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 위해 UGC에 직접 액세스할 수 있도록 합니다.
+이전 릴리스와 달리 AEM 인스턴스 간 UGC의 역방향/순방향 복제는 없습니다. 대신 SRP는 JSRP를 제외하고 모든 작성자 및 게시 인스턴스에서 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 위해 UGC에 직접 액세스할 수 있도록 합니다.
 
 다음은 각 SRP 옵션의 [특성](#characteristics-of-srp-options)입니다. 이는 적절한 SRP와 [기본 배포](/help/communities/topologies.md)를 선택할 때 결정 프로세스에 중요한 정보입니다.
 
@@ -35,17 +42,17 @@ UGC에 SRP를 사용하는 방법에 대한 자세한 내용은 [저장소 리�
 
 >[!CAUTION]
 >
->AEM 6.1부터는 [UGC가 복제되지 않습니다](#ugc-never-replicated).
+>AEM 6.1부터 [UGC가 복제되지 않습니다](#ugc-never-replicated).
 >
->배포에 기본 [JSRP](/help/communities/topologies.md#jsrp) 토폴로지와 같은 일반 저장소가 포함되지 않은 경우 UGC는 입력한 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 UGC가 게시 인스턴스에 표시됩니다.
+>배포에 기본 [JSRP](/help/communities/topologies.md#jsrp) 토폴로지와 같은 일반 저장소가 포함되지 않은 경우 UGC는 입력된 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 UGC가 게시 인스턴스에 표시됩니다.
 
 ## SRP 옵션의 특성 {#characteristics-of-srp-options}
 
-[ASRP - Adobe 저장소 리소스 제공자](/help/communities/asrp.md)
+[ASRP - Adobe 스토리지 리소스 제공자](/help/communities/asrp.md)
 
 이 옵션을 사용하면 UGC는 Adobe에서 호스팅 및 관리하는 클라우드 서비스에서 원격으로 유지됩니다. 추가 라이선스가 필요하며 계정 담당자와 협력하여 해당 특정 라이선스에 대한 계정을 프로비저닝해야 합니다. ASRP에는 다음이 필요합니다.
 
-* 커뮤니티 콘텐츠를 저장하기 위해 Adobe이 제공 및 지원하는 관련 클라우드 서비스.
+* 커뮤니티 콘텐츠를 저장하기 위해 Adobe에서 제공하고 지원하는 관련 클라우드 서비스.
 * 특정 지역(미국, EMEA, APAC)에서 데이터 센터 선택
 
 * UGC에 대한 모든 프로그래밍 방식 액세스는 SRP API를 통해 이루어져야 합니다.
@@ -109,7 +116,7 @@ JSRP:
 
 각 옵션에 대한 구성 세부 정보는 다음을 참조하십시오.
 
-* [ASRP - Adobe 저장소 리소스 제공자](/help/communities/asrp.md)
+* [ASRP - Adobe 스토리지 리소스 제공자](/help/communities/asrp.md)
 * [MSRP - MongoDB 저장소 리소스 공급자](/help/communities/msrp.md)
 * [DSRP - 관계형 데이터베이스 저장소 리소스 제공자](/help/communities/dsrp.md)
 * [JSRP - JCR 저장소 리소스 제공자](/help/communities/jsrp.md)
@@ -136,6 +143,6 @@ AEM Communities 6.1부터는 복제 대신 Sling 배포를 사용하여 사용�
 
 ### AEM Communities 6.5로 업그레이드 {#upgrading-to-aem-communities}
 
-AEM 6.5 커뮤니티로 업그레이드할 때 기존 UGC를 유지해야 하는 경우 AEM 5.6.1 또는 AEM 6.0 커뮤니티에서 UGC의 Adobe 온디맨드 스토리지를 사용했는지 또는 온프레미스 스토리지를 사용했는지에 따라 단계를 수행해야 합니다.
+AEM 6.5 커뮤니티로 업그레이드할 때 기존 UGC를 유지해야 하는 경우 AEM 5.6.1 또는 AEM 6.0 커뮤니티에서 UGC의 Adobe 온디맨드 스토리지 또는 온프레미스 스토리지를 사용했는지 여부에 따라 단계를 수행해야 합니다.
 
 자세한 내용은 [AEM Communities 6.5로 업그레이드](/help/communities/upgrade.md)를 참조하세요.

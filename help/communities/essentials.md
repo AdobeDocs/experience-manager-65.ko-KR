@@ -9,16 +9,23 @@ exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 15%
-
+source-wordcount: '211'
+ht-degree: 16%
 ---
-
 # 구성 요소, 기능 및 기능 핵심 사항  {#component-function-and-feature-essentials}
 
-AEM(Adobe Experience Manager) 커뮤니티 기능을 사용하려면 콘텐츠를 게시하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites)에 로그인해야 합니다. 따라서 커뮤니티 사이트가 [생성](sites-console.md)되는 [커뮤니티 사이트 템플릿](sites.md)은(는) 로그인 기능과 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 디자인되었습니다.
+Adobe Experience Manager(AEM) 커뮤니티 기능을 사용하려면 콘텐츠를 게시하려면 사이트 방문자가 구성원이 되어 [커뮤니티 사이트](overview.md#communitiessites)에 로그인해야 합니다. 따라서 커뮤니티 사이트가 [생성](sites-console.md)되는 [커뮤니티 사이트 템플릿](sites.md)은(는) 로그인 기능과 사용자 프로필, 메시지, 검색, 중재 및 번역을 포함하도록 디자인되었습니다.
 
 [커뮤니티 그룹 기능](functions.md#groups-function)이 선택한 커뮤니티 사이트 템플릿에 포함되어 있으면 커뮤니티 사이트는 커뮤니티 그룹을 만드는 구성원을 지원합니다.
 
@@ -30,10 +37,10 @@ AEM(Adobe Experience Manager) 커뮤니티 기능을 사용하려면 콘텐츠�
 * [리뷰](reviews-basics.md)
 * [Tally](tally.md)
 
-   * [연결](essentials-liking.md)
-   * [등급](rating-basics.md)
-   * [투표](essentials-voting.md)
-   * *투표(더 이상 사용할 수 없음)*
+  * [연결](essentials-liking.md)
+  * [등급](rating-basics.md)
+  * [투표](essentials-voting.md)
+  * *투표(더 이상 사용할 수 없음)*
 
 ## 기능이 있는 구성 요소 {#components-with-functions}
 
@@ -56,7 +63,7 @@ AEM(Adobe Experience Manager) 커뮤니티 기능을 사용하려면 콘텐츠�
 * [구성 요소 OSGi 이벤트](events.md)
 * [구성 요소 사이드로드](sideloading.md)
 * [메시지](essentials-messaging.md)
-* [리치 텍스트 편집기](rte.md)
+* [서식 있는 텍스트 편집기](rte.md)
 * [채점 및 배지](configure-scoring.md)
 * [검색](search-implementation.md)
 * [소셜 그래프](essentials-socialgraph.md)
@@ -75,9 +82,9 @@ AEM(Adobe Experience Manager) 커뮤니티 기능을 사용하려면 콘텐츠�
 
 * [소셜 구성 요소 프레임워크(SCF)](scf.md)
 
-   * [클라이언트측 사용자 지정](client-customize.md)
-   * [서버측 사용자 지정](server-customize.md)
-   * [저장소 리소스 공급자 개요](srp.md)
+  * [클라이언트측 사용자 지정](client-customize.md)
+  * [서버측 사용자 지정](server-customize.md)
+  * [저장소 리소스 공급자 개요](srp.md)
 
 * [코딩 지침](code-guide.md)
 * [튜토리얼](tutorials.md)

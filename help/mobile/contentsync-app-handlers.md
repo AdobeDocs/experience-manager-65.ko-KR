@@ -1,6 +1,6 @@
 ---
 title: 기본 제공 앱 핸들러
-description: AEM을 사용하는 Adobe PhoneGap Enterprise의 기본 핸들러에 대해 알려면 이 페이지를 따르십시오.
+description: 이 페이지를 따라 AEM을 사용하는 Adobe PhoneGap Enterprise의 기본 핸들러에 대해 알아봅니다.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,13 +9,17 @@ exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # 기본 제공 앱 핸들러{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 * 처리기는 *com.day.cq.contentsync.handler.ContentUpdateHandler*&#x200B;을(를) 구현하거나 이 작업을 수행하는 클래스를 확장해야 합니다.
 * 처리기는 *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*&#x200B;를 확장할 수 있습니다.
-* 처리기는 ContentSync 캐시를 업데이트한 경우에만 true를 보고해야 합니다. true를 잘못 보고하면 AEM에서 업데이트를 만들 수 있습니다.
+* 처리기는 ContentSync 캐시를 업데이트한 경우에만 true를 보고해야 합니다. True를 잘못 보고하면 AEM에서 업데이트를 만들 수 있습니다.
 * 처리기는 콘텐츠가 실제로 변경된 경우에만 캐시를 업데이트해야 합니다. 흰색이 필요하지 않은 경우 캐시에 쓰지 말고 불필요한 업데이트를 만들지 마십시오.
 
 ## 기본 제공 핸들러 {#out-of-the-box-handlers}
@@ -43,28 +47,28 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 * ***includeImages - 부울*** - 이미지를 포함해야 하는지 여부를 결정하는 선택적 부울 속성. 기본값은 *true*&#x200B;입니다.
 
-   * 기본적으로 기본/구성 요소/이미지 리소스 유형의 이미지 구성 요소만 포함할 것으로 간주됩니다.
+  * 기본적으로 기본/구성 요소/이미지 리소스 유형의 이미지 구성 요소만 포함할 것으로 간주됩니다.
 
 * ***includeVideos - 부울*** - 선택적 부울 속성은 비디오가 포함되어야 하는지 여부를 결정합니다. 기본값은 *true*&#x200B;입니다.
 
 * ***includeModifiedPagesOnly - 부울*** - false이거나 생략하면 모든 페이지를 렌더링하고 렌더링 시 업데이트를 확인합니다. true이면 lastModified 페이지의 변경 내용에 따라 달라집니다.
-* ***+ 다시 작성(노드)***
+* ***이상 다시 작성(노드)***
   ***- relativeParentPath - String*** - 다른 모든 경로를 상대적으로 쓰는 경로.
 
 >[!NOTE]
 >
->이 처리기의 영향을 받는 이미지 및 비디오 구성 요소의 리소스 유형은 *com.adobe.cq.mobile.platform.impl.contentsync.handler*&#x200B;의 속성을 구성하여 설정합니다.*MobilePagesUpdateHandler OSGi 서비스*.
+>이 처리기의 영향을 받는 이미지 및 비디오 구성 요소의 리소스 유형은 *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler OSGi 서비스*&#x200B;의 속성을 구성하여 설정합니다.
 
 **mobilepageassets** 앱 페이지 자산을 수집합니다.
 
 **mobilecontentlisting** ContentSync zip의 콘텐츠를 나열합니다. 이는 장치의 클라이언트측 js에서 AEM 앱에 필요한 초기 파일 복사를 수행하는 데 사용됩니다.
 
-이 처리기는 AEM Apps ContentSync 구성에 추가해야 합니다.
+이 처리기는 모든 AEM 앱 ContentSync 구성에 추가해야 합니다.
 
 * ***type - 문자열 - mobilecontentlisting***
 * ***경로*** - 문자열 - 빈 상태로 유지해야 올바른 처리기로 표시되지만 경로가 현재 ContentSync 캐시로 유추됩니다. 이 값은 무시됩니다.
-* ***targetRootDirectory* -**&#x200B;문자열 - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
-* ContentSync에서 이 처리기를 실행하려면 ***순서 - Long* -**&#x200B;순서를 지정합니다. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
+* ***targetRootDirectory* -**문자열 - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
+* ContentSync에서 이 처리기를 실행하려면 ***순서 - Long* -**순서를 지정합니다. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
 
 ```xml
 {
@@ -84,14 +88,14 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 }
 ```
 
-**mobilecontentpackagelistening** 지정된 앱에 있는 AEM 콘텐츠 패키지와 업데이트 요청을 할 serverURL을 나열합니다. 이는 장치의 클라이언트측 js를 사용하여 콘텐츠 업데이트를 요청합니다
+**mobilecontentpackagelistening** 지정된 앱에 있는 AEM 콘텐츠 패키지와 업데이트를 요청할 serverURL을 나열합니다. 이는 장치의 클라이언트측 js를 사용하여 콘텐츠 업데이트를 요청합니다
 
-핸들러는 AEM 앱 셸 ContentSync 구성(pge-type=app-instance를 사용하는 노드)에서 사용해야 합니다.
+처리기는 AEM 앱 셸 ContentSync 구성(pge-type=app-instance가 있는 노드)에서 사용해야 합니다.
 
 * ***type - 문자열 - mobilecontentpackagelistening***
 * ***경로&#x200B;**-**문자열*** - 앱 셸의 경로(페이지 유형=app-instance인 노드).
 * ***targetRootDirectory - 문자열*** - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
-* ***순서 - Long* -**&#x200B;ContentSync에서 이 처리기를 실행하는 순서. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
+* ***순서 - Long* -**ContentSync에서 이 처리기를 실행하는 순서. 이 숫자는 100과 같은 다른 모든 처리기보다 높게 설정해야 합니다. 기존 콘텐츠 핸들러 다음에 실행해야 합니다.
 
 >[!NOTE]
 >
@@ -123,7 +127,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 이 처리기는 AEM 앱 셸 ContentSync 구성(페이지 유형=[앱 인스턴스]인 노드)에서 사용해야 합니다.
 
-* ***type - String* - &#x200B;** widgetconfig
+* ***type - String* - **widgetconfig
 * ***경로&#x200B;**-**문자열*** - 모든 앱 셸 하위 노드의 경로(pge-type=[app-instance]인 노드).
 * ***targetRootDirectory - 문자열*** - 이 처리기의 콘텐츠 업데이트에 대한 대상 루트로 경로에 추가할 접두사입니다.
 * ***targetIconDirectory - 문자열*** - 앱의 아이콘을 배치할 디렉터리입니다.
@@ -132,7 +136,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 컴파일 타임에 분석 지원을 위해 AMS 플러그인을 구성하는 데 사용됩니다.
 
-핸들러는 AEM 앱 셸 ContentSync 구성(pge-type=app-instance를 사용하는 노드)에서 사용해야 합니다.
+처리기는 AEM 앱 셸 ContentSync 구성(pge-type=app-instance가 있는 노드)에서 사용해야 합니다.
 
 * ***유형 - 문자열*** - mobileADBMobileConfigJSON
 * ***경로 - 문자열*** - 앱 셸의 경로(pge-type=app-instance가 있는 노드 또는 /libs/mobileapps/core/components/instance를 확장하는 RT)
@@ -140,7 +144,7 @@ Content Sync Handler 개발에 대한 다음 지침을 참조하십시오.
 
 **notificationsconfig** 장치에서 필요한 알림 구성을 추출합니다. 속성은 앱과 연결된 각 푸시 서비스 클라우드 서비스 구성에서 추출됩니다.
 
-클라우드 서비스의 jcr:content 노드에서 비 AEM 속성이 추출되고 앱 컨텐츠의 www 루트에 포함할 **pge-notifications-config.json** JSON 파일에 추가됩니다.
+클라우드 서비스의 jcr:content 노드에서 AEM 이외의 속성이 추출되고 앱 컨텐츠의 www 루트에 포함할 **pge-notifications-config.json** JSON 파일에 추가됩니다.
 
 AEM 속성은 &quot;cq&quot;, &quot;sling&quot; 또는 &quot;jcr&quot;로 이름이 지정된 속성입니다. content-sync 구성 노드에서 &quot;excludeProperties&quot; 속성을 사용하여 다른 속성을 제외할 수 있습니다.
 
@@ -152,9 +156,9 @@ AEM 속성은 &quot;cq&quot;, &quot;sling&quot; 또는 &quot;jcr&quot;로 이름
 * ***유형 - 문자열*** - contentsyncconfigcontent
 * ***경로 - 문자열*** - 다음 중 하나의 경로:
 
-   * 다른 ContentSync 구성
-   * 콘텐츠 패키지(phonegap-exportTemplate 속성을 사용하여 ContentSync 구성 찾기)
-   * 모바일 리소스(app-content의 는 해당 리소스 아래에 있으며, 해당 콘텐츠 패키지에 true인 pge-includeInBuild 속성이 있는 경우 phonegap-exportTemplate을 사용하여 ContentSync 구성을 찾습니다.)
+  * 다른 ContentSync 구성
+  * 콘텐츠 패키지(phonegap-exportTemplate 속성을 사용하여 ContentSync 구성 찾기)
+  * 모바일 리소스(app-content의 는 해당 리소스 아래에 있으며, 해당 콘텐츠 패키지에 true인 pge-includeInBuild 속성이 있는 경우 phonegap-exportTemplate을 사용하여 ContentSync 구성을 찾습니다.)
 
 * ***autoCreateFirstUpdateBeforeImport - 부울*** - true인 경우 한 번 존재하지 않는 경우 가져오기 전에 대상 구성에서 초기 **업데이트**&#x200B;를 만드십시오
 
@@ -205,7 +209,7 @@ mobileappsoffers 처리기는 mobileappspages 처리기를 확장하고 다음 �
 
 관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 
-* [AEM을 사용하여 Adobe PhoneGap Enterprise용 작성](/help/mobile/phonegap.md)
+* [AEM을 사용하여 Adobe PhoneGap Enterprise 작성](/help/mobile/phonegap.md)
 * [AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리](/help/mobile/administer-phonegap.md)
 
 >[!NOTE]

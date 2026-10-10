@@ -9,29 +9,33 @@ exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '600'
 ht-degree: 1%
-
 ---
-
 # AEM에서 모바일 애플리케이션 개발 {#developing-mobile-applications-in-aem}
 
 {{ue-over-mobile}}
 
-AEM은 Adobe PhoneGap 및 Adobe 게시 솔루션을 사용하여 다양한 컨텐츠와 유틸리티 기반의 크로스 플랫폼 모바일 애플리케이션을 모두 만들고 관리할 수 있습니다.
+AEM은 Adobe PhoneGap 및 Adobe Publishing Solutions를 사용하여 콘텐츠가 풍부한 모바일 애플리케이션과 유틸리티 기반의 크로스 플랫폼 모바일 애플리케이션을 모두 만들고 관리할 수 있습니다.
 
 * 모든 회사의 모바일 앱을 한 곳에서 관리합니다.
 * 프로비전 프로필의 복잡성과 공유를 위해 앱을 빌드하고 업로드하는 추가 노력 없이 개발 및 스테이징 환경에서 앱을 검토합니다.
-* AEM 작성 환경을 사용하여 앱용 리치 콘텐츠를 만들고 관리할 수 있습니다.
-* Adobe PhoneGap과 함께 HTML5를 사용하여 장치 기반 기능으로 풍부한 경험을 만들 수 있습니다.
-* Cordova WebViews를 통해 신규 또는 기존 **네이티브** 응용 프로그램에 HTML5 웹 보기를 도입하십시오.
+* AEM 작성 환경을 사용하여 앱에 대한 리치 콘텐츠를 만들고 관리할 수 있습니다.
+* HTML5와 Adobe PhoneGap을 함께 사용하여 장치 기반 기능으로 풍부한 경험을 만들 수 있습니다.
+* Cordova WebViews를 통해 신규 또는 기존 **네이티브** 응용 프로그램에 HTML5 Webviews를 도입하십시오.
 * 웹, 모바일 웹, 모바일 앱 및 인쇄를 포함한 모든 게재 채널에서 풍부한 멀티미디어 콘텐츠를 만들고, 선별하고 공유할 수 있습니다.
 
 AEM은 Adobe PhoneGap Build 서비스(`https://build.phonegap.com/`)와 통합되어 응용 프로그램 빌드 및 배포 프로세스를 단순화합니다.
 
-**ContentSync Adobe**&#x200B;을(를) 사용하면 앱을 다시 설치하거나 appStore, Google Play 또는 기타 앱 소스에서 다운로드할 필요 없이 OTA(Over-the-Air)로 페이지 및 콘텐츠 업데이트를 쉽게 장치에 다운로드할 수 있습니다.
+**Adobe ContentSync**&#x200B;을(를) 사용하면 앱을 다시 설치하거나 appStore, Google Play 또는 기타 앱 소스에서 다운로드할 필요 없이 OTA(Over-the-Air)로 페이지 및 콘텐츠 업데이트를 쉽게 장치에 다운로드할 수 있습니다.
 
 **Adobe Analytics**&#x200B;은(는) AEM 앱에 완전히 통합되어 있으며 배포, 지리적 위치, 운영 체제, 장치, 클릭 스트림, iBeacon 추적 등을 자세히 추적할 수 있습니다.
 
@@ -92,5 +96,5 @@ IOS 개발자는 iOS 9에서 실행되는 Cordova 앱의 진행 중 문제에 �
 
 관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 
-* [AEM을 사용하여 Adobe PhoneGap Enterprise용 작성](/help/mobile/phonegap.md)
+* [AEM을 사용하여 Adobe PhoneGap Enterprise 작성](/help/mobile/phonegap.md)
 * [AEM을 사용하여 Adobe PhoneGap Enterprise용 컨텐츠 관리](/help/mobile/administer-phonegap.md)

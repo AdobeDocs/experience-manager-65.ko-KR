@@ -9,13 +9,22 @@ exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 75%
-
 ---
-
 # 워크플로를 사용하여 작업{#working-with-workflows}
 
 AEM 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다. 예를 들어 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 콘텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다.

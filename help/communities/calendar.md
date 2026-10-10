@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 0%
-
 ---
-
 # 달력 기능 {#calendar-feature}
 
 ## 소개 {#introduction}
@@ -25,7 +32,7 @@ ht-degree: 0%
 
 이 설명서 섹션에서는 다음을 설명합니다.
 
-* AEM 사이트에 달력 기능 추가
+* AEM 사이트에 캘린더 기능 추가
 * `Calendar` 구성 요소에 대한 구성 설정
 
 ## 페이지에 달력 추가 {#adding-a-calendar-to-a-page}
@@ -92,7 +99,7 @@ ht-degree: 0%
 
 * **이미지 첨부 파일 최대 크기**
 
-  [파일 업로드 허용]이 선택된 경우에만 해당됩니다. 업로드된 이미지 파일에 포함할 수 있는 최대 바이트 수입니다. 기본값은 2097152 **&#x200B; &#x200B;**(2Mb)입니다.
+  [파일 업로드 허용]이 선택된 경우에만 해당됩니다. 업로드된 이미지 파일에 포함할 수 있는 최대 바이트 수입니다. 기본값은 ** **(2Mb)입니다.
 
 * **허용되는 표지 이미지 형식**
 
@@ -164,7 +171,7 @@ ht-degree: 0%
 
 * **제안 한도**
 
-  포럼에 게시하는 구성원에 대한 제안으로 표시할 태그 수를 입력합니다. 기본값은 **-**&#x200B;1(제한 없음)입니다.
+  포럼에 게시하는 구성원에 대한 제안으로 표시할 태그 수를 입력합니다. 기본값은 **-**1(제한 없음)입니다.
 
 >[!NOTE]
 >
@@ -199,7 +206,7 @@ ht-degree: 0%
 특히 다음과 같은 경우가 있습니다.
 
 * 달력 이벤트 만들기
-* 달력 이벤트에 대한 댓글 Post
+* 일정 이벤트에 댓글 게시
 * 자신의 캘린더 이벤트 또는 댓글 편집
 * 자신의 캘린더 이벤트 또는 댓글 삭제
 * 다른 사람의 일정 이벤트 또는 댓글에 플래그 지정

@@ -10,13 +10,20 @@ exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # 커뮤니티 구성 요소에 대한 Clientlibs {#clientlibs-for-communities-components}
 
 ## 소개 {#introduction}
@@ -64,26 +71,26 @@ Communities 구성 요소를 페이지에 추가하려면 구성 요소에 필�
 
 커뮤니티 사이트 페이지의 기존 clientlibslist를 수정하려면 [CRXDE|Lite](#using-crxde-lite)를 사용하십시오.
 
-[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을(를) 사용하여 커뮤니티 사이트에 clientlib을 추가하려면:
+[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을(를) 사용하여 커뮤니티 사이트에 대한 clientlib을 추가하려면:
 
-* [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)(으)로 이동합니다.
+* [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)&#x200B;(으)로 이동합니다.
 * 구성 요소를 추가할 페이지의 `clientlibslist` 노드를 찾습니다.
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * `clientlibslist` 노드가 선택된 경우:
 
-   * String[] 속성 `scg:requiredClientLibs`을(를) 찾습니다.
-   * 문자열 배열 대화 상자에 액세스할 수 있도록 해당 `Value`을(를) 선택하십시오.
+  * String[] 속성 `scg:requiredClientLibs`을(를) 찾습니다.
+  * 문자열 배열 대화 상자에 액세스할 수 있도록 해당 `Value`을(를) 선택하십시오.
 
-      * 필요한 경우 아래로 스크롤합니다.
-      * 새 클라이언트 라이브러리를 입력하려면 +를 선택하십시오.
+    * 필요한 경우 아래로 스크롤합니다.
+    * 새 클라이언트 라이브러리를 입력하려면 +를 선택하십시오.
 
-         * 를 반복하여 클라이언트 라이브러리를 더 추가합니다.
+      * 를 반복하여 클라이언트 라이브러리를 더 추가합니다.
 
-         * **확인**&#x200B;을 선택합니다.
+      * **확인**&#x200B;을 선택합니다.
 
-   * **모두 저장**&#x200B;을 선택합니다.
+  * **모두 저장**&#x200B;을 선택합니다.
 
 >[!NOTE]
 >

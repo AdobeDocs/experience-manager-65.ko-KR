@@ -1,5 +1,5 @@
 ---
-title: 페이지 속성의 벌크 편집을 위한 페이지 구성
+title: 페이지 속성의 대량 편집을 위한 페이지 구성
 description: 페이지 속성을 벌크 편집하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 24%
-
+source-wordcount: '419'
+ht-degree: 29%
 ---
-
-# 페이지 속성의 벌크 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
+# 페이지 속성의 대량 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [페이지 속성의 일괄 편집](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages)을 통해 한 번에 여러 페이지의 속성을 편집할 수 있습니다.
 
@@ -62,7 +71,7 @@ ht-degree: 24%
 
    >[!NOTE]
    >
-   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)를 참조하세요.
+   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 참조하세요.
 
 1. `cq:dialog` 정의 내에서 필수 필드로 이동합니다.
 1. 필드 노드에서 다음 속성을 정의합니다.

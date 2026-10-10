@@ -9,18 +9,25 @@ exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # 개발 커뮤니티  {#developing-communities}
 
 ## 개요 {#overview}
 
-AEM(Adobe Experience Manager) 커뮤니티는 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 댓글, 검토, 투표, 등급 및 할당과 같은 커뮤니티 기능을 간편하게 만들고 사용자 지정할 수 있습니다. 이러한 기능을 사용하면 UGC(사용자 생성 컨텐츠)가 게시 환경에 입력됩니다.
+Adobe Experience Manager(AEM) 커뮤니티는 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 댓글, 검토, 투표, 등급 및 할당과 같은 커뮤니티 기능을 간편하게 만들고 사용자 지정할 수 있습니다. 이러한 기능을 사용하면 UGC(사용자 생성 컨텐츠)가 게시 환경에 입력됩니다.
 
 [커뮤니티 사이트](overview.md#communitiessites)의 기초는 [소셜 구성 요소 프레임워크](scf.md)(SCF)입니다. 커뮤니티 사이트 만들기는 [커뮤니티 기능](functions.md)(으)로 구성된 [커뮤니티 사이트 템플릿](sites-console.md)을(를) 선택하는 것으로 시작됩니다.
 
@@ -61,7 +68,7 @@ AEM Communities 구성 요소, 함수 및 기능은 [커뮤니티 사이트](sit
 ## 커뮤니티 구성원 {#community-members}
 
 * [사용자 및 사용자 그룹 관리](users.md)
-* [facebook 및 Twitter으로 소셜 로그인](social-login.md)
+* [Facebook 및 Twitter에 소셜 로그인](social-login.md)
 
 ## 커뮤니티 그룹 {#community-groups}
 

@@ -1,6 +1,6 @@
 ---
-title: Adobe IMS 인증 및  [!DNL Admin Console] Adobe Experience Manager Managed Services 지원
-description: Adobe Experience Manager에서  [!DNL Admin Console] 을(를) 사용하는 방법을 알아봅니다.
+title: Adobe IMS 인증 및 Adobe Experience Manager Managed Services에 대한 [!DNL Admin Console] 지원
+description: Adobe Experience Manager에서 [!DNL Admin Console]을(를) 사용하는 방법을 알아봅니다.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,24 +9,36 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 6%
-
+source-wordcount: '1700'
+ht-degree: 10%
 ---
-
-# AEM Managed Services에 대한 Adobe IMS 인증 및 [!DNL Admin Console] 지원 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Adobe IMS 인증 및 AEM Managed Services에 대한 [!DNL Admin Console] 지원 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
 >
->이 기능은 Managed Services 고객에게만 Adobe을 제공할 수 있습니다.
+>이 기능은 Adobe Managed Services 고객만 사용할 수 있습니다.
 
 ## 소개 {#introduction}
 
 AEM 6.4.3.0에서는 **AEM Managed Services** 고객을 위해 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증에 대한 [!DNL Admin Console] 지원을 도입했습니다.
 
-[!DNL Admin Console]에 대한 AEM 온보딩을 사용하면 AEM Managed Services 고객이 하나의 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. AEM 인스턴스와 연결된 제품 프로필에 사용자를 할당하여 특정 인스턴스에 로그인할 수 있도록 할 수 있습니다.
+[!DNL Admin Console]에 대한 AEM 온보딩을 사용하면 AEM Managed Services 고객이 하나의 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자는 AEM 인스턴스와 연결된 제품 프로필에 할당되어 특정 인스턴스에 로그인할 수 있습니다.
 
 ## 주요 내용 {#key-highlights}
 
@@ -36,7 +48,7 @@ AEM 6.4.3.0에서는 **AEM Managed Services** 고객을 위해 AEM 인스턴스 
 * [!DNL Admin Console]의 제품 프로필이 사용자가 액세스할 수 있는 인스턴스를 결정합니다.
 * 고객의 자체 SAML 2 호환 ID 공급자를 사용하는 페더레이션 인증이 지원됩니다
 * Enterprise ID 또는 Federated ID(고객 Single Sign-On의 경우)만 지원되며 개인 Adobe ID는 지원되지 않습니다.
-* [!DNL User Management] (Adobe [!DNL Admin Console]에서)은(는) 고객 관리자가 계속 소유합니다.
+* [!DNL User Management]&#x200B;(Adobe [!DNL Admin Console]의)은(는) 고객 관리자가 계속 소유합니다.
 
 ## 아키텍처 {#architecture}
 
@@ -52,9 +64,9 @@ IMS 인증은 AEM과 Adobe IMS 끝점 간 OAuth 프로토콜을 사용하여 작
 
 [!DNL Admin Console]에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 전제 조건입니다.
 
-첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe 엔터프라이즈 고객은 [Adobe [!DNL Admin Console]](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다.
+첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe [!DNL Admin Console]](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다.
 
-AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로 사용자 권한 및 액세스 관리에 고객 인스턴스를 [!DNL Admin Console]에서 사용할 수 있습니다.
+AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로 사용자 권한 및 액세스 관리에 대한 고객 인스턴스를 [!DNL Admin Console]에서 사용할 수 있습니다.
 
 사용자 인증을 위해 IMS로 전환하는 것은 AMS와 고객 간의 공동 작업이며 각 고객은 완료할 워크플로우를 갖게 됩니다.
 
@@ -70,7 +82,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 >[!NOTE]
 >
->IDP 구성을 포함한 Identity Management 기본 Adobe에 대한 자세한 내용은 [ID 및 SSO(Single Sign-On) 설정](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)에 대한 문서를 참조하십시오.
+>IDP 구성을 포함한 Adobe Identity Management 기본 사항에 대한 자세한 내용은 [ID 및 SSO(Single Sign-On) 설정](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)에 대한 문서를 참조하십시오.
 >
 >Enterprise 관리 및 [!DNL Admin Console]에 대한 자세한 내용은 [Enterprise 및 Teams 관리 가이드 시작](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html)을 참조하십시오.
 
@@ -86,7 +98,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 [!DNL Admin Console] UI에서 사용자 및 그룹을 수동으로 만들 수 있습니다. 관리할 사용자가 많지 않은 경우 이 방법을 사용할 수 있습니다. 예를 들어 AEM 사용자가 50명 미만입니다.
 
-고객이 이미 Adobe Analytics, Adobe Target 또는 Adobe Creative Cloud 애플리케이션과 같은 다른 Adobe 제품을 관리하기 위해 이 방법을 사용하고 있는 경우 사용자를 수동으로 만들 수도 있습니다.
+고객이 이미 Adobe Analytics, Adobe Target 또는 Adobe Creative Cloud 애플리케이션과 같은 다른 Adobe 제품을 관리하기 위해 이 방법을 사용하는 경우 사용자를 수동으로 만들 수도 있습니다.
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -124,9 +136,9 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* [사용자 동기화 도구 - 사용자 동기화 Adobe](https://adobe-apiplatform.github.io/user-sync.py/en/)
+>* [사용자 동기화 도구 - Adobe 사용자 동기화](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->* 사용자 동기화 도구는 [API 액세스에 대한 인증](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다.
+>* 사용자 동기화 도구는 [API 액세스를 위한 인증](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다.
 >
 >* [Adobe Developer Console 설명서](https://developer.adobe.com/developer-console/docs/guides/).
 >
@@ -165,13 +177,13 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 #### 로컬 관리자 로그인 {#local-admin-login}
 
-로그인 화면에는 로컬로 로그인할 수 있는 옵션이 있으므로 AEM은 Admin 사용자의 로컬 로그인을 계속 지원할 수 있습니다.
+로그인 화면에는 로컬로 로그인할 수 있는 옵션이 있으므로 AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있습니다.
 
 ![screen_shot_2018-09-18at121056am](assets/screen_shot_2018-09-18at121056am.png)
 
 #### IMS 기반 로그인 {#ims-based-login}
 
-다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래와 같이 **Adobe으로 로그인**&#x200B;을 처음 클릭합니다.
+다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래와 같이 **Adobe으로 로그인**&#x200B;을 클릭합니다.
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -193,13 +205,13 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 다른 인증 방법을 사용하고 있으며 현재 IMS로 마이그레이션되고 있는 기존 AEM 인스턴스의 경우 마이그레이션 단계가 필요합니다.
 
-AEM 저장소( LDAP 또는 SAML을 통해 로컬로 소싱)의 기존 사용자는 사용자 마이그레이션 유틸리티를 사용하여 IMS를 IDP로 가리키도록 마이그레이션할 수 있습니다.
+AEM 저장소( LDAP 또는 SAML을 통해 로컬로 제공됨)의 기존 사용자는 사용자 마이그레이션 유틸리티를 사용하여 IMS를 IDP로 가리키도록 마이그레이션할 수 있습니다.
 
 이 유틸리티는 IMS 프로비저닝의 일부로 AMS 팀에서 실행됩니다.
 
 ### AEM에서 권한 및 ACL 관리 {#managing-permissions-and-acls-in-aem}
 
-액세스 제어 및 권한은 AEM에서 계속 관리되며, 이는 IMS의 사용자 그룹(예: 아래 예에서 AEM-GRP-008)과 권한 및 액세스 제어가 정의된 로컬 그룹을 분리하여 수행할 수 있습니다. IMS에서 동기화된 사용자 그룹은 로컬 그룹에 할당하고 권한을 상속할 수 있습니다.
+액세스 제어 및 권한은 AEM에서 계속 관리되며, 이는 IMS에서 제공되는 사용자 그룹(예: 아래 예에서 AEM-GRP-008)과 권한 및 액세스 제어가 정의된 로컬 그룹을 분리하여 수행할 수 있습니다. IMS에서 동기화된 사용자 그룹은 로컬 그룹에 할당하고 권한을 상속할 수 있습니다.
 
 아래 예에서는 동기화된 그룹을 로컬 *Dam_Users* 그룹에 추가하겠습니다.
 
@@ -219,7 +231,7 @@ AEM 저장소( LDAP 또는 SAML을 통해 로컬로 소싱)의 기존 사용자�
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
-IMS에서 동기화된 사용자 그룹은 AEM에서 기존 로컬 그룹(예: DAM 사용자)에 구성원으로 추가될 수 있습니다.
+IMS에서 동기화된 사용자 그룹은 AEM에서 기존 로컬 그룹(예: DAM 사용자)의 구성원으로 추가될 수 있습니다.
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 

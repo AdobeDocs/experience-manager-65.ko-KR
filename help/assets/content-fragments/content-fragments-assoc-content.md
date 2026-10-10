@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 49%
-
 ---
-
 # 관련 콘텐츠{#associated-content}
 
 AEM의 관련 콘텐츠 기능은 조각이 콘텐츠 페이지에 추가될 때 에셋을 조각과 함께 (선택적으로) 사용할 수 있도록 연결을 제공합니다. 이렇게 하면 [페이지에서 콘텐츠 조각을 사용할 때 액세스할 수 있는 다양한 에셋을 제공](/help/sites-authoring/content-fragments.md#using-associated-content)하는 동시에 적절한 에셋을 검색하는 데 필요한 시간을 줄일 수 있으므로 Headless 콘텐츠 게재를 위한 유연성을 높일 수 있습니다. 모든 관련 콘텐츠는 콘텐츠 조각 편집기를 사용하여 구성할 수 있습니다.

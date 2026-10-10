@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics에 대한 링크 추적 구성
+title: Adobe Analytics를 위한 링크 추적 구성
 description: SiteCatalyst에 대한 링크 추적을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,21 +9,30 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
 
-
-# Adobe Analytics에 대한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
+# Adobe Analytics를 위한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
 
 사용자가 웹 사이트의 페이지에서 링크를 클릭하면 Adobe Analytics에서 관련 정보를 캡처할 수 있습니다. 예를 들어, 링크 추적을 사용하여 사용자가 사이트와 상호 작용하는 방법을 배우고, 파일 다운로드를 추적하고, 종료 링크를 추적합니다.
 
 ## Adobe Analytics 프레임워크에 대한 링크 추적 구성 {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. **탐색**&#x200B;을 사용하여 **배포**, **Cloud Service**&#x200B;을 통해 **Adobe Analytics** 섹션으로 이동하십시오.
+1. **탐색**&#x200B;을 사용하여 **배포**, **클라우드 서비스**&#x200B;를 통해 **Adobe Analytics** 섹션으로 이동하십시오.
 
 1. **구성 표시**&#x200B;를 사용하여 필요한 Adobe Analytics 프레임워크를 엽니다.
 1. **링크 추적 구성** 섹션을 확장하고 필요에 따라 구성합니다(이 페이지에서는 자세한 내용을 제공합니다).
@@ -48,7 +57,7 @@ ht-degree: 0%
 * pdf
 * xls
 
-따라서 예를 들어 PDF 파일에 대해 다운로드 추적을 활성화한 상태에서 사용자가 PDF 파일에 대한 링크를 클릭할 때마다 PDF의 다운로드가 추적됩니다.
+따라서 예를 들어 PDF 파일에 대해 다운로드 추적을 활성화한 상태에서 사용자가 PDF 파일에 대한 링크를 클릭할 때마다 PDF 다운로드가 추적됩니다.
 
 프레임워크의 다운로드 추적 속성은 페이지에 대해 생성된 `analytics.sitecatalyst.js` 파일에서 코드로 구현됩니다. 다음 코드 샘플은 기본 다운로드 추적 구성을 나타냅니다.
 
@@ -120,14 +129,14 @@ s.linkLeaveQueryString= false;
 
 링크 클릭으로 변수 데이터를 전송하기 위한 속성:
 
-* **이벤트 추적 연결**
+* **링크 추적 이벤트**
 링크 클릭 수를 계산하는 데 사용할 Adobe Analytics 이벤트 변수를 입력합니다.
 
   여러 변수 이름은 쉼표로 구분하십시오.
 
   기본값인 `None`은(는) 이벤트 추적을 발생시키지 않습니다.
 
-* **추적 변수 연결**
+* **링크 추적 변수**
 링크를 클릭할 때 Adobe Analytics으로 보낼 Adobe Analytics 변수를 입력합니다. 여러 변수 이름은 쉼표로 구분하십시오.
 
   `None`의 기본값으로 인해 변수 데이터가 전송되지 않습니다.
@@ -141,7 +150,7 @@ s.linkTrackVars= 'prop4';
 
 ## 링크 추적 구성 예 {#example-link-tracking-configuration}
 
-Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차를 수행하십시오. 프로시저에 [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=ko)의 결과가 표시됩니다.
+Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차를 수행하십시오. 프로시저에 [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)의 결과가 표시됩니다.
 
 ### 일반 구성 {#general-configuration}
 
@@ -189,12 +198,12 @@ Adobe Analytics 통합의 링크 추적 동작을 살펴보려면 다음 절차�
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>사용자 지정 eVar 2 (eVar2)</td>
+   <td>사용자 지정 eVar 2(eVar2)</td>
    <td>eVar</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>사용자 지정 eVar 3(eVar 3)</td>
+   <td>사용자 지정 eVar 3(eVar3)</td>
    <td>eVar</td>
   </tr>
   <tr>
