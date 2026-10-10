@@ -71,7 +71,7 @@ ht-degree: 29%
 
    >[!NOTE]
    >
-   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 참조하세요.
+   >이 예제에서는 핵심 구성 요소가 인스턴스에 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 콘텐츠로 실행되는 경우입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 참조하세요.
 
 1. `cq:dialog` 정의 내에서 필수 필드로 이동합니다.
 1. 필드 노드에서 다음 속성을 정의합니다.

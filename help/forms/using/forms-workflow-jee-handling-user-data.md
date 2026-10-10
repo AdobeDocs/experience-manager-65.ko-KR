@@ -38,7 +38,7 @@ AEM Forms JEE 워크플로우는 비즈니스 프로세스를 디자인, 생성 
 * 감시 폴더 사용
 * 이메일 사용
 
-AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용은 [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65)을 참조하십시오.
+AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용은 [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65_kr)을 참조하십시오.
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
@@ -141,7 +141,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
 1. 올바른 연결 설정이 있는 `ServiceClientFactory` 인스턴스를 사용하여 공용 `ProcessManager` 클라이언트(`com.adobe.idp.workflow.client.ProcessManager`)의 인스턴스를 만듭니다.
 
-   자세한 내용은 [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)에 대한 Java™ API 참조를 참조하십시오.
+   자세한 내용은 [Class ProcessManager](https://helpx.adobe.com/kr/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)에 대한 Java™ API 참조를 참조하십시오.
 
 1. 워크플로 인스턴스의 상태를 확인합니다. 상태가 2(COMPLETE) 또는 4(TERMINATED)가 아니면 다음 메서드를 호출하여 먼저 인스턴스를 종료합니다.
 
