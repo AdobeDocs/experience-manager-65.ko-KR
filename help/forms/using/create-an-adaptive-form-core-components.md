@@ -1,6 +1,6 @@
 ---
 title: 적응형 양식을 만드는 방법
-description: ' [!DNL Experience Manager Forms]을(를) 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML 5 양식입니다. 양식 데이터 모델 및 XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.'
+description: '[!DNL Experience Manager Forms]을(를) 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 적응형 Forms은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다. 양식 데이터 모델 및 XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오.'
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -10,13 +10,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 33%
-
+source-wordcount: '1928'
+ht-degree: 35%
 ---
-
 # 적응형 Forms 기반의 핵심 구성 요소 만들기 {#creating-an-adaptive-form-core-components}
 
 
@@ -33,15 +47,15 @@ ht-degree: 33%
 
 시작하기 전에 사용할 수 있는 Forms 구성 요소 유형에 대해 알아봅니다.
 
-* [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다. 개발자는 이러한 구성 요소를 손쉽게 사용자 정의하고 스타일링할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 사용하여 적응형 Forms을 개발할 것을 권장합니다.
+* [적응형 양식 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다. 개발자는 이러한 구성 요소를 손쉽게 사용자 정의하고 스타일링할 수 있습니다. Adobe에서는 이러한 현대적이고 확장 가능한 구성 요소를 사용하여 적응형 Forms을 개발할 것을 권장합니다.
 
-* [적응형 양식 기초 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 이를 계속 사용하여 기존의 기초 구성 요소 기반 적응형 양식을 편집할 수 있습니다. Adobe 양식을 만드는 경우 [적응형 Forms 핵심 구성 요소](/help/forms/using/create-adaptive-form.md)를 사용하여 적응형 Forms을 만드는 것이 좋습니다.
+* [적응형 양식 기초 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 이를 계속 사용하여 기존의 기초 구성 요소 기반 적응형 양식을 편집할 수 있습니다. 양식을 만드는 경우 [적응형 Forms 핵심 구성 요소](/help/forms/using/create-adaptive-form.md)를 사용하여 적응형 Forms을 만드는 것이 좋습니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 적응형 양식을 만들려면 다음이 필요합니다.
 
-* **환경에 맞는 적응형 Forms 핵심 구성 요소를 사용**: [환경에 맞는 핵심 구성 요소를 사용](/help/forms/using/enable-adaptive-forms-core-components.md)하려면 AEM Archetype 프로젝트 버전 41 이상이 필요합니다. 환경에 대한 핵심 구성 요소를 활성화하면 **적응형 Forms(핵심 구성 요소)** 템플릿과 캔버스 테마가 환경에 추가됩니다.
+* **환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정**: [환경에 맞는 핵심 구성 요소를 사용하도록 설정](/help/forms/using/enable-adaptive-forms-core-components.md)하려면 AEM Archetype 프로젝트 버전 41 이상이 필요합니다. 환경에 대한 핵심 구성 요소를 활성화하면 **적응형 Forms(핵심 구성 요소)** 템플릿과 캔버스 테마가 환경에 추가됩니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 또한 테마와 제출 액션을 정의하는 옵션이 제공됩니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. [샘플 템플릿](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)을 환경에 배포할 수도 있습니다. 이렇게 하면 양식을 신속하게 만들 수 있습니다.
 
@@ -64,7 +78,7 @@ ht-degree: 33%
 
 1. 로컬 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko#author-and-publish-installs)에 로그인합니다.
 
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인한 후 왼쪽 상단에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 만들기]** > **[!UICONTROL 적응형 Forms 만들기]**&#x200B;를 선택합니다.
 
@@ -73,7 +87,7 @@ ht-degree: 33%
 1. **[!UICONTROL 속성 추가]**&#x200B;가 나타납니다. 다음 속성 필드에 대한 값을 지정합니다. 제목 및 이름 필드는 필수입니다.
 
    * **[!UICONTROL 제목:]** 양식의 표시 이름을 지정합니다. 제목은 [!DNL Experience Manager Forms] 사용자 인터페이스에서 형식을 식별하는 데 도움이 됩니다.
-   * **[!UICONTROL 이름:]** 양식의 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 포함할 수 있습니다.
+   * **[!UICONTROL 이름:]** 양식의 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목을 입력하기 시작하면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다.
    * **[!UICONTROL 설명:]** 양식에 대한 자세한 정보를 지정합니다.
    * **[!UICONTROL 테마 클라이언트 라이브러리]:** 적응형 양식의 테마를 지정합니다. 기본적으로 `adaptiveform.theme.canvas3` 테마가 선택되어 있습니다. **[!UICONTROL 테마 클라이언트 라이브러리]** 드롭다운 메뉴에서 다른 테마를 선택할 수도 있습니다.
    * **[!UICONTROL 구성 컨테이너:]** 응용 Forms에 대한 구성 파일이 저장되는 위치를 정의합니다. 이러한 구성 파일에는 적응형 Forms의 비헤이비어 및 모양과 관련된 설정 및 속성이 포함되어 있습니다.
@@ -86,7 +100,7 @@ ht-degree: 33%
 
 ## 적응형 Forms 핵심 구성 요소를 사용하여 양식 만들기
 
-편집할 양식을 연 후 사용 가능한 적응형 Forms 핵심 구성 요소를 사용하여 양식에 양식 필드를 추가할 수 있습니다. 드래그 앤 드롭하거나 + [구성 요소 삽입] 옵션을 사용하여 이러한 구성 요소를 양식에 추가할 수 있습니다. 사용 가능한 [적응형 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#components)에 대한 자세한 내용은 AEM 핵심 구성 요소 설명서를 참조하십시오. [https://aemcomponents.dev/](https://aemcomponents.dev/)을(를) 방문하여 사용 중인 핵심 구성 요소를 볼 수도 있습니다.
+편집할 양식을 연 후 사용 가능한 적응형 Forms 핵심 구성 요소를 사용하여 양식에 양식 필드를 추가할 수 있습니다. 드래그 앤 드롭하거나 + [구성 요소 삽입] 옵션을 사용하여 이러한 구성 요소를 양식에 추가할 수 있습니다. 사용 가능한 [적응형 AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko#components)에 대한 자세한 내용은 Forms 핵심 구성 요소 설명서를 참조하십시오. [https://aemcomponents.dev/](https://aemcomponents.dev/)을(를) 방문하여 사용 중인 핵심 구성 요소를 볼 수도 있습니다.
 
 ## 적응형 양식에 대한 제출 액션 구성 {#configure-submit-action-for-form}
 

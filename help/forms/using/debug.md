@@ -1,5 +1,5 @@
 ---
-title: HTML 5 양식 디버깅
+title: HTML5 양식 디버깅
 description: 이 문서에는 알려진 다양한 문제를 해결하는 단계가 나열되어 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,31 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
+# HTML5 양식 디버깅 {#debugging-html-forms}
 
-# HTML 5 양식 디버깅 {#debugging-html-forms}
-
-이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하기 위한 몇 가지 단계가 제공됩니다. 다음 단계를 수행하고 문제가 지속되면 로그를 가져오고 오류/경고를 검토하도록 로거를 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 [HTML 5 양식에 대한 로그 생성](/help/forms/using/enable-logs.md)을 참조하십시오.
+이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하기 위한 몇 가지 단계가 제공됩니다. 다음 단계를 수행하고 문제가 지속되면 로그를 가져오고 오류/경고를 검토하도록 로거를 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 [HTML5 양식에 대한 로그 생성](/help/forms/using/enable-logs.md)을 참조하십시오.
 
 ## 문제: 양식을 렌더링할 때 org.apache.sling.api.SlingException 예외 페이지가 표시됩니다 {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -62,7 +77,7 @@ ht-degree: 0%
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. https://&lt;server>:&lt;port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
+1. https://<server>:<port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
 
    다음 번들의 상태가 &quot;활성&quot;인지 확인하십시오.
 
@@ -107,19 +122,19 @@ ht-degree: 0%
 
 1. 양식 URL에서 쿼리 매개 변수 debugClientLibs를 추가하고 값을 true로 설정합니다(예: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;xdp 파일 이름>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
 1. chrome과 같은 데스크탑 브라우저에서 개발자 도구 > 콘솔로 이동합니다.
-1. 로그를 열어 오류 유형을 식별합니다. 로그에 대한 자세한 내용은 [HTML 5 양식에 대한 로그](/help/forms/using/enable-logs.md)를 참조하십시오.
+1. 로그를 열어 오류 유형을 식별합니다. 로그에 대한 자세한 내용은 [HTML5 양식에 대한 로그](/help/forms/using/enable-logs.md)를 참조하십시오.
 1. 개발자 도구 > 콘솔로 이동합니다. 스택 추적을 사용하여 오류의 원인이 되는 코드를 찾습니다. 오류를 디버깅하여 문제를 해결합니다.
 
    >[!NOTE]
    >
-   >스크립팅에 실패한 경우 양식의 PDF 렌디션에서도 동일한 문제가 발생하는지 확인하십시오. 그렇다면 양식 스크립팅 논리에 문제가 있습니다.
+   >스크립팅 오류인 경우 양식의 PDF 렌디션 중에도 동일한 문제가 발생하는지 확인하십시오. 그렇다면 양식 스크립팅 논리에 문제가 있습니다.
 
 ## 문제: 양식을 제출할 수 없음 {#problem-unable-to-submit-the-form}
 
 1. AEM 서버에 액세스할 수 있는 권한이 있고 서버에 연결되어 있는지 확인하십시오.
 1. 매개 변수 submitUrl이 올바른지 확인합니다.
-1. 디버그 옵션을 사용하여 **1-a5-b5-c5**(으)로 [HTML 5 양식에 대한 로그](/help/forms/using/enable-logs.md)에서 언급한 대로 클라이언트측 로그를 활성화합니다. 그런 다음 양식을 렌더링하고 제출을 클릭합니다. 브라우저 디버그 콘솔을 열고 오류가 있는지 확인합니다.
-1. [HTML 5 양식에 대한 로그](/help/forms/using/enable-logs.md)에 언급된 대로 서버 로그를 찾습니다. 제출 중에 서버 로그에 오류가 있는지 확인하십시오.
+1. 디버그 옵션을 사용하여 **1-a5-b5-c5**(으)로 [HTML5 양식에 대한 로그](/help/forms/using/enable-logs.md)에서 언급한 대로 클라이언트측 로그를 활성화합니다. 그런 다음 양식을 렌더링하고 제출을 클릭합니다. 브라우저 디버그 콘솔을 열고 오류가 있는지 확인합니다.
+1. [HTML5 양식에 대한 로그](/help/forms/using/enable-logs.md)에 언급된 대로 서버 로그를 찾습니다. 제출 중에 서버 로그에 오류가 있는지 확인하십시오.
 
 ## 문제: 현지화된 오류 메시지가 표시되지 않음 {#problem-localized-error-messages-do-not-display}
 
@@ -154,7 +169,7 @@ ht-degree: 0%
    가능한 이유는 URL에 있는 하나 이상의 매개 변수가 올바르지 않기 때문입니다.
 
    다음 매개 변수를 확인하십시오.
-단계 텍스트
+   단계 텍스트
 
 <table>
  <tbody>

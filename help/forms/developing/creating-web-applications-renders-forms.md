@@ -1,5 +1,5 @@
 ---
-title: Forms을 렌더링하는 웹 응용 프로그램 만들기
+title: 양식을 렌더링하는 웹 애플리케이션 만들기
 description: Java 서블릿을 사용하여 Forms 서비스를 호출하고 양식을 렌더링하는 웹 기반 애플리케이션을 만듭니다. Java 서블릿은 양식을 반환하는 Forms 서비스와 클라이언트 웹 브라우저 간에 링크 역할을 합니다.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,29 @@ role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-thatrenders-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -82,7 +98,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 ### 웹 프로젝트 만들기 {#creating-a-web-project}
 
-Forms 서비스를 호출할 수 있는 Java 서블릿이 포함된 웹 응용 프로그램을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 *index.html* HTML 페이지와 Java 서블릿을 프로젝트에 추가합니다.
+Forms 서비스를 호출할 수 있는 Java 서블릿이 포함된 웹 응용 프로그램을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 *index.html*(이)라는 HTML 페이지와 Java 서블릿을 프로젝트에 추가합니다.
 
 다음 목록은 웹 프로젝트에 추가해야 하는 JAR 파일을 지정합니다.
 
@@ -111,11 +127,11 @@ Forms 서비스를 호출할 수 있는 Java 서블릿이 포함된 웹 응용 �
 1. **Web** 폴더를 확장하고 **서블릿**&#x200B;을(를) 선택한 후 **다음**&#x200B;을(를) 클릭합니다.
 1. [서블릿 만들기] 대화 상자에서 서블릿 이름을 `RenderFormFragment`으로 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
-**HTML 페이지를 프로젝트에 추가하려면:**
+**프로젝트에 HTML 페이지를 추가하려면:**
 
 1. 프로젝트 탐색기 창에서 `FragmentsWebApplication` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;를 선택합니다.
 1. **Web** 폴더를 확장하고 **HTML**&#x200B;을 선택한 후 **다음**&#x200B;을 클릭합니다.
-1. 새 HTML 대화 상자에서 파일 이름을 `index.html`으로 입력한 다음 **마침**&#x200B;을 클릭합니다.
+1. 새 HTML 대화 상자에서 파일 이름에 `index.html`을(를) 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >

@@ -9,13 +9,20 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 4%
-
 ---
-
 # 샌드박스 애플리케이션 개발  {#develop-sandbox-application}
 
 이 단원에서는 [초기 응용 프로그램](initial-app.md) 섹션에 템플릿을 설정하고 [초기 콘텐츠](initial-content.md) 섹션에 초기 페이지를 설정했으므로 응용 프로그램을 개발할 수 있습니다. 커뮤니티 구성 요소로 작성할 수 있는 기능을 포함하는 기초 스크립트를 사용하면 됩니다. 이 섹션의 끝에는 완전한 기능을 갖춘 웹 사이트가 있습니다.
@@ -65,7 +72,7 @@ CRXDE Lite 사용:
    %>
    ```
 
-1. 열기/닫기 스크립트 태그를 인식하고 &quot; // TODO ...&quot;를 &lt;html>의 헤드 및 본문 부분에 대한 `includes` 스크립트로 바꾸십시오.
+1. 열기/닫기 스크립트 태그를 알고 &quot; // TODO ...&quot;를 바꿉니다. (&lt;html>의 헤드 및 본문 부분에 대한 `includes`개의 스크립트 포함).
 
    수퍼 유형이 `foundation/components/page`인 경우, 이 동일한 폴더에 정의되지 않은 모든 스크립트는 `/apps/foundation/components/page` 폴더의 스크립트로 확인되거나(있는 경우) `/libs/foundation/components/page` 폴더의 스크립트로 확인됩니다.
 
@@ -153,7 +160,7 @@ Assets/구성 요소 사이드 패널은 사이드 패널이 모두 열려 있�
 또한 다음과 같은 **[!UICONTROL 일반]** 구성 요소를 선택합니다.
 
 * 이미지
-* 표
+* 테이블
 * 텍스트
 * 제목(Foundation)
 
@@ -175,11 +182,11 @@ Assets/구성 요소 사이드 패널은 사이드 패널이 모두 열려 있�
 * **[!UICONTROL 속성 열기]** 선택
 * 고급 탭에서
 
-   * 리디렉션 항목의 경우 **[!UICONTROL 웹 사이트]** > **[!UICONTROL SCF 샌드박스 사이트]** > **[!UICONTROL SCF 샌드박스]**&#x200B;로 이동합니다.
-   * **[!UICONTROL 확인]** 클릭
+  * 리디렉션 항목의 경우 **[!UICONTROL 웹 사이트]** > **[!UICONTROL SCF 샌드박스 사이트]** > **[!UICONTROL SCF 샌드박스]**&#x200B;로 이동합니다.
+  * **[!UICONTROL 확인]** 클릭
 
 * **[!UICONTROL 확인]** 클릭
 
 사이트가 게시된 후 게시 인스턴스에서 루트 페이지를 탐색하면 영어 페이지로 리디렉션됩니다.
 
-커뮤니티 SCF 구성 요소로 재생하기 전 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다.... [Clientlibs 추가](add-clientlibs.md)
+커뮤니티 SCF 구성 요소로 재생하기 전 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다. ....0&rbrace;Clientlibs 추가[&#128279;](add-clientlibs.md)

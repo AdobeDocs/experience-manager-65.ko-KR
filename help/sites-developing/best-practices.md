@@ -9,13 +9,22 @@ exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 4%
-
+source-wordcount: '497'
+ht-degree: 9%
 ---
-
 # 모범 사례{#best-practices}
 
 ## 개발자를 위한 우수 사례 - 시작하기 {#best-practices-for-developers-getting-started}
@@ -46,7 +55,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 �
 관리, 배포, 유지 관리 또는 작성에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
 * [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
-* [작성 모범 사례](/help/sites-authoring/best-practices.md)
+* [모범 사례 작성](/help/sites-authoring/best-practices.md)
 * [모범 사례 배포](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
@@ -73,7 +82,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 �
   <tr>
    <td>워크플로</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">워크플로 개발 및 확장</a></td>
-   <td><p>워크플로를 사용하면 AEM(Adobe Experience Manager) 활동을 자동화할 수 있으며 AEM 환경에서 발생하는 대량의 처리를 나타낼 수 있으므로 워크플로 구현을 신중하게 계획하는 것이 좋습니다.</p> </td>
+   <td><p>워크플로를 사용하면 Adobe Experience Manager(AEM) 활동을 자동화할 수 있으며 AEM 환경에서 발생하는 대량의 처리를 나타낼 수 있으므로 워크플로 구현을 신중하게 계획하는 것이 좋습니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -91,7 +100,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 �
 
 ## 도구/HTL {#tooling-htl}
 
-HTML 템플릿 언어(HTL)는 AEM 6.0과 함께 도입된 새로운 HTML 템플릿 시스템입니다. AEM의 기본 템플릿 시스템으로 JSP 및 ESP를 대체합니다.
+HTML 템플릿 언어(HTL)는 AEM 6.0과 함께 도입된 새로운 HTML 템플릿 시스템입니다. JSP 및 ESP를 AEM의 기본 템플릿 시스템으로 대체합니다.
 
 |  |  |  |
 |---|---|---|
@@ -100,5 +109,5 @@ HTML 템플릿 언어(HTL)는 AEM 6.0과 함께 도입된 새로운 HTML 템플�
 
 >[!NOTE]
 >
->핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발에 대해 자세히 설명하는 다중 파트 튜토리얼을 통해 새로운 AEM 프로젝트를 설정하는 것이 좋습니다.
+>핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발에 대해 자세히 설명하는 새 AEM 프로젝트를 설정하는 우수 사례에 대한 다중 부분 튜토리얼이 도움이 될 수 있습니다.
 >[AEM Sites 시작하기 - WKND 자습서](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

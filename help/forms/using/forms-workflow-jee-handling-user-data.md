@@ -7,13 +7,27 @@ role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # Forms JEE 워크플로 | 사용자 데이터 처리 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE 워크플로우는 비즈니스 프로세스를 디자인, 생성 및 관리하는 도구를 제공합니다. 워크플로 프로세스는 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등의 특정 작업을 수행합니다. 프로세스는 자산, 사용자 계정 및 서비스와 상호 작용할 수 있으며, 다음 방법 중 하나를 사용하여 트리거할 수 있습니다.
@@ -37,7 +51,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 하지만 다음과 같은 경우에는 이니시에이터의 프로세스 인스턴스 ID를 식별할 수 없습니다.
 
 * **감시 폴더를 통해 트리거된 프로세스**: 감시 폴더에 의해 프로세스가 트리거된 경우 프로세스 인스턴스를 해당 초기자를 사용하여 식별할 수 없습니다. 이 때, 사용자 정보는 저장된 데이터에 부호화된다.
-* **게시 AEM 인스턴스에서 시작된 프로세스**: AEM 게시 인스턴스에서 트리거된 모든 프로세스 인스턴스가 초기자에 대한 정보를 캡처하지 않습니다. 그러나 사용자 데이터는 프로세스와 연결된 양식으로 캡처되어 워크플로우 변수에 저장될 수 있습니다.
+* **AEM 인스턴스 게시에서 시작된 프로세스**: AEM 게시 인스턴스에서 트리거된 모든 프로세스 인스턴스가 개시자에 대한 정보를 캡처하지 않습니다. 그러나 사용자 데이터는 프로세스와 연결된 양식으로 캡처되어 워크플로우 변수에 저장될 수 있습니다.
 * **전자 메일을 통해 시작된 프로세스**: 보낸 사람의 전자 메일 ID는 직접 쿼리할 수 없는 `tb_job_instance` 데이터베이스 테이블의 불투명 blob 열에 속성으로 캡처됩니다.
 
 ### 워크플로우 개시자 또는 참가자를 알 경우 프로세스 인스턴스 ID 식별 {#initiator-participant}

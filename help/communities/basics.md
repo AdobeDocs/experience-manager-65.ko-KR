@@ -9,20 +9,27 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티 구성 요소 기본 사항 {#communities-components-basics}
 
 ## 개요 {#overview}
 
-설명서의 작성 섹션에서는 작성자 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하고 구성 요소 구성을 설명하는 방법에 대해 설명합니다.
+이 설명서의 작성 섹션에서는 작성자 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하고 구성 요소 구성을 설명하는 방법에 대해 설명합니다.
 
-AEM 인스턴스와 대화형 [커뮤니티 구성 요소 안내서](components-guide.md)를 사용하여 구성 요소를 탐색할 수 있습니다.
+AEM 인스턴스 및 대화형 [커뮤니티 구성 요소 안내서](components-guide.md)를 사용하여 구성 요소를 탐색할 수 있습니다.
 
 ## 커뮤니티 구성 요소 액세스 {#accessing-communities-components}
 

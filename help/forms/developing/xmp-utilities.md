@@ -9,20 +9,36 @@ role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 0%
-
+source-wordcount: '1401'
+ht-degree: 2%
 ---
-
 # XMP 유틸리티 작업 {#working-with-xmp-utilities}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **XMP 유틸리티 서비스 정보**
 
-PDF 문서에는 텍스트 및 그래픽과 같이 문서 내용과 구별되는 문서에 대한 정보인 메타데이터가 포함됩니다. XMP(Adobe 확장 메타데이터 플랫폼)은 문서 메타데이터를 처리하는 표준입니다.
+PDF 문서에는 텍스트 및 그래픽과 같이 문서의 컨텐츠와 구별되는 문서에 대한 정보인 메타데이터가 포함되어 있습니다. Adobe 확장 가능한 메타데이터 플랫폼(XMP)은 문서 메타데이터를 처리하는 표준입니다.
 
 XMP 유틸리티 서비스는 PDF 문서에서 XMP 메타데이터를 검색 및 저장하고 XMP 메타데이터를 PDF 문서로 가져올 수 있습니다.
 
@@ -33,7 +49,7 @@ XMP 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습
 
 >[!NOTE]
 >
->XMP Utilities 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## PDF 문서로 메타데이터 가져오기 {#importing-metadata-into-pdf-documents}
 
@@ -45,7 +61,7 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 XMP 메타데이터�
 
 >[!NOTE]
 >
->이 단원에서는 XML 문서를 사용하여 메타데이터를 PDF 문서로 가져오는 방법에 대해 설명합니다.
+>이 섹션에서는 XML 문서를 사용하여 메타데이터를 PDF 문서로 가져오는 방법에 대해 설명합니다.
 
 다음 XML 코드에는 이전 그림에 해당하는 메타데이터 값이 포함되어 있습니다. 예를 들어, 키워드를 지정하는 굵게 표시된 항목을 확인합니다.
 
@@ -114,11 +130,11 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 XMP 메타데이터�
 
 >[!NOTE]
 >
->XMP Utilities 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary-of-steps}
 
-XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행합니다.
+XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. XMPUutilityService 클라이언트를 만듭니다.
@@ -130,7 +146,7 @@ XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행합�
 
 **XMPUutilityService 클라이언트 만들기**
 
-XMP Utilities 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
+XMP 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
 **XMP 메타데이터 가져오기 작업 호출**
 
@@ -231,11 +247,11 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 PDF 문서에서 XMP
 
 >[!NOTE]
 >
->XMP Utilities 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
-PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행합니다.
+PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. XMPUutilityService 클라이언트를 만듭니다.
@@ -247,7 +263,7 @@ PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행�
 
 **XMPUutilityService 클라이언트 만들기**
 
-XMP Utilities 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUutilityService 클라이언트를 만들어야 합니다. Java AP를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
+XMP 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUutilityService 클라이언트를 만들어야 합니다. Java AP를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
 **XMP 메타데이터 내보내기 작업 호출**
 

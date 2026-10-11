@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 1%
-
+source-wordcount: '1135'
+ht-degree: 6%
 ---
-
 # JEE의 AEM Forms에 대한 일반 보안 고려 사항{#general-security-considerations-for-aem-forms-on-jee}
 
 이 문서에서는 AEM Forms 환경을 강화하기 위해 준비하는 데 도움이 되는 소개 정보를 제공합니다. 여기에는 JEE의 AEM Forms, 운영 체제, 애플리케이션 서버 및 데이터베이스 보안에 대한 사전 요구 사항 정보가 포함되어 있습니다. 환경 잠금을 계속하기 전에 이 정보를 검토하십시오.
@@ -46,11 +62,11 @@ AEM Forms on JEE가 지원하는 운영 체제에 대한 보안 정보는 다음
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX® 보안의 이점</a></p> </td>
+   <td><p>® AIX® 7.2</p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">® AIX® 보안의 이점</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® Windows Server® 2016 </p> </td>
+   <td><p>® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 보안 안내서</a></p> </td>
   </tr>
   <tr>
@@ -99,7 +115,7 @@ JEE의 AEM Forms이 지원하는 애플리케이션 서버에 대한 보안 정�
    <td><p><a href="https://docs.oracle.com/">https://docs.oracle.com/</a>에서 WebLogic 보안 이해를 검색하십시오.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM® WebSphere®</p> </td>
+   <td><p>® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">애플리케이션 및 환경 보호</a></p> </td>
   </tr>
   <tr>
@@ -129,11 +145,11 @@ JEE의 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보는 �
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p>® DB2® 11.1</p> </td>
    <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2® 제품군 라이브러리</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2016</p> </td>
+   <td><p>® SQL Server 2016</p> </td>
    <td>웹에서 "SQL Server 2016: 보안"을 검색합니다.</td>
   </tr>
   <tr>
@@ -141,8 +157,8 @@ JEE의 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보는 �
    <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">MySQL 5.0 일반 보안 문제</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">MySQL 5.1 일반 보안 문제</a></p> </td>
   </tr>
   <tr>
-   <td><p>Oracle® 12c</p> </td>
-   <td><p><a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a>의 보안 챕터를 참조하십시오.</p> </td>
+   <td><p>® 12c</p> </td>
+   <td><p><a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a>의 보안 챕터를 참조하십시오</p> </td>
   </tr>
  </tbody>
 </table>
@@ -223,7 +239,7 @@ JBoss® Application Server는 8080을 기본 HTTP 포트로 사용합니다. JBo
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## JEE의 AEM Forms 보안 고려 사항 {#aem-forms-on-jee-security-considerations}
 
@@ -247,7 +263,7 @@ lc_[database].xml 파일에는 일반 텍스트 형식의 암호를 사용할 �
 >
 >AEM Forms on JEE JBoss® 턴키 설치 관리자가 데이터베이스 암호를 암호화합니다.
 
-IBM® WebSphere® Application Server 및 Oracle WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 하지만 애플리케이션 서버 설명서에 확인하여 제대로 작동하는지 확인해야 합니다.
+® WebSphere® Application Server 및 Oracle WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 하지만 애플리케이션 서버 설명서에 확인하여 제대로 작동하는지 확인해야 합니다.
 
 ### Trust Store에 저장된 개인 키 보호 {#protecting-the-private-key-stored-in-trust-store}
 

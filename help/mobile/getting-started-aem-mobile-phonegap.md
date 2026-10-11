@@ -9,13 +9,17 @@ exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 
 {{ue-over-mobile}}
@@ -26,7 +30,7 @@ AEM은 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있도록 PhoneGap
 
 여기에서 ***AEM 작성자***(또는 *마케터*)는 이제 기본 제공 템플릿과 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함하여 DAM에서 모든 유형의 미디어를 추가할 수 있습니다.
 
-AEM Mobile의 진정한 장점은 *savvy* ***AEM 개발자***&#x200B;가 사용자 지정 웹 템플릿 및 구성 요소를 확장 및 만들어 *AEM 작성자*&#x200B;가 아름답고 매력적인 모바일 경험을 만들 수 있다는 것입니다. 이러한 템플릿과 구성 요소는 모바일 앱 환경에 최적화될 뿐만 아니라, 옴니채널 서비스 엔드포인트에 대해 디바이스와 AEM 서버(임의 원격 서버) 모두에 통신합니다.
+AEM Mobile의 진정한 장점은 *savvy* ***AEM 개발자***&#x200B;가 사용자 지정 웹 템플릿 및 구성 요소를 확장 및 만들어 *AEM 작성자*&#x200B;가 아름답고 매력적인 모바일 경험을 만들 수 있다는 것입니다. 이러한 템플릿과 구성 요소는 모바일 앱 환경에 최적화될 뿐만 아니라, 옴니채널 서비스 엔드포인트에 대해 디바이스와 AEM 서버(모든 원격 서버) 모두에 통신합니다.
 
 >[!NOTE]
 >
@@ -34,7 +38,7 @@ AEM Mobile의 진정한 장점은 *savvy* ***AEM 개발자***&#x200B;가 사용�
 
 ## 사전 요구 사항 {#prerequisites}
 
-AEM Mobile은 완전한 AEM 플랫폼을 구성하는 하나의 기둥에 불과합니다.
+AEM Mobile은 완벽한 AEM 플랫폼을 구성하는 하나의 기둥에 불과합니다.
 
 AEM Mobile으로 작업하고 이 시작 안내서의 단계를 따르려면 먼저 사용자가 AEM 및 AEM Mobile 제어 센터에 익숙해야 합니다. 다음을 참조하십시오.
 
@@ -48,13 +52,13 @@ AEM Mobile으로 작업하고 이 시작 안내서의 단계를 따르려면 먼
 
 ## 개발자용 빠른 링크 {#quicklinks-for-developers}
 
-AEM Mobile과 통합되고 개발자가 사용자 지정할 수 있는 샘플 애플리케이션이 있습니다. [AEM을 사용하여 Adobe PhoneGap Enterprise 개발](/help/mobile/developing-in-phonegap.md)을 클릭합니다.
+AEM Mobile과 통합되고 개발자가 사용자 지정할 수 있는 샘플 애플리케이션이 있습니다. [AEM과 함께 Adobe PhoneGap Enterprise 개발](/help/mobile/developing-in-phonegap.md)을 클릭합니다.
 
 후속 장에서는 애플리케이션 레이블 지정, 로컬라이제이션, 국제화, ContentSync, 타기팅, Analytics 등과 같은 고급 개념에 대해 알아봅니다.
 
 ## 관리자용 빠른 링크 {#quicklinks-for-administrators}
 
-모바일 응용 프로그램을 설정하고 관리하려면 [AEM에서 Adobe PhoneGap Enterprise용 콘텐츠 관리](/help/mobile/administer-phonegap.md)를 참조하십시오.
+모바일 애플리케이션을 설정하고 관리하려면 [AEM과 Adobe PhoneGap Enterprise용 콘텐츠 관리](/help/mobile/administer-phonegap.md)를 참조하십시오.
 
 >[!NOTE]
 >

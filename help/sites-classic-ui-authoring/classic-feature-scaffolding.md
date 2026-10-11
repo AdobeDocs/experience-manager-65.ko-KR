@@ -10,13 +10,22 @@ exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # 스캐폴딩{#scaffolding}
 
 구조를 공유하지만 콘텐츠가 다른 대규모 페이지 세트를 만들어야 하는 경우가 있습니다. 표준 Adobe Experience Manager(AEM) 인터페이스를 통해 각 페이지를 만들고 적절한 구성 요소를 페이지로 드래그한 다음 각 구성 요소를 개별적으로 채워야 합니다.
@@ -32,7 +41,7 @@ ht-degree: 0%
 스캐폴드는 사이트 관리자의 **도구** 콘솔에 저장됩니다.
 
 * **도구** 콘솔을 열고 **기본 페이지 스캐폴딩**&#x200B;을 클릭합니다.
-* 아래에서 **Geometrixx**&#x200B;을 클릭합니다.
+* 아래에서 **Geometrixx**&#x200B;을(를) 클릭합니다.
 * **Geometrixx**&#x200B;에서 **News**&#x200B;라는 *scaffold 페이지*&#x200B;를 찾을 수 있습니다. 이 페이지를 열려면 두 번 클릭하십시오.
 
 ![howscaffold_work](assets/howscaffolds_work.png)
@@ -91,7 +100,7 @@ ht-degree: 0%
 
 `./jcr:content/par/text/text`
 
-스캐폴드를 사용하여 페이지를 만들 때 이 필드의 내용이 기록될 속성의 이름입니다. 속성은 만들 페이지를 나타내는 노드로부터의 상대 경로로 표시됩니다. 노드 부분 아래에 있는 노드 텍스트 아래에 속성 텍스트를 지정합니다. 이 노드 자체가 페이지 노드 아래의 jcr:content 노드의 하위 항목입니다.
+스캐폴드를 사용하여 페이지를 만들 때 이 필드의 내용이 기록될 속성의 이름입니다. 속성은 만들 페이지를 나타내는 노드로부터의 상대 경로로 표시됩니다. 노드 부분 아래에 있는 노드 텍스트 아래에 속성 텍스트를 지정합니다. 페이지 노드 아래에 있는 jcr:content 노드의 하위 항목입니다.
 
 이 필드에 입력할 텍스트에 대한 콘텐츠 저장소의 위치를 정의합니다. 그러나 이 컨텐츠에 대해 두 가지 특성도 추가로 지정해야 합니다.
 
@@ -118,7 +127,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->대화 상자 편집기를 사용하면 대화 상자 정의에서 *기존* 속성의 값을 변경할 수 있습니다. 새 속성을 추가하려면 사용자는 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을 사용해야 합니다. 예를 들어 대화 상자 편집기를 사용하여 대화 상자 정의에 새 숨겨진 필드를 추가할 때 *value* 속성(즉, 이름이 &quot;value&quot;인 속성)이 없습니다. 해당 숨김 필드에 기본값 속성을 설정해야 하는 경우, 이 속성은 CRX 도구 중 하나를 사용하여 수동으로 추가해야 합니다. 대화 상자 편집기 자체에는 값을 추가할 수 없습니다. 그러나 속성이 있으면 대화 상자 편집기로 해당 값을 편집할 수 있습니다.
+>대화 상자 편집기를 사용하면 대화 상자 정의에서 *기존* 속성의 값을 변경할 수 있습니다. 새 속성을 추가하려면 사용자는 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을(를) 사용해야 합니다. 예를 들어 대화 상자 편집기를 사용하여 대화 상자 정의에 새 숨겨진 필드를 추가할 때 *value* 속성(즉, 이름이 &quot;value&quot;인 속성)이 없습니다. 해당 숨김 필드에 기본값 속성을 설정해야 하는 경우, 이 속성은 CRX 도구 중 하나를 사용하여 수동으로 추가해야 합니다. 대화 상자 편집기 자체에는 값을 추가할 수 없습니다. 그러나 속성이 있으면 대화 상자 편집기로 해당 값을 편집할 수 있습니다.
 
 두 번째 숨김 필드는 다음과 같이 클릭하여 볼 수 있습니다.
 

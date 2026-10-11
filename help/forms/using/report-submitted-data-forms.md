@@ -1,5 +1,5 @@
 ---
-title: Forms 포털에서 제출된 양식으로 작동하는 API
+title: Forms 포털에서 제출된 양식을 처리하는 API
 description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업을 수행하는 데 사용할 수 있는 API를 제공합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,25 @@ feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
-
+source-wordcount: '544'
+ht-degree: 8%
 ---
-
-# Forms 포털에서 제출된 양식으로 작동하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
+# Forms 포털에서 제출된 양식을 처리하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 주석을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
 

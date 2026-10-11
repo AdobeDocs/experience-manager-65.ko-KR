@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 독립 실행형 설치
+title: 사용자 정의 독립 실행형 설치
 description: 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다.
 content-type: reference
 topic-tags: deploying
@@ -7,14 +7,26 @@ exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 0%
-
+source-wordcount: '1637'
+ht-degree: 1%
 ---
-
-# 사용자 지정 독립 실행형 설치{#custom-standalone-install}
+# 사용자 정의 독립 실행형 설치{#custom-standalone-install}
 
 이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. AEM 6을 새로 설치한 후 백엔드 저장소 유형을 선택하는 방법에 대한 자세한 내용은 [저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md)를 읽을 수도 있습니다.
 
@@ -340,7 +352,7 @@ AEM WCM이 시작되면 다음에 액세스할 수도 있습니다.
 
 ### CRXDE Lite 액세스 {#accessing-crxde-lite}
 
-CRXDE Lite 시작 화면에서 **CRXDE Lite**&#x200B;을(를) 선택하거나 브라우저를 사용하여 다음 위치로 이동할 수 있습니다.
+시작 화면에서 **CRXDE Lite**&#x200B;을(를) 선택하거나 브라우저를 사용하여 다음 위치로 이동할 수 있습니다.
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp

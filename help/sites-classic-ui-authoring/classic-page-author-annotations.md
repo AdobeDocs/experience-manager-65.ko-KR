@@ -10,13 +10,22 @@ exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 10%
-
+source-wordcount: '770'
+ht-degree: 11%
 ---
-
 # 페이지 편집 시 주석{#annotations-when-editing-a-page}
 
 웹 사이트의 페이지에 콘텐츠를 추가하는 것은 실제로 게시되기 전에 종종 토론이 진행됩니다. 이를 돕기 위해 콘텐츠와 직접 관련된 많은 구성 요소(예: 레이아웃을 위해)를 사용하여 주석을 추가할 수 있습니다.
@@ -37,7 +46,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로를 개발할 수도 있습니다.
 
 ## 주석 {#annotations}
 
@@ -83,16 +92,16 @@ ht-degree: 10%
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* 스케치 모드에서 커서가 크로스와이어로 바뀝니다. 서로 다른 여러 선을 그릴 수 있습니다.
+* 스케치 모드에서 커서가 크로스와이어로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다.
 * 스케치 선은 주석 색상을 반영하며 다음 중 하나일 수 있습니다.
 
-   * 자유롭게
+  * 자유롭게
 
-     기본 모드. 마우스 단추를 놓아 완료합니다.
+    기본 모드. 마우스 단추를 놓아 완료합니다.
 
-   * 스트레이트:
+  * 스트레이트:
 
-     `ALT`을(를) 누른 채 시작 지점 및 끝 지점을 클릭하고 두 번 클릭하여 마칩니다.
+    `ALT`을(를) 누른 채 시작 지점 및 끝 지점을 클릭하고 두 번 클릭하여 마칩니다.
 
 * 스케치 모듈을 종료한 후 스케치 선을 클릭하여 해당 스케치를 선택할 수 있습니다.
 * 스케치를 선택한 다음 원하는 위치로 드래그하여 스케치를 이동합니다.
