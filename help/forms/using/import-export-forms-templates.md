@@ -1,6 +1,6 @@
 ---
-title: AEM Forms으로 에셋 가져오기 및 내보내기
-description: 및 에서 AEM 인스턴스로 적응형 양식 및 템플릿을 가져오고 내보낼 수 있습니다. 이는 양식을 마이그레이션하거나 시스템 간에 이동하는 데 도움이 됩니다.
+title: AEM Forms로 자산 가져오기 및 내보내기
+description: 및 의 적응형 양식 및 템플릿을 AEM 인스턴스로 가져오고 내보낼 수 있습니다. 이는 양식을 마이그레이션하거나 시스템 간에 이동하는 데 도움이 됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -9,25 +9,41 @@ role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 0%
-
+source-wordcount: '2540'
+ht-degree: 1%
 ---
-
-# AEM Forms으로 에셋 가져오기 및 내보내기{#importing-and-exporting-assets-to-aem-forms}
+# AEM Forms로 자산 가져오기 및 내보내기{#importing-and-exporting-assets-to-aem-forms}
 
 다양한 AEM Forms 인스턴스 간에 양식 및 관련 에셋, 테마, 데이터 사전, 문서 단편 및 문자를 이동할 수 있습니다. 이러한 이동은 시스템을 마이그레이션하거나 양식을 스테이지 서버에서 프로덕션 서버로 이동할 때 필요합니다. AEM Forms UI를 통한 업로드 및 가져오기가 지원되는 에셋의 경우 내보내기 또는 가져오기에 Forms UI를 사용하는 것이 좋습니다. 이러한 에셋을 내보내거나 가져오기 위해 AEM 패키지 관리자를 사용하는 것은 권장되지 않습니다.
 
 >[!NOTE]
 >
->* AEM 6.4 Forms에서 crx-repository의 구조 및 경로가 변경되었습니다. 이전 버전에서 AEM 6.4 Forms으로 에셋을 가져오고 양식에 이전 구조에 대한 일부 종속성이 있는 경우 종속성을 수동으로 내보내야 합니다. 저장소의 구조 및 경로 변경 사항에 대한 자세한 내용은 [AEM의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)을 참조하십시오.
+>* AEM 6.4 Forms에서 crx-repository의 구조 및 경로가 변경되었습니다. 이전 버전에서 AEM 6.4 Forms으로 자산을 가져오고 양식에 이전 구조에 대한 종속성이 있는 경우 종속성을 수동으로 내보내야 합니다. 리포지토리의 구조 및 경로 변경 내용에 대한 자세한 내용은 [AEM의 리포지토리 재구성](/help/sites-deploying/repository-restructuring.md)을 참조하십시오.
 >
 
 ## Forms 및 문서 에셋 다운로드 또는 업로드 {#download-or-upload-forms-amp-documents-assets}
 
-AEM Forms 사용자 인터페이스를 사용하면 AEM CRX 패키지 또는 바이너리 파일로 다운로드하여 AEM 인스턴스에서 자산을 내보낼 수 있습니다. 그런 다음 다운로드한 AEM CRX 패키지 또는 이진 파일을 다른 AEM 인스턴스로 가져올 수 있습니다.
+AEM Forms 사용자 인터페이스를 사용하면 자산을 AEM CRX 패키지 또는 이진 파일로 다운로드하여 AEM 인스턴스에서 내보낼 수 있습니다. 그런 다음 다운로드한 AEM CRX 패키지 또는 이진 파일을 다른 AEM 인스턴스로 가져올 수 있습니다.
 
 AEM Forms 사용자 인터페이스를 통한 내보내기 및 가져오기는 적응형 양식 템플릿 및 적응형 양식 콘텐츠 정책을 제외한 모든 에셋에 대해 지원됩니다. 따라서 AEM Forms UI에서 적응형 양식을 내보낼 때 관련 적응형 양식 템플릿 및 콘텐츠 정책이 다른 관련 에셋처럼 자동으로 내보내지지 않습니다.
 
@@ -38,21 +54,21 @@ AEM Forms 사용자 인터페이스를 통한 내보내기 및 가져오기는 �
 Forms 및 Documents 에셋을 다운로드하려면:
 
 1. AEM Forms 인스턴스에 로그인합니다.
-1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘 > Forms > Forms 및 문서를 선택합니다.
+1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘> Forms > Forms 및 문서를 선택합니다.
 1. 양식 자산을 선택하고 **다운로드** 아이콘을 선택합니다.
 1. 에셋 다운로드에서 다음 옵션 중 하나를 선택하고 **다운로드**&#x200B;를 선택합니다.
 
    * **CRX 패키지로 다운로드:** 선택한 모든 에셋과 관련 종속성을 AEM Forms 인스턴스에서 다른 인스턴스로 다운로드하고 이동하려면 옵션을 사용합니다. 모든 에셋과 폴더를 crx 패키지로 다운로드합니다. AEM(적응형 양식, 대화형 통신 및 적응형 양식 단편), 양식 세트, 양식 템플릿, PDF 문서 및 리소스(XSD, XFS, 이미지)로 작성된 양식을 포함한 모든 양식 자산은 AEM Forms UI에서 패키지로 다운로드할 수 있습니다.
-자산을 패키지로 다운로드하면 다운로드하도록 선택한 자산이 사용한 자산도 다운로드된다는 이점이 있습니다. 예를 들어 양식 템플릿, XSD 및 이미지를 사용하는 적응형 양식이 있는 경우. 이 적응형 양식을 선택하고 패키지로 다운로드하면 다운로드된 패키지에는 양식 템플릿, XSD 및 이미지도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다.
+     자산을 패키지로 다운로드하면 다운로드하도록 선택한 자산이 사용한 자산도 다운로드된다는 이점이 있습니다. 예를 들어 양식 템플릿, XSD 및 이미지를 사용하는 적응형 양식이 있는 경우. 이 적응형 양식을 선택하고 패키지로 다운로드하면 다운로드된 패키지에는 양식 템플릿, XSD 및 이미지도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다.
 
-   * **에셋을 이진 파일로 다운로드:** 양식 서식 파일(XDP), PDF forms(PDF), 문서(PDF) 및 리소스(이미지, 스키마, 스타일시트)만 다운로드하려면 옵션을 사용합니다. 외부 애플리케이션으로 이러한 에셋을 편집할 수 있습니다. XSD, XDP, 이미지, PDF 및 XDP와 같은 바이너리가 있는 양식 에셋을 .zip 파일로 다운로드합니다.
-**에셋을 이진 파일로 다운로드** 옵션이 있는 적응형 양식, 대화형 통신, 적응형 양식 단편, 테마 및 양식 세트를 다운로드할 수 없습니다. 이러한 에셋을 다운로드하려면 **CRX 패키지로 다운로드** 옵션을 사용해야 합니다.
+   * **에셋을 이진 파일로 다운로드:** 양식 템플릿(XDP), PDF forms(PDF), 문서(PDF) 및 리소스(이미지, 스키마, 스타일시트)만 다운로드하려면 옵션을 사용합니다. 외부 애플리케이션으로 이러한 에셋을 편집할 수 있습니다. XSD, XDP, 이미지, PDF 및 XDP와 같은 바이너리가 있는 양식 에셋을 .zip 파일로 다운로드합니다.
+     **에셋을 이진 파일로 다운로드** 옵션이 있는 적응형 양식, 대화형 통신, 적응형 양식 단편, 테마 및 양식 세트를 다운로드할 수 없습니다. 이러한 에셋을 다운로드하려면 **CRX 패키지로 다운로드** 옵션을 사용해야 합니다.
 
    선택한 자산은 아카이브(.zip 파일)로 다운로드됩니다.
 
    >[!NOTE]
    >
-   >AEM 패키지와 이진 파일은 모두 아카이브(.zip 파일)로 다운로드됩니다. 에셋의 템플릿은 에셋과 함께 다운로드되지 않습니다. 자산 템플릿을 별도로 내보내야 합니다.
+   >AEM 패키지와 이진 파일은 모두 보관 파일(.zip 파일)로 다운로드됩니다. 에셋의 템플릿은 에셋과 함께 다운로드되지 않습니다. 자산 템플릿을 별도로 내보내야 합니다.
 
 ### Forms 및 문서 에셋 업로드 {#upload-forms-amp-documents-assets}
 
@@ -61,7 +77,7 @@ Forms 및 문서 에셋을 업로드하려면:
 <!--[!VIDEO](https://vimeo.com/)-->
 
 1. AEM Forms 인스턴스에 로그인합니다.
-1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘> Forms> Forms 및 문서 를 선택합니다.
+1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘> Forms> Forms 및 문서를 선택합니다.
 1. **만들기** >**파일 업로드**&#x200B;를 선택합니다. 양식 또는 패키지 업로드 대화 상자가 나타납니다.
 1. 대화 상자에서 가져올 패키지 또는 아카이브를 찾아 선택합니다. PDF 문서, XSD, 이미지, 스타일시트 및 XDP 양식을 선택할 수도 있습니다. **열기**&#x200B;를 선택합니다. 선택한 폴더 또는 파일 이름에는 특수 문자가 포함되지 않아야 합니다.
 
@@ -146,7 +162,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
    >[!NOTE]
    >
-   >한 번 시작되면 모든 Assets 내보내기 프로세스를 취소할 수 없습니다. 또한 모두 내보내기 작업이 진행 중인 동안에는 에셋을 만들거나, 삭제하거나, 수정하거나, 게시하거나, Publish 모든 Assets 프로세스를 시작하지 마십시오.a
+   >한 번 시작되면 모든 Assets 내보내기 프로세스를 취소할 수 없습니다. 또한 모두 내보내기 작업이 진행 중인 동안에는 에셋을 만들거나, 삭제하거나, 수정하거나, 게시하거나, 모두 Assets 게시 프로세스를 시작하지 마십시오.a
 
 1. 패키지 파일을 다운로드하려면 **내보낸 패키지 다운로드** 링크를 선택하십시오.
 
@@ -158,7 +174,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
 >[!NOTE]
 >
->마이그레이션을 위해 이전 서신 관리 자산을 가져오는 동안 관리자 계정을 사용하여 로그인합니다. 이전 서신 관리 에셋을 마이그레이션하는 방법에 대한 자세한 내용은 [서신 관리 에셋을 AEM 6.1 양식으로 마이그레이션](/help/forms/using/migration-utility.md)을 참조하십시오.
+>마이그레이션을 위해 이전 서신 관리 자산을 가져오는 동안 관리자 계정을 사용하여 로그인합니다. 이전 서신 관리 에셋 마이그레이션에 대한 자세한 내용은 [서신 관리 에셋을 AEM 6.1 양식으로 마이그레이션](/help/forms/using/migration-utility.md)을 참조하십시오.
 
 1. 데이터 사전, 편지 또는 문서 단편 페이지에서 **만들기 > 파일 업로드**&#x200B;를 선택하고 .cmp 파일을 선택합니다.
 1. 서신 관리에는 가져온 에셋 목록과 함께 Assets 가져오기 대화 상자가 표시됩니다. **가져오기**&#x200B;를 선택합니다.
@@ -174,7 +190,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
 ## 워크플로우 응용 프로그램 내보내기 {#export-a-workflow-application}
 
-AEM 패키지 관리자를 사용하여 워크플로우 응용 프로그램을 내보낼 수 있습니다. 절차는 아래와 같습니다.
+AEM 패키지 관리자를 사용하여 워크플로우 애플리케이션을 내보낼 수 있습니다. 절차는 아래와 같습니다.
 
 1. AEM Forms 패키지 관리자를 엽니다. 패키지 관리자의 URL은 https://&lt;server>:&lt;port>/crx/packmgr입니다.
 1. **[!UICONTROL 패키지 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 새 패키지]** 대화 상자가 나타납니다.
@@ -251,7 +267,7 @@ AEM Forms UI를 통해 콘텐츠를 검색할 수 있습니다. 상단 표시줄
 
 * 검색 디렉터리
 * 태그
-* 검색 기준(예: 수정된 날짜, Publish 상태, 라이브 카피 상태).
+* 검색 기준(예: 수정된 날짜, 게시 상태, 라이브 카피 상태).
 
 사이드 패널에서는 검색 설정을 선택한 이름으로 저장할 수도 있습니다.
 

@@ -5,13 +5,22 @@ exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 8%
-
+source-wordcount: '890'
+ht-degree: 10%
 ---
-
 # 장식 태그{#decoration-tag}
 
 웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 이는 주로 다음 두 가지 용도로 사용됩니다.
@@ -19,10 +28,10 @@ ht-degree: 8%
 * 구성 요소는 HTML 요소로 래핑될 때만 편집할 수 있습니다.
 * 래핑 요소는 다음을 제공하는 HTML 클래스를 적용하는 데 사용됩니다.
 
-   * 레이아웃 정보
-   * 스타일 정보
+  * 레이아웃 정보
+  * 스타일 정보
 
-개발자를 위해 AEM에서는 포함된 구성 요소를 래핑하는 장식 태그를 제어하는 명확하고 간단한 논리를 제공합니다. 장식 태그의 렌더링 여부와 방법은 이 페이지에서 다룰 두 요소의 조합으로 정의됩니다.
+개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다. 장식 태그의 렌더링 여부와 방법은 이 페이지에서 다룰 두 요소의 조합으로 정의됩니다.
 
 * 구성 요소 자체는 속성 세트로 장식 태그를 구성할 수 있습니다.
 * 구성 요소(HTL, JSP, Dispatcher 등)를 포함하는 스크립트는 포함 매개 변수를 사용하여 장식 태그의 측면을 정의할 수 있습니다.
@@ -43,9 +52,9 @@ ht-degree: 8%
 
 * **`cq:htmlTag`노드 :** 이 노드는 구성 요소에 추가할 수 있으며 다음 속성을 가질 수 있습니다.
 
-   * **`cq:tagName {String}`:** 기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
-   * **`class {String}`:** 래퍼에 추가할 css 클래스 이름을 지정하는 데 사용할 수 있습니다.
-   * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 가진 HTML 속성으로 추가됩니다.
+  * **`cq:tagName {String}`:** 기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
+  * **`class {String}`:** 래퍼에 추가할 css 클래스 이름을 지정하는 데 사용할 수 있습니다.
+  * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 가진 HTML 속성으로 추가됩니다.
 
 ## 스크립트 컨트롤 {#script-controls}
 
@@ -144,7 +153,7 @@ HTL이 다음을 명시적으로 제공할 수 있으므로 쉽게 달성할 수
 
 `cq:includ`e 또는 `sling:include`을(를) 사용하여 구성 요소를 포함하는 경우 AEM의 기본 동작은 DIV를 사용하여 요소를 래핑하는 것입니다. 그러나 이 래핑은 다음 두 가지 방법으로 사용자 정의할 수 있습니다.
 
-* `cq:noDecoration`을(를) 사용하여 구성 요소를 래핑하지 않도록 AEM에 명시적으로 지시합니다.
+* AEM에 `cq:noDecoration`을(를) 사용하여 구성 요소를 래핑하지 않도록 명시적으로 지시합니다.
 * 사용자 지정 HTML 태그를 사용하여 `cq:htmlTag`/ `cq:tagName` 또는 `decorationTagName`을(를) 사용하여 구성 요소를 래핑합니다.
 
 ### 의사 결정 트리 {#decision-tree-1}

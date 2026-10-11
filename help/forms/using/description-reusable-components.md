@@ -9,16 +9,32 @@ exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 9%
-
+source-wordcount: '1217'
+ht-degree: 10%
 ---
-
 # 재사용 가능한 구성 요소에 대한 설명 {#description-of-reusable-components}
 
-AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)에 구성된 [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, JavaScript™은 다른 구성 요소 파일에 대한 종속성, 구성 요소가 수신하는 이벤트 및 AEM Forms 작업 공간에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 여기에 구성 파일 이름 및 종속성을 포함하여 재사용 가능한 구성 요소의 전체 목록이 제공됩니다.
+AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)에 구성된 [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, ™은 다른 구성 요소 파일에 대한 종속성, 구성 요소가 수신하는 이벤트 및 AEM Forms 작업 공간에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 여기에 구성 파일 이름 및 종속성을 포함하여 재사용 가능한 구성 요소의 전체 목록이 제공됩니다.
 
 ## 작업 목록 {#tasklist}
 

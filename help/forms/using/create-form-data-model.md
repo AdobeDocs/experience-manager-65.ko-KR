@@ -1,5 +1,5 @@
 ---
-title: '자습서: 양식 데이터 모델 만들기 '
+title: '튜토리얼: 양식 데이터 모델 만들기 '
 description: MySQL을 데이터 소스로 구성하고, 양식 데이터 모델(FDM)을 만들고, 구성하고, AEM Forms을 테스트하는 방법을 알아봅니다.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -8,20 +8,33 @@ exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 1%
-
+source-wordcount: '1629'
+ht-degree: 2%
 ---
-
-# 자습서: 양식 데이터 모델 만들기 {#tutorial-create-form-data-model}
+# 튜토리얼: 양식 데이터 모델 만들기 {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-이 자습서는 [첫 번째 적응형 양식을 만들기](../../forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe은 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하기 위해 연대순으로 시리즈를 따르는 것을 권장합니다.
+이 자습서는 [첫 번째 적응형 양식을 만들기](../../forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe에서는 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-## 튜토리얼 기본 정보 {#about-the-tutorial}
+## 튜토리얼 정보 {#about-the-tutorial}
 
 AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스와 같은 서로 다른 백엔드 데이터 소스에서 양식 데이터 모델을 만들 수 있습니다. 양식 데이터 모델에서 데이터 모델 개체 및 서비스를 구성하고 적응형 양식과 연결할 수 있습니다. 적응형 양식 필드는 데이터 모델 개체 속성에 바인딩됩니다. 이 서비스를 사용하면 적응형 양식을 미리 채우고 제출된 양식 데이터를 데이터 모델 개체에 다시 쓸 수 있습니다.
 
@@ -40,7 +53,7 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
 **A.** 구성된 데이터 원본 **B.** 데이터 원본 스키마 **C.** 사용 가능한 서비스 **D.** 데이터 모델 개체 **E.** 구성된 서비스
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 시작하기 전에 다음을 확인하십시오.
 
@@ -54,39 +67,39 @@ AEM [!DNL Forms] 데이터 통합 모듈을 사용하면 AEM 사용자 프로필
 
 [!DNL MySQL] 데이터베이스를 구성하려면 다음을 수행하십시오.
 
-1. 데이터베이스용 [!DNL MySQL] JDBC 드라이버를 OSGi 번들로 설치합니다.
+1. [!DNL MySQL] 데이터베이스에 대한 JDBC 드라이버를 OSGi 번들로 설치합니다.
 
-   1. 에서 JDBC 드라이버 OSGi 번들을 다운로드 [!DNL MySQL] 하십시오 `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`에서 [!DNL MySQL] JDBC 드라이버 OSGi 번들을 다운로드합니다. <!-- This URL is an insecure link but using https is not possible -->
    1. AEM [!DNL Forms] 작성자 인스턴스에 관리자로 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)입니다.
 
    1. **[!UICONTROL 설치/업데이트]**&#x200B;를 선택하십시오. [!UICONTROL 번들 업로드/설치] 대화 상자가 나타납니다.
 
-   1. **[!UICONTROL 파일 선택]**&#x200B;을 선택하여 [!DNL MySQL] JDBC 드라이버 OSGi 번들을 찾아 선택합니다. **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**&#x200B;을 선택하고 **[!UICONTROL 설치 또는 업데이트]**&#x200B;를 선택합니다. [!DNL Oracle Corporation's] 에 대한 [!DNL MySQL] JDBC 드라이버가 활성 상태인지 확인하십시오. 드라이버가 설치되어 있습니다.
+   1. **[!UICONTROL 파일 선택]**&#x200B;을 선택하여 [!DNL MySQL] JDBC 드라이버 OSGi 번들을 찾아 선택합니다. **[!UICONTROL 번들 시작]** 및 **[!UICONTROL 패키지 새로 고침]**&#x200B;을 선택하고 **[!UICONTROL 설치 또는 업데이트]**&#x200B;를 선택합니다. [!DNL MySQL]에 대한 [!DNL Oracle Corporation's] JDBC 드라이버가 활성화되어 있는지 확인합니다. 드라이버가 설치되었습니다.
 
-1. 데이터베이스를 데이터 소스로 구성 [!DNL MySQL] :
+1. [!DNL MySQL] 데이터베이스를 데이터 원본으로 구성:
 
-   1. https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 이동합니다.
-   1. Apache Sling 연결 풀링된 데이터 소스&#x200B;**구성을 찾습니다**. 편집 모드에서 구성을 열려면 선택합니다.
+   1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)의 AEM 웹 콘솔로 이동합니다.
+   1. **Apache Sling 연결의 풀링된 데이터 원본** 구성을 찾습니다. 을(를) 선택하여 편집 모드로 구성을 엽니다.
    1. 구성 대화 상자에서 다음 세부 사항을 지정합니다.
 
       * **데이터 원본 이름:** 모든 이름을 지정할 수 있습니다. 예를 들어 **WeRetailMySQL**&#x200B;을(를) 지정합니다.
       * **DataSource 서비스 속성 이름**: DataSource 이름이 포함된 서비스 속성의 이름을 지정하십시오. 데이터 소스 인스턴스를 OSGi 서비스로 등록하는 동안 지정됩니다. 예: **datasource.name**.
       * **JDBC 드라이버 클래스**: JDBC 드라이버의 Java™ 클래스 이름을 지정합니다. [!DNL MySQL] 데이터베이스에 대해 **com.mysql.jdbc.Driver**&#x200B;를 지정하십시오.
-      * **JDBC 연결 URI:** 데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마`weretail`에서 실행되는 데이터베이스의 경우 [!DNL MySQL] URL은 다음과 같습니다.`jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC 연결 URI**: 데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 `weretail`에서 실행 중인 [!DNL MySQL] 데이터베이스의 경우 URL은 `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`입니다.
 
       >[!NOTE]
       >
-      > 데이터베이스가 [!DNL MySQL] 방화벽 뒤에 있는 경우 데이터베이스 호스트 이름은 공용 DNS가 아닙니다. 데이터베이스의 IP 주소는 AEM 호스트 시스템의 /etc/hosts *파일에 추가해야*&#x200B;합니다.
+      > [!DNL MySQL] 데이터베이스가 방화벽 뒤에 있으면 데이터베이스 호스트 이름이 공용 DNS가 아닙니다. 데이터베이스의 IP 주소를 AEM 호스트 컴퓨터의 */etc/hosts* 파일에 추가해야 합니다.
 
       * 데이터베이스의 **사용자 이름:** 사용자 이름. JDBC 드라이버가 데이터베이스와의 연결을 설정할 수 있도록 해야 합니다.
       * 데이터베이스의 **암호:** 암호입니다. JDBC 드라이버가 데이터베이스와의 연결을 설정할 수 있도록 해야 합니다.
 
       >[!NOTE]
       >
-      >AEM Forms은 [!DNL MySQL]에 대한 NT 인증을 지원하지 않습니다. https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 에서 AEM 웹 콘솔로 이동하여 &quot;Apache Sling 연결 풀링된 데이터 소스&quot;를 검색. &quot;JDBC 연결 URI&quot; 속성의 경우 &quot;integratedSecurity&quot;의 값을 False로 설정하고 생성된 사용자 이름과 암호 사용하여 데이터베이스와 [!DNL MySQL] 연결합니다.
+      >AEM Forms은 [!DNL MySQL]에 대한 NT 인증을 지원하지 않습니다. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)의 AEM 웹 콘솔로 이동하여 &quot;Apache Sling 연결의 풀링된 데이터 소스&quot;를 검색합니다. &quot;JDBC 연결 URI&quot; 속성의 경우 &quot;integratedSecurity&quot; 값을 False로 설정하고 [!DNL MySQL] 데이터베이스와 연결하는 데 생성된 사용자 이름과 암호를 사용합니다.
 
-      * **Test on Borrow:** Test on Borrow **옵션을 활성화**&#x200B;합니다.
-      * **Test on Return(반환 시 테스트):** Test on Return **옵션을 활성화**&#x200B;합니다.
+      * **차입 시 테스트:** **[!UICONTROL 차입 시 테스트]** 옵션을 활성화합니다.
+      * **반환 시 테스트:** **[!UICONTROL 반환 시 테스트]** 옵션을 활성화합니다.
       * **유효성 검사 쿼리:** SQL SELECT 쿼리를 지정하여 풀에서의 연결을 검증하십시오. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어 **customerdetails에서 &#42;을(를) 선택**&#x200B;합니다.
       * **트랜잭션 격리**: 값을 **READ_COMMITTED**(으)로 설정합니다.
 
@@ -131,17 +144,17 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 
    * **데이터 모델 개체**:
 
-      * id
-      * 이름
-      * shippingAddress
-      * 도시
-      * 시/도
-      * 우편번호
+     * id
+     * 이름
+     * shippingAddress
+     * 도시
+     * 시/도
+     * 우편번호
 
    * **서비스:**
 
-      * get
-      * 업데이트
+     * get
+     * 업데이트
 
    선택한 데이터 모델 개체 및 서비스를 양식 데이터 모델에 추가하려면 **선택한 항목 추가**&#x200B;를 선택하십시오.
 
@@ -162,11 +175,11 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 
       ![쓰기-기본값](assets/write-default.png)
 
-      다음과 같이 id **인수를**&#x200B;추가하고 구성합니다.
+      다음과 같이 **id** 인수를 추가하고 구성합니다.
 
-      ![id-인수](assets/id-arg.png)
+      ![id-arg](assets/id-arg.png)
 
-   1. 완료&#x200B;**를 선택하여**&#x200B;[!UICONTROL &#x200B;데이터 모델 개체 속성을 저장합니다. 그런 다음 저장&#x200B;]&#x200B;**을 선택하여**&#x200B;양식 데이터 모델을 저장합니다.
+   1. **[!UICONTROL 완료]**&#x200B;를 선택하여 데이터 모델 개체 속성을 저장합니다. 그런 다음 **[!UICONTROL 저장]**&#x200B;을 선택하여 양식 데이터 모델을 저장합니다.
 
       **[!UICONTROL get]** 및 **[!UICONTROL update]** 서비스가 데이터 모델 개체에 대한 기본 서비스로 추가되었습니다.
 
@@ -175,9 +188,9 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 1. **[!UICONTROL 서비스]** 탭으로 이동하여 **[!UICONTROL get]** 및 **[!UICONTROL 업데이트]** 서비스를 구성하십시오.
 
    1. **[!UICONTROL get]** 서비스를 선택하고 **[!UICONTROL 속성 편집]**&#x200B;을 선택합니다. 속성 대화 상자가 열립니다.
-   1. 속성 편집 대화상자에서 다음을 지정합니다.
+   1. 속성 편집 대화 상자에서 다음을 지정합니다.
 
-      * **제목**: 서비스의 제목을 지정합니다. 예: 배송 주소 검색.
+      * **제목**: 서비스 제목을 지정합니다. 예를 들어 배송 주소를 검색합니다.
       * **설명**: 서비스의 자세한 기능이 포함된 설명을 지정하십시오. 예:
 
         이 서비스는 [!DNL MySQL] 데이터베이스에서 배송 주소 및 기타 고객 세부 정보를 검색합니다.
@@ -243,4 +256,4 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 
 >[!NOTE]
 >
-> 적응형 양식의 양식 데이터 모델을 사용하여 SharePoint 목록 구성을 생성 및 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 자세한 단계는 [Microsoft® SharePoint 목록에 적응형 양식 연결](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)을 참조하세요.
+> 적응형 양식의 양식 데이터 모델을 사용하여 SharePoint 목록 구성을 생성 및 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 자세한 단계는 [® SharePoint 목록에 적응형 양식 연결](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)을 참조하세요.

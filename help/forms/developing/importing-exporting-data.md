@@ -9,13 +9,29 @@ role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 0%
-
+source-wordcount: '2784'
+ht-degree: 1%
 ---
-
 # 데이터 가져오기 및 내보내기 {#importing-and-exporting-data}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -27,14 +43,14 @@ ht-degree: 0%
 * Acrobat 양식(Acrobat에서 작성)은 양식 필드를 포함하는 PDF 문서입니다.
 * Adobe XML 양식(Designer에서 작성)은 XML Adobe XML Forms 아키텍처(XFA)를 준수하는 PDF 문서입니다.
 
-양식 데이터는 PDF 양식 유형에 따라 다음 형식 중 하나로 존재할 수 있습니다.
+양식 데이터는 PDF 양식의 유형에 따라 다음 형식 중 하나로 존재할 수 있습니다.
 
 * Acrobat 양식 데이터 형식의 XML 버전인 XFDF 파일입니다.
-* 양식 필드 정의가 포함된 XML 파일인 XDP 파일입니다. 또한 양식 필드 데이터 및 임베드된 PDF 파일이 포함될 수 있습니다. Designer에서 생성한 XDP 파일은 포함된 base 64로 인코딩된 PDF 문서를 포함하는 경우에만 사용할 수 있습니다.
+* 양식 필드 정의가 포함된 XML 파일인 XDP 파일입니다. 양식 필드 데이터와 포함된 PDF 파일도 포함될 수 있습니다. Designer에서 생성한 XDP 파일은 포함된 base 64로 인코딩된 PDF 문서를 포함하는 경우에만 사용할 수 있습니다.
 
 양식 데이터 통합 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 데이터를 PDF forms으로 가져옵니다. 자세한 내용은 [양식 데이터 가져오기](importing-exporting-data.md#importing-form-data)를 참조하십시오.
+* PDF forms으로 데이터를 가져옵니다. 자세한 내용은 [양식 데이터 가져오기](importing-exporting-data.md#importing-form-data)를 참조하십시오.
 * PDF forms에서 데이터를 내보냅니다. 자세한 내용은 [양식 데이터 내보내기](importing-exporting-data.md#exporting-form-data)를 참조하십시오.
 
 >[!NOTE]
@@ -92,7 +108,7 @@ Designer에서 만든 양식으로 데이터를 가져오려면 유효한 XDP XM
 
 1. 프로젝트 파일을 포함합니다.
 1. 양식 데이터 통합 서비스 클라이언트를 만듭니다.
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 1. XML 데이터 소스를 참조합니다.
 1. PDF 양식으로 데이터를 가져옵니다.
 1. PDF 양식을 PDF 파일로 저장합니다.
@@ -113,7 +129,7 @@ Designer에서 만든 양식으로 데이터를 가져오려면 유효한 XDP XM
 
 **양식 데이터 통합 서비스 클라이언트 만들기**
 
-프로그래밍 방식으로 PDF 양식 클라이언트 API로 데이터를 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+프로그래밍 방식으로 PDF form 클라이언트 API로 데이터를 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 **PDF 양식 참조**
 
@@ -125,7 +141,7 @@ Designer에서 만든 양식으로 데이터를 가져오려면 유효한 XDP XM
 
 **PDF 양식으로 데이터 가져오기**
 
-PDF 양식과 유효한 XML 데이터 소스를 참조한 후 데이터를 PDF 양식으로 가져올 수 있습니다.
+PDF 양식 및 유효한 XML 데이터 소스를 참조한 후 데이터를 PDF 양식으로 가져올 수 있습니다.
 
 **PDF 양식을 PDF 파일로 저장**
 
@@ -158,10 +174,10 @@ PDF 양식과 유효한 XML 데이터 소스를 참조한 후 데이터를 PDF �
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
    * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormDataIntegrationClient` 개체를 만듭니다.
 
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 
    * 해당 생성자를 사용하여 `java.io.FileInputStream` 개체를 만듭니다. PDF 양식의 위치를 지정하는 문자열 값을 전달합니다.
-   * `com.adobe.idp.Document` 생성자를 사용하여 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 만듭니다. PDF 양식을 포함하는 `java.io.FileInputStream` 개체를 생성자에 전달합니다.
+   * `com.adobe.idp.Document` 생성자를 사용하여 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 만듭니다. PDF 폼이 포함된 `java.io.FileInputStream` 개체를 생성자에 전달합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -212,15 +228,15 @@ PDF 양식과 유효한 XML 데이터 소스를 참조한 후 데이터를 PDF �
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `FormDataIntegrationClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `FormDataIntegrationClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `FormDataIntegrationClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `FormDataIntegrationClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 
    * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. 이 `BLOB` 개체는 PDF 양식을 저장하는 데 사용됩니다.
-   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 폼의 위치와 파일을 열 모드를 지정하는 문자열 값을 전달합니다.
+   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 양식의 위치와 파일을 열 모드를 지정하는 문자열 값을 전달합니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
    * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
@@ -269,7 +285,7 @@ PDF 양식에서 양식 데이터를 내보내려면 다음 단계를 수행하�
 
 1. 프로젝트 파일 포함
 1. 양식 데이터 통합 서비스 클라이언트를 만듭니다.
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 1. PDF 양식에서 데이터를 내보냅니다.
 1. 내보낸 데이터를 XML 파일로 저장합니다.
 
@@ -287,7 +303,7 @@ PDF 양식에서 양식 데이터를 내보내려면 다음 단계를 수행하�
 
 **양식 데이터 통합 서비스 클라이언트 만들기**
 
-프로그래밍 방식으로 데이터를 PDF formClient API로 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다. 자세한 내용은 [연결 속성을 설정하는 중](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)입니다.
+프로그래밍 방식으로 PDF formClient API로 데이터를 가져오려면 먼저 데이터 통합 서비스 클라이언트를 만들어야 합니다. 서비스 클라이언트를 만들 때 서비스를 호출하는 데 필요한 연결 설정을 정의합니다. 자세한 내용은 [연결 속성을 설정하는 중](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)입니다.
 
 **PDF 양식 참조**
 
@@ -328,14 +344,14 @@ PDF 양식에서 데이터를 내보내려면 Designer 또는 Acrobat에서 만�
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
    * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormDataIntegrationClient` 개체를 만듭니다.
 
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 
    * 생성자를 사용하여 `java.io.FileInputStream` 개체를 만들고 내보낼 데이터가 포함된 PDF 폼의 위치를 지정하는 문자열 값을 전달합니다.
-   * `com.adobe.idp.Document` 생성자를 사용하여 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 만듭니다. PDF 양식을 포함하는 `java.io.FileInputStream` 개체를 생성자에 전달합니다.
+   * `com.adobe.idp.Document` 생성자를 사용하여 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 만듭니다. PDF 폼이 포함된 `java.io.FileInputStream` 개체를 생성자에 전달합니다.
 
 1. PDF 양식에서 데이터를 내보냅니다.
 
-   `FormDataIntegrationClient` 개체의 `exportData` 메서드를 호출하여 양식 데이터를 내보내고 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 전달하십시오. 이 메서드는 양식 데이터를 XML 스키마로 저장하는 `com.adobe.idp.Document` 개체를 반환합니다.
+   `FormDataIntegrationClient` 개체의 `exportData` 메서드를 호출하여 양식 데이터를 내보내고 PDF 양식을 저장하는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 양식 데이터를 XML 스키마로 저장하는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. PDF 양식을 PDF 파일로 저장합니다.
 
@@ -370,15 +386,15 @@ PDF 양식에서 데이터를 내보내려면 Designer 또는 Acrobat에서 만�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `FormDataIntegrationClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `FormDataIntegrationClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `FormDataIntegrationClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `FormDataIntegrationClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
-1. PDF 양식을 참조합니다.
+1. PDF 양식을 참조하십시오.
 
    * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. 이 `BLOB` 개체는 데이터를 내보내는 PDF 양식을 저장하는 데 사용됩니다.
-   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 폼의 위치와 파일을 열 모드를 지정하는 문자열 값을 전달합니다.
+   * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 양식의 위치와 파일을 열 모드를 지정하는 문자열 값을 전달합니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
    * 해당 `MTOM` 필드를 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.

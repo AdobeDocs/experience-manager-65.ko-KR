@@ -7,13 +7,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 7%
-
+source-wordcount: '770'
+ht-degree: 9%
 ---
-
 # 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -58,7 +74,7 @@ ht-degree: 7%
    >
    >익명 사용자에 대해 자동 저장 옵션이 작동하려면 모든 사용자가 양식을 미리 보고, 확인하고, 서명할 수 있도록 Forms 일반 구성 서비스를 구성해야 합니다.
    >
-   >서비스를 구성하려면 `https://server:port/system/console/configMgr`의 AEM Web Console 구성으로 이동하여 **[!UICONTROL Forms 일반 구성 서비스]**&#x200B;를 편집하여 **[!UICONTROL 허용]** 필드에서 **[!UICONTROL 모든 사용자]** 옵션을 선택한 다음 구성을 저장합니다.
+   >서비스를 구성하려면 `https://server:port/system/console/configMgr`의 AEM 웹 콘솔 구성으로 이동하여 **[!UICONTROL Forms 일반 구성 서비스]**&#x200B;를 편집하여 **[!UICONTROL 허용]** 필드에서 **[!UICONTROL 모든 사용자]** 옵션을 선택한 다음 구성을 저장합니다.
 
 ## 적응형 양식에 대해 자동 저장을 활성화하기 위한 사용자 지정 전략 구현 {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 

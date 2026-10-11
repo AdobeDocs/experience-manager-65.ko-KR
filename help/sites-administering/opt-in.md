@@ -9,13 +9,22 @@ exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 9%
 ---
-
 # Adobe Analytics 및 Adobe Target 선택{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 옵트인 절차가 있습니다. 관리자 사용자 그룹에 할당된 미리 로드된 작업으로 즉시 사용할 수 있습니다.
@@ -57,7 +66,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 >
 >AT.js는 기본 클라이언트 라이브러리입니다. [대상 클라우드 서비스 구성](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration)에 구성되어 있습니다.
 >
->Adobe은 AT.js를 클라이언트 라이브러리로 사용할 것을 권장합니다.
+>Adobe에서는 AT.js를 클라이언트 라이브러리로 사용할 것을 권장합니다.
 
 사전 로드된 기본 작업에서 옵트인하려면:
 
@@ -102,7 +111,7 @@ AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 
 
 서버 시작 시 AEM이 읽는 속성 파일을 설치하여 Analytics 및 Target과의 통합을 위한 계정 속성을 구성합니다. 속성 파일을 사용하면 옵트인 마법사가 파일의 속성을 자동으로 사용하고 그에 따라 클라우드 구성이 생성됩니다.
 
-속성 파일은 AEM 프로세스가 사용하는 작업 디렉토리(일반적으로 JAR 파일과 동일한 디렉토리)에 저장하는 marketingcloud.properties라는 텍스트 파일입니다. 파일에는 다음 속성이 포함되어 있습니다.
+속성 파일은 marketingcloud.properties라는 텍스트 파일로, AEM 프로세스에서 사용 중인 작업 디렉토리(일반적으로 JAR 파일과 동일한 디렉토리)에 저장합니다. 파일에는 다음 속성이 포함되어 있습니다.
 
 * analytics.server: 사용하는 Analytics 데이터 센터의 URL입니다.
 * analytics.company: Analytics 사용자 계정과 연결된 회사입니다.
@@ -174,15 +183,15 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
 
 관리자는 수동으로 마법사를 실행하는 대신 스크립트로 설정 및 프로비저닝을 트리거할 수 있습니다. 다음을 통해 작업을 수행할 수 있습니다.
 
-* 필수 매개 변수를 사용하여 **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json**(으)로 POST 요청을 보내는 중입니다.
+* 필수 매개 변수를 사용하여 **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json**&#x200B;에 POST 요청을 보내는 중입니다.
 
 보낼 매개 변수는 다음에 따라 다릅니다.
 
 * 필요한 모든 자격 증명으로 채워진 **marketingcloud.properties** 파일을 사용하려면 다음 매개 변수를 전송해야 합니다.
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로
 
   예를 들어 Analytics와 Target 구성을 모두 만들고 we.retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 
@@ -191,17 +200,17 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
   ```
 
 * **marketingcloud.properties** 파일을 사용하지 않으려면 자격 증명과 매개 변수를 보내야 합니다. 예:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지에 대한 경로. 여러 경로를 정의할 수 있습니다.
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로. 여러 경로를 정의할 수 있습니다.
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   이 경우 Analytics와 Target 구성을 모두 만들고 we-retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 

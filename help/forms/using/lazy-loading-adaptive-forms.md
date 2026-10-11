@@ -1,5 +1,5 @@
 ---
-title: 소극적 로드 옵션이 있는 대용량 양식의 성능 향상
+title: 지연 로딩으로 대용량 양식의 성능 향상
 description: 지연 로드는 양식 조각이 표시될 때까지 양식 조각의 초기화 및 로드를 지연하여 크고 복잡한 적응형 양식의 성능을 크게 향상시킵니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -8,14 +8,30 @@ feature: Adaptive Forms,Foundation Components
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 7%
-
+source-wordcount: '1114'
+ht-degree: 8%
 ---
-
-# 소극적 로드 옵션이 있는 대용량 양식의 성능 향상{#improve-performance-of-large-forms-with-lazy-loading}
+# 지연 로딩으로 대용량 양식의 성능 향상{#improve-performance-of-large-forms-with-lazy-loading}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
@@ -44,7 +60,7 @@ Forms 기반 트랜잭션에는 동적 요소가 포함되어 사용자로부터
 
   필드 값을 전역으로 만드는 방법에 대한 자세한 내용은 [소극적 로드 구성](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)을 참조하십시오.
 
-* **필드의 가시성을 제어하는 규칙을 작성합니다**
+* **필드의 가시성을 제어하는 규칙을 작성합니다.**
 Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 및 섹션이 포함되어 있습니다. Forms 작성자 및 개발자는 가시성 또는 표시 숨기기 규칙을 사용하여 사용자 입력에 따라 가시성을 제어합니다. 예를 들어, Office 주소 필드는 Employment Status 필드에서 실업을 선택한 사용자에게 양식으로 표시되지 않습니다. 규칙 작성에 대한 자세한 내용은 [규칙 편집기 사용](../../forms/using/rule-editor.md)을 참조하십시오.
 
   느리게 로드된 조각에서 가시성 규칙을 사용하여 조건부 필드가 필요한 경우에만 표시할 수 있습니다. 또한 느리게 로드된 조각의 가시성 표현식에서 참조하도록 조건부 필드를 전역으로 표시합니다.
