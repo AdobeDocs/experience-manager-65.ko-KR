@@ -9,13 +9,22 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
-
+source-wordcount: '482'
+ht-degree: 2%
 ---
-
 # 번역할 문자열 추출{#extracting-strings-for-translating}
 
 xgettext-maven-plugin을 사용하여 번역이 필요한 소스 코드에서 문자열을 추출합니다. Maven 플러그인은 번역하기 위해 전송하는 XLIFF 파일에 문자열을 추출합니다. 문자열은 다음 위치에서 추출됩니다.
@@ -66,10 +75,10 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
 | 접두어 | 효과 |
 |---|---|
 | / | JCR 경로를 나타냅니다. 따라서 이 접두사는 jcr_root 디렉터리 아래의 파일과 일치합니다. |
-| &ast; | 파일 시스템의 일반 파일을 나타냅니다. |
+| &amp;ast; | 파일 시스템의 일반 파일을 나타냅니다. |
 | 없음 | 접두사가 없거나 폴더 또는 파일 이름으로 시작되는 패턴은 파일 시스템의 일반 파일을 나타냅니다. |
 
-패턴 내에서 사용할 때 / 문자는 하위 디렉터리를 나타내고 &ast; 문자는 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
+패턴 내에서 사용할 때 / 문자는 하위 디렉터리를 나타내고 &amp;ast; 문자는 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
 
 <table>
  <tbody>
@@ -83,7 +92,7 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
   </tr>
   <tr>
    <td><code>{ /exclude "*.pdf" }</code></td>
-   <td>모든 PDF 파일 제외</td>
+   <td>모든 PDF 파일을 제외합니다.</td>
   </tr>
   <tr>
    <td><code> { /exclude "*/pom.xml" }</code></td>

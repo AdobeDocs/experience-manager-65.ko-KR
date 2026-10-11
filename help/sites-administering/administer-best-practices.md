@@ -1,6 +1,6 @@
 ---
 title: 관리자가 시작하고 실행하는 데 도움이 되는 모범 사례
-description: Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 찾아 관리자가 시작하고 실행할 수 있도록 지원합니다.
+description: 관리자가 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀에서 컴파일한 모범 사례를 확인하십시오.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 9%
-
+source-wordcount: '533'
+ht-degree: 13%
 ---
-
 # 모범 사례{#best-practices}
 
-모범 사례에서는 AEM을 가장 효율적이고 효과적으로 개발, 관리 또는 사용하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록은 AEM의 다양한 영역을 포함합니다.
+모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 개발, 관리 또는 사용하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
 
 다음 영역에는 모범 사례와 관련된 설명서가 있습니다.
 
@@ -27,7 +36,7 @@ ht-degree: 9%
 
 작성, 배포, 유지 관리 또는 개발에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
-* [작성 모범 사례](/help/sites-authoring/best-practices.md)
+* [모범 사례 작성](/help/sites-authoring/best-practices.md)
 * [모범 사례 개발](/help/sites-developing/best-practices.md)
 * [모범 사례 배포](/help/sites-deploying/best-practices.md)
 
@@ -51,7 +60,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   </tr>
   <tr>
    <td>Scene7 및 AEM 통합</td>
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Scene7과 AEM 통합을 위한 모범 사례</a></td>
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Scene7과 AEM 통합에 대한 우수 사례</a></td>
    <td><p>폴링 가져오기를 설정하는 시점, 통합을 테스트하는 방법, 콘텐츠 브라우저를 사용하여 Assets에 직접 업로드하는 시점에 대해 설명합니다.</p> </td>
   </tr>
   <tr>
@@ -60,8 +69,8 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
    <td><a href="/help/assets/managing-image-presets.md">이미지 사전 설정 관리</a>에 대한 설명서의 일부로, 이 항목에서는 이미지 사전 설정이 무엇인지와 이미지 사전 설정 옵션 선택에 대한 모범 사례를 설명합니다.</td>
   </tr>
   <tr>
-   <td>Dynamic Media과 Scene7의 직접 통합</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM 통합 대 Dynamic Media</a></td>
+   <td>Dynamic Media 및 Scene7과의 직접 통합</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM 통합과 Dynamic Media</a></td>
    <td>Dynamic Media 솔루션을 사용하는 것이 가장 좋은 경우, S7을 AEM과 통합하는 경우 또는 둘 다 사용하는 경우에 대해 설명합니다.</td>
   </tr>
  </tbody>
@@ -76,7 +85,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>GDPR 준수</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR 규정 준수</a></td>
-   <td>데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
+   <td>데이터 사생활 보호권에 관한 유럽 연합의 GDPR(일반 데이터 보호 규정)은 2018년 5월에 발효됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
   </tr>
   <tr>
    <td>인스턴스에 대한 기본 UI를 정의합니다.</td>
@@ -101,7 +110,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>워크플로</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">워크플로우 모범 사례 - 구성</a></td>
-   <td>워크플로를 사용하면 AEM(Adobe Experience Manager) 활동을 자동화할 수 있으며 AEM 환경에서 발생하는 대량의 처리를 나타낼 수 있으므로 워크플로 구현을 신중하게 계획하고 구성하는 것이 좋습니다.</td>
+   <td>워크플로를 사용하면 Adobe Experience Manager(AEM) 활동을 자동화할 수 있으며 AEM 환경에서 발생하는 대량의 처리를 나타낼 수 있으므로 워크플로 구현을 신중하게 계획하고 구성하는 것이 좋습니다.</td>
   </tr>
  </tbody>
 </table>

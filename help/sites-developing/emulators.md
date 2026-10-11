@@ -10,13 +10,22 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 # 에뮬레이터{#emulators}
 
 {{ue-over-mobile}}
@@ -119,14 +128,14 @@ AEM 에뮬레이터 프레임워크:
 
 * 모바일 기본 에뮬레이터의 init 스크립트는 JavaScript을 통해 다음을 정의합니다.
 
-   * 페이지에 대해 정의된 모든 에뮬레이터에 대한 구성(emulatorConfigs)
-   * 다음을 통해 페이지에서 에뮬레이터의 기능을 통합하는 에뮬레이터 관리자:
+  * 페이지에 대해 정의된 모든 에뮬레이터에 대한 구성(emulatorConfigs)
+  * 다음을 통해 페이지에서 에뮬레이터의 기능을 통합하는 에뮬레이터 관리자:
 
-     `emulatorMgr.launch(config)`;
+    `emulatorMgr.launch(config)`;
 
-     에뮬레이터 관리자는 다음으로 정의됩니다.
+    에뮬레이터 관리자는 다음으로 정의됩니다.
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### 사용자 지정 모바일 에뮬레이터 만들기 {#creating-a-custom-mobile-emulator}
 
@@ -140,7 +149,7 @@ AEM 에뮬레이터 프레임워크:
 
    예를 들어 `/libs/wcm/mobile/components/emulators/iPhone/css` 노드를 참조할 수 있습니다.
 
-1. 필요한 경우 JS 클라이언트 라이브러리를 정의하여 특정 플러그인을 정의합니다(예: name = js, node type = cq:ClientLibrary).
+1. 필요한 경우 JS 클라이언트 라이브러리를 정의하여 특정 플러그인(이름 = js, 노드 유형 = cq:ClientLibrary)을 정의합니다
 
    예를 들어 `/libs/wcm/mobile/components/emulators/base/js` 노드를 참조할 수 있습니다.
 

@@ -5,13 +5,27 @@ exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 0%
-
+source-wordcount: '281'
+ht-degree: 12%
 ---
-
 # JEE 플랫폼에서 AEM Forms에 대한 첨부 파일이 있는 이메일을 가져올 수 없음{#unable-to-get-email-with-attachments}
 
 이 문제는 다음 버전에 적용됩니다.
@@ -41,7 +55,7 @@ ht-degree: 0%
 
 1. 3단계에서 가져온 `java.mail-1.5.jar` 설치. 이 단계에서는 JEE 배포의 Sling 속성을 다시 시작합니다. `http://<server name>:<port>/lc/system/console/bundles`에 설치된 번들이 **Active**(으)로 상태를 표시할 때까지 기다립니다.
 
-   >상태가 여전히 **InActive**&#x200B;인 경우 다시 시작하십시오.   **서비스 콘솔**&#x200B;에서 **JBoss®**.
+   >상태가 여전히 **InActive**&#x200B;인 경우 **서비스 콘솔**&#x200B;에서 **JBoss®**&#x200B;을(를) 다시 시작하십시오.
 
 
 1. 5단계를 사용하여 다운로드한 `javax.mail-1.5.6.redhat-1.jar`파일을 설치합니다.
@@ -54,4 +68,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.

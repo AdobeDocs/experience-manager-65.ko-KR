@@ -9,13 +9,25 @@ exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 0%
-
+source-wordcount: '1657'
+ht-degree: 4%
 ---
-
 # AEM 6을 사용하여 LDAP 구성 {#configuring-ldap-with-aem}
 
 LDAP(**L** 8 **D**&#x200B;디렉터리 **A**&#x200B;액세스 **P** rotocol)가 중앙 디렉터리 서비스에 액세스하는 데 사용됩니다. 여러 애플리케이션에서 액세스할 수 있으므로 사용자 계정을 관리하는 데 필요한 노력을 줄일 수 있습니다. 이러한 LDAP 서버 중 하나는 Active Directory입니다. LDAP는 종종 사용자가 한 번에 로그인한 후 여러 애플리케이션에 액세스할 수 있는 단일 사인온을 달성하는 데 사용됩니다.
@@ -33,7 +45,7 @@ AEM 6에서 LDAP 지원은 이전 버전과 다른 유형의 구성이 필요한
 이제 모든 LDAP 구성을 OSGi 구성으로 사용할 수 있습니다. 다음 웹 관리 콘솔을 통해 구성할 수 있습니다.
 `https://serveraddress:4502/system/console/configMgr`
 
-LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 생성해야 합니다.
+LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 만들어야 합니다.
 
 1. IDP(LDAP Identity Provider).
 1. 동기화 핸들러.
@@ -41,9 +53,9 @@ LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 생성해�
 
 >[!NOTE]
 >
->[Oak의 외부 로그인 모듈 - LDAP 및 Beyond로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=ko)을 시청하여 외부 로그인 모듈에 대해 자세히 알아보십시오.
+>[Oak의 외부 로그인 모듈 - LDAP 및 Beyond로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html)을 시청하여 외부 로그인 모듈에 대해 자세히 알아보십시오.
 >
->Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5 구성](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=ko)을 참조하십시오.
+>Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5 구성](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)을 참조하십시오.
 
 ## LDAP Id 공급자 구성 {#configuring-the-ldap-identity-provider}
 
@@ -162,7 +174,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>사용자 만료 시간</strong></td>
-   <td>동기화된 사용자가 만료될 때까지의 기간.</td>
+   <td>동기화된 사용자가 만료될 때까지의 기간입니다.</td>
   </tr>
   <tr>
    <td><strong>사용자 자동 멤버십</strong></td>
@@ -182,7 +194,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>사용자 멤버십 중첩 깊이</strong></td>
-   <td>멤버십 관계가 동기화되면 그룹 중첩의 최대 깊이를 반환합니다. 값이 0이면 그룹 멤버십 조회가 효과적으로 비활성화됩니다. 값이 1이면 사용자의 직접 그룹만 추가됩니다. 이 값은 사용자 멤버십 상위 그룹을 동기화할 때만 개별 그룹을 동기화할 때 영향을 주지 않습니다.</td>
+   <td>멤버십 관계가 동기화될 때 그룹 중첩의 최대 깊이를 반환합니다. 값이 0이면 그룹 멤버십 조회가 효과적으로 비활성화됩니다. 값이 1이면 사용자의 직접 그룹만 추가됩니다. 이 값은 사용자의 멤버십 계보를 동기화할 때만 영향을 미치고 개별 그룹을 동기화할 때는 영향을 미치지 않습니다.</td>
   </tr>
   <tr>
    <td><strong>그룹 만료 시간</strong></td>
@@ -244,7 +256,7 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 1. SSL 라이브러리가 설치되어 있고 작동하는지 확인합니다. 이 절차에서는 OpenSSL을 예로 사용합니다.
 
-1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf &#x200B;** 구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`에 있습니다.
+1. 사용자 지정된 OpenSSL 구성(cnf) 파일을 만듭니다. 이 구성은 기본 **openssl.cnf **구성 파일을 복사하고 사용자 지정하여 수행할 수 있습니다. UNIX® 시스템에서는 `/usr/lib/ssl/openssl.cnf`에 있습니다.
 
 1. 터미널에서 아래 명령을 실행하여 CA 루트 키를 만듭니다.
 
@@ -280,21 +292,21 @@ SSL을 통해 LDAP를 인증하도록 AEM을 구성할 때 자체 서명된 인�
 
 * 로그 수준: 디버그
 * 로그 파일 logs/ldap.log
-* 메시지 패턴: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 로그 수준: 디버그
 * 로그 파일: logs/external.log
-* 메시지 패턴: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* 메시지 패턴: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * 로거: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 그룹 소속에 대한 단어 {#a-word-on-group-affiliation}
 
-LDAP를 통해 동기화된 사용자는 AEM의 다른 그룹에 속할 수 있습니다. 이러한 그룹은 동기화 프로세스의 일부로 AEM에 추가되는 외부 LDAP 그룹일 수 있습니다. 그러나 별도로 추가되고 원래 LDAP 그룹 제휴 체계의 일부가 아닌 그룹일 수도 있습니다.
+LDAP를 통해 동기화된 사용자는 AEM의 다양한 그룹에 속할 수 있습니다. 이러한 그룹은 동기화 프로세스의 일부로 AEM에 추가되는 외부 LDAP 그룹일 수 있습니다. 그러나 별도로 추가되고 원래 LDAP 그룹 제휴 체계의 일부가 아닌 그룹일 수도 있습니다.
 
 일반적으로 이러한 그룹은 로컬 AEM 관리자 또는 다른 ID 공급자에 의해 추가됩니다.
 
-사용자가 LDAP 서버의 그룹에서 제거된 경우 변경 사항은 동기화 시 AEM 측에 반영됩니다. 그러나 LDAP에 의해 추가되지 않은 사용자의 다른 모든 그룹 소속은 그대로 유지됩니다.
+사용자가 LDAP 서버의 그룹에서 제거된 경우 변경 사항은 동기화에 AEM 측에 반영됩니다. 그러나 LDAP에 의해 추가되지 않은 사용자의 다른 모든 그룹 소속은 그대로 유지됩니다.
 
 AEM은 `rep:externalId` 속성을 사용하여 외부 그룹에서 사용자 제거를 감지하고 처리합니다. 이 속성은 동기화 핸들러에 의해 동기화되는 모든 사용자 또는 그룹에 자동으로 추가되며 원래 ID 공급자에 대한 정보를 포함합니다.
 

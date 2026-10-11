@@ -10,13 +10,20 @@ exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1403'
 ht-degree: 0%
-
 ---
-
 # Q&amp;A 포럼 기능{#q-a-forum-feature}
 
 ## 소개 {#introduction}
@@ -210,7 +217,7 @@ QnA(질문과 대답) 포럼 기능은 커뮤니티 구성원이 질문을 하�
 
 * **제안 한도**
 
-  포럼에 게시하는 구성원에 대한 제안으로 표시할 태그 수를 입력합니다. **-**&#x200B;1 값은 제한이 없음을 의미합니다. 기본값은 0입니다.
+  포럼에 게시하는 구성원에 대한 제안으로 표시할 태그 수를 입력합니다. **-**1 값은 제한이 없음을 의미합니다. 기본값은 0입니다.
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
@@ -248,7 +255,7 @@ QnA(질문과 대답) 포럼 기능은 커뮤니티 구성원이 질문을 하�
 
 사이트 방문자는 구성에 따라 다음과 같은 작업을 수행할 수 있습니다.
 
-* Post에게 새로운 질문이 있습니다.
+* 새 질문을 게시합니다.
 * 작성한 질문을 편집하거나 삭제합니다.
 * 다른 구성원의 질문 또는 답변에 플래그를 지정합니다.
 * 작성한 질문에 대한 답변을 식별합니다.

@@ -1,5 +1,5 @@
 ---
-title: 추적 프로세스
+title: 프로세스 추적
 description: 프로세스를 검색하고 세부 정보를 확인하여 프로세스를 추적하는 방법입니다.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,30 @@ exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
-# 추적 프로세스 {#tracking-processes}
+# 프로세스 추적 {#tracking-processes}
 
 추적 페이지에서 시작하거나 참여한 활성 또는 완료된 프로세스를 검색하고 프로세스 세부 정보를 볼 수 있습니다. 프로세스 세부 정보에는 프로세스에 포함된 작업, 할당 및 양식이 표시됩니다. 이전에 시작한 프로세스의 양식 데이터를 사용하여 새 프로세스를 시작할 수도 있습니다.
 
