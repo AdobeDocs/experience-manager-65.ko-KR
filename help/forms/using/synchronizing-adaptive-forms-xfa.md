@@ -1,5 +1,5 @@
 ---
-title: 적응형 Forms과 XFA 양식 템플릿 동기화
+title: 적응형 양식과 XFA Forms 템플릿 동기화
 description: 양식을 XFA/XDP 파일과 동기화하는 방법을 알아봅니다. XFA/XDP 파일의 해당 필드에 수행된 변경 사항과 동기화된 양식 필드를 재사용합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 4%
-
+source-wordcount: '1241'
+ht-degree: 6%
 ---
+# 적응형 양식과 XFA Forms 템플릿 동기화{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
-# 적응형 Forms과 XFA 양식 템플릿 동기화{#synchronizing-adaptive-forms-with-xfa-form-templates}
-
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 소개 {#introduction}
 
@@ -57,7 +73,7 @@ AEM Forms 작성 환경에서 필드를 XFA 양식(왼쪽)에서 적응형 양�
 
 ### 적응형 양식에 콘텐츠 추가 {#add-content-to-adaptive-form-br}
 
-1. https://&lt;server>:&lt;port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
+1. https://<server>:<port>/aem/forms.html으로 이동합니다. 메시지가 표시되면 자격 증명을 입력합니다.
 1. 작성자 모드에서 편집할 sample-af-xfa를 엽니다.
 1. 사이드바의 컨텐트 브라우저에서 데이터 모델 개체 탭을 선택합니다. NumericField1 및 TextField1을 적응형 양식으로 드래그합니다.
 1. NumericField1의 제목을 **숫자 필드**&#x200B;에서 **AF 숫자 필드로 변경합니다.**

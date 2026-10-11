@@ -8,24 +8,40 @@ feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 0%
-
+source-wordcount: '2796'
+ht-degree: 1%
 ---
-
 # 자습서: AEM Forms에서 양식 데이터 모델 만들기{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 이 자습서는 [첫 번째 대화형 통신 만들기](/help/forms/using/create-your-first-interactive-communication.md) 시리즈의 단계입니다. 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-## 튜토리얼 기본 정보 {#about-the-tutorial}
+## 튜토리얼 정보 {#about-the-tutorial}
 
 AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스와 같은 서로 다른 백엔드 데이터 소스에서 양식 데이터 모델을 만들 수 있습니다. 양식 데이터 모델에서 데이터 모델 개체 및 서비스를 구성하고 적응형 양식과 연결할 수 있습니다. 적응형 양식 필드는 데이터 모델 개체 속성에 바인딩됩니다. 이 서비스를 사용하면 적응형 양식을 미리 채우고 제출된 양식 데이터를 데이터 모델 개체에 다시 쓸 수 있습니다.
 
-양식 데이터 통합 및 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html)을 참조하십시오.
+양식 데이터 통합 및 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)을 참조하십시오.
 
 이 자습서에서는 양식 데이터 모델을 대화형 통신과 준비, 만들기, 구성 및 연결하는 단계를 안내합니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
@@ -41,12 +57,12 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 
 **A.** 구성된 데이터 원본 **B.** 데이터 원본 스키마 **C.** 사용 가능한 서비스 **D.** 데이터 모델 개체 **E.** 구성된 서비스
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 시작하기 전에 다음을 확인하십시오.
 
 * [데이터베이스 설정](../../forms/using/create-form-data-model0.md#step-set-up-the-database) 섹션에 명시된 샘플 데이터가 있는 MySQL 데이터베이스입니다.
-* [JDBC 데이터베이스 드라이버 번들](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)에 설명된 대로 MySQL JDBC 드라이버용 OSGi 번들
+* [JDBC 데이터베이스 드라이버 번들](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)에 설명된 대로 MySQL JDBC 드라이버용 OSGi 번들
 
 ## 1단계: 데이터베이스 설정 {#step-set-up-the-database}
 
@@ -113,7 +129,7 @@ CREATE TABLE `calls` (
 
 ## 2단계: MySQL 데이터베이스를 데이터 소스로 구성 {#step-configure-mysql-database-as-data-source}
 
-다양한 유형의 데이터 소스를 구성하여 양식 데이터 모델을 만들 수 있습니다. 이 자습서에서는 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 원본 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html)을 참조하세요.
+다양한 유형의 데이터 소스를 구성하여 양식 데이터 모델을 만들 수 있습니다. 이 자습서에서는 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 원본 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)을 참조하세요.
 
 다음을 수행하여 MySQL 데이터베이스를 구성합니다.
 
@@ -122,7 +138,7 @@ CREATE TABLE `calls` (
    1. AEM Forms 작성자 인스턴스에 관리자로 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)입니다.
    1. **설치/업데이트**&#x200B;를 선택하십시오. **번들 업로드/설치** 대화 상자가 나타납니다.
 
-   1. **파일 선택**&#x200B;을 선택하여 MySQL JDBC 드라이버 OSGi 번들을 찾아 선택합니다. **번들 시작** 및 **패키지 새로 고침**&#x200B;을 선택하고 **설치** 또는 **업데이트**&#x200B;를 선택합니다. MySQL에 대한 Oracle 공사의 JDBC 드라이버가 활성화되어 있는지 확인합니다. 드라이버가 설치되었습니다.
+   1. **파일 선택**&#x200B;을 선택하여 MySQL JDBC 드라이버 OSGi 번들을 찾아 선택합니다. **번들 시작** 및 **패키지 새로 고침**&#x200B;을 선택하고 **설치** 또는 **업데이트**&#x200B;를 선택합니다. Oracle의 MySQL용 JDBC 드라이버가 활성화되어 있는지 확인합니다. 드라이버가 설치되었습니다.
 
 1. MySQL 데이터베이스를 데이터 소스로 구성:
 
@@ -155,7 +171,7 @@ CREATE TABLE `calls` (
 
 ## 3단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
-AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들기](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)할 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 
@@ -191,14 +207,14 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
 
    * **데이터 모델 개체**:
 
-      * 청구서
-      * 호출
-      * 고객
+     * 청구서
+     * 호출
+     * 고객
 
    * **서비스:**
 
-      * get
-      * 업데이트
+     * get
+     * 업데이트
 
    선택한 데이터 모델 개체 및 서비스를 양식 데이터 모델에 추가하려면 **선택한 항목 추가**&#x200B;를 선택하십시오.
 
@@ -245,7 +261,7 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
 
 ### 데이터 모델 개체 간 연결 추가 {#add-associations-between-data-model-objects}
 
-데이터 모델 개체가 정의되면 개체 간에 연결을 작성할 수 있습니다. 연결은 일대일 또는 일대다일 수 있습니다. 예를 들어 한 직원에 여러 개의 종속 항목이 연결되어 있을 수 있습니다. 일대다 연결이라고 하며 연결된 데이터 모델 개체를 연결하는 선에 1:n으로 표시됩니다. 그러나 연관이 지정된 직원 ID에 대해 고유한 직원 이름을 반환하는 경우 이를 일대일 연관이라고 합니다.
+데이터 모델 개체가 정의되면 개체 간에 연결을 작성할 수 있습니다. 연결은 일대일 또는 일대다일 수 있습니다. 예를 들어 한 직원에 여러 개의 종속 항목이 연결되어 있을 수 있습니다. 일대다 연결이라고 하며 연결된 데이터 모델 개체를 연결하는 줄에 1:n로 표시됩니다. 그러나 연관이 지정된 직원 ID에 대해 고유한 직원 이름을 반환하는 경우 이를 일대일 연관이라고 합니다.
 
 데이터 소스의 연관된 데이터 모델 객체를 양식 데이터 모델에 추가하면 해당 연관이 유지되어 화살표 선으로 연결된 상태로 표시됩니다.
 
@@ -253,8 +269,8 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
 
 | 연결 | 데이터 모델 개체 |
 |---|---|
-| 1:n | customer:calls(여러 번의 호출이 월별 청구서에서 고객과 연결될 수 있음) |
-| 1:1 | 고객:청구서(한 개의 청구서가 특정 달의 고객과 연관되어 있음) |
+| 1:n | customer:calls(여러 통화가 월별 청구서에서 고객과 연결될 수 있음) |
+| 1:1 | customer:bills(한 개의 청구서가 특정 달의 고객과 연결되어 있음) |
 
 데이터 모델 개체 간의 연결을 만들려면 다음 단계를 수행하십시오.
 
@@ -274,8 +290,8 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
 
 1. **인수 추가** 대화 상자에서 다음 작업을 수행합니다.
 
-   * **이름** 드롭다운 목록에서 **mobileenum**&#x200B;을(를) 선택합니다. 모바일 번호 속성은 고객이 사용할 수 있고 데이터 모델 개체를 호출하는 공통 속성입니다. 따라서 이 데이터 모델은 고객과 호출 데이터 모델 개체 간의 연결을 만드는 데 사용됩니다.
-고객 데이터 모델 개체에서 사용할 수 있는 각 모바일 번호에 대해 호출 테이블에서 사용할 수 있는 여러 호출 레코드가 있습니다.
+   * **이름** 드롭다운 목록에서 **mobileenum**을(를) 선택합니다. 모바일 번호 속성은 고객이 사용할 수 있고 데이터 모델 개체를 호출하는 공통 속성입니다. 따라서 이 데이터 모델은 고객과 호출 데이터 모델 개체 간의 연결을 만드는 데 사용됩니다.
+     고객 데이터 모델 개체에서 사용할 수 있는 각 모바일 번호에 대해 호출 테이블에서 사용할 수 있는 여러 호출 레코드가 있습니다.
 
    * 인수에 대한 선택적 제목 및 설명을 지정합니다.
    * **바인딩 대상** 드롭다운 목록에서 **고객**&#x200B;을(를) 선택합니다.
@@ -290,7 +306,7 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
 
    ![인수 연결 추가](assets/add_argument_association_new.png)
 
-1. 고객과 호출 데이터 모델 개체 간에 1:n 연결을 만들려면 **완료**&#x200B;를 선택하십시오.
+1. 고객과 호출 데이터 모델 개체 간의 1:n 연결을 만들려면 **완료**&#x200B;를 선택하십시오.
 
    고객과 호출 데이터 모델 객체 간의 연관을 생성했으면 고객과 청구서 데이터 모델 객체 간의 1:1 연관을 생성합니다.
 
@@ -303,7 +319,7 @@ AEM Forms은 구성된 데이터 소스에서 [양식 데이터 모드를 만들
    * **모델 개체** 드롭다운 목록에서 **청구서**&#x200B;을(를) 선택하십시오.
 
    * **서비스** 드롭다운 목록에서 **get**&#x200B;을(를) 선택합니다. BOM 테이블의 기본 키인 **billplan** 속성은 **인수** 섹션에서 이미 사용할 수 있습니다.
-BOM 및 고객 데이터 모델 개체는 각각 BOM(청구서) 및 customerplan(고객) 속성을 사용하여 연결됩니다. 이러한 속성 사이에 바인딩을 만들어 MySQL 데이터베이스에서 사용 가능한 고객에 대한 계획 세부 정보를 검색합니다.
+     BOM 및 고객 데이터 모델 개체는 각각 BOM(청구서) 및 customerplan(고객) 속성을 사용하여 연결됩니다. 이러한 속성 사이에 바인딩을 만들어 MySQL 데이터베이스에서 사용 가능한 고객에 대한 계획 세부 정보를 검색합니다.
 
    * **바인딩 대상** 드롭다운 목록에서 **고객**&#x200B;을(를) 선택합니다.
 

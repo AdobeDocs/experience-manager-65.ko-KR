@@ -9,13 +9,17 @@ exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '645'
 ht-degree: 1%
-
 ---
-
 # 사용자 및 사용자 그룹 구성 {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -31,13 +35,13 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 
 ### AEM Mobile 애플리케이션 콘텐츠 작성자(앱 작성자 그룹) {#aem-mobile-application-content-authors-app-author-group}
 
-앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오를 비롯한 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
+앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오 등 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
 
 #### 그룹 구성 - app-authors {#group-configuration-app-authors}
 
 1. &#39;app-authors&#39;라는 사용자 그룹 만들기:
 
-   사용자 Admin Console([http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html))로 이동합니다.
+   사용자 Admin Console으로 이동: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    사용자 그룹 콘솔 내에서 &#39;+&#39; 버튼을 선택하여 그룹을 만듭니다.
 
@@ -49,13 +53,13 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 
    Authors 그룹에 앱 작성자 추가
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다.
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)를 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    사용자 그룹 편집
 
-1. [권한 콘솔](http://localhost:4502/useradmin)(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
+1. [권한 콘솔](http://localhost:4502/useradmin)&#x200B;(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
 
    * (읽기) on /etc/cloudservices
 
@@ -86,7 +90,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 권�
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. [권한 콘솔](http://localhost:4502/useradmin)(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
+1. [권한 콘솔](http://localhost:4502/useradmin)&#x200B;(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
 
    * /etc/cloudservices/mobileservices에서 (읽기, 수정, 만들기, 삭제, 복제)
    * /etc/cloudservices/phonegap-build에서 (읽기, 수정, 만들기, 삭제, 복제)
@@ -118,7 +122,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 권�
 
 타일에는 현재 권한이 필요한 작업이 없지만 응용 프로그램에 대한 세부 정보 페이지에는 다음 작업이 있습니다.
 
-* 앱 작성자 및 앱 관리자에 대한 *편집*(UI 트리거 - jcr:write - on /content/phonegap/{suffix})
+* 앱 작성자 및 앱 관리자에 대한 *편집*(UI 트리거 - jcr:write - /content/phonegap/{suffix})
 * 앱 작성자 및 앱 관리자용 *다운로드*(UI 트리거 - /content/phonegap/{suffix})
 
 아래 이미지는 앱에 대한 다운로드 및 편집 옵션을 보여 줍니다.

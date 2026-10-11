@@ -9,13 +9,22 @@ exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
 # AEM 개발 - 가이드라인 및 모범 사례{#aem-development-guidelines-and-best-practices}
 
 ## 템플릿 및 구성 요소 사용 지침 {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Adobe Experience Manager(AEM) 구성 요소와 템플릿은 강력한 툴킷으�
 
   여기에는 구성 요소 정의 오버레이가 포함됩니다.
 
-   * 기존 구성 요소를 복사하여 `/apps/<website-name>/components/<MyComponent>`에 구성 요소 폴더를 만듭니다.
+  * 기존 구성 요소를 복사하여 `/apps/<website-name>/components/<MyComponent>`에 구성 요소 폴더를 만듭니다.
 
-      * 예를 들어 텍스트 구성 요소 사본을 사용자 정의하려면 다음을 수행합니다.
+    * 예를 들어 텍스트 구성 요소 사본을 사용자 정의하려면 다음을 수행합니다.
 
-         * 변환 전: `/libs/foundation/components/text`
-         * `/apps/myProject/components/text`에
+      * 변환 전: `/libs/foundation/components/text`
+      * `/apps/myProject/components/text`에
 
 * [오류 핸들러로 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   이 경우 서블릿 오버레이가 포함됩니다.
 
-   * 저장소에서 하나 이상의 기본 스크립트를 복사합니다.
+  * 저장소에서 하나 이상의 기본 스크립트를 복사합니다.
 
-      * 변환 전: `/libs/sling/servlet/errorhandler/`
-      * `/apps/sling/servlet/errorhandler/`에
+    * 변환 전: `/libs/sling/servlet/errorhandler/`
+    * `/apps/sling/servlet/errorhandler/`에
 
 >[!CAUTION]
 >
@@ -126,7 +135,7 @@ JCR 쿼리는 올바르게 사용할 경우 강력한 도구입니다. 적합한
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### XSS(크로스 사이트 스크립팅)에 대한 Protect {#protect-against-cross-site-scripting-xss}
+### XSS(크로스 사이트 스크립팅)로부터 보호 {#protect-against-cross-site-scripting-xss}
 
 XSS(크로스 사이트 스크립팅)를 사용하면 공격자가 다른 사용자가 본 웹 페이지에 코드를 삽입할 수 있습니다. 이 보안 취약성은 악의적인 웹 사용자가 액세스 제어를 우회하기 위해 악용될 수 있습니다.
 
@@ -136,7 +145,7 @@ AEM은 출력 시 사용자가 제공한 모든 콘텐츠를 필터링하는 원
 
 >[!CAUTION]
 >
->AEM과 함께 제공된 예제 코드는 그 자체로 이러한 공격으로부터 보호되지 않을 수 있으며 일반적으로 웹 애플리케이션 방화벽에 의한 요청 필터링에 의존합니다.
+>AEM과 함께 제공된 예제 코드는 그 자체로 이러한 공격으로부터 보호하지 못할 수 있으며 일반적으로 웹 애플리케이션 방화벽에 의한 요청 필터링에 의존합니다.
 
 XSS API 치트 시트 에는 XSS API를 사용하고 AEM 앱을 보다 안전하게 만들기 위해 알아야 하는 정보가 포함되어 있습니다. 여기에서 다운로드할 수 있습니다.
 
@@ -149,7 +158,7 @@ XSSAPI 치트 시트.
 모든 인터넷 응용 프로그램의 경우 기밀 정보를 전송할 때 다음을 확인하십시오
 
 * 트래픽은 SSL을 통해 보호됩니다
-* 해당되는 경우 HTTP POST이 사용됩니다
+* 해당되는 경우 HTTP POST가 사용됩니다
 
 이는 시스템에 대해 기밀(예: 구성 또는 관리 액세스)인 정보와 해당 사용자에 대해 기밀(예: 개인 정보)인 정보에 적용됩니다
 
@@ -163,6 +172,6 @@ AEM에 대해 오류 페이지를 사용자 지정할 수 있습니다. 인스�
 
 ### Java™ 프로세스에서 파일 열기 {#open-files-in-the-java-process}
 
-AEM은 많은 파일에 액세스할 수 있으므로 AEM에 대해 [열린 Java™ 프로세스에 대한 파일 수](/help/sites-deploying/configuring.md#open-files-in-the-java-process)을 명시적으로 구성하는 것이 좋습니다.
+AEM은 많은 파일에 액세스할 수 있으므로 AEM에 대해 [열린 Java™ 프로세스용 파일 수](/help/sites-deploying/configuring.md#open-files-in-the-java-process)을 명시적으로 구성하는 것이 좋습니다.
 
 이 문제를 최소화하려면 개발에서 열려 있는 파일이 가능할 때(의미 있게) 올바르게 닫혀 있는지 확인해야 합니다.

@@ -10,16 +10,25 @@ feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
-
+source-wordcount: '542'
+ht-degree: 4%
 ---
-
 # 리소스 매핑{#resource-mapping}
 
-리소스 매핑은 AEM(Adobe Experience Manager)의 리디렉션, vanity URL 및 가상 호스트를 정의하는 데 사용됩니다.
+리소스 매핑은 Adobe Experience Manager(AEM)에 대한 리디렉션, vanity URL 및 가상 호스트를 정의하는 데 사용됩니다.
 
 예를 들어 이러한 매핑을 사용하여 다음을 수행할 수 있습니다.
 
@@ -88,9 +97,9 @@ URL을 리소스에 매핑하기 위해 ResourceResolver.resolve 메서드에서
 >
 >정규 표현식을 정의하는 방법을 설명하는 데 도움이 되는 다양한 리소스가 있습니다. 예: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### AEM에서 매핑 정의 생성 {#creating-mapping-definitions-in-aem}
+### AEM에서 매핑 정의 만들기 {#creating-mapping-definitions-in-aem}
 
-AEM의 표준 설치에서 폴더를 찾을 수 있습니다.
+AEM의 표준 설치에서 다음 폴더를 찾을 수 있습니다.
 
 `/etc/map/http`
 
@@ -105,7 +114,7 @@ HTTP 프로토콜에 대한 매핑을 정의할 때 사용되는 구조입니다
 1. 노드 만들기:
 
    * **유형** `sling:Mapping`
-이 노드 유형은 그러한 매핑에 사용되지만 반드시 사용해야 하는 것은 아닙니다.
+     이 노드 유형은 그러한 매핑에 사용되지만 반드시 사용해야 하는 것은 아닙니다.
 
    * **이름** `localhost_any`
 
@@ -114,15 +123,15 @@ HTTP 프로토콜에 대한 매핑을 정의할 때 사용되는 구조입니다
 
    * **이름** `sling:match`
 
-      * **유형** `String`
+     * **유형** `String`
 
-      * **값** `localhost.4503/`
+     * **값** `localhost.4503/`
 
    * **이름** `sling:internalRedirect`
 
-      * **유형** `String[]`
+     * **유형** `String[]`
 
-      * **값** `/content/`
+     * **값** `/content/`
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 

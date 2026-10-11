@@ -9,13 +9,20 @@ role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '744'
 ht-degree: 0%
-
 ---
-
 # DSRP에 대한 MySQL 구성 {#mysql-configuration-for-dsrp}
 
 MySQL은 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용할 수 있는 관계형 데이터베이스입니다.
@@ -28,11 +35,11 @@ MySQL은 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용할 수 있�
 * [MySQL용 JDBC 드라이버](deploy-communities.md#jdbc-driver-for-mysql)
 * 관계형 데이터베이스:
 
-   * [MySQL 서버](https://dev.mysql.com/downloads/mysql/) Community Server 버전 5.6 이상
+  * [MySQL 서버](https://dev.mysql.com/downloads/mysql/) Community Server 버전 5.6 이상
 
-      * AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있음
+    * AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있음
 
-   * [MySQL 워크벤치](https://dev.mysql.com/downloads/tools/workbench/)
+  * [MySQL 워크벤치](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL 설치 {#installing-mysql}
 
@@ -115,7 +122,7 @@ Communities 연결을 열어 데이터베이스를 설치합니다.
 
 SQL 스크립트는 AEM 저장소에서 가져옵니다.
 
-1. CRXDE Lite 찾아보기
+1. CRXDE Lite 탐색
 
    * 예: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -172,7 +179,7 @@ MySQL이 AEM과 다른 서버에서 실행되는 경우 JDBC 커넥터에서 &#3
 * 관리자 권한으로 로그인했습니다.
 * [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+  * 예: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * `Day Commons JDBC Connections Pool` 찾기
 * 연결 구성을 만들려면 `+` 아이콘을 선택하십시오.
@@ -181,21 +188,21 @@ MySQL이 AEM과 다른 서버에서 실행되는 경우 JDBC 커넥터에서 &#3
 
 * 다음 값을 입력합니다.
 
-   * **[!UICONTROL JDBC 드라이버 클래스]**: `com.mysql.jdbc.Driver`
-   * **[!UICONTROL JDBC 연결 URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+  * **[!UICONTROL JDBC 드라이버 클래스]**: `com.mysql.jdbc.Driver`
+  * **[!UICONTROL JDBC 연결 URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-     MySQL 서버가 &#39;this&#39; AEM 서버 *communities*&#x200B;가 기본 데이터베이스(스키마) 이름인 경우 localhost 대신 서버를 지정하십시오.
+    MySQL 서버가 &#39;this&#39; AEM 서버 *communities*&#x200B;가 기본 데이터베이스(스키마) 이름인 경우 localhost 대신 서버를 지정하십시오.
 
-   * **[!UICONTROL 사용자 이름]**: `root`
+  * **[!UICONTROL 사용자 이름]**: `root`
 
-     또는 &#39;루트&#39;가 아닌 경우 MySQL 서버에 대해 구성된 사용자 이름을 입력합니다.
+    또는 &#39;루트&#39;가 아닌 경우 MySQL 서버에 대해 구성된 사용자 이름을 입력합니다.
 
-   * **[!UICONTROL 암호]**:
+  * **[!UICONTROL 암호]**:
 
-     MySQL에 대해 설정된 암호가 없으면 이 필드를 지웁니다.
+    MySQL에 대해 설정된 암호가 없으면 이 필드를 지웁니다.
 
-     또는 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
+    또는 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
 
-   * **[!UICONTROL 데이터 원본 이름]**: [MySQL 연결](#new-connection-settings)에 대해 입력한 이름(예: &#39;communities&#39;).
+  * **[!UICONTROL 데이터 원본 이름]**: [MySQL 연결](#new-connection-settings)에 대해 입력한 이름(예: &#39;communities&#39;).
 
 * **[!UICONTROL 저장]** 선택

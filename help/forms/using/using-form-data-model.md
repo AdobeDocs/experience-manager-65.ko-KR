@@ -8,18 +8,31 @@ feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
-
+source-wordcount: '1314'
+ht-degree: 3%
 ---
-
 # 양식 데이터 모델 사용{#use-form-data-model}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -81,11 +94,11 @@ AEM Forms 데이터 통합을 사용하면 다양한 백엔드 데이터 소스�
 
 자세한 내용은 다음 문서를 참조하십시오.
 
-[대화형 통신 만들기](../../forms/using/create-interactive-communication.md)
+[인터랙티브 커뮤니케이션 만들기](../../forms/using/create-interactive-communication.md)
 
 [대화형 커뮤니케이션의 텍스트](/help/forms/using/texts-interactive-communications.md)
 
-[대화형 통신의 조건](/help/forms/using/conditions-interactive-communications.md)
+[인터랙티브 커뮤니케이션 조건](/help/forms/using/conditions-interactive-communications.md)
 
 [목록 조각](/help/forms/using/lists.md)
 

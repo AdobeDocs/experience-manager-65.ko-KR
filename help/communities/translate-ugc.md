@@ -9,13 +9,20 @@ role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1125'
 ht-degree: 0%
-
 ---
-
 # 사용자 생성 콘텐츠 번역 {#translating-user-generated-content}
 
 Adobe Experience Manager(AEM) 커뮤니티의 번역 기능은 [페이지 콘텐츠 번역](../../help/sites-administering/translation.md) 개념을 [SCF(소셜 구성 요소 프레임워크) 구성 요소](scf.md)를 사용하여 커뮤니티 사이트에 게시된 사용자 생성 콘텐츠(UGC)로 확장합니다.
@@ -77,7 +84,7 @@ AEM Communities에는 여러 언어에 사용할 수 있는 [기본 번역 서�
 * **[!UICONTROL 도구]** 선택
 * **[!UICONTROL 작업]** 선택
 * **[!UICONTROL 클라우드]** 선택
-* **[!UICONTROL Cloud Service]** 선택
+* **[!UICONTROL 클라우드 서비스]** 선택
 * 아래로 스크롤하여 **[!UICONTROL 번역 통합]**
 
   ![번역 통합](assets/translation-integration.png)
@@ -98,13 +105,13 @@ AEM Communities에는 여러 언어에 사용할 수 있는 [기본 번역 서�
 
 * **[!UICONTROL 제목]**
 
-  (필수) 선택한 표시 제목을 입력합니다. 기본값이 없습니다.
+  (필수) 선택한 표시 제목을 입력합니다. 기본값은 없습니다.
 
 * **[!UICONTROL 이름]**
 
   (선택 사항) 구성 이름을 입력합니다. 기본값은 제목 을 기반으로 하는 노드 이름입니다.
 
-* **[!UICONTROL 만들기]** 선택
+* **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
 #### 번역 구성 대화 상자 {#translation-config-dialog}
 
@@ -115,21 +122,21 @@ AEM Communities에는 여러 언어에 사용할 수 있는 [기본 번역 서�
 * **[!UICONTROL 사이트]** 탭: 기본값으로 둘 수 있습니다.
 
 * **[!UICONTROL 커뮤니티]** 탭:
-   * **[!UICONTROL 번역 공급자]**
-드롭다운 목록에서 번역 공급업체를 선택합니다. 기본값은 평가판 서비스인 `microsoft`입니다.
+  * **[!UICONTROL 번역 공급자]**
+    드롭다운 목록에서 번역 공급업체를 선택합니다. 기본값은 평가판 서비스인 `microsoft`입니다.
 
-   * **[!UICONTROL 콘텐츠 범주]**
-번역할 콘텐츠를 설명하는 범주를 선택합니다. 기본값은 `General.`입니다.
+  * **[!UICONTROL 컨텐츠 범주]**
+    번역할 콘텐츠를 설명하는 범주를 선택합니다. 기본값은 `General.`입니다.
 
-   * **[!UICONTROL 로케일 선택...]**
-(선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어](sites-console.md#translation)에 대한 로케일을 선택하십시오. `No Common Store`을(를) 선택하면 전역 변환이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다.
+  * **[!UICONTROL 로케일 선택...]**
+    (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어](sites-console.md#translation)에 대한 로케일을 선택하십시오. `No Common Store`을(를) 선택하면 전역 변환이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화되어 있습니다.
 
 * **[!UICONTROL Assets]** 탭: 기본값으로 둘 수 있습니다.
 * **[!UICONTROL 확인]** 선택
 
 #### 활성화 {#activation}
 
-새로운 번역 통합 클라우드 서비스를 Publish 환경에서 활성화해야 합니다. 웹 사이트와 연결된 경우 아직 활성화되지 않은 경우 연결된 페이지가 게시되면 활성화 워크플로우는 이 클라우드 서비스 구성을 게시하라는 메시지를 표시합니다.
+새 번역 통합 클라우드 서비스를 게시 환경에서 활성화해야 합니다. 웹 사이트와 연결된 경우 아직 활성화되지 않은 경우 연결된 페이지가 게시되면 활성화 워크플로우는 이 클라우드 서비스 구성을 게시하라는 메시지를 표시합니다.
 
 ## 번역 설정 관리 {#managing-translation-settings}
 

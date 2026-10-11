@@ -1,6 +1,6 @@
 ---
 title: 페이지에 Dynamic Media Classic(Scene7) 기능 추가
-description: Adobe Dynamic Media Classic(Scene7)는 리치 미디어 자산을 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 향상, 게시 및 전달하기 위한 호스팅 솔루션입니다.
+description: Adobe Dynamic Media Classic(Scene7)은 리치 미디어 자산을 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄를 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -10,16 +10,25 @@ exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 12%
-
+source-wordcount: '3578'
+ht-degree: 13%
 ---
-
 # 페이지에 Dynamic Media Classic(Scene7) 기능 추가{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic(Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=ko)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic(Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)은(는) 리치 미디어 자산을 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
 
 Dynamic Media Classic(Scene7)에 게시된 Experience Manager 에셋을 다양한 뷰어에서 볼 수 있습니다.
 
@@ -29,36 +38,36 @@ Dynamic Media Classic(Scene7)에 게시된 Experience Manager 에셋을 다양�
 * 이미지 템플릿
 * 이미지
 
-Experience Manager에서 Dynamic Media Classic(Scene7)로 직접 디지털 자산을 게시할 수 있으며 Dynamic Media Classic(Scene7)에서 Experience Manager으로 디지털 자산을 게시할 수 있습니다.
+디지털 에셋을 Experience Manager에서 Dynamic Media Classic(Scene7)로 직접 게시하고 디지털 에셋을 Dynamic Media Classic(Scene7)에서 Experience Manager으로 게시할 수 있습니다.
 
-이 문서에서는 디지털 에셋을 Experience Manager에서 Dynamic Media Classic(Scene7)로 게시하는 방법과 그 반대로 게시하는 방법에 대해 설명합니다. 또한 뷰어에 대한 자세한 설명이 제공됩니다. Dynamic Media Classic(Scene7)에 대한 Experience Manager 구성에 대한 자세한 내용은 [Dynamic Media Classic(Scene7)와 Experience Manager 통합](/help/sites-administering/scene7.md)을 참조하십시오.
+이 문서에서는 Experience Manager에서 Dynamic Media Classic(Scene7)로 디지털 자산을 게시하는 방법을 설명하며, 그 반대도 마찬가지입니다. 또한 뷰어에 대한 자세한 설명이 제공됩니다. Dynamic Media Classic(Scene7)용 Experience Manager 구성에 대한 자세한 내용은 [Experience Manager과 Dynamic Media Classic(Scene7) 통합](/help/sites-administering/scene7.md)을 참조하십시오.
 
 [이미지 맵 추가](/help/assets/image-maps.md)도 참조하세요.
 
-Experience Manager 시 비디오 구성 요소를 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오.
+Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
 >[!NOTE]
 >
->Dynamic Media Classic(Scene7) 자산이 제대로 표시되지 않으면 Dynamic Media이 [비활성화됨](/help/assets/config-dynamic.md#disabling-dynamic-media)인지 확인한 다음 페이지를 새로 고치십시오.
+>Dynamic Media Classic(Scene7) 자산이 제대로 표시되지 않으면 Dynamic Media가 [비활성화됨](/help/assets/config-dynamic.md#disabling-dynamic-media)인지 확인한 후 페이지를 새로 고치십시오.
 
 ## Assets에서 Dynamic Media Classic(Scene7)에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
-클래식 UI의 Assets 콘솔에서 또는 자산에서 직접 디지털 자산을 Dynamic Media Classic(Scene7)에 게시할 수 있습니다.
+클래식 UI의 Assets 콘솔에서 또는 자산에서 직접 Dynamic Media Classic(Scene7)에 디지털 자산을 게시할 수 있습니다.
 
 >[!NOTE]
 >
->Experience Manager은 비동기적으로 Dynamic Media Classic(Scene7)에 게시합니다. **[!UICONTROL Publish]**&#x200B;을(를) 선택한 후 에셋을 Dynamic Media Classic(Scene7)에 게시하는 데 몇 초 정도 걸릴 수 있습니다.
+>Experience Manager은 비동기적으로 Dynamic Media Classic(Scene7)에 게시합니다. **[!UICONTROL 게시]**&#x200B;를 선택한 후 자산이 Dynamic Media Classic(Scene7)에 게시되는 데 몇 초 정도 걸릴 수 있습니다.
 >
 
 ### Assets 콘솔에서 게시 {#publishing-from-the-assets-console}
 
 자산이 Dynamic Media Classic(Scene7) 대상 폴더에 있는 경우 Assets 콘솔에서 Dynamic Media Classic(Scene7)에 게시할 수 있습니다.
 
-1. Experience Manager 클래식 UI에서 **[!UICONTROL 디지털 Assets]**&#x200B;을(를) 선택하여 디지털 에셋 관리자에 액세스합니다.
+1. Experience Manager 클래식 UI에서 **[!UICONTROL 디지털 Assets]**&#x200B;를 선택하여 디지털 에셋 관리자에 액세스합니다.
 
-1. Dynamic Media Classic(Scene7)에 게시할 대상 폴더 내에서 에셋 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Dynamic Media Classic에 Publish(Scene7)]**&#x200B;을 선택합니다. 또는 **[!UICONTROL 도구]** 메뉴에서 **[!UICONTROL Publish to Dynamic Media Classic(Scene7)]**&#x200B;을(를) 선택할 수 있습니다.
+1. Dynamic Media Classic(Scene7)에 게시할 대상 폴더 내에서 자산 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**&#x200B;를 선택합니다. 또는 **[!UICONTROL 도구]** 메뉴에서 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**&#x200B;를 선택할 수 있습니다.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -66,35 +75,35 @@ Experience Manager 시 비디오 구성 요소를 사용하는 방법에 대한 
 
    >[!NOTE]
    >
-   >자산이 Dynamic Media Classic(Scene7) 동기화 폴더에 없는 경우 두 메뉴의 **[!UICONTROL Publish과 Dynamic Media Classic(Scene7)]**&#x200B;이(가) 표시되지만 비활성화됩니다.
+   >자산이 Dynamic Media Classic(Scene7) 동기화 폴더에 없는 경우 두 메뉴의 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**&#x200B;이 표시되지만 비활성화됩니다.
 
-### 에셋의 Publish {#publishing-from-an-asset}
+### 에셋에서 게시 {#publishing-from-an-asset}
 
 자산이 동기화된 Dynamic Media Classic(Scene7) 폴더 내에 있는 한, 자산을 수동으로 게시할 수 있습니다.
 
 >[!NOTE]
 >
->자산이 Dynamic Media Classic(Scene7) 동기화 폴더에 없는 경우 **[!UICONTROL Dynamic Media Classic으로 Publish(Scene7)]**&#x200B;에 대한 링크가 나타나지 않습니다.
+>자산이 Dynamic Media Classic(Scene7) 동기화 폴더에 없는 경우 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**&#x200B;에 대한 링크가 나타나지 않습니다.
 
-디지털 자산에서 직접 Dynamic Media Classic(Scene7)에 게시하려면 다음 작업을 수행하십시오.
+디지털 자산에서 직접 Dynamic Media Classic(Scene7)에 게시하려면 다음을 수행하십시오.
 
 1. Experience Manager에서 **[!UICONTROL 디지털 Assets]**&#x200B;을(를) 선택하여 디지털 에셋 관리자에 액세스합니다.
 
 1. 자산을 두 번 클릭하여 엽니다.
 
-1. 에셋 세부 정보 창에서 **[!UICONTROL Publish to Dynamic Media Classic(Scene7)]**&#x200B;을(를) 선택합니다.
+1. 자산 세부 정보 창에서 **[!UICONTROL Dynamic Media Classic(Scene7)에 게시]**&#x200B;를 선택합니다.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. 링크가 **[!UICONTROL 게시 중...]**, **[!UICONTROL 게시됨]**(으)로 변경됩니다. Dynamic Media Classic(Scene7)로 이동하여 에셋을 사용할 수 있는지 확인합니다.
+1. 링크가 **[!UICONTROL 게시 중...]**, **[!UICONTROL 게시됨]**(으)로 변경됩니다. Dynamic Media Classic(Scene7)로 이동하여 자산을 사용할 수 있는지 확인합니다.
 
    >[!NOTE]
    >
-   >에셋이 Dynamic Media Classic(Scene7)에 제대로 게시되지 않으면 링크가 **[!UICONTROL 게시 실패]**(으)로 변경됩니다. 에셋이 이미 Dynamic Media Classic(Scene7)에 게시되어 있는 경우, 링크는 **[!UICONTROL Dynamic Media Classic(Scene7)로 Publish 다시 만들기]**&#x200B;를 읽습니다. 다시 게시를 사용하면 Experience Manager에서 자산을 변경하고 다시 게시할 수 있습니다.
+   >자산이 Dynamic Media Classic(Scene7)에 제대로 게시되지 않으면 링크가 **[!UICONTROL 게시 실패]**(으)로 변경됩니다. 자산이 이미 Dynamic Media Classic(Scene7)에 게시되어 있으면 링크는 **[!UICONTROL Dynamic Media Classic(Scene7)에 다시 게시]**&#x200B;를 읽습니다. 다시 게시를 사용하면 Experience Manager에서 자산을 변경하고 다시 게시할 수 있습니다.
 
-### CQ 대상 폴더 외부의 Publish 에셋 {#publishing-assets-from-outside-the-cq-target-folder}
+### CQ 대상 폴더 외부에서 자산 게시 {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe은 Dynamic Media Classic(Scene7) 대상 폴더 내의 자산에서만 Dynamic Media Classic(Scene7)에 자산을 게시하도록 권장합니다. 그러나 대상 폴더 외부의 폴더에서 자산을 업로드해야 하는 경우에도 Dynamic Media Classic(Scene7)의 온디맨드 폴더로 업로드하여 이 작업을 수행할 수 있습니다. 먼저 자산을 표시할 페이지에 대한 클라우드 구성을 구성합니다. 그런 다음 Dynamic Media Classic(Scene7) 구성 요소를 페이지에 추가하고 자산을 구성 요소에 끌어다 놓습니다. 페이지 속성이 해당 페이지에 대해 설정되면 선택 시 Publish(Scene7)에 대한 업로드를 트리거하는 **[!UICONTROL Dynamic Media Classic에서 Dynamic Media Classic(Scene7)으로]** 링크가 나타납니다.
+Adobe에서는 Dynamic Media Classic(Scene7) 대상 폴더 내의 자산에서만 Dynamic Media Classic(Scene7)에 자산을 게시할 것을 권장합니다. 그러나 대상 폴더 외부의 폴더에서 자산을 업로드해야 하는 경우에도 Dynamic Media Classic(Scene7)의 온디맨드 폴더로 업로드하여 이 작업을 수행할 수 있습니다. 먼저 자산을 표시할 페이지에 대한 클라우드 구성을 구성합니다. 그런 다음 Dynamic Media Classic(Scene7) 구성 요소를 페이지에 추가하고 자산을 구성 요소에 끌어다 놓습니다. 페이지 속성이 해당 페이지에 대해 설정되면 선택 시 Dynamic Media Classic(Scene7)에 대한 업로드를 트리거하는 **[!UICONTROL Dynamic Media Classic에 게시]** 링크가 나타납니다.
 
 >[!NOTE]
 >
@@ -106,7 +115,7 @@ Adobe은 Dynamic Media Classic(Scene7) 대상 폴더 내의 자산에서만 Dyna
 
 1. 사이드 킥에서 **[!UICONTROL 페이지]** 아이콘을 선택하고 **[!UICONTROL 페이지 속성]**&#x200B;을 선택합니다.
 
-1. **[!UICONTROL Cloud Service]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택하십시오.
 1. **[!UICONTROL 서비스 추가]**&#x200B;를 선택합니다.
 1. **[!UICONTROL Dynamic Media Classic(Scene7)]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Dynamic Media Classic(Scene7)]** 드롭다운 목록에서 원하는 구성을 선택하고 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
@@ -142,15 +151,15 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic(Scene7) 구�
 >
 >이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 디자인 모드에서 선택해야 합니다.
 
-디자인 모드에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다. 아직 Dynamic Media Classic(Scene7)에 게시되지 않은 Assets은 동기화된 폴더 또는 페이지에 있거나 Dynamic Media Classic(Scene7) 클라우드 구성이 있는 경우 Dynamic Media Classic(Scene7)에 게시됩니다.
+디자인 모드에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다. Dynamic Media Classic(Scene7)에 아직 게시되지 않은 Assets은 동기화된 폴더 또는 페이지나 Dynamic Media Classic(Scene7) 클라우드 구성을 통해 Dynamic Media Classic(Scene7)에 게시됩니다.
 
 >[!NOTE]
 >
 >사용자 지정 S7 뷰어를 만들고 개발하면서 콘텐츠 파인더를 사용하는 경우 `allowfullscreen` 매개 변수를 명시적으로 추가해야 합니다.
 
-### Flash 뷰어 서비스 종료 알림 {#flash-viewers-end-of-life-notice}
+### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
-2017년 1월 31일부터 Adobe Dynamic Media Classic(Scene7)는 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.
+2017년 1월 31일부터 Adobe Dynamic Media Classic(Scene7)는 공식적으로 Flash 뷰어 플랫폼에 대한 지원을 중단했습니다.
 
 ### 페이지에 Dynamic Media Classic(Scene7) 구성 요소 추가 {#adding-a-scene-component-to-a-page}
 
@@ -176,14 +185,14 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic(Scene7) 구�
 
 클래식 UI에서 응답형 사이트에 대화형 보기 환경을 추가하려면:
 
-1. Experience Manager에 로그인하고 [구성된 Adobe Dynamic Media Classic(Scene7) Cloud Service](/help/sites-administering/scene7.md#configuring-scene-integration)이 있고 Dynamic Media Classic(Scene7) 구성 요소를 사용할 수 있는지 확인하십시오.
+1. Experience Manager에 로그인하고 [구성된 Adobe Dynamic Media Classic(Scene7) 클라우드 서비스](/help/sites-administering/scene7.md#configuring-scene-integration)가 있으며 Dynamic Media Classic(Scene7) 구성 요소를 사용할 수 있는지 확인하십시오.
 
    >[!NOTE]
    >
    >Dynamic Media Classic(Scene7) WCM 구성 요소를 사용할 수 없는 경우 디자인 모드를 통해 활성화해야 합니다.
 
 1. Dynamic Media Classic(Scene7) 구성 요소가 활성화된 웹 사이트에서 **[!UICONTROL 이미지]** 뷰어를 페이지로 드래그합니다.
-1. **[!UICONTROL Dynamic Media Classic(Scene7) 설정]** 탭에서 구성 요소를 편집하고 중단점을 조정합니다.
+1. **[!UICONTROL Dynamic Media Classic(Scene7) 설정]** 탭에서 구성 요소를 편집하고 중단점을 조정하십시오.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -193,7 +202,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic(Scene7) 구�
 
 구성 옵션은 다르지만 모든 Dynamic Media Classic(Scene7) 구성 요소에는 다음과 같은 공통점이 있습니다.
 
-* **파일 참조** - 참조할 파일을 찾아 봅니다. 파일 참조는 에셋 URL을 보여주며 URL 명령 및 매개 변수를 포함한 전체 Dynamic Media Classic(Scene7) URL일 필요는 없습니다. 이 필드에는 Dynamic Media Classic(Scene7) URL 명령 및 매개 변수를 추가할 수 없습니다. 대신 구성 요소에서 해당 기능을 통해 추가해야 합니다.
+* **파일 참조** - 참조할 파일을 찾아 봅니다. 파일 참조는 자산 URL을 보여주며 URL 명령 및 매개 변수를 포함하는 전체 Dynamic Media Classic(Scene7) URL일 필요는 없습니다. 이 필드에는 Dynamic Media Classic(Scene7) URL 명령과 매개 변수를 추가할 수 없습니다. 대신 구성 요소에서 해당 기능을 통해 추가해야 합니다.
 * **너비** - 너비를 설정할 수 있습니다.
 * **높이** - 높이를 설정할 수 있습니다.
 
@@ -223,7 +232,7 @@ HTML5 플라이아웃 구성 요소에서 자산은 분할 화면으로 표시�
 
 ### 이미지 {#image}
 
-Dynamic Media Classic(Scene7) 이미지 구성 요소를 사용하여 Dynamic Media Classic(Scene7) 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 이미지에 Dynamic Media Classic(Scene7) 기능을 추가할 수 있습니다. Dynamic Media Classic(Scene7) 이미지 구성 요소는 특별한 Dynamic Media Classic(Scene7) 기능이 있는 Experience Manager의 다른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Dynamic Media Classic(Scene7) URL 수정자 `&op_invert=1`이(가) 적용되어 있습니다.
+Dynamic Media Classic(Scene7) 이미지 구성 요소를 사용하여 Dynamic Media Classic(Scene7) 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Dynamic Media Classic(Scene7) 기능을 이미지에 추가할 수 있습니다. Dynamic Media Classic(Scene7) 이미지 구성 요소는 특별한 Dynamic Media Classic(Scene7) 기능이 있는 Experience Manager의 다른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Dynamic Media Classic(Scene7) URL 수정자 `&op_invert=1`이(가) 적용되어 있습니다.
 
 ![Dynamic Media Classic(Scene 7) 이미지 구성 요소 내부의 구 이미지](do-not-localize/chlimage_1-4.png)
 
@@ -251,15 +260,15 @@ Dynamic Media Classic(Scene7) 이미지 구성 요소를 사용하여 Dynamic Me
 
 Dynamic Media Classic(Scene7) 이미지 템플릿은 Dynamic Media Classic(Scene7)로 가져온 계층화된 Photoshop 컨텐츠입니다. 여기서 컨텐츠 및 속성은 가변성을 위해 매개 변수화됩니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 Experience Manager에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
 
-구성 요소를 구성하려면 **[!UICONTROL 편집]** - 을 선택합니다. 모든 Dynamic Media Classic(Scene7) 구성 요소에 공통되는 [설정](/help/sites-administering/scene7.md#settingscommontoallscene7components) 및 이 섹션에서 설명한 기타 설정을 구성할 수 있습니다.
+구성 요소를 구성하려면 **[!UICONTROL 편집]** - 을 선택합니다. 모든 Dynamic Media Classic(Scene7) 구성 요소에 공통되는 [설정](/help/sites-administering/scene7.md#settingscommontoallscene7components) 및 이 섹션에서 설명하는 기타 설정을 구성할 수 있습니다.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**파일 참조, 너비, 높이** - [모든 Dynamic Media Classic(Scene7) 구성 요소에 공통인 설정](/help/sites-administering/scene7.md#settingscommontoallscene7components)을 참조하세요.
+**파일 참조, 너비, 높이** - [모든 Dynamic Media Classic(Scene7) 구성 요소에 공통인 설정](/help/sites-administering/scene7.md#settingscommontoallscene7components)을 참조하십시오.
 
 >[!NOTE]
 >
->Dynamic Media Classic(Scene7) URL 명령 및 매개 변수는 파일 참조 URL에 직접 추가할 수 없습니다. **[!UICONTROL 매개 변수]** 패널의 구성 요소 UI에서만 정의할 수 있습니다.
+>Dynamic Media Classic(Scene7) URL 명령 및 매개 변수를 파일 참조 URL에 바로 추가할 수 없습니다. **[!UICONTROL 매개 변수]** 패널의 구성 요소 UI에서만 정의할 수 있습니다.
 
 **제목, 대체 텍스트** - Dynamic Media Classic(Scene7) 이미지 템플릿 탭에서 이미지에 제목을 추가하고, 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
@@ -308,7 +317,7 @@ Dynamic Media Classic(Scene7) **[!UICONTROL 비디오]** 구성 요소(사이드
 
 응용 비디오 세트, 단일 MP4 비디오 또는 단일 F4V 비디오에 사용할 수 있습니다.
 
-비디오가 Dynamic Media Classic(Scene7) 통합에서 작동하는 방식에 대한 자세한 내용은 [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 참조하십시오. 또한 [**Dynamic Media Classic(Scene7) 비디오** 구성 요소와 기본 **비디오** 구성 요소](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 비교한 결과도 참조하십시오.
+비디오가 Dynamic Media Classic(Scene7) 통합에 따라 작동하는 방식에 대한 자세한 내용은 [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 참조하십시오. 또한 [**Dynamic Media Classic(Scene7) 비디오** 구성 요소와 기본 **비디오** 구성 요소](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 비교한 결과도 참조하십시오.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -330,7 +339,7 @@ Dynamic Media Classic(Scene7) 컨텐츠 브라우저를 사용하면 Dynamic Med
 >[!NOTE]
 >
 >* 온디맨드 폴더의 Assets이 Dynamic Media Classic(Scene7) 컨텐츠 브라우저에 표시되지 않습니다.
->* [보안 미리 보기를 사용하도록 설정](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)하면 Dynamic Media Classic(Scene7)에 게시된 자산과 게시되지 않은 자산이 모두 Dynamic Media Classic(Scene7) 콘텐츠 브라우저에 표시됩니다.
+>* [보안 미리 보기가 활성화된 경우](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) Dynamic Media Classic(Scene7)에 게시된 자산과 게시되지 않은 자산이 모두 Dynamic Media Classic(Scene7) 콘텐츠 브라우저에 나타나지 않습니다.
 >* **[!UICONTROL Dynamic Media Classic(Scene7)]** 또는 **[!UICONTROL S7]** 아이콘이 컨텐츠 브라우저에 옵션으로 표시되지 않는 경우 [Experience Manager에서 작동하도록 Dynamic Media Classic(Scene7)을 구성](/help/sites-administering/scene7.md)해야 합니다.
 >* 비디오의 경우 Dynamic Media Classic(Scene7) 컨텐츠 브라우저는 다음을 지원합니다.
 >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
@@ -358,9 +367,9 @@ Assets용 컨텐츠 파인더와 마찬가지로 자산을 검색하고 결과�
 >* 단일 F4V 동영상
 >
 
-### 콘텐츠 브라우저를 사용하여 Dynamic Media Classic(Scene7) 에셋 검색 {#searching-for-scene-assets-with-the-content-browser}
+### 컨텐츠 브라우저로 Dynamic Media Classic(Scene7) 자산 검색 {#searching-for-scene-assets-with-the-content-browser}
 
-Dynamic Media Classic(Scene7) 에셋을 검색하는 것은 Experience Manager 에셋 검색과 유사합니다. 단, 검색할 때 에셋을 Experience Manager으로 직접 가져오는 대신 Dynamic Media Classic(Scene7) 시스템에 있는 에셋의 원격 보기가 실제로 표시됩니다.
+Dynamic Media Classic(Scene7) 에셋을 검색하는 것은 Experience Manager 에셋 검색과 유사합니다. 단, 검색할 때 자산을 Experience Manager으로 직접 가져오는 대신 Dynamic Media Classic(Scene7) 시스템에서 자산의 원격 보기가 실제로 표시됩니다.
 
 클래식 UI 또는 터치에 적합한 UI를 사용하여 에셋을 보고 검색할 수 있습니다. 인터페이스에 따라 검색 방법이 약간 다릅니다.
 
@@ -372,21 +381,21 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 **폴더/경로** - 폴더 이름은 선택한 구성을 기반으로 합니다. 폴더 아이콘을 선택하고 하위 폴더를 선택한 다음 선택 표시를 선택하여 하위 레벨로 드릴다운할 수 있습니다.
 
-키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더와 하위 폴더를 검색합니다. 그러나 검색할 때 키워드를 입력하지 않으면 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
+키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더 및 하위 폴더를 검색합니다. 그러나 검색할 때 키워드를 입력하지 않으면 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
 
 기본적으로 Experience Manager은 선택한 폴더 및 모든 하위 폴더를 검색합니다.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-**에셋 유형** - Dynamic Media Classic(Scene7)를 선택하여 Dynamic Media Classic(Scene7) 콘텐츠를 찾아봅니다. 이 옵션은 Dynamic Media Classic(Scene7)가 구성된 경우에만 사용할 수 있습니다.
+**에셋 유형** - Dynamic Media Classic(Scene7) 콘텐츠를 찾아보려면 Dynamic Media Classic(Scene7)을 선택합니다. 이 옵션은 Dynamic Media Classic(Scene7)이 구성된 경우에만 사용할 수 있습니다.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**구성** - Cloud Service에 Dynamic Media Classic(Scene7) 구성이 두 개 이상 정의되어 있으면 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
+**구성** - 클라우드 서비스에 둘 이상의 Dynamic Media Classic(Scene7) 구성이 정의되어 있는 경우 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**자산 유형** - Dynamic Media Classic(Scene7) 브라우저 내에서 이미지, 템플릿, 비디오 및 응용 비디오 세트 중 하나를 포함하도록 결과를 필터링할 수 있습니다. 에셋 유형을 선택하지 않으면 기본적으로 Experience Manager은 모든 에셋 유형을 검색합니다.
+**자산 유형** - Dynamic Media Classic(Scene7) 브라우저 내에서, 이미지, 템플릿, 비디오 및 응용 비디오 세트 중 하나를 포함하도록 결과를 필터링할 수 있습니다. 자산 유형을 선택하지 않으면 기본적으로 Experience Manager은 모든 자산 유형을 검색합니다.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -398,6 +407,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더를 검색하게 되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 >
 
-**Publish 상태** - 게시 상태(게시 취소됨 또는 게시됨)에 따라 자산을 필터링할 수 있습니다. Publish 상태를 선택하지 않으면 기본적으로 게시 는 모든 Experience Manager 상태를 검색합니다.
+**게시 상태** - 게시 상태(게시 취소됨 또는 게시됨)에 따라 자산을 필터링할 수 있습니다. 게시 상태를 선택하지 않으면 기본적으로 Experience Manager은 모든 게시 상태를 검색합니다.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

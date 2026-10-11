@@ -9,13 +9,22 @@ exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 0%
-
+source-wordcount: '545'
+ht-degree: 3%
 ---
-
 # 오류 핸들러로 표시된 페이지 사용자 지정{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager(AEM)에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 제공됩니다. 예를 들면 다음과 같습니다.
@@ -72,13 +81,13 @@ HTTP 500 오류는 서버측 예외로 인해 발생합니다.
 * **[500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 서버에서 예기치 않은 상태가 발생하여 요청을 수행할 수 없습니다.
 
-요청 처리로 인해 예외가 발생하면 (AEM이 빌드된) Apache Sling 프레임워크가
+요청 처리로 인해 예외가 발생하는 경우 (AEM이 구축된) Apache Sling 프레임워크는
 
 * 예외를 기록합니다.
 * 반환:
 
-   * http 응답 코드 500
-   * 예외 스택 추적
+  * http 응답 코드 500
+  * 예외 스택 추적
 
   를 입력합니다.
 

@@ -9,18 +9,30 @@ exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
-
+source-wordcount: '306'
+ht-degree: 4%
 ---
-
 # 설치 시 관리자 암호 구성{#configure-the-admin-password-on-installation}
 
 ## 개요 {#overview}
 
-버전 6.3부터 Adobe Experience Manager(AEM)에서 새 인스턴스를 설치할 때 명령줄을 사용하여 관리자 암호를 설정할 수 있습니다.
+버전 6.3부터 Adobe Experience Manager(AEM)을 사용하면 새 인스턴스를 설치할 때 명령줄을 사용하여 관리자 암호를 설정할 수 있습니다.
 
 이전 버전의 AEM에서는 설치 후 관리자 계정의 암호와 다양한 다른 콘솔의 암호를 변경해야 했습니다.
 
