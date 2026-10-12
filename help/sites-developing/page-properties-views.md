@@ -9,13 +9,22 @@ exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 43%
-
+source-wordcount: '500'
+ht-degree: 45%
 ---
-
 # 페이지 속성 보기 사용자 정의{#customizing-views-of-page-properties}
 
 모든 페이지에는 사용자가 보고 편집할 수 있는 [속성](/help/sites-authoring/editing-page-properties.md) 집합이 있습니다. 일부는 페이지를 만들 때 필요하며(보기 만들기), 일부는 나중에 보고 편집할 수 있습니다(보기 편집). 이러한 페이지 속성은 해당 페이지 구성 요소의 대화 상자(`cq:dialog`)에서 정의되고 사용할 수 있습니다.
@@ -34,13 +43,13 @@ ht-degree: 43%
 
 * 만들기 보기(예: **페이지 만들기** 마법사)에서 사용할 수 있는 페이지 속성:
 
-   * 이름: `cq:showOnCreate`
-   * 유형: `Boolean`
+  * 이름: `cq:showOnCreate`
+  * 유형: `Boolean`
 
 * 편집 보기에서 사용할 수 있는 페이지 속성(예: **보기**/**편집**) **속성** 옵션):
 
-   * 이름: `cq:hideOnEdit`
-   * 유형: `Boolean`
+  * 이름: `cq:hideOnEdit`
+  * 유형: `Boolean`
 
 예를 들어, 기본 페이지 구성 요소의 **기본** 탭에서 **기타 제목 및 설명** 아래에 그룹화된 필드에 대한 설정을 참조하십시오. `cq:showOnCreate`이(가) `true`(으)로 설정되었으므로 **페이지 만들기** 마법사에 표시됩니다.
 

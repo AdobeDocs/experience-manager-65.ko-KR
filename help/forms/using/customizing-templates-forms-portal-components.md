@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1257'
 ht-degree: 1%
-
 ---
-
 # Forms 포털 구성 요소에 대한 템플릿 맞춤화{#customizing-templates-for-forms-portal-components}
 
 ## 사전 요구 사항 {#prerequisites}
@@ -41,8 +52,8 @@ Forms 포털을 사용하면 양식 목록에서 사용자 지정 메타데이�
    * 검색 및 목록 구성 요소: &quot;/libs/fd/fp/formTemplate&quot;
    * 초안 및 제출 구성 요소:
 
-      * 초안 섹션: /libs/fd/fp/draftTemplate
-      * 제출 섹션: /libs/fd/fp/submissionsTemplate
+     * 초안 섹션: /libs/fd/fp/draftTemplate
+     * 제출 섹션: /libs/fd/fp/submissionsTemplate
 
    * 링크 구성 요소: /libs/fd/fp/linkTemplate
 
@@ -88,11 +99,11 @@ Forms 포털은 자리 표시자가 사용자 지정/기본 제공 메타데이�
 
 반복 가능한 항목을 포함하려면 특성 **data-repeatable**&#x200B;의 값을 **true**(으)로 구성하십시오.
 
-*설명한 예제에서 두 개의 Div 요소가 사용자 지정 템플릿의 맨 위에 있습니다. 첫 번째는 &quot;__FP_boxes-container&quot; CSS 클래스와 함께 나열되는 양식의 컨테이너 요소로 작동합니다. 두 번째는 &quot;__FP_boxes&quot; CSS 클래스와 함께 기본 엔터티용 템플릿이며, 이 경우 폼입니다. Div 요소에 있는&#x200B;**data-repeatable**&#x200B;특성의 값은&#x200B;**true**.*&#x200B;입니다.
+*설명한 예제에서 두 개의 Div 요소가 사용자 지정 템플릿의 맨 위에 있습니다. 첫 번째는 &quot;__FP_boxes-container&quot; CSS 클래스와 함께 나열되는 양식의 컨테이너 요소로 작동합니다. 두 번째는 &quot;__FP_boxes&quot; CSS 클래스와 함께 기본 엔터티용 템플릿이며, 이 경우 폼입니다. Div 요소에 있는&#x200B;**data-repeatable**특성의 값은&#x200B;**true**.*&#x200B;입니다.
 
 각 자리 표시자에는 배타적인 기본 메타데이터 세트가 있습니다. 양식의 특정 위치에 사용자 지정 메타데이터를 표시하려면 해당 위치에 **${metadata_prop} 속성**&#x200B;을(를) 추가하십시오.
 
-*이 예제에서 메타데이터 속성은 여러 인스턴스에 사용됩니다. 예를들어,**description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;및&#x200B;**path**&#x200B;에서 지정된 방식으로 사용됩니다.*
+*이 예제에서 메타데이터 속성은 여러 인스턴스에 사용됩니다. 예를들어,**description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**및&#x200B;**path**에서 지정된 방식으로 사용됩니다.*
 
 ## 기본 제공 메타데이터 {#out-of-the-box-metadata}
 

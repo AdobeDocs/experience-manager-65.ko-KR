@@ -9,13 +9,27 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
-
 ---
-
 # 검색 템플릿 사용자 정의 {#customizing-search-templates}
 
 >[!NOTE]
@@ -37,7 +51,7 @@ Workspace에서 사용할 검색 템플릿을 만들어서 할 일 및 추적 �
 1. 관리 콘솔에서 서비스 > Workspace > 검색 템플릿을 클릭합니다.
 1. 식별 탭의 검색 템플릿 설명 상자에 템플릿 목적을 입력합니다.
 1. (선택 사항) 기준 탭을 클릭하고 템플릿 검색 기준을 지정합니다.
-1. 저장 탭을 클릭하고 템플릿의 고유한 이름을 입력한 후 저장을 클릭합니다.
+1. 저장 탭을 클릭하고 템플릿의 고유 이름을 입력한 후 저장을 클릭합니다.
 
 ## 검색 템플릿 만들기 또는 편집 {#create-or-edit-a-search-template}
 
@@ -57,9 +71,9 @@ Workspace에서 사용할 검색 템플릿을 만들어서 할 일 및 추적 �
 
    * 선택한 각 프로세스 요소, 작업 요소 및 프로세스 변수에 대해 기준 탭 하단에 있는 해당 검색 필드를 입력합니다.
 
-      * 제공된 목록에서 관계 연산자(예: &#39;같음&#39;)를 선택하고 그 옆에 있는 상자에 피연산자 값을 지정합니다.
-      * (선택 사항) 사용자가 Workspace에서 피연산자 값을 변경할 수 있도록 하려면 사용자가 피연산자를 변경할 수 있도록 허용을 선택합니다.
-      * (선택 사항) 사용자가 관계 연산자를 변경할 수 있도록 하려면 사용자가 다른 관계 연산자를 선택할 수 있도록 허용을 선택합니다. 표시되는 목록에서 사용자에게 제공되는 연산자를 선택합니다.
+     * 제공된 목록에서 관계 연산자(예: &#39;같음&#39;)를 선택하고 그 옆에 있는 상자에 피연산자 값을 지정합니다.
+     * (선택 사항) 사용자가 Workspace에서 피연산자 값을 변경할 수 있도록 하려면 사용자가 피연산자를 변경할 수 있도록 허용을 선택합니다.
+     * (선택 사항) 사용자가 관계 연산자를 변경할 수 있도록 하려면 사용자가 다른 관계 연산자를 선택할 수 있도록 허용을 선택합니다. 표시되는 목록에서 사용자에게 제공되는 연산자를 선택합니다.
 
      **팁**: *프로세스 이름을 요소로 선택한 경우 피연산자 필드 옆에 있는 아이콘을 클릭하면 Forms 서버에서 실행 중인 프로세스를 선택할 수 있는 목록이 표시됩니다. 프로세스를 선택한 후에는 해당 프로세스에 정의된 모든 프로세스 변수를 기준 탭의 상단 섹션에 있는 프로세스 변수에서 선택할 수 있습니다.*
 

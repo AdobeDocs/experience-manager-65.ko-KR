@@ -9,13 +9,20 @@ exl-id: fd1b1749-13f9-4079-ae39-348676105852
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '114'
 ht-degree: 4%
-
 ---
-
 # 리더보드 기본 사항 {#leaderboard-essentials}
 
 이 페이지에서는 리더보드 기능을 사용하는 데 필요한 기본 정보를 제공합니다.
@@ -30,7 +37,7 @@ ht-degree: 4%
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>소셜/게임화/구성 요소/hbs/리더보드</td>
+   <td>social/gamification/components/hbs/leaderboard</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>

@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5992'
+source-wordcount: '6001'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager 인스턴스 모니터링 및 유지 관리{#monitoring-and-maintaining-your-aem-instance}
 
 AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링하고 유지해야 합니다.
@@ -126,7 +135,7 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
    ![버전 제거 구성](assets/version-purge-configuration.png)
 
    * **경로 제거**
-삭제할 콘텐츠의 시작 경로를 설정하십시오(예: `/content/wknd`).
+     삭제할 콘텐츠의 시작 경로를 설정하십시오(예: `/content/wknd`).
 
      >[!CAUTION]
      >
@@ -136,17 +145,17 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
    * **버전을 재귀적으로 제거**
 
-      * 경로에 정의된 노드만 제거하려면 선택을 취소합니다.
-      * 경로 및 하위 항목에 의해 정의된 노드를 제거하려는 경우 선택합니다.
+     * 경로에 정의된 노드만 제거하려면 선택을 취소합니다.
+     * 경로 및 하위 항목에 의해 정의된 노드를 제거하려는 경우 선택합니다.
 
    * **최대 버전 수**
-유지할 최대 버전 수(각 노드에 대해)를 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
+     유지할 최대 버전 수(각 노드에 대해)를 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
 
    * **최소 버전 수**
-유지할 최소 버전 수(각 노드에 대해)를 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
+     유지할 최소 버전 수(각 노드에 대해)를 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
 
    * **최대 버전 사용 기간**
-유지할 최대 버전 보존 기간(일)(각 노드에 대해)을 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
+     유지할 최대 버전 보존 기간(일)(각 노드에 대해)을 설정합니다. 이 설정을 사용하지 않으려면 비워 둡니다.
 
    그런 다음 **저장**&#x200B;합니다.
 
@@ -219,41 +228,41 @@ AEM을 설치한 파일 서버에는 다양한 로그 파일이 보관되어 있
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩니다.
+  * `access.log`
+    AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩니다.
 
-   * `audit.log`
-중재 작업은 여기에 등록됩니다.
+  * `audit.log`
+    중재 작업은 여기에 등록됩니다.
 
-   * `error.log`
-여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
+  * `error.log`
+    여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ko)
-이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+    이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
-   * `request.log`
-각 액세스 요청은 응답과 함께 여기에 등록됩니다.
+  * `request.log`
+    각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ko)
-이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 [!DNL Dynamic Media]에 대한 각 요청을 기록합니다.
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+    이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 [!DNL Dynamic Media]에 대한 각 요청을 기록합니다.
 
-   * `stderr.log`
-시작 중에 생성된 다양한 심각도 수준의 오류 메시지를 다시 저장합니다. 기본적으로 로그 수준은 `Warning`( `WARN`)로 설정됩니다.
+  * `stderr.log`
+    시작 중에 생성된 다양한 심각도 수준의 오류 메시지를 다시 저장합니다. 기본적으로 로그 수준은 `Warning`( `WARN`)로 설정됩니다.
 
-   * `stdout.log`
-시작 중 이벤트를 나타내는 로깅 메시지를 보관합니다.
+  * `stdout.log`
+    시작 중 이벤트를 나타내는 로깅 메시지를 보관합니다.
 
-   * `upgrade.log`
-`com.day.compat.codeupgrade` 및 `com.adobe.cq.upgradesexecutor` 패키지에서 실행되는 모든 업그레이드 작업의 로그를 제공합니다.
+  * `upgrade.log`
+    `com.day.compat.codeupgrade` 및 `com.adobe.cq.upgradesexecutor` 패키지에서 실행되는 모든 업그레이드 작업의 로그를 제공합니다.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-개정 저널링 정보.
+  * `journal.log`
+    개정 저널링 정보.
 
 >[!NOTE]
 >
->ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**&#x200B;번들리스트&#x200B;**페이지에서 생성된 전체 다운로드**&#x200B;패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
+>ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
 
 ### DEBUG 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -316,9 +325,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * 이름: `org.apache.sling.commons.log.level`
 
@@ -328,13 +337,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 필요에 따라 다른 매개 변수를 구성합니다.
 
-      * 이름: `org.apache.sling.commons.log.pattern`
+     * 이름: `org.apache.sling.commons.log.pattern`
 
-        유형: `String`
+       유형: `String`
 
-        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
+       값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -411,17 +420,17 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 필요에 따라 다른 매개 변수를 구성합니다.
 
-      * 이름: `org.apache.sling.commons.log.file.number`
+     * 이름: `org.apache.sling.commons.log.file.number`
 
-        유형: `Long`
+       유형: `Long`
 
-        값: 보관할 로그 파일의 수를 지정합니다(예: `5`).
+       값: 보관할 로그 파일의 수를 지정합니다(예: `5`).
 
-      * 이름: `org.apache.sling.commons.log.file.size`
+     * 이름: `org.apache.sling.commons.log.file.size`
 
-        유형: `String`
+       유형: `String`
 
-        값: 크기/날짜별로 파일 회전을 제어하는 데 필요한 값을 지정합니다(예: `'.'yyyy-MM-dd`).
+       값: 크기/날짜별로 파일 회전을 제어하는 데 필요한 값을 지정합니다(예: `'.'yyyy-MM-dd`).
 
    >[!NOTE]
    >
@@ -568,19 +577,19 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 * 성능 문제가 발생하기 전에:
 
-   * 정상적인 상황에서 시스템에 대한 올바른 작업 지식을 쌓기 위해 가능한 한 많은 정보를 수집합니다.
+  * 정상적인 상황에서 시스템에 대한 올바른 작업 지식을 쌓기 위해 가능한 한 많은 정보를 수집합니다.
 
 * 성능 문제가 발생하는 경우:
 
-   * 일반적인 성능이 좋은 다른 클라이언트 및/또는 서버 자체(가능한 경우)에서 하나(또는 바람직하게는 더 많은) 표준 웹 브라우저로 복제해 보십시오.
-   * 시스템과 관련된 변경 사항이 적절한 시공간 내에 있는지 확인하고 이러한 변경 사항이 성능에 영향을 줄 수 있는지 확인합니다.
-   * 질문하기:
+  * 일반적인 성능이 좋은 다른 클라이언트 및/또는 서버 자체(가능한 경우)에서 하나(또는 바람직하게는 더 많은) 표준 웹 브라우저로 복제해 보십시오.
+  * 시스템과 관련된 변경 사항이 적절한 시공간 내에 있는지 확인하고 이러한 변경 사항이 성능에 영향을 줄 수 있는지 확인합니다.
+  * 질문하기:
 
-      * 문제가 특정 시간에만 발생합니까?
-      * 특정 페이지에서만 문제가 발생합니까?
-      * 다른 요청도 영향을 받습니까?
+    * 문제가 특정 시간에만 발생합니까?
+    * 특정 페이지에서만 문제가 발생합니까?
+    * 다른 요청도 영향을 받습니까?
 
-   * 일반적인 상황에서 시스템에 대한 지식을 비교하기 위해 가능한 많은 정보를 수집합니다.
+  * 일반적인 상황에서 시스템에 대한 지식을 비교하기 위해 가능한 많은 정보를 수집합니다.
 
 ### 성능 모니터링 및 분석 툴 {#tools-for-monitoring-and-analyzing-performance}
 
@@ -719,15 +728,15 @@ Adobe에서는 `request.log`에서 &quot;느린&quot; 페이지를 격리한 다
 * 요청(오른쪽을 가리키는 화살표)인지 아니면 응답(왼쪽을 가리키는 화살표)인지를 나타내는 화살표입니다.
 * 요청의 경우 행에 다음이 포함됩니다.
 
-   * 방법(일반적으로 GET, HEAD 또는 POST)
-   * 요청된 페이지
-   * 프로토콜
+  * 방법(일반적으로 GET, HEAD 또는 POST)
+  * 요청된 페이지
+  * 프로토콜
 
 * 응답의 경우 행에 다음이 포함됩니다.
 
-   * 상태 코드(200은 &quot;성공&quot;을, 404는 &quot;페이지를 찾을 수 없음&quot;을 의미합니다.
-   * MIME 유형
-   * 응답 시간
+  * 상태 코드(200은 &quot;성공&quot;을, 404는 &quot;페이지를 찾을 수 없음&quot;을 의미합니다.
+  * MIME 유형
+  * 응답 시간
 
 작은 스크립트를 사용하여 로그 파일에서 필요한 정보를 추출하고 원하는 통계를 조합할 수 있습니다. 이러한 통계를 통해 어떤 페이지 또는 페이지 유형이 느리고 전반적인 성능이 만족스러운지 확인할 수 있습니다.
 
@@ -1098,9 +1107,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >자세한 내용은 다음 문서를 참조하십시오.
 >
->* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
->* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
->* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
+>* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### 메모리 부족 {#out-of-memory}
@@ -1116,7 +1125,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [AEM을 시작](/help/sites-deploying/deploy.md#getting-started)하는 데 사용되는 JVM 설정
 * 기술 자료:
 
-* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
+* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1124,17 +1133,17 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 * 디버그 정보 수집을 비활성화했는지 여부에 관계없이 다음을 포함하여 다양한 위치에서 구성할 수 있습니다.
 
-   * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [로거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [로거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * [버전 제거](/help/sites-deploying/version-purging.md)를 구성했는지 여부 및 방법
 * 기술 자료:
 
-   * [열려 있는 파일이 너무 많음]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko
+  * [열려 있는 파일이 너무 많음]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
@@ -1143,7 +1152,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [메모리 부족](#outofmemory)
 * 기술 자료:
 
-   * [리소스 확인자가 닫히지 않았습니다.](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23761)
+  * [리소스 확인자가 닫히지 않았습니다.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM 조정 {#jvm-tuning}
 

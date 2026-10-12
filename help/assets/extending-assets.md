@@ -1,21 +1,30 @@
 ---
-title: ' [!DNL Assets] 사용자 지정 및 확장'
+title: '[!DNL Assets] 사용자 지정 및 확장'
 description: 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공하는 에셋 공유 및 에셋 편집기를 사용자 지정하고 확장할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
-
+source-wordcount: '252'
+ht-degree: 1%
 ---
-
 # [!DNL Assets] 사용자 지정 및 확장 {#customizing-and-extending-assets}
 
-에셋 편집기는 Adobe Enterprise Manager 웹 사이트 사용자가 저장소의 디지털 에셋을 찾고, 보고, 조작하는 데 사용하는 기본 액세스 지점입니다.
+에셋 편집기는 Adobe Enterprise Manager 웹 사이트 사용자가 저장소에서 디지털 에셋을 찾고, 보고, 조작하는 데 사용하는 기본 액세스 지점입니다.
 
 [!DNL Experience Manager] 개발자는 여러 가지 방법으로 자산 편집기를 사용자 지정 및 확장하여 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공할 수 있습니다.
 
@@ -34,7 +43,7 @@ ht-degree: 0%
 
 * 로고: 사용자 조직의 로고를 인터페이스에 추가할 수 있습니다.
 * 색상 및 글꼴: 인터페이스에 사용되는 색상 및 글꼴을 변경할 수 있습니다.
-* HTML 코드: 보다 철저한 맞춤화를 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
+* HTML 코드: 보다 철저한 사용자 지정을 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
 
 ## 렌디션 사용자 지정 {#customizing-renditions}
 

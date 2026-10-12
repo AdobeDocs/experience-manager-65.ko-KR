@@ -9,13 +9,26 @@ feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 6%
-
 ---
-
 # 자산 목록 보기에 사용자 정의 작업 추가{#add-custom-action-to-the-asset-listing-view}
 
 ## 개요 {#overview}
@@ -108,7 +121,7 @@ ht-degree: 6%
         <tr>
         <td>아이콘</td>
         <td>문자열</td>
-        <td>icon-download<br /> <br /> 서신 관리가 명령/메뉴의 왼쪽에 표시하는 아이콘입니다. 사용할 수 있는 다양한 아이콘과 설정에 대해서는 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko" target="_blank">CoralUI 아이콘 설명서</a>.<br />를 참조하십시오. </td>
+        <td>icon-download<br /> <br /> 서신 관리가 명령/메뉴의 왼쪽에 표시하는 아이콘입니다. 사용할 수 있는 다양한 아이콘과 설정에 대해서는 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI 아이콘 설명서</a>.<br />를 참조하십시오. </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -277,7 +290,7 @@ ht-degree: 6%
    1. **POST.jsp** 파일을 두 번 클릭하여 CRX에서 엽니다.
    1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**&#x200B;을 클릭합니다.
 
-      이 코드는 편지 렌더링 서비스에만 적용됩니다. 다른 에셋의 경우 해당 에셋의 Java™ 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)를 참조하십시오.
+      이 코드는 편지 렌더링 서비스에만 적용됩니다. 다른 에셋의 경우 해당 에셋의 Java™ 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)를 참조하십시오.
 
       AEM 라이브러리에 대한 자세한 내용은 AEM [구성 요소](/help/sites-developing/components.md)를 참조하십시오.
 

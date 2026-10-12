@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3453'
 ht-degree: 0%
-
 ---
-
 # OSGi 구성 설정{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/)은(는) AEM 기술 스택에 있는 기본 요소입니다. AEM의 합성 번들과 해당 구성을 제어하는 데 사용됩니다.
@@ -67,7 +76,7 @@ OSGi &quot;*은(는) 응용 프로그램을 작고 재사용 가능한 공동 �
 >다음을 구성하십시오.
 >
 >Apache Felix 웹 관리 콘솔 자체에 액세스하기 위한 자격 증명인 **사용자 이름** 및 **암호**.
->초기 설치 후 암호를 변경해야 인스턴스의 [보안](/help/sites-administering/security-checklist.md)을 확인할 수 있습니다.
+>인스턴스의 [보안](/help/sites-administering/security-checklist.md)을(를) 유지하려면 처음 설치한 후 암호를 변경해야 합니다.
 
 >[!NOTE]
 >
@@ -108,7 +117,7 @@ JSON을 비활성화하지 마십시오.
 
 * 프로덕션 인스턴스의 경우:
 
-   * **디버그 정보 생성** 사용 안 함
+  * **디버그 정보 생성** 사용 안 함
 
 **Apache Sling JCR 설치 관리자** 이러한 매개 변수는 구성이 필요하지 않지만 개발하거나 디버깅할 때 유용하게 사용할 수 있습니다. 예를 들어, 설치 폴더는 체크인/체크아웃 또는 패키지 작성에 유용할 수 있습니다.
 
@@ -243,7 +252,7 @@ JSON을 비활성화하지 마십시오.
 
 **Apache HTTP 구성 요소 프록시 구성** - HTTP를 만들 때 사용되는 Apache HTTP 클라이언트를 사용하는 모든 코드에 대한 프록시 구성입니다. 예: 복제 시
 
-구성을 만들 때 공장 구성을 변경하지 마십시오. 대신 여기에 있는 구성 관리자를 사용하여 이 구성 요소에 대한 팩터리 구성을 만드십시오. **https://localhost:4502/system/console/configMgr/**. 프록시 구성은 **org.apache.http.proxyconfigurator.**&#x200B;에서 사용할 수 있습니다.
+구성을 만들 때 공장 구성을 변경하지 마십시오. 대신 **https://localhost:4502/system/console/configMgr/** 구성 관리자를 사용하여 이 구성 요소에 대한 팩터리 구성을 만드십시오. 프록시 구성은 **org.apache.http.proxyconfigurator.**&#x200B;에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -259,21 +268,21 @@ JSON을 비활성화하지 마십시오.
 
 * 프로덕션 인스턴스의 경우:
 
-   * **축소** 사용(CRLF 및 공백 문자 제거)
-   * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
-   * **Debug** 사용 안 함
-   * **시간** 사용 안 함
+  * **축소** 사용(CRLF 및 공백 문자 제거)
+  * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
+  * **Debug** 사용 안 함
+  * **시간** 사용 안 함
 
 * JS 개발의 경우(특히 firebugging/debugging 시):
 
-   * **축소** 사용 안 함
-   * **Debug**&#x200B;을(를) 사용하여 디버깅을 위해 파일을 구분하고 버그 실행과 함께 사용할 수 있습니다.
-   * 타이밍을 원하는 경우 **타이밍**&#x200B;을(를) 사용하도록 설정하십시오.
-   * **Debug** 콘솔을 사용하여 JS 콘솔 로그 메시지를 볼 수 있습니다.
+  * **축소** 사용 안 함
+  * **Debug**&#x200B;을(를) 사용하여 디버깅을 위해 파일을 구분하고 버그 실행과 함께 사용할 수 있습니다.
+  * 타이밍을 원하는 경우 **타이밍**&#x200B;을(를) 사용하도록 설정하십시오.
+  * **Debug** 콘솔을 사용하여 JS 콘솔 로그 메시지를 볼 수 있습니다.
 
 >[!CAUTION]
 >
->**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=ko)를 참조하세요.
+>**축소** 또는 **Gzip**&#x200B;에 대한 설정을 변경하는 경우 clientlibs 캐시의 내용을 삭제하십시오. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html)를 참조하세요.
 
 >[!NOTE]
 >
@@ -356,10 +365,10 @@ OSGi 프레임워크 서비스 순위 값은 이 서비스 호출에 사용되�
 * **형식**
 사용자 ID가 제공되는 형식을 나타냅니다. 사용:
 
-   * 사용자 ID가 HTTP 기본 인증 형식으로 인코딩된 경우 `Basic`
-   * 사용자 ID가 일반 텍스트로 제공되거나 정규 표현식 적용 값을 그대로 사용하거나 정규 표현식을 사용해야 하는 경우 `AsIs`
+  * 사용자 ID가 HTTP 기본 인증 형식으로 인코딩된 경우 `Basic`
+  * 사용자 ID가 일반 텍스트로 제공되거나 정규 표현식 적용 값을 그대로 사용하거나 정규 표현식을 사용해야 하는 경우 `AsIs`
 
-**일 CQ WCM 디버그 필터** 페이지에 액세스할 때 ?debug=layout과 같은 접미사를 사용할 수 있으므로 개발할 때 유용합니다. 예를 들어, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout은 개발자가 관심을 가질 수 있는 레이아웃 정보를 제공합니다.
+**일 CQ WCM 디버그 필터** 페이지에 액세스할 때 ?debug=layout과 같은 접미사를 사용할 수 있으므로 개발할 때 유용합니다. 예를 들어, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout 은 개발자가 관심을 가질 수 있는 레이아웃 정보를 제공합니다.
 
 * 성능과 보안을 유지하려면 프로덕션 인스턴스에서 을 비활성화합니다.
 

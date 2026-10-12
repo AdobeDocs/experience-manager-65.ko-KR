@@ -9,18 +9,27 @@ exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # 디자인 및 Designer{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->이 문서에서는 클래식 UI를 기반으로 웹 사이트를 만드는 방법을 설명합니다. Adobe은 문서 [AEM Sites 개발 시작하기](/help/sites-developing/getting-started.md)에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 사용할 것을 권장합니다.
+>이 문서에서는 클래식 UI를 기반으로 웹 사이트를 만드는 방법을 설명합니다. Adobe에서는 문서 [AEM Sites 개발 시작하기](/help/sites-developing/getting-started.md)에 자세히 설명된 대로 웹 사이트에 최신 AEM 기술을 사용하는 것이 좋습니다.
 
 Designer은 AEM에서 [클래식 UI](/help/release-notes/touch-ui-features-status.md)를 사용하여 웹 사이트의 디자인을 만드는 데 사용됩니다.
 
@@ -44,7 +53,7 @@ Designer은 AEM에서 [클래식 UI](/help/release-notes/touch-ui-features-statu
 >
 >디자인 모드의 페이지에서 수행된 모든 변경 사항은 사이트의 디자인 노드 아래에 유지되며, 동일한 디자인을 가지는 모든 페이지에 자동으로 적용됩니다.
 
-## 필요한 사항 {#what-you-will-need}
+## 필요 사항 {#what-you-will-need}
 
 디자인을 실현하려면 다음이 필요합니다.
 

@@ -9,13 +9,24 @@ exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 99%
 ---
-
 # WebSphere Application Server에 대한 SSL 구성 {#configuring-ssl-for-websphere-application-server}
 
 이 섹션에는 IBM WebSphere Application Server에서 SSL을 구성하는 다음 단계가 포함되어 있습니다.
@@ -71,7 +82,7 @@ SSL을 활성화하려면 WebSphere가 로컬 OS 사용자 레지스트리에서
 1. 관리 보안에서 **관리 사용자 역할**&#x200B;을 선택합니다.
 1. 추가를 클릭하고 다음 작업을 수행합니다.
 
-   1. 검색 상자에 **&amp;ast;**&#x200B;를 입력하고 검색을 클릭합니다.
+   1. 검색 상자에 **&amp;ast;**&#x200B;을(를) 입력하고 검색을 클릭합니다.
    1. 역할에서 **관리자**&#x200B;를 클릭합니다.
    1. 새로 만든 사용자를 역할에 매핑됨에 추가하고 해당 사용자를 관리자에 매핑합니다.
 
@@ -88,11 +99,11 @@ SSL을 활성화하려면 WebSphere가 로컬 OS 사용자 레지스트리에서
 1. **마침**&#x200B;을 클릭합니다.
 1. WebSphere 프로필을 다시 시작합니다.
 
-   WebSphere에서 기본 키 저장소와 TrustStore를 사용하기 시작합니다.
+   WebSphere에서 기본 키 저장소와 신뢰 저장소를 사용하기 시작합니다.
 
-## SSL(사용자 정의 키 및 TrustStore) 활성화 {#enable-ssl-custom-key-and-truststore}
+## SSL(사용자 정의 키 및 신뢰 저장소) 활성화 {#enable-ssl-custom-key-and-truststore}
 
-TrustStore와 키 저장소는 iKeyman 유틸리티나 Admin Console을 사용하여 만들 수 있습니다. iKeyman이 제대로 작동하려면 WebSphere 설치 경로에 괄호가 포함되어서는안 됩니다.
+TrustStore와 키 저장소는 iKeyman 유틸리티나 Admin Console을 사용하여 만들 수 있습니다. iKeyman이 제대로 작동하려면 WebSphere 설치 경로에 괄호가 포함되어서는 안 됩니다.
 
 1. WebSphere 관리 콘솔에서 **보안 > SSL 인증서 및 키 관리**&#x200B;를 선택합니다.
 1. 관련 항목에서 **키 저장소 및 인증서**&#x200B;를 클릭합니다.
@@ -111,7 +122,7 @@ TrustStore와 키 저장소는 iKeyman 유틸리티나 Admin Console을 사용�
 
 1. 2~10단계를 반복하여 TrustStore를 만듭니다.
 
-## 서버에 사용자 정의 키 저장소 및 TrustStore 적용 {#apply-custom-keystore-and-truststore-to-the-server}
+## 서버에 사용자 정의 키 저장소 및 신뢰 저장소 적용 {#apply-custom-keystore-and-truststore-to-the-server}
 
 1. WebSphere 관리 콘솔에서 **보안 > SSL 인증서 및 키 관리**&#x200B;를 선택합니다.
 1. **엔드포인트 보안 구성 관리**&#x200B;를 클릭합니다. 로컬 토폴로지 맵이 열립니다.
@@ -146,10 +157,10 @@ https로 시작하는 URL을 변환하려면 해당 URL에 대한 서명자 인�
    * 포트 상자에 `443`을 입력합니다. 이 포트는 기본 SSL 포트입니다.
    * 별칭 상자에 별칭을 입력합니다.
 
-1. 서명자 정보 가져오기 클릭한 후 해당 정보를 가져왔는지 확인합니다.
+1. 서명자 정보 [가져오기]를 클릭한 후 해당 정보를 가져왔는지 확인합니다.
 1. 적용을 클릭한 후 저장을 클릭합니다.
 
-인증서가 추가된 사이트의 HTML-PDF 변환 기능이 이제 PDF 생성 서비스에서 작동합니다.
+인증서가 추가된 사이트의 HTML-to-PDF 변환이 이제 PDF 생성 서비스에서 작동합니다.
 
 >[!NOTE]
 >
@@ -157,7 +168,7 @@ https로 시작하는 URL을 변환하려면 해당 URL에 대한 서명자 인�
 
 ## 동적 포트 구성 {#configuring-dynamic-ports}
 
-전역 보안이 활성화된 경우 IBM WebSphere는 ORB.init()에 대한 여러 호출을 허용하지 않습니다. 영구 제한 사항에 대한 자세한 내용은 https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.에서 확인할 수 있습니다.
+전역 보안이 활성화된 경우 IBM WebSphere는 ORB.init()에 대한 여러 호출을 허용하지 않습니다. 영구 제한 사항에 대한 자세한 내용은 https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 에서 확인할 수 있습니다.
 
 다음 단계를 수행하여 포트를 동적으로 설정하고 문제를 해결합니다.
 

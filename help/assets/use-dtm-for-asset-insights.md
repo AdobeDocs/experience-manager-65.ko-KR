@@ -6,20 +6,36 @@ role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
-
 ---
-
 # DTM을 통해 Assets 인사이트 활성화 {#enable-asset-insights-through-dtm}
 
 Adobe Dynamic Tag Management은 디지털 마케팅 도구를 활성화하는 도구입니다. Adobe Analytics 고객에게 무료로 제공됩니다. 추적 코드를 사용자 지정하여 서드파티 CMS 솔루션에서 Assets Insights를 사용할 수 있도록 하거나 DTM을 사용하여 Assets Insights 태그를 삽입할 수 있습니다. 인사이트는 이미지만 지원되고 제공됩니다.
 
 >[!CAUTION]
 >
->Adobe DTM은 [!DNL Adobe Experience Platform]을(를) 위해 더 이상 사용되지 않으며 곧 [수명 종료](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 자산 통찰력에 대해 [사용 [!DNL Adobe Experience Platform] 하도록](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=ko)할 것을 권장합니다.
+>Adobe DTM은 [!DNL Adobe Experience Platform]을(를) 위해 더 이상 사용되지 않으며 곧 [수명 종료](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 자산 통찰력에 대해 [사용 [!DNL Adobe Experience Platform] 하도록](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)할 것을 권장합니다.
 
 다음 단계를 수행하여 DTM을 통해 Assets Insights를 활성화합니다.
 
@@ -33,7 +49,7 @@ Adobe Dynamic Tag Management은 디지털 마케팅 도구를 활성화하는 �
 
    * **[!UICONTROL 웹 속성]** 탭을 선택한 다음 **[!UICONTROL 속성 추가]**&#x200B;를 클릭합니다.
 
-   * 필드를 적절하게 업데이트하고 **[!UICONTROL 속성 만들기]**&#x200B;를 클릭합니다. [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)를 참조하십시오.
+   * 필드를 적절하게 업데이트하고 **[!UICONTROL 속성 만들기]**&#x200B;를 클릭합니다. [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)를 참조하십시오.
 
    ![편집 웹 속성을 만듭니다](assets/Create-edit-web-property.png)
 

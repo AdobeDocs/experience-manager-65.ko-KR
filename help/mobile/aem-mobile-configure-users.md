@@ -9,13 +9,17 @@ exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '521'
 ht-degree: 1%
-
 ---
-
 # 사용자 및 사용자 그룹 구성 {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -26,13 +30,13 @@ ht-degree: 1%
 
 ### AEM Mobile 애플리케이션 콘텐츠 작성자(앱 작성자 그룹) {#aem-mobile-application-content-authors-app-author-group}
 
-앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오를 비롯한 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
+앱 작성자 그룹의 멤버는 페이지, 텍스트, 이미지 및 비디오 등 AEM 모바일 애플리케이션 콘텐츠를 작성합니다.
 
 #### 그룹 구성 - app-authors {#group-configuration-app-authors}
 
 1. &#39;app-authors&#39;라는 사용자 그룹 만들기:
 
-   사용자 Admin Console([http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html))로 이동합니다.
+   사용자 Admin Console으로 이동: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    사용자 그룹 콘솔 내에서 &#39;+&#39; 버튼을 선택하여 그룹을 만듭니다.
 
@@ -42,7 +46,7 @@ ht-degree: 1%
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)을 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다.
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)를 통해 개별 팀원을 이 새 그룹에 추가할 수 있습니다.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -79,9 +83,9 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 권�
 
    >[!NOTE]
    >
-   >워크플로우 사용자는 PhoneGap Build 서비스를 사용하여 원격 빌드를 수행해야 합니다.
+   >workflow-users는 PhoneGap Build 서비스를 사용하여 원격 빌드에 필요합니다.
 
-1. [권한 콘솔](http://localhost:4502/useradmin)(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
+1. [권한 콘솔](http://localhost:4502/useradmin)&#x200B;(으)로 이동하여 cloudservices를 관리할 권한을 추가하십시오.
 
    * /etc/cloudservices/mobileservices에서 (읽기, 수정, 만들기, 삭제, 복제)
 

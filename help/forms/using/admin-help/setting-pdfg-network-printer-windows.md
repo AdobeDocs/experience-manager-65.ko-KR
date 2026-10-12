@@ -9,20 +9,31 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
-
 ---
-
 # PDFG 네트워크 프린터 설정(Windows만 해당) {#setting-up-a-pdfg-network-printer-windows-only}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-PDFG 네트워크 프린터를 사용하면 사용자는 인쇄를 지원하는 모든 애플리케이션에서 PDF 문서를 생성할 수 있습니다. 사용자가 PDFG 네트워크 프린터를 설치하면 Windows 제어판의 프린터 섹션에 *PDF Generator*&#x200B;라는 새 프린터가 나타납니다. 이름이 동일한 프린터가 이미 있는 경우 사용자에게 다른 이름을 제공하라는 메시지가 표시됩니다.
+PDFG 네트워크 프린터를 사용하면 사용자는 인쇄를 지원하는 모든 애플리케이션에서 PDF 문서를 생성할 수 있습니다. 사용자가 PDFG 네트워크 프린터를 설치하면 Windows 제어판의 프린터 섹션에 *PDF Generator*&#x200B;라는 새 프린터가 나타납니다. 이름이 동일한 프린터가 이미 있는 경우 사용자에게 다른 이름을 입력하라는 메시지가 표시됩니다.
 
 모든 애플리케이션에서 이 프린터로 인쇄하면 문서(PostScript 형식)가 PDF Generator로 전송되고, 여기서 PostScript 파일이 PDF로 변환됩니다. PDF Generator를 구성한 방법에 따라 PDF 문서를 이메일 메시지의 첨부 파일로 사용자에게 전송하거나, PDF 문서를 지정된 AEM Forms 서비스 또는 프로세스로 전달하거나, 두 가지 작업을 모두 수행합니다.
 
@@ -53,7 +64,7 @@ PDFG 네트워크 프린터를 설정하려면 다음 단계를 수행해야 합
 
    * 호출할 서비스 이름
    * 호출할 서비스의 작업 이름
-   * 서비스 또는 프로세스의 component. xml 파일에 지정된 입력 매개변수 이름. PDF 문서는 해당 입력 매개변수 값으로 사용됩니다.
+   * 서비스 또는 프로세스의 component.xml 파일에 지정된 입력 매개변수 이름. PDF 문서는 해당 입력 매개변수 값으로 사용됩니다.
 
 1. 저장을 클릭합니다.
 

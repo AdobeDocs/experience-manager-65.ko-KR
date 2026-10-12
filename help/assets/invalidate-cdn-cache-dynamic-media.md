@@ -9,13 +9,27 @@ role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: fc27aefe-8efd-48a6-89bf-c46e0e334a63
+    internal-label: CDN cache
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1376'
 ht-degree: 1%
-
 ---
-
 
 # Dynamic Media의 방식으로 CDN 캐시 무효화 {#invalidating-cdn-cache-for-dm-assets}
 
@@ -42,7 +56,7 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되어 고
    | 시나리오 | 옵션 |
    | --- | --- |
    | 이전에 Dynamic Media Classic을 사용하여 CDN 무효화 템플릿을 이미 만들었습니다. | **[!UICONTROL 템플릿 만들기]** 텍스트 필드가 템플릿 데이터로 미리 채워집니다. 이러한 경우 템플릿을 편집하거나 다음 단계를 계속할 수 있습니다. |
-   | 템플릿을 만들어야 합니다. 무엇을 입력해야 합니까? | **[!UICONTROL 템플릿 만들기]** 텍스트 필드에 다음 예제와 같이 특정 이미지 ID 대신 `<ID>`을(를) 참조하는 이미지 URL(이미지 사전 설정 또는 수정자 포함)을 입력합니다.<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>템플릿에 `<ID>`만 들어 있는 경우 Dynamic Media는 `https://<publishserver_name>/is/image/<company_name>/<ID>`을(를) 채웁니다. 여기서 `<publishserver_name>`은(는) Dynamic Media Classic의 일반 설정에 정의된 게시 서버 이름입니다. `<company_name>`은(는) 이 Experience Manager 인스턴스와 연결된 회사 루트의 이름이며 `<ID>`은(는) 자산 선택기를 통해 무효화할 선택된 자산입니다.<br>`<ID>` 게시물의 모든 사전 설정/수정자가 URL 정의에 있는 그대로 복사됩니다.<br>템플릿에 따라 `/is/image`의 이미지만 자동으로 만들 수 있습니다.<br>`/is/content/`의 경우 자산 선택기를 사용하여 비디오나 PDF와 같은 자산을 추가해도 URL이 자동으로 생성되지 않습니다. 대신 CDN 무효화 템플릿에 이러한 자산을 지정해야 합니다. 또는 *2부 2: CDN 무효화 옵션 설정*&#x200B;에서 이러한 자산에 URL을 수동으로 추가할 수 있습니다.<br>**예:**<br>&#x200B;이 첫 번째 예에서 무효화 템플릿에는 `<ID>`이(가) 있는 자산 URL과 함께 `/is/content`이(가) 포함되어 있습니다. 예를 들어, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`과 같이 입력합니다. Dynamic Media는 이 경로를 기반으로 URL을 형성합니다. `<ID>`은(는) 무효화할 자산 선택기를 통해 선택한 자산입니다.<br>이 두 번째 예제에서 무효화 템플릿에는 `/is/content`을(를) 사용하는 웹 속성에 사용된 자산의 전체 URL이 포함되어 있습니다(자산 선택기에 종속되지 않음). 예를 들어, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`. 여기서 backpack은 에셋 ID입니다.<br>Dynamic Media에서 지원되는 자산 형식은 무효화할 수 있습니다. CDN 무효화에 대해 지원되지 않는 *1&rbrace;의 에셋 파일 형식에는 PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word 및 리치 텍스트 형식이 포함됩니다.*<br><br>· 템플릿을 만들 때 구문과 오타 내용에 주의해야 합니다. Dynamic Media는 템플릿 유효성 검사를 수행하지 않습니다.<br>· CDN 무효화 템플릿은 최대 2,500자까지 텍스트를 저장할 수 있습니다.<br>· 이 CDN 무효화 템플릿 또는 **[!UICONTROL 파트2: CDN 무효화 옵션 설정의]** URL 추가&#x200B;*텍스트 필드에 이미지 스마트 자르기에 대한 URL을 지정합니다.*<br>· CDN 무효화 템플릿의 각 항목은 개별 줄에 있어야 합니다.<br>· 다음 CDN 무효화 템플릿 예제는 데모용입니다. |
+   | 템플릿을 만들어야 합니다. 무엇을 입력해야 합니까? | **[!UICONTROL 템플릿 만들기]** 텍스트 필드에 다음 예제와 같이 특정 이미지 ID 대신 `<ID>`을(를) 참조하는 이미지 URL(이미지 사전 설정 또는 수정자 포함)을 입력합니다.<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>템플릿에 `<ID>`만 들어 있는 경우 Dynamic Media는 `https://<publishserver_name>/is/image/<company_name>/<ID>`을(를) 채웁니다. 여기서 `<publishserver_name>`은(는) Dynamic Media Classic의 일반 설정에 정의된 게시 서버 이름입니다. `<company_name>`은(는) 이 Experience Manager 인스턴스와 연결된 회사 루트의 이름이며 `<ID>`은(는) 자산 선택기를 통해 무효화할 선택된 자산입니다.<br>`<ID>` 게시물의 모든 사전 설정/수정자가 URL 정의에 있는 그대로 복사됩니다.<br>템플릿에 따라 `/is/image`의 이미지만 자동으로 만들 수 있습니다.<br>`/is/content/`의 경우 자산 선택기를 사용하여 비디오나 PDF와 같은 자산을 추가해도 URL이 자동으로 생성되지 않습니다. 대신 CDN 무효화 템플릿에 이러한 자산을 지정해야 합니다. 또는 *파트 2/2: CDN 무효화 옵션 설정*&#x200B;에서 이러한 자산에 URL을 수동으로 추가할 수 있습니다.<br>**예:**<br>&#x200B;이 첫 번째 예에서 무효화 템플릿에는 `/is/content`이(가) 있는 자산 URL과 함께 `<ID>`이(가) 포함됩니다. 예를 들어, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`과 같이 입력합니다. Dynamic Media는 이 경로를 기반으로 URL을 형성합니다. `<ID>`은(는) 무효화할 자산 선택기를 통해 선택한 자산입니다.<br>이 두 번째 예제에서 무효화 템플릿에는 `/is/content`을(를) 사용하는 웹 속성에 사용된 자산의 전체 URL이 포함되어 있습니다(자산 선택기에 종속되지 않음). 예를 들어, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`의 경우 백팩이 자산 ID입니다.<br>Dynamic Media에서 지원되는 자산 형식은 무효화할 수 있습니다. CDN 무효화에 대해 *지원되지 않는*&#x200B;의 자산 파일 형식에는 PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word 및 리치 텍스트 형식이 포함됩니다.<br><br>· 템플릿을 만들 때 구문과 오타를 신중하게 고려해야 합니다. Dynamic Media는 템플릿 유효성 검사를 수행하지 않습니다.<br>· CDN 무효화 템플릿은 최대 2,500자까지 텍스트를 저장할 수 있습니다.<br>· 이 CDN 무효화 템플릿 또는 *파트2: CDN 무효화 옵션 설정&#x200B;**[!UICONTROL URL 추가]**텍스트 필드에 이미지 스마트 자르기에 대한 URL을 지정하십시오.*<br>· CDN 무효화 템플릿의 각 항목은 해당 템플릿에 있어야 합니다. 줄 <br>· 다음 CDN 무효화 템플릿 예제는 데모용입니다. |
 
    ![CDN 무효화 템플릿 - 만들기](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -50,8 +64,8 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되어 고
    >
    >CDN 무효화 템플릿은 텍스트를 최대 2500자까지 저장할 수 있습니다.
 
-1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**.<br>을 선택합니다.
-   *파트 2/2: CDN 무효화 옵션 설정*
+1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.<br>
+   *2부: CDN 무효화 옵션 설정*
    <br>
 
 1. Experience Manager as a Cloud Service에서 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN 무효화]**&#x200B;를 선택합니다.
@@ -72,7 +86,7 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되어 고
    | **[!UICONTROL CDN에서 자산 관련 이미지 사전 설정 무효화]** | (선택 사항) 이 옵션을 선택하면 선택한 에셋과 모든 관련 이미지 사전 설정 URL이 캐시 무효화를 위해 자동으로 구성됩니다.<br>Assets 및 사전 정의된 관련 사전 설정 URL이 무효화되도록 자동으로 형성됩니다. 이 옵션은 이미지 에셋에만 작동합니다. |
    | **[!UICONTROL 템플릿 기반 무효화]** | (선택 사항) URL 형성에 정의된 템플릿만 사용하려면 이 옵션을 선택합니다. |
    | **[!UICONTROL Assets 추가]** | 자산 선택기를 사용하여 무효화할 자산을 선택합니다. 게시된 에셋 또는 게시되지 않은 에셋을 선택할 수 있습니다.CDN의 <br>캐싱은 자산 기반이 아니라 URL 기반입니다. 따라서 웹 사이트에 있는 전체 URL을 알고 있어야 합니다. 해당 URL을 결정한 후 템플릿에 추가할 수 있습니다. 그런 다음 해당 에셋을 선택하고 추가한 다음 한 단계에서 URL을 무효화할 수 있습니다. <br>CDN에서 **[!UICONTROL 자산 관련 이미지 사전 설정 무효화]** 또는 **[!UICONTROL 템플릿 기반 무효화]** 또는 두 가지 모두와 함께 이 옵션을 사용합니다. |
-   | **[!UICONTROL URL 추가]** | CDN 캐시를 무효화하려는 Dynamic Media 에셋에 전체 URL 경로를 수동으로 추가하거나 붙여넣으십시오. ***Part 1 of 2: CDN 무효화 템플릿 만들기***&#x200B;에서 CDN 무효화 템플릿을 만들지 않고 무효화할 에셋이 몇 개만 있는 경우 이 옵션을 사용합니다.<br>**중요:** 추가하는 각 URL은 해당 줄에 있어야 합니다.<br>특정 시간에 최대 1000개의 URL을 무효화할 수 있습니다. **[!UICONTROL URL 추가]** 텍스트 필드의 URL 수가 1,000개를 초과하는 경우 **[!UICONTROL 다음]**&#x200B;을(를) 선택할 수 없습니다. 이러한 경우 선택한 에셋 또는 수동으로 추가한 URL의 오른쪽에 있는 **[!UICONTROL X]**&#x200B;을(를) 선택하여 무효화 목록에서 삭제해야 합니다.<br>CDN 무효화 템플릿 또는 이 **[!UICONTROL URL 추가]** 텍스트 필드에 이미지 스마트 자르기에 대한 URL을 지정합니다. |
+   | **[!UICONTROL URL 추가]** | CDN 캐시를 무효화하려는 Dynamic Media 에셋에 전체 URL 경로를 수동으로 추가하거나 붙여넣으십시오. ***2부 1: CDN 무효화 템플릿 만들기***&#x200B;에서 CDN 무효화 템플릿을 만들지 않고 무효화할 자산이 몇 개만 있는 경우 이 옵션을 사용합니다.<br>**중요:** 추가하는 각 URL은 고유한 줄에 있어야 합니다.<br>특정 시간에 최대 1000개의 URL을 무효화할 수 있습니다. **[!UICONTROL URL 추가]** 텍스트 필드의 URL 수가 1,000개를 초과하는 경우 **[!UICONTROL 다음]**&#x200B;을(를) 선택할 수 없습니다. 이러한 경우 선택한 에셋 또는 수동으로 추가한 URL의 오른쪽에 있는 **[!UICONTROL X]**&#x200B;을(를) 선택하여 무효화 목록에서 삭제해야 합니다.<br>CDN 무효화 템플릿 또는 이 **[!UICONTROL URL 추가]** 텍스트 필드에 이미지 스마트 자르기에 대한 URL을 지정합니다. |
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. **[!UICONTROL CDN 무효화 - 확인]** 페이지의 **[!UICONTROL URL]** 목록 상자에 이전에 만든 CDN 무효화 템플릿에서 생성된 하나 이상의 URL 목록과 방금 추가한 에셋이 표시됩니다.
@@ -91,7 +105,7 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되어 고
 
 | 오류 | 설명 |
 | --- | --- |
-| *선택한 자산의 URL을 검색하지 못했습니다.* | 다음 시나리오 중 하나가 충족되면 발생합니다.<br>- Dynamic Media 구성을 찾을 수 없습니다.<br>- Dynamic Media 구성을 읽는 서비스 사용자를 검색하는 동안 예외가 발생했습니다.<br>- URL을 구성하는 데 사용되는 게시 서버 또는 회사 루트가 Dynamic Media 구성에 없습니다. |
+| *선택한 자산의 URL을 검색하지 못했습니다.* | 다음 시나리오 중 하나가 충족되는 경우 발생합니다.<br>- Dynamic Media 구성을 찾을 수 없습니다.<br>- Dynamic Media 구성을 읽는 서비스 사용자를 검색하는 동안 예외가 발생했습니다.<br>- URL을 구성하는 데 사용되는 게시 서버 또는 회사 루트가 Dynamic Media 구성에 없습니다. |
 | *일부 URL이 올바르게 정의되지 않았습니다. 수정하고 다시 제출합니다.* | IPS CDN 캐시 무효화 API가 URL이 다른 회사를 참조하는 오류를 반환하는 경우 발생합니다. 또는 IPS `cdnCacheInvalidation` API에서 수행한 유효성 검사에 따라 URL이 올바르지 않은 경우. |
 | *CDN 캐시를 무효화하지 못했습니다.* | CDN 캐시 무효화 요청이 다른 이유로 실패하면 발생합니다. |
 | *무효화된 URL이 입력되지 않았습니다.* | **[!UICONTROL CDN 무효화 - 확인]** 페이지에 URL이 없고 **[!UICONTROL 제출]**&#x200B;을 선택하는 경우 발생합니다. |

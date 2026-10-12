@@ -7,13 +7,26 @@ feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
-
 ---
-
 # 편지 만들기 {#create-letter}
 
 ## 서신 관리 워크플로우 {#correspondence-management-workflow}
@@ -152,10 +165,10 @@ ht-degree: 2%
 * 서신 템플릿은 얼마나 자주 변경됩니까? 매년, 분기마다, 또는 특정 법안이 변경될 때만 업데이트됩니까? 예상되는 변경 유형은 무엇입니까? 인쇄 오류를 수정하고, 레이아웃을 변경하고, 필드를 추가하고, 단락을 추가하는 등의 변경이 있습니까?
 * 서신 요구 사항을 계획할 때 새 서신 템플릿 목록을 조합합니다. 각 서신 템플릿에 대해 다음을 수행해야 합니다.
 
-   * 텍스트 절, 이미지 및 표
-   * 백엔드 시스템의 데이터 값
-   * 서신의 레이아웃 및 단편 레이아웃
-   * 편지에 콘텐츠가 표시되는 순서 및 콘텐츠 포함 및 제외 규칙
+  * 텍스트 절, 이미지 및 표
+  * 백엔드 시스템의 데이터 값
+  * 서신의 레이아웃 및 단편 레이아웃
+  * 편지에 콘텐츠가 표시되는 순서 및 콘텐츠 포함 및 제외 규칙
 
 * 청구 조정자 또는 사례 근로자와 같은 비즈니스 사용자가 편지의 내용 또는 부분을 수정하는 조건입니다.
 * 시나리오는 Letters 솔루션을 사용하여 경험한 사용자 경험, 요구 사항 및 이점을 설명하는 설명입니다.

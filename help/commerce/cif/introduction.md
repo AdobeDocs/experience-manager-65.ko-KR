@@ -6,13 +6,21 @@ exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 88%
-
 ---
-
 
 # Content 및 Commerce {#content-commerce}
 
@@ -62,7 +70,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 가치 창출 시간 (TTV)
 
-[AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 PWA(Headless Content 및 Commerce)의 통합 패턴을 사용하여 프로젝트 개발을 가속화합니다.
+[AEM 핵심 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA(Headless Content 및 Commerce)의 통합 패턴을 사용하여 프로젝트 개발을 가속화합니다.
 
 지속적인 혁신을 위해 CIF를 항상 최신 상태를 유지하는 추가 기능으로 빌드하면 고객은 새로운 기능과 개선 사항에 액세스할 수 있습니다.
 

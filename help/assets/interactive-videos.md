@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6186'
+source-wordcount: '6229'
 ht-degree: 3%
-
 ---
-
 # 대화형 비디오{#interactive-videos}
 
 비디오에서 바로 전환을 유도하는 대화형 비디오(구매 가능한 비디오라고도 함)를 쉽게 만들 수 있습니다. 비디오에 대한 고객 참여는 비디오 플레이어와 함께 비디오에 포함된 내용을 기반으로 관련 서비스, 정보 또는 제품 썸네일을 보기 위해 스크롤하는 패널에서 수행됩니다. 고객은 썸네일을 선택하여 서비스에 직접 연결하거나, 제품을 장바구니에 추가하여 즉시 구매하거나, 웹 페이지에 연결하여 자세한 내용을 확인할 수 있습니다.
@@ -33,7 +44,7 @@ ht-degree: 3%
 
 * 비디오를 일시 중지하고 제품의 빠른 보기를 열려면 썸네일을 선택합니다. 예를 들어, 믹서의 360도 회전 보기를 경험하려면 비디오에서 KitchenAid 썸네일 이미지를 선택하고, 믹서 세부 정보를 보려면 확대합니다.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=ko. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![대화형 구매 가능한 비디오의 프레임](assets/chlimage_1-126.png) *대화형 구매 가능한 비디오의 비디오 프레임 캡처*
 
@@ -63,13 +74,13 @@ NOT FOUND; FIND REPLACEMENT
 
 일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 *아직*&#x200B;하지 않은 대화형 활동이 추가된 이 시작 데모 웹 페이지를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 The **Examples** help to illustrate the steps of integrating interactive videos on your own website.
 
 마지막 예제 섹션에서 자습서를 마치면 완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 페이지가 다음과 같이 표시됩니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 대화형 비디오 단계:
 
@@ -153,10 +164,10 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열에 있는 단일 SKU.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL의 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서 썸네일은 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>과(와) 같은 값으로 채워진 SKU 필드만 필요합니다.</p> </td>
   </tr>
   <tr>
@@ -172,9 +183,9 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID.</p> </td>
     <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>이 경우 URL에는 두 가지 다양한 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID는 <code>category=</code> 매개 변수에 저장됩니다.</p> <p>따라서 썸네일 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
       <li>SKU는 <code>305466</code>이고 <code>categoryId</code>은(는) <code>1100004</code></li>
@@ -189,7 +200,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
 위의 접근 방식을 예제 웹 사이트에 적용하면 여러 제품 썸네일이 있는 웹 페이지가 있고 각 페이지에는 &quot;자세히 보기&quot; 버튼이 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 페이지에서 사용할 수 있는 모든 제품 빠른 보기를 활성화하면 백엔드에 수행된 다음 빠른 보기 요청 목록을 가져옵니다.
 
@@ -258,7 +269,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 1. 원하는 폴더에 비디오 및 관련 썸네일 에셋을 업로드합니다.
 
    [자산 업로드](/help/assets/manage-assets.md)를 참조하세요.
-[FTP 작업 일정을 사용하여 자산 업로드](/help/assets/manage-assets.md)를 참조하십시오.
+   [FTP 작업 일정을 사용하여 자산 업로드](/help/assets/manage-assets.md)를 참조하십시오.
 
    이제 상호 작용을 비디오에 추가합니다.
 
@@ -368,9 +379,9 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
      다음 탐색 단축키를 사용하여 비디오 세그먼트를 빠르게 확인하고 세부 조정할 수 있습니다.
 
-      * 해당 세그먼트의 시작 부분까지 직접 비디오를 찾아보려면 앞에 있는 파란색 타원을 선택합니다.
-      * 해당 세그먼트의 끝까지 직접 비디오를 찾아보려면 후행 파란색 타원을 선택합니다.
-      * 비디오 재생을 해당 세그먼트의 시작으로 되돌리려면 전체 세그먼트를 선택합니다.
+     * 해당 세그먼트의 시작 부분까지 직접 비디오를 찾아보려면 앞에 있는 파란색 타원을 선택합니다.
+     * 해당 세그먼트의 끝까지 직접 비디오를 찾아보려면 후행 파란색 타원을 선택합니다.
+     * 비디오 재생을 해당 세그먼트의 시작으로 되돌리려면 전체 세그먼트를 선택합니다.
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -499,7 +510,7 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 
    >[!NOTE]
    >
-   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. `.vtt` 파일이 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
+   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. `.vtt` 파일이 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. 이 파일과 폴더는 대화형 비디오가 웹 사이트에서 올바르게 재생되는 데 필요합니다. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
 1. 대화형 비디오를 게시합니다. 게시하면 포함 코드 또는 URL이 만들어지므로 이를 복사하여 웹 사이트 경험에 붙여넣을 수 있습니다.
 
@@ -543,7 +554,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 데모 웹 사이트 사용 예:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 포함 코드는 표준입니다.
 
@@ -574,7 +585,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 통합은 Experience Manager에서 비디오 포함 코드를 제거하고 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 있는 대화형 비디오를 표시하지만 기존 빠른 보기와 아직 통합되지 않았습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 기존 빠른 보기와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -663,27 +674,27 @@ Experience Manager에서 반환한 포함 코드에는 이미 사용할 준비�
   <tbody>
   <tr>
     <td><p>쿼리 문자열에 있는 단일 SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>URL 경로에 있는 단일 SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -774,7 +785,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 빠른 보기를 사용하여 사용자 정의 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 

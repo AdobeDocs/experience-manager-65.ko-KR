@@ -9,13 +9,27 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 97%
-
 ---
-
 # 일반 AEM Forms 설정 {#general-aem-forms-settings}
 
 관리 콘솔의 핵심 구성 페이지에서는 시스템 성능을 향상하는 데 도움이 되는 설정을 제공합니다. 해당 설정을 구성하거나 업데이트한 후에는 애플리케이션 서버를 다시 시작하십시오.
@@ -43,7 +57,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->임시 디렉터리가 로컬 파일 시스템에 있는지도 확인하십시오. AEM Forms는 원격 위치에 있는 임시 디렉터리를 지원하지 않습니다.
+>임시 디렉터리가 로컬 파일 시스템에 있는지 확인하십시오. AEM Forms는 원격 위치에 있는 임시 디렉터리를 지원하지 않습니다.
 
 **전역 문서 스토리지 루트 디렉터리:** *ndash; 전역 문서 스토리지(GDS) 루트 디렉터리는 다음 목적으로 사용됩니다.
 
@@ -55,7 +69,7 @@ ht-degree: 97%
 >AEM Forms 데이터베이스에서 문서 저장을 활성화할 수도 있습니다. 하지만 GDS를 사용하면 시스템 성능이 더 향상됩니다.
 
 * 클러스터 내 노드 간에 문서를 전송합니다. 클러스터링된 환경에서 AEM Forms를 실행하는 경우 클러스터 내에 있는 모든 노드에서 이 디렉터리에 액세스할 수 있어야 합니다.
-* 원격 API 호출로부터 수신 매개변수를 수신합니다.
+* 원격 API 호출에서 들어오는 매개변수를 수신합니다.
 
 GDS 루트 디렉터리를 지정하지 않으면 디렉터리는 기본적으로 애플리케이션 서버 디렉터리로 설정됩니다.
 
@@ -65,7 +79,7 @@ GDS 루트 디렉터리를 지정하지 않으면 디렉터리는 기본적으�
 
 >[!NOTE]
 >
->GDS 루트 디렉터리 설정 값을 변경하는 작업은 특별히 주의해서 수행해야 합니다. GDS 디렉터리는 프로세스 내에서 사용되는 장기 파일과 중요한 AEM Forms 제품 구성 요소를 모두 저장하는 데 사용됩니다. GDS 디렉터리 위치를 변경하는 것은 주요 시스템을 변경하는 작업입니다. GDS 디렉터리 위치를 잘못 구성하면 AEM Forms가 작동하지 않게 되며 AEM Forms를 완전히 다시 설치해야 할 수도 있습니다. GDS 디렉터리의 새 위치를 지정하는 경우 애플리케이션 서버를 다시 시작하기 전에 해당 서버를 종료하고 데이터를 마이그레이션해야 합니다. 시스템 관리자는 모든 파일을 이전 위치에서 새 위치로 옮겨야 하지만, 내부 디렉터리 구조는 유지해야 합니다.
+>GDS 루트 디렉터리 설정 값을 변경하는 작업은 특별히 주의해서 수행해야 합니다. GDS 디렉터리는 프로세스 내에서 사용되는 장기 파일과 중요한 AEM Forms 제품 구성 요소를 모두 저장하는 데 사용됩니다. GDS 디렉터리 위치를 변경하는 것은 시스템의 중대한 변경입니다. GDS 디렉터리 위치를 잘못 구성하면 AEM Forms가 작동하지 않게 되며 AEM Forms를 완전히 다시 설치해야 할 수도 있습니다. GDS 디렉터리의 새 위치를 지정하는 경우 애플리케이션 서버를 다시 시작하기 전에 해당 서버를 종료하고 데이터를 마이그레이션해야 합니다. 시스템 관리자는 모든 파일을 이전 위치에서 새 위치로 옮겨야 하지만, 내부 디렉터리 구조는 유지해야 합니다.
 
 >[!NOTE]
 >
@@ -81,7 +95,7 @@ GDS 디렉터리에 대한 자세한 내용은 [AEM Forms(단일 서버) 설치 
 
 **시스템 글꼴 디렉터리 위치:** *ndash; 운영 체제에서 제공한 글꼴 디렉터리 경로를 입력합니다. 여러 디렉터리를 세미콜론(**;**)으로 구분하여 추가할 수 있습니다.
 
-**데이터 서비스 구성 파일 위치:** *ndash; services-config. xml 파일의 위치를 지정합니다. 기본적으로 이 파일은 adobe-core-appserver. ear 파일에 임베드되어 있으며 사용자가 액세스할 수 없습니다. 기본 services-config. xml 파일의 사본은 [aem-forms root]\sdk\misc\DataServices\Server-Configuration에 있습니다. 이 파일을 변경하고 이동한 경우 이 필드에 새 위치를 입력합니다.
+**데이터 서비스 구성 파일 위치:** *ndash; services-config. xml 파일의 위치를 지정합니다. 기본적으로 이 파일은 adobe-core-appserver.ear 파일에 임베드되어 있으며 사용자가 액세스할 수 없습니다. 기본 services-config. xml 파일의 사본은 [aem-forms root]\sdk\misc\DataServices\Server-Configuration에 있습니다. 이 파일을 변경하고 이동한 경우 이 필드에 새 위치를 입력합니다.
 
 데이터 서비스 구성 파일을 사용하면 인증 유형 및 디버그 출력과 같은 데이터 서비스 설정을 사용자 정의할 수 있습니다.
 
@@ -103,7 +117,7 @@ GDS 디렉터리에 대한 자세한 내용은 [AEM Forms(단일 서버) 설치 
 
 FIPS 모드는 7.0 이전 버전의 ®에서 사용되는 암호화 알고리즘을 지원하지 않습니다. FIPS 모드가 활성화되어 있고, 암호화 서비스를 사용하여 호환성 수준이 Acrobat 5로 설정된 암호를 사용하여 PDF을 암호화할 경우, 암호화 시도가 실패하고 오류가 발생합니다.
 
-일반적으로 FIPS가 활성화된 경우 어셈블러 서비스는 어떤 문서에도 암호 암호화를 적용하지 않습니다. 이를 시도하면 “FIPS 모드에서는 암호 암호화가 허용되지 않습니다.”라는 FIPSModeException이 발생합니다. 또한 기본 문서가 암호로 암호화된 경우 FIPS 모드에서는 DDX(Document Description XML) PDFsFromBookmarks 요소가 지원되지 않습니다.
+일반적으로 FIPS가 활성화된 경우 어셈블러 서비스는 어떤 문서에도 암호 기반 암호화를 적용하지 않습니다. 이를 시도하면 “FIPS 모드에서는 암호 암호화가 허용되지 않습니다.”라는 FIPSModeException이 발생합니다. 또한 기본 문서가 암호로 암호화된 경우 FIPS 모드에서는 DDX(Document Description XML) PDFsFromBookmarks 요소가 지원되지 않습니다.
 
 >[!NOTE]
 >
@@ -115,7 +129,7 @@ FIPS 모드는 7.0 이전 버전의 ®에서 사용되는 암호화 알고리즘
 
 **데이터베이스에 문서 저장 활성화:** *ndash; 장기 문서를 AEM Forms 데이터베이스에 저장하려면 이 옵션을 선택합니다. 이 옵션을 활성화해도 GDS 디렉터리는 여전히 필요합니다. 하지만 이 옵션을 선택하면 AEM Forms 백업이 간소화됩니다. GDS만 사용하는 경우 백업하려면 AEM forms 시스템을 백업 모드로 전환한 후 데이터베이스와 GDS의 백업을 완료해야 합니다. 데이터베이스 옵션을 선택하면 새로 설치할 때는 데이터베이스 백업을 완료하거나 업그레이드할 때는 데이터베이스 백업과 GDS의 일회성 백업을 완료해야 합니다. GDS만 사용하는 구성에 비해 작업과 데이터를 제거하기 위해 추가적인 데이터베이스 관리가 필요할 수 있습니다. (데이터베이스를 사용하여 문서 저장 시 백업 옵션을 참조하십시오.)
 
-**DSC 호출 통계 활성화:** *ndash; 이 옵션을 선택하면 AEM Forms는 호출 횟수, 호출하는 데 걸린 시간, 호출 시 오류 발생 횟수 등의 호출 통계를 추적합니다. 이 정보는 JMX 빈에 저장되므로 Java™ JConsole이나 타사 소프트웨어를 사용하여 통계를 볼 수 있습니다. 해당 통계를 보지 않으려면 이 옵션을 선택 취소하여 AEM Forms 성능을 향상하십시오.
+**DSC 호출 통계 활성화:** *ndash; 이 옵션을 선택하면 AEM Forms는 호출 횟수, 호출하는 데 걸린 시간, 호출 시 오류 발생 횟수 등의 호출 통계를 추적합니다. 이 정보는 JMX 빈에 저장되므로 Java™ JConsole이나 제3자 소프트웨어를 사용하여 통계를 볼 수 있습니다. 해당 통계를 보지 않으려면 이 옵션을 선택 취소하여 AEM Forms 성능을 향상하십시오.
 
 **RDS 활성화:** *ndash; 이 옵션을 선택하면 AEM Forms 내에서 RDS(Remote Development Services) 서블릿이 활성화됩니다. 이 옵션을 활성화하면 클라이언트측 도구가 데이터 서비스와 상호 작용하여 대상 및 엔드포인트를 만들기 위해 모델을 배포하거나 배포를 취소하는 등의 작업을 수행하거나 어떤 모델이 엔드포인트에 배포되었는지 확인할 수 있습니다. 기본적으로 이 옵션은 선택되어 있지 않습니다.
 

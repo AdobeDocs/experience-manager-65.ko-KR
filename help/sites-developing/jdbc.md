@@ -9,13 +9,22 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
-
 ---
-
 # SQL 데이터베이스에 연결{#connecting-to-sql-databases}
 
 외부 SQL 데이터베이스에 액세스하여 CQ 애플리케이션이 데이터와 상호 작용할 수 있도록 합니다.
@@ -28,7 +37,7 @@ ht-degree: 1%
 
 일부 데이터베이스 공급업체는 OSGi 번들에 JDBC 드라이버를 제공합니다(예: [MySQL](https://dev.mysql.com/downloads/connector/j/)). 데이터베이스의 JDBC 드라이버를 OSGi 번들로 사용할 수 없는 경우 드라이버 JAR를 가져와 OSGi 번들로 래핑합니다. 번들은 데이터베이스 서버와 상호 작용하는 데 필요한 패키지를 내보내야 합니다. 번들이 참조하는 패키지도 가져와야 합니다.
 
-다음 예제에서는 Maven[&#128279;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)용 번들 플러그인을 사용하여 HSQLDB 드라이버를 OSGi 번들로 래핑합니다. POM은 플러그인에 종속성으로 식별되는 hsqldb.jar 파일을 포함하도록 지시합니다. 모든 org.hsqldb 패키지를 내보냅니다.
+다음 예제에서는 Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)용 [번들 플러그인을 사용하여 HSQLDB 드라이버를 OSGi 번들로 래핑합니다. POM은 플러그인에 종속성으로 식별되는 hsqldb.jar 파일을 포함하도록 지시합니다. 모든 org.hsqldb 패키지를 내보냅니다.
 
 플러그인은 가져올 패키지를 자동으로 결정하고 번들의 MANIFEST.MF 파일에 나열합니다. CQ 서버에서 사용할 수 없는 패키지가 있으면 설치 시 번들이 시작되지 않습니다. 두 가지 가능한 해결 방법은 다음과 같습니다.
 

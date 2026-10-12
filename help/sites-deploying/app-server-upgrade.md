@@ -1,18 +1,27 @@
 ---
-title: Application Server 설치 업그레이드 단계
+title: 애플리케이션 서버 설치를 위한 업그레이드 단계
 description: 애플리케이션 서버를 통해 배포된 AEM의 인스턴스를 업그레이드하는 방법에 대해 알아봅니다.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 2%
 ---
-
-# Application Server 설치 업그레이드 단계{#upgrade-steps-for-application-server-installations}
+# 애플리케이션 서버 설치를 위한 업그레이드 단계{#upgrade-steps-for-application-server-installations}
 
 이 섹션에서는 Application Server용 AEM 설치를 업데이트하기 위해 수행해야 하는 절차에 대해 설명합니다.
 

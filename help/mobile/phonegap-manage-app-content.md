@@ -9,13 +9,17 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '692'
 ht-degree: 2%
-
 ---
-
 # 앱 컨텐츠 만들기 및 관리{#creating-and-managing-app-content}
 
 {{ue-over-mobile}}
@@ -28,7 +32,7 @@ ht-degree: 2%
 >
 >**필수 구성 요소**:
 >
->[배포 및 유지 관리](/help/sites-deploying/deploy.md)에서 개발자는 AEM(Adobe Experience Manager)의 시스템 구성 요소와 템플릿에 익숙해졌습니다.
+>[배포 및 유지 관리](/help/sites-deploying/deploy.md)에서 개발자는 Adobe Experience Manager(AEM)의 시스템 구성 요소와 템플릿에 익숙해졌습니다.
 
 ## 페이지 콘텐츠 관리 타일 {#the-manage-page-content-tile}
 
@@ -50,7 +54,7 @@ ht-degree: 2%
 
 참고 *모든 콘텐츠는 콘텐츠입니다*. 즉, 앱 스토어에 방문하지 않고도 애플리케이션 스타일, 복사(텍스트), 미디어, 페이지, 탐색 및 콘텐츠 타겟팅을 모두 편집하고 OTA를 업데이트할 수 있습니다.
 
-AEM Mobile 콘텐츠를 편집하려면 *AEM 작성자 *AEM의 콘텐츠 편집 인터페이스를 잘 이해해야 합니다. [AEM에서 페이지 작성](/help/sites-authoring/qg-page-authoring.md)
+AEM Mobile 콘텐츠를 편집하려면 *AEM 작성자가 AEM의 콘텐츠 편집 인터페이스를 잘 이해해야 합니다. [AEM에서 페이지 작성](/help/sites-authoring/qg-page-authoring.md)
 
 ## 콘텐츠 패키지 관리 타일 {#the-manage-content-packages-tile}
 
@@ -60,7 +64,7 @@ AEM Mobile 콘텐츠를 편집하려면 *AEM 작성자 *AEM의 콘텐츠 편집 
 
 *AEM 작성자*&#x200B;가 콘텐츠 관리 타일을 통해 콘텐츠를 추가하거나 수정하면 *AEM 관리자*&#x200B;가 콘텐츠 패키지를 업데이트하여 이러한 변경 사항을 고객에게 푸시할 수 있습니다.
 
-콘텐츠 패키지 작업을 사용하면 개발 팀이 탐색, 스타일, 서버측 논리, 템플릿 및 구성 요소를 포함한 호스트 응용 프로그램 디자인 및 구현을 변경한 다음 배포를 위해 여러 저장소에 다시 제출하지 않고도 고객에게 해당 변경 사항을 푸시하는 동안 *AEM 작성자*&#x200B;가 페이지 콘텐츠를 만들고 편집할 수 있습니다.
+콘텐츠 패키지 작업을 사용하면 *AEM 작성자*&#x200B;가 페이지 콘텐츠를 만들고 편집할 수 있으며, 개발 팀은 탐색, 스타일, 서버측 논리, 템플릿 및 구성 요소를 포함한 호스트 응용 프로그램 디자인 및 구현을 변경한 다음 다양한 스토어에 배포용으로 다시 제출하지 않아도 해당 변경 사항을 고객에게 푸시할 수 있습니다.
 
 **새 콘텐츠 또는 업데이트된 콘텐츠를 게시하려면**
 
@@ -78,13 +82,13 @@ AEM Mobile 콘텐츠를 편집하려면 *AEM 작성자 *AEM의 콘텐츠 편집 
 
 >[!NOTE]
 >
->게시 전에 AEM Verify 앱을 사용하여 스테이징된 콘텐츠를 확인할 수 있습니다.
+>게시 전에 AEM Verify 앱을 사용하여 준비된 콘텐츠를 확인할 수 있습니다.
 >
->AEM 확인 앱에 대한 자세한 내용은 [AEM 확인을 위한 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md)을 참조하십시오.
+>AEM 확인 앱에 대한 자세한 내용은 [AEM 확인용 모바일 빠른 시작](/help/mobile/phonegap-mobile-quickstart.md)을 참조하십시오.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Content Sync OTA를 사용하여 앱 사용자에게 새 콘텐츠를 전달할 준비가 되면 아래와 같이 **Publish**&#x200B;을(를) 선택합니다.
+Content Sync OTA를 사용하여 앱 사용자에게 새 콘텐츠를 전달할 준비가 되면 아래와 같이 **게시**&#x200B;를 선택합니다.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

@@ -9,13 +9,20 @@ exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '520'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티 사이트 기본 사항 {#community-site-essentials}
 
 ## 사용자 지정 사이트 템플릿 {#custom-site-template}
@@ -72,13 +79,13 @@ ht-degree: 1%
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-**모두 저장**&#x200B;하고 사용자 지정 코드를 모든 Adobe Experience Manager(AEM) 인스턴스에 복제하십시오(사용자 지정 코드는 커뮤니티 사이트 콘텐츠가 콘솔에서 게시될 때 포함되지 않음).
+**모두 저장**&#x200B;하고 사용자 지정 코드를 모든 Adobe Experience Manager(AEM) 인스턴스에 복제하십시오(콘솔에서 커뮤니티 사이트 콘텐츠를 게시할 때 사용자 지정 코드는 포함되지 않음).
 
 사용자 지정 코드를 복제하는 데 권장되는 방법은 [패키지를 만들고](../../help/sites-administering/package-manager.md#creating-a-new-package) 모든 인스턴스에 배포하는 것입니다.
 
 ## 커뮤니티 사이트 내보내기 {#exporting-a-community-site}
 
-커뮤니티 사이트가 생성되면 패키지 관리자에 저장된 AEM 패키지로 사이트를 내보내고 다운로드 및 업로드할 수 있습니다.
+커뮤니티 사이트가 생성되면 패키지 관리자에 저장되어 다운로드 및 업로드에 사용할 수 있는 AEM 패키지로 사이트를 내보낼 수 있습니다.
 
 [커뮤니티 사이트 콘솔](sites-console.md#exporting-the-site)에서 사용할 수 있습니다.
 
@@ -106,9 +113,9 @@ CRXDE를 사용하여 커뮤니티 사이트와 연결된 고유한 사이트 ID
 
   예를 들어 `rep:principalName = community-enable-nrh9h-members`인 경우
 
-   * **사이트 이름** = *활성화*
-   * **사이트 ID** = *nrh9h*
-   * **고유 사이트 ID** = *enable-nrh9h*
+  * **사이트 이름** = *활성화*
+  * **사이트 ID** = *nrh9h*
+  * **고유 사이트 ID** = *enable-nrh9h*
 
 ### 사용자 생성 컨텐츠 {#user-generated-content}
 

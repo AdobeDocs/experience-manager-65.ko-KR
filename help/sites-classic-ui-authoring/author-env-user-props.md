@@ -10,25 +10,34 @@ exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 34%
-
+source-wordcount: '229'
+ht-degree: 42%
 ---
-
 # 계정 환경 구성{#configuring-your-account-environment}
 
 Adobe Experience Manager(AEM)에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 
 [계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences)을 사용하여 다음 옵션과 환경 설정을 정의할 수 있습니다.
 
-* **도구 모음 편집**
+* **편집 도구 모음**
 전역 편집 도구 모음을 사용할지 여부를 선택합니다. 브라우저 창의 맨 위에 표시되는 이 도구 모음은 해당 페이지의 단락 구성 요소와 함께 사용할 수 있는 **복사**, **잘라내기**, **붙여넣기**, **삭제** 단추를 제공합니다.
 
-   * 필요 시 표시(기본값)
-   * 항상 표시
-   * 숨김 상태로 유지
+  * 필요 시 표시(기본값)
+  * 항상 표시
+  * 숨김 상태로 유지
 
 * **다음 사용자로 가장**
 [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자가 다른 사용자를 대신하여 작업할 수 있습니다.
@@ -39,10 +48,10 @@ Adobe Experience Manager(AEM)에서는 계정과, 작성 환경의 특정 측면
 * **창 관리**
 다음 중 하나를 선택합니다.
 
-   * 여러 창(기본값)
-페이지가 새 창에서 열립니다.
-   * 단일 창
-페이지가 현재 창에서 열립니다.
+  * 여러 창(기본값)
+    페이지가 새 창에 열립니다.
+  * 단일 창
+    현재 창에 페이지가 열립니다.
 
 ## 계정 설정 {#account-settings}
 

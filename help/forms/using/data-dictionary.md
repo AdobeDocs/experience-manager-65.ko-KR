@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
-
 ---
-
 # 데이터 사전{#data-dictionary}
 
 ## 소개 {#introduction}
@@ -199,7 +212,7 @@ ht-degree: 1%
 1. 데이터 항목을 만든 후 테스트 데이터가 있는 문자를 미리 볼 때 이 XML 파일을 사용할 수 있습니다.
 
    DD를 사용하여 이 테스트 데이터를 추가할 수 있습니다(DD 선택 및 테스트 데이터 업로드 선택 및 이 xml 파일 업로드)
-따라서 이후에 편지를 일반적으로 미리 볼 때(사용자 지정 아님) 이 XML 데이터가 편지에 사용됩니다. 사용자 지정을 선택한 다음 이 XML을 업로드할 수도 있습니다.
+   따라서 이후에 편지를 일반적으로 미리 볼 때(사용자 지정 아님) 이 XML 데이터가 편지에 사용됩니다. 사용자 지정을 선택한 다음 이 XML을 업로드할 수도 있습니다.
 
 ## 샘플 {#samples}
 

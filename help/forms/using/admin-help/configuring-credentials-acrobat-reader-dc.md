@@ -9,13 +9,27 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
-
 ---
-
 # Acrobat Reader DC 확장 프로그램에서 사용할 자격 증명 구성{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
 PDF 문서에 사용 권한을 적용하려면 Acrobat Reader DC 확장 프로그램에 유효한 자격 증명으로 AEM Forms를 구성합니다. AEM Forms를 설치하는 동안 자격 증명이 구성되었을 수 있습니다. 구성 관리자를 실행하는 동안 Acrobat Reader DC 확장 프로그램 자격 증명을 구성하지 않았거나 새 자격 증명 또는 교체 자격 증명을 가져와야 하는 경우 Trust Store 관리 페이지에서 해당 작업을 수행할 수 있습니다.
@@ -27,13 +41,13 @@ PDF 문서에 사용 권한을 적용하려면 Acrobat Reader DC 확장 프로�
 Trust Store에는 두 개 이상의 Acrobat Reader DC 확장 프로그램 자격 증명이 포함될 수 있습니다. 해당 자격 증명 중 하나를 기본 Reader 확장 프로그램 자격 증명으로 지정합니다. 기본 자격 증명은 워크벤치 사용자가 프로세스 생성 중에 어떤 자격 증명을 사용해야 할지를 결정할 수 없는 경우에 사용됩니다. 다음 규칙은 기본 자격 증명에 적용됩니다.
 
 * Acrobat Reader DC 확장 프로그램 자격 증명을 가져오고 Trust Store에 다른 Acrobat Reader DC 확장 프로그램 자격 증명이 없으면 해당 자격 증명이 기본값으로 설정됩니다.
-* 기본 옵션을 선택하여 Acrobat Reader DC 확장 프로그램 자격 증명을 가져오면 기존 기본 자격 증명에서 기본 유형이 제거되고 가져온 자격 증명이 기본값이 됩니다.
+* 기본 옵션을 선택하여 Acrobat Reader DC 확장 프로그램 자격 증명을 가져오면 기존 기본 자격 증명에서 기본 유형이 제거됩니다. 가져온 자격 증명이 기본값이 됩니다.
 * 기본 Acrobat Reader DC 확장 프로그램 자격 증명은 삭제할 수 없습니다. 기본 자격 증명을 삭제하려면 먼저 다른 자격 증명을 기본값으로 설정하십시오. 이 규칙은 자격 증명이 하나뿐인 경우 기본값이더라도 삭제할 수 있다는 예외가 있습니다.
 * 기본 Acrobat Reader DC 확장 프로그램 자격 증명은 업데이트할 수 없습니다.
 
 >[!NOTE]
 >
->자격 증명을 프로그래밍 방식으로 가져오거나 삭제할 수도 있습니다. ([AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)을 참조하십시오.)
+>자격 증명을 프로그래밍 방식으로 가져오거나 삭제할 수도 있습니다. ([AEM Forms를 사용한 프로그래밍](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)을 참조하십시오.)
 
 ## Acrobat Reader DC 확장 프로그램 자격 증명 가져오기 {#import-a-acrobat-reader-dc-extensions-credential}
 

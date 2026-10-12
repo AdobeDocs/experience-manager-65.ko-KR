@@ -1,5 +1,5 @@
 ---
-title: 여러 XDP 조각 어셈블
+title: 여러 XDP 조각 구성
 description: Java API 및 웹 서비스 API를 사용하여 여러 XDP 조각을 단일 XDP 문서로 조합합니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,28 @@ role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 1%
-
 ---
-
-# 여러 XDP 조각 어셈블{#assembling-multiple-xdp-fragments}
+# 여러 XDP 조각 구성{#assembling-multiple-xdp-fragments}
 
 여러 XDP 조각을 단일 XDP 문서로 조합할 수 있습니다. 예를 들어 각 XDP 파일에 상태 양식을 만드는 데 사용되는 하나 이상의 하위 양식이 포함된 XDP 조각을 고려해 보십시오. 다음 그림은 개요 보기를 보여 줍니다(*여러 XDP 조각 조합* 빠른 시작에 사용된 tuc018_template_flow.xdp 파일을 나타냄).
 
@@ -176,8 +190,8 @@ DDX 문서에 결과의 이름을 지정하는 XDP `result` 태그가 있습니�
    * `com.adobe.idp.Document` 개체를 만들고 입력 XDP 파일이 포함된 `java.io.FileInputStream` 개체를 전달합니다(각 XDP 파일에 대해 이 작업을 반복합니다).
    * `put` 메서드를 호출하고 다음 인수를 전달하여 `java.util.Map` 개체에 항목을 추가합니다.
 
-      * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 `source` 요소 값과 일치해야 합니다(각 XDP 파일에 대해 이 작업을 반복합니다).
-      * `source` 요소에 해당하는 XDP 문서가 포함된 `com.adobe.idp.Document` 개체입니다(각 XDP 파일에 대해 이 작업을 반복합니다).
+     * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 `source` 요소 값과 일치해야 합니다(각 XDP 파일에 대해 이 작업을 반복합니다).
+     * `source` 요소에 해당하는 XDP 문서가 포함된 `com.adobe.idp.Document` 개체입니다(각 XDP 파일에 대해 이 작업을 반복합니다).
 
 1. 런타임 옵션을 설정합니다.
 
@@ -233,10 +247,10 @@ DDX 문서에 결과의 이름을 지정하는 XDP `result` 태그가 있습니�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 해당 암호 값을 `AssemblerServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
-      * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 `HttpClientCredentialType.Basic` 상수 값을 할당합니다.
-      * `BasicHttpBindingSecurity.Security.Mode` 필드에 `BasicHttpSecurityMode.TransportCredentialOnly` 상수 값을 할당합니다.
+     * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 해당 암호 값을 `AssemblerServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
+     * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 `HttpClientCredentialType.Basic` 상수 값을 할당합니다.
+     * `BasicHttpBindingSecurity.Security.Mode` 필드에 `BasicHttpSecurityMode.TransportCredentialOnly` 상수 값을 할당합니다.
 
 1. 기존 DDX 문서를 참조합니다.
 

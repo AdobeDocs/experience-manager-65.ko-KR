@@ -1,18 +1,29 @@
 ---
 title: 참조 및 여러 페이지를 사용하여 복합 에셋 관리
-description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
+description: '[!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 디지털 에셋에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # 조합 및 다중 페이지 자산 관리 {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets]은(는) 업로드된 파일에 저장소에 이미 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 형식에만 사용할 수 있습니다. 업로드된 에셋에 [!DNL Experience Manager]개의 에셋에 대한 참조가 포함된 경우 업로드된 에셋과 참조된 에셋 사이에 양방향 링크가 만들어집니다.
@@ -27,7 +38,7 @@ ht-degree: 0%
 
 [!DNL Adobe Illustrator] 파일 내에서 기존 디지털 자산을 참조할 수 있습니다.
 
-1. [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
+1. [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더에서 [!DNL Illustrator] 파일로 자산을 끌어 옵니다.
 
 1. 탑재된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [!DNL Experience Manager] 저장소에 [업로드](/help/assets/manage-assets.md#uploading-assets)하십시오.
@@ -65,14 +76,14 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 ### ZIP 파일을 내보내어 에셋에 대한 참조 만들기 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. [워크플로 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행하여 워크플로를 만듭니다.
-1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/kr/indesign/how-to/indesign-package-files-for-handoff.html)을(를) 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign]에서 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 같은 폴더에 있습니다.
+1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)을(를) 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign]에서 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 같은 폴더에 있습니다.
 1. ZIP 파일을 만들어 [!DNL Experience Manager] 리포지토리에 업로드합니다.
 1. `Unarchiver` 워크플로를 시작합니다.
 1. 워크플로우가 완료되면 링크 폴더의 참조가 자동으로 하위 자산으로 참조됩니다. 참조된 자산 목록을 보려면 [!DNL InDesign] 자산의 자산 세부 정보 페이지로 이동하여 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫으십시오.
 
 ## [!DNL Adobe Photoshop]: 디지털 에셋을 참조로 추가 {#refps}
 
-1. [!DNL Experience Manager] 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스하세요. 로컬 파일 시스템에서 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용하십시오. [데스크톱 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#place-assets-in-native-documents)를 참조하십시오.
+1. [!DNL Experience Manager] 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스하세요. 로컬 파일 시스템에서 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용하십시오. [데스크톱 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)를 참조하십시오.
 
 1. 탑재된 드라이브에 [!DNL Photoshop] 파일을 저장하거나 [!DNL Experience Manager] 저장소에 [업로드](/help/assets/manage-assets.md#uploading-assets)하십시오.
 1. 워크플로우가 완료되면 기존 [!DNL Experience Manager]개의 자산에 대한 참조가 자산 세부 정보 페이지에 나열됩니다.
@@ -125,7 +136,7 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 
 다음 옵션은 도구 모음, 왼쪽 레일 및 페이지 뷰어 컨트롤에서 사용할 수 있습니다.
 
-* [!DNL Experience Manager] 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시하는 **[!UICONTROL 데스크톱 작업]**. [!DNL Experience Manager] 데스크톱 앱을 사용하는 경우 [데스크톱 작업을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#desktopactions-v2)을 참조하세요.
+* [!DNL Experience Manager] 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시하는 **[!UICONTROL 데스크톱 작업]**. [!DNL Experience Manager] 데스크톱 앱을 사용하는 경우 [데스크톱 작업을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)을 참조하세요.
 
 * **[!UICONTROL 속성]** 옵션을 사용하면 특정 하위 자산의 [!UICONTROL 속성] 페이지가 열립니다.
 
@@ -141,7 +152,7 @@ INDD 파일이 업로드되면 저장소에 `xmpMM:InstanceID` 및 `xmpMM:Docume
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크톱 앱 사용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko)
->* [Adobe Experience Manager에서 데스크톱 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#desktopactions-v2)
->* [Adobe Photoshop에서 연결된 스마트 개체 만들기](https://helpx.adobe.com/kr/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/kr/indesign/using/placing-graphics.html)
+>* [Adobe Experience Manager 데스크톱 앱 사용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Adobe Experience Manager에서 데스크톱 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Adobe Photoshop에서 연결된 스마트 개체 만들기](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)

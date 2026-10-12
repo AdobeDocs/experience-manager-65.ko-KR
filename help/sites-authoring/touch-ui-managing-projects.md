@@ -9,13 +9,26 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 20%
-
 ---
-
 
 # 프로젝트 관리 {#managing-projects}
 
@@ -99,7 +112,7 @@ ht-degree: 20%
 
 프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 다음 단계를 따르십시오.
 
-1. **프로젝트** 콘솔의 왼쪽 상단에 있는 레일 선택기에서 **타임라인**&#x200B;을 클릭합니다.
+1. **프로젝트** 콘솔의 왼쪽 상단에 있는 레일 선택기에서 **타임라인**을 클릭합니다.
    ![타임라인 모드 선택](assets/projects-timeline-rail.png)
 2. 콘솔에서 타임라인을 보려는 프로젝트를 선택합니다.
    ![프로젝트 타임라인 보기](assets/project-timeline-view.png)

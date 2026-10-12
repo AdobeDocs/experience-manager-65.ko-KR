@@ -9,18 +9,36 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: beb40e8e83b52b60d68dffecb95f3d877a47d397
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 5%
-
 ---
-
 # AEM 6.5 Forms로 업그레이드 {#upgrade-to-aem-forms}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -61,7 +79,7 @@ AEM 6.5 Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자 경
 * JEE의 AEM 6.1 Forms
 * JEE의 AEM 6.2 Forms
 
-JEE의 AEM 6.5.18.0 Forms에서는 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko).
+JEE의 AEM 6.5.18.0 Forms에서는 두 가지 유형의 설치 관리자를 제공합니다. [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 및 [패치 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **전체 설치 관리자**: 전체 설치 관리자를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.18.0 Forms으로 업그레이드할 수 있습니다.
 
@@ -71,7 +89,7 @@ JEE의 AEM 6.5.18.0 Forms에서는 두 가지 유형의 설치 관리자를 제�
 
 ![전체 설치 관리자 및 패치 설치 관리자](/help/forms/using/assets/full-and-patch-installer.png)
 
-JEE 환경의 최신 서비스 팩을 설치하려면 [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko) 문서를 참조하십시오.
+JEE 환경의 최신 서비스 팩을 설치하려면 [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) 문서를 참조하십시오.
 
 <!--
 [Work in Progress]

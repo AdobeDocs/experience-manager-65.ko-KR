@@ -10,13 +10,22 @@ exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1461'
 ht-degree: 1%
-
 ---
-
 # Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑{#mapping-component-data-with-adobe-analytics-properties}
 
 Adobe Analytics으로 전송할 데이터를 수집하는 프레임워크에 구성 요소를 추가합니다. 분석 데이터를 수집하도록 디자인된 구성 요소는 데이터를 적절한 **CQ 변수**&#x200B;에 저장합니다. 프레임워크에 이러한 구성 요소를 추가하면 프레임워크는 해당 **Analytics 변수**&#x200B;에 각각 액세스할 수 있도록 CQ 변수 목록을 표시합니다.
@@ -180,25 +189,26 @@ Analytics 변수를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하
 
    * **트래픽**:
 
-      * CQ 변수( `eventdata.downloadLink`)에 매핑된 트래픽 변수( `prop1`)
+     * CQ 변수( `eventdata.downloadLink`)에 매핑된 트래픽 변수( `prop1`)
 
-      * 구성 요소 옆에 자물쇠가 있으면 상위 프레임워크에서 상속되었으므로 구성 요소를 편집할 수 없습니다
+     * 구성 요소 옆에 자물쇠가 있으면 상위 프레임워크에서 상속되었으므로 구성 요소를 편집할 수 없습니다
 
    * **전환**:
 
-      * CQ 변수( `pagedata.title`)에 매핑된 전환 변수( `eVar1`)
+     * CQ 변수( `pagedata.title`)에 매핑된 전환 변수( `eVar1`)
 
-      * CQ 변수 필드를 두 번 클릭하고 코드를 수동으로 입력하여 JavaScript 식에 매핑된 전환 변수(`eVar3`)가 인라인으로 추가되었습니다
+     * CQ 변수 필드를 두 번 클릭하고 코드를 수동으로 입력하여 JavaScript 식에 매핑된 전환 변수(`eVar3`)가 인라인으로 추가되었습니다
 
    * **이벤트**:
 
-      * CQ 이벤트( `eventdata.events.pageView`)에 매핑된 이벤트 변수( `event1`)
+     * CQ 이벤트( `eventdata.events.pageView`)에 매핑된 이벤트 변수( `event1`)
 
 >[!NOTE]
 >
 >필드를 두 번 클릭하고 텍스트를 추가하여 테이블의 CQ 변수 열도 인라인으로 채울 수 있습니다. 이러한 필드는 JavaScript을 입력으로 받아들입니다.
 >
->예를 들어 `prop3` 옆에 > `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`을(를) 추가할 수 있습니다.\
+>예를 들어 `prop3` 옆에 다음을 추가할 수 있습니다.
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >*:*(콜론)을 사용하여 *sitesection*&#x200B;과(와) 연결된 페이지의 *title*&#x200B;을(를) 보내고 `prop3`(으)로 *Adobe* 접두사가 추가됨
 >
 

@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '921'
 ht-degree: 0%
-
 ---
-
 # AEM Forms 서버의 성능 조정{#performance-tuning-of-aem-forms-server}
 
 이 문서에서는 병목 현상을 줄이고 AEM Forms 배포의 성능을 최적화하기 위해 구현할 수 있는 전략과 모범 사례에 대해 설명합니다.
@@ -146,26 +160,26 @@ Apache는 HTTP 프로토콜을 사용하여 CRX과 통신할 수 있습니다. �
 
 * AEM 설치 디렉토리. 전체 디렉토리를 제외할 수 없는 경우 다음을 제외합니다.
 
-   * [AEM 설치 디렉터리]\crx-repository\temp
-   * [AEM 설치 디렉터리]\crx-repository\repository
-   * [AEM 설치 디렉터리]\crx-repository\launchpad
+  * [AEM 설치 디렉터리]\crx-repository\temp
+  * [AEM 설치 디렉터리]\crx-repository\repository
+  * [AEM 설치 디렉터리]\crx-repository\launchpad
 
 * 응용 프로그램 서버 임시 디렉터리. 기본 위치:
 
-   * (JBoss®) [AEM 설치 디렉터리]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [AEM 설치 디렉터리]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(JEE의 AEM Forms만 해당)** GDS(Global Document Storage) 디렉터리. 기본 위치:
 
-   * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+  * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(JEE의 AEM Forms 전용)** AEM Forms 서버 로그 및 임시 디렉터리. 기본 위치:
 
-   * 서버 로그 - [AEM Forms 설치 디렉터리]\Adobe\AEM forms\[app-server]\server\all\logs
-   * 임시 디렉터리 - [AEM Forms 설치 디렉터리]\temp
+  * 서버 로그 - [AEM Forms 설치 디렉터리]\Adobe\AEM forms\[app-server]\server\all\logs
+  * 임시 디렉터리 - [AEM Forms 설치 디렉터리]\temp
 
 >[!NOTE]
 >

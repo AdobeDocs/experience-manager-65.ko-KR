@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
-
 ---
-
 # 커뮤니티 알림 {#communities-notifications}
 
 ## 개요 {#overview}
@@ -34,13 +41,13 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 
 * 알림 섹션에 대한 링크는 항상 커뮤니티 사이트의 헤더에 있습니다.
 
-   * 활동을 사용하려면 [활동 스트림 함수](/help/communities/functions.md#activity-stream-function)가 커뮤니티 사이트의 구조에 포함되어야 합니다.
-   * 구독을 사용하려면 [전자 메일 구성](/help/communities/email.md)이 필요합니다.
+  * 활동을 사용하려면 [활동 스트림 함수](/help/communities/functions.md#activity-stream-function)가 커뮤니티 사이트의 구조에 포함되어야 합니다.
+  * 구독을 사용하려면 [전자 메일 구성](/help/communities/email.md)이 필요합니다.
 
 * 알림은 확장 가능하고 플러그할 수 있는 채널을 통해 구현됩니다.
 
-   * 활동은 웹에서만 사용할 수 있습니다.
-   * 구독은 이메일을 통해서만 사용할 수 있습니다.
+  * 활동은 웹에서만 사용할 수 있습니다.
+  * 구독은 이메일을 통해서만 사용할 수 있습니다.
 
 커뮤니티 [FP1](/help/communities/deploy-communities.md#latestfeaturepack)부터 사용 가능한 알림 채널은 다음과 같습니다.
 
@@ -80,11 +87,11 @@ AEM Communities은 로그인한 커뮤니티 구성원의 관심 이벤트를 �
 * 다른 구성원의 프로필을 볼 때
 * 포럼, QnA 및 블로그 등 주요 기능 페이지에서:
 
-   * 해당 일반 기능에 대한 모든 활동을 따릅니다.
+  * 해당 일반 기능에 대한 모든 활동을 따릅니다.
 
 * 포럼 주제, QnA 질문 또는 블로그 문서와 같은 특정 항목의 경우:
 
-   * 해당 특정 항목에 대한 모든 활동을 따릅니다.
+  * 해당 특정 항목에 대한 모든 활동을 따릅니다.
 
 ## 알림 설정 관리 {#managing-notification-settings}
 

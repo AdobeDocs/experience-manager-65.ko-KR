@@ -9,7 +9,17 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2961'
 ht-degree: 2%
@@ -166,7 +176,7 @@ Adobe Experience Manager(AEM) 일반 솔루션은 외부 전자 상거래 엔진
 >
 >`/etc/commerce/products/...`
 >
->즉, 기본적으로 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)에 의해 차단되므로 필요에 따라 구성합니다.
+>즉, 기본적으로 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)에 의해 차단되므로 필요에 따라 구성합니다.
 
 #### 제품 정보 편집 - 터치에 적합한 UI {#editing-product-information-touch-optimized-ui}
 
@@ -415,7 +425,7 @@ CRXDE Lite을 사용하여 기존 Facet을 수정하거나 새 Facet을 추가�
    ![더하기 기호](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. [미리 보기](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) 모드로 전환합니다.
-1. &#x200B;+ 핫스팟을 클릭합니다. **경로**&#x200B;에서 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다.
+1. + 핫스팟을 클릭합니다. **경로**&#x200B;에서 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다.
 
    ![제품 예: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 

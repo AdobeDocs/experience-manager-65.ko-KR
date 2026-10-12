@@ -9,13 +9,29 @@ exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
-
+source-wordcount: '1613'
+ht-degree: 2%
 ---
-
 # 적응형 양식에 대한 A/B 테스트 만들기 및 관리{#create-and-manage-a-b-test-for-adaptive-forms}
 
 [!BADGE 중단됨]{type=negative tooltip="이 기능은 현재 사용 중단되었습니다."}
@@ -26,7 +42,7 @@ ht-degree: 0%
 
 고객이 제공하는 경험이 매력적이지 않을 경우 양식을 포기할 가능성이 높습니다. 고객에게는 번거로운 일이지만, 조직의 지원 규모와 비용도 증가할 수 있습니다. 전환율을 높이는 올바른 고객 경험을 파악하고 제공하는 것은 중요하고 어려운 일입니다. Adobe Experience Manager Forms이 이 문제의 열쇠를 쥐고 있다.
 
-AEM Forms은 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Target의 주요 기능 중 하나는 동시 A/B 테스트를 빠르게 설정하고, 타겟팅된 사용자에게 관련 콘텐츠를 제공하고, 더 나은 전환율을 유도하는 경험을 식별할 수 있는 A/B 테스트입니다.
+AEM Forms은 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 흥미로운 고객 경험을 제공합니다. Target의 주요 기능 중 하나는 동시 A/B 테스트를 빠르게 설정하고, 타겟팅된 사용자에게 관련 콘텐츠를 제공하고, 더 나은 전환율을 유도하는 경험을 식별할 수 있는 A/B 테스트입니다.
 
 Adobe Experience Manager(AEM) Forms을 사용하면 적응형 양식에 대한 A/B 테스트를 실시간으로 설정하고 실행할 수 있습니다. 또한 양식 경험의 실시간 성능을 시각화하고 사용자 참여 및 전환을 최대화하는 기능을 식별하는 기본 제공 및 사용자 지정 가능한 보고 기능을 제공합니다.
 
@@ -57,12 +73,12 @@ AEM을 Target과 통합하려면 유효한 Adobe Target 계정이 있는지 확�
 
 1. [프레임워크 추가](/help/sites-administering/target.md)에 설명된 대로 Target 프레임워크를 만듭니다.
 
-1. https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr로 이동합니다.
+1. https://<*hostname*>:<*port*>/system/console/configMgr로 이동합니다.
 
 1. **AEM Forms 대상 구성**&#x200B;을 클릭합니다.
 1. **대상 프레임워크**&#x200B;를 선택하십시오.
 1. **대상 URL** 필드에 A/B 테스트가 실행되는 모든 URL을 지정합니다. 예를 들어, OSGi의 AEM Forms 서버용 https://&lt;*호스트 이름*>:&lt;*포트*>/ 또는 JEE의 AEM Forms 서버용 https://&lt;*호스트 이름*>:&lt;*포트*>/lc/ 입니다.
-Publish 인스턴스에 대한 Target URL을 구성하려고 하며, 고객이 호스트 이름 또는 IP 주소를 사용하여 해당 URL에 액세스할 수 있습니다. 이 경우 호스트 이름과 IP 주소를 사용하여 두 를 모두 Target URL로 구성해야 합니다. URL 중 하나만 구성하는 경우 다른 URL에서 온 고객에 대해서는 A/B 테스트가 실행되지 않습니다. 여러 URL을 지정하려면 **+**&#x200B;을(를) 클릭하십시오.
+게시 인스턴스에 대한 Target URL을 구성하려고 하며, 고객이 호스트 이름 또는 IP 주소를 사용하여 해당 URL에 액세스할 수 있습니다. 이 경우 호스트 이름과 IP 주소를 사용하여 두 를 모두 Target URL로 구성해야 합니다. URL 중 하나만 구성하는 경우 다른 URL에서 온 고객에 대해서는 A/B 테스트가 실행되지 않습니다. 여러 URL을 지정하려면 **+**&#x200B;을(를) 클릭하십시오.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -85,7 +101,7 @@ JBoss® 서버 외에 모든 애플리케이션 서버의 서버 시작 스크�
 
 ## AEM 내에서 대상 만들기 {#create-audiences-within-aem}
 
-AEM을 사용하면 대상을 만들고 A/B 테스트에 사용할 수 있습니다. AEM 내에서 생성하는 대상자는 AEM Forms에서 사용할 수 있습니다. AEM 내에서 대상을 만들려면 다음을 수행하십시오.
+AEM을 사용하면 대상을 만들고 A/B 테스트에 사용할 수 있습니다. AEM 내에서 만드는 대상자는 AEM Forms에서 사용할 수 있습니다. AEM 내에서 대상을 만들려면 다음을 수행하십시오.
 
 1. 제작 인스턴스에서 **Adobe Experience Manager** > **Personalization** > **대상**&#x200B;을 선택합니다.
 
@@ -103,13 +119,13 @@ AEM을 사용하면 대상을 만들고 A/B 테스트에 사용할 수 있습니
 
 ## 적응형 양식에 대한 A/B 테스트 만들기 {#create-a-b-test}
 
-1. https://&lt;*호스트 이름*>:&lt;*포트*>/aem/forms.html/content/dam/formsanddocuments에서 **Forms 및 문서**(으)로 이동합니다.
+1. https://<*호스트 이름*>:<*포트*>/aem/forms.html/content/dam/formsanddocuments에서 **Forms 및 문서**(으)로 이동합니다.
 
 1. 적응형 양식이 포함된 폴더로 이동합니다.
 1. 도구 모음에서 **선택** 도구를 클릭하고 적응형 양식을 선택합니다.
 1. 도구 모음에서 **자세히**&#x200B;를 클릭하고 **A/B 테스트 구성**&#x200B;을 선택합니다. A/B 테스트 구성 페이지가 열립니다.
 
-[&#128279;](assets/ab-test-configure-1.png)
+[![적응형 양식에 대한 A/B 테스트 구성 페이지](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. A/B 테스트를 위해 **활동 이름**&#x200B;을(를) 지정하십시오.
 
@@ -126,7 +142,7 @@ AEM을 사용하면 대상을 만들고 A/B 테스트에 사용할 수 있습니
    * 필드에 대한 설명, 레이블 및 도움말 텍스트
    * 제출 흐름에 영향을 주거나 중단되지 않는 스크립트
    * 유효성 검사(클라이언트와 서버 측 모두)
-   * 경험 B의 테마(경험 B에 대한 대체 테마를 선택할 수 있음)
+   * 경험 B를 위한 테마. (경험 B에 대한 대체 테마를 선택할 수 있습니다.)
 
 1. Forms 및 문서 UI로 이동하여 적응형 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 시작**&#x200B;을 선택합니다.
 
@@ -153,7 +169,7 @@ A/B 테스트 보고서를 보고 분석하려면 다음 작업을 수행하십�
 
 1. 적응형 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서**&#x200B;를 클릭합니다. 보고서가 표시됩니다.
 
-[&#128279;](assets/ab-test-report-3.png)
+[![A/B 테스트 보고서](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. 보고서를 분석하여 성과가 더 좋은 경험 중 하나를 우승자로 선언하기에 충분한 데이터 포인트가 있는지 확인합니다. 동일한 A/B 테스트를 더 오랫동안 계속하도록 선택하거나 우승자를 선언하고 A/B 테스트를 종료할 수 있습니다.
 1. 우승자를 선언하고 A/B 테스트를 종료하려면 보고 대시보드의 **A/B 테스트 종료** 단추를 클릭하십시오. 대화 상자에 두 경험 중 하나를 우승자로 선언하라는 메시지가 표시됩니다. 우승자를 선택하고 A/B 테스트 종료를 확인합니다.

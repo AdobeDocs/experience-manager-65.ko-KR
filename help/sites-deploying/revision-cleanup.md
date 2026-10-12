@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 1%
-
 ---
-
 # 개정 정리{#revision-cleanup}
 
 ## 소개 {#introduction}
@@ -24,7 +33,7 @@ ht-degree: 1%
 
 AEM 6.3 이상에서는 온라인 수정 정리 라는 이 기능의 온라인 버전이 도입되었습니다. AEM 인스턴스를 종료해야 하는 오프라인 개정 정리와 비교하여 온라인 개정 정리는 AEM 인스턴스가 온라인 상태일 때 실행할 수 있습니다. 온라인 개정 정리는 기본적으로 켜져 있으며 개정 정리를 수행하는 데 권장되는 방법입니다.
 
-**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=ko)에서 소개 및 온라인 수정 정리 사용 방법을 확인하십시오.
+**참고**: [비디오 보기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html)에서 소개 및 온라인 수정 정리 사용 방법을 확인하십시오.
 
 수정 정리 프로세스는 **estimation**, **압축** 및 **정리**&#x200B;의 세 단계로 구성됩니다. 예상 값은 수집된 가비지 양을 기반으로 다음 단계(압축)를 실행할지 여부를 결정합니다. 압축 단계 세그먼트 및 tar 파일은 사용되지 않은 콘텐츠를 제외하고 다시 작성됩니다. 그런 다음 정리 단계에서는 포함될 수 있는 쓰레기를 포함한 이전 세그먼트를 제거합니다. 오프라인 모드는 추가 세그먼트가 수집되지 않도록 유지하는 AEM의 작업 세트를 고려해야 하므로 일반적으로 더 많은 공간을 확보할 수 있습니다.
 
@@ -252,7 +261,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 수정 버전 정리 기간을 결정하는 요소는 무엇입니까?</strong></td>
-   <td>요소는 <br />입니다.
+   <td>요인은 다음과 같습니다.<br />
     <ul>
      <li>저장소 크기</li>
      <li>시스템 로드(분당 요청, 특히 쓰기 작업)</li>
@@ -465,7 +474,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>상태 검사 및 로그 항목에 따르면 온라인 수정 정리 가 세 번 연속 완료되지 않았습니다. 온라인 개정 정리를 성공적으로 완료하는 데 필요한 사항은 무엇입니까?</strong></td>
-   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다. <br />
+   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다.<br />
     <ul>
      <li>먼저 로그 항목 <br />을(를) 확인합니다. </li>
      <li>로그의 정보에 따라 적절한 조치를 취합니다.
@@ -494,7 +503,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>권장 액세스 메커니즘(예: Sling 및 JCR API)을 우회하고 하위 수준 API/SPI를 사용하여 저장소에 액세스한 다음 세그먼트의 유지 시간을 초과하는 애플리케이션입니다. 즉, 온라인 개정 정리(기본적으로 24시간)에서 허용하는 보존 시간보다 오래 엔티티에 대한 참조를 유지합니다. 이 경우는 일시적이며 데이터 손상으로 이어지지 않습니다. 복구하려면 oak-run 도구를 사용하여 예외의 일시적인 특성을 확인해야 합니다(oak-run 검사가 오류를 보고하지 않음). 이렇게 하려면 인스턴스를 오프라인 상태로 전환한 후 다시 시작해야 합니다.</li>
      <li>외부 이벤트로 인해 디스크의 데이터가 손상되었습니다. 이는 디스크 장애, 디스크 공간 부족 또는 필요한 데이터 파일의 우발적 수정일 수 있습니다. 이 경우 인스턴스를 오프라인으로 전환하고 oak-run 검사를 사용하여 복구해야 합니다. oak-run 검사를 수행하는 방법에 대한 자세한 내용은 다음 <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache 설명서</a>를 참조하십시오.</li>
-     <li><a href="https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support" target="_blank">Adobe 고객 지원 센터</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
+     <li><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe 고객 지원 센터</a>를 통해 다른 모든 발생 문제를 해결하십시오.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -642,7 +651,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 위에 제시된 방법 외에도 다음과 같이 JMX 콘솔을 사용하여 개정 정리 메커니즘을 트리거할 수도 있습니다.
 
-1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)로 이동하여 JMX 콘솔을 엽니다.
+1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)&#x200B;(으)로 이동하여 JMX 콘솔 열기
 1. **RevisionGarbageCollection** MBean을 클릭합니다.
 1. 다음 창에서 **startRevisionGC()**&#x200B;을(를) 클릭한 다음 **Invoke**&#x200B;을(를) 클릭하여 수정 가비지 수집 작업을 시작합니다.
 

@@ -9,13 +9,17 @@ exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
-
 ---
-
 # 컨텐츠 속성을 사용하여 컨텐츠 내보내기{#using-content-properties-to-export-content}
 
 {{ue-over-mobile}}
@@ -38,7 +42,7 @@ ht-degree: 3%
   <tr>
    <td>dps-cloudConfig</td>
    <td>문자열:경로</td>
-   <td><p>구성된 Mobile On-Demand Cloud Service의 경로입니다. AEM Mobile-Mobile On-Demand 작업(API 호출)에 사용됩니다.</p> <p>이 연결은 작성자가 앱을 연결할 Mobile On-Demand Cloud Service을 선택할 때 연결 관리 타일을 통해 구성됩니다.</p> </td>
+   <td><p>구성된 Mobile On-Demand Cloud Service에 대한 경로입니다. AEM Mobile-Mobile On-Demand 작업(API 호출)에 사용됩니다.</p> <p>이 연결은 작성자가 앱을 연결할 Mobile On-Demand Cloud Service을 선택할 때 연결 관리 타일을 통해 구성됩니다.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>

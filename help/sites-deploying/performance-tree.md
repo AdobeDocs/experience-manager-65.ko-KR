@@ -9,13 +9,22 @@ exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
-
 ---
-
 # 성능 트리{#performance-tree}
 
 ## 범위 {#scope}
@@ -77,7 +86,7 @@ ht-degree: 5%
   <tr>
    <td><strong>4단계</strong></td>
    <td>Dispatcher에서 요청이 오고 있습니까?</td>
-   <td><p>요청이 제대로 캐시되는지 확인하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#debugging">Dispatcher 디버깅 설명서</a>를 확인하십시오.<br /> </p> </td>
+   <td><p>요청이 제대로 캐시되는지 확인하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">Dispatcher 디버깅 설명서</a>를 확인하십시오.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>5단계</strong></td>
@@ -107,7 +116,7 @@ ht-degree: 5%
   <tr>
    <td><strong>10단계 및 29단계</strong></td>
    <td>네트워크 레이어 조사</td>
-   <td><p>네트워크 계층에서 포화 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연 시간이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">이 페이지</a>를 참조하십시오.</p> </td>
+   <td><p>네트워크 계층에서 포화 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연 시간이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">이 페이지</a>를 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td><strong>11단계</strong></td>
@@ -152,7 +161,7 @@ ht-degree: 5%
   <tr>
    <td><strong>19단계</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
   </tr>
   <tr>
    <td><strong>20단계</strong></td>
@@ -161,7 +170,7 @@ ht-degree: 5%
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">메모리 부족</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">내 응용 프로그램에서 메모리 부족 오류가 발생합니다.</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko">메모리 문제를 분석합니다.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">메모리 문제를 분석합니다.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -184,7 +193,7 @@ ht-degree: 5%
    <td>저장소 조정</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/kr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">성능 조정 팁</a></li>
+     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">성능 조정 팁</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">성능을 위한 구성</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">저장소 성능 조정</a></li>
     </ul> </td>
@@ -212,7 +221,7 @@ ht-degree: 5%
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets 동기화 서비스</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">여러 DAM 인스턴스</a></li>
-     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/kr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a>.<br /> </li>
+     <li>성능 조정 팁 문서 <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">여기</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,20 +237,20 @@ ht-degree: 5%
   <tr>
    <td><strong>31단계</strong></td>
    <td>Dispatcher 앞에서 CDN 사용</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">CDN으로 Dispatcher 사용</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN으로 Dispatcher 사용</a><br /> </td>
   </tr>
   <tr>
    <td><strong>32단계</strong></td>
    <td>AEM 서버를 오프로드하려면 Dispatcher 수준에서 세션 관리를 사용합니다</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-secure-sessions-sessionmanagement">보안 세션 활성화</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">보안 세션 활성화</a></p> </td>
   </tr>
   <tr>
    <td><strong>33단계</strong></td>
    <td>요청을 캐시할 수 있도록 만들기</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko">일반 Dispatcher 구성</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html">일반 Dispatcher 구성</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
     </ol> <p>캐시 비율을 개선하는 방법, 캐시 가능한 요청을 하는 방법(Dispatcher 모범 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
     <ol>
      <li>GET이 아닌 HTTP 요청에 대해 no-cache 규칙을 설정합니다.</li>
@@ -253,26 +262,26 @@ ht-degree: 5%
   <tr>
    <td><strong>34단계</strong></td>
    <td>Dispatcher 버전 업그레이드</td>
-   <td><p>다음 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=ko">링크 따라가기</a></p> </td>
+   <td><p>다음 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">링크 따라가기</a></p> </td>
   </tr>
   <tr>
    <td><strong>35단계</strong></td>
    <td>Dispatcher 구성</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko">Dispatcher 구성</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html">Dispatcher 구성</a><br /> </td>
   </tr>
   <tr>
    <td><strong>36단계</strong></td>
    <td>캐시 무효화 확인</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-the-authoring-environment">작성자 계층에 대한 캐시 무효화</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance">게시 계층에 대한 캐시 무효화.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">작성자 계층에 대한 캐시 무효화</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">게시 계층에 대한 캐시 무효화.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>37단계 및 38단계</strong></td>
    <td>레이지 로드</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=ko">AEM 웹 성능에서 Gem 세션을 확인하십시오.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">AEM 웹 성능에서 Gem 세션을 확인하십시오.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>39단계</strong></td>
@@ -292,7 +301,7 @@ ht-degree: 5%
   <tr>
    <td><strong>49단계</strong></td>
    <td>페이로드 크기 축소</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip 사용</a> 및 <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=ko">이미지 크기 축소</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip 사용</a> 및 <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">이미지 크기 축소</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>42단계 및 43단계</strong></td>
@@ -324,7 +333,7 @@ ht-degree: 5%
   <tr>
    <td><strong>50단계 및 51단계</strong></td>
    <td>JS 코드 차단</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=ko">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=ko</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>

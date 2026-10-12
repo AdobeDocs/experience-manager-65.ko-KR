@@ -1,24 +1,32 @@
 ---
-title: AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션
-description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법.
+title: AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션
+description: 이전 버전에서 AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션하는 방법입니다.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: b4056a4c1483dc8dcedc3c0f8f6b42f8dead0847
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
-
+source-wordcount: '322'
+ht-degree: 5%
 ---
-
 # Experience Manager 추가 기능에 대한 마이그레이션 안내서 {#cif-migration}
 
 이 안내서는 Experience Manager 추가 기능 마이그레이션을 위해 업데이트해야 하는 영역을 식별하는 데 도움이 됩니다.
 
 ## CIF 추가 기능
 
-CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16)을 통해 AEM 6.5에서 사용할 수 있습니다. 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
+CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16)을 통해 AEM 6.5에서 사용할 수 있습니다. 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
 
 [AEM 콘텐츠 및 Commerce 시작하기](getting-started.md)를 참조하세요.
 
@@ -30,7 +38,7 @@ CIF 추가 기능은 제품 카탈로그 데이터 가져오기를 지원하지 
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/kr/products/magento/open-source.html).
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험
 

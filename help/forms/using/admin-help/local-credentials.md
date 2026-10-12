@@ -9,13 +9,29 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 100%
-
 ---
-
 # 로컬 자격 증명 관리 {#managing-local-credentials}
 
 >[!NOTE]
@@ -56,7 +72,7 @@ Acrobat Reader DC 확장 프로그램과 관련된 정보 및 지침은 [Acrobat
 자격 증명은 PKCS#12 형식의 P12 파일로 내보내집니다.
 
 1. 관리 콘솔에서 설정 > Trust Store 관리 > 로컬 자격 증명을 클릭합니다.
-1. 내보내낼 자격 증명의 별칭을 클릭한 후 내보내기를 클릭합니다.
+1. 내보낼 자격 증명의 별칭을 클릭한 후 내보내기를 클릭합니다.
 1. 암호 상자에 암호를 입력합니다. 이 암호는 새 암호이며 내보낸 자격 증명을 암호화하는 데 사용됩니다.
 1. 내보내기를 클릭하고 지침에 따라 자격 증명을 내보낸 후 확인을 클릭합니다.
 

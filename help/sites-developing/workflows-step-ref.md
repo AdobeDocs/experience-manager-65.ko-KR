@@ -1,20 +1,27 @@
 ---
 title: 워크플로 단계 참조
-
 description: Adobe Experience Manager의 워크플로에 대해서는 이 단계 참조 를 참조하십시오.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3288'
 ht-degree: 2%
@@ -190,7 +197,7 @@ function check(){
 
 >[!NOTE]
 >
->[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=ko#use-a-variable)를 참조하십시오.
+>[또는 분할 단계](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)를 참조하십시오.
 
 ![OR 분할을 사용하여 분기](assets/variables_orsplit_new.png)
 
@@ -506,7 +513,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->이 섹션에서는 페이지 작성을 위한 기초 구성 요소 [&#128279;](/help/sites-authoring/default-components-foundation.md#form)의 Forms 섹션에 대해 설명합니다.
+>이 섹션에서는 페이지 작성을 위한 기초 구성 요소 ](/help/sites-authoring/default-components-foundation.md#form)의 [Forms 섹션에 대해 설명합니다.
 
 #### 양식 참가자 단계 - 구성 {#form-participant-step-configuration}
 

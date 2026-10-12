@@ -9,13 +9,22 @@ exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 2%
-
+source-wordcount: '497'
+ht-degree: 3%
 ---
-
 # 적응형 템플릿 렌더링{#adaptive-template-rendering}
 
 적응형 템플릿 렌더링은 변형이 있는 페이지를 관리하는 방법을 제공합니다. 원래 모바일 장치(예: 기능 전화와 스마트폰)에 대한 다양한 HTML 출력을 전달하는 데 유용하며, 이 기능은 다른 마크업이나 HTML 출력을 필요로 하는 다양한 장치에 경험을 전달해야 할 때 유용합니다.
@@ -53,7 +62,7 @@ ht-degree: 2%
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. CRXDE Lite을 사용하면 장치 그룹을 템플릿 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 추가하여 템플릿에서 사용할 수 있습니다.
+1. CRXDE Lite을 사용하여 장치 그룹을 템플릿 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 추가하여 템플릿에서 사용할 수 있도록 허용합니다.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -63,7 +72,7 @@ ht-degree: 2%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. CRXDE Lite을 사용하면 사이트 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 장치 그룹을 추가하여 사이트에서 사용할 수 있도록 허용합니다.
+1. CRXDE Lite을 사용하여 장치 그룹을 사이트 구조의 다중 값 문자열 속성 `cq:deviceGroups`에 추가하여 사이트에서 사용할 수 있도록 허용합니다.
 
    `/content/<your-site>/jcr:content`
 

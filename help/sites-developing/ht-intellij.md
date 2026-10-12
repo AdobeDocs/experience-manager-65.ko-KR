@@ -9,13 +9,24 @@ exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 2%
-
+source-wordcount: '663'
+ht-degree: 4%
 ---
-
 # IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## 개요 {#overview}
@@ -41,7 +52,7 @@ IntelliJ에서 AEM 개발을 시작하려면 다음 단계가 필요합니다.
 
 ### Maven을 기반으로 AEM 프로젝트 설정 {#set-up-your-aem-project-based-on-maven}
 
-그런 다음 [Apache Maven을 사용하여 AEM 프로젝트 빌드 방법](/help/sites-developing/ht-projects-maven.md)에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.
+그런 다음 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md)에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.
 
 IntelliJ IDEA에서 AEM 프로젝트 작업을 시작하려면 [5분 후에 시작](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)의 기본 설정으로 충분합니다.
 

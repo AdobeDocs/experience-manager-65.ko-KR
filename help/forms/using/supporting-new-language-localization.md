@@ -9,18 +9,34 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '869'
 ht-degree: 8%
-
 ---
-
 # 적응형 양식 지역화를 위한 새 로케일 지원{#supporting-new-locales-for-adaptive-forms-localization}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
@@ -39,18 +55,18 @@ ht-degree: 8%
 
 * 다음 매개 변수를 지정된 순서로 봅니다.
 
-   * 요청 매개 변수 `afAcceptLang`
+  * 요청 매개 변수 `afAcceptLang`
 사용자의 브라우저 로캘을 재정의하려면 `afAcceptLang` 요청 매개 변수를 전달하여 로캘을 강제 적용할 수 있습니다. 예를 들어 다음 URL은 일본어 로케일로 양식을 렌더링하도록 강제되어 있습니다.
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * `Accept-Language` 헤더를 사용하여 요청에 지정된 사용자에 대한 브라우저 로케일 집합입니다.
+  * `Accept-Language` 헤더를 사용하여 요청에 지정된 사용자에 대한 브라우저 로케일 집합입니다.
 
-   * AEM에 지정된 사용자의 언어 설정입니다.
+  * AEM에 지정된 사용자의 언어 설정입니다.
 
-   * 브라우저 로케일은 기본적으로 활성화되어 있습니다. 브라우저 로케일 설정을 변경하려면
-      * 구성 관리자를 엽니다. URL은 `http://[server]:[port]/system/console/configMgr`입니다.
-      * **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
-      * **[!UICONTROL 브라우저 로케일 사용]** 옵션 및 **[!UICONTROL 구성 저장]**&#x200B;의 상태를 변경합니다.
+  * 브라우저 로케일은 기본적으로 활성화되어 있습니다. 브라우저 로케일 설정을 변경하려면
+    * 구성 관리자를 엽니다. URL은 `http://[server]:[port]/system/console/configMgr`입니다.
+    * **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
+    * **[!UICONTROL 브라우저 로케일 사용]** 옵션 및 **[!UICONTROL 구성 저장]**&#x200B;의 상태를 변경합니다.
 
 로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청된 로케일에 대한 양식 특정 사전을 찾을 수 없으면 적응형 양식이 작성된 언어용 사전을 사용합니다.
 

@@ -5,14 +5,27 @@ topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 0%
-
+ht-degree: 10%
 ---
-
 # AEM Forms에 대한 트랜잭션 보고 {#transaction-reports-overview}
 
 AEM Forms 내의 트랜잭션 보고서를 사용하면 AEM Forms 배포의 지정된 날짜 이후의 모든 트랜잭션을 모니터링할 수 있습니다. 이 기능은 양식 사용에 대한 정보를 얻을 수 있도록 설계되어 비즈니스 이해 당사자가 디지털 처리 볼륨을 깊이 이해할 수 있도록 지원합니다. 이 컨텍스트에서 트랜잭션은 다음과 같은 다양한 활동을 포함합니다.
@@ -28,7 +41,7 @@ AEM Forms 기술 스택을 기반으로 트랜잭션을 활성화하는 방법, 
 
 * [JEE의 AEM Forms에 대한 트랜잭션 보고서 활성화 및 보기](/help/forms/using/transaction-report-overview-jee.md)
 * [JEE의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [사용자 지정 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
+* [사용자 정의 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
 
 **OSGi에서 AEM Forms에 대한 트랜잭션 보고**
 

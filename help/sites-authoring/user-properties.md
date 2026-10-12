@@ -10,13 +10,26 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 81%
-
 ---
-
 # 계정 환경 구성{#configuring-your-account-environment}
 
 AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
@@ -31,15 +44,15 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * 가장 대상
 
-   * [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자가 다른 사용자를 대신하여 작업할 수 있습니다.
+  * [다음 사용자로 가장](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자가 다른 사용자를 대신하여 작업할 수 있습니다.
 
 * 프로필
 
-   * [사용자 설정](/help/sites-administering/security.md)에 대한 편리한 링크를 제공합니다.
+  * [사용자 설정](/help/sites-administering/security.md)에 대한 편리한 링크를 제공합니다.
 
 * [내 환경 설정](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * 사용자에게만 해당하는 다양한 환경 설정을 지정합니다.
+  * 사용자에게만 해당하는 다양한 환경 설정을 지정합니다.
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -61,13 +74,13 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
   동작 또는 창 열기를 정의합니다. 다음 중 하나를 선택합니다.
 
-   * **여러 창**(기본값)
+  * **여러 창**(기본값)
 
-      * 페이지가 새 창에 열립니다.
+    * 페이지가 새 창에 열립니다.
 
-   * **단일 창**
+  * **단일 창**
 
-      * 현재 창에 페이지가 열립니다.
+    * 현재 창에 페이지가 열립니다.
 
 * **자산에 대한 데스크탑 작업 표시**
 
@@ -77,8 +90,8 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
   주석을 작성할 때 사용되는 기본 색상을 정의합니다.
 
-   * 색상 블록을 클릭하면 색상 견본 선택기를 열고 색상을 선택할 수 있습니다.
-   * 또는 필드에 원하는 색상의 16진수 코드를 입력하십시오.
+  * 색상 블록을 클릭하면 색상 견본 선택기를 열고 색상을 선택할 수 있습니다.
+  * 또는 필드에 원하는 색상의 16진수 코드를 입력하십시오.
 
 * **상대적 날짜 표시**
 
@@ -86,23 +99,23 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
   이 선택 사항은 시스템 날짜가 표시되는 방법을 정의합니다. 다음 옵션을 사용할 수 있습니다.
 
-   * **항상 정확한 날짜 표시**: 항상 정확한 날짜가 표시됩니다(상대적 날짜가 아님).
-   * **1일**: 1일 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
+  * **항상 정확한 날짜 표시**: 항상 정확한 날짜가 표시됩니다(상대적 날짜가 아님).
+  * **1일**: 1일 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
 
-   * **7일(기본값)**: 7일 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
+  * **7일(기본값)**: 7일 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
 
-   * **1개월**: 한 달 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
+  * **1개월**: 한 달 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
 
-   * **1년**: 1년 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
+  * **1년**: 1년 이내의 날짜는 상대적 날짜가 표시되고, 그 외에는 정확한 날짜가 표시됩니다.
 
-   * **항상 상대적 날짜 표시**: 정확한 날짜는 표시되지 않고 상대적 날짜만 표시됩니다.
+  * **항상 상대적 날짜 표시**: 정확한 날짜는 표시되지 않고 상대적 날짜만 표시됩니다.
 
 * **단축키 사용**
 
   AEM은 작성의 효율성을 높이는 몇 가지 키보드 단축키를 지원합니다.
 
-   * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
+  * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
   키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 

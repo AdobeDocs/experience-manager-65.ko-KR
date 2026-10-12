@@ -9,13 +9,22 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 2%
-
 ---
-
 # 콘텐츠 FAQ의 HTTP2 게재{#http-delivery-of-content-faq}
 
 Adobe은 컨텐츠의 HTTP/2 전달 가능성을 발표하게 되어 매우 기쁘게 생각합니다. HTTP/2를 사용하면 전반적인 성능이 향상됩니다.
@@ -49,7 +58,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 * Adobe 번들 CDN(Content Delivery Network)을 Dynamic Media 라이선스의 일부로 사용합니다.
 * 일반 Dynamic Media 도메인(`s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(`images.company.com` 또는 `mycompany.scene7.com`)을 사용하십시오.
 
-  도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **게시된 서버 이름**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+  도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **게시된 서버 이름**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 ## 내 Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -59,13 +68,13 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    * 기본 담당자 이름, 이메일 및 전화번호.
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-     도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다.
 
    * 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
    * Adobe을 통해 CDN을 사용 중이며 직접적인 관계로 관리되지 않는지 확인합니다.
    * 전용 도메인을 사용 중인지 확인합니다. 즉, `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`과(와) 같은 일반 Dynamic Media 도메인이 아닌 `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-     도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+     도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정에 로그인하세요. 그런 다음 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. 레이블이 **[!UICONTROL 게시된 서버 이름]**&#x200B;인 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 1. Adobe 고객 지원 센터는 요청이 제출된 순서에 따라 사용자를 HTTP/2 고객 대기자 명단에 추가합니다.
 1. Adobe에서 요청을 처리할 준비가 되면 지원 팀에서 연락하여 전환을 조정하고 대상 날짜를 설정합니다.

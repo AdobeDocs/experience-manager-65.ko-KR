@@ -1,5 +1,5 @@
 ---
-title: 권한 관리를 위한 주요 보기
+title: 권한 관리를 위한 주체 보기
 description: 권한 관리를 용이하게 하는 새로운 Touch UI 인터페이스에 대해 알아봅니다.
 contentOwner: sarchiz
 content-type: reference
@@ -10,15 +10,27 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 84%
-
 ---
 
-
-# 권한 관리를 위한 주요 보기{#principal-view-for-permissions-management}
+# 권한 관리를 위한 주체 보기{#principal-view-for-permissions-management}
 
 ## 개요 {#overview}
 
@@ -126,7 +138,7 @@ CRXDE로 이동할 필요가 없습니다. 모든 기능이 동일한 보기에 
 
 새로운 권한 UI는 실제로 부여된 하위 권한을 정확하게 반영하지 않는 미리 정의된 조합 대신 기본 권한 집합을 명시적으로 사용합니다.
 
-이전에는 정확히 어떤 권한이 구성되고 있는지 혼란이 발생했습니다. 다음 표에는 클래식 UI의 권한 조합과 이를 구성하는 실제 권한 간의 매핑이 나와 있습니다.
+이전에는 정확히 무엇이 구성되고 있는지 혼란이 발생했습니다. 다음 표에는 클래식 UI의 권한 조합과 이를 구성하는 실제 권한 간의 매핑이 나와 있습니다.
 
 <table>
  <tbody>

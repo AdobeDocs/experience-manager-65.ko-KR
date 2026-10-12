@@ -10,13 +10,22 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 1%
-
 ---
-
 # 랜딩 페이지를 위한 디자인 가져오기 확장 및 구성{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 이 섹션에서는 랜딩 페이지의 디자인 임포터를 구성하고 원하는 경우 확장하는 방법을 설명합니다. 가져오기 후 랜딩 페이지 작업은 [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)에서 다룹니다.
@@ -470,7 +479,7 @@ data-cq-component의 경로는 구성 요소의 resourceType이어야 합니다.
 가져오기 후 생성된 HTML에 &lt;div> 태그와 같은 추가 html 요소가 추가되기 때문입니다.
 
 * 위와 유사한 구조에 의존하는 스크립트도 AEM 구성 요소로 전환되도록 표시된 요소와 함께 사용하지 않는 것이 좋습니다.
-* &lt;div data-cq-component=&quot;&ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하는 것은 권장되지 않습니다.
+* &lt;div data-cq-component=&quot;&amp;ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하는 것은 권장되지 않습니다.
 * 디자인 레이아웃은 HTML5 Boilerplate의 모범 사례를 따라야 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## OSGI 모듈 구성 {#configuring-osgi-modules}
@@ -531,7 +540,7 @@ OSGI 콘솔을 통해 구성 가능한 속성을 표시하는 구성 요소는 �
 >
 >예를 들어 기본 구성이
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >검색 패턴에서 `CQ_DESIGN_PATH`을(를) `VIPURL`(으)로 바꾸어야 검색 패턴이 다음과 같습니다.
 >

@@ -5,13 +5,26 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 10%
-
+source-wordcount: '912'
+ht-degree: 12%
 ---
-
 # 디자인 모드에서 기본 구성 요소 구성{#configuring-components-in-design-mode}
 
 AEM 인스턴스가 기본적으로 설치되면 구성 요소 브라우저에서 다양한 구성 요소를 즉시 사용할 수 있습니다.
@@ -43,7 +56,7 @@ AEM 인스턴스가 기본적으로 설치되면 구성 요소 브라우저에�
 
 >[!NOTE]
 >
->[에 대한 자세한 내용은 &#x200B;](/help/sites-developing/components.md)구성 요소 개발[&#x200B; 및 &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)템플릿 및 구성 요소 사용 지침`parsys`을 참조하십시오.
+>`parsys`에 대한 자세한 내용은 [구성 요소 개발](/help/sites-developing/components.md) 및 [템플릿 및 구성 요소 사용 지침](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -136,7 +149,7 @@ AEM 인스턴스가 기본적으로 설치되면 구성 요소 브라우저에�
 
    **기능**
 
-   **기능** 탭에서는 구성 요소의 추가 기능을 활성화하거나 비활성화할 수 있습니다. 예를 들어 이미지 구성 요소의 경우 이미지의 방향, 사용 가능한 자르기 옵션 및 이미지를 업로드할 수 있는지 여부를 정의할 수 있습니다.
+   **기능** 탭을 사용하여 구성 요소의 추가 기능을 활성화하거나 비활성화할 수 있습니다. 예를 들어 이미지 구성 요소의 경우 이미지의 방향, 사용 가능한 자르기 옵션 및 이미지를 업로드할 수 있는지 여부를 정의할 수 있습니다.
 
    **스타일**
 

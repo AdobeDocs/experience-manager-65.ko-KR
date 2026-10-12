@@ -9,13 +9,31 @@ role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: 9e13e2c2-3788-53ff-a622-b0cb8a3a3622
+    internal-label: Rulesets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 0%
-
 ---
-
 # 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
 
 Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 해당 데이터가 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하고 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
@@ -41,14 +59,14 @@ Dynamic Media의 맥락에서 XML 기반 시스템을 사용하여 에셋 정보
 >규칙 세트를 사용할 때는 주의하십시오. 규칙 세트를 사용하면 Dynamic Media 콘텐츠가 웹 사이트에 표시되지 않을 수 있습니다.
 
 고유한 규칙 세트를 만드는 데 도움이 될 수 있는 샘플 규칙 세트가 있습니다.
-[규칙 집합 참조](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)를 참조하십시오.
+[규칙 집합 참조](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)를 참조하십시오.
 
 모든 규칙 세트 생성과 마찬가지로 xmlvalid와 같은 XML 유효성 검사기 프로그램을 사용하여 업로드하기 전에 XML 파일이 유효한지 확인하십시오.
 
 또한 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 먼저 테스트해야 합니다.
 프로덕션 환경과 스테이징 환경에서는 일반적으로 서로 다른 로그인이 필요합니다.
 
-로그인 정보는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+로그인 정보는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
 <!--
 OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
@@ -58,7 +76,7 @@ OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-st
 
 **XML 규칙 집합을 배포하려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app)에 로그인합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app)에 로그인합니다.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 

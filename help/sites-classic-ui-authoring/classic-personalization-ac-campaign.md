@@ -9,18 +9,29 @@ exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 2%
-
+source-wordcount: '1194'
+ht-degree: 3%
 ---
-
 # Adobe Campaign 6.1 및 Adobe Campaign Standard 작업{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
 
-1. Adobe Campaign 관련 템플릿으로 AEM 뉴스레터를 생성할 수 있습니다.
+1. Adobe Campaign 관련 템플릿에서 AEM 뉴스레터를 생성할 수 있습니다.
 1. 모든 기능에 액세스하려면 콘텐츠를 편집하기 전에 [Adobe Campaign 서비스](#selectingtheadobecampaigncloudservice)를 선택하십시오.
 1. 콘텐츠를 편집합니다.
 1. 콘텐츠의 유효성을 검사합니다.
@@ -29,17 +40,17 @@ AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리
 
 >[!NOTE]
 >
->이 기능을 사용하려면 먼저 [Adobe Campaign](/help/sites-administering/campaignonpremise.md) 또는 [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)과 통합되도록 AEM을 구성해야 합니다.
+>이 기능을 사용하려면 먼저 AEM을 [Adobe Campaign](/help/sites-administering/campaignonpremise.md) 또는 [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)과 통합하도록 구성해야 합니다.
 
 ## Adobe Campaign을 통해 이메일 콘텐츠 전송 {#sending-email-content-via-adobe-campaign}
 
 AEM 및 Adobe Campaign을 구성한 후 AEM에서 직접 이메일 게재 콘텐츠를 만든 다음 Adobe Campaign에서 처리할 수 있습니다.
 
-AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하려면 콘텐츠를 편집하기 전에 Adobe Campaign 서비스에 연결해야 합니다.
+AEM에서 Adobe Campaign 콘텐츠를 만드는 경우 모든 기능에 액세스하려면 콘텐츠를 편집하기 전에 Adobe Campaign 서비스에 연결해야 합니다.
 
 두 가지 가능한 경우가 있습니다.
 
-* 콘텐츠는 Adobe Campaign의 게재와 동기화할 수 있습니다. 이렇게 하면 게재에서 AEM 컨텐츠를 사용할 수 있습니다.
+* 콘텐츠는 Adobe Campaign의 게재와 동기화할 수 있습니다. 이렇게 하면 게재에서 AEM 콘텐츠를 사용할 수 있습니다.
 * (Adobe Campaign 온프레미스만 해당) 콘텐츠를 Adobe Campaign으로 직접 전송할 수 있으며 이렇게 하면 자동으로 새 이메일 게재가 생성됩니다. 이 모드에는 제한이 있습니다.
 
 자세한 지침은 이 문서에 설명되어 있습니다.
@@ -55,7 +66,7 @@ AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하�
 
    >[!NOTE]
    >
-   >[전자 메일 샘플은 Geometrixx](/help/sites-developing/we-retail.md#weretail)에서만 사용할 수 있습니다. 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
+   >[전자 메일 샘플은 Geometrixx에서만 사용할 수 있습니다](/help/sites-developing/we-retail.md#weretail). 패키지 공유에서 샘플 Geometrixx 콘텐츠를 다운로드합니다.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -73,7 +84,7 @@ AEM에서 Adobe Campaign 콘텐츠를 만들 때 모든 기능에 액세스하�
 
 Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서비스를 추가해야 합니다. 이렇게 하면 개인화 및 기타 Adobe Campaign 정보에 액세스할 수 있습니다.
 
-또한 Adobe Campaign 템플릿을 선택하고 제목을 변경한 다음 HTML에서 이메일을 보지 않을 사용자에 대한 일반 텍스트 컨텐츠를 추가해야 할 수 있습니다.
+또한 Adobe Campaign 템플릿을 선택하고 제목을 변경한 다음 HTML에서 이메일을 보지 않을 사용자에 대한 일반 텍스트 콘텐츠를 추가해야 할 수 있습니다.
 
 1. 사이드 킥에서 **페이지** 탭을 선택한 다음 **페이지 속성을 선택합니다.**
 1. 팝업 창의 **클라우드 서비스** 탭에서 **서비스 추가**&#x200B;를 선택하여 Adobe Campaign 서비스를 추가하고 **확인**&#x200B;을 클릭합니다.
@@ -88,7 +99,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 1. 기본 **메일** 템플릿 이외의 특정 이메일 게재 템플릿(Adobe Campaign)을 적용하려면 **페이지 속성**&#x200B;을 다시 선택합니다. **Adobe Campaign** 탭에서 관련 Adobe Campaign 인스턴스에 전자 메일 게재 템플릿의 내부 이름을 입력합니다.
 
-   Adobe Campaign Standard에서 템플릿은 **AEM 콘텐츠가 포함된 게재**&#x200B;입니다. Adobe Campaign 6.1에서 템플릿은 **AEM 콘텐츠가 포함된 이메일 게재**&#x200B;입니다.
+   Adobe Campaign Standard에서 템플릿은 **AEM 콘텐츠로 게재**&#x200B;입니다. Adobe Campaign 6.1에서 템플릿은 **AEM 콘텐츠가 포함된 이메일 게재**&#x200B;입니다.
 
    템플릿을 선택하면 AEM에서 **Adobe Campaign 뉴스레터** 구성 요소를 자동으로 활성화합니다.
 
@@ -155,7 +166,7 @@ Campaign 구성 요소에 대한 자세한 설명은 [Adobe Campaign 구성 요�
 
 1. 사이드 킥을 확장하여 다시 편집을 시작합니다.
 
-### AEM에서 콘텐츠 승인 {#approving-content-in-aem}
+### AEM에서 컨텐츠 승인 {#approving-content-in-aem}
 
 콘텐츠가 완료되면 승인 프로세스를 시작할 수 있습니다. 도구 상자의 **워크플로** 탭으로 이동하여 **Adobe Campaign에 대해 승인** 워크플로를 선택합니다.
 
@@ -185,4 +196,4 @@ Adobe Campaign 6.1에서:
 
 >[!NOTE]
 >
->자세한 내용은 표준 작성 문서에서 [Adobe Campaign 6.1 및 Adobe Campaign Standard 작업](/help/sites-authoring/campaign.md)에서 [Adobe Campaign Standard 및 Adobe Campaign 6.1과 AEM 연결](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic)을 참조하십시오.
+>자세한 내용은 표준 작성 문서에서 [AEM 6.1 및 Adobe Campaign Standard 작업](/help/sites-authoring/campaign.md)에서 [Adobe Campaign Standard과 Adobe Campaign 6.1 및 Adobe Campaign 연결](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic)을 참조하십시오.

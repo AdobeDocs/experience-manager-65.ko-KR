@@ -9,13 +9,22 @@ exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 54%
-
 ---
-
 # 구성 요소 개요{#components-overview}
 
 이 페이지는 [페이지 작성에 사용되는](/help/sites-authoring/default-components-foundation.md) 구성 요소와 같은 Adobe Experience Manager(AEM) 구성 요소에 대한 개요를 제공합니다.
@@ -31,7 +40,7 @@ ht-degree: 54%
 * 표준화된 사용자 인터페이스가 있습니다.
 * 구성할 수 있는 편집 비헤이비어가 있습니다.
 * Granite UI 구성 요소를 기반으로 하는 하위 요소를 사용하여 빌드된 대화 상자 사용
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)&#x200B;(권장) 또는 JSP를 사용하여 개발되었습니다.
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)&#x200B;(권장) 또는 JSP를 사용하여 개발되었습니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소가 모듈식이므로 다음과 같은 작업을 수행할 수 있습니다.
@@ -63,7 +72,7 @@ AEM에는 다음과 같은 포괄적인 기능을 제공하는 다양한 [즉시
 
 Adobe에서 제공하는 두 가지 AEM 구성 요소 세트를 사용할 수 있습니다.
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)
 
 **핵심 구성 요소**&#x200B;는 AEM 6.3과 함께 도입되었으며 유연하고 다양한 작성 기능을 제공합니다. [We.Retail 참조 사이트](/help/sites-developing/we-retail.md)에서는 핵심 구성 요소를 사용할 수 있는 방법을 보여 주고 현재 구성 요소 개발 모범 사례를 보여 줍니다.
@@ -72,7 +81,7 @@ Adobe에서 제공하는 두 가지 AEM 구성 요소 세트를 사용할 수 �
 
 >[!NOTE]
 >
->[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 구성 요소 디자인 및 개발에 대한 최신 모범 사례를 나타내며 참조 구현으로 사용됩니다.
+>[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 구성 요소 디자인 및 개발에 대한 최신 모범 사례를 나타내며 참조 구현으로 사용됩니다.
 >
 >[AEM 현대화 도구](modernization-tools.md)를 통해 핵심 구성 요소로 마이그레이션할 수 있습니다.
 
@@ -105,11 +114,11 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
 * [콘텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
 * [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
 * [구성 요소 국제화](/help/sites-developing/i18n.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [조건 숨기기 사용](/help/sites-developing/hide-conditions.md)
 * 클래식 UI
 
-   * [AEM 구성 요소(클래식 UI)](/help/sites-developing/developing-components-classic.md)
-   * [위젯 사용 및 확장(클래식 UI)](/help/sites-developing/widgets.md)
-   * [xtype 사용(클래식 UI)](/help/sites-developing/xtypes.md)
-   * [양식 개발(클래식 UI)](/help/sites-developing/developing-forms.md)
+  * [AEM 구성 요소(클래식 UI)](/help/sites-developing/developing-components-classic.md)
+  * [위젯 사용 및 확장(클래식 UI)](/help/sites-developing/widgets.md)
+  * [xtype 사용(클래식 UI)](/help/sites-developing/xtypes.md)
+  * [양식 개발(클래식 UI)](/help/sites-developing/developing-forms.md)

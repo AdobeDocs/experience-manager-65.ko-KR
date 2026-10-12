@@ -10,13 +10,22 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 1%
-
 ---
-
 # 경험 조각 {#experience-fragments}
 
 ## 기본 사항 {#the-basics}
@@ -64,11 +73,11 @@ URL에서 `.plain.` 선택기를 사용하여 일반 HTML 렌디션에 액세스
 HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩니다. 파이프라인이 `/libs/experience-fragments/config/rewriter/experiencefragments`에 정의되어 있습니다. HTML 변환기는 다음 옵션을 지원합니다.
 
 * `allowedCssClasses`
-   * 최종 렌디션에 남겨야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
-   * 이 기능은 고객이 일부 특정 CSS 클래스를 삭제하려는 경우 유용합니다
+  * 최종 렌디션에 남겨야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
+  * 이 기능은 고객이 일부 특정 CSS 클래스를 삭제하려는 경우 유용합니다
 * `allowedTags`
-   * 최종 렌디션에서 사용할 수 있는 HTML 태그 목록입니다.
-   * 기본적으로 html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script 태그가 허용됩니다(구성 불필요).
+  * 최종 렌디션에서 사용할 수 있는 HTML 태그 목록입니다.
+  * 기본적으로 html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script 태그가 허용됩니다(구성 불필요).
 
 오버레이를 사용하여 재작성기를 구성하는 것이 좋습니다. [오버레이](/help/sites-developing/overlays.md) 참조
 
@@ -86,12 +95,12 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 * 이미지 추출용
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * 텍스트 추출용
 
-   * `text`
+  * `text`
 
 이 규칙을 사용하지 않는 구성 요소는 고려되지 않습니다.
 
@@ -99,7 +108,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 >[!CAUTION]
 >
->경험 조각에는 **&#x200B;**&#x200B;** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
+>경험 조각에는 ****** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
 >
 >경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
@@ -114,7 +123,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
       `experience-fragments`
-이렇게 하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
+      이렇게 하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
 1. [허용된 템플릿](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder)은(는) 경험 조각 콘솔에서 구성할 수 있습니다.
 <!--
@@ -257,7 +266,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

@@ -10,13 +10,20 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 1%
-
 ---
-
 # AEM Communities 개요 {#aem-communities-overview}
 
 Adobe Experience Manager(AEM) 커뮤니티를 사용하면 성능이 향상되고 사이트 관리가 개선되었으며 사이트 방문자를 가치 있는 커뮤니티 구성원으로 전환할 수 있는 온프레미스 커뮤니티 사이트를 빠르게 만들 수 있습니다.

@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 78%
@@ -62,7 +69,7 @@ AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Autho
 
 다음 3분 25초 분량의 비디오는 AEM 내 AI 어시스턴트의 단계별 워크스루를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475365/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEM 내 AI 어시스턴트 액세스{#get-access}
 
@@ -77,7 +84,7 @@ AEM 내 AI 어시스턴트에 액세스하려면 고객이 다음 사항을 갖�
 
 **AEM 내 AI 어시스턴트를 액세스하려면:**
 
-1. 고객은 Adobe Experience Manager에서 다수의 AI 기반 및 에이전틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 생성 AI 활성화 방법은 [CX Enterprise 애플리케이션의 생성 AI](https://experienceleague.adobe.com/ko/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)를 참조하십시오.
+1. 고객은 Adobe Experience Manager에서 다수의 AI 기반 및 에이전틱 기능에 액세스하려면 추가 계약을 체결해야 합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오. 생성 AI 활성화 방법은 [CX Enterprise 애플리케이션의 생성 AI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)를 참조하십시오.
 
 1. 조직에서 이 계약을 체결하면 모든 사용자는 기본적으로 제품 지식에 AI Assistant를 사용할 수 있습니다. 추가적인 사용자당 또는 그룹당 권한은 필요하지 않습니다.
 

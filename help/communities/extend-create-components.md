@@ -9,13 +9,20 @@ exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # 구성 요소 만들기  {#create-the-components}
 
 구성 요소 확장의 예에서는 두 구성 요소로 구성된 주석 시스템을 사용합니다.
@@ -43,21 +50,21 @@ ht-degree: 0%
 
    * `/apps` 노드 선택
 
-      * **폴더 만들기** 이름 **[!UICONTROL 사용자 지정]**
+     * **폴더 만들기** 이름 **[!UICONTROL 사용자 지정]**
 
    * `/apps/custom` 노드 선택
 
-      * **[!UICONTROL 구성 요소]**(이)라는 이름의 **폴더 만들기**
+     * **[!UICONTROL 구성 요소]**(이)라는 이름의 **폴더 만들기**
 
 1. `/apps/custom/components` 노드 선택
 
    * **[!UICONTROL 만들기 > 구성 요소...]**
 
-      * **레이블**: *댓글*
-      * **제목**: *대체 댓글*
-      * **설명**: *대체 댓글 스타일*
-      * **슈퍼 유형**: *social/commons/components/hbs/comments*
-      * **그룹**: *사용자 지정*
+     * **레이블**: *댓글*
+     * **제목**: *대체 댓글*
+     * **설명**: *대체 댓글 스타일*
+     * **슈퍼 유형**: *social/commons/components/hbs/comments*
+     * **그룹**: *사용자 지정*
 
    * **[!UICONTROL 다음]** 선택
    * **[!UICONTROL 다음]** 선택
@@ -83,11 +90,11 @@ ht-degree: 0%
 
    * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소...]** 선택
 
-      * **레이블**: *댓글*
-      * **제목**: *대체 댓글*
-      * **설명**: *대체 댓글 스타일*
-      * **슈퍼 유형**: *social/commons/components/hbs/comments/comment*
-      * **그룹**: `*.hidden*`
+     * **레이블**: *댓글*
+     * **제목**: *대체 댓글*
+     * **설명**: *대체 댓글 스타일*
+     * **슈퍼 유형**: *social/commons/components/hbs/comments/comment*
+     * **그룹**: `*.hidden*`
 
    * **[!UICONTROL 다음]** 선택
    * **[!UICONTROL 다음]** 선택
@@ -110,32 +117,32 @@ ht-degree: 0%
 
 * `comments.hbs` 복사
 
-   * [/libs/social/commons/components/hbs/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * 대상: [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+  * [/libs/social/commons/components/hbs/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
+  * 대상: [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * `comments.hbs`을(를) 편집할 대상:
 
-   * `data-scf-component` 특성 값 변경(~20행):
+  * `data-scf-component` 특성 값 변경(~20행):
 
-      * 출처: `social/commons/components/hbs/comments`
-      * 대상: `/apps/custom/components/comments`
+    * 출처: `social/commons/components/hbs/comments`
+    * 대상: `/apps/custom/components/comments`
 
-   * 사용자 지정 댓글 구성 요소를 포함하도록 수정합니다(~75행).
+  * 사용자 지정 댓글 구성 요소를 포함하도록 수정합니다(~75행).
 
-      * `{{include this resourceType='social/commons/components/hbs/comments/comment'}}` 바꾸기
-      * `{{include this resourceType='/apps/custom/components/comments/comment'}}` 사용
+    * `{{include this resourceType='social/commons/components/hbs/comments/comment'}}` 바꾸기
+    * `{{include this resourceType='/apps/custom/components/comments/comment'}}` 사용
 
 * `comment.hbs` 복사
 
-   * [/libs/social/commons/components/hbs/comments/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * 대상: [/apps/custom/components/comments/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+  * [/libs/social/commons/components/hbs/comments/comments에서](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
+  * 대상: [/apps/custom/components/comments/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
 * `comment.hbs`을(를) 편집할 대상:
 
-   * data-scf-component 특성의 값을 변경합니다(~ 19행).
+  * data-scf-component 특성의 값을 변경합니다(~ 19행).
 
-      * 출처: `social/commons/components/hbs/comments/comment`
-      * 대상: `/apps/custom/components/comments/comment`
+    * 출처: `social/commons/components/hbs/comments/comment`
+    * 대상: `/apps/custom/components/comments/comment`
 
 * `/apps/custom` 노드 선택
 * **[!UICONTROL 모두 저장]** 선택
@@ -149,19 +156,19 @@ ht-degree: 0%
 * `/apps/custom/components/comments` 노드 선택
 * **[!UICONTROL 노드 만들기]** 선택
 
-   * **이름**: `clientlibs`
-   * **유형**: `cq:ClientLibraryFolder`
-   * **[!UICONTROL 속성]** 탭에 추가:
+  * **이름**: `clientlibs`
+  * **유형**: `cq:ClientLibraryFolder`
+  * **[!UICONTROL 속성]** 탭에 추가:
 
-      * **이름** `categories` **유형** `String` **값** `cq.social.author.hbs.comments` `Multi`
-      * **이름** `dependencies` **유형** `String` **값** `cq.social.scf` `Multi`
+    * **이름** `categories` **유형** `String` **값** `cq.social.author.hbs.comments` `Multi`
+    * **이름** `dependencies` **유형** `String` **값** `cq.social.scf` `Multi`
 
 * **[!UICONTROL 모두 저장]** 선택
 * `/apps/custom/components/comments/clientlib`의 노드를 선택한 상태에서 다음 세 개의 파일을 만듭니다.
 
-   * **이름**: `css.txt`
-   * **이름**: `js.txt`
-   * **이름**: customcommentsystem.js
+  * **이름**: `css.txt`
+  * **이름**: `js.txt`
+  * **이름**: customcommentsystem.js
 
 * `js.txt`의 콘텐츠로 &#39;customcommentsystem.js&#39;를 입력하십시오.
 * **[!UICONTROL 모두 저장]** 선택
@@ -194,7 +201,7 @@ SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다. 오�
 
 * **[!UICONTROL 모두 저장]** 선택
 
-## 앱 Publish {#publish-the-app}
+## 앱 게시 {#publish-the-app}
 
 게시 환경에서 확장 구성 요소를 경험하려면 사용자 지정 구성 요소를 복제해야 합니다.
 
@@ -202,8 +209,8 @@ SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다. 오�
 
 * 전역 탐색에서,
 
-   * **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 선택
-   * **[!UICONTROL 트리 활성화]** 선택
-   * `Start Path`을(를) `/apps/custom`(으)로 설정
-   * **[!UICONTROL 수정된 항목만]** 선택 취소
-   * **[!UICONTROL 활성화]** 단추 선택
+  * **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 선택
+  * **[!UICONTROL 트리 활성화]** 선택
+  * `Start Path`을(를) `/apps/custom`(으)로 설정
+  * **[!UICONTROL 수정된 항목만]** 선택 취소
+  * **[!UICONTROL 활성화]** 단추 선택

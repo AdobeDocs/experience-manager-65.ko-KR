@@ -9,22 +9,34 @@ exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
-
+source-wordcount: '383'
+ht-degree: 7%
 ---
-
 # 프로덕션 준비 모드에서 AEM 실행{#running-aem-in-production-ready-mode}
 
-AEM 6.1에서 Adobe은 프로덕션 환경에서 배포할 AEM 인스턴스를 준비하는 데 필요한 단계를 자동화하는 새로운 `"nosamplecontent"` 실행 모드를 도입했습니다.
+Adobe에서는 AEM 6.1을 사용하여 프로덕션 환경에서 배포할 AEM 인스턴스를 준비하는 데 필요한 단계를 자동화하는 새로운 `"nosamplecontent"` 실행 모드를 도입했습니다.
 
-새 실행 모드는 보안 확인 목록에 설명된 보안 모범 사례를 준수하도록 인스턴스를 자동으로 구성할 뿐만 아니라 프로세스에서 모든 샘플 Geometrixx 애플리케이션 및 구성을 제거합니다.
+새 실행 모드는 보안 확인 목록에 설명된 보안 모범 사례를 준수하도록 인스턴스를 자동으로 구성할 뿐만 아니라 이 과정에서 모든 샘플 Geometrixx 애플리케이션 및 구성을 제거합니다.
 
 >[!NOTE]
 >
->현실적인 이유로 AEM 프로덕션 준비 모드는 인스턴스 보안에 필요한 대부분의 작업만 다루게 되므로 프로덕션 환경을 시작하기 전에 [보안 확인 목록](/help/sites-administering/security-checklist.md)을 참조하는 것이 좋습니다.
+>실용적인 이유로 AEM 프로덕션 준비 모드는 인스턴스 보안에 필요한 대부분의 작업만 다루게 되므로 프로덕션 환경을 시작하기 전에 [보안 확인 목록](/help/sites-administering/security-checklist.md)을 참조하는 것이 좋습니다.
 >
 >또한 프로덕션 준비 모드에서 AEM을 실행하면 CRXDE Lite에 대한 액세스가 효과적으로 비활성화됩니다. 디버깅을 위해 필요한 경우 [AEM에서 CRXDE Lite 사용](/help/sites-administering/enabling-crxde-lite.md)을 참조하십시오.
 
@@ -44,7 +56,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## 프로덕션 준비 모드의 일부 변경 {#changes-part-of-the-production-ready-mode}
 
-특히 AEM이 프로덕션 준비 모드에서 실행될 때 다음 구성 변경이 수행됩니다.
+구체적으로, AEM이 프로덕션 준비 모드에서 실행될 때 다음 구성 변경이 수행됩니다.
 
 1. **CRXDE 지원 번들**(`com.adobe.granite.crxde-support`)은(는) 프로덕션 준비 모드에서 기본적으로 비활성화됩니다. Adobe 공개 Maven 저장소에서 언제든지 설치할 수 있습니다. AEM 6.1에는 버전 3.0.0이 필요합니다.
 
@@ -64,13 +76,13 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
    1. **Gzip:** `enabled`
    1. **시간:** `disabled`
 
-1. **Apache Sling GET 서블릿**&#x200B;은(는) 기본적으로 다음과 같이 보안 구성을 지원하도록 설정됩니다.
+1. **Apache Sling GET Servlet**&#x200B;은 다음과 같이 기본적으로 보안 구성을 지원하도록 설정되어 있습니다.
 
-| **구성** | **작성자** | **Publish** |
+| **구성** | **작성** | **게시** |
 |---|---|---|
 | TXT 렌디션 | 비활성화됨 | 비활성화됨 |
 | HTML 렌디션 | 비활성화됨 | 비활성화됨 |
 | JSON 렌디션 | 활성화됨 | 활성화됨 |
 | XML 렌디션 | 비활성화됨 | 비활성화됨 |
-| json.maximumresults | 1000년 | 100 |
+| json.maximumresults | 1000 | 100 |
 | 자동 색인 | 비활성화됨 | 비활성화됨 |

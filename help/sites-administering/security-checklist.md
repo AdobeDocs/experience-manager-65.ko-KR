@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3049'
 ht-degree: 3%
-
 ---
-
 # 보안 체크리스트 {#security-checklist}
 
 이 섹션에서는 배포 시 AEM 설치를 보호하기 위해 수행해야 하는 다양한 단계를 다룹니다. 체크리스트는 처음부터 끝까지 적용됩니다.
@@ -45,7 +59,7 @@ ht-degree: 3%
 
 ### 보안 핫픽스 설치 {#install-security-hotfixes}
 
-Adobe에서 제공하는 최신 [보안 핫픽스를 설치했는지 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko).
+Adobe에서 제공하는 최신 [보안 핫픽스를 설치했는지 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### AEM 및 OSGi 콘솔 관리자 계정에 대한 기본 암호 변경 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -110,11 +124,11 @@ Adobe에서는 특히 404 및 500 HTTP 응답 코드에 대해 사용자 지정 
 
 >[!NOTE]
 >
->자세한 내용은 [사용자 지정 스크립트나 오류 처리기를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=ko)을 참조하세요.
+>자세한 내용은 [사용자 지정 스크립트나 오류 처리기를 만드는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html)을 참조하세요.
 
 ### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher은 인프라의 중요한 부분입니다. Adobe에서는 [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=ko)을 완료할 것을 권장합니다.
+AEM Dispatcher은 인프라의 중요한 부분입니다. Adobe에서는 [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)을 완료할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -225,27 +239,27 @@ CRX WebDAV 및 Apache Sling에서 CSRF(크로스 사이트 요청 위조)와 관
 
 * [Adobe Granite HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * **축소** 사용(CRLF 및 공백 문자 제거)
-   * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
-   * **Debug** 사용 안 함
-   * **시간** 사용 안 함
+  * **축소** 사용(CRLF 및 공백 문자 제거)
+  * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
+  * **Debug** 사용 안 함
+  * **시간** 사용 안 함
 
 * [일 CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * **사용** 선택 취소
+  * **사용** 선택 취소
 
 * [일 CQ WCM 필터](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * 게시만 할 때 **WCM 모드**&#x200B;를 &quot;사용 안 함&quot;으로 설정하십시오.
+  * 게시만 할 때 **WCM 모드**&#x200B;를 &quot;사용 안 함&quot;으로 설정하십시오.
 
 * [Apache Sling JavaScript 처리기](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * **디버그 정보 생성** 사용 안 함
+  * **디버그 정보 생성** 사용 안 함
 
 * [Apache Sling JSP 스크립트 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * **디버그 정보 생성** 사용 안 함
-   * **매핑된 콘텐츠** 사용 안 함
+  * **디버그 정보 생성** 사용 안 함
+  * **매핑된 콘텐츠** 사용 안 함
 
 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md)을 참조하십시오.
 
@@ -266,9 +280,9 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
   예를 들어 `.../en.html`은(는) 다음과 같이 요청할 수도 있습니다.
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   모든 유효한 변형(예: `200` 응답을 반환하고 캐시되도록 구성됨)이 Dispatcher에 의해 캐시되므로 전체 파일 시스템이 만들어지고 추가 요청에 대한 서비스가 제공되지 않습니다.
 
@@ -324,7 +338,7 @@ DoS 오용을 방지하기 위해 다음을 수행할 수 있습니다.
 >
 >이 완화 작업은 Forms을 사용하지 않는 AEM 환경에서만 수행해야 합니다.
 
-AEM은 `FormChooserServlet`에 대한 기본 제공 인덱스를 제공하지 않으므로 쿼리에서 양식 선택기를 사용하면 비용이 많이 드는 저장소 순회를 트리거할 수 있으며 일반적으로 AEM 인스턴스를 중지합니다. 쿼리에 **&ast;.form.&ast;** 문자열이 있어 양식 선택기를 검색할 수 있습니다.
+AEM은 `FormChooserServlet`에 대한 기본 제공 인덱스를 제공하지 않으므로 쿼리에서 양식 선택기를 사용하면 비용이 많이 드는 저장소 순회를 트리거할 수 있으며 일반적으로 AEM 인스턴스를 중지합니다. 쿼리에 **&amp;ast;.form.&amp;ast;** 문자열이 있어 양식 선택기를 검색할 수 있습니다.
 
 이 문제를 완화하기 위해 다음 단계를 수행할 수 있습니다.
 
@@ -377,7 +391,7 @@ AEM에서 승인 가능한 ID를 생성하는 기본 방법이므로 이를 활�
 
 권장되지는 않지만 기존 애플리케이션과의 이전 버전과의 호환성을 위해 이전 구현이 필요한 경우 비활성화할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
 
-1. 웹 콘솔로 이동하여 **Apache Jackrabbit Oak SecurityProvider**&#x200B;의 **requiredServicePids** 속성에서 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 항목을 제거합니다.
+1. 웹 콘솔로 이동하여 **Apache Jackrabbit Oak SecurityProvider**&#x200B;의 **requiredServicePids** 속성에서 ** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 항목을 제거합니다.
 
    OSGi 구성에서 **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID를 찾아 Oak 보안 공급자를 찾을 수도 있습니다.
 

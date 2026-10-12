@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 1%
-
 ---
-
 # 업그레이드 계획 수립{#planning-your-upgrade}
 
 ## AEM 프로젝트 개요 {#aem-project-overview}
@@ -97,7 +106,7 @@ AEM 업그레이드 계획 및 실행에 많은 작업이 필요합니다. Adobe
 
 새로운 릴리스에서는 도입될 수 있는 UI 및 사용자 워크플로에 대한 잠재적인 변경 사항이 있습니다. 또한 새로운 릴리스에는 비즈니스에서 사용하는 데 도움이 될 수 있는 새로운 기능이 도입됩니다. Adobe은 도입된 기능 변경 사항을 검토하고 사용자를 효과적으로 사용하도록 교육하기 위한 계획을 구성할 것을 권장합니다.
 
-![잘라낸 &#x200B;](assets/unu_cropped.png)
+![잘라낸 ](assets/unu_cropped.png)
 
 AEM 6.5의 새로운 기능은 [adobe.com의 AEM 섹션](/help/release-notes/release-notes.md)에서 찾을 수 있습니다. 조직에서 일반적으로 사용하는 UI 또는 제품 기능에 대한 변경 사항을 알아 두십시오. 새로운 기능을 살펴보면서 귀사에 유용할 수 있는 모든 기능을 주목하십시오. AEM 6.5의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 개발하십시오. 여기에는 [Adobe 디지털 학습 서비스](https://learning.adobe.com/)를 통해 제공되는 도움말 기능 비디오 또는 공식 교육 등 자유롭게 사용할 수 있는 리소스가 포함될 수 있습니다.
 

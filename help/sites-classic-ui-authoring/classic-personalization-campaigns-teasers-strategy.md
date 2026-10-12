@@ -1,5 +1,5 @@
 ---
-title: 티저 및 전략
+title: 티저와 전략
 description: 캠페인은 종종 티저를 메커니즘으로 사용하여 방문자 인구의 특정 세그먼트를 관심사에 초점을 맞춘 콘텐츠로 안내합니다. 하나 이상의 티저가 특정 캠페인에 대해 정의됩니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,25 @@ exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 4%
-
+source-wordcount: '1203'
+ht-degree: 5%
 ---
-
-# 티저 및 전략{#teasers-and-strategies}
+# 티저와 전략{#teasers-and-strategies}
 
 캠페인은 종종 티저를 메커니즘으로 사용하여 방문자 인구의 특정 세그먼트를 관심사에 초점을 맞춘 콘텐츠로 안내합니다. 하나 이상의 티저가 특정 캠페인에 대해 정의됩니다.
 
@@ -111,7 +122,7 @@ AEM 내의 티저는 다음과 같은 몇 가지 부분으로 구성됩니다.
 
 그런 다음 방문자에게 이 설정을 적용하면 다음이 수행됩니다.
 
-* **S1**, **S2 및 &#x200B;** S6** 확인을 완료했습니다.
+* **S1**, **S2 및** S6** 확인을 완료했습니다.
 
 * **marketing** 태그에 3개의 히트가 있습니다.
 * **business** 태그에 6개의 히트가 있습니다.
@@ -245,10 +256,10 @@ AEM 내의 티저는 다음과 같은 몇 가지 부분으로 구성됩니다.
 1. 티저 구성 요소를 편집하여 다음을 추가합니다.
 
    * **캠페인 경로**
-개별 티저 페이지가 들어 있는 캠페인 페이지 경로. 세그먼트는 표시되는 티저를 정확하게 결정합니다.
+     개별 티저 페이지가 들어 있는 캠페인 페이지 경로. 세그먼트는 표시되는 티저를 정확하게 결정합니다.
 
    * **[전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-여러 세그먼트가 정상적으로 배정될 때 선택에 사용되는 방법입니다.
+     여러 세그먼트가 정상적으로 배정될 때 선택에 사용되는 방법입니다.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

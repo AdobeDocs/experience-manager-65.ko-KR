@@ -10,13 +10,25 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6584'
 ht-degree: 0%
-
 ---
-
 # Adobe Experience Manager 및 MongoDB{#aem-with-mongodb}
 
 이 문서에서는 MongoDB와 함께 AEM(Adobe Experience Manager)를 성공적으로 배포하는 데 필요한 작업 및 고려 사항에 대한 지식을 향상하고자 합니다.
@@ -79,7 +91,7 @@ RAM이 부족하면 성능이 크게 저하됩니다. 작업 집합 및 데이�
 로드 테스트 프로세스를 지원하기 위해 전체 데이터베이스 크기에 대한 작업 집합의 비율을 다음과 같이 가정할 수 있습니다.
 
 * SSD 스토리지용 1:10
-* 하드 디스크 저장소용 1:3
+* 하드 디스크 스토리지용 1:3
 
 이러한 비율은 SSD 배포의 경우 2TB 데이터베이스에 200GB의 RAM이 필요함을 의미합니다.
 
@@ -244,8 +256,8 @@ MongoDB는 다양한 Linux® 버전, Windows 및 macOS을 포함한 여러 운�
 * 투명 조각 및 조각 모음을 끕니다. 자세한 내용은 [투명 대용량 페이지 설정](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/)을 참조하십시오.
 * 사용 사례에 맞게 데이터베이스 파일을 저장하는 장치에서 [미리 보기 설정을 조정](https://docs.mongodb.com/manual/administration/production-notes/#readahead)합니다.
 
-   * MMAPv1 스토리지 엔진의 경우 작업 집합이 사용 가능한 RAM보다 크고 문서 액세스 패턴이 임의인 경우 미리 보기를 32 또는 16으로 낮추는 것이 좋습니다. 다른 설정을 평가하여 상주 메모리를 최대화하고 페이지 폴트 수를 낮추는 최적의 값을 찾을 수 있습니다.
-   * WiredTiger 스토리지 엔진의 경우 저장 매체 유형(회전, SSD 등)에 관계없이 readahead를 0으로 설정합니다. 일반적으로, 테스트에서 더 높은 미리 읽기 가치에서 측정 가능하고 반복 가능하며 신뢰할 수 있는 이점을 표시하지 않는 한 권장되는 미리 읽기 설정을 사용하십시오. [MongoDB Professional 지원](https://docs.mongodb.com/manual/administration/production-notes/#readahead)에서 0이 아닌 미리 읽기 구성에 대한 조언과 지침을 제공할 수 있습니다.
+  * MMAPv1 스토리지 엔진의 경우 작업 집합이 사용 가능한 RAM보다 크고 문서 액세스 패턴이 임의인 경우 미리 보기를 32 또는 16으로 낮추는 것이 좋습니다. 다른 설정을 평가하여 상주 메모리를 최대화하고 페이지 폴트 수를 낮추는 최적의 값을 찾을 수 있습니다.
+  * WiredTiger 스토리지 엔진의 경우 저장 매체 유형(회전, SSD 등)에 관계없이 readahead를 0으로 설정합니다. 일반적으로, 테스트에서 더 높은 미리 읽기 가치에서 측정 가능하고 반복 가능하며 신뢰할 수 있는 이점을 표시하지 않는 한 권장되는 미리 읽기 설정을 사용하십시오. [MongoDB Professional 지원](https://docs.mongodb.com/manual/administration/production-notes/#readahead)에서 0이 아닌 미리 읽기 구성에 대한 조언과 지침을 제공할 수 있습니다.
 
 * 가상 환경에서 RHEL 7/CentOS 7을 실행하는 경우 튜닝된 도구를 비활성화합니다.
 * 가상 환경에서 RHEL 7/CentOS 7을 실행하면 튜닝된 툴이 자동으로 성능 처리량에서 파생된 성능 프로필을 호출하여 미리 보기 설정을 4MB로 자동 설정합니다. 이 설정은 성능에 부정적인 영향을 줄 수 있습니다.
@@ -258,9 +270,9 @@ MongoDB는 다양한 Linux® 버전, Windows 및 macOS을 포함한 여러 운�
 * [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath) 탑재 지점에 대해 noatime을 사용하십시오.
 * 배포에 필요한 충분한 파일 핸들(fs.file-max), 커널 pid 제한(kernel.pid_max) 및 프로세스당 최대 스레드(kernel.threads-max)를 구성합니다. 대규모 시스템의 경우 다음 값이 좋은 시작점을 제공합니다.
 
-   * fs.file-max 값 98000,
-   * kernel.pid_max 값 64000,
-   * andkernel.threads-최대 64000 값
+  * fs.file-max 값 98000,
+  * kernel.pid_max 값 64000,
+  * andkernel.threads-최대 64000 값
 
 * 시스템에 스왑 공간이 구성되어 있는지 확인합니다. 적절한 크기 조정에 대한 자세한 내용은 운영 체제의 설명서를 참조하십시오.
 * 시스템 기본 TCP keepalive가 올바르게 설정되어 있는지 확인합니다. 값이 300이면 복제본 세트 및 공유 클러스터에 대해 성능이 향상되는 경우가 많습니다. [TCP keepalive 시간이 MongoDB 배포에 영향을 줍니까?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) 을 참조하십시오.

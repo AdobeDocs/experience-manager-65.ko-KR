@@ -10,13 +10,22 @@ exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 1%
-
 ---
-
 
 # ID 관리{#identity-management}
 
@@ -29,7 +38,7 @@ ht-degree: 1%
 
 * [Personalization](/help/sites-administering/personalization.md) 방문자가 웹 사이트에 액세스하는 방법의 특정 측면을 구성할 수 있도록 허용합니다.
 
-로그인(및 로그아웃) 기능은 등록된 방문자(사용자)에 대한 추가 정보가 들어 있는 **프로필**&#x200B;[&#128279;](#profiles-and-user-accounts)&#x200B;을 사용하는 계정에서 제공합니다. 등록 및 승인에 대한 실제 프로세스는 다를 수 있습니다.
+로그인(및 로그아웃) 기능은 등록된 방문자(사용자)에 대한 추가 정보가 들어 있는 **프로필**](#profiles-and-user-accounts)&#x200B;을 사용하는 [계정에서 제공합니다. 등록 및 승인에 대한 실제 프로세스는 다를 수 있습니다.
 
 * 웹 사이트에서 자가 등록
 

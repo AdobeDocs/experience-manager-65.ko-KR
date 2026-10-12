@@ -10,13 +10,22 @@ exl-id: f43e9491-aa8f-40af-9800-123695142559
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1953'
 ht-degree: 1%
-
 ---
-
 # 양식 개발(클래식 UI){#developing-forms-classic-ui}
 
 양식의 기본 구조는 다음과 같습니다.
@@ -39,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
+>이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
@@ -128,11 +137,11 @@ ht-degree: 1%
 1. 폴더에서 다음 중 하나를 만듭니다.
 
    1. 게시물 스크립트.
-      스크립트 이름은 `post.POST.<extension>`입니다. 예: `post.POST.jsp`
+      스크립트 이름은 `post.POST.<extension>`입니다(예: ). `post.POST.jsp`
       양식을 처리하기 위해 양식을 제출할 때 `POST` 양식에서 도착하는 데이터를 처리하는 코드가 포함되어 있는 POST 스크립트가 호출됩니다.
 
    1. 양식 제출 시 호출되는 전달 스크립트를 추가합니다.
-      스크립트 이름은 `forward.<extension`>입니다(예: `forward.jsp`).
+      스크립트 이름은 `forward.<extension`>입니다. 예를 들면 다음과 같습니다. `forward.jsp`
       이 스크립트는 경로를 정의할 수 있습니다. 그런 다음 현재 요청이 지정된 경로로 전달됩니다.
 
    필요한 호출은 `FormsHelper#setForwardPath`(variant 2개)입니다. 일반적인 사례는 유효성 검사 또는 논리를 수행하여 타겟 경로를 찾은 다음 해당 경로로 전달하여 기본 Sling POST 서블릿이 JCR에서 실제 저장소를 수행하도록 하는 것입니다.
@@ -167,15 +176,15 @@ ht-degree: 1%
 1. 폴더에서 다시 다음을 선택적으로 추가합니다.
 
    1. 필드를 추가하기 위한 스크립트.
-      스크립트 이름은 `addfields.<extension>`입니다. 예: `addfields.jsp`
+      스크립트 이름은 `addfields.<extension>`입니다(예: ). `addfields.jsp`
       양식 시작에 대한 HTML이 작성된 직후에 `addfields` 스크립트가 호출됩니다. 이렇게 하면 작업에서 사용자 지정 입력 필드 또는 양식 내에 다른 HTML을 추가할 수 있습니다.
 
    1. 초기화 스크립트.
-      스크립트 이름은 `init.<extension>`입니다. 예: `init.jsp`
+      스크립트 이름은 `init.<extension>`입니다(예: ). `init.jsp`
       이 스크립트는 양식이 렌더링될 때 호출됩니다. 작업 세부 사항을 초기화하는 데 사용할 수 있습니다.
 
    1. 정리 스크립트.
-      스크립트 이름은 `cleanup.<extension>`입니다. 예: `cleanup.jsp`
+      스크립트 이름은 `cleanup.<extension>`입니다(예: ). `cleanup.jsp`
       이 스크립트를 사용하여 정리를 수행할 수 있습니다.
 
 1. parsys에서 **Forms** 구성 요소를 사용하십시오. 이제 **작업 유형** 드롭다운에 새 작업이 포함됩니다.

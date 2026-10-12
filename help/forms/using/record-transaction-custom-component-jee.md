@@ -4,14 +4,27 @@ description: TransactionRecorder API를 사용하여 사용자 지정 구성 요
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 5%
-
 ---
-
 # JEE의 AEM Forms에 대한 사용자 지정 구성 요소 API에 대한 트랜잭션을 기록합니다 {#record-a-transaction-for-custom-components}
 
 사용자 지정 구성 요소에서 청구 가능한 API를 사용하는 경우 구성 요소에 대해 거래 보고를 활성화할 수 있습니다. 트랜잭션 보고를 사용하려면 구성 요소의 `component.xml` 파일을 수정하고 트랜잭션 보고를 사용하도록 설정해야 하는 작업에 아래 지정된 태그를 추가하십시오.

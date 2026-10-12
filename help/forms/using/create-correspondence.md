@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3902'
+source-wordcount: '3960'
 ht-degree: 0%
-
 ---
-
 # 서신 만들기{#create-correspondence}
 
 ## 서신 만들기 사용자 인터페이스에서 서신 만들기 {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -57,7 +70,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오. <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오. <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### 데이터 입력 {#enterdata}
 
@@ -367,7 +380,7 @@ AEM Forms 서신 관리에서는 서신 만들기 UI에서 문자를 HTML으로 
 * **페이지 나누기**: PDF 미리 보기에서 편지의 페이지 나누기가 출력에 미치는 영향을 정확히 볼 수 있습니다.
 * **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 표시될 때 편지의 정확한 서식과 모양을 볼 수 있습니다.
 
-PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/ko_KR/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
 
 HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
 
@@ -375,7 +388,7 @@ HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에
 
 기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한으로 인해 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제가 발생할 수 있습니다.
 
-편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 편지의 미리보기 모드를 변경하려면 다음 단계를 완료하십시오.
 

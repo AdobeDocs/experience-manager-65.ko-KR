@@ -4,13 +4,23 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1104'
 ht-degree: 4%
-
 ---
-
 # 적응형 Forms의 사용자 정의 기능
 
 ## 소개
@@ -79,10 +89,10 @@ function ValidateEmail(inputText)
 함수에서 사용하는 매개 변수를 표시합니다. 함수는 여러 매개 변수 태그를 가질 수 있으며, 발생 순서로 각 매개 변수에 대해 하나의 태그가 있습니다.
   `{type}`은(는) 매개 변수 형식을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
 
-   1. 문자열
-   2. 숫자
-   3. 부울
-   4. 범위
+  1. 문자열
+  2. 숫자
+  3. 부울
+  4. 범위
 
   범위는 적응형 양식의 참조 필드에 사용됩니다. 폼에서 소극적 로드를 사용하는 경우 `scope`을(를) 사용하여 해당 필드에 액세스할 수 있습니다. 필드가 로드될 때 또는 필드가 전역으로 표시될 때 필드에 액세스할 수 있습니다.
 
@@ -94,9 +104,9 @@ function ValidateEmail(inputText)
 함수 목적 등 함수에 대한 정보를 추가합니다.
   {type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
-   1. 문자열
-   1. 숫자
-   1. 부울
+  1. 문자열
+  1. 숫자
+  1. 부울
 
   다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
 
@@ -105,7 +115,7 @@ function ValidateEmail(inputText)
 
   규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
 
-  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this`의 `this.value` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
+  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this.value`의 `this` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
 
   ```
      /**
@@ -203,11 +213,11 @@ var c = {
 
 1. 변경 사항을 저장합니다.
 
-1. `js` 폴더 아래에 `clientlibs` 폴더를 만듭니다.
-1. `functions.js` 폴더 아래에 `js`(이)라는 JavaScript 파일을 만듭니다.
-1. `js.txt` 폴더 아래에 `clientlibs` 파일을 만듭니다.
+1. `clientlibs` 폴더 아래에 `js` 폴더를 만듭니다.
+1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
+1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
-생성된 폴더 구조 형태는 다음과 같습니다.
+생성된 폴더 구조는 다음과 같습니다.
 
    ![클라이언트 라이브러리 폴더 구조가 생성됨](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. `functions.js` 파일을 두 번 클릭하여 편집기를 엽니다. 이 파일은 사용자 지정 함수에 대한 코드로 구성됩니다.

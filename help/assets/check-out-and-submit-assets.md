@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Assets]에서 파일 체크 인 및 체크 아웃'
+title: '[!DNL Assets]에서 파일 체크 인 및 체크 아웃'
 description: 편집할 자산을 체크아웃하고 변경 사항이 완료된 후 다시 체크인하는 방법을 알아봅니다.
 contentOwner: AG
 role: User
@@ -7,18 +7,27 @@ feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '479'
 ht-degree: 5%
-
 ---
-
 # [!DNL Experience Manager] DAM에서 파일 체크인 및 체크아웃 {#check-in-and-check-out-files-in-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 편집할 자산을 체크 아웃하고 변경 작업을 완료한 후 다시 체크 인할 수 있습니다. 에셋을 체크 아웃한 후에는 에셋만 편집, 주석 달기, 게시, 이동 또는 삭제할 수 있습니다. 에셋을 체크 아웃하면 에셋이 잠깁니다. 다른 사용자는 자산을 [!DNL Assets]에 다시 체크 인할 때까지 자산에 대해 이러한 작업을 수행할 수 없습니다. 그러나 여전히 잠긴 에셋의 메타데이터를 변경할 수 있습니다.
@@ -70,5 +79,5 @@ ht-degree: 5%
 
 >[!MORELIKETHIS]
 >
->* [체크인 및 체크아웃 이해 [!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#how-app-works2)
->* [체크인 및 체크아웃을 이해하는 데 필요한 비디오 튜토리얼 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=ko)
+>* [체크인 및 체크아웃 이해 [!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [체크인 및 체크아웃을 이해하는 데 필요한 비디오 튜토리얼 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)

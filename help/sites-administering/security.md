@@ -10,13 +10,25 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5471'
 ht-degree: 1%
-
 ---
-
 # 사용자 관리 및 보안{#user-administration-and-security}
 
 이 장에서는 사용자 인증을 구성하고 유지 관리하는 방법과 AEM에서 인증 및 인증이 작동하는 방식에 대한 이론에 대해서도 설명합니다.
@@ -269,7 +281,7 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
   </tr>
   <tr>
    <td>아래 부분</td>
-   <td>트리의 다른 곳에 영향을 줄 수 있는 유효하지 않은 항목을 나열합니다(항목의 범위를 제한하는 해당 ACE와 함께 있는 특수 속성으로 표시됨). 또는 해당 경로나 상위 노드에 정의된 다른 항목에 의해 효과가 취소된 항목입니다.</td>
+   <td>트리의 다른 곳에 영향을 줄 수 있는 유효하지 않은 항목을 나열합니다(항목의 범위를 제한하는 해당 ACE과 함께 존재하는 특수 속성으로 표시됨). 또는 해당 경로나 상위 노드에 정의된 다른 항목에 의해 효과가 취소된 항목입니다.</td>
   </tr>
  </tbody>
 </table>

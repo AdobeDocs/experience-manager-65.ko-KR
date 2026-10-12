@@ -10,18 +10,25 @@ exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '659'
 ht-degree: 0%
-
 ---
-
 # AEM 6.5 커뮤니티로 업그레이드 {#upgrading-to-aem-communities}
 
 각 사이트의 토폴로지 및 기능에 따라 AEM Communities 6.5로 업그레이드하거나 최신 기능 팩을 설치할 때 다음 작업이 필요할 수 있습니다.
 
-이 섹션은 커뮤니티에만 해당되며 [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)(플랫폼)에 제공된 정보를 보완합니다.
+이 섹션은 커뮤니티에만 해당되며 [AEM 6.5](/help/sites-deploying/upgrade.md)(플랫폼으로 업그레이드)에 제공된 정보를 보완합니다.
 
 ## AEM 6.1 이상에서 업그레이드 {#upgrading-from-aem-or-later}
 
@@ -50,22 +57,22 @@ MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치할 때 다음�
 * [ASRP](/help/communities/asrp.md) 구성.
 * 기존 UGC를 표시하려면 다음 단계를 따르십시오.
 
-   * 웹 콘솔로 이동합니다.
+  * 웹 콘솔로 이동합니다.
 
-      * 예: [https://&lt;host>:&lt;port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 예: [https://&lt;host>:&lt;port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * **AEM Communities 유틸리티** 구성을 찾습니다.
-      * 구성 패널을 확장하려면 선택하십시오.
+    * **AEM Communities 유틸리티** 구성을 찾습니다.
+    * 구성 패널을 확장하려면 선택하십시오.
 
-         * *선택 취소* `Cloud Storage`
+      * *선택 취소* `Cloud Storage`
 
-         * **저장** 선택
+      * **저장** 선택
 
-     ![유틸리티](assets/utilities.png)
+    ![유틸리티](assets/utilities.png)
 
 ### On-Premise 스토리지 {#on-premise-storage}
 
-업그레이드된 사이트에서 클라우드 스토리지를 사용하지 않은 경우, 기존 UGC를 변환하여 일반 스토어를 지원하는 AEM 6.1 Communities에 도입된 새로운 구조를 준수해야 합니다.
+업그레이드된 사이트에서 클라우드 스토리지를 사용하지 않은 경우, 기존 UGC를 전환하여 공통 스토어를 지원하는 AEM 6.1 Communities에 도입된 새로운 구조에 맞게 해야 합니다.
 
 이를 위해 GitHub에서 오픈 소스 마이그레이션 도구를 사용할 수 있습니다.
 [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
@@ -80,7 +87,7 @@ AEM 6.0 소셜 커뮤니티에서 AEM 6.3 커뮤니티로 업그레이드할 때
 
 ### JSP 구성 요소 템플릿 없음 {#no-jsp-component-templates}
 
-[소셜 구성 요소 프레임워크](/help/communities/scf.md)(SCF)에서는 AEM 6.0 이전에 사용된 JSP(Java Server Pages) 대신 [HandlebarsJS](https://handlebarsjs.com/)(HBS) 템플릿 언어를 사용합니다.
+[소셜 구성 요소 프레임워크](/help/communities/scf.md)(SCF)에서는 AEM 6.0 이전에 사용된 JSP(Java Server Pages) 대신 [HandlebarsJS](https://handlebarsjs.com/)&#x200B;(HBS) 템플릿 언어를 사용합니다.
 
 AEM 6.0에서 JSP 구성 요소는 동일한 위치에서 새 HBS 프레임워크 구성 요소와 함께 유지되었으며, 일반적으로 HBS 구성 요소는 &quot;hbs&quot;라는 하위 폴더에 있습니다.
 
@@ -98,6 +105,6 @@ AEM 6.1부터 JSP 구성 요소가 완전히 제거되었습니다. 커뮤니티
 
 **Gen 1**: 대략 CQ 5.4부터 AEM 5.6.0까지, 플랫폼 간에 UGC를 동기화하는 수단으로 복제를 사용하여 로컬 리포지토리에 UGC를 저장한 **collab** 구성 요소입니다. 다른 차이점은 JSP(Java Server Pages)를 사용한 구현과 작성 환경에서만 작성하도록 구성된 블로그 기능과 관련이 있습니다.
 
-**Gen 2**: AEM 5.6.1부터 AEM 6.1까지 **collab**&#x200B;과(와) **social** 구성 요소가 혼합되어 있습니다. AEM 6.0에는 새 [SCF(소셜 구성 요소 프레임워크)](/help/communities/scf.md)이 도입되었고 AEM 6.2에는 [저장소 리소스 공급자](/help/communities/srp.md)(SRP)를 사용하여 UGC에 액세스하는 [공통 UGC 저장소](/help/communities/working-with-srp.md)가 도입되었습니다.
+**세대 2**: AEM 5.6.1부터 AEM 6.1까지 **collab**&#x200B;과(와) **social** 구성 요소가 혼합되어 있습니다. AEM 6.0에는 새 [소셜 구성 요소 프레임워크](/help/communities/scf.md)(SCF)가 도입되었고 AEM 6.2에는 [저장소 리소스 공급자](/help/communities/srp.md)(SRP)를 사용하여 UGC에 액세스하는 [공통 UGC 저장소](/help/communities/working-with-srp.md)가 도입되었습니다.
 
-**Gen 3**: AEM 6.2부터 UGC에 대해 SRP를 선택해야 하는 HBS(Handlebars) 구성 요소로 SCF에 구현된 구성 요소는 **social**&#x200B;뿐입니다.
+**Gen 3**: AEM 6.2 이상에는 UGC에 대해 SRP를 선택해야 하는 HBS(Handlebars) 구성 요소로 SCF에 구현된 **social** 구성 요소만 있습니다.

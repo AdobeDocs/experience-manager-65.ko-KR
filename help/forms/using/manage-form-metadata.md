@@ -1,20 +1,31 @@
 ---
 title: 양식 메타데이터 관리
-
 description: 메타데이터를 사용하면 에셋을 보다 쉽게 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-
 docset: aem65
-
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 2%
@@ -23,7 +34,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
 | AEM 6.5 | 이 문서 |
 
 ## 개요  {#overview-nbsp}
@@ -280,7 +291,7 @@ AEM Forms은 이 도구에서 지원되는 양식 유형의 메타데이터 스�
 
    1. 잠긴 섹션은 편집할 수 없으며 즉시 제공되는 모든 메타데이터 속성에 대한 필드를 포함합니다.
 
-   1. &#x200B;+ 기호를 클릭하여 탭을 더 추가할 수 있습니다.
+   1. + 기호를 클릭하여 탭을 더 추가할 수 있습니다.
 
    1. 의 **[!UICONTROL 양식 작성]** 섹션에서 스키마 페이지로 필드 구성 요소를 끌어 원하는 형식의 사용자 지정 필드를 추가할 수 있습니다.
    1. 이 필드에 대한 사양은 필드를 클릭한 후 **[!UICONTROL 설정]** 섹션에서 제공할 수 있습니다.

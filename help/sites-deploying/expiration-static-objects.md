@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 1%
-
 ---
-
 # 정적 오브젝트 만료{#expiration-of-static-objects}
 
 정적 객체(예: 아이콘)는 변경되지 않습니다. 따라서 시스템이 (적절한 기간 동안) 만료되지 않고 불필요한 트래픽을 줄이도록 구성되어야 합니다.

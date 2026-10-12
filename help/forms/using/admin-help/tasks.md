@@ -9,20 +9,34 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
-
 ---
-
 # 작업 처리 {#working-with-tasks}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-작업 검색 페이지에서 사용자 이름이나 작업 ID로 작업을 검색합니다. 검색 결과는 작업 목록 페이지에 표시되며 여기서 작업 기록에 액세스할 수 있습니다. 한 사용자에게 너무 많은 작업이 할당되거나 사용자가 실수로 작업 할당을 받은 경우 작업을 재할당할 수도 있습니다.
+작업 검색 페이지에서 사용자 이름이나 작업 ID로 작업을 검색합니다. 검색 결과는 작업 목록 페이지에 표시되며 여기서 작업 기록에 액세스할 수 있습니다. 한 사용자에게 너무 많은 작업이 할당되었거나 사용자가 실수로 작업 할당을 받은 경우 작업을 재할당할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -66,7 +80,7 @@ ht-degree: 100%
 
 작업 기록 페이지에는 특정 작업에 할당된 사용자 및 그룹 목록이 표시됩니다.
 
-목록에는 다음과 같은 각 작업 할당의 정보가 표시됩니다.
+각 작업 할당에 대해 목록에는 다음 정보가 표시됩니다.
 
 **이름:** 사용자 이름입니다.
 
@@ -86,7 +100,7 @@ ht-degree: 100%
 
 **에스컬레이션:** 사용자 상호 작용 없이 미리 결정된 시간(워크벤치의 사용자 작업에서 설정됨)이 경과하고 다른 사용자에게 작업이 할당되었습니다.
 
-**참조:** 작업 소유자가 참조를 위해 이 작업을 다른 사용자에게 전달했습니다. 해당 사용자는 양식을 열고, 데이터를 저장하고, 첨부 파일과 메모를 수정할 수 있지만, 단계를 완료할 수는 없습니다. 사용자는 자신과 함께 참조한 작업 소유자에게 작업을 반환해야 합니다.
+**참조:** 작업 소유자가 참조를 위해 이 작업을 다른 사용자에게 전달했습니다. 해당 사용자는 양식을 열고, 데이터를 저장하고, 첨부 파일과 메모를 수정할 수 있지만, 단계를 완료할 수는 없습니다. 사용자는 사용자와 상의한 작업 소유자에게 작업을 반환해야 합니다.
 
 **관리자 재할당:** 작업이 관리자에 의해 재할당되었습니다.
 

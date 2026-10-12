@@ -7,13 +7,27 @@ feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 3%
-
 ---
-
 # 에이전트 UI를 사용하여 인터랙티브 커뮤니케이션 준비 및 전송 {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 에이전트는 에이전트 UI를 통해 대화형 통신을 준비하고 게시 프로세스로 보낼 수 있습니다. 에이전트는 필요에 따라 수정하고 대화형 커뮤니케이션을 이메일 또는 인쇄와 같은 사후 프로세스에 제출합니다.
@@ -47,7 +61,7 @@ ht-degree: 3%
 
 ### 데이터 입력 {#enter-data}
 
-1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&ast;)로 표시된 필수 필드를 모두 채워 **제출** 단추를 사용하도록 설정합니다.
+1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 대한 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 필수 필드를 모두 채워 **제출** 단추를 사용하도록 설정합니다.
 
    대화형 통신 미리 보기에서 데이터 필드 값을 선택하여 데이터 탭에서 해당 데이터 필드를 강조 표시하거나 반대로 선택합니다.
 
@@ -71,8 +85,8 @@ ht-degree: 3%
 
    * [서식 옵션](#formattingtext)
 
-      * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#pasteformattedtext)
-      * [텍스트 부분 강조 표시](#highlightemphasize)
+     * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#pasteformattedtext)
+     * [텍스트 부분 강조 표시](#highlightemphasize)
 
    * [특수 문자](#specialcharacters)
    * [키보드 단축키](/help/forms/using/keyboard-shortcuts.md)
@@ -146,7 +160,7 @@ ht-degree: 3%
 
 ### 문서 단편 {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **위쪽/아래쪽 화살표**: 대화형 통신에서 문서 조각을 위아래로 이동하는 화살표입니다.
 * **삭제**: 허용되는 경우 대화형 통신에서 문서 단편을 삭제하십시오.
@@ -180,7 +194,7 @@ Adobe에서는 대화형 커뮤니케이션을 초안으로 성공적으로 저�
 
 초안으로 저장(Save as a Draft) 기능은 기본적으로 활성화되어 있지 않습니다. 해당 기능을 활성화하려면 다음 단계를 수행합니다.
 
-1. [ccrDocumentInstance](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
+1. [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스)를 구현합니다.
 
    SPI를 사용하면 대화형 통신의 초안 버전을 고유 식별자로 초안 ID를 사용하여 데이터베이스에 저장할 수 있습니다. 이러한 지침은 Maven 프로젝트를 사용하여 OSGi 번들을 작성하는 방법에 대한 사전 지식이 있다고 가정합니다.
 

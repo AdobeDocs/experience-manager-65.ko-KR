@@ -7,7 +7,25 @@ exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -87,7 +105,7 @@ ht-degree: 1%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 배달 주소, 상태 및 우편번호]** 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나**&#x200B;[!UICONTROL &#x200B; INPUT &#x200B;]&#x200B;**상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
+1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 배달 주소, 상태 및 우편번호]** 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나**[!UICONTROL  INPUT ]**상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
 
    >[!NOTE]
    >

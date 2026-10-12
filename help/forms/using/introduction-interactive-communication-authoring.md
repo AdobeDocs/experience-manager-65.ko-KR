@@ -9,13 +9,29 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 11%
-
 ---
-
 # 인터랙티브 커뮤니케이션 작성 UI 소개{#introduction-to-interactive-communication-authoring-ui}
 
 [대화형 통신](/help/forms/using/interactive-communications-overview.md)을(를) 작성하기 위한 사용자 인터페이스는 직관적이며 대화형 통신의 인쇄 및 웹 채널을 작성하기 위해 다음을 제공합니다.
@@ -58,7 +74,7 @@ Click to enlarge
 * **속성 브라우저**
 
   구성 요소의 속성을 편집할 수 있습니다. 속성은 구성 요소에 따라 변경됩니다. 예를 들어 문서 컨테이너의 속성을 보려면 다음과 같이 하십시오.
-구성 요소를 선택한 다음 ![필드 수준](assets/field-level.png) > **문서 컨테이너**&#x200B;를 선택하고 ![cmpr](assets/cmppr.png)을 선택합니다.
+  구성 요소를 선택한 다음 ![필드 수준](assets/field-level.png) > **문서 컨테이너**&#x200B;를 선택하고 ![cmpr](assets/cmppr.png)을 선택합니다.
 
 * **Assets 브라우저**
 레이아웃 단편, 이미지, 문서, 페이지, 비디오와 같은 다양한 유형의 콘텐츠를 분리합니다. 작성자는 자산을 대화형 통신으로 드래그 앤 드롭할 수 있습니다.
@@ -91,10 +107,10 @@ Click to enlarge
 * 구성 요소는 요소 이름으로 식별됩니다. ![cmppr](assets/cmppr.png)을(를) 선택하면 속성 브라우저에서 요소 이름 필드 값을 변경하여 구성 요소의 이름을 변경할 수 있습니다. 요소 이름 필드는 문자, 숫자, 하이픈(-) 및 밑줄(_)만 허용합니다. 다른 특수 문자는 허용되지 않으며 요소 이름은 문자로 시작해야 합니다.
 * 제목이 대화형 통신에 표시되는 한 속성 브라우저를 열지 않고 편집기에서 인라인으로 대화형 통신 구성 요소의 제목 속성을 수정할 수 있습니다. 방법은 다음과 같습니다.
 
-   1. 제목 속성이 있고 제목 숨기기 속성이 비활성화된 구성 요소를 선택하려면 선택합니다.
-   1. 제목을 편집할 수 있게 하려면 ![aem_6_3_edit](assets/aem_6_3_edit.png)을(를) 선택하십시오.
+  1. 제목 속성이 있고 제목 숨기기 속성이 비활성화된 구성 요소를 선택하려면 선택합니다.
+  1. 제목을 편집할 수 있게 하려면 ![aem_6_3_edit](assets/aem_6_3_edit.png)을(를) 선택하십시오.
 
-   1. 제목을 수정하고 Return 키를 선택하거나 구성 요소 외부 아무 곳이나 선택하여 변경 사항을 저장합니다. Esc 키를 선택하여 변경 내용을 취소합니다.
+  1. 제목을 수정하고 Return 키를 선택하거나 구성 요소 외부 아무 곳이나 선택하여 변경 사항을 저장합니다. Esc 키를 선택하여 변경 내용을 취소합니다.
 
 ## 구성 요소 도구 모음 {#component-toolbar}
 
@@ -139,13 +155,13 @@ M: **패널 도구 모음 추가**(패널만 해당):Lets 패널 구성 요소�
 * 에뮬레이터 ![눈금자](assets/ruler.png): 태블릿 및 휴대폰과 같은 다양한 디스플레이 크기에 대해 대화형 통신의 모양을 에뮬레이션할 수 있습니다.
 * 편집: 편집, 스타일, 개발자 및 디자인과 같은 다른 모드를 선택할 수 있습니다.
 
-   * 편집: 대화형 통신 및 해당 구성 요소의 속성을 편집할 수 있습니다. 예: 구성 요소 추가, 이미지 드롭, 필수 필드 지정 등.
-   * 스타일: 대화형 통신 구성 요소의 모양 스타일을 지정할 수 있습니다. 예를 들어 스타일 모드에서는 패널을 선택하고 배경색을 지정할 수 있습니다.
-   * 개발자: 개발자가 다음과 같은 작업을 수행할 수 있습니다.
+  * 편집: 대화형 통신 및 해당 구성 요소의 속성을 편집할 수 있습니다. 예: 구성 요소 추가, 이미지 드롭, 필수 필드 지정 등.
+  * 스타일: 대화형 통신 구성 요소의 모양 스타일을 지정할 수 있습니다. 예를 들어 스타일 모드에서는 패널을 선택하고 배경색을 지정할 수 있습니다.
+  * 개발자: 개발자가 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 대화형 커뮤니케이션이 무엇으로 구성되어 있는지 알아봅니다.
-      * 장소와 시간에 따라 발생하는 문제를 디버그하면 문제 해결에 도움이 됩니다.
+    * 대화형 커뮤니케이션이 무엇으로 구성되어 있는지 알아봅니다.
+    * 무슨 일이 어디서 언제 발생하는지 디버그하면 문제 해결에 도움이 됩니다.
 
-   * Target: 사용자 지정 구성 요소 또는 사이드바에 나열되지 않은 기본 구성 요소를 활성화하거나 비활성화할 수 있습니다.
+  * Target: 사용자 지정 구성 요소 또는 사이드바에 나열되지 않은 기본 구성 요소를 활성화하거나 비활성화할 수 있습니다.
 
 * 미리 보기: 게시할 때 대화형 통신이 어떻게 보이는지 미리 볼 수 있습니다.

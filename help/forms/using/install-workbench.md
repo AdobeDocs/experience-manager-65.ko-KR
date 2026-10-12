@@ -7,13 +7,31 @@ role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
-
 ---
-
 # Workbench 설치 {#install-workbench}
 
 이 문서에서는 AEM Forms Workbench 설치 및 구성에 대한 지침을 제공합니다. 설치 프로그램은 Forms Designer도 설치합니다.
@@ -37,11 +55,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>AEM Forms 및 다른 Adobe 제품과 통합하는 방법에 대한 일반 정보</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=ko">AEM Forms 개요</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 개요</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms에 사용할 수 있는 모든 설명서</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=ko">AEM Forms 설명서</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 설명서</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 참고 사항 및 추가 정보</p> </td>
@@ -100,7 +118,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
-[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_kr)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
+[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
 
 ## Designer 설치 고려 사항 {#designer-installation-considerations}
 
@@ -191,7 +209,7 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행 �
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
 
-기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=ko">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
+기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
 
 ### HTTPS를 통해 연결하도록 Workbench 구성 {#configuring-workbench-to-connect-over-HTTPS}
 

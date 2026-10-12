@@ -9,7 +9,18 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 2%
@@ -582,7 +593,7 @@ AEM 패키지를 사용하여 AEM 환경에서 콘텐츠를 만들고 공유할 
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)은(는) AEM 패키지의 검색 및 다운로드를 간소화하기 위해 고안된 중앙 집중식 서비스입니다.
 
-자세한 내용은 [소프트웨어 배포 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko)
+자세한 내용은 [소프트웨어 배포 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

@@ -7,26 +7,40 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 98%
-
 ---
-
 # 사용자 추가 및 구성 {#adding-and-configuring-users}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-사용자 및 그룹 정보는 LDAP 디렉터리와 같은 서드파티 스토리지 시스템에서 유지 관리됩니다. 사용자 관리는 서드파티 스토리지 시스템에 기록하지 않습니다. 대신 사용자 및 그룹 정보를 자체 데이터베이스와 동기화합니다.
+사용자 및 그룹 정보는 LDAP 디렉터리와 같은 제3자 스토리지 시스템에서 유지 관리됩니다. 사용자 관리는 제3자 스토리지 시스템에 기록하지 않습니다. 대신 사용자 및 그룹 정보를 자체 데이터베이스와 동기화합니다.
 
 ## 사용자 만들기 {#create-a-user}
 
 사용자를 만들면 해당 사용자를 그룹에 추가하고 역할을 할당할 수 있습니다.
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**&#x200B;를 클릭합니다.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**를 클릭합니다.
 .
 1. **[!UICONTROL 일반 설정]**&#x200B;에서 필요한 정보를 입력한 후 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 설정에 대한 자세한 내용은 [사용자 설정](adding-configuring-users.md#user-settings)을 참조하십시오.
 1. (선택 사항) 사용자를 그룹에 추가하려면 **[!UICONTROL 그룹 찾기]**&#x200B;를 클릭하고 다음 작업을 수행합니다.
@@ -48,9 +62,9 @@ ht-degree: 98%
 
 사용자를 만들거나 편집할 때 다음 설정을 지정합니다.
 
-**정식 이름:** (필수) 사용자의 고유 식별자입니다. 도메인의 각 사용자 및 그룹은 고유한 정식 이름을 사용해야 합니다. 시스템 생성 확인란을 선택하여 사용자 관리에서 고유한 값을 할당하도록 하거나 확인란을 선택 취소하고 정식 이름에 대한 사용자 정의 값을 지정합니다.
+**정식 이름:** (필수) 사용자의 고유 식별자입니다. 도메인의 각 사용자 및 그룹은 고유한 정식 이름을 사용해야 합니다. 시스템 생성 확인란을 선택하여 사용자 관리에서 고유 값을 할당하도록 하거나 확인란을 선택 취소하고 정식 이름에 대한 사용자 정의 값을 지정합니다.
 
-정식 이름에는 `sample_user`과 같은 밑줄 문자(_)를 사용하지 마십시오. 정식 이름을 기준으로 사용자를 검색하는 경우 밑줄 문자가 포함된 그룹은 반환되지 않습니다.
+정식 이름에는 `sample_user`과 같은 밑줄 문자(_)를 사용하지 마십시오. 정식 이름을 기준으로 사용자를 검색하는 경우 밑줄 문자가 포함된 사용자는 반환되지 않습니다.
 
 **이름:** (필수) 사용자 이름입니다.
 
@@ -78,7 +92,7 @@ ht-degree: 98%
 
 로컬 또는 하이브리드 도메인을 사용하는 경우 사용자 정보는 사용자 관리 데이터베이스에만 저장됩니다. 해당 사용자의 경우 비즈니스 캘린더 키를 문자열로 설정합니다. 그런 다음, 비즈니스 캘린더 키(해당 문자열)를 Forms Workflow의 비즈니스 캘린더에 매핑합니다.
 
-엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 서드파티 스토리지 시스템에 저장됩니다. 사용자 관리에서는 디렉터리의 사용자 정보를 사용자 관리 데이터베이스와 동기화합니다. 이 기능을 사용하면 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 국가 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 시나리오를 생각해 보십시오. 이 경우 비즈니스 캘린더 키 설정 값으로 국가 필드 이름을 지정합니다. 그런 다음, 비즈니스 캘린더 키(LDAP 디렉터리의 국가 필드에 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다.
+엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 제3자 스토리지 시스템에 저장됩니다. 사용자 관리에서는 디렉터리의 사용자 정보를 사용자 관리 데이터베이스와 동기화합니다. 이 기능을 사용하면 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 국가 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 시나리오를 생각해 보십시오. 이 경우 비즈니스 캘린더 키 설정 값으로 국가 필드 이름을 지정합니다. 그런 다음, 비즈니스 캘린더 키(LDAP 디렉터리의 국가 필드에 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다.
 
 비즈니스 캘린더 키를 비즈니스 캘린더에 매핑하는 방법을 포함하여 비즈니스 캘린더에 대한 자세한 내용은 [비즈니스 캘린더 구성](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars)을 참조하십시오.
 
@@ -160,7 +174,7 @@ MySQL을 사용할 때 사용자 ID에 확장 문자가 포함될 수 있습니�
 
 >[!NOTE]
 >
->JEE의 AEM Forms를 사용하면 OSGi에서 실행되는 AEM Forms 추가 기능 사용자도 AEM 사용자로 인식될 수 있습니다. 이는 JEE의 AEM Forms와 OSGi에서 실행되는 AEM Forms 추가 기능 간의 Single Sign-On이 필요한 시나리오(예: HTML Workspace)에 필요합니다. 위에 명시된 삭제 작업은 JEE의 AEM Forms에서만 사용자를 제거합니다. OSGi 환경에서 실행되는 AEM Forms 추가 기능에서는 사용자가 삭제되지 않습니다. 하지만 사용자를 삭제한 후 이루어지는 로그인 시도(AEM Forms 추가 기능 JEE 서버 또는 OSGi 환경의 AEM Forms 추가 기능에 대한 로그인 시도)는 거부됩니다.
+>JEE의 AEM Forms를 사용하면 OSGi에서 실행되는 AEM Forms 추가 기능 사용자도 AEM 사용자로 인식될 수 있습니다. 이는 JEE의 AEM Forms와 OSGi에서 실행되는 AEM Forms 추가 기능 간의 SSO(Single Sign-On)가 필요한 시나리오(예: HTML Workspace)에 필요합니다. 위에 명시된 삭제 작업은 AEM Forms on JEE에서만 사용자를 제거합니다. OSGi 환경에서 실행되는 AEM Forms 추가 기능에서는 사용자가 삭제되지 않습니다. 하지만 사용자를 삭제한 후 이루어지는 로그인 시도(AEM Forms 추가 기능 JEE 서버 또는 OSGi 환경의 AEM Forms 추가 기능에 대한 로그인 시도)는 거부됩니다.
 
 ## 사용자 정의 로그인 오류 핸들러 만들기 {#create-custom-login-error-handler}
 

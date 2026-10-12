@@ -10,13 +10,26 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 81%
-
 ---
-
 # 페이지 비교{#page-diff}
 
 ## 소개 {#introduction}
@@ -34,9 +47,9 @@ ht-degree: 81%
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
 * [버전](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
-* [&#128279;](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
 * [론치](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
-* [&#128279;](/help/sites-administering/tc-manage.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 
@@ -93,7 +106,7 @@ ht-degree: 81%
 * 버전의 경우 비교 기능을 사용하면 액세스 제어 정책 및 Live Copy 관계가 다시 생성되지 않습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
 
-   * 차이에 문제가 발생한 경우 페이지에 대한 [타임라인](/help/sites-authoring/basic-handling.md#timeline)에서 페이지가 이동되었는지 확인합니다.
+  * 차이에 문제가 발생한 경우 페이지에 대한 [타임라인](/help/sites-authoring/basic-handling.md#timeline)에서 페이지가 이동되었는지 확인합니다.
 
 >[!NOTE]
 >

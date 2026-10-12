@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 2%
-
 ---
-
 # 커뮤니티 점수 및 배지 {#communities-scoring-and-badges}
 
 ## 개요 {#overview}
@@ -164,8 +171,8 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 * page2 구성 요소에 대한 작업은 rule1과 rule2를 모두 호출합니다.
 * 두 규칙 모두에 동일한 `topic/verb`에 적용 가능한 하위 규칙이 포함되어 있는 경우:
 
-   * rule2의 하위 규칙만 점수에 영향을 줍니다.
-   * 두 하위 규칙의 점수는 추가되지 않습니다.
+  * rule2의 하위 규칙만 점수에 영향을 줍니다.
+  * 두 하위 규칙의 점수는 추가되지 않습니다.
 
 채점 규칙이 두 개 이상인 경우, 점수는 각 규칙마다 별도로 유지된다.
 
@@ -181,7 +188,8 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 >
 >*수행할 작업이*&#x200B;이(가) 아닌 작업의 예:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### 채점 하위 규칙 {#scoring-sub-rules}
 
@@ -296,7 +304,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 * `sub-rules`은(는) 다양한 채점 규칙 간에 공유될 수 있습니다.
 * `rules`은(는) 모든 사용자에 대한 읽기 권한이 있는 저장소 위치에 있어야 합니다.
 
-   * 규칙 이름은 위치에 관계없이 고유해야 합니다.
+  * 규칙 이름은 위치에 관계없이 고유해야 합니다.
 
 ### 사용자 지정 점수 규칙 활성화 {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * 브론즈 배지는 1점 획득으로 수여된다.
+  * 브론즈 배지는 1점 획득으로 수여된다.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * 실버 배지는 60점이 누적되면 수여된다.
+  * 실버 배지는 60점이 누적되면 수여된다.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * 골드 배지는 80점이 적립되면 수여된다.
+  * 골드 배지는 80점이 적립되면 수여된다.
 
 배지 규칙은 점수가 누적되는 방법을 결정하는 점수 규칙과 쌍을 이룹니다. [콘텐츠에 규칙 적용](#apply-rules-to-content) 섹션을 참조하십시오.
 
@@ -378,7 +386,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 * `rules`개의 노드가 cq:Page 유형입니다.
 * `rules`은(는) 모든 사용자에 대한 읽기 권한이 있는 저장소 위치에 있어야 합니다.
 
-   * 규칙 이름은 위치에 관계없이 고유해야 합니다.
+  * 규칙 이름은 위치에 관계없이 고유해야 합니다.
 
 ### 사용자 지정 배지 규칙 활성화 {#activating-custom-badging-rules}
 
@@ -581,29 +589,29 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * 작성자의 CRXDE Lite에 액세스합니다.
 * 기본 페이지로 이동합니다.
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * badgingRules 속성을 추가합니다.
 
-   * **이름**: `badgingRules`
-   * **유형**: `String`
-   * **다중** 선택
-   * **추가** 선택
-   * `/libs/settings/community/badging/rules/forums-badging` 입력
-   * **+** 선택
-   * `/libs/settings/community/badging/rules/comments-badging` 입력
-   * **확인** 선택
+  * **이름**: `badgingRules`
+  * **유형**: `String`
+  * **다중** 선택
+  * **추가** 선택
+  * `/libs/settings/community/badging/rules/forums-badging` 입력
+  * **+** 선택
+  * `/libs/settings/community/badging/rules/comments-badging` 입력
+  * **확인** 선택
 
 * scoringRules 속성을 추가합니다.
 
-   * **이름**: `scoringRules`
-   * **유형**: `String`
-   * **다중** 선택
-   * **추가** 선택
-   * `/libs/settings/community/scoring/rules/forums-scoring` 입력
-   * **+** 선택
-   * `/libs/settings/community/scoring/rules/comments-scoring` 입력
-   * **확인** 선택
+  * **이름**: `scoringRules`
+  * **유형**: `String`
+  * **다중** 선택
+  * **추가** 선택
+  * `/libs/settings/community/scoring/rules/forums-scoring` 입력
+  * **+** 선택
+  * `/libs/settings/community/scoring/rules/comments-scoring` 입력
+  * **확인** 선택
 
 * **모두 저장**&#x200B;을 선택합니다.
 
@@ -614,13 +622,13 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * CRXDE Lite을 다시 사용합니다.
 * 포럼 구성 요소 찾아보기
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * 필요한 경우 allowBadges 부울 속성을 추가하고 true인지 확인합니다.
 
-   * **이름**: `allowBadges`
-   * **유형**: `Boolean`
-   * **값**: `true`
+  * **이름**: `allowBadges`
+  * **유형**: `Boolean`
+  * **값**: `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * 새 포럼 주제를 게시합니다.
 * 배지를 표시하려면 페이지를 새로 고쳐야 합니다.
 
-   * 로그아웃한 후 다른 커뮤니티 구성원으로 로그인합니다(예: aaron.mcdonald@mailinator.com/password).
+  * 로그아웃한 후 다른 커뮤니티 구성원으로 로그인합니다(예: aaron.mcdonald@mailinator.com/password).
 
 * 포럼을 선택합니다.
 

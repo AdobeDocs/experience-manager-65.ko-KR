@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 2%
-
 ---
-
 
 # 이메일 템플릿 모범 사례 {#best-practices-for-email-templates}
 
@@ -25,7 +34,7 @@ ht-degree: 2%
 >
 >이 문서는 더 이상 사용되지 않는 기초 구성 요소 기반 AEM 이메일 구성 요소에 적용됩니다.
 >
->사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=ko)
+>사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 이 문서에서는 이메일 디자인 관련 모범 사례 중 일부를 설명합니다. 이렇게 하면 이메일 캠페인 템플릿이 제대로 개발됩니다.
 

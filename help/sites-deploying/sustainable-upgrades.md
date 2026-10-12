@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # 지속 가능한 업그레이드{#sustainable-upgrades}
 
 ## 사용자 지정 프레임워크 {#customization-framework}
@@ -29,7 +38,7 @@ ht-degree: 0%
 
 #### API 표면 {#api-surface}
 
-이전 Adobe Experience Manager(AEM) 릴리스에서는 많은 API가 Uber Jar를 통해 노출되었습니다. 이러한 API 중 일부는 고객이 사용하도록 의도되지 않았지만 번들 전반에서 AEM 기능을 지원하도록 노출되었습니다. 앞으로 Java™ API는 고객에게 업그레이드 컨텍스트에서 안전하게 사용할 수 있는 API를 나타내기 위해 공개 또는 비공개로 표시됩니다. 기타 세부 사항은 다음과 같습니다.
+이전 Adobe Experience Manager 릴리스(AEM)에서는 많은 API가 Uber Jar를 통해 노출되었습니다. 이러한 API 중 일부는 고객이 사용하도록 만들어진 것이 아니라 번들 전반에 걸쳐 AEM 기능을 지원하도록 노출되었습니다. 앞으로 Java™ API는 고객에게 업그레이드 컨텍스트에서 안전하게 사용할 수 있는 API를 나타내기 위해 공개 또는 비공개로 표시됩니다. 기타 세부 사항은 다음과 같습니다.
 
 * `Public`(으)로 표시된 Java™ API는 사용자 지정 구현 번들에서 사용하고 참조할 수 있습니다.
 
@@ -45,11 +54,11 @@ ht-degree: 0%
 
 #### 컨텐츠 분류 {#content-classifications}
 
-AEM은 고객이 AEM 기능을 확장하고 사용자 정의할 수 있도록 하기 위해 오랫동안 오버레이 및 Sling 리소스 병합의 주도권을 사용했습니다. AEM 콘솔 및 UI를 구동하는 사전 정의된 기능이 **/libs**&#x200B;에 저장됩니다. 고객은 **/libs** 아래의 내용을 수정하지 않지만 **/apps** 아래에 컨텐츠를 추가하여 오버레이하고 **/libs**&#x200B;에 정의된 기능을 확장할 수 있습니다(자세한 내용은 오버레이를 사용하여 개발 참조). 이로 인해 **/libs**&#x200B;의 콘텐츠가 변경되어 오버레이 기능이 예기치 않은 방식으로 중단될 수 있으므로 AEM을 업그레이드할 때 여전히 많은 문제가 발생합니다. 고객은 상속을 통해 `sling:resourceSuperType`을(를) 통해 AEM 구성 요소를 확장하거나 sling:resourceType을 통해 직접 **/libs**&#x200B;의 구성 요소를 참조할 수도 있습니다. 참조 및 재정의 사용 사례와 관련하여 유사한 업그레이드 문제가 발생할 수 있습니다.
+AEM은 오랫동안 오버레이 및 Sling 리소스 병합의 주도권을 사용하여 고객이 AEM 기능을 확장하고 맞춤화할 수 있도록 했습니다. AEM 콘솔 및 UI를 구동하는 사전 정의된 기능이 **/libs**&#x200B;에 저장됩니다. 고객은 **/libs** 아래의 내용을 수정하지 않지만 **/apps** 아래에 컨텐츠를 추가하여 오버레이하고 **/libs**&#x200B;에 정의된 기능을 확장할 수 있습니다(자세한 내용은 오버레이를 사용하여 개발 참조). 이로 인해 **/libs**&#x200B;의 콘텐츠가 변경되어 오버레이 기능이 예기치 않은 방식으로 중단될 수 있으므로 AEM을 업그레이드할 때 여전히 많은 문제가 발생합니다. 고객은 상속을 통해 `sling:resourceSuperType`을(를) 통해 AEM 구성 요소를 확장하거나 sling:resourceType을(를) 통해 직접 **/libs**&#x200B;의 구성 요소를 참조할 수도 있습니다. 참조 및 재정의 사용 사례와 관련하여 유사한 업그레이드 문제가 발생할 수 있습니다.
 
 고객이 **/libs**&#x200B;의 영역을 보다 안전하고 쉽게 이해할 수 있도록 **/libs**&#x200B;의 컨텐츠를 다음 mixin으로 분류했습니다.
 
-* **공개(granite:PublicArea)** - 노드를 오버레이하거나 상속하거나(`sling:resourceSuperType`) 직접 사용하거나(`sling:resourceType`) 사용할 수 있도록 공개로 정의합니다. 공용으로 표시된 /libs 아래의 노드는 호환성 패키지를 추가하여 안전하게 업그레이드할 수 있습니다. 일반적으로 고객은 공개로 표시된 노드만 사용해야 합니다.
+* **공개(granite:PublicArea)** - 노드를 오버레이하거나 상속(`sling:resourceSuperType`)하거나 직접 사용(`sling:resourceType`)할 수 있도록 공개로 정의합니다. 공용으로 표시된 /libs 아래의 노드는 호환성 패키지를 추가하여 안전하게 업그레이드할 수 있습니다. 일반적으로 고객은 공개로 표시된 노드만 사용해야 합니다.
 
 * **추상(granite:AbstractArea)** - 노드를 추상으로 정의합니다. 노드를 오버레이하거나 상속할 수 있지만(`sling:resourceSupertype`) 직접 사용할 수는 없습니다(`sling:resourceType`).
 
@@ -83,13 +92,13 @@ CRXDE Lite에 적용된 Mixin에는 `INTERNAL`(으)로 표시된 콘텐츠 노�
 
 >[!NOTE]
 >
->AEM Adobe 6.5부터는 패턴 감지기를 사용하여 컨텐츠 액세스 위반을 감지하는 것이 좋습니다. 패턴 탐지기 보고서가 더 상세하고, 더 많은 문제를 탐지하고, 긍정 오류(false positive)의 확률을 줄입니다.
+>AEM 6.5부터는 패턴 감지기를 사용하여 컨텐츠 액세스 위반을 감지하는 것이 좋습니다. 패턴 탐지기 보고서가 더 상세하고, 더 많은 문제를 탐지하고, 긍정 오류(false positive)의 확률을 줄입니다.
 >
 >자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)를 참조하십시오.
 
 AEM 6.5는 오버레이되거나 참조된 콘텐츠가 콘텐츠 분류와 일치하지 않는 방식으로 사용되는 경우 고객에게 경고하기 위해 상태 확인과 함께 제공됩니다.
 
-**&#x200B; Sling/Granite 컨텐츠 액세스 검사**&#x200B;는 고객 코드가 AEM의 보호된 노드에 잘못 액세스하는지 저장소를 모니터링하는 새로운 상태 검사입니다.
+** Sling/Granite 컨텐츠 액세스 검사**는 고객 코드가 AEM의 보호된 노드에 잘못 액세스하는지 저장소를 모니터링하는 새로운 상태 검사입니다.
 
 **/apps**&#x200B;을(를) 검사하며 일반적으로 완료하는 데 몇 초 정도 소요됩니다.
 

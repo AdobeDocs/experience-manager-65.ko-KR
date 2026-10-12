@@ -9,13 +9,27 @@ exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '459'
 ht-degree: 5%
-
 ---
-
 # 로그인 화면 만들기{#creating-a-new-login-screen}
 
 AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 화면을 수정할 수 있습니다. 예를 들어 수정 사항은 Forms Manager 및 AEM Forms 작업 공간 의 로그인 화면에 모두 영향을 줍니다.
@@ -25,7 +39,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 1. 관리자 권한으로 `/lc/crx/de`에 로그인합니다.
 1. 다음 작업을 수행합니다.
 
-   1. `/libs/livecycle/core/content`에 있는 `/apps/livecycle/core/content`의 계층 구조를 복제합니다.
+   1. `/apps/livecycle/core/content`에 있는 `/libs/livecycle/core/content`의 계층 구조를 복제합니다.
 
       동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
@@ -39,7 +53,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 
 1. 다음 작업을 수행합니다.
 
-   1. `/libs/livecycle/core/components/login`에 있는 `/apps/livecycle/core/components/login`의 계층 구조를 복제합니다. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
+   1. `/apps/livecycle/core/components/login`에 있는 `/libs/livecycle/core/components/login`의 계층 구조를 복제합니다. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
    1. 구성 요소 폴더를 `/libs/livecycle/core`에서 `/apps/livecycle/core`(으)로 복사합니다.
 
@@ -245,7 +259,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
    * 변환 전: `/libs/livecycle/core/content`
    * `/apps/livecycle/core/content`에
 
-1. `login.js` 노드에서 `jquery-1.8.0.min.js` 및 `/apps/livecycle/core/content/login.` 파일을 삭제합니다.
+1. `/apps/livecycle/core/content/login.` 노드에서 `login.js` 및 `jquery-1.8.0.min.js` 파일을 삭제합니다.
 1. CSS 파일의 스타일을 수정합니다.
 1. 새 스타일을 추가하려면:
 
@@ -293,11 +307,11 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 1. `/apps/livecycle/core/content/login`에 새 이미지를 추가합니다. 이미지를 추가하려면:
 
    1. WebDAV 클라이언트를 설치합니다.
-   1. webDAV 클라이언트를 사용하여 `/apps/livecycle/core/content/login` 폴더로 이동합니다. 자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=ko)를 참조하십시오.
+   1. webDAV 클라이언트를 사용하여 `/apps/livecycle/core/content/login` 폴더로 이동합니다. 자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
 
    1. 새 이미지를 추가합니다.
 
-1. `/apps/livecycle/core/content/login/login.css,`에 추가된 새 이미지에 해당하는 새 스타일을 `/apps/livecycle/core/content/login`에 추가합니다.
+1. `/apps/livecycle/core/content/login`에 추가된 새 이미지에 해당하는 새 스타일을 `/apps/livecycle/core/content/login/login.css,`에 추가합니다.
 1. `login.jsp`의 `/apps/livecycle/core/components`에서 새 스타일을 사용합니다.
 
    예:

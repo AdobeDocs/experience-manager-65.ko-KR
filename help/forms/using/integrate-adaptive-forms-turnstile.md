@@ -4,13 +4,21 @@ description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '862'
 ht-degree: 13%
-
 ---
-
 # AEM Forms 환경과 턴스타일 연결 {#connect-your-forms-environment-with-turnstile-service}
 
 <span class="preview">이 기능은 기능 전환 ID `FT_FORMS-12407`을(를) 기반으로 합니다. 기능을 활성화하려면 [기능 활성화 토글](/help/forms/using/enable-feature-toggle.md) 문서에 지정된 단계를 따르십시오. </span>
@@ -30,7 +38,7 @@ AEM Forms 6.5는 다음 CAPTCHA 솔루션을 지원합니다.
 
 Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440947?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
@@ -54,9 +62,9 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
         1. 구성을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 1. 클라우드 서비스 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**&#x200B;을 클릭합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**을 클릭합니다.
       클라우드 서비스의 ![턴스타일](assets/turnstile-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 클릭합니다.
       ![구성 Turnstile](assets/config-hcaptcha.png)
    1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리, 비대화형 또는 보이지 않는 것으로 지정하십시오.
    1. **[!UICONTROL 제목]**, **[!UICONTROL 이름]**&#x200B;과 같은 기타 세부 정보를 제공합니다.

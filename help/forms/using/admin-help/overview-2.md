@@ -9,19 +9,33 @@ exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '301'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 95%
 ---
-
 # 인증서 및 자격 증명 관리의 기본 사항 {#basics-of-managing-certificates-and-credentials}
 
 *자격 증명*&#x200B;에는 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. *인증서*&#x200B;는 신뢰를 위해 구성하는 공개 키 정보입니다. AEM Forms는 인증서와 자격 증명을 여러 목적으로 사용합니다.
 
 * Acrobat Reader DC 확장 프로그램은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([Acrobat Reader DC 확장 프로그램에서 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)을 참조하십시오.)
-* Acrobat에서 사용할 자격 증명 중 신뢰할 수 있는 발급자의 자격 증명만 표시하도록 Rights Management를 구성할 수 있습니다. ([Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)을 참조하십시오.) 인증서에는 CN(일반 이름)이 있어야 합니다.
+* Acrobat에서 사용할 자격 증명 중 신뢰할 수 있는 발급자의 자격 증명만 표시하도록 Rights Management를 구성할 수 있습니다. ([Rights Management 디스플레이 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)을 참조하십시오.) 인증서에 CN(일반 이름)이 있어야 합니다.
 * 서명 서비스는 인증서와 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_65)를 참조하십시오.
 
 **키 쌍 생성**

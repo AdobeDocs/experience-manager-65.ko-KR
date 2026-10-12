@@ -6,13 +6,22 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4473'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 
 # 서식 있는 텍스트 편집기 플러그인 구성 {#configure-the-rich-text-editor-plug-ins}
 
@@ -39,16 +48,16 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 사용할
 
    * 구성 요소에 따라 상위 노드는 다음과 같습니다.
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * 대체 구성 노드: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * 대체 구성 노드: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * 유형: **jcr:primaryType** `cq:Widget`
    * 둘 다 다음 속성을 갖습니다.
 
-      * **이름** `name`
-      * **유형** `String`
-      * **값** `./text`
+     * **이름** `name`
+     * **유형** `String`
+     * **값** `./text`
 
 1. 구성할 인터페이스에 따라 `<rtePlugins-node>` 노드가 없으면 만듭니다.
 
@@ -167,7 +176,7 @@ RTE 도구 모음에서 다음 세 가지 아이콘 중 일부, 전체 또는 �
 |---|---|---|
 | `allowBlockTags` | 문자열 | 허용되는 블록 태그 목록을 정의합니다. 몇 가지 가능한 블록 태그는 다음과 같습니다. <ul> <li>헤드라인 (h1, h2, h3)</li> <li>단락(p)</li> <li>목록(ol, ul)</li> <li>표(표)</li> </ul> |
 | `fallbackBlockTag` | 문자열 | `allowBlockTags`에 포함되지 않은 블록 태그가 있는 블록에 사용되는 블록 태그를 정의합니다. 일반적으로 `p`이면 충분합니다. |
-| 표 | nt:unstructured | 표를 붙여넣을 때의 동작을 정의합니다. 테이블 붙여넣기가 허용되는지 여부를 정의하려면 이 노드에 속성 `allow`(유형 부울)이 있어야 합니다. 허용이 `false`(으)로 설정된 경우 붙여넣은 테이블 콘텐츠가 처리되는 방식을 정의하려면 속성 `ignoreMode`(문자열 유형)을(를) 지정해야 합니다. `ignoreMode`의 유효한 값은 다음과 같습니다. <ul> <li>`remove`: 테이블 콘텐츠를 제거합니다.</li> <li>`paragraph`: 테이블 셀을 단락으로 바꿉니다.</li> </ul> |
+| 테이블 | nt:unstructured | 표를 붙여넣을 때의 동작을 정의합니다. 테이블 붙여넣기가 허용되는지 여부를 정의하려면 이 노드에 속성 `allow`(유형 부울)이 있어야 합니다. 허용이 `false`(으)로 설정된 경우 붙여넣은 테이블 콘텐츠가 처리되는 방식을 정의하려면 속성 `ignoreMode`(문자열 유형)을(를) 지정해야 합니다. `ignoreMode`의 유효한 값은 다음과 같습니다. <ul> <li>`remove`: 테이블 콘텐츠를 제거합니다.</li> <li>`paragraph`: 테이블 셀을 단락으로 바꿉니다.</li> </ul> |
 | list | nt:unstructured | 목록을 붙여넣을 때의 동작을 정의합니다. 목록 붙여넣기를 허용할지 여부를 정의하려면 `allow` 속성(유형 부울)이 있어야 합니다. `allow`이(가) `false`(으)로 설정되어 있으면 속성 `ignoreMode`(String 유형)을 지정하여 붙여 넣은 목록 콘텐츠를 처리하는 방법을 정의해야 합니다. `ignoreMode`의 유효한 값은 다음과 같습니다. <ul><li> `remove`: 목록 콘텐츠를 제거합니다.</li> <li>`paragraph`: 목록 항목을 단락으로 바꿉니다.</li> </ul> |
 
 올바른 `htmlPasteRules` 구조의 예는 아래에 나와 있습니다.
@@ -304,7 +313,7 @@ AEM을 사용하여 일본어 콘텐츠를 작성하는 작성자는 줄바꿈�
 
 1. 속성 텍스트를 동일한 노드에 추가합니다. 값은 작성자가 스타일을 선택할 때 표시되는 스타일의 이름입니다.
    * 이름: `text`
-*유형: `String`
+     *유형: `String`
    * 값: `Japanese word-wrap`
 
 1. 스타일 시트를 만들고 해당 경로를 지정합니다. [스타일시트의 위치 지정](#locationofstylesheet)을 참조하세요. 스타일시트에 다음 내용을 추가합니다. 원하는 대로 배경색을 변경합니다.
@@ -511,13 +520,13 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
 
    * 전체 표에 대한 스타일을 정의하려면(**표 속성**&#x200B;에서 사용 가능):
 
-      * **이름** `tableStyles`
-      * **유형** `cq:WidgetCollection`
+     * **이름** `tableStyles`
+     * **유형** `cq:WidgetCollection`
 
    * 개별 셀의 스타일을 정의하려면(**셀 속성**&#x200B;에서 사용 가능):
 
-      * **이름** `cellStyles`
-      * **유형** `cq:WidgetCollection`
+     * **이름** `cellStyles`
+     * **유형** `cq:WidgetCollection`
 
 1. 개별 스타일을 나타낼 수 있도록 노드를 만듭니다(필요에 따라 `tableStyles` 또는 `cellStyles` 노드 아래).
 
@@ -528,15 +537,15 @@ CRXDE에서는 속성이 저장되면 표시된 문자가 표시됩니다. 절�
 
    * 참조할 CSS 스타일을 정의하려면
 
-      * **이름** `cssName`
-      * **유형** `String`
-      * **값** CSS 클래스 이름(앞에 `.`이 없음, 예: `.cssClass` 대신 `cssClass`)
+     * **이름** `cssName`
+     * **유형** `String`
+     * **값** CSS 클래스 이름(앞에 `.`이 없음, 예: `.cssClass` 대신 `cssClass`)
 
    * 드롭다운 선택기에 표시할 설명 텍스트를 정의하려면 다음을 수행합니다
 
-      * **이름** `text`
-      * **유형** `String`
-      * 선택 목록에 표시할 텍스트 **값**
+     * **이름** `text`
+     * **유형** `String`
+     * 선택 목록에 표시할 텍스트 **값**
 
 1. 모든 변경 사항을 저장합니다.
 
@@ -689,58 +698,58 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
 
    * 내부 링크에 대한 CSS 스타일:
 
-      * **이름** `cssInternal`
-      * **유형** `String`
-      * **값** CSS 클래스 이름(앞에 &#39;.&#39;가 없음. 예: `.cssClass` 대신 `cssClass`)
+     * **이름** `cssInternal`
+     * **유형** `String`
+     * **값** CSS 클래스 이름(앞에 &#39;.&#39;가 없음. 예: `.cssClass` 대신 `cssClass`)
 
    * 외부 링크에 대한 CSS 스타일
 
-      * **이름** `cssExternal`
-      * **유형** `String`
-      * **값** CSS 클래스 이름(앞에 &#39;.&#39;가 없음. 예: `.cssClass` 대신 `cssClass`)
+     * **이름** `cssExternal`
+     * **유형** `String`
+     * **값** CSS 클래스 이름(앞에 &#39;.&#39;가 없음. 예: `.cssClass` 대신 `cssClass`)
 
    * 올바른 **프로토콜**&#x200B;의 배열입니다. 지원되는 프로토콜은 `http://`, `https://`, `file://` 및 `mailto:`입니다.
 
-      * **이름** `protocols`
-      * **유형** `String[]`
-      * **값** 하나 이상의 프로토콜
+     * **이름** `protocols`
+     * **유형** `String[]`
+     * **값** 하나 이상의 프로토콜
 
    * **defaultProtocol**(유형 **String**&#x200B;의 속성): 사용자가 프로토콜을 명시적으로 지정하지 않은 경우 사용할 프로토콜입니다.
 
-      * **이름** `defaultProtocol`
-      * **유형** `String`
-      * **값** 하나 이상의 기본 프로토콜
+     * **이름** `defaultProtocol`
+     * **유형** `String`
+     * **값** 하나 이상의 기본 프로토콜
 
    * 링크의 대상 속성을 처리하는 방법의 정의입니다. 노드 만들기:
 
-      * **이름** `targetConfig`
-      * **유형** `nt:unstructured`
+     * **이름** `targetConfig`
+     * **유형** `nt:unstructured`
 
      `targetConfig` 노드에서 필요한 속성을 정의합니다.
 
-      * 대상 모드를 지정합니다.
+     * 대상 모드를 지정합니다.
 
-         * **이름** `mode`
-         * **유형** `String`
-         * **값**
+       * **이름** `mode`
+       * **유형** `String`
+       * **값**
 
-            * `auto`: 자동 대상이 선택되었음을 의미합니다
+         * `auto`: 자동 대상이 선택되었음을 의미합니다
 
-              외부 링크의 경우 `targetExternal` 속성으로, 내부 링크의 경우 `targetInternal` 속성으로 지정됨).
+           외부 링크의 경우 `targetExternal` 속성으로, 내부 링크의 경우 `targetInternal` 속성으로 지정됨).
 
-            * `manual`: 이 컨텍스트에는 적용할 수 없습니다.
-            * `blank`: 이 컨텍스트에는 적용할 수 없습니다.
+         * `manual`: 이 컨텍스트에는 적용할 수 없습니다.
+         * `blank`: 이 컨텍스트에는 적용할 수 없습니다.
 
-      * 내부 링크의 대상:
+     * 내부 링크의 대상:
 
-         * **이름** `targetInternal`
-         * **유형** `String`
-         * **값** 내부 링크 대상(모드가 `auto`인 경우에만 사용)
+       * **이름** `targetInternal`
+       * **유형** `String`
+       * **값** 내부 링크 대상(모드가 `auto`인 경우에만 사용)
 
-      * 외부 링크 대상:
+     * 외부 링크 대상:
 
-         * **이름** `targetExternal`
-         * **유형** `String`
-         * **값** 외부 링크 대상(모드가 `auto`인 경우에만 사용됨)입니다.
+       * **이름** `targetExternal`
+       * **유형** `String`
+       * **값** 외부 링크 대상(모드가 `auto`인 경우에만 사용됨)입니다.
 
 1. 모든 변경 사항을 저장합니다.

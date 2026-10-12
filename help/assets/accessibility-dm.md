@@ -12,20 +12,33 @@ autotag-review: '2026-05-18T18:39:42.457Z'
 TQID: 'https://experienceleague.adobe.com/f9-0rO4QHX7kbx7xwptmuOW1W7WzduM3tOlL2YgHXxI'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: e0d8c871-755b-4042-bb9e-9b9a2648e9fe
+    internal-label: Accessibility
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Accessibility
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 647
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # [!DNL Dynamic Media]의 접근성 {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media]은(는) 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
@@ -44,10 +57,10 @@ ht-degree: 0%
 * 핫스팟 편집기에서 화살표 키와 같은 사용자 지정 키 입력을 사용하여 복잡한 사용자 인터페이스 요소와 상호 작용하여 핫스팟의 위치를 변경할 수 있습니다.
 * 대화형 비디오 편집기에서 `Spacebar`을(를) 사용하여 이미지를 선택하고 세그먼트에 추가할 수 있습니다. 또한 `Backspace` 키를 사용하여 **[!UICONTROL 콘텐츠]** 탭에서 선택한 항목을 삭제할 수 있습니다. 또한 `Tab`을(를) 누르면 페이지의 대화형 요소 사이를 탐색할 수 있습니다.
 * 이미지 자르기/스마트 자르기 편집기에서 다음 작업을 수행할 수 있습니다.
-   * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지 위치를 변경하거나 둘 다 수행합니다.
-   * 첫 번째 `Tab` 중지를 수행하면 전체 이미지 프레임이 강조 표시됩니다. 그런 다음 키보드의 화살표 키를 사용하여 프레임의 위치를 변경할 수 있습니다.
-   * 다음 네 개의 `Tab` 정지는 프레임의 네 모퉁이입니다. 프레임 모서리에 포커스를 놓으면 코너가 강조 표시됩니다. 키보드의 화살표 키를 사용하여 포커스가 있는 모서리를 이동할 수 있습니다.
-[단일 이미지의 스마트 자르기 또는 스마트 색상 견본 편집](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)을 참조하십시오.
+  * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지 위치를 변경하거나 둘 다 수행합니다.
+  * 첫 번째 `Tab` 중지를 수행하면 전체 이미지 프레임이 강조 표시됩니다. 그런 다음 키보드의 화살표 키를 사용하여 프레임의 위치를 변경할 수 있습니다.
+  * 다음 네 개의 `Tab` 정지는 프레임의 네 모퉁이입니다. 프레임 모서리에 포커스를 놓으면 코너가 강조 표시됩니다. 키보드의 화살표 키를 사용하여 포커스가 있는 모서리를 이동할 수 있습니다.
+    [단일 이미지의 스마트 자르기 또는 스마트 색상 견본 편집](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)을 참조하십시오.
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
@@ -65,12 +78,12 @@ ht-degree: 0%
 
 모든 기본 [!DNL Dynamic Media] 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ko)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## [!DNL Dynamic Media] 뷰어에서 보조 기술 지원 {#assistive-technology-support-for-dm-viewers}
 
 모든 [!DNL Dynamic Media] 뷰어 구성 요소는 ARIA(Accessible Rich Internet Applications) 역할 및 특성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=ko) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=ko#viewers-for-aem-assets-only)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)을 참조하십시오.
 
 ## Dynamic Media에서 자막 지원 {#closed-caption-support}
 
@@ -81,4 +94,4 @@ Dynamic Media는 자막이 있는 비디오 및 적응형 비디오 세트 배�
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->*  [!DNL Experience Manager Assets][&#128279;](/help/assets/accessibility.md)의 접근성
+>*  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)의 [접근성

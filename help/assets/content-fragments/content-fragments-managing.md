@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 87%
-
 ---
-
 # 콘텐츠 조각 관리 {#managing-content-fragments}
 
 Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
@@ -59,7 +71,7 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
    * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예: **모험** 모델
 
-      * 사용 가능한 모든 모델이 표시됩니다.
+     * 사용 가능한 모든 모델이 표시됩니다.
 
    선택 후 **다음**&#x200B;을 사용하여 진행하십시오.
 
@@ -69,23 +81,23 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
    * **기본**
 
-      * **제목**
+     * **제목**
 
-        조각 제목.
+       조각 제목.
 
-        필수.
+       필수.
 
-      * **설명**
+     * **설명**
 
-      * **태그**
+     * **태그**
 
    * **고급**
 
-      * **이름**
+     * **이름**
 
-        이름은 URL을 구성하는 데 사용됩니다.
+       이름은 URL을 구성하는 데 사용됩니다.
 
-        필수는 제목에서 자동으로 파생되지만 업데이트할 수 있습니다.
+       필수는 제목에서 자동으로 파생되지만 업데이트할 수 있습니다.
 
 1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
@@ -105,17 +117,17 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 * **다운로드**
 
-   * 조각을 ZIP 파일로 저장합니다. 요소, 변형, 메타데이터 포함 여부를 정의할 수 있습니다.
+  * 조각을 ZIP 파일로 저장합니다. 요소, 변형, 메타데이터 포함 여부를 정의할 수 있습니다.
 
 * **만들기**
 * **체크아웃**
 * **속성**
 
-   * 조각의 메타데이터를 보거나 편집할 수 있습니다.
+  * 조각의 메타데이터를 보거나 편집할 수 있습니다.
 
 * **편집**
 
-   * 요소, 변형, 관련 콘텐츠 및 메타데이터와 함께 [콘텐츠를 편집할 조각을 열](/help/assets/content-fragments/content-fragments-variations.md)수 있습니다.
+  * 요소, 변형, 관련 콘텐츠 및 메타데이터와 함께 [콘텐츠를 편집할 조각을 열](/help/assets/content-fragments/content-fragments-variations.md)수 있습니다.
 
 * **태그 관리**
 * **대상 컬렉션**
@@ -191,17 +203,17 @@ Assets 콘솔을 사용하여 Headless 콘텐츠의 기반이 되는 AEM 콘텐�
 
 * 조각 이름 아래에 현재 조각 생성에 사용 중인 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름이 표시됩니다.
 
-   * 이 이름은 모델 편집기를 여는 링크이기도 합니다.
+  * 이 이름은 모델 편집기를 여는 링크이기도 합니다.
 
 * 조각 상태(예: 생성, 수정 또는 게시된 시기에 대한 정보)를 확인합니다.
 
 * **저장**&#x200B;은 **저장 및 닫기** 옵션에 대한 액세스를 제공합니다.
 
 * 세 점(**...**) 드롭다운에서 추가 작업에 액세스할 수 있습니다.
-   * **페이지 참조 업데이트**
-      * 모든 페이지 참조가 업데이트됩니다.
-   * **[빠른 게시](#publishing-and-referencing-a-fragment)**
-   * **[게시 관리](#publishing-and-referencing-a-fragment)**
+  * **페이지 참조 업데이트**
+    * 모든 페이지 참조가 업데이트됩니다.
+  * **[빠른 게시](#publishing-and-referencing-a-fragment)**
+  * **[게시 관리](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * **저장** 및 **저장 및 닫기**
 
-   * **저장**&#x200B;을 선택하면 마지막 변경 내용이 저장되고 편집기에 계속 남아 있을 수 있습니다.
-   * **저장 및 닫기**&#x200B;를 선택하면 마지막 변경 내용이 저장되고 편집기가 종료됩니다.
+  * **저장**&#x200B;을 선택하면 마지막 변경 내용이 저장되고 편집기에 계속 남아 있을 수 있습니다.
+  * **저장 및 닫기**&#x200B;를 선택하면 마지막 변경 내용이 저장되고 편집기가 종료됩니다.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
 
-   * **[이 버전으로 되돌리기](#reverting-to-a-version)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+  * **[이 버전으로 되돌리기](#reverting-to-a-version)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **[현재 항목에 비교](#comparing-fragment-versions)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+  * **[현재 항목에 비교](#comparing-fragment-versions)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **레이블** 및/또는 **댓글** 추가 (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+  * **레이블** 및/또는 **댓글** 추가 (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **다른 버전으로 저장** (기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
+  * **다른 버전으로 저장** (기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
 
 * 주석에 대한 작업
 
-   * **삭제**
+  * **삭제**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 다른 곳들은 모두 강조 표시됩니다.
 
-   * 삭제된 텍스트 - 빨간색
-   * 삽입된 텍스트 - 녹색
-   * 대체된 텍스트 - 파란색
+  * 삭제된 텍스트 - 빨간색
+  * 삽입된 텍스트 - 녹색
+  * 대체된 텍스트 - 파란색
 
 * 전체 화면 아이콘을 사용하면 두 버전 중 하나를 자체적으로 열 수 있습니다. 그런 다음 병렬 보기로 다시 전환할 수 있습니다.
 * 특정 버전으로 **되돌릴** 수 있습니다.

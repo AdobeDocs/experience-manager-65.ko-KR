@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 1%
-
+source-wordcount: '2489'
+ht-degree: 2%
 ---
-
 # 커뮤니티 사용자 동기화 {#communities-user-synchronization}
 
 ## 소개 {#introduction}
@@ -110,7 +117,7 @@ AEM Communities에서 사용자 동기화를 활성화하려면 다음 구성이
 
 **컨텐츠가 어떻게 동기화됩니까?**
 
-작성자 인스턴스가 게시자의 내보내기 끝점을 ping합니다. 특정 게시자(n)에서 사용자가 만들어지거나 업데이트될 때마다 작성자는 내보내기 끝점에서 콘텐츠를 가져오고 [콘텐츠를 다른 게시자(콘텐츠를 가져오는 게시자와 떨어진 n-1)로 &#x200B;](/help/communities/sync.md#main-pars-image-1413756164)을(를) 푸시합니다.
+작성자 인스턴스가 게시자의 내보내기 끝점을 ping합니다. 특정 게시자(n)에서 사용자가 만들어지거나 업데이트될 때마다 작성자는 내보내기 끝점에서 콘텐츠를 가져오고 [콘텐츠를 다른 게시자(콘텐츠를 가져오는 게시자와 떨어진 n-1)로 ](/help/communities/sync.md#main-pars-image-1413756164)을(를) 푸시합니다.
 
 Apache Sling 동기화 에이전트 구성을 구성하려면 다음 작업을 수행하십시오.
 
@@ -392,5 +399,5 @@ Sling 배포가 실패하면 다음 디버깅 단계를 시도해 보십시오.
 1. 사용자 생성 시 생성된 [로그 순서](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)를 확인하십시오.
 1. **/var/sling/distribution/packages/socialpubsync-vlt/data**&#x200B;에 **vlt** 패키지가 만들어졌는지 확인하십시오.
 1. 이제 AEM 작성자 인스턴스에서 사용자 동기화를 활성화합니다.
-1. 게시자의 경우 **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**&#x200B;에서 내보내기 또는 가져오기 끝점을 변경합니다.
+1. 게시자의 경우 **Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리**에서 내보내기 또는 가져오기 끝점을 변경합니다.
 패키지 데이터를 다운로드하고 추출하여 다른 게시자에게 푸시된 모든 속성과 손실된 데이터를 확인할 수 있습니다.

@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6227'
 ht-degree: 1%
-
 ---
-
 # 인터랙티브 커뮤니케이션 만들기{#create-an-interactive-communication}
 
 ## 개요 {#overview}
@@ -63,10 +77,10 @@ ht-degree: 1%
    * **[!UICONTROL 테마]** 및 **[!UICONTROL 테마 선택]**: 대화형 통신의 웹 채널 스타일을 지정할 테마를 검색하여 선택하십시오. 자세한 내용은 [AEM Forms의 테마](/help/forms/using/themes.md)를 참조하십시오.
 
    * **[!UICONTROL 웹 채널에 대해 기본으로 인쇄를 사용]**: 이 옵션을 선택하여 인쇄 채널과 동기화되는 웹 채널을 만듭니다. 인쇄 채널을 웹 채널에 대한 마스터로 사용하면 웹 채널의 콘텐츠 및 데이터 바인딩이 인쇄 채널에서 파생되고 동기화를 선택할 때 인쇄 채널에서 수행한 변경 사항이 웹 채널에 반영됩니다. 그러나 작성자는 필요에 따라 웹 채널에서 특정 구성 요소에 대한 상속을 중단할 수 있습니다. 자세한 내용은 [인쇄 채널과 웹 채널 동기화](../../forms/using/create-interactive-communication.md#synchronize)를 참조하십시오.
-**[!UICONTROL 웹 채널에 대해 기본으로 인쇄 사용]** 옵션을 선택하면 다음 모드 중 하나를 선택하여 웹 채널을 생성할 수 있습니다.
+     **[!UICONTROL 웹 채널에 대해 기본으로 인쇄 사용]** 옵션을 선택하면 다음 모드 중 하나를 선택하여 웹 채널을 생성할 수 있습니다.
 
-      * **[!UICONTROL 자동 레이아웃]**: 인쇄 채널에서 웹 채널에 대한 자리 표시자, 콘텐츠 및 데이터 바인딩을 자동으로 생성하려면 이 모드를 선택하십시오.
-      * **[!UICONTROL 수동으로 구성]**: **[!UICONTROL 데이터 원본]** 탭에서 사용할 수 있는 마스터 콘텐츠를 사용하여 인쇄 채널 요소를 수동으로 선택하고 웹 채널에 추가하려면 이 모드를 선택하십시오. 자세한 내용은 [웹 채널 콘텐츠를 만들려면 인쇄 채널 요소 선택](#selectprintchannelelements)을 참조하십시오.
+     * **[!UICONTROL 자동 레이아웃]**: 인쇄 채널에서 웹 채널에 대한 자리 표시자, 콘텐츠 및 데이터 바인딩을 자동으로 생성하려면 이 모드를 선택하십시오.
+     * **[!UICONTROL 수동으로 구성]**: **[!UICONTROL 데이터 원본]** 탭에서 사용할 수 있는 마스터 콘텐츠를 사용하여 인쇄 채널 요소를 수동으로 선택하고 웹 채널에 추가하려면 이 모드를 선택하십시오. 자세한 내용은 [웹 채널 콘텐츠를 만들려면 인쇄 채널 요소 선택](#selectprintchannelelements)을 참조하십시오.
 
    인쇄 채널 및 웹 채널에 대한 자세한 내용은 [인쇄 채널 및 웹 채널](/help/forms/using/web-channel-print-channel.md)을 참조하세요.
 
@@ -170,10 +184,10 @@ ht-degree: 1%
    * [차트 추가 및 구성](/help/forms/using/chart-component-interactive-communications.md)
    * [인쇄 채널과 웹 채널 동기화](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * 자동 동기화
-      * 상속 취소
-      * 상속 다시 활성화
-      * 동기화
+     * 자동 동기화
+     * 상속 취소
+     * 상속 다시 활성화
+     * 동기화
 
    * [첨부 파일 및 라이브러리 액세스](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [XDP/레이아웃 필드 속성](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +256,8 @@ ht-degree: 1%
    * **[!UICONTROL 허용되는 최대 첨부 파일 수]**: 대화형 통신에서 허용되는 최대 첨부 파일 수를 지정합니다.
    * **[!UICONTROL 첨부할 파일]**: **[!UICONTROL 추가]**&#x200B;를 선택하고 첨부할 파일을 찾아 다음을 지정하십시오.
 
-      * **[!UICONTROL 기본적으로 이 파일을 문서에 첨부]**: 첨부 파일이 필수가 아닌 경우에만 이 옵션을 변경할 수 있습니다.
-      * **[!UICONTROL 필수:]** 에이전트가 에이전트 UI에서 첨부 파일을 제거할 수 없습니다.
+     * **[!UICONTROL 기본적으로 이 파일을 문서에 첨부]**: 첨부 파일이 필수가 아닌 경우에만 이 옵션을 변경할 수 있습니다.
+     * **[!UICONTROL 필수:]** 에이전트가 에이전트 UI에서 첨부 파일을 제거할 수 없습니다.
 
    ![첨부 파일](assets/attachfiles.png)
 
@@ -263,9 +277,9 @@ ht-degree: 1%
    * **[!UICONTROL 제목]**: 에이전트 UI와 문서 컨테이너 트리에서 에이전트가 볼 수 있는 제목을 입력합니다.
    * **[!UICONTROL 바인딩 형식]**: 필드에 대해 다음 바인딩 형식 중 하나를 선택하십시오.
 
-      * 없음: 에이전트가 속성 값을 채웁니다.
-      * 텍스트 조각: 선택한 경우 필드에서 콘텐츠가 렌더링되는 텍스트 문서 조각을 찾아 선택할 수 있습니다. 또는 텍스트 문서 조각을 필드 이름으로 드래그 앤 드롭하여 둘 사이의 바인딩을 설정합니다. 텍스트 문서 조각에는 변수가 없어야 합니다.
-      * 데이터 모델 개체: 필드에 값이 채워진 양식 데이터 모델 속성을 선택합니다. 또는 **데이터 원본** 탭을 선택하고 속성을 필드로 드래그 앤 드롭합니다.
+     * 없음: 에이전트가 속성 값을 채웁니다.
+     * 텍스트 조각: 선택한 경우 필드에서 콘텐츠가 렌더링되는 텍스트 문서 조각을 찾아 선택할 수 있습니다. 또는 텍스트 문서 조각을 필드 이름으로 드래그 앤 드롭하여 둘 사이의 바인딩을 설정합니다. 텍스트 문서 조각에는 변수가 없어야 합니다.
+     * 데이터 모델 개체: 필드에 값이 채워진 양식 데이터 모델 속성을 선택합니다. 또는 **데이터 원본** 탭을 선택하고 속성을 필드로 드래그 앤 드롭합니다.
 
    * **[!UICONTROL 기본값]**: 지정한 데이터 모델 개체 또는 텍스트 조각에서 제공한 값이 없으면 기본값을 사용하면 필드가 비어 있지 않습니다. 데이터 바인딩 유형이 none이면 기본값이 필드에 미리 채워집니다.
    * **[!UICONTROL 표시 패턴]**: 필드의 표시 형식을 정의할 수도 있습니다. 필드에 표시 형식을 적용하려면 **Type** 드롭다운 목록에서 미리 정의된 옵션을 선택하십시오. 목록에서 사용할 수 없는 표시 패턴을 정의하려면 **사용자 지정**&#x200B;을(를) 선택하십시오. 자세한 내용은 [데이터 표시 패턴](../../forms/using/create-interactive-communication.md#datadisplaypatterns)을 참조하세요.
@@ -300,7 +314,7 @@ ht-degree: 1%
 | 사회보장번호 | 1234567 | 텍스트{999-99-9999} | 1-23-4567 | 기본값 필드의 자릿수가 패턴 필드의 자릿수보다 적습니다. 패턴은 사용 가능한 7자리 숫자에 적용됩니다. |
 | 사회보장번호 | 1234567890 | 텍스트{999-99-9999} | 1234567890 | 기본값 필드의 자릿수가 패턴 필드의 자릿수보다 큽니다. 결과적으로 표시 값에는 변경 사항이 없습니다. |
 
-변수 또는 양식 데이터 모델 요소에 표시 패턴이 지정되지 않은 경우 기본적으로 [전역 문서 조각 구성](https://helpx.adobe.com/kr//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)이 사용됩니다.
+변수 또는 양식 데이터 모델 요소에 표시 패턴이 지정되지 않은 경우 기본적으로 [전역 문서 조각 구성](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)이 사용됩니다.
 
 숫자 데이터 유형의 변수에 표시 패턴을 적용하지 않는 경우 인쇄 미리 보기에는 글로벌 문서 조각 구성에 따라 패턴이 표시됩니다. 기본 전역 문서 조각 구성에 변경 사항을 적용하면 로케일에 대해 정의된 기본 구분 기호에 따라 에이전트 UI에 패턴이 표시됩니다.
 
@@ -346,8 +360,8 @@ ht-degree: 1%
       * **[!UICONTROL 제목]**: 대화형 통신 편집기에 표시될 제목을 입력합니다.
       * **[!UICONTROL 바인딩 형식]**: 필드에 대해 다음 바인딩 형식 중 하나를 선택하십시오.
 
-         * **[!UICONTROL 없음]**
-         * **[!UICONTROL 데이터 모델 개체]**: 양식 데이터 모델 속성의 값이 필드에 채워집니다. 또는 **데이터 원본** 탭을 선택하고 속성을 필드로 드래그 앤 드롭합니다.
+        * **[!UICONTROL 없음]**
+        * **[!UICONTROL 데이터 모델 개체]**: 양식 데이터 모델 속성의 값이 필드에 채워집니다. 또는 **데이터 원본** 탭을 선택하고 속성을 필드로 드래그 앤 드롭합니다.
 
       * **[!UICONTROL 데이터 모델 개체]**: 값이 필드에 채워진 양식 데이터 모델 속성입니다.
       * **[!UICONTROL 기본값]**: 지정한 데이터 모델 개체에서 제공한 값이 없으면 기본값을 사용하면 필드가 비어 있지 않습니다. 기본값은 필드에 미리 채워져 있습니다.
@@ -618,7 +632,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-다른 형식으로 출력을 생성하려면 출력 형식 유형을 지정합니다. 지원되는 출력 형식 유형 목록은 [PrintChannel API](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)를 참조하십시오.
+다른 형식으로 출력을 생성하려면 출력 형식 유형을 지정합니다. 지원되는 출력 형식 유형 목록은 [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)를 참조하십시오.
 
 예를 들어 다음 샘플을 사용하여 대화형 커뮤니케이션의 출력 형식으로 PCL을 정의할 수 있습니다.
 

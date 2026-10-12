@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2963'
-ht-degree: 1%
-
+source-wordcount: '3201'
+ht-degree: 0%
 ---
-
 # 커뮤니티 사이트 콘솔 {#communities-sites-console}
 
 커뮤니티 사이트 콘솔에서는 다음에 액세스할 수 있습니다.
@@ -103,12 +110,12 @@ ht-degree: 1%
 
   URL에 표시되는 사이트 루트 페이지의 이름입니다.
 
-   * 사이트를 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
-   * 기본 URL(`https://server:port/site root/site name)`이(가) `Community Site Name` 아래에 표시됩니다.
+  * 사이트를 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
+  * 기본 URL(`https://server:port/site root/site name)`이(가) `Community Site Name` 아래에 표시됩니다.
 
-   * 유효한 URL을 보려면 기본 언어 코드 + &quot;.html&quot;을 추가하십시오.
+  * 유효한 URL을 보려면 기본 언어 코드 + &quot;.html&quot;을 추가하십시오.
 
-     *예:*, `https://localhost:4502/content/sites/mysight/en.html`
+    *예:*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **커뮤니티 사이트 템플릿** 메뉴
 
@@ -144,8 +151,8 @@ ht-degree: 1%
 * 이미지가 브라우저 창의 왼쪽 가장자리에 고정됩니다.
 * 이미지 너비가 ...일 때 이미지 크기는 조정되지 않습니다.
 
-   * 브라우저의 너비보다 작은 이미지는 가로로 반복됩니다.
-   * 브라우저의 너비보다 크면 이미지가 잘린 것으로 표시됩니다.
+  * 브라우저의 너비보다 작은 이미지는 가로로 반복됩니다.
+  * 브라우저의 너비보다 크면 이미지가 잘린 것으로 표시됩니다.
 
 * **다음**&#x200B;을 선택합니다.
 
@@ -179,32 +186,32 @@ ht-degree: 1%
 * **사용자 등록 허용**
 
   선택하면 사이트 방문자가 자체 등록에 의해 커뮤니티 구성원이 될 수 있습니다.
-선택하지 않으면 커뮤니티 사이트가 *제한됨*이 되며 사이트 방문자는 커뮤니티 사이트의 구성원 그룹에 할당되거나 요청하거나 전자 메일로 초대를 받아야 합니다. 선택하지 않으면 익명 액세스를 허용하지 않습니다.
-*개인* 커뮤니티 사이트 선택을 취소합니다. 기본값은 선택되어 있습니다.
+  선택하지 않으면 커뮤니티 사이트가 *제한됨*이 되며 사이트 방문자는 커뮤니티 사이트의 구성원 그룹에 할당되거나 요청하거나 전자 메일로 초대를 받아야 합니다. 선택하지 않으면 익명 액세스를 허용하지 않습니다.
+  *private* 커뮤니티 사이트 선택을 취소합니다. 기본값은 선택되어 있습니다.
 
 * **익명 액세스 허용**
 
   선택하면 커뮤니티 사이트가 *열려* 있으며 사이트 방문자가 사이트에 액세스할 수 있습니다.
-선택하지 않으면 로그인한 구성원만 사이트에 액세스할 수 있습니다.
-*개인* 커뮤니티 사이트 선택을 취소합니다. 기본값은 선택되어 있습니다.
+  선택하지 않으면 로그인한 구성원만 사이트에 액세스할 수 있습니다.
+  *private* 커뮤니티 사이트 선택을 취소합니다. 기본값은 선택되어 있습니다.
 
 * **메시지 허용**
 
   선택하면 구성원이 커뮤니티 사이트 내에서 서로 및 그룹에 메시지를 보낼 수 있습니다.
-선택하지 않으면 커뮤니티에 대해 메시징이 설정되지 않습니다.
-기본값은 선택 취소되어 있습니다.
+  선택하지 않으면 커뮤니티에 대해 메시징이 설정되지 않습니다.
+  기본값은 선택 취소되어 있습니다.
 
 * **소셜 로그인 허용: Facebook**
 
   선택하면 사이트 방문자가 Facebook 계정 자격 증명으로 로그인할 수 있도록 허용합니다. 커뮤니티 사이트를 만든 후 커뮤니티 사이트의 구성원 그룹에 사용자를 추가하도록 선택한 [Facebook 클라우드 구성](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)을 구성해야 합니다.
-선택하지 않으면 Facebook 로그인이 표시되지 않습니다.
-*private* 커뮤니티 사이트에 대해 선택하지 않은 상태로 둡니다. 기본값은 선택 취소되어 있습니다.
+  선택하지 않으면 Facebook 로그인이 표시되지 않습니다.
+  *private* 커뮤니티 사이트에 대해 선택하지 않은 상태로 둡니다. 기본값은 선택 취소되어 있습니다.
 
 * **소셜 로그인 허용: Twitter**
 
   선택하면 사이트 방문자가 Twitter 계정 자격 증명으로 로그인할 수 있도록 허용합니다. 커뮤니티 사이트를 만든 후 선택한 [Twitter 클라우드 구성](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)은(는) 커뮤니티 사이트의 구성원 그룹에 사용자를 추가하도록 구성해야 합니다.
-선택하지 않으면 Twitter 로그인이 표시되지 않습니다.
-*private* 커뮤니티 사이트에 대해 선택하지 않은 상태로 둡니다. 기본값은 선택 취소되어 있습니다.
+  선택하지 않으면 Twitter 로그인이 표시되지 않습니다.
+  *private* 커뮤니티 사이트에 대해 선택하지 않은 상태로 둡니다. 기본값은 선택 취소되어 있습니다.
 
 >[!NOTE]
 >
@@ -267,7 +274,7 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 * **분석 사용**
 
   Adobe Analytics이 커뮤니티 기능에 대해 [구성](/help/communities/analytics.md)된 경우에만 사용할 수 있습니다.
-기본값은 선택 취소되어 있습니다. 선택하면 다음과 같은 추가 선택 메뉴가 나타납니다.
+  기본값은 선택 취소되어 있습니다. 선택하면 다음과 같은 추가 선택 메뉴가 나타납니다.
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -304,39 +311,39 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 
 * **커뮤니티 사이트에 대한 번역 옵션 선택**
 
-   * **전체 페이지 번역**
+  * **전체 페이지 번역**
 
-     선택하면 페이지의 모든 UGC가 페이지의 기본 언어로 번역됩니다.
+    선택하면 페이지의 모든 UGC가 페이지의 기본 언어로 번역됩니다.
 
-     기본값은 *선택되지 않음*&#x200B;입니다.
+    기본값은 *선택되지 않음*&#x200B;입니다.
 
-   * **선택 항목만 번역**
+  * **선택 항목만 번역**
 
-     선택하면 개별 게시물을 페이지의 기본 언어로 번역할 수 있는 번역 옵션이 각 게시물 옆에 표시됩니다.
-기본값은 *선택됨*&#x200B;입니다.
+    선택하면 개별 게시물을 페이지의 기본 언어로 번역할 수 있는 번역 옵션이 각 게시물 옆에 표시됩니다.
+    기본값은 *선택됨*&#x200B;입니다.
 
 * **지속성 옵션 선택**
 
-   * **사용자 요청에 대한 기여도를 번역한 후 유지**
-이 옵션을 선택하면 요청이 수행될 때까지 콘텐츠가 번역되지 않습니다. 번역되면 번역은 저장소에 저장됩니다.
+  * **사용자 요청에 대한 기여도를 번역한 후 유지**
+    이 옵션을 선택하면 요청이 수행될 때까지 콘텐츠가 번역되지 않습니다. 번역되면 번역은 저장소에 저장됩니다.
 
-     기본값은 *선택되지 않음*&#x200B;입니다.
+    기본값은 *선택되지 않음*&#x200B;입니다.
 
-   * **번역을 유지하지 않음**
+  * **번역을 유지하지 않음**
 
-     선택하면 번역이 저장소에 저장되지 않습니다.
+    선택하면 번역이 저장소에 저장되지 않습니다.
 
-     선택하지 않으면 번역이 유지됩니다.
+    선택하지 않으면 번역이 유지됩니다.
 
-     기본값은 *선택되지 않음*&#x200B;입니다.
+    기본값은 *선택되지 않음*&#x200B;입니다.
 
 * **스마트 렌더링**
 
   다음 중 하나를 선택합니다.
 
-   * `Always show contributions in the original language` (기본값)
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language` (기본값)
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### 4단계 : 커뮤니티 사이트 만들기 {#step-create-communities-site}
 
@@ -409,17 +416,17 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 * 추가 [커뮤니티 기능](/help/communities/functions.md)을(를) 사이트 구조로 끌어서 놓습니다.
 * 사이트 구조의 커뮤니티 기능 인스턴스에서 다음을 수행합니다.
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     표시 제목과 URL 이름, [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups)을 포함한 설정을 편집합니다.
+    표시 제목과 URL 이름, [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups)을 포함한 설정을 편집합니다.
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     사이트 구조에서 기능을 제거(삭제)합니다.
+    사이트 구조에서 기능을 제거(삭제)합니다.
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     사이트의 최상위 탐색 막대에 표시되는 함수 순서를 수정합니다.
+    사이트의 최상위 탐색 막대에 표시되는 함수 순서를 수정합니다.
 
 >[!NOTE]
 >
@@ -448,7 +455,7 @@ UGC(사용자 생성 컨텐츠) 중재에 대한 전역 설정은 이러한 설�
 * [커뮤니티 사이트 테마](#community-site-theme)
 * [커뮤니티 사이트 브랜딩](#community-site-branding)
 
-   * 브랜드 이미지를 변경할 수 있도록 패널 하단으로 스크롤합니다.
+  * 브랜드 이미지를 변경할 수 있도록 패널 하단으로 스크롤합니다.
 
 ### 설정 수정 {#modify-settings}
 
@@ -510,8 +517,8 @@ UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
 >[!NOTE]
 >
->[소셜 로그인 허용: Facebook](#user-management)이 활성화된 경우, 사용자 그룹 `community-<site-name>-<uid>-members`이(가) 생성되면
->이(가) 만들어졌습니다. 적용된 [Facebook 클라우드 서비스](/help/communities/social-login.md#createafacebookcloudservice)는 이 그룹에 사용자를 추가하도록 구성해야 합니다.
+>[소셜 로그인 허용: Facebook](#user-management)이 활성화된 경우 사용자 그룹 `community-<site-name>-<uid>-members`
+>이(가) 생성되면 이 그룹에 사용자를 추가하도록 적용된 [Facebook 클라우드 서비스](/help/communities/social-login.md#createafacebookcloudservice)를 구성해야 합니다.
 
 ## 인증 오류 구성 {#configure-for-authentication-error}
 
@@ -523,7 +530,7 @@ UGC는 사이트 패키지에 포함되어 있지 않습니다.
 * 관리자 권한으로 로그인합니다.
 * [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+  * 예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * `Adobe Granite Login Selector Authentication Handler` 찾기.
 * 편집할 구성을 열 수 있도록 `pencil` 아이콘을 선택하십시오.
@@ -544,7 +551,7 @@ UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
 * 커뮤니티 사이트 홈 페이지로 이동합니다.
 
-   * 예: [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * 예: [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * 로그아웃을 선택합니다.
 * 로그인을 선택합니다.

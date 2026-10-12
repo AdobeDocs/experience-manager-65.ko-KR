@@ -9,20 +9,38 @@ feature: Adaptive Forms,Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '2090'
 ht-degree: 4%
-
 ---
-
 # 적응형 양식 템플릿{#adaptive-form-templates}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -48,7 +66,7 @@ ht-degree: 4%
 1. 템플릿 콘솔에서 만든 폴더 내의 **만들기**&#x200B;를 선택합니다.
 1. 템플릿 유형 선택 섹션에서 **적응형 양식 템플릿**&#x200B;을 선택하고 **다음**&#x200B;을 선택합니다.
 
-1. 템플릿 세부 정보 섹션에서 템플릿 제목을 입력하고 **만들기**&#x200B;를 선택합니다.
+1. 템플릿 세부 정보 섹션에서 템플릿 제목을 입력하고 **만들기**를 선택합니다.
 양식 작성 시 작성된 템플릿을 선택할 수 있을 때 볼 수 있는 설명과 썸네일을 제공할 수 있습니다.
 
 1. **완료**&#x200B;를 선택하여 콘솔로 돌아가거나 **열기**&#x200B;를 선택하여 편집기에서 템플릿을 엽니다.
@@ -60,13 +78,13 @@ ht-degree: 4%
 * **페이지 도구 모음**
 다음 옵션을 포함합니다.
 
-   * **사이드 패널 전환**: 사이드바를 표시하거나 숨길 수 있습니다.
-   * **페이지 정보**: 게시/게시 취소 시간, 썸네일, 클라이언트측 라이브러리, 페이지 정책 및 페이지 디자인 클라이언트측 라이브러리와 같은 정보를 지정할 수 있습니다.
-   * **에뮬레이터**: 다른 장치를 시뮬레이션하고 사용자 지정할 수 있습니다.
-   * **레이어 선택기:** 레이어를 변경할 수 있습니다.
-**구조** 레이어 또는 **초기 콘텐츠** 레이어를 선택할 수 있습니다. 구조 레이어를 사용하면 머리글 및 바닥글을 추가하고 사용자 지정할 수 있습니다. 초기 콘텐츠 레이어를 사용하면 양식 콘텐츠를 사용자 정의할 수 있습니다.
+  * **사이드 패널 전환**: 사이드바를 표시하거나 숨길 수 있습니다.
+  * **페이지 정보**: 게시/게시 취소 시간, 썸네일, 클라이언트측 라이브러리, 페이지 정책 및 페이지 디자인 클라이언트측 라이브러리와 같은 정보를 지정할 수 있습니다.
+  * **에뮬레이터**: 다른 장치를 시뮬레이션하고 사용자 지정할 수 있습니다.
+  * **레이어 선택기:** 레이어를 변경할 수 있습니다.
+    **구조** 레이어 또는 **초기 콘텐츠** 레이어를 선택할 수 있습니다. 구조 레이어를 사용하면 머리글 및 바닥글을 추가하고 사용자 지정할 수 있습니다. 초기 콘텐츠 레이어를 사용하면 양식 콘텐츠를 사용자 정의할 수 있습니다.
 
-   * **미리 보기:** 템플릿을 게시할 때 템플릿의 모양을 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
+  * **미리 보기:** 템플릿을 게시할 때 템플릿의 모양을 미리 볼 수 있습니다. [레이어 선택기] 및 [미리 보기]를 사용하여 편집 모드와 미리 보기 모드를 전환할 수 있습니다.
 
 * **사이드바:**&#x200B;은(는) 콘텐츠, 속성, Assets 및 구성 요소 브라우저를 제공합니다.
 * **구성 요소 도구 모음:** 구성 요소를 선택하면 구성 요소를 사용자 지정할 수 있는 도구 모음이 표시됩니다.
@@ -115,7 +133,7 @@ Touch UI 편집기를 이해하려면 [적응형 양식 작성 소개](../../for
 
 초기 컨텐츠 옵션을 선택하면 템플릿의 적응형 양식 컨테이너가 편집을 위한 적응형 양식처럼 열립니다. 적응형 양식 작성과 마찬가지로 테마 선택 및 작업 제출과 같은 초기 설정을 지정할 수 있습니다.
 
-양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 서식 파일의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 ![캔버스-드롭다운](assets/canvas-drop-down.png) **> 초기 콘텐츠**&#x200B;를 선택합니다.
+양식 작성자는 이 필드를 기반으로 양식을 만듭니다. 컨텐츠 흐름 구조는 템플릿의 초기 컨텐츠 레이어에 지정됩니다. 양식 서식 파일의 초기 콘텐츠를 편집하는 것으로 전환하려면 페이지 도구 모음에서 미리 보기 전에 ![캔버스-드롭다운](assets/canvas-drop-down.png) **> 초기 콘텐츠**를 선택합니다.
 ![템플릿 편집기의 초기 콘텐츠 레이어](assets/initial-content-layer.png)
 
 속성을 지정하기 위해 선택한 적응형 양식 컨테이너를 표시하는 템플릿 편집기의 초기 콘텐츠 계층.
@@ -167,7 +185,7 @@ Touch UI 편집기를 이해하려면 [적응형 양식 작성 소개](../../for
 1. **Adobe Experience Manager > 도구 > 템플릿**(으)로 이동하여 템플릿을 만든 폴더를 엽니다.
 
 1. 생성한 템플릿이 초안으로 표시됩니다.
-1. 템플릿을 선택하고 도구 모음에서 **사용**&#x200B;을 선택합니다.
+1. 템플릿을 선택하고 도구 모음에서 **사용**을 선택합니다.
 적응형 양식을 만들 때 템플릿을 선택하라는 메시지가 표시되면 템플릿이 나열된 것을 볼 수 있습니다.
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}

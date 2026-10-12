@@ -9,13 +9,17 @@ exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile 온디맨드{#aem-mobile-on-demand}
 
 {{ue-over-mobile}}
@@ -90,7 +94,7 @@ AEM 개발자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 
 
 ## AEM Author {#aem-author}
 
-***AEM 작성자*(또는 *마케터*)**&#x200B;은(는) 사용자 지정 개발 또는 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함한 DAM의 모든 유형의 미디어를 추가합니다. 그런 다음 *AEM 작성자*에서 AEM의 기본 제공 콘텐츠 편집기를 사용하여 Adobe Experience Cloud의 나머지 부분과의 통합을 포함하여 앱 내에서 풍부하고 적절한 경험을 만듭니다.
+***AEM 작성자*(또는 *마케터*)**은(는) 사용자 지정 개발 또는 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(콘텐츠 조각)을 포함한 DAM의 모든 유형의 미디어를 추가합니다. 그런 다음 *AEM 작성자*에서 AEM의 기본 제공 콘텐츠 편집기를 사용하여 Adobe Experience Cloud의 나머지 부분과의 통합을 포함하여 앱 내에서 풍부하고 적절한 경험을 만듭니다.
 
 AEM 작성자는 AEM Mobile On-demand Services을 사용하여 앱을 만들 때 다음 주제를 이해해야 합니다.
 

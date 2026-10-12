@@ -10,7 +10,18 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2450'
 ht-degree: 2%
@@ -27,7 +38,7 @@ ht-degree: 2%
 >
 >HTML 템플릿 언어(HTL)와 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만, 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
 >
->이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
+>이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
 
 ## 구조 {#structure}
 

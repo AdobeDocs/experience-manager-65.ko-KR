@@ -1,24 +1,38 @@
 ---
 title: 자산 다운로드
-description: ' [!DNL Adobe Experience Manager] 에서 에셋을 다운로드하고 다운로드 기능을 활성화 또는 비활성화하는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Experience Manager]에서 자산을 다운로드하고 다운로드 기능을 사용하거나 사용하지 않도록 설정하는 방법을 알아봅니다.'
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: d2b070a9-76bf-4422-902f-be20e963fd42
+    internal-label: Asset distribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
-
+source-wordcount: '968'
+ht-degree: 7%
 ---
-
 # [!DNL Adobe Experience Manager]에서 에셋 다운로드 {#download-assets-from-aem}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 정적 및 동적 변환을 포함한 에셋을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 에셋에 대한 링크가 포함된 전자 메일을 보낼 수 있습니다. 다운로드한 에셋은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 내보내기 작업에 대한 최대 파일 크기는 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
@@ -49,7 +63,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | 내보내기 또는 다운로드 옵션 | 설명 |
    |---|---|
    | **[!UICONTROL 각 자산에 대해 별도의 폴더를 만듭니다]** | 다운로드하는 각 에셋(에셋의 상위 폴더 아래에 중첩된 하위 폴더의 에셋 포함)을 로컬 컴퓨터의 한 폴더에 포함하려면 이 옵션을 선택합니다. 이 옵션을 선택하지 않으면 기본적으로 폴더 계층 구조가 무시되고 모든 자산이 로컬 컴퓨터의 한 폴더로 다운로드됩니다. |
-   | **[!UICONTROL 이메일]** | 사용자에게 이메일 알림이 전송됩니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
+   | **[!UICONTROL 이메일]** | 사용자에게 이메일 알림이 전송됩니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중 사용자 정의하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>다음 위치에 테넌트별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
    | **[!UICONTROL 자산]** | 렌디션 없이 에셋을 원본 양식으로 다운로드하려면 이 옵션을 선택합니다.<br>원본 에셋에 하위 에셋이 있는 경우 하위 에셋 옵션을 사용할 수 있습니다. |
    | **[!UICONTROL 표현물]** | 렌디션은 에셋의 바이너리 표현입니다. Assets에는 업로드된 파일의 기본 표현이 있습니다. 그들은 얼마든지 표현을 할 수 있다. <br> 이 옵션을 사용하여 다운로드할 변환을 선택할 수 있습니다. 사용할 수 있는 렌디션은 선택한 에셋에 따라 다릅니다. 에셋에 렌디션이 있는 경우 옵션을 사용할 수 있습니다. |
    | **[!UICONTROL 스마트 자르기]** | AEM 내에서 선택한 에셋의 모든 스마트 자르기 렌디션을 다운로드하려면 이 옵션을 선택합니다. 스마트 자르기 렌디션이 포함된 zip 파일이 생성되고 로컬 컴퓨터에 다운로드됩니다. |
@@ -80,13 +94,13 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
 자산 다운로드 요청을 차단하도록 Dispatcher 구성을 업데이트하여 [!DNL Experience Manager] 게시 인스턴스에서 `Asset Download Servlet`을(를) 비활성화할 수 있습니다. OSGi 콘솔을 통해 서블릿을 수동으로 비활성화할 수도 있습니다.
 
-1. Dispatcher 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#defining-a-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Dispatcher 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 게시 인스턴스에서 OSGi 구성 요소를 비활성화하려면 `http://[aem_server]:[port]/system/console/components`에서 OSGi 콘솔에 액세스하십시오. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet`을(를) 찾은 다음 **[!UICONTROL 사용 안 함]**&#x200B;을(를) 클릭합니다.
 
 >[!MORELIKETHIS]
 >
->* [Brand Portal을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=ko)
+>* [Brand Portal을 사용하여 에셋 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [DRM 보호 에셋 다운로드](drm.md).
->* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 자산을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#download-assets).
+>* [Win 또는 Mac 데스크톱에서 Experience Manager 데스크톱 앱을 사용하여 자산을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [지원되는 Adobe Creative Cloud 앱 내에서 Adobe Assets Link를 사용하여 자산을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html).

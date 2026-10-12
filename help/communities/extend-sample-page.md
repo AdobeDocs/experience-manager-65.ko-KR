@@ -10,13 +10,20 @@ exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # 샘플 페이지에 주석 추가  {#add-comment-to-sample-page}
 
 이제 사용자 지정 주석 시스템의 구성 요소가 애플리케이션 디렉터리(/apps)에 있으므로 확장된 구성 요소를 사용할 수 있습니다. 영향을 받는 웹 사이트의 댓글 시스템 인스턴스는 resourceType을 사용자 지정 댓글 시스템으로 설정하고 필요한 모든 클라이언트 라이브러리를 포함해야 합니다.
@@ -55,11 +62,11 @@ ht-degree: 0%
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
-#### Publish 샘플 페이지 {#publish-sample-page}
+#### 샘플 페이지 게시 {#publish-sample-page}
 
 사용자 지정 구성 요소가 페이지에 추가되면 [페이지를 게시](/help/communities/sites-console.md#publishing-the-site)해야 합니다.
 
-#### Publish: 샘플 페이지의 Alt 댓글 {#publish-alt-comment-on-sample-page}
+#### 게시: 샘플 페이지의 Alt 주석 {#publish-alt-comment-on-sample-page}
 
 사용자 지정 응용 프로그램과 샘플 페이지를 모두 게시한 후 주석을 입력할 수 있습니다. 로그인하면 [데모 사용자](/help/communities/tutorials.md#demo-users) 또는 관리자와 함께 댓글을 게시할 수 있습니다.
 

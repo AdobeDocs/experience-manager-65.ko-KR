@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager mobile On-Demand 서비스 시작
-description: Adobe Experience Manager(AEM) mobile On-Demand Services 앱 관리를 시작합니다. 이 섹션에서는 온디맨드 서비스를 위한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
+description: Adobe Experience Manager(AEM) mobile On-Demand Services 앱 관리를 시작합니다. 이 비디오에서는 온디맨드 서비스에 대한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
@@ -9,20 +9,24 @@ exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile 온디맨드 {#aem-mobile-on-demand}
 
 {{ue-over-mobile}}
 
 >[!NOTE]
 >
->AEM(Adobe Experience Manage)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/kr/digital-publishing-solution/topics.html)을 참조하세요.
+>Adobe Experience Manage(AEM)를 콘텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html)을 참조하십시오.
 
 ## AEM 관리자 {#aem-administrator}
 
@@ -36,16 +40,16 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM 그룹 및 권한 설정에 대한 자세한 내용을 보려면 온라인 도움말에서 [사용자 역할 만들기 및 액세스 권한 부여](https://helpx.adobe.com/kr/digital-publishing-solution/help/account-admin-dps.html)를 클릭하십시오.
+>AEM 그룹 및 권한 설정에 대한 자세한 내용을 보려면 온라인 도움말에서 [사용자 역할 만들기 및 액세스 권한 부여](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)를 클릭하십시오.
 
 AEM 관리자는 AEM Mobile On-demand Services을 사용하여 앱을 만드는 동안 다음 작업을 담당합니다.
 
 * 다음을 다루는 [AEM Mobile 설정](/help/mobile/aem-mobile-setup.md)
 
-   * AEM Mobile 프로비저닝
-   * AEM Mobile에 대한 프로젝트 만들기
-   * AEM Mobile 커넥터 구성
-   * AEM Mobile 사용자 역할 추가 및 권한 할당
+  * AEM Mobile 프로비저닝
+  * AEM Mobile에 대한 프로젝트 만들기
+  * AEM Mobile 커넥터 구성
+  * AEM Mobile 사용자 역할 추가 및 권한 할당
 
 * [사용자 및 사용자 그룹 구성](/help/mobile/aem-mobile-configure-users.md)
 * [Preflight로 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md)

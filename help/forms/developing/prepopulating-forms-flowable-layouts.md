@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
-
 ---
-
 # 유동 레이아웃으로 양식 미리 채우기 {#prepopulating-forms-with-flowable-layouts1}
 
 ## 유동 레이아웃으로 양식 미리 채우기 {#prepopulating-forms-with-flowable-layouts2}
@@ -102,7 +118,7 @@ ht-degree: 1%
 
 ### 양식 디자인 고려 사항 {#form-design-considerations}
 
-유동성 레이아웃이 포함된 Forms은 Designer에서 만든 양식 디자인을 기반으로 합니다. 양식 디자인은 사용자 입력에 따른 값 계산을 포함하여 레이아웃, 프레젠테이션 및 데이터 캡처 규칙 집합을 지정합니다. 규칙은 데이터를 양식에 입력할 때 적용됩니다. 양식에 추가된 필드는 양식 디자인 내에 있는 하위 양식입니다. 예를 들어 이전 다이어그램에 표시된 구매 주문 양식에서 각 라인은 하위 양식입니다. 하위 양식을 포함하는 양식 디자인을 만드는 방법에 대한 자세한 내용은 [유동성 레이아웃이 있는 구매 주문 양식 만들기](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_kr)를 참조하십시오.
+유동성 레이아웃이 포함된 Forms은 Designer에서 만든 양식 디자인을 기반으로 합니다. 양식 디자인은 사용자 입력에 따른 값 계산을 포함하여 레이아웃, 프레젠테이션 및 데이터 캡처 규칙 집합을 지정합니다. 규칙은 데이터를 양식에 입력할 때 적용됩니다. 양식에 추가된 필드는 양식 디자인 내에 있는 하위 양식입니다. 예를 들어 이전 다이어그램에 표시된 구매 주문 양식에서 각 라인은 하위 양식입니다. 하위 양식을 포함하는 양식 디자인을 만드는 방법에 대한 자세한 내용은 [유동성 레이아웃이 있는 구매 주문 양식 만들기](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)를 참조하십시오.
 
 ### 데이터 하위 그룹 이해 {#understanding-data-subgroups}
 

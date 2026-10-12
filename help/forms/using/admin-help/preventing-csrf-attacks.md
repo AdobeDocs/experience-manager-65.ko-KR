@@ -9,13 +9,29 @@ exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 97%
-
 ---
-
 # CSRF 공격 방지 {#preventing-csrf-attacks}
 
 ## CSRF 공격의 작동 방식 {#how-csrf-attacks-work}
@@ -26,9 +42,9 @@ ht-degree: 97%
 
 ## CSRF 관련 용어 {#csrf-related-terms}
 
-**레퍼러:** 요청이 들어오는 소스 페이지 주소입니다. 예를 들어 site1. com의 웹 페이지에는 site2. com으로 이동하는 링크가 포함되어 있습니다. 이 링크를 클릭하면 site2. com에 요청이 게시됩니다. 이 요청의 레퍼러는 소스가 site1.com인 페이지에서 요청이 이루어졌으므로 site1.com입니다.
+**레퍼러:** 요청이 들어오는 소스 페이지 주소입니다. 예를 들어 site1.com의 웹 페이지에는 site2.com으로 이동하는 링크가 포함되어 있습니다. 이 링크를 클릭하면 site2.com에 요청이 게시됩니다. 이 요청의 레퍼러는 소스가 site1.com인 페이지에서 요청이 이루어졌으므로 site1.com입니다.
 
-**허용 목록에 추가된 URI:** URI는 요청을 받고 있는 Forms 서버의 리소스를 식별합니다(예: /adminui 또는 /contentspace). 일부 리소스는 외부 사이트에서 애플리케이션으로 들어가라는 요청을 허용할 수 있습니다. 해당 리소스는 허용 목록에 추가된 URI로 간주됩니다. Forms 서버는 허용 목록에 추가된 URI에서 레퍼러 확인을 수행하지 않습니다.
+**허용 목록에 추가된 URI:** URI는 요청을 받고 있는 Forms 서버의 리소스를 식별합니다(예: /adminui 또는 /contentspace). 일부 리소스는 외부 사이트에서 요청이 애플리케이션에 들어오도록 허용할 수 있습니다. 해당 리소스는 허용 목록에 추가된 URI로 간주됩니다. Forms 서버는 허용 목록에 추가된 URI에서 레퍼러 확인을 수행하지 않습니다.
 
 **Null 레퍼러:** 새 브라우저 창이나 탭을 열고 주소를 입력한 후 Enter 키를 누르면 레퍼러가 null입니다. 이 요청은 완전히 새로운 요청이며 상위 웹 페이지에서 발생한 것이 아니므로 해당 요청에 대한 레퍼러가 없습니다. Forms 서버는 다음과 같은 경우 null 레퍼러를 수신할 수 있습니다.
 
@@ -36,9 +52,9 @@ ht-degree: 97%
 * AEM Forms SOAP 또는 REST 엔드포인트에서 HTTP 요청을 보내는 모든 데스크탑 클라이언트
 * 새 브라우저 창이 열리고 AEM Forms 웹 애플리케이션 로그인 페이지의 URL이 입력되는 경우
 
-SOAP 및 REST 엔드포인트에서 null 레퍼러를 허용합니다. 또한 /adminui 및 /contentspace와 매핑된 해당 리소스와 같은 모든 URI 로그인 페이지에서 null 레퍼러를 허용합니다. 예를 들어 /contentspace에 매핑된 서블릿은 /contentspace/faces/jsp/login. jsp이며 null 레퍼러 예외여야 합니다. 이 예외는 웹 애플리케이션에 대해 GET 필터링을 활성화한 경우에만 필요합니다. 애플리케이션에서 null 레퍼러를 허용할지 여부를 지정할 수 있습니다. [AEM Forms 강화 및 보안](https://help.adobe.com/ko_KR/livecycle/11.0/HardeningSecurity/index.html)의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.
+SOAP 및 REST 엔드포인트에서 null 레퍼러를 허용합니다. 또한 /adminui 및 /contentspace와 같은 모든 URI 로그인 페이지와 이에 해당하는 매핑된 리소스에서 null 레퍼러를 허용합니다. 예를 들어 /contentspace에 매핑된 서블릿은 /contentspace/faces/jsp/login.jsp이며 null 레퍼러 예외여야 합니다. 이 예외는 웹 애플리케이션에 대해 GET 필터링을 활성화한 경우에만 필요합니다. 애플리케이션에서 null 레퍼러를 허용할지 여부를 지정할 수 있습니다. [AEM Forms 강화 및 보안](https://help.adobe.com/ko_KR/livecycle/11.0/HardeningSecurity/index.html)의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.
 
-**허용된 레퍼러 예외:** 허용된 레퍼러 예외는 요청이 차단되는 허용된 레퍼러 목록의 하위 목록입니다. 허용된 레퍼러 예외는 웹 애플리케이션에만 적용됩니다. 허용된 레퍼러의 하위 집합이 특정 웹 애플리케이션을 호출할 수 있도록 허용해서는 안 되는 경우 허용된 레퍼러 예외를 통해 레퍼러를 차단 목록에 추가할 수 있습니다. 허용된 레퍼러 예외는 애플리케이션의 web. xml 파일에 지정되어 있습니다. (도움말 및 튜토리얼 페이지에서 AEM Forms 강화 및 보안의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.)
+**허용된 레퍼러 예외:** 허용된 레퍼러 예외는 요청이 차단되는 허용된 레퍼러 목록의 하위 목록입니다. 허용된 레퍼러 예외는 웹 애플리케이션에만 적용됩니다. 허용된 레퍼러의 하위 집합이 특정 웹 애플리케이션을 호출할 수 있도록 허용해서는 안 되는 경우 허용된 레퍼러 예외를 통해 레퍼러를 차단 목록에 추가할 수 있습니다. 허용된 레퍼러 예외는 애플리케이션의 web.xml 파일에 지정되어 있습니다. (도움말 및 튜토리얼 페이지에서 AEM Forms 강화 및 보안의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.)
 
 ## 허용된 레퍼러의 작동 방식 {#how-allowed-referers-work}
 
@@ -47,14 +63,14 @@ AEM Forms는 CSRF 공격을 방지하는 데 도움이 되는 레퍼러 필터�
 1. Forms 서버에서 호출에 사용된 HTTP 메서드를 확인합니다.
 
    * 해당 메서드가 POST인 경우 Forms 서버는 레퍼러 헤더 확인을 수행합니다.
-   * 해당 메서드가 GET인 경우 Forms 서버는 CSRF_CHECK_GETS가 true로 설정되어 있지 않으면 레퍼러 확인을 우회하고, true로 설정되어 있으면 레퍼러 헤더 확인을 수행합니다. CSRF_CHECK_GETS는 애플리케이션의 web. xml 파일에 지정되어 있습니다. ([강화 및 보안 안내서](https://help.adobe.com/ko_KR/livecycle/11.0/HardeningSecurity/index.html)의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.)
+   * 해당 메서드가 GET인 경우 Forms 서버는 CSRF_CHECK_GETS가 true로 설정되어 있지 않으면 레퍼러 확인을 우회하고, true로 설정되어 있으면 레퍼러 헤더 확인을 수행합니다. CSRF_CHECK_GETS는 애플리케이션의 web.xml 파일에 지정되어 있습니다. ([강화 및 보안 안내서](https://help.adobe.com/ko_KR/livecycle/11.0/HardeningSecurity/index.html)의 &#39;크로스 사이트 요청 위조 공격으로부터 보호&#39;를 참조하십시오.)
 
 1. Forms 서버에서 요청된 URI가 허용 목록에 추가되어 있는지 확인합니다.
 
    * URI가 허용 목록에 추가되어 있으면 서버에서 해당 요청을 전달합니다.
    * 요청된 URI가 허용 목록에 추가되어 있지 않으면 서버에서 요청의 레퍼러를 가져옵니다.
 
-1. 요청에 레퍼러가 있는 경우 서버에서 해당 레퍼러가 허용된 레퍼러인지 여부를 확인합니다. 허용된 레퍼러인 경우 서버에서 레퍼러 예외를 확인합니다.
+1. 요청에 레퍼러가 있는 경우 서버에서 해당 레퍼러가 허용된 레퍼러인지 여부를 확인합니다. 허용되는 경우 서버는 레퍼러 예외가 있는지 확인합니다.
 
    * 예외인 경우 해당 요청이 차단됩니다.
    * 예외가 아닌 경우 해당 요청이 전달됩니다.

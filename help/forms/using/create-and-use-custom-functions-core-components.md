@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3342'
+source-wordcount: '3523'
 ht-degree: 2%
-
 ---
-
 # 적응형 Forms 핵심 구성 요소의 사용자 정의 기능
 
 이 문서에서는 다음과 같은 최신 기능이 포함된 최신 적응형 양식 핵심 구성 요소로 사용자 정의 기능을 만드는 방법에 대해 설명합니다.
@@ -60,8 +70,8 @@ AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규�
 
 >[!NOTE]
 >`[functionName]`은(는) 함수 이름입니다. 공백은 허용되지 않습니다.
->`<Function Name>`은(는) 적응형 Forms의 규칙 편집기에 있는 함수의 표시 이름입니다.
->함수 이름이 함수 자체의 이름과 같으면 구문에서 `[functionName]`을(를) 생략할 수 있습니다.
+>`<Function Name>` 는 적응형 Forms 규칙 편집기에 있는 함수의 표시 이름입니다.
+>함수 이름이 함수 자체의 이름과 동일한 경우 구문에서 `[functionName]`을(를) 생략할 수 있습니다.
 
 #### 매개변수
 
@@ -73,17 +83,17 @@ AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규�
 
   `{type}`은(는) 매개 변수 형식을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
 
-   * string: 단일 문자열 값을 나타냅니다.
-   * number: 단일 숫자 값을 나타냅니다.
-   * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
-   * string[]: 문자열 값의 배열을 나타냅니다.
-   * number[]: 숫자 값의 배열을 나타냅니다.
-   * boolean[]: 부울 값의 배열을 나타냅니다.
-   * date: 단일 날짜 값을 나타냅니다.
-   * date[]: 날짜 값의 배열을 나타냅니다.
-   * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
-   * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
-   * 범위: 사용자 지정 함수 내에서 양식 수정을 수행하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석의 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 정보는 [여기를 클릭](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)하십시오.
+  * string: 단일 문자열 값을 나타냅니다.
+  * number: 단일 숫자 값을 나타냅니다.
+  * 부울: 단일 부울 값(true 또는 false)을 나타냅니다.
+  * string[]: 문자열 값의 배열을 나타냅니다.
+  * number[]: 숫자 값의 배열을 나타냅니다.
+  * boolean[]: 부울 값의 배열을 나타냅니다.
+  * date: 단일 날짜 값을 나타냅니다.
+  * date[]: 날짜 값의 배열을 나타냅니다.
+  * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
+  * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
+  * 범위: 사용자 지정 함수 내에서 양식 수정을 수행하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석의 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 정보는 [여기를 클릭](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)하십시오.
 
 매개 변수 형식이 **대/소문자를 구분하지 않습니다**. 매개 변수 이름에는 공백을 사용할 수 없습니다.
 
@@ -355,8 +365,8 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### AEM Project Archetype을 사용하여 클라이언트 라이브러리 만들기{#create-client-library-archetype}
 
-[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
-기존 프로젝트 <!--and have already the project structure as shown in the image below,-->이(가) 있는 경우 로컬 프로젝트에 [사용자 정의 함수](#create-add-custom-function)를 직접 추가할 수 있습니다.
+[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
+기존 프로젝트 <!--and have already the project structure as shown in the image below,-->이(가) 있는 경우 [사용자 지정 함수](#create-add-custom-function)를 로컬 프로젝트에 직접 추가할 수 있습니다.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -532,7 +542,7 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 
 ![사용자 지정 함수 클라이언트 라이브러리를 추가](/help/forms/using//assets/calculateage-customfunction.png)
 
-이제 AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
+이제 AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 [규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
 
 ## 적응형 양식에서 사용자 정의 함수 사용 {#use-custom-functions}
 
@@ -572,7 +582,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 
@@ -984,9 +994,9 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 * 사용자는 [핵심 구성 요소 및 사양 버전이 최신 버전](https://github.com/adobe/aem-core-forms-components/tree/release/650)으로 설정되어 있는지 확인해야 합니다. 그러나 기존 AEM 프로젝트 및 양식의 경우 따라야 할 추가 단계가 있습니다.
 
-   * AEM 프로젝트의 경우 사용자는 `submitForm('custom:submitSuccess', 'custom:submitError')`의 모든 인스턴스를 `submitForm()`(으)로 바꾸고 프로젝트를 배포해야 합니다.
+  * AEM 프로젝트의 경우 사용자는 `submitForm('custom:submitSuccess', 'custom:submitError')`의 모든 인스턴스를 `submitForm()`(으)로 바꾸고 프로젝트를 배포해야 합니다.
 
-   * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 **제출** 단추에서 `submitForm` 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
+  * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 **제출** 단추에서 `submitForm` 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
 
 
 * 사용자 정의 함수에 대한 코드가 들어 있는 JavaScript 파일에 오류가 있는 경우 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일로 이동하여 오류를 확인할 수 있습니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.
@@ -1002,9 +1012,9 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 * `parameter type` 및 `return type`은(는) `None`을(를) 지원하지 않습니다.
 
 * 사용자 지정 함수 목록에서 지원되지 않는 함수는 다음과 같습니다.
-   * 생성기 함수
-   * 비동기/대기 함수
-   * 메서드 정의
-   * 클래스 메서드
-   * 기본 매개 변수
-   * 나머지 매개 변수
+  * 생성기 함수
+  * 비동기/대기 함수
+  * 메서드 정의
+  * 클래스 메서드
+  * 기본 매개 변수
+  * 나머지 매개 변수

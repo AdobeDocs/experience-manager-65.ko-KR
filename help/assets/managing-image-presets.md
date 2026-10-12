@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3900'
+source-wordcount: '3995'
 ht-degree: 8%
-
 ---
-
 # Dynamic Media 이미지 사전 설정 관리{#managing-image-presets}
 
 이미지 사전 설정을 사용하면 Adobe Experience Manager Assets에서 다른 크기, 다른 형식 또는 동적으로 생성되는 다른 이미지 속성으로 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지를 표시하기 위한 미리 정의된 크기 조정 및 서식 지정 명령 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 게재 크기를 선택합니다. 또한 보기 위해 이미지가 전달될 때 이미지의 모양이 최적화되도록 서식 지정 명령을 선택합니다.
@@ -328,8 +342,8 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     <div>
       선택 중
      <strong>GIF</strong> 또는
-     <strong>알파 포함 GIF</strong>에서 다음 추가 기능 제공
-     <strong>GIF 색상 양자화</strong> 옵션:
+     <strong>알파 포함 GIF</strong>에서 다음 추가 정보를 제공합니다.
+     <strong>GIF 색 양자화</strong> 옵션:
     </div>
     <ul>
      <li><strong>유형 </strong>- <strong>적응형</strong>(기본값), <strong>웹</strong> 또는 <strong>Macintosh</strong>을(를) 선택합니다. <strong>Alpha과 함께 GIF</strong>을(를) 선택하면 Macintosh 옵션을 사용할 수 없습니다.</li>
@@ -341,7 +355,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
       선택 중
      <strong>PDF</strong>,
      <strong>TIFF</strong> 또는
-     <strong>알파 포함 TIFF</strong>에서 다음 추가 옵션을 제공합니다.
+     <strong>알파 포함 TIFF</strong>에서 이 추가 옵션을 제공합니다.
     </div>
     <ul>
      <li><strong>압축</strong> - 압축 알고리즘을 선택합니다. PDF의 알고리즘 옵션은 <strong>없음</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>이고, TIFF의 경우 옵션은 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>이며, Alpha이 있는 TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li>
@@ -404,7 +418,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     </ul>
     <div>
       선명하게 하기는에 설명되어 있습니다.
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=ko">이미지 선명하게 하기</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +438,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>지역화 명령: <code>locale=</code> 및 <code>req=xlate</code></li>
@@ -441,7 +455,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 ## 이미지 수정자를 사용하여 이미지 사전 설정 옵션 정의 {#defining-image-preset-options-with-image-modifiers}
 
-기본 및 고급 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하도록 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko#image-serving-api)에 자세히 정의된 이미지 렌더링 API를 사용합니다.
+기본 및 고급 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하도록 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api)에 자세히 정의된 이미지 렌더링 API를 사용합니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본 예입니다.
 
@@ -449,7 +463,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 >
 >일부 이미지 수정자 [은(는) Experience Manager](#advanced-tab-options)에서 사용할 수 없습니다.
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=ko#image-serving-api) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - 부정적인 이미지 효과에 대한 각 색상 구성 요소를 반전시킵니다.
 
   ```xml
   &op_invert=1
@@ -457,7 +471,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=ko#image-serving-api) - 이미지에 흐림 효과 필터를 적용합니다.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - 이미지에 흐림 효과 필터를 적용합니다.
 
   ```xml
   &op_blur=7
@@ -473,7 +487,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=ko#image-serving-api) - 밝기를 줄이거나 늘립니다.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - 밝기를 줄이거나 늘립니다.
 
   ```xml
   &op_brightness=58
@@ -481,7 +495,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=ko#image-serving-api) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
   ```xml
   opac=29

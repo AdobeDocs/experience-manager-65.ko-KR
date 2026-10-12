@@ -9,13 +9,22 @@ exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 5%
 ---
-
 # Assets 성능 안내서{#assets-performance-guide}
 
 성능이 중요한 경우 DAM(디지털 자산 관리)이 자주 사용됩니다. 그러나 일반적인 DAM 설정에는 성능에 영향을 줄 수 있는 몇 가지 하드웨어 및 소프트웨어 구성 요소가 포함되어 있습니다. 이 문서에서는 다음 사항을 제공합니다.
@@ -59,9 +68,9 @@ DAM 프로세스들은 대량에 대해 병렬로 수행되는 것이 잘 적합
 
 **5. 자산 처리를 수행하기 위한 하드웨어 요구 사항 예상**
 
-디지털 에셋을 광범위하게 처리하려면 최적화된 하드웨어 리소스가 필요하며, 가장 관련성이 높은 요소는 이미지 크기와 처리된 이미지의 최대 처리량입니다.
+디지털 자산을 광범위하게 처리하려면 최적화된 하드웨어 리소스가 필요하며 가장 관련성이 높은 요소는 이미지 크기와 처리된 이미지의 최대 처리량입니다.
 
-16GB 이상의 힙을 할당하고 원시 이미지 수집에 [Camera Raw 패키지](/help/assets/camera-raw.md)를 사용하도록 [!UICONTROL DAM 자산 업데이트] 워크플로우를 구성하십시오.
+최소 16GB의 힙을 할당하고 [!UICONTROL DAM 자산 업데이트] 워크플로를 구성하여 [Camera Raw 패키지](/help/assets/camera-raw.md)를 사용하면서 원시 이미지를 수집합니다.
 
 ## 시스템 이해 {#understanding-the-system}
 

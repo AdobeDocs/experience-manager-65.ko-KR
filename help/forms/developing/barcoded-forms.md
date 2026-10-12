@@ -1,6 +1,6 @@
 ---
-title: 바코드 형식을 사용한 작업
-description: Java API 및 웹 서비스 API를 사용하여 바코드가 포함된 PDF 양식 또는 이미지의 데이터를 디코딩합니다.
+title: 바코드 양식 작업
+description: Java API 및 웹 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지의 데이터를 디코딩합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,Barcoded Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: c61c0849-e97f-542f-a358-7b62d542cc8b
+    internal-label: Barcoded Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 0%
-
+source-wordcount: '1934'
+ht-degree: 1%
 ---
-
-# 바코드 형식을 사용한 작업 {#working-with-barcoded-forms}
+# 바코드 양식 작업 {#working-with-barcoded-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -30,7 +46,7 @@ ht-degree: 0%
 
 ## 바코드 형식 데이터 디코딩 {#decoding-barcoded-form-data}
 
-바코드 양식 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지에서 데이터를 디코딩할 수 있습니다. 양식 데이터를 디코딩하는 것은 바코드에 들어 있는 데이터를 추출하는 것을 의미한다. PDF 양식(또는 이미지)에서 데이터를 디코딩하려면 먼저 사용자가 양식을 데이터로 채워야 합니다.
+바코드 양식 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지에서 데이터를 디코딩할 수 있습니다. 양식 데이터를 디코딩하는 것은 바코드에 들어 있는 데이터를 추출하는 것을 의미한다. PDF 양식(또는 이미지)에서 데이터를 디코딩하려면 먼저 사용자가 양식에서 데이터를 채워야 합니다.
 
 >[!NOTE]
 >
@@ -74,7 +90,7 @@ AEM Forms이 JBOSS가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 바코드가 포함된 PDF 양식(또는 이미지)을 가져온 후 데이터를 디코딩할 수 있습니다. Barcoded Forms 서비스는 다음 유형의 바코드를 지원합니다.
 
-* PDF417 바코드.
+* PDF 바코드
 * 데이터 매트릭스 바코드.
 * QR 코드 바코드.
 * 코다바 바코드요
@@ -119,7 +135,7 @@ Java(barcoded forms API)를 사용하여 양식 데이터를 디코딩합니다.
 
    해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `BarcodedFormsServiceClient` 개체를 만듭니다.
 
-1. 바코드 데이터가 포함된 PDF 양식 받기
+1. 바코드 데이터가 포함된 PDF 양식 가져오기
 
    * 해당 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 바코드 처리된 데이터가 포함된 PDF 양식을 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
    * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
@@ -183,7 +199,7 @@ Java(barcoded forms API)를 사용하여 양식 데이터를 디코딩합니다.
 
    바코드 형식 서비스 WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 사용하여 기본 생성자를 호출하여 `BarcodedFormsServiceService` 개체를 만듭니다.
 
-1. 바코드 데이터가 포함된 PDF 양식 받기
+1. 바코드 데이터가 포함된 PDF 양식 가져오기
 
    * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 바코드가 포함된 PDF 문서를 저장하는 데 사용됩니다.
    * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.

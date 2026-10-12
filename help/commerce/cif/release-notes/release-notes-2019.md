@@ -5,13 +5,21 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 14%
-
 ---
-
 # Commerce integration framework GitHub 릴리스 개요
 
 ## 릴리스 날짜: 2019년 11월
@@ -52,7 +60,7 @@ ht-degree: 14%
 
 * 제품 세부 사항 페이지 및 제품 목록 페이지에 대한 완전히 작성 가능한 템플릿. 이제 작성자가 템플릿을 만들고 이러한 템플릿에서 제품 목록 및 제품 세부 사항 구성 요소를 드래그하여 놓을 수 있습니다. 이제 다른 구성 요소를 추가할 수 있을 뿐만 아니라 작성자도 이러한 템플릿의 레이아웃을 변경하여 마케팅 및 상거래 콘텐츠를 결합한 놀라운 경험을 자유롭게 만들 수 있습니다.
 
-* 작성자에게 친숙한 모든 CIF 핵심 구성 요소가 [AEM의 스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=ko)을 지원하도록 개선되었습니다. 제품 목록 구성 요소에 예제 스타일이 제공되었습니다.
+* 작성자에게 친숙한 모든 CIF 핵심 구성 요소가 [AEM의 스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)을 지원하도록 개선되었습니다. 제품 목록 구성 요소에 예제 스타일이 제공되었습니다.
 
 * 계정 관리를 위한 React 기반 클라이언트측 구성 요소입니다. 이 릴리스는 로그인, 암호 분실 및 계정 만들기 기능을 지원합니다.
 

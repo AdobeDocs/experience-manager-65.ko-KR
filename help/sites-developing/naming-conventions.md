@@ -9,16 +9,25 @@ exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '320'
 ht-degree: 2%
-
 ---
+# 명명 규칙 {#naming-conventions}
 
-# 이름 지정 규칙 {#naming-conventions}
-
-저장소의 노드는 [Java 콘텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 AEM은 페이지 노드 이름에 대한 추가 규칙을 지정합니다.
+저장소의 노드는 [Java 콘텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 하지만 AEM은 페이지 노드 이름에 대한 추가 규칙을 지정합니다.
 
 ## 페이지 이름 지정 규칙 {#naming-conventions-for-pages}
 
@@ -28,8 +37,8 @@ ht-degree: 2%
 * PageManager: [페이지 관리자](#page-manager)에서 페이지 수준 작업을 위한 메서드를 제공합니다.
 * 사용 중인 UI에 따라:
 
-   * [표준, 터치 지원 UI](#standard-ui)
-   * [클래식 UI](#classic-ui)
+  * [표준, 터치 지원 UI](#standard-ui)
+  * [클래식 UI](#classic-ui)
 
 ### JCR 유틸리티 {#jcr-utilities}
 
@@ -37,13 +46,13 @@ ht-degree: 2%
 
 * `isValidName`
 
-   * 이름이 비어 있지 않고 유효한 문자만 포함되어 있는지 확인합니다.
-   * 제안된 이름이 유효한지 여부를 확인하는 데 사용할 수 있습니다.
+  * 이름이 비어 있지 않고 유효한 문자만 포함되어 있는지 확인합니다.
+  * 제안된 이름이 유효한지 여부를 확인하는 데 사용할 수 있습니다.
 
 * `createValidName`
 
-   * 이렇게 하면 임의의 문자열에서 유효한 레이블이 만들어집니다.
-   * 제목에서 이름을 만드는 데 사용할 수 있습니다.
+  * 이렇게 하면 임의의 문자열에서 유효한 레이블이 만들어집니다.
+  * 제목에서 이름을 만드는 데 사용할 수 있습니다.
 
 ### 페이지 관리자 {#page-manager}
 
@@ -55,8 +64,8 @@ ht-degree: 2%
 
 * 다음 경우 PageManager에서 지정한 제한에 따라 이름의 유효성을 검사합니다.
 
-   * 노드 이름으로 변환하기 위한 페이지 제목이 제공됩니다.
-   * 명시적인 노드 이름이 입력되었습니다.
+  * 노드 이름으로 변환하기 위한 페이지 제목이 제공됩니다.
+  * 명시적인 노드 이름이 입력되었습니다.
 
 ### 클래식 UI {#classic-ui}
 
@@ -64,13 +73,13 @@ ht-degree: 2%
 
 * 명시적인 노드 이름일 때 다음 경우에 이름의 유효성을 검사합니다.
 
-   * 노드 이름으로 변환하기 위한 페이지 제목이 제공됩니다.
-   * 명시적인 노드 이름이 입력되었습니다.
+  * 노드 이름으로 변환하기 위한 페이지 제목이 제공됩니다.
+  * 명시적인 노드 이름이 입력되었습니다.
 
 * 유효한 문자(이 문자만 클래식 UI에서 페이지를 만들 경우 `PageManagerImpl`에서 추가 문자를 허용하더라도 실제로 유효함):
 
-   * &#39;a&#39;에서 &#39;z&#39;로
-   * &#39;A&#39;에서 &#39;Z&#39;로
-   * &#39;0&#39;에서 &#39;9&#39;
-   * _(밑줄)
-   * `-`(대시/빼기)
+  * &#39;a&#39;에서 &#39;z&#39;로
+  * &#39;A&#39;에서 &#39;Z&#39;로
+  * &#39;0&#39;에서 &#39;9&#39;
+  * _(밑줄)
+  * `-`(대시/빼기)

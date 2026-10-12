@@ -5,13 +5,39 @@ exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 92%
-
+source-wordcount: '1031'
+ht-degree: 75%
 ---
-
 # AEM Headful 및 Headless {#headful-headless}
 
 Adobe Experience Manager 프로젝트는 Headful 및 Headless model 모델 모두에서 구현될 수 있지만 양자택일은 아닙니다. AEM은 하나의 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다양한 모델에 대한 개요를 제공하고 SPA 통합 수준에 대해 설명합니다.
@@ -37,40 +63,40 @@ Headless 모델에서 콘텐츠는 AEM 저장소에서 관리되지만 REST와 G
 회사에 대한 기존 웹 샵이 SPA로서 존재하고 있다고 가정해 보겠습니다. 여기에 모든 제품 세부 정보와 이미지가 있습니다. 그런 다음 AEM을 소개하고 프로모션 사이트, 블로그와 캠페인 콘텐츠 등 마케팅 활동을 홍보합니다. 두 가지를 통합하려면 어떻게 합니까? AEM은 옵션 스펙트럼을 활성화합니다.
 
 * **시스템은 서로 독립적으로 작동할 수 있습니다.**
-* **GraphQL을 통해 AEM의 제한된 콘텐츠를 웹 샵에 제공합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성할 수 있지만 웹 샵 SPA를 통해서만 볼 수 있습니다.
-* **AEM에 웹 샵 SPA를 임베드합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성하고 웹 샵의 컨텍스트 내 AEM에서 볼 수 있지만 조작할 수는 없습니다.
-* **AEM에 웹 샵 SPA를 임베드하고 편집 가능한 포인트를 활성화합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성하고 웹 샵의 컨텍스트 내 AEM에서 볼 수 있습니다. 작성자는 제한된 기능으로 AEM 내부 웹 샵의 콘텐츠를 조작할 수 있습니다.
-* **AEM에 웹 샵 SPA를 임베드하고 전체 편집 영역을 활성화합니다.** 콘텐츠는 작성자에 의해 AEM에서 생성하고 웹 샵의 컨텍스트 내 AEM에서 볼 수 있습니다. 작성자는 제한된 기능으로 AEM 내부 웹 샵의 콘텐츠를 조작할 수 있습니다.
+* **GraphQL을 통해 AEM에서 제공하는 제한된 콘텐츠를 웹 샵에 제공합니다.** AEM의 작성자는 컨텐츠를 만들 수 있지만 웹 숍 SPA를 통해서만 볼 수 있습니다.
+* **AEM에 웹 샵 SPA를 포함합니다.** AEM에서 작성자가 컨텐츠를 만들고, AEM에서 웹 샵의 컨텍스트에서 볼 수 있지만 조작은 되지 않습니다.
+* **AEM에 웹 스토어 SPA를 포함하고 편집 가능한 포인트를 사용합니다.** AEM의 작성자가 컨텐츠를 만들고, 웹 상점의 컨텍스트에서 AEM에서 볼 수 있으며, 작성자는 AEM 내에서 웹 상점 SPA의 컨텐츠를 조작할 수 있는 기능이 제한됩니다.
+* **AEM에 웹 스토어 SPA를 포함하고 편집할 전체 영역을 사용하도록 설정합니다.** AEM의 작성자가 컨텐츠를 만들고, 웹 상점의 컨텍스트에서 AEM에서 볼 수 있으며, 작성자는 AEM 내에서 웹 상점 SPA의 컨텐츠를 조작할 수 있는 기능이 제한됩니다.
 
 다음 섹션에서는 해당 통합 수준에 대해 자세히 살펴봅니다.
 
 >[!NOTE]
 >
->물론, [AEM SPA 편집기 프레임워크를 사용하여 웹 샵 SPA를 완전히 기능하는 AEM SPA로 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 다른 SPA를 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
+>물론 웹 샵 SPA를 완전한 기능의 AEM SPA [로서 AEM SPA 편집기 프레임워크를 사용하여 다시 구현할 수도 있습니다.](/help/sites-developing/spa-walkthrough.md) 이미 AEM이 있고 웹 샵 또는 기타 SPA를 만들려는 경우 이 방법이 권장되지만 이 문서는 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 
 SPA 통합은 AEM에서 네 가지 수준의 스펙트럼에 속합니다.
 
 * **수준 0: 통합 없음**
-   * SPA와 AEM은 별도로 존재하고 정보를 교환하지 않습니다.
-   * 콘텐츠는 두 개의 시스템에서 독립적으로 생성, 관리 및 게재됩니다.
+  * SPA와 AEM은 별도로 존재하고 정보를 교환하지 않습니다.
+  * 콘텐츠는 두 개의 시스템에서 독립적으로 생성, 관리 및 게재됩니다.
 * **수준 1: 콘텐츠 조각 통합**
-   * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 제한된 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
-   * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
-   * 콘텐츠는 SPA에서만 볼 수 있습니다.
+  * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 제한된 콘텐츠를 만들고 관리합니다.
+  * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+  * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
+  * 콘텐츠는 SPA에서만 볼 수 있습니다.
 * **수준 2: AEM에 SPA 임베드**
-   * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
-   * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
-   * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
-   * 제한된 콘텐츠는 AEM 내에서 편집할 수 있습니다.
+  * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
+  * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+  * 일부 콘텐츠는 AEM에서 관리되고, 일부 콘텐츠는 외부 시스템에서 관리됩니다.
+  * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
+  * 제한된 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 * **수준 3: AEM의 SPA 임베드 및 전체 활성화**
-   * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
-   * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
-   * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
-   * 대부분의 콘텐츠는 AEM 내에서 편집할 수 있습니다.
+  * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 사용하여 AEM에서 SPA의 콘텐츠를 만들고 관리합니다.
+  * SPA는 AEM의 [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 이 콘텐츠를 검색합니다.
+  * 콘텐츠는 AEM 내 컨텍스트에서 볼 수 있습니다.
+  * 대부분의 콘텐츠는 AEM 내에서 편집할 수 있습니다.
 
 수준 1은 일반적인 Headless 구현의 예입니다. 단, 콘텐츠 작성자는 SPA 내 컨텍스트 내에서만 콘텐츠를 볼 수 있습니다. AEM은 작성 도구일 뿐입니다.
 
@@ -82,7 +108,7 @@ SPA 장점을 계속 유지하면서 AEM의 장점과 유연성을 수준 2와 3
 
 * **수준 1:** 콘텐츠 조각과 [AEM Headless 프레임워크](/help/sites-developing/headless/introduction.md)를 사용하여 AEM 콘텐츠를 SPA에 게재할 수 있습니다.
 * **수준 2:** 수준 1 외에:
-   * [RemotePage 구성 요소](/help/sites-developing/spa-remote-page.md)를 사용하여 외부 SPA를 AEM에 임베드하여 컨텍스트 내에서 AEM 콘텐츠를 볼 수 있습니다.
-   * SPA의 특정 지점을 활성화하여 [AEM에서 제한적으로 편집할 수도 있습니다.](/help/sites-developing/spa-edit-external.md)
+  * [RemotePage 구성 요소](/help/sites-developing/spa-remote-page.md)를 사용하여 외부 SPA를 AEM에 임베드하여 컨텍스트 내에서 AEM 콘텐츠를 볼 수 있습니다.
+  * SPA의 특정 지점을 활성화하여 [AEM에서 제한적으로 편집할 수도 있습니다.](/help/sites-developing/spa-edit-external.md)
 * **수준 3:** 수준 2 외에:
-   * AEM에서 종합적인 편집을 수행하도록 전체 SPA 영역을 활성화할 수 있습니다.
+  * AEM에서 종합적인 편집을 수행하도록 전체 SPA 영역을 활성화할 수 있습니다.

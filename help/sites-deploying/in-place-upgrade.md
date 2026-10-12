@@ -1,19 +1,28 @@
 ---
-title: 즉석 업그레이드 수행
+title: 인플레이스 업그레이드 수행
 description: AEM 6.5용 즉각적 업그레이드를 수행하는 방법을 알아봅니다.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 0%
-
+source-wordcount: '1265'
+ht-degree: 1%
 ---
-
-# 즉석 업그레이드 수행{#performing-an-in-place-upgrade}
+# 인플레이스 업그레이드 수행{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
@@ -21,15 +30,15 @@ ht-degree: 0%
 
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
-업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 새 AEM 버전에 대한 요구 사항을 충족하는지 확인하십시오. 패턴 감지기를 통해 업그레이드의 복잡성을 추정하는 방법을 확인하고 [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)의 업그레이드 범위 및 요구 사항 섹션을 참조하십시오.
+업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 새 버전의 AEM에 대한 요구 사항을 충족하는지 확인하십시오. 패턴 감지기를 통해 업그레이드의 복잡성을 추정하는 방법을 확인하고 [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)의 업그레이드 범위 및 요구 사항 섹션을 참조하십시오.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상의 경우 Oracle의 JRE 8 및 IBM의 JRE 7 및 8만 지원됩니다.
+* **필요한 최소 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상 버전에서는 Oracle의 JRE 8 및 IBM의 JRE 7 &amp; 8만 지원됩니다.
 
-* **업그레이드된 인스턴스:** 버전 **5.6**&#x200B;보다 이전 버전에서 업그레이드하는 경우 6.0 버전의 업그레이드 설명서에 설명된 절차에 따라 AEM 6.0으로 바로 업그레이드를 수행했는지 확인하십시오.
+* **업그레이드된 인스턴스:** 버전 **5.6**&#x200B;보다 이전 버전에서 업그레이드하는 경우 업그레이드 설명서의 6.0 버전에 설명된 절차를 따라 AEM 6.0으로 바로 업그레이드했는지 확인하십시오.
 
 ## AEM Quickstart jar 파일 준비 {#prep-quickstart-file}
 
@@ -45,7 +54,7 @@ ht-degree: 0%
 
 ## 콘텐츠 저장소 마이그레이션 {#content-repository-migration}
 
-AEM 6.3에서 업그레이드하는 경우 이 마이그레이션이 필요하지 않습니다. 6.3 이전 버전의 경우, Adobe은 AEM 6.3에 있는 Oak Segment Tar의 새 버전으로 저장소를 마이그레이션하는 데 사용할 수 있는 도구를 제공합니다. 빠른 시작 패키지의 일부로 제공되며 TarMK를 사용할 업그레이드에 필수입니다. MongoMK를 사용하는 환경의 업그레이드에는 저장소 마이그레이션이 필요하지 않습니다. 새 세그먼트 Tar 형식의 이점에 대한 자세한 내용은 [Oak 세그먼트 Tar로 마이그레이션 FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)를 참조하십시오.
+AEM 6.3에서 업그레이드하는 경우 이 마이그레이션이 필요하지 않습니다. 6.3 이전 버전의 경우, Adobe은 AEM 6.3에 있는 Oak 세그먼트 Tar의 새 버전으로 저장소를 마이그레이션하는 데 사용할 수 있는 도구를 제공합니다. 빠른 시작 패키지의 일부로 제공되며 TarMK를 사용할 업그레이드에 필수입니다. MongoMK를 사용하는 환경의 업그레이드에는 저장소 마이그레이션이 필요하지 않습니다. 새 세그먼트 Tar 형식의 이점에 대한 자세한 내용은 [Oak 세그먼트 Tar로 마이그레이션 FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)를 참조하십시오.
 
 실제 마이그레이션은 crx2oak 도구를 실행하여 업그레이드를 단순화하고 보다 강력하게 만드는 새 `-x crx2oak` 옵션과 함께 실행되는 표준 AEM quickstart jar 파일을 사용하여 수행됩니다.
 
@@ -117,7 +126,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 * Java 메모리 매핑이 올바르게 처리되지 않는 Windows 시스템에서 업그레이드를 수행하는 경우 `--disable-mmap` 매개 변수를 명령에 추가하십시오.
 
-crx2oak 도구 사용에 대한 자세한 지침은 [CRX2Oak 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)을 참조하십시오. crx2oak helper JAR은 필요한 경우 빠른 시작을 언포장한 후 수동으로 최신 버전으로 교체하여 수동으로 업그레이드할 수 있습니다. AEM 설치 폴더의 위치는 `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`입니다. 최신 버전의 CRX2Oak 마이그레이션 도구는 Adobe 리포지토리([https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/))에서 다운로드할 수 있습니다.
+crx2oak 도구 사용에 대한 자세한 지침은 [CRX2Oak 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)을 참조하십시오. crx2oak helper JAR은 필요한 경우 빠른 시작을 언포장한 후 수동으로 최신 버전으로 교체하여 수동으로 업그레이드할 수 있습니다. AEM 설치 폴더의 위치는 `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`입니다. 최신 버전의 CRX2Oak 마이그레이션 도구는 Adobe 저장소([https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/))에서 다운로드할 수 있습니다.
 
 마이그레이션이 성공적으로 완료되면 종료 코드가 0인 상태로 도구가 종료됩니다. 또한 AEM 설치 디렉터리의 `crx-quickstart/logs` 아래에 있는 `upgrade.log` 파일에 WARN 및 ERROR 메시지가 있는지 확인합니다. 이는 마이그레이션 중에 발생한 치명적이지 않은 오류를 나타낼 수 있습니다.
 
@@ -125,7 +134,7 @@ crx2oak 도구 사용에 대한 자세한 지침은 [CRX2Oak 마이그레이션 
 
 **데이터 저장소의 메모:**
 
-`FileDataStore`은(는) AEM 6.3 설치의 새로운 기본값이지만 외부 데이터 저장소를 사용할 필요는 없습니다. 프로덕션 배포에 외부 데이터 저장소를 사용하는 것이 모범 사례로 권장되지만 업그레이드하기 위한 필수 조건은 아닙니다. AEM Adobe 업그레이드에 이미 존재하는 복잡성으로 인해 데이터 저장소 마이그레이션을 수행하지 않고 업그레이드를 수행하는 것이 좋습니다. 원하는 경우 나중에 별도의 작업으로 데이터 저장소 마이그레이션을 실행할 수 있습니다.
+`FileDataStore`은(는) AEM 6.3 설치의 새로운 기본값이지만 외부 데이터 저장소를 사용할 필요는 없습니다. 프로덕션 배포에 외부 데이터 저장소를 사용하는 것이 모범 사례로 권장되지만 업그레이드하기 위한 필수 조건은 아닙니다. AEM 업그레이드의 복잡성으로 인해 Adobe에서는 데이터 저장소 마이그레이션을 수행하지 않고 업그레이드를 수행하는 것이 좋습니다. 원하는 경우 나중에 별도의 작업으로 데이터 저장소 마이그레이션을 실행할 수 있습니다.
 
 ## 마이그레이션 문제 해결 {#troubleshooting-migration-issues}
 
@@ -167,9 +176,9 @@ crx2oak 도구 사용에 대한 자세한 지침은 [CRX2Oak 마이그레이션 
 
 >[!IMPORTANT]
 >
->oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다. 자세한 내용은 [Java 11 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하세요.
+>Oracle Java 11(또는 일반적으로 Java 버전이 8보다 최신임)을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다. 자세한 내용은 [Java 11 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하세요.
 
-시작 스크립트에서 AEM을 시작하면 업그레이드가 시작되지 않습니다. 대부분의 고객은 시작 스크립트를 사용하여 AEM을 시작하고 메모리 설정, 보안 인증서 등과 같은 환경 구성을 위한 스위치를 포함하도록 이 시작 스크립트를 사용자 정의했습니다. 이러한 이유로 Adobe은 다음 절차에 따라 적절한 업그레이드 명령을 결정할 것을 권장합니다.
+시작 스크립트에서 AEM을 시작하면 업그레이드가 시작되지 않습니다. 대부분의 고객은 시작 스크립트를 사용하여 AEM을 시작하고 메모리 설정, 보안 인증서 등과 같은 환경 구성을 위한 스위치를 포함하도록 이 시작 스크립트를 사용자 정의했습니다. 이러한 이유로 Adobe에서는 다음 절차에 따라 적절한 업그레이드 명령을 결정할 것을 권장합니다.
 
 1. 실행 중인 AEM 인스턴스에서 명령줄에서 다음을 실행합니다.
 
@@ -193,8 +202,8 @@ crx2oak 도구 사용에 대한 자세한 지침은 [CRX2Oak 마이그레이션 
 
 ## 업그레이드된 코드베이스 배포 {#deploy-upgraded-codebase}
 
-즉각적 업그레이드 프로세스가 완료되면 업데이트된 코드 베이스를 배포해야 합니다. 대상 버전의 AEM에서 작동하도록 코드 베이스를 업데이트하는 단계는 [코드 및 사용자 지정 업그레이드 페이지](/help/sites-deploying/upgrading-code-and-customizations.md)에서 찾을 수 있습니다.
+즉각적 업그레이드 프로세스가 완료되면 업데이트된 코드 베이스를 배포해야 합니다. 대상 버전의 AEM에서 작동하도록 코드 베이스를 업데이트하는 단계는 [코드 및 사용자 지정 업그레이드 페이지](/help/sites-deploying/upgrading-code-and-customizations.md)에서 확인할 수 있습니다.
 
-## Post 업그레이드 검사 및 문제 해결 수행 {#perform-post-upgrade-check-troubleshooting}
+## 업그레이드 후 확인 및 문제 해결 수행 {#perform-post-upgrade-check-troubleshooting}
 
-[Post 업그레이드 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)을 참조하세요.
+[업그레이드 확인 후 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)을 참조하세요.

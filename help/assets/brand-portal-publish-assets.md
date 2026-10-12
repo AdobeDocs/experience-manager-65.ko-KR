@@ -11,13 +11,25 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 43%
-
 ---
-
 # Brand Portal에 자산 게시 {#publish-assets-to-brand-portal}
 
 | 버전 | 문서 링크 |
@@ -51,9 +63,9 @@ Adobe Experience Manager(AEM) Assets 관리자는 자산과 폴더를 조직의 
 
 * 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 선택합니다.
 
-   1. 그런 다음 **[!UICONTROL 작업]**&#x200B;에서 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 선택하고 **[!UICONTROL 예약]**&#x200B;에서 **[!UICONTROL 지금]**&#x200B;을 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+  1. 그런 다음 **[!UICONTROL 작업]**&#x200B;에서 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 선택하고 **[!UICONTROL 예약]**&#x200B;에서 **[!UICONTROL 지금]**&#x200B;을 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   2. **[!UICONTROL 범위]** 내에서 선택 내용을 확인하고 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 클릭합니다.
+  2. **[!UICONTROL 범위]** 내에서 선택 내용을 확인하고 **[!UICONTROL Brand Portal에 게시]**&#x200B;를 클릭합니다.
 
 자산이 Brand Portal에 게시하기 위한 큐에 올라갔음을 나타내는 메시지가 나타납니다. Brand Portal 인터페이스에 로그인하여 게시된 자산을 확인합니다.
 
@@ -87,6 +99,6 @@ Adobe Experience Manager(AEM) Assets 관리자는 자산과 폴더를 조직의 
 
 1. 에셋의 현재 게시 상태를 보려면 목록 보기 ![목록 보기](assets/list-view.svg)(으)로 전환하십시오.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![생성된 보고서 상태](assets/report-status.JPG)

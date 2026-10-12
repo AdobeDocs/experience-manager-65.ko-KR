@@ -9,13 +9,22 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 13%
-
 ---
-
 # 사용자 지정 클라우드 서비스 만들기{#creating-a-custom-cloud-service}
 
 기본 클라우드 서비스 세트는 사용자 지정 Cloud Service 유형으로 확장할 수 있습니다. 이렇게 하면 사용자 지정 마크업을 구조화된 방식으로 페이지에 삽입할 수 있습니다. 주로 Google Analytics, Chartbeat 등과 같은 서드파티 분석 공급자에게 사용됩니다. 클라우드 서비스는 상위 페이지에서 하위 페이지로 상속되며, 모든 수준에서 상속을 중단할 수 있습니다.

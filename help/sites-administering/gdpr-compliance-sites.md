@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 86%
-
 ---
-
 # AEM Sites - GDPR 준비 상태{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -50,7 +68,7 @@ AEM에는 사용자에 대한 옵트인/옵트아웃을 관리하는 데 사용�
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics의 Enhanced Insights와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=ko)을 참조하십시오.
+Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
 
 ## Target의 향상된 Personalization {#enhanced-personalization-by-target}
 
@@ -79,9 +97,9 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
 * 옵트아웃 구성 요소는 ContextHub 구성 요소가 포함될 때마다 포함되어야 합니다.
 * 웹 사이트의 GDPR과 관련된 약관은 웹 사이트 방문자가 다음 중 하나를 선택할 수 있도록 웹 사이트 방문자에게 표시되어야 합니다.
 
-   * 동의
-   * 거부
-   * 이전 옵션 변경
+  * 동의
+  * 거부
+  * 이전 옵션 변경
 
 * 사이트 방문자가 사이트의 약관에 동의하면 ContextHub 옵트아웃 쿠키가 제거됩니다.
 
@@ -108,49 +126,49 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용. 예를 들어
 
-   * Chrome:
+  * Chrome:
 
-      * Developer Tools > Application > Storage를 엽니다.
+    * Developer Tools > Application > Storage를 엽니다.
 
-         * Local Storage > (웹 사이트) > ContextHubPersistence
-         * Session Storage > (웹 사이트) > ContextHubPersistence
-         * Cookies > (웹 사이트) > SessionPersistence
+      * Local Storage > (웹 사이트) > ContextHubPersistence
+      * Session Storage > (웹 사이트) > ContextHubPersistence
+      * Cookies > (웹 사이트) > SessionPersistence
 
-   * Firefox:
+  * Firefox:
 
-      * Developer Tools > Storage를 엽니다.
+    * Developer Tools > Storage를 엽니다.
 
-         * Local Storage > (웹 사이트) > ContextHubPersistence
-         * Session Storage > (웹 사이트) > ContextHubPersistence
-         * Cookies > (웹 사이트) > SessionPersistence
+      * Local Storage > (웹 사이트) > ContextHubPersistence
+      * Session Storage > (웹 사이트) > ContextHubPersistence
+      * Cookies > (웹 사이트) > SessionPersistence
 
-   * Safari:
+  * Safari:
 
-      * 메뉴 막대에서 Preferences > Advanced > Show Develop 메뉴를 엽니다.
-      * Develop > Show JavaScript Console을 엽니다.
+    * 메뉴 막대에서 Preferences > Advanced > Show Develop 메뉴를 엽니다.
+    * Develop > Show JavaScript Console을 엽니다.
 
-         * Console > Storage > Local Storage > (웹 사이트) > ContextHubPersistence
-         * Console > Storage > Session Storage > (웹 사이트) > ContextHubPersistence
-         * Console > Storage > Cookies > (웹 사이트) > ContextHubPersistence
+      * Console > Storage > Local Storage > (웹 사이트) > ContextHubPersistence
+      * Console > Storage > Session Storage > (웹 사이트) > ContextHubPersistence
+      * Console > Storage > Cookies > (웹 사이트) > ContextHubPersistence
 
-   * Internet Explorer:
+  * Internet Explorer:
 
-      * 개발자 도구 > 콘솔을 엽니다.
+    * 개발자 도구 > 콘솔을 엽니다.
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * 브라우저 콘솔에서 ContextHub API 사용.
 
-   * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
+  * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
+    ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -158,28 +176,28 @@ ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행
 
 * 브라우저의 콘솔 사용:
 
-   * Chrome - Developer Tools > Application > Storage 열기:
+  * Chrome - Developer Tools > Application > Storage 열기:
 
-      * Local Storage > (웹 사이트) > ContextHubPersistence
-      * Session Storage > (웹 사이트) > ContextHubPersistence
-      * Cookies > (웹 사이트) > SessionPersistence
+    * Local Storage > (웹 사이트) > ContextHubPersistence
+    * Session Storage > (웹 사이트) > ContextHubPersistence
+    * Cookies > (웹 사이트) > SessionPersistence
 
-   * Firefox - Developer Tools > Storage 열기:
+  * Firefox - Developer Tools > Storage 열기:
 
-      * Local Storage > (웹 사이트) > ContextHubPersistence
-      * Session Storage > (웹 사이트) > ContextHubPersistence
-      * Cookies > (웹 사이트) > SessionPersistence
+    * Local Storage > (웹 사이트) > ContextHubPersistence
+    * Session Storage > (웹 사이트) > ContextHubPersistence
+    * Cookies > (웹 사이트) > SessionPersistence
 
 * 브라우저 콘솔에서 ContextHub API 사용.
 
-   * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
+  * ContextHub에서는 다음 데이터 지속성 계층을 제공합니다.
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
+    ContextHub 저장소는 사용할 지속성 계층을 정의하므로 현재 지속성 상태를 보려면 모든 계층을 검사해야 합니다.
 
 예를 들어 localStorage에 저장된 데이터를 보려는 경우
 
@@ -218,7 +236,7 @@ ContextHub 지속성 지우기:
 
 * 모든 ContextHub 지속성 계층을 지우려면 모든 레이어에 대해 적절한 코드를 호출해야 합니다.
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL(기본값)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

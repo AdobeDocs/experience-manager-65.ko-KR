@@ -8,13 +8,29 @@ exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7786'
 ht-degree: 0%
-
 ---
-
 # OSGi의 Forms 중심 워크플로 - 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 버전 | 문서 링크 |
@@ -89,7 +105,7 @@ Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관�
   * **다음을 사용하여 레이아웃 템플릿 저장:** 페이로드에 상대적인 경로를 사용하여 레이아웃 템플릿을 저장하거나 문서 데이터 형식의 변수에 저장합니다. [레이아웃 템플릿](../../forms/using/layout-design-details.md)은(는) Forms Designer을 사용하여 만든 XDP 파일을 참조합니다. 이 옵션은 유형 드롭다운 목록에서 대화형 통신 에이전트 UI를 선택하는 경우에만 사용할 수 있습니다.
 
 * **할당자 > 옵션 할당:** 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
-* **참가자 선택기:** 옵션 할당 필드에서 **사용자 또는 그룹에 동적으로** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
+* **참가자 선택기:** 옵션 할당 필드에서 **사용자 또는 그룹에 동적으로** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)를 참조하십시오.
 
 * **참가자:** 이 필드는 **참가자 선택기** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 

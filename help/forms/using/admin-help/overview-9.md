@@ -9,13 +9,27 @@ exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '254'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '259'
 ht-degree: 100%
-
 ---
-
 # Forms Workflow 개요 {#overview-of-forms-workflow}
 
 Forms Workflow를 사용하면 사용자가 인간 중심 프로세스를 설계, 관리 및 최적화할 수 있습니다. 사용자는 Forms Workflow를 사용하여 시스템과 사람을 연결하는 자동화된 비즈니스 프로세스 애플리케이션을 관리할 수도 있습니다.
@@ -92,7 +106,7 @@ Forms Workflow를 사용하면 사용자가 인간 중심 프로세스를 설계
     <ul>
      <li><p>사용자의 부재중 정보 보기</p></li>
      <li><p>사용자 상태(근무 중 또는 부재중) 변경</p></li>
-     <li><p>부재중 일자 범위 추가 </p></li>
+     <li><p>부재중 날짜 범위 추가 </p></li>
      <li><p>사용자가 부재중일 때 작업 처리 방법 지정</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">부재중 설정 구성</a></p></td>

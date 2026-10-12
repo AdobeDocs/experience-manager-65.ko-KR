@@ -10,13 +10,22 @@ exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 3%
-
 ---
-
 # Silverpop Engage와 통합{#integrating-with-silverpop-engage}
 
 <!--
@@ -50,7 +59,7 @@ Cloud Services에서 Silverpop 구성을 만들려면 다음을 수행하십시�
    >
    >Silverpop Engage는 패키지 공유에서 패키지를 다운로드하지 않으면 서드파티 서비스에서 옵션으로 사용할 수 없습니다.
 
-1. 제목과 이름을 입력하고 **만들기**&#x200B;를 클릭합니다. **&#x200B; Silverpop 설정** 구성 창이 열립니다.
+1. 제목과 이름을 입력하고 **만들기**&#x200B;를 클릭합니다. ** Silverpop 설정** 구성 창이 열립니다.
 1. 사용자 이름 및 암호를 입력하고 드롭다운 목록에서 API 엔드포인트를 선택합니다.
 1. **Silverpop에 연결**&#x200B;을 클릭합니다. 성공적으로 연결되면 성공 대화 상자가 표시됩니다. 창을 종료하려면 **확인**&#x200B;을 클릭하세요. **Silverpop Engage로 이동**&#x200B;을 클릭하여 Silverpop으로 이동할 수 있습니다.
 1. Silverpop이 구성되었습니다. **편집**&#x200B;을 클릭하여 구성을 편집할 수 있습니다.

@@ -9,13 +9,22 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 6%
 ---
-
 # CSRF 보호 프레임워크{#the-csrf-protection-framework}
 
 Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로부터 보호하기 위한 새로운 CSRF 보호 프레임워크를 제공합니다.
@@ -40,11 +49,11 @@ Apache Sling Referrer Filter 외에도 Adobe은 이러한 유형의 공격으로
 >
 >또한 CSRF 보호 프레임워크를 사용하기 위해 필요한 Dispatcher 구성을 변경해야 합니다.
 >
->* [CSRF 공격을 방지하도록 Adobe Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [CSRF 공격을 방지하도록 Adobe Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Dispatcher 개요](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;**&ast;**&quot;을(를) 추가해야 합니다. 자세한 내용은 이 [링크](https://www.w3.org/TR/offline-webapps/)를 참조하세요.
+>웹 응용 프로그램에서 매니페스트 캐시를 사용하는 경우 토큰이 CSRF 토큰 생성 호출을 오프라인으로 전환하지 않도록 매니페스트에 &quot;**&amp;ast;**&quot;을(를) 추가해야 합니다. 자세한 내용은 이 [링크](https://www.w3.org/TR/offline-webapps/)를 참조하세요.
 >
 >CSRF 공격 및 이를 완화하는 방법에 대한 자세한 내용은 [크로스 사이트 요청 위조 OWASP 페이지](https://owasp.org/www-community/attacks/csrf)를 참조하십시오.

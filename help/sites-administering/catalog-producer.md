@@ -9,13 +9,22 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '859'
 ht-degree: 1%
-
 ---
-
 # 카탈로그 제작자{#catalog-producer}
 
 AEM Assets에서 카탈로그 제작자 를 사용하여 디지털 에셋을 사용하여 제품 카탈로그를 생성하는 방법에 대해 알아봅니다.
@@ -28,9 +37,9 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 
 >[!NOTE]
 >
->AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/kr/indesign/using/files-templates.html)을 참조하세요.
+>AEM Assets으로 가져오기 전에 InDesign 파일에서 InDesign 템플릿을 생성할 수 있습니다. 자세한 내용은 [파일 및 템플릿 작업](https://helpx.adobe.com/indesign/using/files-templates.html)을 참조하세요.
 >
->InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠 태그 지정](https://helpx.adobe.com/kr/indesign/using/tagging-content-xml.html)을 참조하세요.
+>InDesign 템플릿의 요소를 XML 태그에 매핑할 수 있습니다. 카탈로그 제작자의 템플릿 속성과 제품 속성을 매핑하면 매핑된 태그가 속성으로 표시됩니다. InDesign 파일의 XML 태그 지정에 대한 자세한 내용은 [XML에 대한 콘텐츠 태그 지정](https://helpx.adobe.com/indesign/using/tagging-content-xml.html)을 참조하세요.
 
 >[!NOTE]
 >
@@ -92,7 +101,7 @@ Adobe Experience Manager(AEM) Assets 카탈로그 제작자를 사용하면 InDe
 1. 카탈로그의 페이지를 다시 정렬하려면 도구 모음에서 **만들기** 아이콘을 클릭한 다음 메뉴에서 **병합**&#x200B;을(를) 선택하십시오. 마법사에서 맨 위의 슬라이드를 사용하면 페이지를 드래그하여 순서를 변경할 수 있습니다. 페이지를 제거할 수도 있습니다.
 
 1. **다음**&#x200B;을 클릭합니다. 기존 InDesign 파일을 표지로 추가하려면 **표지 선택** 상자 옆의 **찾아보기**&#x200B;를 클릭하고 표지 템플릿의 경로를 지정하십시오.
-1. **저장**&#x200B;을 클릭한 다음 **완료**&#x200B;를 클릭하여 확인 대화 상자를 닫습니다.
+1. **저장**&#x200B;을 클릭한 다음 **완료**를 클릭하여 확인 대화 상자를 닫습니다.
 **완료** 옵션을 선택하면 .pdf 렌디션을 원하는지 여부를 선택하는 대화 상자가 열립니다.
    ![pdf로 내보내기](assets/CatalogPDF.png)
    Acrobat(PDF) 옵션을 선택하면 indesign 렌디션 외에 **/jcr:content/renditions**&#x200B;에서 pdf 렌디션이 만들어집니다. 다운로드 대화 상자에서 &quot;렌디션&quot; 확인란을 선택하여 모든 렌디션을 다운로드할 수 있습니다.

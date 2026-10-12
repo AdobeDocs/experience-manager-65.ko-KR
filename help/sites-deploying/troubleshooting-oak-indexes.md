@@ -1,5 +1,5 @@
 ---
-title: Oak 인덱스 문제 해결
+title: Oak 색인 문제 해결
 description: 색인화가 느리는지 확인하고 원인을 찾아 문제를 해결하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 0%
-
+source-wordcount: '1527'
+ht-degree: 2%
 ---
-
-# Oak 인덱스 문제 해결{#troubleshooting-oak-indexes}
+# Oak 색인 문제 해결{#troubleshooting-oak-indexes}
 
 ## 느린 리인덱싱  {#slow-re-indexing}
 
@@ -40,26 +49,26 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 
 ## 강제 종료 후 인덱싱이 일시 중지되었습니다. {#indexing-is-paused-after-a-forced-shutdown}
 
-강제 종료로 인해 AEM이 다시 시작 후 최대 30분 동안 비동기 인덱싱을 일시 중단합니다. 그리고 일반적으로 첫 번째 리인덱싱 패스를 완료하는 데 15분이 추가로 필요합니다(총 45분 동안 [초기 감지](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) 시간 프레임을 다시 연결). 강제 종료 후 인덱싱이 일시 중지된 경우:
+강제 종료로 인해 AEM은 다시 시작 후 최대 30분 동안 비동기 인덱싱을 일시 중단합니다. 그리고 일반적으로 첫 번째 리인덱싱 패스를 완료하는 데 15분이 추가로 필요합니다(총 45분 동안 [초기 감지](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) 시간 프레임을 다시 연결). 강제 종료 후 인덱싱이 일시 중지된 경우:
 
 1. 먼저 AEM 인스턴스가 강제 방식으로 종료되었는지(AEM 프로세스가 강제 종료되었거나 전원 오류가 발생했는지) 확인하고 나중에 다시 시작하십시오.
 
    * [AEM 로깅](/help/sites-deploying/configure-logging.md)은(는) 이러한 목적으로 검토할 수 있습니다.
 
 1. 강제 종료가 발생한 경우 다시 시작하면 AEM은 최대 30분 동안 자동으로 색인 재지정을 일시 중단합니다.
-1. AEM이 일반적인 비동기 인덱싱 작업을 다시 시작할 때까지 약 45분 정도 기다립니다.
+1. AEM이 일반적인 비동기 인덱싱 작업을 재개할 때까지 약 45분 정도 기다립니다.
 
 ## 스레드 풀이 오버로드됨 {#thread-pool-overloaded}
 
 >[!NOTE]
 >
->AEM 6.1의 경우 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)이 설치되어 있는지 확인하십시오.
+>AEM 6.1의 경우 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)이 설치되어 있는지 확인하십시오.
 
 예외적인 상황에서는 비동기 인덱싱을 관리하는 데 사용되는 스레드 풀이 오버로드될 수 있습니다. 인덱싱 프로세스를 분리하기 위해 스레드 풀을 구성하여 다른 AEM 작업이 적시에 콘텐츠를 인덱싱하는 Oak의 기능을 방해하지 않도록 할 수 있습니다. 이 경우 다음을 수행합니다.
 
 1. 비동기 인덱싱에 사용할 Apache Sling 스케줄러에 대해 격리된 새 스레드 풀을 정의합니다.
 
-   * 영향을 받는 AEM 인스턴스에서 AEM OSGi 웹 콘솔>OSGi>구성>Apache Sling 스케줄러로 이동하거나, https://&lt;host>:&lt;port>/system/console/configMgr(예: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))로 이동합니다.
+   * 영향을 받는 AEM 인스턴스에서 AEM OSGi 웹 콘솔>OSGi>구성>Apache Sling 스케줄러로 이동하거나 https://&lt;host>:&lt;port>/system/console/configMgr(예: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))로 이동합니다.
    * 값이 &quot;oak&quot;인 &quot;허용된 스레드 풀&quot; 필드에 항목을 추가합니다.
    * 변경 내용을 저장하려면 오른쪽 하단의 **저장**&#x200B;을 클릭합니다.
 
@@ -70,8 +79,8 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
    * AEM OSGi 웹 콘솔>상태>Sling 스케줄러로 이동하거나, https://&lt;host>:&lt;port>/system/console/status-slingscheduler(예: [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))로 이동합니다.
    * 다음 풀 항목이 있는지 확인하십시오.
 
-      * 아파치슬링고악
-      * ApacheSlingdefault
+     * 아파치슬링고악
+     * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -98,7 +107,7 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 
 * 통과하는 노드 수와 관련하여 로그 파일에 중요한 진행 상황이 보고되지 않을 정도로 리인덱싱이 느립니다.
 
-   * 예를 들어 한 시간 동안 메시지가 없거나 진행이 너무 느려 완료하는 데 1주 이상 걸리는 경우 등이 있습니다.
+  * 예를 들어 한 시간 동안 메시지가 없거나 진행이 너무 느려 완료하는 데 1주 이상 걸리는 경우 등이 있습니다.
 
 * 색인 지정 스레드의 로그 파일(예: `OutOfMemoryException`)에 반복된 예외가 나타나면 색인 재지정이 무한 루프에 중단됩니다. 로그에서 하나 이상의 동일한 예외가 반복되면 Oak이 동일한 항목을 반복적으로 색인화하려고 시도하지만, 동일한 문제에서 실패함을 나타냅니다.
 
@@ -109,26 +118,26 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
    * 5분의 스레드 덤프를 수집하고, 2초마다 하나의 스레드 덤프를 수집합니다.
    * [Appenders에 대한 디버그 수준 및 로그를 설정합니다](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * 비동기 `IndexStats`MBean에서 데이터 수집:
 
-      * AEM OSGi Web Console>Main>JMX>IndexStat>async로 이동합니다
+     * AEM OSGi 웹 콘솔>Main>JMX>IndexStat>async로 이동합니다
 
-        또는 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)(으)로 이동
+       또는 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)&#x200B;(으)로 이동
 
    * [oak-run.jar의 콘솔 모드](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)을(를) 사용하여 * `/:async`* 노드 아래에 있는 항목에 대한 세부 정보를 수집합니다.
    * `CheckpointManager`MBean을 사용하여 저장소 체크포인트 목록을 수집합니다.
 
-      * AEM OSGi 웹 콘솔>기본>JMX>CheckpointManager>listCheckpoints()
+     * AEM OSGi 웹 콘솔>기본>JMX>CheckpointManager>listCheckpoints()
 
-        또는 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)(으)로 이동
+       또는 [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)&#x200B;(으)로 이동
 
-1. 1단계에서 설명한 모든 정보를 수집한 후 AEM을 다시 시작합니다.
+1. 1단계에 설명된 모든 정보를 수집한 후 AEM을 다시 시작합니다.
 
-   * AEM을 다시 시작하면 동시 부하가 높은 경우(관찰 대기열 오버플로 등) 문제를 해결할 수 있습니다.
-   * 다시 시작해도 문제가 해결되지 않으면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)에 문제를 열고 1단계에서 수집된 모든 정보를 제공하세요.
+   * AEM을 다시 시작하면 동시 부하가 높은 경우(관찰 큐 오버플로 등) 문제를 해결할 수 있습니다.
+   * 다시 시작해도 문제가 해결되지 않으면 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)에서 문제를 열고 1단계에서 수집된 모든 정보를 제공하십시오.
 
 ## 비동기 리인덱싱을 안전하게 중단합니다. {#safely-aborting-asynchronous-re-indexing}
 
@@ -141,11 +150,11 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 
 1. 중지해야 하는 리인덱싱 레인을 제어하는 IndexStats MBean을 식별합니다.
 
-   * AEM OSGi Web Console>Main>JMX 또는 https://&lt;host>:&lt;port>/system/console/jmx(예: [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))로 이동하여 JMX 콘솔을 통해 적절한 IndexStats MBean으로 이동합니다.
+   * AEM OSGi 웹 콘솔>Main>JMX 또는 https://&lt;host>:&lt;port>/system/console/jmx(예: [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))로 이동하여 JMX 콘솔을 통해 적절한 IndexStats MBean으로 이동합니다.
    * 중지할 리인덱싱 레인(`async`, `async-reindex` 또는 `fulltext-async`)을 기준으로 IndexStats MBean을 엽니다.
 
-      * 적절한 레인과 IndexStats MBean 인스턴스를 식별하려면 Oak Indexes &quot;async&quot; 속성을 참조하십시오. &quot;async&quot; 속성에 레인 이름 `async`, `async-reindex` 또는 `fulltext-async`이(가) 포함되어 있습니다.
-      * &quot;비동기&quot; 열에서 AEM의 인덱스 관리자에 액세스하여 레인을 사용할 수도 있습니다. 색인 관리자에 액세스하려면 작업>진단>색인 관리자로 이동합니다.
+     * 적절한 레인과 IndexStats MBean 인스턴스를 식별하려면 Oak Indexes &quot;async&quot; 속성을 참조하십시오. &quot;async&quot; 속성에 레인 이름 `async`, `async-reindex` 또는 `fulltext-async`이(가) 포함되어 있습니다.
+     * &quot;비동기&quot; 열에서 AEM의 인덱스 관리자에 액세스하여 레인을 사용할 수도 있습니다. 색인 관리자에 액세스하려면 작업>진단>색인 관리자로 이동합니다.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -154,15 +163,15 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 
    * **기존** 인덱스를 다시 인덱싱하는 경우 reindex 속성을 false로 설정하십시오.
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * 또는 **new** 인덱스의 경우 다음 중 하나를 수행합니다.
 
-      * 유형 속성을 비활성화로 설정
+     * 유형 속성을 비활성화로 설정
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * 또는 색인 정의를 완전히 제거하십시오
+     * 또는 색인 정의를 완전히 제거하십시오
 
    완료되면 변경 사항을 저장소에 커밋합니다.
 
@@ -172,4 +181,4 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 
 ## 느린 리인덱싱 방지 {#preventing-slow-re-indexing}
 
-색인을 재지정하는 것은 조용한 기간(예: 큰 컨텐츠 수집 중이 아님) 및 이상적으로는 AEM 로드가 알려져 있고 제어되는 유지 관리 기간 동안 가장 좋습니다. 또한 다른 유지 관리 활동 중에 리인덱싱이 수행되지 않도록 해야 합니다.
+색인을 재지정하는 것은 조용한 기간(예: 큰 컨텐츠 수집 중이 아님) 및 이상적으로는 AEM 로드가 알려져 제어되고 유지 관리 기간이 아닐 때 가장 좋습니다. 또한 다른 유지 관리 활동 중에 리인덱싱이 수행되지 않도록 해야 합니다.

@@ -10,13 +10,22 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 8%
-
 ---
-
 # Adobe Analytics 연결 및 프레임워크 생성 {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 Adobe Analytics의 AEM 페이지에서 웹 데이터를 추적하려면 Adobe Analytics Cloud 서비스 구성 및 Adobe Analytics 프레임워크를 만듭니다.
@@ -51,7 +60,7 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=ko) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
+Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) Adobe Analytics 보고서 세트와 연결된 데이터를 수집, 처리 및 저장합니다. Adobe Analytics 보고서 세트를 호스팅하는 데이터 센터를 사용하도록 AEM을 구성합니다. 데이터 센터는 계약에 언급되어 있습니다. 이 정보는 조직의 관리자에게 문의하십시오.
 
 필요한 경우 `https://api.omniture.com/`을(를) 사용하여 올바른 데이터 센터로 라우팅합니다.
 
@@ -90,7 +99,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
 ## Activity Map에 대한 구성 {#configuring-for-the-activity-map}
 
@@ -98,7 +107,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공한 [ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -178,7 +187,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 1. **사이트** 콘솔에서 추적을 설정할 페이지를 선택합니다.
 1. 콘솔 또는 페이지 편집기에서 직접 **[페이지 속성](/help/sites-authoring/editing-page-properties.md)**&#x200B;을 엽니다.
-1. **&#x200B; Cloud Services** 탭을 엽니다.
+1. ** Cloud Services** 탭을 엽니다.
 
 1. **구성 추가** 드롭다운을 사용하여 사용 가능한 옵션에서 **Adobe Analytics**&#x200B;을(를) 선택합니다. 상속이 있는 경우 선택기를 사용하려면 먼저 상속을 비활성화하십시오.
 
@@ -187,7 +196,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 1. **저장 후 닫기**&#x200B;를 선택합니다.
 1. 페이지 및 연결된 구성/파일을 활성화하려면 페이지를 **[게시](/help/sites-authoring/publishing-pages.md)**&#x200B;하십시오.
 1. 마지막 단계는 게시 인스턴스의 페이지를 방문하여 **검색** 구성 요소를 사용하여 키워드(예: 에그플랜트)를 검색하는 것입니다.
-1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
+1. 그런 다음 적절한 도구(예: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html))를 사용하여 Adobe Analytics에 대한 호출을 확인할 수 있습니다.
 1. 제공된 예제를 사용하면 호출에는 eVar7에 입력한 값(즉, 가지)이 포함되어야 하며 이벤트 목록에는 event3이 포함되어야 합니다.
 
 ### 페이지 조회수 {#page-views}

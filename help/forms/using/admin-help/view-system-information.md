@@ -9,13 +9,27 @@ exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '541'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
-
 ---
-
 # 시스템 정보 보기 {#view-system-information}
 
 시스템 탭에는 AEM Forms를 실행 중인 서버에 대한 리소스 모니터링 차트와 정보가 표시됩니다. 해당 정보에 액세스하려면 관리 콘솔의 페이지 오른쪽 상단 모서리에 있는 상태 모니터를 클릭합니다. 클러스터링된 환경에서 AEM Forms를 실행하는 경우 표시되는 정보는 서버 목록에서 선택한 노드에 대한 것입니다.

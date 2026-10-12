@@ -1,6 +1,6 @@
 ---
-title: AEM forms 작업 영역과 Microsoft Office SharePoint Server 통합
-description: AEM Forms 작업 영역을 Microsoft Office SharePoint Server와 통합할 수 있습니다.
+title: AEM Forms Workspace를 Microsoft Office SharePoint Server와 통합
+description: AEM forms 작업 영역을 Microsoft Office SharePoint Server와 통합할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
@@ -9,18 +9,32 @@ exl-id: d080932f-d5fb-482d-9329-62da5df10362
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
-
+source-wordcount: '554'
+ht-degree: 3%
 ---
-
-# AEM forms 작업 영역과 Microsoft Office SharePoint Server 통합{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+# AEM Forms Workspace를 Microsoft Office SharePoint Server와 통합{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- 요구 사항**
 
-**전제 조건 지식**
+**필수 구성 요소 정보**
 AEM Forms Workspace을 SharePoint 서버에 추가하려면 먼저 적절한 권한이 있는 SharePoint 서버에 액세스할 수 있어야 하며 Workspace에 액세스하려면 URL을 알고 있어야 합니다. 아래 단계에서는 SharePoint 서버에 대해 잘 알고 있다고 가정합니다. SharePoint Server의 웹 파트에 대한 자세한 내용은 Windows SharePoint Services의 웹 파트를 참조하십시오.
 
 **사용자 수준**
@@ -30,7 +44,7 @@ Microsoft Office SharePoint Server(예: Microsoft Office SharePoint Server 2007)
 
 >[!NOTE]
 >
->이 문서에 나열된 단계는 특정 Microsoft SharePoint Server 2007입니다. 지원되는 다른 Microsoft SharePoint 버전과 함께 Workspace HTML을 구성할 수도 있습니다.
+>이 문서에 나열된 단계는 특정 Microsoft SharePoint Server 2007입니다. 지원되는 다른 Microsoft Workspace 버전과 함께 HTML SharePoint을 구성할 수도 있습니다.
 
 ## AEM Forms Workspace과 Microsoft Office SharePoint Server 2007 통합 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 

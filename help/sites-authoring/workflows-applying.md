@@ -10,20 +10,35 @@ exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 82%
-
+source-wordcount: '649'
+ht-degree: 83%
 ---
-
 # 페이지에 워크플로 적용{#applying-workflows-to-pages}
 
 작성 시 페이지에서 수행할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
 
 워크플로를 적용할 때에는 다음 정보를 지정합니다.
 
-* 적용할 워크플로입니다.
+* 적용할 워크플로.
 AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용할 수 있습니다.
 * 원할 경우, 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목.
 * 워크플로 페이로드. 하나 이상의 페이지일 수 있습니다.
@@ -95,14 +110,14 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
    * **워크플로 모델**
    * **워크플로 제목**
 
-      * 나중 단계에서 식별할 수 있도록 이 인스턴스의 제목을 지정할 수 있습니다.
+     * 나중 단계에서 식별할 수 있도록 이 인스턴스의 제목을 지정할 수 있습니다.
 
    워크플로 모델에 따라 다음 옵션도 사용할 수 있습니다. 이 옵션을 사용하면 워크플로가 완료된 후에도 페이로드로 만들어진 패키지를 유지할 수 있습니다.
 
    * **워크플로 패키지 유지**
    * **패키지 제목**
 
-      * 식별할 수 있도록 패키지의 제목을 지정할 수 있습니다.
+     * 식별할 수 있도록 패키지의 제목을 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용
 
    * 추가 작업을 보기 위한 기존 리소스:
 
-      * **하위 포함**: 해당 리소스의 하위 항목이 워크플로에 포함되도록 지정합니다.
-대화 상자가 열리면 다음 내용에 따라 선택 영역을 세분화할 수 있습니다.
+     * **하위 포함**: 해당 리소스의 하위 항목이 워크플로에 포함되도록 지정합니다.
+       대화 상자가 열리면 다음 내용에 따라 선택 영역을 세분화할 수 있습니다.
 
-         * 바로 아래 하위 항목만 포함
-         * 수정된 페이지만 포함.
-         * 이미 게시된 페이지만 포함.
+       * 바로 아래 하위 항목만 포함
+       * 수정된 페이지만 포함.
+       * 이미 게시된 페이지만 포함.
 
-        지정된 모든 하위 항목이 워크플로가 적용될 리소스 목록에 추가됩니다.
+       지정된 모든 하위 항목이 워크플로가 적용될 리소스 목록에 추가됩니다.
 
-      * **선택 제거** - 워크플로에서 해당 리소스를 제거합니다.
+     * **선택 제거** - 워크플로에서 해당 리소스를 제거합니다.
 
    ![wf-53](assets/wf-53.png)
 

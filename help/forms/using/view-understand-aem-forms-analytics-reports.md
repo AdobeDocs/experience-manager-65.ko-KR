@@ -9,13 +9,29 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 3%
-
 ---
-
 # AEM Forms 분석 보고서 보기 및 이해 {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있습니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
@@ -92,7 +108,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 * **초안**: 양식이 초안으로 저장된 횟수
 * **제출**: 양식이 제출된 횟수
 * **중단**: 사용자가 양식을 입력한 후 양식을 완료하지 않고 그대로 둔 횟수입니다
-* **고유 방문자 수**: 고유 방문자가 양식을 렌더링한 횟수입니다. 고유 방문자에 대한 자세한 내용은 [고유 방문자, 방문 횟수 및 고객 동작](https://helpx.adobe.com/kr/analytics/kb/unique-visitors-visitor-behavior.html)을 참조하세요.
+* **고유 방문자 수**: 고유 방문자가 양식을 렌더링한 횟수입니다. 고유 방문자에 대한 자세한 내용은 [고유 방문자, 방문 횟수 및 고객 동작](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)을 참조하세요.
 
 ![확장된 양식 수준 요약 분석 보고서](assets/analytics-report.png)
 
@@ -126,7 +142,7 @@ AEM Forms은 아래와 같이 양식 및 양식의 각 패널에 대한 분석 �
 
 분석 데이터를 추가로 필터링하려면 테이블에서 항목을 클릭할 수 있습니다. 예를 들어 브라우저 배포 테이블에서 Google Chrome 를 클릭하면 보고서가 다음과 같이 Google Chrome 브라우저와 관련된 데이터로 다시 렌더링됩니다.
 
-Analytics 보고서에 적용된 ![필터 - Google Chrome &#x200B;](assets/filter-1.png)
+Analytics 보고서에 적용된 ![필터 - Google Chrome ](assets/filter-1.png)
 
 필터를 적용한 후 패널 보고서를 보면 적용된 필터에 따라 패널 보고서 데이터도 표시됩니다.
 

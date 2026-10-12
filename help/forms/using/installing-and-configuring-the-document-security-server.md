@@ -6,22 +6,36 @@ role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Document Security
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
-
+source-wordcount: '599'
+ht-degree: 14%
 ---
-
 # Document Security 서버 설치 및 구성 {#installing-and-configuring-the-document-security-server}
 
 문서 보안을 사용하여 지원되는 형식으로 저장한 정보를 안전하게 배포합니다. 승인된 사용자만 보호된 문서에 액세스할 수 있습니다.
 
-Adobe Experience Manager Forms document security는 인증된 사용자만 문서를 사용할 수 있도록 합니다. 문서 보안을 사용하면 저장한 모든 정보를 지원되는 형식으로 안전하게 배포할 수 있습니다. 지원되는 파일 형식에는 Adobe PDF 및 Microsoft Word, Excel, PowerPoint 파일이 포함됩니다.
+Adobe Experience Manager Forms document security는 인증된 사용자만 문서를 사용할 수 있도록 합니다. 문서 보안을 사용하면 지원되는 형식으로 저장한 모든 정보를 안전하게 배포할 수 있습니다. 지원되는 파일 형식에는 Adobe Portable Document Format(PDF) 및 Microsoft Word, Excel, PowerPoint 파일이 포함됩니다.
 
-정책을 사용하여 문서를 보호할 수 있습니다. 정책에 지정하는 기밀 유지 설정은 정책이 적용되는 문서를 수신자가 사용할 수 있는 방법을 결정합니다. 예를 들어 수신자가 텍스트를 인쇄 또는 복사하거나 텍스트를 편집하거나 보호된 문서에 서명과 주석을 추가할 수 있는지 여부를 지정할 수 있습니다.
+정책을 사용하면 문서를 보호할 수 있습니다. 정책에 지정하는 기밀 유지 설정은 정책이 적용되는 문서를 수신자가 사용할 수 있는 방법을 결정합니다. 예를 들어 수신자가 텍스트를 인쇄 또는 복사하거나, 텍스트를 편집하거나, 보호된 문서에 서명과 주석을 추가할 수 있는지 여부를 지정할 수 있습니다.
 
-정책은 Document Security 서버에 저장됩니다. 사용자는 클라이언트 애플리케이션을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 유지 설정이 문서에 포함된 정보를 보호합니다. 정책으로 보호된 문서를 정책에 의해 승인된 수신자에게 배포할 수 있습니다.
+정책은 Document Security 서버에 저장됩니다. 사용자는 클라이언트 애플리케이션을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 유지 설정에 따라 문서에 포함된 정보가 보호됩니다. 정책으로 보호된 문서는 정책에 따라 권한이 부여된 수신자에게 배포할 수 있습니다.
 
 또한 Document Security는 클라이언트, 뷰어 및 인덱서를 제공하여 문서를 보호하고 보호된 문서를 보고 보호된 문서를 인덱싱합니다. 문서 보안에 대한 자세한 내용은 [문서 보안 정보](/help/forms/using/admin-help/document-security.md)를 참조하십시오.
 
@@ -41,18 +55,18 @@ Adobe Experience Manager Forms document security는 인증된 사용자만 문�
 
 JEE에 AEM Forms을 설치하고 구성하려면 다음 단계를 수행하십시오.
 
-1. [Adobe 라이선스 웹 사이트(LWS)에서 JEE의 AEM 6.5 Forms 설치 관리자를 다운로드합니다](https://licensing.adobe.com/). 설치 관리자를 다운로드하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
+1. [Adobe 라이선스 웹 사이트(LWS)](https://licensing.adobe.com/)에서 JEE의 AEM 6.5 Forms 설치 관리자를 다운로드합니다. 설치 관리자를 다운로드하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
 1. [JEE의 AEM Forms 지원 플랫폼 문서](/help/forms/using/aem-forms-jee-supported-platforms.md)를 읽고 소프트웨어, 하드웨어, 운영 체제, 응용 프로그램 서버, 데이터베이스, JDK 및 기타 인프라가 JEE에 AEM Forms을 설치할 준비가 되어 있는지 확인하십시오.
-1. (Turnkey가 아닌 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_kr) 또는 [AEM Forms 서버 클러스터 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_kr)를 읽고 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
+1. (Turnkey가 아닌 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) 또는 [AEM Forms 서버 클러스터 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)를 읽고 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
 1. 사용 중인 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 지침에 따라 설치를 완료합니다
 
-   * [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_kr)
-   * [JBoss용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_64_kr)
-   * [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_kr)
-   * [WebSphere용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_kr)
-   * [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_kr)
-   * [WebLogic 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_kr)
-   * [WebSphere 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_kr)
+   * [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+   * [JBoss용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
+   * [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+   * [WebSphere용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+   * [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+   * [WebLogic 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
+   * [WebSphere 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
 
    >[!NOTE]
    >

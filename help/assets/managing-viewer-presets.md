@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
+source-wordcount: '4654'
 ht-degree: 8%
-
 ---
-
 # 뷰어 사전 설정 관리{#managing-viewer-presets}
 
 뷰어 사전 설정은 사용자가 컴퓨터 화면 및 모바일 장치에서 리치 미디어 에셋을 보는 방법을 결정하는 설정 컬렉션입니다. 관리자는 뷰어 사전 설정을 만들 수 있습니다. 설정은 뷰어 구성 옵션 배열에 사용할 수 있습니다. 예를 들어 뷰어 표시 크기나 확대/축소 동작을 변경할 수 있습니다.
@@ -27,7 +41,7 @@ ht-degree: 8%
 경로: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 예: 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-[Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ko)도 참조하세요.
+[Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)도 참조하세요.
 
 이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법에 대해 설명합니다. 자산을 미리 볼 때마다 뷰어 사전 설정을 적용할 수 있습니다. [뷰어 사전 설정 적용](#applying-a-viewer-preset-to-an-asset)을 참조하십시오.
 
@@ -39,7 +53,7 @@ ht-degree: 8%
 
 모든 기본 뷰어는 키보드 접근성을 지원합니다.
 
-[키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ko)도 참조하세요.
+[키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)도 참조하세요.
 
 ## 뷰어 사전 설정 관리 {#managing-viewer-presets-1}
 
@@ -55,7 +69,7 @@ ht-degree: 8%
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우에는 호스팅 페이지에 HTML5 뷰어를 직접 임베드해야 할 수도 있습니다. 후자의 경우, 웹 페이지는 정적 레이아웃을 가질 수 있다. 또는 &quot;응답형&quot;일 수 있으며 디바이스마다 또는 브라우저 창 크기마다 다르게 표시됩니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media와 함께 제공되는 사전 정의된 모든 기본 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
-응답형 뷰어를 웹 페이지에 포함하는 방법에 대한 자세한 내용은 [응답형 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=ko)를 참조하십시오.
+응답형 뷰어를 웹 페이지에 포함하는 방법에 대한 자세한 내용은 [응답형 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -158,15 +172,15 @@ Dynamic Media와 함께 제공되는 기본 뷰어 사전 설정은 모두 다�
 
 뷰어에 대해 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 정보 를 참조하십시오.
 
-[뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ko)의 목차에서 &quot;뷰어 릴리스 정보&quot;를 참조하십시오.
+[뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)의 목차에서 &quot;뷰어 릴리스 정보&quot;를 참조하십시오.
 
 >[!NOTE]
 >
 >Dynamic Media의 모든 기본 뷰어 사전 설정은 이미 활성화(설정)되었지만 게시해야 합니다.
->뷰어 사전 설정 게시[&#128279;](#publishing-viewer-presets)를 참조하십시오.
+>[뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 >
 >만들고 추가하는 새 뷰어 사전 설정은 모두 활성화 *와 *게시되어야 합니다.
->뷰어 사전 설정 활성화 또는 비활성화[&#128279;](#activating-or-deactivating-viewer-presets) 및 [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
+>[뷰어 사전 설정 활성화 또는 비활성화](#activating-or-deactivating-viewer-presets) 및 [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
 <table>
  <tbody>
@@ -440,17 +454,17 @@ Experience Manager은 **[!UICONTROL 자세히 보기]** > **[!UICONTROL 뷰어]*
 
      시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 미치는지 확인할 수 있습니다. 편집기 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 모든 속성을 설정하거나 조정합니다.
 
-     각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ko)의 &quot;*`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 설명되어 있습니다. 예를 들어, `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명은 [혼합 미디어 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=ko)을 참조하십시오.
+     각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)의 &quot;*`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 설명되어 있습니다. 예를 들어, `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명은 [혼합 미디어 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)을 참조하십시오.
 
    * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에서 **[!UICONTROL CSS 가져오기]**&#x200B;를 선택하여(필요한 경우 시각적 편집기를 위로 스크롤하여 확인) 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결할 수 있습니다.
 
      CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름 `.s7mixedmediaviewer`을(를) 사용하여 정의해야 합니다.
 
-     지정된 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ko)의 &quot;사용자 지정 *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어에 대한 CSS 마커를 읽으려면 [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=ko)을 참조하십시오. 그러나 시각적 편집기에서 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 여전히 작동할 수 있도록 오류를 재정의하려고 합니다.
+     지정된 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)의 &quot;사용자 지정 *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어에 대한 CSS 마커를 읽으려면 [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)을 참조하십시오. 그러나 시각적 편집기에서 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 여전히 작동할 수 있도록 오류를 재정의하려고 합니다.
 
    >[!NOTE]
    >
-   >CSS를 원시 양식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에서 **[!UICONTROL CSS 표시/숨기기]**&#x200B;를 선택합니다(필요한 경우 시각적 편집기를 위로 스크롤하여 확인).
+   >CSS를 원시 양식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에서 **[!UICONTROL CSS 표시/숨기기]**를 선택합니다(필요한 경우 시각적 편집기를 위로 스크롤하여 확인).
    >시각적 편집기와 마찬가지로 CSS에서 직접 속성을 변경하면 뷰어 샘플에 어떤 영향을 미치는지 즉시 확인할 수 있습니다. 또한 동일한 속성은 시각적 편집기에서 동시에 자동으로 업데이트됩니다. 따라서 원시 CSS 편집기 또는 시각적 편집기를 사용하거나 두 편집기를 서로 교환하여 사용할 수 있습니다.
 
    >[!NOTE]
@@ -464,15 +478,15 @@ Experience Manager은 **[!UICONTROL 자세히 보기]** > **[!UICONTROL 뷰어]*
    * **[!UICONTROL 대시]** - 비디오가 대시로만 스트리밍됩니다. 그러나 Safari/iOS 장치에서는 대신 유형으로 **[!UICONTROL hls]**&#x200B;을(를) 선택해야 합니다.
    * **[!UICONTROL hls]** - hls로만 비디오가 스트리밍됩니다.
    * **[!UICONTROL auto]** - 모범 사례입니다. DASH 및 HLS 스트림 생성은 스토리지에 최적화되었습니다. 따라서 Adobe에서는 항상 재생 유형으로 **[!UICONTROL auto]**&#x200B;을(를) 선택할 것을 권장합니다. 비디오는 다음 재생 순서와 같이 대시, hls 또는 점진적으로 스트리밍됩니다.
-      * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
-      * 브라우저가 DASH를 지원하지 않으면 두 번째로 HLS 스트리밍이 사용됩니다.
-      * 브라우저가 DASH 또는 HLS을 지원하지 않는 경우 마지막으로 점진적 재생이 사용됩니다.
+     * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
+     * 브라우저가 DASH를 지원하지 않으면 두 번째로 HLS 스트리밍이 사용됩니다.
+     * 브라우저가 DASH 또는 HLS을 지원하지 않는 경우 마지막으로 점진적 재생이 사용됩니다.
 
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    시각적 편집기의 많은 구성 요소에는 시각적 편집기와 관련된 자세한 설명이 있습니다. 이러한 설명은 컴포넌트를 확장하여 연관된 매개변수를 표시할 때 파란색 상자 내에 나타납니다.
 
-   일부 뷰어 유형은 IS 명령 텍스트 필드에서 **[!UICONTROL IS Command]** 명령을 지정할 수 있는 구성 요소를 제공합니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=ko)문서를 확인하세요.
+   일부 뷰어 유형은 IS 명령 텍스트 필드에서 **[!UICONTROL IS Command]** 명령을 지정할 수 있는 구성 요소를 제공합니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)문서를 확인하세요.
 
    >[!NOTE]
    >

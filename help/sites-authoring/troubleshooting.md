@@ -9,13 +9,26 @@ exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 51%
-
+ht-degree: 48%
 ---
-
 # 작성 시의 AEM 문제 해결{#troubleshooting-aem-when-authoring}
 
 다음 섹션에서는 AEM 사용 시 발생할 수 있는 문제들과 이러한 문제의 해결 방법에 대한 제안 사항을 다룹니다.
@@ -32,34 +45,34 @@ ht-degree: 51%
 
 * **문제**:
 
-   * 페이지를 변경하고 페이지를 게시 사이트에 복제했지만, 페이지의 *이전* 버전이 여전히 게시 사이트에 표시되고 있습니다.
+  * 페이지를 변경하고 페이지를 게시 사이트에 복제했지만, 페이지의 *이전* 버전이 여전히 게시 사이트에 표시되고 있습니다.
 
 * **이유**:
 
-   * 이는 때로 복제 큐 문제일 수 있지만 몇 가지 원인이 있을 수 있고 대개는 캐시 문제일 수 있습니다(로컬 브라우저나 디스패처 중 하나).
+  * 이는 때로 복제 큐 문제일 수 있지만 몇 가지 원인이 있을 수 있고 대개는 캐시 문제일 수 있습니다(로컬 브라우저나 디스패처 중 하나).
 
 * **솔루션**:
 
-   * 여기에는 다양한 가능성이 있습니다.
-   * 페이지가 올바르게 복제되었는지 확인합니다. 페이지 상태를 확인하고 필요한 경우 복제 큐의 상태를 확인합니다.
-   * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
+  * 여기에는 다양한 가능성이 있습니다.
+  * 페이지가 올바르게 복제되었는지 확인합니다. 페이지 상태를 확인하고 필요한 경우 복제 큐의 상태를 확인합니다.
+  * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
+  * 페이지 URL 끝에 `?`을(를) 추가합니다. 예:
 
-      * `http://localhost:4502/sites.html/content?`
-      * 이렇게 하면 페이지가 AEM에서 바로 요청되고 디스패처가 무시됩니다. 업데이트된 페이지가 표시되면 이는 디스패처 캐시를 지우라는 의미입니다.
+    * `http://localhost:4502/sites.html/content?`
+    * 이렇게 하면 페이지가 AEM에서 바로 요청되고 디스패처가 무시됩니다. 업데이트된 페이지가 표시되면 이는 디스패처 캐시를 지우라는 의미입니다.
 
-   * 복제 큐 문제가 있을 경우 시스템 관리자에게 문의하십시오.
+  * 복제 큐 문제가 있을 경우 시스템 관리자에게 문의하십시오.
 
 ## 구성 요소 작업이 도구 모음에 표시되지 않음 {#component-actions-not-visible-on-toolbar}
 
 * **문제**:
 
-   * 적용 가능한 구성 요소 작업의 전체 범위는 작성 환경에서 콘텐츠 페이지를 편집할 때 표시되지 않습니다.
+  * 적용 가능한 구성 요소 작업의 전체 범위는 작성 환경에서 콘텐츠 페이지를 편집할 때 표시되지 않습니다.
 
 * **이유**:
 
-   * 드문 경우지만 이전 작업이 도구 모음에 영향을 줄 수 있습니다.
+  * 드문 경우지만 이전 작업이 도구 모음에 영향을 줄 수 있습니다.
 
 * **솔루션**:
 
-   * 페이지를 새로 고칩니다.
+  * 페이지를 새로 고칩니다.

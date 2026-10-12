@@ -9,7 +9,25 @@ docset: aem65
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 3%
@@ -44,4 +62,4 @@ DOM 트리
 
 패널 도구 모음을 사용하여 SOM 표현식 추출
 
-[GuideBridge](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html)에 나열된 일부 API는 요소의 SOM 식을 사용합니다. 예를 들어 적응형 양식의 특정 필드에 초점을 맞추려면 해당 SOM 식을 `guideBridge`의 `getFocus`API에 전달하십시오.
+[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)에 나열된 일부 API는 요소의 SOM 식을 사용합니다. 예를 들어 적응형 양식의 특정 필드에 초점을 맞추려면 해당 SOM 식을 `guideBridge`의 `getFocus`API에 전달하십시오.

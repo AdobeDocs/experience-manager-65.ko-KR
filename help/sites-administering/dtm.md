@@ -9,16 +9,25 @@ exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2212'
 ht-degree: 3%
-
 ---
-
 # Adobe Dynamic Tag Management와 통합 {#integrating-with-adobe-dynamic-tag-management}
 
-Dynamic Adobe 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [AEM Dynamic Tag Management](https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html)을(를) Tag Management과 통합합니다. Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
+Dynamic Adobe 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [AEM Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html)을(를) Tag Management과 통합합니다. Dynamic Tag Management을 통해 마케터는 데이터를 수집하기 위한 태그를 관리하고 디지털 마케팅 시스템 전반에 데이터를 배포할 수 있습니다. 예를 들어 Dynamic Tag Management 를 사용하여 AEM 웹 사이트에 대한 사용 데이터를 수집하고 Adobe Analytics 또는 Adobe Target에서 분석할 데이터를 배포합니다.
 
 통합하기 전에 AEM 사이트의 도메인을 추적하는 Dynamic Tag Management [웹 속성](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)을 만드십시오. Dynamic Tag Management 라이브러리에 액세스하도록 AEM을 구성할 수 있도록 웹 속성의 [호스팅 옵션](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)을 구성해야 합니다.
 
@@ -29,7 +38,7 @@ Dynamic Adobe 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도�
 >사용자 지정 프록시 구성에서 DTM을 사용하는 경우 AEM의 일부 기능은 3.x API를 사용하고 다른 일부 기능은 4.x API를 사용하므로 HTTP 클라이언트 프록시 구성을 모두 구성합니다.
 >
 >* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)&#x200B;(으)로 구성되어 있습니다.
->* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성되었습니다.
+>* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)&#x200B;(으)로 구성되어 있습니다.
 >
 
 ## 배포 옵션 {#deployment-options}

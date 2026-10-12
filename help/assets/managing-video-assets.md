@@ -1,24 +1,33 @@
 ---
 title: 비디오 자산 관리
-description: ' [!DNL Adobe Experience Manager]에서 비디오 자산을 업로드, 미리 보기, 주석 달기 및 게시합니다.'
+description: '[!DNL Adobe Experience Manager]에서 비디오 자산을 업로드, 미리 보기, 주석 달기 및 게시합니다.'
 contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5614'
 ht-degree: 8%
-
 ---
-
 # 비디오 자산 관리 {#manage-video-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 비디오 형식은 조직의 디지털 에셋에 중요한 부분입니다. [!DNL Adobe Experience Manager]은(는) 생성 후 비디오 자산의 전체 라이프사이클을 관리하는 완성도 높은 서비스와 기능을 제공합니다.
@@ -44,7 +53,7 @@ ht-degree: 8%
 [!DNL Assets] 구성 외에 다음 구성을 변경하여 큰 에셋을 업로드하십시오.
 
 * 토큰 만료 시간을 늘립니다. `https://[aem_server]:[port]/system/console/configMgr`의 웹 콘솔에서 [!UICONTROL Adobe Granite CSRF 서블릿]을(를) 참조하십시오. 자세한 내용은 [CSRF 보호](/help/sites-developing/csrf-protection.md)를 참조하십시오.
-* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#renders-options)을 참조하십시오.
+* Dispatcher 구성에서 `receiveTimeout`을(를) 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -163,7 +172,7 @@ Google Cloud 설정을 구성하려면 다음 작업을 수행하십시오.
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. **[!UICONTROL 필요한 자격 증명을 선택하십시오.]**
-1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
+1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. 또는 Google에서 지정한 기본 이름을 사용할 수 있습니다.
 1. **[!UICONTROL 인증된 JavaScript 원본]** 제목 아래의 텍스트 필드에 다음 경로를 입력하여 경로에 사용자 도메인 및 포트 번호를 대체한 다음 **[!UICONTROL Enter]**&#x200B;를 눌러 목록에 경로를 추가합니다.
 
    `https://<servername.domain>:<port_number>`
@@ -261,13 +270,13 @@ Experience Manager 6.4부터 새로운 터치 사용자 인터페이스 방식�
 1. On the Create YouTube Configuration page, under Google Cloud Platform Settings, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    이전에 Google Cloud 설정을 처음 구성할 때 프로젝트 ID를 지정했습니다.
-YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌아갑니다.
+   YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌아갑니다.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
 1. 일반 텍스트 편집기를 사용하여 [Google Cloud 설정 구성](/help/assets/video.md#configuring-google-cloud-settings) 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
-1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
+1. YouTube 계정 설정 대화 상자로 돌아갑니다. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
@@ -309,11 +318,11 @@ YouTube 구성 만들기 페이지를 열어 두십시오. 잠시 후 다시 돌
 1. In the YouTube Account Settings dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    처음에 [Google 클라우드 설정을 구성](/help/assets/video.md#configuring-google-cloud-settings)했을 때 프로젝트 ID를 지정했습니다.
-YouTube 계정 설정 대화 상자를 열어 두십시오. 잠시 후 다시 돌아갑니다.
+   YouTube 계정 설정 대화 상자를 열어 두십시오. 잠시 후 다시 돌아갑니다.
 
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
-1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
+1. YouTube 계정 설정 대화 상자로 돌아갑니다. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
 1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
@@ -360,19 +369,19 @@ Experience Manager에서 메타데이터 처리 프로필을 만들어 선택적
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
-복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
+     복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
-복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
+   * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사람 및 블로그 또는 과학 기술)을 선택하고 복사합니다.
+     복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보]**&#x200B;를 선택합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
-복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
+     복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-   * **[!UICONTROL 선택 항목]**&#x200B;에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
-복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
+   * **[!UICONTROL 선택 항목]**에서 사용할 기본값을 선택하고 복사합니다. 선택 항목은 두 개의 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 복사할 기본값입니다(예: public, unlisted 또는 private).
+     복사한 값을 열린 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. 메타데이터 스키마 편집기 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 취소]**&#x200B;를 클릭합니다.
 1. Experience Manager의 왼쪽 상단 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Assets]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭합니다.
@@ -439,7 +448,7 @@ Experience Manager에서 메타데이터 처리 프로필을 만들어 선택적
 1. 비디오 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
 
-   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ko)도 참조하세요.
+   [Experience Manager Sites에서 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)도 참조하세요.
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
@@ -522,7 +531,7 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
 
    >[!NOTE]
    >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;의 여러 워크플로 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예를 들면 다음과 같습니다.
+   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;에 대한 여러 워크플로 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예를 들면 다음과 같습니다.
    >
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite 워크플로우 외부 프로세스 작업 핸들러
@@ -554,7 +563,7 @@ Experience Manager에서 비디오 에셋의 게시를 취소하면 비디오가
 
    >[!NOTE]
    >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;의 여러 워크플로 구성 때문에 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예를 들면 다음과 같습니다.
+   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;에 대한 여러 워크플로 구성으로 인해 오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예:
    >
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite 워크플로우 외부 프로세스 작업 핸들러

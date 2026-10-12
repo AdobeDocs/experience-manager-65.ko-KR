@@ -10,13 +10,20 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1790'
 ht-degree: 3%
-
 ---
-
 # 커뮤니티 배포 {#deploying-communities}
 
 ## 사전 요구 사항 {#prerequisites}
@@ -27,9 +34,9 @@ ht-degree: 3%
 
 * 다음에 대한 선택적 라이선스:
 
-   * [Adobe Analytics for Communities 기능](/help/communities/analytics.md)
-   * [MSRP용 MongoDB](/help/communities/msrp.md)
-   * [ASRP용 Adobe Cloud](/help/communities/asrp.md)
+  * [Adobe Analytics for Communities 기능](/help/communities/analytics.md)
+  * [MSRP용 MongoDB](/help/communities/msrp.md)
+  * [ASRP용 Adobe Cloud](/help/communities/asrp.md)
 
 ## 설치 검사 목록 {#installation-checklist}
 
@@ -52,32 +59,32 @@ ht-degree: 3%
 * [기본 전자 메일 서비스 설정](/help/communities/email.md)
 * [공유 UGC 저장소](/help/communities/working-with-srp.md)(**SRP**)에 대한 선택 항목 식별
 
-   * MongoDB SRP [(MSRP)](/help/communities/msrp.md)인 경우
+  * MongoDB SRP [(MSRP)](/help/communities/msrp.md)인 경우
 
-      * [MongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
-      * [Solr 구성](/help/communities/solr.md)
-      * [MSRP 선택](/help/communities/srp-config.md)
+    * [MongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
+    * [Solr 구성](/help/communities/solr.md)
+    * [MSRP 선택](/help/communities/srp-config.md)
 
-   * 관계형 데이터베이스 SRP [(DSRP)](/help/communities/dsrp.md)인 경우
+  * 관계형 데이터베이스 SRP [(DSRP)](/help/communities/dsrp.md)인 경우
 
-      * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
-      * [DSRP용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
-      * [Solr 구성](/help/communities/solr.md)
-      * [DSRP 선택](/help/communities/srp-config.md)
+    * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
+    * [DSRP용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
+    * [Solr 구성](/help/communities/solr.md)
+    * [DSRP 선택](/help/communities/srp-config.md)
 
-   * Adobe SRP [(ASRP)](/help/communities/asrp.md)인 경우
+  * Adobe SRP [(ASRP)](/help/communities/asrp.md)인 경우
 
-      * 계정 담당자에게 프로비저닝을 요청하십시오.
-      * [ASRP 선택](/help/communities/srp-config.md)
+    * 계정 담당자에게 프로비저닝을 요청하십시오.
+    * [ASRP 선택](/help/communities/srp-config.md)
 
-   * JCR SRP [(JSRP)](/help/communities/jsrp.md)인 경우
+  * JCR SRP [(JSRP)](/help/communities/jsrp.md)인 경우
 
-      * 공유 UGC(사용자 생성 컨텐츠) 저장소가 아닙니다.
+    * 공유 UGC(사용자 생성 컨텐츠) 저장소가 아닙니다.
 
-         * UGC는 복제되지 않음
-         * UGC는 입력된 AEM 인스턴스 또는 클러스터에서만 볼 수 있습니다
+      * UGC는 복제되지 않음
+      * UGC는 입력된 AEM 인스턴스 또는 클러스터에서만 볼 수 있습니다
 
-         * 기본값은 JSRP입니다.
+      * 기본값은 JSRP입니다.
 
 ## 최신 릴리스 {#latest-releases}
 
@@ -141,8 +148,8 @@ SRP 컬렉션(MSRP 또는 DSRP)이 고급 다국어 검색(MLS)을 지원하려�
 
   고급 MLS 패키지를 얻으려면 설명서의 배포 섹션에서 [AEM 고급 MLS](deploy-communities.md#aem-advanced-mls)을(를) 참조하십시오.
 
-   * 버전 1.2.40, 2016년 4월 6일
-   * AEM-SOLR-MLS-phasetwo-1.2.40.zip 다운로드
+  * 버전 1.2.40, 2016년 4월 6일
+  * AEM-SOLR-MLS-phasetwo-1.2.40.zip 다운로드
 
 자세한 내용 및 설치 정보는 SRP의 [Solr 구성](/help/communities/solr.md)을 참조하세요.
 
@@ -200,7 +207,7 @@ AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 �
 * 관리자 권한으로 로그인
 * [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스
 
-   * 예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * 예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * `AEM Communities Publisher Configuration` 찾기
 * 편집 아이콘 선택
@@ -219,19 +226,19 @@ AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 �
 
 * 작성자의 복제 콘솔 액세스
 
-   * 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자의 에이전트]**&#x200B;로 이동합니다.
+  * 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자의 에이전트]**&#x200B;로 이동합니다.
 
 * 두 에이전트에 대해 동일한 절차를 수행합니다.
 
-   * **기본 에이전트(게시)**
-   * **역방향 복제 에이전트(게시 역방향)**
+  * **기본 에이전트(게시)**
+  * **역방향 복제 에이전트(게시 역방향)**
 
-      1. 에이전트 선택
-      1. **편집** 선택
-      1. **전송** 탭 선택
-      1. `4503` 포트가 아닌 경우 **URI**&#x200B;를 편집하여 올바른 포트를 지정하십시오
+    1. 에이전트 선택
+    1. **편집** 선택
+    1. **전송** 탭 선택
+    1. `4503` 포트가 아닌 경우 **URI**&#x200B;를 편집하여 올바른 포트를 지정하십시오
 
-      1. `admin` 사용자가 아닌 경우 **사용자** 및 **암호**&#x200B;를 편집하여 `administrators` 사용자 그룹의 구성원을 지정하십시오
+    1. `admin` 사용자가 아닌 경우 **사용자** 및 **암호**&#x200B;를 편집하여 `administrators` 사용자 그룹의 구성원을 지정하십시오
 
 다음 이미지에서는 포트를 4503에서 6103으로 변경한 결과를 다음과 같이 보여줍니다.
 
@@ -257,7 +264,7 @@ AEM Communities에서 일반 저장소는 UGC를 저장하는 데 사용되며 �
 
 * [웹 콘솔 액세스](/help/sites-deploying/configuring-osgi.md)
 
-   * 예: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+  * 예: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * `AEM Communities Publish Tunnel Service` 찾기
 * 편집 아이콘 선택
@@ -276,32 +283,32 @@ AEM 6.3 이상에서는 주요 자료가 파일 시스템에 저장되고 더 �
 
 * 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다
 
-   * 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾고
-예를 들어,
+  * 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾고
+    예를 들어,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * `bundle.info` 파일은 번들을 식별합니다
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+    * `bundle.info` 파일은 번들을 식별합니다
 
-   * 데이터 폴더로 이동하여
-예를 들어,
+  * 데이터 폴더로 이동하여
+    예를 들어,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-      * hmac 및 기본 노드 파일 복사
+    * hmac 및 기본 노드 파일 복사
 
 * 각 대상 AEM 인스턴스의 경우
 
-   * 데이터 폴더로 이동하여
-예를 들어,
+  * 데이터 폴더로 이동하여
+    예를 들어,
 
-      * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-   * 이전에 복사한 두 파일 붙여넣기
-   * 대상 AEM 인스턴스가 실행 중인 경우 [Granite Crypto 번들을 새로 고쳐야](#refresh-the-granite-crypto-bundle) 합니다.
+  * 이전에 복사한 두 파일 붙여넣기
+  * 대상 AEM 인스턴스가 실행 중인 경우 [Granite Crypto 번들을 새로 고쳐야](#refresh-the-granite-crypto-bundle) 합니다.
 
 >[!CAUTION]
 >
->암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하면 [고객 지원 센터에 문의](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)하세요.
+>암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요하면 [고객 지원 센터에 문의](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)하세요.
 
 #### 저장소 복제 {#repository-replication}
 
@@ -309,7 +316,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 자료를 저장�
 
 >[!NOTE]
 >
->작성자[&#128279;](#replication-agents-on-author)의 복제 에이전트가 올바르게 구성되었는지 확인하십시오.
+>작성자](#replication-agents-on-author)의 [복제 에이전트가 올바르게 구성되었는지 확인하십시오.
 
 저장소에 저장된 키 자료를 사용하여 작성자의 암호 키를 다른 인스턴스에 복제하는 방식은 다음과 같습니다.
 
@@ -328,7 +335,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 주요 자료를 저장�
 
 * 각 게시 인스턴스에서 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
+  * 예: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * `Adobe Granite Crypto Support` 번들 찾기(com.adobe.granite.crypto)
 * **새로 고침** 선택
@@ -366,7 +373,7 @@ Apache HTTP 서버를 사용하는 경우 모든 관련 항목에 올바른 서�
 Dispatcher을 사용하는 경우 다음을 참조하십시오.
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) 설명서
-* [Dispatcher 설치](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Dispatcher 설치](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [커뮤니티에 대한 Dispatcher 구성](/help/communities/dispatcher.md)
 * [알려진 문제](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

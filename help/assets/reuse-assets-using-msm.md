@@ -8,18 +8,31 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3312'
 ht-degree: 9%
-
 ---
-
 # [!DNL Assets]에 대해 MSM을 사용하여 자산 재사용 {#reuse-assets-using-msm-for-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager]의 MSM(다중 사이트 관리자) 기능을 사용하면 한 번 작성되어 여러 웹 위치에서 재사용되는 콘텐츠를 다시 사용할 수 있습니다. [!DNL Assets] 기능에 대한 MSM과 디지털 자산에도 동일한 기능을 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하여 다음을 수행할 수 있습니다.
@@ -136,7 +149,7 @@ MSM은 소스 에셋과 해당 라이브 카피 간에 라이브 관계를 유�
 [!DNL Experience Manager]은(는) 원본 폴더의 모든 라이브 카피의 상태를 확인할 수 있는 콘솔을 제공합니다. 이 콘솔에는 모든 하위 자산의 상태가 표시됩니다.
 
 1. 소스 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다. 또는 키보드 단축키 `p`을(를) 사용합니다.
-1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. This dashboard provides a top-level status of all the child assets.
+1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. 이 대시보드는 모든 하위 에셋의 최상위 상태를 제공합니다.
 
    ![소스의 Live Copy 콘솔에서 Live Copy 상태 보기](assets/livecopy-statuses.png)
 
@@ -251,7 +264,7 @@ Alternatively, you can quickly suspend or resume relationships of multiple asset
 
 라이브 카피는 원본 소스가 생성될 때의 복제본입니다. 라이브 카피의 메타데이터 값은 소스에서 상속됩니다. 메타데이터 필드는 소스 에셋의 해당 필드와 함께 상속을 개별적으로 유지합니다.
 
-However, you have the flexibility to make local modifications to a live copy to change a few select properties. To make local modifications, cancel the inheritance of the desired property. When inheritance of one or more metadata fields is canceled, the live relationship of the asset and the inheritance of the other metadata fields is retained. Any synchronization or rollout does not overwrite the local modifications. 이렇게 하려면 Live Copy 에셋의 **[!UICONTROL 속성]** 페이지를 열고 메타데이터 필드 옆에 있는 **[!UICONTROL 상속 취소]** 옵션을 클릭합니다.
+하지만 몇 가지 선택한 속성을 변경하기 위해 라이브 카피를 로컬에서 수정할 수 있습니다. 로컬 수정을 하려면 원하는 속성의 상속을 취소하십시오. 하나 이상의 메타데이터 필드에 대한 상속이 취소되면 에셋의 라이브 관계와 다른 메타데이터 필드의 상속은 유지됩니다. 동기화나 롤아웃을 수행해도 로컬 수정 내용은 덮어쓰지 않습니다. 이렇게 하려면 Live Copy 에셋의 **[!UICONTROL 속성]** 페이지를 열고 메타데이터 필드 옆에 있는 **[!UICONTROL 상속 취소]** 옵션을 클릭합니다.
 
 모든 로컬 수정 사항을 실행 취소하고 자산을 소스 상태로 되돌릴 수 있습니다. 작업을 되돌릴 수 없으며 즉시 모든 로컬 수정 사항을 무시하고 모든 메타데이터 필드에 상속을 다시 설정합니다. 되돌리려면 Live Copy 에셋의 **[!UICONTROL 속성]** 페이지에서 도구 모음의 **[!UICONTROL 재설정]**&#x200B;을 클릭하세요.
 
@@ -283,7 +296,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 
 1. 소스 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다. 또는 키보드 단축키 `p`을(를) 사용합니다.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
-1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. 사용 가능한 작업은 **[!UICONTROL 동기화]**, **[!UICONTROL 재설정]**, **[!UICONTROL 일시 중단]** 및 **[!UICONTROL 분리]**&#x200B;입니다. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
+1. 이 대시보드에서 라이브 카피 폴더의 라이브 카피 에셋을 선택합니다. 도구 모음에서 원하는 작업을 클릭합니다. 사용 가능한 작업은 **[!UICONTROL 동기화]**, **[!UICONTROL 재설정]**, **[!UICONTROL 일시 중단]** 및 **[!UICONTROL 분리]**&#x200B;입니다. 선택한 소스 폴더와 라이브 관계에 있는 모든 라이브 카피 폴더의 에셋에 대해 이러한 작업을 신속하게 시작할 수 있습니다.
 
    ![Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 쉽게 업데이트할 수 있습니다](assets/livecopyconsole_update_many_assets.png)
 

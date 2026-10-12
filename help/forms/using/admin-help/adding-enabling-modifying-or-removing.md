@@ -9,13 +9,27 @@ exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '381'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '382'
 ht-degree: 100%
-
 ---
-
 # 엔드포인트 추가, 활성화, 수정 또는 제거 {#adding-enabling-modifying-or-removing-endpoints}
 
 >[!NOTE]
@@ -35,13 +49,13 @@ ht-degree: 100%
 1. 엔드포인트 탭에 있는 목록에서 추가할 엔드포인트 유형을 선택하고 추가를 클릭합니다.
 1. 엔드포인트 유형에 따라 엔드포인트 설정을 추가로 구성합니다.
 
-[감시 폴더 엔드포인트 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [감시 폴더 엔드포인트 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[이메일 엔드포인트 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [이메일 엔드포인트 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[작업 관리자 엔드포인트 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [작업 관리자 엔드포인트 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Remoting 엔드포인트 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [Remoting 엔드포인트 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. 추가를 클릭합니다.
 

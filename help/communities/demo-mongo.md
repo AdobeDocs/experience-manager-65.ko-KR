@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # 데모용 MongoDB를 설정하는 방법 {#how-to-setup-mongodb-for-demo}
 
 ## 소개 {#introduction}
@@ -38,25 +45,25 @@ ht-degree: 0%
 
 * [https://www.mongodb.com/](https://www.mongodb.com/)에서 MongoDB 다운로드
 
-   * OS 선택:
+  * OS 선택:
 
-      * Linux®
-      * Mac 10.8
-      * 윈도우
+    * Linux®
+    * Mac 10.8
+    * 윈도우
 
-   * 버전 선택:
+  * 버전 선택:
 
-      * 최소한 버전 2.6 사용
+    * 최소한 버전 2.6 사용
 
 * 기본 구성
 
-   * MongoDB 설치 지침을 따릅니다.
-   * Mongod에 대한 구성:
+  * MongoDB 설치 지침을 따릅니다.
+  * Mongod에 대한 구성:
 
-      * 몽고나 분할을 구성할 필요가 없습니다.
+    * 몽고나 분할을 구성할 필요가 없습니다.
 
-   * 설치된 MongoDB 폴더를 &lt;mongo-install>이라고 합니다.
-   * 정의된 데이터 디렉터리 경로를 &lt;mongo-dbpath>라고 합니다.
+  * 설치된 MongoDB 폴더를 &lt;mongo-install>이라고 합니다.
+  * 정의된 데이터 디렉터리 경로를 &lt;mongo-dbpath>라고 합니다.
 
 * MongoDB는 AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있습니다.
 
@@ -79,16 +86,16 @@ ht-degree: 0%
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ ht-degree: 0%
 
 * [Apache Lucene](https://archive.apache.org/dist/lucene/solr/)에서 Solr 다운로드:
 
-   * 모든 OS에 적합합니다.
-   * Solr 버전 7.0.
-   * Solr에는 Java™ 1.7 이상이 필요합니다.
+  * 모든 OS에 적합합니다.
+  * Solr 버전 7.0.
+  * Solr에는 Java™ 1.7 이상이 필요합니다.
 
 * 기본 구성
 
-   * &#39;example&#39; Solr 설정을 따르십시오.
-   * 서비스가 필요하지 않습니다.
-   * 설치된 Solr 폴더를 &lt;solr-install>이라고 합니다.
+  * &#39;example&#39; Solr 설정을 따르십시오.
+  * 서비스가 필요하지 않습니다.
+  * 설치된 Solr 폴더를 &lt;solr-install>이라고 합니다.
 
 ### AEM Communities용 Solr 구성 {#configure-solr-for-aem-communities}
 

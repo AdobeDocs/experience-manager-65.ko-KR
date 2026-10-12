@@ -9,18 +9,32 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 89%
-
 ---
-
 # 비즈니스 캘린더 구성 {#configuring-business-calendars}
 
-*비즈니스 캘린더*&#x200B;는 조직의 영업일과 비영업일(예: 법정 공휴일, 주말, 회사 휴무일)을 정의합니다. 비즈니스 캘린더를 사용하는 경우 AEM Forms는 특정 일자 계산을 수행할 때 비영업일을 건너뜁니다. 워크벤치에서는 작업 미리 알림, 기한, 에스컬레이션과 같이 사용자와 연결된 이벤트에 대해 비즈니스 달력을 사용할지, 아니면 타이머 이벤트, 대기 서비스와 같이 사용자와 연결되지 않은 작업에 대해 비즈니스 달력을 사용할지를 지정할 수 있습니다.
+*비즈니스 캘린더*&#x200B;는 조직의 영업일과 비영업일(예: 법정 공휴일, 주말, 회사 휴무일)을 정의합니다. 비즈니스 캘린더를 사용하는 경우 AEM Forms는 특정 일자 계산을 수행할 때 비영업일을 건너뜁니다. 워크벤치에서는 작업 미리 알림, 기한, 에스컬레이션과 같이 사용자와 연결된 이벤트에 대해 비즈니스 캘린더를 사용할지, 아니면 타이머 이벤트, 대기 서비스와 같이 사용자와 연결되지 않은 작업에 대해 비즈니스 캘린더를 사용할지를 지정할 수 있습니다.
 
-예를 들어 작업이 사용자에게 할당되고 나서 영업일 기준 3일 후에 작업 미리 알림이 발생하도록 구성되어 있습니다. 해당 업무는 목요일에 할당됩니다. 하지만 그다음 3일은 금요일이 공휴일이고 그다음 2일은 주말이기 때문에 영업일이 아닙니다. 따라서 미리 알림은 다음 주 수요일에 전송됩니다.
+예를 들어 작업이 사용자에게 할당되고 나서 영업일 기준 3일 후에 작업 미리 알림이 발생하도록 구성되어 있습니다. 해당 작업은 목요일에 할당됩니다. 하지만 그다음 3일은 금요일이 공휴일이고 그다음 2일은 주말이기 때문에 영업일이 아닙니다. 따라서 미리 알림은 다음 주 수요일에 전송됩니다.
 
 >[!NOTE]
 >
@@ -32,7 +46,7 @@ AEM Forms는 *기본 제공 캘린더*&#x200B;라는 기본 비즈니스 캘린�
 
 ## 여러 개의 비즈니스 캘린더 설정 {#setting-up-multiple-business-calendars}
 
-조직에 있는 일부 사용자의 비영업일이 서로 다른 경우 여러 개의 비즈니스 캘린더를 정의하고 사용자의 비즈니스 캘린더에 대한 런타임 확인을 허용하는 매핑을 구성할 수 있습니다.
+조직에 있는 일부 사용자의 비영업일이 서로 다른 경우 여러 개의 비즈니스 캘린더를 정의하고 사용자에게 적용할 비즈니스 캘린더를 런타임에 확인할 수 있도록 매핑을 구성할 수 있습니다.
 
 ### 여러 개의 비즈니스 캘린더 정의 {#define-multiple-business-calendars}
 
@@ -48,7 +62,7 @@ AEM Forms는 *기본 제공 캘린더*&#x200B;라는 기본 비즈니스 캘린�
 
    로컬 또는 하이브리드 도메인을 사용하는 경우 사용자 정보는 사용자 관리 데이터베이스에만 저장됩니다. 해당 사용자에 대한 비즈니스 캘린더 키를 설정하려면 사용자 관리에서 사용자를 추가하거나 편집할 때 비즈니스 캘린더 키 필드에 문자열을 입력합니다. ([사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)을 참조하십시오.) 그런 다음 비즈니스 캘린더 키(문자열)를 Forms Workflow의 비즈니스 캘린더에 매핑합니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
 
-   엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 서드파티 스토리지 시스템에 저장되고 사용자 관리에서 해당 정보를 사용자 관리 데이터베이스와 동기화합니다. 이를 통해 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 &#39;국가&#39; 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 경우 디렉터리의 사용자 설정을 지정할 때 비즈니스 캘린더 키 필드에 &#39;국가&#39; 필드 이름을 지정합니다. [디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)을 참조하십시오. 그런 다음 비즈니스 캘린더 키(LDAP 디렉토리의 &quot;국가&quot; 필드에 대해 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
+   엔터프라이즈 도메인을 사용하는 경우 사용자 정보는 LDAP 디렉터리와 같은 제3자 스토리지 시스템에 저장되고 사용자 관리에서 해당 정보를 사용자 관리 데이터베이스와 동기화합니다. 이를 통해 비즈니스 캘린더 키를 LDAP 디렉터리의 필드에 매핑할 수 있습니다. 예를 들어 디렉터리의 각 사용자 레코드에 &quot;country&quot; 필드가 포함되어 있고 사용자가 위치한 국가에 따라 비즈니스 캘린더를 할당하려는 경우 디렉터리의 사용자 설정을 지정할 때 비즈니스 캘린더 키 필드에 &quot;country&quot; 필드 이름을 지정합니다. [디렉터리 구성](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)을 참조하십시오. 그런 다음 비즈니스 캘린더 키(LDAP 디렉토리의 &quot;국가&quot; 필드에 대해 정의된 값)를 Forms Workflow의 비즈니스 캘린더에 매핑할 수 있습니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
 
 1. Forms Workflow에서 동일한 비영업일을 공유하는 각 사용자 집합에 대해 캘린더를 정의합니다. ([비즈니스 캘린더 만들기 또는 업데이트](configuring-business-calendars.md#create-or-update-a-business-calendar)를 참조하십시오.)
 1. Forms Workflow에서 각 캘린더에 대한 비즈니스 캘린더 키 또는 그룹 멤버십을 매핑합니다. ([비즈니스 캘린더에 사용자 및 그룹 매핑](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)을 참조하십시오.)
@@ -56,7 +70,7 @@ AEM Forms는 *기본 제공 캘린더*&#x200B;라는 기본 비즈니스 캘린�
 
    프로세스 개발자가 비즈니스 캘린더를 사용하기로 선택하는 경우 AEM Forms는 사용자 관리 설정과 관리 콘솔에서 정의된 비즈니스 캘린더 매핑에 따라 적절한 비즈니스 캘린더를 동적으로 선택하거나 매핑이 없는 경우 기본 캘린더를 사용합니다.
 
-   프로세스 개발자가 비즈니스 캘린더를 사용하지 않으면 이벤트 일자 계산 시 모든 날을 영업일로 처리합니다. 예를 들어 작업이 사용자에게 할당되고 나서 3일 후에 작업 기한이 발생하도록 구성되어 있습니다. 해당 업무는 목요일에 할당됩니다. 업무 기한은 주말임에도 불구하고 일요일에 발생합니다.
+   프로세스 개발자가 비즈니스 캘린더를 사용하지 않으면 이벤트 일자 계산 시 모든 날을 영업일로 처리합니다. 예를 들어 작업이 사용자에게 할당되고 나서 3일 후에 작업 기한이 발생하도록 구성되어 있습니다. 해당 작업은 목요일에 할당됩니다. 작업 기한은 주말임에도 불구하고 일요일에 발생합니다.
 
 ## 비즈니스 캘린더 만들기 또는 업데이트 {#create-or-update-a-business-calendar}
 

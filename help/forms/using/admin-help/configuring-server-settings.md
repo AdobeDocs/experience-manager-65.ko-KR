@@ -9,13 +9,27 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 100%
-
 ---
-
 # 서버 설정 구성 {#configuring-server-settings}
 
 서버 설정 페이지에서는 Forms Workflow의 다양한 설정에 액세스할 수 있습니다.
@@ -82,7 +96,7 @@ AEM Forms가 사용자로부터 수신되는 이메일 메시지를 받고 처�
 * 작업 할당
 * 기한
 
-그룹에 대한 이메일 알림을 생성하려면 사용자 관리에서 그룹의 이메일 주소를 지정합니다. <!--Fix broken link See Setting up and organizing users -->Forms Workflow에서 그룹에 이메일 알림을 보내면 이메일 주소가 지정된 그룹 내 각 멤버가 이메일 알림을 받습니다. 그룹 멤버가 이메일 알림을 받고 작업을 클레임하려면 이메일 알림에 있는 클레임 링크를 클릭해야 합니다. 그러면 Workspace에서 작업 세부 정보 페이지가 열립니다. 여기에서 멤버는 작업 항목을 클레임하거나 클레임하고 열 수 있습니다.
+그룹에 대한 이메일 알림을 생성하려면 사용자 관리에서 그룹의 이메일 주소를 지정합니다. <!--Fix broken link See Setting up and organizing users -->Forms Workflow에서 그룹에 이메일 알림을 보내면 이메일 주소가 지정된 그룹 내 각 멤버가 이메일 알림을 받습니다. 그룹 멤버가 이메일 알림을 받고 작업을 수락하려면 이메일 알림에 있는 수락 링크를 클릭해야 합니다. 그러면 Workspace에서 작업 세부 정보 페이지가 열립니다. 여기에서 멤버는 작업 항목을 수락하거나 수락하고 열 수 있습니다.
 
 >[!NOTE]
 >
@@ -141,14 +155,14 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 
 Forms Workflow가 관리자에게 전송되는 이메일 알림을 생성하는 데 사용할 템플릿을 구성할 수 있습니다.
 
-관리자에 대해 다음 유형의 알림을 구성합니다.
+관리자용으로 다음 유형의 알림을 구성합니다.
 
 * 중단된 분기
 * 중단된 작업
 
 ### 중단된 분기 알림 구성 {#configure-stalled-branch-notifications}
 
-분기가 중단되는 경우(의도적으로 또는 오류로 인해 진행이 중단되는 경우) 관리자나 다른 사용자에게 이메일 알림을 보내 문제를 조사할 수 있습니다.
+분기가 중단되는 경우(의도적으로 또는 오류로 인해 진행이 중단되는 경우) 관리자나 다른 사용자에게 이메일 알림을 보내 해당 사용자가 문제를 조사하도록 할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > Forms Workflow > 서버 설정 > 관리자 알림을 클릭합니다.
 1. 알림 유형에서 중단된 분기를 클릭합니다.
@@ -162,7 +176,7 @@ Forms Workflow가 관리자에게 전송되는 이메일 알림을 생성하는 
 
 ### 중단된 작업 알림 구성 {#configure-stalled-operation-notifications}
 
-작업이 중단되는 경우(의도적으로 또는 오류로 인해 진행이 중단되는 경우) 관리자나 다른 사용자에게 이메일 알림을 보내 문제를 조사할 수 있습니다.
+작업이 중단되는 경우(의도적으로 또는 오류로 인해 진행이 중단되는 경우) 관리자나 다른 사용자에게 이메일 알림을 보내 해당 사용자가 문제를 조사하도록 할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > Forms Workflow > 서버 설정 > 관리자 알림을 클릭합니다.
 1. 알림 유형에서 중단된 작업을 클릭합니다.
@@ -186,7 +200,7 @@ Forms Workflow가 관리자에게 전송되는 이메일 알림을 생성하는 
 
 ### URL 생성 {#url-generation}
 
-작업 알림의 경우에만 Forms Workflow에는 미리 정의된 URL 구성 두 개가 포함되어 있으며, 해당 구성을 URL 생성 목록에서 알림 템플릿 상자로 끌어다 놓은 후 사용자 정의할 수 있습니다.
+작업 알림의 경우에만 Forms 워크플로에는 미리 정의된 URL 구성 두 개가 포함되어 있으며, 해당 구성을 URL 생성 목록에서 알림 템플릿 상자로 끌어다 놓은 후 사용자 정의할 수 있습니다.
 
 * OpenTask는 미리 알림 및 작업 할당 알림 유형에 사용할 수 있습니다. 이 URL은 Workspace의 작업 링크를 제공하므로 사용자는 이메일 알림을 통해 빠르게 작업에 액세스할 수 있습니다. OpenTask URL을 알림 템플릿 상자로 끌어다 놓으면 해당 URL은 다음과 같은 형식이 됩니다.
 
@@ -268,7 +282,7 @@ Forms Workflow가 관리자에게 전송되는 이메일 알림을 생성하는 
 
 `Please complete task @@taskid@@`
 
-사용자에게 작업 376이 할당되는 경우 사용자는 다음 제목의 이메일 메시지를 받습니다.
+사용자에게 작업 376이 할당되면 다음 제목의 이메일 메시지를 받습니다.
 
 `Please complete task 376`
 
@@ -291,7 +305,7 @@ BAM 구성 설정 페이지에서 BAM을 실행하는 서버에 대한 연결을
 1. 관리 콘솔에서 서비스 > Forms Workflow > 서버 설정 > BAM 구성 설정을 클릭합니다.
 1. BAM 호스트 상자에 BAM을 실행하는 서버 이름을 입력합니다. 기본값은 localhost입니다.
 1. BAM 포트 상자에 BAM을 실행하는 서버에 연결하는 데 사용할 포트를 입력합니다. JBoss의 기본 BAM 포트는 8080, WebLogic은 7001, WebSphere는 9080입니다.
-1. 서버 호스트 상자에 호스트 Forms 서버 이름이나 IP 주소를 입력합니다. 기본값은 localhost입니다.
+1. 서버 호스트 상자에 Forms 서버 호스트의 이름 또는 IP 주소를 입력합니다. 기본값은 localhost입니다.
 1. 서버 포트 상자에 Forms 서버에서 사용하는 포트 번호를 입력합니다.
 1. 사용자 이름 및 암호 상자에 BAM 서버에 액세스하는 데 적합한 사용자 ID와 암호를 입력합니다. 기본 사용자 이름은 CognosNowAdmin이고 기본 암호는 manager입니다.
 1. 저장을 클릭합니다.

@@ -8,13 +8,31 @@ feature: Document Services,APIs & Integrations
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 14%
-
+source-wordcount: '362'
+ht-degree: 16%
 ---
-
 # sendToPrinter API 사용 {#using-the-sendtoprinter-api}
 
 ## 개요 {#overview}
@@ -27,11 +45,11 @@ AEM Forms에서 SendToPrinter 서비스를 사용하여 문서를 프린터로 �
 
   문서를 프린터로 보낼 때 다음 인쇄 프로토콜 중 하나를 지정합니다.
 
-   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**: 출력 서비스에서 CIF(Common Internet File System) 인쇄 프로토콜을 지원합니다.
+  * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+  * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+  * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+  * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+  * **CIFS**: 출력 서비스는 CIFS(Common Internet File System) 인쇄 프로토콜을 지원합니다.
 
 ## SendToPrinter 서비스 사용 {#using-sendtoprinter-service}
 
@@ -57,15 +75,15 @@ AEM Forms에서 SendToPrinter 서비스를 사용하여 문서를 프린터로 �
 | DirectIP | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외 사항입니다. |
 | DirectIP | 유효 | 임의 | 인쇄 작업이 완료되었습니다. |
 | CIFS | 유효 | 비어 있음 | 인쇄 작업이 완료되었습니다. |
-| CIFS | 잘못됨 | 임의 | CIF을 사용하여 인쇄하는 도중 알 수 없는 오류가 발생했습니다. |
+| CIFS | 잘못됨 | 임의 | cifs를 사용하여 인쇄하는 도중 알 수 없는 오류 발생. |
 | CIFS | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외가 발생했습니다. |
 
 ## 인증 지원 {#authentication-support}
 
-인증은 CIF 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에 사용자 이름/암호/도메인을 입력합니다. 다음 단계를 수행하여 AEM Granite CyprtoSupport 서비스를 사용하여 암호를 암호화할 수 있습니다.
+인증은 CIFS 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에 사용자 이름/암호/도메인을 입력합니다. AEM Granite CyprtoSupport 서비스를 사용하여 다음 단계를 수행하여 암호를 암호화할 수 있습니다.
 
-1. https://&lt;server>:&lt;port>/system/console로 이동합니다.
+1. https://<server>:<port>/system/console로 이동합니다.
 
 1. **[!UICONTROL 기본]** > **[!UICONTROL 암호화 지원]**(으)로 이동합니다.
 
-1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**&#x200B;을(를) 클릭합니다.
+1. 일반 텍스트를 입력하고 **[!UICONTROL 보호]**&#x200B;를 클릭합니다.

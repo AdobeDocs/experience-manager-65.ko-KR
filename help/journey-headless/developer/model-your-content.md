@@ -5,7 +5,35 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 78%
@@ -167,7 +195,7 @@ AEM은 콘텐츠 조각을 사용하여 콘텐츠를 Headless 방식으로 애�
 
 모델 내부:
 
-1. **데이터 형식**&#x200B;을(를) 사용하면 개별 특성을 정의할 수 있습니다.
+1. **데이터 형식**을(를) 사용하면 개별 특성을 정의할 수 있습니다.
 예를 들어 교사 이름이 포함된 필드를 **텍스트**&#x200B;로 정의하고 교사의 근무 기간을 **숫자**&#x200B;로 정의합니다.
 1. 데이터 형식 **콘텐츠 참조** 및 **조각 참조**&#x200B;을(를) 사용하면 AEM 내의 다른 콘텐츠와의 관계를 만들 수 있습니다.
 1. **조각 참조** 데이터 유형을 사용하여 (모델 유형에 따라) 콘텐츠 조각을 중첩하여 여러 수준의 구조를 실현할 수 있습니다. 이는 콘텐츠 모델링에 필수적입니다.
@@ -277,5 +305,5 @@ tbc...
   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 콘텐츠 조각 만들기 및 작성. 이 페이지는 다른 세부 섹션으로 이어집니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL에서 모델을 인식하는 방법.
 * [샘플 콘텐츠 조각 구조](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.
-  * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=ko) - GraphQL에 사용되는 Adobe Experience Manager(AEM)에서 콘텐츠 조각을 정의 및 사용하는 방법에 대해 알아봅니다.
+* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 콘텐츠 모델링 및 GraphQL을 포함하여 AEM의 Headless 기능 사용 개요를 제공하는 짧은 비디오 튜토리얼 시리즈.
+  * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - GraphQL에 사용되는 Adobe Experience Manager(AEM)에서 콘텐츠 조각을 정의 및 사용하는 방법에 대해 알아봅니다.

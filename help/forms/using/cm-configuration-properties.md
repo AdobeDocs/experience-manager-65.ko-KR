@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 4%
-
 ---
-
 # 서신 관리 구성 속성 {#correspondence-management-configuration-properties}
 
 이러한 속성을 구성하려면 브라우저에서 URL `https://<server>:<port>/<contextPath>/system/console/configMgr`을(를) 열고 **서신 관리 구성**&#x200B;을 선택합니다.

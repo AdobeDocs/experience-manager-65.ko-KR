@@ -8,13 +8,27 @@ exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3800'
 ht-degree: 98%
-
 ---
-
 # SEO 및 URL 관리 모범 사례{#seo-and-url-management-best-practices}
 
 SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 결과적으로 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다.
@@ -215,7 +229,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 >[!NOTE]
 >
->`sling:alias` 속성은 [&#x200B; 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
+>`sling:alias` 속성은 [ 페이지 속성을 편집할 때 별칭 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 사용하여 설정할 수 있습니다.
 
 #### /etc/map {#etc-map}
 
@@ -395,7 +409,7 @@ AEM Sites에는 페이지 트리 사이를 이동하여 사이트맵을 생성�
 사이트맵의 콘텐츠를 제한하려면 필요한 경우 다음 서비스 인터페이스를 구현할 수 있습니다.
 
 * AEM Sites의 특정 사이트맵 생성기를 통해 생성된 XML 사이트맵에서 페이지를 숨기도록 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)를 구현할 수 있습니다.
-* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=ko)의 특정 사이트맵 생성기를 통해 생성된 XML 사이트맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
+* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)의 특정 사이트맵 생성기를 통해 생성된 XML 사이트맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
 
 기본 구현이 특정 사용 사례에서 작동하지 않거나 확장 지점이 충분히 유연하지 않은 경우 생성된 사이트맵의 콘텐츠를 완전히 제어하도록 사용자 정의 `SitemapGenerator`를 구현하십시오. 다음 예에서는 AEM Sites의 기본 구현 논리를 사용합니다. [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html)를 시작점으로 사용하여 페이지 트리 사이를 이동합니다.
 

@@ -8,13 +8,31 @@ role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 10%
-
 ---
-
 # 데이터 캡처 기능 설치 및 구성{#install-and-configure-data-capture-capabilities}
 
 ## 소개 {#introduction}
@@ -44,18 +62,18 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
 * AEM 인스턴스의 설치 경로에 공백이 포함되어 있지 않습니다.
 * AEM 인스턴스가 실행 중입니다. Windows 사용자의 경우 관리자 모드로 AEM 인스턴스를 설치합니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드의 서버에서 실행되는 AEM의 사본입니다. AEM Forms 데이터 캡처 기능을 실행하려면 두 개 이상의 [AEM 인스턴스(작성자 1명 및 게시 1명)](/help/sites-deploying/deploy.md)가 필요합니다.
 
-   * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **게시**: 인터넷 또는 내부 네트워크를 통해 일반에게 게시된 콘텐츠를 제공하는 AEM 인스턴스입니다.
+  * **작성자**: 콘텐츠를 만들고, 업로드하고, 편집하고, 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 콘텐츠를 실행할 준비가 되면 게시 인스턴스에 복제됩니다.
+  * **게시**: 인터넷 또는 내부 네트워크를 통해 일반에게 게시된 콘텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족됩니다. AEM Forms 추가 기능 패키지를 사용하려면 다음 작업을 수행해야 합니다.
 
-   * Microsoft Windows 기반 설치용 15GB의 임시 공간.
-   * UNIX 기반 설치의 경우 6GB의 임시 공간이 필요합니다.
+  * Microsoft Windows 기반 설치용 15GB의 임시 공간.
+  * UNIX 기반 설치의 경우 6GB의 임시 공간이 필요합니다.
 
 * 작성자 및 게시 인스턴스에 대한 복제 및 역방향 복제가 설정되었습니다. 자세한 내용은 [복제](/help/sites-deploying/replication.md)를 참조하십시오.
 * UNIX 기반 시스템의 경우:
 
-   * 설치 미디어에서 다음 32비트 패키지를 설치합니다.
+  * 설치 미디어에서 다음 32비트 패키지를 설치합니다.
 
 <table>
  <tbody>
@@ -100,7 +118,7 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
 
 * 설치 미디어에서 다음 64비트 패키지를 설치합니다.
 
-   * 리비쿠
+  * 리비쿠
 
 * [Microsoft Visual Studio 2019 32비트 재배포 가능](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)을 설치합니다.
 
@@ -115,7 +133,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.

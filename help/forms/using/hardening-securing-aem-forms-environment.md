@@ -6,13 +6,29 @@ role: Admin,User
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 1%
-
 ---
-
 # OSGi 환경에서 AEM Forms 강화 및 보호 {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 OSGi 서버에서 AEM Forms을 보호하기 위한 권장 사항과 모범 사례를 알아봅니다.
@@ -123,9 +139,9 @@ AEM Forms은 사용자 정의가 용이하며 다양한 환경에서 작업할 �
 
 기본적으로 게시 노드에서 사용할 수 있는 에셋은 모든 사용자가 액세스할 수 있습니다. 모든 자산에 대해 읽기 전용 액세스가 활성화됩니다. 익명 액세스를 활성화해야 합니다. 인증된 사용자에 대해서만 양식 보기 및 제출 액세스를 제한하려는 경우 일반 그룹을 사용하여 인증된 사용자만 게시 노드에서 사용할 수 있는 에셋에 대한 읽기 전용 액세스를 허용하십시오. 다음 위치/디렉토리에는 강화(인증된 사용자의 경우 읽기 전용 액세스)가 필요한 양식 자산이 포함되어 있습니다.
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&ast;
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## 양식 데이터를 안전하게 처리  {#securely-handle-forms-data}
 

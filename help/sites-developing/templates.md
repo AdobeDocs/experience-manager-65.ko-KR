@@ -10,13 +10,22 @@ exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 3%
-
 ---
-
 # 템플릿{#templates}
 
 템플릿은 AEM의 다양한 지점에서 사용됩니다.
@@ -50,9 +59,9 @@ ht-degree: 3%
 
 * 템플릿으로 만든 페이지에 대해 다음 사항을 정의할 수 있도록 도입되었습니다.
 
-   * 구조
-   * 초기 콘텐츠
-   * 콘텐츠 정책
+  * 구조
+  * 초기 콘텐츠
+  * 콘텐츠 정책
 
 * 새 페이지가 만들어지면 페이지와 템플릿 간에 동적 연결이 유지됩니다. 이 연결은 템플릿 구조의 변경 사항이 해당 템플릿으로 만든 페이지에 반영됨을 의미합니다. 초기 콘텐츠에 대한 변경 사항은 반영되지 않습니다.
 * 콘텐츠 정책(템플릿 편집기에서 편집됨)을 사용하여 디자인 속성을 유지합니다(페이지 편집기 내에서 디자인 모드를 사용하지 않음).

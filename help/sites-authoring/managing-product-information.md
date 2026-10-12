@@ -9,13 +9,26 @@ exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 1%
-
 ---
-
 
 # 크리에이티브 프로젝트 및 PIM 통합 {#creative-project-and-pim-integration}
 
@@ -70,7 +83,7 @@ Creative Project는 다양한 프로젝트 요구 사항을 충족하기 위해 
 
 * 촬영 목록 만들기
 * 사진 촬영 업로드
-* 사진 촬영 리터치
+* 사진 촬영 수정
 * 검토 및 승인
 * 프로덕션 작업으로 이동
 
@@ -80,7 +93,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 
 * 촬영 목록 업로드
 * 사진 촬영 업로드
-* 사진 촬영 리터치
+* 사진 촬영 수정
 * 검토 및 승인
 * 프로덕션 작업으로 이동
 
@@ -241,7 +254,7 @@ AEM에서 제품 정보를 사용할 수 없는 경우 **제품 사진 촬영** 
 
 편집자인 경우 이전 작업에서 만들거나 업로드한 **shotlist.csv** 파일에 나열된 제품에 대한 사진을 업로드할 수 있습니다.
 
-업로드할 이미지의 이름은 `<ProductId_>` 파일의 `ProductId`Id **필드에서**&#x200B;을(를) 참조하는 `shotlist.csv`(으)로 시작해야 합니다. 예를 들어 촬영 목록에서 **Id** `397122`을(를) 사용하는 제품의 경우 이름이 `397122_highcontrast.jpg`, `397122_lowlight.png`인 파일을 업로드합니다.
+업로드할 이미지의 이름은 `shotlist.csv` 파일의 **Id** 필드에서 `ProductId`을(를) 참조하는 `<ProductId_>`(으)로 시작해야 합니다. 예를 들어 촬영 목록에서 **Id** `397122`을(를) 사용하는 제품의 경우 이름이 `397122_highcontrast.jpg`, `397122_lowlight.png`인 파일을 업로드합니다.
 
 이미지를 직접 업로드하거나 이미지가 포함된 ZIP 파일을 업로드할 수 있습니다. 이름에 따라 이미지는 사진 촬영 폴더 내의 각 제품 폴더 내에 배치됩니다.
 

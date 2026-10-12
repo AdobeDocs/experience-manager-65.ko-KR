@@ -10,13 +10,28 @@ exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1941'
 ht-degree: 77%
-
 ---
-
 # 활동 관리{#managing-activities}
 
 활동 콘솔을 사용하면 브랜드의 마케팅 [활동](/help/sites-authoring/personalization.md#activities)을 만들고, 구성하고, 관리할 수 있습니다.
@@ -27,7 +42,7 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 &#x200B;](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
+>타겟팅 엔진으로 Adobe Target을 사용하는 경우 [활동의 성능 데이터를 볼 ](#viewing-performance-and-converting-winning-experiences-a-b-test)수도 있습니다. A/B 테스트를 사용하는 경우, [우승자를 전환](#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
 
 활동 콘솔에서 활동은 브랜드별로 구성됩니다. 브랜드 및 폴더를 사용하여 활동 조직을 체계화할 수 있습니다. **개인화**&#x200B;를 탭/클릭하고 **활동**&#x200B;을 탭/클릭하여 활동 콘솔로 이동합니다.
 
@@ -67,7 +82,7 @@ ht-degree: 77%
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. 활동 콘솔에서 **브랜드 만들기**&#x200B;다음&#x200B;**&#x200B;**&#x200B;를 클릭합니다.
+1. 활동 콘솔에서 **브랜드 만들기**&#x200B;다음&#x200B;****&#x200B;를 클릭합니다.
 1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을(를) 클릭합니다.
 1. 활동 콘솔과 오퍼 콘솔에 표시할 브랜드의 제목을 입력합니다. 원할 경우, 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
 1. **만들기**&#x200B;를 클릭합니다. 브랜드가 활동 콘솔에 표시됩니다.
@@ -80,7 +95,7 @@ ht-degree: 77%
 * **타겟팅 엔진:** [AEM](/help/sites-authoring/personalization.md#aem) 또는 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target)(타겟팅된 콘텐츠의 엔진)
 
 * **Target 구성 선택:** (Adobe Target 전용) 이 활동이 Adobe Target에 연결하는 데 사용해야 하는 클라우드 구성입니다. 이 옵션은 타겟팅 엔진에 대해 Adobe Target을 선택한 경우에만 나타납니다.
-* **활동 유형: &#x200B;** 활동 유형 - A/B 테스트 또는 경험 타깃팅
+* **활동 유형: **활동 유형 - A/B 테스트 또는 경험 타깃팅
 * **목표:** (옵션) 활동의 설명입니다.
 * **경험:** 타겟팅이 되는 대상자 이름과 마케팅 세그먼트 간의 매핑입니다.
 * **트래픽 비율:** A/B 테스트가 선택되면 각 경험에 대한 트래픽 크기(%)를 변경할 수 있습니다.
@@ -108,7 +123,7 @@ ht-degree: 77%
 1. 활동에 하나 이상의 경험을 추가합니다. **경험 추가**&#x200B;를 클릭합니다.
 1. AEM 타겟팅 또는 Adobe Target 경험 타겟팅을 사용하는 경우:
 
-   1. **대상 선택**&#x200B;을 클릭하고 경험이 타겟팅하는 세그먼트를 선택합니다.
+   1. **대상 선택**을 클릭하고 경험이 타겟팅하는 세그먼트를 선택합니다.
    1. **경험 추가**&#x200B;를 클릭하고 이름을 입력한 다음 **확인**&#x200B;을 클릭합니다.
 
    1. **다음**&#x200B;을 클릭합니다.

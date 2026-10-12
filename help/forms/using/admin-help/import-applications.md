@@ -9,13 +9,27 @@ exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '852'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '855'
 ht-degree: 100%
-
 ---
-
 # 애플리케이션 가져오기 및 관리{#import-and-manage-applications}
 
 AEM Forms에서 *애플리케이션*&#x200B;은 AEM Forms 솔루션을 구현하는 데 필요한 자산을 저장하는 컨테이너입니다. 자산의 예로는 양식 디자인, 양식 조각, 이미지, 프로세스, DDX 파일, 양식 Guides, HTML 페이지, SWF 파일이 있습니다. 프로젝트 개발 단계에서 워크벤치 사용자는 워크벤치의 애플리케이션 보기에서 직접 애플리케이션을 배포할 수 있습니다. 배포된 애플리케이션은 관리 콘솔의 애플리케이션 관리 페이지에 있는 애플리케이션 탭에 나타납니다.
@@ -66,7 +80,7 @@ AEM Forms에서 *애플리케이션*&#x200B;은 AEM Forms 솔루션을 구현하
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리를 클릭합니다.
 1. 배포할 애플리케이션 옆에 있는 확인란을 선택하고 배포를 클릭합니다.
-1. 표시되는 확인 대화 상자에서 확인을 클릭합니다.
+1. 표시되는 확인 대화 상자에서 [확인]을 클릭합니다.
 
 ## 애플리케이션 배포 취소 {#undeploy-an-application}
 

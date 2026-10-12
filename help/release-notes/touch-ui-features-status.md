@@ -1,17 +1,31 @@
 ---
 title: Touch UI 기능 상태
-description: ' [!DNL Adobe Experience Manager] 터치 사용 UI에 대한 릴리스 노트입니다.'
+description: 터치 사용 UI [!DNL Adobe Experience Manager]에 대한 릴리스 노트입니다.
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 15%
-
+source-wordcount: '1137'
+ht-degree: 14%
 ---
-
 # Touch UI 기능 상태 {#touch-ui-feature-status}
 
 Adobe Experience Manager(AEM) 6.4 이상 [클래식 UI는 더 이상 사용되지 않습니다](../release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 더 이상 개선하지 않으며 사용자는 터치 지원 UI에서 사용할 수 있는 강력한 새 기능을 사용하는 것이 좋습니다.
@@ -137,7 +151,7 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
 | RTE 플러그인: 링크 및 앵커 | 완료 |  |
 | RTE 플러그인: 문자 맵 | 완료 |  |
 | RTE 플러그인: 복사/붙여넣기 | 완료 |  |
-| RTE 플러그인: Microsoft® Word에서 붙여넣기 | 완료 |  |
+| RTE 플러그인: ® Word에서 붙여넣기 | 완료 |  |
 | RTE 플러그인: 찾기 및 바꾸기 | 완료 |  |
 | RTE 플러그인: 텍스트 형식(굵게, ...) | 완료 |  |
 | RTE 플러그인: 하위 및 위 첨자 | 완료 |  |

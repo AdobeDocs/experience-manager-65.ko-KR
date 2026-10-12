@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 6%
-
 ---
-
 # AEM Forms 키보드 단축키 {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
 이 문서에서는 적응형 양식 편집기, 테마 편집기, 콘텐츠 브라우저 및 Windows 및 Macintosh 운영 체제용 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 
@@ -29,22 +45,22 @@ ht-degree: 6%
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에서 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&Ast; |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&Ast; |
-| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&ast; |
+| 미리보기 와 현재 선택한 모드 (예: 편집 및 스캐폴딩) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
-| 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&ast; |
-| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&ast; |
+| 선택한 구성 요소 복사 | Ctrl-C | Ctrl-C&amp;ast; |
+| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치에 붙여넣을 때까지 사라지지 않습니다. | Ctrl-X | Ctrl-X&amp;ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
-| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&ast; |
+| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;ast; |
 | 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스(&amp;A); |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&Ast; |
-| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+B | Ctrl+B&amp;ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시합니다 | Ctrl+I | Ctrl+I&amp;Ast; |
+| 미리보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 표시 | Ctrl+U | Ctrl+U&amp;Ast; |
 
 >[!NOTE]
 >
->&#39;&ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 >[!NOTE]
 >
@@ -60,13 +76,13 @@ ht-degree: 6%
 |---|---|---|
 | 테마에서 선택한 구성 요소의 속성 브라우저를 엽니다 | Alt+Enter | Alt+Return |
 | 테마에서 선택한 구성 요소의 속성 브라우저를 닫습니다. | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&Ast; |
-| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&ast; |
-| 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&ast; |
+| 마지막 변경 내용 실행 취소 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다. | Ctrl+Y | Ctrl+Y&amp;ast; |
+| 선택한 구성 요소의 속성 브라우저에서 변경 내용을 테마에 저장 | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->&#39;&ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
+>&#39;&amp;ast;&#39;로 표시된 바로 가기는 macOS의 Ctrl 키와 Command 키에서 모두 작동합니다.
 
 ## 컨텐츠 브라우저  {#contentbrowser}
 

@@ -10,13 +10,20 @@ exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 # 모양 변경(HBS) {#alter-the-appearance-hbs}
 
 기본 댓글 시스템을 참조하는 resourceSuperType과 사용자 지정 모델/보기가 등록된 응용 프로그램 디렉터리(/apps)의 사용자 지정 댓글 시스템에 대한 구성 요소가 준비되었으므로 구현을 편집할 수 있습니다.
@@ -33,23 +40,23 @@ ht-degree: 0%
 
 * [/apps/custom/components/comments/comment/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs) 열기
 
-   * 댓글 게시물에 대한 아바타가 포함된 태그를 주석 처리합니다(~ 21행).
+  * 댓글 게시물에 대한 아바타가 포함된 태그를 주석 처리합니다(~ 21행).
 
-     ```
-       <!--
-        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+       -->
+    ```
 
 * [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs) 열기
 
-   * 다음 댓글 항목의 아바타가 포함된 태그를 주석 처리합니다(~ 44행).
+  * 다음 댓글 항목의 아바타가 포함된 태그를 주석 처리합니다(~ 44행).
 
-     ```
-       <!--
-        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+       -->
+    ```
 
 * **모두 저장** 선택
 
@@ -61,15 +68,15 @@ ht-degree: 0%
 
 * 메인 메뉴에서
 
-   * **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**&#x200B;를 선택합니다.
-   * **[!UICONTROL 트리 활성화]**&#x200B;를 선택하십시오.
-   * `Start Path`을(를) `/apps/custom`(으)로 설정합니다.
-   * **[!UICONTROL 수정된 항목만]**&#x200B;을 선택 취소합니다.
-   * **[!UICONTROL 활성화]** 단추를 선택하십시오.
+  * **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**&#x200B;를 선택합니다.
+  * **[!UICONTROL 트리 활성화]**&#x200B;를 선택하십시오.
+  * `Start Path`을(를) `/apps/custom`(으)로 설정합니다.
+  * **[!UICONTROL 수정된 항목만]**&#x200B;을 선택 취소합니다.
+  * **[!UICONTROL 활성화]** 단추를 선택하십시오.
 
 ### 게시된 샘플 페이지에서 수정된 댓글 보기 {#view-modified-comment-on-published-sample-page}
 
-[게시 인스턴스에서 계속 &#x200B;](/help/communities/extend-sample-page.md#publish-sample-page) 환경을 사용하면서 동일한 사용자로 로그인되어 있습니다. 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 내용을 볼 수 있습니다.
+[게시 인스턴스에서 계속 ](/help/communities/extend-sample-page.md#publish-sample-page) 환경을 사용하면서 동일한 사용자로 로그인되어 있습니다. 이제 게시 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 내용을 볼 수 있습니다.
 
 ![수정된 콘텐츠 보기](assets/view-modified-content.png)
 

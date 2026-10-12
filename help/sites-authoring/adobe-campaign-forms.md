@@ -9,13 +9,30 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1295'
 ht-degree: 1%
-
 ---
-
 # AEM에서 Adobe Campaign 양식 작성 {#creating-adobe-campaign-forms-in-aem}
 
 AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
@@ -52,7 +69,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
 >[!NOTE]
 >
->Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr** 노드에 있는 **acMapping:content** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
+>Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr:content** 노드에 있는 **acMapping** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
 >
 
 1. AEM의 Sites에서 페이지를 만들려는 위치로 이동합니다.
@@ -90,7 +107,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. **고급** 탭을 클릭하고 양식 유형(**구독, 구독 취소,** 또는 **프로필 저장**)을 선택한 다음 **확인을 클릭합니다.** 양식당 하나의 형식만 사용할 수 있습니다.
+1. **고급** 탭을 클릭하고 **구독, 구독 취소,** 또는 **프로필 저장**&#x200B;과 같은 양식 유형을 선택한 다음 **확인**&#x200B;을 클릭합니다. 양식당 한 가지 유형만 사용할 수 있습니다.
 
    * **Adobe Campaign: 프로필 저장**: Adobe Campaign에서 받는 사람을 만들거나 업데이트할 수 있습니다(기본값).
    * **Adobe Campaign: 서비스에 가입**: Adobe Campaign에서 받는 사람의 구독을 관리할 수 있습니다.

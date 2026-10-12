@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1576'
 ht-degree: 83%
-
 ---
-
 # AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 샘플 콘텐츠 및 쿼리를 탐색하여 GraphQL과 AEM을 함께 사용하여 headless로 콘텐츠를 제공하는 방법을 알아봅니다.
@@ -225,7 +237,7 @@ GraphQL 쿼리를 시작하고 AEM 콘텐츠 조각에서 쿼리가 작동하는
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-이 샘플 쿼리는 `name` 스키마에 있는 모든 항목의 `city`을(를) 반환하는 간단한 쿼리입니다.
+이 샘플 쿼리는 `city` 스키마에 있는 모든 항목의 `name`을(를) 반환하는 간단한 쿼리입니다.
 
 **샘플 쿼리**
 
@@ -316,7 +328,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시 {#sample-cities-named-variation}
 
-`berlin_centre` Berlin에 대해 &quot;Berlin Center&quot;(`city`)라는 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+`city` Berlin에 대해 &quot;Berlin Center&quot;(`berlin_centre`)라는 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -539,7 +551,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람 {#sample-all-persons-jobs-smith}
 
-이 샘플 쿼리는 이름이 `persons` 또는 `Jobs`인 모든 `Smith`을(를) 필터링합니다.
+이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -593,7 +605,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람 {#sample-all-persons-not-jobs}
 
-이 샘플 쿼리는 이름이 `persons` 또는 `Jobs`인 모든 `Smith`을(를) 필터링합니다.
+이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -1245,11 +1257,11 @@ query {
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 해당 경로 내의 모든 컨텐츠 형식은 다음과 같습니다.
-      * HTML
-      * Markdown
-      * 일반 텍스트
-      * JSON
+  * 해당 경로 내의 모든 컨텐츠 형식은 다음과 같습니다.
+    * HTML
+    * Markdown
+    * 일반 텍스트
+    * JSON
 
 **샘플 쿼리**
 
@@ -1275,7 +1287,7 @@ query {
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 단일 콘텐츠 조각
-   * 기본 콘텐츠 조각 모델의 세부 정보
+  * 기본 콘텐츠 조각 모델의 세부 정보
 
 **샘플 쿼리**
 
@@ -1299,7 +1311,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 해당 경로 내에서 참조된(중첩된) 조각의 경로 및 작성자
+  * 해당 경로 내에서 참조된(중첩된) 조각의 경로 및 작성자
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 특정 모델 유형 `Article`의 다른 조각에 대한 조각 참조 포함
+  * 특정 모델 유형 `Article`의 다른 조각에 대한 조각 참조 포함
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 특정 모델 유형 `Article` 및 `Adventure`의 다른 조각에 대한 조각 참조 포함
+  * 특정 모델 유형 `Article` 및 `Adventure`의 다른 조각에 대한 조각 참조 포함
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ query {
 이들 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 다른 조각에 대한 콘텐츠 참조 포함
+  * 다른 조각에 대한 콘텐츠 참조 포함
 
 #### 프리페치된 참조가 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `bookmark` 유형의 단일 콘텐츠 조각
-   * 그 안에 있는 RTE 인라인 참조
+  * 그 안에 있는 RTE 인라인 참조
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
-   * 해당 경로 내에서 변형과 관련된 데이터: `variation1`
+  * 해당 경로 내에서 변형과 관련된 데이터: `variation1`
 
 **샘플 쿼리**
 
@@ -1656,7 +1668,7 @@ query {
 샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->).
 
 * [회사](#model-company)
--> [사람](#model-person)
+-> [명](#model-person)
     -> [상](#model-award)
 
 * [도시](#model-city)

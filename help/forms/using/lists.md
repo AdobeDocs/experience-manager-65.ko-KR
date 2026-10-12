@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6847'
+source-wordcount: '6946'
 ht-degree: 0%
-
 ---
-
 # 문서 조각{#document-fragments}
 
 ## 문서 조각 {#document-fragments-1}
@@ -202,10 +215,10 @@ ht-degree: 0%
 * 텍스트 모듈에서 적절한 데이터 사전 바인딩을 사용합니다.
 * 텍스트 자산을 변경할 때 텍스트 편집기를 사용할 때 다음 규칙이 적용됩니다.
 
-   * **변수 추가:** 허용됨
-   * **변수 제거:** 허용됨
-   * **속성 업데이트:** 허용됨
-   * **데이터 사전 변경:** 데이터 사전 요소가 사용되지 않을 때까지 허용됩니다. 업데이트 시 데이터 사전을 변경할 수 없습니다.
+  * **변수 추가:** 허용됨
+  * **변수 제거:** 허용됨
+  * **속성 업데이트:** 허용됨
+  * **데이터 사전 변경:** 데이터 사전 요소가 사용되지 않을 때까지 허용됩니다. 업데이트 시 데이터 사전을 변경할 수 없습니다.
 
 ## 목록 {#list}
 
@@ -283,8 +296,8 @@ ht-degree: 0%
 * 적절한 데이터 사전 바인딩 사용
 * 목록 편집기를 사용하여 목록을 변경할 때 다음 규칙이 적용됩니다.
 
-   * 속성 업데이트: 허용됨
-   * **데이터 사전 변경:** 데이터 사전을 사용하는 항목이 데이터 사전에 연결되어 있지 않을 때까지 허용됩니다. 업데이트 시 데이터 사전을 변경할 수 없습니다.
+  * 속성 업데이트: 허용됨
+  * **데이터 사전 변경:** 데이터 사전을 사용하는 항목이 데이터 사전에 연결되어 있지 않을 때까지 허용됩니다. 업데이트 시 데이터 사전을 변경할 수 없습니다.
 
 ## 조건 {#conditions}
 
@@ -340,10 +353,10 @@ ht-degree: 0%
 * 적절한 데이터 사전 바인딩 사용
 * 조건 편집기를 사용하여 조건을 편집할 때 다음 규칙이 적용됩니다.
 
-   * **변수 추가:** 허용됨
-   * **변수 제거:** 허용됨
-   * **속성 업데이트:** 허용됨
-   * **데이터 사전 변경:** 데이터 사전 요소가 사용되지 않을 때까지 허용됩니다.
+  * **변수 추가:** 허용됨
+  * **변수 제거:** 허용됨
+  * **속성 업데이트:** 허용됨
+  * **데이터 사전 변경:** 데이터 사전 요소가 사용되지 않을 때까지 허용됩니다.
 
 ## 레이아웃 단편 {#layoutfragments}
 
@@ -375,18 +388,18 @@ ht-degree: 0%
 
 * 자리 표시자 테이블의 경우 조각을 만들 때 다음 속성을 사용자 지정할 수 있습니다.
 
-   * 행 수
-   * 열 개수
-   * 각 열의 머리글 및 바닥글
-   * 각 열의 유형(대상 영역/필드)
-   * 각 열의 너비 비율
+  * 행 수
+  * 열 개수
+  * 각 열의 머리글 및 바닥글
+  * 각 열의 유형(대상 영역/필드)
+  * 각 열의 너비 비율
 
 * 자리 표시자가 아닌 표의 경우 다음 속성을 사용자 지정할 수 있습니다.
 
-   * 행 수
-   * 열 개수
-   * 추가 열의 머리글 및 바닥글
-   * 각 열의 너비 비율
+  * 행 수
+  * 열 개수
+  * 추가 열의 머리글 및 바닥글
+  * 각 열의 너비 비율
 
 편지에 조각을 중첩할 수 있습니다. 이는 조각 내에 조각을 추가할 수 있음을 의미합니다. 서신 관리 솔루션은 편지 내에 최대 4개의 중첩 수준을 지원합니다. **편지&#x200B;*>*조각&#x200B;*>*조각&#x200B;*>*조각&#x200B;*>*조각.**
 
@@ -509,7 +522,7 @@ DD에는 Designer_name, Designer_address 및 Designer_gender의 세 가지 기�
    또는 이 단계와 함께 첨부된 정적 및 동적 XDP를 사용합니다.
 
    레이아웃 단편 작업에 대한 자세한 내용은 [레이아웃 단편](#layoutfragments)을 참조하세요.
-레이아웃 디자인에 대한 자세한 내용은 [Designer 도움말](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)을 참조하십시오.
+   레이아웃 디자인에 대한 자세한 내용은 [Designer 도움말](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)을 참조하세요.
 
    [파일 가져오기](assets/static.xdp.zip)
 

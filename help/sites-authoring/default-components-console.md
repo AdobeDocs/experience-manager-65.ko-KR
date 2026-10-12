@@ -5,13 +5,26 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '283'
 ht-degree: 57%
-
 ---
-
 # 구성 요소 콘솔{#components-console}
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
@@ -40,14 +53,14 @@ ht-degree: 57%
 
   [속성] 탭에서 다음 작업을 수행할 수 있습니다.
 
-   * 구성 요소의 일반 속성 확인
-   * 구성 요소에 대해 [아이콘 또는 약어를 정의한 방법](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)을 확인하세요.
+  * 구성 요소의 일반 속성 확인
+  * 구성 요소에 대해 [아이콘 또는 약어를 정의한 방법](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)을 확인하세요.
 
-      * 아이콘의 소스를 클릭하면 해당 구성 요소로 이동합니다.
+    * 아이콘의 소스를 클릭하면 해당 구성 요소로 이동합니다.
 
-   * 구성 요소에 대한 **리소스 유형** 및 **리소스 슈퍼 유형**(정의된 경우)을 확인합니다.
+  * 구성 요소에 대한 **리소스 유형** 및 **리소스 슈퍼 유형**(정의된 경우)을 확인합니다.
 
-      * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
+    * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
 
   >[!NOTE]
   >

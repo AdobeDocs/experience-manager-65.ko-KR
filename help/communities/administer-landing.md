@@ -1,6 +1,6 @@
 ---
 title: 커뮤니티 사이트
-description: 기본 기능에 이미 익숙한 관리자를 위한 AEM(Adobe Experience Manager) Communities의 기본 사항에 대해 알아봅니다.
+description: 기본 기능에 이미 익숙한 관리자를 위한 Adobe Experience Manager(AEM) 커뮤니티의 기본 사항에 대해 알아봅니다.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -9,13 +9,20 @@ role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 4%
-
+source-wordcount: '453'
+ht-degree: 5%
 ---
-
 # 커뮤니티 사이트 {#communities-sites}
 
 이 섹션은 AEM Communities을 관리하고 AEM Communities 기능에 익숙하다고 가정하는 사용자를 위한 것입니다.
@@ -33,22 +40,22 @@ ht-degree: 4%
 
 * 커뮤니티 [콘솔](consoles.md)
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [그룹(하위 커뮤니티)](groups.md)
+    * [그룹(하위 커뮤니티)](groups.md)
 
-   * [관리](moderation.md)
-   * [구성원 및 그룹 관리](members.md)
-   * [보고서](reports.md)
+  * [관리](moderation.md)
+  * [구성원 및 그룹 관리](members.md)
+  * [보고서](reports.md)
 
 * 커뮤니티 [*도구*](tools.md):
 
-   * [사이트 템플릿](sites.md)
-   * [그룹 템플릿](tools-groups.md)
-   * [커뮤니티 기능](functions.md)
-   * [스토리지 구성](srp-config.md)
-   * [구성 요소 가이드](components-guide.md)
-   * [배지](badges.md)
+  * [사이트 템플릿](sites.md)
+  * [그룹 템플릿](tools-groups.md)
+  * [커뮤니티 기능](functions.md)
+  * [스토리지 구성](srp-config.md)
+  * [구성 요소 가이드](components-guide.md)
+  * [배지](badges.md)
 
 
 ### 사용자 생성 콘텐츠 {#user-generated-content}
@@ -68,7 +75,7 @@ AEM Communities의 주요 기능은 로그인한 사이트 방문자(멤버)가 
 * [터널 서비스](deploy-communities.md#tunnel-service-on-author): 작성자 환경에서 게시측 구성원 및 구성원 그룹에 액세스할 수 있도록 허용합니다.
 * [구성원 및 그룹 콘솔](members.md): 작성자 환경에서 게시측 구성원 및 구성원 그룹을 만들고 관리할 수 있습니다.
 * [사용자 동기화](sync.md): 여러 게시 인스턴스 간에 구성원 및 구성원 그룹을 동기화합니다.
-* [Facebook 및 Twitter으로 소셜 로그인](social-login.md): 사이트 방문자가 Facebook 또는 Twitter 자격 증명을 사용하여 커뮤니티 회원이 될 수 있는 기능입니다.
+* [Facebook 및 Twitter에 소셜 로그인](social-login.md): 사이트 방문자가 Facebook 또는 Twitter 자격 증명을 사용하여 커뮤니티 회원이 될 수 있습니다.
 * [채점 및 배지](implementing-scoring.md): 배지를 할당하여 구성원의 역할을 식별하고 구성원이 커뮤니티에 참여하여 배지를 획득할 수 있습니다.
 * [알림](notifications.md): 구성원이 팔로우하는 활동에 대한 알림을 받는 기능입니다.
 * [구독](subscriptions.md): 구성원이 외부 전자 메일을 사용하여 커뮤니티와 상호 작용할 수 있는 기능입니다.
@@ -80,7 +87,7 @@ AEM Communities의 주요 기능은 로그인한 사이트 방문자(멤버)가 
 
 커뮤니티 콘텐츠 작업 특성은 배포 구조에 영향을 줍니다.
 
-* [커뮤니티에 대해 권장되는 토폴로지](topologies.md)
+* [커뮤니티에 권장되는 토폴로지](topologies.md)
 
 AEM 플랫폼에 최신 Communities 릴리스를 설치하는 것이 중요합니다.
 

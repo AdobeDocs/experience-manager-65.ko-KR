@@ -9,13 +9,25 @@ feature: Security
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '752'
 ht-degree: 2%
-
 ---
-
 # Single Sign On {#single-sign-on}
 
 SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 암호 등)을 한 번 제공한 후 여러 시스템에 액세스할 수 있습니다. 별도의 시스템(신뢰할 수 있는 인증자라고도 함)이 인증을 수행하고 Experience Manager에 사용자 자격 증명을 제공합니다. Experience Manager은 사용자에 대한 액세스 권한을 확인하고 적용합니다(즉, 사용자가 액세스할 수 있는 리소스를 결정합니다).
@@ -80,12 +92,13 @@ AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/s
 
 >[!NOTE]
 >
->® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
+>® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
 >* `disp_iis.ini`
 >* IIS
 >
->`disp_iis.ini`에서 다음을 설정합니다.>(자세한 내용은 [® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko#microsoft-internet-information-server) 참조)
+>`disp_iis.ini` 집합:
+>자세한 내용은 [® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server)를 참조하십시오.
 >
 >* `servervariables=1`(IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달함)
 >* `replaceauthorization=1`(&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꾸기)
@@ -148,7 +161,7 @@ Transfer-Encoding: chunked
 이는 다음 요청에도 작동합니다.
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-또는 다음 curl 명령을 사용하여 `TestHeader` 헤더를 `admin:`(으)로 보낼 수 있습니다
+또는 다음 curl 명령을 사용하여 `TestHeader` 헤더를 로 보낼 수 있습니다. `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]

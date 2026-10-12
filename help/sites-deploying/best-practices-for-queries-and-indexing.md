@@ -9,13 +9,22 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4700'
+source-wordcount: '4702'
 ht-degree: 6%
-
 ---
-
 # 쿼리 및 색인화 모범 사례{#best-practices-for-queries-and-indexing}
 
 AEM 6에서 Oak으로 전환하는 것과 함께 쿼리 및 색인을 관리하는 방식이 크게 변경되었습니다. Jackrabbit 2에서는 모든 콘텐츠를 기본적으로 색인화하여 자유롭게 쿼리할 수 있었습니다. Oak에서 `oak:index` 노드 아래에 인덱스를 수동으로 만들어야 합니다. 색인 없이 쿼리를 실행할 수 있지만 큰 데이터 세트의 경우 쿼리가 느리게 실행되거나 중단됩니다.
@@ -128,13 +137,13 @@ JMX 콘솔에 로그인되면 **Lucene 인덱스 통계**&#x200B;를 검색하�
 
 * 큰 노드 트래버스 또는 큰 힙 메모리 소비를 트리거하는 쿼리에 대해 로그를 모니터링합니다.&quot;
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * 쿼리를 최적화하여 트래버스된 노드 수 감소
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * 쿼리를 최적화하여 트래버스된 노드 수 감소
 
 * 대용량 힙 메모리 소비를 트리거하는 쿼리에 대한 로그 모니터링 :
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * 쿼리를 최적화하여 힙 메모리 소모 감소
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * 쿼리를 최적화하여 힙 메모리 소모 감소
 
 AEM 6.0 - 6.2 버전의 경우, 큰 쿼리가 환경을 오버로드할 수 없도록 AEM 시작 스크립트의 JVM 매개변수를 통해 노드 트래버스에 대한 임계값을 조정할 수 있습니다.
 
@@ -248,59 +257,59 @@ Oak 색인을 다시 색인화하는 데 허용되는 유일한 조건은 Oak �
 
 * 적용 대상/경우:
 
-   * 모든 Oak 버전
-   * [속성 인덱스](https://jackrabbit.apache.org/oak/docs/query/property-index.html)만
+  * 모든 Oak 버전
+  * [속성 인덱스](https://jackrabbit.apache.org/oak/docs/query/property-index.html)만
 
 * 증상:
 
-   * 속성 인덱스의 정의 업데이트 이전에 존재하는 노드가 결과에서 누락됨
+  * 속성 인덱스의 정의 업데이트 이전에 존재하는 노드가 결과에서 누락됨
 
 * 확인 방법:
 
-   * 업데이트된 인덱스 정의를 배포하기 전에 누락된 노드가 생성/수정되었는지 확인합니다.
-   * 인덱스의 수정 시간과 비교하여 누락된 노드의 `jcr:created` 또는 `jcr:lastModified` 속성을 확인합니다.
+  * 업데이트된 인덱스 정의를 배포하기 전에 누락된 노드가 생성/수정되었는지 확인합니다.
+  * 인덱스의 수정 시간과 비교하여 누락된 노드의 `jcr:created` 또는 `jcr:lastModified` 속성을 확인합니다.
 
 * 해결 방법:
 
-   * Lucene 인덱스를 [다시 인덱싱](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index)
-   * 또는 누락된 노드에 대한 터치(양성 쓰기 작업 수행)
+  * Lucene 인덱스를 [다시 인덱싱](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index)
+  * 또는 누락된 노드에 대한 터치(양성 쓰기 작업 수행)
 
-      * 수동 터치 또는 사용자 지정 코드 필요
-      * 누락된 노드 집합을 알아야 함
-      * 노드의 모든 속성을 변경해야 합니다.
+    * 수동 터치 또는 사용자 지정 코드 필요
+    * 누락된 노드 집합을 알아야 함
+    * 노드의 모든 속성을 변경해야 합니다.
 
 #### Lucene 색인 정의 변경 {#lucene-index-definition-change}
 
 * 적용 대상/경우:
 
-   * 모든 Oak 버전
-   * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
+  * 모든 Oak 버전
+  * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
 
 * 증상:
 
-   * Lucene 인덱스에 예상 결과를 포함하지 않음
-   * 쿼리 결과가 색인 정의의 예상 동작을 반영하지 않습니다.
-   * 쿼리 계획이 색인 정의를 기반으로 예상 출력을 보고하지 않음
+  * Lucene 인덱스에 예상 결과를 포함하지 않음
+  * 쿼리 결과가 색인 정의의 예상 동작을 반영하지 않습니다.
+  * 쿼리 계획이 색인 정의를 기반으로 예상 출력을 보고하지 않음
 
 * 확인 방법:
 
-   * Lucene 인덱스 통계 JMX Mbean(LuceneIndex), 메서드 `diffStoredIndexDefinition`을(를) 사용하여 인덱스 정의가 변경되었는지 확인하십시오.
+  * Lucene 인덱스 통계 JMX Mbean(LuceneIndex), 메서드 `diffStoredIndexDefinition`을(를) 사용하여 인덱스 정의가 변경되었는지 확인하십시오.
 
 * 해결 방법:
 
-   * 1.6 이전 Oak 버전:
+  * 1.6 이전 Oak 버전:
 
-      * Lucene 인덱스를 [다시 인덱싱](#how-to-re-index)
+    * Lucene 인덱스를 [다시 인덱싱](#how-to-re-index)
 
-   * Oak 버전 1.6+
+  * Oak 버전 1.6+
 
-      * 기존 콘텐츠가 변경 사항의 영향을 받지 않는 경우 새로 고침만 필요합니다
+    * 기존 콘텐츠가 변경 사항의 영향을 받지 않는 경우 새로 고침만 필요합니다
 
-         * [oak:queryIndexDefinition]@refresh=true를 설정하여 lucene 인덱스를 [새로 고침](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition)
+      * [oak:queryIndexDefinition]@refresh=true를 설정하여 lucene 인덱스를 [새로 고침](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition)
 
-      * Lucene 인덱스를 [다시 인덱싱](#how-to-re-index)합니다.
+    * Lucene 인덱스를 [다시 인덱싱](#how-to-re-index)합니다.
 
-         * 참고: 마지막 양호한 리인덱싱 (또는 초기 인덱싱)의 인덱스 상태는 새 리인덱싱이 트리거될 때까지 사용됩니다
+      * 참고: 마지막 양호한 리인덱싱 (또는 초기 인덱싱)의 인덱스 상태는 새 리인덱싱이 트리거될 때까지 사용됩니다
 
 ### 오류 및 예외 상황 {#erring-and-exceptional-situations}
 
@@ -317,62 +326,62 @@ AEM에서 아래 설명된 기준과 일치하지 않는 문제가 발생하는 
 
 * 적용 대상/경우:
 
-   * 모든 Oak 버전
-   * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
+  * 모든 Oak 버전
+  * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
 
 * 증상:
 
-   * Lucene 인덱스에 예상 결과를 포함하지 않음
+  * Lucene 인덱스에 예상 결과를 포함하지 않음
 
 * 확인 방법:
 
-   * 오류 로그 파일에 Lucene 인덱스의 바이너리가 누락되었다는 예외가 있습니다.
+  * 오류 로그 파일에 Lucene 인덱스의 바이너리가 누락되었다는 예외가 있습니다.
 
 * 해결 방법:
 
-   * 트래버스 저장소 검사를 수행합니다. 예를 들면 다음과 같습니다.
+  * 트래버스 저장소 검사를 수행합니다. 예를 들면 다음과 같습니다.
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+    [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-     저장소를 트래버스하면 다른 바이너리(lucene 파일 제외)가 누락되었는지 여부를 결정합니다
+    저장소를 트래버스하면 다른 바이너리(lucene 파일 제외)가 누락되었는지 여부를 결정합니다
 
-   * Lucene 인덱스 이외의 바이너리가 누락된 경우 백업에서 복원
-   * 그렇지 않으면 [다시 인덱싱](#how-to-re-index) *모두* Lucene 인덱스
-   * 메모:
+  * Lucene 인덱스 이외의 바이너리가 누락된 경우 백업에서 복원
+  * 그렇지 않으면 [다시 인덱싱](#how-to-re-index) *모두* Lucene 인덱스
+  * 메모:
 
-     이 조건은 모든 바이너리(예: 에셋 바이너리)가 누락될 수 있는 잘못 구성된 데이터 저장소를 나타냅니다.
+    이 조건은 모든 바이너리(예: 에셋 바이너리)가 누락될 수 있는 잘못 구성된 데이터 저장소를 나타냅니다.
 
-     이 경우 저장소의 마지막 알려진 양호한 버전으로 복원하여 누락된 모든 바이너리를 복구합니다.
+    이 경우 저장소의 마지막 알려진 양호한 버전으로 복원하여 누락된 모든 바이너리를 복구합니다.
 
 #### Lucene 인덱스 바이너리가 손상되었습니다. {#lucene-index-binary-is-corrupt}
 
 * 적용 대상/경우:
 
-   * 모든 Oak 버전
-   * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
+  * 모든 Oak 버전
+  * [Lucene 인덱스](https://jackrabbit.apache.org/oak/docs/query/lucene.html)만
 
 * 증상:
 
-   * Lucene 인덱스에 예상 결과를 포함하지 않음
+  * Lucene 인덱스에 예상 결과를 포함하지 않음
 
 * 확인 방법:
 
-   * `AsyncIndexUpdate`(5초마다)이(가) 실패하고 error.log에 예외가 발생합니다.
+  * `AsyncIndexUpdate`(5초마다)이(가) 실패하고 error.log에 예외가 발생합니다.
 
-     `...a Lucene index file is corrupt...`
+    `...a Lucene index file is corrupt...`
 
 * 해결 방법:
 
-   * Lucene 인덱스의 로컬 복사본 제거
+  * Lucene 인덱스의 로컬 복사본 제거
 
-      1. AEM 중지
-      1. `crx-quickstart/repository/index`에서 Lucene 인덱스의 로컬 복사본을 삭제합니다.
-      1. AEM 다시 시작
+    1. AEM 중지
+    1. `crx-quickstart/repository/index`에서 Lucene 인덱스의 로컬 복사본을 삭제합니다.
+    1. AEM 다시 시작
 
-   * 이렇게 해도 문제가 해결되지 않고 `AsyncIndexUpdate` 예외가 지속되는 경우:
+  * 이렇게 해도 문제가 해결되지 않고 `AsyncIndexUpdate` 예외가 지속되는 경우:
 
-      1. 오류 인덱스를 [다시 인덱싱](#how-to-re-index)
-      1. [Adobe 지원](https://helpx.adobe.com/kr/support.html) 티켓도 제출하세요.
+    1. 오류 인덱스를 [다시 인덱싱](#how-to-re-index)
+    1. [Adobe 지원](https://helpx.adobe.com/support.html) 티켓도 제출하세요.
 
 ### 색인 재지정 방법 {#how-to-re-index}
 
@@ -385,7 +394,7 @@ AEM에서 아래 설명된 기준과 일치하지 않는 문제가 발생하는 
 * [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing)을(를) 사용하여 속성 인덱스를 다시 인덱싱하십시오.
 * 속성 인덱스에서 async-reindex 속성을 true로 설정합니다.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 * **PropertyIndexAsyncReindex** MBean;
 
@@ -398,7 +407,7 @@ AEM에서 아래 설명된 기준과 일치하지 않는 문제가 발생하는 
 * [oak-run.jar를 사용하여 Lucene 속성 인덱스를 다시 인덱싱](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing)합니다.
 * lucene 속성 인덱스에서 async-reindex 속성을 true로 설정합니다.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
@@ -440,7 +449,7 @@ AEM의 정상적인 작동 시(예: 웹 UI를 통해 Assets을 업로드하거�
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)버전 1.7.4+
 * 인덱싱 AEM 인스턴스에서 액세스할 수 있는 추출된 텍스트를 저장하는 파일 시스템 폴더/공유
 
-   * 텍스트 사전 추출 OSGi 구성에는 추출된 텍스트 파일에 대한 파일 시스템 경로가 필요하므로 AEM 인스턴스(로컬 드라이브 또는 파일 공유 마운트)에서 직접 액세스할 수 있어야 합니다
+  * 텍스트 사전 추출 OSGi 구성에는 추출된 텍스트 파일에 대한 파일 시스템 경로가 필요하므로 AEM 인스턴스(로컬 드라이브 또는 파일 공유 마운트)에서 직접 액세스할 수 있어야 합니다
 
 #### 텍스트 사전 추출을 수행하는 방법 {#how-to-perform-text-pre-extraction}
 

@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 1%
-
 ---
-
 # 오프로딩 작업{#offloading-jobs}
 
 ## 소개 {#introduction}
@@ -208,7 +217,7 @@ Experience Manager에는 여러 JobConsumer 구현이 설치됩니다. 이러한
 | 작업 항목 | 서비스 PID | 설명 |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling과 함께 설치됩니다. 이전 버전과의 호환성을 위해 OSGi 이벤트 관리자가 생성하는 작업을 처리합니다. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +235,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 | 웹 콘솔의 속성 이름 | OSGi ID | 설명 |
 |---|---|---|
-| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. 기본값인 &ast;를 사용하면 모든 항목이 등록된 TopicConsumer 서비스로 전송됩니다. |
+| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. 기본값인 &amp;ast;를 사용하면 모든 항목이 등록된 TopicConsumer 서비스로 전송됩니다. |
 | 주제 차단 목록 | job.consumermanager.blacklist | 로컬 JobManager 서비스가 처리하지 않는 항목 목록입니다. |
 
 ## 오프로드용 복제 에이전트 생성 {#creating-replication-agents-for-offloading}

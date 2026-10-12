@@ -1,5 +1,5 @@
 ---
-title: AEM Forms에서 Single Sign-On 활성화
+title: AEM Forms에서 SSO(Single Sign-On) 활성화
 description: HTTP 헤더 및 SPNEGO를 사용하여 SSO(Single Sign-On)를 활성화하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,30 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1740'
 ht-degree: 3%
-
 ---
-
-# AEM Forms에서 Single Sign-On 활성화{#enabling-single-sign-on-in-aem-forms}
+# AEM Forms에서 SSO(Single Sign-On) 활성화{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
@@ -84,13 +100,13 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. ([HTTP 헤�
    * LDAP를 인증 공급자로 추가합니다.
    * Kerberos를 인증 공급자로 추가합니다. Kerberos의 새 인증 또는 인증 편집 페이지에 다음 정보를 입력합니다.
 
-      * **인증 공급자:** Kerberos
-      * **DNS IP:** AEM Forms가 실행되는 서버의 DNS IP 주소입니다. 명령줄에서 `ipconfig/all`을(를) 실행하여 이 IP 주소를 확인할 수 있습니다.
-      * **KDC 호스트:** 인증에 사용되는 Active Directory 서버의 정규화된 호스트 이름 또는 IP 주소
-      * **서비스 사용자:** KtPass 도구에 전달된 SPN(서비스 사용자 이름)입니다. 앞에서 사용한 예제에서 서비스 사용자는 `HTTP/lcserver.um.lc.com`입니다.
-      * Active Directory의 **서비스 영역:** 도메인 이름입니다. 앞에서 사용한 예제에서 도메인 이름은 `UM.LC.COM.`입니다.
-      * **서비스 암호:** 서비스 사용자의 암호입니다. 앞에서 사용한 예제에서 서비스 암호는 `password`입니다.
-      * **SPNEGO 활성화:** SSO(Single Sign-On)를 위해 SPNEGO 사용을 활성화합니다. 이 옵션을 선택합니다.
+     * **인증 공급자:** Kerberos
+     * **DNS IP:** AEM Forms가 실행되는 서버의 DNS IP 주소입니다. 명령줄에서 `ipconfig/all`을(를) 실행하여 이 IP 주소를 확인할 수 있습니다.
+     * **KDC 호스트:** 인증에 사용되는 Active Directory 서버의 정규화된 호스트 이름 또는 IP 주소
+     * **서비스 사용자:** KtPass 도구에 전달된 SPN(서비스 사용자 이름)입니다. 앞에서 사용한 예제에서 서비스 사용자는 `HTTP/lcserver.um.lc.com`입니다.
+     * Active Directory의 **서비스 영역:** 도메인 이름입니다. 앞에서 사용한 예제에서 도메인 이름은 `UM.LC.COM.`입니다.
+     * **서비스 암호:** 서비스 사용자의 암호입니다. 앞에서 사용한 예제에서 서비스 암호는 `password`입니다.
+     * **SPNEGO 활성화:** SSO(Single Sign-On)를 위해 SPNEGO 사용을 활성화합니다. 이 옵션을 선택합니다.
 
 1. SPNEGO 클라이언트 브라우저 설정을 구성합니다. ([SPNEGO 클라이언트 브라우저 설정 구성](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings)을 참조하십시오.)
 
@@ -155,7 +171,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 SPNEGO 기반 인증이 작동하려면 클라이언트 컴퓨터가 사용자 계정이 만들어진 도메인의 일부여야 합니다. 또한 SPNEGO 기반 인증을 허용하도록 클라이언트 브라우저를 구성해야 합니다. 또한 SPNEGO 기반 인증이 필요한 사이트는 신뢰할 수 있는 사이트여야 합니다.
 
-https://lcserver:8080과(와) 같은 컴퓨터 이름을 사용하여 서버에 액세스하는 경우 Internet Explorer에 설정이 필요하지 않습니다. 점이 포함되지 않은 URL(".")을 입력하면 Internet Explorer는 사이트를 로컬 인트라넷 사이트로 취급합니다. 사이트에 정규화된 이름을 사용하는 경우 사이트를 신뢰할 수 있는 사이트로 추가해야 합니다.
+https://lcserver:8080과 같은 컴퓨터 이름을 사용하여 서버에 액세스하는 경우 Internet Explorer에 대한 설정이 필요하지 않습니다. 점이 포함되지 않은 URL(".")을 입력하면 Internet Explorer는 사이트를 로컬 인트라넷 사이트로 취급합니다. 사이트에 정규화된 이름을 사용하는 경우 사이트를 신뢰할 수 있는 사이트로 추가해야 합니다.
 
 **Internet Explorer 6.x 구성**
 
@@ -189,7 +205,7 @@ https://lcserver:8080과(와) 같은 컴퓨터 이름을 사용하여 서버에 
 1. LDAP와 같은 도메인 구성을 선택하고 클릭합니다. 디렉토리에서 생성된 모든 사용자와 그룹을 찾습니다. 필요한 경우 새 사용자 또는 그룹을 만들 수 있습니다.
    ![도메인 관리 페이지](/help/forms/using/assets/domain-mgmt-page.png)
 1. 인증을 누릅니다. 새 페이지에서 LDAP와 같은 인증 공급자를 선택합니다.
-1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**&#x200B;를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
+1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
    ![ldap 동기화](/help/forms/using/assets/sync-ldap.png)
 1. 사용자 관리로 이동하고 사용자 및 그룹을 클릭합니다.
 1. 아래 그림과 같이 사용자 또는 그룹을 이름으로 검색합니다.

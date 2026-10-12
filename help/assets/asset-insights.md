@@ -7,18 +7,34 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 17%
-
 ---
-
 # Assets Insights {#asset-insights}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 Assets 인사이트 기능을 사용하면 서드파티 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다. 이는 성능 및 인기에 대한 통찰력을 도출하는 데 도움이 됩니다.
@@ -27,7 +43,7 @@ Assets 인사이트 기능을 사용하면 서드파티 웹 사이트, 마케팅
 
 [!DNL Assets] Insights에서 웹 사이트의 이미지에 대한 사용 통계를 캡처하려면 웹 사이트 코드에 이미지에 대한 포함 코드를 포함해야 합니다.
 
-Assets Insights에 자산 사용 통계를 표시하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오도록 기능을 구성합니다. 자세한 내용은 [Assets Insights 구성](/help/assets/configure-asset-insights.md)을 참조하십시오. 온-프레미스 설치에서 이 기능을 사용하려면 별도로 [!DNL Adobe Analytics] 라이선스를 구입하세요. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 번들로 제공되는 [!DNL Analytics] 라이선스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하세요.
+Assets Insights에 자산 사용 통계를 표시하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오도록 기능을 구성합니다. 자세한 내용은 [Assets Insights 구성](/help/assets/configure-asset-insights.md)을 참조하십시오. 온-프레미스 설치에서 이 기능을 사용하려면 별도로 [!DNL Adobe Analytics] 라이선스를 구입하세요. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 번들로 제공되는 [!DNL Analytics] 라이선스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하세요.
 
 >[!NOTE]
 >
@@ -58,7 +74,7 @@ Assets Insights에 자산 사용 통계를 표시하려면 먼저 Adobe Analytic
    >
    >Assets Insights 기능은 일반적으로 Adobe Analytics에서 솔루션 데이터를 정기적으로 가져오므로 솔루션 섹션에는 최신 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 Analytics Insights에서 Assets 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
 
-1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph.
+1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. 클릭수와 노출수를 포함한 세부 정보가 그래프의 추세선으로 표시됩니다.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 

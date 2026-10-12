@@ -9,13 +9,27 @@ exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 100%
-
 ---
-
 # 아카이브 가져오기 및 관리 {#import-and-manage-archives}
 
 >[!NOTE]
@@ -60,7 +74,7 @@ ht-degree: 100%
 
      *현재 호출자는 인증을 받아야 함*&#x200B;이 표시되면 서비스 호출자는 인증을 받아야 하고 해당 호출자의 사용자 주체는 서비스를 호출할 권한이 있어야 합니다. 그렇지 않으면 호출 시도가 거부됩니다. 인증을 받을 필요가 없도록 하려면 인증되지 않은 호출자 허용을 클릭합니다.
 
-     *호출자는 인증을 받을 필요가 없음*&#x200B;이 표시되면 서비스 호출자는 인증을 받을 필요가 없습니다. 인증 확인이 없으므로 서비스 호출은 항상 성공합니다. 인증을 요구하려면 호출자에게 인증 요구를 클릭합니다.
+     *호출자는 인증을 받을 필요가 없음*&#x200B;이 표시되면 서비스 호출자는 인증을 받을 필요가 없습니다. 권한 부여 확인이 없으므로 서비스 호출은 항상 성공합니다. 인증을 요구하려면 호출자에게 인증 요구를 클릭합니다.
 
    * **다음 항목으로 실행:** 서비스가 호출된 후 사용되는 런타임 ID를 지정합니다. 이 옵션을 변경하려면 변경을 클릭합니다. 다음 선택 사항 중 하나를 선택합니다.
 
@@ -92,9 +106,9 @@ ht-degree: 100%
 
      **READ_PERM:** 서비스를 확인합니다.
 
-     완료됨을 클릭하여 보안 프로필에 주체를 추가합니다.
+     [완료]를 클릭하여 보안 프로필에 주체를 추가합니다.
 
-1. 완료됨을 클릭하여 구성을 완료합니다.
+1. [완료]를 클릭하여 구성을 완료합니다.
 
 ## 아카이브 파일의 일부인 AEM Forms를 구성합니다. {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 

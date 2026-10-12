@@ -1,19 +1,26 @@
 ---
 title: 성능 최적화
-
 description: 성능을 최적화하기 위해 AEM의 특정 측면을 구성하는 방법에 대해 알아봅니다.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 14%
@@ -26,7 +33,7 @@ ht-degree: 14%
 >
 >성능 문제 해결 및 해결에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md)를 참조하십시오.
 >
->또한 [성능 조정 팁](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17466)에 대한 기술 자료 문서를 검토할 수 있습니다.
+>또한 [성능 조정 팁](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)에 대한 기술 자료 문서를 검토할 수 있습니다.
 
 중요한 문제 중 하나는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다. 이 값은 요청마다 다르지만, 평균 목표 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 가능한 것으로 입증되면 웹 사이트의 성능을 모니터링하고 잠재적인 문제의 발생을 나타내는 데 사용할 수 있습니다.
 
@@ -43,7 +50,7 @@ ht-degree: 14%
 >[!NOTE]
 >
 >* 성능 최적화를 구성한 후 [힘든 날](/help/sites-developing/tough-day.md)의 절차에 따라 부하가 큰 환경을 테스트하십시오.
->* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* [성능 조정 팁도 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
@@ -205,7 +212,7 @@ AEM(및/또는 기본 저장소)의 특정 측면을 성능을 최적화하도�
 
 >[!NOTE]
 >
->[성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=ko)를 참조하십시오.
+>[성능 최적화](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)를 참조하십시오.
 
 ### 색인 검색 {#search-indexing}
 
@@ -235,7 +242,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 #### 저장소에서의 구성 {#configuration-in-the-repo}
 
-sling:OsgiConfig 노드를 사용하여 [&#x200B; 서비스를 구성하는 경우](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
+sling:OsgiConfig 노드를 사용하여 [ 서비스를 구성하는 경우](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
 이름이 `queue.maxparallel`인 속성을 구성하십시오.
 
@@ -432,7 +439,7 @@ Dispatcher 및 로드 밸런서와 함께 프로덕션 게시 환경의 복제�
 
 | 오류 시나리오 | 오류 유형 | 아니요. / 사용자 | Tx/sec(예상) | Tx/sec(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &ast;&ast;&ast;만 검색됩니다. |
+| 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;만 검색됩니다. |
 |   | 정지어 | 20 | 2 |  | 정지어를 찾고 있습니다. |
 |   | 빈 문자열 | 10 | 1 |  | 빈 문자열을 검색하는 중입니다. |
 |   | 특수 문자 | 10 | 1 |  | 특수 문자를 검색하는 중입니다. |
@@ -479,7 +486,7 @@ Dispatcher 및 로드 밸런서와 함께 프로덕션 게시 환경의 복제�
 
 ## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)은(는) Adobe의 캐싱 및/또는 부하 분산 도구입니다. Dispatcher을 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)은(는) Adobe의 캐싱 및/또는 부하 분산 도구입니다. Dispatcher을 사용할 때는 캐시 성능을 위해 웹 사이트를 최적화하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -495,7 +502,7 @@ Dispatcher에서는 웹 사이트에서 이러한 메커니즘을 활용하는 �
 >
 >일반적으로, 많은 캐싱 전략은 좋은 URL을 선택하고 이 추가 데이터에 의존하지 않는 것을 포함합니다.
 >
->Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐시할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)을 참조하십시오.
+>Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐시할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)을 참조하십시오.
 >
 
 ### Dispatcher 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
@@ -531,7 +538,7 @@ Dispatcher 버전 4.1.11에서는 응답 헤더를 캐시할 수 있습니다. D
 
 #### URL 매개변수 방지 {#avoid-url-parameters}
 
-가능하면 캐시하려는 페이지의 URL 매개변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache)되지 않은 경우).
+가능하면 캐시하려는 페이지의 URL 매개변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)되지 않은 경우).
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -604,7 +611,7 @@ www.myCompany.com/news/main.large.html
 * 반대로 10개의 서로 다른 시작 페이지를 선택할 수 있는 경우 각 시작 페이지를 캐시할 수 있으므로 성능이 향상됩니다.
 
 >[!TIP]
->Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=ko) 및 [보호된 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=ko#dispatcher-tips-and-tricks)의 해당 섹션을 참조하십시오.
+>Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 및 [보호된 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)의 해당 섹션을 참조하십시오.
 
 사용자 이름을 제목 표시줄에 입력하여 각 페이지를 개인화하는 경우(예: ) 성능에 영향을 줍니다.
 
@@ -615,11 +622,11 @@ www.myCompany.com/news/main.large.html
 
 >[!TIP]
 >
->혼합 공개 콘텐츠와 제한된 콘텐츠를 처리하려면 [Sling Dynamic Include 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=ko)을 참조하십시오.
+>혼합 공개 콘텐츠와 제한된 콘텐츠를 처리하려면 [Sling Dynamic Include 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)을 참조하십시오.
 
 #### 고정 연결 {#sticky-connections}
 
-[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#the-benefits-of-load-balancing)은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
+[고정 연결](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing)은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관하려면 폴더 하나를 정의합니다. 다른 문서는 여기에 넣지 마십시오. 이 시나리오는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
 
 #### MIME 유형 {#mime-types}
 

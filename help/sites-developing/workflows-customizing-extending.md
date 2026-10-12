@@ -9,13 +9,22 @@ exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3628'
 ht-degree: 2%
-
 ---
-
 # 워크플로 기능 확장{#extending-workflow-functionality}
 
 이 항목에서는 워크플로우에 대한 사용자 지정 단계 구성 요소를 개발한 다음 워크플로우와 프로그래밍 방식으로 상호 작용하는 방법을 설명합니다.
@@ -63,8 +72,8 @@ ht-degree: 2%
 
   다음 탭이 있는 대화 상자:
 
-   * **일반**: 제목 및 설명을 편집할 수 있습니다.
-   * **고급**: 전자 메일 알림 속성을 편집할 수 있습니다.
+  * **일반**: 제목 및 설명을 편집할 수 있습니다.
+  * **고급**: 전자 메일 알림 속성을 편집할 수 있습니다.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +113,9 @@ MetaDataMap 개체에는 `Workflow`, `WorkflowData` 및 `WorkItem` 개체의 세
 * 유형: `String`
 * 값: 기본 구성 요소로 확인되는 다음 경로 중 하나:
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### 단계 인스턴스에 대한 기본 제목 및 설명 지정 {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ MetaDataMap 개체에는 `Workflow`, `WorkflowData` 및 `WorkItem` 개체의 세
 
 * 이름: `PROCESS_AUTO_ADVANCE`
 
-   * 유형: `Boolean`
-   * 값:
+  * 유형: `Boolean`
+  * 값:
 
-      * `true`(으)로 설정하면 워크플로가 해당 단계를 실행하고 계속됩니다. 기본값이며 권장됩니다.
-      * `false`이면 워크플로가 실행되고 중지됩니다. 이 작업에는 추가 처리가 필요하므로 `true`을(를) 사용하는 것이 좋습니다.
+    * `true`(으)로 설정하면 워크플로가 해당 단계를 실행하고 계속됩니다. 기본값이며 권장됩니다.
+    * `false`이면 워크플로가 실행되고 중지됩니다. 이 작업에는 추가 처리가 필요하므로 `true`을(를) 사용하는 것이 좋습니다.
 
 * 이름: `DO_NOTIFY`
 
-   * 유형: `Boolean`
-   * 값: 사용자 참여 단계를 위해 이메일 알림을 전송해야 하는지 여부를 나타냅니다(메일 서버가 올바르게 구성되었다고 가정).
+  * 유형: `Boolean`
+  * 값: 사용자 참여 단계를 위해 이메일 알림을 전송해야 하는지 여부를 나타냅니다(메일 서버가 올바르게 구성되었다고 가정).
 
 ## 데이터 유지 및 액세스 {#persisting-and-accessing-data}
 
@@ -838,12 +847,12 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
      다음 중 하나여야 합니다.
 
-      * 협업 워크플로
-      * DAM 워크플로
-      * 양식 워크플로
-      * 프로젝트
-      * WCM 워크플로
-      * 워크플로
+     * 협업 워크플로
+     * DAM 워크플로
+     * 양식 워크플로
+     * 프로젝트
+     * WCM 워크플로
+     * 워크플로
 
    ![wf-35](assets/wf-35.png)
 

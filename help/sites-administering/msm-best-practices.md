@@ -6,13 +6,25 @@ feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 37%
-
 ---
-
 # MSM 모범 사례{#msm-best-practices}
 
 ## 일반 {#general}
@@ -39,7 +51,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >[참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference)를 사용하여 하나의 페이지나 단락을 다시 사용할 수도 있습니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하고 동기화된 콘텐츠 및 시기를 세부적으로 제어할 수 있습니다.
->* 이제 기초 구성 요소에 대해 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 사용하는 것이 좋습니다.
+>* 이제 기초 구성 요소에 대해 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 사용하는 것이 좋습니다.
 >
 
 ## Live Copy 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}

@@ -8,18 +8,31 @@ feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2186'
 ht-degree: 3%
-
 ---
-
 # 데이터 소스 구성{#configure-data-sources}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -131,10 +144,10 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
    * Swagger Source 드롭다운에서 URL 또는 파일 을 선택한 다음 그에 따라 Swagger 정의 파일에 Swagger URL 을 지정하거나 로컬 파일 시스템에서 Swagger 파일을 업로드합니다.
    * Swagger Source 입력을 기반으로 다음 필드는 값으로 미리 채워집니다.
 
-      * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 Swagger 소스에 정의된 구성표에 따라 다릅니다.
-      * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
-      * 기본 경로: 모든 API 경로의 URL 접두어. 선택 필드입니다.\
-        필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
+     * 체계: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 구성표 유형의 수는 Swagger 소스에 정의된 구성표에 따라 다릅니다.
+     * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
+     * 기본 경로: 모든 API 경로의 URL 접두어. 선택 필드입니다.\
+       필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
 
    * 인증 유형(없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, API 키, 사용자 지정 인증 또는 상호 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
@@ -181,7 +194,7 @@ SOAP 기반 웹 서비스는 [WSDL(Web Services Description Language) 사양](ht
    * 인증 유형(없음, OAuth2.0([인증 코드](https://oauth.net/2/grant-types/authorization-code/), [클라이언트 자격 증명](https://oauth.net/2/grant-types/client-credentials/)), 기본 인증, 사용자 지정 인증, X509 토큰 또는 상호 인증)을 선택하여 SOAP 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
      인증 유형으로 **[!UICONTROL X509 토큰]**&#x200B;을(를) 선택한 경우 X509 인증서를 구성하십시오. 자세한 내용은 [인증서 설정](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)을 참조하세요.
-**[!UICONTROL 키 별칭]** 필드에 X509 인증서에 대한 KeyStore 별칭을 지정하십시오. 인증 요청이 유효한 상태로 유지될 때까지 **[!UICONTROL Time To Live]** 필드에 시간을 초 단위로 지정합니다. 메시지 본문 또는 타임스탬프 헤더 또는 둘 다에 서명하려면 선택합니다(선택적).
+     **[!UICONTROL 키 별칭]** 필드에 X509 인증서에 대한 KeyStore 별칭을 지정하십시오. 인증 요청이 유효한 상태로 유지될 때까지 **[!UICONTROL Time To Live]** 필드에 시간을 초 단위로 지정합니다. 메시지 본문 또는 타임스탬프 헤더 또는 둘 다에 서명하려면 선택합니다(선택적).
 
      인증 유형으로 **[!UICONTROL 상호 인증]**&#x200B;을 선택한 경우 [RESTful 및 SOAP 웹 서비스에 대한 인증서 기반 상호 인증](#mutual-authentication)을 참조하십시오.
 
@@ -194,7 +207,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서
 >[!NOTE]
 >
 >양식 데이터 모델이 [OData 버전 4](https://www.odata.org/documentation/)을(를) 지원합니다.
->온라인 또는 온-프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 안내서는 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
+>온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 지침은 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
 
 1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 

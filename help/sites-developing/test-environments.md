@@ -1,5 +1,5 @@
 ---
-title: 어떤 테스트 환경이 필요합니까?
+title: 필요한 테스트 환경은?
 description: 테스트의 일부로 여러 환경을 고려해야 합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 05f7a513-5ee7-4870-a691-4a0602e0cbb2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
-# 어떤 테스트 환경이 필요합니까?{#which-test-environments-will-be-needed}
+# 필요한 테스트 환경은?{#which-test-environments-will-be-needed}
 
 테스트할 구성을 정의하려면 다음 사항을 고려해야 합니다.
 
@@ -30,7 +39,7 @@ ht-degree: 0%
 
 **작성자** - 이 인스턴스를 사용하면 작성자가 콘텐츠를 입력하고 게시할 수 있습니다.
 
-**Publish** - 이 인스턴스는 방문자가 액세스할 수 있도록 게시된 양식으로 웹 사이트를 제공합니다.
+**게시** - 이 인스턴스는 방문자가 액세스할 수 있도록 게시된 양식으로 웹 사이트를 제공합니다.
 
 Dispatcher에서 테스트했습니다.
 

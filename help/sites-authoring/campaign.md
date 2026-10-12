@@ -9,13 +9,30 @@ exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2794'
 ht-degree: 2%
-
 ---
-
 # Adobe Campaign Classic 및 Adobe Campaign Standard 작업{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 AEM에서 이메일 콘텐츠를 만들고 Adobe Campaign 이메일에서 처리할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
@@ -260,7 +277,7 @@ Adobe Campaign Standard을 사용하면 AEM에서 만든 컨텐츠를 다음과 
 
 AEM에서 만든 페이지를 Adobe Campaign의 이메일과 연결하려면 다음을 수행하십시오.
 
-1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
+1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

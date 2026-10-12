@@ -1,18 +1,29 @@
 ---
 title: 네트워크 고려 사항 및 요구 사항
-description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
+description: '[!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1018'
 ht-degree: 1%
-
 ---
-
 # [!DNL Assets] 네트워크 고려 사항 {#assets-network-considerations}
 
 [!DNL Adobe Experience Manager Assets]을(를) 이해하는 것만큼 네트워크를 이해하는 것도 중요합니다. 네트워크는 업로드, 다운로드 및 사용자 경험에 영향을 줄 수 있습니다. 네트워크 토폴로지 다이어그램은 네트워크 성능 및 사용자 경험을 개선하기 위해 수정해야 하는 네트워크 내 초크 지점 및 하위 최적화 영역을 식별하는 데 도움이 됩니다.

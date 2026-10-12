@@ -9,13 +9,27 @@ exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 100%
-
 ---
-
 # AEM Forms 배포 모니터링 {#monitoring-aem-forms-deployments}
 
 시스템 수준과 내부 수준 모두에서 AEM Forms 배포를 모니터링할 수 있습니다. HP OpenView, IBM® Tivoli, CA UniCenter와 같은 전문 관리 도구와 *JConsole*&#x200B;이라는 서드파티 JMX 모니터를 사용하여 Java™ 활동을 구체적으로 모니터링할 수 있습니다. 모니터링 전략을 구현하면 AEM Forms 배포의 가용성, 안정성 및 성능이 향상됩니다.
@@ -69,7 +83,7 @@ AEM Forms는 탐색 및 통계 정보를 제공하는 두 개의 등록된 MBean
 
 ### MBean 트리 및 작업 통계 {#mbean-tree-operation-statistics}
 
-JMX 콘솔(JConsole)을 사용하면 OperationStatistic MBean의 통계를 사용할 수 있습니다. 이러한 통계는 MBean의 속성이며 다음과 같은 계층 트리에서 탐색할 수 있습니다.
+JMX 콘솔(JConsole)을 사용하면 OperationStatistic MBean의 통계를 확인할 수 있습니다. 이러한 통계는 MBean의 속성이며 다음과 같은 계층 트리에서 탐색할 수 있습니다.
 
 **MBean 트리**
 
@@ -107,7 +121,7 @@ JMX 모니터링을 활성화하려면 일반적으로 애플리케이션 서버
 
 **JBoss® 4.0.3/4.2.0 - JVM 시작 구성**
 
-JConsole에서 MBean을 보려면 JBoss Application Server의 JVM 시작 매개변수를 구성합니다. JBoss는 run.bat/sh 파일에서 시작되어야 합니다.
+JConsole에서 MBean을 보려면 JBoss 애플리케이션 서버의 JVM 시작 매개변수를 구성합니다. JBoss는 run.bat/sh 파일에서 시작되어야 합니다.
 
 1. InstallJBoss/bin에 있는 run.bat 파일을 편집합니다.
 1. JAVA_OPTS 줄을 찾아 다음을 추가합니다.

@@ -8,26 +8,44 @@ exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
-
+source-wordcount: '847'
+ht-degree: 2%
 ---
-
 # 사용자의 받은 편지함 항목 공유 및 액세스 요청 {#share-and-request-access}
 
-대기열은 사용자의 AEM 받은 편지함에 있는 항목 목록입니다. 사용자에게 할당된 항목 또는 사용자가 구성원으로 있는 그룹에 공유된 항목일 수 있습니다. 받은 편지함에 액세스하여 받은 편지함 항목을 보고 작업을 수행할 수 있습니다. 예를 들어 항목을 다른 사용자와 공유할 수 있습니다.
+큐는 사용자의 AEM 받은 편지함에 있는 항목 목록입니다. 사용자에게 할당된 항목 또는 사용자가 구성원으로 있는 그룹에 공유된 항목일 수 있습니다. 받은 편지함에 액세스하여 받은 편지함 항목을 보고 작업을 수행할 수 있습니다. 예를 들어 항목을 다른 사용자와 공유할 수 있습니다.
 
 받은 편지함 항목을 다른 사용자와 공유할 수도 있습니다. 다른 사용자가 받은 편지함 항목에 액세스할 수 있게 되면 해당 사용자는 공유 항목을 요청하고 적절한 조치를 취할 수 있습니다. 마찬가지로 다른 사용자의 받은 편지함 항목에 대한 액세스를 요청할 수 있습니다.
 
-## 전제 조건 {#pre-requisites}
+## 사전 요구 사항 {#pre-requisites}
 
 로그인한 사용자는 `workflow-users` 그룹의 구성원이어야 합니다. 사용자는 로그인한 사용자가 읽기 권한이 있는 사용자에게만 또는 공개 프로필을 활성화한 사용자에게만 항목을 공유하거나 항목에 대한 액세스를 요청할 수 있습니다.
 
 ## 받은 편지함의 단일 또는 모든 항목을 다른 사용자와 공유
 
-AEM 받은 편지함을 사용하면 받은 편지함의 단일 또는 모든 항목을 다른 사용자와 공유할 수 있습니다.
+AEM 받은 편지함 을 사용하면 받은 편지함에 있는 단일 또는 모든 항목을 다른 사용자와 공유할 수 있습니다.
 
 ### 모든 받은 편지함 항목 공유
 

@@ -7,18 +7,34 @@ role: User
 hide: true
 exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 2%
-
 ---
-
 # 자산 선택기 {#asset-selector}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 이전 버전에서 [자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=ko)을(를) [자산 선택기](https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/asset-picker.html)이라고 했습니다.
+>[!DNL Experience Manager] 이전 버전에서 [자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)을(를) [자산 선택기](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)이라고 했습니다.
 
 에셋 선택기를 사용하여 [!DNL Adobe Experience Manager] Assets에서 에셋을 검색 및 필터링할 수 있습니다. 에셋 선택기를 사용하여 선택한 에셋의 메타데이터를 가져올 수도 있습니다. 자산 선택기 인터페이스를 사용자 지정하려면 지원되는 요청 매개 변수와 함께 자산 선택기 인터페이스를 시작할 수 있습니다. 이러한 매개 변수는 특정 시나리오에 대한 에셋 선택기의 컨텍스트를 설정합니다.
 
@@ -63,4 +79,4 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 >[!MORELIKETHIS]
 >
->* AEM as a Cloud Service의 [Micro-Frontend 자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=ko)
+>* AEM as a Cloud Service의 [Micro-Frontend 자산 선택기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

@@ -5,13 +5,25 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 42%
-
 ---
-
 # 번역 프로젝트 관리{#managing-translation-projects}
 
 번역을 위한 콘텐츠를 준비한 다음에는 누락된 언어 사본을 만들어 언어 구조를 완성하고 번역 프로젝트를 만들어야 합니다.
@@ -43,8 +55,8 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 * **언어 사본에 페이지가 포함되지 않음:** AEM은 이러한 상황을 초기 번역으로 취급합니다. 페이지는 즉시 언어 사본에 복사되며 프로젝트에 포함됩니다. 번역된 페이지를 AEM으로 가져오면 AEM은 이를 언어 사본에 바로 복사합니다.
 * **언어 사본에 페이지가 이미 포함되어 있음:** AEM은 이러한 상황을 업데이트된 번역으로 취급합니다. 론치가 생성되며, 페이지 사본이 론치에 추가되고 프로젝트에 포함됩니다. 론치를 사용하면 업데이트된 번역을 언어 사본에 전송하기 전에 검토할 수 있습니다.
 
-   * 번역된 페이지를 AEM으로 가져오면 AEM은 이를 론치의 페이지에 덮어씁니다.
-   * 번역된 페이지는 론치가 홍보될 때만 언어 사본을 덮어씁니다.
+  * 번역된 페이지를 AEM으로 가져오면 AEM은 이를 론치의 페이지에 덮어씁니다.
+  * 번역된 페이지는 론치가 홍보될 때만 언어 사본을 덮어씁니다.
 
 예를 들어 /content/geometrixx/fr 언어 루트는 /content/geometrixx/en 마스터 언어의 프랑스어 번역용으로 만들어집니다. 프랑스어 사본에는 다른 페이지가 없습니다.
 
@@ -377,7 +389,7 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 1. **사이트** 콘솔에서 비교할 언어 사본으로 이동합니다.
 1. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 엽니다.
 1. **사본** 제목에서 **언어 사본**&#x200B;을 선택합니다.
-1. 특정 언어 사본을 선택하면 기본에 비교&#x200B;**또는 &#x200B;** 이전 버전에 비교**해당하는 경우)를 클릭할 수 있습니다.
+1. 특정 언어 사본을 선택하면 기본에 비교**또는 **이전 버전에 비교**해당하는 경우)를 클릭할 수 있습니다.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 

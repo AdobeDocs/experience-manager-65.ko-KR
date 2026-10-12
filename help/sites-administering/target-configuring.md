@@ -9,13 +9,22 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Adobe Target과의 통합 수동 구성 {#manually-configuring-the-integration-with-adobe-target}
 
 마법사를 사용할 때 수행한 옵트인 마법사 구성을 수정하거나 마법사를 사용하지 않고 수동으로 Adobe Target과 통합할 수 있습니다.
@@ -26,7 +35,7 @@ ht-degree: 28%
 
 A4T Analytics Cloud 구성을 구성하여 콘텐츠를 타깃팅할 때 Adobe Target을 보고 소스로 사용하도록 Adobe Target을 구성할 수도 있습니다.
 
-클라우드 구성 및 프레임워크를 찾으려면 **Cloud Service** > **배포** > **클라우드**&#x200B;를 통해 **도구**(으)로 이동합니다. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+클라우드 구성 및 프레임워크를 찾으려면 **도구** > **배포** > **클라우드**&#x200B;를 통해 **클라우드 서비스**&#x200B;로 이동합니다. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 
 ### 프로비저닝된 타겟 구성 속성 {#provisioned-target-configuration-properties}
@@ -40,14 +49,14 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 * **Adobe Target에서 세그먼트 동기화:**&#x200B;이(가) 선택되었습니다.
 
 * **클라이언트 라이브러리:** mbox.js.
-* **DTM을 사용하여 클라이언트 라이브러리를 전달합니다.**&#x200B;이(가) 선택되지 않았습니다. [DTM](/help/sites-administering/dtm.md) 또는 다른 태그 관리 시스템을 사용하여 mbox.js 또는 AT.js 파일을 호스팅하는 경우 이 옵션을 선택합니다. Adobe은 AEM보다 DTM을 사용하여 라이브러리를 전달할 것을 권장합니다.
+* **DTM을 사용하여 클라이언트 라이브러리를 전달합니다.**&#x200B;이(가) 선택되지 않았습니다. [DTM](/help/sites-administering/dtm.md) 또는 다른 태그 관리 시스템을 사용하여 mbox.js 또는 AT.js 파일을 호스팅하는 경우 이 옵션을 선택합니다. Adobe에서는 AEM보다 DTM을 사용하여 라이브러리를 전달할 것을 권장합니다.
 
 * **사용자 지정 mbox.js:** 기본 mbox.js 파일이 사용되도록 지정되지 않았습니다. 필요에 따라 사용할 사용자 지정 mbox.js 파일을 지정합니다. mbox.js를 선택한 경우에만 나타납니다.
 * **사용자 지정 AT.js:** 기본 AT.js 파일이 사용되도록 지정되지 않았습니다. 필요에 따라 사용할 사용자 지정 AT.js 파일을 지정합니다. AT.js를 선택한 경우에만 나타납니다.
 
 >[!NOTE]
 >
->AEM 6.3에서는 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 Adobe Target용 새 구현 라이브러리인 Target 라이브러리 파일 [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)을(를) 선택할 수 있습니다.
+>AEM 6.3에서는 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target 구현 라이브러리인 Target 라이브러리 파일 [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)를 선택할 수 있습니다.
 >
 >AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
 >
@@ -56,7 +65,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
 >* AT.js에는 target.js에 포함된 구성 요소가 포함되어 있으므로 더 이상 target을 호출할 필요가 없습니다.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ko -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### 프로비저닝된 타겟 프레임워크 속성 {#provisioned-target-framework-properties}
 
@@ -76,7 +85,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 
 이렇게 하려면 Adobe Target 클라우드 구성을 연결할 A4T 클라우드 구성을 지정합니다.
 
-1. **AEM 로고** > **Cloud Service** > **배포** > **Cloud Service**&#x200B;을 통해 **도구**(으)로 이동합니다.
+1. **AEM 로고** > **도구** > **배포** > **클라우드 서비스**&#x200B;를 통해 **클라우드 서비스**(으)로 이동합니다.
 1. **Adobe Target** 섹션에서 **지금 구성**&#x200B;을 클릭합니다.
 1. Adobe Target 구성에 다시 연결합니다.
 1. **A4T Analytics Cloud 구성** 드롭다운 메뉴에서 프레임워크를 선택합니다.
@@ -108,7 +117,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
->Target 라이브러리 파일 [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)은(는) 일반적인 웹 구현과 단일 페이지 애플리케이션 둘 다에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
+>Target 라이브러리 파일인 [AT.js](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다. mbox.js 대신 AT.js를 클라이언트 라이브러리로 사용하는 것이 좋습니다.
 >
 >AT.js는 mbox.js 라이브러리에 비해 몇 가지 개선점을 제공합니다.
 >
@@ -119,7 +128,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭합니다.
 >
 >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=ko -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Target 클라우드 구성 만들기 {#creating-a-target-cloud-configuration}
 
@@ -131,9 +140,9 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 다음 절차를 통해 AEM에서 Target 클라우드 구성을 만드십시오.
 
-1. **AEM 로고** > **Cloud Service** > **Cloud Service** > **기존 Cloud Service**&#x200B;을 통해 **도구**(으)로 이동합니다. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. **AEM 로고** > **도구** > **클라우드 서비스** > **레거시 클라우드 서비스**&#x200B;를 통해 **클라우드 서비스**(으)로 이동합니다. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   **Cloud Service** 개요 페이지가 열립니다.
+   **클라우드 서비스** 개요 페이지가 열립니다.
 
 1. **Adobe Target** 섹션에서 **지금 구성**&#x200B;을 클릭합니다.
 1. **구성 만들기** 대화 상자에서
@@ -167,9 +176,9 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
    * **A4T Analytics Cloud 구성**: 타겟 활동 목표 및 지표에 사용되는 Analytics Cloud 구성을 선택하십시오. 콘텐츠를 타깃팅할 때 보고 소스로 Adobe Analytics을 사용하는 경우 이 구성이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성 구성](#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
 
    * **정확한 타겟팅 사용:** 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성은 콘텐츠를 로드하기 전에 컨텍스트가 로드될 때까지 대기합니다. 다음 사항에 주의하십시오.
-   * **Adobe Target에서 세그먼트 동기화:** Target에서 정의한 세그먼트를 다운로드하여 AEM에서 사용할 수 있도록 하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않으므로 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어인 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
+   * **Adobe Target에서 세그먼트 동기화:** Target에 정의된 세그먼트를 다운로드하여 AEM에서 사용할 수 있도록 하려면 이 옵션을 선택하십시오. API 유형 속성이 REST인 경우 인라인 세그먼트가 지원되지 않으므로 Target의 세그먼트를 사용해야 하므로 이 옵션을 선택합니다. (AEM 용어 &#39;segment&#39;는 Target &#39;audience&#39;와 동일합니다.)
    * **클라이언트 라이브러리:** mbox.js 또는 AT.js 클라이언트 라이브러리를 원하는지 선택합니다.
-   * **DTM을 사용하여 클라이언트 라이브러리 전송** - DTM 또는 다른 태그 관리 시스템의 AT.js 또는 mbox.js를 사용하려면 이 옵션을 선택하십시오. 이 옵션을 사용하도록 [DTM 통합](/help/sites-administering/dtm.md)을 구성하십시오. Adobe은 AEM보다 DTM을 사용하여 라이브러리를 전달할 것을 권장합니다.
+   * **DTM을 사용하여 클라이언트 라이브러리 전송** - DTM 또는 다른 태그 관리 시스템의 AT.js 또는 mbox.js를 사용하려면 이 옵션을 선택하십시오. 이 옵션을 사용하도록 [DTM 통합](/help/sites-administering/dtm.md)을 구성하십시오. Adobe에서는 AEM보다 DTM을 사용하여 라이브러리를 전달할 것을 권장합니다.
    * **사용자 지정 mbox.js**: DTM 상자를 선택하거나 기본 mbox.js를 사용하려면 비워 둡니다. 또는 사용자 지정 mbox.js를 업로드합니다. mbox.js를 선택한 경우에만 나타납니다.
    * **사용자 지정 AT.js**: DTM 상자를 선택하거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
 
@@ -224,7 +233,7 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
 ### 활동을 Target 클라우드 구성과 연결  {#associating-activities-with-the-target-cloud-configuration}
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=ko)의 활동을 미러링할 수 있도록 [AEM 활동](/help/sites-authoring/activitylib.md)을 Target 클라우드 구성과 연결하십시오.
+[AEM](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html)의 활동을 미러링할 수 있도록 [Adobe Target 활동](/help/sites-authoring/activitylib.md)을 Target 클라우드 구성과 연결하십시오.
 
 >[!NOTE]
 >
@@ -258,7 +267,7 @@ AEM에서 Target 프레임워크를 만든 후 웹 페이지를 프레임워크�
    >만든 특정 **프레임워크**&#x200B;을(를) 선택하고 해당 프레임워크를 만든 Target 클라우드 구성은 선택하지 마십시오.
 
 1. **완료**&#x200B;를 클릭합니다.
-1. 웹 사이트의 루트 페이지를 활성화하여 게시 서버에 복제합니다. ([Publish 페이지 방법](/help/sites-authoring/publishing-pages.md)을 참조하세요.)
+1. 웹 사이트의 루트 페이지를 활성화하여 게시 서버에 복제합니다. [페이지 게시 방법](/help/sites-authoring/publishing-pages.md)을 참조하세요.
 
    >[!NOTE]
    >

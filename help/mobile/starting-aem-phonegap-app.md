@@ -9,13 +9,17 @@ exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '424'
 ht-degree: 1%
-
 ---
-
 # AEM PhoneGap 시작 {#starting-aem-phonegap}
 
 {{ue-over-mobile}}
@@ -39,7 +43,7 @@ Starterkit을 사용하면 AEM Mobile 개발의 기본 사항을 안내하여 �
 
 ## 템플릿 및 구성 요소 {#templates-and-components}
 
-AEM *템플릿* 및 *구성 요소*&#x200B;를 사용하면 사업부 소유자가 사용자 지정 경험을 만들 수 있습니다. *템플릿 *와 *구성 요소*&#x200B;는 모두 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 지정 개발할 수 있습니다. *템플릿* 및 *구성 요소*&#x200B;를 통해 AEM 작성자는 끌어다 놓아 매력적인 관련 경험을 만들 수 있습니다.
+AEM *템플릿* 및 *구성 요소*&#x200B;를 통해 사업부 소유자는 사용자 지정 경험을 만들 수 있습니다. *템플릿*&#x200B;와 *구성 요소*는 모두 즉시 사용할 수 있거나 개발자인 사용자가 기존 구성 요소를 확장하거나 그린필드(고급)를 만들어 사용자 지정 개발할 수 있습니다. *템플릿* 및 *구성 요소*&#x200B;를 통해 AEM 작성자는 끌어다 놓아 매력적인 관련 경험을 만들 수 있습니다.
 
 1. [구성 요소 만들기](/help/sites-developing/components.md)
 1. [템플릿 만들기](/help/sites-developing/templates.md)

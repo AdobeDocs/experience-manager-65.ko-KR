@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # 작업 대시보드 {#operations-dashboard}
 
 ## 소개 {#introduction}
@@ -107,13 +116,13 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
 
    * **이름:** `sling:resourceType`
 
-      * **유형:** `String`
-      * **값:** `granite/operations/components/mbean`
+     * **유형:** `String`
+     * **값:** `granite/operations/components/mbean`
 
    * **이름:** `resource`
 
-      * **유형:** `String`
-      * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **유형:** `String`
+     * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
 
    * **이름:** `Composite Health Check`
 
-      * **유형:** `nt:unstructured`
+     * **유형:** `nt:unstructured`
 
    다음 속성을 사용합니다.
 
    * **이름:** `sling:resourceType`
 
-      * **유형:** `String`
-      * **값:** `granite/operations/components/mbean`
+     * **유형:** `String`
+     * **값:** `granite/operations/components/mbean`
 
    * **이름:** `resource`
 
-      * **유형:** `String`
-      * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **유형:** `String`
+     * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -495,7 +504,7 @@ UI는 화면 왼쪽 위의 검색 상자에 필터 기준을 입력하여 테이
 1. **프로젝트 제거** 유지 관리 작업은 **주별 유지 관리 창** 메뉴에 있습니다. **추가** 옵션을 사용합니다.
 1. **주별 유지 관리 창** 메뉴에 있는 **임시 작업 제거** 유지 관리 작업입니다. **추가** 옵션을 사용합니다.
 
-일별 유지 관리 창의 기본 시간은 오전 2:00부터 오전 5:00입니다. 주별 유지 관리 창에서 실행되도록 구성된 작업은 토요일마다 오전 1:00에서 오전 2:00 사이에 실행됩니다.
+일별 유지 관리 창의 기본 시간은 오전 2시에서 오전 5시입니다. 주별 유지 관리 창에서 실행되도록 구성된 작업은 토요일 오전 1시에서 2시 사이에 실행됩니다.
 
 다음 두 유지 관리 카드에서 톱니바퀴 아이콘을 눌러 시간을 구성할 수도 있습니다.
 
@@ -660,7 +669,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->시스템 개요 대시보드에 대한 소개는 [이 비디오를 시청](https://video.tv.adobe.com/v/35604?captions=kor)할 수도 있습니다.
+>시스템 개요 대시보드에 대한 소개는 [이 비디오를 시청](https://video.tv.adobe.com/v/21340)할 수도 있습니다.
 
 ### 액세스 방법 {#how-to-access}
 
@@ -689,7 +698,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>위험 상태의 검사 목록</li>
      <li>경고 상태의 검사 목록</li>
     </ul> </td>
-   <td>시각적으로 표시됨: <br />
+   <td>시각적으로 표시됨:<br />
     <ul>
      <li>중요 검사를 위한 빨간색 태그</li>
      <li>경고 수표에 대한 주황색 태그</li>

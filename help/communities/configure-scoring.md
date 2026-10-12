@@ -10,13 +10,20 @@ exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1011'
+ht-degree: 6%
 ---
-
 # 채점 및 배지 핵심 사항 {#scoring-and-badges-essentials}
 
 AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하고 보상합니다.
@@ -106,15 +113,15 @@ slinglog 파일을 빠르게 설정하려면:
 
 * 웹 콘솔에서
 
-   * **상태** 메뉴 아래
-   * **로그 파일** 선택
-   * 로그 파일 이름 검색(예: `scoring-debug`)
+  * **상태** 메뉴 아래
+  * **로그 파일** 선택
+  * 로그 파일 이름 검색(예: `scoring-debug`)
 
 * 서버의 로컬 디스크에서
 
-   * 로그 파일이 &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log에 있습니다.
+  * 로그 파일이 &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log에 있습니다.
 
-   * 예, `.../crx-quickstart/logs/scoring-debug.log`
+  * 예, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![scoring-log](assets/scoring-log.png)
 
@@ -134,8 +141,8 @@ JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
 다음 API를 사용할 수 있습니다.
 
-* 6.3의 [com.adobe.cq.social.scoring.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)
-* 6.3의 [com.adobe.cq.social.badging.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)
+* [6.3의 com.adobe.cq.social.scoring.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [6.3의 com.adobe.cq.social.badging.api](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
 설치된 기능 팩의 최신 Javadocs는 Adobe 저장소에서 개발자가 사용할 수 있습니다. [커뮤니티용 Maven 사용: Javadocs](/help/communities/maven.md#javadocs)을 참조하십시오.
 
@@ -145,7 +152,7 @@ JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
 저장소 데이터의 스크린샷은 두 개의 다른 AEM 사이트에서 포럼에 대한 점수 및 배지 설정에서 가져옵니다.
 
-1. AEM 사이트 *이(가) 고유 ID(마법사를 사용하여 만든 커뮤니티 사이트)*&#x200B;입니다.
+1. 고유 ID(마법사를 사용하여 만든 커뮤니티 사이트)가 있는 AEM 사이트 *with*:
 
    * [시작 자습서](/help/communities/getting-started.md) 중에 생성된 시작 자습서(참여) 사이트 사용
    * 포럼 페이지 노드를 찾습니다
@@ -175,7 +182,7 @@ JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
    * 사용자가 로그인하고 포럼 주제를 만들고 브론즈 배지를 받습니다
 
-1. AEM 사이트 *없음* 고유 ID:
+1. 고유 ID *없이* AEM 사이트:
 
    * [커뮤니티 구성 요소 가이드 사용](/help/communities/components-guide.md)
    * 포럼 페이지 노드를 찾습니다
@@ -238,7 +245,7 @@ JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
 `scoring`의 자식 노드가 채점 규칙 이름입니다. 따라서 가장 좋은 방법은 서버의 채점 규칙 이름이 전체적으로 고유해야 하는 것입니다.
 
-Geometrixx 참여 사이트의 경우 사용자 및 해당 점수는 채점 규칙 이름, 커뮤니티 사이트의 사이트 ID(`engage-ba81p`), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다.
+Geometrixx Engage 사이트의 경우 사용자 및 해당 점수는 채점 규칙 이름, 커뮤니티 사이트의 사이트 ID(`engage-ba81p`), 고유 ID 및 사용자 ID 로 구성된 경로에 있습니다.
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 

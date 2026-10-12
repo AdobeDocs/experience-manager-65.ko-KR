@@ -5,13 +5,26 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1705'
 ht-degree: 67%
-
 ---
-
 # 페이지 게시 {#publishing-pages}
 
 작성 환경에서 콘텐츠를 만들고 검토한 후 [공개 웹 사이트(게시 환경)에서 사용할 수 있도록 설정합니다](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
@@ -61,9 +74,9 @@ ht-degree: 67%
    * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
    * 페이지에 게시해야 하는 참조가 있을 경우 **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 페이지와 함께 게시할 자산 또는 태그를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
+     * 페이지와 함께 게시할 자산 또는 태그를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
 
-      * **취소**&#x200B;를 사용하여 작업을 중단합니다.
+     * **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -141,7 +154,7 @@ ht-degree: 67%
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
+   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
 
    마법사로 돌아가면 목록에서 항목을 선택하여 다음과 같은 추가 옵션을 구성할 수 있습니다.
 

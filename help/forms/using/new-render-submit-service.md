@@ -9,13 +9,33 @@ exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 0%
-
+source-wordcount: '898'
+ht-degree: 1%
 ---
-
 # 새로운 렌더링 및 제출 서비스{#new-render-and-submit-service}
 
 ## 소개 {#introduction}
@@ -25,11 +45,11 @@ Workbench에서 `AssignTask` 작업을 정의할 때 특정 양식(XDP 또는 PD
 XDP를 PDF 양식 또는 HTML 양식으로 렌더링할 수 있습니다. 새로운 기능에는 다음과 같은 기능이 포함됩니다.
 
 * XDP 양식을 HTML으로 렌더링 및 제출
-* XDP 양식을 데스크톱에서 PDF으로, 모바일 장치에서 HTML으로 렌더링 및 제출(예: iPad)
+* 데스크탑에서는 XDP 양식을 PDF으로, 모바일 장치에서는 HTML으로 렌더링 및 제출(예: iPad)
 
 ### 새로운 HTML Forms 서비스 {#new-html-forms-service}
 
-새로운 HTML Forms 서비스는 Forms의 새로운 기능을 사용하여 XDP 양식을 HTML으로 렌더링할 수 있도록 지원합니다. 새 HTML Forms 서비스는 다음 메서드를 노출합니다.
+새로운 HTML Forms 서비스는 Forms의 새로운 기능을 사용하여 XDP 양식을 HTML으로 렌더링할 수 있도록 지원합니다. 새로운 HTML Forms 서비스는 다음 메서드를 노출합니다.
 
 ```java
 /*
@@ -58,11 +78,11 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 ## 새 HTML 양식 렌더링 및 제출 프로세스 {#new-html-form-render-amp-submit-processes}
 
-모든 &#39;AssignTask&#39; 작업에 대해 양식으로 렌더링 및 제출 프로세스를 지정합니다. 사용자 지정 처리를 허용하기 위해 TaskManager `renderForm` 및 `submitForm` API에서 이러한 프로세스를 호출합니다. 새 HTML 양식에 대한 이러한 프로세스의 의미:
+모든 &#39;AssignTask&#39; 작업에 대해 양식으로 렌더링 및 제출 프로세스를 지정합니다. 사용자 지정 처리를 허용하기 위해 TaskManager `renderForm` 및 `submitForm` API에서 이러한 프로세스를 호출합니다. 새 HTML Form에 대한 이러한 프로세스의 의미:
 
 ### 새 HTML 양식 렌더링 {#render-a-new-html-form}
 
-모든 렌더링 프로세스와 마찬가지로 HTML을 렌더링할 새 프로세스에는 다음과 같은 I/O 매개 변수가 있습니다.
+모든 렌더링 프로세스와 마찬가지로 HTML을 렌더링하는 새 프로세스에는 다음 I/O 매개 변수가 있습니다.
 
 입력 - `taskContext`
 
@@ -70,7 +90,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 출력 - `outFormDoc`
 
-이 메서드는 NewHTMLFormsService의 `renderHTMLForm` API의 정확한 동작을 시뮬레이션합니다. 양식의 HTML 표현물에 대한 URL을 가져오기 위해 `generateFormURL` API를 호출합니다. 그런 다음 runtimeMap을 다음 키 또는 값으로 채웁니다.
+이 메서드는 NewHTMLFormsService의 `renderHTMLForm` API의 정확한 동작을 시뮬레이션합니다. 양식의 HTML 렌디션에 대한 URL을 가져오기 위해 `generateFormURL` API를 호출합니다. 그런 다음 runtimeMap을 다음 키 또는 값으로 채웁니다.
 
 새 html 양식 = true
 
@@ -90,23 +110,23 @@ newHTMLFormURL = `generateFormURL` API를 호출한 후 반환된 URL입니다.
 
 ## 기본 렌더링 또는 제출 프로세스 및 작업 프로필 {#default-render-or-submit-processes-and-action-profiles}
 
-기본 Render 및 Submit 서비스를 사용하면 데스크탑에서 PDF을 렌더링하고 모바일 장치(iPad)에서 HTML을 지원할 수 있습니다.
+기본 렌더링 및 제출 서비스를 사용하면 데스크탑에서 PDF를 렌더링하고 모바일 장치에서 HTML(iPad)를 렌더링할 수 있습니다.
 
 ### 기본 렌더링 양식 {#default-render-form}
 
-이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 렌더링합니다. 이 프로세스는 `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 프로세스를 호출하여 HTML 또는 PDF을 렌더링합니다.
+이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 렌더링합니다. 이 프로세스는 `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 HTML 또는 PDF을 렌더링하도록 프로세스를 호출합니다.
 
 ![default-render-form](assets/default-render-form.png)
 
 ### 기본 제출 양식 {#default-submit-form}
 
-이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 제출합니다. `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 프로세스를 호출하여 HTML 또는 PDF을 제출합니다.
+이 프로세스는 여러 플랫폼에서 XDP 양식을 원활하게 제출합니다. `taskContext`에서 사용자 에이전트를 검색하고 데이터를 사용하여 HTML 또는 PDF을 제출하는 프로세스를 호출합니다.
 
 ![default-submit-form](assets/default-submit-form.png)
 
-## 모바일 양식의 렌더링을 PDF에서 HTML으로 전환 {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
+## 모바일 양식 렌더링을 PDF에서 HTML으로 전환 {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
-브라우저에서는 Adobe Acrobat 및 Adobe Acrobat Reader용 플러그인을 포함하여 NPAPI 기반 플러그인에 대한 지원을 점차 중단하고 있습니다. 다음 단계를 사용하여 모바일 양식의 렌더링을 PDF에서 HTML으로 변경할 수 있습니다.
+브라우저에서는 Adobe Acrobat 및 Adobe Acrobat Reader용 플러그인을 포함하여 NPAPI 기반 플러그인에 대한 지원을 점차 중단하고 있습니다. 다음 단계를 사용하여 모바일 양식 렌더링을 PDF에서 HTML으로 변경할 수 있습니다.
 
 1. Workbench에 유효한 사용자로 로그인합니다.
 1. **파일** > **응용 프로그램 가져오기**&#x200B;를 선택합니다.
@@ -146,19 +166,19 @@ XDP Forms의 경우:
 
 * 기본값(새로운 &#39;기본 렌더링/제출&#39; 프로세스를 사용하여 렌더링/제출)
 
-![gen_question_b_20](assets/gen_question_b_20.png) **양식을 장치의 HTML 및 데스크톱의 PDF에서 렌더링할 수 있도록 하려면 프로세스 디자이너가 수행해야 하는 작업이 무엇입니까?**
+![gen_question_b_20](assets/gen_question_b_20.png) **장치의 HTML과 데스크톱의 PDF에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?**
 
 아무것도 아냐 기본 작업 프로필이 자동으로 선택되고 렌더링 모드도 자동으로 처리됩니다.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **데스크톱에서 HTML 시 양식을 렌더링하려면 어떻게 해야 합니까?**
+![gen_question_b_20](assets/gen_question_b_20.png) **데스크톱에서 HTML에서 양식을 렌더링하려면 어떻게 해야 합니까?**
 
-사용자는 기본 프로필에 대한 HTML 라디오 단추를 선택해야 합니다.
+사용자는 기본 프로필에 대한 HTML 라디오 버튼을 선택해야 합니다.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **기본 작업 프로필 동작 변경에 업그레이드가 영향을 줍니까?**
 
 예. 기본 작업 프로필과 연결된 이전 렌더링 및 제출 서비스가 서로 다르므로 기존 양식의 사용자 지정으로 처리됩니다. **기본값 복원**&#x200B;을 클릭하면 대신 기본 렌더링 및 전송 서비스가 설정됩니다.
 
-기존 렌더링 또는 제출 PDF 양식 서비스를 수정했거나 사용자 정의 서비스(예: custom1)를 만든 경우 이제 HTML 렌디션에 동일한 기능을 사용하려는 경우 새 렌더링 또는 제출 서비스(예: custom2)를 복제하고 유사한 사용자 지정을 적용해야 합니다. 이제 렌더링 또는 제출을 위한 사용자 지정1 대신 사용자 지정2 서비스를 사용하도록 XDP에 대한 작업 프로필을 수정합니다.
+기존 PDF Form 서비스 렌더링 또는 제출을 수정하거나 사용자 정의 서비스(예: custom1)를 만든 경우 이제 HTML 렌디션에 동일한 기능을 사용하려는 경우. 새 렌더링 또는 제출 서비스(예: custom2)를 복제하고 유사한 사용자 지정을 적용해야 합니다. 이제 렌더링 또는 제출을 위한 사용자 지정1 대신 사용자 지정2 서비스를 사용하도록 XDP에 대한 작업 프로필을 수정합니다.
 
-장치의 PDF과 데스크탑의 HTML에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
-장치의 PDF과 데스크탑의 HTML에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
+장치의 HTML과 데스크탑의 PDF에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
+장치의 HTML과 데스크탑의 PDF에서 양식을 렌더링할 수 있도록 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?

@@ -5,13 +5,37 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1348'
 ht-degree: 80%
-
 ---
-
 # 번역된 콘텐츠 게시 {#publish-content}
 
 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
@@ -70,9 +94,9 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 1. 여기에서 언어 루트 폴더 및 모든 기타 언어 폴더를 볼 수 있습니다. 게시하고자 하는 현지화된 언어를 선택합니다.
    ![언어 폴더 선택](assets/select-language-folder.png)
 1. **게시 관리**&#x200B;를 클릭합니다.
-1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**&#x200B;을 클릭합니다.
+1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**을 클릭합니다.
    ![게시 관리 옵션](assets/manage-publication-options.png)
-1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**&#x200B;를 클릭합니다.
+1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**를 클릭합니다.
    ![게시 범위 관리](assets/manage-publication-scope.png)
 1. AEM은 화면 상단의 팝업 메시지를 사용하여 게시 작업을 확인합니다.
    ![리소스 게시 배너](assets/resources-published-message.png)

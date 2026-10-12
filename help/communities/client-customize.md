@@ -9,13 +9,20 @@ exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
-
 ---
-
 # 클라이언트측 사용자 정의  {#client-side-customization}
 
 | **[⇐ 기능 기본 사항](essentials.md)** | **[서버측 사용자 지정 ⇒](server-customize.md)** |
@@ -48,7 +55,7 @@ ht-degree: 0%
 
 구성 요소를 확장(오버라이드)하는 것은 기본값을 사용하는 모든 인스턴스에 영향을 주지 않고 특정 사용을 위해 수정하는 방법입니다. 확장 구성 요소는 /apps 폴더에서 고유하게 이름이 지정되고 /libs 폴더의 기본 구성 요소를 참조하므로 구성 요소의 기본 디자인과 동작이 수정되지 않습니다.
 
-이는 Sling의 특성이 libs/ 폴더에서 검색하기 전에 앱/폴더에 대한 상대 참조를 확인하는 기본 구성 요소와 다르므로 구성 요소의 디자인 또는 동작이 전역적으로 수정됩니다.[&#128279;](#overlays)
+이는 Sling의 특성이 libs/ 폴더에서 검색하기 전에 앱/폴더에 대한 상대 참조를 확인하는 기본 구성 요소와 다르므로 구성 요소의 디자인 또는 동작이 전역적으로 수정됩니다.[](#overlays)
 
 주석 구성 요소를 확장하는 간단한 예를 보려면 [주석 구성 요소 확장 자습서](extend-comments.md)를 사용해 보십시오.
 

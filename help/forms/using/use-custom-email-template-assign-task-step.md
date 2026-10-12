@@ -7,13 +7,29 @@ exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 1%
-
+source-wordcount: '518'
+ht-degree: 5%
 ---
-
 # 작업 할당 단계에서 사용자 정의 이메일 템플릿 사용{#use-custom-email-templates-in-an-assign-task-step}
 
 작업 할당 단계를 사용하여 작업을 만들고 사용자 또는 그룹에 할당할 수 있습니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 정의된 그룹의 각 구성원에게 이메일 알림이 전송됩니다. 일반적인 이메일 알림에는 할당된 작업의 링크 및 작업과 관련된 정보가 포함됩니다. 다음 이미지에는 샘플 이메일 알림이 표시됩니다.
@@ -40,7 +56,7 @@ AEM Forms에서는 이메일 알림용 템플릿을 기본적으로 제공합니
 
 1. htmlEmailTemplate.txt 파일의 컨텐츠를 사용자 정의 컨텐츠로 바꿉니다.
 
-   전자 메일 알림 템플릿이 [HTML 전자 메일](https://en.wikipedia.org/wiki/HTML_email)입니다. 기존 html 코드를 사용자 지정 코드로 대체하여 템플릿의 모양을 변경할 수 있습니다.
+   이메일 알림 템플릿이 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)입니다. 기존 html 코드를 사용자 지정 코드로 대체하여 템플릿의 모양을 변경할 수 있습니다.
 
 1. 파일을 저장합니다. 이제 사용자 지정된 템플릿을 사용할 준비가 되었습니다.
 
@@ -56,7 +72,7 @@ AEM Forms에서는 이메일 알림용 템플릿을 기본적으로 제공합니
 
 1. 사용자 지정 HTML 코드를 파일에 추가합니다.
 
-   전자 메일 알림 템플릿이 [HTML 전자 메일](https://en.wikipedia.org/wiki/HTML_email)입니다. 파일에 사용자 지정 HTML 코드를 추가하여 템플릿을 만들 수 있습니다.
+   이메일 알림 템플릿이 [HTML 이메일](https://en.wikipedia.org/wiki/HTML_email)입니다. 사용자 지정 HTML 코드를 파일에 추가하여 템플릿을 만들 수 있습니다.
 
 1. 파일을 저장합니다. 템플릿을 작업 할당 단계에서 사용할 준비가 되었습니다.
 
@@ -66,7 +82,7 @@ AEM Forms에서는 이메일 알림용 템플릿을 기본적으로 제공합니
 
 1. 작업 할당 단계를 엽니다.
 
-1. 담당자 > 이메일 템플릿 HTML 로 이동합니다.
+1. 담당자 > HTML 이메일 템플릿으로 이동합니다.
 
 1. 새로 만든 HTML 이메일 템플릿을 선택합니다.
 

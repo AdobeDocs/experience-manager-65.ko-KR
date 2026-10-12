@@ -9,13 +9,24 @@ exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '904'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '908'
 ht-degree: 100%
-
 ---
-
 # JBoss Application Server에 대한 SSL 구성 {#configuring-ssl-for-jboss-application-server}
 
 JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자격 증명이 필요합니다. Java keytool을 사용하여 자격 증명을 만들거나 CA(인증 기관)에서 자격 증명을 요청하여 가져올 수 있습니다. 그런 다음, JBoss에서 SSL을 활성화해야 합니다.
@@ -89,7 +100,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
    * 서버 클러스터 - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **단일 서버의 경우** lc_&lt;dbaname/tunkey>.xml 파일에서 &lt;security-realms> 섹션 뒤에 다음을 추가합니다.
 
    ```xml
@@ -139,25 +150,25 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
    * 턴키 설치의 경우:
 
-      * Windows 제어판에서 관리 도구를 클릭한 후 서비스를 클릭합니다.
-      * Adobe Experience Manager Forms용 JBoss를 선택합니다.
-      * 작업 > 중지를 선택합니다.
-      * 서비스 상태가 중지됨으로 나타날 때까지 기다립니다.
-      * 작업 > 시작을 선택합니다.
+     * Windows 제어판에서 관리 도구를 클릭한 후 서비스를 클릭합니다.
+     * Adobe Experience Manager Forms용 JBoss를 선택합니다.
+     * 작업 > 중지를 선택합니다.
+     * 서비스 상태가 중지됨으로 나타날 때까지 기다립니다.
+     * 작업 > 시작을 선택합니다.
 
    * Adobe에서 미리 구성했거나 수동으로 구성한 JBoss 설치의 경우:
 
-      * 명령 프롬프트에서 *`[appserver root]`*/bin으로 이동합니다.
-      * 다음 명령을 입력하여 서버를 중지합니다.
+     * 명령 프롬프트에서 *`[appserver root]`*/bin으로 이동합니다.
+     * 다음 명령을 입력하여 서버를 중지합니다.
 
-         * (Windows) `shutdown.bat -S`
-         * (Linux) `./shutdown.sh -S`
+       * (Windows) `shutdown.bat -S`
+       * (Linux) `./shutdown.sh -S`
 
-      * JBoss 프로세스가 완전히 종료될 때(JBoss 프로세스가 시작된 터미널로 제어권을 반환할 때)까지 기다립니다.
-      * 다음 명령을 입력하여 서버를 시작합니다.
+     * JBoss 프로세스가 완전히 종료될 때(JBoss 프로세스가 시작된 터미널로 제어권을 반환할 때)까지 기다립니다.
+     * 다음 명령을 입력하여 서버를 시작합니다.
 
-         * (Windows) `run.bat -c <profile>`
-         * (Linux) `./run.sh -c <profile>`
+       * (Windows) `run.bat -c <profile>`
+       * (Linux) `./run.sh -c <profile>`
 
 1. SSL을 사용하여 관리 콘솔에 액세스하려면 웹 브라우저에서 `https://[host name]:'port'/adminui`를 입력합니다.
 

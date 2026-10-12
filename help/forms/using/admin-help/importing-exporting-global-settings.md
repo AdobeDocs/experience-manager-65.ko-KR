@@ -9,13 +9,27 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
-
 ---
-
 # 전역 설정 가져오기 및 내보내기 {#importing-and-exporting-global-settings}
 
 >[!NOTE]
@@ -81,7 +95,7 @@ Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 **client_specialRoutes_routes_approve_style:** Workspace 테마에 있는 스타일 이름으로, 승인 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 지정 단추의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다.
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Workspace CSS 파일이 workspace-theme.swf 파일에 포함되어 있습니다. 이 파일은 adobe-workspace-client.ear > adobe-workspace-client.war 파일에 있습니다. Workspace의 모양을 변경하려면 workspace-theme.swf 파일을 다시 컴파일해야 합니다.
 
-**client_specialRoutes_routes_deny_names:** 워크벤치 사용자가 &#39;거부&#39;로 해석하는 데 사용할 수 있는 다양한 문자열입니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 거부입니다. 워크벤치 사용자가 프로세스에서 거부라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 거부라는 단어를 추가해야 합니다.
+**client_specialRoutes_routes_deny_names:** 워크벤치 사용자가 &#39;거부&#39;로 해석하는 데 사용할 수 있는 다양한 문자열입니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 거부입니다. 워크벤치 사용자가 프로세스에서 &#39;Deny&#39;라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 &#39;Deny&#39;라는 단어를 추가해야 합니다.
 
 **client_specialRoutes_routes_deny_style:** Workspace 테마 파일에 있는 스타일 이름으로, 거부 버튼 아이콘을 식별합니다. 스타일에는 활성화된 아이콘과 비활성화된 아이콘에 대한 값이 포함되어야 합니다. 사용자 지정 단추의 스타일을 정의하려면 다음 템플릿을 사용해야 합니다.
 `  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_approve_names:** Workbench 사용자가 사용할 수 있는 다양한 문자열은 &quot;approve&quot;로 해석됩니다. 이 문자열은 대소문자를 구분합니다. 예를 들어 기본값은 승인입니다. 워크벤치 사용자가 프로세스에서 승인이라는 단어를 사용하면 해당 단어는 인식되지 않습니다. 경로 버튼을 사용자 정의하고 경로 버튼에 스타일을 적용하려면 이 설정에 승인이라는 단어를 추가해야 합니다.

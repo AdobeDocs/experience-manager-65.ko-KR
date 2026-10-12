@@ -1,17 +1,31 @@
 ---
 title: 스마트 컨텐츠 서비스를 사용하여 자산 태그 지정 구성
-description: 스마트 컨텐츠 서비스를 사용하여  [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법에 대해 알아봅니다.
+description: 스마트 콘텐츠 서비스를 사용하여 [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법에 대해 알아봅니다.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 6%
-
+source-wordcount: '1145'
+ht-degree: 8%
 ---
-
 # OAuth 자격 증명에 대한 스마트 태그 문제 해결 {#oauth-config}
 
 스마트 컨텐츠 서비스와 보안 방식으로 상호 작용하려면 [!DNL Adobe Experience Manager] 응용 프로그램에 대한 동의를 채택하려면 공개 권한 부여 구성이 필요합니다.
@@ -27,7 +41,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+>필요한 경우 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 ## 기존 AMS 사용자에 대한 OAuth 구성 {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 * [Developer Console](https://developer.adobe.com/console/user/servicesandapis)에서 새 OAuth 통합을 만듭니다. 아래 단계에서 `ClientID`, `ClientSecret`, `OrgID` 및 기타 속성을 사용하십시오.
 * 이 경로 `/apps/system/config in crx/de`에서 다음 파일을 찾을 수 있습니다.
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
 
-시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/ko?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
+시스템 관리자는 **CRXDE**&#x200B;에서 아래 단계를 수행할 수 있습니다. AMS 고객은 Adobe 담당자에게 연락하거나 [지원 프로세스](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)에 따라 지원 티켓을 제출할 수 있습니다.
 
 1. `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`에서 아래 속성을 추가하거나 업데이트하십시오.
 
@@ -52,7 +66,6 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 새 OAuth 구성의 클라이언트 ID로 `auth.token.provider.client.id`을(를) 업데이트합니다.
    * `auth.access.token.request`을(를) `"https://ims-na1.adobelogin.com/ims/token/v3"`(으)로 업데이트
@@ -60,7 +73,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    >[!IMPORTANT]
    >
-   >점(.)을 하이픈(-)을 접두사로 사용하여 `<randomnumber>`에 대체합니다.
+   >점 바꾸기(.) 하이픈(-)을 `<randomnumber>`의 접두사로 사용합니다.
 
 1. `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`에서 아래 단계를 수행합니다.
    * 새 OAuth 통합에서 클라이언트 암호로 auth.ims.client.secret 속성을 업데이트합니다.
@@ -89,7 +102,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 >[!NOTE]
 >
->`unsupported_grant_type` 오류가 발생하면 Granite 핫픽스를 설치해 보십시오. [서비스 계정(JWT)에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24660)을 참조하세요.
+>`unsupported_grant_type` 오류가 발생하면 Granite 핫픽스를 설치해 보십시오. [서비스 계정(JWT)에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)을 참조하세요.
 
 ## Adobe Developer Console과 통합 {#integrate-adobe-io}
 
@@ -111,9 +124,9 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 공개 인증서를 사용하면 Adobe Developer Console에서 프로필을 인증할 수 있습니다.
 
-1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 기존 Cloud Service]**&#x200B;에 액세스합니다.
+1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL 레거시 클라우드 서비스]**&#x200B;에 액세스합니다.
 
-1. Cloud Service 페이지에서 **[!UICONTROL Assets 스마트 태그]**&#x200B;의 **[!UICONTROL 지금 구성]**&#x200B;을 클릭합니다.
+1. 클라우드 서비스 페이지의 **[!UICONTROL Assets 스마트 태그]**&#x200B;에서 **[!UICONTROL 지금 구성]**&#x200B;을 클릭합니다.
 
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 스마트 태그 구성의 제목과 이름을 지정합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -121,7 +134,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    **[!UICONTROL 서비스 URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   예, `https://smartcontent.adobe.io/apac`. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다.
+   예를 들어, `https://smartcontent.adobe.io/apac`과 같이 입력합니다. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -132,13 +145,13 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    지금은 다른 필드를 비워 둡니다(나중에 제공). **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   콘텐츠 서비스 URL을 제공하기 위한 ![스마트 콘텐츠 서비스 Experience Manager 대화 상자](assets/aem_scs12.png)
+   ![콘텐츠 서비스 URL을 제공하는 Experience Manager 스마트 콘텐츠 서비스 대화 상자](assets/aem_scs12.png)
 
    *그림: 콘텐츠 서비스 URL을 제공하는 스마트 콘텐츠 서비스 대화 상자*
 
    >[!NOTE]
    >
-   >[!UICONTROL 서비스 URL] (으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com/ko-kr](https://status.adobe.com/ko-kr)을(를) 참조하십시오.
+   >[!UICONTROL 서비스 URL]&#x200B;(으)로 제공된 URL은 브라우저를 통해 액세스할 수 없으며 404 오류가 발생합니다. [!UICONTROL 서비스 URL] 매개 변수의 동일한 값으로 구성이 정상적으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 [https://status.adobe.com](https://status.adobe.com)을(를) 참조하십시오.
 
 1. **[!UICONTROL OAuth 통합을 위한 공개 인증서 다운로드]**&#x200B;를 클릭하고 공개 인증서 파일 `AEM-SmartTags.crt`을(를) 다운로드합니다. 또한 Adobe Developer 콘솔에서 이 인증서를 더 이상 업로드할 필요가 없습니다.
 
@@ -148,7 +161,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 ## Adobe Developer Console 통합 만들기 {#create-adobe-i-o-integration}
 
-스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]의 클라우드 구성 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키] (Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
+스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!DNL Experience Manager]의 클라우드 구성 [!UICONTROL Assets 스마트 태깅 서비스 설정]에 대한 [!UICONTROL API 키]&#x200B;(Adobe Developer Console 통합의 [!UICONTROL 클라이언트 ID] 필드에서 생성됨), [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID] 및 [!UICONTROL 클라이언트 암호]를 얻으십시오.
 
 1. 브라우저에서 [https://developer.adobe.com/console/](https://developer.adobe.com/console/)에 액세스합니다. 적절한 계정을 선택하고 관련 조직 역할이 시스템 관리자인지 확인합니다.
 
@@ -179,7 +192,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 통합을 구성하려면 Adobe Developer Console 통합에서 [!UICONTROL 기술 계정 ID], [!UICONTROL 조직 ID], [!UICONTROL 클라이언트 암호] 및 [!UICONTROL 클라이언트 ID] 필드 값을 사용합니다. 스마트 태그 클라우드 구성을 만들면 [!DNL Experience Manager] 배포의 API 요청을 인증할 수 있습니다.
 
-1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 기존 Cloud Services]**(으)로 이동하여 [!UICONTROL Cloud Services] 콘솔을 엽니다.
+1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 레거시 클라우드 서비스]**(으)로 이동하여 [!UICONTROL 클라우드 서비스] 콘솔을 엽니다.
 
 1. **[!UICONTROL Assets 스마트 태그]**&#x200B;에서 위에서 만든 구성을 엽니다. 서비스 설정 페이지에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
@@ -198,4 +211,4 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그 지정 구성](config-smart-tagging.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

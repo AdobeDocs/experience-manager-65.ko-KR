@@ -5,13 +5,39 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 84%
-
 ---
-
 # AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
 
 이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 REST API를 통해 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법을 대해 알아봅니다.
@@ -30,9 +56,9 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Delivery API를 통해 콘�
 
 * **대상자**: 고급
 * **목표**: REST API를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 업데이트하는 방법에 대해 알아보기:
-   * AEM Assets HTTP API를 소개합니다.
-   * API의 콘텐츠 조각 지원을 소개하고 자세히 설명합니다.
-   * API의 세부 정보를 간단히 설명합니다.
+  * AEM Assets HTTP API를 소개합니다.
+  * API의 콘텐츠 조각 지원을 소개하고 자세히 설명합니다.
+  * API의 세부 정보를 간단히 설명합니다.
 
 <!--
   * Look at sample code to see how things work in practice.
@@ -215,9 +241,9 @@ Associated content is currently not exposed.
 Assets REST API는 `/api/assets`엔드포인트를 사용하여 액세스하려면 자산 경로가 필요합니다(선행 `/content/dam` 없이).
 
 * 즉, 다음 위치에서 자산에 액세스할 수 있습니다.
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * 다음을 요청해야 합니다.
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 예를 들어 `/content/dam/wknd/en/adventures/cycling-tuscany`에 액세스하기 위해 `/api/assets/wknd/en/adventures/cycling-tuscany.json`을 요청합니다.
 
@@ -247,9 +273,9 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 * 작성자 인스턴스에 생성을 바인딩하는 것이 좋습니다(그리고 현재 이 API를 통해 게시할 조각을 복제할 수 없음).
 * AEM은 JSON 형식으로만 요청된 콘텐츠를 제공하므로 모두에서 게재할 수 있습니다.
 
-   * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
+  * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
 
-   * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
+  * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
 
 >[!CAUTION]
 >
@@ -269,7 +295,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-응답은 콘텐츠 조각에서와 같이 구조화된 콘텐츠가 있는 직렬화된 JSON입니다. 참조 URL로 참조를 게재합니다.
+응답은 콘텐츠 조각에서와 같이 콘텐츠가 구조화된 직렬화된 JSON입니다. 참조는 참조 URL로 제공됩니다.
 
 다음과 같이 두 가지 유형의 읽기 작업이 가능합니다.
 
@@ -282,7 +308,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 `POST /{cfParentPath}/{cfName}`
 
-본문에는 콘텐츠 조각 요소에 설정해야 하는 초기 콘텐츠를 비롯해 생성할 콘텐츠 조각의 JSON 표현식이 포함되어야 합니다. `cq:model` 속성 설정이 필수이며 유효한 콘텐츠 조각 모델을 지정해야 합니다. 지정하지 못하면 오류가 발생합니다. 또한 `application/json`으로 설정된 헤더 `Content-Type`을 추가해야 합니다.
+본문에는 콘텐츠 조각 요소에 설정해야 하는 초기 콘텐츠를 비롯해 생성할 콘텐츠 조각의 JSON 표현이 포함되어야 합니다. `cq:model` 속성 설정이 필수이며 유효한 콘텐츠 조각 모델을 지정해야 합니다. 지정하지 못하면 오류가 발생합니다. 또한 `application/json`으로 설정된 헤더 `Content-Type`을 추가해야 합니다.
 
 ### 업데이트 {#update}
 
@@ -326,12 +352,12 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [콘텐츠 조각 REST API](/help/assets/assets-api-content-fragments.md)
-   * [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)
+  * [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
-* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 설명](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용하여 CORS용 개발](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

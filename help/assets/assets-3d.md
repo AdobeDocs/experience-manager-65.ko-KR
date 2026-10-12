@@ -13,20 +13,32 @@ autotag-review: '2026-05-18T18:43:11.851Z'
 TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Metadata
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2419
+source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # Dynamic Media에서 3D 자산 작업 {#working-with-three-d-assets-dm}
 
 Dynamic Media를 사용하면 3D 자산을 업로드, 관리 및 보고 몰입형 환경으로 제공할 수 있습니다.
@@ -52,7 +64,7 @@ Dynamic Media는 다음과 같은 3D 형식을 지원합니다.
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보거나 상호 작용할 수 없습니다.* USDZ는 Safari 및 iOS 디바이스에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
+| USDZ | Universal Scene Description Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보거나 상호 작용할 수 없습니다.* USDZ는 Safari 및 iOS 디바이스에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
 
 >[!NOTE]
 >
@@ -79,19 +91,19 @@ Dynamic Media - Scene7 모드 구성 및 [Dynamic Media - Scene7 모드 문제 �
 
    * 3D 자산 구성 및 검색
 
-      * [디지털 자산을 구성합니다](/help/assets/organize-assets.md#organize-digital-assets).
-      * [3D 자산 검색](/help/assets/search-assets.md).
-      * [사용자 지정 조건자를 사용하여 검색 결과를 필터링합니다](/help/assets/search-assets.md#custompredicates).
+     * [디지털 자산을 구성합니다](/help/assets/organize-assets.md#organize-digital-assets).
+     * [3D 자산 검색](/help/assets/search-assets.md).
+     * [사용자 지정 조건자를 사용하여 검색 결과를 필터링합니다](/help/assets/search-assets.md#custompredicates).
 
    * 3D 자산 보기
 
-      * [3D 자산 보기 및 상호 작용](#viewing-three-d-assets).
-      * [차원 뷰어 사전 설정을 관리합니다](/help/assets/managing-viewer-presets.md).
+     * [3D 자산 보기 및 상호 작용](#viewing-three-d-assets).
+     * [차원 뷰어 사전 설정을 관리합니다](/help/assets/managing-viewer-presets.md).
 
    * 3D 자산 메타데이터 작업
 
-      * [디지털 에셋에 대한 메타데이터 관리](/help/assets/metadata.md).
-      * [메타데이터 스키마](/help/assets/metadata-schemas.md).
+     * [디지털 에셋에 대한 메타데이터 관리](/help/assets/metadata.md).
+     * [메타데이터 스키마](/help/assets/metadata-schemas.md).
 
 1. **3D 자산 게시**
 
@@ -163,7 +175,7 @@ Dynamic Media - Scene7 모드 구성 및 [Dynamic Media - Scene7 모드 문제 �
    * 브라우저의 페이지 URL에서 `/editor.html`을(를) 삭제합니다.
 
    3D 미디어 구성 요소 내부에 표시되는 ![3D 자산](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-**[!UICONTROL 미리 보기]** 모드에 표시된 완전 대화형 3D 자산입니다.
+   **[!UICONTROL 미리 보기]** 모드에 표시된 완전 대화형 3D 자산입니다.
 
 1. **[!UICONTROL 미리 보기]** 모드에서 다음 중 하나를 수행합니다.
 
@@ -182,7 +194,7 @@ Dynamic Media에는 Adobe Experience Manager Sites에서 사용하여 웹 페이
 
 * [페이지 템플릿에 3D 미디어 구성 요소 추가](#adding-three-d-media-component-to-page-template)
 * [웹 페이지에 3D Media 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page)
-   * [선택 사항 - 3D 미디어 구성 요소 구성](#configuring-the-three-d-component)
+  * [선택 사항 - 3D 미디어 구성 요소 구성](#configuring-the-three-d-component)
 * [3D Media 구성 요소에 3D 자산 할당](#assigning-a-three-d-asset-to-the-component)
 
 ## 페이지 템플릿에 3D 미디어 구성 요소 추가 {#adding-three-d-media-component-to-page-template}
@@ -274,7 +286,7 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 
 **정적 Dynamic Media 3D 자산을 게시하려면:**
 
-1. 자산 세부 사항 페이지에서 볼 수 있도록 3D 자산(GLB, OBJ 또는 STL 파일 형식)을 엽니다.
+1. 3D 자산(GLB, OBJ 또는 STL 파일 형식)을 열어 자산 세부 사항 페이지에서 볼 수 있습니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.
 
    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
@@ -301,6 +313,6 @@ Experience Manager을 WCM으로 *사용하지 않는*&#x200B;경우 Dynamic Medi
 
   [웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)을 참조하십시오.
 
-* **[!UICONTROL 포함]** - Dimensional 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려면 **[!UICONTROL 포함]**&#x200B;을(를) 사용하십시오. You copy the embed code to the clipboard so you can paste it in your web pages. **[!UICONTROL 포함]** 대화 상자에서는 코드를 편집할 수 없습니다.
+* **[!UICONTROL 포함]** - Dimensional 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려면 **[!UICONTROL 포함]**&#x200B;을(를) 사용하십시오. 웹 페이지에 붙여넣을 수 있도록 임베드 코드를 클립보드에 복사합니다. **[!UICONTROL 포함]** 대화 상자에서는 코드를 편집할 수 없습니다.
 
   [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)을 참조하십시오.

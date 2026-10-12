@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
-
 ---
-
 # 메시징 기능 {#messaging-feature}
 
 AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공개적으로 표시되는 상호 작용 외에도 커뮤니티 구성원이 더 개인적으로 상호 작용할 수 있습니다.
@@ -63,7 +70,8 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 1. `Preview` 모드에서 **메시지** 링크를 선택하여 기본 메시징 페이지를 엽니다. 그런 다음 **받은 편지함**, **보낸 편지함** 또는 **휴지통**&#x200B;을 선택하여 해당 메시지 목록에 대한 구성 요소를 구성하십시오.
 
 1. `Edit` 모드에서 페이지의 구성 요소를 선택합니다.
-1. 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소하십시오.상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
+1. 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소하십시오.
+상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
 
 1. 구성이 완료되면 `broken link` 아이콘을 선택하여 상속을 복원해야 합니다.
 
@@ -136,7 +144,8 @@ AEM Communities의 메시징 기능을 사용하면 포럼 및 댓글에서 공�
 * `Preview` 모드에서 **메시지** 링크를 선택하여 기본 메시징 페이지를 엽니다. `Compose Message` 페이지를 열 수 있도록 새 메시지 단추를 선택하십시오.
 
 * `Edit` 모드에서 메시지 본문이 포함된 페이지의 기본 구성 요소를 선택합니다.
-* 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소하십시오.상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
+* 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소하십시오.
+상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
 
 * 구성이 완료되면 `broken link` 아이콘을 선택하여 상속을 복원해야 합니다.
 

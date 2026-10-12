@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3480'
 ht-degree: 2%
-
 ---
-
 # 스마트 이미징 {#smart-imaging}
 
 스마트 이미징은 각 사용자의 고유한 보기 특성을 적용하여 경험에 맞게 자동으로 최적화된 적합한 이미지를 제공하므로 향상된 성능과 참여를 제공합니다.
@@ -90,7 +106,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
 
@@ -244,29 +260,29 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
    * **기본 연락처 세부 정보:**
 
-      * 이름, 이메일 및 전화번호를 입력합니다.
+     * 이름, 이메일 및 전화번호를 입력합니다.
 
    * **사용할 스마트 이미징 기능:**
 
-      * 계정에 대해 원하는 기능을 나열합니다.
+     * 계정에 대해 원하는 기능을 나열합니다.
 
-         * 브라우저 형식 변환: WebP 또는 AVIF
-         * 네트워크 대역폭 최적화
-         * DPR: DPR에서는 올바른 `dprValue`을(를) 결정하기 위해 클라이언트측을 조정해야 합니다. 따라서 Adobe에서는 `dpr=on,dprValue`을(를) 추가하여 URL을 통해 DPR을 사용하도록 설정하는 것이 좋습니다.
+       * 브라우저 형식 변환: WebP 또는 AVIF
+       * 네트워크 대역폭 최적화
+       * DPR: DPR에서는 올바른 `dprValue`을(를) 결정하기 위해 클라이언트측을 조정해야 합니다. 따라서 Adobe에서는 `dpr=on,dprValue`을(를) 추가하여 URL을 통해 DPR을 사용하도록 설정하는 것이 좋습니다.
 
    * **스마트 이미징용 도메인:**
 
-      * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
-      * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+     * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
+     * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
+     * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
-         1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
-         1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
-         1. 다른 공급자가 관리하는 CDN이 아니라 Adobe의 CDN을 사용 중인지 확인합니다.
+       1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
+       1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
+       1. 다른 공급자가 관리하는 CDN이 아니라 Adobe의 CDN을 사용 중인지 확인합니다.
 
    * **HTTP/2 지원 표시:**
 
-      * HTTP/2에서 작동하는 데 스마트 이미징이 필요한지 여부를 지정합니다.
+     * HTTP/2에서 작동하는 데 스마트 이미징이 필요한지 여부를 지정합니다.
 
 1. Adobe 고객 지원 센터는 요청된 스마트 이미징 기능을 기본적으로 활성화하므로 매개 변수를 URL에 수동으로 추가할 필요가 없습니다.
 1. 캐싱을 통해 성능을 극대화하려면 TTL(Time To Live)을 최소 24시간으로 설정하는 것이 좋습니다.
@@ -339,8 +355,9 @@ TTL을 조정하려면 다음을 수행하십시오.
 >**X-Adobe-Smart-Imaging = -1(WebP 제공)**
 >
 >`X-Adobe-Smart-Imaging`의 값이 -1이고 WebP가 계속 배달 중인 경우 스마트 이미징이 활성화됩니다. 그러나 캐시가 오래되어 크기 이점이 계산되지 않았습니다. 이미지의 URL에서 `cache=update`(한 번만)을 사용하여 이 문제를 해결할 수 있습니다.
->한정자 사용의 예:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
+>수정자 사용의 예:
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
 
 +++
 

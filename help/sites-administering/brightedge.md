@@ -9,20 +9,29 @@ exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
-
+source-wordcount: '500'
+ht-degree: 4%
 ---
-
 # BrightEdge Content Optimizer와 통합{#integrating-with-brightedge-content-optimizer}
 
 AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도록 BrightEdge 클라우드 구성을 만듭니다. 여러 계정을 사용하는 경우 여러 구성을 만들 수 있습니다.
 
 구성을 만들 때 제목을 지정합니다. 사람들이 구성을 BrightEdge 계정과 상호 연관시킬 수 있도록 제목을 설명해야 합니다. 페이지 작성자 또는 관리자가 웹 페이지를 BrightEdge 계정과 연결하면 드롭다운 목록에 이 제목이 표시됩니다.
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > 클라우드 서비스 를 클릭합니다.
 1. BrightEdge Content Optimizer 섹션에 나타나는 링크를 클릭합니다. BrightEdge 구성을 작성했는지 여부에 따라 링크 텍스트가 결정됩니다.
 
    * 지금 구성: 이 링크는 구성을 만들지 않은 경우 나타납니다.
@@ -31,14 +40,14 @@ AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도�
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. 구성 표시 를 클릭한 경우 사용 가능한 구성 옆의 + 링크를 클릭합니다.
-1. 구성의 제목을 입력합니다. 필요한 경우 저장소에 구성을 저장하는 데 사용되는 노드의 이름을 입력합니다. 만들기 를 클릭합니다.
+1. 구성의 제목을 입력합니다. 필요한 경우 저장소에 구성을 저장하는 데 사용되는 노드의 이름을 입력합니다. 만들기를 클릭합니다.
 1. BrightEdge Content Optimizer 구성 대화 상자에서 BrightEdge 계정의 사용자 이름과 암호를 입력한 다음 확인을 클릭합니다.
 
 ## BrightEdge 구성 편집 {#editing-a-brightedge-configuration}
 
 필요한 경우 BrightEdge 구성의 사용자 이름과 암호를 수정합니다. 수정 사항은 구성을 사용하는 모든 페이지에 영향을 줍니다.
 
-1. 레일에서 도구 > 작업 > 클라우드 > Cloud Service 를 클릭합니다.
+1. 레일에서 도구 > 작업 > 클라우드 > 클라우드 서비스 를 클릭합니다.
 1. BrightEdge Content Optimizer 섹션에서 구성 표시를 클릭합니다.
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
@@ -53,7 +62,7 @@ AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도�
 1. 클래식 웹 사이트 콘솔을 엽니다. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. 웹 사이트 트리에서 BrightEdge 구성과 연결할 페이지가 포함된 폴더 또는 페이지를 선택합니다.
 1. 페이지 목록에서 페이지를 마우스 오른쪽 단추로 클릭하여 구성하고 속성 을 클릭합니다.
-1. [Cloud Service] 탭에서 [서비스 추가] 단추를 클릭하고 [Cloud Service] 대화 상자에서 BrightEdge Content Optimizer를 선택한 다음 [확인]을 클릭합니다.
+1. 클라우드 서비스 탭에서 서비스 추가 단추를 클릭하고 클라우드 서비스 대화 상자에서 BrightEdge Content Optimizer를 선택한 다음 확인을 클릭합니다.
 1. BrightEdge Content Optimizer 목록에서 페이지와 연결할 BrightEdge 구성을 선택한 다음 확인을 클릭합니다.
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
@@ -63,10 +72,10 @@ AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도�
 BrightEdge 구성을 활성화하여 게시 인스턴스에서 복제하고 게시된 페이지가 BrightEdge 서비스와 상호 작용할 수 있도록 합니다.
 
 1. 레일에서 사이트 를 클릭한 다음 BrightEdge 구성과 연결한 페이지를 찾아 선택합니다.
-1. Publish 아이콘을 클릭한 다음 Publish을 클릭합니다.
+1. 게시 아이콘을 클릭한 다음 게시를 클릭합니다.
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 
-1. 표시되는 구성 목록에서 BrightEdge 구성이 선택되었는지 확인한 다음 Publish을 클릭합니다.
+1. 표시되는 구성 목록에서 BrightEdge 구성이 선택되었는지 확인한 다음 게시를 클릭합니다.
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)

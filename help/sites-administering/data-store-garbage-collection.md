@@ -10,13 +10,22 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
-
 ---
-
 # 데이터 저장소 가비지 수집 {#data-store-garbage-collection}
 
 기존 WCM 에셋이 제거되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층 구조에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 참조되지 않은 이 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 가비지 에셋이 여러 개 있는 경우, 이를 제거하여 공간을 보존하고 백업 및 파일 시스템 유지 관리 성능을 최적화하는 것이 좋습니다.

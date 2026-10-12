@@ -9,13 +9,17 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
-
 ---
-
 # 모바일 앱용 페이지 템플릿 {#page-templates-for-mobile-apps}
 
 {{ue-over-mobile}}
@@ -192,7 +196,7 @@ PhoneGap 애플리케이션에서 제공된 에셋의 URI는 플랫폼별로 다
 
 PhoneGap 개발자로서 관련 콘텐츠는 www 디렉터리 아래에 있습니다. 앱 자산에 액세스하려면 상대 경로를 사용하십시오.
 
-이 문제를 해결하기 위해 PhoneGap 애플리케이션은 단일 페이지 앱(SPA) 패턴을 사용하여 기본 URI(해시 제외)가 변경되지 않도록 합니다. 따라서 참조하는 모든 에셋, 템플릿 또는 스크립트는 **최상위 페이지를 기준으로 해야 합니다. &#x200B;** 최상위 페이지는 `<name>.angular-app-module.js` 및 `<name>.angular-app-controllers.js`을(를) 통해 Angular 라우팅 및 컨트롤러를 초기화합니다. 이 페이지는 sling:redirect을 *확장하지 *않는 저장소의 루트와 가장 가까운 페이지여야 합니다.
+이 문제를 해결하기 위해 PhoneGap 애플리케이션은 단일 페이지 앱(SPA) 패턴을 사용하여 기본 URI(해시 제외)가 변경되지 않도록 합니다. 따라서 참조하는 모든 에셋, 템플릿 또는 스크립트는 **최상위 페이지를 기준으로 해야 합니다. **최상위 페이지는 `<name>.angular-app-module.js` 및 `<name>.angular-app-controllers.js`을(를) 통해 Angular 라우팅 및 컨트롤러를 초기화합니다. 이 페이지는 sling:redirect을 *확장하지 *않는 저장소의 루트와 가장 가까운 페이지여야 합니다.
 
 상대 경로를 처리하는 데 여러 도우미 메서드를 사용할 수 있습니다.
 

@@ -10,7 +10,18 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -137,7 +148,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -225,7 +236,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**&#x200B;입니다.*
+*다음 값이 포함된 Adobe Analytics에 대한&#x200B;**첫 번째 호출**입니다.*
 
 * eventdata.a.media.name용 *prop1 및 eVar1,*
 * *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)가 포함된 eVar2 및 eVar3 포함*
@@ -233,7 +244,7 @@ XX 접미사는 이정표를 정의하는 추적 오프셋입니다. 예를 들�
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Adobe Analytics에 대한&#x200B;**세 번째 호출**&#x200B;입니다.*
+*Adobe Analytics에 대한&#x200B;**세 번째 호출**입니다.*
 
 * *prop1 및 eVar1에 a.media.name;이 포함되어 있습니다.*
 * 세그먼트를 보았으므로 *event1*
@@ -272,7 +283,7 @@ eventdata.events.milestoneXX
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 ContentFinder에서 Adobe Analytics 속성을 구성 요소의 CQ 변수 옆으로 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 [Adobe Analytics에서 비디오 측정](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
 
 1. 페이지에 [프레임워크를 추가](/help/sites-administering/adobeanalytics.md)합니다.
 1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출을 트리거하십시오.
@@ -320,7 +331,7 @@ eventdata.events.milestoneXX
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *호출에서 보낸&#x200B;**pev3**&#x200B;변수에 다음 정보가 포함되어 있습니다.*
+   *호출에서 보낸&#x200B;**pev3**변수에 다음 정보가 포함되어 있습니다.*
 
    * *이름* - 비디오 파일 이름(*film.avi*)
 
@@ -336,7 +347,7 @@ eventdata.events.milestoneXX
 
 ## 이전(초) {#legacy-seconds}
 
-**&#x200B; 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
+** 레거시 초** 메서드를 사용하는 경우 Adobe Analytics 호출은 N초마다 트리거되며, 여기서 N은 추적 오프셋 필드에 지정됩니다.
 
 1. 트랙 오프셋을 초 단위로 설정합니다.
 
@@ -381,4 +392,4 @@ eventdata.events.milestoneXX
 
 **이 자습서에 사용된 참조:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ko)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

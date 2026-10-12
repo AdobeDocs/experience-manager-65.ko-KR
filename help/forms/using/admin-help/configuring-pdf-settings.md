@@ -9,13 +9,24 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7478'
 ht-degree: 2%
-
 ---
-
 # Adobe PDF 설정 구성{#configuring-adobe-pdf-settings}
 
 Adobe PDF 설정 페이지에는 사용할 소스에 대해 지정할 수 있는 전환 설정이 표시됩니다. 사전 정의된 PDF 설정을 사용하거나 직접 만들 수 있습니다. PDF 설정은 파일의 변환 방법과 그에 따른 PDF 구조 및 기능을 정확하게 결정합니다. Adobe PDF 설정은 이전에 Distiller® 매개 변수 또는 작업 옵션이라고 했습니다.
@@ -273,7 +284,7 @@ PDF 설정이 더 이상 필요하지 않은 경우 영구적으로 삭제할 �
 **압축:** 색상, 회색 음영 및 단색 이미지에 적용할 값을 설정합니다. 색상 및 회색 음영 이미지의 경우 이미지 품질을 설정합니다.
 
 * 색상 또는 회색 음영 이미지의 경우 단일 색상 또는 반복 패턴의 넓은 영역이 있는 이미지에 잘 작동하는 압축을 적용하려면 [ZIP]을 선택합니다. 스크린샷, 페인트 프로그램으로 만든 간단한 이미지, 반복 패턴이 포함된 단색 이미지가 그 예입니다. 화면 또는 인쇄에서 재현할 수 있는 것보다 더 자세한 내용이 포함된 연속 톤 사진과 같은 회색 음영 또는 색상 이미지에 적합한 압축을 적용하려면 최소 품질에서 최대 품질까지 JPEG을 선택합니다. 색상 및 회색 음영 이미지에 가장 적합한 품질을 자동으로 결정하려면 자동(JPEG)을 선택합니다.
-* 단색 이미지의 경우 [CCITT 그룹 4], [CCITT 그룹 3], [ZIP], [JPEG200], [자동] (JPEG2000) 또는 [실행 길이] 압축을 선택합니다.
+* 단색 이미지의 경우 [CCITT 그룹 4], [CCITT 그룹 3], [ZIP], [JPEG200], [자동](JPEG2000) 또는 [실행 길이] 압축을 선택합니다.
 
 단색 이미지를 회색 음영으로 스캔하지 않고 단색으로 스캔해야 합니다. 스캔한 텍스트는 기본적으로 회색 음영 이미지로 저장되는 경우가 있습니다. JPEG 압축 방법으로 압축된 회색 음영 텍스트는 명확하지 않으며 읽을 수 없을 수 있습니다.
 

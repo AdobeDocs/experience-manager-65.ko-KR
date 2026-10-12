@@ -9,13 +9,27 @@ exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
-
 ---
-
 # 고급 시스템 속성 구성 {#configure-advanced-system-attributes}
 
 고급 시스템 속성 구성 페이지에서는 파일을 내보내서 편집한 후 다시 가져오지 않고도 구성 파일의 특정 설정을 수정할 수 있습니다. ([구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)를 참조하십시오.)
@@ -29,7 +43,7 @@ ht-degree: 100%
    >
    >시스템이 제대로 작동하지 않을 수 있으므로 세션 시간 초과 제한을 10분 미만으로 설정해서는 안 됩니다. 권장 값은 10~120(분)입니다.
 
-   **어설션 임계값(초):** 클러스터 내 AEM Forms 애플리케이션 서버 간 시스템 시간 차이로 발생하는 지연을 상쇄하기 위한 버퍼 시간입니다. AEM Forms는 이 속성에 지정된 시간(초)만큼 사용자 로그인 시간을 이전 일자로 되돌립니다. 유효한 값은 `0`~`3600`입니다. 기본값은 `60`입니다. 이 설정은 구성 파일의 `SAML/Producer/assertionThresholdInSeconds` 항목 키를 업데이트합니다.
+   **어설션 임계값(초):** 클러스터 내 AEM Forms 애플리케이션 서버 간 시스템 시간 차이로 발생하는 지연을 상쇄하기 위한 버퍼 시간입니다. AEM Forms는 이 속성에 지정된 시간(초)만큼 사용자의 로그인 시간을 앞당깁니다. 유효한 값은 `0`~`3600`입니다. 기본값은 `60`입니다. 이 설정은 구성 파일의 `SAML/Producer/assertionThresholdInSeconds` 항목 키를 업데이트합니다.
 
    **최대 허용 어설션 갱신 횟수:** 로그인을 하지 않아도 사용자 세션을 투명하게 갱신할 수 있는 최대 횟수입니다. 유효한 값은 `0`~`9999`입니다. `0` 값은 어설션이 갱신되지 않음을 의미합니다. 기본값은 10입니다. 이 설정은 구성 파일의 `SAML/Producer/maxAssertionRenewalCount` 항목 키를 업데이트합니다.
 

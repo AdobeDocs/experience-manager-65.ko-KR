@@ -1,5 +1,5 @@
 ---
-title: HTML 5 양식에 대한 로깅 활성화
+title: HTML5 양식에 대한 로깅 활성화
 description: 로거 유틸리티는 양식에 대한 로깅을 활성화하고 양식 관련 문제를 디버깅하는 데 도움이 됩니다.
 contentOwner: robhagat
 content-type: reference
@@ -10,24 +10,39 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 4%
-
+source-wordcount: '644'
+ht-degree: 6%
 ---
+# HTML5 양식에 대한 로깅 활성화{#enable-logging-for-html-forms}
 
-# HTML 5 양식에 대한 로깅 활성화{#enable-logging-for-html-forms}
-
-HTML 5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 구성할 수 있습니다. 로거 유틸리티에는 다양한 수준이 있으므로 요구 사항에 따라 수준을 설정할 수 있습니다. HTML 5 forms에는 서버 및 클라이언트 구성 요소가 있습니다. 두 구성 요소에 대해 로그를 구성할 수 있습니다.
+HTML5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 구성할 수 있습니다. 로거 유틸리티에는 다양한 수준이 있으므로 요구 사항에 따라 수준을 설정할 수 있습니다. HTML5 forms에는 서버 및 클라이언트 구성 요소가 있습니다. 두 구성 요소에 대해 로그를 구성할 수 있습니다.
 
 ## 서버측 로깅 구성 {#configuring-server-side-logging}
 
 서버측 로그를 구성하려면 다음 단계를 수행하십시오.
 
-1. `https://'[server]:[port]'/system/console/configMgr`(으)로 이동합니다. *Apace Sling 로깅 로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
+1. `https://'[server]:[port]'/system/console/configMgr`로 이동합니다. *Apace Sling 로깅 로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
 
-   ![&#x200B; Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
+   ![ Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
    Api Sling 로깅 로거 구성 옵션
 
@@ -37,13 +52,13 @@ HTML 5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 
 
    >[!NOTE]
    >
-   >HTML5 양식 로그 디렉터리에 로그를 생성하려면 파일 이름 앞에 ../logs/를 추가합니다.
+   >HTML5 forms 로그 디렉터리에 로그를 생성하려면 파일 이름 앞에 ../logs/를 추가합니다.
 
 1. **로거**&#x200B;을(를) **HTMLFormsPerfLogger**(으)로 변경합니다. **저장**&#x200B;을 클릭합니다.
 
 ## 클라이언트 로깅 구성 {#configuring-client-logging}
 
-다음 방법을 사용하여 HTML5 양식에서 클라이언트측 로깅을 활성화할 수 있습니다.
+다음 방법을 사용하여 HTML5 Forms에서 클라이언트측 로깅을 활성화할 수 있습니다.
 
 * 이름이 `log`인 요청 매개 변수 사용
 * CQ 구성 관리자 사용
@@ -170,7 +185,7 @@ HTML 5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 
 >
 >각 로그 범주 a(xfa), b(xfaView) 및 c(xfaPerf)의 기본 로그 수준은 2(ERROR)입니다. 따라서 로그 구성: 2-b6의 경우 다른 범주에 대한 로그 수준은 다음과 같습니다.
 >a(xfa): 2(기본 수준 오류)
->b(xfaView): 6(사용자 지정 TRACE)
+>b(xfaView): 6(사용자가 지정한 TRACE)
 >a(xfaPerf): 2(기본 수준 오류)
 
 ### Configuration Manager를 사용하여 로깅 활성화 {#enabling-logging-using-configuration-manager}

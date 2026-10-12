@@ -1,5 +1,5 @@
 ---
-title: We.Retail에서 핵심 구성 요소 시험 사용
+title: We.Retail에서 핵심 구성 요소 체험
 description: We.Retail을 사용하여 Adobe Experience Manager에서 핵심 구성 요소를 테스트하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 4%
-
+source-wordcount: '561'
+ht-degree: 8%
 ---
-
-# We.Retail에서 핵심 구성 요소 시험 사용{#trying-out-core-components-in-we-retail}
+# We.Retail에서 핵심 구성 요소 체험{#trying-out-core-components-in-we-retail}
 
 핵심 구성 요소는 손쉽게 확장하고 프로젝트에 간단히 통합할 수 있는 현대적이고 유연한 구성 요소입니다. 핵심 구성 요소는 HTL, 즉시 사용 가능한 사용성, 구성 가능성, 버전 관리 및 확장성과 같은 몇 가지 주요 디자인 원칙을 기반으로 구축되었습니다. We.Retail은 핵심 구성 요소를 기반으로 합니다.
 
@@ -35,7 +44,7 @@ ht-degree: 4%
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. 모든 핵심 구성 요소의 이름이 **v1**&#x200B;로 지정됩니다. 이는 이 핵심 구성 요소의 첫 번째 버전임을 반영합니다. AEM과 호환되고 쉽게 업그레이드할 수 있게 되어 최신 기능을 활용할 수 있는 일반 버전이 출시될 예정입니다.
+1. 모든 핵심 구성 요소의 이름이 **v1**&#x200B;로 지정됩니다. 이는 이 핵심 구성 요소의 첫 번째 버전임을 반영합니다. AEM과 호환되고 간편하게 업그레이드할 수 있어 최신 기능을 활용할 수 있는 일반 버전이 출시될 예정입니다.
 1. **텍스트(v1)**&#x200B;을 클릭합니다.
 
    구성 요소의 **리소스 종류**&#x200B;이(가) `/apps/core/wcm/components/text/v1/text`인지 확인하세요. 핵심 구성 요소는 `/apps/core/wcm/components`에서 찾을 수 있으며 구성 요소별로 버전이 지정됩니다.
@@ -86,6 +95,6 @@ ht-degree: 4%
 
 ## 추가 정보 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)에서 핵심 구성 요소의 기능에 대한 개요를 참조하고 개발자 문서 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ko)에서 기술 개요를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)에서 핵심 구성 요소의 기능에 대한 개요를 참조하고 개발자 문서 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)에서 기술 개요를 참조하십시오.
 
 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md)을 추가로 조사할 수도 있습니다. 편집 가능한 템플릿에 대한 자세한 내용은 작성 문서 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md)을 참조하십시오.

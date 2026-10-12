@@ -2,18 +2,21 @@
 title: 장바구니 및 Dispatcher 설정
 description: 장바구니 및 Adobe Experience Manager Dispatcher 설정에 대해 알아봅니다.
 exl-id: c9a17f42-91d7-4315-9dc3-5ae8d620fe92
-source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 11%
-
 ---
-
 # 장바구니 및 Dispatcher 설정
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)에는 장바구니 및 체크아웃 양식을 렌더링하는 기본 제공 [장바구니](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)가 포함되어 있습니다. 장바구니에 GraphQL이 포함된 [AEM Dispatcher](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher) 라우팅 설정이 필요합니다. 다음 비디오에서는 도커 이미지를 사용한 로컬 구성 및 설정에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32906/?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
 다음 리소스에서 이 주제에 대한 자세한 내용을 찾을 수 있습니다.
 

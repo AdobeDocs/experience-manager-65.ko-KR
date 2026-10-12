@@ -10,13 +10,20 @@ exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '611'
 ht-degree: 1%
-
 ---
-
 # 중첩 그룹 작성{#authoring-nested-groups}
 
 ## 작성자에 대한 그룹 만들기 {#creating-groups-on-author}
@@ -27,14 +34,14 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 * **[!UICONTROL 참여 폴더]**&#x200B;를 선택하여 엽니다.
 * **[!UICONTROL 시작 자습서]** 영어 사이트의 카드를 선택하십시오.
 
-   * 카드 이미지를 선택합니다.
-   * 아이콘을 *선택하지* 마십시오.
+  * 카드 이미지를 선택합니다.
+  * 아이콘을 *선택하지* 마십시오.
 
 결과는 [그룹 콘솔](/help/communities/groups.md)에 연결됩니다.
 
 ![그룹 만들기](assets/create-group.png)
 
-그룹 함수는 그룹 인스턴스가 생성되는 폴더로 표시됩니다. 열려면 그룹 폴더를 선택합니다. Publish에 생성된 그룹이 표시됩니다.
+그룹 함수는 그룹 인스턴스가 생성되는 폴더로 표시됩니다. 열려면 그룹 폴더를 선택합니다. 게시할 때 만들어진 그룹이 표시됩니다.
 
 ![새 그룹 만들기](assets/create-new-group.png)
 
@@ -48,13 +55,13 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 * **커뮤니티 그룹 템플릿**:
 
-   * **[!UICONTROL 커뮤니티 그룹 제목]**: 예술
-   * **[!UICONTROL 커뮤니티 그룹 설명]**: 다양한 예술 그룹의 상위 그룹
-   * **[!UICONTROL 커뮤니티 그룹 루트]**: *기본값으로 남기기*
-   * **[!UICONTROL 추가 사용 가능한 커뮤니티 그룹 언어]**: 드롭다운 메뉴를 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택하십시오. 이 메뉴에는 상위 커뮤니티 사이트가 만들어지는 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹이 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
-   * **[!UICONTROL 커뮤니티 그룹 이름]**: 예술
-   * **[!UICONTROL 템플릿]**: `Reference Group`을(를) 선택하는 드롭다운
-   * **[!UICONTROL 다음]** 선택
+  * **[!UICONTROL 커뮤니티 그룹 제목]**: 예술
+  * **[!UICONTROL 커뮤니티 그룹 설명]**: 다양한 예술 그룹의 상위 그룹
+  * **[!UICONTROL 커뮤니티 그룹 루트]**: *기본값으로 남기기*
+  * **[!UICONTROL 추가 사용 가능한 커뮤니티 그룹 언어]**: 드롭다운 메뉴를 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택하십시오. 이 메뉴에는 상위 커뮤니티 사이트가 만들어지는 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹이 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
+  * **[!UICONTROL 커뮤니티 그룹 이름]**: 예술
+  * **[!UICONTROL 템플릿]**: `Reference Group`을(를) 선택하는 드롭다운
+  * **[!UICONTROL 다음]** 선택
 
 ![중첩된 커뮤니티 그룹](assets/parent-to-nestedgroup.png)
 
@@ -62,23 +69,23 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 * **[!UICONTROL 디자인]**
 
-   * 디자인을 변경하거나 기본 상위 사이트의 디자인을 허용합니다.
-   * **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+  * 디자인을 변경하거나 기본 상위 사이트의 디자인을 허용합니다.
+  * **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 * **[!UICONTROL 설정]**
 
-   * **[!UICONTROL 중재]**
+  * **[!UICONTROL 중재]**
 
-      * 비워 둡니다(상위 사이트에서 상속).
+    * 비워 둡니다(상위 사이트에서 상속).
 
-   * **[!UICONTROL 멤버십]**
+  * **[!UICONTROL 멤버십]**
 
-      * 기본 `Optional Membership.` 사용
+    * 기본 `Optional Membership.` 사용
 
-      * **[!UICONTROL 썸네일]**
-         * `optional.*`
+    * **[!UICONTROL 썸네일]**
+      * `optional.*`
 
-      * **[!UICONTROL 다음 선택]**.
+    * **[!UICONTROL 다음 선택]**.
 
 * **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
@@ -88,7 +95,7 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 ![그룹 중첩](assets/create-community-group.png)
 
-#### Publish 그룹 {#publish-group}
+#### 그룹 게시 {#publish-group}
 
 `arts` 그룹 내에 중첩된 그룹을 만들기 전에 `arts` 카드 위로 마우스를 가져간 후 게시 아이콘을 선택하여 게시합니다.
 
@@ -139,29 +146,29 @@ AEM 작성자 인스턴스의 전역 탐색에서:
 
 기본 커뮤니티 사이트를 게시한 후:
 
-* 각 그룹을 개별적으로 Publish:
+* 각 그룹을 개별적으로 게시:
 
-   * 그룹이 게시되었다는 확인을 기다리는 중입니다.
+  * 그룹이 게시되었다는 확인을 기다리는 중입니다.
 
-* 다음 내에 중첩된 그룹을 게시하기 전에 상위 그룹을 Publish 합니다.
+* 다음 내에 중첩된 그룹을 게시하기 전에 상위 그룹을 게시합니다.
 
-   * 모든 그룹은 하향식으로 게시되어야 합니다.
+  * 모든 그룹은 하향식으로 게시되어야 합니다.
 
 ![그룹 게시됨](assets/group-published.png)
 
-## Publish의 경험 {#experience-on-publish}
+## 게시할 때 경험 {#experience-on-publish}
 
 로그인할 때 다음에 사용되는 [데모 사용자](/help/communities/tutorials.md#demo-users)를 사용하여 여러 그룹을 경험할 수 있습니다.
 
 * Art/History 그룹 구성원: `emily.andrews@mailinator.com/password`
-   * 제한된(비밀) 그룹, 예술/역사가 표시됩니다.
-   * 선택적 (공용) 그룹을 볼 수 있습니다.
-   * 제한된(열려 있는) 그룹에 참가할 수 있습니다.
+  * 제한된(비밀) 그룹, 예술/역사가 표시됩니다.
+  * 선택적 (공용) 그룹을 볼 수 있습니다.
+  * 제한된(열려 있는) 그룹에 참가할 수 있습니다.
 
 * 그룹 관리자: `aaron.mcdonald@mailinator.com/password`
 
-   * 선택적 (공용) 그룹을 볼 수 있습니다.
-   * 제한된(열려 있는) 그룹에 참가할 수 있습니다.
-   * 제한된(비밀) 그룹을 볼 수 없습니다.
+  * 선택적 (공용) 그룹을 볼 수 있습니다.
+  * 제한된(열려 있는) 그룹에 참가할 수 있습니다.
+  * 제한된(비밀) 그룹을 볼 수 없습니다.
 
 작성자의 커뮤니티 [구성원 및 그룹 콘솔](/help/communities/members.md)에 액세스하여 커뮤니티 그룹에 해당하는 다양한 구성원 그룹에 다른 사용자를 추가하십시오.

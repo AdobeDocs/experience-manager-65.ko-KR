@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 2%
-
 ---
-
 # 기본 구성 개념{#basic-configuration-concepts}
 
 Adobe Experience Manager(AEM)는 &quot;즉시 실행&quot;할 수 있도록 하는 모든 매개 변수에 대한 기본 설정과 함께 설치됩니다. 하지만 고유한 특정 요구 사항에 맞게 AEM을 구성할 수 있습니다.
@@ -180,7 +189,7 @@ AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 [사
 
 Dispatcher은 캐싱, 로드 밸런싱 또는 둘 모두를 위한 Adobe Experience Manager의 도구입니다. 엔터프라이즈급 웹 서버와 함께 사용할 수 있습니다.
 
-자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)을 참조하십시오.
+자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)을 참조하십시오.
 
 ### AEM LiveCycle Connector 구성 {#configuring-aem-livecycle-connector}
 
@@ -303,11 +312,11 @@ CQ는 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 * 게시 인스턴스에서 다음을 수행합니다.
 
-   * [일별 CQ WCM 페이지 통계](/help/sites-deploying/osgi-configuration-settings.md)
+  * [일별 CQ WCM 페이지 통계](/help/sites-deploying/osgi-configuration-settings.md)
 
 * 작성자 인스턴스에서 다음을 수행합니다.
 
-   * [Adobe 페이지 노출 횟수 추적기](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Adobe 페이지 노출 횟수 추적기](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

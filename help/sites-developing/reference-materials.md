@@ -1,21 +1,28 @@
 ---
 title: API 안내서
-
 description: AEM이 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
-
-
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 4%
@@ -44,7 +51,7 @@ AEM 게재 및 콘텐츠 관리 API:
 
   * [JSON 내보내기](/help/sites-developing/json-exporter.md)
   * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-  * 자세한 내용은 개발 사용 안내서[&#128279;](/help/sites-developing/getting-started.md)의 구성 요소 섹션을 참조하십시오
+  * 자세한 내용은 개발 사용 안내서](/help/sites-developing/getting-started.md)의 [구성 요소 섹션을 참조하십시오
 
 * **Assets**: Assets HTTP API를 사용하면 이진, 메타데이터, 렌디션 및 주석을 포함하여 Assets에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md) 참조
 

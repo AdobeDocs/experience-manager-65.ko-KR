@@ -9,13 +9,17 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2668'
 ht-degree: 1%
-
 ---
-
 # 앱 콘솔을 사용하여 앱 만들기 및 편집{#creating-and-editing-apps-using-the-apps-console}
 
 {{ue-over-mobile}}
@@ -77,7 +81,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 클라우드 서비스를 빌드하고 Adobe Mobile Services SDK 플러그인을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
 
 * 빌드: 구성 관리 를 클릭하고 여기에서 build.phonegap.com 빌드 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap Build 클라우드 서비스를 선택할 수 있습니다.
-* Analytics: 구성 관리를 클릭하고 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
+* Analytics: 구성 관리를 클릭하고 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
 
 >[!NOTE]
 >
@@ -221,10 +225,10 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트 �
 * 상위 페이지로 돌아가기 위한 뒤로 단추. [뒤로] 단추가 홈 페이지에 표시되지 않습니다.
 * 명령 및 링크 메뉴를 제공하는 소모성 레일:
 
-   * 위치 페이지를 엽니다.
-   * 장바구니를 엽니다.
-   * 로그인합니다.
-   * 애플리케이션을 업데이트합니다.
+  * 위치 페이지를 엽니다.
+  * 장바구니를 엽니다.
+  * 로그인합니다.
+  * 애플리케이션을 업데이트합니다.
 
 * 구성 요소를 추가하고 콘텐츠를 만들기 위한 단락 시스템입니다.
 

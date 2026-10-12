@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 63%
-
 ---
-
 # 페이지 버전을 사용하여 작업{#working-with-page-versions}
 
 버전 관리를 통해 특정 시점의 페이지 “스냅샷”을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
 
 * 페이지의 버전을 생성합니다.
 * 페이지를 이전 버전으로 복원합니다. 예:
-   * 을 눌러 페이지에 적용한 변경 내용을 실행 취소할 수 있습니다.
+  * 을 눌러 페이지에 적용한 변경 내용을 실행 취소할 수 있습니다.
 * 페이지의 현재 버전을 이전 버전과 비교:
-   * 텍스트 및 이미지의 차이점을 강조 표시합니다.
+  * 텍스트 및 이미지의 차이점을 강조 표시합니다.
 
 >[!NOTE]
 >
@@ -77,13 +90,13 @@ ht-degree: 63%
 
 * 상단 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)의 **복원** 옵션
 
-   * **버전 복원**
+  * **버전 복원**
 
-     현재 선택된 폴더 내에 있는 지정된 페이지의 버전을 복원합니다. 이렇게 하면 이전에 삭제된 페이지도 복원할 수 있습니다.
+    현재 선택된 폴더 내에 있는 지정된 페이지의 버전을 복원합니다. 이렇게 하면 이전에 삭제된 페이지도 복원할 수 있습니다.
 
-   * **트리 복원**
+  * **트리 복원**
 
-     지정된 날짜 및 시간의 전체 트리의 버전을 복원합니다. 이렇게 하면 이전에 삭제된 페이지도 복원할 수 있습니다.
+    지정된 날짜 및 시간의 전체 트리의 버전을 복원합니다. 이렇게 하면 이전에 삭제된 페이지도 복원할 수 있습니다.
 
 >[!NOTE]
 >
@@ -203,12 +216,12 @@ ht-degree: 63%
 
 >[!TIP]
 >
->AEM [&#x200B; 이상을 실행할 때 &#x200B;](/help/sites-authoring/launches.md)타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수 있습니다6.5.10.0.
+>AEM 6.5.10.0 이상을 실행할 때 [타임워프를 Launches와 함께 사용하여 향후 상태를 미리 볼 수 있습니다](/help/sites-authoring/launches.md).
 
 콘텐츠 작성은 지속적인 공동 작업 프로세스입니다. 타임워프의 목적은 작성자가 시간이 지남에 따라 게시된 웹 사이트를 추적하여 콘텐츠가 어떻게 변경되었는지 이해할 수 있도록 하는 것입니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 파악합니다.
 
 * 시스템은 선택한 시간에 활성화되어 있던 페이지 버전을 찾습니다.
-   * 이 페이지 버전은 타임워프에서 선택한 시점을 *이전*&#x200B;에 생성/활성화했습니다.
+  * 이 페이지 버전은 타임워프에서 선택한 시점을 *이전*&#x200B;에 생성/활성화했습니다.
 * 삭제된 페이지로 이동하더라도 페이지의 이전 버전이 저장소에 남아 있어 사용할 수 있는 경우에는 해당 페이지가 렌더링됩니다.
 * 게시된 버전을 찾을 수 없으면 타임워프는 작성 환경의 현재 페이지 상태로 되돌아갑니다(오류/404 페이지 방지, 이로 인해 브라우징이 수행되지 않음).
 

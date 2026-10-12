@@ -9,13 +9,22 @@ exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # 페이지 작성{#authoring-pages}
 
 다음은 AEM을 사용하여 작성하는 방법에 대한 개요입니다.
@@ -30,10 +39,10 @@ ht-degree: 0%
 
 페이지를 작성할 때 도움이 되도록 작성 환경에서는 다음과 같은 기능을 제공합니다.
 
-* **드래그 앤 드롭**
+* **끌어서 놓기**
 구성 요소(예: 텍스트, 이미지)와 디지털 자산(예: 이미지)을 원하는 위치에 드래그 앤 드롭하여 페이지에 배치할 수 있습니다.
 
-* **편집**
+* **편집 중**
 페이지에 배치되면 구성 요소별 대화 상자를 열어 콘텐츠를 입력하거나 해당 구성 요소의 특성(예: 이미지 크기)을 구성할 수 있습니다.
 
 * **바로 편집**
@@ -43,7 +52,7 @@ ht-degree: 0%
 편집 가능한 페이지에 나타나는 부동 &quot;검사기&quot; 창입니다. 여기에서 새 구성 요소를 페이지로 드래그하고 페이지별 작업을 실행할 수 있습니다.
 
 * **[콘텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-작성 가능한 각 페이지의 왼쪽에 있는 컨텐츠 파인더를 사용하여 디지털 자산(예: 기타 이미지, Flash 요소 및 문서), 기타 페이지 및 단락을 포함한 다양한 자산에 빠르게 액세스할 수 있습니다. 이러한 항목은 페이지로 드래그하여 자산 위치를 지정하거나 다른 페이지에 대한 링크를 만들 수 있습니다.
+작성 가능한 각 페이지의 왼쪽에 있는 컨텐츠 파인더를 사용하여 디지털 자산(예: 기타 이미지, Flash 요소 및 문서), 기타 페이지 및 단락 등 다양한 자산에 빠르게 액세스할 수 있습니다. 이러한 항목은 페이지로 드래그하여 자산 위치를 지정하거나 다른 페이지에 대한 링크를 만들 수 있습니다.
 
 * **상황에 맞는 메뉴**
 대부분의 화면 요소(예: 페이지의 단락)를 마우스 오른쪽 버튼으로 클릭하면 적절한 작업 옵션이 있는 컨텍스트 메뉴가 표시됩니다.

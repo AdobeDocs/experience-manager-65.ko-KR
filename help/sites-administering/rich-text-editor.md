@@ -6,7 +6,18 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3073'
 ht-degree: 1%
@@ -181,9 +192,9 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 
 >[!NOTE]
 >
->[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
+>[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
 >
->자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=ko)를 참조하십시오.
+>자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -259,7 +270,7 @@ RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 사용할 수 없는 경우 콘텐츠 정책이 항목을 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 콘텐츠 정책에 의해 제공되는 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
+예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
 
 ## 도구 모음 아이콘과 명령 간의 매핑 사용자 정의 {#iconstoolbar}
 

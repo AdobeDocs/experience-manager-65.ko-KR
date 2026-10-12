@@ -9,13 +9,22 @@ exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 2%
-
 ---
-
 # 번역기를 사용하여 사전 관리{#using-translator-to-manage-dictionaries}
 
 AEM은 구성 요소 UI에 사용된 텍스트의 다양한 번역을 관리하는 콘솔을 제공합니다. 이 콘솔은에서 사용할 수 있습니다.
@@ -385,4 +394,4 @@ AEM 인스턴스의 새로운 언어에 대한 사전을 정의한 후 작성자
 
 >[!NOTE]
 >
->Dispatcher을 사용하는 경우 렌더링된 구성 요소 문자열에 새 사전 문자열을 포함하려면 캐시된 페이지를 [무효화](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/page-invalidate.html)해야 합니다.
+>Dispatcher을 사용하는 경우 렌더링된 구성 요소 문자열에 새 사전 문자열을 포함하려면 캐시된 페이지를 [무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)해야 합니다.

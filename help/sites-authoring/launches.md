@@ -10,13 +10,31 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 73%
-
+source-wordcount: '908'
+ht-degree: 72%
 ---
-
 # 론치{#launches}
 
 론치를 사용하여 향후 릴리스용 콘텐츠를 효율적으로 개발할 수 있습니다.
@@ -37,7 +55,7 @@ ht-degree: 73%
 * 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
-이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](/help/sites-authoring/launches-creating.md#deleting-a-launch)에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](#the-launches-console)하는 방법에 대해 설명합니다.
+이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고, 편집하고, 홍보하고, 필요한 경우 [삭제](/help/sites-authoring/launches-creating.md#deleting-a-launch)하는 방법에 대해 설명합니다.
 
 * [론치 만들기](/help/sites-authoring/launches-creating.md)
 * [론치 편집](/help/sites-authoring/launches-editing.md)
@@ -51,45 +69,45 @@ ht-degree: 73%
 
 * 소스 페이지의 사본을 만듭니다.
 
-   * 사본이 사용자의 론치입니다.
-   * 최상위 수준의 소스 페이지를 **프로덕션**&#x200B;이라고 합니다
+  * 사본이 사용자의 론치입니다.
+  * 최상위 수준의 소스 페이지를 **프로덕션**&#x200B;이라고 합니다
 
-      * 소스 페이지를 여러 개의(독립된) 분기에서 가져올 수 있습니다.
+    * 소스 페이지를 여러 개의(독립된) 분기에서 가져올 수 있습니다.
 
   ![실행 작업 개요](assets/chlimage_1-111.png)
 
 * 론치 구성을 편집합니다.
 
-   * 론치에서 페이지 및/또는 분기를 추가 또는 제거합니다.
-   * **제목**, **론치 날짜**, **프로덕션 준비** 플래그와 같은 론치 속성을 편집합니다.
+  * 론치에서 페이지 및/또는 분기를 추가 또는 제거합니다.
+  * **제목**, **론치 날짜**, **프로덕션 준비** 플래그와 같은 론치 속성을 편집합니다.
 
 * 콘텐츠의 수동 또는 자동 홍보 및 게시
 
-   * 수동:
+  * 수동:
 
-      * 론치 콘텐츠를 게시할 준비가 되면 다시 **타겟**(소스 페이지)으로 홍보합니다.
-      * 소스(다시 홍보 후) 페이지의 콘텐츠를 게시합니다.
-      * 모든 페이지를 승인하거나 수정된 페이지만 홍보합니다.
+    * 론치 콘텐츠를 게시할 준비가 되면 다시 **타겟**(소스 페이지)으로 홍보합니다.
+    * 소스(다시 홍보 후) 페이지의 콘텐츠를 게시합니다.
+    * 모든 페이지를 승인하거나 수정된 페이지만 홍보합니다.
 
-   * 자동 - 다음 내용이 포함됩니다.
+  * 자동 - 다음 내용이 포함됩니다.
 
-      * **론치**(**라이브**) **날짜** 필드: 론치를 만들거나 편집할 때 설정할 수 있습니다.
+    * **론치**(**라이브**) **날짜** 필드: 론치를 만들거나 편집할 때 설정할 수 있습니다.
 
-      * **프로덕션 준비** 플래그: 론치를 편집할 때만 설정할 수 있습니다.
-      * **프로덕션 준비** 플래그를 설정하면 론치가 지정된 **론치**(**라이브**) **날짜**&#x200B;의 프로덕션 페이지로 자동 홍보됩니다. 홍보 이후 프로덕션 페이지는 자동으로 게시됩니다.\
-        날짜를 설정하지 않았다면 플래그가 적용되지 않습니다.
+    * **프로덕션 준비** 플래그: 론치를 편집할 때만 설정할 수 있습니다.
+    * **프로덕션 준비** 플래그를 설정하면 론치가 지정된 **론치**(**라이브**) **날짜**&#x200B;의 프로덕션 페이지로 자동 홍보됩니다. 홍보 이후 프로덕션 페이지는 자동으로 게시됩니다.\
+      날짜를 설정하지 않았다면 플래그가 적용되지 않습니다.
 
 * 소스 페이지와 론치 페이지 동시 업데이트:
 
-   * 소스 페이지 변경 내용은 론치 사본(상속을 통해 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
-   * 론치 사본에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
+  * 소스 페이지 변경 내용은 론치 사본(상속을 통해 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
+  * 론치 사본에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
 
   ![업데이트 개요](assets/chlimage_1-112.png)
 
 * [중첩 론치 만들기](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - 론치 내 론치:
 
-   * 소스는 기존 론치입니다.
-   * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
+  * 소스는 기존 론치입니다.
+  * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
 
   ![중첩 실행 개요](assets/chlimage_1-113.png)
 

@@ -9,20 +9,27 @@ exl-id: 89858814-6625-4a56-8359-cc1eca402816
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '512'
 ht-degree: 0%
-
 ---
-
 # SCF 샌드박스 만들기  {#create-an-scf-sandbox}
 
 AEM 6.1 Communities에서 샌드박스를 빠르게 생성하는 가장 쉬운 방법은 커뮤니티 사이트를 생성하는 것입니다. [AEM Communities 시작](getting-started.md)을 참조하세요.
 
 개발자에게 유용한 또 다른 도구는 커뮤니티 구성 요소 및 기능을 탐색하고 빠르게 프로토타이핑할 수 있는 [커뮤니티 구성 요소 안내서](components-guide.md)입니다.
 
-웹 사이트를 만드는 연습은 커뮤니티 기능이 포함될 수 있는 AEM 웹 사이트의 구조를 이해하고 [SCF(소셜 구성 요소 프레임워크)](scf.md) 작업을 탐색할 간단한 페이지를 제공하는 데 유용합니다.
+웹 사이트를 만드는 연습은 커뮤니티 기능이 포함된 AEM 웹 사이트의 구조를 이해하고 [SCF(소셜 구성 요소 프레임워크)](scf.md) 작업을 탐색할 간단한 페이지를 제공하는 데 유용합니다.
 
 이 자습서는 주로 SCF 구성 요소 사용에 관심이 있는 AEM을 처음 사용하는 개발자를 위한 것입니다. 탐색, 로고, 검색, 도구 모음 및 하위 페이지 나열 등 사이트 구조에 중점을 두는 [완벽한 기능을 갖춘 인터넷 웹 사이트를 만드는 방법](../../help/sites-developing/website.md)에 대한 자습서와 유사하게 SCF 샌드박스 사이트를 만드는 과정을 안내합니다.
 
@@ -51,12 +58,12 @@ AEM 6.1 Communities에서 샌드박스를 빠르게 생성하는 가장 쉬운 �
 
 * [시작하기](../../help/sites-deploying/deploy.md#getting-started): AEM 인스턴스 배포용.
 
-   * [기본 사항](../../help/sites-developing/the-basics.md): 웹 사이트 및 기능 개발자용.
-   * [작성자를 위한 첫 번째 단계](../../help/sites-authoring/first-steps.md): 페이지 컨텐츠 작성.
+  * [기본 사항](../../help/sites-developing/the-basics.md): 웹 사이트 및 기능 개발자용.
+  * [작성자를 위한 첫 번째 단계](../../help/sites-authoring/first-steps.md): 페이지 컨텐츠 작성.
 
 ## CRXDE Lite 개발 환경 사용 {#using-crxde-lite-development-environment}
 
-AEM 개발자는 대부분의 시간을 작성자 인스턴스의 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 개발 환경에서 보냅니다. CRXDE Lite은 CRX 저장소에 대한 액세스 제한을 줄일 수 있습니다. 클래식 UI 도구 및 터치 지원 UI 콘솔은 CRX 저장소의 특정 부분에 대해 보다 구조화된 액세스를 제공합니다.
+AEM 개발자는 작성자 인스턴스의 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 개발 환경에서 많은 시간을 보냅니다. CRXDE Lite에서는 CRX 저장소에 대한 액세스 제한을 줄일 수 있습니다. 클래식 UI 도구 및 터치 지원 UI 콘솔은 CRX 저장소의 특정 부분에 대해 보다 구조화된 액세스를 제공합니다.
 
 관리자 권한으로 로그인한 후 다양한 방법으로 CRXDE Lite에 액세스할 수 있습니다.
 
@@ -64,7 +71,7 @@ AEM 개발자는 대부분의 시간을 작성자 인스턴스의 [CRXDE Lite](.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. [클래식 UI 시작 페이지](http://localhost:4502/welcome.html)에서 아래로 스크롤하고 오른쪽 패널에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 클릭합니다.
+2. [클래식 UI 시작 페이지](http://localhost:4502/welcome.html)에서 아래로 스크롤하고 오른쪽 패널에서 **[!UICONTROL CRXDE Lite]**&#x200B;을(를) 클릭합니다.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
@@ -78,7 +85,7 @@ CRXDE Lite으로 작업하려면 개발자 또는 관리자 권한으로 로그�
 * `password: admin`
 
 
-이 로그인은 시간 초과되므로 CRXDE Lite 도구 모음의 오른쪽 끝에 있는 풀다운 메뉴를 사용하여 정기적으로 다시 로그인해야 합니다.
+이 로그인은 시간 초과되므로 CRXDE Lite 도구 모음의 오른쪽 끝에 있는 드롭다운을 사용하여 주기적으로 다시 로그인해야 합니다.
 
 로그인하지 않은 경우 JCR 저장소를 탐색하거나 편집/저장 작업을 수행할 수 없습니다.
 

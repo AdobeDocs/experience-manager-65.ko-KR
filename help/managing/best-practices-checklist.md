@@ -9,13 +9,29 @@ exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
-
+source-wordcount: '320'
+ht-degree: 95%
 ---
-
 # 검사 목록{#the-checklist}
 
 프로젝트 체크리스트는 프로젝트를 제공할 때 활용할 수 있는 모범 사례 집합입니다. 프로젝트 수명 주기의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
@@ -33,13 +49,13 @@ AEM 프로젝트 모범 사례 체크리스트 v2
 스프레드시트에서는 다음과 같은 워크시트를 제공합니다.
 
 * **지침**
-   * 스프레드시트를 사용하는 방법에 대한 지침과 함께 사용된 메커니즘에 대한 설명을 제공합니다.
+  * 스프레드시트를 사용하는 방법에 대한 지침과 함께 사용된 메커니즘에 대한 설명을 제공합니다.
 * **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[역할별 상태](/help/managing/best-practices.md#status-by-role)**
 * [페르소나](/help/managing/best-practices.md#persona), [단계 및 마일스톤](/help/managing/best-practices.md#phases-and-milestones)에 따른 일련의 체크리스트
 * **용어 설명**
-   * 용어집에는 프로젝트 체크리스트의 모든 결과물 문서에 대한 세부 정보가 나열되어 있습니다.
-   * [용어집](/help/managing/best-practices-glossary.md)도 설명서의 일부로 제공됩니다.
+  * 용어집에는 프로젝트 체크리스트의 모든 결과물 문서에 대한 세부 정보가 나열되어 있습니다.
+  * [용어집](/help/managing/best-practices-glossary.md)도 설명서의 일부로 제공됩니다.
 * **[페르소나 정의](/help/managing/best-practices.md#persona)**
 
 ## 체크리스트 사용 {#using-the-checklists}
@@ -51,6 +67,6 @@ AEM 프로젝트 모범 사례 체크리스트 v2
 
    >[!NOTE]
    >
-   >개별 필수 문서와 결과물 사이에는 직접적인 1:1 관계가 없습니다.
+   >개별 필수 문서와 결과물 간에 직접적인 1:1 관계는 없습니다.
 
 1. **[필수 문서](/help/managing/best-practices.md#required-documents)** 및 **[결과물](/help/managing/best-practices.md#deliverables)** 상태에 따라 **[프로젝트 하트비트](/help/managing/best-practices.md#project-heartbeat-dashboard)** 및 **[역할별 상태](/help/managing/best-practices.md#status-by-role)** 워크시트가 자동으로 업데이트되어 프로젝트의 진행 상황과 상태에 대한 최신 정보를 제공합니다.

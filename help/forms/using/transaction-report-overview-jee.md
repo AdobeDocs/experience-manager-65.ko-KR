@@ -4,18 +4,31 @@ description: 제출된 모든 양식, 렌더링된 양식, 한 형식으로 변�
 feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: cf6705707554894deeb0315d3e9c7252af211e54
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
-
 ---
-
 
 # JEE에서 AEM Forms에 대한 거래 보고서 활성화 및 보기 {#transaction-reports-overview}
 
-<span> 트랜잭션 보고 기능이 AEM Forms 6.5.20.0[&#128279;](/help/release-notes/previous/6-5-20.md#forms)에서 JEE의 AEM Forms에 도입되었습니다. 이 기능은 기본적으로 비활성화되어 있으며, 관리자 UI에서 활성화할 수 있습니다.</span>
+<span> 트랜잭션 보고 기능이 AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms)에서 JEE의 [AEM Forms에 도입되었습니다. 이 기능은 기본적으로 비활성화되어 있으며, 관리자 UI에서 활성화할 수 있습니다.</span>
 
 JEE의 AEM Forms에 있는 거래 보고서를 사용하면 AEM Forms 배포에서 발생한 모든 거래의 수를 유지할 수 있습니다. 목표는 제품 사용에 대한 정보를 제공하고 비즈니스 이해 당사자가 디지털 처리 볼륨을 이해할 수 있도록 돕는 것입니다. 거래의 예는 다음과 같습니다.
 

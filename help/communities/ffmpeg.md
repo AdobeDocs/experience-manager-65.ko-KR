@@ -9,13 +9,20 @@ role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '274'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티에 대한 FFmpeg {#ffmpeg-for-communities}
 
 ## 개요 {#overview}
@@ -26,7 +33,7 @@ FFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루션이�
 
 AEM *author* 인스턴스를 호스팅하는 서버에 FFmpeg를 설치해야 합니다.
 
-1. [https://www.ffmpeg.org](https://www.ffmpeg.org/)(으)로 이동합니다.
+1. [https://www.ffmpeg.org](https://www.ffmpeg.org/)&#x200B;(으)로 이동합니다.
 1. 특정 환경(Macintosh, Windows 또는 Linux)에 맞는 최신 버전의 FFmpeg를 다운로드합니다.
 
    * 이전 버전의 보안 취약점으로 인해 FFmpeg를 최신 상태로 유지하는 것이 중요합니다.
@@ -43,7 +50,7 @@ AEM *author* 인스턴스를 호스팅하는 서버에 FFmpeg를 설치해야 �
 
 기본적으로 FFmpeg가 설치되면 [!UICONTROL DAM 자산 업데이트] 워크플로 정의에 따라 여러 변환이 구성됩니다(변환).
 
-변환은 CPU를 많이 사용하므로 대상 렌디션 목록을 수정하는 것이 좋습니다. 대부분의 경우 코드 변환 작업은 필요하지 않습니다.
+변환은 CPU을 많이 사용하므로 대상 렌디션 목록을 수정하는 것이 좋습니다. 대부분의 경우 코드 변환 작업은 필요하지 않습니다.
 
 [!UICONTROL DAM 자산 업데이트] 워크플로우를 수정하고 이 예에서는 코드 변환 기능을 끄려면 다음을 수행합니다.
 
@@ -57,7 +64,7 @@ AEM *author* 인스턴스를 호스팅하는 서버에 FFmpeg를 설치해야 �
 * **[!UICONTROL FFmpeg 코드 변환]** 단계를 두 번 클릭하여 [단계 속성] 대화 상자에 액세스합니다.
 * **[!UICONTROL 프로세스]** 탭에서:
 
-   * **[!UICONTROL 인수]**: 코드 변환 기능을 사용하지 않도록 설정하려면 모든 항목을 지우십시오. 기본값: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+  * **[!UICONTROL 인수]**: 코드 변환 기능을 사용하지 않도록 설정하려면 모든 항목을 지우십시오. 기본값: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 

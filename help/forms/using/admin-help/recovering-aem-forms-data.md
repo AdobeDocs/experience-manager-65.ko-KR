@@ -9,13 +9,27 @@ exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '1118'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1174'
+ht-degree: 97%
 ---
-
 # AEM Forms 데이터 복구 {#recovering-the-aem-forms-data}
 
 이 섹션에서는 AEM Forms 데이터를 복구하는 데 필요한 단계를 설명합니다. 또한 [백업 및 복구에 대한 특별 고려 사항](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery)을 참조하십시오.
@@ -54,11 +68,11 @@ AEM Forms는 다음과 같은 오류 발생 시 안정적으로 복구되어야 
 1. 필요한 경우 시스템 이미지에서 물리적 시스템을 다시 만듭니다. 예를 들어 데이터베이스 서버에 오류가 발생하여 복구하는 것이라면 이 단계는 필요하지 않을 수도 있습니다.
 1. 이미지가 만들어진 이후 적용된 AEM Forms에 패치나 업데이트를 적용합니다. 이 정보는 백업 절차에 기록되었습니다. AEM Forms는 시스템이 백업되었을 당시와 동일한 패치 수준으로 패치되어야 합니다.
 1. (WebSphere® Application Server) WebSphere® Application Server의 새 인스턴스로 복구하는 경우 restoreConfig.bat/sh 명령을 실행합니다.
-1. 먼저 데이터베이스 백업 파일을 사용하여 데이터베이스 복원 작업을 실행한 후 복구된 데이터베이스에 트랜잭션 다시 실행 로그를 적용하여 AEM Forms 데이터베이스를 복구합니다. ([AEM Forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)를 참조하십시오.) 자세한 내용은 다음과 같은 기술 자료 문서 중 하나를 참조하십시오.
+1. 먼저 데이터베이스 백업 파일을 사용하여 데이터베이스 복원 작업을 실행한 후 복구된 데이터베이스에 트랜잭션 다시 실행 로그를 적용하여 AEM Forms 데이터베이스를 복구합니다. ([AEM 양식 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)를 참조하십시오.) 자세한 내용은 다음 기술 자료 문서 중 하나를 참조하십시오.
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [AEM Forms용 DB2® 백업 및 복구](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [AEM Forms용 Oracle 백업 및 복구](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [® SQL Server Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [AEM Forms용 MySQL 백업 및 복구](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. 먼저 기존 AEM Forms 설치에서 GDS 디렉터리 콘텐츠를 삭제한 후 백업된 GDS에서 GDS 디렉터리 콘텐츠를 복사하여 GDS 디렉터리를 복구합니다. GDS 디렉터리 위치를 변경한 경우 [복구 중 GDS 위치 변경](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)을 참조하십시오.
@@ -127,7 +141,7 @@ GDS가 원래 위치가 아닌 다른 위치로 복원되는 경우 LCSetGDS 스
 
 ## GDS를 클러스터링된 환경으로 복구 {#recovering-the-gds-to-a-clustered-environment}
 
-클러스터링된 환경에서 GDS 위치를 변경하려면 전체 클러스터를 종료하고 클러스터의 단일 노드에서 LCSetGDS 스크립트를 실행합니다. ([복구 중 GDS 위치 변경](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)을 참조하십시오. ) 해당 노드만 시작합니다. 해당 노드가 완전히 시작되면 클러스터의 다른 노드도 안전하게 시작될 수 있으며 새 GDS를 올바르게 가리킵니다.
+클러스터링된 환경에서 GDS 위치를 변경하려면 전체 클러스터를 종료하고 클러스터의 단일 노드에서 LCSetGDS 스크립트를 실행합니다. ([복구 중 GDS 위치 변경](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)을 참조하십시오.) 해당 노드만 시작합니다. 해당 노드가 완전히 시작되면 클러스터의 다른 노드도 안전하게 시작될 수 있으며 새 GDS를 올바르게 가리킵니다.
 
 >[!NOTE]
 >

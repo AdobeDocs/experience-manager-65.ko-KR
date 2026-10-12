@@ -10,13 +10,26 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 42%
-
 ---
-
 # 작성 - 환경 및 도구{#authoring-the-environment-and-tools}
 
 AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
@@ -86,17 +99,17 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 
   구성 요소는 다음으로 표시됩니다.
 
-   * 구성 요소 이름
-   * 구성 요소 그룹(회색)
-   * 아이콘 또는 약어
+  * 구성 요소 이름
+  * 구성 요소 그룹(회색)
+  * 아이콘 또는 약어
 
-      * 표준 구성 요소의 아이콘은 단색입니다.
-      * 약어는 항상 구성 요소 이름의 첫 번째 두 문자입니다.
+    * 표준 구성 요소의 아이콘은 단색입니다.
+    * 약어는 항상 구성 요소 이름의 첫 번째 두 문자입니다.
 
   **구성 요소** 브라우저의 맨 위 도구 모음에서 다음 작업을 수행할 수 있습니다.
 
-   * 구성 요소를 이름별로 필터링합니다.
-   * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
+  * 구성 요소를 이름별로 필터링합니다.
+  * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
 
   구성 요소에 대한 자세한 설명은 **구성 요소** 브라우저에서 구성 요소 옆에 있는 정보 아이콘을 클릭하면 됩니다(사용 가능한 경우). For example, for the **Layout Container**:
 
@@ -124,11 +137,11 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 
 * 해당 유형의 기존 구성 요소
 
-   * 예를 들어 유형 이미지의 자산을 이미지 구성 요소로 끌 수 있습니다.
+  * 예를 들어 유형 이미지의 자산을 이미지 구성 요소로 끌 수 있습니다.
 
 * 적절한 형식의 구성 요소를 만들기 위한 단락 시스템의 [자리 표시자](/help/sites-authoring/editing-content.md#component-placeholder)입니다.
 
-   * 예를 들어 유형 이미지의 자산을 단락 시스템으로 드래그하여 이미지 구성 요소를 만들 수 있습니다.
+  * 예를 들어 유형 이미지의 자산을 단락 시스템으로 드래그하여 이미지 구성 요소를 만들 수 있습니다.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 * 이미지, 원고, 문서, 비디오, 페이지, 단락 및 제품 등 에셋 유형
 * 방향(세로, 가로, 사각형) 및 스타일(색상, 단색, 회색 음영)과 같은 에셋 특성
 
-   * 특정 자산 유형에만 사용할 수 있음
+  * 특정 자산 유형에만 사용할 수 있음
 
 실제 모양 및 처리는 사용하는 장치 유형에 따라 달라집니다.
 
@@ -239,7 +252,7 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 
 * **수신 링크**&#x200B;는 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 해당 페이지 중 **편집**&#x200B;에 직접 액세스할 수 있는 권한을 제공합니다.
 
-   * 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다(예: 목록 구성 요소에서).
+  * 동적으로 생성된 링크가 아닌 정적 링크만 표시할 수 있습니다(예: 목록 구성 요소에서).
 
 * **참조** 구성 요소를 사용하여 빌린 콘텐츠와 빌려준 콘텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 
@@ -286,7 +299,7 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 예를 들어, 해당되는 경우 **페이지 정보**&#x200B;에도 다음 옵션이 있습니다.
 
 * 페이지가 시작인 경우 [시작 홍보](/help/sites-authoring/launches-promoting.md)
-* 관리자가 [&#128279;](/help/sites-administering/enable-classic-ui-editor.md)이 옵션을 사용하도록 설정한 경우 [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)
+* 관리자가 [이 옵션을 사용하도록 설정한 경우 [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: 작업에 대한 탭 맞춤화
-description: LiveCycle AEM Forms 작업 영역에서 작업의 탭 이름을 맞춤화하는 방법
+title: 작업 탭 사용자 정의
+description: LiveCycle AEM Forms workspace에서 작업의 탭 이름을 사용자 정의하는 방법
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,14 +8,28 @@ exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 0%
-
+source-wordcount: '104'
+ht-degree: 9%
 ---
-
-# 작업에 대한 탭 맞춤화 {#customizing-tabs-for-a-task}
+# 작업 탭 사용자 정의 {#customizing-tabs-for-a-task}
 
 `Start Process` Uber 보기의 `Start Process` 구성 요소와 `ToDo` Uber 보기의 `Task Details` 구성 요소에 대한 탭 이름을 사용자 지정할 수 있습니다.
 

@@ -6,7 +6,21 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 2%
@@ -23,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/kr/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/kr/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. ExtendScript 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
+>[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. ExtendScript 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다. 스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
@@ -239,4 +253,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [Adobe InDesign Server 정보](https://www.adobe.com/kr/products/indesignserver/faq.html)
+>* [Adobe InDesign Server 정보](https://www.adobe.com/products/indesignserver/faq.html)

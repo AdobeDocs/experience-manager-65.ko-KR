@@ -9,13 +9,22 @@ exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 6%
-
+source-wordcount: '570'
+ht-degree: 12%
 ---
-
 # 구성 요소에 대해 JSON 내보내기 활성화{#enabling-json-export-for-a-component}
 
 구성 요소는 모델러 프레임워크를 기반으로 콘텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
@@ -35,7 +44,7 @@ JSON 내보내기는 [Sling 모델](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko-KR)을 참조하십시오.
+>Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ko)을 참조하십시오.
 
 Sling 모델 구현 클래스에는 다음 주석이 포함되어야 합니다.
 
@@ -77,7 +86,7 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 ## 예 {#example}
 
-핵심 구성 요소는 핵심 구성 요소[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
+핵심 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 [1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
@@ -86,15 +95,15 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem-core-wcm-components 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
-* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)(으)로 다운로드
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)&#x200B;(으)로 다운로드
 
 ## 관련 설명서 {#related-documentation}
 
 자세한 내용은 다음을 참조하십시오.
 
-* Assets 사용 안내서의 [콘텐츠 조각 항목](https://helpx.adobe.com/kr/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Assets 사용 안내서의 [콘텐츠 조각 항목](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
-* [콘텐츠 서비스에 대한 JSON 내보내기](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/content-fragment-component.html)
+* [콘텐츠 서비스를 위한 JSON 내보내기 도구](/help/sites-developing/json-exporter.md)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

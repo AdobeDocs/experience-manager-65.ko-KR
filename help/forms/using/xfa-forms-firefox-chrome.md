@@ -9,7 +9,21 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
-source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 11%
@@ -36,7 +50,7 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 
 1. 애플리케이션 탭의 검색 필드에 PDF을 입력합니다.
 
-1. 검색 결과의 Portable Document Format(PDF) 컨텐츠 유형에 대해 작업 드롭다운 목록에서 **Adobe Acrobat 사용(Firefox에서)**&#x200B;을 선택합니다.
+1. 검색 결과의 Portable Document Format(PDF) 컨텐츠 유형에 대해 작업 드롭다운 목록에서 **Adobe Acrobat 사용(Firefox에서)**을 선택합니다.
    ![use-adobe-acrobat](/help/forms/using/assets/use-adobe-acrobat.png)
 1. 확인을 클릭합니다.
 
@@ -53,6 +67,6 @@ Firefox 및 Chrome에서 XFA 기반 PDF forms을 사용하려면 다음 단계�
 >[!NOTE]
 > 
 > LiveCycle ES4는 HTML5에서 XFA 기반 양식을 렌더링할 수 있도록 지원하므로 iPad과 같은 모바일 디바이스에서 실행되는 양식을 포함하여 HTML5가 지원되는 브라우저에서 양식을 열 수 있습니다. 양식의 HTML5 렌디션은 양식 디자인의 레이아웃을 유지 관리하고 XFA 양식 템플릿에 포함된 대부분의 양식 논리(예: JavaScript, 양식 계산 및 양식 유효성 검사)를 지원합니다. 이러한 방식으로 XFA 양식에 대한 기술 투자는 Adobe Reader 플러그인의 실행이 불가능한 장치로 쉽게 이전됩니다.
->자세한 내용은 [LiveCycle 제품 설명서](https://business.adobe.com/kr/products/experience-manager/forms/aem-forms.html)를 참조하십시오.
+>자세한 내용은 [LiveCycle 제품 설명서](https://business.adobe.com/products/experience-manager/forms/aem-forms.html)를 참조하십시오.
 
 [법적 고지 사항](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [온라인 개인정보 처리방침](https://www.adobe.com/kr/privacy.html)

@@ -1,6 +1,6 @@
 ---
 title: JEE에서 AEM Forms의 XXE, Struts 개발 모드 구성 및 원격 코드 실행 취약성 완화
-description: JEE에서 AEM Forms의 XXE, 구성 및 원격 코드 실행 취약성 완화
+description: JEE의 AEM Forms에 대한 XXE, 구성 및 원격 코드 실행 취약점 완화
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
@@ -8,14 +8,20 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
+release-date: 2025-08-05T00:00:00.000Z
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 5%
-
+source-wordcount: '699'
+ht-degree: 8%
 ---
-
 # JEE에서 RCE(CVE-2025-49533), Struts 개발 모드 구성(CVE-2025-54253), XXE(CVE-2025-54254) 및 AEM Forms의 취약점 완화 {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## 빠른 참조
@@ -25,7 +31,7 @@ ht-degree: 5%
 | **중요** | JEE 서비스 팩 23의 AEM 6.5 Forms(6.5.23.0) | [최신 핫픽스 설치](#option-1-for-users-on-version-65230-install-latest-hotfix) |
 | **중요** | JEE 서비스 팩 18~22의 AEM 6.5 Forms(6.5.18.0 - 6.5.22.0) | [수동으로 수정 사항 설치](#option-2-for-users-on-65180---65220-manual-hotfix-installation) |
 | **중요** | JEE 서비스 팩 17(6.5.17.0) 또는 이전 버전의 AEM 6.5 Forms | 지원되는 서비스 팩 버전으로 업그레이드한 다음 새 버전에 대한 권장 완화 단계를 적용하십시오 |
-| **영향을 받지 않음** | AEM Forms on OSGi, Workbench, Cloud Service | 필요한 작업 없음 |
+| **영향을 받지 않음** | AEM Forms on OSGi, Workbench, Cloud Service | 필요한 액션 없음 |
 
 **해결된 취약점:**
 
@@ -81,7 +87,7 @@ ht-degree: 5%
 
 **1단계: 핫픽스 패키지 다운로드 및 추출**
 
-- Adobe 소프트웨어 배포 포털에서 [&#x200B; - 6.5.22.6.5.18.0용 &#x200B;](/help/release-notes/aem-forms-hotfix.md)핫픽스를 다운로드합니다.
+- 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md)용 [핫픽스 다운로드 Adobe 소프트웨어 배포 포털에서
 - 로컬에서 추출
 
 **2단계: 올바른 버전 폴더로 이동**
@@ -257,7 +263,7 @@ Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 
 
 ## 참조
 
-- [CWE-611: XML 외부 엔터티 참조를 잘못 제한합니다](https://cwe.mitre.org/data/definitions/611.html)
+- [CWE-611: XML 외부 엔티티 참조의 잘못된 제한](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16: 구성](https://cwe.mitre.org/data/definitions/16.html)
-- [OWASP XXE 방지 치트 시트](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms 보안 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)
+- [OWASP XXE 예방 치트 시트](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
+- [Adobe Experience Manager Forms 보안 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)

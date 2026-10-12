@@ -9,13 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1796'
 ht-degree: 11%
-
 ---
-
 # 태그 관리 {#administering-tags}
 
 태그는 웹 사이트에 포함된 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 검색의 결과로 컨텐츠를 보다 빠르게 찾을 수 있는 키워드 또는 레이블(메타데이터)로 생각할 수 있습니다.
@@ -40,22 +49,22 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 * 새로 만든 태그의 주요 제한 사항은 특정 네임스페이스 내에서 고유해야 한다는 것입니다.
 * 태그의 제목에는 태그 경로 구분 문자가 포함되어서는 안 됩니다(존재하는 경우 표시되지도 않음)
 
-   * 콜론 `:` - 네임스페이스 태그를 구분합니다.
-   * 슬래시 `/` - 하위 태그를 구분합니다
+  * 콜론 `:` - 네임스페이스 태그를 구분합니다.
+  * 슬래시 `/` - 하위 태그를 구분합니다
 
 * 태그는 작성자 및 사이트 방문자가 적용할 수 있습니다. 만든 사람과 관계없이 태그를 페이지에 할당하거나 검색할 때 모든 형태의 태그를 선택할 수 있습니다.
 * 태그는 &quot;태그 관리자&quot; 그룹의 구성원 및 `/content/cq:tags`에 대한 수정 권한이 있는 구성원에 의해 만들고 분류법을 수정할 수 있습니다.
 
-   * 하위 태그가 포함된 태그를 컨테이너 태그라고 합니다
-   * 컨테이너 태그가 아닌 태그는 리프 태그라고 합니다
-   * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그입니다
+  * 하위 태그가 포함된 태그를 컨테이너 태그라고 합니다
+  * 컨테이너 태그가 아닌 태그는 리프 태그라고 합니다
+  * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그입니다
 
-* 태그를 [검색 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/quick-search.html)에서 사용하여 콘텐츠를 쉽게 찾을 수 있습니다.
-* 태그는 [Teaser 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/teaser.html)에서 사용되며, 이 구성 요소는 사용자의 태그 클라우드를 모니터링하여 타깃팅된 콘텐츠를 제공합니다.
+* 태그를 [검색 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)에서 사용하여 콘텐츠를 쉽게 찾을 수 있습니다.
+* 태그는 [Teaser 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)에서 사용되며, 이 구성 요소는 사용자의 태그 클라우드를 모니터링하여 타깃팅된 콘텐츠를 제공합니다.
 * 태깅이 콘텐츠의 중요한 측면인 경우
 
-   * 태그를 사용하는 페이지로 태그를 패키징해야 합니다
-   * [태그 권한](#setting-tag-permissions)이 읽기 액세스를 사용하도록 설정되어 있는지 확인하십시오.
+  * 태그를 사용하는 페이지로 태그를 패키징해야 합니다
+  * [태그 권한](#setting-tag-permissions)이 읽기 액세스를 사용하도록 설정되어 있는지 확인하십시오.
 
 ## 태그 지정 콘솔 {#tagging-console}
 
@@ -69,9 +78,9 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 * 관리자 권한으로 로그인
 * 전역 탐색에서
 
-   * **`Tools`** 선택
-   * **`General`** 선택
-   * **`Tagging`** 선택
+  * **`Tools`** 선택
+  * **`General`** 선택
+  * **`Tagging`** 선택
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -252,30 +261,30 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 * 작성자 인스턴스에서
 
-   * 관리자 권한으로 로그인
-   * [보안 콘솔](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)에 액세스,
+  * 관리자 권한으로 로그인
+  * [보안 콘솔](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)에 액세스,
 
-      * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
+    * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
 
-   * 왼쪽 창에서 [읽기 권한](/help/sites-administering/security.md#permissions)을 부여할 그룹을 선택합니다
-   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**&#x200B;를 찾습니다
+  * 왼쪽 창에서 [읽기 권한](/help/sites-administering/security.md#permissions)을 부여할 그룹을 선택합니다
+  * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**를 찾습니다
 
-      * 예: `/content/cq:tags/mycommunity`
+    * 예: `/content/cq:tags/mycommunity`
 
-   * **읽기** 열에서 `checkbox`을(를) 선택합니다.
-   * **저장** 선택
+  * **읽기** 열에서 `checkbox`을(를) 선택합니다.
+  * **저장** 선택
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * 모든 게시 인스턴스에 동일한 권한이 있는지 확인합니다.
 
-   * 한 가지 방법은 작성자의 [패키지를 만들기](/help/sites-administering/package-manager.md#package-manager)하는 것입니다.
+  * 한 가지 방법은 작성자의 [패키지를 만들기](/help/sites-administering/package-manager.md#package-manager)하는 것입니다.
 
-      * `Advanced` 탭에서 `AC Handling`에 대해 `Overwrite`을(를) 선택합니다.
+    * `Advanced` 탭에서 `AC Handling`에 대해 `Overwrite`을(를) 선택합니다.
 
-   * 패키지 복제
+  * 패키지 복제
 
-      * 패키지 관리자에서 `Replicate` 선택
+    * 패키지 관리자에서 `Replicate` 선택
 
 ## 다양한 언어로 태그 관리 {#managing-tags-in-different-languages}
 

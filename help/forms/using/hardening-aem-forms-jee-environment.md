@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 2%
-
 ---
-
 # JEE 환경에서 AEM Forms 강화 {#hardening-your-aem-forms-on-jee-environment}
 
 회사 인트라넷에서 실행되는 JEE의 AEM Forms 보안을 강화하기 위한 다양한 보안 강화 설정에 대해 알아봅니다.
@@ -106,7 +122,7 @@ JBoss의 JEE에 AEM Forms을 턴키 방식으로 설치하거나 PDF Generator�
  </tbody> 
 </table>
 
-운영 체제에 대한 추가 보안 정보는 [&quot;운영 체제 보안 정보&quot;](https://helpx.adobe.com/kr/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)를 참조하십시오.
+운영 체제에 대한 추가 보안 정보는 [&quot;운영 체제 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)를 참조하십시오.
 
 ## 설치 {#installation}
 
@@ -190,12 +206,12 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
    * **GDS(전역 문서 저장소) 디렉터리**: AEM Forms 설치 프로세스 중에 GDS 디렉터리의 위치를 수동으로 구성합니다. 설치하는 동안 위치 설정이 비어 있으면 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에서 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
    * **CRX-저장소 디렉터리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`입니다.
    * **AEM Forms 임시 디렉터리**:
-      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
-      * (Linux) /var/tmp 또는 /usr/tmp
-      * (AIX) /tmp 또는 /usr/tmp
-      * (Solaris) /var/tmp 또는 /usr/tmp
+     * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+     * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
+       UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+     * (Linux) /var/tmp 또는 /usr/tmp
+     * (AIX) /tmp 또는 /usr/tmp
+     * (Solaris) /var/tmp 또는 /usr/tmp
 1. 새 사용자 계정에 다음 디렉터리에 대한 쓰기 권한을 부여합니다.
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
@@ -262,17 +278,17 @@ Configuration Manager는 애플리케이션 서버에 배포된 서블릿을 사
 1. AEM Forms 서버를 시작합니다.
 1. 변경 사항을 테스트하고 더 이상 작동하지 않는지 확인하려면 브라우저에 아래 URL을 입력합니다.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Trust Store에 대한 원격 액세스 차단**
 
 Configuration Manager를 사용하면 Acrobat Reader DC 확장 자격 증명을 JEE 신뢰 저장소의 AEM Forms에 업로드할 수 있습니다. 즉, 원격 프로토콜(SOAP 및 EJB)을 통한 Trust Store 자격 증명 서비스에 대한 액세스가 기본적으로 사용하도록 설정되었습니다. Configuration Manager를 사용하여 권한 자격 증명을 업로드한 후 또는 나중에 관리 콘솔을 사용하여 자격 증명을 관리하기로 한 경우에는 이 액세스가 더 이상 필요하지 않습니다.
 
-[서비스에 필수적이지 않은 원격 액세스를 사용하지 않도록 설정](https://helpx.adobe.com/kr/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services) 섹션의 단계에 따라 모든 Trust Store 서비스에 대한 원격 액세스를 사용하지 않도록 설정할 수 있습니다.
+[서비스에 필수적이지 않은 원격 액세스를 사용하지 않도록 설정](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services) 섹션의 단계에 따라 모든 Trust Store 서비스에 대한 원격 액세스를 사용하지 않도록 설정할 수 있습니다.
 
 **필수적이지 않은 모든 익명 액세스 사용 안 함**
 
-일부 Forms 서버 서비스에는 익명 호출자가 호출할 수 있는 작업이 있습니다. 이러한 서비스에 대한 익명 액세스가 필요하지 않은 경우 [서비스에 대한 비필수 익명 액세스 사용 안 함](https://helpx.adobe.com/kr/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)의 단계에 따라 사용하지 않도록 설정하십시오.
+일부 Forms 서버 서비스에는 익명 호출자가 호출할 수 있는 작업이 있습니다. 이러한 서비스에 대한 익명 액세스가 필요하지 않은 경우 [서비스에 대한 비필수 익명 액세스 사용 안 함](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)의 단계에 따라 사용하지 않도록 설정하십시오.
 
 #### 기본 관리자 암호 변경 {#change-the-default-administrator-password}
 
@@ -351,7 +367,7 @@ WSDL(웹 서비스 정의 언어) 생성은 개발자가 클라이언트 응용 
 
 데이터베이스 보안을 설정할 때는 데이터베이스 공급업체에서 설명한 측정값을 구현해야 합니다. JEE의 AEM Forms에서 사용할 수 있도록 부여된 최소 필수 데이터베이스 권한으로 데이터베이스 사용자를 할당해야 합니다. 예를 들어 데이터베이스 관리자 권한이 있는 계정은 사용하지 마십시오.
 
-Oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 CREATE VIEW 권한만 있으면 됩니다. 다른 데이터베이스에 대한 유사한 요구 사항은 [JEE(단일 서버)에 AEM Forms 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_kr)를 참조하십시오.
+Oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 CREATE VIEW 권한만 있으면 됩니다. 다른 데이터베이스에 대한 유사한 요구 사항은 [JEE(단일 서버)에 AEM Forms 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)를 참조하십시오.
 
 #### JBoss용 Windows에서 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -408,7 +424,7 @@ AEM Forms 데이터베이스 스키마에는 시스템 구성 및 비즈니스 �
 * Trust Store HSM PIN 암호화 키
 * 로컬 사용자 암호 해시
 
-공급업체별 도구에 대한 자세한 내용은 [&quot;데이터베이스 보안 정보&quot;](https://helpx.adobe.com/kr/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)를 참조하십시오.
+공급업체별 도구에 대한 자세한 내용은 [&quot;데이터베이스 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)를 참조하십시오.
 
 ### LDAP 보안 {#ldap-security}
 
@@ -698,7 +714,7 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 1. 요청에 레퍼러가 있는 경우 서버는 허용된 레퍼러인지 여부를 확인합니다. 허용되면 서버는 레퍼러 예외를 확인합니다.
 
    1. 예외인 경우 해당 요청이 차단됩니다.
-   1. 예외가 아닌 경우 해당 요청이 전달됩니다.
+   1. 예외가 아닌 경우 해당 요청은 통과됩니다.
 
 1. 요청에 레퍼러가 없으면 서버는 Null 레퍼러가 허용되는지 여부를 확인합니다.
 
@@ -972,9 +988,9 @@ JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용을 보
 
 [JEE 물리적 아키텍처에 대한 AEM Forms](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) 섹션에 설명된 물리적 아키텍처를 참조하여 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다. 특히, 네트워크에서 사용자 자격 증명이 노출되지 않도록 모든 SOAP 연결을 SSL을 통해 수행해야 합니다.
 
-JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64_kr)에서 &quot;SSL 구성&quot;을 참조하십시오.
+JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64)에서 &quot;SSL 구성&quot;을 참조하십시오.
 
-AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65_kr)의 상호 인증 섹션을 참조하십시오.
+AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65)의 상호 인증 섹션을 참조하십시오.
 
 ### SSL 리디렉션 구성 {#configuring-ssl-redirect}
 
@@ -1030,12 +1046,12 @@ AEM Forms on JEE 턴키 설치는 기본적으로 로컬 시스템 계정을 사
    * **GDS(전역 문서 저장소) 디렉터리**: AEM Forms 설치 프로세스 중에 GDS 디렉터리의 위치를 수동으로 구성합니다. 설치하는 동안 위치 설정이 비어 있으면 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에서 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
    * **CRX-저장소 디렉터리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`입니다.
    * **AEM Forms 임시 디렉터리**:
-      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
-      * (Linux) /var/tmp 또는 /usr/tmp
-      * (AIX) /tmp 또는 /usr/tmp
-      * (Solaris) /var/tmp 또는 /usr/tmp
+     * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+     * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
+       UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+     * (Linux) /var/tmp 또는 /usr/tmp
+     * (AIX) /tmp 또는 /usr/tmp
+     * (Solaris) /var/tmp 또는 /usr/tmp
 1. 새 사용자 계정에 다음 디렉터리에 대한 쓰기 권한을 부여합니다.
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\

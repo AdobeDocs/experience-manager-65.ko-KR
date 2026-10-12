@@ -10,13 +10,31 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 68%
-
 ---
-
 # 콘텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
 
 Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 에셋으로 생성 및 관리됩니다.](/help/assets/content-fragments/content-fragments.md)
@@ -42,27 +60,27 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 
 * **마케팅 및 캠페인 전략**
 
-   * 중앙에서 관리되는 콘텐츠 조각을 통해 콘텐츠를 검토합니다.
+  * 중앙에서 관리되는 콘텐츠 조각을 통해 콘텐츠를 검토합니다.
 
 * **Creative 프로그램**
 
-   * 콘텐츠 조각과 관련된 컬렉션을 통해 크리에이티브 자산을 추적합니다.
+  * 콘텐츠 조각과 관련된 컬렉션을 통해 크리에이티브 자산을 추적합니다.
 
 * **사본 작성자**
 
-   * AEM 콘텐츠 조각 편집기에서 작성합니다.
-   * 콘텐츠 변형을 만들 수 있습니다.
-   * 관련 콘텐츠를 콘텐츠 조각과 연결할 수 있습니다.
-   * 버전 관리/워크플로를 사용할 수 있습니다.
-   * 콘텐츠 조각을 공유할 수 있습니다.
-   * 번역을 중앙에서 관리할 수 있습니다.
+  * AEM 콘텐츠 조각 편집기에서 작성합니다.
+  * 콘텐츠 변형을 만들 수 있습니다.
+  * 관련 콘텐츠를 콘텐츠 조각과 연결할 수 있습니다.
+  * 버전 관리/워크플로를 사용할 수 있습니다.
+  * 콘텐츠 조각을 공유할 수 있습니다.
+  * 번역을 중앙에서 관리할 수 있습니다.
 
 * **제작자 및 과정 관리자**
 
-   * AEM에서 작성하여 사전 정의된 조각 및 변형에서 선택합니다.
-   * 사본 작성자와 크리에이티브가 중앙에서 관리되는 조각 및 자산을 업데이트할 때 항상 최신으로 유지되는 조각 및 관련 콘텐츠를 사용할 수 있습니다.
-   * 관련성에 대해 조정되는 관련 미디어 콘텐츠를 사용할 수 있습니다.
-   * 임시 콘텐츠 변형이 조각에서 중앙 관리되는 상태로 유지되도록 하면서 그러한 변형을 즉석으로 만들 수 있습니다.
+  * AEM에서 작성할 때 사전 정의된 조각 및 변형 중에서 선택할 수 있습니다.
+  * 사본 작성자와 크리에이티브가 중앙에서 관리되는 조각 및 자산을 업데이트할 때 항상 최신으로 유지되는 조각 및 관련 콘텐츠를 사용할 수 있습니다.
+  * 관련성에 대해 조정되는 관련 미디어 콘텐츠를 사용할 수 있습니다.
+  * 임시 콘텐츠 변형이 조각에서 중앙 관리되는 상태로 유지되도록 하면서 그러한 변형을 즉석으로 만들 수 있습니다.
 
 ## 페이지에 콘텐츠 조각 추가 {#adding-a-content-fragment-to-your-page}
 
@@ -107,14 +125,14 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 
 * **표시 모드**:
 
-   * **단일 텍스트 요소**
+  * **단일 텍스트 요소**
 
-   * **여러 요소**
+  * **여러 요소**
 
 * **요소**
 
-   * 기본 **Main**&#x200B;은(는) 항상 사용할 수 있습니다.
-   * 적절한 템플릿을 사용하여 조각을 만든 경우 선택 항목을 사용할 수 있습니다.
+  * 기본 **Main**&#x200B;은(는) 항상 사용할 수 있습니다.
+  * 적절한 템플릿을 사용하여 조각을 만든 경우 선택 항목을 사용할 수 있습니다.
 
   >[!NOTE]
   >
@@ -122,15 +140,15 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 
 * **변형**
 
-   * 기본 **기본**&#x200B;은(는) 항상 사용할 수 있습니다.
-   * 조각에 대해 변형을 만든 경우, 선택이 가능합니다.
+  * 기본 **기본**&#x200B;은(는) 항상 사용할 수 있습니다.
+  * 조각에 대해 변형을 만든 경우, 선택이 가능합니다.
 
 * **단락**: 포함할 단락 범위를 지정하십시오.
 
-   * **모두**
-   * **범위**: 예를 들어, `1`, `3-5`, `9-*`
+  * **모두**
+  * **범위**: 예를 들어, `1`, `3-5`, `9-*`
 
-      * **제목을 소유자의 단락으로 처리**
+    * **제목을 소유자의 단락으로 처리**
 
 * **제목을 소유자의 단락으로 처리**
 
@@ -156,7 +174,7 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 
 >[!CAUTION]
 >
->중간 콘텐츠는 페이지 콘텐츠이며, 콘텐츠 조각에 저장되지 않습니다.
+>중간 콘텐츠는 페이지 콘텐츠입니다. 콘텐츠 조각에 저장되지 않습니다.
 
 ![cfm-6420-02](assets/cfm-6420-02.png)
 
@@ -207,7 +225,7 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 * 크기를 지정합니다.
 * 레이아웃을 구성할 수도 있습니다.
 
-이동, 복사, 삭제와 같은 기타 변경 사항은 조각 편집기에서 작성해야 합니다.
+이동, 복사, 삭제와 같은 기타 변경 사항은 조각 편집기에서 수행해야 합니다.
 
 ### 게시 {#publishing}
 

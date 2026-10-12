@@ -9,13 +9,25 @@ feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 20%
-
 ---
-
 # MSM 롤아웃 충돌{#msm-rollout-conflicts}
 
 블루프린트 분기 및 종속 라이브 카피 분기 모두에서 동일한 페이지 이름의 새 페이지를 만들면 충돌이 발생할 수 있습니다.
@@ -32,7 +44,7 @@ ht-degree: 20%
 * 페이지 이름 변경(및 방법),
 * 게시된 콘텐츠에 미치는 영향
 
-  Adobe Experience Manager(AEM)의 기본 비헤이비어(기본 제공)는 게시된 콘텐츠에 영향을 주지 않는다는 것입니다. 따라서 라이브 카피 분기에 수동으로 생성된 페이지가 게시되어 있는 경우 해당 콘텐츠는 충돌 처리 및 롤아웃 이후에도 계속 게시됩니다.
+  Adobe Experience Manager(AEM)의 기본 비헤이비어(기본 제공)는 게시된 콘텐츠에 영향을 미치지 않는다는 것입니다. 따라서 라이브 카피 분기에 수동으로 생성된 페이지가 게시되어 있는 경우 해당 콘텐츠는 충돌 처리 및 롤아웃 이후에도 계속 게시됩니다.
 
 표준 기능 이외에도 맞춤화된 충돌 핸들러를 추가하여 다른 규칙을 구현할 수 있습니다. 또한 개별 프로세스로 게시 작업을 허용할 수도 있습니다.
 
@@ -48,7 +60,7 @@ ht-degree: 20%
 
   Live Copy 분기에 수동으로 생성된 페이지입니다. 하위 페이지 `lc-level-1`이(가) 한 개 있습니다.
 
-   * 게시에서 하위 페이지와 함께 `/b`(으)로 활성화되었습니다.
+  * 게시에서 하위 페이지와 함께 `/b`(으)로 활성화되었습니다.
 
 **롤아웃 전**
 
@@ -84,7 +96,7 @@ ht-degree: 20%
 
   롤아웃 관리자가 블루프린트에 존재하는 이름으로 라이브 카피에 생성된 페이지의 충돌을 처리해야 하는 경우 true로 설정합니다.
 
-충돌 관리가 비활성화되었을 때 AEM에 [사전 정의된 동작이 있습니다](#behavior-when-conflict-handling-deactivated).
+AEM에는 충돌 관리가 비활성화되었을 때 [미리 정의된 동작이 있습니다](#behavior-when-conflict-handling-deactivated).
 
 ## 충돌 핸들러 {#conflict-handlers}
 
@@ -94,7 +106,7 @@ AEM은 다음을 제공합니다.
 
 * [기본 충돌 핸들러](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * [사용자 지정된 처리기](#customized-handlers)를 구현할 수 있습니다.
 * 각 개별 처리기의 우선 순위를 설정할 수 있는 서비스 순위 메커니즘. 순위가 가장 높은 서비스가 사용됩니다.
@@ -114,13 +126,13 @@ AEM은 다음을 제공합니다.
 
   Live Copy 내에서 `/b_msm_moved`(으)로 이동됩니다. 이는 백업 역할을 하며 콘텐츠가 손실되지 않도록 합니다.
 
-   * `lc-level-1`은 이동하지 않습니다.
+  * `lc-level-1`은 이동하지 않습니다.
 
 * 블루프린트: `/b`
 
   Live Copy 페이지 `/b`(으)로 롤아웃되었습니다.
 
-   * `bp-level-1`이(가) Live Copy로 롤아웃되었습니다.
+  * `bp-level-1`이(가) Live Copy로 롤아웃되었습니다.
 
 **롤아웃 이후**
 
@@ -160,11 +172,11 @@ AEM은 다음을 제공합니다.
 * 요구 사항에 따라 개발/구성됩니다. 예를 들어 라이브 카피 페이지가 우선 순위를 갖도록 핸들러를 개발할 수 있습니다.
 * [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성되도록 설계되었습니다. 특히
 
-   * **서비스 순위**:
+  * **서비스 순위**:
 
-     다른 충돌 처리기(`service.ranking`)와 관련된 순서를 정의합니다.
+    다른 충돌 처리기(`service.ranking`)와 관련된 순서를 정의합니다.
 
-     기본값은 0입니다.
+    기본값은 0입니다.
 
 ### 충돌 처리가 비활성화되었을 때 실행되는 비헤이비어 {#behavior-when-conflict-handling-deactivated}
 
@@ -172,7 +184,7 @@ AEM은 다음을 제공합니다.
 
 >[!CAUTION]
 >
->AEM은 이 동작을 명시적으로 구성해야 하므로 충돌이 무시되고 있음을 표시하지 않으므로 필수 동작이라고 가정합니다.
+>AEM은 이 동작을 명시적으로 구성해야 하므로 충돌이 무시되고 있음을 나타내지 않으므로 필수 동작으로 간주합니다.
 
 이 경우 라이브 카피가 사실상 우선됩니다. 블루프린트 페이지 `/b`은(는) 복사되지 않으며 Live Copy 페이지 `/b`은(는) 그대로 유지됩니다.
 

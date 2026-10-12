@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 1%
-
 ---
-
 # 정책을 사용하여 문서 보호 {#protecting-documents-with-policies}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -248,7 +264,7 @@ Java(Document Security API)를 사용하여 정책을 만듭니다.
    * `DocumentSecurityClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
    * `PolicyManager` 개체의 `registerPolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 등록합니다.
 
-      * 등록할 정책을 나타내는 `Policy` 개체입니다.
+     * 등록할 정책을 나타내는 `Policy` 개체입니다.
 
    * 정책이 속한 정책 집합을 나타내는 문자열 값입니다.
 
@@ -284,9 +300,9 @@ Document Security API(웹 서비스)를 사용하여 정책을 만듭니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -389,8 +405,8 @@ Document Security API(Java)를 사용하여 기존 정책을 수정합니다.
    * `RightsManagementClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
    * `PolicyManager` 개체의 `getPolicy` 메서드를 호출하고 다음 값을 전달하여 업데이트할 정책을 나타내는 `Policy` 개체를 만듭니다.&quot;
 
-      * 정책이 속한 정책 집합 이름을 나타내는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
-      * 정책 이름을 나타내는 문자열 값입니다.
+     * 정책이 속한 정책 집합 이름을 나타내는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
+     * 정책 이름을 나타내는 문자열 값입니다.
 
 1. 정책의 속성을 설정합니다.
 
@@ -424,9 +440,9 @@ Document Security API(웹 서비스)를 사용하여 기존 정책을 수정합�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -498,8 +514,8 @@ Document Security API(Java)를 사용하여 정책을 삭제합니다.
    * `RightsManagementClient` 개체의 `getPolicyManager` 메서드를 호출하여 `PolicyManager` 개체를 만듭니다.
    * `PolicyManager` 개체의 `deletePolicy` 메서드를 호출하고 다음 값을 전달하여 정책을 삭제합니다.
 
-      * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
-      * 삭제할 정책의 이름을 지정하는 문자열 값입니다.
+     * 정책이 속한 정책 집합 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null`을(를) 지정할 수 있습니다.
+     * 삭제할 정책의 이름을 지정하는 문자열 값입니다.
 
 **코드 예제**
 
@@ -527,9 +543,9 @@ Document Security API(웹 서비스)를 사용하여 정책을 삭제합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -620,13 +636,13 @@ Java(Document Security API)를 사용하여 PDF 문서에 정책 적용:
    * `RightsManagementClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
    * `DocumentManager` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 PDF 문서에 정책을 적용합니다.
 
-      * 정책이 적용되는 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
-      * 문서의 이름을 지정하는 문자열 값입니다.
-      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
-      * 정책 이름을 지정하는 문자열 값입니다.
-      * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
-      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 `null`이어야 함).
-      * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 PDF 문서에는 사용되지 않습니다. PDF 문서를 보호하려면 `null`을(를) 지정하십시오.
+     * 정책이 적용되는 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
+     * 문서의 이름을 지정하는 문자열 값입니다.
+     * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
+     * 정책 이름을 지정하는 문자열 값입니다.
+     * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
+     * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 null이면 이전 매개 변수 값은 `null`이어야 함).
+     * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 PDF 문서에는 사용되지 않습니다. PDF 문서를 보호하려면 `null`을(를) 지정하십시오.
 
      `protectDocument` 메서드가 정책으로 보호된 PDF 문서를 포함하는 `RMSecureDocumentResult` 개체를 반환합니다.
 
@@ -669,9 +685,9 @@ Document Security API(웹 서비스)를 사용하여 PDF 문서에 정책 적용
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -814,9 +830,9 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -927,9 +943,9 @@ Document Security API(Java)를 사용하여 정책으로 보호된 PDF 문서에
    * `DocumentSecurityClient` 개체의 `getLicenseManager` 메서드를 호출하여 `LicenseManager` 개체를 만듭니다.
    * `LicenseManager` 개체의 `revokeLicense` 메서드를 호출하고 다음 값을 전달하여 정책으로 보호된 문서를 취소합니다.
 
-      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentManager` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
-      * 문서를 취소하는 이유를 지정하는 `License` 인터페이스의 정적 데이터 멤버입니다. 예를 들어 `License.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
-      * 수정된 문서가 있는 위치를 지정하는 `java.net.URL` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
+     * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentManager` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
+     * 문서를 취소하는 이유를 지정하는 `License` 인터페이스의 정적 데이터 멤버입니다. 예를 들어 `License.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
+     * 수정된 문서가 있는 위치를 지정하는 `java.net.URL` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
 
 **코드 예제**
 
@@ -957,9 +973,9 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -976,9 +992,9 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 PDF 
    * `DocumentSecurityServiceClient` 개체의 `getLicenseID` 메서드를 호출하고 정책으로 보호된 문서를 나타내는 `BLOB` 개체를 전달하여 정책으로 보호된 문서의 라이선스 식별자 값을 검색합니다. 이 메서드는 라이선스 식별자를 나타내는 문자열 값을 반환합니다.
    * `DocumentSecurityServiceClient` 개체의 `revokeLicense` 메서드를 호출하고 다음 값을 전달하여 정책으로 보호된 문서를 취소합니다.
 
-      * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentSecurityServiceService` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
-      * 문서를 취소하는 이유를 지정하는 `Reason` 열거형의 정적 데이터 멤버입니다. 예를 들어 `Reason.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
-      * 수정된 문서가 있는 URL 위치를 지정하는 `string` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
+     * 정책으로 보호된 문서의 라이선스 식별자 값을 지정하는 문자열 값입니다(`DocumentSecurityServiceService` 개체의 `getLicenseId` 메서드에 대한 반환 값 지정).
+     * 문서를 취소하는 이유를 지정하는 `Reason` 열거형의 정적 데이터 멤버입니다. 예를 들어 `Reason.DOCUMENT_REVISED`을(를) 지정할 수 있습니다.
+     * 수정된 문서가 있는 URL 위치를 지정하는 `string` 값입니다. 사용자를 다른 URL로 리디렉션하지 않으려면 `null`을(를) 전달할 수 있습니다.
 
 **코드 예제**
 
@@ -1089,9 +1105,9 @@ Document Security API(웹 서비스)를 사용하여 취소된 문서에 대한 
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1223,9 +1239,9 @@ Document Security Service API(웹 서비스)를 사용하여 정책으로 보호
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1443,9 +1459,9 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 만듭니�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1590,9 +1606,9 @@ Document Security API(웹 서비스)를 사용하여 워터마크를 수정합�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1718,9 +1734,9 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -2020,13 +2036,13 @@ Document Security API(Java)를 사용하여 Word 문서에 정책 적용:
    * `DocumentSecurityClient` 개체의 `getDocumentManager` 메서드를 호출하여 `DocumentManager` 개체를 만듭니다.
    * `DocumentManager` 개체의 `protectDocument` 메서드를 호출하고 다음 값을 전달하여 Word 문서에 정책을 적용합니다.
 
-      * 정책이 적용되는 Word 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
-      * 문서의 이름을 지정하는 문자열 값입니다.
-      * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
-      * 정책 이름을 지정하는 문자열 값입니다.
-      * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
-      * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 `null`이면 이전 매개 변수 값은 `null`이어야 함).
-      * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 지정할 수 있습니다.
+     * 정책이 적용되는 Word 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
+     * 문서의 이름을 지정하는 문자열 값입니다.
+     * 정책이 속한 정책 집합의 이름을 지정하는 문자열 값입니다. `MyPolicies` 정책 집합이 사용되는 `null` 값을 지정할 수 있습니다.
+     * 정책 이름을 지정하는 문자열 값입니다.
+     * 문서의 게시자인 사용자의 사용자 관리자 도메인 이름을 나타내는 문자열 값입니다. 이 매개변수 값은 선택 사항이며 null일 수 있습니다(이 매개변수가 null이면 다음 매개변수 값은 null이어야 함).
+     * 문서의 게시자인 사용자 관리자 사용자의 정식 이름을 나타내는 문자열 값입니다. 이 매개 변수 값은 선택 사항이며 `null`일 수 있습니다(이 매개 변수가 `null`이면 이전 매개 변수 값은 `null`이어야 함).
+     * MS Office 템플릿을 선택하는 데 사용되는 로케일을 나타내는 `com.adobe.livecycle.rightsmanagement.Locale`입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 지정할 수 있습니다.
 
      `protectDocument` 메서드가 정책으로 보호된 Word 문서를 포함하는 `RMSecureDocumentResult` 개체를 반환합니다.
 
@@ -2062,9 +2078,9 @@ Document Security API(웹 서비스)를 사용하여 Word 문서에 정책 적�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -2206,9 +2222,9 @@ Document Security API(웹 서비스)를 사용하여 정책으로 보호된 Word
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `RightsManagementServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `RightsManagementServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 

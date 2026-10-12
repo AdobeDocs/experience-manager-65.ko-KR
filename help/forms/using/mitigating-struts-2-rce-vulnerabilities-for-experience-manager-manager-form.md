@@ -9,13 +9,25 @@ role: Admin
 exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '689'
 ht-degree: 1%
-
 ---
-
 # Experience Manager Forms의 Struts 2 취약성 완화 {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## 문제
@@ -24,7 +36,7 @@ Java EE 웹 애플리케이션 개발을 위한 인기 있는 오픈 소스 웹 
 
 | 취약성 | 영향을 받는 사항 | 영향을 받지 않는 것은? |
 |---|---|---|
-| [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | JEE의 6.5 Forms Experience Manager(6.5GA에서 6.5.19.0으로 바뀐 모든 버전) | <ul><li> Experience Manager Forms Workbench (모든 버전)</li> <li> OSGi의 Experience Manager Forms(모든 버전) </li> <li> Experience Manager Forms as a Cloud Service </li> <ul> |
+| [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | JEE의 Experience Manager 6.5 Forms(6.5GA에서 6.5.19.0까지 모든 버전) | <ul><li> Experience Manager Forms Workbench (모든 버전)</li> <li> OSGi의 Experience Manager Forms(모든 버전) </li> <li> Experience Manager Forms as a Cloud Service </li> <ul> |
 
 ## 해결 방법
 
@@ -32,9 +44,9 @@ Java EE 웹 애플리케이션 개발을 위한 인기 있는 오픈 소스 웹 
 
 | 릴리스 | 현재 버전 | 사용자 작업 |
 |---|---|---|
-| JEE의 6.5 Forms Experience Manager | 6.5.19.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko) |
-| JEE의 6.5 Forms Experience Manager | 6.5.13.0 - 6.5.18.0 | 다음 방법 중 하나를 사용하십시오. <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko"> 최신 서비스 팩 </a> 설치 </li> <li> <a href ="#use-manual-mitigation-steps"> 수동 완화 단계 사용 </a> |
-| JEE의 6.5 Forms Experience Manager | 6.5 - 6.5.12.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko) </br> </br> **참고:** AEM Forms은 현재 6.5.13.0부터 6.5.19.0까지 버전을 지원합니다. 이전 버전을 사용 중인 경우 6.5.13.0 이상 릴리스로 업그레이드하는 것이 좋습니다. AEM 6.5.13.0 이상 릴리스를 설치하는 방법은 릴리스 노트를 참조하십시오. |
+| JEE의 Experience Manager 6.5 Forms | 6.5.19.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| JEE의 Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 다음 방법 중 하나를 사용하십시오. <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> 최신 서비스 팩 </a> 설치 </li> <li> <a href ="#use-manual-mitigation-steps"> 수동 완화 단계 사용 </a> |
+| JEE의 Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [최신 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **참고:** AEM Forms은 현재 6.5.13.0에서 6.5.19.0 버전을 지원합니다. 이전 버전을 사용하는 경우 6.5.13.0 또는 이후 릴리스로 업그레이드하는 것이 좋습니다. AEM 6.5.13.0 이상 릴리스를 설치하는 방법은 릴리스 노트를 참조하십시오. |
 
 ### 수동 완화 단계 사용 {#use-manual-mitigation-steps}
 

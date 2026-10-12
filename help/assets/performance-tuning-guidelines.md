@@ -1,19 +1,30 @@
 ---
 title: 성능 조정 [!DNL Assets]
-description: 병목 현상을 제거하고  [!DNL Experience Manager Assets]의 성능을 최적화하기 위한  [!DNL Experience Manager] 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소 변경 사항에 대한 제안 및 지침입니다.
+description: 병목 현상을 제거하고 [!DNL Experience Manager Assets]의 성능을 최적화하기 위해 [!DNL Experience Manager] 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소의 변경 내용에 대한 제안 및 지침입니다.
 contentOwner: AG
 mini-toc-levels: 1
 role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2794'
+source-wordcount: '2795'
 ht-degree: 0%
-
 ---
-
 <!-- TBD: Get reviewed by engineering. -->
 
 # [!DNL Adobe Experience Manager Assets] 성능 조정 안내서 {#assets-performance-tuning-guide}
@@ -243,7 +254,7 @@ XMP 원본에 쓰기 저장은 [!DNL Experience Manager]에서 메타데이터�
 
 ## 색인 검색 {#search-indexes}
 
-[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)을 참조하세요.
+[최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스를 설치하십시오. 핫픽스에는 종종 시스템 인덱스에 대한 업데이트가 포함됩니다. 몇 가지 인덱스 최적화를 보려면 [성능 조정 팁](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)을 참조하세요.
 
 자주 실행하는 쿼리에 대한 사용자 지정 색인을 만듭니다. 자세한 내용은 [느린 쿼리 분석 방법](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 [사용자 지정 인덱스 만들기](/help/sites-deploying/queries-and-indexing.md)를 참조하십시오. 쿼리 및 색인 모범 사례에 대한 추가 인사이트를 보려면 [쿼리 및 색인화 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 

@@ -9,7 +9,18 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 1%
@@ -42,7 +53,7 @@ Java™ JCR(Content Repository) 표준 [JSR 283](https://experienceleague.adobe.
 
 사양 리드는 Adobe Research (스위스) AG가 담당합니다.
 
-[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
+[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&amp;ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -283,9 +294,9 @@ Sling에서 스크립트는 REST 서버의 엄격한 개념을 손상시킬 수 
 
 ### Sling API {#sling-api}
 
-Sling API 패키지, org.apache.sling.&ast; 및 태그 라이브러리를 사용합니다.
+Sling API 패키지, org.apache.sling.&amp;ast; 및 태그 라이브러리를 사용합니다.
 
-### sling:include을(를) 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
+### sling:include {#referencing-existing-elements-using-sling-include}을(를) 사용하여 기존 요소 참조
 
 마지막으로 스크립트 내의 기존 요소를 참조해야 한다는 점을 고려해야 합니다.
 
@@ -445,7 +456,7 @@ AEM을 사용하면 프로덕션 환경은 종종 [작성자 및 게시 인스�
 
 ## 더 Dispatcher {#the-dispatcher}
 
-Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 확인할 수 있습니다.
+Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)에서 확인할 수 있습니다.
 
 ## FileVault(소스 버전 시스템) {#filevault-source-revision-system}
 

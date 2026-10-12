@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 1%
-
 ---
-
 # 양식 관리 소개 {#introduction-to-managing-forms}
 
 AEM [!DNL Forms]은(는) 양식, 문서, 테마, 편지, 문서 단편, 데이터 사전 및 관련 에셋을 만들고 관리할 수 있는 간단하면서도 강력한 사용자 인터페이스를 제공합니다. 개발자의 데스크탑에서 오퍼링에 이르기까지 양식, 문서 및 관련 자산의 전체 라이프사이클을 관리하는 데 도움이 됩니다
@@ -56,8 +70,8 @@ Forms 및 문서는 대화형 통신, 적응형 양식, 적응형 양식 단편 
 
 * **폴더:** AEM [!DNL Forms] 사용자 인터페이스는 폴더를 사용하여 자산을 정렬합니다. 다음 두 가지 유형의 폴더를 지원합니다.
 
-   * **일반 폴더:** 이러한 폴더는 AEM [!DNL Forms] 사용자 인터페이스 내에서 만들어진 자산에 사용됩니다. 이러한 폴더에는 엄격한 폴더 구조가 없습니다. 이러한 폴더에 적응형 양식, 대화형 통신, 적응형 양식 단편, 양식 템플릿(XDP), PDF forms, 문서 및 관련 에셋의 이름을 바꾸고, 하위 폴더를 만들고, 저장할 수 있습니다.
-   * **Forms Workflow 폴더:** Workbench 프로세스(LiveCycle 보관 파일)를 마이그레이션하고 AEM [!DNL Forms] 사용자 인터페이스와 동기화할 때 Forms 워크플로 폴더가 만들어집니다. 이름 변경, 하위 폴더 만들기, 대화형 통신, 적응형 양식 조각 또는 대화형 통신을 만들 수 없습니다. 또한 버전 폴더를 삭제하거나 적응형 양식, 적응형 양식 단편 또는 대화형 통신을 버전 폴더와 병렬로 만들어 업로드할 수 없습니다.
+  * **일반 폴더:** 이러한 폴더는 AEM [!DNL Forms] 사용자 인터페이스 내에서 만들어진 자산에 사용됩니다. 이러한 폴더에는 엄격한 폴더 구조가 없습니다. 이러한 폴더에 적응형 양식, 대화형 통신, 적응형 양식 단편, 양식 템플릿(XDP), PDF forms, 문서 및 관련 에셋의 이름을 바꾸고, 하위 폴더를 만들고, 저장할 수 있습니다.
+  * **Forms Workflow 폴더:** Workbench 프로세스(LiveCycle 보관 파일)를 마이그레이션하고 AEM [!DNL Forms] 사용자 인터페이스와 동기화할 때 Forms 워크플로 폴더가 만들어집니다. 이름 변경, 하위 폴더 만들기, 대화형 통신, 적응형 양식 조각 또는 대화형 통신을 만들 수 없습니다. 또한 버전 폴더를 삭제하거나 적응형 양식, 적응형 양식 단편 또는 대화형 통신을 버전 폴더와 병렬로 만들어 업로드할 수 없습니다.
 
   ![폴더](assets/folders.png)
 
@@ -106,8 +120,8 @@ AEM 도구 패널에는 다양한 구성 요소용 도구가 포함되어 있습
 
 * **왼쪽 레일:** 왼쪽 레일 아이콘 ![railleftpng](assets/railleftpng.png)을(를) 클릭하여 AEM [!DNL Forms]의 타임라인 및 참조 기능을 표시할 수 있습니다.
 
-   * **타임라인:** 타임라인에서 검토할 수 있는 자산에 주석을 추가하고 볼 수 있습니다. 자세한 지침은 [양식의 에셋에 대한 리뷰 만들기 및 관리](../../forms/using/create-reviews-forms.md)를 참조하십시오.
-   * **참조:** AEM [!DNL Forms] 자산은 여러 AEM [!DNL Forms] 자산에서 사용할 수 있습니다. 예를 들어 문서 조각은 여러 편지로 사용할 수 있습니다. 참조는 선택한 에셋이 사용되는 에셋(기타 양식 또는 리소스) 목록과 선택한 에셋이 사용 중인 기타 에셋 목록입니다.
+  * **타임라인:** 타임라인에서 검토할 수 있는 자산에 주석을 추가하고 볼 수 있습니다. 자세한 지침은 [양식의 에셋에 대한 리뷰 만들기 및 관리](../../forms/using/create-reviews-forms.md)를 참조하십시오.
+  * **참조:** AEM [!DNL Forms] 자산은 여러 AEM [!DNL Forms] 자산에서 사용할 수 있습니다. 예를 들어 문서 조각은 여러 편지로 사용할 수 있습니다. 참조는 선택한 에셋이 사용되는 에셋(기타 양식 또는 리소스) 목록과 선택한 에셋이 사용 중인 기타 에셋 목록입니다.
 
 * **이동 경로:** 이동 경로는 현재 콘솔 또는 폴더의 제목을 나타냅니다. 이동 경로 옵션을 클릭하여 계층 구조 상단에 있는 폴더 수준 사이를 이동할 수 있습니다.
 * **전환기 보기:** 전환기 보기 아이콘 ![보기 목록](assets/viewlist.png) 또는 ![보기 카드](assets/viewcard.png)를 클릭하여 목록과 카드 보기 간에 빠르게 전환할 수 있습니다. 일반적인 사용자 인터페이스 구성 요소에 대한 자세한 내용은 [작성](/help/sites-authoring/author.md)을 참조하십시오.

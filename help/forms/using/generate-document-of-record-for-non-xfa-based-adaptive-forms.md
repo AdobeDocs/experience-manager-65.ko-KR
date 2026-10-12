@@ -9,20 +9,36 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4312'
+source-wordcount: '4370'
 ht-degree: 4%
-
 ---
-
 # 적응형 양식 또는 적응형 양식 단편을 위한 기록 문서 생성 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM 6.5 | 이 문서 |
 
 
@@ -51,8 +67,8 @@ ht-degree: 4%
 * [XML 스키마](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 적응형 양식에 대한 XML 스키마 정의를 선택할 수 있습니다. 적응형 양식에 대한 XML 스키마를 선택하면 다음 작업을 수행할 수 있습니다.
 
-   * 기록 문서에 대한 XFA 템플릿을 연결합니다. 연결된 XFA 템플릿이 적응형 양식과 동일한 XML 스키마를 사용하는지 확인합니다.
-   * 기록 문서 자동 생성
+  * 기록 문서에 대한 XFA 템플릿을 연결합니다. 연결된 XFA 템플릿이 적응형 양식과 동일한 XML 스키마를 사용하는지 확인합니다.
+  * 기록 문서 자동 생성
 
 * 없음
 양식 모델 없이 적응형 양식을 만들 수 있습니다. 기록 문서는 적응형 양식에 대해 자동으로 생성됩니다.
@@ -276,7 +292,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
-1. 속성 창에서 **양식 모델**&#x200B;을(를) 선택합니다.
+1. 속성 창에서 **양식 모델**을(를) 선택합니다.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -393,23 +409,23 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 * **기록 문서에서 제목 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 제목이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
 * **기록 문서에서 설명 제외:** 속성을 설정하면 기록 문서에서 패널/테이블의 설명이 제외됩니다. 패널 및 테이블에만 적용할 수 있습니다.
 * **[!UICONTROL 페이지 매김]** > **[!UICONTROL 배치]**: 패널을 배치할 위치를 결정합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 이전 항목 팔로우]**: 부모 패널에서 이전 개체 뒤에 패널을 배치합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 콘텐츠 영역에서]** > 콘텐츠 영역 이름: 지정된 콘텐츠 영역에 패널을 배치합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 다음 콘텐츠 영역 상단]**: 패널을 다음 콘텐츠 영역 상단에 배치합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 컨텐츠 영역 상단]** > 컨텐츠 영역 이름: 패널을 지정된 컨텐츠 영역 상단에 배치합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 페이지에서]** > 마스터 페이지 이름: 지정된 페이지에 패널을 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 다음 페이지 상단]**: 패널을 다음 페이지 상단에 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
-   * **[!UICONTROL 배치]** > **[!UICONTROL 페이지 상단]** > 마스터 페이지 이름: 지정된 페이지가 렌더링될 때 패널을 페이지 상단에 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 이전 항목 팔로우]**: 부모 패널에서 이전 개체 뒤에 패널을 배치합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 콘텐츠 영역에서]** > 콘텐츠 영역 이름: 지정된 콘텐츠 영역에 패널을 배치합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 다음 콘텐츠 영역 상단]**: 패널을 다음 콘텐츠 영역 상단에 배치합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 컨텐츠 영역 상단]** > 컨텐츠 영역 이름: 패널을 지정된 컨텐츠 영역 상단에 배치합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 페이지에서]** > 마스터 페이지 이름: 지정된 페이지에 패널을 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 다음 페이지 상단]**: 패널을 다음 페이지 상단에 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
+  * **[!UICONTROL 배치]** > **[!UICONTROL 페이지 상단]** > 마스터 페이지 이름: 지정된 페이지가 렌더링될 때 패널을 페이지 상단에 배치합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
 * **[!UICONTROL 페이지 매김]** > **[!UICONTROL 이후]**: 패널을 배치한 후 채울 영역을 결정합니다.**[!UICONTROL After]** 섹션에서 다음 필드를 사용할 수 있습니다.
-   * **[!UICONTROL 이후]** > **[!UICONTROL 상위 항목 채우기 계속]**: 상위 패널에서 채워질 나머지 모든 개체에 대한 데이터를 계속 병합합니다.
-   * **[!UICONTROL 이후]** > **[!UICONTROL 다음 콘텐츠 영역으로 이동]**: 패널을 배치한 후 다음 콘텐츠 영역 채우기를 시작합니다.
-   * **[!UICONTROL 이후]** > **[!UICONTROL 콘텐츠 영역으로 이동]** > 콘텐츠 영역 이름: 패널을 배치한 후 지정된 콘텐츠 영역 채우기를 시작합니다.
-   * **[!UICONTROL 이후]** > **[!UICONTROL 다음 페이지로 이동]**: 패널을 배치한 후 다음 페이지 채우기를 시작합니다.
-   * **[!UICONTROL 이후]** > **[!UICONTROL 페이지로 이동]** > 페이지 이름: 패널을 배치한 후 지정된 페이지에 채우기를 시작합니다.
+  * **[!UICONTROL 이후]** > **[!UICONTROL 상위 항목 채우기 계속]**: 상위 패널에서 채워질 나머지 모든 개체에 대한 데이터를 계속 병합합니다.
+  * **[!UICONTROL 이후]** > **[!UICONTROL 다음 콘텐츠 영역으로 이동]**: 패널을 배치한 후 다음 콘텐츠 영역 채우기를 시작합니다.
+  * **[!UICONTROL 이후]** > **[!UICONTROL 콘텐츠 영역으로 이동]** > 콘텐츠 영역 이름: 패널을 배치한 후 지정된 콘텐츠 영역 채우기를 시작합니다.
+  * **[!UICONTROL 이후]** > **[!UICONTROL 다음 페이지로 이동]**: 패널을 배치한 후 다음 페이지 채우기를 시작합니다.
+  * **[!UICONTROL 이후]** > **[!UICONTROL 페이지로 이동]** > 페이지 이름: 패널을 배치한 후 지정된 페이지에 채우기를 시작합니다.
 * **[!UICONTROL 페이지 매김]** > **[!UICONTROL 오버플로]**: 페이지에 걸쳐 있는 패널 또는 테이블에 대한 오버플로를 설정합니다. **[!UICONTROL Overflow]** 섹션에서 다음 필드를 사용할 수 있습니다.
-   * **[!UICONTROL 오버플로]** > **[!UICONTROL 없음]**: 다음 페이지 채우기를 시작합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
-   * **[!UICONTROL 오버플로]** > **[!UICONTROL 콘텐츠 영역으로 이동]** > 콘텐츠 영역 이름: 지정된 콘텐츠 영역을 채우기 시작합니다.
-   * **[!UICONTROL 오버플로]** > **[!UICONTROL 페이지로 이동]** > 페이지 이름: 지정한 페이지 채우기를 시작합니다.
+  * **[!UICONTROL 오버플로]** > **[!UICONTROL 없음]**: 다음 페이지 채우기를 시작합니다. 페이지 나누기가 자동으로 삽입되지 않으면 [!DNL AEM Forms]에서 페이지 나누기를 추가합니다.
+  * **[!UICONTROL 오버플로]** > **[!UICONTROL 콘텐츠 영역으로 이동]** > 콘텐츠 영역 이름: 지정된 콘텐츠 영역을 채우기 시작합니다.
+  * **[!UICONTROL 오버플로]** > **[!UICONTROL 페이지로 이동]** > 페이지 이름: 지정한 페이지 채우기를 시작합니다.
 
   >[!NOTE]
   >
@@ -420,21 +436,21 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 **양식 수준 설정**
 
 * **[!UICONTROL 기본]**
-   * **템플릿:** 템플릿 기본값 또는 사용자 지정을 선택할 수 있습니다.
-     ![대체 텍스트](image.png)
-   * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
-   * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
-   * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 [!UICONTROL 기록 문서]에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-   * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
+  * **템플릿:** 템플릿 기본값 또는 사용자 지정을 선택할 수 있습니다.
+    ![대체 텍스트](image.png)
+  * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
+  * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
+  * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 [!UICONTROL 기록 문서]에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
+  * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
 * **[!UICONTROL 양식 필드 속성]**
-   * **확인란 및 라디오 단추 구성 요소에 대해 옵션**&#x200B;을(를) 선택하면 선택한 값만 표시되는 DoR 출력이 생성됩니다.
-   * 선택한 여러 값에 대해 분리자를 선택하거나 다른 분리자 유형을 선택할 수 있습니다.
-   * 옵션 정렬
-      * 세로
-      * 가로
-      * 적응형 양식과 동일
-     >[!NOTE]
-     > 세로 및 가로 정렬은 라디오 단추와 확인란에만 적용할 수 있습니다
+  * **확인란 및 라디오 단추 구성 요소에 대해 옵션**&#x200B;을(를) 선택하면 선택한 값만 표시되는 DoR 출력이 생성됩니다.
+  * 선택한 여러 값에 대해 분리자를 선택하거나 다른 분리자 유형을 선택할 수 있습니다.
+  * 옵션 정렬
+    * 세로
+    * 가로
+    * 적응형 양식과 동일
+    >[!NOTE]
+    > 세로 및 가로 정렬은 라디오 단추와 확인란에만 적용할 수 있습니다
 * **[!UICONTROL 기본 페이지 속성]** [기본 페이지 속성](#master-page-properties-master-page-properties)에 대한 자세한 내용을 보려면 클릭하세요.
 
 ## 기록 문서에서 페이지 나누기 적용 {#apply-page-breaks-in-dor}
@@ -465,7 +481,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png)을(를) 선택하십시오.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
-1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**을 선택합니다.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 이후]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
 1. **[!UICONTROL 페이지로 이동]**&#x200B;을 선택하고 세 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.

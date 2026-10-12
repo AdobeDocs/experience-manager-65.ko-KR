@@ -9,13 +9,27 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 2%
-
 ---
-
 <!--
 hide: true
 -->
@@ -54,5 +68,5 @@ Dynamic Media 회사 별칭 계정을 구성할 때는 다음 사항에 유의�
    ![Dynamic Media 회사 별칭 텍스트 필드](/help/assets/assets-dm/dm-company-alias.png)
 
 1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 회사 별칭]** 텍스트 필드에 이전에 지원 사례에서 지정한 Dynamic Media 별칭 계정 이름을 입력하십시오.
-1. 페이지의 오른쪽 상단에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. 페이지의 오른쪽 상단에서 **[!UICONTROL 저장]**을 선택합니다.
 이제 Dynamic Media 회사 별칭 계정이 저장되고 활성화되었습니다. 기존 및 새 자산에 대한 모든 URL 및 뷰어 포함 코드가 이제 새 회사 별칭 이름을 반영합니다.

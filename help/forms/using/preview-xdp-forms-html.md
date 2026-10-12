@@ -1,6 +1,6 @@
 ---
-title: XDP 양식의 HTML5 미리 보기 생성
-description: Designer LiveCycle의 HTML 미리 보기 탭을 사용하여 브라우저에 표시될 양식을 미리 볼 수 있습니다.
+title: XDP 양식의 HTML5 미리보기 생성
+description: LiveCycle Designer의 HTML 미리 보기 탭을 사용하여 브라우저에 표시될 양식을 미리 볼 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,18 +8,33 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
-
+source-wordcount: '807'
+ht-degree: 2%
 ---
+# XDP 양식의 HTML5 미리보기 생성{#generate-html-preview-of-an-xdp-form}
 
-# XDP 양식의 HTML5 미리 보기 생성{#generate-html-preview-of-an-xdp-form}
+AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디션을 미리 보는 것 외에도 해당 양식의 HTML5 렌디션을 미리 볼 수도 있습니다. **HTML 미리 보기** 탭을 사용하여 브라우저에 표시되는 대로 양식을 미리 볼 수 있습니다.
 
-AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디션을 미리 보는 것 외에도 해당 양식의 HTML5 렌디션을 미리 볼 수도 있습니다. **미리 보기 HTML** 탭을 사용하여 브라우저에 표시되는 대로 양식을 미리 볼 수 있습니다.
-
-## Designer에서 XDP 양식에 대한 HTML 미리 보기 활성화 {#html-preview-of-forms-in-forms-designer}
+## Designer에서 XDP Forms용 HTML 미리 보기 활성화 {#html-preview-of-forms-in-forms-designer}
 
 Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하려면 다음 구성을 수행하십시오.
 
@@ -37,13 +52,13 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
 
    * JEE의 AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * OSGi의 AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -54,7 +69,7 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
 
 ### 보호 모드 비활성화 {#disable-protected-mode}
 
-기본적으로 [보호 모드](../../forms/using/get-xdp-pdf-documents-aem.md)이(가) 켜져 있습니다. 프로덕션 환경에 대해 활성화 상태를 유지합니다. 개발 환경에서 비활성화하여 desinger에서 HTML5 Forms을 미리 볼 수 있습니다. 비활성화하려면 다음 단계를 수행하십시오.
+기본적으로 [보호 모드](../../forms/using/get-xdp-pdf-documents-aem.md)이(가) 켜져 있습니다. 프로덕션 환경에 대해 활성화 상태를 유지합니다. 개발 환경에 대해 비활성화하여 HTML5 Forms을 디자이너에서 미리 볼 수 있습니다. 비활성화하려면 다음 단계를 수행하십시오.
 
 1. 관리자로 AEM 웹 콘솔에 로그인합니다.
 
@@ -74,31 +89,31 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
    * **HTTP 포트 번호**: AEM 서버 포트. 기본값은 4502입니다.
    * **HTML 미리 보기 컨텍스트:** XFA 양식을 렌더링하기 위한 프로필의 경로입니다. 다음 기본 프로필은 Designer에서 양식을 미리 보는 데 사용됩니다. 하지만 사용자 지정 프로필의 경로를 지정할 수도 있습니다.
 
-      * `/content/xfaforms/profiles/default.html`(OSGi의 AEM Forms)
+     * `/content/xfaforms/profiles/default.html`(OSGi의 AEM Forms)
 
-      * `/lc/content/xfaforms/profiles/default.html`(JEE의 AEM Forms)
+     * `/lc/content/xfaforms/profiles/default.html`(JEE의 AEM Forms)
 
    * Forms Manager UI가 배포되는 **Forms Manager 컨텍스트:** 컨텍스트 경로. 기본값은 다음과 같습니다.
 
-      * `/aem/forms`(OSGi의 AEM Forms)
-      * `/lc/forms`(JEE의 AEM Forms)
+     * `/aem/forms`(OSGi의 AEM Forms)
+     * `/lc/forms`(JEE의 AEM Forms)
 
    >[!NOTE]
    >
-   >AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기가 CRX 서버에 연결되어 미리 보기를 *생성*&#x200B;합니다.
+   >AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성*&#x200B;합니다.
 
-   ![AEM Forms Designer 옵션 &#x200B;](assets/server_options.png)
+   ![AEM Forms Designer 옵션 ](assets/server_options.png)
 
    AEM Forms Designer 옵션
 
-1. HTML에서 양식을 미리 보려면 **미리 보기 HTML** 탭을 클릭하십시오.
+1. HTML에서 양식을 미리 보려면 **HTML 미리 보기** 탭을 클릭하십시오.
 
    >[!NOTE]
    >
    >
    >
    >
-   >    * HTML 미리 보기 탭이 닫혀 있으면 F4 키를 눌러 미리 보기 HTML 탭을 엽니다. 보기 메뉴에서 HTML 미리보기 를 선택하여 HTML 미리보기 탭을 열 수도 있습니다.
+   >    * HTML 미리 보기 탭이 닫혀 있으면 F4 키를 눌러 HTML 미리 보기 탭을 엽니다. 보기 메뉴에서 HTML 미리 보기 를 선택하여 HTML 미리 보기 탭을 열 수도 있습니다.
    >    * HTML 미리 보기는 PDF 문서를 지원하지 않습니다. HTML 미리 보기는 XDP 문서에 대해서만 수행됩니다.
    >
    >
@@ -111,7 +126,7 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
 
 Designer을 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 보고 테스트할 수 있습니다. 샘플 데이터로 양식을 자주 테스트하여 양식이 올바르게 렌더링되는지 확인하는 것이 좋습니다.
 
-샘플 데이터가 없는 경우 Designer에서 만들거나 직접 만들 수 있습니다. ([양식을 미리 볼 샘플 데이터를 자동으로 생성하려면](https://help.adobe.com/ko_KR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)을(를), [양식을 미리 볼 샘플 데이터를 만들려면](https://help.adobe.com/ko_KR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)을) 참조하십시오.)
+샘플 데이터가 없는 경우 Designer에서 만들거나 직접 만들 수 있습니다. ([양식을 미리 볼 샘플 데이터를 자동으로 생성하려면](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)을(를), [양식을 미리 볼 샘플 데이터를 만들려면](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)을) 참조하십시오.)
 
 샘플 데이터 소스를 사용하여 양식을 테스트하면 데이터와 필드가 매핑되고 반복되는 하위 양식이 예상대로 반복됩니다. 병합된 데이터를 표시할 각 개체에 적절한 공간을 제공하는 균형 잡힌 양식 레이아웃을 만들 수 있습니다.
 
@@ -119,7 +134,7 @@ Designer을 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 
 1. **미리 보기** 탭을 클릭하고 데이터 파일 상자에 테스트 데이터 파일의 전체 경로를 입력합니다. 찾아보기 단추를 사용하여 파일을 탐색할 수도 있습니다.
 
-1. **확인**&#x200B;을 클릭합니다. 다음에 **미리 보기 HTML** 탭에서 양식을 미리 보면 샘플 XML 파일의 데이터 값이 각 개체에 나타납니다.
+1. **확인**&#x200B;을 클릭합니다. 다음에 **HTML 미리 보기** 탭에서 양식을 미리 보면 샘플 XML 파일의 데이터 값이 각 개체에 나타납니다.
 
 ## 저장소에서 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 

@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 작업 영역에서 사용되는 API
-description: 공용 Java&trade; JavaScript API 및 AEM Forms 작업 영역 LiveCycle 방법으로, 사용자 정의 및 자동화에 노출됩니다.
+title: AEM Forms Workspace에서 사용되는 API
+description: 공용 Java&trade, LiveCycle AEM Forms 작업 영역의 JavaScript API 및 메서드, 맞춤화 및 자동화에 노출됨.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,14 +8,34 @@ exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 1%
-
+source-wordcount: '1063'
+ht-degree: 2%
 ---
-
-# AEM Forms 작업 영역에서 사용되는 API {#apis-used-in-aem-forms-workspace}
+# AEM Forms Workspace에서 사용되는 API {#apis-used-in-aem-forms-workspace}
 
 AEM Forms 작업 영역에서는 다음 API가 사용됩니다.
 

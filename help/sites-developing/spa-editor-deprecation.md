@@ -4,13 +4,25 @@ description: SPA Editor는 Adobe에서 계속 지원되지만, 그 가치가 프
 feature: Developing
 role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 16%
-
+source-wordcount: '1049'
+ht-degree: 15%
 ---
-
 
 # SPA 편집기 서비스 중단 {#spa-editor-deprecation}
 
@@ -22,7 +34,7 @@ Adobe은 SPA 편집기를 더 이상 사용하지 않으며, AEM 6.5의 [릴리�
 
 ## 사용 중단 세부 정보 {#details}
 
-SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않으며, 기존 구현이 있는 경우 **필요에 맞는 경우 계속 사용할 수 있습니다.** 그러나 사용 중단에 대한 다음과 같은 의미에 유의하십시오.
+SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않으며, 기존 구현이 있는 경우 **필요에 맞는 경우 계속 사용할 수 있습니다.** 단, 사용 중단에 대한 다음과 같은 시사점을 숙지하시기 바랍니다.
 
 * 앞으로 Adobe은 P1 및 P2 문제와 보안 취약점만 해결합니다.
 * SDK에 대한 추가 개발, 개선 사항 또는 업데이트는 제공되지 않습니다.
@@ -34,15 +46,15 @@ SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않
 * [AEM SPA 페이지 모델 관리자](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA 구성 요소 매핑](https://github.com/adobe/aem-spa-component-mapping)
 * [AEM SPA React 편집 가능한 구성 요소](https://github.com/adobe/aem-react-editable-components)
-   * [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components)
-   * [AEM React 핵심 구성 요소 베이스](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [AEM React 핵심 구성 요소 SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [AEM React 핵심 구성 요소 예제](https://github.com/adobe/aem-react-core-wcm-components-examples)
+  * [AEM React 핵심 구성 요소](https://github.com/adobe/aem-react-core-wcm-components)
+  * [AEM React 핵심 구성 요소 베이스](https://github.com/adobe/aem-react-core-wcm-components-base)
+  * [AEM React 핵심 구성 요소 SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
+  * [AEM React 핵심 구성 요소 예제](https://github.com/adobe/aem-react-core-wcm-components-examples)
 * [AEM SPA Angular 편집 가능한 구성 요소](https://github.com/adobe/aem-angular-editable-components)
-   * [AEM Angular 핵심 구성 요소](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [AEM Angular 핵심 구성 요소 베이스](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [AEM Angular 핵심 구성 요소 SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [AEM Angular 핵심 구성 요소 예제](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+  * [AEM Angular 핵심 구성 요소](https://github.com/adobe/aem-angular-core-wcm-components)
+  * [AEM Angular 핵심 구성 요소 베이스](https://github.com/adobe/aem-angular-core-wcm-components-base)
+  * [AEM Angular 핵심 구성 요소 SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+  * [AEM Angular 핵심 구성 요소 예제](https://github.com/adobe/aem-angular-core-wcm-components-examples)
 * [AEM SPA 값 편집 가능한 구성 요소](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## SPA 편집기의 대안 {#alternatives}
@@ -50,10 +62,10 @@ SPA 편집기 **의 사용 중단은 즉시 제거**&#x200B;를 의미하지 않
 SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에 따라 다릅니다.
 
 * **[범용 편집기](/help/sites-developing/universal-editor/introduction.md)**&#x200B;는 SPA 편집기를 직접 대체하는 것이 가장 좋습니다.
-   * 또한 범용 편집기는 시각적 편집기이며 SPA 편집기의 모든 Adobe 경험을 통합하여 분리된 구현을 위해 특별히 디자인되었습니다.
-   * 또한 범용 편집기는 [AEM as a Cloud Service용으로 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)되었으므로 클라우드 서비스 외에도 AMS 및 온프레미스 사용 사례를 지원합니다.
+  * 또한 범용 편집기는 시각적 편집기이며 SPA 편집기의 모든 Adobe 경험을 통합하여 분리된 구현을 위해 특별히 디자인되었습니다.
+  * 또한 범용 편집기는 [AEM as a Cloud Service용으로 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)되었으므로 클라우드 서비스 외에도 AMS 및 온프레미스 사용 사례를 지원합니다.
 * **[콘텐츠 조각 편집기](/help/sites-developing/universal-editor/introduction.md)**&#x200B;는 양식 기반 편집기를 선호하는 사용자를 위한 대체 요소입니다.
-   * 콘텐츠 조각 편집기는 콘텐츠가 페이지가 아닌 콘텐츠 조각으로 구조화될 때 가장 적합합니다.
+  * 콘텐츠 조각 편집기는 콘텐츠가 페이지가 아닌 콘텐츠 조각으로 구조화될 때 가장 적합합니다.
 
 콘텐츠 조각을 사용하여 콘텐츠를 구조화해도 시각적 편집기로서의 범용 편집기의 사용이 제외되지 않으며 두 편집기를 함께 사용할 수 있습니다.
 
@@ -65,15 +77,15 @@ SPA 편집기에 가장 적합한 대체 요소는 프로젝트 요구 사항에
 * **미래 지향적:** AEM의 로드맵은 범용 편집기를 시각적 편집기로 우선시합니다. 이를 채택하면 최신 혁신 및 향상된 기능에 액세스할 수 있습니다.
 * **더욱 간편한 통합:** 범용 편집기를 사용하기 위해 AEM 관련 SDK가 필요하지 않으므로 기술 스택 종속성이 줄어듭니다.
 * **자체 앱 가져오기:** 범용 편집기는 모든 웹 프레임워크 또는 아키텍처를 지원하므로 복잡한 리팩토링 없이도 채택할 수 있습니다.
-* **확장성:** 범용 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)의 이점을 누릴 수 있습니다.
+* **확장성:** 범용 편집기는 GenAI, Workfront 등과의 통합을 포함하여 강력한 [확장 프레임워크](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)의 이점을 누릴 수 있습니다.
 
 SPA 편집기에서 범용 편집기로의 직접 마이그레이션 경로는 없습니다. 이는 두 기술의 근본적인 차이 때문입니다.
 
 * 범용 편집기는 템플릿 편집기, 스타일 시스템 또는 반응형 격자와 같은 기능을 다시 도입하지 않습니다.
-   * 이제 Edge Delivery Services 또는 Headless 프로젝트의 린 프론트엔드 CSS 및 JS를 사용하여 이러한 사용 사례를 보다 효율적으로 처리할 수 있습니다.
+  * 이제 Edge Delivery Services 또는 Headless 프로젝트의 린 프론트엔드 CSS 및 JS를 사용하여 이러한 사용 사례를 보다 효율적으로 처리할 수 있습니다.
 * 범용 편집기는 Editor-as-a-Service이므로 구현자가 CSS 또는 JS를 구성 요소 대화 상자에 삽입하는 것을 허용하지 않습니다.
-   * 이렇게 하면 페이지 편집기에서 구성 요소 대화 상자가 자동으로 변환되는 것을 방지합니다.
-   * 이는 사용자 정의 위젯, 필드 유효성 검사, 표시/숨기기 규칙 및 템플릿 기반 사용자 정의와 같은 대화 상자의 여러 영역에 영향을 미칩니다.
+  * 이렇게 하면 페이지 편집기에서 구성 요소 대화 상자가 자동으로 변환되는 것을 방지합니다.
+  * 이는 사용자 정의 위젯, 필드 유효성 검사, 표시/숨기기 규칙 및 템플릿 기반 사용자 정의와 같은 대화 상자의 여러 영역에 영향을 미칩니다.
 
 이러한 기술적 차이점을 염두에 두고 Adobe의 권장 사항은 다음과 같습니다.
 

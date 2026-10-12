@@ -1,5 +1,5 @@
 ---
-title: 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소 통합
+title: 웹 애플리케이션에 AEM Forms Workspace 구성 요소 통합
 description: 자체 웹 앱에서 AEM Forms 작업 영역 구성 요소를 재사용하여 기능을 사용하고 긴밀한 통합을 제공하는 방법
 contentOwner: robhagat
 content-type: reference
@@ -9,16 +9,36 @@ exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
-
+source-wordcount: '342'
+ht-degree: 4%
 ---
+# 웹 애플리케이션에 AEM Forms Workspace 구성 요소 통합 {#integrating-aem-forms-workspace-components-in-web-applications}
 
-# 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소 통합 {#integrating-aem-forms-workspace-components-in-web-applications}
-
-고유한 웹 애플리케이션에서 AEM Forms 작업 공간 [구성 요소](/help/forms/using/description-reusable-components.md)를 사용할 수 있습니다. 다음 샘플 구현에서는 CRX™ 인스턴스에 설치된 AEM Forms 작업 공간 개발 패키지의 구성 요소를 사용하여 웹 애플리케이션을 만듭니다. 특정 요구 사항에 맞게 아래 솔루션을 맞춤화하십시오. 샘플 구현은 웹 포털 내에서 `UserInfo`, `FilterList` 및 `TaskList`구성 요소를 다시 사용합니다.
+고유한 웹 애플리케이션에서 AEM Forms 작업 공간 [구성 요소](/help/forms/using/description-reusable-components.md)를 사용할 수 있습니다. 다음 샘플 구현에서는 ™ 인스턴스에 설치된 AEM Forms 작업 공간 개발 패키지의 구성 요소를 사용하여 웹 애플리케이션을 만듭니다. 특정 요구 사항에 맞게 아래 솔루션을 맞춤화하십시오. 샘플 구현은 웹 포털 내에서 `UserInfo`, `FilterList` 및 `TaskList`구성 요소를 다시 사용합니다.
 
 1. `https://'[server]:[port]'/lc/crx/de/`에서 CRXDE Lite 환경에 로그인합니다. AEM Forms Workspace 개발 패키지가 설치되어 있는지 확인합니다.
 1. `/apps/sampleApplication/wscomponents` 경로를 만듭니다.
@@ -41,7 +61,7 @@ ht-degree: 0%
        });
    ```
 
-1. 이름이 `sampleApplication`이고 유형이 `nt:unstructured`인 /content 아래에 노드를 만듭니다. 이 노드의 속성에서 String 형식 및 값 `sampleApplication`의 `sling:resourceType`을(를) 추가합니다. 이 노드의 액세스 제어 목록에 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`에 대한 항목을 추가합니다. 또한 `/apps/sampleApplication`의 액세스 제어 목록에서 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`의 항목을 추가합니다.
+1. 이름이 `sampleApplication`이고 유형이 `nt:unstructured`인 /content 아래에 노드를 만듭니다. 이 노드의 속성에서 String 형식 및 값 `sampleApplication`의 `sling:resourceType`을(를) 추가합니다. 이 노드의 액세스 제어 목록에서 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`에 대한 항목을 추가합니다. 또한 `/apps/sampleApplication`의 액세스 제어 목록에서 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`에 대한 항목을 추가합니다.
 1. `/apps/sampleApplication/wscomponents/js/registry.js`에서 템플릿 값에 대해 `/lc/libs/ws/`에서 `/lc/apps/sampleApplication/wscomponents/`(으)로 경로를 업데이트합니다.
 1. 포털 홈 페이지 JSP 파일(`/apps/sampleApplication/GET.jsp`)에서 다음 코드를 추가하여 포털 내에 필요한 구성 요소를 포함하십시오.
 

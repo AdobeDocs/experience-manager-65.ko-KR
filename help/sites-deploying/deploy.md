@@ -10,33 +10,45 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 7%
-
+source-wordcount: '1853'
+ht-degree: 9%
 ---
-
 # 배포 및 유지 관리{#deploying-and-maintaining}
 
 이 페이지에서는 다음 정보를 찾을 수 있습니다.
 
 * [기본 개념](#basic-concepts)
 
-   * [AEM란?](#what-is-aem)
-   * [일반 배포](#typical-deployment-scenarios)
+  * [AEM란?](#what-is-aem)
+  * [일반 배포](#typical-deployment-scenarios)
 
-      * [온프레미스](#on-premise)
-      * [Cloud Manager을 사용한 Managed Services](#managed-services-using-cloud-manager)
+    * [온프레미스](#on-premise)
+    * [Cloud Manager을 사용한 Managed Services](#managed-services-using-cloud-manager)
 
 * [시작하기](#getting-started)
 
-   * [사전 요구 사항](#prerequisites)
-   * [소프트웨어 가져오기](#getting-the-software)
-   * [기본 로컬 설치](#default-local-install)
-   * [작성자 및 게시 설치](#author-and-publish-installs)
-   * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
-   * [시작 및 중지](#starting-and-stopping)
+  * [사전 요구 사항](#prerequisites)
+  * [소프트웨어 가져오기](#getting-the-software)
+  * [기본 로컬 설치](#default-local-install)
+  * [작성자 및 게시 설치](#author-and-publish-installs)
+  * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
+  * [시작 및 중지](#starting-and-stopping)
 
 이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 찾을 수 있습니다.
 
@@ -57,7 +69,7 @@ ht-degree: 7%
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [AEM Screens이란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
+* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 기본 개념 {#basic-concepts}
 
@@ -130,7 +142,7 @@ AEM Managed Services 고객은 다음과 같은 이점을 실현할 수 있습�
 
 **Cloud Manager**: Adobe Experience Manager Managed Services 서비스의 일부인 Cloud Manager은 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있도록 해주는 셀프서비스 포털입니다. 여기에는 IT 팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 맞춤화 또는 업데이트 제공 속도를 높일 수 있는 최신 CI/CD(지속적 통합 및 지속적 배포) 파이프라인이 포함되어 있습니다. Cloud Manager은 Adobe Managed Service 고객만 사용할 수 있습니다.
 
-Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)를 참조하세요.
+Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)를 참조하세요.
 
 ## 시작하기 {#getting-started}
 
@@ -140,7 +152,7 @@ Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manage
 
 AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시스템이나 Microsoft® Windows 또는 Linux®의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것이 일반적입니다.
 
-클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
+클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **Chrome** 51+****, **Firefox **47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
 
 ### 소프트웨어 가져오기 {#getting-the-software}
 
@@ -196,11 +208,11 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 **`https://localhost:4502`**
 
-작성자 인스턴스의 결과는 **의**&#x200B;게시 인스턴스&#x200B;**`localhost:4503`**&#x200B;에 연결하도록 자동으로 구성됩니다.
+작성자 인스턴스의 결과는 **`localhost:4503`**&#x200B;의 **게시 인스턴스**&#x200B;에 연결하도록 자동으로 구성됩니다.
 
 ### 작성자 및 게시 설치 {#author-and-publish-installs}
 
-기본 설치(**의**&#x200B;작성자&#x200B;**`localhost:4502`** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
+기본 설치(**`localhost:4502`**&#x200B;의 **작성자** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -312,4 +324,4 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [AEM Screens이란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
+* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)

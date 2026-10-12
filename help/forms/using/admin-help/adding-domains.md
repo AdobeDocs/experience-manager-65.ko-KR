@@ -9,13 +9,27 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 97%
-
 ---
-
 # 도메인 추가 {#adding-domains}
 
 >[!NOTE]
@@ -60,8 +74,8 @@ ht-degree: 97%
 
 ### 일반적인 고려 사항 {#general-considerations}
 
-* DB2 이외의 데이터베이스 공급자를 사용하는 경우 도메인 ID는 최대 50바이트까지 포함할 수 있습니다. 싱글바이트 ASCII 문자를 사용하는 경우 문자 수는 50자로 제한됩니다. 도메인 식별자에 멀티바이트 문자가 포함되어 있는 경우 헤딩 제한이 줄어듭니다. 예를 들어 식별자에 3바이트 문자가 포함된 도메인을 만드는 경우 문자 수는 16자로 제한됩니다. 또한 4바이트 문자를 포함하는 도메인은 만들 수 없습니다. 이 제한을 초과하는 도메인 ID를 만들면 AEM Forms가 불안정한 상태가 됩니다. 이러한 불안정한 상태에서 복구하려면 이 페이지의 &#39;[확장 문자 또는 멀티바이트 문자가 포함된 도메인 제거](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&#39;를 참조하십시오.
-* AEM Forms 내에서 만들 수 있는 엔터프라이즈 도메인과 로컬 도메인의 수는 각 도메인 ID의 길이에 따라 달라집니다. 엔터프라이즈 도메인 또는 하이브리드 도메인을 추가하면 사용자 관리에서 AEM Forms 구성 파일(config. xml)의 AuthProviders 노드에 있는 configInstance 문자열을 업데이트합니다. 이 configInstance 문자열에는 인증 공급자와 연결된 모든 도메인의 절대 경로를 콜론으로 구분한 목록이 포함되어 있습니다. 이 문자열의 크기는 8,192자로 제한됩니다. 해당 제한에 도달하면 추가 도메인을 만들 수 없습니다.
+* DB2 이외의 데이터베이스 공급자를 사용하는 경우 도메인 ID는 최대 50바이트까지 포함할 수 있습니다. 싱글바이트 ASCII 문자를 사용하는 경우 문자 수는 50자로 제한됩니다. 도메인 식별자에 멀티바이트 문자가 포함되어 있는 경우 이 제한이 줄어듭니다. 예를 들어 식별자에 3바이트 문자가 포함된 도메인을 만드는 경우 문자 수는 16자로 제한됩니다. 또한 4바이트 문자를 포함하는 도메인은 만들 수 없습니다. 이 제한을 초과하는 도메인 ID를 만들면 AEM Forms가 불안정한 상태가 됩니다. 이러한 불안정한 상태에서 복구하려면 이 페이지의 &#39;[확장 문자 또는 멀티바이트 문자가 포함된 도메인 제거](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&#39;를 참조하십시오.
+* AEM Forms 내에서 만들 수 있는 엔터프라이즈 도메인과 로컬 도메인의 수는 각 도메인 ID의 길이에 따라 달라집니다. 엔터프라이즈 도메인 또는 하이브리드 도메인을 추가하면 사용자 관리에서 AEM Forms 구성 파일(config.xml)의 AuthProviders 노드에 있는 configInstance 문자열을 업데이트합니다. 이 configInstance 문자열에는 인증 공급자와 연결된 모든 도메인의 절대 경로를 콜론으로 구분한 목록이 포함되어 있습니다. 이 문자열의 크기는 8,192자로 제한됩니다. 해당 제한에 도달하면 추가 도메인을 만들 수 없습니다.
 
 ### DB2 사용 시 고려 사항 {#considerations-when-using-db2}
 
@@ -77,7 +91,7 @@ AEM Forms 데이터베이스로 MySQL을 사용하는 경우 다음과 같은 �
 
 * 도메인 ID와 도메인 이름에는 싱글바이트(ASCII) 문자만 사용합니다. 확장된 ASCII 문자를 사용하면 AEM Forms가 불안정한 상태가 되고 도메인을 삭제하려고 하면 예외가 발생할 수 있습니다. 이러한 불안정한 상태에서 복구하려면 이 페이지의 &#39;[확장 문자 또는 멀티바이트 문자가 포함된 도메인 제거](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&#39; 항목을 참조하십시오.
 * 이름은 같지만 대소문자가 다른 두 개의 도메인을 만들 수 없습니다. 예를 들어 *adobe*&#x200B;라는 도메인이 이미 있는 상태에서 *Adobe*&#x200B;라는 도메인을 만들려고 하면 오류가 발생합니다.
-* 사용자 관리자는 확장 문자 사용만 다른 두 도메인 이름을 구별할 수 없습니다. 예를 들어 *abcde*&#x200B;라는 도메인과 *âbcdè*&#x200B;라는 도메인을 만드는 경우 두 도메인은 동일한 것으로 간주됩니다.
+* 사용자 관리는 확장 문자 사용만 다른 두 도메인 이름을 구별할 수 없습니다. 예를 들어 *abcde*&#x200B;라는 도메인과 *âbcdè*&#x200B;라는 도메인을 만드는 경우 두 도메인은 동일한 것으로 간주됩니다.
 
 ### 확장 문자 또는 멀티바이트 문자가 포함된 도메인 제거 {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
 
@@ -86,6 +100,6 @@ AEM Forms 데이터베이스로 MySQL을 사용하는 경우 다음과 같은 �
 1. 데이터베이스에서 edcprincipaldomainentity 테이블의 도메인을 검색합니다.
 
    * edcprincipaldomainentity에서 `*`를 선택합니다.
-   * 확장 문자 또는 멀티바이트 문자가 포함된 도메인 이름을 찾아 상태를 더 이상 사용되지 않음으로 설정합니다.
+   * 확장 문자 또는 멀티바이트 문자가 포함된 도메인 이름을 찾아 상태를 OBSOLETE로 설정합니다.
 
 1. [구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)에서 설명된 대로 업데이트된 구성 파일을 가져옵니다.

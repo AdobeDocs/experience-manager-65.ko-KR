@@ -9,13 +9,33 @@ feature: Document Services,Assembler,Barcoded Forms
 exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4aaecafe-7152-5c39-af9c-a42e297c87ff
+    internal-label: Assembler
+  - id: c61c0849-e97f-542f-a358-7b62d542cc8b
+    internal-label: Barcoded Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
-
 ---
-
 # 바코드 양식 서비스{#barcoded-forms-service}
 
 ## 개요 {#overview}
@@ -137,9 +157,9 @@ AEM 콘솔에서 **AEMFD Barcoded Forms 서비스**&#x200B;를 사용하여 이 
 
 바코드 Forms 서비스는 다음 두 가지 API를 제공합니다.
 
-* **[decode](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: 입력 PDF 문서 또는 tiff 이미지에서 사용할 수 있는 모든 바코드를 디코딩합니다. 입력 문서 또는 이미지에서 사용할 수 있는 모든 바코드에서 검색된 데이터가 포함된 다른 XML 문서를 반환합니다.
+* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: 입력 PDF 문서 또는 tiff 이미지에서 사용할 수 있는 모든 바코드를 디코딩합니다. 입력 문서 또는 이미지에서 사용할 수 있는 모든 바코드에서 검색된 데이터가 포함된 다른 XML 문서를 반환합니다.
 
-* **[extractToXML](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decode API를 사용하여 디코딩된 데이터를 XML 데이터로 변환합니다. 이 XML 데이터는 XFA 양식과 병합할 수 있습니다. 각 바코드에 대해 하나씩 XML 문서 목록을 반환합니다.
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decode API를 사용하여 디코딩된 데이터를 XML 데이터로 변환합니다. 이 XML 데이터는 XFA 양식과 병합할 수 있습니다. 각 바코드에 대해 하나씩 XML 문서 목록을 반환합니다.
 
 ### JSP 또는 서블릿에 BCF 서비스 사용 {#using-bcf-service-with-a-jsp-or-servlets}
 

@@ -5,18 +5,34 @@ exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 5%
-
 ---
-
 # 부재 중 설정 구성 {#configure-out-of-office-settings}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6.5 | 이 문서 |
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
@@ -49,7 +65,7 @@ ht-degree: 5%
 
    또한 워크플로 모델에 관계 없이 모든 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하십시오. <br>
 
-   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**&#x200B;를 선택한 다음 제외할 워크플로 모델을 지정합니다.
+   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**를 선택한 다음 제외할 워크플로 모델을 지정합니다.
    <br>
 
    피할당자를 더 추가할 수 있도록 단계를 반복합니다. <br>

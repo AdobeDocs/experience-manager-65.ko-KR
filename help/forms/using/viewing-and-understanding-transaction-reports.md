@@ -8,25 +8,38 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # OSGi에서 AEM Forms에 대한 거래 보고서 보기 및 이해{#viewing-and-understanding-transaction-reports}
 
 트랜잭션 보고서를 사용하여 제출된 양식, 처리된 문서 및 렌더링된 문서의 수를 캡처하고 추적할 수 있습니다. 이러한 거래를 추적하는 목적은 제품 사용과 하드웨어 및 소프트웨어에 대한 투자 재조정에 대한 정보에 입각한 결정을 내리는 것입니다. 자세한 내용은 [AEM Forms 거래 보고서 개요](../../forms/using/transaction-reports-overview.md)를 참조하십시오.
 
 ## 거래 보고서 설정  {#setting-up-transaction-reports}
 
-트랜잭션 보고서 기능은 AEM Forms 추가 기능 패키지의 일부로 사용할 수 있습니다. 모든 작성자 및 게시 인스턴스에 추가 기능 패키지를 설치하는 방법에 대한 자세한 내용은 [AEM forms 설치 및 구성](/help/forms/using/installing-configuring-aem-forms-osgi.md)을 참조하십시오. AEM Forms 추가 기능 패키지가 설치되면 다음을 수행합니다.
+트랜잭션 보고서 기능은 AEM Forms 추가 기능 패키지의 일부로 사용할 수 있습니다. 모든 작성자 및 게시 인스턴스에 추가 기능 패키지를 설치하는 방법에 대한 자세한 내용은 [AEM 양식 설치 및 구성](/help/forms/using/installing-configuring-aem-forms-osgi.md)을 참조하십시오. AEM forms 추가 기능 패키지가 설치되면 다음을 수행합니다.
 
 * 모든 게시 인스턴스에서 역방향 복제 활성화
 * 거래 보고서 활성화
 * 거래 보고서를 볼 수 있는 권한 제공
-* (선택 사항) 트랜잭션 플러시 기간 및 보낼 편지함 [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md) 구성
+* (선택 사항) 트랜잭션 플러시 기간 및 보낼 편지함 [](/help/forms/using/installing-configuring-aem-forms-osgi.md) 구성
 
 >[!NOTE]
 >
@@ -80,8 +93,8 @@ AEM Forms은 아래 요약 보고서에 표시된 대로 구성된 날짜 이후
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* 트랜잭션 레코드를 재설정하려면 **날짜를 오늘로 재설정** 옵션을 사용하십시오. 날짜를 오늘로 재설정하면 모든 이전 거래 기록이 소실됩니다. 작성자 인스턴스에서 날짜를 재설정할 때 변경 사항이 Publish 인스턴스의 트랜잭션 보고서에 영향을 주지 않으며 이와 반대로 영향을 주지 않습니다.
-* **Publish 인스턴스만 트랜잭션 표시**&#x200B;를 사용하여 구성된 게시 인스턴스 또는 게시 팜에서만 발생한 모든 트랜잭션을 봅니다.
+* 트랜잭션 레코드를 재설정하려면 **날짜를 오늘로 재설정** 옵션을 사용하십시오. 날짜를 오늘로 재설정하면 모든 이전 거래 기록이 소실됩니다. 작성자 인스턴스에서 날짜를 재설정할 때 변경 사항이 게시 인스턴스의 트랜잭션 보고서에 영향을 주지 않으며 이와 반대로 영향을 주지 않습니다.
+* 구성된 게시 인스턴스 또는 게시 팜에서만 발생한 모든 트랜잭션을 보려면 **게시 인스턴스의 트랜잭션만 표시**&#x200B;를 사용하십시오.
 * **처리된 문서**, **렌더링된 문서** 및 **Forms 제출됨** 범주를 사용하여 해당 트랜잭션을 봅니다. 이러한 범주에 속하는 거래 유형에 대해서는 [청구 가능한 거래 보고서 API](../../forms/using/transaction-reports-billable-apis.md)를 참조하십시오.
 
 ## 트랜잭션 보고 로그 보기 {#view-transaction-reporting-logs}

@@ -7,13 +7,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
-
 ---
-
 # 적응형 양식 차트 {#af-charts}
 
 ![Hero_Image](assets/charts_hero_image.jpg)
@@ -176,7 +192,7 @@ chartType 속성은 차트의 유형을 지정합니다. 가능한 값은 원형
 1. 적응형 양식의 AEM 사이드바에서 드롭다운 목록 구성 요소를 드래그 앤 드롭합니다.
 1. 구성 요소를 선택하고 ![설정](cmppr1.png)을 누릅니다.
 1. 드롭다운 목록의 제목을 지정합니다. 예를 들어 차트 유형을 선택합니다.
-1. 항목 섹션에 지원되는 차트 유형을 추가하여 드롭다운 목록을 채웁니다. **완료**&#x200B;를 클릭합니다.
+1. 항목 섹션에 지원되는 차트 유형을 추가하여 드롭다운 목록을 채웁니다. **완료**를 클릭합니다.
    ![차트 드롭다운 선택](chart-drop-down.png)
 
 1. 드롭다운 구성 요소를 선택하고 ![대체 텍스트](rule_editor_icon.png)를 탭합니다. 규칙 편집기에서 아래와 같이 시각적 규칙 편집기에서 규칙을 작성합니다.

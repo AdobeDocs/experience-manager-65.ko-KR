@@ -10,13 +10,29 @@ feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e42cd24a-0815-4b0e-bfd6-9997547c3fc1
+    internal-label: Mixed Media Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 15%
-
 ---
-
 # 혼합 미디어 세트{#mixed-media-sets}
 
 혼합 미디어 세트를 사용하면 하나의 프레젠테이션에 이미지, 이미지 세트, 스핀 세트 및 비디오를 혼합할 수 있습니다.
@@ -127,7 +143,7 @@ AEM 혼합 미디어 집합을 위해 사용할 이미지와 비디오를 먼저
 
 ## 혼합 미디어 집합 편집 {#editing-mixed-media-sets}
 
-Assets의 모든 에셋과 마찬가지로 [&#x200B; 사용자 인터페이스에서 &#x200B;](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
+Assets의 모든 에셋과 마찬가지로 [ 사용자 인터페이스에서 ](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
 
 * 혼합 미디어 집합에 자산을 추가합니다.
 * 혼합 미디어 집합에서 에셋 순서를 변경합니다.

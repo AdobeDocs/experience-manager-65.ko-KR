@@ -1,5 +1,5 @@
 ---
-title: 요약 URL에서 작업 변수를 가져오는 중
+title: 요약 URL에서 작업 변수 가져오기
 description: 작업 정보를 재사용하고 요약 URL을 생성하여 작업을 요약하거나 설명하는 방법.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 0%
-
+source-wordcount: '432'
+ht-degree: 2%
 ---
-
-# 요약 URL에서 작업 변수를 가져오는 중 {#getting-task-variables-in-summary-url}
+# 요약 URL에서 작업 변수 가져오기 {#getting-task-variables-in-summary-url}
 
 요약 페이지에는 작업 관련 정보가 표시됩니다. 이 문서에서는 요약 페이지에서 작업 관련 정보를 재사용하는 방법에 대해 설명합니다.
 
@@ -84,6 +98,6 @@ ht-degree: 0%
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-AEM Forms workspace에서 작업을 열면 요약 URL이 CRX 노드에 액세스하고 HTML 렌더러가 요약을 표시합니다.
+AEM Forms 작업 영역에서 작업을 열면 요약 URL이 CRX 노드에 액세스하고 HTML 렌더러가 요약을 표시합니다.
 
-요약 레이아웃은 프로세스를 수정하지 않고 변경할 수 있습니다. HTML 렌더러는 요약을 적절히 표시합니다.
+요약 레이아웃은 프로세스를 수정하지 않고 변경할 수 있습니다. HTML 렌더러는 요약을 적절하게 표시합니다.

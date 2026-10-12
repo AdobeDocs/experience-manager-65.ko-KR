@@ -9,13 +9,27 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 100%
-
 ---
-
 # 작업 관리자 및 제한{#work-manager-and-throttling}
 
 >[!NOTE]
@@ -44,7 +58,7 @@ AEM Forms 관리자는 상태 모니터를 사용하여 대기열에 있는 작�
 
 ## 작업 관리자 제한 옵션 구성 {#configuring-work-manager-throttling-options}
 
-작업 관리자에 대한 제한을 구성하여 충분한 메모리 리소스를 사용할 수 있을 때만 작업 항목이 예약되도록 할 수 있습니다. 애플리케이션 서버에서 다음과 같은 JVM 옵션을 설정하여 제한을 구성합니다.
+작업 관리자에 대한 스로틀링을 구성하여 충분한 메모리 리소스를 사용할 수 있을 때만 작업 항목이 예약되도록 할 수 있습니다. 애플리케이션 서버에서 다음과 같은 JVM 옵션을 설정하여 스로틀링을 구성합니다.
 
 <table>
  <thead>
@@ -60,7 +74,7 @@ AEM Forms 관리자는 상태 모니터를 사용하여 대기열에 있는 작�
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>디버그 모드를 활성화하려면 이 옵션을 <code>true</code>로 설정하고 비활성화하려면 false로 설정합니다. </p><p>디버그 모드에서는 작업 관리자 정책 위반 및 작업 관리자 일시 중지/다시 시작 작업과 관련된 메시지가 기록됩니다. 문제 해결 시에만 이 옵션을 true로 설정합니다.</p></td>
+   <td><p>디버그 모드를 활성화하려면 이 옵션을 <code>true</code>로 설정하고 비활성화하려면 false로 설정합니다. </p><p>디버그 모드에서는 작업 관리자 정책 위반 및 작업 관리자 일시 중지/재개 작업과 관련된 메시지가 기록됩니다. 문제 해결 시에만 이 옵션을 true로 설정합니다.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
@@ -102,9 +116,9 @@ AEM Forms 관리자는 상태 모니터를 사용하여 대기열에 있는 작�
 
 **WebSphere에 Java 옵션 추가**
 
-1. WebSphere 관리 콘솔 탐색 트리에서 서버 > 서버 유형 > WebSphere Application Server를 클릭합니다.
+1. WebSphere 관리 콘솔 탐색 트리에서 [서버] > [서버 유형] > [WebSphere 애플리케이션 서버]를 클릭합니다.
 1. 오른쪽 창에서 서버 이름을 클릭합니다.
-1. 서버 인프라에서 Java를 클릭하고 Forms Workflow > 프로세스 정의를 클릭합니다.
+1. 서버 인프라에서 Java and Forms Workflow > 프로세스 정의를 클릭합니다.
 1. 추가 속성에서 Java 가상 머신을 클릭합니다.
 1. 일반 JVM 인수 상자에 필요한 인수를 입력합니다.
 1. 확인 또는 적용을 클릭한 후 마스터 구성에 직접 저장을 클릭합니다.

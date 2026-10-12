@@ -9,16 +9,25 @@ exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
-
+ht-degree: 6%
 ---
-
 # AEM에서 CRXDE Lite 활성화{#enabling-crxde-lite-in-aem}
 
-AEM 설치가 최대한 안전하도록 보안 검사 목록에서 프로덕션 환경에서 [WebDAV를 사용하지 않도록 설정](/help/sites-administering/security-checklist.md#disable-webdav)합니다.
+AEM 설치가 최대한 안전한지 확인하기 위해 보안 체크리스트에서는 프로덕션 환경에서 [WebDAV를 비활성화](/help/sites-administering/security-checklist.md#disable-webdav)할 것을 권장합니다.
 
 그러나 CRXDE Lite은 `org.apache.sling.jcr.davex` 번들이 제대로 작동하는지에 따라 다르므로 WebDAV를 사용하지 않도록 설정하면 CRXDE Lite도 효과적으로 사용하지 않도록 설정됩니다.
 
@@ -28,7 +37,7 @@ AEM 설치가 최대한 안전하도록 보안 검사 목록에서 프로덕션 
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-이 권장 사항은 공격 표면을 최대한 줄이기 위한 것이지만, 시스템 관리자는 때때로 프로덕션 인스턴스의 콘텐츠를 검색하거나 문제를 디버깅하기 위해 CRXDE Lite에 액세스해야 할 수도 있습니다.
+이 권장 사항은 공격 표면을 최대한 줄이기 위한 것이지만, 시스템 관리자는 때때로 CRXDE Lite에 액세스하여 콘텐츠를 찾아보거나 프로덕션 인스턴스의 문제를 디버깅해야 할 수 있습니다.
 
 [OSGi 설정](#enabling-crxde-lite-osgi) 또는 [cURL 명령](#enabling-crxde-lite-curl)을 사용하여 CRXDE Lite을 활성화할 수 있습니다.
 
@@ -78,5 +87,5 @@ AEM 설치가 최대한 안전하도록 보안 검사 목록에서 프로덕션 
 
 AEM 6 보안 기능에 대한 자세한 내용은 다음 페이지를 참조하십시오.
 
-* [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
+* [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)
 * [프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)

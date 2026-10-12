@@ -10,13 +10,28 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 72%
-
 ---
-
 # 워크플로에 참여{#participating-in-workflows}
 
 워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다. 사용자는 알림을 받은 다음, 적절한 작업을 수행할 수 있습니다.
@@ -42,12 +57,12 @@ ht-degree: 72%
 
 * 페이지 편집기를 사용하는 경우, 상태 표시줄에 다음 내용이 표시됩니다.
 
-   * 페이지에 적용되는 워크플로의 이름(예: 활성화 요청).
-   * 워크플로의 현재 단계에 대해 현재 사용자가 사용할 수 있는 모든 작업: 예를 들어 완료, 위임, 세부 사항 보기.
-   * 페이지가 적용되는 워크플로의 수. 다음과 같은 작업을 수행할 수 있습니다.
+  * 페이지에 적용되는 워크플로의 이름(예: 활성화 요청).
+  * 워크플로의 현재 단계에 대해 현재 사용자가 사용할 수 있는 모든 작업: 예를 들어 완료, 위임, 세부 사항 보기.
+  * 페이지가 적용되는 워크플로의 수. 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로의 상태 정보를 탐색할 수 있습니다.
-      * 실제 숫자를 클릭하여 적용 가능한 모든 워크플로의 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로를 선택합니다.
+    * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로의 상태 정보를 탐색할 수 있습니다.
+    * 실제 숫자를 클릭하여 적용 가능한 모든 워크플로의 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로를 선택합니다.
 
   ![wf-59](assets/wf-59.png)
 

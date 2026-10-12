@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
-
+source-wordcount: '2442'
+ht-degree: 61%
 ---
-
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) AEM 콘텐츠 조각의 중요한 기능으로, 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있기 때문에 headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
@@ -51,22 +63,22 @@ ht-degree: 59%
 
 * **변형** 탭에서 직접 콘텐츠를 편집합니다. 각 데이터 유형은 다음 예와 같이 다양한 편집 옵션을 제공합니다.
 
-   * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
+  * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
 
-      * [형식](#formats) 선택
-      * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
-      * 다양한 [작업](#actions) 액세스
+    * [형식](#formats) 선택
+    * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
+    * 다양한 [작업](#actions) 액세스
 
-   * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
+  * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
 * 현재 변형에 **태그**&#x200B;을(를) 할당합니다. 태그를 추가, 업데이트 및 제거할 수 있습니다.
 
-   * [태그](/help/sites-authoring/tags.md)은(는) 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 강력합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
+  * [태그](/help/sites-authoring/tags.md)은(는) 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 강력합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
 
-      * 태그 변형이 강조 표시된 조각을 반환하는 태그를 검색합니다.
-      * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
+    * 태그 변형이 강조 표시된 조각을 반환하는 태그를 검색합니다.
+    * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
 
-     예를 들어 관련 조각에 “크리스마스 론치“로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
+    예를 들어 관련 조각에 “크리스마스 론치“로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
 
   >[!NOTE]
   >
@@ -130,10 +142,10 @@ ht-degree: 59%
 * 단락 스타일: 단락, 제목 1/2/3
 * [자산 삽입](#inserting-assets-into-your-fragment)
 * 전체 화면 편집기를 엽니다. 여기에서 다음 형식 옵션을 사용할 수 있습니다.
-   * 검색
-   * 찾기/바꾸기
-   * 맞춤법 검사기
-   * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * 검색
+  * 찾기/바꾸기
+  * 맞춤법 검사기
+  * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [콘텐츠 조각 삽입](#inserting-content-fragment-into-your-fragment): **여러 줄 텍스트** 필드가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
 
 [작업](#actions)은 전체 화면 편집기에서 액세스할 수도 있습니다.

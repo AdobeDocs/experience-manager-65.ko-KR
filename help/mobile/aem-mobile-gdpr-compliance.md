@@ -6,13 +6,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 0%
-
+source-wordcount: '707'
+ht-degree: 1%
 ---
-
 # AEM Mobile - GDPR 준비 완료 {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -23,13 +27,13 @@ ht-degree: 0%
 
 ## AEM Mobile GDPR 지원 {#aem-mobile-gdpr-support}
 
-AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비가 되었습니다. AEM Mobile에는 개인 데이터가 저장되지 않습니다. 프로비저닝된 경우 Adobe ID으로 Experience Mobile Adobe에 로그온할 수 있습니다.
+AEM Mobile은 고객이 GDPR 준수 의무를 이행하도록 지원할 준비가 되었습니다. AEM Mobile에는 개인 데이터가 저장되지 않습니다. 프로비저닝된 경우 Adobe ID으로 Adobe Experience Mobile에 로그온할 수 있습니다.
 
 <!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://business.adobe.com/kr/privacy/general-data-protection-regulation.html](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)을(를) 참조하세요. 다음은 GDPR 요청을 시작하기 위해 Adobe을 사용하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
+Adobe의 디지털 게시 제품(AEM Mobile보다 선행함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html)을(를) 참조하세요. 다음은 Adobe을 사용하여 GDPR 요청을 시작하는 방법을 포함하여 Digital Publishing Suite 제품에서 GDPR 관련 기능 지원에 대한 세부 사항을 제공합니다.
 
 AEM Mobile을 이전 Digital Publishing Suite 제품과 혼동하지 않도록 다음 위치에서 Digital Publishing Suite 제품에 로그인할 수 있습니다.
 
@@ -51,15 +55,15 @@ Digital Publishing Suite에 대한 GDPR 요청을 시작할 수 있도록 Adobe 
 * Windows 앱 사용자의 경우 최종 사용자의 App Store ID: *dpsc-windowsAppStoreId*
 * 최종 사용자가 DPS 앱과 상호 작용하는 데 사용한 이메일 주소: *이메일*
 
-### 자주 묻는 질문(FAQ) {#frequently-asked-questions-faq}
+### 자주 묻는 질문 (FAQ) {#frequently-asked-questions-faq}
 
-**DELETE 요청을 시작할 때 Adobe이 내 App Store 구매를 삭제하고 있습니까?**
+**DELETE 요청을 시작할 때 Adobe에서 내 App Store 구매를 삭제하고 있습니까?**
 
 Adobe은 보유한 앱스토어 구매 정보(구독 등)를 삭제하지만, 앱스토어에서 구매는 여전히 기록 중입니다. 앱(최종 사용자)이 앱스토어에 로그인된 경우 해당 영수증이 다시 선택되어 Adobe으로 전송됩니다. 나중에 이러한 항목은 새 구매로 간주되며 앱에서 다시 액세스하고 복원됩니다.
 
-**DELETE 요청을 시작할 때 Adobe이 고객이 제공한 권한을 삭제하고 있습니까?**
+**DELETE 요청을 시작할 때 Adobe에서 고객이 제공한 권한을 삭제하고 있습니까?**
 
-Adobe은 고객의 추가 직접 권한 부여 관련 정보를 삭제합니다. 앱(최종 사용자)이 고객이 사용한 OAuth 메커니즘에 로그인하는 경우 정보를 Adobe으로 보내고 서비스는 추가 권한을 다시 선택합니다.
+Adobe은 고객의 추가 직접 권한 부여 관련 정보를 삭제합니다. 앱(최종 사용자)이 고객이 사용한 OAuth 메커니즘에 로그인하는 경우 Adobe에 정보가 전송되고 서비스는 추가 권한을 다시 선택합니다.
 
 **최종 사용자에게 필요한 사항은 무엇입니까?**
 
@@ -67,7 +71,7 @@ Adobe은 고객의 추가 직접 권한 부여 관련 정보를 삭제합니다.
 
 **장치를 사용하는 사람들 간에 앱을 공유할 때 어떻게 됩니까?**
 
-Adobe은 특정 사용자에게 직접 연결되는 최소한의 정보를 가지고 있습니다. 앱의 데이터에 저장되어 있으며 앱이 시작할 때마다 전달되는 임의로 생성된 UUID를 사용하여 데이터를 연결합니다. 즉, 동일한 장치에서 앱을 공유하는 최종 사용자는 동일한 UUID를 사용하며 모든 데이터는 GDPR 요청을 수행하는 사람이 소유한 것으로 간주됩니다. 액세스 및 삭제 요청 모두에 대해 DPSC는 앱을 공유하는 사람을 한 사람으로 간주합니다.
+Adobe에는 특정 사용자에게 직접 연결되는 최소한의 정보가 있습니다. 앱의 데이터에 저장되어 있으며 앱이 시작할 때마다 전달되는 임의로 생성된 UUID를 사용하여 데이터를 연결합니다. 즉, 동일한 장치에서 앱을 공유하는 최종 사용자는 동일한 UUID를 사용하며 모든 데이터는 GDPR 요청을 수행하는 사람이 소유한 것으로 간주됩니다. 액세스 및 삭제 요청 모두에 대해 DPSC는 앱을 공유하는 사람을 한 사람으로 간주합니다.
 
 **Analytics에서 추적되는 개인 데이터는 무엇입니까?**
 
@@ -75,7 +79,7 @@ Adobe은 특정 사용자에게 직접 연결되는 최소한의 정보를 가�
 
 **최종 사용자가 정보를 제공했지만 찾을 수 없습니다. 왜 안 되나요?**
 
-Digital Publishing Suite 제품이 진화하면서 서비스 구현이 변경되고 더 많은 데이터가 난독화되었다. 사용자가 제공한 데이터를 사용하여 데이터를 찾을 수 없는 경우 사용자의 데이터를 해당 사용자에게 다시 추적할 수 없음을 의미합니다.
+Digital Publishing Suite 제품이 발전함에 따라 서비스 구현이 변경되고 더 많은 데이터가 난독화되었습니다. 사용자가 제공한 데이터를 사용하여 데이터를 찾을 수 없는 경우 사용자의 데이터를 해당 사용자에게 다시 추적할 수 없음을 의미합니다.
 
 ### 예 {#example}
 

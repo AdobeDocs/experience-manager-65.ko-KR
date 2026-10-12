@@ -8,18 +8,29 @@ mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10112'
+source-wordcount: '10238'
 ht-degree: 3%
-
 ---
-
 # 디지털 자산 관리 {#manage-digital-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]에서 에셋을 저장하고 제어하는 것 이상의 작업을 수행할 수 있습니다. [!DNL Experience Manager]은(는) 엔터프라이즈급 자산 관리 기능을 제공합니다. 에셋을 편집 및 공유하고, 고급 검색을 실행하고, 수십 개의 지원되는 파일 형식의 여러 렌디션을 만들 수 있습니다. 또한 버전 및 디지털 권한을 관리하고, 에셋 처리를 자동화하고, 메타데이터를 관리 및 관리하며, 주석을 사용하여 공동 작업을 수행할 수도 있습니다.
@@ -104,7 +115,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!CAUTION]
 >
->기본값이 500MB이고 청크 크기가 50MB인 경우 청크 업로드가 트리거됩니다. [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=ko)을 편집하고 `timeout configuration`을(를) 에셋을 업로드하는 데 걸리는 시간보다 짧게 설정하면 에셋 업로드가 진행되는 동안 세션 시간 초과 상황이 발생합니다. 따라서 각 청크 요청이 세션을 새로 고치도록 `chunkUploadMinFileSize` 및 `chunksize`을(를) 변경합니다.
+>기본값이 500MB이고 청크 크기가 50MB인 경우 청크 업로드가 트리거됩니다. [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html)을 편집하고 `timeout configuration`을(를) 에셋을 업로드하는 데 걸리는 시간보다 짧게 설정하면 에셋 업로드가 진행되는 동안 세션 시간 초과 상황이 발생합니다. 따라서 각 청크 요청이 세션을 새로 고치도록 `chunkUploadMinFileSize` 및 `chunksize`을(를) 변경합니다.
 >
 >자격 증명 만료 시간 제한, 대기 시간, 대역폭 및 예상 동시 업로드가 주어지면 다음을 선택할 수 있는 가장 높은 값입니다.
 >
@@ -171,7 +182,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 [!DNL Experience Manager] 작성자 인스턴스에 기능 팩 18912을 설치하십시오. FP-18912에 액세스하여 FTP 계정 설정을 완료하려면 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko?support-solution=General#support)에 문의하십시오. 자세한 내용은 [일괄 에셋 마이그레이션에 대한 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
+>Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 [!DNL Experience Manager] 작성자 인스턴스에 기능 팩 18912을 설치하십시오. FP-18912에 액세스하여 FTP 계정 설정을 완료하려면 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/?support-solution=General#support)에 문의하십시오. 자세한 내용은 [일괄 에셋 마이그레이션에 대한 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
 >
 >FTP를 사용하여 자산을 업로드하는 경우 [!DNL Experience Manager]에 지정된 업로드 설정이 무시됩니다. 대신 Dynamic Media Classic에서 정의한 파일 처리 규칙이 사용됩니다.
 
@@ -179,7 +190,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 
 1. 선택한 FTP 클라이언트를 사용하여 프로비저닝 이메일에서 받은 FTP 사용자 이름 및 암호를 사용하여 FTP 서버에 로그인합니다. FTP 클라이언트에서 FTP 서버에 파일이나 폴더를 업로드합니다.
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=ko#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인은 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -198,7 +209,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 1. 업로드 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 업로드 제출]**&#x200B;을 클릭합니다.
 
    업로드 진행 상황을 보려면 전역 탐색 표시줄에서 **[!UICONTROL 작업]**&#x200B;을 클릭하세요. 작업 페이지에 업로드 진행 상황이 표시됩니다. [!DNL Experience Manager]에서 작업을 계속하고 언제든지 Dynamic Media Classic의 작업 페이지로 돌아가서 진행 중인 작업을 검토할 수 있습니다.
-진행 중인 업로드 작업을 취소하려면 [기간] 시간 옆에 있는 **[!UICONTROL 취소]**&#x200B;를 클릭하십시오.
+   진행 중인 업로드 작업을 취소하려면 [기간] 시간 옆에 있는 **[!UICONTROL 취소]**&#x200B;를 클릭하십시오.
 
 #### 업로드 작업 옵션 {#upload-job-options}
 
@@ -206,7 +217,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 에셋을 일괄 업로드할
 |---|---|---|
 | 작업 이름 | | 텍스트 필드에 미리 채워진 기본 이름에는 사용자가 입력한 이름 부분과 날짜 및 시간 스탬프가 포함됩니다. 이 업로드 작업에 기본 이름을 사용하거나 직접 만든 작업의 이름을 입력할 수 있습니다. <br>작업 및 기타 업로드 및 게시 작업이 작업 페이지에 기록되어 작업 상태를 확인할 수 있습니다. |
 | 업로드 후 게시 | | 업로드한 에셋을 자동으로 게시합니다. |
-| 확장명에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기 | | 업로드하는 파일이 기존 파일을 같은 이름으로 바꾸려면 이 옵션을 선택합니다. 이 옵션의 이름은 **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]** > **[!UICONTROL 응용 프로그램에 업로드]** > **[!UICONTROL 이미지 덮어쓰기]**&#x200B;의 설정에 따라 다를 수 있습니다. |
+| 확장자에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기 | | 업로드하는 파일이 기존 파일을 같은 이름으로 바꾸려면 이 옵션을 선택합니다. 이 옵션의 이름은 **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]** > **[!UICONTROL 응용 프로그램에 업로드]** > **[!UICONTROL 이미지 덮어쓰기]**&#x200B;의 설정에 따라 다를 수 있습니다. |
 | 업로드 시 Zip 또는 Tar 파일 압축 풀기 | | |
 | 작업 옵션 | | **[!UICONTROL 작업 옵션]**&#x200B;을 클릭하면 [!UICONTROL 업로드 작업 옵션] 대화 상자를 열고 전체 업로드 작업에 영향을 주는 옵션을 선택할 수 있습니다. 이러한 옵션은 모든 파일 유형에 대해 동일합니다.<br>응용 프로그램 일반 설정 페이지에서 시작하여 파일을 업로드하는 기본 옵션을 선택할 수 있습니다. 이 페이지를 열려면 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]**&#x200B;을 선택하세요. **[!UICONTROL 기본 업로드 옵션]** 옵션을 선택하여 [!UICONTROL 업로드 작업 옵션] 대화 상자를 엽니다. |
 | | 언제 | 일회성 또는 반복을 선택합니다. 반복 작업을 설정하려면 반복 옵션(일별, 주별, 월별 또는 사용자 지정)을 선택하여 FTP 업로드 작업이 반복될 시기를 지정합니다. 그런 다음 필요에 따라 예약 옵션을 지정합니다. |
@@ -688,7 +699,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 1. 이미지를 자르려면 **[!UICONTROL 자르기]** ![이미지를 자르려면 옵션](assets/do-not-localize/crop.png)을 클릭하세요.
 
-1. Select the desired option from the list. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. **자유형** 옵션을 사용하면 종횡비 제한 없이 이미지를 크롭할 수 있습니다.
+1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. **자유형** 옵션을 사용하면 종횡비 제한 없이 이미지를 크롭할 수 있습니다.
 
 1. 자를 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
 
@@ -829,9 +840,9 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 1. [인쇄] 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 들어 있는 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 상단** 설정을 사용하십시오. 기본적으로 선택되어 있습니다.
 
-   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   인쇄된 PDF에서 주석/검토 상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-1. **[!UICONTROL 인쇄]**&#x200B;를 클릭합니다. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. **[!UICONTROL 인쇄]**&#x200B;를 클릭합니다. 2단계에서 선택한 옵션에 따라 생성된 PDF에 주석/상태가 지정된 위치에 표시됩니다. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    생성된 PDF에 대한 ![주석 및 검토 상태](assets/annotation-status-pdf.png)
 
@@ -884,7 +895,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 동일한 위치에 존재하는 동일한 파일 이름으로 에셋을 업로드합니다. 새 에셋이거나 동일한 에셋의 수정된 버전일 수 있습니다.
 * [!DNL Experience Manager]에서 이미지를 편집하고 변경 내용을 저장합니다.
 * 에셋의 메타데이터를 편집합니다.
-* [!DNL Experience Manager] 데스크톱 앱을 사용하여 기존 자산을 체크 아웃하고 편집한 다음 [변경 내용을 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#edit-assets-upload-updated-assets)합니다.
+* [!DNL Experience Manager] 데스크톱 앱을 사용하여 기존 자산을 체크 아웃하고 편집한 다음 [변경 내용을 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)합니다.
 
 워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 에셋에 대한 버전을 만들면 버전과 함께 메타데이터 및 렌디션이 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같이 동일한 이미지의 대체 표현입니다.
 
@@ -959,4 +970,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ko#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)을 참조하십시오.
+자세한 내용은 [데스크톱 앱을 사용하여 DAM 에셋을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 에셋 링크를 사용하는 방법](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)을 참조하십시오.

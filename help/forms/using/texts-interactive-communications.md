@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 1%
-
 ---
-
 # 인터랙티브 커뮤니케이션 텍스트{#texts-in-interactive-communications}
 
 ## 개요 {#overview}
@@ -26,7 +40,7 @@ ht-degree: 1%
 * **데이터 모델 개체**: 데이터 속성은 백 엔드 데이터 원본을 사용합니다.
 * **규칙 기반 콘텐츠**: 텍스트에 있는 콘텐츠 중 규칙에 따라 표시되거나 숨겨지는 부분입니다. 규칙은 양식 데이터 모델 속성 및 변수를 기반으로 할 수도 있습니다.
 * **변수**: 텍스트 문서 단편에서 변수가 백엔드 데이터 소스에 바인딩되어 있지 않습니다. 에이전트는 대화형 커뮤니케이션을 사후 프로세스에 제출하기 위해 준비하는 동안 변수에서 값을 입력/선택하거나 변수를 데이터 소스에 바인딩합니다.
-* **반복**: 대화형 커뮤니케이션에 신용카드 거래와 같은 동적 정보가 있을 수 있으며, 이 정보의 발생 횟수는 생성된 대화형 커뮤니케이션에서 계속 변경될 수 있습니다. 반복을 사용하면 이러한 동적 정보의 형식을 지정하고 구조를 지정할 수 있습니다. 자세한 내용은 [인라인 조건 및 반복](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/cm-inline-condition.html)을 참조하십시오.
+* **반복**: 대화형 커뮤니케이션에 신용카드 거래와 같은 동적 정보가 있을 수 있으며, 이 정보의 발생 횟수는 생성된 대화형 커뮤니케이션에서 계속 변경될 수 있습니다. 반복을 사용하면 이러한 동적 정보의 형식을 지정하고 구조를 지정할 수 있습니다. 자세한 내용은 [인라인 조건 및 반복](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html)을 참조하십시오.
 
 ## 텍스트 만들기 {#createtext}
 
@@ -53,9 +67,9 @@ ht-degree: 1%
    * [규칙 편집기](#rules)
    * [서식 옵션](#formatting)
 
-      * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다](#paste)
+     * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다](#paste)
 
-      * [텍스트 부분 강조 표시](#highlight)
+     * [텍스트 부분 강조 표시](#highlight)
 
    * [반복](/help/forms/using/cm-inline-condition.md)
    * [특수 문자](#special)

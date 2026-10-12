@@ -9,13 +9,26 @@ feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 1%
-
 ---
-
 # 인터랙티브 커뮤니케이션 및 편지의 인라인 조건 및 반복{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## 인라인 조건 {#inline-conditions}
@@ -200,11 +213,11 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
    * 샘플 데이터가 있는 편지를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일.
 
-   자세한 내용은 [데이터 사전](https://helpx.adobe.com/kr/aem-forms/6-2/data-dictionary.html)을 참조하세요.
+   자세한 내용은 [데이터 사전](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)을 참조하세요.
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
-   정적 텍스트가 트랜잭션 세부 사항과 반복됩니다. 정적 텍스트 반복은 이 절차에서 텍스트에 적용된 반복에 의해 촉진됩니다. ${DD_creditcard_TransactionAmount > 0.5} 조건은 USD .5 미만의 거래가 편지에서 렌더링되지 않도록 합니다.
+   정적 텍스트가 트랜잭션 세부 사항과 반복됩니다. 정적 텍스트 반복은 이 절차에서 텍스트에 적용된 반복에 의해 촉진됩니다. ${DD_creditcard_TransactionAmount > 0.5} 조건은 USD .5 아래의 트랜잭션이 편지에 렌더링되지 않도록 합니다.
 
    >[!NOTE]
    >

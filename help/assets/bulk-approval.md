@@ -7,18 +7,32 @@ role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 6%
-
 ---
-
 # 폴더 자산 및 컬렉션 검토 {#review-folder-assets-and-collections}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 얻습니다.
@@ -56,7 +70,7 @@ ht-degree: 6%
 
    ![review_name](assets/review_name.png)
 
-1. 확인 메시지를 닫으려면 **[!UICONTROL 제출]**&#x200B;을 클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다. A notification for the new task is sent to the approver.
+1. 확인 메시지를 닫으려면 **[!UICONTROL 제출]**&#x200B;을 클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
 1. [!DNL Assets]에 승인자로 로그인하고 [!DNL Assets] UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]**&#x200B;을 클릭한 다음 목록에서 검토 작업을 선택하십시오.
 
    ![Assets 알림](assets/aemAssetsNotification.png)

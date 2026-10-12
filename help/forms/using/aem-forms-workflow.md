@@ -8,13 +8,29 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3622'
+source-wordcount: '3734'
 ht-degree: 2%
-
 ---
-
 # OSGi의 Forms 중심 워크플로{#forms-centric-workflow-on-osgi}
 
 ![영웅 이미지](do-not-localize/header.png)
@@ -276,9 +292,9 @@ AEM 워크플로우의 작업 할당 및 이메일 보내기 단계를 사용하
 
 ## 중요한 데이터를 워크플로우 변수에 매개 변수화하고 외부 데이터 저장소에 저장 {#externalize-wf-variables}
 
-적응형 양식에서 [!DNL Experience Manager] 워크플로우로 전송되는 모든 데이터에는 비즈니스 최종 사용자의 PII(개인 식별 정보) 또는 SPD(중요 개인 데이터)가 포함될 수 있습니다. 그러나 데이터를 [!DNL Adobe Experience Manager] [JCR 저장소](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=ko)에 저장하는 것은 필수가 아닙니다. 정보를 [워크플로 변수](/help/forms/using/variable-in-aem-workflows.md)(으)로 매개 변수화하여 최종 사용자 데이터를 관리되는 데이터 저장소(예: Azure blob 저장소)로 저장할 수 있습니다.
+적응형 양식에서 [!DNL Experience Manager] 워크플로우로 전송되는 모든 데이터에는 비즈니스 최종 사용자의 PII(개인 식별 정보) 또는 SPD(중요 개인 데이터)가 포함될 수 있습니다. 그러나 데이터를 [!DNL Adobe Experience Manager] [JCR 저장소](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html)에 저장하는 것은 필수가 아닙니다. 정보를 [워크플로 변수](/help/forms/using/variable-in-aem-workflows.md)(으)로 매개 변수화하여 최종 사용자 데이터를 관리되는 데이터 저장소(예: Azure blob 저장소)로 저장할 수 있습니다.
 
-[!DNL Adobe Experience Manager] Forms 워크플로우에서 데이터는 워크플로우 변수를 통해 일련의 워크플로우 단계를 통해 처리되고 전달됩니다. 이러한 변수는 워크플로 인스턴스 메타데이터 노드에 저장된 속성 또는 키-값 쌍으로 명명됩니다(예: `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`). 이러한 워크플로 변수는 JCR이 아닌 별도의 저장소로 외부화된 다음 [!DNL Adobe Experience Manager] 워크플로에서 처리할 수 있습니다. [!DNL Adobe Experience Manager]은(는) 관리되는 외부 저장소에 워크플로 변수를 저장할 API `[!UICONTROL UserMetaDataPersistenceProvider]`을(를) 제공합니다. [!DNL Adobe Experience Manager]에서 고객 소유 데이터 저장소에 워크플로 변수를 사용하는 방법에 대한 자세한 내용은 [외부 데이터 저장소에 대한 워크플로 변수 관리](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)를 참조하십시오.
+[!DNL Adobe Experience Manager] Forms 워크플로우에서 데이터는 워크플로우 변수를 통해 일련의 워크플로우 단계를 통해 처리되고 전달됩니다. 이러한 변수는 워크플로 인스턴스 메타데이터 노드에 저장된 속성 또는 키-값 쌍으로 명명됩니다(예: `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`). 이러한 워크플로 변수는 JCR이 아닌 별도의 저장소로 외부화된 다음 [!DNL Adobe Experience Manager] 워크플로에서 처리할 수 있습니다. [!DNL Adobe Experience Manager]은(는) 관리되는 외부 저장소에 워크플로 변수를 저장할 API `[!UICONTROL UserMetaDataPersistenceProvider]`을(를) 제공합니다. [!DNL Adobe Experience Manager]에서 고객 소유 데이터 저장소에 대해 워크플로 변수를 사용하는 방법에 대한 자세한 내용은 [외부 데이터 저장소에 대한 워크플로 변수 관리](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)를 참조하십시오.
 [!DNL Adobe]은(는) API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md)를 사용하여 워크플로 메타데이터 맵에서 Azure blob 저장소로 변수를 저장하는 다음 [sample](https://github.com/adobe/workflow-variable-externalizer)을 제공합니다. 유사한 행에서 샘플을 안내서로 사용하여 [UserMetaDataPersistenceProvider] API를 사용하여 [!DNL Adobe Experience Manager] 외부의 다른 데이터 저장소에서 워크플로 변수를 외부화하고 이를 관리할 수 있습니다.
 
 >[!NOTE]

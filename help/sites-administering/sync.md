@@ -10,7 +10,21 @@ exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2553'
 ht-degree: 3%
@@ -74,14 +88,14 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### &#x200B;1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
 
 **사용자 동기화 사용**
 
-* 작성자의 **&#x200B;**
+* 작성자의 ****
 
   * 관리자 권한으로 로그인
   * [웹 콘솔에 액세스](/help/sites-deploying/configuring-osgi.md)
@@ -501,7 +515,7 @@ User Sync Diagnostics 콘솔로 들어오면 결과가 표시됩니다.
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2을(를) 확인합니다. 인증된 사용자 &#x200B;](#createauthuser) 만들기가 제대로 수행되었습니다.
+그런 다음 섹션 [2을(를) 확인합니다. 인증된 사용자 ](#createauthuser) 만들기가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 게시 인스턴스에 존재하는 승인된 사용자를 만들고, 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 해당 사용자를 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 

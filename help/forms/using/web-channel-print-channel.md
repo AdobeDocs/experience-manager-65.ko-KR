@@ -8,16 +8,32 @@ feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 0%
-
+source-wordcount: '697'
+ht-degree: 1%
 ---
-
 # 인쇄 채널 및 웹 채널{#print-channel-and-web-channel}
 
-대화형 커뮤니케이션은 인쇄와 웹의 두 가지 채널을 통해 전달될 수 있습니다. 인쇄 채널은 PDF 및 보험료 납부를 위한 미리 알림으로 인쇄된 서신과 같은 종이 통신을 만드는 데 사용되며, 웹 채널은 웹 사이트의 신용 카드 명세서와 같은 온라인 경험을 전달하는 데 사용됩니다.
+대화형 커뮤니케이션은 인쇄와 웹의 두 가지 채널을 통해 전달될 수 있습니다. 인쇄 채널은 PDF를 만들고 보험료 납부를 위한 미리 알림으로 인쇄된 서신과 같은 종이 통신을 만드는 데 사용되며 웹 채널은 웹 사이트의 신용 카드 명세서와 같은 온라인 경험을 전달하는 데 사용됩니다.
 
 대화형 통신 작성자는 문서 단편 및 이미지와 같은 자산을 재사용하여 대화형 통신의 인쇄 및 웹 버전을 모두 만들 수 있습니다.
 

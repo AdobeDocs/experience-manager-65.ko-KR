@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 4%
-
 ---
-
 # Dynamic Media에서 이미지 품질을 최적화하는 우수 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
 
 많은 요소가 허용되는 결과를 렌더링하는 데 기여하므로 이미지 품질을 최적화하는 것은 시간이 오래 걸리는 프로세스일 수 있습니다. 결과는 개인들이 이미지 품질을 다르게 인식하기 때문에 부분적으로 주관적이다. 구조화된 실험이 핵심입니다.
@@ -26,7 +37,7 @@ Adobe Experience Manager에는 이미지 조정 및 최적화와 결과 렌더�
 
 * JPG 또는 PNG는 최상의 품질과 관리 가능한 크기 및 무게로 이미지를 게재할 수 있는 최상의 옵션입니다.
 * URL에 format 명령이 제공되지 않으면 Dynamic Media 이미지 게재의 기본값은 게재용 JPG입니다.
-* JPG은 10:1의 비율로 압축하며 일반적으로 더 작은 이미지 파일 크기를 생성합니다. PNG는 이미지의 배경이 흰색인 경우와 같은 경우를 제외하고 약 2:1의 비율로 압축됩니다. 일반적으로 PNG 파일 크기는 JPG 파일보다 큽니다.
+* JPG은 10:1의 비율로 압축하며 일반적으로 더 작은 이미지 파일 크기를 생성합니다. 이미지에 흰색 배경이 포함된 경우와 같은 경우를 제외하고 PNG는 약 2:1의 비율로 압축됩니다. 일반적으로 PNG 파일 크기는 JPG 파일보다 큽니다.
 * JPG에서는 손실 압축을 사용합니다. 즉, 압축하는 동안 그림 요소(픽셀)가 삭제됩니다. 반면에 PNG는 무손실 압축을 사용합니다.
 * JPG은 종종 예리한 가장자리와 대비가 있는 합성 이미지보다 더 충실하게 사진 이미지를 압축합니다.
 * 이미지에 투명도가 포함되어 있는 경우 JPG에서 투명도를 지원하지 않으므로 PNG를 사용합니다.
@@ -60,24 +71,24 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 * 단순 선명하게 하기( `&op_sharpen`) - Photoshop에서 사용되는 선명하게 필터와 유사하게, 단순 선명하게 하기는 동적 크기 조정 후 이미지의 최종 보기에 기본 선명하게 하기를 적용합니다. 그러나 이 메서드는 사용자가 구성할 수 없습니다. 가장 좋은 방법은 필요한 경우가 아니면 &amp;op_sharpen을 사용하지 않는 것입니다.
 * 언샵 마스킹(`&op_USM`) - 언샵 마스킹은 업계 표준 선명하게 하기 필터입니다. 가장 좋은 방법은 아래 지침에 따라 선명하지 않은 마스킹으로 이미지를 선명하게 하는 것입니다. 언샵 마스킹을 사용하면 다음 세 가지 매개 변수를 제어할 수 있습니다.
 
-   * `&op_sharpen=amount,radius,threshold`
+  * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *금액&#x200B;*]**(0-5, 효과의 강도)
-      * **[!UICONTROL *radius *]**(0-250, 선명하게 표시된 개체 주위에 그려진 &quot;선명하게 하기 선&quot;의 너비(픽셀 단위)입니다.)
+    * **[!UICONTROL *금액&#x200B;*]**(0-5, 효과의 강도)
+    * **[!UICONTROL *radius *]**(0-250, 선명하게 표시된 개체 주위에 그려진 &quot;선명하게 하기 선&quot;의 너비(픽셀 단위)입니다.)
 
-     매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
+    매개변수 반경과 양은 서로 영향을 받습니다. 감소된 반경은 양을 증가시킴으로써 보상될 수 있다. [반경]을 사용하면 값이 낮을수록 가장자리 픽셀만 선명하게 되고 값이 높을수록 넓은 폭의 픽셀이 선명하게 되므로 더 세밀하게 제어할 수 있습니다.
 
-      * **[!UICONTROL *임계값&#x200B;*]**(0-255, 효과 민감도)
+    * **[!UICONTROL *임계값&#x200B;*]**(0-255, 효과 민감도)
 
-            This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding &quot;noise&quot;, while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
-        
-        필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+          This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding &quot;noise&quot;, while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
+      
+      필터에 사용하는 모범 사례를 포함하여 이러한 세 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-        Experience Manager 이미지 선명하게 하기에 대한 도움말 항목입니다.
+      Experience Manager 이미지 선명하게 하기에 대한 도움말 항목입니다.
 
-        모범 사례 백서 [Adobe Dynamic Media Classic에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
+      모범 사례 백서 [Adobe Dynamic Media Classic에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
 
-      * Experience Manager을 사용하면 네 번째 매개 변수인 모노크롬(0,1)을 제어할 수도 있습니다. 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 별도로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지 여부를 결정합니다.
+    * Experience Manager을 사용하면 네 번째 매개 변수인 모노크롬(0,1)을 제어할 수도 있습니다. 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 별도로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지 여부를 결정합니다.
 
 언샵 마스크 반경 매개 변수로 시작하는 것이 좋습니다. 다음으로 시작할 수 있는 반경 설정은 다음과 같습니다.
 
@@ -98,8 +109,8 @@ Experience Manager을 사용하면 수집, 게재 또는 둘 다에 대해 이�
 * 가장 좋은 방법은 중간에 머무르려면 `qlt= value`을(를) 85로 설정하여 중간에 머무르는 것입니다.
 * `qlt=`에서 크로마 플래그 사용
 
-   * `qlt=` 매개 변수에는 값 `,1`을(를) 사용하여 RGB 색도 다운샘플링을 켜거나 값 `,0`을(를) 사용하여 끌 수 있는 두 번째 설정이 있습니다.
-   * 간단하게 하려면 RGB 색도 다운샘플링을 끄기(`,0`)로 시작하십시오. 이 설정을 사용하면 일반적으로 이미지 품질이 향상됩니다. 특히 가장자리가 선명하고 대비가 많은 합성 이미지의 경우 더욱 그렇습니다.
+  * `qlt=` 매개 변수에는 값 `,1`을(를) 사용하여 RGB 색도 다운샘플링을 켜거나 값 `,0`을(를) 사용하여 끌 수 있는 두 번째 설정이 있습니다.
+  * 간단하게 하려면 RGB 색도 다운샘플링을 끄기(`,0`)로 시작하십시오. 이 설정을 사용하면 일반적으로 이미지 품질이 향상됩니다. 특히 가장자리가 선명하고 대비가 많은 합성 이미지의 경우 더욱 그렇습니다.
 
 JPG 압축에 대한 우수 사례로 `&qlt=85,0`을(를) 사용하십시오.
 
@@ -128,4 +139,4 @@ jpegSize는 메모리가 제한된 장치에 이미지가 전달될 때 특정 �
 
 * URL에서 직접 다양한 매개 변수를 실시간으로 테스트해 보십시오.
 * 가장 좋은 방법은 Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화할 수 있다는 것입니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$`과(와) 같은 사용자 지정 사전 설정 이름이 있는 URL 명령 매크로입니다. URL 경로의 사용자 지정 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
-* Experience Manager은 또한 수집 시 이미지 선명하게 하기를 적용하는 등, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하는 옵션이 있는 고급 사용 사례의 경우 [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)을(를) 통해 사용자 지정된 insight 및 모범 사례를 확인할 수 있습니다.
+* Experience Manager은 또한 수집 시 이미지 선명하게 하기를 적용하는 등, 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하는 옵션이 있는 고급 사용 사례의 경우 [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)을(를) 통해 사용자 지정된 insight 및 모범 사례를 확인할 수 있습니다.

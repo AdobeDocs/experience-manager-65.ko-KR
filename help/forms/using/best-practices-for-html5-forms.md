@@ -1,21 +1,33 @@
 ---
 title: HTML5 양식 모범 사례
-
 description: 최상의 성능을 얻으려면 XFA 기반 HTML5 Forms을 조정하십시오.
-
-
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-
 docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 1%
@@ -47,13 +59,13 @@ HTML5 양식에는 이미지, JavaScript 및 CSS 파일과 같은 여러 외부 
 
 * [압축된 이미지](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)를 사용합니다. 양식을 렌더링하는 데 필요한 네트워크 활동 및 메모리의 양을 줄입니다. 따라서, 폼 로드 시간이 크게 줄어들게 된다.
 * AEM 구성 관리자(일별 CQ HTML 라이브러리 관리자)의 축소 옵션을 사용하여 JavaScript 및 CSS 파일을 압축합니다. 자세한 내용은 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md)을 참조하십시오.
-* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답의 크기를 줄입니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](https://helpx.adobe.com/kr/aem-forms/6-3/performance-tuning-aem-forms.html)을 참조하십시오.
+* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답의 크기를 줄입니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)을 참조하십시오.
 
 ## 관심 영역 유지, 필수 필드만 표시  {#keep-the-interest-alive-show-only-required-fields}
 
 HTML5 양식은 수백 개의 페이지로 실행될 수 있습니다. 필드 수가 많은 양식은 브라우저에서 로드되는 속도가 느립니다. XFA 양식에서 다음 최적화를 수행하여 필드 및 페이지의 수가 많은 양식을 최적화할 수 있습니다.
 
-* 큰 양식을 여러 양식으로 분할할 것을 평가합니다. 또한 양식 세트를 사용하여 작은 모든 양식을 함께 그룹화하여 단일 단위로 표시할 수도 있습니다. 양식 세트는 필요한 양식만 로드합니다. 또한 양식 집합에서 데이터 바인딩을 공유하도록 다른 양식의 공통 필드를 구성할 수 있습니다. 데이터 바인딩을 사용하면 일반 정보를 한 번만 채우는 데 도움이 됩니다. 이후 양식에서 정보가 자동으로 채워지므로 성능이 크게 향상됩니다. 양식 설정에 대한 자세한 내용은 [AEM 양식의 양식 집합](https://helpx.adobe.com/kr/aem-forms/6-3/formset-in-aem-forms.html)을 참조하십시오.
+* 큰 양식을 여러 양식으로 분할할 것을 평가합니다. 또한 양식 세트를 사용하여 작은 모든 양식을 함께 그룹화하여 단일 단위로 표시할 수도 있습니다. 양식 세트는 필요한 양식만 로드합니다. 또한 양식 집합에서 데이터 바인딩을 공유하도록 다른 양식의 공통 필드를 구성할 수 있습니다. 데이터 바인딩을 사용하면 일반 정보를 한 번만 채우는 데 도움이 됩니다. 이후 양식에서 정보가 자동으로 채워지므로 성능이 크게 향상됩니다. 양식 설정에 대한 자세한 내용은 [AEM 양식의 양식 집합](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)을 참조하십시오.
 * 섹션을 분할하고 각 섹션을 다른 페이지로 이동하는 것이 좋습니다. HTML5 forms는 페이지 스크롤 요청 시 각 페이지를 동적으로 로드합니다. 스크롤된 페이지(표시되는 페이지 및 그 이전 페이지)만 메모리에 저장됩니다. 나머지 페이지는 필요에 따라 로드됩니다. 따라서 페이지에서 섹션을 분할하여 이동하면 양식을 로드하는 데 필요한 시간이 줄어듭니다. 양식의 첫 페이지를 랜딩 페이지로 사용할 수도 있습니다. 이는 책의 목차(TOC)와 유사하다. 양식의 랜딩 페이지에는 양식의 다른 섹션에 대한 링크만 포함되어 있습니다. 양식의 첫 번째 페이지에 대한 로드 시간을 크게 향상시키고 사용자 경험을 향상시킵니다.
 * 기본적으로 조건부 섹션을 숨깁니다. 특정 조건이 충족될 때만 이러한 섹션을 볼 수 있도록 합니다. DOM의 크기를 최소한으로 유지하는 데 도움이 됩니다. 탭 탐색을 사용하여 한 번에 한 섹션만 표시할 수도 있습니다.
 
@@ -64,7 +76,7 @@ HTML5 양식에는 데이터 기반 필드(테이블 및 하위 양식)가 포�
 * XFA 스크립팅을 사용하여 페이징된 탐색을 수행하여 데이터 기반 필드(테이블 및 하위 양식)를 표시할 수 있습니다. 페이지 탐색에서는 특정 데이터만 페이지에 표시됩니다. 브라우저 그리기 작업을 한 번에 표시되는 필드로 제한하여 양식을 더 쉽게 탐색할 수 있습니다. 더욱이, 모바일 디바이스들 상의 사용자들은 데이터의 서브세트에만 관심이 있다. 이는 우수한 사용자 경험을 제공하고 필요한 데이터를 로드하는 데 필요한 시간을 줄이는 데 도움이 됩니다. 하나의 가격에 두 개의 솔루션을 얻을 수 있습니다.  또한 페이지 탐색은 즉시 사용할 수 없습니다. XFA 스크립팅을 사용하여 페이징된 탐색을 개발할 수 있습니다.
 
 * 여러 읽기 전용 열을 단일 열로 병합하는 것을 평가합니다. 양식을 표시하는 데 필요한 메모리를 줄입니다. 또한 사용자의 입력이 필요하지 않은 열을 표시하지 마십시오.
-* 위의 제안 사항이 많이 개선되지 않으면 데이터 기반 양식을 [양식 집합](https://helpx.adobe.com/kr/aem-forms/6-3/formset-in-aem-forms.html)&#x200B;(으)로 분할해야 합니다. 예를 들어 테이블에 1000개가 넘는 행이 있는 경우 100개 행마다 다른 양식으로 이동합니다. 양식의 로드 시간과 성능을 개선하는 데 도움이 됩니다.  또한 양식 세트는 모든 양식에 대해 통합된 제출 XML을 생성합니다. 모든 양식의 데이터를 구분하려면 다른 데이터 루트를 사용하십시오. 자세한 내용은 [AEM Forms에 설정된 양식](https://helpx.adobe.com/kr/aem-forms/6-3/formset-in-aem-forms.html)을 참조하세요.
+* 위의 제안 사항이 많이 개선되지 않으면 데이터 기반 양식을 [양식 집합](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)&#x200B;(으)로 분할해야 합니다. 예를 들어 테이블에 1000개가 넘는 행이 있는 경우 100개 행마다 다른 양식으로 이동합니다. 양식의 로드 시간과 성능을 개선하는 데 도움이 됩니다.  또한 양식 세트는 모든 양식에 대해 통합된 제출 XML을 생성합니다. 모든 양식의 데이터를 구분하려면 다른 데이터 루트를 사용하십시오. 자세한 내용은 [AEM Forms에 설정된 양식](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)을 참조하세요.
 
 ## 기록 문서(DOR)에 대한 2의 거듭제곱 {#power-of-two-for-document-of-record-dor}
 

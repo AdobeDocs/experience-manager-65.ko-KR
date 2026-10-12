@@ -5,13 +5,22 @@ exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 6%
-
 ---
-
 # 구성 및 구성 브라우저 {#configuration-browser}
 
 AEM 구성은 AEM에서 설정을 관리하고 작업 공간으로 사용됩니다.
@@ -79,8 +88,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
-      * 필요한 경우 조정할 수 있습니다.
+     * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
+     * 필요한 경우 조정할 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [클라우드 구성](/help/sites-administering/configurations.md)
    * [Context Hub 세그먼트](/help/sites-administering/segmentation.md)
@@ -110,7 +119,7 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
    * **사용자 또는 그룹 선택** 필드는 기존 사용자 및 역할을 기반으로 자동 완성을 제공합니다.
 1. 자동 완성 결과에서 적절한 사용자 또는 역할을 선택합니다.
    * 사용자 또는 역할을 두 개 이상 선택할 수 있습니다.
-1. 선택한 사용자 또는 역할에 필요한 액세스 옵션을 확인하고 **추가**&#x200B;를 클릭합니다.
+1. 선택한 사용자 또는 역할에 필요한 액세스 옵션을 확인하고 **추가**를 클릭합니다.
    ![구성에 액세스 권한 추가](assets/configuration-edit.png)
 1. 단계를 반복하여 사용자 또는 역할을 선택하고 필요에 따라 추가 액세스 권한을 할당할 수 있습니다.
 1. 완료되면 **저장 및 닫기**&#x200B;를 선택하세요.

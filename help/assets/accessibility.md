@@ -1,18 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets]의 액세스 가능한 기능 및 인터페이스'
-description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 장애가 있는 사용자를 돕는 접근성 기능에 대해 알아봅니다.'
+title: '[!DNL Adobe Experience Manager Assets]의 액세스 가능한 기능 및 인터페이스'
+description: '[!DNL Adobe Experience Manager] 6.5 [!DNL Assets]의 접근성 기능이 장애가 있는 사용자에게 어떻게 도움이 되는지 알아보세요.'
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1934'
 ht-degree: 1%
-
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -206,9 +219,9 @@ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no 
 
 * 링크 공유 대화 상자에서 검색 모드로 탐색할 때 화면 판독기에서
 
-   * 대화 상자가 로드될 때는 테이블 정보에 내레이션을 사용하지 마십시오.
-   * 나열된 모든 제안으로 이동합니다.
-   * 이메일 주소 추가 및 검색 필드에 표시된 제안 사항에 내레이션을 적용합니다.
+  * 대화 상자가 로드될 때는 테이블 정보에 내레이션을 사용하지 마십시오.
+  * 나열된 모든 제안으로 이동합니다.
+  * 이메일 주소 추가 및 검색 필드에 표시된 제안 사항에 내레이션을 적용합니다.
 
 ## 액세스 가능한 설명서 {#accessible-docs}
 
@@ -225,7 +238,7 @@ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no 
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)의 접근성 기능.
+>*  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)의 [접근성 기능.
 >* [각 서비스 팩 릴리스에서 수행된 개선 사항의 릴리스 노트](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] 접근성 지침](/help/managing/web-accessibility.md).
 >* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).

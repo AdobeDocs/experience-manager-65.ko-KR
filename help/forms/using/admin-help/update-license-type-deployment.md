@@ -1,6 +1,6 @@
 ---
 title: 배포를 위한 라이선스 유형 업데이트
-description: 관리 콘솔의 라이선스 변경 페이지에서 배포를 위한 라이선스 유형을 업데이트합니다.
+description: 관리 콘솔의 라이선스 변경 페이지를 사용하여 배포의 라이선스 유형을 업데이트합니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
@@ -9,20 +9,34 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
-
 ---
-
 # 배포를 위한 라이선스 유형 업데이트 {#update-the-license-type-for-the-deployment}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-AEM Forms 설치 프로세스의 일부로 구성 관리자를 사용하여 필요한 AEM Forms 모듈을 구성하고 배포했습니다. 기본적으로 해당 모듈은 60일 평가판 라이선스로 구성됩니다. 관리 콘솔의 라이선스 변경 페이지에서 배포를 위한 라이선스 유형을 변경합니다. 현재 배포된 모듈은 라이선스 변경 페이지에 표시됩니다.
+AEM Forms 설치 프로세스의 일부로 구성 관리자를 사용하여 필요한 AEM Forms 모듈을 구성하고 배포했습니다. 기본적으로 해당 모듈은 60일 평가판 라이선스로 구성됩니다. 관리 콘솔의 라이선스 변경 페이지를 사용하여 배포의 라이선스 유형을 변경합니다. 현재 배포된 모듈은 라이선스 변경 페이지에 표시됩니다.
 
 라이선스 변경 페이지에는 라이선스에 대한 다음과 같은 정보가 표시됩니다.
 
@@ -49,5 +63,5 @@ AEM Forms 설치 프로세스의 일부로 구성 관리자를 사용하여 필�
    * **IDEV:** Adobe Developer 프로그램 1년 구독
    * **프로덕션:** 영구 라이선스
 
-1. 예, 라이선스 변경은 배포된 모든 모듈에 유효함을 선택합니다.
+1. &quot;예, 라이선스 변경은 배포된 모든 모듈에 유효함&quot;을 선택합니다.
 1. 라이선스 변경 확인을 클릭합니다. 라이선스가 업데이트되었다는 메시지가 나타납니다.

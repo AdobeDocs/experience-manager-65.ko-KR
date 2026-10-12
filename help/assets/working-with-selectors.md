@@ -9,13 +9,24 @@ role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 355c23b3-51d6-5ae4-b5c4-05944b12ea8d
+    internal-label: Selectors
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
-
 ---
-
 # 선택기를 사용하여 작업 {#working-with-selectors}
 
 대화형 이미지, 대화형 비디오 또는 회전 배너를 사용하여 작업할 때 에셋을 선택하고 핫스팟 및 이미지 맵에 대해 링크할 사이트 및 제품을 선택합니다. 이미지 세트, 스핀 세트 및 멀티미디어 세트로 작업할 때 에셋 선택기를 사용하여 에셋을 선택할 수도 있습니다.

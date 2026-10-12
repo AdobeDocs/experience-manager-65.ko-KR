@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # 보고서 콘솔 {#reports-console}
 
 ## 개요 {#overview}
@@ -43,17 +50,17 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 * 다음 중에서 선택:
 
-   * **[!UICONTROL 할당 보고서]**
+  * **[!UICONTROL 할당 보고서]**
 
-      * 선택한 커뮤니티 사이트, 사용자 또는 그룹 및 할당에 대한 보고서를 생성합니다.
+    * 선택한 커뮤니티 사이트, 사용자 또는 그룹 및 할당에 대한 보고서를 생성합니다.
 
-   * **[!UICONTROL 게시물 보고서]**
+  * **[!UICONTROL 게시물 보고서]**
 
-      * 선택한 커뮤니티 사이트, 콘텐츠 유형 및 기간에 대한 보고서를 생성합니다.
+    * 선택한 커뮤니티 사이트, 콘텐츠 유형 및 기간에 대한 보고서를 생성합니다.
 
-   * **[!UICONTROL 보고서 보기]**
+  * **[!UICONTROL 보고서 보기]**
 
-      * 선택한 커뮤니티 사이트, 콘텐츠 유형 및 기간에 대한 보고서를 생성합니다.
+    * 선택한 커뮤니티 사이트, 콘텐츠 유형 및 기간에 대한 보고서를 생성합니다.
 
 ![보고서](assets/reports1.png)
 
@@ -77,10 +84,10 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   다음 중 하나를 선택합니다.
 
-   * 지난 7일
-   * 지난 30일
-   * 최근 90일
-   * 지난 해
+  * 지난 7일
+  * 지난 30일
+  * 지난 90일
+  * 지난 해
 
 보고서를 만들려면 **[!UICONTROL 생성]**&#x200B;을 선택하십시오.
 
@@ -106,10 +113,10 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
   다음 중 하나를 선택합니다.
 
-   * 지난 7일
-   * 지난 30일
-   * 최근 90일
-   * 지난 해
+  * 지난 7일
+  * 지난 30일
+  * 지난 90일
+  * 지난 해
 
 보고서를 만들려면 **[!UICONTROL 생성]**&#x200B;을 선택하십시오.
 
@@ -123,6 +130,6 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ### 보고서가 AEM 작성자 인스턴스에 표시되지 않음 {#reports-do-not-show-in-aem-author-instance}
 
-AEM 작성자 인스턴스에 보고서가 표시되지 않는 경우 Publish 인스턴스의 URL 매핑과 같은 사용자 지정에 대해 확인하십시오. URL 매핑이 커뮤니티 사이트의 AEM Publish 인스턴스에서만 수행되는 경우 **사이트 트렌드 보고서 소셜 구성 요소 팩터리** 구성의 AEM 작성자 인스턴스에서도 구성되었는지 확인하십시오.
+AEM 작성자 인스턴스에 보고서가 표시되지 않는 경우 게시 인스턴스의 URL 매핑과 같은 사용자 지정에 대해 확인하십시오. URL 매핑이 커뮤니티 사이트의 AEM Publish 인스턴스에서만 수행되는 경우 **사이트 트렌드 보고서 소셜 구성 요소 팩터리** 구성의 AEM 작성자 인스턴스에서도 동일하게 구성되었는지 확인하십시오.
 
 ![AEM 작성자의 URL 매핑](assets/sitetrend.png)

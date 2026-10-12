@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역에서 기존 프로세스 데이터로 새 프로세스 시작
+title: AEM Forms Workspace에서 기존 프로세스 데이터로 새 프로세스 시작
 description: AEM Forms 작업 영역에서 기존 프로세스 데이터로 새 프로세스를 시작하는 방법을 확인합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 0%
-
+source-wordcount: '239'
+ht-degree: 10%
 ---
-
-# AEM Forms 작업 영역에서 기존 프로세스 데이터로 새 프로세스 시작{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
+# AEM Forms Workspace에서 기존 프로세스 데이터로 새 프로세스 시작{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
 기존 프로세스 데이터의 데이터를 사용하여 새 프로세스를 시작할 수 있습니다. 기존 프로세스 데이터에서 새 프로세스를 시작해야 하는 이유는 유료 휴가 양식 처럼 내용이 거의 변경되지 않은 상태에서 동일한 양식을 자주 사용해야 할 때 발생합니다. 이 기능을 사용하면 특히 프로세스에 채울 양식이 긴 경우 사용자의 시간과 노력을 절약할 수 있습니다.
 

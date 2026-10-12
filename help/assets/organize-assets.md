@@ -7,18 +7,29 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
-
 ---
-
 # 디지털 자산 구성 {#organize-digital-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=ko) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 ® Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 콘텐츠를 추출하여 검색할 수 있도록 만듭니다. 검색을 통해 에셋을 정교하게 필터링할 수 있으며 적절한 권한을 완전히 준수할 수 있습니다. 메타데이터는 Digital Asset Management의 메타데이터에서 자세히 다룹니다.
@@ -32,15 +43,15 @@ ht-degree: 2%
 * 일반적으로 디지털 에셋 저장소는 항상 증가하고 있습니다. 따라서 콘텐츠 생성 주기 초기에 메타데이터 사용, 폴더 구조 및 파일 이름을 공식화하는 것이 중요합니다.
 * 폴더만 사용하여 디지털 에셋에 일관된 스토리지 구조를 적용합니다. 이러한 일관성은 프로세스 및 자산 관리에 도움이 됩니다. 예를 들어 다음 유형의 폴더에 배치된 자산은 적절한 [프로필을 사용하여 자산 처리에](processing-profiles.md)하는 데 도움이 될 수 있습니다.
 
-   * **개발 폴더**: 현재 작업 중인 디지털 에셋이 포함되어 있습니다.
-   * **클라이언트 폴더**: 클라이언트 또는 프로젝트 이름을 기반으로 하는 디지털 에셋을 포함합니다.
-   * **기본 폴더**: 원본, 원본 디지털 자산을 포함합니다.
-   * **렌디션 폴더**: 원본 소스 디지털 에셋의 렌디션과 복사본을 포함합니다.
-   * **파일 크기 폴더**: 작은 파일, 중간 파일 또는 큰 파일 크기를 기반으로 하는 디지털 에셋을 포함합니다.
-   * **준비 폴더**: 웹 사이트에 실시간으로 게시할 준비가 된 디지털 에셋이 포함되어 있습니다.
-   * **MIME 형식 폴더**: 이미지, 문서 및 멀티미디어와 같은 MIME 형식에 해당하는 디지털 에셋이 포함되어 있습니다.
-   * **보관 폴더**: 사용되지 않는 디지털 자산을 포함합니다.
-   * **날짜 기반 폴더**: 만든 날짜 또는 마지막으로 수정한 날짜를 기준으로 디지털 에셋을 포함합니다.
+  * **개발 폴더**: 현재 작업 중인 디지털 에셋이 포함되어 있습니다.
+  * **클라이언트 폴더**: 클라이언트 또는 프로젝트 이름을 기반으로 하는 디지털 에셋을 포함합니다.
+  * **기본 폴더**: 원본, 원본 디지털 자산을 포함합니다.
+  * **렌디션 폴더**: 원본 소스 디지털 에셋의 렌디션과 복사본을 포함합니다.
+  * **파일 크기 폴더**: 작은 파일, 중간 파일 또는 큰 파일 크기를 기반으로 하는 디지털 에셋을 포함합니다.
+  * **준비 폴더**: 웹 사이트에 실시간으로 게시할 준비가 된 디지털 에셋이 포함되어 있습니다.
+  * **MIME 형식 폴더**: 이미지, 문서 및 멀티미디어와 같은 MIME 형식에 해당하는 디지털 에셋이 포함되어 있습니다.
+  * **보관 폴더**: 사용되지 않는 디지털 자산을 포함합니다.
+  * **날짜 기반 폴더**: 만든 날짜 또는 마지막으로 수정한 날짜를 기준으로 디지털 에셋을 포함합니다.
 
 * 사용자 지정 또는 자동화가 계속 작동하도록 변경되지 않는 폴더의 디렉토리를 만듭니다. 예를 들어 할당된 처리 프로필이 계속 작동합니다.
 * 자산이 이미 게시되어 있다면 [!DNL Experience Manager]을(를) 사용하여 자산을 다른 폴더로 이동하고 새 위치에서 다시 게시하면 새로 다시 게시된 자산과 함께 원래 게시된 자산 위치를 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 [!DNL Experience Manager]에 대해 *손실됨*&#x200B;이며 게시를 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 에셋의 게시를 취소한 다음 다른 폴더로 이동하는 것입니다.

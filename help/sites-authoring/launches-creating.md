@@ -10,13 +10,31 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1098'
 ht-degree: 79%
-
 ---
-
 # 론치 만들기{#creating-launches}
 
 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화합니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다.
@@ -41,12 +59,12 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    * **론치**:
 
-      1. 도구 모음에서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
+     1. 도구 모음에서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
 
    * **사이트**:
 
-      1. 도구 모음에서 **만들기**&#x200B;를 선택하여 선택 상자를 엽니다.
-      1. 여기서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
+     1. 도구 모음에서 **만들기**&#x200B;를 선택하여 선택 상자를 엽니다.
+     1. 여기서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
 
    >[!NOTE]
    >
@@ -75,7 +93,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
    * **하위 페이지 포함**:
 
-      * 하위 페이지를 포함하여 론치를 만들지 아니면 하위 페이지를 포함하지 않고 론치를 만들지 지정합니다. 기본적으로 이 하위 페이지가 포함됩니다.
+     * 하위 페이지를 포함하여 론치를 만들지 아니면 하위 페이지를 포함하지 않고 론치를 만들지 지정합니다.  기본적으로 이 하위 페이지가 포함됩니다.
 
    **다음**&#x200B;을 선택하여 계속 진행합니다.
 
@@ -99,7 +117,7 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
    * [**시작** 콘솔](/help/sites-authoring/launches.md#the-launches-console)
-   * [**사이트** 콘솔의 **참조**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * **사이트** 콘솔의 [**참조**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 
@@ -164,8 +182,8 @@ Sites 또는 론치 콘솔에서 론치를 만들 수 있습니다.
 
 * 썸네일을 탭/클릭하여 론치를 선택합니다.
 * 도구 모음이 나타납니다. 복제 를 선택합니다.
-   * 클론이 생성되어 콘솔에 표시됩니다.
-   * **시작 제목**&#x200B;은(는) 복제임을 나타냅니다. [시작 구성](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)(**속성**)을 편집하여 제목을 업데이트할 수 있습니다.
+  * 클론이 생성되어 콘솔에 표시됩니다.
+  * **시작 제목**&#x200B;은(는) 복제임을 나타냅니다. [시작 구성](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)(**속성**)을 편집하여 제목을 업데이트할 수 있습니다.
 
 ## 론치 삭제 {#deleting-a-launch}
 

@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager Mobile 콘텐츠 개인화
-description: AEM 작성자가 Adobe Target을 사용하여 모바일 앱 컨텐츠를 개인화할 수 있는 AEM(Adobe 경험 관리) 모바일 컨텐츠 개인화 기능에 대해 알려면 이 페이지를 따르십시오.
+description: 이 페이지를 따라 Adobe 작성자가 AEM을 사용하여 모바일 앱 콘텐츠를 개인화할 수 있는 AEM Experience Manage(Adobe Target) 모바일 콘텐츠 개인화 기능에 대해 알아보십시오.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,13 +9,17 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2639'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile 콘텐츠 개인화{#aem-mobile-content-personalization}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ ht-degree: 1%
 >
 >이 문서는 AEM Mobile 참조에 대한 권장 시작점인 [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md) 안내서의 일부입니다.
 
-AEM Mobile 콘텐츠 개인화 기능을 사용하면 [AEM 작성자](#author)가 [Adobe Target](https://business.adobe.com/kr/products/target/adobe-target.html)을(를) 사용하여 모바일 앱 콘텐츠를 개인화할 수 있습니다. 이렇게 하면 모바일 애플리케이션 사용자에게 타깃팅된 오퍼를 전달할 수 있습니다. Adobe Experience Manager Mobile은 사용자에게 고유한 개인 취향에 맞는 콘텐츠를 제공할 콘텐츠를 만들고, 타깃팅하고, 전달하는 기능을 제공합니다.
+AEM Mobile 콘텐츠 개인화 기능을 사용하면 [AEM 작성자](#author)가 [Adobe Target](https://business.adobe.com/products/target/adobe-target.html)을(를) 사용하여 모바일 앱 콘텐츠를 개인화할 수 있습니다. 이렇게 하면 모바일 애플리케이션 사용자에게 타깃팅된 오퍼를 전달할 수 있습니다. Adobe Experience Manager Mobile은 사용자에게 고유한 개인 취향에 맞는 콘텐츠를 제공할 콘텐츠를 만들고, 타깃팅하고, 전달하는 기능을 제공합니다.
 
 AEM에서 작성자가 이 콘텐츠를 만들려면 먼저 관리자와 개발자가 환경을 준비해야 합니다.
 
@@ -40,7 +44,7 @@ AEM에서 작성자가 이 콘텐츠를 만들려면 먼저 관리자와 개발�
 
 앞으로 AEM Mobile 하이브리드 참조 애플리케이션이 AEM Mobile 대시보드를 통해 성공적으로 배포되고 액세스할 수 있다고 가정합니다.
 
-작성자가 응용 프로그램 내에서 타깃팅된 컨텐츠를 생성하려면 먼저 AEM 인스턴스가 [Adobe Target Cloud Service으로 구성되어야 합니다.](/help/mobile/aem-mobile-configuring-cloud-service.md)
+작성자가 응용 프로그램 내에서 타깃팅된 콘텐츠를 생성하려면 먼저 AEM 인스턴스가 [Adobe Target Cloud Service으로 구성되어야 합니다.](/help/mobile/aem-mobile-configuring-cloud-service.md)
 
 ### 권한 {#permissions}
 
@@ -56,7 +60,7 @@ AEM에서 작성자가 이 콘텐츠를 만들려면 먼저 관리자와 개발�
 
 모바일 애플리케이션에서 작동하는 타겟팅된 콘텐츠를 가져오려면 Adobe Target 서비스와 Adobe Mobile Services 서비스의 두 가지 서비스를 구성해야 합니다. Adobe Target 서비스는 클라이언트 요청을 처리하고 개인화된 콘텐츠를 반환하기 위한 엔진을 제공합니다. Adobe Mobile Services 서비스는 AMS Cordova 플러그인이 사용하는 ADBMobileConfig.json 파일을 통해 Adobe 서비스와 모바일 애플리케이션 간의 연결을 제공합니다. AEM Mobile 대시보드에서 두 서비스를 추가하여 애플리케이션을 구성할 수 있습니다.
 
-AEM Mobile 대시보드에서 관리 Cloud Service을 찾아 + 단추를 클릭합니다.
+AEM Mobile 대시보드에서 클라우드 서비스 관리를 찾아 + 단추를 클릭합니다.
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -68,15 +72,15 @@ Cloud Service 추가 마법사에서 &quot;Adobe Target&quot; 클라우드 서�
 
 >[!NOTE]
 >
->만들어지는 클라우드 서비스는 마법사를 통해 모바일 애플리케이션과 자동으로 연결됩니다. cq:cloudserviceconfigs 속성 값은 앱 그룹 노드의 jcr:content 노드에서 설정됩니다. 하이브리드 앱 샘플의 경우 /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework에서 자동으로 생성된 프레임워크 노드를 가리키는 값으로 /content/mobileapps/hybrid-reference-app/jcr:content에 설정됩니다. 프레임워크 노드에는 기본적으로 성별 및 연령의 두 가지 속성이 설정되어 있습니다. 프레임워크는 AEM 미리보기에서만 사용되며 장치에는 영향을 주지 않습니다.
+>만들어지는 클라우드 서비스는 마법사를 통해 모바일 애플리케이션과 자동으로 연결됩니다. cq:cloudserviceconfigs 속성 값이 앱 그룹 노드의 jcr:content 노드에서 설정됩니다. 하이브리드 앱 샘플의 경우 /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework에서 자동으로 생성된 프레임워크 노드를 가리키는 값으로 /content/mobileapps/hybrid-reference-app/jcr:content에 설정됩니다. 프레임워크 노드에는 기본적으로 성별 및 연령의 두 가지 속성이 설정되어 있습니다. 프레임워크는 AEM 미리보기에서만 사용되며 장치에는 영향을 주지 않습니다.
 
-마법사 완료 후 Cloud Service 관리 타일에는 Target 클라우드 서비스가 포함됩니다. 하지만 여기에는 누락된 Adobe Mobile Service 계정에 대한 경고가 포함되어 있습니다.
+마법사가 완료되면 Cloud Service 관리 타일에는 Target 클라우드 서비스가 포함됩니다. 하지만 여기에는 누락된 Adobe Mobile Service 계정에 대한 경고가 포함되어 있습니다.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
 ### Adobe Mobile Services {#adobe-mobile-services}
 
-AMS(Adobe 모바일 서비스) 계정을 응용 프로그램에 연결해야 합니다. 또한 AMS 서비스는 Target 클라이언트 코드 정보가 포함된 필수 ADBMobileConfig.json 파일을 제공합니다. AMS 계정과의 연결을 만들기 전에 AMS에 대한 권한이 있는 사용자가 AMS 계정을 수정해야 합니다.
+Adobe Mobile Services(AMS) 계정을 애플리케이션에 연결해야 합니다. 또한 AMS 서비스는 Target 클라이언트 코드 정보가 포함된 필수 ADBMobileConfig.json 파일을 제공합니다. AMS 계정과의 연결을 만들기 전에 AMS에 대한 권한이 있는 사용자가 AMS 계정을 수정해야 합니다.
 
 ### 클라이언트 코드 {#client-code}
 
@@ -84,21 +88,21 @@ AMS 서비스에 로그인하려면 [https://mobilemarketing.adobe.com](https://
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-클라이언트 코드가 모바일 애플리케이션과 연결되었으므로 AMS 클라우드 서비스가 Adobe 모바일 대시보드를 통해 구성되면 서비스 설정에 대한 설정이 ADBMobileConfig.json 파일을 통해 전달됩니다.
+클라이언트 코드가 모바일 애플리케이션과 연결되었으므로 Adobe Mobile Dashboard를 통해 AMS 클라우드 서비스가 구성되면 서비스 설정에 대한 설정이 ADBMobileConfig.json 파일을 통해 전달됩니다.
 
 ### Adobe Mobile Service Cloud Service {#adobe-mobile-service-cloud-service}
 
-이제 AMS가 구성되었으므로 Adobe 모바일 대시보드에서 모바일 애플리케이션을 연결할 차례입니다. AEM Mobile 대시보드에서 관리 Cloud Service을 찾아 + 단추를 클릭합니다.
+AMS가 구성되었으므로 이제 Adobe Mobile Dashboard에서 모바일 애플리케이션을 연결할 차례입니다. AEM Mobile 대시보드에서 클라우드 서비스 관리를 찾아 + 단추를 클릭합니다.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Mobile Services Adobe 카드를 선택하고 다음 을 클릭합니다.
+Adobe Mobile Services 카드를 선택하고 다음 을 클릭합니다.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-만들기 또는 선택 마법사 단계에서 Mobile Service 드롭다운을 선택하고 구성 만들기 항목을 선택합니다. 제목, 회사, 사용자 이름, 암호를 입력하고 적절한 데이터 센터를 선택합니다. 이러한 값을 모를 경우 Adobe Mobile Service 관리자에게 문의하여 값을 받으십시오. 모든 필드를 작성한 후 **확인**&#x200B;을 클릭합니다. 확인 프로세스는 AMS로 이동하여 계정에 대한 자격 증명을 확인하고, 유효성 검사에 성공하면 드롭다운에서 연결된 모바일 애플리케이션을 선택할 수 있는 모바일 애플리케이션 목록이 채워집니다. 마법사를 완료하려면 **제출**&#x200B;을 클릭하십시오. 프로세스는 구성 데이터 및 애플리케이션과의 임의의 연관된 분석을 획득하는 데 약간의 시간이 걸릴 수 있다. 프로세스가 완료되면 **완료**&#x200B;를 클릭하여 Adobe 모바일 대시보드로 돌아갑니다.
+만들기 또는 선택 마법사 단계에서 Mobile Service 드롭다운을 선택하고 구성 만들기 항목을 선택합니다. 제목, 회사, 사용자 이름, 암호를 입력하고 적절한 데이터 센터를 선택합니다. 이러한 값을 모를 경우 Adobe Mobile Service 관리자에게 문의하여 값을 받으십시오. 모든 필드를 작성한 후 **확인**&#x200B;을 클릭합니다. 확인 프로세스는 AMS로 이동하여 계정에 대한 자격 증명을 확인하고, 유효성 검사에 성공하면 드롭다운에서 연결된 모바일 애플리케이션을 선택할 수 있는 모바일 애플리케이션 목록이 채워집니다. 마법사를 완료하려면 **제출**&#x200B;을 클릭하십시오. 프로세스는 구성 데이터 및 애플리케이션과의 임의의 연관된 분석을 획득하는 데 약간의 시간이 걸릴 수 있다. 프로세스가 완료되면 **완료**&#x200B;를 클릭하여 Adobe Mobile Dashboard로 돌아갑니다.
 
-모바일 대시보드로 돌아가면 Cloud Service 관리 타일에 AMS 클라우드 서비스가 포함됩니다. 또한 지표 분석 타일은 라이프사이클 보고서로 채워집니다.
+Mobile Dashboard로 돌아가면 클라우드 서비스 관리 타일에 AMS 클라우드 서비스가 포함됩니다. 또한 지표 분석 타일은 라이프사이클 보고서로 채워집니다.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -114,7 +118,7 @@ AEM Mobile 앱 내에서 타깃팅된 컨텐츠를 작성하는 작업은 AEM Si
 
 ## 개발자용 {#for-developers}
 
-모바일 애플리케이션을 구축하는 AEM 개발자는 구성 요소를 개발할 때 AEM 전체에서 일반적으로 사용되는 패턴을 계속 따라야 합니다. 여기에서 Adobe은 콘텐츠 작성자가 타깃팅된 콘텐츠를 만들 수 있도록 하는 데 필요한 단계를 안내합니다.
+모바일 애플리케이션을 구축하는 AEM 개발자는 구성 요소를 개발할 때 AEM 전체에서 일반적으로 사용되는 패턴을 계속 따라야 합니다. Adobe에서는 콘텐츠 작성자가 타깃팅된 콘텐츠를 만들 수 있도록 하는 데 필요한 단계를 안내합니다.
 
 ### Adobe Target ContentSync 핸들러 {#adobe-target-contentsync-handlers}
 
@@ -130,7 +134,7 @@ mobileappoffers 처리기의 path 속성에 활동 경로가 설정되면 처리
 
 ### 렌더링 모드 {#render-mode}
 
-mobileappoffers 처리기는 게시 및 개발 설정에 대해 다르게 구성됩니다. 게시 설정의 경우 cq:ContentSyncConfig 노드에 *publish* 값이 설정된 *renderMode* 속성이 있습니다. mobileappoffers 처리기가 renderMode를 참조하고 게시로 설정된 경우 만들어지는 mbox id를 편집합니다. 기본적으로 AEM에서 만드는 mbox에는 mbox id에 —author 값이 추가됩니다. 이는 활동이 게시되지 않았으며 오퍼 확인에 게시되지 않은 캠페인을 사용해야 함을 나타냅니다.
+mobileappoffers 처리기는 게시 및 개발 설정에 대해 다르게 구성됩니다. 게시 설정의 경우 cq:ContentSyncConfig 노드에 *publish* 값이 설정된 *renderMode* 속성이 있습니다. mobileappoffers 처리기가 renderMode를 참조하고 게시로 설정된 경우 만들어지는 mbox id를 편집합니다. 기본적으로 AEM에서 만드는 mbox에는 mbox id에 추가되는 —author 값이 있습니다. 이는 활동이 게시되지 않았으며 오퍼 확인에 게시되지 않은 캠페인을 사용해야 함을 나타냅니다.
 
 Adobe Mobile Dashboard를 통해 콘텐츠를 스테이징하면 스테이징된 콘텐츠는 프로덕션 준비 콘텐츠로 간주되고 비개발 콘텐츠 동기화 구성을 통해 렌더링됩니다. 이 방법으로 렌더링하면 —author가 모든 mbox id에서 제거되고 게시된 활동을 Target 서버에서 사용할 수 있게 됩니다. 스테이징된 콘텐츠를 테스트하기 전에 활동이 이미 게시되었는지 확인하십시오.
 
@@ -138,7 +142,7 @@ Adobe Mobile Dashboard를 통해 콘텐츠를 스테이징하면 스테이징된
 
 #### 구성 요소 {#components}
 
-콘텐츠의 기반은 일반적으로 HTL 또는 JSP를 사용하는 경우에 따라 기본 AEM 페이지 구성 요소 wcm/foundation/components/page 또는 foundation/components/page 중 하나를 확장하는 페이지 구성 요소입니다. 이 단계의 기간은 wcm/foundation/components/page 구성 요소 사용에 중점을 둡니다. 페이지 구성 요소의 기본 구조는 여러 스크립트로 나뉘며, 각 스크립트는 개발자가 필요한 경우 코드를 구성하고 재정의할 수 있는 특정 목적을 제공합니다. Personalization에 필요한 두 가지 스크립트는 head.html과 body.html입니다. 이 두 스크립트는 Context Hub, Cloud Service 및 모바일 작성을 지원하기 위해 코드를 삽입할 수 있는 영역을 제공합니다.
+콘텐츠의 기반은 일반적으로 HTL 또는 JSP를 사용하는 경우에 따라 기본 AEM 페이지 구성 요소 wcm/foundation/components/page 또는 foundation/components/page 중 하나를 확장하는 페이지 구성 요소입니다. 이 단계의 기간은 wcm/foundation/components/page 구성 요소 사용에 중점을 둡니다. 페이지 구성 요소의 기본 구조는 여러 스크립트로 나뉘며, 각 스크립트는 개발자가 필요한 경우 코드를 구성하고 재정의할 수 있는 특정 목적을 제공합니다. Personalization에 필요한 두 가지 스크립트는 head.html과 body.html입니다. 이 두 스크립트는 Context Hub, Cloud Services 및 모바일 작성을 지원하기 위해 코드를 삽입할 수 있는 영역을 제공합니다.
 
 다음은 콘텐츠 타겟팅을 활성화하는 데 사용되는 두 가지 기본 스크립트에 대한 개요입니다.
 

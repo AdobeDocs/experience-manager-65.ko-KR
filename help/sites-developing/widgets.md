@@ -1,20 +1,27 @@
 ---
 title: 위젯 사용 및 확장(클래식 UI)
-
 description: Adobe Experience Manager의 웹 기반 인터페이스는 AJAX 및 기타 최신 브라우저 기술을 사용하여 작성자가 웹 페이지에서 바로 WYSIWYG의 컨텐츠 편집 및 서식 지정을 활성화합니다
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 0%
@@ -498,7 +505,7 @@ RTE 플러그인:
 1. **사용자 지정 위젯** 구성 요소의 대화 상자를 **리치 텍스트 편집기(RTE) 플러그인** 기반 대화 상자로 바꿉니다.
 [예제 2: 단일 패널 대화 상자](#example-single-panel-dialog)에 설명된 단계를 따릅니다.
 1. 구성 요소를 편집합니다.
-1. 오른쪽(네 개의 화살표가 있는 아이콘)의 마지막 아이콘을 클릭합니다. 경로를 입력하고 **확인**&#x200B;을 클릭하세요.
+1. 오른쪽(네 개의 화살표가 있는 아이콘)의 마지막 아이콘을 클릭합니다. 경로를 입력하고 **확인**을 클릭하세요.
 대괄호([) 안에 경로를 표시합니다. ]).
 1. 서식 있는 텍스트 편집기를 닫으려면 **확인**&#x200B;을 클릭하세요.
 
@@ -645,7 +652,7 @@ RTE 플러그인:
 * 서블릿을 호출하여 저장소에서 검색한 데이터를 기반으로 합니다.
 * 마지막 열의 셀을 편집할 수 있습니다. 값은 첫 번째 열에 표시된 경로에 의해 정의된 노드 아래의 `test` 속성에서 유지됩니다.
 
-앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**&#x200B;구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
+앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
 
 구성 요소 jsp에서 참조되는 .js 파일 전환:
 

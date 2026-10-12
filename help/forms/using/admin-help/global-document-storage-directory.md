@@ -9,13 +9,27 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '684'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # 전역 문서 스토리지 디렉터리{#global-document-storage-directory}
 
 *전역 문서 스토리지(GDS)* 디렉터리는 프로세스 내에서 사용되는 장기 파일을 저장하는 데 사용되는 디렉터리입니다. 이러한 파일에는 PDF, 정책, 양식 템플릿이 포함됩니다. 장기 파일은 많은 AEM Forms 배포의 전반적인 상태에서 중요한 부분입니다. 장기 문서 중 일부 또는 전부가 손실되거나 손상되면 Forms 서버가 불안정해질 수 있습니다. 비동기 작업 호출을 위한 입력 문서도 GDS 디렉터리에 저장되며 요청을 처리하는 데 사용할 수 있어야 합니다. GDS 디렉터리를 호스팅하는 파일 시스템의 안정성을 고려하는 것이 중요합니다. 서비스 품질 및 수준 요구 사항에 적합한 독립 디스크의 중복 배열(RAID)이나 기타 기술을 사용하십시오.
@@ -78,7 +92,7 @@ GDS 디렉터리 위치는 AEM Forms 설치 프로세스 중에 수동으로 구
 
 ## 기본 GDS 위치 변경 {#change-the-default-gds-location}
 
-AEM Forms 설치가 완료된 후 관리 콘솔에서 GDS 위치를 변경할 수 있습니다. 데이터 위치를 수동으로 변경하여 프로세스를 완료합니다.
+AEM Forms 설치가 완료된 후 관리 콘솔에서 GDS 위치를 변경할 수 있습니다. 데이터를 수동으로 재배치하여 프로세스를 완료합니다.
 
 >[!NOTE]
 >

@@ -9,13 +9,24 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 63%
-
 ---
-
 # ContextHub를 사용하여 세분화 구성{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -51,7 +62,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 구성 요소 브라우저를 사용하여 **AND** 및 **OR** 컨테이너를 추가하여 세그먼트 논리를 정의한 다음, 추가 구성 요소를 추가하여 속성 및 값을 비교하거나 스크립트 및 기타 세그먼트를 참조하여 선택 기준을 정의하고([새 세그먼트 작성](#creating-a-new-segment) 참조), 이를 통해 세그먼트 선택을 위한 정확한 시나리오를 정의할 수 있습니다.
 
-전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **Boost** 요소도 사용됩니다. [&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)부스트 요소에 대한 자세한 내용은 [새 세그먼트 만들기](#creating-a-new-segment)를 참조하십시오.
+전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **Boost** 요소도 사용됩니다. [부스트 요소에 대한 자세한 내용은 [새 세그먼트 만들기](#creating-a-new-segment)를 참조하십시오.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -243,8 +254,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 폴더의 **제목** 및 **이름**&#x200B;을 입력합니다.
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
-      * 필요한 경우 조정할 수 있습니다.
+     * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
+     * 필요한 경우 조정할 수 있습니다.
 
    ![폴더 만들기](assets/contexthub-create-folder.png)
 

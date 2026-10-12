@@ -9,18 +9,25 @@ exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
-
 ---
-
 # 저장소 리소스 공급자 개요 {#storage-resource-provider-overview}
 
 ## 소개 {#introduction}
 
-AEM(Adobe Experience Manager) 커뮤니티 6.1부터 일반적으로 UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 컨텐츠는 [SRP(저장소 리소스 공급자](working-with-srp.md))에서 제공하는 하나의 공통 저장소에 저장됩니다.
+Adobe Experience Manager(AEM) 커뮤니티 6.1부터 일반적으로 UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 컨텐츠는 [SRP(저장소 리소스 제공자](working-with-srp.md))에서 제공하는 하나의 공통 저장소에 저장됩니다.
 
 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 모두 포함하는 새로운 AEM Communities 인터페이스인 [SocialResourceProvider API](srp-and-ugc.md)(SRP API)를 통해 UGC에 액세스하는 몇 가지 SRP 옵션이 있습니다.
 
@@ -42,7 +49,7 @@ CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 모두 포함하는 �
 
 SRP를 이해하려면 AEM 커뮤니티 사이트에서 AEM 저장소(Oak)의 역할을 이해하는 것이 좋습니다.
 
-**JCR(Java™ Content Repository)**
+**Java™ 콘텐츠 저장소(JCR)**
 이 표준은 콘텐츠 저장소에 대한 데이터 모델 및 응용 프로그램 프로그래밍 인터페이스([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html))를 정의합니다. 기존 파일 시스템의 특성과 관계형 데이터베이스의 특성을 결합하며, 컨텐츠 애플리케이션에 자주 필요한 몇 가지 추가 기능을 제공합니다.
 
 JCR의 구현 중 하나는 AEM 저장소인 Oak입니다.
@@ -56,7 +63,7 @@ JCR과 Oak은 모두 일반적으로 AEM 저장소를 참조하는 데 사용됩
 
 UGC의 경우 컨텐츠는 공개 게시 환경에 등록된 사이트 방문자(커뮤니티 구성원)가 입력합니다. 이 작업은 임의로 수행됩니다.
 
-관리 및 보고의 목적으로 개인 작성 환경에서 UGC에 액세스하는 것은 유용합니다. SRP를 사용하면 Publish에서 Author로 역복제가 필요하지 않으므로 Author에서 UGC에 대한 액세스가 더 일관되고 성능이 향상됩니다.
+관리 및 보고의 목적으로 개인 작성 환경에서 UGC에 액세스하는 것은 유용합니다. SRP를 사용하면 게시에서 작성자로 역복제가 필요하지 않으므로 작성자의 UGC에 대한 액세스가 더 일관되고 성능이 향상됩니다.
 
 ## SRP 정보 {#about-srp}
 
@@ -70,7 +77,7 @@ UGC가 공유 스토리지에 저장될 때 대부분의 배포에서 작성자 
 
 ### ASRP {#asrp}
 
-ASRP가 있는 경우 UGC는 JCR에 저장되지 않고 Adobe이 호스팅 및 관리하는 클라우드 서비스에 저장됩니다. ASRP에 저장된 UGC는 CRXDE Lite으로 보거나 JCR API를 사용하여 액세스할 수 없습니다.
+ASRP가 있는 경우 UGC는 JCR에 저장되지 않고 Adobe에서 호스팅 및 관리하는 클라우드 서비스에 저장됩니다. ASRP에 저장된 UGC는 CRXDE Lite으로 보거나 JCR API를 사용하여 액세스할 수 없습니다.
 
 [ASRP - Adobe 저장소 리소스 공급자](asrp.md)를 참조하십시오.
 
@@ -84,7 +91,7 @@ ASRP는 쿼리에 Adobe 클라우드를 사용합니다.
 
 [MSRP - MongoDB 저장소 리소스 공급자](msrp.md)를 참조하세요.
 
-MSRP는 ASRP와 비슷하지만 모든 AEM 서버 인스턴스가 동일한 UGC에 액세스하고 있으므로 일반적인 도구를 사용하여 MongoDB에 저장된 UGC에 직접 액세스할 수 있습니다.
+MSRP는 ASRP와 비슷하지만, 모든 AEM 서버 인스턴스가 동일한 UGC에 액세스하고 있으므로 일반적인 도구를 사용하여 MongoDB에 저장된 UGC에 직접 액세스할 수 있습니다.
 
 MSRP는 쿼리에 Solr을 사용합니다.
 
@@ -94,9 +101,9 @@ JSRP는 단일 AEM 인스턴스의 모든 UGC에 액세스하는 기본 공급�
 
 [JSRP - JCR 저장소 리소스 공급자](jsrp.md)를 참조하십시오.
 
-UGC가 JCR에 저장되고 CRXDE Lite 및 JCR API에서 액세스할 수 있는 동안 JSRP가 있는 경우, Adobe은 JCR API를 사용하여 이 작업을 수행하지 않는 것을 권장합니다. 이 경우 향후 변경 사항이 사용자 지정 코드에 영향을 줄 수 있습니다.
+UGC가 JCR에 저장되고 CRXDE Lite 및 JCR API에서 액세스할 수 있는 동안 JSRP가 있는 경우 Adobe에서는 JCR API를 사용하여 JCR API를 사용하지 않는 것이 좋습니다. 이 경우 향후 변경 사항이 사용자 지정 코드에 영향을 줄 수 있습니다.
 
-또한 작성자 및 Publish 환경에 대한 저장소는 공유되지 않습니다. 게시 인스턴스 클러스터가 공유 게시 리포지토리를 생성하지만 Publish에 입력된 UGC는 작성자에게 표시되지 않으므로 작성자의 UGC를 관리할 수 없습니다. UGC는 입력된 인스턴스의 JCR(AEM repository)에서만 유지됩니다.
+또한 작성자 및 게시 환경에 대한 저장소는 공유되지 않습니다. 게시 인스턴스 클러스터는 공유 게시 저장소를 생성하지만 게시에 입력된 UGC는 작성자에게 표시되지 않으므로 작성자의 UGC를 관리할 수 없습니다. UGC는 입력된 인스턴스의 JCR(AEM 저장소)에서만 유지됩니다.
 
 JSRP는 쿼리에 Oak 색인을 사용합니다.
 

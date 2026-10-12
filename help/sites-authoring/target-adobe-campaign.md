@@ -9,13 +9,30 @@ exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '429'
 ht-degree: 1%
-
 ---
-
 # Adobe Campaign 타기팅{#targeting-your-adobe-campaign}
 
 Adobe Campaign 뉴스레터를 타겟팅하려면 먼저 Classic UI에서만 사용할 수 있는 세그먼테이션을 설정해야 합니다(클라이언트 컨텍스트용). 그런 다음 Adobe Campaign에 대한 타겟팅된 경험을 만들 수 있습니다. 두 가지 모두 이 섹션에 설명되어 있습니다.
@@ -34,7 +51,7 @@ Adobe Campaign 뉴스레터를 타겟팅하려면 먼저 Classic UI에서만 사
 
 세그먼트를 만들려면 다음 작업을 수행하십시오.
 
-1. [&lt;host>:&lt;port>/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation)에서 **세그먼테이션 콘솔**&#x200B;을 엽니다.
+1. **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**&#x200B;에서 [세그먼테이션 콘솔](http://localhost:4502/miscadmin#/etc/segmentation)을 엽니다.
 1. 페이지를 만들고 제목(예: **AC 세그먼트**)을 입력한 다음 **세그먼트(Adobe Campaign)** 템플릿을 선택합니다.
 1. 왼쪽의 트리 보기에서 만든 페이지를 선택합니다.
 1. 만든 세그먼트 아래에 Male이라는 페이지를 만들어 남성 사용자를 타깃팅하는 등의 방법으로 세그먼트를 만들고 **세그먼트(Adobe Campaign)** 템플릿을 선택합니다.

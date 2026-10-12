@@ -9,13 +9,26 @@ exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 4%
-
 ---
-
 # 콘텐츠 인사이트{#content-insight}
 
 컨텐츠 Insight은 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다. 컨텐츠 Insight을 사용하여 페이지 수정 방법을 결정하거나 이전 변경 사항으로 성능이 어떻게 변경되었는지 알아볼 수 있습니다. 작성하는 모든 페이지에 대해 컨텐츠 Insight을 열어 페이지를 분석할 수 있습니다.
@@ -30,9 +43,9 @@ ht-degree: 4%
 
 * SiteCatalyst: 다음 지표에 대한 보고서를 사용할 수 있습니다.
 
-   * 페이지 조회수
-   * 페이지에서 보낸 평균 시간
-   * 소스
+  * 페이지 조회수
+  * 페이지에서 보낸 평균 시간
+  * 소스
 
 * 타겟: 페이지에 오퍼가 포함된 캠페인 활동에 대한 보고서입니다.
 * BrightEdge: 검색 엔진에 대한 페이지의 가시성을 개선하는 페이지 기능에 대해 보고하며 구현해야 하는 기능을 권장합니다.
@@ -62,8 +75,8 @@ ht-degree: 4%
 * 보고 기간 동안 페이지에 대한 총 보기 수입니다.
 * 보고 기간 동안의 보기 수 그래프:
 
-   * 총 보기 수.
-   * 고유 방문자 수
+  * 총 보기 수.
+  * 고유 방문자 수
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
