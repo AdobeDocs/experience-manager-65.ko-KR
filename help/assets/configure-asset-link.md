@@ -82,10 +82,10 @@ Experience Manager을 수동으로 구성하려면:
 
    다음 구성을 설정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   * [!UICONTROL 인증 끝점]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL 토큰 끝점]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL 프로필 끝점]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL 유효성 검사 URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL 인증 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL 토큰 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL 프로필 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL 유효성 검사 URL]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL 조직]: [Adobe Admin Console](https://adminconsole.adobe.com/)에서 조직 ID로 설정합니다.
    * [!UICONTROL 그룹 매핑]: 특별한 경우가 아니면 비워 둡니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
 
@@ -99,10 +99,10 @@ Experience Manager을 수동으로 구성하려면:
 
    * [!UICONTROL 클라이언트 ID]: 변경하지 마십시오
    * [!UICONTROL 클라이언트 암호]: 변경하지 마십시오
-   * [!UICONTROL 구성 ID]: ` ims`
+   * [!UICONTROL 구성 ID]&#x200B;: ` ims`
    * [!UICONTROL 범위]: `AdobeID, OpenID, read_organizations`(다른 값도 구성에 있을 수 있음)
-   * [!UICONTROL 공급자 ID]: ` ims`
-   * [!UICONTROL 사용자 만들기]: ` Checked`
+   * [!UICONTROL 공급자 ID]&#x200B;: ` ims`
+   * [!UICONTROL 사용자 만들기]&#x200B;: ` Checked`
    * [!UICONTROL 사용자 ID 속성]: 새로 만든 구성의 경우 `Email`. 그렇지 않으면 변경하지 마십시오.
 
 1. **[!UICONTROL 동기화 처리기 이름]** `ims`을(를) 사용하여 **[!UICONTROL Apache Jackrabbit Oak 기본 동기화 처리기]** 구성을 찾은 다음 클릭하여 편집합니다.
@@ -111,7 +111,7 @@ Experience Manager을 수동으로 구성하려면:
 
    * [!UICONTROL 사용자 만료 시간 및 사용자 멤버십 만료]: 다음 시간(분)에 공백 없이 &#39;m&#39;이 붙습니다. 예를 들어 15분 동안 `15m`을(를) 사용합니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
    * [!UICONTROL 사용자 자동 멤버십]: 변경하지 마십시오
-   * [!UICONTROL 사용자 동적 구성원]: ` Deslect`
+   * [!UICONTROL 사용자 동적 구성원]&#x200B;: ` Deslect`
 
 1. **[!UICONTROL Adobe Granite OAuth 인증 처리기]** 구성을 찾은 다음 클릭하여 편집합니다. 변경하지 않고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
