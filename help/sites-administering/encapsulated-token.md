@@ -1,5 +1,5 @@
 ---
-title: 압축된 토큰 지원
+title: 캡슐화된 토큰 지원
 description: AEM의 캡슐화된 토큰 지원에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,26 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '794'
 ht-degree: 1%
-
 ---
-
-# 압축된 토큰 지원{#encapsulated-token-support}
+# 캡슐화된 토큰 지원{#encapsulated-token-support}
 
 ## 소개 {#introduction}
 
@@ -36,9 +48,9 @@ ht-degree: 1%
 
 ## 캡슐화된 토큰을 사용한 상태 비저장 인증 {#stateless-authentication-with-the-encapsulated-token}
 
-수평적 확장성을 위한 솔루션은 AEM의 새로운 Encapsulated Token 지원을 사용하는 상태 비저장 인증입니다.
+수평적 확장성을 위한 솔루션은 AEM의 새로운 캡슐화된 토큰(Encapsulated Token) 지원을 사용하는 상태 비저장 인증(Stateless Authentication)입니다.
 
-캡슐화된 토큰은 AEM이 저장소에 액세스하지 않고도 오프라인에서 인증 정보를 안전하게 만들고 확인할 수 있도록 하는 암호입니다. 이렇게 하면 고정 연결이 필요 없이 모든 게시 인스턴스에서 인증 요청이 발생할 수 있습니다. 또한 모든 인증 요청에 대해 저장소에 액세스할 필요가 없기 때문에 인증 성능이 향상된다는 장점이 있습니다.
+캡슐화된 토큰은 AEM이 저장소에 액세스하지 않고도 오프라인에서 인증 정보를 안전하게 만들고 확인할 수 있도록 하는 암호화 방법입니다. 이렇게 하면 고정 연결이 필요 없이 모든 게시 인스턴스에서 인증 요청이 발생할 수 있습니다. 또한 모든 인증 요청에 대해 저장소에 액세스할 필요가 없기 때문에 인증 성능이 향상된다는 장점이 있습니다.
 
 아래 MongoMK 작성자 및 TarMK 게시 인스턴스와 함께 지리적으로 분산된 배포에서 이 기능이 어떻게 작동하는지 확인할 수 있습니다.
 
@@ -62,7 +74,7 @@ ht-degree: 1%
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-1. 관련된 암호화 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3부터 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 따라서 키를 복제하는 가장 좋은 방법은 소스 인스턴스의 파일 시스템에서 키를 복제할 타겟 인스턴스의 파일 시스템으로 키를 복제하는 것입니다. 자세한 내용은 아래의 &quot;HMAC 키 복제&quot;에서 확인하십시오.
+1. 관련된 암호화 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 따라서 키를 복제하는 가장 좋은 방법은 소스 인스턴스의 파일 시스템에서 키를 복제할 타겟 인스턴스의 파일 시스템으로 키를 복제하는 것입니다. 자세한 내용은 아래의 &quot;HMAC 키 복제&quot;에서 확인하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
 ### HMAC 키 복제 {#replicating-the-hmac-key}
