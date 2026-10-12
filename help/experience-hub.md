@@ -50,7 +50,7 @@ Experience Hub는 Adobe Experience Manager 내에서 콘텐츠, 에셋, 사이�
 
 새롭게 단장된 AEM Experience Hub 작업 영역(2분 39초)을 빠르게 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475199/?captions=kor&learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
