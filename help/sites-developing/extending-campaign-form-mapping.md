@@ -1,5 +1,5 @@
 ---
-title: 사용자 정의 양식 매핑 만들기
+title: 사용자 지정 양식 매핑 만들기
 description: Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 지정 테이블에 매핑되는 양식을 AEM에서 빌드할 수 있습니다
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 3%
-
+source-wordcount: '538'
+ht-degree: 5%
 ---
-
-# 사용자 정의 양식 매핑 만들기{#creating-custom-form-mappings}
+# 사용자 지정 양식 매핑 만들기{#creating-custom-form-mappings}
 
 Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 지정 테이블에 매핑되는 양식을 AEM에서 빌드할 수 있습니다.
 
@@ -31,7 +40,7 @@ Adobe Campaign에서 사용자 지정 테이블을 만들 때 해당 사용자 �
 
 자세한 내용은 [AEM과 Adobe Campaign Classic 통합](/help/sites-administering/campaignonpremise.md)을 참조하십시오.
 
-## 사용자 정의 양식 매핑 만들기 {#creating-custom-form-mappings-2}
+## 사용자 지정 양식 매핑 만들기 {#creating-custom-form-mappings-2}
 
 사용자 정의 양식 매핑을 생성하려면 다음 섹션에 자세히 설명되어 있는 이러한 높은 수준의 단계를 수행해야 합니다.
 
@@ -96,7 +105,7 @@ Adobe Campaign에서 **추가**&#x200B;를 선택하여 **시드 주소(nms)** �
 
 ### AEM에서 양식 작성 {#building-the-form-in-aem}
 
-AEM에서 **Cloud Service 속성**&#x200B;에 페이지를 구성했는지 확인하십시오.
+AEM에서 **페이지 속성**&#x200B;에 Cloud Service을 구성했는지 확인하십시오.
 
 그런 다음 **Adobe Campaign** 탭에서 [사용자 지정 게재 템플릿 만들기](#creating-a-custom-delivery-template)에서 만든 게재를 선택합니다.
 
@@ -122,7 +131,7 @@ CRXDE-lite에서 (페이지의) **jcr:content** 노드로 이동하여 **acMappi
 
 ## 문제 해결 {#troubleshooting}
 
-**&quot;요소 &#39;@eventdate&#39;의 값 &#39;02/02/2015&#39;에 대한 형식이 잘못되었습니다(&#39;Event([adb:event])&#39; 형식의 문서)&quot;**
+**&quot;@eventdate&#39; 요소의 값 &#39;02/02/2015&#39; 형식이 잘못되었습니다(&#39;Event([adb:event])&#39; 형식의 문서)&quot;**
 
 양식을 제출할 때 이 오류는 AEM의 **error.log**&#x200B;에 기록됩니다.
 
