@@ -81,7 +81,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 클라우드 서비스를 빌드하고 Adobe Mobile Services SDK 플러그인을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
 
 * 빌드: 구성 관리 를 클릭하고 여기에서 build.phonegap.com 빌드 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap Build 클라우드 서비스를 선택할 수 있습니다.
-* Analytics: 구성 관리를 클릭하고 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
+* Analytics: 구성 관리를 클릭하고 [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=ko) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 모바일 앱에 통합할 새로 만든 모바일 서비스를 선택할 수 있습니다.
 
 >[!NOTE]
 >

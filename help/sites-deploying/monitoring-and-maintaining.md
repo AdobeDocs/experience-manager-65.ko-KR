@@ -237,13 +237,13 @@ AEM을 설치한 파일 서버에는 다양한 로그 파일이 보관되어 있
   * `error.log`
     여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ko)
     이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
   * `request.log`
     각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ko)
     이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 [!DNL Dynamic Media]에 대한 각 요청을 기록합니다.
 
   * `stderr.log`
@@ -1107,9 +1107,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >자세한 내용은 다음 문서를 참조하십시오.
 >
->* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
+>* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
+>* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
 >
 
 ### 메모리 부족 {#out-of-memory}
@@ -1125,7 +1125,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [AEM을 시작](/help/sites-deploying/deploy.md#getting-started)하는 데 사용되는 JVM 설정
 * 기술 자료:
 
-* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1143,7 +1143,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [버전 제거](/help/sites-deploying/version-purging.md)를 구성했는지 여부 및 방법
 * 기술 자료:
 
-  * [열려 있는 파일이 너무 많음]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
+  * [열려 있는 파일이 너무 많음]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
@@ -1152,7 +1152,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [메모리 부족](#outofmemory)
 * 기술 자료:
 
-  * [리소스 확인자가 닫히지 않았습니다.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
+  * [리소스 확인자가 닫히지 않았습니다.](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM 조정 {#jvm-tuning}
 

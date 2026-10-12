@@ -60,11 +60,11 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [구조화된 컨텐츠 모델](/help/assets/content-fragments/content-fragments.md) |
-| [컨텐츠 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
+| [컨텐츠 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) |
 | 구조화된 콘텐츠를 위한 HTTP API(읽기) |
 | 구조화된 콘텐츠를 위한 HTTP API(CRUD) |
-| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
+| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## 관리 및 통합 기능 {#admin-and-integration-features}
@@ -77,7 +77,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [컨텐츠 번역](/help/sites-administering/translation.md) |
 | [모니터링](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [백업](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko) |
 | [PIM 통합](/help/sites-authoring/managing-product-information.md) |
 | [프로젝트 및 작업](/help/sites-authoring/projects.md) |
 | [워크플로](/help/sites-administering/workflows-starting.md) |
@@ -93,7 +93,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 
 ## 자세히 알아보기 {#learn-more}
 
-* [헤드리스 사용 사례를 위한 Fluid Experiences](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [AEM 컨텐츠 서비스: 무엇을, 왜, 어떻게?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* [타사 액세스에 대한 FAQ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [Sling API 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [헤드리스 사용 사례를 위한 Fluid Experiences](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=ko)
+* [AEM 컨텐츠 서비스: 무엇을, 왜, 어떻게?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=ko)
+* [타사 액세스에 대한 FAQ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=ko)
+* [Sling API 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=ko#sling-models)

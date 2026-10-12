@@ -34,7 +34,7 @@ ht-degree: 1%
 ---
 # 적응형 양식 작업을 위한 모범 사례 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe에서는 [새로운 적응형 Forms을 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms을 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)하기 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> Adobe에서는 [새로운 적응형 Forms을 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 Forms을 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)하기 위해 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용할 것을 권장합니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -117,15 +117,15 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 ### 양식 템플릿 만들기
 
-**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en)를 참조하십시오.
+**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=ko)를 참조하십시오.
 
-다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 서식 파일은 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)을(를) 설치하여 사용할 수 있습니다. 권장되는 몇 가지 모범 사례는 다음과 같습니다.
+다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 서식 파일은 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을(를) 설치하여 사용할 수 있습니다. 권장되는 몇 가지 모범 사례는 다음과 같습니다.
 
 * **nosamplecontent** 실행 모드는 작성자에게만 권장되며 게시 노드에는 권장되지 않습니다.
 * 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 에셋 작성은 구성된 게시 노드에 게시할 수 있는 작성자 노드에서만 수행됩니다.
-자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)를 참조하십시오.
+자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=ko)를 참조하십시오.
 * 문서 서비스 작업을 지원하기 위한 작성 및 게시에 Forms addon 패키지가 필요하므로 종속성으로 간주할 수 있습니다.
-Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)에서 다운로드할 수 있습니다.
+Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=ko)에서 다운로드할 수 있습니다.
 
 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)의 모범 사례를 참조하십시오.
 
@@ -374,13 +374,13 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 전반적인 성능을 개선하도록 AEM을 구성하는 몇 가지 모범 사례는 다음과 같습니다.
 
 * Felix 콘솔에서 JavaScript 및 CSS용 HTML 클라이언트 라이브러리 압축을 활성화합니다.
-* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
+* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
 
 * `/content/forms/af/` 및 `/content/dam/formsanddocuments/*` 경로를 캐시하지 마십시오. 적응형 양식 캐싱 구성에 대한 자세한 내용은 [적응형 양식 캐싱](/help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
 
 * 웹 서버 압축 모듈을 통해 HTML을 활성화합니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)을 참조하십시오.
 * 대형 양식에 대한 요청 구성당 호출 수를 늘립니다. [크고 복잡한 양식의 성능 최적화](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)를 참조하십시오.
-* [오류 처리기에 표시되는 사용자 지정 오류 페이지를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html).
+* [오류 처리기에 표시되는 사용자 지정 오류 페이지를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=ko).
 * 보안 AEM Forms 서버.
 
   * 프로덕션 서버에 배포된 샘플 콘텐츠 및 샘플 사용자가 없도록 하려면 `nosamplecontent` 실행 모드를 사용하십시오. [프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)을 참조하십시오.

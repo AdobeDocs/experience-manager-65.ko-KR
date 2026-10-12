@@ -83,4 +83,4 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
 
 자세한 내용은 작성 문서 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md)에서 편집 가능한 템플릿에 대한 전체 기술 정보를 참조하십시오.
 
-[핵심 구성 요소](/help/sites-developing/we-retail-core-components.md)를 조사할 수도 있습니다. 핵심 구성 요소의 기능에 대한 개요는 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 참조하고, 기술 개요는 개발자 문서 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)을 참조하십시오.
+[핵심 구성 요소](/help/sites-developing/we-retail-core-components.md)를 조사할 수도 있습니다. 핵심 구성 요소의 기능에 대한 개요는 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)를 참조하고, 기술 개요는 개발자 문서 [핵심 구성 요소 개발](https://helpx.adobe.com/kr/experience-manager/core-components/using/developing.html)을 참조하십시오.

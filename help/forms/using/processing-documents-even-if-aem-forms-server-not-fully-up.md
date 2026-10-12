@@ -41,4 +41,4 @@ AEM Forms 서버가 완전히 작동하고 모든 애플리케이션이 실행 �
 
 ## 솔루션 {#solution}
 
-이 문제를 해결하려면 서버를 시작하는 동안 [일괄 처리 파일](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)에 인수 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`을(를) 추가하십시오.
+이 문제를 해결하려면 서버를 시작하는 동안 [일괄 처리 파일](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html?lang=ko#windows-platform-start-bat-script-example)에 인수 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`을(를) 추가하십시오.

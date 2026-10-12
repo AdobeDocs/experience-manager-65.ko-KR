@@ -69,7 +69,7 @@ ht-degree: 9%
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)
 
 ## 기본 개념 {#basic-concepts}
 
@@ -142,7 +142,7 @@ AEM Managed Services 고객은 다음과 같은 이점을 실현할 수 있습�
 
 **Cloud Manager**: Adobe Experience Manager Managed Services 서비스의 일부인 Cloud Manager은 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있도록 해주는 셀프서비스 포털입니다. 여기에는 IT 팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 맞춤화 또는 업데이트 제공 속도를 높일 수 있는 최신 CI/CD(지속적 통합 및 지속적 배포) 파이프라인이 포함되어 있습니다. Cloud Manager은 Adobe Managed Service 고객만 사용할 수 있습니다.
 
-Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)를 참조하세요.
+Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ko)를 참조하세요.
 
 ## 시작하기 {#getting-started}
 
@@ -324,4 +324,4 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [AEM Screens란?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ko)

@@ -40,7 +40,7 @@ ht-degree: 7%
 
 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 직접 업그레이드할 수 있습니다.
 
-**AEM 6.0 Forms, AEM 6.1 Forms** 및 **AEM 6.2 Forms**&#x200B;에서 AEM 6.5 Forms으로의 직접 업그레이드 경로를 사용할 수 없습니다. 중간 [AEM 6.2 Forms으로 업그레이드](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [AEM 6.3 Forms으로 업그레이드](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html) 또는 [AEM 6.4 Forms으로 업그레이드](/help/forms/using/upgrade.md)한 다음 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드합니다.
+**AEM 6.0 Forms, AEM 6.1 Forms** 및 **AEM 6.2 Forms**&#x200B;에서 AEM 6.5 Forms으로의 직접 업그레이드 경로를 사용할 수 없습니다. 중간 [AEM 6.2 Forms으로 업그레이드](https://helpx.adobe.com/kr/experience-manager/6-2/forms/using/upgrade.html), [AEM 6.3 Forms으로 업그레이드](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/upgrade.html) 또는 [AEM 6.4 Forms으로 업그레이드](/help/forms/using/upgrade.md)한 다음 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드합니다.
 
 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하려면 다음을 수행하십시오.
 
@@ -69,7 +69,7 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
       1. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
    1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-   1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+   1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
    1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
       [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다.
@@ -90,7 +90,7 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. 이 유틸리티는 AEM 소프트웨어 배포에서 다운로드할 수 있습니다. 마이그레이션 유틸리티를 구성하고 사용하는 방법에 대한 단계별 정보는 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
+     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am

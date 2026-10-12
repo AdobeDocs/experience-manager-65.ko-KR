@@ -101,5 +101,5 @@ Adobe Experience Manager(AEM)는 AEM GraphQL API를 사용하여 콘텐츠 조�
   * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
   * [콘텐츠를 모델링하는 방법에 대해 알아보기](/help/journey-headless/developer/model-your-content.md)
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
+* [AEM의 Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko)

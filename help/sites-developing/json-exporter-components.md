@@ -86,7 +86,7 @@ serialize할 메서드를 정의하려면 모델 인터페이스에 적절한 �
 
 ## 예 {#example}
 
-핵심 구성 요소는 핵심 구성 요소[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
+핵심 구성 요소는 핵심 구성 요소[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
@@ -101,9 +101,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 자세한 내용은 다음을 참조하십시오.
 
-* Assets 사용 안내서의 [콘텐츠 조각 항목](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Assets 사용 안내서의 [콘텐츠 조각 항목](https://helpx.adobe.com/kr/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스를 위한 JSON 내보내기 도구](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [콘텐츠 조각 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/content-fragment-component.html)

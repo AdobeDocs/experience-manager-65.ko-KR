@@ -266,4 +266,4 @@ Document Security(이전의 Rights Management)를 사용하는 경우 AEM Forms 
 - [CWE-611: XML 외부 엔티티 참조의 잘못된 제한](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16: 구성](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE 예방 치트 시트](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms 보안 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
+- [Adobe Experience Manager Forms 보안 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko)

@@ -37,11 +37,11 @@ ht-degree: 1%
 
 이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 문서 서비스를 이해하고 사용할 수 있습니다. JEE 환경의 AEM Forms에 대한 샘플 및 예는 를 참조하십시오.
 
-* [서명 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [서명 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=ko&#programming-aem-forms-jee)
 
-* [암호화 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [암호화 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=ko&#developer-reference)
 
-* [Acrobat Reader 확장 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [Acrobat Reader 확장 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=ko&#developer-reference)
 
 ## 전제 조건 {#prerequisite}
 
@@ -89,7 +89,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 

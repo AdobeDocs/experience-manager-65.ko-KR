@@ -126,7 +126,7 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
 
 Designer을 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 보고 테스트할 수 있습니다. 샘플 데이터로 양식을 자주 테스트하여 양식이 올바르게 렌더링되는지 확인하는 것이 좋습니다.
 
-샘플 데이터가 없는 경우 Designer에서 만들거나 직접 만들 수 있습니다. ([양식을 미리 볼 샘플 데이터를 자동으로 생성하려면](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)을(를), [양식을 미리 볼 샘플 데이터를 만들려면](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)을) 참조하십시오.)
+샘플 데이터가 없는 경우 Designer에서 만들거나 직접 만들 수 있습니다. ([양식을 미리 볼 샘플 데이터를 자동으로 생성하려면](https://help.adobe.com/ko_KR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)을(를), [양식을 미리 볼 샘플 데이터를 만들려면](https://help.adobe.com/ko_KR/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)을) 참조하십시오.)
 
 샘플 데이터 소스를 사용하여 양식을 테스트하면 데이터와 필드가 매핑되고 반복되는 하위 양식이 예상대로 반복됩니다. 병합된 데이터를 표시할 각 개체에 적절한 공간을 제공하는 균형 잡힌 양식 레이아웃을 만들 수 있습니다.
 

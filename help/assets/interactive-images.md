@@ -389,9 +389,9 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 응답형 환경의 구매 가능한 대화형 이미지에 &quot;자르기&quot;를 적용하려면 대화형 이미지 구성 특성 `ZoomView.iscommand`을(를) 경로에 포함할 수 있습니다. 구성 요소 `ZoomView`이(가) 호출되었으며 `iscommand`은(는) 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-[ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 특성을 참조하십시오.
+[ZoomView.iscommand](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 구성 특성을 참조하십시오.
 
-[자르기](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령을 참조하십시오.
+[자르기](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 이미지 제공 명령을 참조하십시오.
 
 이제 대화형 이미지를 웹 사이트의 기존 빠른 보기와 통합할 준비가 되었습니다.
 

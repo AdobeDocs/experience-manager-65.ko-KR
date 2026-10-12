@@ -57,16 +57,16 @@ JEE에 AEM Forms을 설치하고 구성하려면 다음 단계를 수행하십�
 
 1. [Adobe 라이선스 웹 사이트(LWS)](https://licensing.adobe.com/)에서 JEE의 AEM 6.5 Forms 설치 관리자를 다운로드합니다. 설치 관리자를 다운로드하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
 1. [JEE의 AEM Forms 지원 플랫폼 문서](/help/forms/using/aem-forms-jee-supported-platforms.md)를 읽고 소프트웨어, 하드웨어, 운영 체제, 응용 프로그램 서버, 데이터베이스, JDK 및 기타 인프라가 JEE에 AEM Forms을 설치할 준비가 되어 있는지 확인하십시오.
-1. (Turnkey가 아닌 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) 또는 [AEM Forms 서버 클러스터 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)를 읽고 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
+1. (Turnkey가 아닌 설치만 해당) [AEM Forms 단일 서버 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_kr) 또는 [AEM Forms 서버 클러스터 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_kr)를 읽고 환경에서 JEE에 AEM Forms을 설치하고 구성할 수 있도록 준비하십시오.
 1. 사용 중인 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 지침에 따라 설치를 완료합니다
 
-   * [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-   * [JBoss용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
-   * [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-   * [WebSphere용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-   * [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-   * [WebLogic 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-   * [WebSphere 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+   * [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_kr)
+   * [JBoss용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_64_kr)
+   * [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_kr)
+   * [WebSphere용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_kr)
+   * [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_kr)
+   * [WebLogic 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_kr)
+   * [WebSphere 클러스터에서 JEE의 AEM Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_kr)
 
    >[!NOTE]
    >

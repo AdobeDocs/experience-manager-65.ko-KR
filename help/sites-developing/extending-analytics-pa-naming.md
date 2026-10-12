@@ -51,7 +51,7 @@ Sites 콘솔 및 Content Insight에서 Analytics 보고서 데이터를 노출�
 
 * `pagedata.navTitle`: 서비스에서 `page.getNavigationTitle()` 사용
 
-`page` 개체는 페이지의 [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java 개체입니다.
+`page` 개체는 페이지의 [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/kr/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java 개체입니다.
 
 CQ 변수를 프레임워크의 `s.pageName` 속성에 매핑하지 않으면 `s.pageName`의 값이 페이지 경로에서 생성됩니다. 예를 들어 경로가 `/content/geometrixx/en`인 페이지는 `s.pageName`에 대해 `content:geometrixx:en` 값을 사용합니다.
 

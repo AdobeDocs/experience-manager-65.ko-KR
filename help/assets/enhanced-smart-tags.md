@@ -32,7 +32,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 체계 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 여기에는 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함됩니다. 분류 체계 제어 어휘를 사용하여 에셋에 태그를 지정하면 에셋을 쉽게 식별 및 검색할 수 있습니다.
@@ -214,4 +214,4 @@ ht-degree: 7%
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [스마트 태그 지정 구성](config-smart-tagging.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)

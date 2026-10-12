@@ -101,4 +101,4 @@ HTML Workspace은 모바일 양식에 사용할 수 있는 컨트롤 외에도 �
    >적응형 양식 만들기에 대한 자세한 내용은 [적응형 양식 만들기](../../forms/using/creating-adaptive-form.md)를 참조하십시오.
    >
    >
-   >프로세스 만들기에 대한 자세한 내용은 [프로세스 만들기 및 관리](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)를 참조하십시오.
+   >프로세스 만들기에 대한 자세한 내용은 [프로세스 만들기 및 관리](https://help.adobe.com/ko_KR/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)를 참조하십시오.

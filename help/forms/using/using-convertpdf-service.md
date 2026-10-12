@@ -52,9 +52,9 @@ AEM 콘솔에서 **AEMFD ConvertPDF 서비스**&#x200B;를 사용하여 이 서�
 
 ConvertPDF 서비스는 다음 두 가지 API를 제공합니다.
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: PDF 문서를 PostScript 파일로 변환합니다.
+* **[toPS](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: PDF 문서를 PostScript 파일로 변환합니다.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2000, PNG 및 TIFF입니다.
+* **[toImage](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: PDF 문서를 이미지 파일로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2000, PNG 및 TIFF입니다.
 
 ### JSP 또는 서블릿에서 toPS API 사용 {#using-tops-api-with-a-jsp-or-servlets}
 

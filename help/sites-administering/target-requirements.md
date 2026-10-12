@@ -40,7 +40,7 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 >
 >통합을 사용하려면 Target 팀이 계정을 활성화해야 합니다.
 >
->그렇지 않은 경우 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html)에 문의하십시오.
+>그렇지 않은 경우 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko)에 문의하십시오.
 
 ## 대상 복제 에이전트 활성화 {#enabling-the-target-replication-agent}
 

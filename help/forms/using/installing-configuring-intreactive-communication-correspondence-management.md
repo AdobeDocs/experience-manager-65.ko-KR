@@ -112,10 +112,10 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -162,7 +162,7 @@ AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. �
 
 #### 호환성 패키지 설치 {#install-compatibility-package}
 
-대화형 통신은 AEM 6.5 Forms에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드하거나 마이그레이션한 후 편지(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)를 설치하십시오.
+대화형 통신은 AEM 6.5 Forms에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드하거나 마이그레이션한 후 편지(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=ko)를 설치하십시오.
 
 AEMFD 호환성 패키지를 통해 AEM 6.5 Forms에서 AEM 6.4 Forms, AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
 
