@@ -1,6 +1,6 @@
 ---
 title: 일괄 에셋 마이그레이션
-description: 자산을 [!DNL Adobe Experience Manager](으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+description: 자산을 [!DNL Adobe Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 role: Developer, Admin
 feature: Migration,Renditions,Asset Management

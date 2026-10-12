@@ -289,7 +289,7 @@ private void signRendition(Asset asset, Rendition rendition) {
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)의 Assets 보기에서 [C2PA 메타데이터
+>*  [!DNL Experience Manager as a Cloud Service]&#x200B;[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)의 Assets 보기에서 C2PA 메타데이터
 >* [C2PA 메타데이터 위치 [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
 >* [C2PA 메타데이터 위치 [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [변환에 대한 XMP 원본에 쓰기](/help/assets/xmp-writeback.md)

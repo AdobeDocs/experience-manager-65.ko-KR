@@ -133,7 +133,7 @@ ImageMagick 처리 기능을 사용하여 기존 에셋의 FPO 렌디션을 생�
 
 1. [구성에서 1단계부터 3단계까지 수행하여 Experience Manager 워크플로](#generate-renditions-of-existing-assets-using-aem-workflow) 섹션을 사용하여 기존 에셋의 렌디션을 생성합니다.
 
-1. ImageMagick](#generate-renditions-of-new-assets-using-imagemagick) 섹션을 사용하여 새 자산의 렌디션을 생성하려면 [구성에서 4단계~8단계를 수행하십시오.
+1. ImageMagick[&#128279;](#generate-renditions-of-new-assets-using-imagemagick) 섹션을 사용하여 새 자산의 렌디션을 생성하려면 구성에서 4단계~8단계를 수행하십시오.
 
 
 ## FPO 표현물 보기 {#view-fpo-renditions}

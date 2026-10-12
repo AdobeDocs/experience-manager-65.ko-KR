@@ -62,7 +62,7 @@ AEM을 사용하면 사용자의 경험을 손쉽게 개인화할 수 있습니�
 
 구성 요소 브라우저를 사용하여 **AND** 및 **OR** 컨테이너를 추가하여 세그먼트 논리를 정의한 다음, 추가 구성 요소를 추가하여 속성 및 값을 비교하거나 스크립트 및 기타 세그먼트를 참조하여 선택 기준을 정의하고([새 세그먼트 작성](#creating-a-new-segment) 참조), 이를 통해 세그먼트 선택을 위한 정확한 시나리오를 정의할 수 있습니다.
 
-전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **Boost** 요소도 사용됩니다. [부스트 요소에 대한 자세한 내용은 [새 세그먼트 만들기](#creating-a-new-segment)를 참조하십시오.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+전체 구문이 true로 평가되면 세그먼트가 결정됩니다. 적용 가능한 세그먼트가 여러 개 있는 경우 **Boost** 요소도 사용됩니다. [&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)부스트 요소에 대한 자세한 내용은 [새 세그먼트 만들기](#creating-a-new-segment)를 참조하십시오.
 
 >[!CAUTION]
 >

@@ -565,7 +565,7 @@ Dynamic Media의 다중 캡션 및 오디오 트랙 기능을 사용하면 여�
 |  | 주석 트랙 |
 |  | 설명 오디오 |
 
-Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media ](/help/assets/assets-formats.md)에서 지원되는 모든 [비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
+Dynamic Media *Video_360* 뷰어를 제외한 모든 Dynamic Media 비디오 뷰어 및 Dynamic Media [&#128279;](/help/assets/assets-formats.md)에서 지원되는 모든 비디오 형식이 다중 캡션 및 오디오 트랙과 함께 사용할 수 있도록 지원됩니다.
 
 ### 비디오에 여러 캡션 및 오디오 트랙 추가 {#add-msma}
 
@@ -707,7 +707,7 @@ Dynamic Media는 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 1. 도구 모음에서 속성 아이콘(안에 &quot;i&quot;가 있는 원)을 선택합니다.
 1. 속성 페이지에서 **[!UICONTROL 캡션 및 오디오 트랙]** 탭을 선택합니다.
 1. **오디오 트랙** 제목 아래에서 비디오의 기본값으로 설정할 오디오 트랙 파일을 선택합니다.
-1. **[!UICONTROL 기본값으로 설정]**을 선택합니다.
+1. **[!UICONTROL 기본값으로 설정]**&#x200B;을 선택합니다.
 **기본값으로 설정** 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택합니다.
 
    ![선택한 오디오 트랙 파일 이름이 있고 &quot;기본값으로 설정&quot; 단추가 강조 표시된 오디오 트랙 머리글입니다.](assets-dm/msma-defaultaudiotrack2.png)*비디오에 대한 기본 오디오 트랙을 설정하는 중입니다.*
@@ -1231,7 +1231,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->서블릿에 대한 [!TAB 응답 클래스]
+>[!TAB 서블릿에 대한  응답 클래스]
 
 +++서블릿에 대한 **응답 클래스** 
 

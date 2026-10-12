@@ -62,9 +62,9 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
         1. 구성을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 1. 클라우드 서비스 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**을 클릭합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**&#x200B;을 클릭합니다.
       클라우드 서비스의 ![턴스타일](assets/turnstile-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 클릭합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
       ![구성 Turnstile](assets/config-hcaptcha.png)
    1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리, 비대화형 또는 보이지 않는 것으로 지정하십시오.
    1. **[!UICONTROL 제목]**, **[!UICONTROL 이름]**&#x200B;과 같은 기타 세부 정보를 제공합니다.

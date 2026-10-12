@@ -334,7 +334,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면 사용자 지�
       '</div>';
       ```
 
-### <span class="acrolinxCursorMarker"> 작업을 사용하려면 LiveCycle 프로세스를 추가하십시오.</code> {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling} 처리 중
+### <span class="acrolinxCursorMarker"> 작업을 사용하려면 LiveCycle 프로세스를 추가하십시오.</code> 처리 중 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 이 시나리오에서는 첨부된 components.zip 파일의 일부인 다음 구성 요소를 활성화합니다.
 

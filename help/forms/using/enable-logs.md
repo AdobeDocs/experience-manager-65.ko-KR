@@ -42,7 +42,7 @@ HTML5 양식에 대한 로그 작성을 시작하도록 로거 유틸리티를 �
 
 1. `https://'[server]:[port]'/system/console/configMgr`로 이동합니다. *Apace Sling 로깅 로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
 
-   ![ Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
+   ![&#x200B; Api Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
    Api Sling 로깅 로거 구성 옵션
 

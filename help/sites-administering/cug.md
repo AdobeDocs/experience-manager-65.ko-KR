@@ -92,7 +92,7 @@ CUG를 페이지에 적용하려면 다음을 수행합니다.
 
    1. **사용** 확인란을 활성화합니다.
 
-   1. **로그인 페이지**에 경로를 추가하십시오.
+   1. **로그인 페이지**&#x200B;에 경로를 추가하십시오.
       선택 사항이며 비워 두면 표준 로그인 페이지가 사용됩니다.
 
    ![CUG 추가됨](assets/cug-authentication-requirement.png)
@@ -135,7 +135,7 @@ Dispatcher을 사용하는 경우 다음 속성을 사용하여 Dispatcher 팜�
 
 ### CUG에 대한 Dispatcher 세션 관리 구성 {#configuring-dispatcher-session-management-for-cugs}
 
-CUG에 대해 dispatcher.any 파일](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)에서 [세션 관리를 구성합니다. CUG 페이지에 대한 액세스가 요청될 때 사용되는 인증 핸들러는 세션 관리를 구성하는 방법을 결정합니다.
+CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)에서 세션 관리를 구성합니다. CUG 페이지에 대한 액세스가 요청될 때 사용되는 인증 핸들러는 세션 관리를 구성하는 방법을 결정합니다.
 
 ```xml
 /sessionmanagement

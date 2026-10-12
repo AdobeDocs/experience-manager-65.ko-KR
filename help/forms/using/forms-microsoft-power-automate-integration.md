@@ -141,7 +141,7 @@ ht-degree: 14%
 >
 > 토큰이 만료되기 전이나 후에 통합 작업을 유지하려면 ® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성을 다시 인증하고 다시 게시하려면 [Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)에 설명된 단계를 사용하십시오.
 >
-> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)에 대한 [Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
+> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명[&#128279;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)에 대한 Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
 
 ## Microsoft 호출® Power Automate 플로우 제출 액션을 사용하여 Power Automate 플로우에 데이터 전송 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 

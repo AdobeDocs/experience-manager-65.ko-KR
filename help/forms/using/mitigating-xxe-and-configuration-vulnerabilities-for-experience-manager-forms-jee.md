@@ -87,7 +87,7 @@ ht-degree: 8%
 
 **1단계: 핫픽스 패키지 다운로드 및 추출**
 
-- 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md)용 [핫픽스 다운로드 Adobe 소프트웨어 배포 포털에서
+- 6.5.18.0 - 6.5.22.[&#128279;](/help/release-notes/aem-forms-hotfix.md)용 핫픽스 다운로드 Adobe 소프트웨어 배포 포털에서
 - 로컬에서 추출
 
 **2단계: 올바른 버전 폴더로 이동**

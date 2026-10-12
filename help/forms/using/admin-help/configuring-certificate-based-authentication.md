@@ -76,7 +76,7 @@ ht-degree: 89%
    정규 표현식에서 다음 문자를 사용할 수 있습니다.
 
    * . (모든 문자)
-   * &amp;ast;(0회 이상)
+   * &ast;(0회 이상)
    * () (괄호 안에 그룹을 지정)
    * \ (정규 표현식 문자를 일반 문자로 이스케이프 처리하는 데 사용됨)
    * $n (n번째 그룹을 나타내는 데 사용됨)
@@ -85,21 +85,21 @@ ht-degree: 89%
 
    * &#39;Alex Pink(Authentication)&#39;에서 &#39;Alex Pink&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&amp;ast;) \(Authentication\)
+     **정규 표현식:**(.&ast;) \(Authentication\)
 
    * &#39;Alex (Authentication) Pink&#39;에서 &#39;Alex Pink&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규 표현식:**(.&ast;)\(Authentication\)(.&ast;)
 
    * &#39;Alex (Authentication) Pink&#39;에서 &#39;Pink Alex&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
+     **정규 표현식:**(.&ast;)\(Authentication\)(.&ast;)
 
      사용자 정의 순서: $2 $1(두 번째 그룹을 반환하고 첫 번째 그룹에 연결하며 공백 문자로 캡처됨)
 
    * &#39;smtp:apink@sampleorg.com&#39;에서 &#39;apink@sampleorg.com&#39;을 추출하는 방법
 
-     **정규 표현식:** smtp:(.&amp;ast;)
+     **정규 표현식:** smtp:(.&ast;)
 
    정규 표현식 사용에 대한 자세한 내용은 [Java 정규 표현식 튜토리얼](https://java.sun.com/docs/books/tutorial/essential/regex/)을 참조하십시오.
 

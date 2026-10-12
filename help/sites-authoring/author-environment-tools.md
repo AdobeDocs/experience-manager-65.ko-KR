@@ -299,7 +299,7 @@ AEM 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양�
 예를 들어, 해당되는 경우 **페이지 정보**&#x200B;에도 다음 옵션이 있습니다.
 
 * 페이지가 시작인 경우 [시작 홍보](/help/sites-authoring/launches-promoting.md)
-* 관리자가 [이 옵션을 사용하도록 설정한 경우 [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)](/help/sites-administering/enable-classic-ui-editor.md)
+* 관리자가 [&#128279;](/help/sites-administering/enable-classic-ui-editor.md)이 옵션을 사용하도록 설정한 경우 [클래식 UI에서 열기](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 

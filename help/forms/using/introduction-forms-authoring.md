@@ -170,11 +170,11 @@ Click to enlarge
   </tr>
   <tr>
    <td>이메일</td>
-   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소의 유효성을 검사합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소의 유효성을 검사합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>파일 첨부</td>
-   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함합니다. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
+   <td><p>사용자가 지원 문서를 검색하고 양식에 첨부할 수 있는 버튼을 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**&#x200B;을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함합니다. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
   </tr>
   <tr>
    <td>첨부 파일 나열</td>
@@ -268,7 +268,7 @@ Click to enlarge
    <td>전화 번호</td>
    <td><p>필드를 추가하여 전화 번호를 캡처합니다. 전화 구성 요소를 사용하여 작성자는 다음 전화 번호 유형 중 하나를 구성할 수 있습니다. 각 유형은 유효성 검사에 필요한 기본 정규 표현식과 연결됩니다.</p>
     <ul>
-     <li>Type International은 <code>^[+][0-9]{0,14}$</code>에서 검증합니다.</li>
+     <li>Type International은 <code>^[+]&#x200B;[0-9]{0,14}$</code>에서 검증합니다.</li>
      <li>Type USPhoneNumber는 <code>{'+1 ('999') '999-9999}</code>에서 검증합니다.</li>
      <li>Type UKPhoneNumber는 <code>text{'+'99 999 999 9999}</code>에서 검증합니다.</li>
      <li>Type Custom은 기본 유효성 검사 패턴을 제공하지 않습니다. 마지막으로 선택한 전화 번호 유형의 값을 사용합니다. 사용자 고유의 유효성 확인 패턴을 지정할 수도 있습니다.</li>

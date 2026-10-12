@@ -65,7 +65,7 @@ Quickstart는 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다.
 
 #### Java™ 개발 {#java-development}
 
-* 이제 Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 [두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
+* 이제 Uberjar[&#128279;](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스가 포함된 버전이 있습니다.
 
 #### 사용자 인터페이스 {#user-interface}
 
@@ -242,7 +242,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 #### 론치 {#launches}
 
 * 론치에 대한 새로운 검토 및 승인 워크플로우 및 승인된 론치 페이지만 홍보하는 기능
-* 프로모션 단계[ 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* 프로모션 단계[&#x200B; 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
 #### 콘텐츠 타겟팅 및 시뮬레이션 {#content-targeting-simulation}
 

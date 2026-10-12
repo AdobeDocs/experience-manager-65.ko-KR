@@ -255,7 +255,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 >[!CAUTION]
 >
->페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 ](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
+>페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 &#x200B;](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
