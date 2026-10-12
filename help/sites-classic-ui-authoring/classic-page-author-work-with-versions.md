@@ -10,13 +10,22 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
 # 페이지 버전을 사용하여 작업{#working-with-page-versions}
 
 버전 관리를 통해 특정 시점의 페이지 “스냅샷”을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
@@ -170,8 +179,8 @@ ht-degree: 19%
 1. 문서의 타임라인을 따라 이동하려면 타임라인을 선택하고 이동(누른 채 드래그)합니다.
 
    * 모든 줄은 게시된 버전을 나타냅니다.
-페이지가 활성화되면 새 줄이 시작됩니다. 문서를 편집할 때마다 새 색상이 나타납니다.
-아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 중에 편집된 경우 등을 나타냅니다.
+     페이지가 활성화되면 새 줄이 시작됩니다. 문서를 편집할 때마다 새 색상이 나타납니다.
+     아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 중에 편집된 경우 등을 나타냅니다.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

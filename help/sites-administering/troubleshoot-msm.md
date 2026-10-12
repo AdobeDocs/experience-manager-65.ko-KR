@@ -5,13 +5,25 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '767'
 ht-degree: 81%
-
 ---
-
 # MSM 문제 해결 및 FAQ {#troubleshooting-msm}
 
 ## 문제 해결 첫 단계 {#first-steps}
@@ -28,14 +40,12 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 블루프린트 페이지에서 이를 사용하여 연결된 모든 Live Copy 목록을 추가 Live Copy 상태 정보와 함께 가져올 수 있습니다.
    * 예:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Live Copy 페이지에서 이를 사용하여 블루프린트 페이지와의 연결에 대한 고급 정보를 가져올 수 있습니다. 페이지가 Live Copy가 아닌 경우 아무것도 반환되지 않습니다.
    * 예:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 이들 서블릿은 `com.day.cq.wcm.msm` 로거를 통해 유용하게 사용할 수 있는 디버그 로그 메시지를 생성합니다.
@@ -45,17 +55,17 @@ MSM은 리소스 URL의 선택기를 통해 요청할 수 있는 여러 서블�
 이전 서블릿에서 MSM 관련 노드 및 믹스인을 기반으로 계산된 정보가 반환되었습니다. 이 정보는 다음과 같은 방법으로 저장소에 저장됩니다.
 
 * `cq:LiveSync` 믹스인 유형
-   * `jcr:content` 노드에 대해 설정되며 루트 Live Copy 페이지를 정의합니다.
-   * 해당 페이지에는 다음 속성을 통해 Live Copy에 대한 기본 및 필수 정보를 포함하는 `cq:LiveCopy` 유형의 `cq:LiveSyncConfig` 하위 노드가 있습니다.
-      * `cq:master`는 Live Copy의 블루프린트 페이지를 나타냅니다.
-      * `cq:rolloutConfigs`는 Live Copy에 적용되는 활성 롤아웃 구성을 나타냅니다.
-      * `cq:isDeep`은 이 루트 Live Copy 페이지의 하위 페이지가 Live Copy에 포함되어 있는 경우 true입니다.
+  * `jcr:content` 노드에 대해 설정되며 루트 Live Copy 페이지를 정의합니다.
+  * 해당 페이지에는 다음 속성을 통해 Live Copy에 대한 기본 및 필수 정보를 포함하는 `cq:LiveCopy` 유형의 `cq:LiveSyncConfig` 하위 노드가 있습니다.
+    * `cq:master`는 Live Copy의 블루프린트 페이지를 나타냅니다.
+    * `cq:rolloutConfigs`는 Live Copy에 적용되는 활성 롤아웃 구성을 나타냅니다.
+    * `cq:isDeep`은 이 루트 Live Copy 페이지의 하위 페이지가 Live Copy에 포함되어 있는 경우 true입니다.
 * `cq:LiveRelationship` 믹스인 유형
-   * 모든 Live Copy 페이지는 `jcr:content` 노드에 이러한 믹스인 유형이 있습니다.
-   * 그렇지 않은 경우 해당 페이지는 어느 시점에 Live Copy 작업(생성 또는 롤아웃) 외부에 있는 작성 인터페이스를 통해 분리되거나 수동으로 작성된 것입니다.
+  * 모든 Live Copy 페이지는 `jcr:content` 노드에 이러한 믹스인 유형이 있습니다.
+  * 그렇지 않은 경우 해당 페이지는 어느 시점에 Live Copy 작업(생성 또는 롤아웃) 외부에 있는 작성 인터페이스를 통해 분리되거나 수동으로 작성된 것입니다.
 * `cq:LiveSyncCancelled` 믹스인 유형
-   * 일시 중단되었던 Live Copy 페이지의 `jcr:content` 노드에 추가되었습니다.
-   * 일시 중단이 하위 페이지에도 적용되는 경우 `cq:isCancelledForChildren` 속성이 동일한 노드에 대해 true로 설정되어 있는 것입니다.
+  * 일시 중단되었던 Live Copy 페이지의 `jcr:content` 노드에 추가되었습니다.
+  * 일시 중단이 하위 페이지에도 적용되는 경우 `cq:isCancelledForChildren` 속성이 동일한 노드에 대해 true로 설정되어 있는 것입니다.
 
 이러한 속성에 있는 정보는 UI에 반영되어야 하지만 문제 해결 시 MSM 작업이 발생할 때 저장소에서 직접 MSM 동작을 관찰하는 것이 도움이 될 수 있습니다.
 

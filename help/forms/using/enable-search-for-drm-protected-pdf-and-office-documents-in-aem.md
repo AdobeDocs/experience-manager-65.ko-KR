@@ -1,6 +1,6 @@
 ---
 title: AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정
-description: DRM 보호 PDF 문서에서 전체 텍스트 검색을 수행할 수 있도록 기본 AEM 검색을 활성화하는 방법에 대해 알아봅니다.
+description: DRM으로 보호된 AEM 문서에 대해 전체 텍스트 검색을 수행할 수 있도록 기본 PDF 검색을 활성화하는 방법을 알아봅니다.
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,33 +9,46 @@ feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 1%
-
+source-wordcount: '687'
+ht-degree: 9%
 ---
-
 # AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
-Adobe Experience Manager은 AEM에 저장된 다양한 에셋을 검색하고 찾을 수 있는 사용자 인터페이스를 제공합니다. 기본 검색은 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식에 대해 텍스트 검색을 수행할 수 있습니다. DRM 보호 PDF 및 Microsoft Office 문서에 대한 전체 텍스트 검색을 수행하기 위해 기본 검색을 확장 및 활성화할 수도 있습니다.
+Adobe Experience Manager은 AEM에 저장된 다양한 에셋을 검색하고 찾을 수 있는 사용자 인터페이스를 제공합니다. 기본 검색은 AEM 에셋을 검색하고 찾고 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식에 대해 텍스트 검색을 수행할 수 있습니다. DRM으로 보호된 PDF 및 Microsoft Office 문서에서 전체 텍스트 검색을 수행하도록 기본 검색을 확장 및 활성화할 수도 있습니다.
 
 AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 하려면 다음 단계를 수행하십시오.
 
 ## 시작하기 전 {#before-you-start}
 
 * AEM Forms 문서 보안을 설치하고 구성합니다.
-* 허용 목록에 추가하다 패키지 sun.til.calendar를 **Serialization Firewall Configuration의 deserialization에 추가합니다.** 구성이 `https://'[server]:[port]'/system/console/configMgr`에 나열됩니다.
+* 패키지 sun.util.calendar를 **직렬화 방화벽 구성**&#x200B;의 deserialization에 추가합니다. 구성이 `https://'[server]:[port]'/system/console/configMgr`에 나열됩니다.
 * 모든 AEM 번들이 실행 중인지 확인합니다. 번들은 `https://'[server]:[port]'/system/console/bundles`에 나열됩니다. 모든 번들이 활성화되지 않은 경우 잠시 기다렸다가 몇 분 동안 번들 상태를 확인합니다.
 
 ## AEM Forms 워크플로 내에서 보안 연결 설정(JEE의 AEM Forms) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
 보안 연결을 통해 JEE의 AEM Forms과 동일한 서버에서 실행되는 OSGi 서비스 간에 정보가 원활하게 전달될 수 있습니다. 다음 방법 중 하나를 사용하여 보안 연결을 설정하십시오.
 
-* JEE 관리자 자격 증명에서 AEM Forms을 사용하여 AEM Forms 클라이언트 SDK 번들 구성
+* JEE 관리자 자격 증명에서 AEM Forms으로 AEM Forms 클라이언트 SDK 번들 구성
 * 상호 인증을 사용하여 AEM Forms 클라이언트 SDK 번들 구성
 
-### JEE 관리자 자격 증명에서 AEM Forms을 사용하여 AEM Forms 클라이언트 SDK 번들 구성 {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+### JEE 관리자 자격 증명에서 AEM Forms으로 AEM Forms 클라이언트 SDK 번들 구성 {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. AEM 구성 관리자를 열고 관리자로 로그인합니다. 기본 URL은 https://&lt;serverName>:&lt;port>/lc/system/console/configMgr입니다.
 1. AEM Forms 클라이언트 SDK 번들을 검색하여 엽니다. 다음 속성에 대한 값을 지정합니다.
@@ -65,7 +78,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
 
    >[!NOTE]
    >
-   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## 정책으로 보호된 샘플 PDF 또는 Microsoft Office 문서 색인화 {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

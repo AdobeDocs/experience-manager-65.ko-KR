@@ -10,13 +10,27 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2909'
 ht-degree: 9%
-
 ---
-
 # 페이지에 Dynamic Media Classic 기능 추가 {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=ko)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
@@ -31,15 +45,15 @@ Dynamic Media Classic에 게시된 Experience Manager 에셋을 다양한 뷰어
 
 Experience Manager에서 Dynamic Media Classic으로 직접 디지털 자산을 게시할 수 있으며 Dynamic Media Classic에서 Experience Manager으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 Experience Manager에서 Dynamic Media Classic으로 그리고 반대로 디지털 에셋을 게시하는 방법을 설명합니다. 또한 뷰어에 대한 자세한 설명이 제공됩니다. Dynamic Media Classic용 Experience Manager 구성에 대한 자세한 내용은 [Dynamic Media Classic과 Experience Manager 통합](/help/sites-administering/scene7.md)을 참조하십시오.
+이 문서에서는 디지털 에셋을 Experience Manager에서 Dynamic Media Classic으로 게시하고 반대로 게시하는 방법을 설명합니다. 또한 뷰어에 대한 자세한 설명이 제공됩니다. Dynamic Media Classic용 Experience Manager 구성에 대한 자세한 내용은 [Experience Manager과 Dynamic Media Classic 통합](/help/sites-administering/scene7.md)을 참조하십시오.
 
 [이미지 맵 추가](image-maps.md)도 참조하세요.
 
-Experience Manager에 비디오 구성 요소를 사용하는 방법에 대한 자세한 내용은 [비디오](video.md)를 참조하세요.
+Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내용은 [비디오](video.md)를 참조하십시오.
 
 >[!NOTE]
 >
->Dynamic Media Classic 자산이 제대로 표시되지 않으면 Dynamic Media이 [비활성화됨](config-dynamic.md#disabling-dynamic-media)인지 확인한 다음 페이지를 새로 고치십시오.
+>Dynamic Media Classic 에셋이 제대로 표시되지 않는 경우 Dynamic Media가 [비활성화](config-dynamic.md#disabling-dynamic-media)되어 있는지 확인한 후 페이지를 새로 고치십시오.
 
 ## 자산에서 Dynamic Media Classic에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
@@ -51,7 +65,7 @@ Experience Manager에 비디오 구성 요소를 사용하는 방법에 대한 �
 
 >[!NOTE]
 >
->Experience Manager은 비동기적으로 Dynamic Media Classic에 게시됩니다. **[!UICONTROL Publish]**&#x200B;을(를) 선택한 후 에셋을 Dynamic Media Classic에 게시하는 데 몇 초 정도 소요됩니다.
+>Experience Manager은 비동기적으로 Dynamic Media Classic에 게시합니다. **[!UICONTROL 게시]**&#x200B;를 선택한 후 에셋을 Dynamic Media Classic에 게시하는 데 몇 초 정도 소요됩니다.
 >
 
 ## Dynamic Media Classic 구성 요소 {#scene-components}
@@ -68,15 +82,15 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic 구성 요�
 >
 >이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 **[!UICONTROL 디자인]** 모드에서 선택해야 합니다.
 
-**[!UICONTROL 디자인]** 모드에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소와 같이 페이지에 구성 요소를 추가할 수 있습니다. Dynamic Media Classic에 아직 게시되지 않은 Assets은 동기화된 폴더 또는 페이지나 Dynamic Media Classic 클라우드 구성이 있는 경우 Dynamic Media Classic에 게시됩니다.
+**[!UICONTROL 디자인]** 모드에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다. Dynamic Media Classic에 아직 게시되지 않은 Assets은 동기화된 폴더 또는 페이지나 Dynamic Media Classic 클라우드 구성이 있는 경우 Dynamic Media Classic에 게시됩니다.
 
 >[!NOTE]
 >
 >사용자 지정 뷰어를 만들고 개발하면서 콘텐츠 파인더를 사용하는 경우 `allowfullscreen` 매개 변수를 명시적으로 추가해야 합니다.
 
-### Flash 뷰어 서비스 종료 알림 {#flash-viewers-end-of-life-notice}
+### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
-2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 종료했습니다.
+2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 중단했습니다.
 
 ### 페이지에 Dynamic Media Classic(Scene7) 구성 요소 추가 {#adding-a-scene-component-to-a-page}
 
@@ -111,7 +125,7 @@ Experience Manager에서 사용할 수 있는 Dynamic Media Classic 구성 요�
 
 **응답형 사이트에 대화형 보기 환경을 추가하려면:**
 
-1. Experience Manager에 로그인하고 [구성된 Adobe Dynamic Media Classic Cloud Service](/help/sites-administering/scene7.md#configuring-scene-integration)이 있고 Dynamic Media Classic 구성 요소를 사용할 수 있는지 확인하십시오.
+1. Experience Manager에 로그인하고 [구성된 Adobe Dynamic Media Classic Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration)가 있으며 Dynamic Media Classic 구성 요소를 사용할 수 있는지 확인하십시오.
 
    >[!NOTE]
    >
@@ -159,7 +173,7 @@ HTML5 **[!UICONTROL 플라이아웃]** 구성 요소에서 자산은 분할 화�
 
 ### 이미지 {#image}
 
-Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 Dynamic Media Classic 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Dynamic Media Classic 기능을 이미지에 추가할 수 있습니다. Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소는 특별한 Dynamic Media Classic 기능을 가진 Experience Manager의 다른 이미지 구성 요소와 비슷합니다. 이 예의 이미지에는 Dynamic Media Classic URL 수정자 `&op_invert=1`이(가) 적용되어 있습니다.
+Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 Dynamic Media Classic 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Dynamic Media Classic 기능을 이미지에 추가할 수 있습니다. Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소는 특별한 Dynamic Media Classic 기능이 있는 Experience Manager의 다른 이미지 구성 요소와 비슷합니다. 이 예의 이미지에는 Dynamic Media Classic URL 수정자 `&op_invert=1`이(가) 적용되어 있습니다.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -257,7 +271,7 @@ Dynamic Media Classic 비디오 구성 요소와 함께 응용 비디오 세트�
 
 ## Dynamic Media Classic 컨텐츠 브라우저 {#scene-content-browser}
 
-Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Dynamic Media Classic의 컨텐츠를 Experience Manager에서 바로 볼 수 있습니다. 컨텐츠 브라우저에 액세스하려면 **[!UICONTROL 컨텐츠 파인더]**&#x200B;의 터치에 적합한 사용자 인터페이스에서 **[!UICONTROL Dynamic Media Classic]**&#x200B;을(를) 선택하거나, 클래식 사용자 인터페이스에서 **[!UICONTROL S7]** 아이콘을 선택하십시오. 기능은 두 사용자 인터페이스 간에 동일합니다.
+Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Experience Manager에서 직접 Dynamic Media Classic의 컨텐츠를 볼 수 있습니다. 컨텐츠 브라우저에 액세스하려면 **[!UICONTROL 컨텐츠 파인더]**&#x200B;의 터치에 적합한 사용자 인터페이스에서 **[!UICONTROL Dynamic Media Classic]**&#x200B;을(를) 선택하거나, 클래식 사용자 인터페이스에서 **[!UICONTROL S7]** 아이콘을 선택하십시오. 기능은 두 사용자 인터페이스 간에 동일합니다.
 
 구성이 여러 개인 경우 기본적으로 Experience Manager은 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)을 표시합니다. Dynamic Media Classic 콘텐츠 브라우저의 드롭다운 메뉴에서 직접 다른 구성을 선택할 수 있습니다.
 
@@ -276,7 +290,7 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Dynamic Media Class
 
 터치에 적합한 UI 또는 클래식 UI에서 콘텐츠 브라우저에 액세스할 수 있습니다. 현재 터치에 적합한 는 다음과 같은 제한이 있습니다.
 
-* Dynamic Media Classic의 FXG 및 Flash 에셋은 지원되지 않습니다.
+* Dynamic Media Classic의 FXG 및 Flash 자산은 지원되지 않습니다.
 
 세 번째 드롭다운 메뉴에서 **[!UICONTROL Dynamic Media Classic]**&#x200B;을(를) 선택하여 Dynamic Media Classic 에셋을 찾아봅니다. Dynamic Media Classic/Experience Manager 통합을 구성하지 않은 경우 Dynamic Media Classic이 목록에 표시되지 않습니다.
 
@@ -309,7 +323,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 **[!UICONTROL 폴더/경로]** - 표시되는 폴더의 이름은 선택한 구성에 따라 다릅니다. 폴더 아이콘을 탭하고 하위 폴더를 선택하여 하위 수준으로 드릴다운한 다음 확인 표시를 탭하여 하위 폴더를 선택할 수 있습니다.
 
-키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더와 하위 폴더를 검색합니다. 그러나 검색할 때 키워드를 입력하지 않으면 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
+키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더 및 하위 폴더를 검색합니다. 그러나 검색할 때 키워드를 입력하지 않으면 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
 
 기본적으로 Experience Manager은 선택한 폴더 및 모든 하위 폴더를 검색합니다.
 
@@ -319,7 +333,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL 구성]** - [!UICONTROL Cloud Service]에 두 개 이상의 Dynamic Media Classic 구성이 정의되어 있는 경우 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
+**[!UICONTROL 구성]** - [!UICONTROL 클라우드 서비스]에 두 개 이상의 Dynamic Media Classic 구성이 정의되어 있는 경우 여기에서 선택할 수 있습니다. 따라서 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -335,6 +349,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더를 검색하게 되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 >
 
-**[!UICONTROL Publish 상태]** - 게시 상태: **[!UICONTROL 게시 취소됨]** 또는 **[!UICONTROL 게시됨]**&#x200B;을(를) 기준으로 자산을 필터링할 수 있습니다. **[!UICONTROL Publish 상태]**&#x200B;를 선택하지 않으면 기본적으로 Experience Manager은 모든 게시 상태를 검색합니다.
+**[!UICONTROL 게시 상태]** - 게시 상태: **[!UICONTROL 게시 취소됨]** 또는 **[!UICONTROL 게시됨]**&#x200B;을(를) 기준으로 자산을 필터링할 수 있습니다. **[!UICONTROL 게시 상태]**&#x200B;를 선택하지 않으면 기본적으로 Experience Manager은 모든 게시 상태를 검색합니다.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

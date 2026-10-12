@@ -1,5 +1,5 @@
 ---
-title: 양식 이벤트 추적 사용자 지정
+title: 양식 이벤트 추적 사용자 정의
 description: 사용자가 필드에서 60초 이상 시간을 보내는 경우 필드 방문 이벤트가 트리거되고 필드의 세부 정보가 Adobe SiteCatalyst으로 전송됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,30 @@ exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
-# 양식 이벤트 추적 사용자 지정 {#customizing-form-event-tracking}
+# 양식 이벤트 추적 사용자 정의 {#customizing-form-event-tracking}
 
 기본적으로 다음 이벤트는 Analytics가 활성화된 적응형 양식에서 추적됩니다.
 

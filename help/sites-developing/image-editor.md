@@ -1,6 +1,6 @@
 ---
 title: 이미지 편집기
-description: 이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
+description: 이미지 편집기는 AEM의 핵심 조각으로, 구성 요소에서 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 사용할 수 있습니다.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 9%
-
+source-wordcount: '322'
+ht-degree: 17%
 ---
-
 # 이미지 편집기{#image-editor}
 
-이미지 편집기는 AEM의 핵심 조각으로, 콘텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 구성 요소에서 사용할 수 있습니다.
+이미지 편집기는 AEM의 핵심 조각으로, 구성 요소에서 컨텐츠 작성자가 이미지를 쉽게 조작할 수 있도록 사용할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -47,7 +56,7 @@ ht-degree: 9%
 
 ## SVG 이미지 지원 {#support-for-svg-images}
 
-이미지 편집기에서 확장 가능한 벡터 그래픽(SVG)을 지원합니다.
+이미지 편집기에서 지원하는 확장 가능한 벡터 그래픽(SVG)
 
 * DAM에서의 SVG 자산 드래그 앤 드롭과 로컬 파일 시스템에서의 SVG 파일 업로드를 모두 지원합니다.
 
@@ -59,7 +68,7 @@ ht-degree: 9%
 
 ### 예 {#example}
 
-예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에 대해서만 허용되어야 한다고 가정해 보겠습니다.
+예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지에만 허용되어야 한다고 가정해 보겠습니다.
 
 그런 다음 `supportedMimeTypes` 속성을 이미지 구성 요소의 `cq:editConfig` 노드에 있는 플러그인의 구성 노드에서 허용된 MIME 형식의 문자열로 설정해야 합니다.
 

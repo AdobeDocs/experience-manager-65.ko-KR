@@ -10,13 +10,20 @@ role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
-
+source-wordcount: '1104'
+ht-degree: 1%
 ---
-
 # 고급 점수 및 배지{#advanced-scoring-and-badges}
 
 ## 개요 {#overview}
@@ -33,7 +40,7 @@ ht-degree: 0%
 
 * 기본 및 고급 채점 및 배지 규칙이 동일한 방식으로 [콘텐츠에 적용됨](/help/communities/implementing-scoring.md#apply-rules-to-content).
 
-   * 기본 및 고급 채점 및 배지 규칙이 동일한 콘텐츠에 적용될 수 있습니다.
+  * 기본 및 고급 채점 및 배지 규칙이 동일한 콘텐츠에 적용될 수 있습니다.
 
 * [구성 요소에 대한 배지를 사용](/help/communities/implementing-scoring.md#enable-badges-for-component)하는 것이 일반적입니다.
 
@@ -42,14 +49,14 @@ ht-degree: 0%
 * 구성 가능한 고급 채점 엔진
 * 고급 채점 규칙:
 
-   * `scoringType`이(가) `advanced`(으)로 설정됨
-   * `stopwords` 필요
+  * `scoringType`이(가) `advanced`(으)로 설정됨
+  * `stopwords` 필요
 
 * 고급 배지 규칙:
 
-   * `badgingType`이(가) `advanced`(으)로 설정됨
-   * `badgingLevels`을(를) **제공할 전문가 수준 수**(으)로 설정
-   * 임계값에 대한 배열 매핑 지점 대신 `badgingPaths` 배지 배열이 필요합니다.
+  * `badgingType`이(가) `advanced`(으)로 설정됨
+  * `badgingLevels`을(를) **제공할 전문가 수준 수**(으)로 설정
+  * 임계값에 대한 배열 매핑 지점 대신 `badgingPaths` 배지 배열이 필요합니다.
 
 >[!NOTE]
 >
@@ -66,7 +73,7 @@ ht-degree: 0%
   주제의 경우 점수를 계산할 때 가장 높은 우선 순위를 부여해야 하는 동사를 지정합니다. 하나 이상의 주제를 입력할 수 있지만 **주제당 하나의 동사**&#x200B;로 제한됩니다. [주제 및 동사](/help/communities/implementing-scoring.md#topics-and-verbs)를 참조하세요.
 쉼표가 이스케이프된 `topic,verb`(으)로 입력되었습니다. 예:
   `/social/forum/hbs/social/forum\,ADD`
-기본값은 QnA 및 포럼 구성 요소의 ADD 동사로 설정되어 있습니다.
+  기본값은 QnA 및 포럼 구성 요소의 ADD 동사로 설정되어 있습니다.
 
 * **채점 범위**
 
@@ -148,7 +155,7 @@ ht-degree: 0%
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(선택 사항)</em> 나열된 하나 이상의 채점 규칙에 의해 식별된 채점 이벤트로 배지 규칙을 제한하는 다중 값 문자열입니다.<br /> 예제 항목:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
+   <td><em>(선택 사항)</em> 하나 이상의 채점 규칙에 의해 식별된 채점 이벤트로 배지 규칙을 제한하는 다중 값 문자열입니다.<br /> 예제 항목:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
   </tr>
  </tbody>
 </table>
@@ -215,6 +222,6 @@ Beta 릴리스에는 [포럼 기능](/help/communities/functions.md#forum-functi
 
 **메모:**
 
-* `rules`개 노드가 cq:Page 유형입니다.
+* `rules`개의 노드가 cq:Page 유형입니다.
 * `rules`은(는) 모든 사용자에 대한 읽기 권한이 있는 저장소 위치에 있어야 합니다.
 * 규칙 이름은 위치에 관계없이 고유해야 합니다.

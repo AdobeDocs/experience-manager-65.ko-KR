@@ -1,5 +1,5 @@
 ---
-title: JSON 형식으로 페이지 정보 가져오기
+title: JSON 형식으로 페이지 정보 얻기
 description: 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
-
+source-wordcount: '953'
+ht-degree: 3%
 ---
-
-# JSON 형식으로 페이지 정보 가져오기{#obtaining-page-information-in-json-format}
+# JSON 형식으로 페이지 정보 얻기{#obtaining-page-information-in-json-format}
 
 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다.
 
@@ -28,7 +37,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->기존 AEM 웹 페이지가 아닌 채널에 콘텐츠 전달을 제공하기 위해 JSON 형식의 페이지 정보가 필요한 경우:
+>다음과 같이 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠 전달을 제공하기 위해 JSON 형식의 페이지 정보가 필요한 경우:
 >
 >* SPA (Single Page Applications)
 >* 기본 모바일 애플리케이션
@@ -514,7 +523,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 프로젝트 소스에서 서비스를 구성하려면 다음 작업을 수행하십시오.
 
-1. 프로젝트 소스에서 AEM 애플리케이션에 대한 구성 폴더를 찾거나 만듭니다.
+1. 프로젝트 소스에서 AEM 애플리케이션의 구성 폴더를 찾거나 만듭니다.
 
    예를 들어 Content Package Maven Plugin의 multimodule 원형을 사용하여 프로젝트를 만든 경우 폴더 경로는 `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`입니다.
 1. 구성 폴더에서 com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml이라는 텍스트 파일을 만듭니다
@@ -601,7 +610,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-다음 예제의 CRXDE Lite에서는 PageUrlInfoProvider 서비스를 사용하도록 구성된 페이지 구성 요소를 보여 줍니다.
+CRXDE Lite에서 다음 예제는 PageUrlInfoProvider 서비스를 사용하도록 구성된 페이지 구성 요소를 보여 줍니다.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

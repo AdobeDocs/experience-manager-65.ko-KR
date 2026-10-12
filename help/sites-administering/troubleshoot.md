@@ -10,13 +10,22 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
-
+source-wordcount: '553'
+ht-degree: 1%
 ---
-
 # Adobe Experience Manager 문제 해결 {#troubleshooting-aem}
 
 다음 섹션에서는 AEM(Adobe Experience Manager)를 사용할 때 발생할 수 있는 몇 가지 문제와 그 해결 방법에 대한 제안을 다룹니다.
@@ -108,7 +117,7 @@ ht-degree: 2%
 AEM WCM에 대한 기능이 개발되면 JCR 세션을 열 수 있습니다(데이터베이스 연결을 여는 것과 비슷함). 열려 있는 세션이 닫히지 않으면 시스템에 다음과 같은 증상이 나타날 수 있습니다.
 
 * 시스템이 느려집니다.
-* CacheManager의 대부분을 볼 수 있습니다. resize로그 파일의 모든 항목을 표시합니다. 다음 숫자(size=&lt;x>)는 캐시 수를 보여주며, 각 세션은 여러 개의 캐시를 엽니다.
+* CacheManager: resizeAll 항목이 로그 파일에 있습니다. 이 값은 다음 숫자입니다(크기=&lt;x>) shows the number of caches, each session opens several caches.).
 * 때때로 시스템에서 메모리가 부족합니다(심각도에 따라 몇 시간, 며칠 또는 몇 주 후).
 
 닫히지 않은 세션 분석을 시작하려면 기술 자료 문서 [닫히지 않은 리소스 확인자](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23761)를 참조하세요.

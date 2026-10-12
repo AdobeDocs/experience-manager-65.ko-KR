@@ -10,18 +10,25 @@ exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 1%
-
+source-wordcount: '1249'
+ht-degree: 0%
 ---
-
 # 포럼 기능{#forum-feature}
 
 ## 소개 {#introduction}
 
-포럼 기능은 Publish 환경의 로그인한 사이트 방문자(커뮤니티 구성원)가 다음 작업을 수행할 수 있는 영역을 제공합니다.
+포럼 기능은 게시 환경의 로그인한 사이트 방문자(커뮤니티 구성원)를 위한 영역을 다음과 같이 제공합니다.
 
 * 주제 만들기
 * 주제 보기 및 회신

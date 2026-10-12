@@ -10,18 +10,27 @@ feature: Administering
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '626'
 ht-degree: 0%
-
 ---
-
 # AEM 6.4의 RDBMS 지원{#rdbms-support-in-aem}
 
 ## 개요 {#overview}
 
-AEM의 관계형 데이터베이스 지속성 지원은 문서 마이크로커널을 사용하여 구현됩니다. Document Microkernel은 MongoDB 지속성을 구현하는 데에도 사용되는 기초이다.
+AEM에서 관계형 데이터베이스 지속성에 대한 지원은 Document Microkernel을 사용하여 구현됩니다. Document Microkernel은 MongoDB 지속성을 구현하는 데에도 사용되는 기초이다.
 
 Mongo Java API를 기반으로 하는 Java API로 구성되어 있습니다. BlobStore API 구현도 제공됩니다. 기본적으로 블롭은 데이터베이스에 저장됩니다.
 
@@ -43,7 +52,7 @@ AEM의 관계형 데이터베이스 지원 수준에 대한 자세한 내용은 
 
 JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이트에서 이 [설명서](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle)를 참조하십시오.
 
-번들이 준비되면 아래 단계에 따라 RDB 지속성을 사용하여 AEM을 구성합니다.
+번들이 준비되면 아래 단계에 따라 RDB 지속성을 가진 AEM을 구성합니다.
 
 1. 데이터베이스 데몬이 시작되었고 AEM에서 사용할 활성 데이터베이스가 있는지 확인합니다.
 1. AEM 6.3 jar를 설치 디렉토리에 복사합니다.
@@ -60,7 +69,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이�
    >
    >지원되는 각 데이터베이스의 데이터 원본 구성에 대한 자세한 내용은 [데이터 Source 구성 옵션](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)을 참조하십시오.
 
-1. 다음으로 AEM에 사용할 JDBC OSGi 번들을 준비합니다.
+1. 그런 다음 AEM에 사용할 JDBC OSGi 번들을 준비합니다.
 
    1. `crx-quickstart/install` 폴더에서 `9` 폴더를 만듭니다.
 
@@ -84,11 +93,11 @@ JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이�
 
 * `driverClassName:` JDBC 드라이버 클래스 이름입니다. 이는 사용하려는 데이터베이스와 해당 데이터베이스에 연결하는 데 필요한 드라이버에 따라 달라집니다. 다음은 AEM에서 지원하는 모든 데이터베이스의 클래스 이름입니다.
 
-   * PostgreSQL용 `org.postgresql.Driver`;
-   * DB2용 `com.ibm.db2.jcc.DB2Driver`;
-   * oracle에 대한 `oracle.jdbc.OracleDriver`
-   * MySQL 및 MariaDB용 `com.mysql.jdbc.Driver`(실험용);
-   * Microsoft SQL Server용 c `om.microsoft.sqlserver.jdbc.SQLServerDriver`(실험용).
+  * PostgreSQL용 `org.postgresql.Driver`;
+  * DB2용 `com.ibm.db2.jcc.DB2Driver`;
+  * Oracle용 `oracle.jdbc.OracleDriver`;
+  * MySQL 및 MariaDB용 `com.mysql.jdbc.Driver`(실험용);
+  * Microsoft SQL Server용 c `om.microsoft.sqlserver.jdbc.SQLServerDriver`(실험용).
 
 * `username:` 데이터베이스가 실행되는 사용자 이름입니다.
 
@@ -96,16 +105,16 @@ JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이�
 
 ### URL 문자열 형식 {#url-string-formats}
 
-데이터 소스 구성에서는 사용해야 하는 데이터베이스 유형에 따라 다른 URL 문자열 형식이 사용됩니다. 다음은 AEM이 현재 지원하는 데이터베이스의 형식 목록입니다.
+데이터 소스 구성에서는 사용해야 하는 데이터베이스 유형에 따라 다른 URL 문자열 형식이 사용됩니다. 다음은 AEM에서 현재 지원하는 데이터베이스의 형식 목록입니다.
 
 * PostgreSQL용 `jdbc:postgresql:databasename`;
 * DB2용 `jdbc:db2://localhost:port/databasename`;
-* oracle에 대한 `jdbc:oracle:thin:localhost:port:SID`
+* Oracle용 `jdbc:oracle:thin:localhost:port:SID`;
 * MySQL 및 MariaDB용 `jdbc:mysql://localhost:3306/databasename`(실험용);
 * Microsoft SQL Server용 `jdbc:sqlserver://localhost:1453;databaseName=name`(실험용).
 
 ## 알려진 제한 사항 {#known-limitations}
 
-RDBMS 지속성에 의해 단일 데이터베이스와 함께 여러 AEM 인스턴스의 동시 사용이 지원되지만 동시 설치는 지원되지 않습니다.
+RDBMS 지속성에 의해 단일 데이터베이스와 여러 AEM 인스턴스의 동시 사용이 지원되지만 동시 설치는 지원되지 않습니다.
 
 이 문제를 해결하려면 먼저 단일 멤버로 설치를 실행하고 첫 번째 멤버 설치가 완료된 후 다른 멤버를 추가해야 합니다.

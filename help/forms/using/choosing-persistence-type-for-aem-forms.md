@@ -9,13 +9,27 @@ role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
-
+source-wordcount: '373'
+ht-degree: 6%
 ---
-
 # AEM Forms 설치를 위한 지속성 유형 선택 {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 지속성 유형을 현명하게 선택하십시오. 효율적이고 확장 가능한 AEM Forms 환경을 구축하는 데 도움이 됩니다.
@@ -57,7 +71,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)에 설명된 사용 사례를 제외하고, 작성자 및 Publish 인스턴스 모두에 대해 TarMK를 모든 AEM Forms 배포 시나리오의 기본 지속성 기술로 적극 권장합니다.
+TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)에 설명된 사용 사례를 제외하고 작성자 및 게시 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 적극 권장합니다.
 
 지원되는 마이크로커널 목록은 [OSGi 기술 요구 사항에 대한 AEM Forms](/help/sites-deploying/technical-requirements.md) 또는 [JEE에서 지원되는 플랫폼 조합에 대한 AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md)를 참조하십시오.
 
