@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
-
 ---
-
 # 적응형 양식 캐시 구성 {#configure-adaptive-forms-cache}
 
 캐시는 데이터 액세스 시간을 단축하고 지연 시간을 줄이며 입출력 속도를 향상시키는 메커니즘입니다. 적응형 양식 캐시는 미리 채워진 데이터를 저장하지 않고 적응형 양식의 HTML 콘텐츠 및 JSON 구조만 저장합니다. 클라이언트에서 적응형 양식을 렌더링하는 데 필요한 시간을 줄이는 데 도움이 됩니다. 특히 적응형 양식을 위해 디자인되었습니다.
@@ -51,10 +67,10 @@ ht-degree: 3%
 * 사용자 지정 구성 요소를 개발하는 동안 개발에 사용되는 서버에서 적응형 양식 캐시를 비활성화 상태로 유지합니다.
 * 확장명이 없는 URL은 캐시되지 않습니다. 예를 들어 패턴이 `/content/forms/[folder-structure]/[form-name].html`인 URL이 캐시되고 캐싱은 패턴이 `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`인 URL을 무시합니다. 따라서 캐싱의 이점을 활용하려면 확장과 함께 URL을 사용하십시오.
 * 현지화된 적응형 양식에 대한 고려 사항:
-   * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html`을(를) 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 대신 지역화된 버전의 적응형 양식을 요청하세요.
-   * `http://host:port/content/forms/af/<adaptivefName>.html` 형식의 URL에 대해 [브라우저 로캘을 사용하지 않도록 설정](supporting-new-language-localization.md#how-localization-of-adaptive-form-works).
-   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하지 않도록 설정한 경우 지역화되지 않은 버전의 적응형 양식이 제공됩니다. 현지화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며 현지화되지 않은 버전의 적응형 양식이 제공됩니다.
-   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-insatnce-of-adptive-forms-is-cached)을 참조하세요.
+  * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html`을(를) 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 대신 지역화된 버전의 적응형 양식을 요청하세요.
+  * `http://host:port/content/forms/af/<adaptivefName>.html` 형식의 URL에 대해 [브라우저 로캘을 사용하지 않도록 설정](supporting-new-language-localization.md#how-localization-of-adaptive-form-works).
+  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하지 않도록 설정한 경우 지역화되지 않은 버전의 적응형 양식이 제공됩니다. 현지화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며 현지화되지 않은 버전의 적응형 양식이 제공됩니다.
+  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-insatnce-of-adptive-forms-is-cached)을 참조하세요.
 
 ### Dispatcher에서 캐싱 활성화
 

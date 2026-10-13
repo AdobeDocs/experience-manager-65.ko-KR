@@ -4,13 +4,19 @@ description: 범용 편집기의 유연성과 AEM 6.5를 활용하여 헤드리�
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 96%
-
 ---
-
 
 # 범용 편집기 {#universal-editor}
 
@@ -40,15 +46,15 @@ ht-degree: 96%
 범용 편집기는 다음 환경에서 지원됩니다.
 
 * AEM 6.5
-   * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
+  * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
+  * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 이 문서는 AEM 6.5의 범용 편집기 지원에 중점을 두고 있습니다. AEM 6.5에서 범용 편집기를 사용하려면 다음이 필요합니다.
 
 * 서비스 팩 23 이상이 포함된 AEM 6.5
-   * 서비스 팩 21과 22도 [기능 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)과 함께 지원됩니다.
+  * 서비스 팩 21과 22도 [기능 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)과 함께 지원됩니다.
 * 올바르게 구성된 Dispatcher
 
 >[!NOTE]
@@ -129,11 +135,11 @@ ht-degree: 96%
 매핑 예:
 
 * AEM 작성자에서 `/content/foo` 아래의 모든 페이지를 엽니다.
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * 이렇게 하면 `https://localhost:4502/content/foo/x.html?login-token=<token>`이 열립니다.
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * 이렇게 하면 `https://localhost:4502/content/foo/x.html?login-token=<token>`이 열립니다.
 * 원격 NextJS 서버에서 `/content/bar` 아래의 모든 페이지를 열고 모든 변수를 정보로 제공합니다.
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * 이렇게 하면 `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`이 열립니다.
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * 이렇게 하면 `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`이 열립니다.
 
 ### 범용 편집기 서비스 설정 {#set-up-ue}
 

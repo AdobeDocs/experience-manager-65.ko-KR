@@ -10,13 +10,27 @@ mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: cb04d42d-1b70-43b0-9951-45998eb6e842
+    internal-label: Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1606'
 ht-degree: 16%
-
 ---
-
 # 비디오 {#video}
 
 Adobe Experience Manager Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 Assets으로 직접 비디오를 업로드하고, 페이지 작성을 위해 Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
@@ -36,7 +50,7 @@ Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비�
 
 Dynamic Media Classic 통합을 활성화하고 구성해도 바로 사용 가능한 DAM 수집 워크플로우에서 이러한 두 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. Adobe Experience Manager에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 DAM을 사용하여 수집된 새 비디오는 FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번, 총 두 번 인코딩됩니다.
 
-Experience ManagerAdobe 의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 DAM 수집 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
+Experience Manager의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 DAM 수집 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
 
 ## 지원되는 형식 {#supported-formats}
 
@@ -54,17 +68,17 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 이러한 질문 중 하나 또는 둘 다에 대해 &quot;예&quot;라고 대답한 경우 비디오를 Adobe DAM에 직접 업로드하십시오. 두 질문에 대한 답변이 모두 &quot;아니요&quot;이면 비디오를 Dynamic Media Classic에 직접 업로드하십시오. 각 시나리오에 대한 워크플로우는 다음 섹션에 설명되어 있습니다.
 
-### 비디오를 Adobe DAM에 직접 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Adobe DAM에 직접 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-에셋에 대한 워크플로우나 버전 관리가 필요한 경우 먼저 Adobe DAM에 업로드합니다. 다음은 권장되는 워크플로우입니다.
+자산에 대한 워크플로우나 버전 관리가 필요한 경우 먼저 Adobe DAM에 업로드합니다. 다음은 권장되는 워크플로입니다.
 
-1. 비디오 에셋을 Adobe DAM에 업로드하고 자동으로 인코딩한 후 Dynamic Media Classic에 게시합니다.
+1. 비디오 자산을 Adobe DAM에 업로드하고 자동으로 인코딩한 후 Dynamic Media Classic에 게시합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL 동영상]** 탭에서 WCM의 비디오 자산에 액세스합니다.
-1. **[!UICONTROL Scene7 Video]** 또는 **[!UICONTROL Foundation Video]** 구성 요소가 있는 작성자.
+1. **[!UICONTROL Scene7 비디오]** 또는 **[!UICONTROL Foundation 비디오]** 구성 요소가 있는 작성자입니다.
 
 ### Dynamic Media Classic에 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-to-scene}
 
-에셋에 대해 워크플로우나 버전 관리가 필요하지 않은 경우 에셋을 Scene7에 업로드합니다. 다음은 권장되는 워크플로우입니다.
+자산에 대해 워크플로우나 버전 관리가 필요하지 않은 경우 자산을 Scene7에 업로드합니다. 다음은 권장되는 워크플로입니다.
 
 1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-files-using-via-ftp)합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
@@ -72,14 +86,14 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 ## Scene7 비디오와의 통합 구성 {#configuring-integration-with-scene-video}
 
-1. **[!UICONTROL Cloud Service]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 클라우드 서비스]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동하여 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
 
    >[!NOTE]
    >
-   >페이지에 클라우드 구성이 없으면 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
+   >페이지에 클라우드 구성이 없는 경우 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
 
 1. 응용 비디오 인코딩 프로필, 곧바로 사용 가능한 단일 비디오 인코딩 프로필 또는 사용자 지정 비디오 인코딩 프로필을 선택합니다.
 
@@ -93,26 +107,26 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 ## 뷰어 및 인코딩 사전 설정 업데이트 {#updating-viewer-and-encoding-presets}
 
-Scene7에서 사전 설정이 업데이트되었기 때문에 비디오의 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동하여 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 선택합니다.
+Scene7에서 사전 설정이 업데이트되었기 때문에 비디오의 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 선택합니다.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Adobe DAM에서 Scene7으로 기본 소스 비디오 업로드 {#uploading-your-master-video}
+## Adobe DAM에서 Scene7로 기본 소스 비디오 업로드 {#uploading-your-master-video}
 
 1. Scene7 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. 기본 소스 비디오를 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 선택하십시오. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Scene7으로 Publish]**&#x200B;에 확인 표시가 있으면 비디오 업로드 및 인코딩이 완료됩니다.
+1. 기본 소스 비디오를 업로드하려면 **[!UICONTROL 업로드]**&#x200B;를 선택하십시오. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Scene7에 게시]**&#x200B;에 확인 표시가 있으면 비디오 업로드 및 인코딩이 완료됩니다.
 
    >[!NOTE]
    >
    >비디오 썸네일을 생성하는 데 시간이 걸립니다.
 
-   DAM 기본 소스 비디오를 비디오 구성 요소로 드래그하면 전달을 위해 *모두*&#x200B;개의 Scene7 인코딩 프록시 표현물에 액세스할 수 있습니다.
+   DAM 기본 소스 비디오를 비디오 구성 요소로 드래그하면 전달을 위해 *모두* Scene7 인코딩 프록시 표현물에 액세스할 수 있습니다.
 
 ## 기본 비디오 구성 요소와 Scene7 비디오 구성 요소 {#foundation-video-component-versus-scene-video-component}
 
 Experience Manager을 사용하는 경우 Sites에서 사용할 수 있는 비디오 구성 요소와 Scene7 비디오 구성 요소 모두에 액세스할 수 있습니다. 이러한 구성 요소는 서로 바꿔서 사용할 수 없습니다.
 
-Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기초 구성 요소는 Experience Manager(ffmpeg 사용) 및 Scene7 비디오에서 저장된 비디오에서 작동합니다.
+Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기본 구성 요소는 Experience Manager(ffmpeg 사용) 및 Scene7 비디오에서 저장된 비디오와 함께 작동합니다.
 
 다음 매트릭스에서는 구성 요소를 사용할 시기를 설명합니다.
 
@@ -120,7 +134,7 @@ Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기초
 
 >[!NOTE]
 >
->기본적으로 S7 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Scene7에서 기본 제공 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
+>기본적으로 S7 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Scene7에서 곧바로 사용할 수 있는 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
 
 ## Experience Manager 비디오 구성 요소 {#aem-video-component}
 
@@ -128,12 +142,12 @@ Scene7 비디오 구성 요소를 사용하는 것이 Scene7 비디오를 보는
 
 ### Experience Manager 비디오 및 Scene7 비디오 비교 {#aem-video-and-scene-video-comparison}
 
-다음 표에서는 Experience Manager 파운데이션 비디오 구성 요소와 Scene7 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교해서 설명합니다.
+다음 표에서는 Experience Manager Foundation 비디오 구성 요소와 Scene7 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교해서 설명합니다.
 
-|   | Experience Manager 파운데이션 비디오 | Scene7 비디오 |
+|   | Experience Manager Foundation 비디오 | Scene7 비디오 |
 |---|---|---|
-| 접근 방식 | HTML5 첫 번째 접근 방식. Flash은 비 HTML5 폴백에만 사용됩니다. | 대부분의 데스크탑에서 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
-| 제공 | 점진적 | 적응형 스트리밍 |
+| 접근법 | HTML5 첫 번째 접근 방식. Flash는 HTML5 이외 대체 요소에만 사용됩니다. | 대부분의 데스크톱에서 플래시를 사용합니다. HTML5는 모바일 및 태블릿에 사용됩니다. |
+| 게재 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
 | 확장성 | 예 | 아니요 |
 | 모바일 비디오 | 예 | 예 |
@@ -179,7 +193,7 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 >디자인을 변경하려면 디자인을 활성화해야 게시에서 적용됩니다.
 
 1. **[!UICONTROL 기초 비디오]** 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL 프로필]** 탭으로 변경합니다. 그런 다음 기본 제공 프로필을 삭제하고 새 S7 비디오 프로필을 추가합니다. 렌더링 시 디자인 대화 상자의 프로필 목록 순서는 비디오 소스 요소의 순서를 정의합니다.
-1. HTML 5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소 디자인 대화 상자를 열고 **[!UICONTROL Flash]** 탭으로 변경합니다. Flash 플레이어 설정을 구성하고 Flash 플레이어에 대한 대체 프로필을 할당합니다.
+1. HTML5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소 디자인 대화 상자를 열고 **[!UICONTROL Flash]** 탭으로 변경합니다. Flash 플레이어 설정을 구성하고 Flash 플레이어에 대한 대체 프로필을 할당합니다.
 
 #### 체크리스트 {#checklist}
 

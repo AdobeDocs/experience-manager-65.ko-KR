@@ -9,13 +9,27 @@ exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1032'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1043'
+ht-degree: 98%
 ---
-
 # EMC Documentum용 커넥터 구성 {#configuring-connector-for-emc-documentum}
 
 >[!NOTE]
@@ -28,7 +42,7 @@ EMC Documentum용 커넥터를 설정하려면 서버 연결과 저장소 자격
 
 >[!NOTE]
 >
->이전 릴리스에서는 자산을 ECM 저장소에 저장할 수 있었습니다. 현재 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM Forms 저장소로 자산을 마이그레이션하는 작업은 AEM Forms를 업그레이드할 때 수행됩니다. 자세한 내용은 애플리케이션 서버의 AEM Forms 업그레이드 안내서를 참조하십시오.
+>이전 릴리스에서는 자산을 ECM 저장소에 저장할 수 있었습니다. 현재 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 제공자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM Forms 저장소로 자산을 마이그레이션하는 작업은 AEM Forms를 업그레이드할 때 수행됩니다. 자세한 내용은 애플리케이션 서버의 AEM Forms 업그레이드 안내서를 참조하십시오.
 
 ## 서버 연결 구성 {#configuring-the-server-connection}
 
@@ -52,8 +66,8 @@ EMC Documentum용 커넥터를 설정하려면 서버 연결과 저장소 자격
 
 잘못된 사용자 이름 또는 암호를 입력하면 서비스가 현재 실행 중인지 여부에 따라 다음과 같은 결과가 표시됩니다.
 
-* EMC Documentum 저장소 공급자 서비스와 EMC Documentum 콘텐츠 저장소 커넥터 서비스가 모두 중지된 경우 서비스 구성 정보를 저장하면 오류가 나타나지 않습니다. 하지만 다음에 서비스를 시작하면 예외가 발생하고 서비스가 시작되지 않습니다.
-* EMC Documentum 저장소 공급자 서비스 또는 EMC Documentum 콘텐츠 저장소 커넥터 서비스가 시작된 경우 서비스 구성 정보를 저장하면 해당 서비스에서 즉시 자격 증명 정보의 유효성을 검사하려고 시도합니다. 이 경우 오류가 발생하고 구성 정보가 저장되지 않습니다.
+* EMC Documentum 저장소 제공자 서비스와 EMC Documentum 콘텐츠 저장소 커넥터 서비스가 모두 중지된 경우 서비스 구성 정보를 저장하면 오류가 나타나지 않습니다. 하지만 다음에 서비스를 시작하면 예외가 발생하고 서비스가 시작되지 않습니다.
+* EMC Documentum 저장소 제공자 서비스 또는 EMC Documentum 콘텐츠 저장소 커넥터 서비스가 시작된 경우 서비스 구성 정보를 저장하면 해당 서비스에서 즉시 자격 증명 정보의 유효성을 검사하려고 시도합니다. 이 경우 오류가 발생하고 구성 정보가 저장되지 않습니다.
 
 1. 관리 콘솔에서 서비스 > EMC Documentum용 커넥터 > 구성 설정을 클릭합니다.
 1. Documentum 주체 자격 증명 정보 영역에서 슈퍼 관리자 권한이 있는 사용자의 사용자 이름 및 암호를 입력합니다.
@@ -62,7 +76,7 @@ EMC Documentum용 커넥터를 설정하려면 서버 연결과 저장소 자격
 
 ### 저장소 서비스 공급자 변경 {#change-the-repository-service-provider}
 
-Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습니다. 저장소 서비스 호출은 사용자가 구성한 공급자에게 위임됩니다. 다음 옵션을 사용할 수 있습니다.
+Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습니다. 저장소 서비스 호출은 구성한 제공자에게 위임됩니다. 다음 옵션을 사용할 수 있습니다.
 
 **현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름입니다.
 
@@ -72,7 +86,7 @@ Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습
 
 >[!NOTE]
 >
->나열된 저장소 서비스 공급자가 아닌 다른 공급자를 선택하려면 애플리케이션 및 서비스 > 서비스 관리에서 RepositoryService를 구성하십시오. <!-- Fix broken link (See Managing Services) -->
+>나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 응용 프로그램 및 서비스 > 서비스 관리에서 RepositoryService를 구성합니다. <!-- Fix broken link (See Managing Services) -->.
 
 1. 관리 콘솔에서 서비스 > EMC Documentum용 커넥터 > 구성 설정을 클릭합니다.
 1. 저장소 서비스 공급자 정보 영역에서 대체 저장소 서비스 공급자를 선택합니다.

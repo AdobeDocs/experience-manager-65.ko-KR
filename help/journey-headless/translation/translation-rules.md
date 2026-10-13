@@ -5,13 +5,37 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '845'
 ht-degree: 91%
-
 ---
-
 # 번역 규칙 구성 {#configure-translation-rules}
 
 번역 규칙을 정의하여 번역할 콘텐츠를 식별하는 방법에 대해 알아봅니다.
@@ -36,14 +60,14 @@ AEM Headless 번역 여정의 이전 문서인 [번역 통합 구성](configure-
 
 Headless 조각을 나타내는 콘텐츠 조각에는 구조화된 필드로 구성되는 다양한 정보가 포함될 수 있습니다. 프로젝트 요구 사항에 따라 콘텐츠 조각 내의 일부 필드만 번역할 수도 있습니다.
 
-번역 규칙은 번역 프로젝트에 포함되어 있거나 번역 프로젝트에서 제외된 콘텐츠를 식별합니다. 콘텐츠가 번역되면 AEM은 이러한 규칙에 따라 콘텐츠를 추출하거나 수집합니다. 이러한 방식으로 번역해야 하는 콘텐츠만 번역 서비스로 전송할 수 있습니다.
+번역 규칙은 번역 프로젝트에 포함되어 있거나 번역 프로젝트에서 제외된 콘텐츠를 식별합니다. 콘텐츠가 번역되면 AEM은 이러한 규칙에 따라 콘텐츠를 추출하거나 수집합니다. 이러한 방식으로 번역해야 하는 콘텐츠만 번역 서비스로 전송됩니다.
 
 번역 규칙에는 다음과 같은 정보가 포함됩니다.
 
 * 규칙이 적용되는 콘텐츠의 경로
-   * 규칙은 콘텐츠의 하위 항목에도 적용됩니다.
+  * 규칙은 콘텐츠의 하위 항목에도 적용됩니다.
 * 번역할 콘텐츠가 포함된 속성의 이름
-   * 속성은 특정 리소스 타입 또는 모든 리소스 타입에 한정될 수 있습니다.
+  * 속성은 특정 리소스 타입 또는 모든 리소스 타입에 한정될 수 있습니다.
 
 콘텐츠 조각 구조를 정의하는 콘텐츠 조각 모델은 자체 프로젝트에 고유하므로 AEM이 번역할 콘텐츠 모델의 요소를 파악할 수 있도록 번역 규칙을 설정해야 합니다.
 

@@ -9,18 +9,29 @@ exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 2%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
 # AEM Brackets 확장{#aem-brackets-extension}
 
 ## 개요 {#overview}
 
-AEM Brackets 확장은 AEM 구성 요소 및 클라이언트 라이브러리를 편집하는 매끄러운 워크플로를 제공하며 코드 편집기 내에서 Photoshop 파일 및 레이어에 액세스할 수 있는 [Brackets](https://brackets.io/) 코드 편집기의 기능을 사용합니다. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)를 통해 개발자 효율성을 높이고 AEM 지식이 제한된 프론트엔드 개발자가 프로젝트에 참여할 수 있습니다. 또한 이 확장은 [HTL(HTML 템플릿 언어)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에 대한 일부 지원도 제공하므로 JSP의 복잡성을 제거하여 구성 요소를 보다 쉽고 안전하게 개발할 수 있습니다.
+AEM Brackets 확장은 AEM 구성 요소 및 클라이언트 라이브러리를 편집하는 매끄러운 워크플로를 제공하며 코드 편집기 내에서 Photoshop 파일 및 레이어에 대한 액세스 권한을 제공하는 [Brackets](https://brackets.io/) 코드 편집기의 기능을 사용합니다. 확장에서 제공하는 간편한 동기화(Maven 또는 File Vault 필요 없음)를 통해 개발자 효율성을 높이고 AEM 지식이 제한된 프론트엔드 개발자가 프로젝트에 참여할 수 있습니다. 또한 이 확장은 [HTL(HTML Template Language)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에 대한 일부 지원을 제공하므로 JSP의 복잡성을 제거하여 구성 요소를 보다 쉽고 안전하게 개발할 수 있습니다.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -33,10 +44,10 @@ AEM Brackets Extension의 주요 기능은 다음과 같습니다.
 * 프로젝트의 전체 콘텐츠 패키지 동기화.
 * 표현식 및 `data-sly-*` 블록 문에 대한 HTL 코드 완료입니다.
 
-또한 Brackets에는 AEM 프론트엔드 개발자에게 유용한 기능이 많이 포함되어 있습니다.
+또한 Brackets에는 AEM 프론트엔드 개발자에게 유용한 여러 기능이 포함되어 있습니다.
 
 * Photoshop 파일은 레이어, 측정, 색상, 글꼴, 텍스트 등과 같은 PSD 파일에서 정보를 추출하도록 지원합니다.
-* 코드에서 추출된 정보를 쉽게 재사용하기 위해 PSD에서 코드 힌트를 얻습니다.
+* 코드에서 추출된 정보를 쉽게 재사용하기 위해 PSD의 코드 힌트입니다.
 * LESS 및 SCSS와 같은 CSS 전처리기 지원.
 * 또한 보다 구체적인 요구 사항을 충족하는 수백 개의 추가 확장 기능을 제공합니다.
 
@@ -53,14 +64,14 @@ AEM Brackets 확장은 Brackets 버전 1.0 이상을 지원합니다.
 확장을 설치하려면 다음과 같이 진행합니다.
 
 1. 대괄호를 엽니다. **파일** 메뉴에서 **Extension Manager...**&#x200B;을(를) 선택합니다.
-1. 검색 창에 **AEM**&#x200B;을(를) 입력하고 **AEM Brackets Extension**&#x200B;을(를) 찾습니다.
+1. 검색창에 **AEM**&#x200B;을(를) 입력하고 **AEM Brackets Extension**&#x200B;을(를) 찾습니다.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. **설치**&#x200B;를 클릭합니다.
-1. 설치가 완료되면 대화 상자를 닫고 Extension Manager을 합니다.
+1. 설치가 완료되면 대화 상자와 Extension Manager을 닫습니다.
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 ### 콘텐츠 패키지 프로젝트 {#the-content-package-project}
 
@@ -76,7 +87,7 @@ AEM Brackets 확장은 Brackets 버전 1.0 이상을 지원합니다.
 
 >[!NOTE]
 >
->콘텐츠 패키지가 있는 고유한 프로젝트가 없는 경우 [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)를 사용해 보십시오. GitHub에서 **ZIP 다운로드**&#x200B;를 클릭하고 로컬로 파일을 추출한 다음 위의 지침에 따라 Brackets에서 `jcr_root` 폴더를 엽니다. 그런 다음 아래 단계에 따라 **프로젝트 설정**&#x200B;을 설정하고, 마지막으로 전체 콘텐츠 패키지 동기화 섹션의 지침에 따라 **콘텐츠 패키지 내보내기**&#x200B;를 수행하여 전체 패키지를 AEM 개발 인스턴스에 업로드합니다.
+>콘텐츠 패키지가 있는 고유한 프로젝트가 없는 경우 [HTL TodoMVC 예제](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)를 사용해 보십시오. GitHub에서 **ZIP 다운로드**&#x200B;를 클릭하고 로컬로 파일을 추출한 다음 위의 지침에 따라 Brackets에서 `jcr_root` 폴더를 엽니다. 그런 다음 아래 단계에 따라 **프로젝트 설정**&#x200B;을 설정하고, 마지막으로 전체 콘텐츠 패키지 동기화 섹션의 지침에 따라 **콘텐츠 패키지 내보내기**&#x200B;를 수행하여 AEM 개발 인스턴스에 전체 패키지를 업로드합니다.
 >
 >이 단계를 수행한 후에는 AEM 개발 인스턴스의 `/content/todo.html` URL에 액세스할 수 있어야 하며 Brackets에서 코드를 수정하기 시작하고 웹 브라우저에서 새로 고침을 수행한 후 변경 사항이 AEM 서버에 즉시 동기화되는 방법을 확인할 수 있습니다.
 
@@ -138,11 +149,11 @@ AEM Brackets 확장 기능은 Brackets 창 오른쪽의 도구 모음에 마지�
 
 ## HTL 코드 편집 {#editing-htl-code}
 
-AEM Brackets Extension은 HTL 속성 및 표현식을 쉽게 작성할 수 있는 일부 자동 완성 기능도 제공합니다.
+AEM Brackets 확장 기능은 HTL 속성 및 표현식을 쉽게 작성할 수 있는 일부 자동 완성 기능도 제공합니다.
 
 ### 속성 자동 완성 {#attribute-auto-completion}
 
-1. HTML 특성에 `sly`을(를) 입력합니다. 특성이 `data-sly-`(으)로 자동 완료되었습니다.
+1. HTML 특성에서 `sly`을(를) 입력합니다. 특성이 `data-sly-`(으)로 자동 완료되었습니다.
 1. 드롭다운 목록에서 HTL 속성을 선택합니다.
 
 ### 표현식 자동 완성 {#expression-auto-completion}
@@ -156,7 +167,7 @@ AEM Brackets 확장은 GitHub에서 [Adobe Marketing Cloud](https://github.com/A
 * 코드 리포지토리: [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Apache 라이선스, 버전 2.0: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-또한 Brackets 코드 편집기는 [Adobe Systems Incorporated](https://github.com/adobe) 조직에서 GitHub에 호스팅하는 오픈 소스 프로젝트입니다.
+또한 Brackets 코드 편집기는 [Adobe Systems Incorporated](https://github.com/adobe) 조직이 GitHub에서 호스팅하는 오픈 소스 프로젝트입니다.
 
 * 코드 리포지토리: [https://github.com/adobe/brackets](https://github.com/adobe/brackets)
 

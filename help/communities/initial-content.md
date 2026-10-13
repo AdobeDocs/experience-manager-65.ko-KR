@@ -9,22 +9,29 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 2%
-
 ---
-
 # 초기 샌드박스 콘텐츠 {#initial-sandbox-content}
 
 이 섹션에서는 [페이지 템플릿](initial-app.md#createthepagetemplate)을 사용하는 다음 페이지를 만듭니다.
 
 * SCF 샌드박스 사이트 - 기본 페이지의 영어 버전으로 리디렉션합니다.
 
-   * SCF 샌드박스 - 사이트의 영어 버전에 대한 메인 페이지.
+  * SCF 샌드박스 - 사이트의 영어 버전에 대한 메인 페이지.
 
-   * SCF 재생 - 재생할 기본 페이지의 하위 항목.
+  * SCF 재생 - 재생할 기본 페이지의 하위 항목.
 
 이 자습서에서는 [언어 사본](../../help/sites-administering/tc-prep.md)을 다루지 않습니다. 대신 루트 페이지가 HTML 헤더를 통해 사용자의 기본 언어 감지를 구현하고 해당 언어의 적절한 기본 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 두 글자로 된 국가 코드를 사용하는 것입니다. 예를 들어 영어는 &quot;en&quot;, 프랑스어는 &quot;fr&quot;입니다.
 
@@ -90,9 +97,9 @@ ht-degree: 2%
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * 이름: `cq:designPath`
-   * 유형: `String`
-   * 값: `/etc/designs/an-scf-sandbox`
+  * 이름: `cq:designPath`
+  * 유형: `String`
+  * 값: `/etc/designs/an-scf-sandbox`
 
 * 녹색 `[+] Add` 클릭
 

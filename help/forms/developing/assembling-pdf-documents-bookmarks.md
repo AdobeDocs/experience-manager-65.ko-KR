@@ -1,5 +1,5 @@
 ---
-title: 책갈피를 사용하여 PDF 문서 어셈블
+title: 책갈피를 사용하여 PDF 문서 어셈블하기
 description: 어셈블러 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 책갈피가 포함된 PDF 문서를 수정합니다.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,27 @@ role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 0%
-
 ---
-
 # 책갈피를 사용하여 PDF 문서 어셈블 {#assembling-pdf-documents-with-bookmarks}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -205,13 +219,13 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
    * 입력 PDF 문서와 책갈피 XML 문서를 모두 저장하는 데 사용되는 `java.util.Map` 개체를 만듭니다.
    * `java.util.Map` 개체의 `put` 메서드를 호출하고 다음 인수를 전달하여 입력 PDF 문서를 추가합니다.
 
-      * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 PDF 소스 요소의 값과 일치해야 합니다.
-      * 입력 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
+     * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 PDF 소스 요소의 값과 일치해야 합니다.
+     * 입력 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
 
    * `java.util.Map` 개체의 `put` 메서드를 호출하고 다음 인수를 전달하여 책갈피 XML 문서를 추가합니다.
 
-      * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 책갈피 소스 요소의 값과 일치해야 합니다.
-      * 책갈피 XML 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
+     * 키 이름을 나타내는 문자열 값입니다. 이 값은 DDX 문서에 지정된 책갈피 소스 요소의 값과 일치해야 합니다.
+     * 책갈피 XML 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
 
 1. 런타임 옵션을 설정합니다.
 
@@ -264,10 +278,10 @@ PDF 문서를 어셈블하려면 DDX 문서를 참조해야 합니다. 이 DDX �
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `AssemblerServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `AssemblerServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `AssemblerServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 기존 DDX 문서를 참조합니다.
 

@@ -9,13 +9,26 @@ exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 1%
-
 ---
-
 # 게시된 양식 액세스 및 채우기{#accessing-and-filling-published-forms}
 
 양식 중심 포털 배포 설정에서 양식 개발 및 포털 개발은 두 개의 고유한 활동입니다. 양식 디자이너는 리포지토리에서 양식을 디자인하고 저장하는 동안 웹 개발자는 해당 목록 양식에 대한 웹 응용 프로그램을 만들고 제출을 처리합니다. 그런 다음 양식 저장소와 웹 애플리케이션 간에 통신이 없으므로 Forms이 웹 계층에 복사됩니다.

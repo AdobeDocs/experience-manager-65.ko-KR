@@ -5,13 +5,39 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1995'
 ht-degree: 87%
-
 ---
-
 # GraphQL 쿼리 최적화 {#optimizing-graphql-queries}
 
 >[!NOTE]
@@ -26,13 +52,13 @@ ht-degree: 87%
 
 ### 주요 원칙 {#first-principles}
 
-#### 지속 GraphQL 쿼리 사용 {#use-persisted-graphql-queries}
+#### 지속된 GraphQL 쿼리 사용 {#use-persisted-graphql-queries}
 
 **권장 사항**
 
-지속 GraphQL 쿼리를 사용하는 것이 좋습니다.
+지속된 GraphQL 쿼리를 사용하는 것이 좋습니다.
 
-지속 GraphQL 쿼리는 콘텐츠 전송 네트워크(CDN)를 활용하여 쿼리 실행 성능을 줄이는 데 도움이 됩니다. 클라이언트 애플리케이션은 빠른 에지 지원 실행을 위해 GET 요청으로 지속 쿼리를 요청합니다.
+지속된 GraphQL 쿼리는 콘텐츠 전송 네트워크(CDN)를 활용하여 쿼리 실행 성능을 향상하는 데 도움이 됩니다. 클라이언트 애플리케이션은 빠른 에지 지원 실행을 위해 GET 요청으로 지속된 쿼리를 요청합니다.
 
 **추가 참조**
 
@@ -90,7 +116,7 @@ GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 
 
 **권장 사항**
 
-CDN과 함께 지속 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
+CDN과 함께 지속형 GraphQL 쿼리를 사용하는 경우 적절한 HTTP 캐시 제어 헤더를 설정하는 것이 좋습니다.
 
 각 지속 쿼리에는 고유한 특정 캐시 제어 헤더 집합이 있을 수 있습니다. 헤더는 [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)를 통해 설정할 수 있습니다.
 
@@ -114,7 +140,7 @@ or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-i
 다음을 참조하십시오.
 
 * [지속 쿼리 캐싱](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
-* [GraphQL 쿼리를 지속하는 방법](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
+* [GraphQL 쿼리를 지속 쿼리로 저장하는 방법](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
@@ -146,7 +172,7 @@ AEM은 GraphQL 쿼리를 최적화하는 데 2가지 접근 방식을 제공합�
 * [하이브리드 필터링](#use-aem-graphql-hybrid-filtering)
 * [페이징](#use-aem-graphql-pagination) (또는 페이지 매김)
 
-   * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
+  * [정렬](#use-graphql-sorting)은 최적화와 직접적인 관련은 없지만 페이징과 관련이 있음
 
 각 접근 방식에는 독자적인 사용 사례와 제한 사항이 있습니다. 이 섹션에서는 하이브리드 필터링 및 페이징에 대한 정보와 GraphQL 쿼리 최적화에 사용되는 [모범 사례](#best-practices)를 제공합니다.
 
@@ -185,11 +211,11 @@ AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 * [제한/오프셋 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 목록 쿼리에 사용됩니다. `List`(예: `articleList`)로 끝납니다.
-사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
+이 페이지 매김을 사용하려면 반환할 첫 번째 항목의 위치(`offset`)와 반환할 항목 수(`limit` 또는 페이지 크기)를 제공해야 합니다.
 
 * [커서 기반 페이지 매김](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)(`first` 및 `after`(으)로 표시)
 각 항목에 대한 고유한 ID를 제공합니다. 커서라고도 합니다.
-쿼리에서 이전 페이지의 마지막 항목에 대한 커서와 페이지 크기(반환할 최대 항목 수)를 지정합니다.
+쿼리에서 이전 페이지 마지막 항목의 커서와 페이지 크기(반환할 최대 항목 수)를 지정합니다.
 
   커서 기반 페이지 매김은 목록 기반 쿼리의 데이터 구조에 맞지 않기 때문에 AEM은 `Paginated` 쿼리 유형(예: `articlePaginated`)을 도입했습니다. 사용되는 데이터 구조 및 매개변수는 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm)을 따릅니다.
 
@@ -223,7 +249,7 @@ AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 다음을 참조하십시오.
 
-* [_tags ID별로 필터링하고 변형을 제외하며 이름별로 분류하는 샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-filtering-tag-not-variations)
+* [_tags ID별로 필터링하고 변형을 제외하며 이름별로 정렬하는 샘플 쿼리](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-filtering-tag-not-variations)
 
 ## 모범 사례 {#best-practices}
 
@@ -233,7 +259,7 @@ AEM의 GraphQL은 두 가지 유형의 페이지 매김을 지원합니다.
 
 현재 JCR 수준의 필터링은 최상위 조각에 대해서만 가능합니다.
 
-필터가 중첩 조각의 필드를 처리하는 경우 AEM은 기본 모델을 공유하는 모든 조각을 (메모리에) 로드하는 것으로 폴백해야 합니다.
+필터가 중첩 조각의 필드를 처리하는 경우 AEM은 기본 모델을 공유하는 모든 조각을 (메모리에) 로드하는 방식으로 되돌아가야 합니다.
 
 다만 [AND 연산자](#logical-operations-in-filter-expressions)로 최상위 조각의 필드에 대한 필터 표현식과 중첩된 조각의 필드에 대한 필터 표현식을 결합하여 그러한 GraphQL 쿼리를 최적화할 수 있습니다.
 
@@ -272,7 +298,7 @@ GraphQL 쿼리에도 이 접근 방식을 적용해야 합니다.
 
 페이징을 사용하여 초기 결과 세트를 줄일 수도 있습니다(특히 요청이 필터링 및 정렬을 사용하지 않는 경우).
 
-중첩된 조각을 필터링하거나 정렬하는 경우 AEM이 여전히 더 많은 양의 조각을 메모리에 로드해야 할 수 있으므로 페이지가 매겨진 쿼리가 여전히 느릴 수 있습니다. 따라서 필터링과 페이징을 결합한다면 필터링 규칙(위에서 언급)을 고려하십시오.
+중첩된 조각을 필터링하거나 정렬하는 경우 AEM이 여전히 더 많은 양의 조각을 메모리에 로드해야 할 수 있으므로 페이지가 매겨진 쿼리가 여전히 느릴 수 있습니다. 따라서 필터링과 페이징을 결합하는 경우 필터링 규칙(위에서 언급한 내용)을 고려하십시오.
 
 페이징의 경우 페이지가 매겨진 결과가 명시적으로든 암시적으로든 항상 정렬되므로 정렬도 마찬가지로 중요합니다.
 

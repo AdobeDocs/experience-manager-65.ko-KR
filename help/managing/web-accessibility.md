@@ -5,13 +5,29 @@ exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
-
+source-wordcount: '419'
+ht-degree: 89%
 ---
-
 # AEM 및 웹 접근성 지침{#aem-and-the-web-accessibility-guidelines}
 
 웹 콘텐츠를 장애나 제한 사항에 관계없이 타깃 대상자가 가능한 한 쉽게 액세스할 수 있도록 설계하기 위한 많은 사회적, 경제적 및 법적 동기가 있습니다. AEM(Adobe Experience Manager)을 사용하는 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
@@ -50,9 +66,11 @@ WCAG 2.1은 [접근성 수준과 이를 준수하는 방법에 대한 지침(관
 
 * [액세스 가능한 콘텐츠 만들기](/help/sites-authoring/creating-accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
-* [서식 있는 텍스트 편집기를 구성하여 액세스 가능한 사이트 만들기](/help/sites-administering/rte-accessible-content.md)는 관리자가 액세스 가능한 콘텐츠를 만들기 위해 AEM을 구성하는 방법에 대한 지침입니다.
+* [액세스 가능한 사이트를 만들기 위한 리치 텍스트 편집기 구성](/help/sites-administering/rte-accessible-content.md)
+관리자가 액세스 가능한 컨텐츠를 생성하도록 AEM을 구성하는 방법에 대한 지침입니다.
 
-* [액세스 가능한 적응형 양식 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)에서는 다양한 능력을 가진 사용자가 적응형 양식을 보다 쉽게 이용할 수 있도록 AEM(Adobe Experience Manager)에서 제공하는 여러 기능과 성능을 설명합니다. AEM 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만드는 데에도 도움을 줍니다.
+* [액세스 가능한 적응형 Forms 만들기](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager(AEM)에는 다양한 기능을 가진 사용자를 위해 적응형 양식의 유용성을 개선하는 몇 가지 기능이 포함되어 있습니다. AEM 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만드는 데에도 도움을 줍니다.
 
 >[!NOTE]
 >

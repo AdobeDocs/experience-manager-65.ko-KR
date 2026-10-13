@@ -8,13 +8,31 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 9%
-
 ---
-
 # AEM Sites 페이지에 적응형 양식 또는 인터랙티브 커뮤니케이션 임베드 {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -65,9 +83,9 @@ AEM Forms 컨테이너 구성 요소를 사용하여 적응형 양식 또는 대
    * **자산 경로**: 포함할 적응형 양식 또는 대화형 커뮤니케이션을 찾아 선택합니다. Assets 브라우저에서 삭제한 경우 자동으로 채워집니다.
    * (적응형 양식만 해당) **사후 제출**: 양식 제출 시 트리거할 작업을 선택합니다. 감사 메시지 또는 감사 페이지를 표시하도록 선택할 수 있습니다.
 
-      * **감사 메시지**: 서식 있는 텍스트 편집기를 사용하여 메시지를 작성하여 양식 제출 시 표시합니다. 이 옵션은 감사 메시지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
-      * **감사 인사 페이지**: 양식 제출에 표시할 페이지를 검색하여 선택하십시오. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
-      * **제출 시 페이지 새로 고침**: 포함된 적응형 양식이 포함된 페이지를 새로 고쳐 감사 페이지를 표시할 수 있도록 활성화하십시오. 그렇지 않으면 감사 페이지가 페이지를 새로 고치지 않고 AEM Forms 컨테이너의 적응형 양식을 대체합니다. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
+     * **감사 메시지**: 서식 있는 텍스트 편집기를 사용하여 메시지를 작성하여 양식 제출 시 표시합니다. 이 옵션은 감사 메시지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
+     * **감사 인사 페이지**: 양식 제출에 표시할 페이지를 검색하여 선택하십시오. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
+     * **제출 시 페이지 새로 고침**: 포함된 적응형 양식이 포함된 페이지를 새로 고쳐 감사 페이지를 표시할 수 있도록 활성화하십시오. 그렇지 않으면 감사 페이지가 페이지를 새로 고치지 않고 AEM Forms 컨테이너의 적응형 양식을 대체합니다. 이 옵션은 감사 페이지를 표시하도록 선택한 경우에만 사용할 수 있습니다.
 
    * **테마**: 적응형 양식 또는 대화형 통신의 구성 요소에 대한 스타일을 정의하는 테마를 선택하십시오. 스타일링에는 글꼴 스타일, 배경색, 치수 및 정렬과 같은 모양 속성이 포함됩니다.
    * **높이**: 컨테이너의 높이를 지정하십시오. 컨테이너의 크기를 자동으로 조정하려면 비워 둡니다.

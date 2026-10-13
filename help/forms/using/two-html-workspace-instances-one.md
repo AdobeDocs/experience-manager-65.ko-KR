@@ -1,5 +1,5 @@
 ---
-title: 하나의 서버에서 두 개의 AEM Forms 작업 공간 인스턴스 호스팅
+title: 단일 서버에 두 개의 AEM Forms Workspace 인스턴스 호스팅
 description: LC 관리자가 서로 다른 URL을 통해 액세스할 수 있는 단일 서버에 두 개의 인스턴스를 호스팅하도록 HTML WS를 사용자 지정할 수 있는 방법.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,32 @@ exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
-# 하나의 서버에서 두 개의 AEM Forms 작업 공간 인스턴스 호스팅 {#hosting-two-aem-forms-workspace-instances-on-one-server}
+# 단일 서버에 두 개의 AEM Forms Workspace 인스턴스 호스팅 {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 AEM Forms의 기본 설치 및 설정을 사용하면 서버에서 하나의 AEM Forms 작업 영역만 사용할 수 있습니다. 그러나 단일 AEM Forms 서버에서 AEM Forms 작업 영역의 두 개의 다른 인스턴스를 호스팅해야 할 수 있습니다. 두 인스턴스는 다른 URL로 액세스할 수 있습니다.
 

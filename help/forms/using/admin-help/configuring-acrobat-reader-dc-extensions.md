@@ -9,13 +9,31 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '327'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '339'
 ht-degree: 100%
-
 ---
-
 # 데이터 캡처를 위한 Acrobat Reader DC 확장 프로그램 구성 {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 >[!NOTE]
@@ -24,7 +42,7 @@ ht-degree: 100%
 
 AEM Forms 설치 사용자가 콘텐츠 서비스(더 이상 사용되지 않음)의 데이터 캡처 기능을 사용하는 경우 해당 사용자에게 읽기 전용 액세스 권한이 있는 역할을 만드는 것이 좋습니다.
 
-***참고&#x200B;**: Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 콘텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료되었습니다. [Adobe 제품 수명 주기 문서](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)를 참조하십시오.*
+***참고&#x200B;**: Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 콘텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음)는 2014년 12월 31일에 지원이 종료되었습니다. [Adobe 제품 수명 주기 문서](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)를 참조하십시오.*
 
 데이터 캡처를 수행하려면 SampleReaderExtensionsCredential에 액세스하기 위한 사용자 역할을 할당해야 합니다. 표준 신뢰 관리자 역할을 할당할 수도 있습니다. 하지만 이 역할은 관리자가 아닌 일반 사용자에게 PKI 신뢰 설정을 제어하고 PKI 자격 증명을 관리하는 관리자 권한을 부여하므로 프로덕션 환경에서 AEM Forms 설치 보안이 손상될 수 있습니다. AEM Forms 시스템 관리자가 Trust Store에 대한 읽기 전용 액세스 권한만 부여하는 역할을 만들고 데이터 캡처를 사용하는 관리자가 아닌 사용자에게 이 새 역할을 할당하는 것이 좋습니다.
 

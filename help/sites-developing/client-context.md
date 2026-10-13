@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
-ht-degree: 1%
-
+source-wordcount: '3030'
+ht-degree: 0%
 ---
-
 # ClientContext 관련 세부 사항{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM은 확장할 수 있는 genericstore 및 genericstoreproperties 컨텍스트
 
 * 속성-값 쌍: `GenericStoreProperties` 구성 요소를 확장합니다. 이 구성 요소는 속성-값 쌍의 저장소를 자동으로 렌더링합니다. 다음과 같은 몇 가지 상호 작용 지점이 제공됩니다.
 
-   * `prolog.jsp` 및 `epilog.jsp`: 구성 요소 렌더링 전후에 서버측 논리를 추가할 수 있는 구성 요소 상호 작용입니다.
+  * `prolog.jsp` 및 `epilog.jsp`: 구성 요소 렌더링 전후에 서버측 논리를 추가할 수 있는 구성 요소 상호 작용입니다.
 
 * 복잡한 데이터: `GenericStore` 구성 요소를 확장합니다. 세션 저장소에는 구성 요소를 렌더링해야 할 때마다 호출되는 &quot;renderer&quot; 메서드가 필요합니다. renderer 함수는 두 개의 매개 변수를 사용하여 호출됩니다.
 
-   * `@param {String} store`
-렌더링할 스토어
+  * `@param {String} store`
+    렌더링할 스토어
 
-   * `@param {String} divId`
-스토어를 렌더링해야 하는 div의 ID입니다.
+  * `@param {String} divId`
+    스토어를 렌더링해야 하는 div의 ID입니다.
 
 >[!NOTE]
 >
@@ -490,7 +506,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 
 CQ 응용 프로그램을 만들고 geoloc 구성 요소를 추가합니다.
 
-1. 웹 브라우저([https://localhost:4502/crx/de](https://localhost:4502/crx/de))에서 CRXDE Lite을 엽니다.
+1. 웹 브라우저에서 CRXDE Lite을 엽니다([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. `/apps` 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 만들기를 클릭합니다. `myapp` 이름을 지정한 다음 [확인]을 클릭합니다.
 1. 마찬가지로 `myapp` 아래에 `contextstores` 폴더를 만듭니다. &quot;
 1. `/apps/myapp/contextstores` 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 구성 요소 만들기를 클릭합니다. 다음 속성 값을 지정하고 다음을 클릭합니다.
@@ -618,11 +634,11 @@ Client Context에서 스토어 데이터를 렌더링하도록 geoloc 구성 요
 
 * 하위 폴더:
   `/content`
-는 사용자 지정된 클라이언트 컨텍스트의 콘텐츠를 포함합니다.
+  는 사용자 지정된 클라이언트 컨텍스트의 콘텐츠를 포함합니다.
 
 * 폴더:
   `/contextstores`
-컨텍스트 저장소에 대해 서로 다른 구성을 정의할 수 있습니다.
+  컨텍스트 저장소에 대해 서로 다른 구성을 정의할 수 있습니다.
 
 사용자 지정된 클라이언트 컨텍스트를 사용하려면 속성을 편집합니다
 `path`

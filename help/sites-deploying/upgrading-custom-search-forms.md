@@ -1,5 +1,5 @@
 ---
-title: 사용자 정의 검색 Forms 업그레이드
+title: 사용자 정의 검색 양식 업그레이드
 description: 이 문서에서는 사용자 정의 검색 양식이 작동하기 위해 업그레이드 후 필요한 조정 사항에 대해 자세히 설명합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
-
+source-wordcount: '1796'
+ht-degree: 3%
 ---
-
-# 사용자 정의 검색 Forms 업그레이드{#upgrading-custom-search-forms}
+# 사용자 정의 검색 양식 업그레이드{#upgrading-custom-search-forms}
 
 AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 변경되었습니다. 업그레이드 시 6.1의 다음 위치에서 이동됩니다.
 
@@ -40,7 +49,7 @@ AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 
 
 1. `https://server:port/crx/de/index.jsp`(으)로 이동하여 CRXDE Lite 열기
 1. 아래 [사용자 지정 검색 Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) 목록에 지정된 대로 조정할 노드의 위치를 찾습니다.
-1. 노드를 클릭합니다. 오른쪽 속성 창에서 **sling:resourceType** 속성을 클릭하여 수정합니다.
+1. 노드를 클릭합니다. 오른쪽 속성 창에서 을(를) 클릭하고 **sling:resourceType** 속성을 수정합니다.
 1. 마지막으로 **모두 저장** 단추를 눌러 변경 사항을 저장합니다.
 
 ## 사용자 지정 검색 Forms 목록 {#list-of-custom-search-forms}
@@ -133,7 +142,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 **작업:** **resourceType** 속성을 조정합니다(위에 표시된 6.2 위치와 같이 &quot;**/coral**&quot; 추가).
 
-### 페이지 상태 설명 {#page-status-predicate}
+### 페이지 상태 조건자 {#page-status-predicate}
 
 <table>
  <tbody>
@@ -159,13 +168,13 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 * `pagestatuspredicate` 노드 제거
 * 노드 복사
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
 
 * 노드 복사
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
 
 * `analyticspredicate` 노드의 `listOrder` 속성을 &quot;**8**&quot;(으)로 설정해야 합니다. 이것은 충돌을 피하기 위해 필요합니다.
 
@@ -238,7 +247,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -263,7 +272,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -284,7 +293,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -305,7 +314,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -326,7 +335,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -347,7 +356,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -362,7 +371,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 **작업:** `resourceType` 속성을 조정합니다(위에 표시된 6.2 위치와 같이 &quot;**/coral**&quot; 추가).
 
-## 자산 관리자 검색 레일 {#assets-admin-search-rail}
+## Assets 관리자 검색 레일 {#assets-admin-search-rail}
 
 아래 노드는 `/conf/global/settings/dam/search/facets/assets/items`의 이름을 참조합니다.
 
@@ -413,7 +422,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 작업: resourceType 속성을 조정합니다(위에 표시된 6.2 위치와 같이 &quot;/coral&quot; 추가).
 
-### Publish 설명 {#publish-predicate}
+### 게시 조건자 {#publish-predicate}
 
 | 6.1의 기본 검색 양식에 있는 노드 | 게시 |
 |---|---|

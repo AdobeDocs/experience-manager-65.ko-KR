@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
+source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8302'
 ht-degree: 95%
 ---
 
@@ -433,6 +433,7 @@ ht-degree: 95%
     + [메타데이터 기능 구성](/help/assets/metadata-config.md)
     + [메타데이터 스키마](/help/assets/metadata-schemas.md)
     + [렌디션으로 XMP 원본에 쓰기](/help/assets/xmp-writeback.md)
+    + [C2PA 메타데이터](/help/assets/c2pa-metadata.md)
     + [에셋 링크 공유](/help/assets/link-sharing.md)
     + [자산 보고서](/help/assets/asset-reports.md)
     + [태그 지정을 위한 스마트 콘텐츠 서비스 구성](/help/assets/config-smart-tagging.md)

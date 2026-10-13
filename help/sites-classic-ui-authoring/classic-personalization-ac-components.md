@@ -10,13 +10,24 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 9%
-
 ---
-
 # Adobe Campaign 구성 요소{#adobe-campaign-components}
 
 Adobe Campaign과 통합하면 뉴스레터 및 양식으로 작업할 때 사용할 수 있는 구성 요소가 있습니다. 두 가지 모두 이 문서에 설명되어 있습니다.
@@ -229,7 +240,7 @@ Adobe Campaign과 통합되도록 구성된 양식을 열면 **Adobe Campaign** 
 * 확인란(캠페인)
 * 날짜 필드(캠페인) 및 날짜 필드/HTML5(캠페인)
 * 암호화된 기본 키(캠페인)
-* 표시 오류(캠페인)
+* 오류 표시(캠페인)
 * 숨겨진 조정 키(캠페인)
 * 숫자 필드(캠페인)
 * 옵션 필드(캠페인)
@@ -385,7 +396,7 @@ Adobe Campaign 프로필 데이터 **을(를) 표시하고 수정하는 각 양�
 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components) 외에 다음을 구성할 수 있습니다.
 
 * **제약 조건 - 제약 조건** 드롭다운
-&#x200B;- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
+- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
 
 * **제한 메시지** - 또한 제한 메시지를 추가하여 사용자가 답변의 서식을 올바르게 지정하는 방법을 알 수 있습니다.
 * **스타일 - 너비** - **+** 및 **-** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.

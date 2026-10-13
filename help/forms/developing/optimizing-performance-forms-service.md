@@ -1,5 +1,5 @@
 ---
-title: Forms 서비스의 성능 최적화
+title: Forms 서비스 성능 최적화
 description: 양식을 렌더링할 때 런타임 옵션을 설정하고 저장소에 XDP 파일을 저장하여 Forms 서비스의 성능을 최적화합니다.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,29 @@ role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 0%
-
+source-wordcount: '1442'
+ht-degree: 2%
 ---
-
 # Forms 서비스 성능 최적화 {#optimizing-the-performance-of-theforms-service}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -51,10 +67,10 @@ Forms 서비스 클라이언트 API 작업을 프로그래밍 방식으로 수�
 
 다음 성능 런타임 옵션을 설정하여 Forms 서비스의 성능을 향상시킬 수 있습니다.
 
-* **양식 캐싱**: 서버 캐시에 PDF으로 렌더링되는 양식을 캐시할 수 있습니다. 각 양식은 처음 생성된 후 캐시됩니다. 이후 렌더링에서 캐시된 양식이 양식 디자인의 타임스탬프보다 최신인 경우 캐시에서 양식을 검색합니다. 양식을 캐시하면 저장소에서 양식 디자인을 검색할 필요가 없으므로 Forms 서비스의 성능이 향상됩니다.
+* **양식 캐싱**: PDF으로 렌더링된 양식을 서버 캐시에 저장할 수 있습니다. 각 양식은 처음 생성된 후 캐시됩니다. 이후 렌더링에서 캐시된 양식이 양식 디자인의 타임스탬프보다 최신인 경우 캐시에서 양식을 검색합니다. 양식을 캐시하면 저장소에서 양식 디자인을 검색할 필요가 없으므로 Forms 서비스의 성능이 향상됩니다.
 * 양식 지침(더 이상 사용되지 않음)을 렌더링하는 데 다른 변형 유형보다 시간이 더 걸릴 수 있습니다. 성능을 향상시키려면 양식 안내서를 캐시하는 것이 좋습니다(더 이상 사용되지 않음).
 * **독립 실행형 옵션**: 서버측 계산을 수행하는 데 Forms 서비스가 필요하지 않으면 독립 실행형 옵션을 `true`(으)로 설정할 수 있습니다. 이렇게 하면 폼이 상태 정보 없이 렌더링됩니다. 대화형 양식을 최종 사용자에게 렌더링하고 최종 사용자가 양식에 정보를 입력하고 양식을 다시 Forms 서비스로 제출하려면 상태 정보가 필요합니다. 그런 다음 Forms 서비스는 계산 작업을 수행하고 양식에 표시된 결과를 사용하여 양식을 사용자에게 다시 렌더링합니다. 상태 정보가 없는 양식을 Forms 서비스에 다시 제출하는 경우 XML 데이터만 사용할 수 있고 서버측 계산은 수행되지 않습니다.
-* **선형화된 PDF**: 선형화된 PDF 파일이 네트워크 환경에서 효율적인 증분 액세스를 사용하도록 구성되어 있습니다. PDF 파일은 모든 측면에서 유효한 PDF으로, 기존의 모든 뷰어 및 기타 PDF 애플리케이션과 호환됩니다. 즉, 선형화된 PDF은 계속 다운로드되는 동안 볼 수 있습니다.
+* **선형화된 PDF**: 선형화된 PDF 파일이 네트워크 환경에서 효율적인 증분 액세스를 사용하도록 구성되어 있습니다. PDF 파일은 모든 측면에서 유효한 PDF이며 기존의 모든 뷰어 및 기타 PDF 애플리케이션과 호환됩니다. 즉, 선형화된 PDF은 계속 다운로드되는 동안 볼 수 있습니다.
 * 이 옵션은 클라이언트에서 PDF 양식을 렌더링할 때 성능을 향상시키지 않습니다.
 * **GuideRSL 옵션**: 런타임 공유 라이브러리를 사용하여 양식 가이드(더 이상 사용되지 않음)를 생성할 수 있습니다. 즉, 첫 번째 요청에서 더 작은 SWF 파일과 브라우저 캐시에 저장된 더 큰 공유 라이브러리를 다운로드합니다. 자세한 내용은 Flex 설명서에서 RSL 을 참조하십시오.
 * 클라이언트에서 양식을 렌더링하여 Forms 서비스의 성능을 향상시킬 수도 있습니다. [클라이언트에서 Forms 렌더링](/help/forms/developing/rendering-forms-client.md)을 참조하십시오.
@@ -73,11 +89,11 @@ Forms 서비스는 양식을 렌더링한 후 클라이언트 웹 브라우저�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[대화형 PDF 양식 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Forms을 HTML으로 렌더링](/help/forms/developing/rendering-forms-html.md)
+[HTML로 양식 렌더링](/help/forms/developing/rendering-forms-html.md)
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 

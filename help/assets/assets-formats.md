@@ -1,6 +1,6 @@
 ---
 title: 지원되는 파일 형식 및 MIME 유형
-description: ' [!DNL Assets]  및 [!DNL Dynamic Media] 에서 지원하는 파일 형식 및 MIME 형식과 각 형식에 대해 지원되는 기능.'
+description: '[!DNL Assets] 및 [!DNL Dynamic Media]에서 지원하는 파일 형식 및 MIME 형식과 각 형식에 대해 지원되는 기능.'
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,29 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2047'
 ht-degree: 10%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]에서 지원되는 형식 {#assets-supported-formats}
 
 [!DNL Experience Manager Assets]은(는) 다양한 파일 형식을 지원하며 각 기능마다 다양한 MIME 형식을 지원합니다. [!DNL Assets]을(를) 다른 표준 준수 DAM(디지털 에셋 관리) 솔루션 및 데스크톱 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform]&#x200B;(XMP)을(를) 사용하십시오.
@@ -339,7 +355,7 @@ Dynamic Media는 다음과 같은 3D 형식을 지원합니다.
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료 및 텍스처를 단일 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 스테레오리소그래피 | application/vnd.ms-pki.stl |  |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보거나 상호 작용할 수 없습니다.* USDZ는 Safari 및 iOS 디바이스에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
+| USDZ | Universal Scene Description Zip 아카이브 | model/vnd.usdz+zip | *수집 전용 지원으로, 보거나 상호 작용할 수 없습니다.* USDZ는 Safari 및 iOS 디바이스에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
 
 >[!MORELIKETHIS]
 >

@@ -5,13 +5,29 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 94%
-
+source-wordcount: '904'
+ht-degree: 89%
 ---
-
 # AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기 {#content-modeling-headless-basics}
 
 ## 지금까지의 스토리 {#story-so-far}
@@ -100,15 +116,15 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 두 가지 데이터 유형은 특정 조각 외부 콘텐츠에 대한 참조를 제공합니다.
 
 * **콘텐츠 참조**
-이는 모든 유형의 다른 콘텐츠에 대한 간단한 참조를 제공합니다.
+모든 유형의 다른 콘텐츠에 대한 간단한 참조를 제공합니다.
 예를 들어 지정된 위치에서 이미지를 참조할 수 있습니다.
 
 * **조각 참조**
-이는 다른 콘텐츠 조각에 대한 참조를 제공합니다.
+다른 콘텐츠 조각에 대한 참조를 제공합니다.
 이러한 유형의 참조는 콘텐츠 모델링에 필요한 관계를 도입하여 중첩된 콘텐츠를 만드는 데 사용됩니다.
 조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
-   * 참조된 조각 직접 편집
-   * 적절한 모델을 기반으로 콘텐츠 조각 만들기
+  * 참조된 조각 직접 편집
+  * 적절한 모델을 기반으로 콘텐츠 조각 만들기
 
 >[!NOTE]
 >
@@ -133,14 +149,14 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 * 개인
 * 상
 
-매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
+매우 간단해 보이지만, 회사는 CEO와 직원.... 모두 있으며 이들은 모두 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 
 * 내 회사 - 회사
-   * CEO - 개인
-   * 직원 - 개인
-      * 개인 상 - 상
+  * CEO - 개인
+  * 직원 - 개인
+    * 개인 상 - 상
 
 이는 시작일 뿐입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
 
@@ -154,7 +170,7 @@ AEM은 콘텐츠를 모델링할 수 있도록 다음 데이터 유형을 제공
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [작성 개념](/help/sites-authoring/author.md)
 

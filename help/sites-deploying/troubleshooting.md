@@ -9,13 +9,25 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1220'
 ht-degree: 0%
-
 ---
-
 # AEM의 설치 문제 해결{#troubleshooting}
 
 이 섹션에는 문제를 해결하는 데 도움이 되는 로그에 대한 자세한 정보와 AEM에서 발생할 수 있는 몇 가지 문제에 대한 정보가 포함되어 있습니다.
@@ -101,7 +113,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 저장소 자체가 성공적으로 실행 중인 경우에도 AEM WCM 시작 화면이 자동으로 표시되지 않는 경우가 있습니다. 이 문제는 운영 체제 설정, 브라우저 구성 또는 유사한 요소에 따라 달라질 수 있습니다.
 
-일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트 또는 인스턴스가 실행 중인 포트를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다. http://localhost:4502/.
+일반적인 증상은 AEM WCM 빠른 시작 창에 &quot;AEM WCM 시작, 서버 시작 대기 중&quot;이 표시되는 것입니다.... 해당 메시지가 비교적 오래 표시되는 경우 기본 4502 포트나 인스턴스가 실행 중인 포트(http://localhost:4502/)를 사용하여 AEM WCM URL을 브라우저 창에 수동으로 입력합니다.
 
 또한 로그에 브라우저가 시작되지 않는 이유가 표시될 수 있습니다.
 

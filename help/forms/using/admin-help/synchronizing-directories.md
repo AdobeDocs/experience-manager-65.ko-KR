@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
-workflow-type: ht
-source-wordcount: '1015'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 97%
 ---
-
 
 # 디렉터리 동기화 {#synchronizing-directories}
 
@@ -23,7 +37,7 @@ ht-degree: 100%
 
 디렉터리 동기화는 디렉터리 설정에서 지정한 디렉터리 서버의 세부 정보를 사용자 관리 데이터베이스로 가져오는 데 사용됩니다. 나중에 디렉터리 서버에서 변경 사항이나 업데이트 사항이 발생하면 수동 동기화를 수행할 수도 있습니다. 예를 들어 사용자 및 그룹이 추가되거나 사용자 계정이 변경되면 수동 동기화를 수행할 수 있습니다.
 
-일일 동기화 일정을 설정하여 소스 디렉터리 서버의 변경 사항이나 업데이트 사항을 사용자 관리 데이터베이스와 자동으로 동기화할 수도 있습니다. 하지만 이 프로세스를 수행하는 과정에서 네트워크와 서버 리소스가 사용됩니다. 사용량이 적은 시간대를 선택하고 시스템과 네트워크 리소스를 낭비하는 불필요한 동기화는 예약하지 마십시오. 불필요한 동기화를 최소화하려면 대신 즉시 동기화 옵션을 사용하십시오.
+일일 동기화 일정을 설정하여 사용자 관리 데이터베이스를 소스 디렉터리 서버의 변경 사항이나 업데이트 사항과 자동으로 동기화할 수도 있습니다. 하지만 이 프로세스를 수행하는 과정에서 네트워크와 서버 리소스가 사용됩니다. 사용량이 적은 시간대를 선택하고 시스템과 네트워크 리소스를 낭비하는 불필요한 동기화는 예약하지 마십시오. 불필요한 동기화를 최소화하려면 대신 즉시 동기화 옵션을 사용하십시오.
 
 도메인을 동기화할 때 사용자 및 그룹 정보를 Adobe LiveCycle Content Services 9(더 이상 사용되지 않음)로 푸시할지 여부도 지정할 수 있습니다.
 
@@ -37,7 +51,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 콘텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료되었습니다. [Adobe 제품 수명 주기 문서](https://www.adobe.com/kr/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오.
+>Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 콘텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음)는 2014년 12월 31일에 지원이 종료되었습니다. [Adobe 제품 수명 주기 문서](https://www.adobe.com/kr/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오.
 
 ## 델타 디렉터리 동기화 활성화 {#enable-delta-directory-synchronization}
 
@@ -71,9 +85,9 @@ ht-degree: 100%
 사용자 관리를 구성하여 디렉터리 동기화 시도가 실패했는지 주기적으로 확인할 수 있습니다. 그러면 사용자 관리에서 실패한 동기화를 완료하려고 시도합니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성을 클릭합니다.
-1. 동기화 완료 Cron 표현식에서 사용자 관리에서 실패한 동기화를 재시도하는 간격을 나타내는 Cron 표현식을 입력합니다. Cron 표현식 사용법은 Quartz 오픈 소스 작업 예약 시스템 버전 1.4.0을 기반으로 합니다.
+1. 동기화 완료 Cron 표현식에서 사용자 관리가 실패한 동기화를 재시도하는 간격을 나타내는 Cron 표현식을 입력합니다. Cron 표현식 사용법은 Quartz 오픈 소스 작업 예약 시스템 버전 1.4.0을 기반으로 합니다.
 
-   기본값은 0 0/13 &amp;ast; ? &amp;ast;이며, 13분마다 확인이 이루어집니다.
+   기본값은 0 0/13 &ast; 입니다. &ast; - 13분마다 검사가 수행됨을 의미합니다.
 
 ## 디렉터리 수동 동기화 {#manually-synchronize-directories}
 
@@ -89,7 +103,7 @@ ht-degree: 100%
 1. 동기화를 예약합니다.
 
    * 매일 자동 동기화를 활성화하려면 스케줄러에서 수행을 선택합니다. 목록에서 매일을 선택하고 해당 상자에 24시간 형식으로 시간을 입력합니다. 설정을 저장하면 이 값이 Cron 표현식으로 변환되어 Cron 표현식 상자에 표시됩니다.
-   * 특정 요일이나 날짜 또는 특정 월에 동기화를 예약하려면 Cron 표현식을 선택하고 상자에 해당 표현식을 입력합니다. 예를 들어 매월 마지막 금요일 오전 1:30에 동기화합니다.
+   * 특정 요일이나 날짜 또는 특정 월에 동기화를 예약하려면 Cron 표현식을 선택하고 상자에 해당 표현식을 입력합니다. 예를 들어, 그 달의 마지막 금요일 오전 1시 30분에 동기화합니다.
 
 Cron 표현식 사용법은 Quartz 오픈 소스 작업 예약 시스템 버전 1.4.0을 기반으로 합니다.
 

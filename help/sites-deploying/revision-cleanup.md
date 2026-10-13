@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 1%
-
 ---
-
 # 개정 정리{#revision-cleanup}
 
 ## 소개 {#introduction}
@@ -252,7 +261,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>온라인 수정 버전 정리 기간을 결정하는 요소는 무엇입니까?</strong></td>
-   <td>요소는 <br />입니다.
+   <td>요인은 다음과 같습니다.<br />
     <ul>
      <li>저장소 크기</li>
      <li>시스템 로드(분당 요청, 특히 쓰기 작업)</li>
@@ -465,7 +474,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>상태 검사 및 로그 항목에 따르면 온라인 수정 정리 가 세 번 연속 완료되지 않았습니다. 온라인 개정 정리를 성공적으로 완료하는 데 필요한 사항은 무엇입니까?</strong></td>
-   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다. <br />
+   <td>몇 가지 단계를 수행하여 문제를 찾아 해결할 수 있습니다.<br />
     <ul>
      <li>먼저 로그 항목 <br />을(를) 확인합니다. </li>
      <li>로그의 정보에 따라 적절한 조치를 취합니다.
@@ -642,7 +651,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 위에 제시된 방법 외에도 다음과 같이 JMX 콘솔을 사용하여 개정 정리 메커니즘을 트리거할 수도 있습니다.
 
-1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)로 이동하여 JMX 콘솔을 엽니다.
+1. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)&#x200B;(으)로 이동하여 JMX 콘솔 열기
 1. **RevisionGarbageCollection** MBean을 클릭합니다.
 1. 다음 창에서 **startRevisionGC()**&#x200B;을(를) 클릭한 다음 **Invoke**&#x200B;을(를) 클릭하여 수정 가비지 수집 작업을 시작합니다.
 

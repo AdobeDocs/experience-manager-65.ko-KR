@@ -9,13 +9,26 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 72%
-
 ---
-
 # 콘솔용 키보드 단축키{#keyboard-shortcuts-for-consoles}
 
 AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 콘솔 사용에 적용되고 일부는 [페이지 편집](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)에 적용됩니다.
@@ -32,7 +45,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 |---|---|---|
 | 일반 | `Ctrl+Click` | 데스크탑 장치에서 다중 선택 |
 | 콘솔 - 열 보기 및 콘텐츠 보기 | `Right Arrow` | 웹 사이트 구조 아래로 이동하거나 트리 노드를 확장합니다. |
-|  | `Left Arrow` | 트리 구조 위로 이동하거나 트리 노드를 축소합니다. |
+|  | `Left Arrow` | 트리 구조 위로 이동하거나 트리 노드를 접습니다. |
 |  | `Down Arrow` | 동일한 수준의 페이지 목록 아래로 이동합니다. |
 |  | `Up Arrow` | 동일한 수준의 페이지 목록 위로 이동합니다. |
 | 콘솔 - 열 보기 | `Shift-Up/Down Arrow` | 동일한 수준의 페이지 목록 위로 이동합니다. |
@@ -70,7 +83,7 @@ AEM은 자주 사용되는 브라우저에서 이미 사용되고 있는 공통�
 
 >[!NOTE]
 >
->AEM 단축키는 기본 브라우저 동작을 무시하지 않습니다.
+>AEM 단축키는 기본 브라우저 동작을 재정의하지 않습니다.
 >
 >AEM 단축키와 브라우저 단축키 간에 충돌이 발생하는 경우 AEM 단축키가 작동하지 않고 브라우저 기능이 우선하여 적용됩니다.
 
@@ -84,7 +97,7 @@ AEM은 자주 사용되는 브라우저에서 이미 사용되고 있는 공통�
 
 AEM에서는 일반적으로 사용되는 기능(편집, 속성, 복사/붙여넣기, 다양한 사이드 레일 메뉴 표시 등)에 대한 키보드 단축키를 제공합니다.
 
-키보드 단축키를 사용하지 않거나 특정 접근성 요구 사항이 없는 사용자의 경우 모든 키보드 단축키를 비활성화할 수 있습니다.
+키보드 단축키를 사용하지 않거나 특정 접근성 요구 사항이 있는 사용자의 경우 모든 키보드 단축키를 비활성화할 수 있습니다.
 
 다음 두 위치에서 키보드 단축키를 비활성화할 수 있습니다.
 

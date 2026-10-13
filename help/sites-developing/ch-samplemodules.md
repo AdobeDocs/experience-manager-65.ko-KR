@@ -9,13 +9,24 @@ exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 1%
-
+source-wordcount: '1190'
+ht-degree: 2%
 ---
-
 # 샘플 ContextHub UI 모듈 유형 {#sample-contexthub-ui-module-types}
 
 ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다. 제공되는 정보는 다음과 같습니다.
@@ -55,16 +66,16 @@ JSON 형식의 JavaScript 개체를 사용하여 contexthub.base UI 모듈을 �
 * **storeMapping:** 키/저장소 매핑입니다. Handlebar 템플릿의 키를 사용하여 연결된 ContextHub 저장소 데이터에 액세스합니다.
 * **list:** UI 모듈을 클릭할 때 팝오버에 목록으로 표시할 항목 배열입니다. 이 항목을 포함하는 경우 popoverTemplate을 포함하지 마십시오. 값은 다음 키가 있는 오브젝트 배열입니다.
 
-   * 제목: 이 항목에 대해 표시할 텍스트입니다
-   * image: (선택 사항) 왼쪽에 표시해야 하는 이미지의 URL입니다
-   * icon: (선택 사항) 왼쪽에 표시해야 하는 CUI 아이콘 클래스입니다. 이미지가 지정된 경우에는 무시됩니다
-   * selected: (선택 사항) 이 항목을 selected(true=selected)로 표시할지 여부를 지정하는 부울 값입니다. 기본적으로 선택한 항목이 굵은 글꼴을 사용하여 나타납니다. `listType` 속성을 사용하여 다른 모양을 구성하십시오(아래 참조).
+  * 제목: 이 항목에 대해 표시할 텍스트입니다
+  * image: (선택 사항) 왼쪽에 표시해야 하는 이미지의 URL입니다
+  * icon: (선택 사항) 왼쪽에 표시해야 하는 CUI 아이콘 클래스입니다. 이미지가 지정된 경우에는 무시됩니다
+  * selected: (선택 사항) 이 항목을 selected(true=selected)로 표시할지 여부를 지정하는 부울 값입니다. 기본적으로 선택한 항목이 굵은 글꼴을 사용하여 나타납니다. `listType` 속성을 사용하여 다른 모양을 구성하십시오(아래 참조).
 
 * **listType:** 팝오버 목록 항목에 사용할 스타일입니다. 다음 값 중 하나를 사용합니다.
 
-   * 확인 표시
-   * 확인란
-   * 라디오
+  * 확인 표시
+  * 확인란
+  * 라디오
 
 * **popoverTemplate:** UI 모듈을 클릭할 때 팝오버에서 렌더링할 콘텐츠를 지정하는 Handlebars 템플릿입니다. 이 항목을 포함하는 경우 `list` 항목을 포함하지 마십시오.
 

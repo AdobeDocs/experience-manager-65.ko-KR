@@ -11,13 +11,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 11%
-
 ---
-
 
 # Adobe Campaign 구성 요소{#adobe-campaign-components}
 
@@ -220,20 +237,20 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 * **이미지 속성**(**고급 이미지 속성**)
 다음을 지정할 수 있습니다.
 
-   * **제목**
-블록의 제목입니다. 마우스를 올려 놓으면 표시됩니다.
+  * **제목**
+    블록의 제목입니다. 마우스를 올려 놓으면 표시됩니다.
 
-   * **대체 텍스트**
-이미지를 표시할 수 없는 경우 표시할 대체 텍스트입니다.
+  * **대체 텍스트**
+    이미지를 표시할 수 없는 경우 표시할 대체 텍스트입니다.
 
-   * **링크 대상**
-웹 사이트 내의 자산 또는 기타 페이지에 대한 링크를 만듭니다.
+  * **링크 대상**
+    웹 사이트 내의 자산 또는 기타 페이지에 대한 링크를 만듭니다.
 
-   * **설명**
-이미지에 대한 설명.
+  * **설명**
+    이미지에 대한 설명.
 
-   * **크기**
-이미지의 높이와 너비를 설정합니다.
+  * **크기**
+    이미지의 높이와 너비를 설정합니다.
 
 >[!NOTE]
 >
@@ -280,7 +297,7 @@ Adobe Campaign과 통합되도록 구성된 양식을 열면 **Adobe Campaign** 
 * 확인란(캠페인)
 * 날짜 필드(캠페인) 및 날짜 필드/HTML5(캠페인)
 * 암호화된 기본 키(캠페인)
-* 표시 오류(캠페인)
+* 오류 표시(캠페인)
 * 숨겨진 조정 키(캠페인)
 * 숫자 필드(캠페인)
 * 옵션 필드(캠페인)
@@ -449,7 +466,7 @@ Adobe Campaign 프로필 데이터 **을(를) 표시하고 수정하는 각 양�
 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components) 외에 다음을 구성할 수 있습니다.
 
 * **제약 조건 - 제약 조건** 드롭다운
-&#x200B;- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
+- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
 
 * **제한 메시지** 또한 제한 메시지를 추가하여 사용자가 답변의 서식을 올바르게 지정하는 방법을 알 수 있습니다.
 * **스타일 - 너비** **+** 및 **-** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.

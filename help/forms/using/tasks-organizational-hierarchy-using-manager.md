@@ -10,13 +10,29 @@ exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 6%
-
 ---
-
 # 관리자 보기를 사용하여 조직 계층에서 작업 관리{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 이제 AEM Forms 작업 영역에서 관리자는 계층 구조의 모든 사람에게 할당된 작업(직접 또는 간접 보고서)에 액세스하여 다양한 작업을 수행할 수 있습니다. 작업은 AEM Forms 작업 영역의 할 일 탭에서 사용할 수 있습니다. 부하 직원의 작업에서 지원되는 작업은 다음과 같습니다.

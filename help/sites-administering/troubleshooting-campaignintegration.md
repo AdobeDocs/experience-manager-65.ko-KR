@@ -9,13 +9,22 @@ exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Campaign Classic 통합 문제 해결{#troubleshooting-your-adobe-campaign-classic-integration}
 
@@ -28,8 +37,8 @@ Adobe Campaign Classic(ACC) 통합 문제를 해결하는 방법을 알아봅니
 두 솔루션(AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM)에서 HTTP 호출을 보내고 받는지 확인합니다. 이 팁은 방화벽/SSL 문제를 방지하는 데 도움이 됩니다.
 
 * AEM 기능의 경우 AEM 작성자 인터페이스에서 JSON 호출이 요청됨을 볼 수 있습니다
-   * 이러한 호출로 인해 HTTP-500 오류가 발생해서는 안 됩니다.
-   * HTTP-500 오류가 표시되면 `error.log`에서 자세한 내용을 확인하십시오.
+  * 이러한 호출로 인해 HTTP-500 오류가 발생해서는 안 됩니다.
+  * HTTP-500 오류가 표시되면 `error.log`에서 자세한 내용을 확인하십시오.
 * AEM에서 캠페인 클래스에 대한 디버그 수준을 높이는 것도 문제를 해결하는 데 도움이 될 수 있습니다.
 
 ## 연결에 실패하는 경우 {#when-the-connection-fails}
@@ -131,8 +140,8 @@ Adobe Campaign Classic 게재에서 콘텐츠를 동기화하려고 하면 AEM�
 
 * 원래 프로토콜을 헤더로 전달하도록 AEM Dispatcher 또는 역방향 프록시를 구성해야 합니다.
 * AEM의 OSGi 구성에서 **Apache Felix Http 서비스 SSL 필터**&#x200B;는 필수 헤더 설정으로 구성해야 합니다.
-   * `https://<host>:<port>/system/console/configMgr`
-   * [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter) 보기
+  * `https://<host>:<port>/system/console/configMgr`
+  * [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter) 보기
 
 ## 페이지 속성에서 사용자 지정 템플릿을 선택할 수 없음 {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 

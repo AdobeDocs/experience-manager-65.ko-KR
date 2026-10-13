@@ -1,18 +1,34 @@
 ---
-title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 방법
+title: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 보내는 방법
 description: 적응형 양식 데이터를 Microsoft&reg; Power Automate에 연결하고 전송하는 단계별 안내서입니다.
 keywords: 적응형 Forms Microsoft Power Automate, Microsoft Power Automate에 적응형 Forms 데이터 제출
 feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 73a5a49cdbdae320c2f33a0516c74e1c7c72c644
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 15%
-
+source-wordcount: '1375'
+ht-degree: 14%
 ---
-
 # ® Power Automate에 적응형 양식 데이터 연결 및 제출 {#connect-adaptive-form-with-power-automate}
 
 | 버전 | 문서 링크 |
@@ -34,7 +50,7 @@ ht-degree: 15%
 적응형 양식과 ® Power Automate를 연결하려면 다음이 필요합니다.
 
 * ® Power Automate Premium 라이센스
-* 적응형 양식 제출 데이터를 수락하기 위한 [&#x200B; 트리거를 사용하는 ® &#x200B;](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)Power Automate 흐름`When an HTTP request is received`
+* 적응형 양식 제출 데이터를 수락하기 위한 `When an HTTP request is received` 트리거를 사용하는 ® [Power Automate 흐름](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)
 * [Forms 작성자](/help/forms/using/forms-groups-privileges-tasks.md) 및 [Forms 관리자](/help/forms/using/forms-groups-privileges-tasks.md) 권한이 있는 Experience Manager 사용자
 * ® Power Automate에 연결하는 데 사용되는 계정은 적응형 양식에서 데이터를 받도록 구성된 Power Automate 흐름의 소유자입니다
 
@@ -43,10 +59,10 @@ ht-degree: 15%
 
 다음 작업을 수행하여 AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결합니다.
 
-1. [Microsoft 만들기](#ms-power-automate-application)
-1. [Microsoft 만들기](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Microsoft 만들기](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Microsoft 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [® Azure Active Directory 응용 프로그램 만들기](#ms-power-automate-application)
+1. [® Power Automate Dataverse 클라우드 구성 만들기](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [® Power Automate 플로우 서비스 클라우드 구성 생성](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### ® Azure Active Directory 응용 프로그램 만들기 {#ms-power-automate-application}
 
@@ -125,7 +141,7 @@ ht-degree: 15%
 >
 > 토큰이 만료되기 전이나 후에 통합 작업을 유지하려면 ® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성을 다시 인증하고 다시 게시하려면 [Microsoft® Power Automate Dataverse 및 Microsoft® Power Automate Flow Service 클라우드 구성 모두 게시](#publish-microsoft-power-automate-dataverse-cloud-configuration)에 설명된 단계를 사용하십시오.
 >
-> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명[에 대한 &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
+> 토큰 수명 정책에 대한 자세한 내용은 구성 가능한 토큰 수명[&#128279;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)에 대한 Microsoft Entra 설명서를 참조하십시오. 토큰이 갱신되지 않은 경우 Power Automate에 양식 제출이 실패할 수 있습니다.
 
 ## Microsoft 호출® Power Automate 플로우 제출 액션을 사용하여 Power Automate 플로우에 데이터 전송 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 

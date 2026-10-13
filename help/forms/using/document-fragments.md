@@ -7,24 +7,37 @@ feature: Correspondence Management
 exl-id: ff3a4cba-a1a6-4fc9-8466-da7f28a74fb5
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
-
 ---
-
 # 문서 조각 {#document-fragments}
 
 문서 조각은 대화형 통신/문자를 작성할 수 있는 서신의 재사용 가능한 부분/구성 요소입니다. 문서 조각은 다음과 같은 유형입니다.
 
 * **텍스트**: 텍스트 자산은 하나 이상의 텍스트 단락으로 구성된 컨텐츠 조각입니다. 단락은 정적 또는 동적 단락일 수 있습니다.
 
-   * [인터랙티브 커뮤니케이션 텍스트](/help/forms/using/texts-interactive-communications.md)
+  * [인터랙티브 커뮤니케이션 텍스트](/help/forms/using/texts-interactive-communications.md)
 
 * **조건**: 조건을 사용하면 제공된 데이터를 기반으로 서신 작성 시 포함할 콘텐츠를 정의할 수 있습니다. 조건은 통제 변수 측면에서 설명되어 있습니다. 제어 변수는 데이터 사전 요소 또는 자리 표시자일 수 있습니다.
 
-   * [인터랙티브 커뮤니케이션 조건](/help/forms/using/conditions-interactive-communications.md)
+  * [인터랙티브 커뮤니케이션 조건](/help/forms/using/conditions-interactive-communications.md)
 
 * **목록:** 목록은 텍스트, 목록, 조건 및 이미지를 포함한 문서 조각 그룹입니다. 목록 요소의 순서를 고정하거나 편집할 수 있습니다. 편지를 만드는 동안 일부 또는 모든 목록 요소를 사용하여 재사용 가능한 요소 패턴을 복제할 수 있습니다.
 * **레이아웃 단편**: 레이아웃 단편이 하나 이상의 문자 내에서 사용할 수 있는 레이아웃입니다. 레이아웃 조각을 사용하여 반복 가능한 패턴(특히 동적 테이블)을 만들 수 있습니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 또한 대상 영역을 나타내는 빈 하위 양식도 포함되어 있습니다. 레이아웃(XDP)은 Designer에서 만들어진 다음 AEM Forms에 업로드됩니다.

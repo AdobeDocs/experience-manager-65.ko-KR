@@ -10,13 +10,24 @@ exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # ClientContext{#client-context}
 
@@ -267,7 +278,7 @@ JSONP 저장소 구성 요소를 사용하여 만든 세션 저장소의 데이�
 
    1. 제목(Title)에 Winter를 입력합니다.
    1. 세그먼트 템플릿을 선택합니다.
-   1. 만들기 를 클릭합니다.
+   1. 만들기를 클릭합니다.
 
 1. 겨울 세그먼트를 마우스 오른쪽 버튼으로 클릭하고 열기 를 클릭합니다.
 1. 일반 저장소 속성을 기본 AND 컨테이너로 드래그합니다.

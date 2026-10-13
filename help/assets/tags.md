@@ -11,13 +11,29 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6942'
-ht-degree: 6%
-
+source-wordcount: '6946'
+ht-degree: 7%
 ---
-
 # Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합이란 무엇입니까? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -212,7 +228,7 @@ The only Data Element type that the Dynamic Media Viewers extension provides is 
 
 이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 수명 주기를 고려하십시오. 이러한 데이터 요소의 값은 해당 Dynamic Media 뷰어 이벤트가 페이지에서 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리킨다고 가정합니다. 이 경우 뷰어가 **[!UICONTROL LOAD]** 이벤트를 처음 실행한 후 이러한 데이터 요소의 값이 올바른 데이터를 받습니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키는 경우 뷰어가 **[!UICONTROL ZOOM]** 이벤트를 처음으로 보낼 때까지 해당 데이터 요소의 값은 비어 있습니다.
 
-Similarly, the values of Data Elements get automatically updated when the viewer sends a corresponding event on the page. The value update happens even if the particular event is not specified in the Rule configuration. 예를 들어 데이터 요소 **[!UICONTROL ZoomScale]**&#x200B;이(가) ZOOM 이벤트의 &quot;scale&quot; 매개 변수에 대해 정의되어 있다고 가정합니다. 하지만 규칙 구성에 있는 유일한 규칙은 **[!UICONTROL LOAD]** 이벤트에 의해 트리거됩니다. 사용자가 뷰어 내에서 확대/축소를 실행할 때마다 **[!UICONTROL ZoomScale]** 값이 계속 업데이트됩니다.
+마찬가지로 뷰어가 페이지에서 해당 이벤트를 전송하면 데이터 요소의 값도 자동으로 업데이트됩니다. 특정 이벤트가 규칙 구성에 지정되지 않은 경우에도 값 업데이트가 발생합니다. 예를 들어 데이터 요소 **[!UICONTROL ZoomScale]**&#x200B;이(가) ZOOM 이벤트의 &quot;scale&quot; 매개 변수에 대해 정의되어 있다고 가정합니다. 하지만 규칙 구성에 있는 유일한 규칙은 **[!UICONTROL LOAD]** 이벤트에 의해 트리거됩니다. 사용자가 뷰어 내에서 확대/축소를 실행할 때마다 **[!UICONTROL ZoomScale]** 값이 계속 업데이트됩니다.
 
 모든 Dynamic Media 뷰어는 웹 페이지에서 고유한 식별자를 가집니다. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 예를 들어 같은 페이지에 여러 뷰어가 있고 **[!UICONTROL LOAD]** 이벤트와 &quot;asset&quot; 인수를 가리키는 **[!UICONTROL AssetName]** 데이터 요소가 있다고 가정해 봅시다. **[!UICONTROL AssetName]** 데이터 요소는 페이지에 로드된 각 뷰어와 연결된 자산 이름의 컬렉션을 유지 관리합니다.
 
@@ -225,13 +241,13 @@ Similarly, the values of Data Elements get automatically updated when the viewer
 * **[!UICONTROL ZoomScale]** 데이터 요소는 **[!UICONTROL ZOOM]** 이벤트와 해당 &quot;scale&quot; 인수를 가리킵니다.
 * 다음을 포함하는 **[!UICONTROL TrackPan]** 규칙:
 
-   * Dynamic Media 뷰어 **[!UICONTROL PAN]** 이벤트를 트리거로 사용합니다.
-   * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics으로 보냅니다.
+  * Dynamic Media 뷰어 **[!UICONTROL PAN]** 이벤트를 트리거로 사용합니다.
+  * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics으로 보냅니다.
 
 * 다음을 포함하는 **[!UICONTROL TrackKey]** 규칙:
 
-   * 코어 Experience Platform 태그 확장의 키 누름 이벤트를 트리거로 사용합니다.
-   * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics으로 보냅니다.
+  * 코어 Experience Platform 태그 확장의 키 누름 이벤트를 트리거로 사용합니다.
+  * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics으로 보냅니다.
 
 이제 최종 사용자가 두 명의 뷰어가 있는 웹 페이지를 로드한다고 가정합니다. *viewer1*&#x200B;에서는 50% 배율로 확대되고 *viewer2*&#x200B;에서는 25% 배율로 확대됩니다. *viewer1*&#x200B;에서 이미지를 패닝하고 마지막으로 키보드에서 키를 선택합니다.
 
@@ -269,7 +285,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-It is possible, however, to use an alternative approach and bypass Data Element creation. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. Analytics 변수 할당의 **[!UICONTROL 값]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력합니다. 퍼센트(%) 기호로 둘러싸야 합니다. 예:
+하지만 대체 접근 방식을 사용하여 데이터 요소 생성을 우회할 수도 있습니다. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. Analytics 변수 할당의 **[!UICONTROL 값]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력합니다. 퍼센트(%) 기호로 둘러싸야 합니다. 예:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -450,7 +466,7 @@ Adobe Analytics을 구성하면 통합에 대해 다음과 같이 설정됩니�
 
 ### 보고서 세트 선택 {#selecting-a-report-suite}
 
-1. Near the upper-right corner of the Adobe Analytics page, to the right of the **[!UICONTROL Search Reports]** field, select the correct report suite from the drop-down list. If there are multiple report suites available and you are unsure which one to use, contact your Adobe Analytics administrator who can help you select which report suite to use.
+1. Near the upper-right corner of the Adobe Analytics page, to the right of the **[!UICONTROL Search Reports]** field, select the correct report suite from the drop-down list. 사용 가능한 보고서 세트가 여러 개이고 어떤 것을 사용해야 할지 잘 모르겠다면, 사용할 보고서 세트를 선택하는 데 도움을 줄 수 있는 Adobe Analytics 관리자에게 문의하십시오.
 
    아래 스크린샷에서 사용자가 *DynamicMediaViewersExtensionDoc*(이)라는 보고서 세트를 만들고 드롭다운 목록에서 선택했습니다. 보고서 세트 이름은 예제 이름일 뿐입니다. 최종적으로 선택하는 보고서 세트의 이름은 사용자가 결정합니다.
 
@@ -758,8 +774,8 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 인증 서버]** - 이전에 열었던 통합 세부 정보 페이지로 돌아갑니다. **[!UICONTROL JWT]** 탭을 선택합니다. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
    **[!UICONTROL 계정]** 페이지로 돌아가서 해당 필드에 이름을 붙여 넣으십시오.
-예: `https://ims-na1.adobelogin.com/`
-(서버 이름은 예제일 뿐입니다)
+   예: `https://ims-na1.adobelogin.com/`
+   (서버 이름은 예제일 뿐입니다)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

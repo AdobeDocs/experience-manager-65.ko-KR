@@ -9,13 +9,20 @@ exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '301'
 ht-degree: 1%
-
 ---
-
 # 노드 만들기 {#create-nodes}
 
 필요한 최소 수의 파일을 `/libs`에서 `/apps`(으)로 복사하고 `/apps`에서 수정하여 사용자 지정 버전으로 주석 시스템을 오버레이합니다.
@@ -32,38 +39,38 @@ ht-degree: 1%
 
 경로의 일부 노드는 폴더이고 일부는 구성 요소입니다.
 
-1. [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)(으)로 이동
+1. [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)&#x200B;(으)로 이동
 1. `/apps/social` 만들기(아직 없는 경우)
    * `/apps` 노드 선택
    * **[!UICONTROL 만들기 > 폴더]**
-      * 이름 입력: `social`
+     * 이름 입력: `social`
 1. `social` 노드 선택
    * **[!UICONTROL 만들기]** > **[!UICONTROL 폴더]**
-      * 이름 입력: `commons`
+     * 이름 입력: `commons`
 1. `commons` 노드 선택
    * **[!UICONTROL 만들기 > 폴더]**
-      * 이름 입력: `components`
+     * 이름 입력: `components`
 1. `components` 노드 선택
    * **[!UICONTROL 만들기 > 폴더]**.
-      * 이름 입력: `hbs`
+     * 이름 입력: `hbs`
 1. `hbs` 노드 선택
    * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소 만들기]**
-      * 레이블 입력: `comments`
-      * 제목 입력: `Comments`
-      * 설명 입력: `List of comments without showing avatars`
-      * 상위 유형: `social/commons/components/comments`
-      * 그룹 입력: `Communities`
-      * **[!UICONTROL 확인]**&#x200B;까지 **[!UICONTROL 다음]**&#x200B;을 클릭하세요.
+     * 레이블 입력: `comments`
+     * 제목 입력: `Comments`
+     * 설명 입력: `List of comments without showing avatars`
+     * 상위 유형: `social/commons/components/comments`
+     * 그룹 입력: `Communities`
+     * **[!UICONTROL 확인]**&#x200B;까지 **[!UICONTROL 다음]**&#x200B;을 클릭하세요.
 1. `comments` 노드 선택
 
    * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소 만들기]**
 
-      * 레이블 입력: `comment`
-      * 제목 입력: `Comment`
-      * 설명 입력: `A comment instance without avatars`
-      * 상위 유형: `social/commons/components/comments/comment`
-      * 그룹 입력: `.hidden`
-      * **[!UICONTROL 확인]**&#x200B;까지 **[!UICONTROL 다음]**&#x200B;을 클릭하세요.
+     * 레이블 입력: `comment`
+     * 제목 입력: `Comment`
+     * 설명 입력: `A comment instance without avatars`
+     * 상위 유형: `social/commons/components/comments/comment`
+     * 그룹 입력: `.hidden`
+     * **[!UICONTROL 확인]**&#x200B;까지 **[!UICONTROL 다음]**&#x200B;을 클릭하세요.
    * **[!UICONTROL 모두 저장]** 선택
 1. 기본 `comments.jsp` 삭제
    * `/apps/social/commons/components/hbs/comments/comments.jsp` 노드 선택

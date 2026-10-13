@@ -5,13 +5,33 @@ exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '674'
 ht-degree: 87%
-
 ---
-
 # AEM을 통한 헤드리스 작성 - 소개 {#author-headless-introduction}
 
 [AEM Headless 콘텐츠 작성 여정](overview.md)의 이 부분에서는 Adobe Experience Manager(AEM)를 사용하여 Headless 콘텐츠 게재를 위한 콘텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
@@ -50,13 +70,13 @@ Headless는 웹에 해당 콘텐츠를 표시하는 방식에서 사실상 콘�
 즉, 다음 경우로 사용할 수 있습니다.
 
 * Headless CMS
-   * Headless의 경우 콘텐츠를 **콘텐츠 조각**&#x200B;으로 작성할 수 있습니다.
-이는 **콘텐츠 조각 모델**&#x200B;을 기반으로 사전 정의된 구조가 있는 다양한 애플리케이션을 통해 직접 액세스할 수 있는 자체 포함된 콘텐츠 항목입니다.
-즉, 콘텐츠에서 다양한 형식과 기능으로 다양한 디바이스를 사용할 수 있습니다.
-(문제가 발생하면 AEM 웹 페이지를 구성할 때도 이 조각이 필요한 경우 사용할 수 있습니다.)
+  * Headless의 경우 콘텐츠를 **콘텐츠 조각**&#x200B;으로 작성할 수 있습니다.
+    이는 **콘텐츠 조각 모델**&#x200B;을 기반으로 사전 정의된 구조가 있는 다양한 애플리케이션을 통해 직접 액세스할 수 있는 자체 포함된 콘텐츠 항목입니다.
+    즉, 콘텐츠에서 다양한 형식과 기능으로 다양한 디바이스를 사용할 수 있습니다.
+    (문제가 발생하면 AEM 웹 페이지를 구성할 때도 이 조각이 필요한 경우 사용할 수 있습니다.)
 
 * “기존” CMS
-   * 웹 사이트에서 콘텐츠를 렌더링하는 방법을 정의하는 다양한 구성 요소를 사용하여 웹 페이지용 콘텐츠를 작성합니다. 여기서도 프로젝트 팀이 사용자 지정된 구성 요소를 개발할 수 있으므로 AEM이 매우 유연합니다.
+  * 웹 사이트에서 콘텐츠를 렌더링하는 방법을 정의하는 다양한 구성 요소를 사용하여 웹 페이지용 콘텐츠를 작성합니다. 여기서도 프로젝트 팀이 사용자 지정된 구성 요소를 개발할 수 있으므로 AEM이 매우 유연합니다.
 
 ## 콘텐츠 모델링 {#content-modeling}
 
@@ -79,7 +99,7 @@ AEM의 경우 콘텐츠 설계자 역할(종종 다른 개인)이 데이터 모�
 ## 추가 리소스 {#additional-resources}
 
 * AEM Headless 개발자 여정
-   * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
+  * [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

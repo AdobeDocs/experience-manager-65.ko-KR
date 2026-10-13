@@ -10,13 +10,20 @@ role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # 배지 콘솔 {#badges-console}
 
 ## 배지 정보 {#about-badges}
@@ -51,7 +58,7 @@ ht-degree: 4%
 
 * **이미지 업로드**
 
-  (*필수*) JPEG 또는 PNG 형식의 권장 크기가 72dpi에서 32 x 32픽셀인 배지 이미지입니다.
+  (*필수*) JPEG 또는 PNG 포맷으로 권장 크기가 32 x 32픽셀인 72dpi 배지 이미지입니다.
 
 * **이름**
 

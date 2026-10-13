@@ -11,13 +11,20 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티 그룹 콘솔 {#community-groups-console}
 
 커뮤니티 사이트의 [템플릿 구조](/help/communities/sites-console.md#step1)에 [그룹 기능](/help/communities/functions.md#groups-function)이 포함된 경우 그룹 콘솔에서 커뮤니티 그룹을 만들 수 있습니다.
@@ -56,8 +63,8 @@ This is a 404 on helpx. Update or remove.
 * 기존 커뮤니티 사이트 폴더를 선택하여 열 수 있습니다.
 * 폴더 내에서 커뮤니티 사이트의 인스턴스를 선택합니다.
 
-   * 커뮤니티 사이트의 구조에는 그룹 기능이 포함되어야 합니다.
-   * 스크린샷은 [게시할 때 그룹을 만들기](/help/communities/published-site.md) 후 시작 자습서에서 가져온 것입니다.
+  * 커뮤니티 사이트의 구조에는 그룹 기능이 포함되어야 합니다.
+  * 스크린샷은 [게시할 때 그룹을 만들기](/help/communities/published-site.md) 후 시작 자습서에서 가져온 것입니다.
 
   ![그룹 만들기](assets/create-group.png)
 
@@ -78,7 +85,7 @@ This is a 404 on helpx. Update or remove.
 * **커뮤니티 그룹 제목**
 
   그룹의 표시 제목입니다.
-제목은 그룹에 대해 게시된 사이트에 표시됩니다.
+  제목은 그룹에 대해 게시된 사이트에 표시됩니다.
 
 * **커뮤니티 그룹 설명**
 
@@ -87,7 +94,7 @@ This is a 404 on helpx. Update or remove.
 * **커뮤니티 그룹 루트**
 
   그룹의 루트 경로입니다.
-기본 루트는 상위 사이트이지만, 루트는 웹 사이트 내의 모든 위치로 이동할 수 있습니다. 변경하지 않는 것이 좋습니다.
+  기본 루트는 상위 사이트이지만, 루트는 웹 사이트 내의 모든 위치로 이동할 수 있습니다. 변경하지 않는 것이 좋습니다.
 
 * **추가 사용 가능한 커뮤니티 그룹 언어** 메뉴
 
@@ -97,10 +104,10 @@ This is a 404 on helpx. Update or remove.
 
   URL에 나타나는 그룹 루트 페이지의 이름입니다. 그룹 이름에 밑줄(_) 및 리소스 및 구성과 같은 키워드를 사용하지 마십시오.
 
-   * 그룹을 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
-   * 기본 URL이 `Community Group Name` 아래에 표시됩니다.
-   * 유효한 URL을 보려면 &quot;.html&quot;을 추가하십시오.
-     *예:*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+  * 그룹을 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오.
+  * 기본 URL이 `Community Group Name` 아래에 표시됩니다.
+  * 유효한 URL을 보려면 &quot;.html&quot;을 추가하십시오.
+    *예:*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **커뮤니티 그룹 템플릿** 메뉴
 
@@ -134,8 +141,8 @@ This is a 404 on helpx. Update or remove.
 * 이미지가 브라우저 창의 왼쪽 가장자리에 고정됩니다
 * 이미지 크기는 이미지 너비가 다음과 같은 경우 조절되지 않습니다.
 
-   * 브라우저의 너비보다 작으면 이미지가 가로로 반복됩니다.
-   * 브라우저의 너비보다 크면 이미지가 잘린 것으로 표시됩니다.
+  * 브라우저의 너비보다 작으면 이미지가 가로로 반복됩니다.
+  * 브라우저의 너비보다 크면 이미지가 잘린 것으로 표시됩니다.
 
 ### 3단계: 설정 {#step-settings}
 
@@ -239,14 +246,14 @@ This is a 404 on helpx. Update or remove.
 * 추가 [커뮤니티 기능](/help/communities/functions.md)을(를) 사이트 구조로 끌어서 놓습니다.
 * 사이트 구조의 커뮤니티 기능 인스턴스에서 다음을 수행합니다.
 
-   * **`Gear icon`**
-표시 제목, URL 및 [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups)을 포함한 설정을 편집합니다.
+  * **`Gear icon`**
+    표시 제목, URL 및 [권한이 있는 구성원 그룹](/help/communities/users.md#privilegedmembersgroups)을 포함한 설정을 편집합니다.
 
-   * **`Trashcan icon`**
-사이트 구조에서 기능을 제거(삭제)합니다.
+  * **`Trashcan icon`**
+    사이트 구조에서 기능을 제거(삭제)합니다.
 
-   * **`Grid icon`**
-사이트의 최상위 탐색 막대에 표시되는 함수 순서를 수정합니다.
+  * **`Grid icon`**
+    사이트의 최상위 탐색 막대에 표시되는 함수 순서를 수정합니다.
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ This is a 404 on helpx. Update or remove.
 * [커뮤니티 그룹 테마](#community-group-theme)
 * [커뮤니티 그룹 브랜딩](#community-group-branding)
 
-   * 브랜드 이미지를 변경할 수 있도록 패널 하단으로 스크롤합니다.
+  * 브랜드 이미지를 변경할 수 있도록 패널 하단으로 스크롤합니다.
 
 ### 설정 수정 {#modify-settings}
 

@@ -1,18 +1,32 @@
 ---
 title: '[!DNL Assets] 프록시 개발'
-description: 프록시는 프록시 작업자를 사용하여 작업을 처리하는  [!DNL Experience Manager] 인스턴스입니다.  [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소를 구성하는 방법 및 사용자 지정 프록시 작업자를 개발하는 방법에 대해 알아봅니다.
+description: 프록시는 프록시 작업자를 사용하여 작업을 처리하는 [!DNL Experience Manager] 인스턴스입니다. [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소를 구성하는 방법 및 사용자 지정 프록시 작업자를 개발하는 방법에 대해 알아봅니다.
 contentOwner: AG
 role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '858'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets] 프록시 개발 {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets]은(는) 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
@@ -145,13 +159,13 @@ TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-
 
 * Sling 이벤트 사용 설정 및 구현:
 
-   * 사용자 정의 작업 항목
-   * 사용자 지정 작업 이벤트 핸들러
+  * 사용자 정의 작업 항목
+  * 사용자 지정 작업 이벤트 핸들러
 
 * 그런 다음 JobService API를 사용하여 다음을 수행합니다.
 
-   * 사용자 정의 작업을 프록시로 디스패치
-   * 작업 관리
+  * 사용자 정의 작업을 프록시로 디스패치
+  * 작업 관리
 
 * 워크플로우에서 프록시를 사용하려면 WorkflowExternalProcess API 및 JobService API를 사용하여 사용자 지정 외부 단계를 구현해야 합니다.
 

@@ -5,13 +5,27 @@ exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 100%
-
 ---
-
 
 # Reader 확장 프로그램 인증서 만료 및 영향 {#expiration-of-reader-extensions-certificates-and-its-impact}
 
@@ -23,9 +37,9 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 ## 자주 묻는 질문
 
-**질문: Adobe Root 인증서와 Acrobat Reader 확장 프로그램 인증서의 차이점은 무엇입니까? Adobe Root 인증서는 Acrobat Reader 확장 프로그램 인증서에 종속됩니까? 두 인증서 모두 2023년 1월에 만료됩니까?**
+**질문: Adobe Root 인증서와 Acrobat Reader 확장 프로그램 인증서의 차이점은 무엇입니까? Adobe Root 인증서는 Acrobat Reader Extensions 인증서에 종속됩니까? 두 인증서 모두 2023년 1월에 만료됩니까?**
 
-답변: Adobe Root CA는 Acrobat Reader 확장 프로그램 인증서를 발급하는 인증 기관입니다. 2023년 1월 7일이 되면 &#39;Adobe Root CA&#39;와 해당 기관에서 발급된 모든 인증서가 만료됩니다.
+답변: Adobe Root CA는 Acrobat Reader Extensions 인증서를 발급하는 인증 기관입니다. 2023년 1월 7일이 되면 &#39;Adobe Root CA&#39;와 해당 기관에서 발급된 모든 인증서가 만료됩니다.
 
 **질문: 이전에 Adobe에서 인증서 만료 및 PDF 문서 사용/열기에 대한 영향과 관련해 공지한 적이 있습니다. 해당 공지를 무시해도 됩니까?**
 
@@ -37,7 +51,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: 2023년 1월 7일 이전에 인증서를 업데이트하지 않으면 어떻게 됩니까?**
 
-답변: 2023년 1월 7일 이전에 구 &#39;Adobe Root CA&#39;에서 발급된 프로덕션 인증서를 사용하는 모든 확장 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF는 만료 일자가 지나면 작동하지 않습니다.
+답변: 2023년 1월 7일 이전에 구 &#39;Adobe Root CA&#39;에서 발급된 프로덕션 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF는 만료 일자가 지나면 작동하지 않습니다.
 
 **질문: 새 인증서에 대한 설명이 기존 인증서에 대한 설명과 다릅니까?**
 
@@ -49,7 +63,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 인증서를 사용하는 확장 PDF 문서는 2023년 1월 7일 이후에도 계속 작동합니까?**
 
-답변: 예, 2023년 1월 7일 이전에 &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 프로덕션 인증서를 사용하는 모든 확장 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF 문서는 만료 일자가 지나면 더 이상 작동하지 않습니다.
+답변: 예, 2023년 1월 7일 이전에 &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 프로덕션 인증서로 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF 문서는 만료 일자가 지나면 더 이상 작동하지 않습니다.
 
 **질문: &#39;Adobe Root CA&#39;(기존 인증 기관)에서 발급된 인증서를 사용하는 확장 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader가 필요합니까?**
 
@@ -65,7 +79,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: Adobe Experience Manager Forms 서버에서 새로운 Acrobat Reader 확장 프로그램 인증서와 기존 Acrobat Reader 확장 프로그램 인증서를 모두 보관할 수 있습니까?**
 
-답변: 예, 두 인증서를 모두 Adobe Experience Manager Forms 서버에 보관할 수 있지만, 다른 별칭을 사용해야 합니다. 2023년 1월 7일 이후에는 새 인증서만 사용하여 Reader에서 PDF 문서를 확장할 수 있습니다.
+답변: 예, 두 인증서를 모두 Adobe Experience Manager Forms 서버에 보관할 수 있지만, 다른 별칭을 사용해야 합니다. 2023년 1월 7일 이후에는 PDF 문서를 Reader 확장하는 데 새 인증서만 사용할 수 있습니다.
 
 **질문: 동일한 Acrobat Reader 확장 프로그램 인증서를 모든 Adobe Experience Manager Forms 환경으로 가져올 수 있습니까?**
 

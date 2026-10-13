@@ -5,13 +5,22 @@ exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 1%
-
 ---
-
 # 워크플로 모범 사례{#workflow-best-practices}
 
 워크플로를 사용하면 Adobe Experience Manager(AEM) 활동을 자동화할 수 있습니다.
@@ -243,8 +252,8 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * 워크플로 프로세스 내에서 `WorkflowSession`이(가) 리포지토리를 수정하는 데 사용되는 경우 세션을 명시적으로 저장하지 마십시오. 그러면 워크플로가 완료될 때 세션이 저장됩니다.
 * 워크플로 단계 내에서 `Session.Save`을(를) 호출하면 안 됩니다.
 
-   * 워크플로 JCR 세션을 조정하는 것이 좋습니다. 그러면 워크플로 실행이 완료되면 워크플로 엔진이 세션을 자동으로 저장하므로 `save`은(는) 필요하지 않습니다.
-   * 프로세스 단계에서 자체 JCR 세션을 만들지 않는 것이 좋습니다.
+  * 워크플로 JCR 세션을 조정하는 것이 좋습니다. 그러면 워크플로 실행이 완료되면 워크플로 엔진이 세션을 자동으로 저장하므로 `save`은(는) 필요하지 않습니다.
+  * 프로세스 단계에서 자체 JCR 세션을 만들지 않는 것이 좋습니다.
 
 * 불필요한 저장을 제거함으로써 오버헤드를 줄여 워크플로우의 효율성을 높일 수 있습니다.
 
@@ -307,7 +316,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * 인스턴스가 업그레이드되기 전에 모든 사용자 정의 워크플로 모델이 백업되었는지 확인하십시오.
 * 사용자 지정 워크플로가 [위치](#locations)에 저장되지 않았는지 확인합니다.
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >

@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 7%
-
 ---
-
 
 # SPA 페이지 구성 요소{#spa-page-component}
 
@@ -42,7 +56,7 @@ SPA에 대한 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 개
 
 ## 커뮤니케이션 데이터 유형 {#communication-data-type}
 
-통신 데이터 형식은 `data-cq-datatype` 특성을 사용하여 AEM Page 구성 요소 내에서 HTML 요소를 설정합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청이 구성 요소의 Sling 모델 엔드포인트에 도달합니다. 업데이트가 페이지 편집기에서 발생하면 업데이트된 구성 요소의 JSON 표현식이 페이지 모델 라이브러리에 전송됩니다. 그런 다음 페이지 모델 라이브러리는 SPA에 업데이트를 경고합니다.
+통신 데이터 형식은 `data-cq-datatype` 특성을 사용하여 AEM Page 구성 요소 내에서 HTML 요소를 설정합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청이 구성 요소의 Sling 모델 엔드포인트에 도달합니다. 업데이트가 페이지 편집기에서 발생하면 업데이트된 구성 요소의 JSON 표시가 페이지 모델 라이브러리에 전송됩니다. 그런 다음 페이지 모델 라이브러리는 SPA에 업데이트를 경고합니다.
 
 **SPA 페이지 구성 요소 -`body.html`**
 

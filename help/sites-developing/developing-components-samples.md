@@ -10,13 +10,22 @@ exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 6%
-
+source-wordcount: '244'
+ht-degree: 11%
 ---
-
 # AEM 구성 요소 개발 - 코드 샘플{#developing-aem-components-code-samples}
 
 이 섹션에서는 AEM용 구성 요소를 만드는 방법에 대한 몇 가지 예를 제공합니다.
@@ -43,7 +52,7 @@ GITHUB의 코드
 GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 * [GitHub에서 aem 작성-대화 상자-필드-사용자 지정 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* 프로젝트를 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)(으)로 다운로드
+* 프로젝트를 [ZIP 파일](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)&#x200B;(으)로 다운로드
 
 >[!NOTE]
 >

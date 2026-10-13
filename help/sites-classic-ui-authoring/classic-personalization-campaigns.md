@@ -9,13 +9,24 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 4%
-
 ---
-
 
 # 캠페인 관리{#campaign-management}
 
@@ -44,23 +55,23 @@ Adobe Experience Manager(AEM)에서 브랜드는 최상위 단위이며 **캠페
 * **개 경험**
 포커스가 있는 콘텐츠는 **터치포인트**&#x200B;에서 방문자에게 표시되는 다양한 경험을 형성합니다. 사용 가능한 경험에는 몇 가지 유형이 있습니다.
 
-   * **티저**
-     [티저 페이지/단락](#teasers)은(는) 특정 방문자 **세그먼트**&#x200B;를 관심사에 집중된 콘텐츠로 안내하는 데 사용됩니다.
+  * **티저**
+    [티저 페이지/단락](#teasers)은(는) 특정 방문자 **세그먼트**&#x200B;를 관심사에 집중된 콘텐츠로 안내하는 데 사용됩니다.
 
-     티저 페이지는 다음과 같은 작업을 수행할 수 있습니다.
+    티저 페이지는 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 방문자가 선택할 수 있는 다양한 옵션을 제공합니다.
-      * 특정 방문자 세그먼트를 기반으로 하는 티저 단락을 하나만 표시합니다. 예를 들어 표시되는 티저 단락은 방문자의 나이에 따라 달라질 수 있습니다.
+    * 방문자가 선택할 수 있는 다양한 옵션을 제공합니다.
+    * 특정 방문자 세그먼트를 기반으로 하는 티저 단락을 하나만 표시합니다. 예를 들어 표시되는 티저 단락은 방문자의 나이에 따라 달라질 수 있습니다.
 
-     일반적으로 티저 페이지는 다음 티저 페이지로 대체될 때까지 특정 기간 동안 지속되는 임시 작업입니다.
+    일반적으로 티저 페이지는 다음 티저 페이지로 대체될 때까지 특정 기간 동안 지속되는 임시 작업입니다.
 
-   * **뉴스레터**
+  * **뉴스레터**
 
-     [전자 메일 통신](#emailmarketing)은 사용자를 참여시키고 사용자가 웹 사이트를 방문하도록 유도하는 데 사용됩니다. 일반적으로 뉴스레터 형식을 취하여 **리드**(**목록**(으)로 그룹화됨)로 보냅니다. **참고:** Adobe은 이 기능을 더 향상시킬 계획이 없습니다. 권장 사항은 [Adobe Campaign을 사용하고 AEM에 통합](/help/sites-administering/campaign.md)하는 것입니다.
+    [전자 메일 통신](#emailmarketing)은 사용자를 참여시키고 사용자가 웹 사이트를 방문하도록 유도하는 데 사용됩니다. 일반적으로 뉴스레터 형식을 취하여 **리드**(**목록**(으)로 그룹화됨)로 보냅니다. **참고:** Adobe은 이 기능을 더 향상시킬 계획이 없습니다. 권장 사항은 [Adobe Campaign을 사용하고 AEM에 통합](/help/sites-administering/campaign.md)하는 것입니다.
 
-   * **Adobe Target**
+  * **Adobe Target**
 
-     이를 통해 Adobe Target(이전의 Test&amp;Target)와 통합하여 마케터에게 지속적인 온라인 콘텐츠 및 고객 산출 더 큰 전환과 관련된 오퍼를 만드는 데 필요한 기능을 갖춘 전환 웹 사이트 최적화 도구를 제공합니다. Adobe Target은 테스트 디자인 및 실행, 대상 세그먼트 만들기 및 단일 애플리케이션에서 콘텐츠 타겟팅을 위한 직관적인 인터페이스를 제공합니다.
+    이를 통해 Adobe Target(이전의 Test&amp;Target)와 통합하여 마케터에게 지속적인 온라인 콘텐츠 및 고객 산출 더 큰 전환과 관련된 오퍼를 만드는 데 필요한 기능을 갖춘 전환 웹 사이트 최적화 도구를 제공합니다. Adobe Target은 테스트 디자인 및 실행, 대상 세그먼트 만들기 및 단일 애플리케이션에서 콘텐츠 타겟팅을 위한 직관적인 인터페이스를 제공합니다.
 
 * **접점**
 

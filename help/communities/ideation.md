@@ -9,13 +9,20 @@ exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
-
 ---
-
 # 관념화 기본 사항 {#ideation-essentials}
 
 이 페이지는 포럼과 유사하지만 초안으로 저장할 수 있는 기능과 공동 작업 환경을 갖춘 관념화 기능 작업에 필요한 필수 정보를 제공합니다.

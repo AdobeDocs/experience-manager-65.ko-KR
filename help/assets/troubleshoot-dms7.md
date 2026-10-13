@@ -11,13 +11,27 @@ exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: aaba5717-080e-40d6-a128-c9c8a9255476
+    internal-label: Troubleshooting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1411'
 ht-degree: 1%
-
 ---
-
 # Dynamic Media - Scene7 모드 문제 해결{#troubleshooting-dynamic-media-scene-mode}
 
 다음 문서에서는 **dynamicmedia_scene7** 실행 모드를 실행하는 Dynamic Media의 문제 해결에 대해 설명합니다.
@@ -54,7 +68,7 @@ CRXDE Lite에서 다음 에셋 속성을 검토하여 Experience Manager에서 D
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 자세한 정보를 수집하기 위해 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
+동기화 오류 및 문제가 `error.log`에 기록됩니다(Experience Manager 서버 디렉터리 `/crx-quickstart/logs/`). 충분한 로깅을 사용하여 대부분의 문제의 근본 원인을 확인할 수 있지만 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘려 자세한 정보를 수집할 수 있습니다.
 
 ### 이동, 복사, 삭제 {#move-copy-delete}
 
@@ -243,7 +257,7 @@ CRXDE Lite에서 다음을 수행합니다.
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-예: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+     예: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **솔루션**
 
@@ -255,7 +269,8 @@ CRXDE Lite에서 다음을 수행합니다.
 1. 목록에서 뷰어 패키지를 검색합니다. `cq-dam-scene7-viewers-content`(으)로 시작합니다.
 1. **다시 설치**&#x200B;를 선택합니다.
 1. 클라우드 서비스에서 Dynamic Media 구성 페이지로 이동한 다음 Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
-1. 변경하지 말고 **저장**&#x200B;을 선택하세요.이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
+1. 변경하지 말고 **저장**&#x200B;을 선택하세요.
+이 저장 작업은 샘플 에셋, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화하기 위한 논리를 다시 트리거합니다.
 
 ### 문제: 뷰어 사전 설정 작성에서 이미지 미리 보기를 로드할 수 없음 {#image-preview-not-loading}
 

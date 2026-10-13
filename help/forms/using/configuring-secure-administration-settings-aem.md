@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
-
+source-wordcount: '852'
+ht-degree: 2%
 ---
-
 # JEE에서 AEM Forms에 대한 보안 관리 설정 구성 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 개인 개발 환경에서는 필요하지만 JEE의 AEM Forms 프로덕션 환경에서는 필요하지 않은 사용자 계정 및 서비스를 관리하는 방법에 대해 알아봅니다.
@@ -29,7 +45,7 @@ JEE의 AEM Forms이 설치되고 구성된 후 SOAP 및 EJB(Enterprise JavaBeans
 
 JEE 서비스의 AEM Forms을 사용하려면 승인된 호출자에 대해 유효한 자격 증명을 전달해야 하지만, 원격으로 액세스할 수 있어야 하는 서비스에 대한 원격 액세스만 허용해야 합니다. 제한된 액세스 가능성을 얻으려면 원격으로 액세스할 수 있는 서비스 집합을 작동하는 시스템에 대해 가능한 최소한으로 줄인 다음 필요한 추가 서비스에 대해 원격 호출을 활성화해야 합니다.
 
-JEE의 AEM Forms 서비스에는 항상 최소한 SOAP 액세스 권한이 필요합니다. 이러한 서비스는 일반적으로 Workbench에서 사용하는 데 필요하지만 Workspace 웹 애플리케이션에서 호출하는 서비스도 포함합니다.
+JEE 서비스의 AEM Forms은 항상 최소한 SOAP 액세스가 필요합니다. 이러한 서비스는 일반적으로 Workbench에서 사용하는 데 필요하지만 Workspace 웹 애플리케이션에서 호출하는 서비스도 포함합니다.
 
 관리 콘솔의 응용 프로그램 및 서비스 웹 페이지를 사용하여 다음 절차를 완료합니다.
 
@@ -62,7 +78,7 @@ JEE의 AEM Forms 서비스에는 항상 최소한 SOAP 액세스 권한이 필�
    * WorkspaceSingleSignOn
    * 애플리케이션 관리자
 
-1. **다음**&#x200B;을 클릭하고 위 목록에 없는 SOAP 끝점에 대해 이전 단계를 반복합니다. 끝점을 제거하기 전에 SOAP이 공급자 열에 나열되어 있는지 확인합니다.
+1. **다음**&#x200B;을 클릭하고 위 목록에 없는 SOAP 끝점에 대해 이전 단계를 반복합니다. 끝점을 제거하기 전에 SOAP이 공급자 열에 나열되어 있는지 확인하십시오.
 
 ## 서비스에 대한 필수적이지 않은 익명 액세스 비활성화 {#disabling-non-essential-anonymous-access-to-services}
 

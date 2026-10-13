@@ -10,13 +10,22 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 1%
-
 ---
-
 # TarMK 콜드 스탠바이로 AEM을 실행하는 방법{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 소개 {#introduction}
@@ -218,7 +227,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 >
 >언제든지 Sling 설정 웹 콘솔에서 **기본** 또는 **대기** 실행 모드가 있는지 확인하여 인스턴스의 역할을 확인할 수 있습니다.
 >
->이 작업은 *https://localhost:4502/system/console/status-slingsettings*(으)로 이동하여 **&quot;실행 모드&quot;** 줄을 확인하여 수행할 수 있습니다.
+>*https://localhost:4502/system/console/status-slingsettings*(으)로 이동하여 **&quot;실행 모드&quot;** 줄을 확인하면 이 작업을 수행할 수 있습니다.
 
 ## 최초 동기화 {#first-time-synchronization}
 

@@ -10,13 +10,20 @@ exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
-
 ---
-
 # 오버레이 커뮤니티 구성 요소 {#overlay-communities-components}
 
 기본 구성 요소를 [오버레이](/help/communities/client-customize.md#overlays)하려는 의도는 해당 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양이나 동작을 전체적으로 변경하는 것입니다. /libs 폴더에서 검색하기 전에 sling 특성에 따라 /apps 폴더로 해결됩니다. 따라서 구성 요소에 대한 경로는 /libs 폴더가 아닌 /apps 폴더에 있다는 점을 제외하면 기본 구성 요소에 대한 경로와 동일합니다.

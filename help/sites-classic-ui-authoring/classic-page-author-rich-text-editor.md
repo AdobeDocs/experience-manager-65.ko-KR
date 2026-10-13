@@ -8,13 +8,22 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1788'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # 서식 있는 텍스트 편집기 {#rich-text-editor}
 
 리치 텍스트 편집기는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이는 다음을 포함한 다양한 구성 요소의 기초를 형성합니다.
@@ -262,7 +271,7 @@ AEM은 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두 제�
 
 테이블별 함수는 다음과 같습니다.
 
-* [표 속성](#table-properties)
+* [테이블 속성](#table-properties)
 * [셀 속성](#cell-properties)
 * [행 추가 또는 삭제](#add-or-delete-rows)
 * [열 추가 또는 삭제](#add-or-delete-columns)
@@ -272,7 +281,7 @@ AEM은 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두 제�
 * [중첩된 표](#creating-nested-tables)
 * [테이블 제거](#remove-table)
 
-#### 표 속성 {#table-properties}
+#### 테이블 속성 {#table-properties}
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 

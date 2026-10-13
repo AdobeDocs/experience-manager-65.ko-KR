@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 0%
-
 ---
-
 # 블로그 기능 {#blog-feature}
 
 ## 소개 {#introduction}
@@ -250,11 +257,11 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
   블로그 게시물 아카이브에 표시하는 데 사용되는 형식입니다. 이 형식은 Java™ 규칙에 따라 자리 표시자를 사용합니다.
 
-   * yyyy : &#39;2015&#39;와 같은 전체 연도
-   * yy : &#39;15&#39;와 같은 간단한 연도
-   * MMMMM : 6월 처럼 전체 달
-   * MMM : 6월처럼 짧은 달
-   * MM : 월 번호(06)
+  * yyyy : &#39;2015&#39;와 같은 전체 연도
+  * yy : &#39;15&#39;와 같은 간단한 연도
+  * MMMMM : 6월 처럼 전체 달
+  * MMM : 6월처럼 짧은 달
+  * MM : 월 번호(06)
 
   기본값은 &quot;yyyy MMMMM&quot;으로, 예를 들어 &quot;2015 June&quot;이 표시됩니다.
 
@@ -262,15 +269,15 @@ AEM Communities의 블로그 기능이 작성 활동에서 게시 환경에서 �
 
   사이드바에 표시할 블로그 게시물의 제목 및 유형입니다. 다음 중 하나를 선택합니다.
 
-   * 작성자
-   * 범주
-   * 아카이브
+  * 작성자
+  * 범주
+  * 아카이브
 
 * **블로그 구성 요소 경로**
 
   *(선택 사항)* 블로그 기사를 나열할 블로그 리소스의 위치입니다. 비워 두면 같은 페이지에 나타나는 resourceType `social/journal/components/hbs/journal`의 구성 요소가 사용됩니다.
 
-   * 예, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * 예, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **제안 한도**
 

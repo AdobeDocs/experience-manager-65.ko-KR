@@ -5,13 +5,37 @@ exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 92%
-
+source-wordcount: '1155'
+ht-degree: 88%
 ---
-
 # 번역 통합 구성 {#configure-integration}
 
 AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다.
@@ -35,7 +59,7 @@ AEM Headless 번역 여정의 이전 문서인 [AEM Headless 번역 시작하기
 
 ## 번역 통합 프레임워크 {#tif}
 
-AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 통합하여 AEM 콘텐츠 번역을 조정합니다. 여기에는 세 가지 기본 단계가 포함됩니다.
+AEM의 번역 통합 프레임워크(TIF)는 제3자 번역 서비스와 통합되어 AEM 콘텐츠의 번역을 조정합니다. 여기에는 세 가지 기본 단계가 포함됩니다.
 
 1. 번역 서비스 공급업체에 연결합니다.
 1. 번역 통합 프레임워크 구성을 만듭니다.
@@ -59,7 +83,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 >
 >AEM의 기본 Microsoft Translator를 사용하면 추가 설정이 필요하지 않으며 추가적인 커넥터 구성 없이 그대로 작동합니다.
 >
->테스트 목적으로 Microsoft Translator를 사용하는 경우 다음 두 섹션의 단계를 수행하지 않아도 됩니다. [번역 통합 구성 만들기](#create-config) 및 [구성과 콘텐츠 연결](#associate) 그러나 원하는 커넥터를 구성해야 하는 단계를 익숙하게 수행할 수 있도록 이들 단계를 읽어보는 것이 좋습니다.
+>테스트 목적으로 Microsoft Translator 커넥터를 사용하는 경우 다음 두 섹션의 단계를 수행하지 않아도 됩니다. [번역 통합 구성 만들기](#create-config) 및 [구성과 콘텐츠 연결](#associate) 그러나 원하는 커넥터를 구성해야 할 때의 단계에 익숙해지도록 이들 단계를 읽어보는 것이 좋습니다.
 >
 >Microsoft Translator 커넥터의 체험판 라이선스는 프로덕션 목적으로 고안된 것이 아니며, 라이선스를 부여하려면 시스템 관리자가 이 문서 끝의 [추가 리소스](#additional-resources) 섹션에 자세히 설명된 단계에 따라 해당 라이선스를 구성해야 합니다.
 
@@ -109,7 +133,7 @@ AEM의 번역 통합 프레임워크(TIF)를 서드파티 번역 서비스와 �
 
 ## 구성과 콘텐츠 연결 {#associate}
 
-AEM은 유연하고 강력한 도구이며 여러 커넥터 및 구성을 통해 다중 동시 번역 서비스를 지원합니다. 이러한 구성을 설정하는 작업은 이 여정에서 다루지 않습니다. 그러나 이러한 유연성은 이 구성을 콘텐츠와 연결하여 콘텐츠를 번역하는 데 사용할 커넥터 및 구성을 지정해야 함을 의미합니다.
+AEM은 유연하고 강력한 도구이며 여러 커넥터 및 구성을 통해 여러 번역 서비스를 동시에 지원합니다. 이러한 구성을 설정하는 작업은 이 여정에서 다루지 않습니다. 그러나 이러한 유연성은 이 구성을 콘텐츠와 연결하여 콘텐츠를 번역하는 데 사용할 커넥터 및 구성을 지정해야 함을 의미합니다.
 
 이 작업을 수행하려면 콘텐츠의 언어 루트로 이동합니다. 이 예에서는 다음과 같습니다.
 

@@ -7,13 +7,27 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 2%
-
+source-wordcount: '1612'
+ht-degree: 7%
 ---
-
 # 스마트 태그 이해, 적용 및 조정 {#enhanced-smart-tags}
 
 | 버전 | 문서 링크 |
@@ -21,9 +35,9 @@ ht-degree: 2%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
-디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록을 포함합니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 자산을 쉽게 식별하고 검색할 수 있습니다.
+디지털 에셋을 다루는 조직은 에셋 메타데이터에서 분류 체계 제어 어휘를 사용하는 경우가 점점 늘어나고 있습니다. 여기에는 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 에셋을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함됩니다. 분류 체계 제어 어휘를 사용하여 에셋에 태그를 지정하면 에셋을 쉽게 식별 및 검색할 수 있습니다.
 
-자연어 어휘와 비교하여 비즈니스 분류법에 따라 디지털 에셋에 태그를 지정하면 기업의 비즈니스에 맞게 정렬되고 가장 관련성이 높은 에셋이 검색에 표시됩니다.
+자연어 어휘와 비교했을 때 비즈니스 분류 체계에 따라 디지털 에셋에 태그를 지정하면 기업의 비즈니스에 맞게 정렬되고 가장 관련성이 높은 에셋이 검색에 표시됩니다.
 
 예를 들어 자동차 제조사가 자동차 이미지에 모델 이름을 태깅해 다양한 모델의 이미지를 검색해 판촉 캠페인을 설계할 때 관련 이미지만 나타나도록 할 수 있다.
 
@@ -133,7 +147,7 @@ ht-degree: 2%
 
 스마트 컨텐츠 서비스에서 폴더 내의 자산에 정기적으로 태그를 지정할 수 있습니다. 자산 폴더의 속성 페이지를 열고 **[!UICONTROL 세부 정보]** 탭에서 **[!UICONTROL 스마트 태그 사용]**&#x200B;을 선택한 다음 변경 내용을 저장합니다.
 
-폴더에 대해 이 옵션을 선택하면 Smart Content Service가 자동으로 폴더 내 자산에 태그를 지정합니다. 태깅 워크플로우는 기본적으로 매일 오전 12:00시에 실행됩니다.
+폴더에 대해 이 옵션을 선택하면 Smart Content Service가 자동으로 폴더 내 자산에 태그를 지정합니다. 태깅 워크플로우는 기본적으로 매일 오전 12시에 실행됩니다.
 
 ### 온디맨드 태깅 {#on-demand-tagging}
 

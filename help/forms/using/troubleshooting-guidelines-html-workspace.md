@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 공간 문제 해결 지침
+title: AEM Forms Workspace에 대한 문제 해결 지침
 description: 로그를 활성화하고 브라우저에서 디버거를 사용하여 AEM Forms 작업 공간 문제를 해결합니다.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,30 @@ exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 0%
-
+source-wordcount: '788'
+ht-degree: 7%
 ---
-
-# AEM Forms 작업 공간 문제 해결 지침 {#troubleshooting-guidelines-for-aem-forms-workspace}
+# AEM Forms Workspace에 대한 문제 해결 지침 {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 이 문서에서는 로깅을 활성화하고 브라우저에서 디버거를 사용하여 AEM Forms 작업 영역을 디버깅하는 방법에 대해 설명합니다. 또한 AEM Forms 작업 공간 및 해당 해결 방법을 사용할 때 발생할 수 있는 몇 가지 일반적인 문제에 대해 설명합니다.
 
@@ -26,18 +42,18 @@ ht-degree: 0%
 
 패키지를 설치하는 동안 오류 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`이(가) 발생하면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite에 로그인합니다. 기본 url은 `https://[localhost]:'port'/lc/crx/de/index.jsp`입니다.
+1. CRXDE Lite에 로그인. 기본 url은 `https://[localhost]:'port'/lc/crx/de/index.jsp`입니다.
 1. 다음 노드를 삭제합니다.
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`입니다
 1. `adobe-lc-workspace-pkg-[version].zip` 패키지를 검색하여 설치합니다.
-1. 응용 프로그램 서버를 다시 시작합니다.
+1. 애플리케이션 서버를 다시 시작합니다.
 
 >[!NOTE]
 >
-> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## AEM Forms 작업 영역 로깅 {#aem-forms-workspace-nbsp-logging}
 
@@ -168,14 +184,14 @@ AEM Forms 작업 공간에서:
 
 1. PDF 양식이 Google Chrome에서 렌더링되거나 제출되지 않습니다.
 
-   1. Adobe® Reader® 플러그인을 설치합니다.
+   1. ® Reader® 플러그인을 설치합니다.
    1. Chrome에서 chrome://plugins 을 열어 사용 가능한 플러그인을 확인합니다.
    1. Chrome PDF 뷰어 플러그인을 비활성화하고 Adobe Reader 플러그인을 활성화합니다.
 
-1. SWF 양식 또는 안내서가 Google Chrome에서 렌더링되고 있지 않습니다.
+1. SWF form 또는 Guide가 Google Chrome에서 렌더링되고 있지 않습니다.
 
    1. Chrome에서 chrome://plugins 을 열어 사용 가능한 플러그인을 확인합니다.
-   1. Adobe Flash® 플레이어 플러그인에 대한 세부 사항을 참조하십시오.
+   1. Adobe Flash® Player 플러그인에 대한 세부 사항을 참조하십시오.
    1. Adobe Flash Player 플러그인에서 PepperFlash를 비활성화합니다.
 
 1. AEM Forms 작업 영역을 사용자 지정했지만 변경 사항을 볼 수 없습니다.
@@ -184,7 +200,7 @@ AEM Forms 작업 공간에서:
 
 1. 데스크탑에서 열 때 HTML에서 양식을 렌더링할 수 있도록 사용자가 수행해야 하는 작업은 무엇입니까?
 
-   워크벤치를 사용하는 동안 태스크 지정 단계에서 기본 프로파일에 대한 HTML 라디오 단추를 선택합니다.
+   워크벤치를 사용하는 동안 작업 할당 단계에서 기본 프로필에 대한 HTML 라디오 단추를 선택합니다.
 
 1. 클릭하면 첨부 파일이 표시되지 않습니다.
 
@@ -194,6 +210,6 @@ AEM Forms 작업 공간에서:
 
    다른 양식 응용 프로그램에서 로그아웃한 다음 작업 영역에 로그인합니다.
 
-1. HTML 양식을 디자인에서 프로세스 등록 정보를 사용하여 AEM Forms workspace에서 렌더링하면 양식 내부에 제출 버튼이 표시됩니다.
+1. HTML forms에서 디자인의 프로세스 속성을 사용하는 경우 AEM Forms workspace에서 렌더링하면 양식 내에 제출 버튼이 표시됩니다.
 
-   양식을 디자인할 때 프로세스 등록 정보를 사용하면 양식 내에 제출 단추가 추가됩니다. AEM Forms 작업 영역에서 PDF으로 렌더링될 때 제출 버튼이 최종 사용자에게 표시되지 않습니다. 하지만 AEM Forms 작업 영역에서 HTML 양식으로 렌더링할 경우 제출 버튼이 최종 사용자에게 표시됩니다. 양식 내에서 이 제출 단추를 클릭해도 작업이 시작되지 않습니다. 양식 외부에 있는 AEM Forms 작업 영역 하단의 제출 버튼을 클릭하면 작업이 완료됩니다.
+   양식을 디자인할 때 프로세스 등록 정보를 사용하면 양식 내에 제출 단추가 추가됩니다. AEM Forms 작업 영역에서 PDF으로 렌더링되는 경우 제출 버튼이 최종 사용자에게 표시되지 않습니다. 하지만 AEM Forms 작업 영역에서 HTML 양식으로 렌더링할 경우 제출 버튼이 최종 사용자에게 표시됩니다. 양식 내에서 이 제출 단추를 클릭해도 작업이 시작되지 않습니다. 양식 외부에 있는 AEM Forms 작업 영역 하단의 제출 버튼을 클릭하면 작업이 완료됩니다.

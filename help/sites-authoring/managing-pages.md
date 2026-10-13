@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2506'
 ht-degree: 72%
-
 ---
-
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
 이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-authoring/editing-content.md)할 수 있도록 Adobe Experience Manager(AEM)로 페이지를 만들고 관리하는 방법을 설명합니다.
@@ -85,13 +98,13 @@ ht-degree: 72%
 
 * **[제목](#title)**:
 
-   * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 콘텐츠 상단에 표시됩니다.
-   * 이 필드는 옵션입니다.
+  * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 콘텐츠 상단에 표시됩니다.
+  * 이 필드는 옵션입니다.
 
 * **[이름](#name)**:
 
-   * URI를 생성하는 데 사용됩니다.
-   * 이 필드에 대한 사용자 입력은 옵션입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다. 자세한 내용은 [페이지 이름 제한 및 모범 사례](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) 섹션을 참조하십시오.
+  * URI를 생성하는 데 사용됩니다.
+  * 이 필드에 대한 사용자 입력은 옵션입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다. 자세한 내용은 [페이지 이름 제한 및 모범 사례](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) 섹션을 참조하십시오.
 
 #### 페이지 이름 제한 사항 및 모범 사례 {#page-name-restrictions-and-best-practices}
 
@@ -211,14 +224,14 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    * **제목**:
 
-      * 사용자에게 표시되며 필수입니다.
+     * 사용자에게 표시되며 필수입니다.
 
    * **이름**:
 
-      * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
-      * 페이지를 만들 때 **이름** 페이지를 제공하면 AEM [AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
+     * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
+     * 페이지를 만들 때 **이름** 페이지를 제공하면 AEM [AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
 
-      * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+     * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
    >[!NOTE]
    >
@@ -343,8 +356,8 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * [열 보기](/help/sites-authoring/basic-handling.md#column-view)를 사용하여 페이지의 새 위치를 탐색할 수 있습니다.
 
-      * 대상의 썸네일을 클릭하여 대상을 선택합니다.
-      * 계속하려면 **다음**&#x200B;을 클릭하십시오.
+     * 대상의 썸네일을 클릭하여 대상을 선택합니다.
+     * 계속하려면 **다음**&#x200B;을 클릭하십시오.
 
    * **뒤로**&#x200B;를 사용하여 페이지 이름 지정으로 돌아갑니다.
 
@@ -384,8 +397,8 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 페이지 이동 작업은 항상 비동기적으로 처리되므로 사용자는 방해받지 않고 UI에서 계속 작성할 수 있습니다.
 
 * 사용자는 비동기 작업을 수행할 시점을 정의해야 합니다
-   * **이제** 비동기 작업의 실행을 즉시 시작합니다.
-   * **나중에** 사용자는 비동기 작업이 시작될 시기를 정의할 수 있습니다.
+  * **이제** 비동기 작업의 실행을 즉시 시작합니다.
+  * **나중에** 사용자는 비동기 작업이 시작될 시기를 정의할 수 있습니다.
 
   ![비동기 페이지 이동](assets/asynchronous-page-move.png)
 
@@ -415,8 +428,8 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    * **취소**&#x200B;를 사용하여 작업을 중단하거나,
    * **삭제**&#x200B;를 사용하여 작업을 확인합니다.
 
-      * 페이지에 참조가 없으면 페이지가 삭제됩니다.
-      * 페이지에 참조가 있으면 메시지 상자에 **하나 이상의 페이지가 참조되었다**&#x200B;고 표시됩니다. **강제 삭제** 또는 **취소**&#x200B;를 선택할 수 있습니다.
+     * 페이지에 참조가 없으면 페이지가 삭제됩니다.
+     * 페이지에 참조가 있으면 메시지 상자에 **하나 이상의 페이지가 참조되었다**&#x200B;고 표시됩니다. **강제 삭제** 또는 **취소**&#x200B;를 선택할 수 있습니다.
 
 >[!NOTE]
 >

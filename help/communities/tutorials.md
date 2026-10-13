@@ -1,6 +1,6 @@
 ---
 title: 튜토리얼
-description: Adobe Experience Manager(AEM) Communities SCF(소셜 구성 요소 프레임워크)를 학습하고 작업하는 데 도움이 되는 예제
+description: Adobe Experience Manager(AEM) 커뮤니티 SCF(소셜 구성 요소 프레임워크)를 학습하고 작업하는 데 도움이 되는 예입니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,16 +9,23 @@ exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # 튜토리얼 {#tutorials}
 
-다음은 AEM(Adobe Experience Manager) 6.1 Communities [SCF(소셜 구성 요소 프레임워크)](scf.md)를 학습하고 작업하는 데 도움이 되는 예입니다.
+다음은 Adobe Experience Manager(AEM) 6.1 Communities [SCF(소셜 구성 요소 프레임워크)](scf.md)를 학습하고 작업하는 데 도움이 되는 예입니다.
 
 ## 클라이언트측 사용자 정의 {#client-side-customization}
 
@@ -38,7 +45,7 @@ ht-degree: 1%
 
 샘플 코드는 [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) 리포지토리에서 사용할 수 있습니다.
 
-* [SCF 구성 요소 샘플 사용자 지정](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [SCF 구성 요소 샘플 맞춤화](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
 * [오버레이 SCF 구성 요소 샘플](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 

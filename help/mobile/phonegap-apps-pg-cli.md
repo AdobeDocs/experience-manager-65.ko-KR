@@ -9,13 +9,17 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '649'
 ht-degree: 2%
-
 ---
-
 # PhoneGap CLI를 사용한 앱 개발{#developing-apps-with-phonegap-cli}
 
 {{ue-over-mobile}}
@@ -33,10 +37,10 @@ iOS의 경우: iPhone 및 iPad용으로 개발하려면 Apple의 Xcode IDE가 �
 * [여기](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1)에서 무료로 다운로드하세요.
 * PhoneGap iOS 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Android™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android™ Stuido IDE가 필요합니다.
+™의 경우: iPhone 및 iPad용으로 개발하려면 Google의 Android™ Stuido IDE가 필요합니다.
 
 * [여기](https://developer.android.com/studio)에서 무료로 다운로드하세요.
-* PhoneGap Android™ 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
+* PhoneGap ™ 플랫폼 안내서(`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Source 다운로드 {#download-the-source}
 
@@ -86,9 +90,9 @@ phonegap run ios
 >
 >1. 폴더 만들기(mkdir 테스트)
 >1. 이 새 폴더로 이동(cd 테스트)
->1. `phonegap create helloWorld` 실행
+>1. `phonegap create helloWorld`를 실행합니다.
 >1. helloWorld(cd helloWorld)로 이동
->1. `phonegap run android`을(를) 실행합니다(또는 위와 같이 Android™을 iOS으로 바꾸기).
+>1. `phonegap run android`을(를) 실행합니다(또는 위와 같이 ™을 iOS으로 바꾸기).
 >1. JavaScript Bridge이 기본 모드로 작동 중인 경우 에뮬레이터가 &#39;장치 준비&#39;라고 말하며 새로 만든 PhoneGap 앱을 실행하도록 열립니다.
 >
 >이 문제 해결은 PhoneGap CLI 개발 환경이 올바르게 실행되고 있는지 확인합니다.
@@ -103,8 +107,8 @@ phonegap run ios
 
 * Safari 환경 설정 열기
 
-   * 메뉴 막대에서 Safari 를 클릭합니다.
-   * Preferences 클릭
+  * 메뉴 막대에서 Safari 를 클릭합니다.
+  * Preferences 클릭
 
 * 기본 설정 창에서 고급 을 클릭합니다.
 

@@ -10,16 +10,28 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # 기본적으로 SSL/TLS{#ssl-tls-by-default}
 
-AEM의 보안을 지속적으로 개선하기 위해 Adobe은 기본적으로 SSL이라는 기능을 도입했습니다. 목적은 AEM 인스턴스에 연결하기 위해 HTTPS를 사용하도록 권장하는 것입니다.
+AEM의 보안을 지속적으로 개선하기 위해 Adobe에는 기본적으로 SSL이라는 기능이 도입되었습니다. 목적은 AEM 인스턴스에 연결하기 위해 HTTPS를 사용하도록 권장하는 것입니다.
 
 ## 기본적으로 SSL/TLS 활성화 {#enabling-ssl-tls-by-default}
 
@@ -55,7 +67,7 @@ AEM 홈 화면에서 관련 받은 편지함 메시지를 클릭하여 기본적
 
 기본적으로 SSL/TLS를 자동화하는 방법에는 세 가지가 있습니다.
 
-### HTTP POST 사용 {#via-http-post}
+### HTTP POST를 통해 {#via-http-post}
 
 첫 번째 방법은 구성 마법사에서 사용 중인 SSLSetup 서버에 게시하는 것입니다.
 
@@ -195,7 +207,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 >[!NOTE]
 >
->AEM에서 유용한 cURL 명령의 중앙 집중식 목록은 [AEM에서 cURL 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
+>AEM의 유용한 cURL 명령의 중앙 집중식 목록은 [AEM과 함께 cURL 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
 
 cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 이 URL에 구성 매개 변수를 게시하여 이 작업을 수행할 수 있습니다.
 
@@ -242,7 +254,7 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 ### TLS 1.3 연결 활성화 {#enabling-tls-connection}
 
 1. 웹 콘솔로 이동
-1. 그런 다음 **OSGi** - **구성** - **Granite SSL 커넥터 팩토리 Adobe**&#x200B;로 이동합니다.
+1. 그런 다음 **OSGi** - **구성** - **Adobe Granite SSL Connector Factory**&#x200B;로 이동합니다.
 1. **포함된 암호 집합** 필드로 이동하여 다음 항목을 추가하십시오. 다음 위치에 추가한 후 필드 왼쪽에 있는 &quot;**+**&quot; 단추를 눌러 각 추가를 확인할 수 있습니다.
 
    * `TLS_AES_256_GCM_SHA384`

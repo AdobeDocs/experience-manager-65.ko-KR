@@ -10,13 +10,25 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '780'
 ht-degree: 3%
-
 ---
-
 # 폐쇄형 사용자 그룹 생성{#creating-a-closed-user-group}
 
 폐쇄된 사용자 그룹(CUG)은 게시된 인터넷 사이트 내에 있는 특정 페이지에 대한 액세스를 제한하는 데 사용됩니다. 이러한 페이지는 지정된 구성원이 로그인하고 보안 자격 증명을 제공해야 합니다.
@@ -81,7 +93,7 @@ CUG를 페이지에 적용하려면 다음을 수행합니다.
    1. **사용** 확인란을 활성화합니다.
 
    1. **로그인 페이지**&#x200B;에 경로를 추가하십시오.
-선택 사항이며 비워 두면 표준 로그인 페이지가 사용됩니다.
+      선택 사항이며 비워 두면 표준 로그인 페이지가 사용됩니다.
 
    ![CUG 추가됨](assets/cug-authentication-requirement.png)
 
@@ -134,7 +146,8 @@ CUG에 대해 dispatcher.any 파일[&#128279;](https://experienceleague.adobe.co
 
 >[!NOTE]
 >
->Dispatcher 팜에 세션 관리가 활성화되어 있으면 팜이 처리하는 모든 페이지가 캐시되지 않습니다. CUG 외부에 있는 페이지를 캐시하려면 dispatcher.any>에서 CUG가 아닌 페이지를 처리하는 두 번째 팜을 만드십시오.
+>Dispatcher 팜에 세션 관리가 활성화되어 있으면 팜이 처리하는 모든 페이지가 캐시되지 않습니다. CUG 외부에 있는 페이지를 캐시하려면 dispatcher.any에서 두 번째 팜을 만듭니다
+>비 CUG 페이지를 처리합니다.
 
 1. `/directory`을(를) 정의하여 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#enabling-secure-sessions-sessionmanagement)을(를) 구성합니다. 예:
 

@@ -9,13 +9,20 @@ role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # DSRP - 관계형 데이터베이스 저장소 리소스 제공자 {#dsrp-relational-database-storage-resource-provider}
 
 ## DSRP 정보 {#about-dsrp}
@@ -60,54 +67,54 @@ Oak 및 SRP 컬렉션을 모두 집중적으로 사용하는 경우 성능상의
 * 관리자 권한으로 로그인
 * **기본 메뉴**&#x200B;에서
 
-   * 왼쪽 창에서 **[!UICONTROL 도구]** 선택
-   * **[!UICONTROL 커뮤니티]** 선택
-   * **[!UICONTROL 저장소 구성]** 선택
+  * 왼쪽 창에서 **[!UICONTROL 도구]** 선택
+  * **[!UICONTROL 커뮤니티]** 선택
+  * **[!UICONTROL 저장소 구성]** 선택
 
-      * 예를 들어 결과 위치는 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)입니다.
+    * 예를 들어 결과 위치는 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)입니다.
 
-     >[!NOTE]
-     >
-     >이제 기본 저장소 구성이 `etc` 경로(`/etc/socialconfig/srpc/defaultconfiguration`) 대신 conf 경로(`/conf/global/settings/community/srpc/defaultconfiguration`)에 저장됩니다. [마이그레이션 단계](#zerodt-migration-steps)를 따라 defaultsrp가 예상대로 작동하도록 하는 것이 좋습니다.
+    >[!NOTE]
+    >
+    >이제 기본 저장소 구성이 `etc` 경로(`/etc/socialconfig/srpc/defaultconfiguration`) 대신 conf 경로(`/conf/global/settings/community/srpc/defaultconfiguration`)에 저장됩니다. [마이그레이션 단계](#zerodt-migration-steps)를 따라 defaultsrp가 예상대로 작동하도록 하는 것이 좋습니다.
 
   ![dsrp-config](assets/dsrp-config.png)
 
 * **[!UICONTROL 데이터베이스 저장소 리소스 공급자(DSRP) 선택]**
 * **데이터베이스 구성**
 
-   * **[!UICONTROL JDBC 데이터 원본 이름]**
+  * **[!UICONTROL JDBC 데이터 원본 이름]**
 
-     MySQL 연결에 지정된 이름은 [JDBC OSGi 구성](dsrp-mysql.md#configurejdbcconnections)에 입력한 이름과 같아야 합니다.
+    MySQL 연결에 지정된 이름은 [JDBC OSGi 구성](dsrp-mysql.md#configurejdbcconnections)에 입력한 이름과 같아야 합니다.
 
-     *기본값*: 커뮤니티
+    *기본값*: 커뮤니티
 
-   * **[!UICONTROL 데이터베이스 이름]**
+  * **[!UICONTROL 데이터베이스 이름]**
 
-     [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) 스크립트에서 스키마에 지정한 이름
+    [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) 스크립트에서 스키마에 지정한 이름
 
-     *기본값*: 커뮤니티
+    *기본값*: 커뮤니티
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
+  * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-     내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. 또는 외부 ZooKeeper와 함께 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper의 URI(예: *my.server.com:80*)로 설정하십시오.
+    내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. 또는 외부 ZooKeeper를 사용하여 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행할 때 이 값을 ZooKeeper의 URI(예: *my.server.com:80*)로 설정하십시오.
 
-     *기본값*: *&lt;비어 있음>*
+    *기본값*: *&lt;비어 있음>*
 
-   * **[!UICONTROL Solr URL]**
+  * **[!UICONTROL Solr URL]**
 
-     *기본값*: https://127.0.0.1:8983/solr/
+    *기본값*: https://127.0.0.1:8983/solr/
 
-   * **[!UICONTROL Solr 컬렉션]**
+  * **[!UICONTROL Solr 컬렉션]**
 
-     *기본값*: collection1
+    *기본값*: collection1
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
 ### defaultsrp에 대한 다운타임 없는 마이그레이션 단계 {#zerodt-migration-steps}
 
-defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)이(가) 예상대로 작동하는지 확인하려면 다음 단계를 수행합니다.
+defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)이(가) 예상대로 작동하는지 확인하려면 다음 단계를 수행하십시오.
 
 1. 시스템 구성이 jsrp(기본값)로 대체되도록 경로 이름을 `/etc/socialconfig`에서 `/etc/socialconfig_old`(으)로 바꾸십시오.
 1. jsrp가 구성된 defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)&#x200B;(으)로 이동합니다. **[!UICONTROL 제출]** 단추를 클릭하여 `/conf/global/settings/community/srpc`에 새 기본 구성 노드를 만듭니다.
@@ -123,14 +130,14 @@ DSRP는 모든 작성자 및 게시 인스턴스에서 공통 저장소로 식�
 
 * 작성자:
 
-   * 메인 메뉴에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**(으)로 이동
-   * **[!UICONTROL 트리 활성화]**&#x200B;를 두 번 클릭
-   * **시작 경로**:
+  * 메인 메뉴에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**(으)로 이동
+  * **[!UICONTROL 트리 활성화]**&#x200B;를 두 번 클릭
+  * **시작 경로**:
 
-      * `/etc/socialconfig/srpc/`(으)로 이동
+    * `/etc/socialconfig/srpc/`(으)로 이동
 
-   * `Only Modified`이(가) 선택되어 있지 않은지 확인하십시오.
-   * **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
+  * `Only Modified`이(가) 선택되어 있지 않은지 확인하십시오.
+  * **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
 
 ## 사용자 데이터 관리 {#managing-user-data}
 

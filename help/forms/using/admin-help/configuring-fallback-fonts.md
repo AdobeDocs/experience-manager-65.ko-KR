@@ -9,16 +9,27 @@ feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '264'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '271'
 ht-degree: 100%
-
 ---
-
 # 대체 글꼴 구성 {#configuring-fallback-fonts}
 
-서버에서 기본 글꼴을 사용할 수 없는 경우 기본 AEM Forms 글꼴을 대체(또는 교체) 글꼴에 매핑하도록 FontManagerResources. properties 파일을 수동으로 구성할 수 있습니다. 이 속성 파일은 adobe-fontmanager.jar 파일에 있습니다.
+서버에서 기본 글꼴을 사용할 수 없는 경우 기본 AEM Forms 글꼴을 대체(또는 교체) 글꼴에 매핑하도록 FontManagerResources.properties 파일을 수동으로 구성할 수 있습니다. 이 속성 파일은 adobe-fontmanager.jar 파일에 있습니다.
 
 >[!NOTE]
 >
@@ -33,7 +44,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >지정된 글꼴이나 기본 글꼴에 특정 유니코드 문자가 포함되어 있지 않거나 해당 문자를 사용할 수 없는 경우 다음 우선순위에 따라 대체 글꼴에서 문자를 가져옵니다.
+   >지정된 글꼴이나 기본 글꼴에 특정 유니코드 문자가 포함되어 있지 않거나 해당 글꼴을 사용할 수 없는 경우 다음 우선순위에 따라 대체 글꼴에서 문자를 가져옵니다.
 
    * 로케일별 글꼴
    * 로케일이 설정되지 않은 경우 ROOT 글꼴

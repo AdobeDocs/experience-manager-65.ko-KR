@@ -9,13 +9,27 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 99%
-
 ---
-
 # 역할 만들기 및 구성{#creating-and-configuring-roles}
 
 사용자 관리 웹 페이지를 사용하면 사용자 및 그룹을 사용자 관리 데이터베이스에 이미 포함된 역할과 연결할 수 있습니다. 역할을 만들고 편집하며 삭제할 수도 있습니다.
@@ -355,7 +369,7 @@ ht-degree: 99%
 
 역할 관리 페이지를 사용하여 특정 역할에서 사용자 및 그룹을 제거합니다. 사용자 또는 그룹이 역할 할당을 상속받은 경우 사용자 또는 그룹 수준에서 역할을 제거할 수 없습니다. 상속 트리에서 사용자 또는 그룹을 제거하거나 상위 항목에서 역할을 제거하십시오.
 
-1. 관리 콘솔에서 설정 > 사용자 관리 > 역할 이름을 클릭한 후 새 역할을 클릭합니다.
+1. 관리 콘솔에서 설정 > 사용자 관리 > 역할 관리를 클릭한 후 역할 이름을 클릭합니다.
 
    기본적으로 역할 관리 페이지에는 사용자 관리 데이터베이스의 모든 역할이 표시됩니다. 역할 목록이 길면 페이지 상단의 찾기 영역을 사용하여 특정 역할 이름을 검색하십시오.
 

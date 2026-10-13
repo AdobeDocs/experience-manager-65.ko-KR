@@ -10,13 +10,33 @@ exl-id: e6759ffd-cf63-4684-a1d7-208fbe55aaed
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 4%
-
 ---
-
 # AEM Forms Workspace 소개{#introduction-to-aem-forms-workspace}
 
 Forms 워크플로우는 중요한 문서 및 양식 관련 비즈니스 프로세스를 자동화하고 가시화하여 조직의 효율성을 높입니다. 프로세스 관리 모듈을 사용하면 사람, 시스템, 컨텐츠, 비즈니스 규칙 등 온라인 또는 오프라인으로 액세스할 수 있는 간소화된 통합 워크플로우를 구축할 수 있습니다.Forms 워크플로에는 AEM Forms 작업 공간이 포함됩니다. AEM Forms workspace는 작업 영역을 확장 및 통합하여 보다 사용자 친화적인 방식으로 만들 수 있는 새로운 기능을 추가합니다.

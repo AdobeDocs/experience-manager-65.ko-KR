@@ -9,13 +9,25 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
-
 ---
-
 # 애플리케이션 서버 설치{#application-server-install}
 
 >[!NOTE]
@@ -103,7 +115,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
 * 기본 인증 헤더가 통과하도록 허용:
 
-   * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 보안 > 전역 보안으로 이동하여 관리 보안 활성화 확인란을 선택 취소하고 서버를 저장한 다음 다시 시작합니다.
+  * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 보안 > 전역 보안으로 이동하여 관리 보안 활성화 확인란을 선택 취소하고 서버를 저장한 다음 다시 시작합니다.
 
 * `"JAVA_OPTS= -Xmx2048m"` 설정
 * 컨텍스트 루트 = /를 사용하여 AEM을 설치하려면 기존 기본 웹 애플리케이션의 컨텍스트 루트를 변경합니다.
@@ -113,14 +125,14 @@ AEM은 단일 war 파일로 제공됩니다.
 * AEM war 파일 다운로드
 * 필요한 경우 web.xml에서 구성 수행(일반 설명의 위 참조)
 
-   * WEB-INF/web.xml 파일 압축 풀기
-   * sling.run.modes 매개 변수를 게시로 변경
-   * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
-   * web.xml 파일 다시 압축
+  * WEB-INF/web.xml 파일 압축 풀기
+  * sling.run.modes 매개 변수를 게시로 변경
+  * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
+  * web.xml 파일 다시 압축
 
 * AEM war 파일 배포
 
-   * 컨텍스트 루트를 선택합니다. 슬링 실행 모드를 설정하려면 배포 마법사의 자세한 단계를 선택한 다음 마법사의 6단계에서 지정해야 합니다.
+  * 컨텍스트 루트를 선택합니다. 슬링 실행 모드를 설정하려면 배포 마법사의 자세한 단계를 선택한 다음 마법사의 6단계에서 지정해야 합니다.
 
 * AEM 웹 애플리케이션 시작
 
@@ -158,12 +170,12 @@ conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
 
 * `${myDomain}/config/config.xml`보안 구성 섹션에 추가:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` 올바른 위치를 확인하려면 [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd)을(를) 참조하십시오. 기본적으로 섹션의 끝에 위치를 지정하면 됩니다.
+  * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` 올바른 위치를 확인하려면 [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd)을(를) 참조하십시오. 기본적으로 섹션의 끝에 위치를 지정하면 됩니다.
 
 * VM 메모리 설정 늘리기:
 
-   * `${myDomain}/bin/setDomainEnv.cmd` 열기(resp .sh) WLS_MEM_ARGS를 검색합니다. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` 집합과 같이 설정합니다.
-   * WebLogic Server 다시 시작
+  * `${myDomain}/bin/setDomainEnv.cmd` 열기(resp .sh) WLS_MEM_ARGS를 검색합니다. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` 집합과 같이 설정합니다.
+  * WebLogic Server 다시 시작
 
 * `${myDomain}`에서 패키지 폴더를 만들고 cq 폴더 및 그 안에 플랜 폴더를 만듭니다.
 
@@ -173,10 +185,10 @@ conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
 * AEM war 파일을 ${myDomain}/packages/cq 폴더에 넣습니다.
 * 필요한 경우 `WEB-INF/web.xml`에서 구성하십시오(일반 설명의 위 참조).
 
-   * `WEB-INF/web.xml`파일 압축 풀기
-   * sling.run.modes 매개 변수를 게시로 변경
-   * sling.home 초기 매개 변수의 주석을 제거하고 필요에 따라 이 경로를 설정합니다(일반 설명 참조).
-   * web.xml 파일 다시 압축
+  * `WEB-INF/web.xml`파일 압축 풀기
+  * sling.run.modes 매개 변수를 게시로 변경
+  * sling.home 초기 매개 변수의 주석을 제거하고 필요에 따라 이 경로를 설정합니다(일반 설명 참조).
+  * web.xml 파일 다시 압축
 
 * AEM war 파일을 애플리케이션으로 배포(다른 설정의 경우 기본 설정 사용)
 * 설치하는 데 시간이 걸릴 수 있습니다...
@@ -189,64 +201,64 @@ conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
 
 * **Tomcat 서버 준비**
 
-   * VM 메모리 설정 늘리기:
+  * VM 메모리 설정 늘리기:
 
-      * `bin/catalina.bat`(UNIX의 경우 `catalina.sh` 다시 ®)에서 다음 설정을 추가합니다.
-      * `set "JAVA_OPTS= -Xmx2048m`
+    * `bin/catalina.bat`(UNIX의 경우 `catalina.sh` 다시 ®)에서 다음 설정을 추가합니다.
+    * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat을 사용하면 설치 시 관리자 또는 관리자가 액세스할 수 없습니다. 따라서 다음 계정에 대한 액세스를 허용하려면 `tomcat-users.xml`을(를) 수동으로 편집해야 합니다.
+  * Tomcat을 사용하면 설치 시 관리자 또는 관리자가 액세스할 수 없습니다. 따라서 다음 계정에 대한 액세스를 허용하려면 `tomcat-users.xml`을(를) 수동으로 편집해야 합니다.
 
-      * 관리자 및 관리자에 대한 액세스 권한을 포함하도록 `tomcat-users.xml`을(를) 편집합니다. 구성은 다음 예제와 유사해야 합니다.
+    * 관리자 및 관리자에 대한 액세스 권한을 포함하도록 `tomcat-users.xml`을(를) 편집합니다. 구성은 다음 예제와 유사해야 합니다.
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8'?>
-        <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
-        </tomcat-users>
-        ```
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+      role rolename="manager"/>
+      role rolename="tomcat"/>
+      <role rolename="admin"/>
+      <role rolename="role1"/>
+      <role rolename="manager-gui"/>
+      <user username="both" password="tomcat" roles="tomcat,role1"/>
+      <user username="tomcat" password="tomcat" roles="tomcat"/>
+      <user username="admin" password="admin" roles="admin,manager-gui"/>
+      <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-   * 컨텍스트 루트 &quot;/&quot;와 함께 AEM을 배포하려면 기존 ROOT 웹 앱의 컨텍스트 루트를 변경해야 합니다.
+  * 컨텍스트 루트 &quot;/&quot;와 함께 AEM을 배포하려면 기존 ROOT 웹 앱의 컨텍스트 루트를 변경해야 합니다.
 
-      * ROOT 웹 앱 중지 및 배포 취소
-      * tomcat의 webapps 폴더에서 ROOT.war 폴더 이름 바꾸기
-      * 웹 앱 다시 시작
+    * ROOT 웹 앱 중지 및 배포 취소
+    * tomcat의 webapps 폴더에서 ROOT.war 폴더 이름 바꾸기
+    * 웹 앱 다시 시작
 
-   * Manager-gui를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 기본적으로 50MB의 업로드 크기만 허용하므로 업로드된 파일의 최대 크기를 늘려야 합니다. 이를 위해 관리자 웹 응용 프로그램의 web.xml을 엽니다.
+  * Manager-gui를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 기본적으로 50MB의 업로드 크기만 허용하므로 업로드된 파일의 최대 크기를 늘려야 합니다. 이를 위해 관리자 웹 응용 프로그램의 web.xml을 엽니다.
 
-     `webapps/manager/WEB-INF/web.xml`
+    `webapps/manager/WEB-INF/web.xml`
 
-     max-file-size 및 max-request-size를 최소 500MB로 늘립니다. 이러한 `web.xml` 파일의 다음 `multipart-config` 예를 참조하십시오.
+    max-file-size 및 max-request-size를 최소 500MB로 늘립니다. 이러한 `web.xml` 파일의 다음 `multipart-config` 예를 참조하십시오.
 
-     ```xml
-     <multipart-config>
-     <!-- 500MB max -->
-     <max-file-size>524288000</max-file-size>
-     <max-request-size>524288000</max-request-size>
-     <file-size-threshold>0</file-size-threshold>
-     </multipart-config>
-     ```
+    ```xml
+    <multipart-config>
+    <!-- 500MB max -->
+    <max-file-size>524288000</max-file-size>
+    <max-request-size>524288000</max-request-size>
+    <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    ```
 
 * **AEM 웹 응용 프로그램 배포**
 
-   * AEM war 파일을 다운로드합니다.
-   * 필요한 경우 web.xml에서 구성을 만듭니다(일반 설명의 위 참조).
+  * AEM war 파일을 다운로드합니다.
+  * 필요한 경우 web.xml에서 구성을 만듭니다(일반 설명의 위 참조).
 
-      * WEB-INF/web.xml 파일의 압축을 풉니다.
-      * sling.run.modes 매개 변수를 게시로 변경합니다.
-      * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
-      * web.xml 파일을 다시 압축합니다.
+    * WEB-INF/web.xml 파일의 압축을 풉니다.
+    * sling.run.modes 매개 변수를 게시로 변경합니다.
+    * sling.home 초기 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정합니다.
+    * web.xml 파일을 다시 압축합니다.
 
-   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 ROOT.war로 변경합니다. aemaauthor를 컨텍스트 루트로 사용하려면 이름을 aemaauthor.war로 바꿉니다.
-   * tomcat의 webapps 폴더에 복사합니다.
-   * AEM이 설치될 때까지 기다립니다.
+  * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 ROOT.war로 변경합니다. aemaauthor를 컨텍스트 루트로 사용하려면 이름을 aemaauthor.war로 바꿉니다.
+  * tomcat의 webapps 폴더에 복사합니다.
+  * AEM이 설치될 때까지 기다립니다.
 
 ## 문제 해결 {#troubleshooting}
 

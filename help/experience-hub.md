@@ -11,22 +11,39 @@ autotag-review: '2026-05-18T18:36:48.003Z'
 TQID: 'https://experienceleague.adobe.com/l50k7J-xXPu5kXKIg-rArib9aIMnMoXXlSoJ-YppJwQ'
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Insights
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 945
+source-wordcount: '945'
 ht-degree: 85%
-
 ---
-
 # Experience Hub 소개 {#aem-experience-hub}
 
 Experience Hub는 Adobe Experience Manager 내에서 콘텐츠, 에셋, 사이트를 관리하기 위한 중앙 집중식의 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub를 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. Experience Hub는 명확하고 개인화된 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 보장하며, 모든 AEM 기능에서 간소화되고 효과적인 경험을 지원합니다.
@@ -123,7 +140,7 @@ Experience Hub은 통합 왼쪽 탐색 기능을 사용하여 핵심 AEM 기능,
 
 +++**Experience Hub를 사용하여 빠르게 수행할 수 있는 액션 유형은 무엇입니까?**
 
-Experience Hub는 콘텐츠 만들기, 에셋 업로드, 팀 액세스 관리와 같은 중요한 작업을 사용자의 역할에 맞게 원클릭 단축키를 제공합니다.
+Experience Hub는 콘텐츠 만들기, 에셋 업로드, 팀 액세스 관리와 같은 중요한 작업을 위한 원클릭 단축키를 사용자의 역할에 맞게 제공합니다.
 
 +++
 
@@ -141,7 +158,7 @@ Experience Hub의 위젯은 사용자가 최근 활동을 추적하고 제품 �
 
 +++**사용자가 Experience Hub를 사용하여 여러 AEM 환경을 관리하는 방법은 무엇입니까?**
 
-사용자는 즐겨찾기를 타기팅할 환경을 선택하고 고정하여 맨 위에 유지할 수 있습니다. 단축키는 이러한 환경 내에서 솔루션과 페이지를 엽니다.
+사용자는 대상으로 삼을 환경을 선택하고 즐겨찾기를 고정하여 맨 위에 유지할 수 있습니다. 단축키는 이러한 환경 내에서 솔루션과 페이지를 엽니다.
 
 +++
 

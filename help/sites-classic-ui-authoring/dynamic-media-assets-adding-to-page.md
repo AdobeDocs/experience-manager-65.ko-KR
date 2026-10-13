@@ -9,13 +9,22 @@ exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 37%
-
 ---
-
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
 웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **[!UICONTROL Dynamic Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 페이지에 바로 추가할 수 있습니다. **[!UICONTROL 디자인]** 모드를 시작하고 Dynamic Media 구성 요소를 활성화하십시오. Then you can add these components to the page and add assets to the component. Dynamic Media 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 사용 가능한 옵션이 그에 따라 변경됩니다.

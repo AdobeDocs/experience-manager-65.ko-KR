@@ -9,13 +9,27 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 98%
-
 ---
-
 # 백업 및 복구할 파일 {#files-to-back-up-and-recover}
 
 >[!NOTE]
@@ -67,7 +81,7 @@ AEM Forms를 설치하는 동안 crx-repository가 구성되면 AEM 저장소(cr
 
 ### 서신 관리 솔루션 {#correspondence-management-solution}
 
-서신 관리 솔루션은 안전하고 개인화된 대화형 서신의 생성, 어셈블리 및 전달을 중앙 집중화하고 관리합니다. 이 솔루션을 사용하면 미리 승인된 콘텐츠와 사용자 정의 작성된 콘텐츠 모두에서 서신을 신속하게 어셈블하여 생성부터 보관까지 간소화된 프로세스를 거칠 수 있습니다. 결과적으로 고객은 시기적절하고 정확하며 편리하고 안전하며 관련성 높은 커뮤니케이션을 받을 수 있습니다. 비즈니스 측면에서는 용이성, 속도, 생산성을 위해 간소화된 프로세스를 통해 고객 상호 작용의 가치를 극대화하고 비용과 위험을 최소화합니다.
+서신 관리 솔루션은 안전하고 개인화된 대화형 서신의 생성, 어셈블리 및 게재를 중앙 집중화하고 관리합니다. 이 솔루션을 사용하면 미리 승인된 콘텐츠와 사용자 정의 작성된 콘텐츠 모두에서 서신을 신속하게 어셈블하여 생성부터 보관까지 간소화된 프로세스를 거칠 수 있습니다. 결과적으로 고객은 시기적절하고 정확하며 편리하고 안전하며 관련성 높은 커뮤니케이션을 받을 수 있습니다. 비즈니스 측면에서는 용이성, 속도, 생산성을 위해 간소화된 프로세스를 통해 고객 상호 작용의 가치를 극대화하고 비용과 위험을 최소화합니다.
 
 간단한 서신 관리 솔루션 설정에는 동일한 컴퓨터 또는 다른 컴퓨터에 작성자 인스턴스와 게시 인스턴스가 포함됩니다.
 
@@ -129,7 +143,7 @@ DB2에는 Tivoli Storage Manager에 데이터베이스를 백업하는 기본 �
 SQL Server는 두 가지 백업 및 복구 도구도 제공합니다.
 
 * SQL Server Management Studio(GUI)
-* T-SQL(명령줄)
+* T-SQL (명령줄)
 
 자세한 내용은 [백업 및 복원](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx)을 참조하십시오.
 

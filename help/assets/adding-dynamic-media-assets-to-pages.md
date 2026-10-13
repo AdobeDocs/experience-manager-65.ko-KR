@@ -14,23 +14,40 @@ autotag-review: '2026-05-18T18:40:39.792Z'
 TQID: 'https://experienceleague.adobe.com/rt98uGXgnhI4s10OP5uh5e4tKysOBlBY9vmAnsipI0Y'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80
+    internal-label: Components
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Optimization
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 3403
+source-wordcount: '3404'
 ht-degree: 12%
-
 ---
-
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. Then you can add these components to the page and add assets to the component. Dynamic Media 구성 요소는 스마트하게 동작하여, 이미지를 추가하는지 비디오를 추가하는지 자동으로 감지하고 그에 따라 설정 옵션을 조정합니다.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 구성 요소에 에셋을 추가할 수 있습니다. Dynamic Media 구성 요소는 스마트하게 동작하여, 이미지를 추가하는지 비디오를 추가하는지 자동으로 감지하고 그에 따라 설정 옵션을 조정합니다.
 
 Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. 반응형 타사 웹사이트의 경우, [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md) 항목을 참고하세요.
 
@@ -101,7 +118,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산�
 
 다음 두 가지 방법 중 하나로 Dynamic Media 구성 요소를 현지화할 수 있습니다.
 
-* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Select the desired language for localization.
+* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. 지역화를 위해 원하는 언어를 선택합니다.
 
   ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -150,7 +167,7 @@ Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]*
 
 #### 이미지 작업 시 {#when-working-with-images}
 
-Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 스핀 세트 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
+Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 회전 집합 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 반응하도록 하려면 중단점을 설정하거나 반응형 이미지 사전 설정을 적용할 수 있습니다.
 
@@ -186,7 +203,7 @@ Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 
 
   **[!UICONTROL 고해상도 장치에 최적화]** 옵션은 다음이 true인 경우에만 표시됩니다.
 
-   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이(가) 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;이(가) 선택됩니다.
+  * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이(가) 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;이(가) 선택됩니다.
 
   이미지 사전 설정에 대한 ![장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -224,10 +241,10 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
   예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ko)
-   * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ko)
+  * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ko)
+  * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ko)
 
-     구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
+    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 제목]** - 비디오의 제목을 변경합니다.
 
@@ -261,7 +278,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
   **[!UICONTROL 고해상도 장치에 최적화]** 옵션은 다음이 true인 경우에만 표시됩니다.
 
-   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
+  * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
 
   스마트 자르기에 대한 ![장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-smartcrop.png)
 

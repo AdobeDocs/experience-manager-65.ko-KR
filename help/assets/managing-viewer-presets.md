@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
+source-wordcount: '4654'
 ht-degree: 8%
-
 ---
-
 # 뷰어 사전 설정 관리{#managing-viewer-presets}
 
 뷰어 사전 설정은 사용자가 컴퓨터 화면 및 모바일 장치에서 리치 미디어 에셋을 보는 방법을 결정하는 설정 컬렉션입니다. 관리자는 뷰어 사전 설정을 만들 수 있습니다. 설정은 뷰어 구성 옵션 배열에 사용할 수 있습니다. 예를 들어 뷰어 표시 크기나 확대/축소 동작을 변경할 수 있습니다.
@@ -163,10 +177,10 @@ Dynamic Media와 함께 제공되는 기본 뷰어 사전 설정은 모두 다�
 >[!NOTE]
 >
 >Dynamic Media의 모든 기본 뷰어 사전 설정은 이미 활성화(설정)되었지만 게시해야 합니다.
->뷰어 사전 설정 게시[&#128279;](#publishing-viewer-presets)를 참조하십시오.
+>[뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 >
 >만들고 추가하는 새 뷰어 사전 설정은 모두 활성화 *와 *게시되어야 합니다.
->뷰어 사전 설정 활성화 또는 비활성화[&#128279;](#activating-or-deactivating-viewer-presets) 및 [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
+>[뷰어 사전 설정 활성화 또는 비활성화](#activating-or-deactivating-viewer-presets) 및 [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
 <table>
  <tbody>
@@ -464,9 +478,9 @@ Experience Manager은 **[!UICONTROL 자세히 보기]** > **[!UICONTROL 뷰어]*
    * **[!UICONTROL 대시]** - 비디오가 대시로만 스트리밍됩니다. 그러나 Safari/iOS 장치에서는 대신 유형으로 **[!UICONTROL hls]**&#x200B;을(를) 선택해야 합니다.
    * **[!UICONTROL hls]** - hls로만 비디오가 스트리밍됩니다.
    * **[!UICONTROL auto]** - 모범 사례입니다. DASH 및 HLS 스트림 생성은 스토리지에 최적화되었습니다. 따라서 Adobe에서는 항상 재생 유형으로 **[!UICONTROL auto]**&#x200B;을(를) 선택할 것을 권장합니다. 비디오는 다음 재생 순서와 같이 대시, hls 또는 점진적으로 스트리밍됩니다.
-      * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
-      * 브라우저가 DASH를 지원하지 않으면 두 번째로 HLS 스트리밍이 사용됩니다.
-      * 브라우저가 DASH 또는 HLS을 지원하지 않는 경우 마지막으로 점진적 재생이 사용됩니다.
+     * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
+     * 브라우저가 DASH를 지원하지 않으면 두 번째로 HLS 스트리밍이 사용됩니다.
+     * 브라우저가 DASH 또는 HLS을 지원하지 않는 경우 마지막으로 점진적 재생이 사용됩니다.
 
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 

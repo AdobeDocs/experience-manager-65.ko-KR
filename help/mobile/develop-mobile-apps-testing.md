@@ -9,13 +9,17 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
-
 ---
-
 # 모바일 앱 테스트{#testing-mobile-apps}
 
 {{ue-over-mobile}}
@@ -49,12 +53,12 @@ ht-degree: 0%
 * 대규모 장치 풀(이상적으로는 실제 장치이지만 실제 장치를 사용할 수 없는 경우 시뮬레이터/에뮬레이터)에 대해 테스트합니다.
 * 유용한 피드백 제공:
 
-   * 충돌 보고,
-   * 분석/추적,
-   * 유용성,
-   * 주의 영역,
-   * 성능,
-   * 데이터/전력 소비 등.
+  * 충돌 보고,
+  * 분석/추적,
+  * 유용성,
+  * 주의 영역,
+  * 성능,
+  * 데이터/전력 소비 등.
 
 ## 도구 {#tools}
 

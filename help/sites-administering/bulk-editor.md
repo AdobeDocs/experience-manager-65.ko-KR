@@ -1,5 +1,5 @@
 ---
-title: 벌크 편집기
+title: 대량 편집기
 description: 시각적 페이지 컨텍스트가 필요하지 않은 경우 효율적인 편집을 위해 벌크 편집기를 사용하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,24 @@ exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
-
+source-wordcount: '1174'
+ht-degree: 1%
 ---
 
-
-# 벌크 편집기{#the-bulk-editor}
+# 대량 편집기{#the-bulk-editor}
 
 벌크 편집기를 사용하면 시각적 페이지 컨텍스트가 필요하지 않은 경우 다음과 같은 작업을 수행할 수 있으므로 효율적으로 편집할 수 있습니다.
 
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM 6.4에서 [클래식 UI의 사용 중단](/help/release-notes/deprecated-removed-features.md)을 사용하면 벌크 편집기도 더 이상 사용되지 않으므로 Adobe에서 벌크 편집기를 더 이상 향상시킬 계획이 없습니다.
+>AEM 6.4에서 [클래식 UI의 사용 중단](/help/release-notes/deprecated-removed-features.md)을 사용하면 벌크 편집기도 더 이상 사용되지 않으므로 Adobe은 벌크 편집기를 더 이상 향상시킬 계획이 없습니다.
 
 ## 벌크 편집기의 사용 사례 예 {#example-use-case-for-the-bulk-editor}
 
@@ -77,7 +86,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>루트 경로</td>
-   <td>벌크 편집기가 검색하는 루트 경로를 나타냅니다.<br /> 예: <code>/content/geometrixx/en</code>. 벌크 편집기는 모든 하위 노드를 검색합니다.</td>
+   <td>벌크 편집기에서 검색하는 루트 경로를 나타냅니다.<br /> 예를 들어, <code>/content/geometrixx/en</code>과 같이 입력합니다. 벌크 편집기는 모든 하위 노드를 검색합니다.</td>
   </tr>
   <tr>
    <td>쿼리 매개변수</td>
@@ -122,7 +131,7 @@ ht-degree: 0%
 * **경로:** 이 경로 아래의 노드만 검색합니다. 경로 접두사가 있는 용어를 두 개 이상 지정하는 경우 마지막 용어만 고려됩니다.
 * **type:**&#x200B;은(는) 지정된 노드 유형의 노드만 반환합니다. 여기에는 기본 및 mixin 유형이 포함됩니다. 여러 개의 쉼표로 구분된 노드 유형을 지정할 수 있습니다. GQL은 지정된 유형 중 하나의 노드를 반환합니다.
 * **순서:** 지정한 속성으로 결과를 정렬합니다. 쉼표로 구분된 속성 이름을 여러 개 지정할 수 있습니다. 결과를 내림차순으로 정렬하려면 속성 이름 앞에 빼기를 붙이면 됩니다. 예를 들어 order:-name입니다. 더하기 기호를 사용하면 결과가 오름차순으로 반환되는데, 이 역시 기본값입니다.
-* **limit:**&#x200B;은(는) 간격을 사용하여 결과 수를 제한합니다. 예를 들어 limit:10..20 간격은 0을 기준으로 하고, start는 포괄적이며, end는 배타적입니다. 열려 있는 `interval:limit:10..` 또는 `limit:..20`을(를) 지정할 수도 있습니다
+* **limit:**&#x200B;은(는) 간격을 사용하여 결과 수를 제한합니다. 예를 들어 limit:10..20 간격은 0을 기준으로 하고, start는 포괄적이며, end는 배타적입니다. 열려 있는 `interval:limit:10..` 또는 `limit:..20`
 점을 생략하고 하나의 값만 지정하면 GQL은 최대 이 수의 결과를 반환합니다. 예를 들어 `limit:10`은(는) 처음 10개의 결과를 반환합니다.
 
 ### 컨텐츠 내보내기 {#exporting-content}
@@ -136,12 +145,12 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >기본적으로 변경 내용은 [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252)(CP-1252라고도 함)에 인코딩됩니다. UTF-8을 선택하여 변경 사항을 UTF-8로 내보낼 수 있습니다.
+   >기본적으로 변경 내용은 [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252)&#x200B;(CP-1252라고도 함)에 인코딩됩니다. UTF-8을 선택하여 변경 사항을 UTF-8로 내보낼 수 있습니다.
 
    ![결과 내보내기](assets/srchrsesultexport.png)
 
 1. 위치를 선택하고 파일을 다운로드할 것인지 확인합니다.
-1. 파일을 다운로드한 후 스프레드시트 프로그램(예: Microsoft® Excel)에서 파일을 열 수 있습니다. 스프레드시트 프로그램은 파일을 가져와 스프레드시트 형식으로 변환합니다.
+1. 파일을 다운로드한 후 스프레드시트 프로그램(예: ® Excel)에서 파일을 열 수 있습니다. 스프레드시트 프로그램은 파일을 가져와 스프레드시트 형식으로 변환합니다.
 
    ![스프레드시트에서 내보낸 결과](assets/exportinexcel.png)
 

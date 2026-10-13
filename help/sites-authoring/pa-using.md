@@ -9,13 +9,28 @@ exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 5%
-
 ---
-
 # 페이지 분석 데이터 보기{#seeing-page-analytics-data}
 
 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다.
@@ -137,23 +152,23 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 * 일반
 
-   * 보고서 세트
-   * 페이지 이름
-   * 언어
-   * 레이블 오버레이 방법
-   * 레이블 글꼴 크기
-   * 그라데이션 색상
-   * 거품 색상
-   * 색상 그라데이션 기준
-   * 그라데이션 투명도
+  * 보고서 세트
+  * 페이지 이름
+  * 언어
+  * 레이블 오버레이 방법
+  * 레이블 글꼴 크기
+  * 그라데이션 색상
+  * 거품 색상
+  * 색상 그라데이션 기준
+  * 그라데이션 투명도
 
 * 표준
 
-   * 표시(링크 유형 및 수)
-   * 조회 수가 없는 링크에 대한 오버레이 숨기기
+  * 표시(링크 유형 및 수)
+  * 조회 수가 없는 링크에 대한 오버레이 숨기기
 
 * 라이브
 
-   * 상위 표시(승자 또는 패자)
-   * 하위 % 제외
-   * 자동 업데이트(데이터 및 기간)
+  * 상위 표시(승자 또는 패자)
+  * 하위 % 제외
+  * 자동 업데이트(데이터 및 기간)

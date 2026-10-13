@@ -1,6 +1,6 @@
 ---
 title: PDF 유틸리티 작업
-description: PDF 유틸리티 서비스를 사용하여 PDF 및 XDP 파일 형식 간에 변환하고 PDF 문서 속성을 설정 및 검색하며 XMP 메타데이터를 조작합니다.
+description: PDF 유틸리티 서비스를 사용하여 PDF과 XDP 파일 형식 간에 변환하고 PDF 문서 속성을 설정 및 검색하며 XMP 메타데이터를 조작합니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,36 @@ role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 1%
-
+source-wordcount: '2577'
+ht-degree: 2%
 ---
-
 # PDF 유틸리티 작업 {#working-with-pdf-utilities}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 **PDF 유틸리티 서비스 정보**
 
-PDF 유틸리티 서비스는 PDF 및 XDP 파일 형식 간에 변환하고 PDF 문서 속성을 설정 및 검색하며 XMP 메타데이터를 조작할 수 있습니다. 예를 들어 PDF 문서를 다른 형식으로 변환하기 전에 해당 속성을 검사하여 변환을 위해 호출할 서비스 작업을 결정하는 것이 유용합니다.
+PDF 유틸리티 서비스는 PDF과 XDP 파일 형식 간을 변환하고 PDF 문서 속성을 설정 및 검색하며 XMP 메타데이터를 조작할 수 있습니다. 예를 들어 PDF 문서를 다른 형식으로 변환하기 전에 해당 속성을 검사하여 변환을 위해 호출할 서비스 작업을 결정하는 것이 유용합니다.
 
 PDF 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -59,9 +75,9 @@ PDF 문서를 XDP 문서로 변환하려면 다음 단계를 수행하십시오.
 
 PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
-**XDP 변환 작업에 대한 PDF 호출**
+**PDF에서 XDP로 변환 작업 호출**
 
-서비스 클라이언트를 만든 후 XDP에 대한 PDF 변환 작업을 호출할 수 있습니다.
+서비스 클라이언트를 만든 후 PDF에서 XDP로 변환 작업을 호출할 수 있습니다.
 
 **추가 참조**
 
@@ -75,7 +91,7 @@ PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 P
 
 ### Java API를 사용하여 PDF 문서를 XDP 문서로 변환 {#convert-pdf-documents-into-xdp-documents-using-the-java-api}
 
-PDF 유틸리티 API(Java)를 사용하여 PDF 문서를 XDP 문서로 변환:
+PDF 유틸리티 API(Java)를 사용하여 PDF 문서를 XDP 문서로 변환합니다.
 
 1. 프로젝트 파일 포함
 
@@ -85,7 +101,7 @@ PDF 유틸리티 API(Java)를 사용하여 PDF 문서를 XDP 문서로 변환:
 
    해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
-1. XDP로 PDF 변환 작업 호출
+1. PDF에서 XDP로 변환 작업 호출
 
    변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달하십시오. 메서드는 새로 만든 XDP 파일을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
@@ -110,7 +126,7 @@ PDF 유틸리티 API(웹 서비스)를 사용하여 PDF 문서를 XDP 문서로 
 
    프록시 클래스 생성자를 사용하여 `PDFUtilityServiceService` 개체를 만듭니다.
 
-1. XDP로 PDF 변환 작업 호출
+1. PDF에서 XDP로 변환 작업 호출
 
    `PDFUtilityServiceService` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 메서드는 새로 만든 XDP 파일을 나타내는 `BLOB` 개체를 반환합니다.
 
@@ -136,7 +152,7 @@ XDP 문서를 PDF 문서로 변환하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. PDFUutilityService 클라이언트를 만듭니다.
-1. XDP를 PDF으로 변환 작업을 호출합니다.
+1. XDP에서 PDF으로 변환 작업을 호출합니다.
 
 **프로젝트 파일 포함**
 
@@ -146,9 +162,9 @@ XDP 문서를 PDF 문서로 변환하려면 다음 단계를 수행하십시오.
 
 PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
-**XDP를 PDF 변환 작업으로 호출**
+**XDP에서 PDF으로 변환 작업 호출**
 
-서비스 클라이언트를 만든 후 XDP를 호출하여 PDF 변환 작업을 수행할 수 있습니다.
+서비스 클라이언트를 만든 후 XDP에서 PDF으로 변환 작업을 호출할 수 있습니다.
 
 **추가 참조**
 
@@ -211,7 +227,7 @@ PDF 유틸리티 API(웹 서비스 API)를 사용하여 XDP 문서를 PDF 문서
 
 ## PDF 문서 속성 검색 {#retrieving-pdf-document-properties}
 
-PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 문서가 입력 가능한 양식인지 또는 문서를 읽는 데 필요한 최소 Acrobat 버전인지 여부와 같은 PDF 문서 속성을 프로그래밍 방식으로 검색할 수 있습니다.
+PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 문서가 입력 가능한 양식인지 또는 문서를 읽는 데 필요한 최소 Acrobat 버전인지 등과 같은 PDF 문서 속성을 프로그래밍 방식으로 검색할 수 있습니다.
 
 >[!NOTE]
 >
@@ -219,7 +235,7 @@ PDF 유틸리티 Java 및 웹 서비스 API를 사용하여 문서가 입력 가
 
 ### 단계 요약 {#summary_of_steps-2}
 
-PDF 문서 등록 정보를 검색하려면 다음 단계를 수행하십시오.
+PDF 문서 속성을 검색하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. PDFUutilityService 클라이언트를 만듭니다.
@@ -308,7 +324,7 @@ PDF 유틸리티 웹 서비스 API를 사용하여 PDF 문서 속성을 검색�
 
 ## PDF 문서 저장 모드 설정 {#setting-pdf-document-save-modes}
 
-PDF 유틸리티 서비스 Java 및 웹 서비스 API를 사용하여 PDF 문서에 대한 저장 모드를 프로그래밍 방식으로 설정할 수 있습니다. PDF 유틸리티 서비스를 사용하여 저장 모드를 설정할 때 PDF 유틸리티 서비스는 저장 모드만 설정하고 PDF 문서를 실제로 저장하지 않습니다. PDF 문서는 다른 서비스 작업으로 전달될 때 저장됩니다. 예를 들어, PDF 유틸리티 서비스를 사용하여 특정 저장 모드를 설정하고 이를 PDF 문서가 실제로 저장되고 암호화되는 암호화 서비스로 전달할 수 있습니다.
+PDF 유틸리티 서비스 Java 및 웹 서비스 API를 사용하여 PDF 문서에 대한 저장 모드를 프로그래밍 방식으로 설정할 수 있습니다. PDF 유틸리티 서비스를 사용하여 저장 모드를 설정하면 PDF 유틸리티 서비스는 저장 모드만 설정하고 PDF 문서를 실제로 저장하지 않습니다. PDF 문서는 다른 서비스 작업으로 전달될 때 저장됩니다. 예를 들어 PDF 유틸리티 서비스를 사용하여 특정 저장 모드를 설정하고 이를 암호화 서비스로 전달하여 PDF 문서를 실제로 저장 및 암호화할 수 있습니다.
 
 >[!NOTE]
 >
@@ -316,7 +332,7 @@ PDF 유틸리티 서비스 Java 및 웹 서비스 API를 사용하여 PDF 문서
 
 ### 단계 요약 {#summary_of_steps-3}
 
-PDF 문서에 대해 저장 옵션을 설정하려면 다음 단계를 수행하십시오.
+PDF 문서에 대한 저장 옵션을 설정하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. PDFUutilityService 클라이언트를 만듭니다.
@@ -453,7 +469,7 @@ PDF 유틸리티 Java API를 사용하여 PDF 문서를 프로그래밍 방식�
 
 ### 단계 요약 {#summary_of_steps-4}
 
-PDF 문서를 소독하려면 다음 단계를 수행하십시오.
+PDF 문서를 정리하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일을 포함합니다.
 1. PDFUutilityService 클라이언트를 만듭니다.
@@ -467,7 +483,7 @@ PDF 문서를 소독하려면 다음 단계를 수행하십시오.
 
 정리 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUutilityService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다.
 
-**XDP 변환 작업에 대한 PDF 호출**
+**PDF에서 XDP로 변환 작업 호출**
 
 서비스 클라이언트를 만든 후 정리 작업을 호출할 수 있습니다.
 
@@ -493,7 +509,7 @@ PDF 유틸리티 API(Java)를 사용하여 문서를 정리합니다.
 
    해당 생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `PDFUtilityServiceClient` 개체를 만듭니다.
 
-1. XDP로 PDF 변환 작업 호출
+1. PDF에서 XDP로 변환 작업 호출
 
    변환을 수행하려면 `PDFUtilityServiceClient` 개체의 `convertPDFtoXDP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달하십시오. 메서드는 새로 만든 XDP 파일을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 

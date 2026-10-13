@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
-
+source-wordcount: '532'
+ht-degree: 4%
 ---
-
 # 패턴 감지기를 사용한 업그레이드 복잡성 평가
 
 ## 개요 {#overview}
@@ -24,13 +33,13 @@ ht-degree: 1%
 이 기능을 사용하면 사용 중인 패턴을 감지하여 기존 AEM 인스턴스의 업그레이드 가능성을 확인할 수 있습니다.
 
 1. 특정 규칙을 위반하고 업그레이드의 영향을 받거나 덮어쓸 영역에서 수행됩니다.
-1. AEM 6.5에서 역으로 호환되지 않으며 업그레이드 후 잠재적으로 중단될 수 있는 AEM 6.x 기능 또는 API를 사용합니다.
+1. AEM 6.5에서 이전 버전과 호환되지 않으며 업그레이드 후 잠재적으로 중단될 수 있는 AEM 6.x 기능 또는 API를 사용합니다.
 
 이는 AEM 6.5로의 업그레이드와 관련된 개발 노력을 평가하는 역할을 할 수 있습니다.
 
 ## 설정 방법 {#how-to-set-up}
 
-패턴 감지기는 6.1에서 6.5 타깃팅 AEM 6.5 업그레이드로 소스 AEM 버전에서 작동하는 [하나의 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)로 별도로 릴리스됩니다. [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 설치할 수 있습니다.
+패턴 감지기는 AEM 6.5 업그레이드를 목표로 6.1에서 6.5로 소스 AEM 버전에서 작동하는 [하나의 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)로 별도로 릴리스됩니다. [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 설치할 수 있습니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -218,7 +227,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling 리소스 유형 및 슈퍼 유형(검색 경로 컨텐츠 오버레이 포함) 오버레이
 * Oak 인덱스 정의(호환성)
 * VLT 패키지(초과 사용)
-* rep:사용자 노드 호환성(OAuth 구성 컨텍스트)
+* rep:User 노드 호환성(OAuth 구성 컨텍스트)
 
 >[!NOTE]
 >

@@ -1,18 +1,29 @@
 ---
-title: ' [!DNL Assets]에 대한 모범 사례'
+title: '[!DNL Assets]에 대한 모범 사례'
 description: 배포 및 구성에 따라 달라지는 모범 사례를 식별하고 준수하여 로드 중 시스템 안정성과 성능을 향상시킵니다.
 contentOwner: AG
 feature: Asset Management
 role: Developer, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 0%
-
+source-wordcount: '512'
+ht-degree: 1%
 ---
-
 # [!DNL Assets]에 대한 모범 사례 {#best-practices-for-assets}
 
 [!DNL Adobe Experience Manager Assets]은(는) 콘텐츠 속도를 높여 비즈니스 목표 달성에 기여하는 고품질 디지털 마케팅 경험을 제공하는 데 있어 중요한 부분입니다. [!DNL Experience Manager Assets] 내에서 많은 자산을 사용하여 작업하거나 비디오 및 Dynamic Media를 포함하여 많은 자산을 정기적으로/정기적으로 업로드하는 경우 시스템 효율성을 위해 디지털 자산 관리 환경을 최적화하는 것이 중요합니다.

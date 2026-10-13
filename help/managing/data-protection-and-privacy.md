@@ -10,13 +10,29 @@ exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 99%
-
 ---
-
 # 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 준비 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
@@ -29,7 +45,7 @@ ht-degree: 99%
 >
 >개인정보 보호 문제에 대한 Adobe의 대응 및 Adobe 고객에게 의미하는 바에 대한 자세한 내용은 [Adobe 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
-Adobe는 고객 개인 정보 보호 관리자 또는 AEM 관리자가 데이터 보호 및 데이터 개인 정보 보호 요청을 처리할 수 있도록 설명서 및 절차(사용 가능한 경우 API 포함)를 제공합니다. 이러한 문서는 해당 규정을 준수하는 데 도움이 됩니다. 고객은 문서화된 절차를 통해 수동으로 또는 사용 가능한 경우 외부 포털이나 서비스에서 API를 호출하여 규제 요청을 실행할 수 있습니다.
+Adobe는 고객 개인 정보 보호 관리자 또는 AEM 관리자가 데이터 보호 및 데이터 개인 정보 보호 요청을 처리할 수 있도록 설명서 및 절차(사용 가능한 경우 API 포함)를 제공합니다. 이는 이러한 규정을 준수하는 데 도움이 될 수 있습니다. 고객은 문서화된 절차를 통해 수동으로 또는 사용 가능한 경우 외부 포털이나 서비스에서 API를 호출하여 규제 요청을 실행할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -65,19 +81,19 @@ Adobe Experience Manager:
 
 * 인스턴스 및 해당 인스턴스에서 실행되는 애플리케이션은 고객이 소유 및 운영합니다.
 
-   * 고객이 비즈니스 엔터티, 서비스 공급자, 데이터 컨트롤러 및 데이터 프로세서를 포함한 규제 역할을 담당합니다.
+  * 고객이 비즈니스 엔터티, 서비스 공급자, 데이터 컨트롤러 및 데이터 프로세서를 포함한 규제 역할을 담당합니다.
 
-   * 아래 다이어그램에 표시된 바와 같이 Adobe Experience Platform Privacy Service는 AEM용 워크플로의 일부가 아닙니다.
+  * 아래 다이어그램에 표시된 바와 같이 Adobe Experience Platform Privacy Service는 AEM용 워크플로의 일부가 아닙니다.
 
 * AEM에는 고객의 개인정보 보호 관리자 및/또는 AEM 관리자가 수동으로 또는 가능한 경우 API를 통해 개인정보 보호 규정 요청을 실행하도록 하는 문서 및 절차가 포함되어 있습니다.
 
 * 새 서비스나 UI는 추가되지 않았습니다.
 
-   * 대신 개인정보 보호 규정 요청을 처리하는 고객 UI/포털에서 사용할 수 있도록 절차 및 API가 문서화되었습니다.
+  * 대신 개인정보 보호 규정 요청을 처리하는 고객 UI/포털에서 사용할 수 있도록 절차 및 API가 문서화되었습니다.
 
 * AEM에는 개인정보 보호 요청 워크플로 지원을 위한 맞춤형 툴링이 포함되지 않습니다.
 
-   * Adobe는 고객의 개인 정보 보호 관리자와 AEM 관리자가 수동으로 개인 정보 보호 규정 관련 요청을 실행할 수 있는 설명서 및 절차를 제공합니다.
+  * Adobe는 고객의 개인 정보 보호 관리자와 AEM 관리자가 수동으로 개인 정보 보호 규정 관련 요청을 실행할 수 있는 설명서 및 절차를 제공합니다.
 
 Adobe는 Adobe Experience Manager에 대한 액세스, 삭제 또는 옵트아웃과 관련된 개인 정보 보호 요청 처리를 위한 절차를 제공합니다. 경우에 따라 고객 개발 포털 또는 스크립트에서 호출하여 자동화를 지원할 수 있는 API도 사용할 수 있습니다.
 

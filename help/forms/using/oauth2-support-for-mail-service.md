@@ -5,13 +5,27 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 5%
-
+source-wordcount: '1045'
+ht-degree: 6%
 ---
-
 # ® Office 365 메일 서버 프로토콜과 AEM Forms 통합 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 조직에서 이메일 요구 사항을 준수할 수 있도록 AEM Forms은 Microsoft® Office 365 메일 서버 프로토콜과의 통합을 위한 OAuth 2.0 지원을 제공합니다. Azure Active Directory(Azure AD) OAuth 2.0 인증 서비스를 사용하여 IMAP, POP 또는 SMTP 등의 다양한 프로토콜과 연결하고 Office 365 사용자의 전자 메일 데이터에 액세스할 수 있습니다. 다음은 OAuth 2.0 서비스를 통해 인증할 ® Office 365 메일 서버 프로토콜을 구성하는 단계별 지침입니다.
@@ -24,7 +38,7 @@ ht-degree: 5%
 
 1. 요구 사항에 따라 정보를 입력한 다음, **등록**&#x200B;을 클릭합니다.
    ![지원되는 계정](/help/forms/using/assets/azure_suuportedaccountype.png)
-위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정 및 개인 Microsoft® 계정(예: Skype, Xbox)** 옵션이 선택되어 있습니다.
+   위의 경우 **조직 디렉터리(모든 Azure AD 디렉터리 - 다중 테넌트)의 계정 및 개인 Microsoft® 계정(예: Skype, Xbox)** 옵션이 선택되어 있습니다.
 
    >[!NOTE]
    >
@@ -169,6 +183,6 @@ ht-degree: 5%
 
 ## 문제 해결 {#troubleshooting}
 
-* 전자 메일 서비스가 제대로 작동하지 않는 경우 위에 설명된 대로 `Refresh Token`을(를) 다시 생성해 보십시오. 새 값을 배포하는 데 몇 분 정도 소요됩니다.
+* 전자 메일 서비스가 제대로 작동하지 않는 경우 위에 설명된 대로 `Refresh Token`을(를) 다시 생성해 보십시오. 새 값이 적용되기까지 몇 분 정도 걸립니다.
 
 * Workbench를 사용하여 전자 메일 끝점에 전자 메일 서버 세부 정보를 구성하는 동안 오류가 발생했습니다. Workbench 대신 관리자 UI를 통해 끝점을 구성해 보십시오.

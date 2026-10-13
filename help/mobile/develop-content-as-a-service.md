@@ -8,13 +8,17 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 1%
-
 ---
-
 # 콘텐츠 게재{#content-delivery}
 
 {{ue-over-mobile}}
@@ -132,9 +136,9 @@ AEM Content Services는 API를 통해 모바일 앱에 HTML 콘텐츠를 제공�
 
    * 콘텐츠 동기화 처리기는 zip 패키지를 직접 업데이트하거나 기존 콘텐츠 렌더러를 호출하여 업데이트할 수 있습니다
 
-      * 플랫폼 핸들러
-      * AEM 핸들러
-      * 사용자 지정 처리기
+     * 플랫폼 핸들러
+     * AEM 핸들러
+     * 사용자 지정 처리기
 
 1. 콘텐츠 렌더러를 통해 직접 콘텐츠 가져오기
 

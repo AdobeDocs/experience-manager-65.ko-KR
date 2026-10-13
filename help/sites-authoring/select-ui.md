@@ -5,13 +5,26 @@ exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '754'
 ht-degree: 1%
-
 ---
-
 # UI 선택{#selecting-your-ui}
 
 Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이트 관리 및 편집으로 기능 패리티에 거의 도달했습니다. 그러나 사용자가 [클래식 UI](/help/sites-classic-ui-authoring/classicui.md)(으)로 전환하려는 경우가 있을 수 있습니다. 이 작업을 수행하는 데에는 몇 가지 옵션이 있습니다.
@@ -25,10 +38,10 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 * [인스턴스에 대한 기본 UI 구성](#configuring-the-default-ui-for-your-instance)
 사용자 로그인 시 표시할 기본 UI를 설정합니다. 사용자는 이를 무시하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
 
-* [계정에 대한 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+* [계정에 대한 클래식 UI 작성 설정 중](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
 사용자가 UI를 재정의하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만, 이렇게 하면 페이지를 편집할 때 UI가 기본값으로 설정됩니다.
 
-* [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)
+* [현재 세션의 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)
 현재 세션의 클래식 UI로 전환합니다.
 
 * [페이지 작성의 경우 시스템은 UI와 관련하여 특정 재정의를 수행합니다](#ui-overrides-for-the-editor).
@@ -43,7 +56,7 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위한 클래식 UI를 유지합니다.
 >
->업그레이드 후 페이지 작성은 터치 사용 UI로 자동 전환되지 않지만 [WCM 작성 UI 모드 서비스](/help/sites-deploying/configuring-osgi.md)( **서비스)의** OSGi 구성`AuthoringUIMode`을(를) 사용하여 구성할 수 있습니다. 편집기에 대한 [UI 재정의](#ui-overrides-for-the-editor)를 참조하십시오.
+>업그레이드 후 페이지 작성은 터치 사용 UI로 자동 전환되지 않지만 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을(를) 사용하여 구성할 수 있습니다. 편집기에 대한 [UI 재정의](#ui-overrides-for-the-editor)를 참조하십시오.
 
 ## 인스턴스에 대한 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
@@ -107,21 +120,21 @@ Adobe Experience Manager(AEM) 터치 지원 UI는 이제 표준 UI이며 사이�
 
 * 페이지 작성 시:
 
-   * URL에서 `cf#`을(를) 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용해야 합니다. 예:
-     `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  * URL에서 `cf#`을(를) 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용해야 합니다. 예:
+    `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * URL에서 `/editor.html`을(를) 사용하거나 터치 장치를 사용할 때 터치 사용 편집기를 강제로 사용합니다. 예:
-     `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+  * URL에서 `/editor.html`을(를) 사용하거나 터치 장치를 사용할 때 터치 사용 편집기를 강제로 사용합니다. 예:
+    `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 모든 강제 작업은 일시적이며 브라우저 세션에만 유효합니다
 
-   * 터치 사용(`editor.html`) 또는 클래식(`cf#`)의 사용 여부에 따라 쿠키 집합이 설정됩니다.
+  * 터치 사용(`editor.html`) 또는 클래식(`cf#`)의 사용 여부에 따라 쿠키 집합이 설정됩니다.
 
 * `siteadmin`을(를) 통해 페이지를 열 때 다음 항목이 있는지 확인합니다.
 
-   * 쿠키
-   * 사용자 환경 설정
-   * 둘 다 존재하지 않는 경우 기본값은 [WCM 작성 UI 모드 서비스](/help/sites-deploying/configuring-osgi.md)( **서비스)의** OSGi 구성`AuthoringUIMode`에 설정된 정의로 설정됩니다.
+  * 쿠키
+  * 사용자 환경 설정
+  * 둘 다 존재하지 않는 경우 기본값은 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)에 설정된 정의로 설정됩니다.
 
 >[!NOTE]
 >

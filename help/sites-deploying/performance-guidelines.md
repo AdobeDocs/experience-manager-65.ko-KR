@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 6%
-
 ---
-
 # 성능 지침{#performance-guidelines}
 
 이 페이지에서는 AEM 배포의 성능을 최적화하는 방법에 대한 일반 지침을 제공합니다. AEM을 처음 사용하는 경우 성능 지침을 읽기 전에 다음 페이지를 검토하십시오.
@@ -354,12 +363,12 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 * 가능하면 쿼리를 사용하지 마십시오.
 * Sling 바인딩을 사용하여 Java™ 코드로 OSGi 서비스를 가져오지 않고 다음을 사용합니다.
 
-   * DS 구성 요소의 @Reference
-   * Sling 모델의 @Inject
-   * Sightly Use 클래스의 sling.getService()
-   * jsp의 sling.getService()
-   * ServiceTracker
-   * osgi 서비스 레지스트리에 직접 액세스
+  * DS 구성 요소의 @Reference
+  * Sling 모델의 @Inject
+  * Sightly Use 클래스의 sling.getService()
+  * jsp의 sling.getService()
+  * ServiceTracker
+  * osgi 서비스 레지스트리에 직접 액세스
 
 AEM 개발에 대한 자세한 내용은 [개발 - 기본 사항](/help/sites-developing/the-basics.md)을 참조하세요. 추가 모범 사례는 [개발 모범 사례](/help/sites-developing/best-practices.md)를 참조하십시오.
 
@@ -834,24 +843,24 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 
 * **파일 데이터 저장소가 있는 TarMK** - 대부분의 고객에게 권장되는 아키텍처:
 
-   * 최소 토폴로지: 작성자 인스턴스 1개, 게시 인스턴스 2개, Dispatcher 2개
-   * 파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제가 켜짐
+  * 최소 토폴로지: 작성자 인스턴스 1개, 게시 인스턴스 2개, Dispatcher 2개
+  * 파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제가 켜짐
 
 * **파일 데이터 저장소가 있는 MongoMK** - 작성자 계층의 수평 확장성에 권장되는 아키텍처:
 
-   * 최소 토폴로지: 작성자 인스턴스 3개, MongoDB 인스턴스 3개, 게시 인스턴스 2개, Dispatcher 2개
-   * 파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제가 켜짐
+  * 최소 토폴로지: 작성자 인스턴스 3개, MongoDB 인스턴스 3개, 게시 인스턴스 2개, Dispatcher 2개
+  * 파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제가 켜짐
 
 * **Nodestore** - NAS(Network Attached Storage)가 아닌 로컬 디스크에 저장됨
 * **Amazon S3** 사용 시:
 
-   * Amazon S3 데이터 저장소는 작성자 및 게시 계층 간에 공유됩니다
-   * 바이너리 없는 복제를 설정해야 합니다.
-   * 데이터 저장소 가비지 수집을 사용하려면 모든 작성자 및 게시 노드에서 먼저 실행한 다음 작성자에서 다시 실행해야 합니다
+  * Amazon S3 데이터 저장소는 작성자 및 게시 계층 간에 공유됩니다
+  * 바이너리 없는 복제를 설정해야 합니다.
+  * 데이터 저장소 가비지 수집을 사용하려면 모든 작성자 및 게시 노드에서 먼저 실행한 다음 작성자에서 다시 실행해야 합니다
 
 * **기본 제공 색인과 함께 사용자 지정 색인을 만들어야 합니다** - 가장 일반적인 검색을 기반으로 함
 
-   * 사용자 정의 색인에는 Lucene 색인을 사용해야 합니다.
+  * 사용자 정의 색인에는 Lucene 색인을 사용해야 합니다.
 
 * **워크플로를 사용자 지정하면 성능이 크게 향상될 수 있습니다** - &quot;자산 업데이트&quot; 워크플로에서 비디오 단계를 제거하고, 사용되지 않는 수신기를 사용하지 않도록 설정하는 등의 작업을 수행할 수 있습니다.
 

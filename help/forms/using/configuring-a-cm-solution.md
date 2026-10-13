@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
-
+source-wordcount: '307'
+ht-degree: 4%
 ---
-
 # 서신 관리 솔루션 구성 {#configuring-a-correspondence-management-solution}
 
 ## VersionRestoreManagerImpl의 작성자 인스턴스 URL 정의 {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -35,16 +48,16 @@ ht-degree: 1%
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-## ActivationManagerImpl(공개 인스턴스 활성화 관리자)에 대한 Publish 인스턴스 URL 정의 {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## ActivationManagerImpl(공개 인스턴스 활성화 관리자)에 대한 게시 인스턴스 URL 정의 {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-공개 인스턴스 활성화 관리자에 대한 Publish 인스턴스 URL을 정의할 수 있도록 다음 단계를 수행합니다.
+공개 인스턴스 활성화 관리자에 대한 게시 인스턴스 URL을 정의할 수 있도록 다음 단계를 수행합니다.
 
 1. *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*(으)로 이동합니다. OSGi 관리 콘솔 사용자 자격 증명으로 로그인합니다. 기본 자격 증명은 관리자/관리자입니다.
 1. **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** 설정 옆에 있는 **[!UICONTROL 편집]** 아이콘을 찾아 클릭합니다.
-1. **[!UICONTROL ActivationManager Publish URL]** 필드에서 Publish 인스턴스 ActivationManager에 액세스하기 위한 URL을 지정합니다. 다음 URL을 제공할 수 있습니다.
+1. **[!UICONTROL ActivationManager 게시 URL]** 필드에서 게시 인스턴스 ActivationManager에 액세스할 URL을 지정합니다. 다음 URL을 제공할 수 있습니다.
 
    * **로드 밸런서 URL(권장)**: 게시 팜(클러스터되지 않은 여러 게시 인스턴스) 앞에 로드 밸런서 역할을 하는 웹 서버가 있는 경우 로드 밸런서 URL을 제공합니다.
-   * **Publish 인스턴스 URL**: 단일 게시 인스턴스가 있거나 제한 사항으로 인해 작성 환경에서 게시 팜을 연결하는 웹 서버에 액세스할 수 없는 경우 게시 인스턴스 URL을 제공합니다. 지정된 게시 인스턴스가 다운된 경우 작성자 측에서 처리할 대체 메커니즘이 있습니다.
+   * **게시 인스턴스 URL**: 단일 게시 인스턴스가 있거나 게시 팜을 연결하는 웹 서버에 제한 사항이 있어 작성 환경에서 액세스할 수 없는 경우 게시 인스턴스 URL을 제공합니다. 지정된 게시 인스턴스가 다운된 경우 작성자 측에서 처리할 대체 메커니즘이 있습니다.
    * **URL 문자열**:
 
      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`

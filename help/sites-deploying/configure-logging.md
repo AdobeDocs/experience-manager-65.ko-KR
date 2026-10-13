@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # 로깅{#logging}
 
 AEM에서는 다음을 구성할 수 있습니다.
@@ -85,19 +94,19 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
 * 로거:
 
-   * Apache Sling 사용자 지정 가능 요청 데이터 로거
+  * Apache Sling 사용자 지정 가능 요청 데이터 로거
 
-     (org.apache.sling.engine.impl.log.RequestLoggerService)
+    (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * `request.log`에 요청 콘텐츠에 대한 메시지를 씁니다.
+  * `request.log`에 요청 콘텐츠에 대한 메시지를 씁니다.
 
 * 링크 대상:
 
-   * Apache Sling 요청 로거
+  * Apache Sling 요청 로거
 
-     (org.apache.sling.engine.impl.log.RequestLogger)
+    (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * 메시지를 `request.log` 또는 `access.log`에 씁니다.
+  * 메시지를 `request.log` 또는 `access.log`에 씁니다.
 
 표준 구성은 대부분의 설치에 적합하지만 필요한 경우 사용자 정의할 수 있습니다.
 
@@ -105,24 +114,24 @@ AEM은 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
 * 로거:
 
-   * Apache Sling 로깅 로거 구성
+  * Apache Sling 로깅 로거 구성
 
-     (org.apache.sling.commons.log.LogManager.factory.config)
+    (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * `Information`개의 메시지를 `logs/error.log`에 씁니다.
+  * `Information`개의 메시지를 `logs/error.log`에 씁니다.
 
 * 작성기 링크:
 
-   * Apache Sling 로깅 작성기 구성
+  * Apache Sling 로깅 작성기 구성
 
-     (org.apache.sling.commons.log.LogManager.factory.writer)
+    (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * 로거:
 
-   * Apache Sling 로깅 로거 구성
-(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+  * Apache Sling 로깅 로거 구성
+    (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * `org.apache.pdfbox` 서비스에 대해 `../logs/error.log`에 `Warning`개의 메시지를 씁니다.
+  * `org.apache.pdfbox` 서비스에 대해 `../logs/error.log`에 `Warning`개의 메시지를 씁니다.
 
 * 특정 작성기에 연결되지 않으므로 기본 구성(일별 로그 회전)을 사용하는 암시적 작성기가 작성 및 사용됩니다.
 

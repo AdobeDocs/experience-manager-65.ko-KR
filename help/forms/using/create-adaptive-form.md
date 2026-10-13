@@ -5,13 +5,29 @@ feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1419'
 ht-degree: 9%
-
 ---
-
 # 튜토리얼: 적응형 양식 만들기 {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
@@ -42,7 +58,7 @@ ht-degree: 9%
 1. **[!UICONTROL 속성 추가]** 옵션이 나타납니다. **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
 
    * **제목:** **[!UICONTROL 제목]** 필드에 `Add new or update shipping address`을(를) 지정합니다. 제목 필드는 양식의 표시 이름을 지정합니다. 제목을 통해 AEM [!DNL Forms] 사용자 인터페이스에서 양식을 식별할 수 있습니다.
-   * **이름:** **[!UICONTROL 이름]** 필드에 `shipping-address-add-update-form`을(를) 지정합니다. 이름 필드는 양식 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력이 시작되면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
+   * **이름:** **[!UICONTROL 이름]** 필드에 `shipping-address-add-update-form`을(를) 지정합니다. 이름 필드는 양식 이름을 지정합니다. 이름이 지정된 노드가 저장소에서 만들어집니다. 제목을 입력하기 시작하면 이름 필드 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 적응형 양식이 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. **[!UICONTROL 열기]**&#x200B;를 선택하여 새로 만든 양식을 새 탭에서 엽니다. 편집할 양식이 열립니다. 또한 요구 사항에 따라 새로 만든 양식을 사용자 정의할 수 있는 사이드바가 표시됩니다.
 
@@ -174,7 +190,7 @@ AEM [!DNL Forms]은(는) 적응형 양식에 대한 정보를 표시하는 다�
    | 전자 메일 템플릿 | 안녕하세요, `${customer_Name}` 님, 다음 주소가 계정의 배송 주소로 추가되었습니다. <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> 감사합니다. We.Retail |
    | 첨부 파일 포함 | 활성화됨 |
 
-   양식이 준비되었습니다. 이제 양식을 미리 보고 기능을 테스트할 수 있습니다. 자습서에 언급된 이름을 사용하고 AEM [!DNL Forms] 서버를 실행하는 컴퓨터에서 양식에 액세스한 경우 [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)에서 양식을 사용할 수 있습니다.
+   양식이 준비되었습니다. 이제 양식을 미리 보고 기능을 테스트할 수 있습니다. 자습서에서 언급된 이름을 사용하고 AEM [!DNL Forms] 서버를 실행하는 컴퓨터에서 양식에 액세스한 경우 [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)에서 양식을 사용할 수 있습니다.
 
 ## 5단계: 적응형 양식 미리 보기 및 제출 {#step-preview-and-submit-the-adaptive-form}
 

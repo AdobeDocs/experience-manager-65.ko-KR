@@ -5,13 +5,23 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: a2a6296acd79fa53bd7ef1622898babf56aaadd7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2960'
 ht-degree: 6%
-
 ---
-
 # AEM Forms 용어
 
 ## 적응형 양식
@@ -87,9 +97,9 @@ AEM Forms as a Cloud Service은 양식 및 통신 워크플로 관리를 위한 
 | **디지털 서명** | 양식 및 문서의 보안 전자 서명을 위해 Adobe Sign을 통합합니다. | [디지털 서명 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#digital-signatures) |
 
 
-## AEM Forms Workbench
+## AEM Forms 워크벤치
 
-[AEM Forms Workbench](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)
+[AEM Forms 워크벤치](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)
 
 워크플로 제작, 편집 및 배포와 양식 중심의 비즈니스 프로세스 관리를 위한 데스크탑 애플리케이션입니다. 백엔드 서비스 및 시스템과 통합됩니다.
 

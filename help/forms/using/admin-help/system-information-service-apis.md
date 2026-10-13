@@ -9,13 +9,27 @@ exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '325'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '336'
 ht-degree: 100%
-
 ---
-
 # 시스템 정보 서비스 API {#system-information-service-apis}
 
 시스템 정보 서비스에서는 정보를 가져오기 위한 일련의 REST API를 제공합니다. 다음 표에는 각 API에 대한 자세한 정보가 나와 있습니다.
@@ -98,8 +112,8 @@ ht-degree: 100%
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>활성 스레드의 개수와 스택 추적을 가져옵니다. 다음 매개변수를 허용합니다.</p>
     <ul>
-     <li><p>iterations=[n]: 반복 횟수를 지정합니다. n을 숫자로 바꾸십시오. </p></li>
-     <li><p>Delay=[n]: 다음 반복을 시작하기 전에 대기하는 시간(밀리초)을 지정합니다. </p></li>
+     <li><p>iterations= [n]: 반복 횟수를 지정합니다. n을 숫자로 바꾸십시오. </p></li>
+     <li><p>Delay= [n]: 다음 반복을 시작하기 전에 대기하는 시간(밀리초)을 지정합니다. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>

@@ -9,13 +9,17 @@ exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '293'
 ht-degree: 0%
-
 ---
-
 # 공유 리소스 내보내기 구성 만들기{#creating-shared-resources-export-configuration}
 
 {{ue-over-mobile}}
@@ -26,7 +30,7 @@ ht-degree: 0%
 >
 >공유 리소스를 만들고 수정하는 방법을 배우기 전에 기본 개념을 이해하려면 [콘텐츠 동기화](/help/mobile/mobile-ondemand-contentsync.md)를 참조하세요.
 
-Adobe Experience Manager(AEM) 모바일 사용자는 컨텐츠 동기화를 사용하여 라이브 컨텐츠를 모바일 앱에서 사용할 수 있는 정적 컨텐츠로 내보내고 이 내보내기는 컨텐츠가 AEM Mobile에서 Mobile On-Demand Services로 업로드될 때 발생합니다.
+Adobe Experience Manager(AEM) 모바일 사용자는 Content Sync를 사용하여 라이브 컨텐츠를 모바일 앱에서 사용할 수 있는 정적 컨텐츠로 내보내고 이 내보내기는 컨텐츠가 AEM Mobile에서 Mobile On-Demand Services로 업로드될 때 발생합니다.
 
 위의 표에 언급된 속성 ***dps-exportTemplate***&#x200B;은(는) 앱의 내보내기 구성에 대한 경로를 정의합니다. 공유 리소스를 만들고 수정하려면 이 속성을 설정하십시오.
 

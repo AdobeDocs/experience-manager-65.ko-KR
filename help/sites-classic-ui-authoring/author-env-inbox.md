@@ -1,6 +1,6 @@
 ---
 title: 받은 편지함
-description: 페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업 항목 또는 작업에 대한 알림과 같이 다양한 AEM 영역에서 알림을 받을 수 있습니다.
+description: AEM의 다양한 영역에서 작업 항목에 대한 알림 또는 페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업과 같은 알림을 받을 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,16 +10,25 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '586'
 ht-degree: 1%
-
 ---
-
 # 받은 편지함{#your-inbox}
 
-페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업 항목 또는 작업에 대한 알림과 같이 다양한 AEM 영역에서 알림을 받을 수 있습니다.
+AEM의 다양한 영역에서 작업 항목에 대한 알림 또는 페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업과 같은 알림을 받을 수 있습니다.
 
 이러한 알림은 알림 유형으로 구분된 두 개의 받은 편지함으로 수신됩니다.
 
@@ -69,7 +78,7 @@ ht-degree: 1%
 
 1. 알림 채널 선택:
 
-   * **받은 편지함**: AEM 받은 편지함에 알림이 표시됩니다.
+   * **받은 편지함**: 알림이 AEM 받은 편지함에 표시됩니다.
    * **전자 메일**: 알림이 사용자 프로필에 정의된 전자 메일 주소로 전자 메일로 전송됩니다.
 
    >[!NOTE]
@@ -81,7 +90,7 @@ ht-degree: 1%
    * 활성화됨: 페이지가 활성화되면 표시됩니다.
    * 비활성화됨: 페이지가 비활성화되었을 때.
    * 삭제됨(신디케이션): 페이지가 삭제-복제되었을 때, 즉 페이지에서 수행된 삭제 작업이 복제되었을 때.
-페이지를 삭제하거나 이동하면 삭제 작업이 자동으로 복제됩니다. 삭제 작업이 수행된 소스 인스턴스와 복제 에이전트가 정의한 대상 인스턴스에서 페이지가 삭제됩니다.
+     페이지를 삭제하거나 이동하면 삭제 작업이 자동으로 복제됩니다. 삭제 작업이 수행된 소스 인스턴스와 복제 에이전트가 정의한 대상 인스턴스에서 페이지가 삭제됩니다.
 
    * 수정됨: 페이지가 수정된 경우.
    * 생성됨: 페이지를 생성할 때.
@@ -93,8 +102,8 @@ ht-degree: 1%
    * 테이블에 새 행을 추가하려면 **추가**&#x200B;를 클릭하십시오.
    * **경로** 테이블 셀을 클릭하고 `/content/docs`과(와) 같은 경로를 입력합니다.
 
-   * 하위 트리에 속하는 모든 페이지에 대한 알림을 받으려면 **Exact를 설정하십시오.**&#x200B;부터 **아니요**&#x200B;까지.
-경로에 정의된 페이지에서 작업에 대한 알림만 받으려면 **Exact를 설정하십시오.**&#x200B;부터 **예**&#x200B;까지.
+   * 하위 트리에 속하는 모든 페이지에 대한 알림을 받으려면 **정확한?**&#x200B;을(를) 설정하십시오. **아니요**(으)로
+     경로에 정의된 페이지에서 작업에 대한 알림만 받으려면 **정확한?**&#x200B;을(를) 설정하십시오. 을(를) **예**(으)로 바꿉니다.
 
    * 규칙을 허용하려면 **규칙**&#x200B;을(를) **허용**(으)로 설정하십시오. **Deny**(으)로 설정하면 규칙이 거부되지만 제거할 수 없으며 나중에 허용할 수 있습니다.
 

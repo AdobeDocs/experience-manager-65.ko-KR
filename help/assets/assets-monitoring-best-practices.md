@@ -1,18 +1,29 @@
 ---
-title: ' [!DNL Assets] 배포 모니터링 모범 사례'
-description: 배포 후  [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
+title: '[!DNL Assets] 배포 모니터링 모범 사례'
+description: 배포된 후 [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
 contentOwner: AG
 role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 0%
-
+source-wordcount: '1704'
+ht-degree: 1%
 ---
-
 # [!DNL Adobe Experience Manager Assets] 배포 모니터링 모범 사례 {#assets-monitoring-best-practices}
 
 [!DNL Experience Manager Assets] 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰 및 보고가 포함되어야 합니다.
@@ -111,7 +122,7 @@ Threads
 
 **모니터[!DNL Experience Manager]**
 
-[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [&#x200B; JMX MBean의 &#x200B;](/help/sites-administering/jmx-console.md)설명서[!DNL Experience Manager]를 참조하십시오.
+[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [!DNL Experience Manager] JMX MBean의 [설명서](/help/sites-administering/jmx-console.md)를 참조하십시오.
 
 다음은 [!DNL Experience Manager]에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
 
@@ -143,51 +154,51 @@ Threads
 다음은 모니터링에 유용한 기본 상태 확인입니다.
 
 * 시스템 확인
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * 인스턴스: 작성자 1명, 모든 게시 서버
-   * 경보 임계값: 상태가 양호하지 않을 때
-   * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL입니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * 인스턴스: 작성자 1명, 모든 게시 서버
+  * 경보 임계값: 상태가 양호하지 않을 때
+  * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL입니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 복제 큐
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * 인스턴스: 작성자 1명, 모든 게시 서버
-   * 경보 임계값: 상태가 양호하지 않을 때
-   * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 특성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * 인스턴스: 작성자 1명, 모든 게시 서버
+  * 경보 임계값: 상태가 양호하지 않을 때
+  * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 특성을 확인하십시오.
 
-* 응답 성능
+* 응답 성과
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * 인스턴스: 모든 서버
-   * 경보 기간: 상태가 양호하지 않을 때
-   * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL 상태입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 특성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * 인스턴스: 모든 서버
+  * 경보 기간: 상태가 양호하지 않을 때
+  * 경보 정의: 지표 중 하나의 상태가 WARN 또는 CRITICAL 상태입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 특성을 확인하십시오.
 
-* 쿼리 성능
+* 쿼리 성과
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * 인스턴스: 작성자 1명, 모든 게시 서버
-   * 경보 임계값: 상태가 양호하지 않을 때
-   * 경고 정의: 시스템에서 느리게 실행되는 하나 이상의 쿼리. 문제를 일으킨 쿼리에 대한 자세한 내용은 로그 속성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * 인스턴스: 작성자 1명, 모든 게시 서버
+  * 경보 임계값: 상태가 양호하지 않을 때
+  * 경고 정의: 시스템에서 느리게 실행되는 하나 이상의 쿼리. 문제를 일으킨 쿼리에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 활성 상태 번들
 
-   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * 인스턴스: 모든 서버
-   * 경보 임계값: 상태가 양호하지 않을 때
-   * 경고 정의: 시스템에 비활성 상태이거나 해결되지 않은 OSGi 번들이 있습니다. 문제를 일으킨 번들에 대한 자세한 내용은 로그 속성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * 인스턴스: 모든 서버
+  * 경보 임계값: 상태가 양호하지 않을 때
+  * 경고 정의: 시스템에 비활성 상태이거나 해결되지 않은 OSGi 번들이 있습니다. 문제를 일으킨 번들에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 오류 로그
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * 인스턴스: 모든 서버
-   * 경보 임계값: 상태가 양호하지 않을 때
-   * 경보 정의: 로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * 인스턴스: 모든 서버
+  * 경보 임계값: 상태가 양호하지 않을 때
+  * 경보 정의: 로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 ## 일반적인 문제 및 해결 방법  {#common-issues-and-resolutions}
 

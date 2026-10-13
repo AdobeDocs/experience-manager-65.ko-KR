@@ -9,13 +9,27 @@ exl-id: d8bab1c4-b830-4491-9486-d7e7f4dc2c99
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '185'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '186'
 ht-degree: 100%
-
 ---
-
 # 오늘의 메시지 설정 {#setting-the-message-of-the-day}
 
 >[!NOTE]
@@ -30,7 +44,7 @@ Workspace 사용자 인터페이스의 시작 페이지에 표시될 메시지�
 * &lt;b> 굵게 태그
 * &lt;br> 줄 바꿈 태그
 * &lt;font> 글꼴 태그
-* &lt;img>이미지 태그
+* &lt;img> 이미지 태그
 * &lt;i>기울임꼴 태그
 * &lt;li> 목록 항목 태그
 * &lt;p> 단락 태그

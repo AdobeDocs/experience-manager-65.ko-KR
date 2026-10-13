@@ -9,20 +9,34 @@ exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '295'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '299'
 ht-degree: 100%
-
 ---
-
 # Microsoft SQL Server 데이터베이스: 구성 세부 조정 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 Microsoft SQL Server를 사용하는 경우 기본 구성 설정을 변경해야 합니다. Oracle Enterprise Manager에서 로컬 서버를 마우스 오른쪽 버튼으로 클릭하여 속성 대화 상자에 액세스합니다.
 
 ## 메모리 설정 {#memory-settings}
 
-최소 메모리 할당을 가능한 한 큰 숫자로 변경합니다. 데이터베이스가 별도의 컴퓨터에서 실행되는 경우 모든 메모리를 활용하십시오. 기본 설정은 메모리를 적극적으로 할당하지 않으므로 거의 모든 데이터베이스의 성능이 저하됩니다. 프로덕션 컴퓨터에서는 메모리를 가장 적극적으로 할당해야 합니다.
+최소 메모리 할당을 가능한 한 큰 값으로 변경합니다. 데이터베이스가 별도의 컴퓨터에서 실행되는 경우 모든 메모리를 활용하십시오. 기본 설정은 메모리를 적극적으로 할당하지 않으므로 거의 모든 데이터베이스의 성능이 저하됩니다. 프로덕션 컴퓨터에서는 메모리를 가장 적극적으로 할당해야 합니다.
 
 ## 프로세서 설정 {#processor-settings}
 

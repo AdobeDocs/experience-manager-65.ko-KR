@@ -9,13 +9,27 @@ exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: cd14456d-a492-4b5c-8a82-1fbd4460dbd2
+    internal-label: Java Content Repository
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 0%
-
+source-wordcount: '603'
+ht-degree: 2%
 ---
-
 # 프로그래밍 방식으로 AEM JCR에 액세스하는 방법{#how-to-programmatically-access-the-aem-jcr}
 
 Adobe Experience Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다. CQ 저장소에 액세스하려면 Java™ Content Repository(JCR) API를 사용합니다. Java™ JCR API를 사용하여 Adobe CQ 저장소 내에 있는 (CRUD) 콘텐츠를 생성, 교체, 업데이트 및 삭제할 수 있습니다. Java™ JCR API에 대한 자세한 내용은 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)을(를) 참조하십시오.

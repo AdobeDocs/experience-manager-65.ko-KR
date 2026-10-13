@@ -9,16 +9,22 @@ docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
 feature: Integration
 role: Admin
-source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
-
 # SharePoint 커넥터{#sharepoint-connector}
 
-이 문서에는 Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 Adobe JCR 커넥터에 대한 세부 정보가 포함되어 있습니다.
+이 문서에는 Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 Adobe JCR Connector에 대한 세부 사항이 포함되어 있습니다.
 
 SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 
@@ -37,7 +43,7 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 >SharePoint 서버 및 관련 IT 인프라의 설치, 구성, 관리 및 IT 운영은 이 문서에서 다루지 않습니다. 이러한 항목에 대한 자세한 내용은 [SharePoint](https://www.microsoft.com/sharepoint)의 공급업체 설명서를 참조하십시오. 커넥터는 인프라의 이러한 부분을 올바르게 설치, 구성 및 운영해야 합니다.
 >
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 커넥터를 시작하려면 다음을 수행하십시오.
 
@@ -72,12 +78,12 @@ SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/
 
 * AEM 버전:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Microsoft SharePoint 버전:
 
-   * Microsoft Office SharePoint 서버(MOSS) 2010
-   * Microsoft Office SharePoint 서버(MOSS) 2013
+  * Microsoft Office SharePoint 서버(MOSS) 2010
+  * Microsoft Office SharePoint 서버(MOSS) 2013
 
 * 커넥터의 사용자 지정 배포(OEM, 특수 요구 사항, 사용자 지정된 인증 방법)에 대한 지원이 필요한 경우 해당 지역의 Adobe 사무실에 문의하십시오.
 
@@ -94,8 +100,8 @@ SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/
 
 커넥터 콘텐츠 패키지를 설치하십시오.
 
-1. 커넥터 기능 팩을 요청하려면 Adobe 지원 티켓을 엽니다.
-1. 사용 가능한 경우 패키지를 다운로드한 다음 AEM 인스턴스에 대해 패키지 관리자를 엽니다.
+1. Adobe 지원 티켓을 열어 커넥터 기능 팩을 요청합니다.
+1. 사용 가능한 경우 패키지를 다운로드한 다음 AEM 인스턴스용 패키지 관리자를 엽니다.
 1. 패키지 설명 페이지에서 **설치**&#x200B;를 클릭합니다.
 1. **패키지 설치** 대화 상자에서 **설치**&#x200B;를 클릭합니다.
 
@@ -130,7 +136,7 @@ SharePoint 서버 및 고급 옵션의 URL을 설정하려면 다음 단계를 �
 `<name>`은(는) JCR 작업 영역의 이름이며
 `<url>`은(는) 해당 작업 영역의 SharePoint 서버 URL입니다.
 
-AEM에서 위의 구성 단계와 별도로 한 단계 더 수행합니다. &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; 번들을 허용 목록 합니다.
+AEM에서는 위의 구성 단계와 별도로 한 단계 더 수행합니다. &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; 번들을 허용 목록 합니다.
 
 AEM에서 번들을 허용 목록 하려면 다음 단계를 수행하십시오.
 
@@ -194,7 +200,7 @@ Sharepoint에는 다음 인증 유형을 지원하는 Classic 및 Claims 기반 
 * Claims-Basic
 * Claims-Forms 기반
 
-Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR 커넥터. 는 다음 모드에서 작동하는 클레임 기반 인증(Microsoft에서 제안)을 지원합니다.
+Microsoft SharePoint 2010 및 Microsoft SharePoint 2013용 AEM JCR 커넥터, 버전 4.0. 는 다음 모드에서 작동하는 클레임 기반 인증(Microsoft에서 제안)을 지원합니다.
 
 * **기본/NTLM 인증**: 커넥터가 먼저 기본 인증을 사용하여 연결을 시도합니다. 사용할 수 없는 경우 NTLM 기반 인증으로 전환됩니다.
 * **Forms 기반 인증**: Sharepoint는 사용자가 로그인 양식(일반적으로 웹 페이지)에 입력하는 자격 증명을 기반으로 사용자를 확인합니다. 시스템은 후속 요청에 대해 ID를 다시 설정하는 키가 포함된 인증된 요청에 대한 토큰을 발행합니다.
@@ -212,7 +218,7 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR �
 **기본 인증 구성(Windows)**
 
 1. [토큰 인증을 사용하지 않도록 설정](#disable-token-authentication).
-1. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)(으)로 이동합니다.
+1. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)&#x200B;(으)로 이동합니다.
 1. OSGI > 구성을 클릭합니다.
 1. Microsoft Sharepoint용 **일 JCR 커넥터**&#x200B;를 검색합니다.
 1. `Edit the configuration values`를 클릭합니다.
@@ -221,7 +227,7 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR �
 
 AEM과 SharePoint 모두에서 인증된 사용자만 커넥터를 통해 SharePoint 콘텐츠에 액세스할 수 있습니다.
 
-인증에 커넥터 확장을 사용하여 사용자 지정 인증 모듈을 만들 수도 있습니다. 예를 들어, AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 SharePoint 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 AEM 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
+인증에 커넥터 확장을 사용하여 사용자 지정 인증 모듈을 만들 수도 있습니다. 예를 들어, AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 AEM 컨텐츠를 볼 수 있도록 SharePoint 사용자에 해당하는 SharePoint 사용자를 만듭니다(사용자 이름과 암호가 일치해야 함).
 
 AEM에서 사용자를 만들려면 다음 작업을 수행하십시오.
 

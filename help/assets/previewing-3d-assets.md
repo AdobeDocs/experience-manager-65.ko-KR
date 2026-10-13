@@ -8,13 +8,22 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '605'
 ht-degree: 9%
-
 ---
-
 # Adobe Experience Manager에서 3D 자산 미리 보기 {#previewing-3d-assets-aem}
 
 | 버전 | 문서 링크 |
@@ -39,7 +48,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 에셋의 업로드, �
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif | |
 | STL | 스테레오리소그래피 | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
+| USDZ | Universal Scene Description Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원합니다. 미리 보기를 사용할 수 없습니다. |
 
 >[!NOTE]
 >

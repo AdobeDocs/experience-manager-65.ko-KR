@@ -9,13 +9,20 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # SRP에 대한 Solr 구성 {#solr-configuration-for-srp}
 
 ## AEM Platform용 Solr {#solr-for-aem-platform}
@@ -36,13 +43,13 @@ Apache Solr 다운로드 및 설치:
 * 서비스가 필요하지 않습니다.
 * 실행 모드 선택:
 
-   * 독립형 모드
-   * [SolrCloud 모드](#solrcloud-mode)(프로덕션 환경에 권장)
+  * 독립형 모드
+  * [SolrCloud 모드](#solrcloud-mode)(프로덕션 환경에 권장)
 
 * 다국어 검색(MLS) 선택
 
-   * [표준 MLS 설치](#installing-standard-mls)
-   * [고급 MLS 설치](#installing-advanced-mls)
+  * [표준 MLS 설치](#installing-standard-mls)
+  * [고급 MLS 설치](#installing-advanced-mls)
 
 ## SolrCloud 모드 {#solrcloud-mode}
 
@@ -288,35 +295,35 @@ SolrCloud 또는 독립 실행형 모드에 대한 설치를 시작하려면 다
 * 독립 실행형 모드로 Solr을 설치합니다.
 * Solr5를 실행하는 경우 Solr4와 유사한 collection1을 생성합니다.
 
-   * `./bin/solr start`
-   * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
+  * `./bin/solr start`
+  * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
 * 설치 스크립트 실행: [-v 4|5] [-d solrhome] [-c collectionpath 설치]
 여기서:
 
-   * -d solrhome
+  * -d solrhome
 
-     Solr 설치 디렉토리
+    Solr 설치 디렉토리
 
-   * -c collectionpath
+  * -c collectionpath
 
-     Solr의 컬렉션 경로
+    Solr의 컬렉션 경로
 
-   * —도움말
+  * —도움말
 
-     인쇄 명령줄 옵션
+    인쇄 명령줄 옵션
 
-   * -v [4|5]
+  * -v [4|5]
 
-     Solr 버전 설정
+    Solr 버전 설정
 
 * Solr 4.10.4의 예:
 
-   * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
+  * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
 
 * Solr 5.4.0의 예:
 
-   * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
+  * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
 **참고**:
 

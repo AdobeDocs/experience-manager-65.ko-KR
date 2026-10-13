@@ -5,13 +5,33 @@ exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
-
+source-wordcount: '724'
+ht-degree: 92%
 ---
-
 # 콘텐츠 조각의 참조 사용에 대해 알아보기 {#author-headless-references}
 
 ## 지금까지의 스토리 {#story-so-far}
@@ -27,10 +47,10 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 * **대상자**: 고급
 * **목표**: Headless CMS 작성에 대한 참조 사용을 소개합니다. 사용 가능한 참조의 종류와 참조 목적은 무엇입니까?
 
-   * 콘텐츠 참조
-   * 자산/미디어 참조
-   * 조각 참조
-   * 텍스트 블록 내 애드혹 참조
+  * 콘텐츠 참조
+  * 자산/미디어 참조
+  * 조각 참조
+  * 텍스트 블록 내 애드혹 참조
 
 ## 참조란 무엇입니까? {#what-are-references}
 
@@ -61,14 +81,14 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 * 개인
 * 상
 
-매우 간단한 것처럼 보이지만 회사에는 CEO와 직원이 있습니다.이 모두 사람이고 각각은 개인으로 정의됩니다.
+매우 간단해 보이지만, 회사는 CEO와 직원.... 모두 있으며 이들은 모두 개인으로 정의됩니다.
 
 개인에게 상 한 개(또는 두 개)가 제공될 수 있습니다.
 
 * 내 회사 - 회사
-   * CEO - 개인
-   * 직원 - 개인
-      * 개인 상 - 상
+  * CEO - 개인
+  * 직원 - 개인
+    * 개인 상 - 상
 
 이는 시작일 뿐입니다. 복잡도에 따라 상은 회사별로 지정되거나 회사의 본사는 특정 도시에 있을 수 있습니다.
 
@@ -111,22 +131,22 @@ AEMaaCS를 통한 작성, 특히 콘텐츠 조각 작성에 대한 소개와 함
 
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
-   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+  * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [변형 - 콘텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
+  * [변형 - 콘텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+  * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * 시작 안내서
-   * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

@@ -10,13 +10,22 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 3%
-
 ---
-
 
 # 레이아웃 컨테이너 및 레이아웃 모드 구성{#configuring-layout-container-and-layout-mode}
 
@@ -38,17 +47,17 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 
   이 구성 요소는 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 페이지의 기본 parsys로 사용하거나 구성 요소 브라우저에서 작성자가 사용할 수 있습니다.
 
-   * 기본 **레이아웃 컨테이너** 구성 요소는 아래에 정의되어 있습니다.
+  * 기본 **레이아웃 컨테이너** 구성 요소는 아래에 정의되어 있습니다.
 
-     `/libs/wcm/foundation/components/responsivegrid`
+    `/libs/wcm/foundation/components/responsivegrid`
 
-   * 레이아웃 컨테이너를 정의할 수 있습니다.
+  * 레이아웃 컨테이너를 정의할 수 있습니다.
 
-      * 사용자가 페이지에 추가할 수 있는 구성 요소입니다.
-      * 를 페이지의 기본 parsys로 사용합니다.
-      * 둘 다.
+    * 사용자가 페이지에 추가할 수 있는 구성 요소입니다.
+    * 를 페이지의 기본 parsys로 사용합니다.
+    * 둘 다.
 
-        레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
+      레이아웃 컨테이너를 페이지의 표준으로 사용할 수 있으며, 사용자가 이 내에 레이아웃 컨테이너를 더 추가할 수 있습니다(예: 열 제어 달성).
 
 * **[레이아웃 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 콘텐츠를 응답형 그리드 내에 배치할 수 있습니다.
@@ -102,13 +111,13 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 반응형 레이�
 * 응답형 디자인에 사용됩니다.
 * 다음을 정의할 수 있습니다.
 
-   * 페이지 템플릿에서 해당 템플릿으로 만든 페이지에 설정이 복사됩니다.
-   * 페이지 노드에서 설정이 하위 페이지에 상속됩니다.
+  * 페이지 템플릿에서 해당 템플릿으로 만든 페이지에 설정이 복사됩니다.
+  * 페이지 노드에서 설정이 하위 페이지에 상속됩니다.
 
 * 제목 및 너비 정의:
 
-   * 제목은 전화, 태블릿, 태블릿 등과 같이 필요한 경우 방향을 사용하여 일반 장치 그룹화를 설명합니다.
-   * 너비는 일반 장치 그룹화에 대한 최대 너비(픽셀 단위)를 정의합니다. 예를 들어, 중단점 전화기의 너비가 768이라면 전화 디바이스에 사용되는 레이아웃의 최대 너비입니다.
+  * 제목은 전화, 태블릿, 태블릿 등과 같이 필요한 경우 방향을 사용하여 일반 장치 그룹화를 설명합니다.
+  * 너비는 일반 장치 그룹화에 대한 최대 너비(픽셀 단위)를 정의합니다. 예를 들어, 중단점 전화기의 너비가 768이라면 전화 디바이스에 사용되는 레이아웃의 최대 너비입니다.
 
 * 에뮬레이터를 사용할 때 페이지 편집기 맨 위에 마커로 표시됩니다.
 * 상위 노드 계층에서 상속되며 마음대로 재정의할 수 있습니다.
@@ -253,11 +262,11 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
 * 전:
 
-   * `width=100px`
+  * `width=100px`
 
 * 이후:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### 크기 조정 및 적응형 이미지 규정 준수 {#resizing-and-adaptive-image-compliance}
 
@@ -317,11 +326,11 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
    * 사용 가능한 열 수:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * 현재 구성 요소에 추가할 수 있는 구성 요소:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## 중첩된 응답형 격자 {#nested-responsive-grids}
 

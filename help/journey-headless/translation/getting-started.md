@@ -5,13 +5,37 @@ exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 89%
-
+source-wordcount: '1491'
+ht-degree: 90%
 ---
-
 # AEM Headless 번역 시작하기 {#getting-started}
 
 Headless 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다.
@@ -61,9 +85,9 @@ AEM의 콘텐츠는 Headless 페이지 또는 기존 웹 페이지와 상관없�
 
 >[!TIP]
 >
->Headless 프로젝트의 시작 부분부터 번역을 위한 계획을 수립하십시오. 프로젝트 관리자 및 콘텐츠 설계자와 조기부터 긴밀히 협력하십시오.
+>Headless 프로젝트의 시작 부분부터 번역을 위한 계획을 수립하십시오. 프로젝트 관리자 및 콘텐츠 설계자와 초기에 긴밀히 협력하십시오.
 >
->번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당할 별도의 페르소나로서 국제화 프로젝트 관리자가 필요할 수 있습니다.
+>국제화 프로젝트 관리자는 별도의 페르소나로 필요할 수 있으며, 이 역할은 어떤 콘텐츠를 번역해야 하고 어떤 콘텐츠를 번역하지 않아야 하는지, 그리고 지역 또는 로컬 콘텐츠 제작자가 어떤 번역된 콘텐츠를 수정할 수 있는지를 정의하는 책임을 집니다.
 
 ## AEM이 Headless 콘텐츠를 저장하는 방법 {#headless-content-in-aem}
 
@@ -108,7 +132,7 @@ Headless 콘텐츠를 채널, 지역 및 언어에 일관되게 게재하려면 
 
 ## 권장 콘텐츠 구조 {#recommended-structure}
 
-이전에 권장한 것처럼, 콘텐츠 설계자와 협력하여 프로젝트에 적합한 콘텐츠 구조를 결정하십시오. 그러나 입증되고 단순하며, 직관적이고 효과적인 다음 구조도 참조하십시오.
+이전에 권장한 것처럼, 콘텐츠 아키텍트와 협력하여 프로젝트에 적합한 콘텐츠 구조를 결정하십시오. 그러나 다음은 입증되었고 단순하며 직관적인 구조로, 매우 효과적입니다.
 
 `/content/dam` 아래에 프로젝트용 기본 폴더를 정의하십시오.
 
@@ -128,7 +152,7 @@ Headless 콘텐츠를 채널, 지역 및 언어에 일관되게 게재하려면 
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-번역은 언어 루트와 함께 해당 언어의 ISO-2 언어 코드를 나타내는 폴더 이름을 가진 동일한 수준의 폴더로 생성해야 합니다. 예를 들어 독일어는 다음과 같은 경로를 가질 수 있습니다.
+번역은 언어 루트와 나란히 있는 동일 수준의 폴더로 생성해야 하며, 해당 폴더 이름은 해당 언어의 ISO-2 언어 코드를 나타내야 합니다. 예를 들어 독일어는 다음과 같은 경로를 가질 수 있습니다.
 
 ```text
 /content/dam/<your-project>/de

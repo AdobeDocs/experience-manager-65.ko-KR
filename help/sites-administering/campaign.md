@@ -9,13 +9,22 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 9%
-
+source-wordcount: '346'
+ht-degree: 12%
 ---
-
 
 # AEM 6.5와 Adobe Campaign 통합{#integrating-with-adobe-campaign}
 
@@ -31,7 +40,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 ## Adobe Campaign Classic과 통합 {#acc}
 
-몇 가지 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM과의 통합에 대한 지원은 구현한 ACC 버전과 AEM이 AMS(Adobe 관리 서비스)의 온프레미스에 설치되어 있는지에 따라 다릅니다.
+몇 가지 ACC(Adobe Campaign Classic) 버전이 있습니다. AEM과의 통합에 대한 지원은 구현한 ACC 버전과 AEM이 Adobe Manage Services(AMS)의 온프레미스에 설치되어 있는지에 따라 다릅니다.
 
 | ACC 버전 | AEM 6.5 <br>온 프레미스와 통합 | AEM 6.5<br>AMS와 통합 |
 |---|---|---|
@@ -49,7 +58,7 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 ## Adobe Campaign Standard와 통합 {#acs}
 
-AEM과 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=ko)(ACS)의 통합은 AEM이 AMS(Adobe 관리 서비스)의 온-프레미스에 설치되어 있는지 여부에 따라 달라집니다.
+ACS([Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=ko))와 AEM의 통합은 AEM이 AMS(Adobe Manage Services)의 온-프레미스에 설치되어 있는지 여부에 따라 달라집니다.
 
 | AEM 6.5 <br>온 프레미스와 통합 | AEM 6.5<br>AMS와 통합 |
 |---|---|

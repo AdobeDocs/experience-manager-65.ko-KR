@@ -9,13 +9,24 @@ exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
-
 ---
-
 # ContextHub 확장{#extending-contexthub}
 
 제공된 ContextHub 저장소 및 모듈이 솔루션 요구 사항을 충족하지 않는 경우 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다.
@@ -36,10 +47,10 @@ contexthub.store.[storeType]
 
 저장소 후보를 만들려면 [`ContextHub.Utils.inheritance.inherit`](/help/sites-developing/contexthub-api.md#inherit-child-parent) 함수를 사용하여 기본 저장소 중 하나를 확장합니다.
 
-* [&#39;ContextHub.Store.PersistedStore&#39;](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
-* [&#39;ContextHub.Store.SessionStore&#39;](/help/sites-developing/contexthub-api.md#contexthub-store-sessionstore)
-* [&#39;ContextHub.Store.JSONPtore&#39;](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
-* [&#39;ContextHub.Store.PersistedJSONPtore&#39;](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
+* [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
+* [`ContextHub.Store.SessionStore`](/help/sites-developing/contexthub-api.md#contexthub-store-sessionstore)
+* [`ContextHub.Store.JSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
+* [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 
 각 기본 저장소는 [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) 저장소를 확장합니다.
 
@@ -50,7 +61,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-현실적으로 사용자 정의 저장소 후보는 추가 기능을 정의하거나 저장소의 초기 구성을 재정의합니다. [샘플 저장소 후보](/help/sites-developing/ch-samplestores.md)이(가) `/libs/granite/contexthub/components/stores` 아래 저장소에 여러 개 설치되어 있습니다. 이러한 샘플에서 배우려면 CRXDE Lite 를 사용하여 JavaScript 파일을 엽니다.
+현실적으로 사용자 정의 저장소 후보는 추가 기능을 정의하거나 저장소의 초기 구성을 재정의합니다. [샘플 저장소 후보](/help/sites-developing/ch-samplestores.md)이(가) `/libs/granite/contexthub/components/stores` 아래 저장소에 여러 개 설치되어 있습니다. 이러한 샘플에서 배우려면 CRXDE Lite을 사용하여 JavaScript 파일을 엽니다.
 
 ### ContextHub 저장소 후보 등록 {#registering-a-contexthub-store-candidate}
 

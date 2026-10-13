@@ -10,13 +10,29 @@ exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
-
+source-wordcount: '7022'
+ht-degree: 99%
 ---
-
 # 용어 설명{#glossary}
 
 이 용어집에는 [프로젝트 체크리스트](/help/managing/best-practices-checklist.md)의 모든 결과물 문서에 대한 세부 정보가 알파벳순으로 나열되어 있습니다.
@@ -109,8 +125,8 @@ Adobe 지원 포털을 사용하면 구현 파트너와 고객이 지원 포털�
 
 * AEM 인증 리드 개발자 1명 이상
 * AEM 인증 아키텍트 1명 이상
-* AEM 인증을 받은 개발자 75% 이상.
-이를 통해 인증을 받은 개발자가 주니어 개발자를 멘토링하고 지식 공유와 투명성을 보장할 수 있습니다.
+* 개발자의 75% 이상이 AEM 인증을 획득했습니다.
+이를 통해 인증된 개발자는 주니어 개발자에게 멘토링을 제공하고 지식 공유와 투명성을 보장할 수 있습니다
 
 ### 아키텍처 다이어그램 {#architecture-diagram}
 
@@ -207,8 +223,8 @@ Adobe 지원 포털을 사용하면 구현 파트너와 고객이 지원 포털�
 
 비즈니스 요구 사항 문서(BRD)는 프로젝트에 대한 비즈니스 솔루션을 자세히 설명하고 고객의 비즈니스 요구 사항과 기대 사항을 명확하게 명시합니다. BRD는 또한 비즈니스 솔루션과 기술 솔루션을 구분합니다.
 
-비즈니스 솔루션을 검토할 때 BRD는 다음 질문에 답해야 합니다.
-“이 기업은 무엇을 하기를 원하는가?”
+비즈니스 솔루션을 검토할 때 BRD는 다음과 같은 질문에 답해야 합니다.
+&quot;그 기업은 무엇을 하기를 원하는가?&quot;
 
 ### ROI 및 KPI 기대치에 맞춰 식별되고 정렬된 솔루션 또는 아키텍처에 필요한 모든 조정 사항에 대한 비즈니스 승인 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -358,10 +374,10 @@ Adobe 지원 포털을 사용하면 구현 파트너와 고객이 지원 포털�
 * AEM은 비즈니스 요구 사항에 맞게 광범위하게 사용자 정의할 수 있습니다. 업그레이드에 영향을 미칠 수 있는 모든 사용자 정의는 완전히 문서화되어야 합니다. 예를 들어 AEM 사용자 인터페이스(UI)의 주요 변경 사항이 있습니다.
 * 현재 솔루션에 필요한 모든 업데이트는 완전히 문서화되어야 합니다. 여기에는 다음 사항이 포함될 수 있습니다.
 
-   * 누적 수정 팩(CFP)
-   * 서비스 팩(SP)
-   * 핫픽스
-   * 업그레이드
+  * 누적 수정 팩(CFP)
+  * 서비스 팩(SP)
+  * 핫픽스
+  * 업그레이드
 
 ### 일일 사용자 수용 테스트 보고서 {#daily-user-acceptance-test-report}
 

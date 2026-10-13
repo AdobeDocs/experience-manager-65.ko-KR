@@ -5,13 +5,27 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 96%
-
 ---
-
 # 하드웨어 크기 조정 지침{#hardware-sizing-guidelines}
 
 이러한 크기 조정 지침에서는 AEM 프로젝트를 배포하는 데 필요한 하드웨어 리소스에 대한 대략적인 정보를 제공합니다. 크기 조정 추정치는 프로젝트 아키텍처, 솔루션의 복잡성, 예상 트래픽, 프로젝트 요구 사항에 따라 달라집니다. 이 안내서는 특정 솔루션에 필요한 하드웨어 요구 사항을 파악하거나 하드웨어 요구 사항에 대한 상한 및 하한 추정치를 찾는 데 도움이 됩니다.

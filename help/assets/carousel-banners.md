@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4665'
+source-wordcount: '4791'
 ht-degree: 3%
-
 ---
-
 # 회전 배너{#carousel-banners}
 
 회전 배너를 사용하면 마케터가 대화형 회전 프로모션 콘텐츠를 쉽게 만들어 모든 화면에 전달하여 전환을 유도할 수 있습니다.
@@ -88,7 +102,7 @@ ht-degree: 3%
 
    * [웹 사이트 페이지에 회전 배너를 추가](#adding-a-carousel-banner-to-your-website-page) 웹 사이트 페이지에 복사한 회전 배너 URL 또는 포함 코드를 추가할 수 있습니다.
 
-      * [캐러셀 배너를 기존 빠른 보기와 통합](#integrating-the-carousel-banner-with-an-existing-quickview). 서드파티 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 사이트에서 새 캐러셀 배너를 기존 빠른 보기 구현과 통합해야 합니다.
+     * [캐러셀 배너를 기존 빠른 보기와 통합](#integrating-the-carousel-banner-with-an-existing-quickview). 서드파티 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 사이트에서 새 캐러셀 배너를 기존 빠른 보기 구현과 통합해야 합니다.
 
    * [Experience Manager의 웹 사이트에 회전 배너를 추가하십시오](/help/assets/adding-dynamic-media-assets-to-pages.md) Experience Manager Sites 고객인 경우 대화형 미디어 구성 요소를 사용하여 Experience Manager의 페이지에 회전 배너를 직접 추가할 수 있습니다.
 
@@ -286,23 +300,23 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
    * **[!UICONTROL 빠른 보기]**&#x200B;를 선택합니다.
 
-      * Experience Manager Sites 및 Ecommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 슬라이드 배너 편집기로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 확인 표시를 선택합니다.
-      * Experience Manager Sites 또는 Ecommerce 고객이 아닌 경우
+     * Experience Manager Sites 및 Ecommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 슬라이드 배너 편집기로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 확인 표시를 선택합니다.
+     * Experience Manager Sites 또는 Ecommerce 고객이 아닌 경우
 
-         * 이러한 변수를 정의하려면 [핫스팟 변수 식별](#identifying-hotspot-and-image-map-variables)을 참조하십시오.
-         * 그런 다음 수동으로 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제품의 SKU(Stock Keeping Unit)를 입력합니다. 이 SKU는 제공하는 각 고유 제품이나 서비스에 대한 고유 식별자입니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 입력하므로 시스템에서 탭 핫스팟을 특정 SKU의 빠른 보기와 연결해야 한다는 것을 알게 됩니다.
-         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 category=Mens는 추가된 변수입니다.
+       * 이러한 변수를 정의하려면 [핫스팟 변수 식별](#identifying-hotspot-and-image-map-variables)을 참조하십시오.
+       * 그런 다음 수동으로 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제품의 SKU(Stock Keeping Unit)를 입력합니다. 이 SKU는 제공하는 각 고유 제품이나 서비스에 대한 고유 식별자입니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 입력하므로 시스템에서 탭 핫스팟을 특정 SKU의 빠른 보기와 연결해야 한다는 것을 알게 됩니다.
+       * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 category=Mens는 추가된 변수입니다.
 
-         * 자세한 내용은 [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)을 참조하세요.
+       * 자세한 내용은 [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)을 참조하세요.
 
    * **[!UICONTROL 하이퍼링크]**&#x200B;를 선택하십시오.
 
-      * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
-        >[!NOTE]
-        >
-        >대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+     * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
+       >[!NOTE]
+       >
+       >대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 
-      * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
+     * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
@@ -310,16 +324,16 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
-[경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
+     * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+       [경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
-      * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.
+     * 배너에 표시되는 경험 조각의 너비와 높이를 지정합니다.
 
-        >[!NOTE]
-        >
-        >뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
-        >
-        >이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+       >[!NOTE]
+       >
+       >뷰어를 경험 조각에 포함할 때 회전 배너의 소셜 미디어 공유 도구가 지원되지 않습니다.
+       >
+       >이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -379,7 +393,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟 또는 이미지 맵�
 
 캐러셀 배너가 마음에 들면 게시할 수 있습니다.
 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
-[웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 회전식 편집기(기본 메서드) 또는 **[!UICONTROL 뷰어]** 목록에서 회전식 배너를 미리 볼 수 있습니다.

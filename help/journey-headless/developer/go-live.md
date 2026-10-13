@@ -5,13 +5,39 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 51%
-
 ---
-
 # Headless 애플리케이션 실행 방법 {#go-live}
 
 [AEM Headless 개발자 여정](overview.md)의 이 부분에서 Headless 응용 프로그램을 라이브로 배포하는 방법을 알아보세요.
@@ -118,9 +144,9 @@ AEM Headless 프로젝트를 시작하도록 준비하려면 프로젝트의 모
 ### CDN 캐시 적중률 최대화 {#maximize-cdn}
 
 * 표면에서 라이브 콘텐츠를 요청하지 않는 한 GraphQL 쿼리를 직접 사용하지 마십시오.
-   * 가능하면 지속 쿼리를 사용합니다.
-   * CDN이 캐시할 수 있도록 600초 이상의 CDN TTL을 제공합니다.
-   * AEM은 모델 변경이 기존 쿼리에 미치는 영향을 계산할 수 있습니다.
+  * 가능하면 지속 쿼리를 사용합니다.
+  * CDN이 캐시할 수 있도록 600초 이상의 CDN TTL을 제공합니다.
+  * AEM은 모델 변경이 기존 쿼리에 미치는 영향을 계산할 수 있습니다.
 * 낮은 콘텐츠 변경률과 높은 콘텐츠 변경률 간에 JSON 파일/GraphQL 쿼리를 분할하여 CDN에 대한 클라이언트 트래픽을 줄이고 더 높은 TTL을 할당합니다. 이렇게 하면 원본 서버와 함께 JSON의 유효성을 다시 검사하는 CDN이 최소화됩니다.
 * CDN에서 콘텐츠를 무효화하려면 소프트 제거를 사용합니다. 이렇게 하면 CDN에서 캐시 누락을 발생시키지 않고 콘텐츠를 다시 다운로드할 수 있습니다.
 
@@ -164,15 +190,15 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 * 앱의 미리보기 및 프로덕션 버전 확인
 * 현재 서비스 가용성 상태에 대한 AEM 상태 페이지 확인
 * 성능 보고서 액세스
-   * 게재 성능
-      * 원본 서버 - 호출 수, 오류율, CPU 로드, 페이로드 트래픽
-   * 작성자 성능
-      * 사용자 수, 요청 및 로드 확인
+  * 게재 성능
+    * 원본 서버 - 호출 수, 오류율, CPU 로드, 페이로드 트래픽
+  * 작성자 성능
+    * 사용자 수, 요청 및 로드 확인
 * 앱 및 공간별 성능 보고서 액세스
-   * 서버가 가동되면 일반 지표가 녹색/주황색/빨간색인지 확인한 다음 특정 앱 문제를 식별합니다.
-   * 위에서 앱 또는 공간(예: Photoshop 데스크탑, Paywall)으로 필터링한 동일한 보고서 열기
-   * Splunk 로그 API를 사용하여 서비스 및 애플리케이션 성능에 액세스
-   * 다른 문제가 있는 경우 고객 지원 팀에 문의하십시오.
+  * 서버가 가동되면 일반 지표가 녹색/주황색/빨간색인지 확인한 다음 특정 앱 문제를 식별합니다.
+  * 위에서 앱 또는 공간(예: Photoshop 데스크탑, Paywall)으로 필터링한 동일한 보고서 열기
+  * Splunk 로그 API를 사용하여 서비스 및 애플리케이션 성능에 액세스
+  * 다른 문제가 있는 경우 고객 지원 팀에 문의하십시오.
 
 ## 문제 해결 {#troubleshooting}
 
@@ -225,9 +251,9 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 * CDN 캐시
 
-   * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#controlling-a-cdn-cache)
+  * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#controlling-a-cdn-cache)
 
-   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=ko) 구성(*CDN 재작성기 검색*)
+  * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=ko) 구성(*CDN 재작성기 검색*)
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)

@@ -1,18 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] 소개'
+title: '[!DNL Adobe Experience Manager Assets] 소개'
 description: Experience Manager에서 디지털 자산을 작성하고, 관리하며, 처리하고, 배포합니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산 사용 방법에 대해 설명합니다.
 hide: true
 feature: Asset Management
 role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 5%
-
 ---
-
 
 # DAM 솔루션으로서의 [!DNL Adobe Experience Manager Assets] 정보 {#administering-assets}
 
@@ -67,9 +80,9 @@ AEM [!DNL Assets]은(는) [!DNL Experience Manager] 플랫폼의 일부이며 �
 
 * **메타데이터** [!DNL Assets]에 작성자, 만료 날짜 및 DRM 정보(Digital Rights Management)와 같은 메타데이터가 있습니다. 메타데이터가 액세스 제어 하에 있습니다. [!DNL Assets]은(는) 기본적으로 다음과 같은 다양한 일반 메타데이터 스키마를 지원합니다.
 
-   * 더블린 코어: 작성자, 설명, 날짜, 주제 등을 포함합니다.
-   * IPTC: 이벤트, 모델, 위치 등을 포함합니다.
-   * WCM: 페이지 속성, [!UICONTROL 설정 시간] 및 [!UICONTROL 해제 시간] 등을 포함합니다.
+  * 더블린 코어: 작성자, 설명, 날짜, 주제 등을 포함합니다.
+  * IPTC: 이벤트, 모델, 위치 등을 포함합니다.
+  * WCM: 페이지 속성, [!UICONTROL 설정 시간] 및 [!UICONTROL 해제 시간] 등을 포함합니다.
 
 * **태그 지정**: [!DNL Assets]에 태그를 지정하고 분류할 수 있습니다. [자산 구성](/help/assets/organize-assets.md)을 참조하세요.
 

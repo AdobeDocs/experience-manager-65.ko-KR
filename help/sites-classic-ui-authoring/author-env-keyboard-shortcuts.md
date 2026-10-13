@@ -9,16 +9,25 @@ exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 34%
-
+source-wordcount: '115'
+ht-degree: 24%
 ---
-
 # 콘솔용 키보드 단축키{#keyboard-shortcuts-for-consoles}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 [페이지 편집](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)에 사용되는 키보드 단축키도 있습니다.
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 콘솔 사용에 적용되고 일부는 [페이지 편집](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >

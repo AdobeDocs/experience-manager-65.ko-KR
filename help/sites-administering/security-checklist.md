@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3049'
 ht-degree: 3%
-
 ---
-
 # 보안 체크리스트 {#security-checklist}
 
 이 섹션에서는 배포 시 AEM 설치를 보호하기 위해 수행해야 하는 다양한 단계를 다룹니다. 체크리스트는 처음부터 끝까지 적용됩니다.
@@ -225,27 +239,27 @@ CRX WebDAV 및 Apache Sling에서 CSRF(크로스 사이트 요청 위조)와 관
 
 * [Adobe Granite HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * **축소** 사용(CRLF 및 공백 문자 제거)
-   * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
-   * **Debug** 사용 안 함
-   * **시간** 사용 안 함
+  * **축소** 사용(CRLF 및 공백 문자 제거)
+  * **Gzip** 사용(한 번의 요청으로 파일을 압축하고 액세스할 수 있도록 허용)
+  * **Debug** 사용 안 함
+  * **시간** 사용 안 함
 
 * [일 CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * **사용** 선택 취소
+  * **사용** 선택 취소
 
 * [일 CQ WCM 필터](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * 게시만 할 때 **WCM 모드**&#x200B;를 &quot;사용 안 함&quot;으로 설정하십시오.
+  * 게시만 할 때 **WCM 모드**&#x200B;를 &quot;사용 안 함&quot;으로 설정하십시오.
 
 * [Apache Sling JavaScript 처리기](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * **디버그 정보 생성** 사용 안 함
+  * **디버그 정보 생성** 사용 안 함
 
 * [Apache Sling JSP 스크립트 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * **디버그 정보 생성** 사용 안 함
-   * **매핑된 콘텐츠** 사용 안 함
+  * **디버그 정보 생성** 사용 안 함
+  * **매핑된 콘텐츠** 사용 안 함
 
 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md)을 참조하십시오.
 
@@ -266,9 +280,9 @@ AEM을 사용하여 작업할 때 이러한 서비스에 대한 구성 설정을
 
   예를 들어 `.../en.html`은(는) 다음과 같이 요청할 수도 있습니다.
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   모든 유효한 변형(예: `200` 응답을 반환하고 캐시되도록 구성됨)이 Dispatcher에 의해 캐시되므로 전체 파일 시스템이 만들어지고 추가 요청에 대한 서비스가 제공되지 않습니다.
 

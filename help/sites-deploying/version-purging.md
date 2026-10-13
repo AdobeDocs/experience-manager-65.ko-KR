@@ -1,5 +1,5 @@
 ---
-title: 버전 삭제
+title: 버전 제거
 description: 이 문서에서는 버전 삭제에 사용 가능한 옵션에 대해 설명합니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
-
+source-wordcount: '732'
+ht-degree: 1%
 ---
-
-# 버전 삭제{#version-purging}
+# 버전 제거{#version-purging}
 
 표준 설치에서 Adobe Experience Manager(AEM)는 콘텐츠를 업데이트한 후 페이지를 활성화하면 페이지 또는 노드의 버전을 생성합니다.
 
@@ -38,11 +47,11 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 저장소 모니터링 및 유지 관리의 일부로 사용됩니다.
 이를 통해 다음 매개 변수에 따라 노드의 이전 버전 또는 노드 계층을 제거하도록 개입할 수 있습니다.
 
-   * 저장소에 보관할 최대 버전 수.
-이 수를 초과하면 가장 오래된 버전이 제거됩니다.
+  * 저장소에 보관할 최대 버전 수.
+    이 수를 초과하면 가장 오래된 버전이 제거됩니다.
 
-   * 저장소에 보관된 버전의 최대 기간.
-버전 사용 기간이 이 값을 초과하면 저장소에서 제거됩니다.
+  * 저장소에 보관된 버전의 최대 기간.
+    버전 사용 기간이 이 값을 초과하면 저장소에서 제거됩니다.
 
 * [버전 제거 유지 관리 작업](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). 버전 제거 유지 관리 작업을 예약하여 이전 버전을 자동으로 삭제할 수 있습니다. 따라서 버전 제거 도구를 수동으로 사용할 필요가 없습니다.
 
@@ -66,7 +75,7 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 `versionmanager.ivPaths`에 포함된 경로에서 활성화가 발생하는 경우에만 버전이 만들어집니다(아래 참조).
 
 * `versionmanager.ivPaths`(문자열[], 기본값: `{"/"}`)
-`versionmanager.createVersionOnActivation`이(가) true로 설정된 경우 활성화 시 버전이 묵시적으로 생성되는 경로를 지정합니다.
+`versionmanager.createVersionOnActivation`이(가) true로 설정된 경우 활성화 시 암묵적으로 버전이 만들어지는 경로를 지정합니다.
 
 * `versionmanager.purgingEnabled`(부울, 기본값: false)
 새 버전을 만들 때 지우기를 사용할지 여부를 정의합니다.
@@ -85,7 +94,7 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 
 >[!NOTE]
 >
->저장소에 많은 버전을 유지하는 것은 권장되지 않습니다. 따라서 버전 제거 작업을 구성할 때는 제거에서 너무 많은 버전을 제외하지 않도록 주의하십시오. 그렇게 하지 않으면 저장소 크기가 제대로 최적화되지 않습니다. 비즈니스 요구 사항으로 인해 많은 수의 버전을 유지하는 경우 Adobe 지원 센터에 문의하여 저장소 크기를 최적화할 수 있는 대체 방법을 확인하십시오.
+>저장소에 많은 버전을 유지하는 것은 권장되지 않습니다. 따라서 버전 제거 작업을 구성할 때는 제거에서 너무 많은 버전을 제외하지 않도록 주의하십시오. 그렇게 하지 않으면 저장소 크기가 제대로 최적화되지 않습니다. 비즈니스 요구 사항으로 인해 많은 수의 버전을 유지하는 경우 Adobe 지원에 문의하여 저장소 크기를 최적화할 수 있는 대체 방법을 확인하십시오.
 
 ### 보존 옵션 결합 {#combining-retention-options}
 
@@ -95,34 +104,34 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 
 * 설정:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * 포함:
 
-   * 지난 60일 내에 10개의 버전이 만들어졌습니다
-   * 이러한 버전 중 3개가 지난 30일 이내에 생성되었습니다
+  * 지난 60일 내에 10개의 버전이 만들어졌습니다
+  * 이러한 버전 중 3개가 지난 30일 이내에 생성되었습니다
 
 * 이는 다음을 의미합니다.
 
-   * 마지막 세 버전은 유지됩니다
+  * 마지막 세 버전은 유지됩니다
 
 예를 들어 유지할 최대 AND 최소 버전 수와 유지할 가장 오래된 버전을 정의하는 경우:
 
 * 설정:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * 포함:
 
-   * 5 버전은 60 일 전에 만들어졌습니다.
+  * 5 버전은 60 일 전에 만들어졌습니다.
 
 * 이는 다음을 의미합니다.
 
-   * 세 가지 버전이 유지됩니다.
+  * 세 가지 버전이 유지됩니다.
 
 ## 버전 제거 도구 {#purge-versions-tool}
 

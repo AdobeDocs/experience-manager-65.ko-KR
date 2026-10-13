@@ -9,24 +9,38 @@ exl-id: f4045df5-a35b-41d7-910e-971017148597
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '742'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '748'
 ht-degree: 100%
-
 ---
-
 # IBM FileNet용 커넥터 구성 {#configuring-connector-for-ibm-filenet}
 
 >[!NOTE]
 > 
-> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
+> 사용자에게 관리 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
 IBM FileNet용 커넥터를 사용하면 AEM Forms와 IBM FileNet 간의 통신이 가능합니다. 추가 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)의 &#39;ECM용 커넥터&#39;를 참조하십시오.
 
 >[!NOTE]
 >
->이전 릴리스에서는 자산을 ECM 저장소에 저장할 수 있었습니다. 이 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM Forms 저장소로 자산을 마이그레이션하는 작업은 AEM Forms를 업그레이드할 때 수행됩니다. 자세한 내용은 애플리케이션 서버의 AEM Forms 업그레이드 안내서를 참조하십시오.
+>이전 릴리스에서는 자산을 ECM 저장소에 저장할 수 있었습니다. 이 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 제공자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM Forms 저장소로 자산을 마이그레이션하는 작업은 AEM Forms를 업그레이드할 때 수행됩니다. 자세한 내용은 애플리케이션 서버의 AEM Forms 업그레이드 안내서를 참조하십시오.
 
 ## Content Engine에 대한 연결 구성 {#configure-the-connection-to-the-content-engine}
 
@@ -74,8 +88,8 @@ IBM FileNet용 커넥터에는 IBM FileNet용 Process Engine 커넥터 서비스
 
 Content Engine 또는 Process Engine 설정에 대한 연결을 구성할 때 잘못된 사용자 이름 또는 암호를 입력하면 서비스가 현재 실행 중인지 여부에 따라 다음과 같은 결과가 나타납니다.
 
-* IBM FileNet용 저장소 공급자 서비스와 IBM FileNet용 콘텐츠 저장소 커넥터 서비스가 모두 중지된 경우 서비스 구성 정보를 저장하면 오류가 나타나지 않습니다. 하지만 다음에 서비스를 시작하면 예외가 발생하고 서비스가 시작되지 않습니다.
-* IBM FileNet용 저장소 공급자 서비스 또는 IBM FileNet용 콘텐츠 저장소 커넥터 서비스가 시작된 경우 서비스 구성 정보를 저장하면 해당 서비스에서 즉시 자격 증명 정보의 유효성을 검사하려고 시도합니다. 이 경우 오류가 발생하고 구성 정보가 저장되지 않습니다.
+* IBM FileNet용 저장소 제공자 서비스와 IBM FileNet용 콘텐츠 저장소 커넥터 서비스가 모두 중지된 경우 서비스 구성 정보를 저장하면 오류가 나타나지 않습니다. 하지만 다음에 서비스를 시작하면 예외가 발생하고 서비스가 시작되지 않습니다.
+* IBM FileNet용 저장소 제공자 서비스 또는 IBM FileNet용 콘텐츠 저장소 커넥터 서비스가 시작된 경우 서비스 구성 정보를 저장하면 해당 서비스에서 즉시 자격 증명 정보의 유효성을 검사하려고 시도합니다. 이 경우 오류가 발생하고 구성 정보가 저장되지 않습니다.
 
 ## 저장소 서비스 공급자 변경 {#change-the-repository-service-provider}
 

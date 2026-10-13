@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Experience Manager 내에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
@@ -30,8 +44,8 @@ ht-degree: 1%
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
-   * 이는 외부 SPA를 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
-   * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
+  * 이는 외부 SPA를 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
+  * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
 * 즉시 통합하고자 하는 작동 중인 외부 React SPA가 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
@@ -166,7 +180,7 @@ WKND SPA 프로젝트의 텍스트를 추가해야 하는 예제 페이지를 �
 
    * `pagePath`: `/content/wknd-spa-react/us/en/home` 예제에서 노드가 포함된 페이지
    * `itemPath`: 페이지 내의 노드 경로(예: `root/responsivegrid/text`)
-      * 이 이름은 페이지에 있는 포함 항목의 이름으로 구성됩니다.
+     * 이 이름은 페이지에 있는 포함 항목의 이름으로 구성됩니다.
 
    ![노드의 경로](assets/external-spa-path.png)
 
@@ -260,9 +274,9 @@ mvn clean install -PautoInstallSinglePackage
 * `pagePath`의 경로에 제공된 페이지 노드가 AEM 프로젝트에 있어야 합니다.
 * 만들 노드의 이름을 `itemPath`에 입력해야 합니다.
 * 구성 요소는 모든 수준에서 만들 수 있습니다.
-   * 앞의 예제에서 `itemPath='text_20'`을(를) 제공하면 새 노드가 페이지 바로 아래에 만들어집니다. 즉, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+  * 앞의 예제에서 `itemPath='text_20'`을(를) 제공하면 새 노드가 페이지 바로 아래에 만들어집니다. 즉, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * 새 노드가 만들어지는 노드의 경로는 `itemPath`을(를) 통해 제공된 경우 유효해야 합니다.
-   * 이 예제에서는 새 노드 `text_20`을(를) 만들려면 `root/responsivegrid`이(가) 있어야 합니다.
+  * 이 예제에서는 새 노드 `text_20`을(를) 만들려면 `root/responsivegrid`이(가) 있어야 합니다.
 * 리프 구성 요소 생성만 지원됩니다. 가상 컨테이너 및 페이지는 이후 버전에서 지원됩니다.
 
 ### 가상 컨테이너 {#virtual-containers}
@@ -297,8 +311,8 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 * 추가할 수 있는 구성 요소를 결정하는 정책은 상위 컨테이너에서 상속됩니다.
 * 만들 컨테이너의 바로 상위 항목이 AEM에 이미 있어야 합니다.
-   * `root/responsivegrid` 컨테이너가 AEM 컨테이너에 이미 있는 경우 `root/responsivegrid/newContainer` 경로를 제공하여 새 컨테이너를 만들 수 있습니다.
-   * 그러나 `root/responsivegrid/newContainer/secondNewContainer`은(는) 가능하지 않습니다.
+  * `root/responsivegrid` 컨테이너가 AEM 컨테이너에 이미 있는 경우 `root/responsivegrid/newContainer` 경로를 제공하여 새 컨테이너를 만들 수 있습니다.
+  * 그러나 `root/responsivegrid/newContainer/secondNewContainer`은(는) 가능하지 않습니다.
 * 한 번에 하나의 새로운 수준의 구성 요소만 가상으로 만들 수 있습니다.
 
 ## 추가 사용자 정의 {#additional-customizations}
@@ -355,9 +369,9 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 
    * 이 작업에는 `@adobe/cq-spa-page-model-manager`에서 제공한 `toAEMPath` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
-      * 라우팅에 필요한 경로
-      * SPA가 편집되는 AEM 인스턴스의 원본 URL
-      * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
+     * 라우팅에 필요한 경로
+     * SPA가 편집되는 AEM 인스턴스의 원본 URL
+     * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
 
    * 이러한 값은 보다 유연하게 사용할 수 있도록 환경 변수로 설정할 수 있습니다.
 

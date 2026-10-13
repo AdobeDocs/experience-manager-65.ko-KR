@@ -7,13 +7,25 @@ exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
 solution: Experience Manager, Experience Manager Assets
 feature: Video
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: cb04d42d-1b70-43b0-9951-45998eb6e842
+    internal-label: Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 1%
-
+source-wordcount: '249'
+ht-degree: 3%
 ---
-
 # 비디오 표현물 {#video-renditions}
 
 Adobe Experience Manager Assets은 OGG, FLV 등을 비롯한 다양한 형식의 비디오 자산에 대한 비디오 렌디션을 생성합니다.
@@ -42,6 +54,6 @@ DM 인코딩 변환에 대한 프록시 서버를 구성하려면 [Dynamic Media
 
 >[!NOTE]
 >
->Microsoft® Internet Explorer 11의 OGG 및 WAV 파일에 대해 오디오 재생이 작동하지 않습니다. 확장 OGG 또는 WAV가 있는 자산의 자산 세부 정보 페이지에 `Invalid Source` 오류가 표시됩니다.
+>® Internet Explorer 11의 OGG 및 WAV 파일에 대해 오디오 재생이 작동하지 않습니다. 확장 OGG 또는 WAV가 있는 자산의 자산 세부 정보 페이지에 `Invalid Source` 오류가 표시됩니다.
 >
 >MS® Edge 및 iPad에서 OGG 파일이 재생되지 않고 지원되지 않는 형식 오류가 발생합니다.

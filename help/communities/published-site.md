@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # 게시된 사이트 경험 {#experience-the-published-site}
 
 ## 게시할 때 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
@@ -87,8 +94,8 @@ jcr 콘텐츠 및 json 을 통해 익명 사용자가 커뮤니티 사이트의 
 * **프로필** 옵션을 사용하면 프로필을 보고 편집할 수 있습니다.
 * [메시지](/help/communities/configure-messaging.md) 옵션은 다음을 수행할 수 있는 다이렉트 메시지 섹션으로 이동합니다.
 
-   1. 수신(받은 편지함), 전송(보낸 항목) 및 삭제(휴지통)한 DM을 봅니다.
-   1. 개인 및 그룹에 보낼 수 있도록 새 DM을 작성합니다.
+  1. 수신(받은 편지함), 전송(보낸 항목) 및 삭제(휴지통)한 DM을 봅니다.
+  1. 개인 및 그룹에 보낼 수 있도록 새 DM을 작성합니다.
 
 * [알림](/help/communities/notifications.md) 옵션을 사용하면 관심 이벤트를 보고 알림 설정을 편집할 수 있는 알림 섹션으로 이동합니다.
 * 중재 권한이 있는 경우 [관리](/help/communities/published-site.md#moderationlink)에서 AEM Communities 중재 페이지로 이동합니다.
@@ -154,13 +161,13 @@ Aaron은 그룹 관리자이므로 그룹 링크를 선택하면 Aaron이 그룹
 
 * 이름이 `Baseball`인 사용자
 
-   * `Open Group`(필수 멤버십)로 설정된 상태로 둡니다.
-   * 템플릿 탭에서 `Conversational Group`을(를) 선택합니다.
+  * `Open Group`(필수 멤버십)로 설정된 상태로 둡니다.
+  * 템플릿 탭에서 `Conversational Group`을(를) 선택합니다.
 
 * 이름이 `Gymnastics`인 사용자
 
-   * 설정을 `Member Only Group`(제한된 구성원)으로 변경하십시오.
-   * 템플릿 탭에서 `Conversational Group`을(를) 선택합니다.
+  * 설정을 `Member Only Group`(제한된 구성원)으로 변경하십시오.
+  * 템플릿 탭에서 `Conversational Group`을(를) 선택합니다.
 
 **알림**:
 

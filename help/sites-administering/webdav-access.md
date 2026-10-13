@@ -9,16 +9,25 @@ exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 1%
-
+source-wordcount: '1123'
+ht-degree: 2%
 ---
-
 # WebDAV 액세스{#webdav-access}
 
-KDE로 WebDAV를 통해 AEM에 연결하려면:
+KDE에서 WebDAV를 통해 AEM에 연결하려면:
 
 AEM에서는 저장소 컨텐츠를 표시하고 편집할 수 있는 WebDAV 지원을 제공합니다. WebDAV를 통해 연결하면 데스크톱을 통해 콘텐츠 저장소에 직접 액세스할 수 있습니다. WebDAV 연결을 통해 저장소에 추가된 텍스트 및 PDF 파일은 자동으로 전체 텍스트 인덱싱되며 표준 검색 인터페이스와 표준 Java™ API를 통해 검색할 수 있습니다.
 
@@ -34,7 +43,7 @@ http://localhost:4502
 
 이 URL은 운영 체제 수준에서 연결된 경우 기본 작업 영역(`crx.default`)에 WebDAV 액세스를 제공합니다. 사용자는 더 간단하지만 작업 영역 이름을 지정할 수 있는 유연성을 추가로 제공하지 않습니다. 이 작업은 추가 [WebDAV URL](/help/sites-administering/webdav-access.md#webdav-urls)을 사용하여 수행할 수 있습니다.
 
-AEM은 다음과 같이 저장소 컨텐츠를 표시합니다.
+AEM은 다음과 같이 저장소 콘텐츠를 표시합니다.
 
 * `nt:folder` 유형의 노드가 폴더로 표시됩니다. `nt:folder` 노드 아래의 노드가 폴더 콘텐츠로 표시됩니다.
 
@@ -103,11 +112,11 @@ http://localhost:4502/crx/repository/staging
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux®](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 
-Microsoft® Windows 7(이상) 시스템을 SSL로 보호되지 않은 AEM 인스턴스에 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정하는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이 기능을 사용하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
+® Windows 7(이상) 시스템을 SSL로 보호되지 않는 AEM 인스턴스에 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정하는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이 기능을 사용하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
 
 레지스트리가 업데이트되면 AEM 인스턴스를 드라이브로 매핑할 수 있습니다.
 
@@ -129,7 +138,7 @@ Microsoft® Windows 7(이상) 시스템을 SSL로 보호되지 않은 AEM 인스
 
 >[!NOTE]
 >
->Adobe은 저장소 사용자와 동일한 자격 증명을 사용하여 Windows 사용자를 만들 것을 권장합니다. 그렇지 않으면 권한 충돌이 발생할 수 있습니다.
+>Adobe에서는 저장소 사용자와 동일한 자격 증명을 사용하여 Windows 사용자를 만들 것을 권장합니다. 그렇지 않으면 권한 충돌이 발생할 수 있습니다.
 
 #### Windows 8 구성 {#windows-configuration}
 
@@ -209,17 +218,17 @@ GNOME을 사용하여 WebDAV를 통해 AEM에 연결하려면:
 1. **폴더**&#x200B;에서 `/dav`을(를) 입력하십시오.
 1. 사용자 이름 `admin`을(를) 입력하십시오. Adobe은 테스트를 위해 사전 구성된 관리자 계정을 사용할 것을 권장합니다.
 1. 포트를 비워 두고 연결의 이름을 입력합니다.
-1. **연결**&#x200B;을 클릭합니다. AEM에 암호를 입력하라는 메시지가 표시됩니다.
+1. **연결**&#x200B;을 클릭합니다. AEM에 암호를 묻는 메시지가 표시됩니다.
 1. 암호 `admin`을(를) 입력하고 **연결**&#x200B;을 클릭합니다.
 
-GNOME은 이제 AEM을 볼륨으로 탑재했으며 다른 볼륨처럼 사용할 수 있습니다.
+GNOME은 이제 AEM을 볼륨으로 탑재했으며 다른 볼륨과 마찬가지로 사용할 수 있습니다.
 
 #### KDE {#kde}
 
 1. 네트워크 폴더 마법사를 엽니다.
 1. **WebFolder**(webdav)을(를) 선택하고 다음을 클릭합니다.
 1. **이름**&#x200B;에 연결 이름을 입력하십시오.
-1. **사용자**&#x200B;에서 `admin.` Adobe 권장 사항을 입력하면 미리 구성된 관리자 계정을 사용할 수 있습니다.
+1. **사용자**&#x200B;에서 `admin.`을(를) 입력하십시오. Adobe 권장 사항에는 사전 구성된 관리자 계정을 사용할 것을 권장합니다.
 1. **서버**&#x200B;에서 `http://localhost:4502/crx/repository/crx.default`을(를) 입력하십시오.
 
    >[!NOTE]

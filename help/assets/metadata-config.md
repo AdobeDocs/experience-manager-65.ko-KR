@@ -1,19 +1,33 @@
 ---
 title: 메타데이터 기능 구성 및 관리.
-description: 메타데이터 추가 및 관리와 관련된  [!DNL Experience Manager Assets] 기능의 구성 및 관리.
+description: 메타데이터 추가 및 관리와 관련된 [!DNL Experience Manager Assets] 기능의 구성 및 관리입니다.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2006'
 ht-degree: 7%
-
 ---
-
 # [!DNL Assets]의 메타데이터 기능 구성 및 관리 {#config-metadata}
 
 | 버전 | 문서 링크 |
@@ -264,7 +278,7 @@ To apply a metadata profile globally, follow these steps:
 
 ### 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
-Open the properties for a folder configured with a folder metadata schema. **[!UICONTROL 폴더 메타데이터]** 탭이 폴더 [!UICONTROL 속성] 페이지에 표시됩니다. To view the folder metadata schema form, select this tab.
+Open the properties for a folder configured with a folder metadata schema. **[!UICONTROL 폴더 메타데이터]** 탭이 폴더 [!UICONTROL 속성] 페이지에 표시됩니다. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
 
 다양한 필드에 메타데이터 값을 입력하고 **[!UICONTROL 저장]**&#x200B;을 클릭하여 값을 저장합니다. 지정하는 값은 CRX 저장소의 폴더 노드에 저장됩니다.
 

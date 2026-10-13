@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6ab943894398733d178f561430d3f391e8722195
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 0%
-
+source-wordcount: '3255'
+ht-degree: 1%
 ---
-
 # Adobe Asset Link용 Experience Manager Assets 구성 {#adobe-asset-link}
 
 [AAL(Adobe Asset Link)](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)은(는) 콘텐츠 작성 프로세스에서 크리에이티브와 마케터 간의 공동 작업을 간소화합니다. Adobe Experience Manager Assets을 Creative Cloud 데스크탑 앱 Adobe InDesign, Adobe Photoshop 및 Adobe Illustrator과 연결합니다. Adobe Asset Link 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 AEM Assets에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다.
@@ -33,7 +42,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 | Assets 기능 | Experience Manager 버전 및 지원 요구 사항 |
 |--- |--- |
-| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치할 것을 권장합니다. |
+| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치하는 것이 좋습니다. |
 | 패키지 설치 후 자산 링크가 작동합니다 | Experience Manager 6.4.0 - 6.4.3의 경우 [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 패키지를 설치하십시오. |
 | Adobe Stock 통합 | Experience Manager 6.4.2 이상 |
 | 시각적 또는 유사성 검색 | Experience Manager 6.5.0 이상 |
@@ -73,10 +82,10 @@ Experience Manager을 수동으로 구성하려면:
 
    다음 구성을 설정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   * [!UICONTROL 인증 끝점]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL 토큰 끝점]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL 프로필 끝점]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL 유효성 검사 URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL 인증 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL 토큰 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL 프로필 끝점]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL 유효성 검사 URL]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL 조직]: [Adobe Admin Console](https://adminconsole.adobe.com/)에서 조직 ID로 설정합니다.
    * [!UICONTROL 그룹 매핑]: 특별한 경우가 아니면 비워 둡니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
 
@@ -90,10 +99,10 @@ Experience Manager을 수동으로 구성하려면:
 
    * [!UICONTROL 클라이언트 ID]: 변경하지 마십시오
    * [!UICONTROL 클라이언트 암호]: 변경하지 마십시오
-   * [!UICONTROL 구성 ID]: ` ims`
+   * [!UICONTROL 구성 ID]&#x200B;: ` ims`
    * [!UICONTROL 범위]: `AdobeID, OpenID, read_organizations`(다른 값도 구성에 있을 수 있음)
-   * [!UICONTROL 공급자 ID]: ` ims`
-   * [!UICONTROL 사용자 만들기]: ` Checked`
+   * [!UICONTROL 공급자 ID]&#x200B;: ` ims`
+   * [!UICONTROL 사용자 만들기]&#x200B;: ` Checked`
    * [!UICONTROL 사용자 ID 속성]: 새로 만든 구성의 경우 `Email`. 그렇지 않으면 변경하지 마십시오.
 
 1. **[!UICONTROL 동기화 처리기 이름]** `ims`을(를) 사용하여 **[!UICONTROL Apache Jackrabbit Oak 기본 동기화 처리기]** 구성을 찾은 다음 클릭하여 편집합니다.
@@ -102,7 +111,7 @@ Experience Manager을 수동으로 구성하려면:
 
    * [!UICONTROL 사용자 만료 시간 및 사용자 멤버십 만료]: 다음 시간(분)에 공백 없이 &#39;m&#39;이 붙습니다. 예를 들어 15분 동안 `15m`을(를) 사용합니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
    * [!UICONTROL 사용자 자동 멤버십]: 변경하지 마십시오
-   * [!UICONTROL 사용자 동적 구성원]: ` Deslect`
+   * [!UICONTROL 사용자 동적 구성원]&#x200B;: ` Deslect`
 
 1. **[!UICONTROL Adobe Granite OAuth 인증 처리기]** 구성을 찾은 다음 클릭하여 편집합니다. 변경하지 않고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -126,12 +135,12 @@ Experience Manager용 Adobe IMS 조직과 Enterprise용 Creative Cloud(CCE)를 �
 >* Experience Manager 및 CCE와 동일한 Adobe IMS 조직을 사용하는 경우 기존 구성이 계속 작동합니다.
 
 
-**전제 조건**
+**사전 요구 사항**
 
 1. AAL에 대해 베어러 인증이 구성된 실행 중인 Experience Manager 인스턴스.
 1. Experience Manager 6.5 인스턴스에 다음 패키지(서비스 팩 11)를 설치합니다.
 
-   [Experience Manager 다운로드 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Experience Manager 6.5.11.0 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. IMS 조직의 전달자 인증을 위한 클라이언트 ID와 비밀 키를 받으려면 [!UICONTROL 고객 지원 센터]에 문의하십시오.
 
@@ -270,7 +279,7 @@ Experience Manager은 배치에만 사용되는 렌디션(FPO)을 제공합니�
 
 ## Adobe Stock과 통합 {#adobe-stock-integration}
 
-조직은 Adobe Stock 계정을 Experience Manager Assets과 통합합니다. 이 기능은 마케터가 라이선스가 있는 고품질의 로열티가 없는 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산을 광고 및 마케팅 프로젝트에 사용할 수 있도록 도와줍니다. 크리에이티브 전문가는 Asset Link 패널을 사용하여 이러한 에셋을 사용할 수 있습니다.
+조직은 Adobe Stock 계정을 Experience Manager Assets과 통합합니다. 이 기능은 마케터가 라이선스가 있는 고품질의 로열티가 없는 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산을 광고 및 마케팅 프로젝트에 사용할 수 있도록 도와줍니다. Creative 전문가는 Asset Link 패널을 사용하여 이러한 에셋을 사용할 수 있습니다.
 
 Adobe Stock과 통합하려면 [Experience Manager Assets의 Adobe Stock 자산](/help/assets/aem-assets-adobe-stock.md)을 참조하세요. Adobe Stock과의 통합을 위해 Experience Manager 6.4.2 이상이 필요합니다.
 

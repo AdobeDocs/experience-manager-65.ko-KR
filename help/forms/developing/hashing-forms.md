@@ -1,18 +1,34 @@
 ---
-title: 동적 PDF forms에서 해시를 생성하고 사용하는 방법
+title: Dynamic PDF forms에서 해시를 생성하고 사용하는 방법
 description: 동적 PDF forms에서 해시 생성 및 작업
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
-
 ---
-
-# 동적 PDF forms에서 해시 생성 및 작업 {#generate-work-with-hashes-dynamic-pdf-forms}
+# 동적 PDF 양식에서 해시 생성 및 작업 {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## 전제 조건 지식 {#prerequisite-knowledge}
 
@@ -24,11 +40,11 @@ ht-degree: 0%
 
 PDF 양식에서 암호를 숨기고 소스 코드 내부나 PDF 문서의 다른 곳에서 일반 텍스트로 숨기고 싶지 않을 경우 MD4, MD5, SHA-1 및 SHA-256 해시를 생성하고 사용하는 방법을 잘 알고 있어야 합니다.
 
-고유한 해시를 생성하여 암호를 난독화하고 이 해시를 PDF 문서에 저장하자는 아이디어입니다. 이 고유한 해시는 다른 해시 함수에 의해 생성될 수 있으며 이 문서에서는 PDF 양식 내에서 해시 함수를 생성하는 방법과 이 함수를 사용하는 방법에 대해 설명합니다.
+고유한 해시를 생성하여 암호를 난독화하고 이 해시를 PDF 문서에 저장하는 것이 좋습니다. 이 고유한 해시는 다른 해시 함수에 의해 생성될 수 있으며 이 문서에서는 PDF 양식 내에서 해시 함수를 생성하는 방법과 이 함수를 사용하는 방법에 대해 설명합니다.
 
 해시 함수는 임의의 길이의 긴 문자열(또는 메시지)을 입력으로 취하여 고정 길이의 문자열을 출력으로 생성하며, 메시지 다이제스트 또는 디지털 지문이라고도 합니다.
 
-AEM Forms on JEE Designer을 사용하면 스크립트 개체에 여러 해시 함수를 JavaScript으로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF은 다음 해시 함수의 오픈 소스 구현을 사용합니다.
+AEM Forms on JEE Designer을 사용하면 스크립트 개체에 여러 해시 함수를 JavaScript으로 구현하고 동적 PDF 문서 내에서 실행할 수 있습니다. 이 문서의 샘플 파일에 포함된 예제 PDF는 다음 해시 함수의 오픈 소스 구현을 사용합니다.
 
 * MD4 및 MD5 - Ronald Rivest 설계
 
@@ -70,7 +86,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 * SHA-1: 160비트
 * SHA-256: 256비트
 
-## 샘플 PDF forms 시도 {#try-sample-pdf-forms}
+## 샘플 PDF forms 시험 {#try-sample-pdf-forms}
 
 이 문서의 샘플 파일에는 두 개의 PDF forms이 포함되어 있습니다. 첫 번째 샘플을 사용하면 문자열을 입력한 다음 문자열에 대한 MD4, MD5, SHA-1 및 SHA-256 해시 값을 생성할 수 있습니다. 두 번째 샘플은 올바른 암호를 입력하면 텍스트 필드의 잠금을 해제하는 간단한 양식입니다.
 
@@ -78,11 +94,11 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 첫 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. 샘플 파일을 다운로드하여 압축을 푼 후에 JEE Designer에서 AEM Forms으로 hashing_forms_sample1.pdf를 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
-1. 레이블이 [!UICONTROL 텍스트 지우기] (으)로 지정된 텍스트 필드에 암호나 해시할 다른 메시지를 입력합니다.
+1. 샘플 파일을 다운로드하여 압축을 푼 후에 JEE Designer에서 AEM Forms으로 hashing_forms_sample1.pdf를 엽니다. 또는 Adobe Reader나 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
+1. 레이블이 [!UICONTROL 텍스트 지우기]&#x200B;(으)로 지정된 텍스트 필드에 암호나 해시할 다른 메시지를 입력합니다.
 1. 4개의 버튼 중 하나를 클릭하여 MD4, MD5, SHA-1 또는 SHA-256 해시를 생성합니다. 누른 단추에 따라 16진수 출력을 생성하는 네 개의 해시 함수 중 하나가 호출되고 문자열이나 메시지가 해시됩니다.
 
-해시 작업의 결과가 [!UICONTROL hash] (으)로 레이블이 지정된 필드에 표시됩니다. 해시의 길이는 선택한 해시 함수에 따라 다릅니다.
+해시 작업의 결과가 [!UICONTROL hash]&#x200B;(으)로 레이블이 지정된 필드에 표시됩니다. 해시의 길이는 선택한 해시 함수에 따라 다릅니다.
 
 모든 샘플은 16진수를 출력 유형으로 사용합니다. 스크립트 편집기를 사용하여 샘플을 수정하고 출력 유형을 Base64 또는 단순 문자열로 변경할 수 있습니다.
 
@@ -92,7 +108,7 @@ JEE Designer의 AEM Forms에서 제공된 두 샘플 중 하나를 열면 계층
 
 두 번째 샘플을 시도하려면 아래 단계를 따르십시오.
 
-1. JEE Designer에서 AEM Forms으로 `hashing_forms_sample2.pdf`을(를) 엽니다. 또는 Adobe Reader 또는 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
+1. JEE Designer에서 AEM Forms으로 `hashing_forms_sample2.pdf`을(를) 엽니다. 또는 Adobe Reader나 Adobe Acrobat Professional을 사용하여 샘플을 열고 볼 수 있지만 소스 코드는 볼 수 없습니다.
 1. [!UICONTROL 암호 사용자] 또는 [!UICONTROL 암호 사용자] 레이블이 지정된 두 암호 필드 중 하나를 선택하고 암호를 입력하십시오.
    1. 남성의 암호는 `bob`입니다.
    1. 여자의 암호는 `alice`입니다.
@@ -118,7 +134,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 속성 {#attributions}
 
-* [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
+* [로널드 리베스트](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [해시 충돌](https://en.wikipedia.org/wiki/Hash_collision)
 * [무지개 테이블](https://en.wikipedia.org/wiki/Rainbow_table)

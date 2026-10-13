@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 13%
-
+source-wordcount: '638'
+ht-degree: 16%
 ---
-
 # 적응형 양식 구성 요소의 인라인 스타일 지정 {#inline-styling-of-adaptive-form-components}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -41,7 +57,7 @@ ht-degree: 13%
 
 1. 사이드바에서 탭을 클릭하여 CSS 속성을 지정합니다. 다음과 같은 속성을 지정할 수 있습니다.
 
-   * Dimension 및 위치(표시 설정, 패딩, 높이, 너비, 여백, 위치, z-색인, 부동, 지우기, 오버플로)
+   * 크기 및 위치(표시 설정, 패딩, 높이, 너비, 여백, 위치, z-색인, 부동, 지우기, 오버플로)
    * 텍스트(글꼴 모음, 두께, 색상, 크기, 선 높이 및 맞춤)
    * 배경(이미지 및 그라데이션, 배경색)
    * 테두리(폭, 스타일, 색상, 반경)
@@ -84,7 +100,7 @@ ht-degree: 13%
   <tr>
    <td><p>레이블</p> </td>
    <td><p>치수 및 위치 &gt; 너비</p> </td>
-   <td><p>100픽셀</p> </td>
+   <td><p>100px</p> </td>
    <td><p>레이블의 너비를 100px로 수정합니다.</p> </td>
   </tr>
   <tr>
@@ -94,7 +110,7 @@ ht-degree: 13%
    <td>도움말 아이콘 면의 색상을 변경합니다.</td>
   </tr>
   <tr>
-   <td><p>긴 설명</p> </td>
+   <td><p>자세한 설명</p> </td>
    <td><p>text-align</p> </td>
    <td><p>가운데</p> </td>
    <td><p>도움말의 긴 설명을 가운데에 맞춥니다.</p> </td>

@@ -10,13 +10,26 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 63%
-
 ---
-
 # 페이지 작성에 대한 빠른 안내{#quick-guide-to-authoring-pages}
 
 이러한 절차는 AEM에서 페이지 콘텐츠를 작성하는 주요 작업에 대한 빠른 안내(고급)입니다.
@@ -39,20 +52,20 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * **만들기**
 
-   * 이 버튼은 여러 콘솔에서 사용할 수 있습니다. 제공된 옵션은 상황에 맞는 옵션이므로 시나리오에 따라 달라질 수 있습니다.
+  * 이 버튼은 여러 콘솔에서 사용할 수 있습니다. 제공된 옵션은 상황에 맞는 옵션이므로 시나리오에 따라 달라질 수 있습니다.
 
 * 폴더의 페이지 재정렬
 
-   * 이 작업은 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 수행할 수 있습니다. 변경 사항이 적용되고 다른 보기에 표시됩니다.
+  * 이 작업은 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 수행할 수 있습니다. 변경 사항이 적용되고 다른 보기에 표시됩니다.
 
 #### 페이지 작성 {#page-authoring}
 
 * 링크 탐색
 
-   * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음 방법 중 하나를 사용하여 [페이지를 미리 보기](/help/sites-authoring/editing-content.md#previewing-pages)해야 합니다.
+  * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음 방법 중 하나를 사용하여 [페이지를 미리 보기](/help/sites-authoring/editing-content.md#previewing-pages)해야 합니다.
 
-      * [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)
-      * [게시됨으로 보기](/help/sites-authoring/editing-content.md#view-as-published)
+    * [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)
+    * [게시됨으로 보기](/help/sites-authoring/editing-content.md#view-as-published)
 
 * 버전이 페이지 편집기에서 시작/만들어지지 않습니다. 이제 선택한 리소스에 대해 **만들기** 또는 [타임라인](/help/sites-authoring/basic-handling.md#timeline)을 통해 사이트 콘솔에서 수행됩니다.
 
@@ -111,8 +124,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 다음을 사용하여 [필요한 리소스를 선택](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources)하여 선택 모드에 들어갑니다.
 
-      * 모바일 장치: 길게 선택
-      * 데스크톱: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
+     * 모바일 장치: 길게 선택
+     * 데스크톱: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -147,9 +160,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 다음 작업을 수행하여 [페이지에 새 구성 요소 추가](/help/sites-authoring/editing-content.md#inserting-a-component):
 
-      * 사이드 패널 열기
-      * 구성 요소 탭([구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)) 선택
-      * 필요한 구성 요소를 페이지로 드래그
+     * 사이드 패널 열기
+     * 구성 요소 탭([구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)) 선택
+     * 필요한 구성 요소를 페이지로 드래그
 
      다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
 
@@ -157,24 +170,24 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [페이지의](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 기존 구성 요소 콘텐츠를 편집합니다.
 
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
-      * 선택하고 길게 누르거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
-      * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
+     * 를 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
+     * 선택하고 길게 누르거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우, 선택이 제한됨).
+     * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
 
      ![전체 화면 모드](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [기존 구성 요소의 속성 구성](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
+     * 를 클릭하여 구성 요소 도구 모음을 엽니다. **구성**(렌치) 아이콘을 사용하여 대화 상자를 엽니다.
 
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-authoring/editing-content.md#moving-a-component)합니다.
 
-      * 필요한 구성 요소를 새 위치로 끕니다.
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
+     * 필요한 구성 요소를 새 위치로 끕니다.
+     * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
+     * 를 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사**&#x200B;를 사용한 다음 **붙여넣기** 아이콘을 사용합니다.
 
    >[!NOTE]
    >
@@ -182,17 +195,17 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
+     * 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
 
    * 페이지에 [주석 추가](/help/sites-authoring/annotations.md#annotations):
 
-      * **주석** 모드(말풍선 아이콘)를 선택합니다. **주석 추가**(더하기) 아이콘을 사용하여 주석을 추가합니다. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
+     * **주석** 모드(말풍선 아이콘)를 선택합니다. **주석 추가**(더하기) 아이콘을 사용하여 주석을 추가합니다. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
 
      ![주석](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [페이지 미리보기](/help/sites-authoring/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
 
-      * 도구 모음에서 **미리보기**&#x200B;를 선택합니다.
+     * 도구 모음에서 **미리보기**&#x200B;를 선택합니다.
 
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
@@ -206,20 +219,20 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * **Sites** 콘솔에서:
 
-   1. 게시할 [페이지로 이동](#finding-your-page)합니다.
-   1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
+  1. 게시할 [페이지로 이동](#finding-your-page)합니다.
+  1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
 
-      * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
-      * [페이지를 선택했을 때](#selectiingyourpageforfurtheraction)의 도구 모음
+     * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
+     * [페이지를 선택했을 때](#selectiingyourpageforfurtheraction)의 도구 모음
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. 페이지 속성이 표시됩니다. 필요에 따라 업데이트한 다음 [저장]을 사용하여 이러한 내용을 유지할 수 있습니다.
+  1. 페이지 속성이 표시됩니다. 필요에 따라 업데이트한 다음 [저장]을 사용하여 이러한 내용을 유지할 수 있습니다.
 
 * [페이지를 편집할 때](#editing-your-page-content):
 
-   1. **페이지 정보** 메뉴를 엽니다.
-   1. **속성 열기**&#x200B;를 선택하여 속성을 편집할 수 있는 대화 상자를 엽니다.
+  1. **페이지 정보** 메뉴를 엽니다.
+  1. **속성 열기**&#x200B;를 선택하여 속성을 편집할 수 있는 대화 상자를 엽니다.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -229,18 +242,18 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * **Sites** 콘솔에서:
 
-   1. 게시할 [페이지로 이동](#finding-your-page)합니다.
-   1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
+  1. 게시할 [페이지로 이동](#finding-your-page)합니다.
+  1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
 
-      * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
-      * [페이지를 선택했을 때](#selectiingyourpageforfurtheraction)(또는 [나중에 게시](/help/sites-authoring/publishing-pages.md#main-pars-title-12)에 액세스할 때)의 도구 모음
+     * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
+     * [페이지를 선택했을 때](#selectiingyourpageforfurtheraction)(또는 [나중에 게시](/help/sites-authoring/publishing-pages.md#main-pars-title-12)에 액세스할 때)의 도구 모음
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * [페이지를 편집할 때](#editing-your-page-content):
 
-   1. **페이지 정보** 메뉴를 엽니다.
-   1. **페이지 게시**&#x200B;를 선택합니다.
+  1. **페이지 정보** 메뉴를 엽니다.
+  1. **페이지 게시**&#x200B;를 선택합니다.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
@@ -266,15 +279,15 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 복사:
 
-      * 새 위치로 이동하여 붙여넣습니다.
+     * 새 위치로 이동하여 붙여넣습니다.
 
    * 이동:
 
-      * 마법사가 열리고 페이지 이동에 필요한 정보를 수집합니다. 화면에 표시되는 안내를 따릅니다.
+     * 마법사가 열리고 페이지 이동에 필요한 정보를 수집합니다. 화면에 표시되는 안내를 따릅니다.
 
    * 삭제:
 
-      * 작업을 확인하는 메시지가 표시됩니다.
+     * 작업을 확인하는 메시지가 표시됩니다.
 
    >[!NOTE]
    >
@@ -334,8 +347,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * **이 버전으로 되돌리기**
 
-      * 버전이 복원됩니다.
+     * 버전이 복원됩니다.
 
    * **차이 표시**
 
-      * 두 버전 간의 차이가 강조 표시된 채로 페이지가 열립니다.
+     * 두 버전 간의 차이가 강조 표시된 채로 페이지가 열립니다.

@@ -9,13 +9,27 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 100%
-
 ---
-
 # 중단된 작업 및 분기 처리 {#working-with-stalled-operations-and-branches}
 
 >[!NOTE]
@@ -56,7 +70,7 @@ ht-degree: 100%
 
 중단된 작업 페이지 또는 중단된 분기 페이지에서 작업 또는 분기를 재시도할 수 있습니다.
 
-작업을 재시도하면 Forms Workflow에 작업을 다시 시작하라는 요청이 전송됩니다. 프로세스를 중단시킨 오류가 수정되고 재시도 요청이 성공하면 프로세스는 중단된 지점에서 다시 실행을 시작하고 상태가 실행 중으로 변경됩니다. 작업을 다시 시작할 수 없는 경우에는 중단됨 상태로 유지되며 해당 작업을 종료해야 할 수도 있습니다.
+작업을 재시도하면 Forms Workflow에 작업을 다시 시작하라는 요청이 전송됩니다. 프로세스를 중단시킨 오류가 수정되고 재시도 요청이 성공하면 프로세스는 중단된 지점에서 다시 실행을 시작하고 상태가 RUNNING으로 변경됩니다. 작업을 다시 시작할 수 없는 경우에는 STALLED 상태로 유지되며 해당 작업을 종료해야 할 수도 있습니다.
 
 ### 중단된 작업 종료 {#terminate-a-stalled-operation}
 

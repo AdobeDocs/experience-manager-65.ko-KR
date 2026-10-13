@@ -9,13 +9,20 @@ role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1220'
 ht-degree: 0%
-
 ---
-
 # MSRP - MongoDB 저장소 리소스 공급자 {#msrp-mongodb-storage-resource-provider}
 
 ## MSRP 정보 {#about-msrp}
@@ -28,22 +35,22 @@ AEM Communities이 MSRP를 공통 저장소로 사용하도록 구성된 경우 
 
 * [몽고 DB](https://www.mongodb.org/):
 
-   * 버전 2.6 이상
-   * 몽고 또는 분할을 구성할 필요가 없음
-   * [복제본 집합](#mongoreplicaset)을(를) 사용하는 것이 좋습니다
-   * AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있음
+  * 버전 2.6 이상
+  * 몽고 또는 분할을 구성할 필요가 없음
+  * [복제본 집합](#mongoreplicaset)을(를) 사용하는 것이 좋습니다
+  * AEM과 동일한 호스트에서 실행되거나 원격으로 실행될 수 있음
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Solr 버전 7.0
-   * Solr에는 Java 1.7 이상이 필요합니다.
-   * 서비스가 필요하지 않습니다.
-   * 실행 모드 선택:
-      * 독립형 모드
-      * [SolrCloud 모드](solr.md#solrcloud-mode)(프로덕션 환경에 권장)
-   * 다국어 검색(MLS) 선택:
-      * [표준 MLS 설치](solr.md#installing-standard-mls)
-      * [고급 MLS 설치](solr.md#installing-advanced-mls)
+  * Solr 버전 7.0
+  * Solr에는 Java 1.7 이상이 필요합니다.
+  * 서비스가 필요하지 않습니다.
+  * 실행 모드 선택:
+    * 독립형 모드
+    * [SolrCloud 모드](solr.md#solrcloud-mode)(프로덕션 환경에 권장)
+  * 다국어 검색(MLS) 선택:
+    * [표준 MLS 설치](solr.md#installing-standard-mls)
+    * [고급 MLS 설치](solr.md#installing-advanced-mls)
 
 ## MongoDB 구성 {#mongodb-configuration}
 
@@ -60,41 +67,41 @@ AEM Communities이 MSRP를 공통 저장소로 사용하도록 구성된 경우 
 * **[!UICONTROL MongoDB 저장소 리소스 공급자(MSRP) 선택]**
 * **[!UICONTROL mongoDB 구성]**
 
-   * **[!UICONTROL mongoDB URI]**
+  * **[!UICONTROL mongoDB URI]**
 
-     *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+    *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL mongoDB 데이터베이스]**
+  * **[!UICONTROL mongoDB 데이터베이스]**
 
-     *기본값*: 커뮤니티
+    *기본값*: 커뮤니티
 
-   * **[!UICONTROL mongoDB UGC 컬렉션]**
+  * **[!UICONTROL mongoDB UGC 컬렉션]**
 
-     *기본값*: 콘텐츠
+    *기본값*: 콘텐츠
 
-   * **[!UICONTROL mongoDB 첨부 파일 컬렉션]**
+  * **[!UICONTROL mongoDB 첨부 파일 컬렉션]**
 
-     *기본*: 첨부 파일
+    *기본*: 첨부 파일
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     외부 ZooKeeper와 함께 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper의 `HOST:PORT`(예: *my.server.com:2181*)로 설정하십시오.
+    외부 ZooKeeper로 [SolrCloud 모드](solr.md#solrcloud-mode)에서 실행하는 경우 이 값을 ZooKeeper에 대해 `HOST:PORT`(예: *my.server.com:2181*)로 설정하십시오.
 
-     Zookeeper Ensemble의 경우 *host1:2181,host2:2181*&#x200B;과 같이 쉼표로 구분된 `HOST:PORT` 값을 입력하십시오.
+    Zookeeper Ensemble의 경우 *host1:2181,host2:2181*&#x200B;과 같이 쉼표로 구분된 `HOST:PORT` 값을 입력하십시오.
 
-     내부 ZooKeeper를 사용하여 Solr을 독립 실행형 모드로 실행하는 경우 비워 둡니다.
-     *기본값*: *&lt;공백>*
+    내부 ZooKeeper를 사용하여 Solr을 독립 실행형 모드로 실행하는 경우 비워 둡니다.
+    *기본값*: *&lt;공백>*
 
-      * **[!UICONTROL Solr URL]**
+    * **[!UICONTROL Solr URL]**
 독립 실행형 모드에서 Solr과 통신하는 데 사용되는 URL입니다.
 SolrCloud 모드에서 실행하는 경우 비워 둡니다.
-        *기본값*: https://127.0.0.1:8983/solr/
+      *기본값*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Solr 컬렉션]**
+    * **[!UICONTROL Solr 컬렉션]**
 Solr 컬렉션 이름입니다.
-        *기본값*: collection1
+      *기본값*: collection1
 
 * **[!UICONTROL 제출]** 선택
 
@@ -150,7 +157,7 @@ MSRP는 모든 작성자 및 게시 인스턴스에서 공통 저장소로 식�
 * 기본 메뉴에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**(으)로 이동합니다.
 * **[!UICONTROL 트리 활성화]** 선택
 * **[!UICONTROL 시작 경로]**:
-   * `/etc/socialconfig/srpc/`(으)로 이동
+  * `/etc/socialconfig/srpc/`(으)로 이동
 * **[!UICONTROL 활성화]** 선택
 
 ## 사용자 데이터 관리 {#managing-user-data}
@@ -226,8 +233,8 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 * JCR에서, [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)인 경우
 
-   * [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 노드를 포함하지 않습니다. 이는 저장소 공급자가 JSRP임을 의미합니다.
-   * srpc 노드가 존재하고 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) 노드를 포함하는 경우 defaultconfiguration의 속성은 MSRP를 기본 공급자로 정의해야 합니다.
+  * [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 노드를 포함하지 않습니다. 이는 저장소 공급자가 JSRP임을 의미합니다.
+  * srpc 노드가 존재하고 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) 노드를 포함하는 경우 defaultconfiguration의 속성은 MSRP를 기본 공급자로 정의해야 합니다.
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 

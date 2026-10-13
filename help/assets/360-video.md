@@ -14,18 +14,30 @@ autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 1093
+source-wordcount: '1187'
 ht-degree: 0%
-
 ---
-
 # 360/VR 비디오 {#vr-video}
 
 360도 비디오에서는 모든 방향에서 동시에 뷰를 기록합니다. 전방향 카메라나 카메라 모음을 이용하여 촬영합니다. 평면 디스플레이에서 재생하는 동안 사용자는 시야각을 제어할 수 있습니다. 모바일 장치에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 사용합니다.
@@ -42,7 +54,7 @@ Dynamic Media - Scene7 모드에는 360 비디오 자산의 배송에 대한 기
 
 브라우저 창을 열고 360도 비디오를 보려면 [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)을(를) 선택하십시오. 비디오 재생 중에 마우스 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
 
-![360 비디오 샘플입니다. 국제 우주 정거장이 우주에 떠 있고 지구 뒤에 태양이 있습니다.](assets/6_5_360videoiss_simplified.png)
+국제 우주 정거장이 우주에 떠 있고 지구 뒤에 태양이 떠 있는 ![360 비디오 샘플입니다.](assets/6_5_360videoiss_simplified.png)
 *Space Station 360의 비디오 프레임*
 
 ## 360/VR 비디오 및 Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -69,14 +81,14 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
    * 가장 좋은 방법은 원본 360 비디오 콘텐츠에서 다음 해상도 중 하나를 사용하는 것입니다.
 
-      * 1080p - 1920 x 1080, Full HD 또는 FHD 해상도로 알려짐,
-      * 2160p - 3840 x 2160, 4k, UHD 또는 Ultra HD 해상도로 알려짐. 이 대형 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 많이 발견됩니다. 너비가 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 하는 경우가 많습니다. 즉, 1080p의 4배 픽셀을 제공합니다.
+     * 1080p - 1920 x 1080, Full HD 또는 FHD 해상도로 알려짐,
+     * 2160p - 3840 x 2160, 4k, UHD 또는 Ultra HD 해상도로 알려짐. 이 대형 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 많이 발견됩니다. 너비가 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 하는 경우가 많습니다. 즉, 1080p의 4배 픽셀을 제공합니다.
 
    * 고품질 표현물로 [사용자 지정 응용 비디오 프로필을 만듭니다](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming). 예를 들어 다음 세 가지 설정이 포함된 응용 비디오 프로필을 만듭니다.
 
-      * width=auto; height=720; bitrate=2500kbps
-      * width=auto; height=1080; bitrate=5000kbps
-      * width=auto; height=1440; bitrate=6600kbps
+     * width=auto; height=720; bitrate=2500kbps
+     * width=auto; height=1080; bitrate=5000kbps
+     * width=auto; height=1440; bitrate=6600kbps
 
    * 360 비디오 자산에만 사용되는 폴더에서 360 비디오 콘텐츠를 처리합니다.
 
@@ -92,8 +104,8 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **속성 형식** - Double
-   * **값** - 부동 소수점 종횡비, 기본값 2.0.
+  * **속성 형식** - Double
+  * **값** - 부동 소수점 종횡비, 기본값 2.0.
 
 이 속성을 설정하면 기존 비디오와 새로 업로드한 비디오 모두에 즉시 적용됩니다.
 
@@ -110,7 +122,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 360 비디오가 만족스러우면 게시할 수 있습니다.
 
 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
-[웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 [페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **360 비디오를 미리 보려면:**
@@ -136,7 +148,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
      가상 현실(VR) 비디오는 가상 현실 헤드셋을 사용함으로써 액세스되는 몰입형 비디오 콘텐츠이다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하고 캡처할 때 VR 비디오를 처음부터 만듭니다.
 
-   ![지구와 태양이 있는 우주 공간에 떠 있는 국제 우주 정거장의 근접 촬영 스크린샷이 배경에 부분적으로 표시됩니다](assets/6_5_360video-preview-video360vr.png)
+   ![지구 및 태양이 부분적으로 배경에 보이는 채로 우주 공간에 떠 있는 국제 우주 정거장의 근접 사진을 찍은 스크린샷](assets/6_5_360video-preview-video360vr.png)
    *360 VR 비디오 스크린샷입니다.*
 
 1. 미리 보기 페이지의 오른쪽 상단 근처에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
@@ -147,5 +159,5 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 360 비디오를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media 자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)도 참조하세요.
-[웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)도 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)도 참조하세요. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
 [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)도 참조하세요.

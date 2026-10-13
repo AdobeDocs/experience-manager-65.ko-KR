@@ -9,13 +9,29 @@ exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
-
 ---
-
 # 보안 설정 지정 {#specify-security-settings}
 
 >[!NOTE]
@@ -27,5 +43,5 @@ Output을 사용하면 XML 입력의 외부 엔터티가 확인되는지 여부�
 **외부 엔터티에 대한 참조가 포함된 XML 데이터 파일 처리 방지**
 
 1. 관리 콘솔에서 서비스 > Output을 클릭합니다.
-1. 외부 엔터티 확인 확인란을 선택 취소합니다.
+1. 외부 엔터티 해결 확인란을 선택 취소합니다.
 1. 저장을 클릭합니다.

@@ -1,6 +1,6 @@
 ---
 title: 모바일 애플리케이션에 Adobe Analytics 추가
-description: 이 페이지를 따라 Mobile Services와 통합하여 Adobe Experience Manager Adobe 앱에서 Mobile App Analytics를 사용하는 방법에 대해 알아보십시오.
+description: 이 페이지를 따라 Adobe Mobile Services와 통합하여 Adobe Experience Manager 앱에서 Mobile App Analytics를 사용하는 방법에 대해 알아보십시오.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,13 +9,17 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '919'
 ht-degree: 0%
-
 ---
-
 # 모바일 애플리케이션에 Adobe Analytics 추가{#add-adobe-analytics-to-your-mobile-application}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 사용자가 모든 콘텐츠에 액세스하고 있습니까? 앱을 포기하는 것이며, 포기하는 경우 어디에 있습니까? 얼마나 자주 앱에 머무르며 앱을 사용하기 위해 다시 방문합니까? 어떤 변경 사항을 적용한 다음 이를 측정하여 보존을 늘릴 수 있습니까? 충돌 비율은 어떻습니까? 사용자들에게 앱이 충돌하고 있습니까?
 
-[Mobile Services Adobe](https://business.adobe.com/kr/products/campaign/mobile-marketing.html)와 통합하여 Adobe Experience Manager(AEM) 앱에서 [Mobile App Analytics](https://business.adobe.com/kr/products/analytics/mobile-marketing.html)를 활용하십시오.
+[Adobe Mobile Services](https://business.adobe.com/kr/products/campaign/mobile-marketing.html)와 통합하여 Adobe Experience Manager(AEM) 앱의 [Mobile App Analytics](https://business.adobe.com/kr/products/analytics/mobile-marketing.html)를 활용하십시오.
 
 AEM 앱을 활용하여 사용자가 모바일 앱 및 콘텐츠에 어떻게 참여하는지를 추적, 보고 및 파악하고, 시작, 앱 내 시간 및 충돌률과 같은 주요 라이프사이클 지표를 측정합니다.
 
@@ -38,7 +42,7 @@ AEM 앱을 활용하여 사용자가 모바일 앱 및 콘텐츠에 어떻게 �
 AEM Mobile에서는 앱에서 추적 데이터를 수집하고 보고하려면 Adobe Analytics 계정이 필요합니다. 구성의 일부로 AEM *관리자*&#x200B;가 먼저 다음을 수행해야 합니다.
 
 * Mobile Services에서 Adobe Analytics 계정을 설정하고 애플리케이션에 대한 보고서 세트를 만듭니다.
-* AEM(Adobe Experience Manager)에서 AMS Cloud Service을 구성합니다.
+* Adobe Experience Manager(AEM)에서 AMS Cloud Service을 구성합니다.
 
 ## 개발자용 - Mobile Analytics를 앱에 통합 {#for-developers-integrate-mobile-analytics-into-your-app}
 
@@ -48,7 +52,7 @@ Analytics 계정이 설정되면 콘텐츠 동기화 구성을 만들어 콘텐�
 
 자세한 내용은 콘텐츠 동기화 콘텐츠 구성 을 참조하십시오. ADBMobileConfig를 /www 디렉터리에 넣으려면 Content Sync에 지시해야 합니다. 예를 들어 Geometrixx Outdoors 앱에서 컨텐츠 동기화 구성은 */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*&#x200B;에 있습니다. 개발을 위한 구성도 있습니다. 하지만 Geometrixx Outdoors이 있는 경우 비개발 구성과 동일합니다.
 
-모바일 애플리케이션 AEM 앱 대시보드에서 ADBMobileConfig를 다운로드하는 방법에 대한 자세한 내용은 Analytics - Mobile Services - Mobile Services Adobe SDK 구성 파일을 참조하십시오.
+모바일 애플리케이션 AEM 앱 대시보드에서 ADBMobileConfig를 다운로드하는 방법에 대한 자세한 내용은 Analytics - Mobile Services - Adobe Mobile Services SDK 구성 파일을 참조하십시오.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -64,7 +68,7 @@ Analytics 계정이 설정되면 콘텐츠 동기화 구성을 만들어 콘텐�
 
 PhoneGap CLI를 사용하여 빌드하는 경우 cordova 빌드 후크 스크립트를 사용하여 이 작업을 수행할 수 있습니다. Geometrixx Outdoors 앱의 *content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*&#x200B;에서 볼 수 있습니다.
 
-iOS의 경우 파일을 XCode 프로젝트의 **Resources** 디렉터리(예: &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;)에 복사해야 합니다. 앱이 Android™을 대상으로 하는 경우 복사할 경로는 &quot;platforms/android/assets/ADBMobileConfig.json&quot;입니다. PhoneGap CLI 빌드 중에 후크를 사용하는 방법에 대한 자세한 내용은 [Cordova/PhoneGap 프로젝트에 필요한 후크 3개](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c)를 참조하십시오.
+iOS의 경우 파일을 XCode 프로젝트의 **Resources** 디렉터리(예: &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;)에 복사해야 합니다. 앱이 ™을 대상으로 하는 경우 복사할 경로는 &quot;platforms/android/assets/ADBMobileConfig.json&quot;입니다. PhoneGap CLI 빌드 중에 후크를 사용하는 방법에 대한 자세한 내용은 [Cordova/PhoneGap 프로젝트에 필요한 후크 3개](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c)를 참조하십시오.
 
 ```xml
 ///////////////////////////
@@ -108,7 +112,7 @@ Geometrixx Outdoors 앱 config.xml은 */content/phonegap/geometrixx-outdoors/she
 * ADB.trackState()
 * ADB.trackAction()
 
-참조용으로 Geometrixx Outdoors 앱의 코드를 참조하십시오. Geometrixx Outdoors 앱에서 모든 페이지 탐색은 ADB.trackState() 메서드를 사용하여 추적됩니다. 자세한 내용은 /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js의 소스 코드를 참조하십시오.
+참조용으로 Geometrixx Outdoors 앱의 코드를 살펴보십시오. Geometrixx Outdoors 앱에서 모든 페이지 탐색은 ADB.trackState() 메서드를 사용하여 추적됩니다. 자세한 내용은 /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js의 소스 코드를 참조하십시오.
 
 이 메서드 호출을 사용하여 소스 코드를 계측하면 애플리케이션에 대한 전체 지표를 수집할 수 있습니다.
 

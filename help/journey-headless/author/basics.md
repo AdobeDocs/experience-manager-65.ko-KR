@@ -5,13 +5,33 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 70%
-
+source-wordcount: '1701'
+ht-degree: 72%
 ---
-
 # AEM을 통한 Headless 작성 기본 사항 - 소개 {#author-headless-basics}
 
 ## 지금까지의 스토리 {#story-so-far}
@@ -24,8 +44,8 @@ ht-degree: 70%
 
 * **대상자**: 초급
 * **목표**: Headless CMS 작성의 기본 사항 소개:
-   * AEMaaCS를 사용한 작성 작업 소개
-   * 콘텐츠 조각 소개
+  * AEMaaCS를 사용한 작성 작업 소개
+  * 콘텐츠 조각 소개
 
 ## 기본 처리 {#basic-handling}
 
@@ -193,8 +213,8 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 * **콘텐츠 조각 모델**
 
-  편집기 상단의 조각 이름 바로 아래에 콘텐츠 조각 모델의 이름이 표시됩니다. 모델 편집기로 이동하는 링크이기도 합니다.
-콘텐츠 조각 모델은 사용하는 구조를 정의할 때 콘텐츠 조각에 실제로 중요합니다. 그러나 이러한 구성 요소를 만들고 편집하는 것은 (일반적으로) 다른 담당자인 콘텐츠 설계자의 책임입니다.
+  조각 이름 바로 아래 편집기 상단에 콘텐츠 조각 모델 이름이 표시됩니다. 이는 모델 편집기로 이동하는 링크이기도 합니다.
+  콘텐츠 조각 모델은 사용하는 구조를 정의하므로 실제로 콘텐츠 조각에 핵심적인 요소입니다. 하지만 이를 생성하고 편집하는 책임은 (일반적으로) 또 다른 페르소나인 콘텐츠 아키텍트에게 있습니다.
 
   >[!NOTE]
   >
@@ -234,38 +254,38 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 * [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔을 기반으로 하지만 여러/대부분의 기능은 **자산** 콘솔에서의 **콘텐츠 조각** 작성과 관련성이 있기도 합니다.
 
-   * [탐색 패널](/help/sites-authoring/basic-handling.md#navigation-panel)
+  * [탐색 패널](/help/sites-authoring/basic-handling.md#navigation-panel)
 
-   * [헤더](/help/sites-authoring/basic-handling.md#the-header)
+  * [헤더](/help/sites-authoring/basic-handling.md#the-header)
 
-   * [액션 툴바](/help/sites-authoring/basic-handling.md#actions-toolbar)
+  * [액션 툴바](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
+  * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
 
-   * [리소스 보기 및 선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+  * [리소스 보기 및 선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [레일 선택기](/help/sites-authoring/basic-handling.md#rail-selector)
+  * [레일 선택기](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
-   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+  * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [변형 - 콘텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
+  * [변형 - 콘텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+  * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [콘텐츠 조각 모델 - 데이터 형식](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [콘텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [콘텐츠 조각 모델 - 자산 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 시작 안내서
-   * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Assets 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 콘텐츠 설계자 여정](/help/journey-headless/architect/overview.md)
 

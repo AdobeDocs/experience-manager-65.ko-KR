@@ -1,18 +1,27 @@
 ---
-title: ' [!DNL Workfront for Experience Manager enhanced connector] 구성'
-description: ' [!DNL Workfront for Experience Manager enhanced connector] 구성'
+title: 구성 [!DNL Workfront for Experience Manager enhanced connector]
+description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 버전 | 문서 링크 |
@@ -123,23 +132,23 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
 
 * `workfront-field`은(는) 다음과 같을 수 있습니다
 
-   * 접두사 `DE:`(으)로 식별된 사용자 정의 양식 필드.
-   * 이름으로 식별되는 편집 가능한 필드. 필드 이름이 [[!DNL Workfront] API 탐색기](https://experience.workfront.com/s/api-explorer)에 있습니다.
+  * 접두사 `DE:`(으)로 식별된 사용자 정의 양식 필드.
+  * 이름으로 식별되는 편집 가능한 필드. 필드 이름이 [[!DNL Workfront] API 탐색기](https://experience.workfront.com/s/api-explorer)에 있습니다.
 
 * `aem-mapped-property`는 다음과 같습니다.
 
-   * 리터럴 값. 따옴표로 묶어야 합니다.
-   * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
-   * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
-   * 위의 3개 항목의 연결입니다. `{+}`을(를) 사용하여 지정하십시오.
-   * 값을 `{replace(<value>,"old-char","new-char")}`(으)로 둘러싸서 위의 3개 항목을 변경하는 것입니다.
+  * 리터럴 값. 따옴표로 묶어야 합니다.
+  * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
+  * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
+  * 위의 3개 항목의 연결입니다. `{+}`을(를) 사용하여 지정하십시오.
+  * 값을 `{replace(<value>,"old-char","new-char")}`(으)로 둘러싸서 위의 3개 항목을 변경하는 것입니다.
 
 * 예를 들면 다음과 같습니다.
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![속성을 매핑하는 구성](/help/assets/assets/wf-map-property-config.png)
 

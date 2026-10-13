@@ -10,13 +10,33 @@ exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 1%
-
 ---
-
 # AEM Forms Workspace 사용자 정의 소개{#introduction-to-customizing-aem-form-workspace}
 
 AEM form workspace는 인터페이스의 표시 의미 및 기능을 수정하는 기능을 제공합니다. 스타일, 레이아웃, 서식, 브랜딩 및 핵심 기능을 변경하는 사용자 지정 유형은 아래에 설명되어 있습니다.
@@ -189,47 +209,47 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
 
 * client-pkg:
 
-   * src - CRX 노드를 만드는 데 필요한 아티팩트가 포함됩니다.
-   * pom.xml - 다양한 프로필에 대한 배포 패키지를 빌드하는 스크립트 WS-Deploy 패키지
+  * src - CRX 노드를 만드는 데 필요한 아티팩트가 포함됩니다.
+  * pom.xml - 다양한 프로필에 대한 배포 패키지를 빌드하는 스크립트 WS-Deploy 패키지
 
 * client-html:
 
-   * assembly - AEM Forms workspace SDK을 만드는 스크립트에 사용되는 zip.xml이 포함되어 있습니다.
-   * src/main/webapp -
+  * assembly - AEM Forms workspace SDK을 만드는 스크립트에 사용되는 zip.xml이 포함되어 있습니다.
+  * src/main/webapp -
 
-      * css - AEM Forms 작업 공간의 스타일 시트를 포함합니다.
-      * 이미지 - AEM Forms 작업 영역에서 사용되는 이미지를 포함합니다.
-      * js:
+    * css - AEM Forms 작업 공간의 스타일 시트를 포함합니다.
+    * 이미지 - AEM Forms 작업 영역에서 사용되는 이미지를 포함합니다.
+    * js:
 
-         * libs - AEM Forms 작업 영역에서 사용되는 모든 타사 라이브러리를 포함합니다.
-         * 라이센스 - HTML 및 JS 파일에 대한 라이센스와 이러한 라이센스를 각 소스 파일에 접두사로 사용하는 코드가 포함되어 있습니다.
-         * minifier - customizedJavaScript 코드의 조합, 축소 및 무효화에 사용됩니다.
-         * resourcejs_optimizer - JavaScript 소스의 조합, 축소 및 문서화에 사용됩니다.
-         * resource_generator - register.js 및 modelcontrollerpath.js 생성에 사용됩니다.
-         * 런타임:
+      * libs - AEM Forms 작업 영역에서 사용되는 모든 타사 라이브러리를 포함합니다.
+      * 라이센스 - HTML 및 JS 파일에 대한 라이센스와 이러한 라이센스를 각 소스 파일에 접두사로 사용하는 코드가 포함되어 있습니다.
+      * minifier - customizedJavaScript 코드의 조합, 축소 및 무효화에 사용됩니다.
+      * resourcejs_optimizer - JavaScript 소스의 조합, 축소 및 문서화에 사용됩니다.
+      * resource_generator - register.js 및 modelcontrollerpath.js 생성에 사용됩니다.
+      * 런타임:
 
-            * initializer - AEM Forms 작업 영역에서 사용되는 백본 보기 및 모델을 초기화하는 데 사용되는 initializer.js가 포함되어 있습니다.
-            * 모델 - AEM Forms 작업 영역에 있는 모든 구성 요소의 백본 모델을 포함합니다.
-            * 경로 - AEM Forms workspace에서 시작 프로세스, 작업, 추적 및 환경 설정을 로드하는 JavaScript 파일 및 HTML 파일을 포함합니다.
-            * 서비스 - AEM Forms 작업 영역에서 사용되는 service.js가 포함되어 있습니다. 모든 서버 호출은 service.js를 통해 수행됩니다.
-            * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 보기의 HTML 파일을 포함합니다.
-            * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(javascript)을 포함합니다.
-            * 보기 - AEM Forms 작업 공간에 있는 모든 구성 요소의 백본 보기를 포함합니다.
+        * initializer - AEM Forms 작업 영역에서 사용되는 백본 보기 및 모델을 초기화하는 데 사용되는 initializer.js가 포함되어 있습니다.
+        * 모델 - AEM Forms 작업 영역에 있는 모든 구성 요소의 백본 모델을 포함합니다.
+        * 경로 - AEM Forms workspace에서 시작 프로세스, 작업, 추적 및 환경 설정을 로드하는 JavaScript 파일 및 HTML 파일을 포함합니다.
+        * 서비스 - AEM Forms 작업 영역에서 사용되는 service.js가 포함되어 있습니다. 모든 서버 호출은 service.js를 통해 수행됩니다.
+        * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 보기의 HTML 파일을 포함합니다.
+        * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(javascript)을 포함합니다.
+        * 보기 - AEM Forms 작업 공간에 있는 모든 구성 요소의 백본 보기를 포함합니다.
 
-         * main.js
-         * router.js
+      * main.js
+      * router.js
 
-      * libs/ws: pdf.html 및 pluginPing.pdf는 AEM Forms 작업 공간에서 PDF forms을 로드하는 데 사용되며 WSNextAdapter.swf는 AEM Forms 작업 공간에서 SWF forms 및 Guides를 로드하는 데 사용됩니다.
-      * 로케일:
+    * libs/ws: pdf.html 및 pluginPing.pdf는 AEM Forms 작업 공간에서 PDF forms을 로드하는 데 사용되며 WSNextAdapter.swf는 AEM Forms 작업 공간에서 SWF forms 및 Guides를 로드하는 데 사용됩니다.
+    * 로케일:
 
-         * de-DE - 독일어용 translation.json이 포함되어 있습니다.
-         * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
-         * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
-         * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
-         * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
+      * de-DE - 독일어용 translation.json이 포함되어 있습니다.
+      * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
+      * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
+      * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
+      * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
 
-      * html.jsp
-      * GET.jsp
+    * html.jsp
+    * GET.jsp
 
 ### CRX 패키지 {#crx-package}
 
@@ -256,30 +276,30 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 * 이미지 - 모든 이미지를 포함합니다.
 * js:
 
-   * 라이브러리:
+  * 라이브러리:
 
-      * require - require.js가 포함되어 있습니다.
-      * jqueryui - jquery.ui.datepicker.ja.js 포함.
+    * require - require.js가 포함되어 있습니다.
+    * jqueryui - jquery.ui.datepicker.ja.js 포함.
 
-   * 런타임:
+  * 런타임:
 
-      * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
+    * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
 
-   * main.js(결합, 축소 및 무시).
-   * registry.js
+  * main.js(결합, 축소 및 무시).
+  * registry.js
 
 * 라이브러리:
 
-   * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
+  * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
 
 * Locale - .content.xml을 포함합니다.
 * 로케일:
 
-   * de-DE - 독일어용 translation.json이 포함되어 있습니다.
-   * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
-   * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
-   * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
-   * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
+  * de-DE - 독일어용 translation.json이 포함되어 있습니다.
+  * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
+  * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
+  * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
+  * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
 
 * 색인 - .content.xml 포함
 * 프로필 - offline.jsp를 포함합니다.
@@ -301,30 +321,30 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 * 이미지 - 모든 이미지를 포함합니다.
 * js:
 
-   * 라이브러리:
+  * 라이브러리:
 
-      * require - require.js가 포함되어 있습니다.
-      * jqueryui - jquery.ui.datepicker.ja.js 포함.
+    * require - require.js가 포함되어 있습니다.
+    * jqueryui - jquery.ui.datepicker.ja.js 포함.
 
-   * 런타임:
+  * 런타임:
 
-      * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
+    * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
 
-   * main.js(결합).
-   * registry.js
+  * main.js(결합).
+  * registry.js
 
 * 라이브러리:
 
-   * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
+  * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
 
 * Locale - .content.xml을 포함합니다.
 * 로케일:
 
-   * de-DE - 독일어용 translation.json이 포함되어 있습니다.
-   * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
-   * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
-   * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
-   * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
+  * de-DE - 독일어용 translation.json이 포함되어 있습니다.
+  * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
+  * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
+  * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
+  * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
 
 * 색인 - .content.xml 포함
 * 프로필 - offline.jsp를 포함합니다.
@@ -345,35 +365,35 @@ client-pkg에 mvn clean -P 개발 설치
 * 이미지 - 모든 이미지를 포함합니다.
 * js:
 
-   * libs - AEM Forms 작업 영역에서 사용되는 모든 라이브러리를 포함합니다.
-   * require - require.js 포함
-   * jqueryui - 포함 jquery.ui.datepicker.ja.js
-   * 런타임:
+  * libs - AEM Forms 작업 영역에서 사용되는 모든 라이브러리를 포함합니다.
+  * require - require.js 포함
+  * jqueryui - 포함 jquery.ui.datepicker.ja.js
+  * 런타임:
 
-      * initializer - initializer.js 및 modelcontrollerpath.js가 포함되어 있습니다.
-      * 모델 - AEM Forms 작업 공간에 있는 모든 구성 요소의 모델이 포함됩니다.
-      * 경로 - AEM Forms workspace에서 시작 프로세스, 작업, 추적 및 환경 설정을 로드하는 JavaScript 파일 및 HTML 파일을 포함합니다.
-      * 서비스 - AEM Forms 작업 영역에서 사용되는 service.js가 포함되어 있습니다.
-      * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
-      * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(JavaScript)을 포함합니다.
-      * 보기 - AEM Forms 작업 영역의 모든 구성 요소 보기가 포함됩니다.
+    * initializer - initializer.js 및 modelcontrollerpath.js가 포함되어 있습니다.
+    * 모델 - AEM Forms 작업 공간에 있는 모든 구성 요소의 모델이 포함됩니다.
+    * 경로 - AEM Forms workspace에서 시작 프로세스, 작업, 추적 및 환경 설정을 로드하는 JavaScript 파일 및 HTML 파일을 포함합니다.
+    * 서비스 - AEM Forms 작업 영역에서 사용되는 service.js가 포함되어 있습니다.
+    * 템플릿 - 모든 템플릿, 즉 AEM Forms 작업 공간에 있는 모든 구성 요소의 HTML 파일을 포함합니다.
+    * util - AEM Forms 작업 영역에서 사용되는 모든 유틸리티 파일(JavaScript)을 포함합니다.
+    * 보기 - AEM Forms 작업 영역의 모든 구성 요소 보기가 포함됩니다.
 
-   * main.js
-   * registry.js
-   * router.js
+  * main.js
+  * registry.js
+  * router.js
 
 * 라이브러리:
 
-   * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
+  * ws - pluginPing.pdf, pdf.html 및 WSNextAdapter.swf가 포함되어 있습니다.
 
 * Locale - .content.xml을 포함합니다.
 * 로케일:
 
-   * de-DE - 독일어용 translation.json이 포함되어 있습니다.
-   * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
-   * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
-   * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
-   * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
+  * de-DE - 독일어용 translation.json이 포함되어 있습니다.
+  * en-US - 영어에 대한 translation.json이 포함되어 있습니다.
+  * fr-FR - 프랑스어에 대한 translation.json이 포함되어 있습니다.
+  * ja-JP - 일본어에 대한 translation.json이 포함되어 있습니다.
+  * html.jsp - 현재 브라우저 로케일을 찾는 코드가 포함되어 있습니다.
 
 * 색인 - .content.xml 포함
 * 프로필 - offline.jsp를 포함합니다.

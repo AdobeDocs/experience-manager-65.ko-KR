@@ -9,13 +9,33 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2853'
 ht-degree: 84%
-
 ---
-
 # 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업{#working-with-targeted-content-in-multisites}
 
 사이트 간 활동, 경험 및 오퍼와 같은 타기팅된 콘텐츠를 관리해야 하는 경우 타기팅된 콘텐츠에 대한 AEM의 기본 제공 다중 사이트 지원을 이용할 수 있습니다.
@@ -67,18 +87,18 @@ ht-degree: 84%
 
 * 완전히 *분리된* 타겟팅된 콘텐츠 세트 - 사이트에 있는 타겟팅된 콘텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 분리된 영역에 연결되는 사이트들은 해당 사이트만의 구성된 영역에 읽고 씁니다. 예:
 
-   * 사이트 A는 영역 X에 연결합니다.
-   * 사이트 B는 영역 Y에 연결합니다.
+  * 사이트 A는 영역 X에 연결합니다.
+  * 사이트 B는 영역 Y에 연결합니다.
 
 * *공유된* 타겟팅된 콘텐츠 세트 - 사이트에 있는 타겟팅된 콘텐츠를 편집하면 두 사이트 모두가 직접적인 영향을 받습니다. 두 사이트가 동일한 영역을 참조하도록 함으로써 이렇게 설정할 수 있습니다. 동일한 영역에 연결되는 사이트들은 이 영역 내의 타겟팅된 콘텐츠를 공유합니다. 예:
 
-   * 사이트 A는 영역 X에 연결합니다.
-   * 사이트 B는 영역 X에 연결합니다.
+  * 사이트 A는 영역 X에 연결합니다.
+  * 사이트 B는 영역 X에 연결합니다.
 
 * MSM을 통해 다른 사이트에서 *상속된*, 분리된 타겟팅된 콘텐츠 세트 - 콘텐츠를 마스터에서 Live Copy로 일방향으로 롤아웃할 수 있습니다. 예:
 
-   * 사이트 A는 영역 X에 연결합니다.
-   * 사이트 B는 영역 Y(영역 X의 Live Copy)에 연결합니다.
+  * 사이트 A는 영역 X에 연결합니다.
+  * 사이트 B는 영역 Y(영역 X의 Live Copy)에 연결합니다.
 
 한 사이트에서 사용되는 **여러** 브랜드가 있을 수도 있습니다. 그럴 경우 이 예보다 더 복잡할 수 있습니다.
 

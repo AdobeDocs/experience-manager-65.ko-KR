@@ -8,13 +8,26 @@ exl-id: 3458471a-9815-463e-8044-68631073863c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 3%
-
 ---
-
 # 적응형 및 HTML5 양식을 위한 모양 프레임워크 {#appearance-framework-for-adaptive-and-html-forms}
 
 Forms(적응형 양식 및 HTML5 양식)에서는 모양 및 스크립팅을 위해 [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) 및 [Underscore.js](https://underscorejs.org/) 라이브러리를 사용합니다. 양식에서는 양식의 모든 대화형 요소(예: 필드 및 버튼)에 대해 [jQuery UI](https://jqueryui.com/) **위젯** 아키텍처도 사용합니다. 이 아키텍처를 통해 양식 개발자는 Forms에서 사용 가능한 다양한 jQuery 위젯 및 플러그인을 사용할 수 있습니다. 또한 leadDigits/trailDigits 제한 사항이나 그림 절 구현과 같은 사용자의 데이터를 캡처하는 동안 양식별 논리를 구현할 수도 있습니다. 양식 개발자는 사용자 정의 응용 프로그램을 만들고 사용하여 데이터 캡처 환경을 개선하고 보다 사용자 친화적으로 만들 수 있습니다.

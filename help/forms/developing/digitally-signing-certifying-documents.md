@@ -9,13 +9,29 @@ role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '17137'
 ht-degree: 1%
-
 ---
-
 # 문서 디지털 서명 및 인증 {#digitally-signing-and-certifying-documents}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -131,11 +147,11 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
    * 필요한 경우 서명 필드에 디지털 서명을 적용할 때 잠기는 필드를 지정하는 `FieldMDPOptions` 개체를 만듭니다.
    * `SignatureServiceClient` 개체의 `addSignatureField` 메서드를 호출하고 다음 값을 전달하여 PDF 문서에 서명 필드를 추가합니다.
 
-      * `com.adobe.idp`. 서명 필드가 추가된 PDF 문서를 나타내는 `Document` 개체입니다.
-      * 서명 필드의 이름을 지정하는 문자열 값입니다.
-      * 서명 필드가 추가되는 페이지 번호를 나타내는 `java.lang.Integer` 값입니다.
-      * 서명 필드의 위치를 지정하는 `PositionRectangle` 개체입니다.
-      * 디지털 서명이 서명 필드에 적용된 후 잠기는 PDF 문서의 필드를 지정하는 `FieldMDPOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 전달할 수 있습니다.
+     * `com.adobe.idp`. 서명 필드가 추가된 PDF 문서를 나타내는 `Document` 개체입니다.
+     * 서명 필드의 이름을 지정하는 문자열 값입니다.
+     * 서명 필드가 추가되는 페이지 번호를 나타내는 `java.lang.Integer` 값입니다.
+     * 서명 필드의 위치를 지정하는 `PositionRectangle` 개체입니다.
+     * 디지털 서명이 서명 필드에 적용된 후 잠기는 PDF 문서의 필드를 지정하는 `FieldMDPOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 전달할 수 있습니다.
 
    * 다양한 런타임 값을 지정하는 `PDFSeedValueOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 `null`을(를) 전달할 수 있습니다.
 
@@ -174,10 +190,10 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 서명 필드가 추가된 PDF 문서 가져오기
 
@@ -321,10 +337,10 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 서명 필드가 포함된 PDF 문서 가져오기
 
@@ -406,11 +422,11 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 * **필터**: 서명 필드에 사용되는 필터를 지정합니다. 예를 들어 Adobe.PPKLite 필터를 사용할 수 있습니다. ([PDF 참조](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)를 참조하세요.)
 * **플래그 옵션**: 이 서명 필드와 연결된 플래그 값을 지정합니다. 값이 1이면 서명자는 항목에 대해 지정된 값만 사용해야 합니다. 값이 0이면 다른 값이 허용됨을 의미합니다. 다음은 비트 위치입니다.
 
-   * **1(필터):** 서명 필드에 서명하는 데 사용할 서명 처리기입니다.
-   * **2(SubFilter):** 서명할 때 사용할 수 있는 인코딩을 나타내는 이름의 배열입니다.
-   * **3(V)**: 서명 필드에 서명하는 데 사용할 서명 처리기의 최소 필요 버전 번호입니다
-   * **4(이유):** 문서에 서명하는 가능한 이유를 지정하는 문자열 배열입니다.
-   * **5(PDFLegalWarnings):** 가능한 법적 증명을 지정하는 문자열 배열
+  * **1(필터):** 서명 필드에 서명하는 데 사용할 서명 처리기입니다.
+  * **2(SubFilter):** 서명할 때 사용할 수 있는 인코딩을 나타내는 이름의 배열입니다.
+  * **3(V)**: 서명 필드에 서명하는 데 사용할 서명 처리기의 최소 필요 버전 번호입니다
+  * **4(이유):** 문서에 서명하는 가능한 이유를 지정하는 문자열 배열입니다.
+  * **5(PDFLegalWarnings):** 가능한 법적 증명을 지정하는 문자열 배열
 
 * **법적 증명**: 문서가 인증되면 문서의 내용을 모호하게 하거나 오해의 소지가 있는 특정 유형의 내용을 자동으로 검사합니다. 예를 들어 주석은 인증된 내용을 이해하는 데 중요한 텍스트를 모호하게 할 수 있습니다. 검색 프로세스는 이러한 유형의 콘텐츠가 있음을 나타내는 경고를 생성합니다. 또한 경고를 생성했을 수 있는 콘텐츠에 대한 추가 설명도 제공합니다.
 * **권한**: 서명을 무효화하지 않고 PDF 문서에 사용할 수 있는 권한을 지정합니다.
@@ -503,10 +519,10 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 수정할 서명 필드가 포함된 PDF 문서 가져오기
 
@@ -770,10 +786,10 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 서명할 PDF 문서 가져오기
 
@@ -927,11 +943,11 @@ Forms 및 서명 API(Java)를 사용하여 대화형 양식에 디지털 서명�
    * 런타임 옵션을 설정하는 데 사용되는 `PDFFormRenderSpec` 개체를 만듭니다. `PDFFormRenderSpec` 개체의 `setGenerateServerAppearance` 메서드를 호출하고 `true`을(를) 전달합니다.
    * `FormsServiceClient` 개체의 `renderPDFForm2` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 렌더링할 PDF 양식을 포함하는 `com.adobe.idp.Document` 개체입니다.
-      * 양식과 병합할 데이터가 포함된 `com.adobe.idp.Document` 개체입니다.
-      * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다.
-      * Forms 서비스에 필요한 URI 값을 포함하는 `URLSpec` 개체입니다. 이 매개 변수 값에 `null`을(를) 지정할 수 있습니다.
-      * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
+     * 렌더링할 PDF 양식을 포함하는 `com.adobe.idp.Document` 개체입니다.
+     * 양식과 병합할 데이터가 포함된 `com.adobe.idp.Document` 개체입니다.
+     * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다.
+     * Forms 서비스에 필요한 URI 값을 포함하는 `URLSpec` 개체입니다. 이 매개 변수 값에 `null`을(를) 지정할 수 있습니다.
+     * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
 
      `renderPDFForm2` 메서드가 양식 데이터 스트림을 포함하는 `FormsResult` 개체를 반환합니다
 
@@ -994,9 +1010,9 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1019,14 +1035,14 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
    * 런타임 옵션을 설정하는 데 사용되는 `PDFFormRenderSpec` 개체를 만듭니다. `PDFFormRenderSpec` 개체의 `generateServerAppearance` 필드에 값 `true`을(를) 할당합니다.
    * `FormsServiceClient` 개체의 `renderPDFForm2` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 렌더링할 PDF 양식을 포함하는 `BLOB` 개체입니다.
-      * 양식과 병합할 데이터가 포함된 `BLOB` 개체입니다.
-      * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다.
-      * Forms 서비스에 필요한 URI 값을 포함하는 `URLSpec` 개체입니다. 이 매개 변수 값에 `null`을(를) 지정할 수 있습니다.
-      * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
-      * 양식의 페이지 수를 저장하는 데 사용되는 긴 출력 매개 변수입니다.
-      * 로케일 값에 사용되는 문자열 출력 매개 변수입니다.
-      * 대화형 양식을 저장하는 데 사용되는 출력 매개 변수인 `FormResult` 값입니다.
+     * 렌더링할 PDF 양식을 포함하는 `BLOB` 개체입니다.
+     * 양식과 병합할 데이터가 포함된 `BLOB` 개체입니다.
+     * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다.
+     * Forms 서비스에 필요한 URI 값을 포함하는 `URLSpec` 개체입니다. 이 매개 변수 값에 `null`을(를) 지정할 수 있습니다.
+     * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택적 매개 변수이며, 양식에 파일을 첨부하지 않으려면 `null`을(를) 지정할 수 있습니다.
+     * 양식의 페이지 수를 저장하는 데 사용되는 긴 출력 매개 변수입니다.
+     * 로케일 값에 사용되는 문자열 출력 매개 변수입니다.
+     * 대화형 양식을 저장하는 데 사용되는 출력 매개 변수인 `FormResult` 값입니다.
 
    * `FormsResult` 개체의 `outputContent` 필드를 호출하여 PDF 양식을 검색합니다. 이 필드에는 대화형 양식을 나타내는 `BLOB` 개체가 저장됩니다.
 
@@ -1234,10 +1250,10 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 인증할 PDF 문서 가져오기
 
@@ -1471,10 +1487,10 @@ Java(서명 서비스 API)를 사용하여 디지털 서명을 확인합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 확인할 서명이 포함된 PDF 문서 가져오기
 
@@ -1686,10 +1702,10 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 확인할 서명이 포함된 PDF 문서 가져오기
 
@@ -1850,10 +1866,10 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `SignatureServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `SignatureServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 제거할 서명이 포함된 PDF 문서 가져오기
 

@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식에 대한 사용자 정의 제출 액션 작성
+title: 적응형 양식에 대한 사용자 정의 제출 작업 작성
 description: AEM Forms을 사용하면 적응형 양식에 대한 사용자 지정 제출 액션을 만들 수 있습니다. 이 문서에서는 적응형 양식에 대한 사용자 지정 제출 액션을 추가하는 절차에 대해 설명합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,32 @@ exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 1%
-
+source-wordcount: '1677'
+ht-degree: 3%
 ---
-
-# 적응형 양식에 대한 사용자 정의 제출 액션 작성{#writing-custom-submit-action-for-adaptive-forms}
+# 적응형 양식에 대한 사용자 정의 제출 작업 작성{#writing-custom-submit-action-for-adaptive-forms}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -57,11 +75,11 @@ XML 데이터가 **`jcr:data`** 요청 매개 변수를 사용하여 서블릿�
 
 ### 작업 필드 {#action-fields}
 
-제출 액션은 숨겨진 입력 필드([input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) HTML 태그 사용)를 렌더링된 양식 HTML에 추가할 수 있습니다. 이러한 숨겨진 필드에는 양식 제출을 처리하는 동안 필요한 값이 포함될 수 있습니다. 양식을 제출할 때 이러한 필드 값은 제출 작업 시 제출 처리 시 사용할 수 있는 요청 매개 변수로 다시 게시됩니다. 입력 필드를 작업 필드라고 합니다.
+제출 액션은 HTML [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) 태그를 사용하여 숨겨진 입력 필드를 렌더링된 양식 HTML에 추가할 수 있습니다. 이러한 숨겨진 필드에는 양식 제출을 처리하는 동안 필요한 값이 포함될 수 있습니다. 양식을 제출할 때 이러한 필드 값은 제출 작업 시 제출 처리 시 사용할 수 있는 요청 매개 변수로 다시 게시됩니다. 입력 필드를 작업 필드라고 합니다.
 
 예를 들어 양식을 채우는 데 걸린 시간도 캡처하는 제출 작업은 숨겨진 입력 필드 `startTime` 및 `endTime`을(를) 추가할 수 있습니다.
 
-스크립트는 양식을 렌더링할 때와 양식을 제출하기 전에 각각 `startTime` 및 `endTime` 필드의 값을 제공할 수 있습니다. 그런 다음 제출 ActionScript `post.jsp`은(는) 요청 매개 변수를 사용하여 이러한 필드에 액세스하고 양식을 채우는 데 필요한 총 시간을 계산할 수 있습니다.
+스크립트는 양식을 렌더링할 때와 양식을 제출하기 전에 각각 `startTime` 및 `endTime` 필드의 값을 제공할 수 있습니다. 그런 다음 ActionScript 제출 `post.jsp`은(는) 요청 매개 변수를 사용하여 이러한 필드에 액세스하고 양식을 채우는 데 필요한 총 시간을 계산할 수 있습니다.
 
 ### 첨부 파일 {#file-attachments}
 
@@ -95,26 +113,26 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 제출 액션은 다음을 포함하는 sling:Folder입니다.
 
-* **addfields.jsp**: 이 스크립트는 변환 중에 HTML 파일에 추가된 작업 필드를 제공합니다. 이 스크립트를 사용하여 post.user.jsp 스크립트에서 제출 중에 필요한 숨겨진 입력 POST을 추가합니다.
+* **addfields.jsp**: 이 스크립트는 변환 중에 HTML 파일에 추가되는 작업 필드를 제공합니다. 이 스크립트를 사용하여 post.POST.jsp 스크립트에서 제출 중에 필요한 숨겨진 입력 매개변수를 추가합니다.
 * **dialog.xml**: 이 스크립트는 CQ 구성 요소 대화 상자와 유사합니다. 작성자가 맞춤화하는 구성 정보를 제공합니다. 제출 액션을 선택하면 적응형 양식 편집 대화 상자의 제출 액션 탭에 필드가 표시됩니다.
-* POST **post.submit.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터를 사용하여 이 스크립트를 호출합니다. POST 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.user.jsp 스크립트를 실행하는 것을 의미합니다. 제출 액션을 적응형 양식 편집 대화 상자에 표시할 적응형 양식에 등록하려면 다음 속성을 `sling:Folder`에 추가하십시오.
+* **post.POST.jsp**: 제출 서블릿은 제출한 데이터와 이전 섹션의 추가 데이터로 이 스크립트를 호출합니다. 이 페이지에서 작업을 실행하는 것에 대한 언급은 post.POST.jsp 스크립트를 실행하는 것을 의미합니다. 제출 액션을 적응형 양식 편집 대화 상자에 표시할 적응형 양식에 등록하려면 다음 속성을 `sling:Folder`에 추가하십시오.
 
-   * 문자열 및 값 **fd/af/components/guidesubmittype**&#x200B;의 **guideComponentType**
-   * 제출 액션을 적용할 수 있는 적응형 양식의 형식을 지정하는 String 형식의 **guideDataModel**. **xfa**&#x200B;은(는) XFA 기반 적응형 양식에 대해 지원되지만 **xsd**&#x200B;은(는) XSD 기반 적응형 양식에 대해 지원됩니다. **basic**&#x200B;은(는) XDP 또는 XSD를 사용하지 않는 적응형 양식에 대해 지원됩니다. 여러 유형의 적응형 양식에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열은 쉼표로 구분합니다. 예를 들어 XFA 및 XSD 기반 적응형 양식에 작업을 표시하려면 각각 **xfa** 및 **xsd** 값을 지정하십시오.
+  * 문자열 및 값 **fd/af/components/guidesubmittype**&#x200B;의 **guideComponentType**
+  * 제출 액션을 적용할 수 있는 적응형 양식의 형식을 지정하는 String 형식의 **guideDataModel**. **xfa**&#x200B;은(는) XFA 기반 적응형 양식에 대해 지원되지만 **xsd**&#x200B;은(는) XSD 기반 적응형 양식에 대해 지원됩니다. **basic**&#x200B;은(는) XDP 또는 XSD를 사용하지 않는 적응형 양식에 대해 지원됩니다. 여러 유형의 적응형 양식에 작업을 표시하려면 해당 문자열을 추가합니다. 각 문자열은 쉼표로 구분합니다. 예를 들어 XFA 및 XSD 기반 적응형 양식에 작업을 표시하려면 각각 **xfa** 및 **xsd** 값을 지정하십시오.
 
-   * String 형식의 **jcr:description**. 이 속성의 값은 적응형 양식 편집 대화 상자의 제출 액션 탭에 있는 제출 액션 목록에 표시됩니다. 기본 작업은 위치 **/libs/fd/af/components/guidesubmittype**&#x200B;의 CRX 저장소에 있습니다.
+  * String 형식의 **jcr:description**. 이 속성의 값은 적응형 양식 편집 대화 상자의 제출 액션 탭에 있는 제출 액션 목록에 표시됩니다. 기본 작업은 위치 **/libs/fd/af/components/guidesubmittype**&#x200B;의 CRX 저장소에 있습니다.
 
 ## 사용자 지정 제출 액션 만들기 {#creating-a-custom-submit-action}
 
 CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 작업을 만들려면 다음 단계를 수행하십시오. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 기본 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 CQ는 전자 메일을 보내는 데 사용할 수 있는 [메일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) API를 제공합니다. 메일 API를 사용하기 전에 시스템 콘솔을 통해 일별 CQ 메일 서비스를 [구성](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko&wcmmode=disabled)합니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
 
-1. URL https://&lt;server>:&lt;port>/crx/de/index.jsp에서 CRXDE Lite에 로그인합니다. /apps/custom_submit_action 폴더에 sling:Folder 및 name store_and_mail 속성을 사용하여 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
+1. URL https://&lt;server>:&lt;port>/crx/de/index.jsp에서 CRXDE Lite에 로그인합니다. /apps/custom_submit_action 폴더에 sling:Folder 속성과 store_and_mail 이름을 가진 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
 
-   ![sling:Folder 속성을 사용하여 노드를 만드는 것을 보여 주는 스크린샷](assets/step1.png)
+   ![sling 속성을 사용하여 노드를 만드는 것을 보여 주는 스크린샷:Folder](assets/step1.png)
 
 1. **필수 구성 필드를 제공합니다.**
 
-   스토어 작업에 필요한 구성을 추가합니다. /libs/fd/af/components/guidesubmittype/store에서 저장소 작업의 **cq:dialog** 노드를 /apps/custom_submit_action/store_and_email의 작업 폴더로 복사합니다.
+   스토어 작업에 필요한 구성을 추가합니다. /libs/fd/af/components/guidesubmittype/store에서 /apps/custom_submit_action/store_and_email의 작업 폴더로 저장 작업의 **cq:dialog** 노드를 복사합니다.
 
    ![대화 상자 노드를 작업 폴더로 복사하는 스크린샷](assets/step2.png)
 
@@ -132,7 +150,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    * **문자열** 유형 및 값 **xfa, xsd, basic**&#x200B;의 **guideDataModel**
 
-   * **문자열** 유형 및 값 **저장 및 전자 메일 동작**&#x200B;의 **jcr:description**
+   * 유형 **문자열** 및 값 **저장 및 전자 메일 동작**&#x200B;의 **jcr:description**
 
 1. 적응형 양식을 엽니다. **시작** 옆에 있는 **편집** 단추를 클릭하여 적응형 양식 컨테이너의 **편집** 대화 상자를 엽니다. 새 작업이 **작업 제출** 탭에 표시됩니다. **저장 및 전자 메일 작업**&#x200B;을 선택하면 대화 상자 노드에 추가된 구성이 표시됩니다.
 
@@ -140,9 +158,9 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
 1. **작업을 완료하려면 작업을 사용하십시오.**
 
-   작업에 post.user.jsp POST을 추가합니다. (/apps/custom_submit_action/store_and_mail/).
+   작업에 post.POST.jsp 스크립트를 추가합니다. (/apps/custom_submit_action/store_and_mail/).
 
-   기본 제공 저장 작업(post.store.jsp POST)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
+   기본 제공 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -156,7 +174,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    >[!NOTE]
    >
-   >POST JSP 파일에 post.user.jsp라는 이름이 있는지 확인합니다.
+   >JSP 파일의 이름이 post.POST.jsp인지 확인합니다.
 
    ```java
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>

@@ -6,13 +6,25 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 62%
-
 ---
-
 # 번역할 콘텐츠 식별{#identifying-content-to-translate}
 
 번역 규칙은 번역 프로젝트에 포함되어 있거나 번역 프로젝트에서 제외된 페이지, 구성 요소 및 자산에 대해 번역할 콘텐츠를 식별합니다. 페이지 또는 자산이 번역될 때 AEM은 이 콘텐츠를 추출하여 번역 서비스로 전송될 수 있도록 합니다.
@@ -64,13 +76,13 @@ AEM 콘텐츠 번역 기능의 개요를 확인하려면 [다국어 사이트를
 * `path` 속성에는 규칙이 적용될 분기의 루트 노드로의 경로가 포함됩니다.
 * 하위 `property` 요소는 모든 리소스 유형에 대해 번역할 노드 속성을 식별합니다.
 
-   * `name` 속성에는 속성 이름이 포함됩니다.
-   * 옵션인 `translate` 속성은 번역되어 있지 않은 경우 `false`와 같습니다. 기본적으로 값은 `true`입니다. 이 속성은 이전 규칙을 오버라이드할 때 유용합니다.
+  * `name` 속성에는 속성 이름이 포함됩니다.
+  * 옵션인 `translate` 속성은 번역되어 있지 않은 경우 `false`와 같습니다. 기본적으로 값은 `true`입니다. 이 속성은 이전 규칙을 오버라이드할 때 유용합니다.
 
 * 하위 `node` 요소는 특정 리소스 유형에 대해 번역할 노드 속성을 식별합니다.
 
-   * `resourceType` 속성에는 리소스 유형을 구현하는 구성 요소로 확인되는 경로가 포함됩니다.
-   * 하위 `property` 요소는 번역할 노드 속성을 식별합니다. 이 노드를 노드 규칙에 대해 하위 `property` 요소와 동일한 방식으로 사용하십시오.
+  * `resourceType` 속성에는 리소스 유형을 구현하는 구성 요소로 확인되는 경로가 포함됩니다.
+  * 하위 `property` 요소는 번역할 노드 속성을 식별합니다. 이 노드를 노드 규칙에 대해 하위 `property` 요소와 동일한 방식으로 사용하십시오.
 
 다음과 같은 예시 규칙을 사용하면 모든 `text` 속성의 콘텐츠가 `/content` 노드 아래의 모든 페이지에 대해 번역됩니다. 이 규칙은 기초 텍스트 구성 요소 및 기초 이미지 구성 요소와 같이 `text` 속성에 콘텐츠를 저장하는 모든 구성 요소에 적용됩니다.
 

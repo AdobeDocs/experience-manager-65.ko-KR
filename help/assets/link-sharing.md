@@ -7,13 +7,27 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 7%
-
 ---
-
 # 링크로 자산 공유 {#asset-link-sharing}
 
 | 버전 | 문서 링크 |
@@ -114,8 +128,8 @@ ht-degree: 7%
 
 * [!DNL Experience Manager] 작성자 배포의 링크를 외부 엔터티에 공유하려면 `GET` 요청에 대해서만 링크 공유에 사용되는 다음 URL만 노출해야 합니다. 보안상의 이유로 다른 URL 차단
 
-   * `http://[aem_server]:[port]/linkshare.html`
-   * `http://[aem_server]:[port]/linksharepreview.html`
-   * `http://[aem_server]:[port]/linkexpired.html`
+  * `http://[aem_server]:[port]/linkshare.html`
+  * `http://[aem_server]:[port]/linksharepreview.html`
+  * `http://[aem_server]:[port]/linkexpired.html`
 
   [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다. **[!UICONTROL 일 CQ 링크 외부화]** 구성을 열고 **[!UICONTROL 도메인]** 필드에서 `local`, `author` 및 `publish`에 대해 언급된 값으로 다음 속성을 수정합니다. `local` 및 `author` 속성의 경우 각각 로컬 및 작성자 인스턴스의 URL을 제공하십시오. 단일 [!DNL Experience Manager] 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성에 동일한 값을 사용하십시오. 게시 인스턴스의 경우 [!DNL Experience Manager] 게시 인스턴스의 URL을 제공하십시오.

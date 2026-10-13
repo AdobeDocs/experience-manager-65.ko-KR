@@ -5,13 +5,25 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 91%
-
 ---
-
 # GraphiQL IDE 사용 {#graphiql-ide}
 
 표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE의 구현은 Adobe Experience Manager(AEM)의 GraphQL API와 함께 사용할 수 있습니다.
@@ -46,7 +58,7 @@ ht-degree: 91%
 
 GET 요청을 사용하고 쿼리를 게시하여 클라이언트 애플리케이션에서 쿼리를 요청할 수 있도록 시스템에서 GraphiQL을 사용할 수 있습니다. 프로덕션을 사용하는 경우 [쿼리를 프로덕션 환경으로 이전](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)할 수 있습니다. 처음은 쿼리로 새로 작성된 콘텐츠를 확인하기 위해 프로덕션 작성자로 복제되고, 마지막은 라이브 소비를 위해 프로덕션 게시로 복제됩니다.
 
-## 엔드포인트 선택 중 {#selecting-endpoint}
+## 엔드포인트 선택 {#selecting-endpoint}
 
 첫 번째 단계로, 쿼리에 사용하려는 Sites 구성에 적합한 **[엔드포인트](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)**&#x200B;를 선택해야 합니다. 엔드포인트는 쿼리에 사용하려는 Sites 구성에 적합합니다.
 
@@ -60,9 +72,9 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 >
 >이미 지속 쿼리가 선택되고 편집기 패널에 표시되는 경우 (**지속 쿼리** 옆의) `+`를 선택하여 새 쿼리에 맞는 편집기를 비웁니다.
 
-입력이 시작되기만 하면 편집기는 다음 작업을 수행합니다.
+입력을 시작하기만 하면 편집기는 다음 작업도 수행합니다.
 
-* 마우스 오버를 사용하여 요소에 대한 추가 정보 표시
+* 마우스 오버를 사용하여 요소에 대한 추가 정보를 표시
 * 구문 강조, 자동 완성, 자동 제안 등의 기능 제공
 
 >[!NOTE]
@@ -73,7 +85,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 **다른 이름으로 저장**&#x200B;을 사용하여 새 쿼리를 지속합니다.
 
-## 지속 쿼리 업데이트 중 {#updating-persisted-query}
+## 유지된 쿼리 업데이트 {#updating-persisted-query}
 
 **[지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md)** 패널(맨 왼쪽)의 목록에서 업데이트하려는 쿼리를 선택합니다.
 
@@ -81,7 +93,7 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 ## 쿼리 실행 중 {#running-queries}
 
-새 쿼리를 바로 실행하거나 지속 쿼리를 로드하고 실행할 수 있습니다. 지속 쿼리를 로드하는 경우, 목록에서 선택하면 쿼리가 편집기 패널에 표시됩니다.
+새 쿼리를 바로 실행하거나 유지된 쿼리를 로드하여 실행할 수 있습니다. 지속 쿼리를 로드하는 경우, 목록에서 선택하면 쿼리가 편집기 패널에 표시됩니다.
 
 두 경우 모두 편집기 패널에 표시되는 쿼리는 다음 두 가지 작업을 수행하는 경우 실행되는 쿼리입니다.
 
@@ -157,7 +169,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 
-브라우저에서 이 URL을 사용하여 다음 결과를 확인할 수 있습니다.
+브라우저에서 이 URL을 사용하여 결과를 확인할 수 있습니다.
 
 ![GraphiQL - URL 복사](assets/cfm-graphiql-copy-url.png "GraphiQL - URL 복사")
 
@@ -165,7 +177,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ![GraphiQL - URL 복사](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - URL 복사")
 
-## 지속 쿼리 삭제 중 {#deleting-persisted-queries}
+## 지속 쿼리 삭제 {#deleting-persisted-queries}
 
 지속 쿼리 이름(맨 왼쪽 패널) 오른쪽에 있는 세 개의 세로 점을 통해서도 **삭제** 옵션에 액세스할 수 있습니다.
 
@@ -178,7 +190,7 @@ GraphiQL로 지속 쿼리를 개발 및 테스트하고 나서 [프로덕션 환
 
 ## 키보드 단축키 {#keyboard-shortcuts}
 
-IDE에서 작업 아이콘에 직접 액세스하는 키보드 단축키의 선택 항목은 다음과 같습니다.
+IDE의 작업 아이콘에 직접 액세스할 수 있는 여러 키보드 단축키가 있습니다.
 
 * 쿼리 정렬: `Shift-Control-P`
 * 쿼리 병합: `Shift-Control-M`

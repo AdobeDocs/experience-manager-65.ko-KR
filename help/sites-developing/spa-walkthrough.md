@@ -1,6 +1,6 @@
 ---
 title: SPA 소개 및 워크스루
-description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기본 AEM SPA 편집기와 관련되는 방식을 보여 줍니다.
+description: 이 문서에서는 SPA 개념을 소개하고, 작성용 기본 SPA 애플리케이션을 사용하는 과정을 안내하고, 기반이 되는 AEM SPA 편집기와 어떤 관련이 있는지 보여 줍니다.
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 66%
-
 ---
-
 
 # SPA 소개 및 워크스루 {#spa-introduction-and-walkthrough}
 
@@ -30,19 +44,19 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 이 문서에서는 SPA 편집기를 독자에게 설명하기 전에 간단한 SPA 애플리케이션을 통해 기본적인 콘텐츠 편집을 시연하여 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성을 다루고 SPA 애플리케이션이 AEM SPA 편집기와 관련되는 방식과 상호 작용하는 방법에 대해 자세히 설명합니다.
 
-이 소개 및 워크스루의 목표는 AEM 개발자에게 SPA가 관련이 있는 이유, 일반적인 작동 방식, AEM SPA 편집기에서 SPA를 처리하는 방법과 표준 AEM 애플리케이션과 어떤 차이가 있는지 보여 주는 것입니다.
+이 소개 및 워크스루의 목표는 AEM 개발자에게 SPA가 왜 중요한지, 일반적으로 어떻게 작동하는지, AEM SPA 편집기에서 SPA를 처리하는 방법과 표준 AEM 애플리케이션과 어떤 차이가 있는지 보여 주는 것입니다.
 
 ## 요구 사항 {#requirements}
 
 워크스루는 표준 AEM 기능 및 샘플 WKND SPA Project 앱을 기반으로 합니다. 워크스루와 함께 팔로우하려면 다음 사항을 사용할 수 있어야 합니다.
 
 * [AEM 버전 6.5.4 이상](/help/release-notes/release-notes.md)
-   * 시스템에 대한 관리 권한이 있어야 합니다.
+  * 시스템에 대한 관리 권한이 있어야 합니다.
 * [GitHub에서 사용할 수 있는 샘플 WKND SPA 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa)
-   * React 앱의 [최신 릴리스를 다운로드하십시오.](https://github.com/adobe/aem-guides-wknd-spa/releases) `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`과(와) 유사한 이름이 지정됩니다.
-   * 앱용 [최신 샘플 이미지](https://github.com/adobe/aem-guides-wknd-spa/releases)를 다운로드합니다. `wknd-spa-sample-images-X.Y.Z.zip`과(와) 유사한 이름이 지정됩니다.
-   * [패키지 관리자를 사용하여](/help/sites-administering/package-manager.md) AEM의 다른 패키지와 마찬가지로 패키지를 설치하십시오.
-   * 이 워크스루를 위해 Maven을 사용하여 앱을 설치할 필요는 없습니다.
+  * React 앱의 [최신 릴리스를 다운로드하십시오.](https://github.com/adobe/aem-guides-wknd-spa/releases) `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`과(와) 유사한 이름이 지정됩니다.
+  * 앱용 [최신 샘플 이미지](https://github.com/adobe/aem-guides-wknd-spa/releases)를 다운로드합니다. `wknd-spa-sample-images-X.Y.Z.zip`과(와) 유사한 이름이 지정됩니다.
+  * [패키지 관리자를 사용하여](/help/sites-administering/package-manager.md) AEM의 다른 패키지와 마찬가지로 패키지를 설치하십시오.
+  * 이 워크스루를 위해 Maven을 사용하여 앱을 설치할 필요는 없습니다.
 
 >[!CAUTION]
 >
@@ -52,7 +66,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
-단일 페이지 애플리케이션(SPA)은 데이터를 로드하여 페이지를 동적으로 업데이트하는 Ajax 호출을 통해 클라이언트측에서 렌더링되고 주로 JavaScript를 기반으로 하는 기존 페이지와 다릅니다. 페이지와의 사용자 상호 작용을 기반으로 필요에 따라 대부분의 콘텐츠나 모든 콘텐츠를 추가 리소스가 비동기적으로 로드된 단일 페이지 로드에서 한 번 검색합니다.
+단일 페이지 애플리케이션(SPA)은 데이터를 로드하여 페이지를 동적으로 업데이트하는 Ajax 호출을 통해 클라이언트측에서 렌더링되고 주로 JavaScript를 기반으로 하는 기존 페이지와 다릅니다. 대부분 또는 모든 콘텐츠는 단일 페이지 로드에서 한 번 검색되며, 추가 리소스는 페이지와의 사용자 상호 작용에 따라 필요에 따라 비동기적으로 로드됩니다.
 
 이렇게 하면 페이지 새로 고침의 필요성이 줄어들고 사용자에게 원활하고 빠르며 기본 앱 환경과 같은 경험을 제공할 수 있습니다.
 
@@ -119,7 +133,7 @@ AEM SPA 편집기를 사용하도록 SPA를 빌드하면 콘텐츠 작성자는 
    >
    >즉석 텍스트 편집기 및 SPA에 대한 자세한 내용은 [SPA 편집기 개요](spa-overview.md#requirements-limitations)를 참조하십시오.
 
-1. 자산 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그 앤 드롭합니다.
+1. Assets 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그 앤 드롭합니다.
 
    ![4단계](assets/spa-walkthrough-step-4.png)
 
@@ -131,7 +145,7 @@ AEM SPA 편집기를 사용하도록 SPA를 빌드하면 콘텐츠 작성자는 
 
 >[!NOTE]
 >
->SPA 편집기는 애플리케이션의 DOM을 수정하지 않습니다. SPA는 자체 DOM을 담당합니다.
+>SPA 편집기는 애플리케이션의 DOM을 수정하지 않습니다. SPA 자체가 DOM을 담당합니다.
 >
 >이 작동 방식을 보려면 이 문서의 다음 섹션인 [SPA 앱 및 AEM SPA 편집기](#spa-apps-and-the-aem-spa-editor)로 계속 진행합니다.
 
@@ -179,7 +193,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
    * 페이지 본문에는 콘텐츠가 없습니다. 주로 스타일 시트와 `clientlib-react.min.js` 등 다양한 스크립트에 대한 호출로 구성됩니다.
    * 해당 스크립트는 이 애플리케이션의 기본 드라이버이고 모든 콘텐츠 렌더링을 담당합니다.
 
-1. 브라우저의 기본 제공 도구를 사용하여 페이지를 검사합니다. DOM 콘텐츠가 완전히 로드되어 있는지 확인합니다.
+1. 브라우저의 기본 제공 도구를 사용하여 페이지를 검사하십시오. DOM 콘텐츠가 완전히 로드되어 있는지 확인합니다.
 
    ![4단계](assets/spa-walkthrough-step-1-4.png)
 
@@ -239,7 +253,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
 
    이는 편집기가 SPA 내에서 편집 가능한 구성 요소로 인식하는 데 필요한 유일한 마크업 속성입니다. SPA 편집기는 이 속성을 기반으로 올바른 프레임, 도구 모음 등이 로드되도록 구성 요소와 연결된 편집 가능한 구성을 결정합니다.
 
-   일부 특정 클래스 이름이 플레이스홀더 표기 및 자산 드래그 앤 드롭 기능에 추가되기도 합니다.
+   일부 특정 클래스 이름이 플레이스홀더 표기 및 에셋 드래그 앤 드롭 기능에 추가되기도 합니다.
 
    >[!NOTE]
    >

@@ -10,13 +10,29 @@ role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 1%
-
 ---
-
 # 제출된 XML 데이터를 사용하여 PDF 문서 생성 {#creating-pdf-documents-with-submittedxml-data}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -101,10 +117,10 @@ Forms, 출력 및 Document Management API(Java)를 사용하여 제출된 XML �
 
    * `FormsServiceClient` 개체의 `processFormSubmission` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 양식 데이터를 포함하는 `com.adobe.idp.Document` 개체입니다.
-      * 모든 관련 HTTP 헤더를 포함하여 환경 변수를 지정하는 문자열 값입니다. `CONTENT_TYPE` 환경 변수에 대해 하나 이상의 값을 지정하여 처리할 콘텐츠 형식을 지정하십시오. 예를 들어 XML 데이터를 처리하려면 이 매개 변수에 대해 `CONTENT_TYPE=text/xml` 문자열 값을 지정하십시오.
-      * `HTTP_USER_AGENT` 헤더 값을 지정하는 문자열 값(예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`).
-      * 런타임 옵션을 저장하는 `RenderOptionsSpec` 개체입니다.
+     * 양식 데이터를 포함하는 `com.adobe.idp.Document` 개체입니다.
+     * 모든 관련 HTTP 헤더를 포함하여 환경 변수를 지정하는 문자열 값입니다. `CONTENT_TYPE` 환경 변수에 대해 하나 이상의 값을 지정하여 처리할 콘텐츠 형식을 지정하십시오. 예를 들어 XML 데이터를 처리하려면 이 매개 변수에 대해 `CONTENT_TYPE=text/xml` 문자열 값을 지정하십시오.
+     * `HTTP_USER_AGENT` 헤더 값을 지정하는 문자열 값(예: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`).
+     * 런타임 옵션을 저장하는 `RenderOptionsSpec` 개체입니다.
 
      `processFormSubmission` 메서드가 양식 제출 결과를 포함하는 `FormsResult` 개체를 반환합니다.
 

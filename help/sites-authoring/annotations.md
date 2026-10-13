@@ -9,13 +9,26 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 34%
-
+source-wordcount: '636'
+ht-degree: 26%
 ---
-
 # 페이지 편집 시 주석{#annotations-when-editing-a-page}
 
 웹 사이트의 페이지에 콘텐츠를 추가하는 것은 종종 실제로 게시되기 전에 토론이 진행될 수 있습니다. 이를 돕기 위해 콘텐츠와 직접 관련된 많은 구성 요소(예: 레이아웃과 반대)를 사용하여 주석을 추가할 수 있습니다.
@@ -103,13 +116,13 @@ ht-degree: 34%
 
    * 텍스트 표시자를 클릭하여 주석을 엽니다. 열면 전체 텍스트를 보고, 변경 내용을 적용하거나 주석을 삭제할 수 있습니다.
 
-      * 스케치는 주석과 독립적으로 삭제할 수 없습니다.
+     * 스케치는 주석과 독립적으로 삭제할 수 없습니다.
 
    * 텍스트 마커 위치 변경.
    * 스케치 선을 클릭하여 해당 스케치를 선택하고 원하는 위치로 드래그합니다.
    * 구성 요소 이동 또는 복사
 
-      * 모든 관련 주석과 해당 스케치가 이동 또는 복사되며 단락을 기준으로 해당 위치가 그대로 유지됩니다.
+     * 모든 관련 주석과 해당 스케치가 이동 또는 복사되며 단락을 기준으로 해당 위치가 그대로 유지됩니다.
 
 1. 주석 모드를 종료하고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 주석 아이콘(x 기호)을 클릭합니다.
 
@@ -119,6 +132,6 @@ ht-degree: 34%
 
 ### 주석 표시기 {#annotation-indicator}
 
-주석은 편집 모드에 나타나지는 않지만, 도구 모음 상단 오른쪽에 있는 배지에 현재 페이지에 대해 존재하는 주석의 수가 표시됩니다. 배지는 기본 [주석] 아이콘을 대신하며 주석 모드로/에서 전환하는 빠른 링크로 작동합니다.
+주석은 편집 모드에 나타나지 않지만, 도구 모음 오른쪽 상단의 배지에 현재 페이지에 대해 존재하는 주석의 수가 표시됩니다. 배지는 기본 주석 아이콘을 대체하지만 여전히 주석 모드로/에서 전환하는 빠른 링크로 작동합니다.
 
 ![주석 표시기](assets/chlimage_1-242.png)

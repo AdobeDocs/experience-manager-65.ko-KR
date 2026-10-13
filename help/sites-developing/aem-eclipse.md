@@ -9,13 +9,24 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 2%
-
+source-wordcount: '1296'
+ht-degree: 3%
 ---
-
 
 # Eclipse용 AEM 개발자 도구 {#aem-developer-tools-for-eclipse}
 
@@ -38,8 +49,8 @@ AEM 개발을 보다 쉽게 만드는 몇 가지 기능을 제공합니다.
 AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 * Enterprise Java 및 웹 개발자용 [Eclipse IDE를 다운로드하여 설치합니다.](https://www.eclipse.org/downloads/packages/)
-   * AEM Developer Tools for Eclipse 버전 1.4.0은 Eclipse 2022-12(4.26) 이상과 호환되며, 실행하려면 Java 17 이상이 필요합니다.
-* `eclipse.ini`Eclipse FAQ[에 설명된 대로 &#x200B;](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
+  * AEM Developer Tools for Eclipse 버전 1.4.0은 Eclipse 2022-12(4.26) 이상과 호환되며, 실행하려면 Java 17 이상이 필요합니다.
+* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)에 설명된 대로 `eclipse.ini` 구성 파일을 편집하여 1GB 이상의 힙 메모리가 있는지 확인하도록 Eclipse 설치를 구성합니다.
 
 >[!NOTE]
 >
@@ -97,7 +108,7 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
    >
    >[m2eclipse](https://eclipse.dev/m2e/)에서 Archetype 카탈로그를 스캔해야 하므로 이 단계는 잠시 걸릴 수 있습니다.
 
-1. `com.adobe.aem : aem-project-archetype : <highest-number>`Archetype **드롭다운에서**&#x200B;을(를) 자동으로 선택해야 합니다. 원하는 경우 이전 버전을 선택합니다. **다음**&#x200B;을 클릭합니다.
+1. **Archetype** 드롭다운에서 `com.adobe.aem : aem-project-archetype : <highest-number>`을(를) 자동으로 선택해야 합니다. 원하는 경우 이전 버전을 선택합니다. **다음**&#x200B;을 클릭합니다.
 
    ![Archetype 버전 선택](assets/select-archetype.png)
 
@@ -142,8 +153,8 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
 
 1. 지침을 따라 문제를 적절하게 분리하여 기본 프로젝트 구조를 만드는 [샘플 다중 모듈 프로젝트](#sample-multi-module-project)을(를) 만듭니다.
 
-   * `PROJECT.ui.apps` 및 `/apps` 콘텐츠에 대한 `/etc`
-   * 작성된 `PROJECT.ui.content`에 대한 `/content`
+   * `/apps` 및 `/etc` 콘텐츠에 대한 `PROJECT.ui.apps`
+   * 작성된 `/content`에 대한 `PROJECT.ui.content`
    * Java 번들에 대한 `PROJECT.core`
    * 통합 테스트용 `PROJECT.it.launcher` 및 `PROJECT.it.tests`
 
@@ -163,7 +174,7 @@ _Eclipse용 Experience Manager 개발자 도구_&#x200B;에는 Eclipse의 프로
    1. 동일한 위치에 콘텐츠 패키지의 콘텐츠 폴더를 배치합니다.
    1. Eclipse에서 `PROJECT.ui.content` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 고침**&#x200B;을 선택합니다.
 
-1. 콘텐츠 패키지의 `filter.xml` 파일을 별도의 텍스트/코드 편집기에서 열어 콘텐츠 패키지의 콘텐츠에 일치하도록 이 두 프로젝트의 `META-INF/vault/filter.xml` 파일을 업데이트합니다.
+1. 콘텐츠 패키지의 `META-INF/vault/filter.xml` 파일을 별도의 텍스트/코드 편집기에서 열어 콘텐츠 패키지의 콘텐츠에 일치하도록 이 두 프로젝트의 `filter.xml` 파일을 업데이트합니다.
 
    * 다음은 `filter.xml` 파일이 표시되는 모습의 예입니다.
 
@@ -243,6 +254,6 @@ Eclipse용 공식 Apache Sling IDE 툴링 웹 사이트는 유용한 추가 정�
 
 다음의 공식 [Eclipse](https://www.eclipse.org/) 설명서는 환경을 설정하는 데 도움이 될 수 있습니다.
 
-* [Eclipse 시작](https://eclipseide.org/getting-started/)
-* [Eclipse Luna 도움말 시스템](https://help.eclipse.org/latest/index.jsp)
+* [Eclipse 시작하기](https://eclipseide.org/getting-started/)
+* [이클립스 루나 도움말](https://help.eclipse.org/latest/index.jsp)
 * [Maven 통합(m2eclipse)](https://www.eclipse.org/m2e/)

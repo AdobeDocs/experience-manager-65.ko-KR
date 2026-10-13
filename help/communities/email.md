@@ -10,13 +10,20 @@ role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 0%
-
 ---
-
 # 이메일 구성 {#configuring-email}
 
 AEM Communities은 다음에 대해 이메일을 사용합니다.
@@ -36,7 +43,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 * 관리자 권한으로 기본 게시자에 로그인하고 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * `Day CQ Mail Service`을(를) 찾습니다.
 * 편집 아이콘을 선택합니다.
@@ -91,7 +98,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 
 * 관리자 권한으로 기본 게시자에 로그인하고 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
-   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * `AEM Communities Email Reply Configuration` 찾기.
 
@@ -187,7 +194,7 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 * **[!UICONTROL 경로로 가져오기]**&ast;
 
   *(필수)* 설정 `/content/usergenerated/mailFolder/postEmails`
-`postEmails`폴더를 찾아 **확인**&#x200B;을 선택합니다.
+  `postEmails`폴더를 찾아 **확인**&#x200B;을 선택합니다.
 
 * **[!UICONTROL 업데이트 간격(초)]**
 
@@ -212,8 +219,8 @@ AEM Communities은 다음에 대해 이메일을 사용합니다.
 * 관리자 권한으로 기본 게시자에 로그인하고 [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)&#x200B;(으)로 이동합니다.
 * 새로 생성된 구성을 선택하고 다음 속성을 수정합니다.
 
-   * **feedType**: `pop3s`을(를) **`emailreply`**(으)로 바꾸기
-   * **소스**: 소스의 프로토콜 `pop3s://`을(를) **`emailreply://`**(으)로 바꾸기
+  * **feedType**: `pop3s`을(를) **`emailreply`**(으)로 바꾸기
+  * **소스**: 소스의 프로토콜 `pop3s://`을(를) **`emailreply://`**(으)로 바꾸기
 
 ![폴링 프로토콜](assets/polling-protocol.png)
 

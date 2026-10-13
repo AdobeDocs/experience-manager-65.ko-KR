@@ -7,13 +7,27 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 26%
-
 ---
-
 # AEM Forms JEE 패치 설치 관리자 {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
@@ -36,15 +50,15 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. 사용 중인 운영 체제에 따라 이름이 지정된 디렉터리에서 다음 작업을 수행합니다.
 
    * **Windows**
-설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하고 aemforms65_cfp_install.exe 파일을 두 번 클릭합니다.
+     설치 관리자를 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동하고 aemforms65_cfp_install.exe 파일을 두 번 클릭합니다.
 
-      * (Windows 32비트) `Windows\Disk1\InstData\VM`
-      * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32비트) `Windows\Disk1\InstData\VM`
+     * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-적절한 디렉터리로 이동한 다음 명령 프롬프트에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
+     적절한 디렉터리로 이동한 다음 명령 프롬프트에서 `./aem65_cfp_install.bin`을(를) 입력합니다.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 

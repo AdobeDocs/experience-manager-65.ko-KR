@@ -9,13 +9,27 @@ exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 4%
-
 ---
-
 # 자격 증명 사용 정보 검토 {#review-credential-use-information}
 
 자격 증명에는 Acrobat Reader DC 확장 최종 사용자 웹 응용 프로그램을 통해 액세스할 수 있는 해당 용도를 설명하는 정보가 포함되어 있습니다. 이 정보를 사용하여 설치된 자격 증명의 유형(평가 또는 프로덕션)과 유효 날짜를 확인할 수 있습니다.

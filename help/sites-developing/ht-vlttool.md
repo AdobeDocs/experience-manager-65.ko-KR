@@ -9,13 +9,24 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2724'
 ht-degree: 2%
-
 ---
-
 # VLT 도구 사용 방법 {#how-to-use-the-vlt-tool}
 
 Jackrabbit FileVault 도구(VLT)는 [Apache Foundation](https://www.apache.org/)에서 개발한 도구로서 Jackrabbit/AEM 인스턴스의 내용을 파일 시스템에 매핑합니다. VLT 도구는 SVN(Subversion) 클라이언트와 같은 소스 제어 시스템 클라이언트와 유사한 기능을 가지며, 일반적인 체크 인, 체크 아웃 및 관리 작업 및 프로젝트 내용을 유연하게 표현하기 위한 구성 옵션을 제공합니다.
@@ -24,7 +35,7 @@ Jackrabbit FileVault 도구(VLT)는 [Apache Foundation](https://www.apache.org/)
 
 ## 개념 및 아키텍처 {#concepts-and-architecture}
 
-Filevault 도구의 개념과 구조에 대한 자세한 개요는 공식 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/overview.html)의 [Filevault 개요](https://jackrabbit.apache.org/filevault/vaultfs.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/index.html) 페이지를 참조하십시오.
+Filevault 도구의 개념과 구조에 대한 자세한 개요는 공식 [Apache Jackrabbit Filevault 설명서](https://jackrabbit.apache.org/filevault/index.html)의 [Filevault 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 페이지를 참조하십시오.
 
 ## VLT 시작하기 {#getting-started-with-vlt}
 
@@ -45,7 +56,7 @@ VLT 도구를 사용하려면 먼저 설치해야 합니다. 추가 도구이므
    >
    >VLT 도구의 원본은 [GitHub에서 사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
 1. 아카이브를 추출합니다.
-1. 명령 파일 `<archive-dir>/vault-cli-<version>/bin` 또는 `PATH`에 적절하게 액세스할 수 있도록 `vlt`을(를) 환경 `vlt.bat`에 추가하십시오. 예:
+1. 명령 파일 `vlt` 또는 `vlt.bat`에 적절하게 액세스할 수 있도록 `<archive-dir>/vault-cli-<version>/bin`을(를) 환경 `PATH`에 추가하십시오. 예:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -224,7 +235,7 @@ Options:
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-이 작업을 수행하면 `geo` 및 `META-INF` 디렉터리가 있는 새 내보내기 루트 `jcr_root`이(가) 만들어지고 `/apps/geometrixx`의 `geo/jcr_root` 아래에 모든 파일이 저장됩니다.
+이 작업을 수행하면 `META-INF` 및 `jcr_root` 디렉터리가 있는 새 내보내기 루트 `geo`이(가) 만들어지고 `geo/jcr_root`의 `/apps/geometrixx` 아래에 모든 파일이 저장됩니다.
 
 ### 필터링된 체크아웃 수행 {#performing-a-filtered-checkout}
 
@@ -739,7 +750,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->`--exclude` 및 `<src>` 인수 앞에 `<dst>` 옵션 다음에 다른 옵션이 와야 합니다. 예:
+>`<src>` 및 `<dst>` 인수 앞에 `--exclude` 옵션 다음에 다른 옵션이 와야 합니다. 예:
 >
 >`vlt rcp -e ".*\.txt" -r`
 

@@ -10,13 +10,28 @@ exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 74%
-
+source-wordcount: '840'
+ht-degree: 73%
 ---
-
 # 오퍼 생성 및 관리{#creating-and-managing-offers}
 
 오퍼 콘솔을 사용하여 [활동 경험에서 사용](/help/sites-authoring/content-targeting-touch.md)할 수 있는 오퍼를 생성하십시오. 여러 경험에 동일한 오퍼가 필요할 때 오퍼 콘솔에서 오퍼를 생성하면 시간이 절약됩니다.

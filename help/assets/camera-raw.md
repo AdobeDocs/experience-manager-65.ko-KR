@@ -1,21 +1,30 @@
 ---
 title: 디지털 자산 처리를 위한 [!DNL Adobe Camera Raw] 지원
-description: ' [!DNL Adobe Experience Manager Assets]에서  [!DNL Adobe Camera Raw] 지원을 사용하도록 설정하는 방법 알아보기'
+description: '[!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Camera Raw] 지원을 사용하도록 설정하는 방법 알아보기'
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '396'
 ht-degree: 3%
-
 ---
-
 # [!DNL Adobe Camera Raw]을(를) 사용하여 이미지 처리 {#camera-raw-support}
 
-[!DNL Adobe Camera Raw] 지원을 통해 CR2, NEF 및 RAF와 같은 원시 파일 형식을 처리하고 JPEG 형식으로 이미지를 렌더링할 수 있습니다. Software Distribution에서 사용 가능한 [Camera Raw 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)를 사용하여 [!DNL Adobe Experience Manager Assets]에서 기능을 지원합니다.
+[!DNL Adobe Camera Raw] 지원을 통해 CR2, NEF 및 RAF와 같은 원시 파일 형식을 처리하고 JPEG 형식으로 이미지를 렌더링할 수 있습니다. 이 기능은 소프트웨어 배포에서 사용할 수 있는 [Camera Raw 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)를 사용하여 [!DNL Adobe Experience Manager Assets]에서 지원됩니다.
 
 >[!NOTE]
 >
@@ -37,16 +46,16 @@ ht-degree: 3%
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Camera Raw 사이드 패널에서 **[!UICONTROL 축소판 처리]** 단계 아래에 **[!UICONTROL DNG 처리기]** 단계를 추가하십시오.
-1. **[!UICONTROL Camera Raw/DNG 처리기]** 단계에서 **[!UICONTROL 인수]** 탭에 다음 구성을 추가합니다.
+1. 사이드 패널에서 **[!UICONTROL 축소판 처리]** 단계 아래에 **[!UICONTROL Camera Raw/DNG 처리기]** 단계를 추가합니다.
+1. **[!UICONTROL Camera Raw/DNG 처리기]** 단계의 **[!UICONTROL 인수]** 탭에서 다음 구성을 추가합니다.
 
    * **[!UICONTROL MIME 유형]**: `image/dng` 및 `image/x-raw-(.*)`
    * **[!UICONTROL 명령]**:
 
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
 
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
@@ -54,7 +63,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Camera Raw 위의 구성이 **[!UICONTROL 샘플 DAM 자산 업데이트 및 DNG 처리 단계]** 구성과 동일한지 확인하십시오.
+>위의 구성이 **[!UICONTROL Camera Raw 및 DNG 처리 단계를 사용하여 샘플 DAM 자산 업데이트]** 구성과 동일한지 확인하십시오.
 
 이제 camera raw 파일을 Assets으로 가져올 수 있습니다. Camera Raw 패키지를 설치하고 필요한 워크플로를 구성하면 **[!UICONTROL 이미지 조정]** 옵션이 사이드 창 목록에 나타납니다.
 

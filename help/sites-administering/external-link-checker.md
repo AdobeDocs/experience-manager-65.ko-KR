@@ -5,13 +5,22 @@ exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 0%
-
+source-wordcount: '992'
+ht-degree: 3%
 ---
-
 # 링크 검사기 {#the-link-checker}
 
 콘텐츠 작성자는 자신의 콘텐츠 페이지에 포함된 모든 링크의 유효성 검사를 신경 쓰지 않아도 됩니다.
@@ -46,7 +55,7 @@ ht-degree: 0%
 
 ## 외부 링크 확인 {#external}
 
-외부 링크는 AEM 리포지토리 외부의 컨텐츠에 대한 링크입니다. 외부 링크는 RTE를 사용하거나 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
+외부 링크는 AEM 저장소 외부의 콘텐츠에 대한 링크입니다. 외부 링크는 RTE를 사용하거나 사용자 지정 구성 요소를 사용하여 추가할 수 있습니다. 예:
 
 * 내 페이지 `/content/wknd/us/en/adventures/ski-touring.html`
 * [텍스트 구성 요소에 `https://bunwarmerthermalunderwear.com`에 대한 링크를 포함합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko)
@@ -72,14 +81,14 @@ ht-degree: 0%
 다음 정보가 표시됩니다.
 
 * **상태** - 다음 중 하나일 수 있는 링크의 유효성 검사 상태입니다.
-   * **유효** - 링크 검사기에서 외부 링크에 연결할 수 있습니다.
-   * **보류 중** - 외부 링크가 사이트 콘텐츠에 추가되었지만 링크 검사기에서 아직 유효성을 검사하지 못했습니다.
-   * **잘못됨** - 링크 검사기에서 외부 링크에 연결할 수 없습니다.
+  * **유효** - 링크 검사기에서 외부 링크에 연결할 수 있습니다.
+  * **보류 중** - 외부 링크가 사이트 콘텐츠에 추가되었지만 링크 검사기에서 아직 유효성을 검사하지 못했습니다.
+  * **잘못됨** - 링크 검사기에서 외부 링크에 연결할 수 없습니다.
 * **URL** - 외부 링크
 * **레퍼러** - 외부 링크가 포함된 콘텐츠 페이지
-   * 구성된 경우 [만 채워집니다.](#configuring)
+  * 구성된 경우 [만 채워집니다.](#configuring)
 * **마지막 확인** - 링크 검사기에서 외부 링크를 확인한 마지막 시간
-   * 링크 확인 빈도 [은(는) 구성할 수 있습니다.](#configuring)
+  * 링크 확인 빈도 [은(는) 구성할 수 있습니다.](#configuring)
 * **마지막 상태** - 링크 확인 마지막 외부 링크 확인 시 반환된 마지막 HTML 상태 코드
 * **마지막 사용 가능** - 링크 검사기에서 링크를 마지막으로 사용할 수 있게 된 이후의 시간입니다.
 * **마지막으로 액세스됨** - 외부 링크가 있는 페이지가 작성 인터페이스에서 마지막으로 액세스된 이후의 시간입니다.

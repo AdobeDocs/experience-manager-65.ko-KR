@@ -10,13 +10,27 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3028'
 ht-degree: 3%
-
 ---
-
 # Dynamic Media의 폴더 수준에서 선택적 게시 구성 {#selective-publish-configure-folder}
 
 폴더 수준에서 Adobe Experience Manager 또는 Dynamic Media에 또는 Dynamic Media에서 에셋을 게시 또는 게시 취소하도록 선택할 수 있습니다. Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 전적으로 의존하는 대신 **[!UICONTROL 게시 관리]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 사용할 수 있습니다.
@@ -29,7 +43,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 *선택적 게시*(으)로 설정된 폴더에서 자산을 **[!UICONTROL 이동]**&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
+>폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 **[!UICONTROL 선택적 게시]**(으)로 설정된 폴더에서 자산을 *이동*&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
 
 나중에 폴더의 **[!UICONTROL 선택적 게시]** 설정을 변경하기로 결정하는 경우 이러한 변경 사항은 해당 시점부터 해당 폴더에 업로드하는 새 자산에만 영향을 줍니다. 폴더에 있는 기존 자산의 게시 상태는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자에서 수동으로 변경할 때까지 그대로 유지됩니다.
 
@@ -76,8 +90,8 @@ ht-degree: 3%
 
    | Dynamic Media 게시 모드 옵션 | 설명 |
    | --- | --- |
-   | **[!UICONTROL 즉시]** | 에셋이 이 폴더에 업로드되면 시스템은 에셋을 Experience Manager에 수집하고 URL/임베드를 즉시 제공합니다. 이 옵션은 Experience Manager 게시에만 연결되며 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>이전 단계에서 *동기화 모드*&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 **[!UICONTROL 사용할 수 없음]**&#x200B;입니다. |
-   | **[!UICONTROL 활성화 시]** | 에셋이 이 폴더에 업로드되는 경우 URL/포함 링크를 제공하기 전에 먼저 에셋을 명시적으로 게시해야 합니다. 이 옵션은 Experience Manager 게시에만 연결됩니다.<br>이전 단계에서 *동기화 모드*&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 **[!UICONTROL 사용할 수 없음]**&#x200B;입니다. |
+   | **[!UICONTROL 즉시]** | 에셋이 이 폴더에 업로드되면 시스템은 에셋을 Experience Manager에 수집하고 URL/임베드를 즉시 제공합니다. 이 옵션은 Experience Manager 게시에만 연결되며 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 *사용할 수 없음*&#x200B;입니다. |
+   | **[!UICONTROL 활성화 시]** | 에셋이 이 폴더에 업로드되는 경우 URL/포함 링크를 제공하기 전에 먼저 에셋을 명시적으로 게시해야 합니다. 이 옵션은 Experience Manager 게시에만 연결됩니다.<br>이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 *사용할 수 없음*&#x200B;입니다. |
    | **[!UICONTROL 선택적 게시]** | Assets은 공개 도메인에서 제공하기 위해 Experience Manager 또는 Dynamic Media 중 선택한 항목에 게시됩니다. 두 게시 방법은 상호 배타적입니다. 즉, 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 보안 미리 보기를 위해 Experience Manager에만 자산을 게시할 수 있습니다. 이러한 동일한 자산은 공개 도메인에서 제공하기 위해 DMS7에 게시된 *아님*&#x200B;입니다. 이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우에는 이 옵션을 사용할 수 없습니다. |
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택하여 Experience Manager Assets으로 돌아갑니다.
@@ -97,7 +111,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 *선택적 게시*(으)로 설정된 폴더에서 자산을 **[!UICONTROL 이동]**&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
+>폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 **[!UICONTROL 선택적 게시]**(으)로 설정된 폴더에서 자산을 *이동*&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
 
 **게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시하려면:**
 
@@ -147,7 +161,7 @@ ht-degree: 3%
    | 작업 | 설명 |
    | --- | --- |
    | **[!UICONTROL 게시 취소]**(Experience Manager) | Experience Manager에서 에셋 게시를 취소하려면 이 옵션을 선택합니다. |
-   | **[!UICONTROL Dynamic Media에서 게시 취소]** | Dynamic Media에서 에셋 게시를 취소하려면 이 옵션을 선택합니다.<br>이 옵션은 폴더 속성에서 **[!UICONTROL Dynamic Media 게시 모드]**&#x200B;가 **[!UICONTROL 선택적 게시]**(으)로 설정된 경우에만 사용할 수 있습니다. |
+   | **[!UICONTROL Dynamic Media에서 게시 취소]** | Dynamic Media에서 자산 게시를 취소하려면 이 옵션을 선택하십시오.<br>이 옵션은 폴더 속성에서 **[!UICONTROL Dynamic Media 게시 모드]**&#x200B;가 **[!UICONTROL 선택적 게시]**(으)로 설정된 경우에만 사용할 수 있습니다. |
 
 1. **[!UICONTROL 일정]**&#x200B;에서 비활성화 시기를 설정합니다.
 
@@ -188,7 +202,7 @@ ht-degree: 3%
    | 빠른 게시 옵션 | 설명 |
    | --- | --- |
    | Experience Manager에 게시 | 선택한 자산을 Experience Manager에 즉시 게시합니다. |
-   | Brand Portal에 게시 | 선택한 자산을 **[!UICONTROL Brand Portal]**&#x200B;에 즉시 게시합니다.<br>이 옵션은 Experience Manager Assets 인스턴스에 이미 **[!UICONTROL Brand Portal]**&#x200B;이(가) 구성되어 있는 경우에만 사용할 수 있습니다. |
+   | Brand Portal에 게시 | 선택한 자산을 **[!UICONTROL Brand Portal]**&#x200B;에 즉시 게시합니다.<br>이 옵션은 Experience Manager Assets 인스턴스에 **[!UICONTROL Brand Portal]**&#x200B;이(가) 이미 구성되어 있는 경우에만 사용할 수 있습니다. |
    | Dynamic Media에 게시 | 선택한 자산을 Dynamic Media에 즉시 게시합니다.<br>자산을 Dynamic Media에 동기화해야 합니다. 필요한 경우 폴더의 속성에서 **[!UICONTROL 동기화 모드]**&#x200B;가 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media에 동기화]**&#x200B;하도록 이미 설정되어 있는지 확인하십시오. |
 
 1. **[!UICONTROL 확인]**&#x200B;을 선택한 다음 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.

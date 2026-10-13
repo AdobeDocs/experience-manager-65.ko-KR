@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3471'
 ht-degree: 3%
-
 ---
-
 # 복제{#replication}
 
 복제 에이전트는 다음과 같은 작업을 수행하는 데 사용되는 메커니즘으로 Adobe Experience Manager(AEM)의 중심입니다.
@@ -81,7 +90,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 >* 게시의 에이전트 : 역방향 복제(보낼 편지함)
 >
 >에이전트나 큐의 상태를 확인하려면 **도구** 콘솔을 사용하십시오.
->복제 에이전트 모니터링[&#128279;](#monitoring-your-replication-agents)을 참조하세요.
+>[복제 에이전트 모니터링](#monitoring-your-replication-agents)을 참조하세요.
 
 #### 복제(작성자-게시) {#replication-author-to-publish}
 
@@ -138,16 +147,16 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
 
   에이전트가 **사용**&#x200B;이면 큐는 다음과 같이 표시됩니다.
 
-   * 항목이 처리되는 경우 **활성**.
-   * 큐가 비어 있는 경우 **유휴 상태**
-   * 항목이 큐에 있지만 처리할 수 없는 경우 **차단됨**. 예를 들어 수신 큐가 비활성화된 경우.
+  * 항목이 처리되는 경우 **활성**.
+  * 큐가 비어 있는 경우 **유휴 상태**
+  * 항목이 큐에 있지만 처리할 수 없는 경우 **차단됨**. 예를 들어 수신 큐가 비활성화된 경우.
 
 * **직렬화 유형**
 
   직렬화 유형:
 
-   * **기본값**: 에이전트를 자동으로 선택할 경우 설정합니다.
-   * **Dispatcher 플러시**: 에이전트를 Dispatcher 캐시 플러시에 사용하려면 이 옵션을 선택하십시오.
+  * **기본값**: 에이전트를 자동으로 선택할 경우 설정합니다.
+  * **Dispatcher 플러시**: 에이전트를 Dispatcher 캐시 플러시에 사용하려면 이 옵션을 선택하십시오.
 
 * **다시 시도 지연**
 
@@ -159,8 +168,8 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
 
   환경에 따라 에이전트는 이 사용자 계정을 사용하여 다음을 수행합니다.
 
-   * 작성 환경에서 컨텐츠 수집 및 패키지
-   * 게시 환경에서 컨텐츠 만들기 및 작성
+  * 작성 환경에서 컨텐츠 수집 및 패키지
+  * 게시 환경에서 컨텐츠 만들기 및 작성
 
   시스템 사용자 계정(sling에 관리자 사용자로 정의된 계정, 기본적으로 `admin`임)을 사용하려면 이 필드를 비워 두십시오.
 
@@ -180,9 +189,9 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
 
   로그 메시지에 사용할 상세 정보 수준을 지정합니다.
 
-   * `Error`: 오류만 기록됩니다
-   * `Info`: 오류, 경고 및 기타 정보 메시지가 기록됩니다
-   * `Debug`: 주로 디버그를 위해 높은 수준의 세부 정보가 메시지에 사용됩니다.
+  * `Error`: 오류만 기록됩니다
+  * `Info`: 오류, 경고 및 기타 정보 메시지가 기록됩니다
+  * `Debug`: 주로 디버그를 위해 높은 수준의 세부 정보가 메시지에 사용됩니다.
 
   기본값: `Info`
 
@@ -202,8 +211,8 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
 
   예:
 
-   * 기본 에이전트가 `https://localhost:4503/bin/receive`에 복제될 수 있습니다.
-   * Dispatcher 플러시 에이전트가 `https://localhost:8000/dispatcher/invalidate.cache`에 복제할 수 있습니다.
+  * 기본 에이전트가 `https://localhost:4503/bin/receive`에 복제될 수 있습니다.
+  * Dispatcher 플러시 에이전트가 `https://localhost:8000/dispatcher/invalidate.cache`에 복제할 수 있습니다.
 
   여기에서 지정된 프로토콜(HTTP 또는 HTTPS)이 전송 방법을 결정합니다.
 
@@ -281,15 +290,15 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
 
   Dispatcher 플러시 에이전트의 경우 다음 세 가지 표준 항목을 변경할 필요가 없습니다.
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   이 탭은 핸들이나 경로를 플러시할 때 사용할 작업을 나타내기 위해 적절하게 사용됩니다. 하위 매개 변수는 동적입니다.
 
-   * `{action}`은(는) 복제 작업을 나타냅니다.
+  * `{action}`은(는) 복제 작업을 나타냅니다.
 
-   * `{path}`은(는) 경로를 나타냅니다.
+  * `{path}`은(는) 경로를 나타냅니다.
 
   이 매개변수는 요청과 관련된 경로/작업으로 대체되므로 &quot;하드코딩&quot;할 필요가 없습니다.
 
@@ -424,19 +433,19 @@ MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 
 
    * **설정** 탭에서:
 
-      * **사용**&#x200B;을 활성화합니다.
-      * **설명**&#x200B;을 입력하십시오.
-      * **다시 시도 지연**&#x200B;을(를) `60000`(으)로 설정합니다.
+     * **사용**&#x200B;을 활성화합니다.
+     * **설명**&#x200B;을 입력하십시오.
+     * **다시 시도 지연**&#x200B;을(를) `60000`(으)로 설정합니다.
 
-      * **직렬화 형식**&#x200B;을(를) `Default`(으)로 둡니다.
+     * **직렬화 형식**&#x200B;을(를) `Default`(으)로 둡니다.
 
    * **전송** 탭에서:
 
-      * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예:
-        `https://localhost:4504/bin/receive`
+     * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예:
+       `https://localhost:4504/bin/receive`
 
-      * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
-      * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
+     * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
+     * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
 
 1. **확인**&#x200B;을 클릭합니다.
 
@@ -467,19 +476,19 @@ MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 
 
    * **설정** 탭에서:
 
-      * **사용**&#x200B;을 활성화합니다.
-      * **설명**&#x200B;을 입력하십시오.
-      * **Serialization Type**&#x200B;을(를) `Dispatcher Flush`(으)로 유지하거나 에이전트를 만드는 경우 설정하십시오.
+     * **사용**&#x200B;을 활성화합니다.
+     * **설명**&#x200B;을 입력하십시오.
+     * **Serialization Type**&#x200B;을(를) `Dispatcher Flush`(으)로 유지하거나 에이전트를 만드는 경우 설정하십시오.
 
-      * (선택 사항) Dispatcher에 대한 별칭 또는 vanity 경로 무효화 요청을 활성화하려면 **별칭 업데이트**&#x200B;를 선택합니다.
+     * (선택 사항) Dispatcher에 대한 별칭 또는 vanity 경로 무효화 요청을 활성화하려면 **별칭 업데이트**&#x200B;를 선택합니다.
 
    * **전송** 탭에서:
 
-      * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예:
-        `https://localhost:80/dispatcher/invalidate.cache`
+     * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예:
+       `https://localhost:80/dispatcher/invalidate.cache`
 
-      * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
-      * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
+     * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
+     * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
 
    Dispatcher 플러시 에이전트의 경우, 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 URI 속성이 사용됩니다. 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. URL `/path1/invalidate.cache`를 사용하여 첫 번째 팜을 대상으로 지정하고 `/path2/invalidate.cache`를 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
 

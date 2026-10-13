@@ -10,13 +10,20 @@ role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 2%
-
 ---
-
 # 그룹 템플릿 {#group-templates}
 
 그룹 템플릿 콘솔은 [사이트 템플릿](/help/communities/sites.md) 콘솔과 비슷합니다. 두 페이지 모두 커뮤니티 사이트를 구성하는 미리 배선된 페이지 및 기능 세트의 블루프린트입니다. 사이트 템플릿은 기본 커뮤니티를 위한 것이고 그룹 템플릿은 기본 커뮤니티 내에 중첩된 하위 커뮤니티인 커뮤니티 그룹을 위한 것입니다.

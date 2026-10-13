@@ -5,13 +5,37 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 70%
-
 ---
-
 # 콘텐츠 번역 {#translate-content}
 
 번역 통합 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다.
@@ -37,7 +61,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 번역 프로젝트를 통해 Headless AEM 콘텐츠의 번역을 관리할 수 있습니다. 번역 프로젝트는 번역 작업을 중앙에서 볼 수 있도록 다른 언어로 번역할 콘텐츠를 한 곳에 수집합니다.
 
-콘텐츠가 번역 프로젝트에 추가되면 이에 대한 번역 작업이 생성됩니다. 작업은 리소스에서 실행되는 인간 번역 및 기계 번역 워크플로 관리에 사용하는 명령 및 상태 정보를 제공합니다.
+콘텐츠가 번역 프로젝트에 추가되면 이에 대한 번역 작업이 생성됩니다. 작업은 리소스에서 실행되는 사람 번역 및 기계 번역 워크플로를 관리하는 데 사용하는 명령 및 상태 정보를 제공합니다.
 
 두 가지 방법으로 번역 프로젝트를 만들 수 있습니다.
 
@@ -53,7 +77,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ### 콘텐츠 경로를 기반으로 자동으로 번역 프로젝트 만들기 {#automatically-creating}
 
-콘텐츠 소유자가 번역을 담당하는 경우에도 AEM이 번역 프로젝트를 자동으로 생성하도록 하는 것이 더 간편한 방법입니다. AEM이 콘텐츠 경로를 기반으로 번역 프로젝트를 자동으로 생성하도록 하려면 다음 작업을 수행합니다.
+번역도 담당하는 콘텐츠 소유자의 경우 AEM이 번역 프로젝트를 자동으로 생성하도록 하는 것이 더 간편한 방법입니다. AEM이 콘텐츠 경로를 기반으로 번역 프로젝트를 자동으로 생성하도록 하려면 다음 작업을 수행합니다.
 
 1. **탐색** > **자산** > **파일**&#x200B;로 이동합니다. AEM의 Headless 콘텐츠는 콘텐츠 조각이라는 자산으로 저장됩니다.
 1. 프로젝트의 언어 루트를 선택합니다. 이 경우 `/content/dam/wknd/en`이(가) 선택됩니다.
@@ -71,7 +95,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 >[!NOTE]
 >
->번역 언어에 필요한 언어 구조는 콘텐츠 구조의 [정의의 일부로 이미 만들어진 것으로 간주됩니다.](getting-started.md#content-structure) 이 작업은 콘텐츠 설계자와 공동 작업을 통해 수행해야 합니다.
+>번역 언어에 필요한 언어 구조는 콘텐츠 구조의 [정의의 일부로 이미 만들어진 것으로 간주됩니다.](getting-started.md#content-structure) 이 작업은 콘텐츠 아키텍트와 공동 작업을 통해 수행해야 합니다.
 >
 >언어 폴더를 미리 만들지 않으면 이전 단계에 설명된 대로 언어 사본을 만들 수 없습니다.
 
@@ -108,7 +132,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ## 번역 프로젝트 사용 {#using-translation-project}
 
-번역 프로젝트는 번역 작업과 관련된 모든 콘텐츠와 작업을 한 곳에 모아 쉽고 간편하게 번역할 수 있도록 설계되었습니다.
+번역 프로젝트는 번역 작업과 관련된 모든 콘텐츠와 작업을 한 곳에 모아 번역을 간단하게 하고 쉽게 관리할 수 있도록 설계되었습니다.
 
 번역 프로젝트를 보려면 다음 작업을 수행하십시오.
 

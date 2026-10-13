@@ -9,13 +9,20 @@ exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '567'
 ht-degree: 1%
-
 ---
-
 # 웹 사이트 구조 설정 {#setup-website-structure}
 
 웹 사이트를 설정하려면 아래 지침에 따라 다음 위치에 만들 폴더에 대해 설명합니다.
@@ -53,7 +60,7 @@ ht-degree: 1%
 
 1. `/apps/an-scf-sandbox` 폴더를 만듭니다.
 
-   탐색기 창에서 **[!UICONTROL CRXDE Lite]** 사용 중
+   탐색기 창에서 **[!UICONTROL CRXDE Lite]** 사용
 
    1. `/apps` 폴더를 선택하십시오.
    1. **[!UICONTROL 만들기]**...를 마우스 오른쪽 단추로 클릭하거나 **[!UICONTROL 만들기...]** 메뉴를 아래로 당기세요.
@@ -79,7 +86,7 @@ ht-degree: 1%
 
    다른 편집 프로세스와 마찬가지로 자주 저장해야 합니다. 데이터 입력 문제가 발생하는 경우 로그인 시간이 초과되었거나 이전 편집 내용을 저장해야 하기 때문일 수 있습니다.
 
-1. 이제 CRXDE Lite의 탐색기 창에 있는 구조는 다음과 같습니다.
+1. 이제 CRXDE Lite의 탐색기 창에 있는 구조는 다음과 같아야 합니다.
 
    ![crxde-template](assets/crxde-template.png)
 

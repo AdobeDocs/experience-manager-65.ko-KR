@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1508'
 ht-degree: 1%
-
 ---
-
 # 인터랙티브 커뮤니케이션 조건{#conditions-in-interactive-communications}
 
 대화형 통신에 사용할 조건 조각 만들기 및 편집 - 조건은 대화형 통신을 빌드하는 데 사용되는 4가지 유형의 문서 조각 중 하나입니다. 나머지 세 가지는 텍스트, 목록, 레이아웃 단편이다.
@@ -75,10 +89,10 @@ ht-degree: 1%
 
    ![createconditionscreenassetsaddeadannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] 변경 내용을 거부합니다.** 이 아이콘을 선택하여 해당 조건에서 에셋 및 규칙에 적용한 변경 내용을 거부합니다.
-   **[B] 변경 내용을 수락합니다.** 이 아이콘을 선택하여 해당 조건의 에셋 및 규칙에서 변경한 내용을 수락합니다.
-   **[C] 에셋을 복제합니다.** 이 아이콘을 선택하여 해당 조건에 적용된 규칙(있는 경우)과 함께 에셋의 복사본을 만듭니다. 그런 다음 복제된 자산에 대한 규칙 및 자산 편집을 계속할 수 있습니다. 에셋을 복제하면 유사한 규칙을 만들어 특정 컨텍스트를 기반으로 대체 에셋을 표시하는 데 유용합니다.
-   **[미리 보기 표시].** 이 아이콘을 선택하여 [조건 만들기\편집] 페이지에서 에셋 미리 보기를 표시합니다.
+   **[A] 변경 거부.** 이 아이콘을 선택하여 해당 조건에서 수행한 에셋 및 규칙 변경 사항을 거부합니다.
+   **[B] 변경 수락.** 이 아이콘을 선택하여 해당 조건의 에셋 및 규칙에서 변경한 내용을 적용합니다.
+   **[C] 에셋이 중복되었습니다.** 이 아이콘을 선택하여 조건에 적용된 규칙(있는 경우)과 함께 에셋의 사본을 만듭니다. 그런 다음 복제된 자산에 대한 규칙 및 자산 편집을 계속할 수 있습니다. 에셋을 복제하면 유사한 규칙을 만들어 특정 컨텍스트를 기반으로 대체 에셋을 표시하는 데 유용합니다.
+   **[일] 미리 보기를 표시합니다.** 이 아이콘을 선택하면 Create\Edit Condition 페이지 내에 에셋 미리보기가 표시됩니다.
    **&#39;서버 순서 바꾸기.** 조건 내에서 순서를 변경할 에셋을 끌어다 놓으려면 이 아이콘을 길게 선택합니다.
 
    다음 옵션을 선택하여 런타임 시 조건이 작동하는 방식을 지정할 수 있습니다.

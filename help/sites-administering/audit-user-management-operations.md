@@ -10,18 +10,27 @@ exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '300'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager(AEM)에서 사용자 관리 작업을 감사하는 방법 {#how-to-audit-user-management-operations-in-aem}
 
 ## 소개 {#introduction}
 
-AEM에는 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 기능이 도입되었습니다.
+AEM은 나중에 감사할 수 있도록 권한 변경 사항을 기록하는 기능을 도입했습니다.
 
 향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 특히 다음과 같이 기록됩니다.
 

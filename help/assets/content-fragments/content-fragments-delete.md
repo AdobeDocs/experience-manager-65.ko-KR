@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '519'
 ht-degree: 89%
-
 ---
-
 # 콘텐츠 조각 - 삭제 고려 사항 {#content-fragments-delete-considerations}
 
 AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 콘텐츠 조각은 Headless 콘텐츠를 제공하기 위한 강력한 도구이며 콘텐츠 조각 삭제가 가져오는 영향을 신중하게 고려해야 합니다.
@@ -72,15 +84,15 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 
 * 콘텐츠 조각 노드 또는 폴더의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * 모든 콘텐츠 조각의 `jcr:content` 노드의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`
 
 * 모든 콘텐츠 조각의 `jcr:content` 아래에 있는 모든 노드의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
 
 이러한 `remove` 권한은 [CRXDE Lite 내에서 액세스 제어 목록을 사용하여 관리](/help/sites-administering/user-group-ac-admin.md#access-right-management)해야 합니다.
 

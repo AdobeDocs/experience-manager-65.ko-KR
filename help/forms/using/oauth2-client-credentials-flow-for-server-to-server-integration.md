@@ -5,13 +5,26 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '467'
 ht-degree: 69%
-
 ---
-
 # OAuth 2.0 클라이언트 자격 증명 플로우를 사용한 Salesforce 통합  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 버전 | 문서 링크 |
@@ -28,7 +41,7 @@ AEM Forms은 액세스 토큰을 얻기 위해 Salesforce 연결된 애플리케
 인증 코드 흐름 인증을 통한 인증에 OAuth 2.0 클라이언트 자격 증명을 사용하면 여러 가지 이점이 있습니다.
 
 * OAuth 2.0 클라이언트 자격 증명 인증은 사용자당 5개가 넘는 연결을 허용합니다.
-* AEM 데이터 소스 구성은 AEM 사용자에 대한 비활성화, 액세스 변경, 암호 업데이트 작업을 계속합니다.
+* AEM 데이터 소스 구성은 AEM 사용자의 비활성화, 액세스 변경 또는 암호 업데이트 후에도 계속 작동합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -60,11 +73,11 @@ Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에
 1. **[!UICONTROL 부여 유형]**&#x200B;을(를) **[!UICONTROL 클라이언트 자격 증명]**(으)로 선택하십시오.
 1. Salesforce 연결된 앱에서 받은 **[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 보안]**&#x200B;을 지정합니다.
 1. **[!UICONTROL 액세스 토큰 URL]**&#x200B;을 다음과 같은 형식으로 지정합니다.
-   `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
+   `https://[MyDomainName].my.salesforce.com/services/oauth2/token`
 
    >[!NOTE]
    >
-   > 각 조직에는 고유한 특정 도메인 이름이 있습니다.
+   > 각 조직에는 자체적인 도메인 이름이 있습니다.
 
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 1. 연결에 성공하면 **[!UICONTROL 만들기]** 버튼을 클릭합니다.

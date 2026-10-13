@@ -10,13 +10,22 @@ exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 8%
-
 ---
-
 # 론치 편집{#editing-launches}
 
 ## 론치 편집 페이지 {#editing-launch-pages}
@@ -45,9 +54,9 @@ ht-degree: 8%
 
    * **일반** 탭에서 다음을 편집할 수 있습니다.
 
-      * **제목**
-      * **라이브 날짜**: 시작 날짜와 동일합니다
-      * **프로덕션 준비**
+     * **제목**
+     * **라이브 날짜**: 시작 날짜와 동일합니다
+     * **프로덕션 준비**
 
      이러한 필드의 목적 및 상호 작용에 대한 자세한 내용은 [시작 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
@@ -57,7 +66,7 @@ ht-degree: 8%
 
 ## 페이지의 론치 상태 찾기 {#discovering-the-launch-status-of-a-page}
 
-페이지의 시작을 편집하는 경우 Sidekick의 **버전 관리** 탭 하단에 시작에 대한 정보가 표시됩니다.
+페이지 시작을 편집하는 경우 Sidekick의 **버전 관리** 탭 하단에 시작에 대한 정보가 표시됩니다.
 
 * 론치 이름입니다.
 * 마지막 변경 이후 시간입니다.

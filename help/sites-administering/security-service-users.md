@@ -9,13 +9,22 @@ exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Experience Manager(AEM)의 서비스 사용자 {#service-users-in-aem}
 
@@ -41,31 +50,31 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 * **액세스 제어 변경**
 
-   * 실제로 액세스할 필요가 있는 사용자 또는 그룹이 실제로 액세스할 수 있는지 확인하십시오.
+  * 실제로 액세스할 필요가 있는 사용자 또는 그룹이 실제로 액세스할 수 있는지 확인하십시오.
 
 * **콘텐츠 구조 세분화**
 
-   * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 다른 위치로 이동합니다.
-   * 컨텐츠 세부기간을 변경합니다.
+  * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 다른 위치로 이동합니다.
+  * 컨텐츠 세부기간을 변경합니다.
 
 * **올바른 서비스로 코드를 리팩터링**
 
-   * 비즈니스 논리를 JSP 코드에서 서비스로 이동합니다. 이를 통해 다양한 콘텐츠 모델링을 수행할 수 있습니다.
+  * 비즈니스 논리를 JSP 코드에서 서비스로 이동합니다. 이를 통해 다양한 콘텐츠 모델링을 수행할 수 있습니다.
 
 또한 개발하는 새로운 기능이 다음 원칙을 준수하는지 확인하십시오.
 
 * **보안 요구 사항이 콘텐츠 구조를 구동해야 함**
 
-   * 액세스 제어 관리는 자연스럽게 느껴져야 합니다.
-   * 액세스 제어는 애플리케이션이 아닌 저장소에서 적용해야 합니다.
+  * 액세스 제어 관리는 자연스럽게 느껴져야 합니다.
+  * 액세스 제어는 애플리케이션이 아닌 저장소에서 적용해야 합니다.
 
 * **노드 형식 사용**
 
-   * 설정할 수 있는 속성 집합 제한
+  * 설정할 수 있는 속성 집합 제한
 
 * **개인 정보 설정 준수**
 
-   * 개인 프로필이 있는 경우 개인 `/profile` 노드에 있는 프로필 사진, 이메일 또는 전체 이름을 노출하지 않는 것이 한 예입니다.
+  * 개인 프로필이 있는 경우 개인 `/profile` 노드에 있는 프로필 사진, 이메일 또는 전체 이름을 노출하지 않는 것이 한 예입니다.
 
 ## 엄격한 액세스 제어 {#strict-access-control}
 
@@ -78,7 +87,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 * 노드 유형에 ACL 적용
 * 권한을 제한합니다.
 
-   * 예를 들어, 속성을 작성해야 하는 경우 `jcr:write` 권한을 부여하지 말고 `jcr:modifyProperties`을(를) 대신 사용하십시오.
+  * 예를 들어, 속성을 작성해야 하는 경우 `jcr:write` 권한을 부여하지 말고 `jcr:modifyProperties`을(를) 대신 사용하십시오.
 
 ## 서비스 사용자 및 매핑 {#service-users-and-mappings}
 

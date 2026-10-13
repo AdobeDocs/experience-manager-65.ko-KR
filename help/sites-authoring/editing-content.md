@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 45%
-
 ---
-
 # 페이지 콘텐츠 편집{#editing-page-content}
 
 페이지가 만들어지면(launch 또는 live copy의 일부 또는 신규) 콘텐츠를 편집하여 필요한 업데이트 작업을 수행할 수 있습니다.
@@ -269,9 +282,9 @@ ht-degree: 45%
 
   구성 요소를 클립보드에서 페이지로 붙여넣습니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지에 따라 달라집니다.
 
-   * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
-   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
-   * 붙여넣기 작업은 클립보드에 콘텐츠가 있는 경우에만 표시됩니다.
+  * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
+  * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
+  * 붙여넣기 작업은 클립보드에 콘텐츠가 있는 경우에만 표시됩니다.
 
   ![붙여넣기](assets/screen_shot_2018-03-22at113553.png)
 
@@ -514,15 +527,15 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 
 * **Sites** 콘솔
 
-   1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
-   1. 잠금 아이콘을 선택합니다.
+  1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
+  1. 잠금 아이콘을 선택합니다.
 
   ![잠금 아이콘](assets/screen_shot_2018-03-22at134928.png)
 
 * **페이지 편집기**
 
-   1. 메뉴를 열려면 **페이지 정보** 아이콘을 선택합니다.
-   1. **페이지 잠금** 옵션을 선택합니다.
+  1. 메뉴를 열려면 **페이지 정보** 아이콘을 선택합니다.
+  1. **페이지 잠금** 옵션을 선택합니다.
 
 잠기면 콘솔 보기 정보가 업데이트되고, 편집 시 잠금 기호가 도구 모음에 표시됩니다.
 

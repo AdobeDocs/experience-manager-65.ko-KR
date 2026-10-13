@@ -9,13 +9,27 @@ exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '636'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '652'
 ht-degree: 100%
-
 ---
-
 # 공유 대기열 구성{#configuring-shared-queues}
 
 공유 대기열을 사용하면 사용자 대기열을 효과적으로 구성하고 관리할 수 있습니다. 사용자 대기열은 사용자에게 할당된 모든 작업입니다. 자세한 내용은 [할 일 목록](https://help.adobe.com/ko_KR/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html)을 참조하십시오. 조직의 요구 사항에 따라 사용자 대기열을 할당, 할당 취소 및 재할당할 수 있습니다. 공유 대기열은 다음과 같은 두 가지 방법으로 관리할 수 있습니다.
@@ -30,7 +44,7 @@ ht-degree: 100%
 
 ## 선택한 사용자 대기열에 대한 액세스 권한 관리 {#managing-access-to-a-selected-user-queue}
 
-사용자에 대한 액세스 권한 관리 기능을 사용하면 선택한 사용자 대기열에 대한 액세스 권한을 관리할 수 있습니다. 조직의 다른 사용자에게 선택한 사용자 대기열에 대한 액세스 권한을 부여하거나 취소할 수 있습니다. 예를 들어 카라 보우먼은 현재 부재중입니다. 사용자에 대한 액세스 권한 관리 기능을 사용하면 카라의 대기열을 아키라 다나카와 존 제이컵스와 공유하여 완료할 수 있습니다. 나중에 카라가 업무에 복귀하면 아키라 다나카와 존 제이컵스에게 부여한 해당 대기열의 액세스 권한을 취소할 수 있습니다.
+사용자에 대한 액세스 권한 관리 기능을 사용하면 선택한 사용자 대기열에 대한 액세스 권한을 관리할 수 있습니다. 조직의 다른 사용자에게 선택한 사용자 대기열에 대한 액세스 권한을 부여하거나 취소할 수 있습니다. 예를 들어 카라 보우먼은 현재 부재중입니다. 사용자에 대한 액세스 권한 관리 기능을 사용하면 카라의 대기열을 아키라 다나카와 존 제이컵스와 공유하여 이들이 작업을 완료할 수 있습니다. 나중에 카라가 업무에 복귀하면 아키라 다나카와 존 제이컵스에게 부여한 해당 대기열의 액세스 권한을 취소할 수 있습니다.
 
 이러한 작업이 공유되면 사용자는 대기열에 액세스하여 Workspace를 사용하여 해당 작업을 완료할 수 있습니다.
 

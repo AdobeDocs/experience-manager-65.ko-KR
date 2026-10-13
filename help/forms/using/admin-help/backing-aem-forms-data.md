@@ -9,13 +9,27 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 98%
-
 ---
-
 # Adobe Experience Manager(AEM) Forms 데이터 백업 {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -47,15 +61,15 @@ AEM Forms를 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용)
 
 이 외에도 백업/복원 프로세스에 대한 다음 지침을 준수하십시오.
 
-* 사용 가능한 운영 체제나 서드파티 백업 유틸리티를 사용하여 GDS 디렉터리를 백업합니다. ([GDS 위치](/help/forms/using/admin-help/files-back-recover.md#gds-location)를 참조하십시오.)
-* (선택 사항) 사용 가능한 운영 체제나 서드파티 백업 및 유틸리티를 사용하여 콘텐츠 스토리지 루트 디렉터리를 백업합니다. ([콘텐츠 스토리지 루트 위치(독립 실행형 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) 또는 [콘텐츠 스토리지 루트 위치(클러스터링된 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)를 참조하십시오.)
+* 사용 가능한 운영 체제나 제3자 백업 유틸리티를 사용하여 GDS 디렉터리를 백업합니다. ([GDS 위치](/help/forms/using/admin-help/files-back-recover.md#gds-location)를 참조하십시오.)
+* (선택 사항) 사용 가능한 운영 체제나 제3자 백업 및 유틸리티를 사용하여 콘텐츠 스토리지 루트 디렉터리를 백업합니다. ([콘텐츠 스토리지 루트 위치(독립 실행형 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) 또는 [콘텐츠 스토리지 루트 위치(클러스터링된 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)를 참조하십시오.)
 * 작성자 인스턴스와 게시 인스턴스를 백업합니다(CRX 저장소 백업).
 
   서신 관리 솔루션 환경을 백업하려면 [백업 및 복원](/help/sites-administering/backup-and-restore.md)에 설명된 대로 작성자 인스턴스 및 게시 인스턴스에서 단계를 수행합니다.
 
   작성자 인스턴스 및 게시 인스턴스를 백업할 때 다음 사항을 고려하십시오.
 
-  * 작성자 인스턴스 및 게시 인스턴스의 백업이 동시에 시작되도록 동기화해야 합니다. 백업이 수행되는 동안에도 작성자 인스턴스 및 게시 인스턴스를 계속 사용할 수 있지만, 변경 사항이 캡처되지 않는 것을 방지하기 위해 백업 중에는 자산을 게시하지 않는 것이 좋습니다. 새 자산을 게시하기 전에 작성자 인스턴스 및 게시 인스턴스의 백업이 끝날 때까지 기다리십시오.
+  * 작성자 인스턴스 및 게시 인스턴스의 백업이 동시에 시작되도록 동기화해야 합니다. 백업이 수행되는 동안에도 작성자 인스턴스 및 게시 인스턴스를 계속 사용할 수 있지만, 변경 사항이 캡처되지 않는 것을 방지하기 위해 백업 중에는 에셋을 게시하지 않는 것이 좋습니다. 새 자산을 게시하기 전에 작성자 인스턴스 및 게시 인스턴스의 백업이 끝날 때까지 기다리십시오.
   * 작성자 노드의 전체 백업에는 Forms Manager와 AEM Forms Workspace 데이터 백업이 포함됩니다.
   * 워크벤치 개발자는 로컬에서 프로세스 작업을 계속할 수 있습니다. 백업 단계에서는 새 프로세스를 배포해서는 안 됩니다.
   * 각 백업 세션 길이(롤링 백업 모드의 경우)는 AEM Forms의 모든 데이터(DB, GDS, AEM 저장소 및 기타 추가 사용자 정의 데이터)를 백업하는 데 걸리는 총 시간을 기준으로 결정해야 합니다.
@@ -117,7 +131,7 @@ AEM Forms를 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용)
 
    `timeout`은 백업 모드가 자동으로 종료되기까지 걸리는 시간(초)입니다. 이 값은 0~10,080일 수 있습니다. 기본값인 0으로 설정하면 백업 모드가 시간 초과되지 않습니다.
 
-   백업 모드의 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉터리의 추가 정보 파일을 참조하십시오.
+   백업 모드의 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉터리의 Readme 파일을 참조하십시오.
 
 ### 백업 모드 종료 {#leaving-backup-modes}
 
@@ -165,10 +179,10 @@ AEM Forms를 안전 백업(스냅샷) 모드 또는 롤링 백업(연속 적용)
 
    >[!NOTE]
    >
-   >백업 모드가 꺼져 있는 동안에는 연속 적용을 다시 설정할 수 없습니다. 해당 기간 동안 발생한 변경 사항은 보호되지 않습니다.
+   >백업 모드가 꺼져 있는 동안에는 연속 보호를 다시 설정할 수 없습니다. 해당 기간 동안 발생한 변경 사항은 보호되지 않습니다.
 
    >[!NOTE]
    >
    >데이터베이스에서 문서 저장을 활성화한 경우 스냅샷 백업 모드와 롤링 백업 모드는 적용되지 않습니다.
 
-   백업 모드의 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉터리의 추가 정보 파일을 참조하십시오.
+   백업 모드의 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉터리의 readme 파일을 참조하십시오.

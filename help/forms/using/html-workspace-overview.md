@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역 작업
+title: AEM Forms Workspace 작업
 description: 프로세스 워크플로에 대한 이 빠른 개요를 통해 AEM Forms 작업 영역을 시작하십시오.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,32 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 0%
-
+source-wordcount: '1056'
+ht-degree: 1%
 ---
-
-# AEM Forms 작업 영역 작업{#working-with-aem-forms-workspace}
+# AEM Forms Workspace 작업{#working-with-aem-forms-workspace}
 
 ## 소개 {#introduction}
 
@@ -133,7 +151,7 @@ AEM Forms 작업 공간 결과물에는 CRX에 배포된 CRX 패키지, 전체 �
 
 기본적으로 새 프로세스의 경우 XDP 양식은 데스크탑에서 PDF 형식으로 렌더링되고 태블릿에서 HTML 형식으로 렌더링됩니다. XDP 양식을 항상 HTML 형식으로 렌더링할 수 있습니다. 자세한 내용은 [새 렌더링 및 제출 서비스](/help/forms/using/new-render-submit-service.md)를 참조하십시오.
 
-[프로필](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)과(와) 함께 작동하는 [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) 기능을 통해 XDP 양식의 HTML 렌디션을 사용할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;은 변경할 수 있는 `default.html` 프로필을 사용합니다. XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.
+[프로필](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)과(와) 함께 작동하는 [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) 기능을 통해 XDP 양식의 HTML 렌디션을 사용할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;에서는 변경할 수 있는 `default.html` 프로필을 사용합니다. XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.
 
 ## AEM Forms 작업 영역 앱 {#aem-forms-workspace-app}
 

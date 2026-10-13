@@ -15,25 +15,35 @@ autotag-review: '2026-05-18T18:37:44.170Z'
 TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Artificial intelligence
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: 3779
+source-wordcount: '3789'
 ht-degree: 8%
-
 ---
-
 # 비디오 프로필 {#video-profiles}
 
 Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩하면 재생 중에 비디오 플레이어가 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이 기능을 적응형 비트율 스트리밍이라고 합니다.
@@ -237,13 +247,13 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 다음 작업을 수행합니다.
    * **[!UICONTROL 너비]** 필드에 **[!UICONTROL auto]**&#x200B;을(를) 입력합니다.
    * **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력하십시오.
-비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정하십시오. 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
+     비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정하십시오. 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * **[!UICONTROL 고급]** 탭을 선택하고 **[!UICONTROL 기본값 사용]** 확인란이 선택되어 있는지 확인하십시오(권장).
 
    * **[!UICONTROL 기본값 사용]** 확인란의 선택을 취소하고 원하는 비디오 설정과 오디오 설정을 지정합니다.
-선택한 비디오 형식 코덱에 따라 추가 설명 또는 권장 설정을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
+     선택한 비디오 형식 코덱에 따라 추가 설명 또는 권장 설정을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택하여 사전 설정을 저장합니다.
 1. 다음 중 하나를 수행하십시오.
@@ -362,7 +372,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 확인합니다.
 1. 도구 모음에서 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. (If you are copying a progressive video profile, do not select the check box.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. (프로그레시브 비디오 프로필을 복사하는 경우 이 확인란을 선택하지 마십시오.)
 
    Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을 위해 인코딩]**&#x200B;할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
@@ -394,7 +404,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 
-You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. This section describes how to apply video profiles to folders both ways.
+You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. 이 섹션에서는 두 가지 방법으로 폴더에 비디오 프로필을 적용하는 방법을 설명합니다.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
@@ -414,7 +424,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-[비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
+   [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
 
 ### 비디오 프로필을 전체적으로 적용 {#applying-a-video-profile-globally}
 
@@ -439,7 +449,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 자동으로 상위 폴더에서 프로필 제거를 상속합니다. 그러나 폴더 내에서 발생한 모든 파일 처리는 그대로 유지됩니다.
 
-You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove video profiles from folders both ways.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 

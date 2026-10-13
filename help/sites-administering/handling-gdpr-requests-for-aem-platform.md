@@ -6,14 +6,23 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 40%
-
+source-wordcount: '455'
+ht-degree: 41%
 ---
-
-# AEM(Adobe Experience Manager) Foundation에 대한 GDPR 요청 처리{#handling-gdpr-requests-for-the-aem-foundation}
+# Adobe Experience Manager(AEM) Foundation에 대한 GDPR 요청 처리{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -99,10 +108,10 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. 프로필 노드 및 모든 하위 항목을 삭제합니다. 프로필 노드에는 AEM 버전에 따라 두 가지 형식이 있습니다.
+1. 프로필 노드 및 모든 하위 항목을 삭제합니다. AEM 버전에 따라 프로필 노드에는 두 가지 형식이 있습니다.
 
    1. `[!UICONTROL /profile]` 아래의 기본 개인 프로필
-   1. `[!UICONTROL /profiles]`(AEM 6.5를 사용하여 만든 새 프로필의 경우).
+   1. `[!UICONTROL /profiles]`, AEM 6.5를 사용하여 만든 새 프로필의 경우.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 

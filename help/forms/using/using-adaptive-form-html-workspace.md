@@ -1,6 +1,6 @@
 ---
-title: Workspace HTML에서 적응형 양식 사용
-description: 필드 작업자가 장치에서 양식에 액세스할 수 있도록 하는 HTML Workspace의 적응형 양식을 사용하는 방법에 대해 알아봅니다.
+title: HTML Workspace에서 적응형 양식 사용
+description: 현장 작업자가 장치에서 양식에 액세스할 수 있도록 해주는 HTML Workspace의 적응형 양식을 사용하는 방법에 대해 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,18 +9,34 @@ exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 0%
-
+source-wordcount: '706'
+ht-degree: 1%
 ---
-
-# Workspace HTML에서 적응형 양식 사용{#using-an-adaptive-form-in-html-workspace}
+# HTML Workspace에서 적응형 양식 사용{#using-an-adaptive-form-in-html-workspace}
 
 JEE의 AEM Forms은 HTML Workspace에서 적응형 양식을 사용하는 기능을 제공합니다.
 
-프로세스 설계 중에 XDP를 선택할 수 있으므로 기존 적응형 양식 AEM 저장소에서 검색하는 기능이 추가되었습니다. 이 기능을 사용하면 프로세스 Designer에서 시작 지점 및 작업에서 적응형 양식을 구성할 수 있습니다.
+프로세스 디자인 중에 XDP를 선택할 수 있으므로 기존 적응형 양식 AEM 저장소에서 검색하는 기능이 추가되었습니다. 이 기능을 사용하면 프로세스 Designer에서 시작 지점 및 작업에서 적응형 양식을 구성할 수 있습니다.
 
 ## 프로세스 디자인 경험 {#process-design-experience}
 
@@ -32,11 +48,11 @@ JEE의 AEM Forms은 HTML Workspace에서 적응형 양식을 사용하는 기능
 
 ### LiveCycle 응용 프로그램 내보내기 및 가져오기 {#livecycle-application-export-and-import}
 
-적응형 양식은 AEM 저장소에 있으므로 LiveCycle 애플리케이션 내보내기에는 사용된 적응형 양식에 대한 참조만 포함됩니다. 따라서 LiveCycle 애플리케이션의 내보내기 및 가져오기는 2단계 프로세스입니다. LiveCycle 응용 프로그램에는 프로세스 정의 등이 포함됩니다. 적응형 양식이 포함된 별도의 패키지는 AEM에서 ZIP 파일로 내보내집니다. 가져오는 동안 LiveCycle 응용 프로그램은 Workbench를 통해 가져오고 적응형 양식은 AEM을 통해 가져옵니다.
+적응형 양식은 AEM 저장소에 있으므로 LiveCycle 애플리케이션 내보내기에는 사용된 적응형 양식에 대한 참조만 포함됩니다. 따라서 LiveCycle 응용 프로그램의 내보내기 및 가져오기는 2단계 프로세스입니다. LiveCycle 응용 프로그램에는 프로세스 정의 등이 포함되어 있습니다. 적응형 양식이 포함된 별도의 패키지는 AEM에서 ZIP 파일로 내보내집니다. 가져오는 동안 LiveCycle 애플리케이션은 Workbench를 통해 가져오고 적응형 양식은 AEM을 통해 가져옵니다.
 
-## Workspace HTML의 적응형 양식 사용자 경험 {#user-experience-of-adaptive-form-in-html-workspace}
+## HTML Workspace의 적응형 양식 사용자 경험 {#user-experience-of-adaptive-form-in-html-workspace}
 
-HTML Workspace은 모바일 양식에 사용할 수 있는 컨트롤 외에도 일부 적응형 양식별 컨트롤을 제공합니다. 사용자가 작업 또는 시작 지점을 열 때 Workspace HTML에서 첨부 파일을 추가하고, 저장하고, 서명하고, 제출하고, 적응형 양식을 탐색할 수 있습니다. 세부 사항은 다음과 같습니다.
+HTML Workspace은 모바일 양식에 사용할 수 있는 컨트롤 외에도 일부 적응형 양식별 컨트롤을 제공합니다. 사용자가 작업 또는 시작 지점을 열 때 HTML Workspace에서 첨부 파일을 추가하고, 저장하고, 서명하고, 제출하고, 적응형 양식을 탐색할 수 있습니다. 세부 사항은 다음과 같습니다.
 
 1. 파일을 첨부하려면 Mobile Forms의 경우와 마찬가지로 작업 첨부 파일을 사용합니다. 적응형 양식의 모든 파일 첨부 유형 버튼은 숨겨집니다.
 
@@ -46,9 +62,9 @@ HTML Workspace은 모바일 양식에 사용할 수 있는 컨트롤 외에도 �
 
 1. **적응형 양식 전역 도구 모음 가시성**: Process Designer에서 전역/최상위 수준 도구 모음, 도구 모음 및 단추가 적응형 양식에 표시되지 않습니다.
 
-1. **적응형 Forms에 대한 Workspace 탐색 컨트롤**: 다음/이전 단추는 HTML Workspace의 적응형 양식에 대한 저장, 제출 및 경로 지정 작업 단추와 함께 사용할 수 있습니다. Workspace HTML에서 적응형 양식 패널을 탐색할 수 있도록 다음/이전 단추를 클릭합니다. 다음/이전 단추는 적응형 양식의 모바일 보기에서 탐색 컨트롤과 유사한 딥 탐색을 제공합니다.
+1. **적응형 Forms에 대한 Workspace 탐색 컨트롤**: 다음/이전 단추는 HTML Workspace의 적응형 양식에 대한 저장, 제출 및 경로 지정 작업 단추와 함께 사용할 수 있습니다. HTML Workspace에서 적응형 양식 패널을 탐색할 수 있도록 다음/이전 단추를 클릭합니다. 다음/이전 단추는 적응형 양식의 모바일 보기에서 탐색 컨트롤과 유사한 딥 탐색을 제공합니다.
 
-1. **적응형 양식의 전자 서명 서비스 및 요약 구성 요소**: HTML Workspace에서 요약 구성 요소가 작동하지 않습니다. 즉, 적응형 양식에 요약 구성 요소가 있으면 작업 영역에 표시되지 않습니다. E-sign 구성 요소에서 자동 제출 대신 작업 공간 사용자가 Workspace HTML에서 제출 또는 경로 작업을 클릭합니다. 문서에 서명한 후에는 플랫 서명된 문서로 표시됩니다. 작업 또는 시작 지점을 닫거나 완료할 수 있도록 **제출** 또는 경로 작업을 클릭합니다.\
+1. **적응형 양식의 eSign 서비스 및 요약 구성 요소**: HTML Workspace에서 요약 구성 요소가 작동하지 않습니다. 즉, 적응형 양식에 요약 구성 요소가 있으면 작업 영역에 표시되지 않습니다. E-sign 구성 요소에서 자동 제출 대신 작업 영역 사용자가 HTML Workspace에서 제출 또는 경로 작업을 클릭합니다. 문서에 서명한 후에는 플랫 서명된 문서로 표시됩니다. 작업 또는 시작 지점을 닫거나 완료할 수 있도록 **제출** 또는 경로 작업을 클릭합니다.\
    서명된 문서는 eSign 서비스 서버에서 수집되고 데이터 xml 파일은 프로세스의 다음 단계로 전달됩니다.
 
 ## 프로세스 디자인에서 적응형 양식을 사용하는 단계 {#steps-to-use-adaptive-forms-in-process-design}

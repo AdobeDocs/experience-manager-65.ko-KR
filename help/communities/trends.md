@@ -10,13 +10,20 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 1%
-
 ---
-
 # 활동 트렌드 {#activity-trends}
 
 ## 소개 {#introduction}
@@ -61,29 +68,29 @@ ht-degree: 1%
 
   다음 중에서 선택:
 
-   * `Members`
-   * `Content`
+  * `Members`
+  * `Content`
 
   기본값은 `Members`입니다.
 
 * **제목 표시**
 
   데이터 위에 표시할 설명 제목(예: `Trending Content`).
-기본값은 제목이 없습니다.
+  기본값은 제목이 없습니다.
 
 * **표시 개수**
 
   나열할 항목의 수입니다.
-기본값은 10입니다.
+  기본값은 10입니다.
 
 * **활동 유형**
 
   다음 중 하나를 선택합니다.
 
-   * `Views`(페이지 방문 횟수)
-   * `Posts`(UGC 만들기)
-   * `Follows`
-   * `Likes`
+  * `Views`(페이지 방문 횟수)
+  * `Posts`(UGC 만들기)
+  * `Follows`
+  * `Likes`
 
   기본값은 보기 입니다.
 
@@ -91,24 +98,24 @@ ht-degree: 1%
 
   다음 중 하나를 선택합니다.
 
-   * `Last 24 hours`
-   * `Last 7 days`
-   * `Last 30 days`
-   * `Last 90 days`
-   * `This year (since Jan 1)`
-   * `Total`
+  * `Last 24 hours`
+  * `Last 7 days`
+  * `Last 30 days`
+  * `Last 90 days`
+  * `This year (since Jan 1)`
+  * `Total`
 
   기본값은 `Total`입니다.
 
 * **컨텍스트 경로**
 
   이를 통해 특정 블로그와 같은 사이트의 하위 집합으로 활동의 범위를 지정할 수 있습니다.
-기본값은 전체 커뮤니티 사이트입니다.
+  기본값은 전체 커뮤니티 사이트입니다.
 
 * **구성원 수 집계**
 
   선택을 취소(해제)하면 최상위 수준의 게시물만 카운트됩니다. 예를 들어 컨텍스트가 루트 페이지(기본값)이면 `Posts`의 `Activity Type`은(는) 루트 페이지에 콘텐츠를 게시할 수 없으므로 활동을 표시하지 않습니다. 선택하면 모든 하위 페이지의 카운트가 포함됩니다.
-기본값은 선택되어 있습니다.
+  기본값은 선택되어 있습니다.
 
 ### 4개의 구성 요소가 있는 예제 페이지 {#example-page-with-components}
 

@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Assets]에서 파일 체크 인 및 체크 아웃'
+title: '[!DNL Assets]에서 파일 체크 인 및 체크 아웃'
 description: 편집할 자산을 체크아웃하고 변경 사항이 완료된 후 다시 체크인하는 방법을 알아봅니다.
 contentOwner: AG
 role: User
@@ -7,13 +7,22 @@ feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '479'
 ht-degree: 5%
-
 ---
-
 # [!DNL Experience Manager] DAM에서 파일 체크인 및 체크아웃 {#check-in-and-check-out-files-in-assets}
 
 | 버전 | 문서 링크 |

@@ -8,19 +8,30 @@ feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '695'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '706'
 ht-degree: 100%
-
 ---
-
 # 사용자로 등록 {#registering-as-a-user}
 
 사용자 조직 외부에 있는 경우에도 문서 보안 사용자가 보낸, 정책으로 보호된 문서를 사용할 수 있습니다. 정책으로 보호된 문서를 사용하려면 문서 보안에 등록해야 합니다. 이전에 등록 초대를 받지 않은 경우 다음 이벤트가 발생하면 문서 보안에서 등록 프로세스를 시작합니다.
 
-* 정책으로 보호된 문서를 보내려는 문서 보안 사용자가 외부 사용자를 정책에 추가합니다.
-* 문서 보안 관리자가 외부 사용자의 계정을 만듭니다.
+* 정책으로 보호된 문서를 보내려는 문서 보안 사용자가 사용자를 정책에 추가합니다.
+* 문서 보안 관리자가 사용자의 계정을 만듭니다.
 
   계정을 등록하고 활성화한 후 정책을 통해 사용 권한이 부여되는 정책으로 보호된 문서를 사용할 수 있습니다. 문서 보안 관리자가 초대된 사용자에 대해 해당 기능을 활성화하는 경우 다음 작업을 수행할 수 있는 권한이 부여될 수 있습니다.
 
@@ -57,12 +68,12 @@ ht-degree: 100%
 
 ## 암호 재설정 {#reset-your-password}
 
-암호를 잊어버린 경우 정책 관리자가 대신 암호를 재설정할 수 있습니다. 암호를 재설정하면 임시 암호를 사용하여 로그인하도록 요청하는 이메일이 생성됩니다. 그런 다음, 다른 암호를 만들 수 있습니다.
+암호를 잊어버린 경우 정책 관리자가 암호를 재설정할 수 있습니다. 암호를 재설정하면 임시 암호를 사용하여 로그인하도록 요청하는 이메일이 생성됩니다. 그런 다음, 다른 암호를 만들 수 있습니다.
 
 문서 보안 관리자에게 문의하여 새 암호를 받는 방법에 대한 자세한 내용은, 활성화 이메일 알림이나 등록을 요청한 조직에서 보낸 기타 알림을 확인하십시오.
 
 1. 정책 관리자에게 새 암호가 필요하다고 알립니다.
-1. 문서 보안 암호 이메일을 받으면 이메일을 열어서 새로운 임시 암호를 받습니다.
+1. 문서 보안 암호 이메일을 받으면 이메일을 열어 새 임시 암호를 확인합니다.
 1. 새로운 임시 암호를 사용하여 문서 보안에 로그인합니다.
 1. 페이지 오른쪽 상단 모서리에서 옵션을 클릭합니다. 외부 사용자 페이지가 표시됩니다.
 1. 암호 변경을 선택하고 기존 암호 상자에 임시 암호를 입력합니다.

@@ -10,13 +10,22 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '514'
 ht-degree: 0%
-
 ---
-
 # 디자인 모드에서 구성 요소 구성{#configuring-components-in-design-mode}
 
 AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요소를 즉시 사용할 수 있습니다.
@@ -58,7 +67,7 @@ AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. 디자인 모드에서 Sidekick이 최소화됩니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
+1. Sidekick은 디자인 모드에서 를 최소화합니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
 
    ![Sidekick 최소화](do-not-localize/sidekick-collapsed.png)
 
@@ -78,6 +87,6 @@ AEM 인스턴스를 즉시 설치하면 사이드 킥에서 다양한 구성 요
 
 1. 변경 내용을 저장하려면 **확인**&#x200B;을 클릭하세요.
 
-1. 디자인 모드에서 Sidekick이 최소화됩니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
+1. Sidekick은 디자인 모드에서 를 최소화합니다. 화살표를 클릭하여 Sidekick을 최대화하고 편집 모드로 돌아갈 수 있습니다.
 
    ![Sidekick 최소화](do-not-localize/sidekick-collapsed-1.png)

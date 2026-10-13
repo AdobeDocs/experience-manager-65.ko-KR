@@ -8,13 +8,27 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 15%
-
+source-wordcount: '2201'
+ht-degree: 14%
 ---
-
 # 컬렉션 관리 {#managing-collections}
 
 | 버전 | 문서 링크 |
@@ -49,14 +63,14 @@ ht-degree: 15%
 1. **[!UICONTROL 컬렉션]** 콘솔로 이동합니다.
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 컬렉션 만들기]** 페이지에서 컬렉션에 대한 제목과 선택적 설명을 입력합니다.
-1. Add members to the collection and assign appropriate permissions. Alternatively, select **[!UICONTROL Public Collection]** to allow all users to access the collection.
+1. 컬렉션에 구성원을 추가하고 적절한 권한을 할당합니다. Alternatively, select **[!UICONTROL Public Collection]** to allow all users to access the collection.
 
    >[!NOTE]
    >
    >구성원이 다른 사용자와 컬렉션을 공유할 수 있도록 하려면 `home/users` 경로에 `dam-users` 그룹 읽기 권한을 제공하십시오. `/content/dam/collections` 위치의 사용자에게 팝업 목록에서 컬렉션을 볼 수 있는 권한을 부여합니다. 또는 사용자를 `dam-users` 그룹의 일부로 만듭니다.
 
 1. (선택 사항) 컬렉션에 대한 썸네일 이미지를 추가합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 대화 상자를 닫습니다. A collection with the specified title and properties is opened in the Collections console.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 대화 상자를 닫습니다. 지정된 제목과 속성이 있는 컬렉션이 컬렉션 콘솔에서 열립니다.
 
    >[!NOTE]
    >
@@ -117,7 +131,7 @@ ht-degree: 15%
 참조된 에셋 또는 폴더 목록이 포함된 컬렉션에 에셋을 추가할 수 있습니다. 스마트 컬렉션은 검색 쿼리를 사용하여 자산을 채웁니다. 따라서 에셋 및 폴더에 대한 정적 참조를 에셋 및 폴더에 적용할 수 없습니다.
 
 1. [!DNL A]세트 사용자 인터페이스에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 컬렉션에 추가]** ![컬렉션에 추가](assets/do-not-localize/add-to-collection.png)를 클릭합니다.
-또는 에셋을 인터페이스의 **[!UICONTROL 컬렉션 저장]** 영역으로 드래그할 수 있습니다. 지역 레이블이 **[!UICONTROL 삭제]**(으)로 변경되면 자산을 추가합니다.
+또는 에셋을 인터페이스의 **[!UICONTROL 컬렉션에 놓기]** 영역으로 드래그할 수 있습니다. 지역 레이블을 **[!UICONTROL 삭제]**(으)로 변경하면 자산을 추가합니다.
 
 1. **[!UICONTROL 컬렉션에 추가]** 페이지에서 에셋을 추가할 컬렉션을 선택합니다.
 
@@ -168,7 +182,7 @@ ht-degree: 15%
    >* 컬렉션 선택과 목록 지우기 간을 전환하려면 목록 맨 위에서 **[!UICONTROL 제목]** 근처에 있는 확인란을 선택하십시오.
 
 1. 도구 모음에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭한 다음 확인 대화 상자를 닫습니다.
-1. 새 메타데이터를 기존 메타데이터에 추가하려면 **[!UICONTROL 추가 모드]**&#x200B;를 선택하십시오. If you do not select this option, the new metadata replaces the existing metadata in the fields. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
+1. 새 메타데이터를 기존 메타데이터에 추가하려면 **[!UICONTROL 추가 모드]**&#x200B;를 선택하십시오. 이 옵션을 선택하지 않으면 새 메타데이터가 필드의 기존 메타데이터를 대체합니다. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >

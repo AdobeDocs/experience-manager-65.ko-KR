@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 23%
-
 ---
-
 # AEM Assets HTTP API의 콘텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
 
 | 버전 | 문서 링크 |
@@ -67,9 +83,9 @@ Assets REST API는 AEM 인스턴스 내에 저장된 자산에 대한 [REST](htt
 `/api/assets` 끝점을 사용하며 자산 경로를 사용하여 액세스합니다(선행 `/content/dam` 없음).
 
 * 즉, 다음 위치에서 자산에 액세스할 수 있습니다.
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * 다음을 요청해야 합니다.
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 예를 들어 `/content/dam/wknd/en/adventures/cycling-tuscany`에 액세스하기 위해 `/api/assets/wknd/en/adventures/cycling-tuscany.json`을 요청합니다.
 
@@ -246,14 +262,14 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 ## 사용 {#using}
 
-사용량은 특정 사용 사례와 함께 AEM 작성자 또는 게시 환경 사용 여부에 따라 다를 수 있습니다.
+사용 방식은 특정 사용 사례와 함께 AEM 작성자 또는 게시 환경을 사용하는지에 따라 달라질 수 있습니다.
 
 * 작성자 인스턴스([에 바인딩되고 현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/assets-api-content-fragments.md#limitations)).
 * AEM은 JSON 형식으로만 요청된 콘텐츠를 제공하므로 모두에서 게재할 수 있습니다.
 
-   * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
+  * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
 
-   * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
+  * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
 
 >[!CAUTION]
 >
@@ -273,7 +289,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-응답은 콘텐츠 조각에서와 같이 구조화된 콘텐츠가 있는 직렬화된 JSON입니다. 참조 URL로 참조를 게재합니다.
+응답은 콘텐츠 조각에서와 같이 콘텐츠가 구조화된 직렬화된 JSON입니다. 참조는 참조 URL로 제공됩니다.
 
 다음과 같이 두 가지 유형의 읽기 작업이 가능합니다.
 
@@ -286,7 +302,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 `POST /{cfParentPath}/{cfName}`
 
-본문에는 콘텐츠 조각 요소에 설정해야 하는 초기 콘텐츠를 비롯해 생성할 콘텐츠 조각의 JSON 표현식이 포함되어야 합니다. `cq:model` 속성 설정이 필수이며 유효한 콘텐츠 조각 모델을 지정해야 합니다. 지정하지 못하면 오류가 발생합니다. 또한 `application/json`으로 설정된 헤더 `Content-Type`을 추가해야 합니다.
+본문에는 콘텐츠 조각 요소에 설정해야 하는 초기 콘텐츠를 비롯해 생성할 콘텐츠 조각의 JSON 표현이 포함되어야 합니다. `cq:model` 속성 설정이 필수이며 유효한 콘텐츠 조각 모델을 지정해야 합니다. 지정하지 못하면 오류가 발생합니다. 또한 `application/json`으로 설정된 헤더 `Content-Type`을 추가해야 합니다.
 
 ### 업데이트 {#update}
 
@@ -319,18 +335,18 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 * **200**(확인)
 다음과 같은 경우에 반환됨:
 
-   * `GET`을(를) 통해 콘텐츠 조각 요청
-   * `PUT`을(를) 통해 콘텐츠 조각을 업데이트했습니다.
+  * `GET`을(를) 통해 콘텐츠 조각 요청
+  * `PUT`을(를) 통해 콘텐츠 조각을 업데이트했습니다.
 
 * **201**(생성됨)
 다음과 같은 경우에 반환됨:
 
-   * `POST`을(를) 통해 콘텐츠 조각을 만들었습니다.
+  * `POST`을(를) 통해 콘텐츠 조각을 만들었습니다.
 
 * **404**(찾을 수 없음)
 다음과 같은 경우에 반환됨:
 
-   * 요청한 콘텐츠 조각이 존재하지 않습니다.
+  * 요청한 콘텐츠 조각이 존재하지 않습니다.
 
 * **500**(내부 서버 오류)
 
@@ -343,28 +359,28 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
   다음은 생성된 오류 메시지(단공간)와 함께 이 오류 상태가 반환될 때의 일반적인 시나리오를 나열합니다.
 
-   * 상위 폴더가 없습니다(`POST`을(를) 통해 콘텐츠 조각을 만드는 경우).
-   * 콘텐츠 조각 모델이 제공되지 않았거나(cq:model이(가) 누락됨), 잘못된 경로 또는 권한 문제로 인해 읽을 수 없거나, 올바른 조각 모델이 없습니다.
+  * 상위 폴더가 없습니다(`POST`을(를) 통해 콘텐츠 조각을 만드는 경우).
+  * 콘텐츠 조각 모델이 제공되지 않았거나(cq:model이(가) 누락됨), 잘못된 경로 또는 권한 문제로 인해 읽을 수 없거나, 올바른 조각 모델이 없습니다.
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * 콘텐츠 조각을 만들 수 없습니다(권한 문제일 수 있음).
+  * 콘텐츠 조각을 만들 수 없습니다(권한 문제일 수 있음).
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * 제목 및/또는 설명을 업데이트할 수 없습니다.
+  * 제목 및/또는 설명을 업데이트할 수 없습니다.
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * 메타데이터를 설정할 수 없음:
+  * 메타데이터를 설정할 수 없음:
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * 콘텐츠 요소를 찾을 수 없거나 업데이트할 수 없습니다.
+  * 콘텐츠 요소를 찾을 수 없거나 업데이트할 수 없습니다.
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   자세한 오류 메시지는 일반적으로 다음과 같은 방식으로 반환됩니다.
 
@@ -388,7 +404,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 * [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-   * [사용 가능한 기능](/help/assets/mac-api-assets.md#assets)
+  * [사용 가능한 기능](/help/assets/mac-api-assets.md#assets)
 
 ## 추가 리소스 {#additional-resources}
 

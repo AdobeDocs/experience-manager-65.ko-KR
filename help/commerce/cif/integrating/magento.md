@@ -6,14 +6,22 @@ exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 3%
-
 ---
-
-# Commerce integration framework을 사용하여 AEM 및 Adobe Commerce(Magento) 통합 {#aem-commerce-framework}
+# Commerce integration framework을 사용한 AEM 및 Adobe Commerce(Magento) 통합 {#aem-commerce-framework}
 
 Experience Manager 및 Adobe Commerce은 Commerce integration framework(CIF)를 사용하여 원활하게 통합됩니다. CIF을 사용하면 AEM에서 Adobe Commerce의 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/)를 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다.
 

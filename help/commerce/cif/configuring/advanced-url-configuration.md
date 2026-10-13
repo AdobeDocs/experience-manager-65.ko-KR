@@ -11,26 +11,34 @@ thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 3%
-
+source-wordcount: '958'
+ht-degree: 10%
 ---
-
 # 고급 URL 구성 {#url}
 
 >[!NOTE]
 >
->SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=ko)를 참조하세요.
+>SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 결과적으로 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=ko)를 참조하세요.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 제품 및 범주 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 `UrlProvider` 서비스 및 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 범주 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38586/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/38586/?captions=kor&quality=12)
 
 ## 구성 {#configuration}
 
-SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝트에서 &quot;CIF URL 공급자 구성&quot;에 대한 OSGI 구성을 제공해야 합니다.
+SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝트가 &quot;CIF URL 공급자 구성&quot;에 대한 OSGI 구성을 제공해야 합니다.
 
 >[!NOTE]
 >
@@ -40,7 +48,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 제품 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}`(기본값)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (기본값)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
@@ -62,7 +70,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 범주 또는 제품 목록 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{url_path}}.html`(기본값)
+* `{{page}}.html/{{url_path}}.html` (기본값)
 * `{{page}}.html/{{url_key}}.html`
 
 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)가 있는 경우:
@@ -83,7 +91,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 `UrlProvider`은(는) 작성자 계층 인스턴스에서 이러한 페이지에 대한 딥링크를 생성하도록 사전 구성되어 있습니다. 이 기능은 미리보기 모드를 사용하여 사이트를 탐색하고 특정 제품 또는 카테고리 페이지로 이동한 다음 편집 모드로 다시 전환하여 페이지를 편집하는 편집자에게 유용합니다.
 
-반면에 게시 계층 인스턴스에서는 카탈로그 페이지 URL을 안정적으로 유지해야 검색 엔진 순위에서 이득을 잃지 않습니다. 이러한 게시 계층 인스턴스로 인해 기본적으로 특정 카탈로그 페이지에 대한 딥 링크가 렌더링되지 않습니다. 이 동작을 변경하려면 항상 특정 페이지 url을 생성하도록 _CIF URL 공급자별 페이지 전략_&#x200B;을 구성할 수 있습니다.
+반면에 게시 계층 인스턴스에서는 카탈로그 페이지 URL을 안정적으로 유지해야 검색 엔진 순위에서 이득을 잃지 않습니다. 이러한 게시 계층 인스턴스로 인해 기본적으로 특정 카탈로그 페이지에 대한 딥 링크가 렌더링되지 않습니다. 이 동작을 변경하려면 항상 특정 페이지 URL을 생성하도록 _CIF URL 공급자별 페이지 전략_&#x200B;을 구성할 수 있습니다.
 
 ## 사용자 정의 URL 형식 {#custom-url-format}
 
@@ -93,7 +101,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 ## Sling 매핑과 결합 {#sling-mapping}
 
-`UrlProvider` 외에도 URL을 다시 작성하고 처리하도록 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 구성할 수 있습니다. AEM Archetype 프로젝트에서는 포트 4503(게시) 및 80(Dispatcher)에 대한 일부 Sling 매핑을 구성할 수 있도록 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)도 제공합니다.
+`UrlProvider` 외에도 URL을 다시 작성하고 처리하도록 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)을 구성할 수 있습니다. 또한 AEM Archetype 프로젝트는 포트 4503(게시) 및 80(Dispatcher)에 대한 일부 Sling 매핑을 구성하기 위한 [예제 구성](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)을 제공합니다.
 
 ## AEM Dispatcher과 결합 {#dispatcher}
 

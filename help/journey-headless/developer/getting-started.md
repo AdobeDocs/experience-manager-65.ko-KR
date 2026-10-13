@@ -5,14 +5,40 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2999'
-ht-degree: 96%
-
+source-wordcount: '3072'
+ht-degree: 95%
 ---
-
-# AEM Headless 시작하기 {#getting-started}
+# AEM 헤드리스 시작하기 {#getting-started}
 
 이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 AEM Headless로 자체 프로젝트 시작하기에 필요한 사항에 대해 알아봅니다.
 
@@ -157,11 +183,11 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 관리자 {#administrator}
 
-관리자는 시스템의 기본 설정 및 구성을 담당합니다. 예를 들어 관리자는 Identity Management System(IMS)이라는 Adobe 사용자 관리 시스템 내에서 조직을 설정합니다. 관리자는 조직이 IMS 내의 Adobe에 의해 생성되면 Adobe로부터 이메일 초대를 수신하는 조직의 첫 번째 사용자입니다. 관리자는 IMS에 로그인하여 다른 담당자의 사용자를 추가할 수 있습니다.
+관리자는 시스템의 기본 설정 및 구성을 담당합니다. 예를 들어 관리자는 Identity Management System(IMS)이라는 Adobe 사용자 관리 시스템 내에서 조직을 설정합니다. 관리자는 조직이 IMS 내의 Adobe에 의해 생성되면 Adobe로부터 이메일 초대를 수신하는 조직의 첫 번째 사용자입니다. 관리자는 IMS에 로그인하여 다른 페르소나의 사용자를 추가할 수 있습니다.
 
-관리자가 사용자를 구성하면 모든 AEM 리소스에 액세스할 수 있는 권한이 부여되어 AEM Headless를 사용하여 경험 애플리케이션을 게재하는 기여자로 작업할 수 있습니다.
+관리자가 사용자를 구성하면 AEM Headless를 사용하여 경험 애플리케이션을 게재하는 기여자로서 작업을 수행하기 위해 모든 AEM 리소스에 액세스할 수 있는 권한이 사용자에게 부여됩니다.
 
-관리자는 AEM을 설정하고 런타임 환경을 준비하는 사용자로서, 이를 통해 [콘텐츠 작성자](#content-author)는 콘텐츠 및 [개발자](#developer)를 만들고 업데이트하여 경험 애플리케이션용 콘텐츠를 가져오거나 수정하는 API를 사용할 수 있습니다.
+관리자는 AEM을 설정하고 런타임 환경을 준비하는 사용자로서 이를 통해 [콘텐츠 작성자](#content-author)는 콘텐츠 및 [개발자](#developer)를 만들고 업데이트하여 경험 애플리케이션용 콘텐츠를 가져오거나 수정하는 API를 사용할 수 있습니다.
 
 #### 콘텐츠 작성자 {#content-author}
 
@@ -171,7 +197,7 @@ AEM Headless 프로젝트를 시작하기 전에 알아 두어야 할 몇 가지
 
 #### 번역을 위한 계획 {#translation}
 
-프로젝트의 시작 부분부터 번역을 위한 계획을 수립합니다. “번역 전문가”를 번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당할 별도의 담당자로서 간주합니다.
+프로젝트의 시작 부분부터 번역을 위한 계획을 수립합니다. “번역 전문가”를 번역할 콘텐츠와 하지 않을 콘텐츠를 정의하고, 지역 또는 로컬 콘텐츠 제작자가 수정할 수 있는 번역된 콘텐츠를 정의하는 역할을 담당하는 별도의 페르소나로 간주합니다.
 
 필요한 콘텐츠 번역에 대한 계획을 수립합니다.
 
@@ -191,7 +217,7 @@ AEM Headless 번역 여정 링크를 포함하여 AEM 워크플로 및 번역 �
 * [번역](#translation) - AEM은 로케일별 폴더에서 콘텐츠 사본을 유지 관리하면서 콘텐츠 번역을 관리합니다.
 * 조직 - 폴더를 사용하여 번역 요구 사항을 지원하고 콘텐츠 조각을 논리적으로 관리하는 데 필요한 콘텐츠 계층을 정의합니다.
 
-AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으로 커질 수 있습니다. 단, 폴더 구조의 모든 변경 사항이 콘텐츠 경로를 [사용하는 기존 쿼리에 의도하지 않은 결과를 초래할 수 있음을 인식해야 합니다.](#developer)따라서 사전에 명확하게 설정 및 정의된 계층은 콘텐츠 작성자에게 도움이 될 수 있습니다.
+AEM에서는 유연한 콘텐츠 구조를 사용하고 계층은 임의적으로 커질 수 있습니다. 그러나 폴더 구조를 변경하면 [콘텐츠 경로에 의존하는 기존 쿼리에 의도하지 않은 결과가 발생할 수 있습니다.](#developer) 따라서 사전에 명확하게 설정 및 정의된 계층은 콘텐츠 작성자에게 도움이 될 수 있습니다.
 
 특정 유형의 콘텐츠만 허용하도록 폴더를 제한할 수도 있습니다(콘텐츠 조각 모델 기반). 계층의 모든 폴더에 허용되는 모델을 항상 명시적으로 지정하는 것이 좋습니다. 지정된 폴더에 허용된 콘텐츠 지정:
 
@@ -232,9 +258,9 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 개발자는 쿼리에 대한 계획을 수립하는 경우 몇 가지 기본 권장 사항을 고려해야 합니다.
 
 * 쿼리는 콘텐츠 조각 검색에 고정 경로(`ByPath`)를 사용해서는 안 됩니다.
-   * [콘텐츠 작성자는 콘텐츠 조각 계층을 완전히 제어하고](#content-hierarchy) 해당 쿼리를 중단시키는 변경 내용을 적용할 수 있습니다.
-   * 대신 쿼리는 동적 쿼리 매개변수가 있는 콘텐츠 조각 모델 참조를 선택하여 원하는 페이로드를 생성하도록 결과를 필터링해야 합니다.
-* 최상의 쿼리를 수행하려면 항상 AEM에서 지속 쿼리를 사용합니다. 여정 후반부에서 자세히 설명합니다.
+  * [콘텐츠 작성자는 콘텐츠 조각 계층을 완전히 제어하고](#content-hierarchy) 해당 쿼리를 중단시키는 변경 내용을 적용할 수 있습니다.
+  * 대신 쿼리는 동적 쿼리 매개변수가 있는 콘텐츠 조각 모델 참조를 선택하여 원하는 페이로드를 생성하도록 결과를 필터링해야 합니다.
+* 최상의 쿼리 성능을 위해 항상 AEM에서 지속 쿼리를 사용합니다. 여정 후반부에서 자세히 설명합니다.
 * GraphQL은 “필요한 것은 정확히 요청하고 제대로 얻습니다.”라는 모토에 따라 선언적입니다. 즉, GraphQL 쿼리를 만드는 도중 관계형 데이터베이스에서 만들 수 있는 `select *`유형 쿼리는 항상 피해야 합니다.
 
 [AEM을 사용하여 일반적으로 Headless를 구현하는 경우 &#x200B;](#level-1) 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
@@ -252,13 +278,13 @@ GraphQL은 AEM과 Headless 콘텐츠 사용자 사이에서 “접착제” 역�
 * 시간/일/월 기준 예상되는 API 호출 개수는 얼마이고 개수가 증가하고 계절성이 발생할 가능성이 있습니까?
 * 몇 명의 콘텐츠 작성자가 있습니까?
 * 몇 명의 콘텐츠 작성자가 동시에 작업할 것으로 예상합니까?
-* 콘텐츠 업데이트 주기란 무엇입니까?
+* 콘텐츠 업데이트 빈도란 무엇입니까?
 * 몇 개의 콘텐츠 모델이 필요합니까?
 * 몇 개의 모델 인스턴스가 필요합니까?
 
-#### 업데이트 주기 {#update-frequency}
+#### 업데이트 빈도 {#update-frequency}
 
-경험 섹션이 다르면 콘텐츠 업데이트 주기가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
+경험 섹션이 다르면 콘텐츠 업데이트 빈도가 달라지는 경우가 있습니다. 이 정보를 이해하려면 CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. [콘텐츠 설계자](#content-architects)가 모델을 디자인하여 콘텐츠를 나타내는 경우 중요한 정보입니다. 고려해야 할 사항:
 
 * 특정 기간이 경과하면 특정 유형의 콘텐츠는 만료되어야 합니까?
 * 사용자별로 다르므로 캐시할 수 없는 요소가 있습니까?
@@ -298,4 +324,4 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 만드는 방법에 대한 기술 설명서
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - 콘텐츠 조각(및 기타 자산)을 만들고 수정하는 방법에 대한 기술 설명서
 * [지속 쿼리](/help/sites-developing/headless/graphql-api/persisted-queries.md) - AEM의 지속 쿼리에 대한 기술 설명서
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko-KR)
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)

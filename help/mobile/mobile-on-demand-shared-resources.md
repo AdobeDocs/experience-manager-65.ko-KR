@@ -9,13 +9,17 @@ exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # 공유 리소스 업로드 {#uploading-shared-resources}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/kr/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 온라인 도움말에서 [AEM Mobile 앱의 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
 
 >[!CAUTION]
 >

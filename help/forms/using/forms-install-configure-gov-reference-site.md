@@ -7,13 +7,31 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4819'
 ht-degree: 3%
-
 ---
-
 # We.Gov 및 We.Finance 참조 사이트 설정 및 구성 {#set-up-and-configure-we-gov-reference-site}
 
 ## 데모 패키지 세부 정보 {#demo-package-details}
@@ -47,21 +65,21 @@ ht-degree: 3%
 
 * **we-gov-forms.pkg.all-&lt;version>.zip** - *데모 패키지 완료*
 
-   * **we-gov-forms.ui.apps-&lt;version>.zip** *- 모든 구성 요소, 클라이언트 라이브러리, 샘플 사용자, 워크플로 모델 등을 포함합니다.*
+  * **we-gov-forms.ui.apps-&lt;version>.zip** *- 모든 구성 요소, 클라이언트 라이브러리, 샘플 사용자, 워크플로 모델 등을 포함합니다.*
 
-      * **we-gov-forms.core-&lt;version>.jar** - *모든 OSGI 서비스, 사용자 지정 워크플로 단계 구현 등을 포함합니다.*
+    * **we-gov-forms.core-&lt;version>.jar** - *모든 OSGI 서비스, 사용자 지정 워크플로 단계 구현 등을 포함합니다.*
 
-      * **we-gov-forms.derby&lt;version>.jar** - *모든 OSGI 서비스, 데이터베이스 스키마 등을 포함합니다.*
+    * **we-gov-forms.derby&lt;version>.jar** - *모든 OSGI 서비스, 데이터베이스 스키마 등을 포함합니다.*
 
-      * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
+    * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 그리드 레이아웃 패키지*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 그리드 레이아웃 패키지*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 콘텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
+  * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 콘텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
 
-   * **we-gov-forms.ui.analytics-&lt;version>.zip** - *리포지토리 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
+  * **we-gov-forms.ui.analytics-&lt;version>.zip** - *리포지토리 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하는 데 도움이 되는 자리 표시자 클라우드 구성을 포함한 모든 기본 구성 노드를 포함합니다.*
+  * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하는 데 도움이 되는 자리 표시자 클라우드 구성을 포함한 모든 기본 구성 노드를 포함합니다.*
 
 이 패키지에 포함된 자산은 다음과 같습니다.
 
@@ -232,7 +250,7 @@ ht-degree: 3%
 
 1. 다음으로 이동합니다.
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
@@ -486,7 +504,7 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 양식 전환 도구와 올바로 통신하도록 서비스를 구성하려면 사용자는 Identity Management System(IMS) 서비스를 구성하여 Adobe I/O에 등록할 수 있어야 합니다.
 
-1. https://&lt;aemserver>:&lt;port> > Adobe Experience로 이동합니다.
+1. https://<aemserver>:<port> > Adobe Experience로 이동합니다.
 왼쪽 상단의 관리자 > 도구 > 보안 > Adobe IMS 구성.
 
 1. 만들기를 클릭합니다.

@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 6%
-
 ---
-
 
 # AEM용 SPA 개발{#developing-spas-for-aem}
 
@@ -192,8 +206,8 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
   SPA 애플리케이션 소스 및 구성 요소 소스에 대한 소스가 체크아웃되는 위치입니다.
 
-   * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
-   * 해당 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM 작성자에게 배포됩니다.
+  * NPM clientlib 생성기는 SPA 프로젝트에서 클라이언트 라이브러리를 생성합니다.
+  * 해당 라이브러리는 Maven에서 가져오고 구성 요소와 함께 Maven Build 플러그인에 의해 AEM 작성자에게 배포됩니다.
 
 * **AEM 작성자**
 
@@ -201,11 +215,11 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
   작성 환경에서 SPA 편집기를 사용하여 SPA를 편집하는 경우:
 
-   1. SPA가 외부 HTML을 요청합니다.
-   1. CSS가 로드되었습니다.
-   1. SPA 애플리케이션의 JavaScript이 로드됩니다.
-   1. SPA 응용 프로그램이 실행되면 JSON이 요청되어 앱이 `cq-data` 특성을 포함하는 페이지의 DOM을 빌드할 수 있습니다.
-   1. 이 `cq-data` 특성을 사용하면 편집기에서 구성 요소에 사용할 수 있는 편집 구성이 무엇인지 알 수 있도록 추가 페이지 정보를 로드할 수 있습니다.
+  1. SPA가 외부 HTML을 요청합니다.
+  1. CSS가 로드되었습니다.
+  1. SPA 애플리케이션의 JavaScript이 로드됩니다.
+  1. SPA 응용 프로그램이 실행되면 JSON이 요청되어 앱이 `cq-data` 특성을 포함하는 페이지의 DOM을 빌드할 수 있습니다.
+  1. 이 `cq-data` 특성을 사용하면 편집기에서 구성 요소에 사용할 수 있는 편집 구성이 무엇인지 알 수 있도록 추가 페이지 정보를 로드할 수 있습니다.
 
 * **AEM 게시**
 
@@ -215,8 +229,8 @@ AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하
 
   Dispatcher은 사이트 방문자를 위한 AEM의 캐싱 레이어 역할을 합니다.
 
-   * 요청은 AEM 작성자에 있는 것과 유사하게 처리되지만 편집기에만 필요하기 때문에 페이지 정보에 대한 요청은 없습니다.
-   * JavaScript, CSS, JSON 및 HTML이 캐시되어 빠른 전송을 위해 페이지가 최적화됩니다.
+  * 요청은 AEM 작성자에 있는 것과 유사하게 처리되지만 편집기에만 필요하기 때문에 페이지 정보에 대한 요청은 없습니다.
+  * JavaScript, CSS, JSON 및 HTML이 캐시되어 빠른 전송을 위해 페이지가 최적화됩니다.
 
 >[!NOTE]
 >

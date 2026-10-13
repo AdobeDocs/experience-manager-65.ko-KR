@@ -1,6 +1,6 @@
 ---
-title: 연결된 Assets을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
-description: 다른  [!DNL Adobe Experience Manager Sites] 배포에서 웹 페이지를 만들 때 원격  [!DNL Adobe Experience Manager Assets] 배포에서 사용할 수 있는 자산을 사용합니다.
+title: 연결된 Assets을 사용하여 [!DNL Sites]에서 DAM 에셋 공유
+description: 다른 [!DNL Adobe Experience Manager Sites] 배포에서 웹 페이지를 만들 때 원격 [!DNL Adobe Experience Manager Assets] 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AK
 mini-toc-levels: 2
 role: User, Admin, Leader
@@ -8,13 +8,31 @@ feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 3aa2a621-ec4f-5c9b-bbb0-bd5a3b1279a6
+    internal-label: User and Groups
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f498a57f-d890-4726-b1d0-8f291d1e6206
+    internal-label: Connected assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4025'
 ht-degree: 15%
-
 ---
-
 # 연결된 Assets을 사용하여 [!DNL Experience Manager Sites]에서 DAM 에셋 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | 버전 | 문서 링크 |
@@ -59,7 +77,7 @@ ht-degree: 15%
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
-기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 필요한 자산을 호스팅하는 DAM 배포에 사용됩니다. [!DNL Sites] 작성자가 이러한 원격 자산을 가져옵니다.
+기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 필요한 에셋을 호스팅하는 DAM 배포에 사용됩니다. [!DNL Sites] 작성자가 이러한 원격 자산을 가져옵니다.
 
 | 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 설명 |
 |---|---|---|---|---|
@@ -132,7 +150,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
    >[!NOTE]
    >
-   >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 렌디션을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
+   >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 에셋의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 렌디션을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
 
 1. [!DNL Assets] 배포의 CORS 구성에서 [!DNL Sites] 배포를 허용된 원본으로 추가합니다. 자세한 내용은 [CORS 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)를 참조하십시오.
 
@@ -177,17 +195,17 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 ## 원격 자산 사용 {#use-remote-assets}
 
-웹 사이트 작성자가 콘텐츠 파인더를 사용하여 DAM 배포에 연결합니다. 작성자는 구성 요소에서 원격 자산을 찾아보고 검색하고 드래그할 수 있습니다. 원격 DAM을 인증하려면 관리자가 제공한 자격 증명(있는 경우)을 가까이 보관하십시오.
+웹 사이트 작성자가 콘텐츠 파인더를 사용하여 DAM 배포에 연결합니다. 작성자는 구성 요소에서 원격 에셋을 찾아보고 검색하고 드래그할 수 있습니다. 원격 DAM을 인증하려면 관리자가 제공한 자격 증명(있는 경우)을 가까이 보관하십시오.
 
-작성자는 로컬 DAM 및 원격 DAM 배포에서 사용할 수 있는 자산을 단일 웹 페이지에서 사용할 수 있습니다. 콘텐츠 파인더를 사용하여 로컬 DAM을 검색하거나 원격 DAM을 검색합니다.
+작성자는 로컬 DAM 및 원격 DAM 배포에서 사용할 수 있는 자산을 단일 웹 페이지에서 사용할 수 있습니다. 콘텐츠 파인더를 사용하여 로컬 DAM 검색과 원격 DAM 검색 간에 전환합니다.
 
 로컬 [!DNL Sites] 배포에서 사용할 수 있는 동일한 분류 계층 구조와 함께 정확한 해당 태그가 있는 원격 자산의 태그만 가져옵니다. 다른 태그는 모두 무시됩니다. 전체 텍스트 검색을 제공하므로 작성자는 원격 [!DNL Experience Manager] 배포에 있는 모든 태그를 사용하여 원격 자산을 검색할 수 있습니다.
 
 ### 사용 연습 {#walk-through-of-usage}
 
-위의 설정을 사용하여 작성 환경에서 기능이 어떻게 작동하는지 파악합니다. 원격 DAM 배포 시 원하는 문서 또는 이미지를 사용합니다.
+위의 설정을 사용하여 작성 환경에서 기능이 어떻게 작동하는지 파악합니다. 원격 DAM 배포에서 원하는 문서 또는 이미지를 사용합니다.
 
-1. [!DNL Experience Manager] 작업 영역에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;에 액세스하여 원격 배포의 [!DNL Assets] 인터페이스로 이동합니다. 또는 브라우저에서 `https://[assets_servername_ams]:[port]/assets.html/content/dam`에 액세스합니다. 선택한 자산을 업로드합니다.
+1. [!DNL Experience Manager] 작업 영역에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;에 액세스하여 원격 배포의 [!DNL Assets] 인터페이스로 이동합니다. 또는 브라우저에서 `https://[assets_servername_ams]:[port]/assets.html/content/dam`에 액세스합니다. 선택한 에셋을 업로드합니다.
 1. [!DNL Sites] 배포의 오른쪽 상단 모서리에 있는 프로필 활성자에서 **[!UICONTROL 가장 대상]**&#x200B;을 클릭합니다. `ksaner`를 사용자 이름으로 지정하고 제공된 옵션을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 사이트]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;에서 We.Retail 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`에 액세스하여 페이지를 편집합니다.
 
@@ -195,7 +213,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 1. [!UICONTROL Assets] 탭(원격 콘텐츠 파인더)을 열고 **[!UICONTROL 연결된 Assets에 로그인]**&#x200B;을 클릭합니다.
 1. 자격 증명을 제공합니다(사용자 이름: `ksaner`, 암호: `password`). 이 사용자는 [!DNL Experience Manager] 배포 모두에 대한 작성 권한이 있습니다.
-1. DAM에 추가한 자산을 검색합니다. 원격 자산이 왼쪽 패널에 표시됩니다. 이미지 또는 문서를 필터링하고 지원되는 문서 유형을 추가로 필터링합니다. 이미지를 `Image` 구성 요소로, 문서를 `Download` 구성 요소로 드래그합니다.
+1. DAM에 추가한 에셋을 검색합니다. 원격 에셋이 왼쪽 패널에 표시됩니다. 이미지 또는 문서를 필터링하고 지원되는 문서 유형을 추가로 필터링합니다. 이미지를 `Image` 구성 요소로, 문서를 `Download` 구성 요소로 드래그합니다.
 
    가져온 자산은 로컬 [!DNL Sites] 배포에서 읽기 전용입니다. [!DNL Sites] 구성 요소에서 제공하는 옵션을 사용하여 가져온 자산을 편집할 수 있습니다. 구성 요소별 편집은 원본에 영향을 주지 않습니다.
 
@@ -209,7 +227,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
    *그림: 백그라운드에서 발생하는 자산의 비동기적 가져오기에 대한 알림.*
 
-1. 페이지를 게시할 때 [!DNL Experience Manager]은(는) 페이지에서 사용되는 전체 자산 목록을 표시합니다. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
+1. 페이지를 게시할 때 [!DNL Experience Manager]은(는) 페이지에서 사용되는 전체 자산 목록을 표시합니다. 게시할 때 원격 에셋을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
 
    >[!NOTE]
    >
@@ -219,7 +237,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 >
 >가져온 원격 자산은 웹 페이지에서 사용한 경우 로컬 폴더에 액세스할 권한이 있는 모든 사람이 검색하고 사용할 수 있습니다. 가져온 자산은 로컬 폴더(위의 연습에서 `connectedassets`)에 저장됩니다. 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
 
-가져온 자산은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 자산으로 사용할 수 있습니다.
+가져온 에셋은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 에셋과 마찬가지로 사용할 수 있습니다.
 
 ### 웹 페이지 간 에셋 사용 확인 {#asset-usage-references}
 

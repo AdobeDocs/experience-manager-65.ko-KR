@@ -9,13 +9,29 @@ docset: aem65
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2290'
 ht-degree: 4%
-
 ---
-
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -241,7 +257,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 >미리 채우기 서비스 구성은 적응형 양식, HTML 5 양식 및 HTML 5 양식 세트에 적용할 수 있습니다.
 
 1. 다음 URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]**&#x200B;을 엽니다.\
-   https://&lt;server>:&lt;port>/system/console/configMgr
+   https://<server>:<port>/system/console/configMgr
 1. **[!UICONTROL 기본 미리 채우기 서비스 구성]**&#x200B;을 검색하여 엽니다.
 
    ![미리 채우기 구성](assets/prefill_config_new.png)
@@ -386,14 +402,14 @@ prefill-page component.zip
 서버 대신 클라이언트에서 데이터 병합 작업을 수행하도록 AEM Forms 서버를 구성할 수 있습니다. 적응형 양식을 미리 채우고 렌더링하는 데 필요한 시간을 크게 줄입니다. 기본적으로 이 기능은 비활성화되어 있습니다. 구성 관리자 또는 명령줄에서 활성화할 수 있습니다.
 
 * 구성 관리자에서 활성화 또는 비활성화하려면 다음을 수행합니다.
-   1. AEM 구성 관리자를 엽니다.
-   1. 적응형 양식 및 대화형 통신 웹 채널 구성 찾기 및 열기
-   1. Configuration.af.clientside.datamerge.enabled.name 옵션을 활성화합니다
+  1. AEM 구성 관리자를 엽니다.
+  1. 적응형 양식 및 대화형 통신 웹 채널 구성 찾기 및 열기
+  1. Configuration.af.clientside.datamerge.enabled.name 옵션을 활성화합니다
 * 명령줄에서 을 활성화하거나 비활성화하려면 다음을 수행합니다.
-   * 활성화하려면 다음 cURL 명령을 실행합니다.
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * 활성화하려면 다음 cURL 명령을 실행합니다.
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * 비활성화하려면 다음 cURL 명령을 실행합니다.
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * 비활성화하려면 다음 cURL 명령을 실행합니다.
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 [FileAttachmentMap](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)을(를) 반환합니다

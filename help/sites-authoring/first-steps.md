@@ -1,6 +1,6 @@
 ---
 title: AEM에서 콘텐츠를 만들 때 작성자를 위한 첫 번째 단계
-description: AEM 6.5에서 콘텐츠 생성 및 작성의 주요 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능을 사용 방법에 대한 정보도 찾을 수 있습니다.
+description: AEM 6.5에서 콘텐츠를 만들고 작성하는 데 필요한 핵심 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능을 사용하는 방법에 대한 정보도 찾을 수 있습니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,13 +10,26 @@ exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '415'
 ht-degree: 12%
-
 ---
-
 
 # 작성자를 위한 첫 번째 단계{#first-steps-for-authors}
 

@@ -9,13 +9,27 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 100%
-
 ---
-
 # 애플리케이션 서버 성능 향상{#enhancing-application-server-performance}
 
 이 콘텐츠에서는 AEM Forms 애플리케이션 서버 성능을 향상하기 위해 구성할 수 있는 옵션 설정을 설명합니다.
@@ -128,9 +142,9 @@ AEM Forms에서 처리를 위해 전송한 문서가 기본 문서 최대 인라
 
 최대 인라인 크기를 늘리려면 직렬화된 문서를 저장하는 데 더 많은 메모리가 필요합니다. 따라서 일반적으로 JVM 최대 힙 크기도 늘려야 합니다.
 
-많은 문서를 처리하는 과부하 시스템은 JVM 힙 메모리를 빠르게 포화시킬 수 있습니다. OutOfMemoryError를 방지하려면 일반적으로 지정된 시간에 실행되는 문서 수에 인라인 문서 크기를 곱한 값만큼 JVM 최대 힙 크기를 늘립니다.
+많은 문서를 처리하는 과부하 시스템은 JVM 힙 메모리를 빠르게 포화시킬 수 있습니다. OutOfMemoryError를 방지하려면 특정 시점에 일반적으로 실행되는 문서 수에 인라인 문서 크기를 곱한 값만큼 JVM 최대 힙 크기를 늘립니다.
 
-JVM 최대 힙 크기 증가 = (인라인 문서 크기) x (처리된 평균 문서 수)
+JVM 최대 힙 크기 증가 = (인라인 문서 크기) x (평균 처리 문서 수).
 
 **JVM 최대 힙 크기 계산**
 
@@ -150,7 +164,7 @@ JVM 최대 힙 크기를 50MB만큼 늘려 총 562MB가 되도록 설정해야 �
 
 예를 들어 애플리케이션 서버에서 수행된 이전 작업으로 인해 JVM 힙이 조각난 상태로 남아 있고 가비지 수집기가 힙을 충분히 압축하여 큰 블록의 여유 공간을 회복할 수 없습니다. 최대 인라인 크기 증가에 맞게 JVM 최대 힙 크기를 조정했더라도 OutOfMemoryError가 발생할 수 있습니다.
 
-힙 조각화를 고려하려면 인라인 문서 크기를 전체 힙 크기의 0. 1%보다 높게 설정해서는 안 됩니다. 예를 들어 JVM 최대 힙 크기가 512MB이면 최대 인라인 크기인 512MB x 0.001 = 0.512MB 또는 512KB를 지원할 수 있습니다.
+힙 조각화를 고려하려면 인라인 문서 크기를 전체 힙 크기의 0.1%보다 높게 설정해서는 안 됩니다. 예를 들어 JVM 최대 힙 크기가 512MB이면 최대 인라인 크기인 512MB x 0.001 = 0.512MB 또는 512KB를 지원할 수 있습니다.
 
 ## WebSphere Application Server 개선 사항 {#websphere-application-server-enhancements}
 

@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 2%
-
 ---
-
 # JEE 환경에서 AEM Forms 강화 {#hardening-your-aem-forms-on-jee-environment}
 
 회사 인트라넷에서 실행되는 JEE의 AEM Forms 보안을 강화하기 위한 다양한 보안 강화 설정에 대해 알아봅니다.
@@ -190,12 +206,12 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
    * **GDS(전역 문서 저장소) 디렉터리**: AEM Forms 설치 프로세스 중에 GDS 디렉터리의 위치를 수동으로 구성합니다. 설치하는 동안 위치 설정이 비어 있으면 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에서 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
    * **CRX-저장소 디렉터리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`입니다.
    * **AEM Forms 임시 디렉터리**:
-      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
-      * (Linux) /var/tmp 또는 /usr/tmp
-      * (AIX) /tmp 또는 /usr/tmp
-      * (Solaris) /var/tmp 또는 /usr/tmp
+     * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+     * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
+       UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+     * (Linux) /var/tmp 또는 /usr/tmp
+     * (AIX) /tmp 또는 /usr/tmp
+     * (Solaris) /var/tmp 또는 /usr/tmp
 1. 새 사용자 계정에 다음 디렉터리에 대한 쓰기 권한을 부여합니다.
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
@@ -262,7 +278,7 @@ Configuration Manager는 애플리케이션 서버에 배포된 서블릿을 사
 1. AEM Forms 서버를 시작합니다.
 1. 변경 사항을 테스트하고 더 이상 작동하지 않는지 확인하려면 브라우저에 아래 URL을 입력합니다.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Trust Store에 대한 원격 액세스 차단**
 
@@ -698,7 +714,7 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 1. 요청에 레퍼러가 있는 경우 서버는 허용된 레퍼러인지 여부를 확인합니다. 허용되면 서버는 레퍼러 예외를 확인합니다.
 
    1. 예외인 경우 해당 요청이 차단됩니다.
-   1. 예외가 아닌 경우 해당 요청이 전달됩니다.
+   1. 예외가 아닌 경우 해당 요청은 통과됩니다.
 
 1. 요청에 레퍼러가 없으면 서버는 Null 레퍼러가 허용되는지 여부를 확인합니다.
 
@@ -1030,12 +1046,12 @@ AEM Forms on JEE 턴키 설치는 기본적으로 로컬 시스템 계정을 사
    * **GDS(전역 문서 저장소) 디렉터리**: AEM Forms 설치 프로세스 중에 GDS 디렉터리의 위치를 수동으로 구성합니다. 설치하는 동안 위치 설정이 비어 있으면 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에서 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
    * **CRX-저장소 디렉터리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`입니다.
    * **AEM Forms 임시 디렉터리**:
-      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
-      * (Linux) /var/tmp 또는 /usr/tmp
-      * (AIX) /tmp 또는 /usr/tmp
-      * (Solaris) /var/tmp 또는 /usr/tmp
+     * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+     * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
+       UNIX 기반 시스템에서는 루트가 아닌 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+     * (Linux) /var/tmp 또는 /usr/tmp
+     * (AIX) /tmp 또는 /usr/tmp
+     * (Solaris) /var/tmp 또는 /usr/tmp
 1. 새 사용자 계정에 다음 디렉터리에 대한 쓰기 권한을 부여합니다.
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\

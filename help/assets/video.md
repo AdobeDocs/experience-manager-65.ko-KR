@@ -11,13 +11,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '10724'
+source-wordcount: '10732'
 ht-degree: 3%
-
 ---
-
 # Dynamic Media의 비디오 {#video}
 
 이 섹션에서는 Dynamic Media에서 비디오 작업에 대해 설명합니다.
@@ -43,23 +54,23 @@ ht-degree: 3%
 
    * 나만의 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media와 함께 제공되는 미리 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
-      * [비디오 인코딩 프로필을 만듭니다](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192.md입니다.
-      * [비디오 인코딩 모범 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보세요.
+     * [비디오 인코딩 프로필을 만듭니다](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+     * 최대 출력 비디오 인코딩 해상도는 8,192 × 4,320 또는 4,320 × 8,192.md입니다.
+     * [비디오 인코딩 모범 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보세요.
 
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
-      * [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-      * [처리 프로필을 사용하기 위한 디지털 에셋 구성 모범 사례](/help/assets/organize-assets.md)에 대해 자세히 알아보세요.
-      * [디지털 자산 구성](/help/assets/organize-assets.md)에 대해 자세히 알아보세요.
+     * [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+     * [처리 프로필을 사용하기 위한 디지털 에셋 구성 모범 사례](/help/assets/organize-assets.md)에 대해 자세히 알아보세요.
+     * [디지털 자산 구성](/help/assets/organize-assets.md)에 대해 자세히 알아보세요.
 
    * 기본 소스 비디오를 폴더에 업로드합니다. 비디오가 폴더에 추가되면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
-      * Dynamic Media는 최대 길이가 30분이고 최소 해상도가 25×25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
-      * 지원되는 최대 입력 비디오 해상도는 16,384 × 16,384입니다.
-      * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
-      * [비디오를 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
-      * [지원되는 입력 파일 형식](/help/assets/assets-formats.md#supported-multimedia-formats)에 대해 자세히 알아보세요.
+     * Dynamic Media는 최대 길이가 30분이고 최소 해상도가 25×25보다 큰 주로 짧은 형식의 비디오를 지원합니다.
+     * 지원되는 최대 입력 비디오 해상도는 16,384 × 16,384입니다.
+     * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
+     * [비디오를 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+     * [지원되는 입력 파일 형식](/help/assets/assets-formats.md#supported-multimedia-formats)에 대해 자세히 알아보세요.
 
    * 에셋 또는 워크플로 보기에서 [비디오 인코딩이 어떻게 진행 중인지 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -67,55 +78,55 @@ ht-degree: 3%
 
    * 비디오 자산 구성, 검색 및 검색
 
-      * [디지털 자산 구성](/help/assets/organize-assets.md)
-[처리 프로필 사용을 위한 디지털 에셋 구성 모범 사례](organize-assets.md)에 대해 자세히 알아보세요.
+     * [디지털 자산 구성](/help/assets/organize-assets.md)
+       [처리 프로필 사용을 위한 디지털 에셋 구성 모범 사례](organize-assets.md)에 대해 자세히 알아보세요.
 
-      * [비디오 자산 검색](search-assets.md#custompredicates) 또는 [자산 검색](/help/assets/search-assets.md)
+     * [비디오 자산 검색](search-assets.md#custompredicates) 또는 [자산 검색](/help/assets/search-assets.md)
 
    * 비디오 자산 미리 보기 및 게시
 
-      * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
-        [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리 보기](previewing-assets.md)
-        [비디오 표현물 보기](video-renditions.md)
-        [비디오 표현물 관리](manage-assets.md#managing-renditions)
+     * 소스 비디오와 비디오의 인코딩된 렌디션을 관련 썸네일과 함께 봅니다.
+       [비디오 미리 보기](managing-video-assets.md#upload-and-preview-video-assets) 또는 [에셋 미리 보기](previewing-assets.md)
+       [비디오 표현물 보기](video-renditions.md)
+       [비디오 표현물 관리](manage-assets.md#managing-renditions)
 
-      * [뷰어 사전 설정 관리](managing-viewer-presets.md)
-      * [자산 게시](publishing-dynamicmedia-assets.md)
+     * [뷰어 사전 설정 관리](managing-viewer-presets.md)
+     * [자산 게시](publishing-dynamicmedia-assets.md)
 
    * 비디오 메타데이터 작업
 
-      * 프레임 속도, 오디오 및 비디오 비트율, 코덱 등 인코딩된 비디오 렌디션의 속성을 확인합니다.
-        [비디오 렌디션 속성 보기](video-renditions.md)
+     * 프레임 속도, 오디오 및 비디오 비트율, 코덱 등 인코딩된 비디오 렌디션의 속성을 확인합니다.
+       [비디오 렌디션 속성 보기](video-renditions.md)
 
-      * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
-        [비디오 속성 편집](manage-assets.md#editing-properties)
+     * 제목, 설명, 태그 및 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
+       [비디오 속성 편집](manage-assets.md#editing-properties)
 
-      * [디지털 에셋용 메타데이터 관리](metadata.md)
-      * [메타데이터 스키마](metadata-schemas.md)
+     * [디지털 에셋용 메타데이터 관리](metadata.md)
+     * [메타데이터 스키마](metadata-schemas.md)
 
    * 비디오 검토, 승인 및 주석 달기, 전체 버전 제어 유지
 
-      * [비디오에 주석 달기](managing-video-assets.md#annotate-video-assets) 또는 [자산에 주석 달기](manage-assets.md#annotating)
+     * [비디오에 주석 달기](managing-video-assets.md#annotate-video-assets) 또는 [자산에 주석 달기](manage-assets.md#annotating)
 
-      * [버전 만들기](manage-assets.md#asset-versioning)
-      * [자산에 워크플로 적용](assets-workflow.md) 또는 [자산에 대한 워크플로 시작](manage-assets.md#starting-a-workflow-on-an-asset) 참조
+     * [버전 만들기](manage-assets.md#asset-versioning)
+     * [자산에 워크플로 적용](assets-workflow.md) 또는 [자산에 대한 워크플로 시작](manage-assets.md#starting-a-workflow-on-an-asset) 참조
 
-      * [폴더 자산 검토](bulk-approval.md)
-      * [프로젝트](../sites-authoring/projects.md)
+     * [폴더 자산 검토](bulk-approval.md)
+     * [프로젝트](../sites-authoring/projects.md)
 
 1. 다음 중 하나를 수행하여 **Dynamic Media 비디오를 게시**:
 
    * Adobe Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
 
-      * [웹 페이지에 비디오를 추가](adding-dynamic-media-assets-to-pages.md).
+     * [웹 페이지에 비디오를 추가](adding-dynamic-media-assets-to-pages.md).
 
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 연결하거나 포함할 수 있습니다.
 
-      * URL을 사용하여 비디오 통합:
-        [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md).
+     * URL을 사용하여 비디오 통합:
+       [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md).
 
-      * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-        [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
+     * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
+       [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
 
    * [비디오 보고서 생성](#viewing-video-reports).
 
@@ -143,8 +154,8 @@ Dynamic Media의 비디오는 데스크톱, iOS, Android™, BlackBerry® 및 Wi
 
 * 지원되는 다양한 형식의 비디오를 업로드하고 MP4 H.264로 인코딩하여 여러 화면에서 재생할 수 있습니다. 미리 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정 또는 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
 
-   * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
-   * **참고**: 기본/원본 비디오가 응용 비디오 집합에 추가되지 않았습니다.
+  * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
+  * **참고**: 기본/원본 비디오가 응용 비디오 집합에 추가되지 않았습니다.
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
 * 전체 메타데이터 지원을 통해 비디오를 구성, 탐색 및 검색하여 비디오 자산을 효율적으로 관리할 수 있습니다.
@@ -158,8 +169,8 @@ Dynamic Media는 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지
 
 * 다음을 포함한 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
-   * 단일 비디오 뷰어.
-   * 비디오 및 이미지 컨텐츠를 모두 결합하는 혼합 미디어 뷰어입니다.
+  * 단일 비디오 뷰어.
+  * 비디오 및 이미지 컨텐츠를 모두 결합하는 혼합 미디어 뷰어입니다.
 
 * 브랜딩 요구 사항을 충족하도록 비디오 플레이어를 구성합니다.
 * 간단한 URL 또는 포함 코드를 사용하여 비디오를 웹 사이트, 모바일 사이트 또는 모바일 애플리케이션에 통합합니다.
@@ -463,10 +474,10 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
 
    * 오른쪽 상단 모서리에서 **비디오 보고서 새로 고침** 아이콘을 선택합니다.
-보고서 종료 날짜가 현재 날짜인 경우에만 새로 고침 을 사용합니다. 이렇게 하면 보고서를 마지막으로 실행한 이후 발생한 비디오 추적이 표시됩니다.
+     보고서 종료 날짜가 현재 날짜인 경우에만 새로 고침 을 사용합니다. 이렇게 하면 보고서를 마지막으로 실행한 이후 발생한 비디오 추적이 표시됩니다.
 
    * 오른쪽 상단 모서리에서 **날짜 선택기** 아이콘을 선택합니다.
-비디오 데이터를 표시할 시작 및 종료 날짜 범위를 지정한 다음 **[!UICONTROL 보고서 실행]**&#x200B;을 선택합니다.
+     비디오 데이터를 표시할 시작 및 종료 날짜 범위를 지정한 다음 **[!UICONTROL 보고서 실행]**&#x200B;을 선택합니다.
 
    [최상위 지표] 그룹 상자는 사이트에서 모든 *게시된* 비디오에 대한 다양한 집계 측정을 식별합니다.
 
@@ -970,15 +981,15 @@ Experience Manager의 모든 비디오에는 연결된 썸네일이 있어야 �
 
    * 비디오의 프레임을 새 썸네일로 사용하려면 다음 작업을 수행하십시오.
 
-      * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]**&#x200B;을 선택합니다.
-      * 재생 버튼을 선택한 다음 비디오의 새 썸네일로 캡처할 프레임에서 일시 중지 버튼을 선택합니다.
+     * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]**&#x200B;을 선택합니다.
+     * 재생 버튼을 선택한 다음 비디오의 새 썸네일로 캡처할 프레임에서 일시 중지 버튼을 선택합니다.
 
    * 이미지 자산을 새 썸네일로 사용하려면 다음을 수행하십시오.
 
-      * 도구 모음에서 **[!UICONTROL Assets에서 썸네일 선택]**&#x200B;을 선택합니다.
-      * **[!UICONTROL 썸네일 선택]**&#x200B;을 선택합니다.
-      * 사용할 이전에 업로드되고 게시된 이미지 자산으로 이동합니다. 에셋의 크기가 자동으로 조정되어 비디오의 썸네일 이미지로 사용됩니다.
-      * 이미지 자산을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+     * 도구 모음에서 **[!UICONTROL Assets에서 썸네일 선택]**&#x200B;을 선택합니다.
+     * **[!UICONTROL 썸네일 선택]**&#x200B;을 선택합니다.
+     * 사용할 이전에 업로드되고 게시된 이미지 자산으로 이동합니다. 에셋의 크기가 자동으로 조정되어 비디오의 썸네일 이미지로 사용됩니다.
+     * 이미지 자산을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 
 1. 썸네일 변경 페이지에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 선택합니다.
 1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
@@ -1113,11 +1124,11 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 * `IllegalArgumentException`이(가) 다음 중 하나에 대해 기록됩니다.
 
-   * 전달된 `resource` 매개 변수가 null입니다.
-   * 전달된 `resource` 매개 변수가 비디오가 아닙니다.
-   * 전달된 `manifestType` 매개 변수가 null입니다.
-   * `onlyIfPublished` 매개 변수는 true로 전달되지만 비디오가 게시되지 않습니다.
-   * Dynamic Media의 응용 비디오 세트를 사용하여 비디오가 수집되지 않았습니다.
+  * 전달된 `resource` 매개 변수가 null입니다.
+  * 전달된 `resource` 매개 변수가 비디오가 아닙니다.
+  * 전달된 `manifestType` 매개 변수가 null입니다.
+  * `onlyIfPublished` 매개 변수는 true로 전달되지만 비디오가 게시되지 않습니다.
+  * Dynamic Media의 응용 비디오 세트를 사용하여 비디오가 수집되지 않았습니다.
 
 * Dynamic Media에 연결하는 데 문제가 있으면 `IOException`이(가) 기록됩니다.
 * 비디오가 DASH 형식을 사용하여 처리되지 않은 동안 전달된 `manifestType` 매개 변수가 `ManifestType.DASH`이면 `UnsupportedOperationException`이(가) 기록됩니다.

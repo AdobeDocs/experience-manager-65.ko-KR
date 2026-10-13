@@ -9,13 +9,33 @@ exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # 백본 상호 작용{#backbone-interaction}
 
 백본은 웹 애플리케이션에서 MVC 아키텍처를 만들고 따르는 데 도움이 되는 라이브러리입니다. 백본의 기본 아이디어는 인터페이스를 모델이 지원하는 논리 뷰로 구성하는 것입니다. 각 모델은 페이지를 다시 그릴 필요 없이 모델이 변경될 때 개별적으로 업데이트할 수 있습니다. 백본에 대한 자세한 내용은 [https://backbonejs.org](https://backbonejs.org/)을(를) 참조하십시오.

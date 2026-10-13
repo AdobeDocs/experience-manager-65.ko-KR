@@ -10,13 +10,27 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: de661f96-7584-43db-a310-e01b57fdf199
+    internal-label: Interactive images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4463'
+source-wordcount: '4472'
 ht-degree: 1%
-
 ---
-
 # 대화형 이미지{#interactive-images}
 
 &quot;구매 가능한&quot; 핫스팟을 이미지에 끌어다 놓아 정적 이미지를 고객에게 풍부하고 매력적인 경험을 쉽게 만들 수 있습니다. 구매 가능한 핫스팟은 제품 또는 서비스에 대한 추가 정보를 판매 시점(&quot;장바구니에 추가&quot; 또는 &quot;구매&quot;) 기능과 결합합니다. 고객은 이러한 핫스팟을 선택하고 제품 또는 서비스에 직접 연결하거나 장바구니에 추가하거나 웹 페이지에 연결할 수 있습니다. 이와 같은 직접 경험은 웹 사이트에서 고객 참여 및 전환을 증가시킵니다.
@@ -27,7 +41,7 @@ ht-degree: 1%
 
 다음으로 이동하여 위의 웹 페이지에서 작동 중인 대화형 이미지를 참조하십시오.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## 대화형 이미지 배너가 생성되는 방식 보기 {#watch-how-interactive-image-banners-are-created}
 
@@ -39,17 +53,21 @@ ht-degree: 1%
 
 일부 빠른 시작 작업에서 **예제** 제목을 찾습니다. 여기에는 아직 대화형 이미지가 추가되지 않은 다음 웹 페이지 예를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 이 자습서는 웹 사이트에서 대화형 이미지를 통합하는 단계를 설명하는 데 도움이 됩니다.
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수를 식별합니다** - Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에 사용된 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.그러나 Adobe Experience Manager Sites, Adobe Experience Manager eCommerce 또는 둘 다를 사용하는 경우 이 단계는 필요하지 않습니다.Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
+1. **(선택 사항) 핫스팟 변수를 식별합니다** - Experience Manager Assets 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에 사용된 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.
+그러나 Adobe Experience Manager Sites, Adobe Experience Manager eCommerce 또는 둘 다를 사용하는 경우 이 단계는 필요하지 않습니다.
+Experience Manager Assets의 [eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md)을 참조하세요.
 
-1. **(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기** - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner`을(를) 대신 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.[(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
+1. **(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기** - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 제공 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner`을(를) 대신 사용하려면 고유한 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
+[(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
-1. **이미지 배너 업로드** - 대화형으로 만들 이미지 배너를 업로드합니다.[이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
+1. **이미지 배너 업로드** - 대화형으로 만들 이미지 배너를 업로드합니다.
+[이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
 
 1. **이미지 배너에 핫스팟 추가** - 이미지 배너에 핫스팟을 하나 이상 추가하고 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 핫스팟을 연결합니다. 핫스팟을 추가한 후 대화형 이미지를 게시하여 이 작업을 완료합니다.
 
@@ -95,9 +113,11 @@ Experience Manager Assets의 배너 이미지에 핫스팟을 추가하는 경�
 
 일반적으로 특수 디버깅 도구를 사용할 필요가 없습니다. 최신 웹 브라우저에는 적절한 작업을 수행하는 웹 검사기가 있습니다. 다음은 웹 검사기를 포함하는 웹 브라우저의 몇 가지 예입니다.
 
-* Google Chrome에서 나가는 모든 HTTP 요청을 보려면 F12 키를 눌러 [개발자 도구] 패널을 연 다음 [네트워크] 탭을 선택합니다.Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [네트워크] 탭을 선택합니다.
+* Google Chrome에서 나가는 모든 HTTP 요청을 보려면 F12 키를 눌러 [개발자 도구] 패널을 연 다음 [네트워크] 탭을 선택합니다.
+Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [네트워크] 탭을 선택합니다.
 
-* Firefox에서는 F12를 눌러 Firebug 플러그인을 활성화하고 Net 탭을 사용하거나 내장된 Inspector 도구와 Network 탭을 사용할 수 있습니다.Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [검사기] 탭을 선택합니다.
+* Firefox에서는 F12를 눌러 Firebug 플러그인을 활성화하고 Net 탭을 사용하거나 내장된 Inspector 도구와 Network 탭을 사용할 수 있습니다.
+Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 연 다음 [검사기] 탭을 선택합니다.
 
 브라우저에서 네트워크 모니터링이 켜지면 페이지에서 빠른 보기를 트리거합니다.
 
@@ -153,7 +173,7 @@ Experience Manager Assets의 배너 이미지에 핫스팟을 추가하는 경�
 
 위의 세 가지 예에서 사용한 것과 동일한 접근 방식을 데모 웹 페이지에 적용할 수 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 데모 웹 페이지에는 여러 제품 썸네일이 있으며, 각 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 버튼이 있습니다. 웹 브라우저의 디버깅 도구가 여전히 활성화된 상태에서 각 버튼을 선택하고 기록된 빠른 보기 URL을 확인합니다. 페이지에서 사용할 수 있는 네 개의 제품 빠른 보기를 모두 활성화하면 다음과 같은 백엔드에 대한 빠른 보기 요청 목록이 제공됩니다.
 
@@ -273,17 +293,17 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
    * **[!UICONTROL 빠른 보기]**&#x200B;를 선택합니다.
 
-      * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
-      * Experience Manager Sites 또는 eCommerce 고객이 *아님*&#x200B;인 경우
+     * Experience Manager Sites 또는 eCommerce 고객의 경우 제품 선택기 아이콘(돋보기)을 선택하여 제품 선택 페이지를 엽니다. 사용할 제품을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+     * Experience Manager Sites 또는 eCommerce 고객이 *아님*&#x200B;인 경우
 
-         * [핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오. 이러한 변수를 정의해야 합니다.
-         * 그런 다음 수동으로 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제품의 SKU(Stock Keeping Unit)를 입력합니다. 이 SKU는 제공하는 각 고유 제품이나 서비스에 대한 고유 식별자입니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 입력하므로 선택한 핫스팟을 특정 SKU의 빠른 보기와 연결해야 한다는 것을 시스템에서 알 수 있습니다.
-         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 `category=Males`은(는) 추가된 변수입니다.
+       * [핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오. 이러한 변수를 정의해야 합니다.
+       * 그런 다음 수동으로 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제품의 SKU(Stock Keeping Unit)를 입력합니다. 이 SKU는 제공하는 각 고유 제품이나 서비스에 대한 고유 식별자입니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 입력하므로 선택한 핫스팟을 특정 SKU의 빠른 보기와 연결해야 한다는 것을 시스템에서 알 수 있습니다.
+       * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 `category=Males`은(는) 추가된 변수입니다.
 
    * **[!UICONTROL 하이퍼링크]**&#x200B;를 선택하십시오.
 
-      * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
-      * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
+     * Experience Manager Sites 고객의 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+     * 독립형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
@@ -291,13 +311,14 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.[경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
+     * Experience Manager Sites 고객인 경우 검색 아이콘(돋보기)을 선택하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 선택한 다음 핫스팟 관리 페이지로 돌아갈 수 있도록 페이지의 오른쪽 상단에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+       [경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하세요.
 
-      * 배너에 표시할 경험 조각의 너비와 높이를 지정합니다.
+     * 배너에 표시할 경험 조각의 너비와 높이를 지정합니다.
 
-        >[!NOTE]
-        >
-        >뷰어를 경험 조각에 포함할 때에는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+       >[!NOTE]
+       >
+       >뷰어를 경험 조각에 포함할 때에는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 1. 작업을 저장하고 찾아보기 페이지로 돌아가려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.
 1. 대화형 이미지를 게시합니다. 게시를 사용하면 배너를 클라우드를 통해 게재할 수 있으며 서드파티 웹 사이트와 통합해야 하는 경우 포함 코드를 생성할 수도 있습니다.
@@ -316,7 +337,10 @@ Experience Manager Assets과 함께 제공되는 `Shoppable_Banner`(이)라는 �
 
 미리보기 를 사용하여 대화형 이미지가 고객에게 어떻게 표시되는지 재현하고 이미지의 핫스팟을 테스트하여 예상대로 작동하는지 확인할 수 있습니다.
 
-대화형 이미지가 만족스러우면 게시할 수 있습니다.[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.[페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+대화형 이미지가 만족스러우면 게시할 수 있습니다.
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+[웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 콘텐츠에 상대 URL이 있는 링크, 특히 Experience Manager Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 불가능합니다.
+[페이지에 Dynamic Media Assets 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **대화형 이미지를 미리 보려면:**
 
@@ -337,15 +361,17 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 독립형 Experience Manager Assets 고객인 경우 이 섹션에 설명된 대로 대화형 이미지를 웹 사이트에 수동으로 추가할 수 있습니다.
 
-1. 게시된 대화형 이미지의 포함 코드를 복사합니다.[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+1. 게시된 대화형 이미지의 포함 코드를 복사합니다.
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 
-1. 복사한 포함 코드를 웹 페이지 내의 원하는 위치에 추가합니다.복사된 포함 코드는 지정된 영역에 자동으로 맞도록 응답형 환경에 대해 설정됩니다.
+1. 복사한 포함 코드를 웹 페이지 내의 원하는 위치에 추가합니다.
+복사된 포함 코드는 지정된 영역에 자동으로 맞도록 응답형 환경에 대해 설정됩니다.
 
 **예**
 
 데모 웹 사이트 사용 예:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 세 남자의 사진은 정적 `IMG` 태그입니다.
 
@@ -355,7 +381,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 통합은 `IMG` 태그를 제거하고 Experience Manager Assets에서 복사한 포함 코드로 바꾸는 것만큼 간단합니다. 3개의 원형 핫스팟이 있는 페이지에서 구매 가능한 대화형 이미지를 표시하는 다음 URL에서 결과를 볼 수 있습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -504,7 +530,7 @@ loadQuickView(quickViewUrl);
 
 완전히 통합된 대화형 이미지가 포함된 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=ko](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=ko)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 

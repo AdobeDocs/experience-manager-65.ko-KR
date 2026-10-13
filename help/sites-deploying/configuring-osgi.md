@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 1%
-
 ---
-
 # OSGi 구성{#configuring-osgi}
 
 [OSGi](https://www.osgi.org/)은(는) Adobe Experience Manager(AEM)의 기술 스택에 있는 기본 요소입니다. AEM의 합성 번들과 해당 구성을 제어하는 데 사용됩니다.
@@ -34,22 +43,22 @@ OSGi &quot;*은(는) 응용 프로그램을 작고 재사용 가능한 공동 �
 
 * [Adobe CQ 웹 콘솔](#osgi-configuration-with-the-web-console)
 
-   * 웹 콘솔은 OSGi 구성을 위한 표준 인터페이스입니다. 사전 정의된 목록에서 가능한 값을 선택할 수 있는 다양한 속성을 편집하기 위한 UI를 제공합니다.
+  * 웹 콘솔은 OSGi 구성을 위한 표준 인터페이스입니다. 사전 정의된 목록에서 가능한 값을 선택할 수 있는 다양한 속성을 편집하기 위한 UI를 제공합니다.
 
-     따라서 가장 사용하기 쉬운 방법입니다.
+    따라서 가장 사용하기 쉬운 방법입니다.
 
-   * 웹 콘솔에서 수행된 모든 구성은 현재 실행 모드나 그 이후의 실행 모드 변경 사항에 관계없이 즉시 적용되며 현재 인스턴스에 적용할 수 있습니다.
+  * 웹 콘솔에서 수행된 모든 구성은 현재 실행 모드나 그 이후의 실행 모드 변경 사항에 관계없이 즉시 적용되며 현재 인스턴스에 적용할 수 있습니다.
 
 * [구성 파일](#osgi-configuration-with-configuration-files)
 
-   * 웹 콘솔에 정의된 설정을 포함합니다.
-   * 다른 인스턴스에서 사용할 수 있도록 콘텐츠 패키지에 포함될 수 있습니다.
+  * 웹 콘솔에 정의된 설정을 포함합니다.
+  * 다른 인스턴스에서 사용할 수 있도록 콘텐츠 패키지에 포함될 수 있습니다.
 
 * [저장소의 content-nodes(sling:osgiConfig)](#osgi-configuration-in-the-repository)
 
-   * CRXDE Lite을 사용하여 수동으로 구성해야 합니다.
-   * `sling:OsgiConfig` 노드의 명명 규칙으로 인해 구성을 특정 [실행 모드](/help/sites-deploying/configure-runmodes.md)에 연결할 수 있습니다. 동일한 저장소에서 두 개 이상의 실행 모드에 대한 구성을 저장할 수도 있습니다.
-   * 실행 모드에 따라 적절한 구성이 즉시 적용됩니다.
+  * CRXDE Lite을 사용하여 수동으로 구성해야 합니다.
+  * `sling:OsgiConfig` 노드의 명명 규칙으로 인해 구성을 특정 [실행 모드](/help/sites-deploying/configure-runmodes.md)에 연결할 수 있습니다. 동일한 저장소에서 두 개 이상의 실행 모드에 대한 구성을 저장할 수도 있습니다.
+  * 실행 모드에 따라 적절한 구성이 즉시 적용됩니다.
 
 어떤 방법을 사용하든 다음 모든 구성 방법을 사용합니다.
 
@@ -302,7 +311,9 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 예를 들어 인스턴스가 실행 모드 `author,dev,emea`(으)로 시작되고 `/apps/*/config.author/` 및 `/apps/*/config.emea.author/` 모두 구성을 정의하는 경우
 `com.day.cq.wcm.core.impl.VersionManagerImpl`, `/apps/*/config.emea.author/`의 구성이 적용됩니다.
 
-이 규칙의 세부 기간은 PID 수준입니다.`/apps/*/config.author/`의 동일한 PID에 대한 일부 속성과 같은 PID에 대한 `/apps/*/config.emea.author/`의 더 구체적인 속성을 정의할 수 없습니다.일치 실행 모드 수가 가장 많은 구성은 전체 PID에 유효합니다.
+이 규칙의 세부 기간은 PID 수준입니다.
+`/apps/*/config.author/`의 동일한 PID에 대한 일부 속성과 같은 PID에 대한 `/apps/*/config.emea.author/`의 더 구체적인 속성을 정의할 수 없습니다.
+일치 실행 모드 수가 가장 많은 구성은 전체 PID에 유효합니다.
 
 ### 표준 구성 {#standard-configurations}
 
@@ -334,17 +345,17 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 
   `/apps/{somewhere}`
 
-   * 기본적으로 `{somewhere}`은(는) `system/config`이므로 구성이
+  * 기본적으로 `{somewhere}`은(는) `system/config`이므로 구성이
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * 그러나 처음 저장소의 다른 위치에서 가져온 구성을 편집하는 경우: 예를 들면 다음과 같습니다.
+  * 그러나 처음 저장소의 다른 위치에서 가져온 구성을 편집하는 경우: 예를 들면 다음과 같습니다.
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     그런 다음 업데이트된 구성이 원래 위치 아래에 기록됩니다. 예를 들면 다음과 같습니다.
+    그런 다음 업데이트된 구성이 원래 위치 아래에 기록됩니다. 예를 들면 다음과 같습니다.
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * `admin`이(가) 변경한 설정은 아래의 `*.config` 파일에 저장됩니다.
 
@@ -352,17 +363,17 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
      /crx-quickstart/launchpad/config
   ```
 
-   * 이 영역은 OSGi 구성 관리자의 개인 데이터이며, 시스템에 어떻게 입력되었는지에 관계없이 `admin`에서 지정한 모든 구성 세부 정보를 포함합니다.
-   * 이 영역은 구현 세부 사항이므로 이 디렉터리를 직접 편집해서는 안 됩니다.
-   * 그러나 백업, 여러 설치 또는 두 가지 모두를 위해 복제본을 만들 수 있도록 이러한 구성 파일의 위치를 파악하는 것이 유용합니다.
+  * 이 영역은 OSGi 구성 관리자의 개인 데이터이며, 시스템에 어떻게 입력되었는지에 관계없이 `admin`에서 지정한 모든 구성 세부 정보를 포함합니다.
+  * 이 영역은 구현 세부 사항이므로 이 디렉터리를 직접 편집해서는 안 됩니다.
+  * 그러나 백업, 여러 설치 또는 두 가지 모두를 위해 복제본을 만들 수 있도록 이러한 구성 파일의 위치를 파악하는 것이 유용합니다.
 
-      * Apache Felix OSGi 관리 콘솔
+    * Apache Felix OSGi 관리 콘솔
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * CRX Sling 클라이언트 저장소
+    * CRX Sling 클라이언트 저장소
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

@@ -10,20 +10,29 @@ exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 2%
-
+source-wordcount: '471'
+ht-degree: 3%
 ---
-
 # ExactTarget과 통합{#integrating-with-exacttarget}
 
-Adobe Experience Manager(AEM)를 정확한 타겟과 통합하면 정확한 타겟을 통해 AEM에서 생성된 이메일을 관리하고 전송할 수 있습니다. 또한 AEM 페이지에서 AEM Forms를 통해 Exact Target의 리드 관리 기능을 사용할 수 있습니다.
+Adobe Experience Manager(AEM)를 Exact Target과 통합하면 Exact Target을 통해 AEM에서 만든 이메일을 관리하고 보낼 수 있습니다. 또한 AEM 페이지에서 AEM Forms를 통해 Exact Target의 리드 관리 기능을 사용할 수 있습니다.
 
 통합은 다음과 같은 기능을 제공합니다.
 
-* AEM에서 이메일을 만들고 배포를 위해 정확한 Target에 게시하는 기능입니다.
+* AEM에서 이메일을 만들고 정확한 타겟 사이트에 게시하여 배포하는 기능.
 * 정확한 Target 구독자를 만들기 위해 AEM 양식의 작업을 설정하는 기능입니다.
 
 ExactTarget이 구성되면 뉴스레터 또는 이메일을 ExactTarget에 게시할 수 있습니다. [전자 메일 서비스에 뉴스레터 게시](/help/sites-authoring/personalization.md)를 참조하십시오.
@@ -34,9 +43,9 @@ ExactTarget 구성은 Cloudservices 또는 도구를 통해 추가할 수 있습
 
 ### Cloudservices를 통해 ExactTarget 구성 {#configuring-exacttarget-via-cloudservices}
 
-Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행하십시오.
+Cloud Services에서 ExactTarget 구성을 만들려면 다음을 수행하십시오.
 
-1. 시작 페이지에서 **Cloud Service**&#x200B;을 클릭합니다. 또는 `https://<hostname>:<port>/etc/cloudservices.html`에서 직접 액세스할 수 있습니다.
+1. 시작 페이지에서 **클라우드 서비스**&#x200B;를 클릭합니다. 또는 `https://<hostname>:<port>/etc/cloudservices.html`에서 직접 액세스할 수 있습니다.
 1. **ExactTarget**&#x200B;을 클릭한 다음 **구성**&#x200B;을 클릭합니다. ExactTarget 구성 창이 열립니다.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -46,7 +55,7 @@ Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 사용자 이름과 암호를 입력하고 API 끝점을 선택합니다(예: **https://webservice.exacttarget.com/Service.asmx**).
-1. **ExactTarget에 연결을 클릭합니다.** 연결되면 성공 대화 상자가 표시됩니다. 상자 창을 종료하려면 **확인**&#x200B;을 클릭합니다.
+1. **ExactTarget에 연결**&#x200B;을 클릭합니다. 성공적으로 연결되면 성공 대화 상자가 표시됩니다. 상자 창을 종료하려면 **확인**&#x200B;을 클릭합니다.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -65,7 +74,7 @@ Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 도구에서 ExactTarget 구성을 만들려면 다음 작업을 수행하십시오.
 
 1. 시작 페이지에서 **도구**&#x200B;를 클릭합니다. 또는 `https://<hostname>:<port>/misadmin#/etc`(으)로 이동하여 바로 탐색하십시오.
-1. **도구**, **Cloud Service 구성,**, **ExactTarget**&#x200B;을 선택하십시오.
+1. **도구**, **클라우드 서비스 구성,**, **ExactTarget**&#x200B;을 선택하십시오.
 1. **새로 만들기**&#x200B;를 클릭하여 **페이지 만들기**&#x200B;창을 엽니다.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -77,5 +86,5 @@ Cloud Service에서 ExactTarget 구성을 만들려면 다음 작업을 수행�
 
 여러 구성을 추가하려면 다음 작업을 수행하십시오.
 
-1. 시작 페이지에서 **Cloud Service**&#x200B;을 클릭하고 **ExactTarget**&#x200B;을 클릭합니다. 하나 이상의 ExactTarget 구성을 사용할 수 있는 경우 표시되는 **구성 표시**&#x200B;를 클릭합니다. 사용 가능한 모든 구성이 나열됩니다.
+1. 시작 페이지에서 **클라우드 서비스**&#x200B;를 클릭하고 **ExactTarget**&#x200B;을 클릭합니다. 하나 이상의 ExactTarget 구성을 사용할 수 있는 경우 표시되는 **구성 표시**&#x200B;를 클릭합니다. 사용 가능한 모든 구성이 나열됩니다.
 1. 사용 가능한 구성 옆에 있는 **+** 기호를 클릭합니다. **구성 만들기** 창이 열립니다. 구성을 만들려면 이전 구성 절차를 따르십시오.

@@ -9,13 +9,29 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # 어셈블러 서비스 사용{#using-assembler-service}
 
 어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 어셈블러 서비스에 제출된 각 작업에는 DDX(Document Description XML) 문서, 소스 문서 및 외부 리소스(문자열 및 그래픽)가 포함됩니다. 어셈블러 서비스에 대한 자세한 내용은 [어셈블러 서비스 개요](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)를 참조하십시오.
@@ -321,9 +337,9 @@ source="myFragmentSource"/>
 
 * 텍스트 정보.
 
-   * 문서의 각 페이지에 있는 단어
-   * 문서의 각 페이지에서 각 단어의 위치
-   * 문서의 각 페이지에 있는 각 단락의 문장
+  * 문서의 각 페이지에 있는 단어
+  * 문서의 각 페이지에서 각 단어의 위치
+  * 문서의 각 페이지에 있는 각 단락의 문장
 
 * 페이지 번호, 제목, 대상 및 모양을 포함하는 책갈피입니다. 내보낼 수 있습니다.\
   PDF 문서의 데이터를 가져와 PDF 문서로 가져옵니다.

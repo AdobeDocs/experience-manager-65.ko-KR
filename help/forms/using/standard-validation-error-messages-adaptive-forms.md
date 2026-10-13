@@ -10,13 +10,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 78%
-
+source-wordcount: '2537'
+ht-degree: 82%
 ---
-
 # 적응형 Forms의 오류 핸들러 {#error-handlers-in-adaptive-form}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -51,7 +67,7 @@ AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸
 
 ## 실패/오류 응답 형식 {#failure-response-format}
 
-서버 유효성 검사 오류 메시지가 다음 표준 형식인 경우 적응형 양식에 필드 수준에서 오류가 표시됩니다.
+적응형 양식은 서버 유효성 검사 오류 메시지가 다음 표준 포맷인 경우 필드 수준의 오류를 표시합니다.
 아래 코드는 기존 실패 응답 구조를 보여 줍니다.
 
 ```javascript
@@ -105,19 +121,19 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 위치:
 * `type (required)`에서 실패 유형을 지정합니다. 다음 값 중 하나일 수 있습니다.
-   * `SERVER_SIDE_VALIDATION`는 서버측 유효성 검사로 인한 실패를 표시합니다.
-   * `FORM_SUBMISSION`은 양식 제출 시 실패를 표시합니다.
-   * `SERVICE_INVOCATION`은 서드파티 서비스 호출 시 실패를 표시합니다.
-   * `FAILURE`는 일반적인 오류를 표시합니다.
-   * `VALIDATION_ERROR`는 유효성 검사 오류로 인한 실패를 표시합니다.
+  * `SERVER_SIDE_VALIDATION`는 서버측 유효성 검사로 인한 실패를 표시합니다.
+  * `FORM_SUBMISSION`은 양식 제출 시 실패를 표시합니다.
+  * `SERVICE_INVOCATION`은 서드파티 서비스 호출 시 실패를 표시합니다.
+  * `FAILURE`는 일반적인 오류를 표시합니다.
+  * `VALIDATION_ERROR`는 유효성 검사 오류로 인한 실패를 표시합니다.
 
 * `title (optional)`은 실패에 대한 제목 또는 간단한 설명을 제공합니다.
 * `detail (optional)`는 필요한 경우 실패에 대한 추가 세부 정보를 제공합니다.
 * `instance (optional)`는 실패와 연결된 인스턴스 또는 식별자를 나타내고 특정 실패 발생을 추적하거나 식별하는 데 도움을 줍니다.
 * `validationErrors (required)`에는 유효성 검사 오류에 대한 정보가 포함됩니다. 다음 필드가 포함됩니다.
-   * `fieldname`은(는) 유효성 검사 기준에 실패한 필드의 SOM 식을 언급합니다.
-   * `dataRef`는 유효성 검사에 실패한 필드의 JSON 경로 또는 XPath를 나타냅니다.
-   * `details`에는 잘못된 필드와 함께 유효성 검사 오류 메시지가 포함됩니다.
+  * `fieldname`은(는) 유효성 검사 기준에 실패한 필드의 SOM 식을 언급합니다.
+  * `dataRef`는 유효성 검사에 실패한 필드의 JSON 경로 또는 XPath를 나타냅니다.
+  * `details`에는 잘못된 필드와 함께 유효성 검사 오류 메시지가 포함됩니다.
 * AEM을 통해 추가된 `originCode (optional)` 필드는 외부 서비스에서 반환된 http 상태 코드를 포함합니다.
 * AEM을 통해 추가된 `originMessage (optional)`필드는 외부 서비스에서 반환된 원시 오류 데이터를 포함합니다.
 
@@ -202,8 +218,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ### 기본 오류 핸들러 함수 추가 {#add-default-errror-handler}
 
-오류 응답이 표준 스키마 또는 서버측 유효성 검사 실패에 있는 경우 필드에 오류 메시지를 표시하는 기본 오류 처리기가 지원됩니다.
-[규칙 편집기의 서비스 호출](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko#invoke) 작업을 사용하여 기본 오류 처리기를 사용하는 방법을 이해하려면 두 개의 필드 **Pet ID** 및 **Pet 이름**&#x200B;이 있는 간단한 적응형 양식의 예를 사용하고 **Pet ID** 필드의 기본 오류 처리기를 사용하여 외부 서비스(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`)를 호출하도록 구성된 REST 끝점에서 반환되는 다양한 오류를 확인하십시오. 규칙 편집기의 서비스 호출 작업을 사용하여 기본 오류 처리기를 추가하려면 다음 단계를 실행합니다.
+오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=ko#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
 1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -264,8 +280,8 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 생성된 폴더 구조는 다음과 같습니다.
 
    ![클라이언트 라이브러리 폴더 구조가 생성됨](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. `functions.js` 파일을 두 번 클릭하여 편집기를 엽니다. 이 파일은 사용자 지정 오류 처리기의 코드로 구성됩니다.
-다음 코드를 JavaScript 파일에 추가하여 REST 서비스 끝점에서 받은 응답 및 헤더를 브라우저 콘솔에 표시해 보겠습니다.
+1. `functions.js` 파일을 두 번 클릭하여 편집기를 엽니다. 파일은 사용자 정의 오류 핸들러의 코드로 구성됩니다.
+다음 코드를 JavaScript 파일에 추가하여 REST 서비스 엔드포인트가 수신한 응답과 헤더를 브라우저 콘솔에 표시해 보겠습니다.
 
    ```javascript
        /**

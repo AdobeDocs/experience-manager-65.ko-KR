@@ -8,20 +8,31 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '6195'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '6281'
+ht-degree: 97%
 ---
-
 # 파일 유형 설정 구성 {#configuring-file-type-settings}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. Windows에서는 지원되는 각 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. UNIX와 Linux에서는 HTML-PDF와 OpenOffice에 대한 애플리케이션 설정을 지정할 수 있습니다.
+PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. Windows에서는 지원되는 각 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. UNIX와 Linux에서는 HTML-to-PDF 및 OpenOffice에 대한 애플리케이션 설정을 지정할 수 있습니다.
 
 파일 유형 설정 페이지에서 다음 작업을 수행할 수 있습니다.
 
@@ -37,12 +48,12 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
 ## 파일 유형 설정 만들기 또는 편집 {#create-or-edit-file-type-settings}
 
-파일 유형 설정을 만들거나 편집하여 애플리케이션에서 지원되는 파일 유형을 변환하는 작업을 처리하는 방법을 지정합니다. Windows에서는 지원되는 각 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. UNIX와 Linux에서는 HTML-PDF와 OpenOffice에 대한 애플리케이션 설정을 지정할 수 있습니다.
+파일 유형 설정을 만들거나 편집하여 애플리케이션에서 지원되는 파일 유형의 변환을 처리하는 방법을 지정합니다. Windows에서는 지원되는 각 파일 유형에 대한 애플리케이션 설정을 지정할 수 있습니다. UNIX와 Linux에서는 HTML-to-PDF 및 OpenOffice에 대한 애플리케이션 설정을 지정할 수 있습니다.
 
 1. 관리 콘솔에서 **[!UICONTROL 서비스]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL 파일 유형 설정]**&#x200B;을 클릭합니다.
 1. 새로 만들기를 클릭하거나 설정 이름을 클릭합니다.
 1. 파일 이름 확장자 상자에 이 애플리케이션에서 허용되는 파일 유형의 파일 이름 확장자를 쉼표로 구분하여 입력합니다. 확장자 앞에 마침표를 찍거나 확장자 사이에 공백을 넣지 마십시오. 기본값은 `bmp,gif,jpeg,jpg,tif,tiff,png`입니다.
-1. (선택 사항) 그래픽이나 이미지에 포함된 텍스트에 대한 광학 코드 인식(OCR)을 사용하려면 OCR 사용을 선택하고 다음 옵션을 설정합니다.
+1. (선택 사항) 그래픽이나 이미지에 포함된 텍스트에 대한 광학 문자 인식(OCR)을 사용하려면 OCR 사용을 선택하고 다음 옵션을 설정합니다.
 
 **기본 OCR 언어:** OCR 엔진에서 문자를 식별하는 데 사용하는 언어입니다. 기본값은 영어(미국)입니다.
 
@@ -52,35 +63,35 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
 1. 다음 섹션에 필수 정보를 입력합니다.
 
-[PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Adobe PDF 내보내기 설정(Windows만 해당)](#adobe-pdf-export-settings-windows-only)
+   [Adobe PDF 내보내기 설정(Windows만 해당)](#adobe-pdf-export-settings-windows-only)
 
-[HTML-PDF 설정](#html-to-pdf-settings)
+   [HTML-PDF 설정](#html-to-pdf-settings)
 
-[플래시 비디오-PDF 설정](#flash-videos-to-pdf-settings)
+   [플래시 비디오-PDF 설정](#flash-videos-to-pdf-settings)
 
-[XPS-PDF 설정](#xps-to-pdf-settings)
+   [XPS-PDF 설정](#xps-to-pdf-settings)
 
-[PDF 최적화 설정](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [PDF 최적화 설정](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Microsoft Excel 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Microsoft Excel 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Microsoft PowerPoint 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Microsoft PowerPoint 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Microsoft Project 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Microsoft Project 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Microsoft Word 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Microsoft Word 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Microsoft Visio 설정(Windows만 해당)](#visio)
+   [Microsoft Visio 설정(Windows만 해당)](#visio)
 
-[Microsoft Publisher 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Microsoft Publisher 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[AutoCAD 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [AutoCAD 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[OpenOffice 설정](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [OpenOffice 설정](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[기타 애플리케이션 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [기타 애플리케이션 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    다른 섹션으로 이동하려면 웹 페이지에서 해당 링크를 클릭하거나 **[!UICONTROL 다음]** 또는 **[!UICONTROL 이전]** 버튼을 사용합니다.
 
@@ -226,7 +237,7 @@ PDF Generator는 Adobe Flash용 비디오(SWF 또는 FLV 파일)를 제출하고
 
 ## XPS-PDF 설정 {#xps-to-pdf-settings}
 
-Windows 인쇄기에서는 XPS(XML Paper Specification)가 사용됩니다. XPS는 Microsoft 형식이며 모든 Microsoft Office 애플리케이션에서 만들 수 있습니다. AEM Forms는 XPS 파일을 PDF로 변환하는 기능을 제공합니다.
+Windows 인쇄 시스템에서는 XPS(XML Paper Specification)가 사용됩니다. XPS는 Microsoft 형식이며 모든 Microsoft Office 애플리케이션에서 만들 수 있습니다. AEM Forms는 XPS 파일을 PDF로 변환하는 기능을 제공합니다.
 
 **파일 이름 확장자:** 변환 가능한 모든 XPS 파일 이름 확장자를 쉼표로 구분한 목록입니다. 현재는 .xps라는 한 가지 형식만 있습니다.
 
@@ -265,7 +276,7 @@ PDF Generator는 PDF 파일의 크기를 줄이는 기능을 지원합니다. �
 
    >[!NOTE]
    >
-   >*이 옵션을&#x200B;**일부 글꼴 임베드 취소**와 함께 사용하는 경우&#x200B;**임베드를 취소할 글꼴 추가**목록에 있는 글꼴은 여전히 완전하게 임베드 취소됩니다.*
+   >*이 옵션을&#x200B;**일부 글꼴 임베드 취소**&#x200B;와 함께 사용하는 경우&#x200B;**임베드를 취소할 글꼴 추가**&#x200B;목록에 있는 글꼴은 여전히 완전하게 임베드 취소됩니다.*
 
    >[!NOTE]
    >
@@ -277,7 +288,7 @@ PDF 문서에 투명도가 적용된 아트워크가 포함되어 있는 경우 
 
 >[!NOTE]
 >
->대상 PDF 버전으로 Acrobat 4. 0 이상을 선택하면 투명한 오브젝트가 모두 평면화됩니다. 다른 대상 PDF 버전의 경우 투명도가 지원되며 투명도 설정을 구성할 수 있습니다.
+>대상 PDF 버전으로 Acrobat 4.0 이상을 선택하면 투명한 오브젝트가 모두 평면화됩니다. 다른 대상 PDF 버전의 경우 투명도가 지원되며 투명도 설정을 구성할 수 있습니다.
 
 PDF 문서를 최적화하는 동안 투명도 설정을 구성하려면 **투명도**&#x200B;를 선택합니다.
 
@@ -315,9 +326,9 @@ NOTE to WRITER: Unfinished sentence above.
 
 겹침 인쇄 유지: 투명한 아트워크의 색상을 배경색과 혼합하여 겹침 인쇄 효과를 만듭니다.
 
-다음 표는 일반적인 프린터 유형과 dpi로 측정한 해상도, 인치당 선 수(lpi)로 측정한 기본 스크린 선수, 인치당 픽셀 수(ppi)로 측정한 이미지의 리샘플링 해상도를 보여 줍니다. 예를 들어 600dpi 레이저 프린터로 인쇄하는 경우 이미지를 리샘플링할 해상도로 170을 입력합니다.
+다음 표는 일반적인 프린터 유형과 dpi로 측정한 해상도, 인치당 선 수(lpi)로 측정한 기본 스크린 선 수, 인치당 픽셀 수(ppi)로 측정한 이미지의 리샘플링 해상도를 보여 줍니다. 예를 들어 600dpi 레이저 프린터로 인쇄하는 경우 이미지를 리샘플링할 해상도로 170을 입력합니다.
 
-**이미지** 이미지를 선택하여 색상, 회색 음영, 단색 이미지의 압축 및 리샘플링 옵션을 지정합니다. 파일 크기와 이미지 품질 간의 적절한 균형을 찾으려면 해당 옵션을 실험해 보는 것이 좋습니다. 색상 및 회색 음영 이미지의 해상도 설정은 파일이 인쇄될 선 스크린 선수의 1.5~2배여야 합니다. 단색 이미지의 해상도는 출력 장치와 동일해야 하지만, 단색 이미지를 1,500dpi보다 높은 해상도로 저장하면 이미지 품질은 눈에 띄게 향상되지 않으면서 파일 크기만 늘어납니다. 지도 등 확대되는 이미지에는 더 높은 해상도가 필요할 수 있습니다.
+**이미지** 이미지를 선택하여 색상, 회색 음영, 단색 이미지의 압축 및 리샘플링 옵션을 지정합니다. 파일 크기와 이미지 품질 간의 적절한 균형을 찾기 위해 이러한 옵션을 실험해 볼 수 있습니다.색상 및 회색 음영 이미지의 해상도 설정은 파일을 인쇄할 라인 화면 결정의 1.5~2배여야 합니다. 단색 이미지의 해상도는 출력 장치와 동일해야 하지만, 단색 이미지를 1,500dpi보다 높은 해상도로 저장하면 이미지 품질은 눈에 띄게 향상되지 않으면서 파일 크기만 늘어납니다. 지도 등 확대되는 이미지에는 더 높은 해상도가 필요할 수 있습니다.
 
 >[!NOTE]
 >
@@ -376,14 +387,14 @@ NOTE to WRITER: Unfinished sentence above.
 * **모든 오브젝트 데이터 삭제**: PDF에서 모든 오브젝트를 제거합니다.
 * **외부 상호 참조 삭제**: 다른 문서로 연결되는 링크를 제거합니다. PDF 내의 다른 위치로 이동하는 링크는 제거되지 않습니다.
 * **숨겨진 레이어 콘텐츠 삭제 및 표시되는 레이어 평면화**: 파일 크기를 줄입니다. 최적화된 문서는 원본 PDF와 유사하지만, 레이어 정보는 포함하고 있지 않습니다.
-* **문서 정보 및 메타데이터 삭제**: 문서 정보 사전과 모든 메타데이터 스트림의 정보를 제거합니다. (PDF 사본으로 메타데이터 스트림을 복원하려면 다른 이름으로 저장 명령을 사용하십시오.)
-* **첨부 파일 삭제**: PDF에 주석으로 추가된 첨부 파일을 포함하여 모든 첨부 파일을 제거합니다. (PDF 최적화는 첨부 파일을 최적화하지 않습니다.)
+* **문서 정보 및 메타데이터 삭제**: 문서 정보 사전과 모든 메타데이터 스트림의 정보를 제거합니다. (메타데이터 스트림을 PDF 사본에 복원하려면 다른 이름으로 저장 명령을 사용하십시오.)
+* **첨부 파일 삭제**: PDF에 주석으로 추가된 첨부 파일을 포함하여 모든 첨부 파일을 제거합니다. (PDF Optimizer는 첨부 파일을 최적화하지 않습니다.)
 * **다른 애플리케이션의 개인 데이터 삭제**: 문서를 만든 애플리케이션에만 유용한 정보를 PDF 문서에서 제거합니다. 이 설정은 PDF 기능에는 영향을 미치지 않지만, 파일 크기가 줄어듭니다.
 
 ### 정리 {#clean-up}
 
-**정리**를 선택하면 문서에서 불필요한 항목을 제거할 수 있습니다.
-이러한 항목에는 문서 용도와 다르게 더 이상 사용되지 않거나 불필요한 요소가 포함되어 있습니다. 특정 요소를 제거하면 PDF 기능에 심각한 영향을 미칠 수 있습니다. 기본적으로 기능에 영향을 미치지 않는 요소만 선택됩니다. 다른 옵션을 제거했을 때 어떤 영향을 미치는지 확실히 알 수 없다면 기본 선택 항목을 사용하십시오.
+**정리**&#x200B;를 선택하면 문서에서 불필요한 항목을 제거할 수 있습니다.
+이러한 항목에는 문서를 의도한 용도로 사용하는 데 더 이상 사용되지 않거나 불필요한 요소가 포함되어 있습니다. 특정 요소를 제거하면 PDF 기능에 심각한 영향을 미칠 수 있습니다. 기본적으로 기능에 영향을 미치지 않는 요소만 선택됩니다. 다른 옵션을 제거했을 때 어떤 영향을 미치는지 확실히 알 수 없다면 기본 선택 항목을 사용하십시오.
 
 **압축**
 
@@ -416,7 +427,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **파일 이름 확장자**: 이 애플리케이션에서 허용되는 파일 유형의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. 기본값은 `xls,xlsx`입니다. 확장자 앞에 마침표를 찍거나 확장자 사이에 공백을 넣지 마십시오.
 
-**PDF/A-1a 호환 파일 만들기**: PDF/A-1b:2005 RGB Adobe PDF 설정을 사용하도록 강제 적용합니다.
+**PDF/A-1a 호환 파일 만들기**: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다.
 
 **Adobe PDF에 책갈피 추가**: Excel 워크시트 이름을 책갈피로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
@@ -470,7 +481,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 숨겨진 슬라이드를 PDF 페이지로 변환]**: 숨겨진 슬라이드를 변환합니다.
 
-**[!UICONTROL PDF/A-1a 호환 파일 만들기]**: PDF/A-1b:2005 RGB Adobe PDF 설정을 사용하도록 강제 적용합니다. PDF 파일을 생성할 때 몇 가지 PowerPoint 기능은 변환되지 않습니다. PowerPoint 전환에 Acrobat과 동일한 전환이 없는 경우 유사한 전환으로 대체됩니다. 같은 슬라이드에 여러 애니메이션 효과가 있는 경우 단일 효과가 사용됩니다. 페이지 전환과 글머리 기호 플라이인이 변환됩니다.
+**[!UICONTROL PDF/A-1a 호환 파일 만들기]**: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다. PDF 파일을 생성할 때 몇 가지 PowerPoint 기능은 변환되지 않습니다. PowerPoint 전환에 Acrobat과 동일한 전환이 없는 경우 유사한 전환으로 대체됩니다. 같은 슬라이드에 여러 애니메이션 효과가 있는 경우 단일 효과가 사용됩니다. 페이지 전환과 글머리 기호 플라이인이 변환됩니다.
 
 ## Microsoft Project 설정(Windows만 해당) {#microsoft-project-settings-windows-only}
 
@@ -480,7 +491,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 1. **[!UICONTROL 문서 정보 변환]**: 제목, 주제, 작성자, 키워드, 관리자, 회사, 카테고리, 주석을 포함하여 소스 파일의 속성 대화 상자에서 문서 정보를 추가합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 1. **[!UICONTROL Adobe PDF에 소스 파일 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
-1. **[!UICONTROL PDF/A-1a 호환 파일 만들기]**: PDF/A-1b:2005 RGB Adobe PDF 설정을 사용하도록 강제 적용합니다.
+1. **[!UICONTROL PDF/A-1a 호환 파일 만들기]**: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다.
 1. **[!UICONTROL 매크로 자동 실행]**: 문서를 변환하기 전에 Microsoft Project 문서에 있는 모든 매크로(예: 현재 시간을 삽입하는 매크로)를 실행합니다.
 
 ## Microsoft Word 설정(Windows만 해당) {#microsoft-word-settings-windows-only}
@@ -501,7 +512,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 태그가 지정된 Adobe PDF로 접근성 및 재배치 활성화]**: PDF 파일에 태그를 임베드합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**[!UICONTROL PDF/A-1a 호환 파일 만들기]**: 이 옵션을 선택하면 PDF/A-1b:2005 RGB Adobe PDF 설정을 사용하도록 강제 적용합니다.
+**[!UICONTROL PDF/A-1a 호환 파일 만들기]**: 이 옵션을 선택하면 PDF/A-1b:2005 RGB Adobe PDF 설정이 강제로 사용됩니다.
 
 **[!UICONTROL 매크로 자동 실행]**: 문서를 변환하기 전에 Word 문서에 있는 모든 매크로(예: 현재 시간을 삽입하는 매크로)를 실행합니다.
 
@@ -543,7 +554,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함되어 �
 
 **Adobe Acrobat에서 볼 때 레이어 패널 열기**: Visio 레이어가 평면화되지 않은 경우 Acrobat을 사용하여 PDF 파일을 열 때 해당 파일에서 보존되는 레이어를 지정할 수 있는 창이 열립니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**PDF/A-1b 호환 파일 만들기**: Adobe PDF 설정 PDF/A-1b:2005(RGB)를 사용하도록 강제 적용합니다.
+**PDF/A-1b 호환 파일 만들기**: Adobe PDF 설정 PDF/A-1b:2005(RGB)를 강제로 사용합니다.
 
 **주석을 Adobe PDF 주석으로 변환**: Visio 메모를 PDF 주석으로 변환합니다.
 
@@ -593,7 +604,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함되어 �
 
 **파일 이름 확장자**: 이 애플리케이션에서 허용되는 파일 유형의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다. 확장자 앞에 마침표를 찍거나 확장자 사이에 공백을 넣지 마십시오.
 
-**범위**: 모든 페이지를 변환하거나 특정 페이지 또는 페이지 범위를 지정합니다. 페이지 범위가 정의되지 않으면 모든 페이지가 변환됩니다. 여러 페이지를 내보내려면 3-6 형식을 사용합니다. 단일 페이지를 내보내려면 7;9;11 형식을 사용합니다. 3-6;8;10;12와 같은 형식을 사용하면 여러 페이지 범위와 단일 페이지를 조합하여 내보낼 수 있습니다.
+**범위**: 모든 페이지를 변환하거나 특정 페이지 또는 페이지 범위를 지정합니다. 페이지 범위가 정의되지 않으면 모든 페이지가 변환됩니다. 페이지 범위를 내보내려면 3-6 형식을 사용합니다. 단일 페이지를 내보내려면 7;9;11 형식을 사용합니다. 3-6;8;10;12와 같은 형식을 사용하면 여러 페이지 범위와 단일 페이지를 조합하여 내보낼 수 있습니다.
 
 **페이지 방향**: 일반 텍스트 파일의 경우에만 변환된 PDF 문서에 대해 세로 또는 가로를 선택합니다.
 

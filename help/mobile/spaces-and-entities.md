@@ -8,13 +8,17 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 4%
-
 ---
-
 # 공간 및 엔티티{#spaces-and-entities}
 
 {{ue-over-mobile}}
@@ -35,7 +39,7 @@ ht-degree: 4%
 >
 >**공간을 추가하기 위한 필수 구성 요소**
 >
->공백으로 작업하고 AEM Mobile 응용 프로그램 대시보드에서 사용하려면 **AEM Content Services 사용**&#x200B;을 확인하세요.
+>스페이스에서 작업하고 AEM 응용 프로그램 대시보드에서 사용하려면 **AEM Mobile Content Services 사용**&#x200B;을 확인하세요.
 >
 >자세한 내용은 [콘텐츠 서비스 관리](/help/mobile/developing-content-services.md)를 참조하십시오.
 
@@ -55,7 +59,7 @@ ht-degree: 4%
 
 공간을 만든 후 왼쪽을 클릭하여 목록의 공간을 관리합니다.
 
-스페이스의 속성을 보거나, 스페이스를 삭제하거나, 스페이스 및 스페이스의 컨텐츠를 AEM 게시 인스턴스에 게시할 수 있습니다.
+스페이스의 속성을 보거나, 스페이스를 삭제하거나, 스페이스와 스페이스의 콘텐츠를 AEM 게시 인스턴스에 게시할 수 있습니다.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -68,7 +72,7 @@ ht-degree: 4%
 **스페이스 게시** 스페이스가 게시되면 해당 스페이스의 모든 폴더와 엔터티도 게시됩니다.
 
 1. 스페이스 콘솔 목록에서 해당 아이콘을 클릭하여 스페이스를 선택합니다
-1. **Publish 트리** 선택
+1. **트리 게시** 선택
 
 >[!NOTE]
 >
@@ -94,7 +98,7 @@ ht-degree: 4%
 
 1. 스페이스에 폴더를 만들려면 **만들기**&#x200B;를 클릭하세요.
 
-## 언어 복사 {#language-copy}
+## 언어 복제 {#language-copy}
 
 >[!CAUTION]
 >
@@ -143,7 +147,7 @@ ht-degree: 4%
 
 ## 스페이스에서 엔티티 작업 {#working-with-entities-in-a-space}
 
-엔티티는 웹 서비스 끝점을 통해 노출되는 콘텐츠를 나타냅니다. 엔티티는 공간에 저장되므로 을 쉽게 찾을 수 있으며 관련 컨텐츠를 보관하는 AEM 저장소 구조와는 독립적으로 유지됩니다.
+엔티티는 웹 서비스 끝점을 통해 노출되는 콘텐츠를 나타냅니다. 엔티티는 공간에 저장되므로 을 쉽게 찾을 수 있으며 관련 컨텐츠를 보관하는 AEM 저장소 구조와 독립적입니다.
 
 일부 논리 수집에서 엔티티를 함께 그룹화할 수 있습니다. 원하는 수만큼 폴더를 만들 수 있습니다.
 
@@ -161,7 +165,7 @@ ht-degree: 4%
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. 엔티티의 모델을 선택합니다. 만들려는 엔티티 유형입니다. 다음 을 클릭합니다.
+1. 엔티티의 모델을 선택합니다. 만들려는 엔티티 유형입니다. 다음을 클릭합니다.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -235,12 +239,12 @@ ht-degree: 4%
 
 ### 엔티티 게시 {#publishing-an-entity}
 
-엔터티를 게시하려면 **Publish 트리** 또는 **빠른 Publish**&#x200B;을 선택할 수 있습니다.
+**트리 게시** 또는 **빠른 게시**&#x200B;를 선택하여 엔터티를 게시할 수 있습니다.
 
-1. 스페이스 콘솔 목록에서 엔티티를 선택하고 **Publish 트리**&#x200B;를 클릭하여 해당 엔티티와 그 하위를 게시합니다.
+1. 스페이스 콘솔 목록에서 엔티티를 선택하고 **트리 게시**&#x200B;를 클릭하여 해당 엔티티와 그 하위 항목을 게시합니다.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **또는**,
 
-   해당 특정 엔터티를 게시하려면 **빠른 Publish**&#x200B;을 클릭하세요.
+   특정 엔터티를 게시하려면 **빠른 게시**&#x200B;를 클릭하십시오.

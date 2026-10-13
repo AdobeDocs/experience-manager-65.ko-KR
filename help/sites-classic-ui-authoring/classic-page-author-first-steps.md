@@ -1,6 +1,6 @@
 ---
 title: 작성자를 위한 첫 번째 단계
-description: 이 섹션에서는 AEM(Adobe Experience Manager)으로 콘텐츠를 작성할 때 사용하는 주요 작업에 대해 간략히 설명합니다.
+description: 이 섹션에서는 Adobe Experience Manager(AEM)로 콘텐츠를 작성할 때 사용하는 주요 작업에 대한 개요를 제공합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
-
+source-wordcount: '412'
+ht-degree: 8%
 ---
-
 # 작성자를 위한 첫 번째 단계{#first-steps-for-authors}
 
-이 섹션에서는 AEM(Adobe Experience Manager)을 사용하여 [콘텐츠 작성을 시작](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)할 때 사용할 주요 작업에 대한 개요를 제공합니다.
+이 섹션에서는 Adobe Experience Manager(AEM)를 사용하여 [콘텐츠 작성을 시작](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)할 때 사용할 주요 작업에 대한 개요를 제공합니다.
 
 여기에는 다음이 포함됩니다.
 
@@ -26,7 +35,7 @@ ht-degree: 7%
 
 * [추가 작업](#further-actions): 작성할 때 사용할 수 있는 다른 여러 작업을 따라 수행합니다.
 
-## 시작 {#getting-started}
+## 시작하기 {#getting-started}
 
 첫 페이지를 만들고 게시하는 데 필요한 기본 이벤트 시퀀스에 대해 자세히 설명합니다.
 

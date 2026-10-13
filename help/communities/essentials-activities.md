@@ -10,13 +10,20 @@ exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
-
+source-wordcount: '311'
+ht-degree: 1%
 ---
-
 # 활동 스트림 Essentials {#activity-stream-essentials}
 
 포럼 또는 블로그에 게시하는 것과 같이, 로그인한 커뮤니티 구성원의 활동은 스트림으로 수집되며, 이 스트림은 활동 스트림 구성 요소의 구성을 통해 다양한 방식으로 필터링 및 표시될 수 있습니다.
@@ -70,7 +77,7 @@ ht-degree: 2%
 
 ## 서버측 Essentials {#essentials-for-server-side}
 
-* [Activity Streams API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [활동 스트림 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
 * [Activity Streams 수신기 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 

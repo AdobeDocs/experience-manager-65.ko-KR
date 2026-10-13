@@ -10,13 +10,22 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 3%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # 개발자 모드{#developer-mode}
 
 Adobe Experience Manager(AEM)에서 페이지를 편집할 때 개발자 모드를 비롯한 여러 [모드](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui)를 사용할 수 있습니다. 이렇게 하면 개발자에게 현재 페이지에 대한 정보를 제공하는 몇 가지 탭이 있는 사이드 패널이 열립니다. 세 개의 탭은 다음과 같습니다.
@@ -82,8 +91,8 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 개발자 모드�
 * 구성 요소를 렌더링할 서버측 계산 시간을 표시합니다.
 * 트리를 확장하고 트리 내에서 특정 구성 요소를 선택할 수 있습니다. 선택 항목을 통해 다음과 같은 구성 요소 세부 정보에 액세스할 수 있습니다.
 
-   * 저장소 경로
-   * 스크립트 링크(CRXDE Lite에서 액세스)
+  * 저장소 경로
+  * 스크립트 링크(CRXDE Lite에서 액세스)
 
 * 선택한 구성 요소(컨텐츠 플로우에서 파란색 테두리로 표시됨)가 컨텐츠 트리에서 강조 표시됩니다(반대로 표시).
 
@@ -99,19 +108,19 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 개발자 모드�
 
 * **세부 정보 보기**: 다음을 표시하는 목록에 대한 링크입니다.
 
-   * 구성 요소를 렌더링하는 데 사용되는 모든 구성 요소 스크립트.
-   * 특정 구성 요소에 대한 저장소 콘텐츠 경로입니다.
+  * 구성 요소를 렌더링하는 데 사용되는 모든 구성 요소 스크립트.
+  * 특정 구성 요소에 대한 저장소 콘텐츠 경로입니다.
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **스크립트 편집**: 링크:
 
-   * CRXDE Lite에서 구성 요소 스크립트를 엽니다.
+  * CRXDE Lite에서 구성 요소 스크립트를 엽니다.
 
 * 구성 요소 항목(화살표 헤드)을 확장하면 다음도 표시됩니다.
 
-   * 선택한 구성 요소 내의 계층입니다.
-   * 선택한 구성 요소, 그 안에 중첩된 개별 구성 요소 및 결합된 합계의 렌더링 시간.
+  * 선택한 구성 요소 내의 계층입니다.
+  * 선택한 구성 요소, 그 안에 중첩된 개별 구성 요소 및 결합된 합계의 렌더링 시간.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

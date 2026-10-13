@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 1%
-
 ---
-
 # 커뮤니티 사이트 작성자{#author-a-new-community-site}
 
 ## 커뮤니티 사이트 만들기 {#create-a-community-site}
@@ -48,10 +55,10 @@ ht-degree: 1%
 
 * **커뮤니티 사이트 이름**: 참여
 
-   * 사이트를 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
-   * 커뮤니티 사이트 이름 아래에 초기 URL이 표시됩니다
-   * 유효한 URL을 보려면 기본 언어 코드 + &quot;.html&quot;을 추가하십시오.
-   * *예:*, https://localhost:4502/content/sites/ `engage/en.html`
+  * 사이트를 만든 후에는 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
+  * 커뮤니티 사이트 이름 아래에 초기 URL이 표시됩니다
+  * 유효한 URL을 보려면 기본 언어 코드 + &quot;.html&quot;을 추가하십시오.
+  * *예:*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **템플릿**: 아래로 끌어다 놓아 `Reference Site` 선택
 
@@ -184,7 +191,7 @@ Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 �
 
 * **사이트 게시**
 
-  World 아이콘을 선택하면 커뮤니티 사이트가 게시됩니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503).
+  world 아이콘을 선택하면 커뮤니티 사이트가 게시됩니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503으로).
 
 * **사이트 내보내기**
 
@@ -269,29 +276,29 @@ Adobe Analytics에 라이센스가 부여되고 Analytics Cloud 서비스 및 �
 
    * **노드 만들기:** 선택
 
-      * **이름** localhost.4503
-(*not* 사용 안 함: &#39;:&#39;)
+     * **이름** localhost.4503
+       (*not* 사용 안 함: &#39;:&#39;)
 
-      * **유형** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **유형** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. 새로 만든 `localhost.4503` 노드가 선택된 경우:
 
    * 속성 추가:
 
    * **이름** sling:match
-      * **유형** 문자열
-      * **값** localhost.4503/$
-(&#39;$&#39; 문자로 끝나야 함)
+     * **유형** 문자열
+     * **값** localhost.4503/$
+       (&#39;$&#39; 문자로 끝나야 함)
 
    * 속성 추가:
 
-      * **이름** sling:internalRedirect
-      * **유형** 문자열
-      * **값** /content/sites/engage/en.html
+     * **이름** sling:internalRedirect
+     * **유형** 문자열
+     * **값** /content/sites/engage/en.html
 
 1. **모두 저장** 선택
 1. (선택 사항) 검색 기록을 삭제합니다.
-1. https://localhost:4503/(으)로 이동합니다.
+1. https://localhost:4503/으로 이동합니다.
 
    * https://localhost:4503/content/sites/engage/en.html에 도착
 

@@ -1,19 +1,30 @@
 ---
 title: 검색 결과를 필터링할 검색 패싯
-description: ' [!DNL Adobe Experience Manager]에서 검색 패싯을 만들고, 수정하고, 사용하는 방법입니다.'
+description: '[!DNL Adobe Experience Manager]에서 검색 패싯을 만들고 수정하고 사용하는 방법입니다.'
 contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 15%
-
 ---
-
 # 검색 패싯 {#search-facets}
 
 | 버전 | 문서 링크 |
@@ -137,7 +148,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. Forms 검색 페이지에서 **[!UICONTROL Assets 관리자 검색 레일]**&#x200B;을 선택하고 **[!UICONTROL 편집]** ![편집 아이콘](assets/do-not-localize/aemassets_edit.png)을 클릭합니다.
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. **[!UICONTROL 설정]** 탭에서 조건자에 대한 레이블 및 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색할 속성 이름을 지정합니다(예: `jcr:content/metadata/dc:value`). 선택 대화 상자 를 사용하여 노드를 선택할 수도 있습니다.
-1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
+1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. 기본적으로 쉼표가 구분 기호로 지정됩니다. You can specify a different delimiter.
 1. **설명** 필드에 선택적 설명을 입력한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 1. [!DNL Assets] 사용자 인터페이스의 필터 패널로 이동합니다. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 다중 값 필드에 구분 기호로 구분된 여러 값을 지정하고 검색을 수행합니다. 술어는 사용자가 지정하는 값에 대해 정확히 일치하는 텍스트를 가져옵니다.

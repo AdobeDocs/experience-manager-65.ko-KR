@@ -9,13 +9,27 @@ exl-id: 606e84f2-6728-47a9-a439-dbe2e55100ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 94%
 ---
-
 # SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성 {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 LDAPS를 통해 동기화가 제대로 작동하려면 인증 기관(CA)에서 발급한 LDAP 인증서가 애플리케이션 서버의 Java 런타임 환경(JRE)에 있어야 합니다. 인증서를 애플리케이션 서버의 JRE cacerts 파일로 가져옵니다. 해당 파일은 일반적으로 *[JAVA_HOME]*/jre/lib/security/cacerts 디렉터리에 있습니다.
@@ -26,7 +40,7 @@ LDAPS를 통해 동기화가 제대로 작동하려면 인증 기관(CA)에서 �
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. 메시지가 나타나면 암호를 입력합니다. (Java의 경우 기본 암호는 `changeit`입니다.) 인증서를 가져왔다는 메시지가 나타납니다.
+1. 메시지가 나타나면 암호를 입력합니다. (Java의 경우 기본 암호는 `changeit`입니다.) 인증서를 성공적으로 가져왔다는 메시지가 나타납니다.
 1. 메시지가 나타나면 인증서를 신뢰할 수 있도록 `Yes`를 입력합니다.
 1. 사용자 관리에서 SSL을 활성화하고 디렉터리 설정을 구성할 때 SSL 옵션에서 예를 선택하고 그에 따라 포트 설정도 변경합니다. 기본 포트 번호는 636입니다.
 

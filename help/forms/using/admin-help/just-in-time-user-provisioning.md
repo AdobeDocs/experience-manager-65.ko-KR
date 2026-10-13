@@ -9,13 +9,27 @@ exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '575'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '612'
 ht-degree: 100%
-
 ---
-
 # 사용자 적시 프로비저닝 {#just-in-time-user-provisioning}
 
 AEM Forms는 사용자 관리에 아직 존재하지 않는 사용자의 적시 프로비저닝을 지원합니다. 적시 프로비저닝을 사용하면 자격 증명 인증에 성공한 후 사용자가 사용자 관리에 자동으로 추가됩니다. 또한 관련 역할 및 그룹이 새 사용자에게 동적으로 할당됩니다.
@@ -34,10 +48,10 @@ AEM Forms는 사용자 관리에 아직 존재하지 않는 사용자의 적시 
 
    **잘못됨:** 사용자 관리에서 인증 실패를 반환합니다.
 
-1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자는 로그인할 수 있습니다. 그렇지 않은 경우 사용자 관리에서는 다음 인증 공급자에게 확인합니다(2~3단계).
+1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자는 로그인할 수 있습니다. 그렇지 않은 경우 사용자 관리에서는 다음 인증 공급자를 확인합니다(2~3단계).
 1. 사용 가능한 인증 공급자가 사용자 자격 증명의 유효성을 검사하지 못하면 인증 실패가 반환됩니다.
 
-적시 프로비저닝이 구현된 경우 인증 공급자 중 하나가 사용자가 보유한 자격 증명의 유효성을 검사하면 사용자 관리에서 새 사용자가 동적으로 생성됩니다. (위에 명시된 기존 인증 절차의 3단계 이후)
+적시 프로비저닝이 구현된 경우 인증 공급자 중 하나가 사용자의 자격 증명의 유효성을 검사하면 사용자 관리에서 새 사용자가 동적으로 생성됩니다. (위에 명시된 기존 인증 절차의 3단계 이후)
 
 ## 사용자 적시 프로비저닝 구현 {#implement-just-in-time-user-provisioning}
 
@@ -104,8 +118,8 @@ public Boolean assign(User user);
 1. 인증 데이터가 포함된 `UserProvisioningBO` 오브젝트를 만들고 자격 증명 맵에 배치합니다.
 1. `UserProvisioningBO`에서 반환된 도메인 정보를 기반으로 해당 도메인에 등록된 `IdentityCreator` 및 `AssignmentProvider`를 가져오고 호출합니다.
 1. `IdentityCreator`를 호출합니다. 성공적인 `AuthResponse`가 반환되면 자격 증명 맵에서 `UserInfo`를 추출합니다. 사용자가 생성된 후 그룹/역할 할당 및 기타 사후 처리를 위해 해당 정보를 `AssignmentProvider`에게 전달합니다.
-1. 사용자가 성공적으로 생성되면 사용자의 로그인 시도를 성공으로 반환합니다.
-1. 하이브리드 도메인의 경우 인증 공급자에게 제공된 인증 데이터에서 사용자 정보를 가져옵니다. 이 정보를 성공적으로 가져오면 사용자가 즉시 생성됩니다.
+1. 사용자가 성공적으로 생성되면 사용자의 로그인 시도를 성공한 것으로 반환합니다.
+1. 하이브리드 도메인의 경우 인증 공급자에게 제공된 인증 데이터에서 사용자 정보를 가져옵니다. 이 정보를 성공적으로 가져오면 사용자를 즉시 생성합니다.
 
 >[!NOTE]
 >

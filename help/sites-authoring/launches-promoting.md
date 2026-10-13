@@ -11,13 +11,31 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 76%
-
 ---
-
 # 론치 홍보{#promoting-launches}
 
 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. 론치 페이지가 홍보되면 해당 소스 페이지가 홍보된 페이지의 콘텐츠로 바뀝니다. 론치 페이지 홍보 시 다음 옵션을 사용할 수 있습니다.
@@ -55,29 +73,29 @@ ht-degree: 76%
 
    * **사이트** 콘솔:
 
-      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 연 다음 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
+     1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 연 다음 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
 
-      1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
-      1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
-      1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
+     1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
+     1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
+     1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 
    * **시작** 콘솔:
 
-      1. 론치를 선택합니다(썸네일 클릭).
-      1. **홍보**&#x200B;를 선택합니다.
+     1. 론치를 선택합니다(썸네일 클릭).
+     1. **홍보**&#x200B;를 선택합니다.
 
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.
 
    * **대상**
 
-      * **승격 후 실행 삭제**
+     * **승격 후 실행 삭제**
 
    * **범위**
 
-      * **전체 론치 홍보**
-      * **수정된 페이지 홍보**
-      * **현재 페이지 홍보**
-      * **현재 페이지 및 하위 페이지 홍보**
+     * **전체 론치 홍보**
+     * **수정된 페이지 홍보**
+     * **현재 페이지 홍보**
+     * **현재 페이지 및 하위 페이지 홍보**
 
    예를 들어 수정된 페이지만 홍보하도록 선택하는 경우:
 
@@ -117,19 +135,19 @@ ht-degree: 76%
 
    * **대상**
 
-      * **홍보 대상**
-원하는 소스를 홍보할 수 있습니다.
+     * **프로모션 대상**
+       원하는 소스를 홍보할 수 있습니다.
 
-      * **승격 후 시작 삭제**
-선택한 론치를 홍보하면 여기에 중첩된 론치가 삭제됩니다.
+     * **승격 후 시작 삭제**
+       선택한 론치를 홍보하면 여기에 중첩된 론치가 삭제됩니다.
 
    * **범위**
-여기에서 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
+     여기에서 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
 
-      * **전체 론치 홍보**
-      * **수정된 페이지 홍보**
-      * **현재 페이지 홍보**
-      * **현재 페이지 및 하위 페이지 홍보**
+     * **전체 론치 홍보**
+     * **수정된 페이지 홍보**
+     * **현재 페이지 홍보**
+     * **현재 페이지 및 하위 페이지 홍보**
 
    ![시작 승격을 위한 설정](assets/chlimage_1-105.png)
 

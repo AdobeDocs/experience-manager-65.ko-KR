@@ -11,13 +11,22 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 1%
-
 ---
-
 # 코드 및 사용자 정의 업그레이드{#upgrading-code-and-customizations}
 
 업그레이드를 계획할 때 다음과 같은 구현 영역을 조사하고 해결해야 합니다.
@@ -42,7 +51,8 @@ ht-degree: 1%
 
 새 AEM 버전에서 사용할 수 있도록 코드 베이스와 사용자 지정을 선택적으로 업그레이드할 수 있을 뿐만 아니라, 6.5는 [AEM 6.5](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성에 설명된 이전 버전과의 호환성 기능을 통해 사용자 지정을 보다 효율적으로 관리하는 데 도움이 됩니다.
 
-위에서 언급하고 아래 다이어그램에 표시된 대로 첫 번째 단계에서 [패턴 탐지기](/help/sites-deploying/pattern-detector.md)를 실행하면 업그레이드의 전체 복잡성을 평가하는 데 도움이 될 수 있습니다. 또한 호환 모드에서 실행할지 또는 새로운 AEM 6.5 기능을 모두 사용하도록 사용자 지정을 업데이트할지를 결정하는 데 도움이 될 수 있습니다. 자세한 내용은 AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md) 페이지의 이전 버전과의 호환성을 참조하십시오.[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+위에서 언급하고 아래 다이어그램에 표시된 대로 첫 번째 단계에서 [패턴 탐지기](/help/sites-deploying/pattern-detector.md)를 실행하면 업그레이드의 전체 복잡성을 평가하는 데 도움이 될 수 있습니다. 또한 호환 모드에서 실행할지 또는 새로운 AEM 6.5 기능을 모두 사용하도록 사용자 지정을 업데이트할지를 결정하는 데 도움이 될 수 있습니다. 자세한 내용은 AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md) 페이지의 이전 버전과의 호환성을 참조하십시오.
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## 코드 베이스 업그레이드 {#upgrade-code-base}
 

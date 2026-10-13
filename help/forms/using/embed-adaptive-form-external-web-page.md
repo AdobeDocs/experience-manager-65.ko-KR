@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 43%
-
 ---
-
 # 외부 웹 페이지에 적응형 양식 임베드{#embed-adaptive-form-in-external-web-page}
 
 | 버전 | 문서 링크 |
@@ -209,7 +225,7 @@ AEM 서버와 웹 페이지가 다른 도메인에 있는 경우 다음 옵션 �
 
 1. AEM 게시 인스턴스에서 `https://'[server]:[port]'/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
 1. **Adobe Granite 원본 간 리소스 공유 정책** 구성(`com.adobe.granite.cors.impl.CORSPolicyImpl`)을 찾아 엽니다.
-1. 포함 웹 페이지의 원본을 허용된 원본에 추가합니다. 예: `https://www.example.com`
+1. 포함 웹 페이지의 원본을 허용된 원본에 추가합니다. 예를 들어, `https://www.example.com`과 같이 입력합니다.
 1. 허용되는 경로에 `/content/forms/af/` 아래의 제출, 미리 채우기 및 기록 문서 URL과 같은 포함된 적응형 양식에서 사용되는 AEM Forms 끝점이 포함되어 있는지 확인하십시오.
 
 >[!TAB Apache Sling Referrer 필터]

@@ -9,13 +9,22 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 3%
-
+source-wordcount: '710'
+ht-degree: 4%
 ---
-
 # 페이지 편집을 위한 실행 취소 구성{#configuring-undo-for-page-editing}
 
 [OSGi 서비스](/help/sites-deploying/configuring-osgi.md) **일 CQ WCM 실행 취소 구성**( `com.day.cq.wcm.undo.UndoConfigService`)은(는) 페이지 편집을 위해 실행 취소 및 다시 실행 명령의 동작을 제어하는 여러 속성을 표시합니다.
@@ -47,16 +56,16 @@ ht-degree: 3%
 * **사용**
 ( `cq.wcm.undo.enabled`)
 
-   * **설명**: 페이지 작성자가 변경 내용을 실행 취소하거나 다시 실행할 수 있는지 여부를 결정합니다.
-   * **기본값**: `Selected`
-   * **유형**: `Boolean`
+  * **설명**: 페이지 작성자가 변경 내용을 실행 취소하거나 다시 실행할 수 있는지 여부를 결정합니다.
+  * **기본값**: `Selected`
+  * **유형**: `Boolean`
 
 * **경로**
 ( `cq.wcm.undo.path`)
 
-   * **설명**: 이진 실행 취소 데이터를 유지하기 위한 저장소 경로입니다. 작성자가 이미지와 같은 바이너리 데이터를 변경하면 데이터의 원래 버전이 여기에 유지됩니다. 이진 데이터에 대한 변경 내용을 실행 취소하면 이 이진 실행 취소 데이터가 페이지에 복원됩니다.
-   * **기본값**: `/var/undo`
-   * **유형**: `String`
+  * **설명**: 이진 실행 취소 데이터를 유지하기 위한 저장소 경로입니다. 작성자가 이미지와 같은 바이너리 데이터를 변경하면 데이터의 원래 버전이 여기에 유지됩니다. 이진 데이터에 대한 변경 내용을 실행 취소하면 이 이진 실행 취소 데이터가 페이지에 복원됩니다.
+  * **기본값**: `/var/undo`
+  * **유형**: `String`
 
   >[!NOTE]
   >
@@ -65,86 +74,86 @@ ht-degree: 3%
 * **분. 유효성**
 ( `cq.wcm.undo.validity`)
 
-   * **설명**: 이진 실행 취소 데이터가 저장되는 최소 시간(시간)입니다. 이 기간이 지나면 디스크 공간을 절약하기 위해 이진 데이터를 삭제할 수 있습니다.
-   * **기본값**: `10`
-   * **유형**: `Integer`
+  * **설명**: 이진 실행 취소 데이터가 저장되는 최소 시간(시간)입니다. 이 기간이 지나면 디스크 공간을 절약하기 위해 이진 데이터를 삭제할 수 있습니다.
+  * **기본값**: `10`
+  * **유형**: `Integer`
 
 * **단계**
 ( `cq.wcm.undo.steps`)
 
-   * **설명**: 실행 취소 기록에 저장되는 최대 페이지 작업 수입니다.
-   * **기본값**: `20`
-   * **유형**: `Integer`
+  * **설명**: 실행 취소 기록에 저장되는 최대 페이지 작업 수입니다.
+  * **기본값**: `20`
+  * **유형**: `Integer`
 
 * **지속성**
 ( `cq.wcm.undo.persistence`)
 
-   * **설명**: 실행 취소 기록을 유지하는 클래스입니다. 두 가지 지속성 클래스가 제공됩니다.
+  * **설명**: 실행 취소 기록을 유지하는 클래스입니다. 두 가지 지속성 클래스가 제공됩니다.
 
-      * `CQ.undo.persistence.WindowNamePersistence`: window.name 속성을 사용하여 기록을 유지합니다.
-      * `CQ.undo.persistence.CookiePersistance`: 쿠키를 사용하여 기록을 유지합니다.
+    * `CQ.undo.persistence.WindowNamePersistence`: window.name 속성을 사용하여 기록을 유지합니다.
+    * `CQ.undo.persistence.CookiePersistance`: 쿠키를 사용하여 기록을 유지합니다.
 
-   * **기본값**: `CQ.undo.persistence.WindowNamePersistence`
-   * **유형**: `String`
+  * **기본값**: `CQ.undo.persistence.WindowNamePersistence`
+  * **유형**: `String`
 
 * **지속성 모드**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **설명**: 실행 취소 기록이 지속되는 시기를 결정합니다. 각 페이지를 편집한 후 실행 취소 기록을 유지하려면 이 옵션을 선택하십시오. 페이지가 다시 로드되는 경우(예: 사용자가 다른 페이지로 이동)에만 유지하려면 이 옵션의 선택을 취소합니다.
+  * **설명**: 실행 취소 기록이 지속되는 시기를 결정합니다. 각 페이지를 편집한 후 실행 취소 기록을 유지하려면 이 옵션을 선택하십시오. 페이지가 다시 로드되는 경우(예: 사용자가 다른 페이지로 이동)에만 유지하려면 이 옵션의 선택을 취소합니다.
 
-     실행 취소 기록을 유지하면 웹 브라우저 리소스가 사용됩니다. 사용자의 브라우저가 페이지 편집에 느리게 반응하는 경우 페이지 다시 로드 시 실행 취소 기록을 유지해 보십시오.
+    실행 취소 기록을 유지하면 웹 브라우저 리소스가 사용됩니다. 사용자의 브라우저가 페이지 편집에 느리게 반응하는 경우 페이지 다시 로드 시 실행 취소 기록을 유지해 보십시오.
 
-   * **기본값**: `Selected`
-   * **유형**: `Boolean`
+  * **기본값**: `Selected`
+  * **유형**: `Boolean`
 
 * **표식 모드**
 ( `cq.wcm.undo.markermode`)
 
-   * **설명**: 실행 취소나 다시 실행이 발생할 때 영향을 받는 단락을 나타내는 데 사용할 시각적 큐를 지정합니다. 다음은 유효한 값입니다.
+  * **설명**: 실행 취소나 다시 실행이 발생할 때 영향을 받는 단락을 나타내는 데 사용할 시각적 큐를 지정합니다. 다음은 유효한 값입니다.
 
-      * flash: 단락의 선택 표시기가 일시적으로 깜박입니다.
-      * 선택: 단락이 선택됩니다.
+    * flash: 단락의 선택 표시기가 일시적으로 깜박입니다.
+    * 선택: 단락이 선택됩니다.
 
-   * **기본값**: `flash`
-   * **유형**: `String`
+  * **기본값**: `flash`
+  * **유형**: `String`
 
 * **좋은 구성 요소**
 ( `cq.wcm.undo.whitelist`)
 
-   * **설명**: 실행 취소 및 다시 실행 명령의 영향을 받을 구성 요소 목록입니다. 구성 요소 경로가 실행 취소/다시 실행에서 올바르게 작동하는 경우 이 목록에 추가합니다. 별표(&ast;)를 추가하여 구성 요소 그룹을 지정합니다.
+  * **설명**: 실행 취소 및 다시 실행 명령의 영향을 받을 구성 요소 목록입니다. 구성 요소 경로가 실행 취소/다시 실행에서 올바르게 작동하는 경우 이 목록에 추가합니다. 별표(&ast;)를 추가하여 구성 요소 그룹을 지정합니다.
 
-      * 다음 값은 기초 텍스트 구성 요소를 지정합니다.
+    * 다음 값은 기초 텍스트 구성 요소를 지정합니다.
 
-        `foundation/components/text`
+      `foundation/components/text`
 
-      * 다음 값은 모든 기초 구성 요소를 지정합니다.
+    * 다음 값은 모든 기초 구성 요소를 지정합니다.
 
-        `foundation/components/*`
+      `foundation/components/*`
 
-   * 이 목록에 없는 구성 요소에 대해 실행 취소 또는 재실행을 실행하면 명령을 신뢰할 수 없다는 메시지가 나타납니다.
+  * 이 목록에 없는 구성 요소에 대해 실행 취소 또는 재실행을 실행하면 명령을 신뢰할 수 없다는 메시지가 나타납니다.
 
-   * **기본값**: 속성이 AEM에서 제공하는 많은 구성 요소로 채워집니다.
-   * **유형**: `String[]`
+  * **기본값**: 속성이 AEM에서 제공하는 많은 구성 요소로 채워집니다.
+  * **유형**: `String[]`
 
 * **잘못된 구성 요소**
 ( `cq.wcm.undo.blacklist`)
 
-   * **설명**: 실행 취소 명령의 영향을 받지 않으려는 구성 요소 및/또는 구성 요소 작업의 목록입니다. 실행 취소 명령으로 올바르게 작동하지 않는 구성 요소 및 구성 요소 작업을 추가합니다.
+  * **설명**: 실행 취소 명령의 영향을 받지 않으려는 구성 요소 및/또는 구성 요소 작업의 목록입니다. 실행 취소 명령으로 올바르게 작동하지 않는 구성 요소 및 구성 요소 작업을 추가합니다.
 
-      * 실행 취소 기록에서 구성 요소의 작업을 모두 사용하지 않으려면 구성 요소 경로를 추가하십시오. 예: `collab/forum/components/post`
-      * 실행 취소 기록에서 특정 작업을 생략하려면 경로에 콜론(:) 및 작업을 추가하십시오(다른 작업이 올바르게 작동함). 예: `collab/forum/components/post:insertParagraph.`
+    * 실행 취소 기록에서 구성 요소의 작업을 모두 사용하지 않으려면 구성 요소 경로를 추가하십시오. 예: `collab/forum/components/post`
+    * 실행 취소 기록에서 특정 작업을 생략하려면 경로에 콜론(:) 및 작업을 추가하십시오(다른 작업이 올바르게 작동함). 예: `collab/forum/components/post:insertParagraph.`
 
   >[!NOTE]
   >
   >작업이 이 목록에 있는 경우에도 실행 취소 기록에 추가됩니다. 사용자가 실행 취소 내역에서 **잘못된 구성 요소** 작업 이전에 존재하는 작업을 실행 취소할 수 없습니다.
 
-   * 일반적인 작업 이름은 다음과 같습니다.
+  * 일반적인 작업 이름은 다음과 같습니다.
 
-      * `insertParagraph`: 구성 요소가 페이지에 추가됩니다.
-      * `removeParagraph`: 구성 요소가 삭제되었습니다.
-      * `moveParagraph`: 단락이 다른 위치로 이동되었습니다.
-      * `updateParagraph`: 단락 속성이 변경되었습니다.
+    * `insertParagraph`: 구성 요소가 페이지에 추가됩니다.
+    * `removeParagraph`: 구성 요소가 삭제되었습니다.
+    * `moveParagraph`: 단락이 다른 위치로 이동되었습니다.
+    * `updateParagraph`: 단락 속성이 변경되었습니다.
 
-   * **기본값**: 속성이 여러 구성 요소 작업으로 채워집니다.
-   * **유형**: `String[]`
+  * **기본값**: 속성이 여러 구성 요소 작업으로 채워집니다.
+  * **유형**: `String[]`
 
