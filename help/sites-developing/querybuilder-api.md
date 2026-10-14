@@ -1,6 +1,6 @@
 ---
 title: 쿼리 빌더 API
-description: Asset Share 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
+description: 자산 공유 쿼리 빌더의 기능은 Java&trade; API 및 REST API를 통해 노출됩니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,11 +13,9 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2390'
 ht-degree: 0%
-
 ---
-
 # 쿼리 빌더 API{#query-builder-api}
 
 [자산 공유 쿼리 빌더](/help/assets/assets-finder-editor.md)의 기능은 Java™ API 및 REST API를 통해 노출됩니다. 이 섹션에서는 이러한 API에 대해 설명합니다.
@@ -32,15 +30,15 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 >[!NOTE]
 >
->QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하는 Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=ko)를 참조하십시오.
+>QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하는 Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html)를 참조하십시오.
 
 ## Gem 세션 {#gem-session}
 
-[Adobe Experience Manager(AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=ko)는 Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 이 쿼리 빌더 전용 세션은 도구의 개요 및 사용에 유용합니다.
+[Adobe Experience Manager(AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html)은(는) Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 이 쿼리 빌더 전용 세션은 도구의 개요 및 사용에 유용합니다.
 
 >[!NOTE]
 >
->AEM Gem 세션 [쿼리 빌더에 대한 자세한 개요를 보려면 AEM Querybuilder에서 쉽게 만든 검색 양식](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=ko)을 참조하십시오.
+>AEM Gem 세션 [쿼리 빌더에 대한 자세한 개요를 보려면 AEM QueryBuilder를 쉽게 만든 검색 양식](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html)을 참조하십시오.
 
 ## 샘플 쿼리 {#sample-queries}
 
@@ -141,8 +139,8 @@ AEM 6.0 SP2부터는 숫자 값을 사용하여 최대 사용자 정의 결과 �
 
 * 응답은 다음과 같은 결과를 얻을 수 있습니다.
 
-   * `total=43`, `more=false` - 총 히트 수가 43개임을 나타냅니다. UI는 최대 10개의 결과를 첫 번째 페이지의 일부로 표시하고 다음 3개 페이지에 대한 페이지 매김을 제공할 수 있습니다. 이 구현을 사용하여 **&quot;43개의 검색 결과&quot;**&#x200B;와 같은 설명 텍스트를 표시할 수도 있습니다.
-   * `total=100`, `more=true` - 총 히트 수가 100보다 크고 정확한 개수를 알 수 없음을 나타냅니다. UI는 첫 번째 페이지의 일부로 최대 10개를 표시하고 다음 10개 페이지에 대한 페이지 매김을 제공할 수 있습니다. **&quot;100개 이상의 검색 결과&quot;**&#x200B;와 같은 텍스트를 표시하는 데 사용할 수도 있습니다. 사용자가 다음 페이지로 이동하면 쿼리 빌더에 대한 호출이 `guessTotal`과(와) `offset` 및 `limit` 매개 변수의 제한을 증가시킵니다.
+  * `total=43`, `more=false` - 총 히트 수가 43개임을 나타냅니다. UI는 최대 10개의 결과를 첫 번째 페이지의 일부로 표시하고 다음 3개 페이지에 대한 페이지 매김을 제공할 수 있습니다. 이 구현을 사용하여 **&quot;43개의 검색 결과&quot;**&#x200B;와 같은 설명 텍스트를 표시할 수도 있습니다.
+  * `total=100`, `more=true` - 총 히트 수가 100보다 크고 정확한 개수를 알 수 없음을 나타냅니다. UI는 첫 번째 페이지의 일부로 최대 10개를 표시하고 다음 10개 페이지에 대한 페이지 매김을 제공할 수 있습니다. **&quot;100개 이상의 검색 결과&quot;**&#x200B;와 같은 텍스트를 표시하는 데 사용할 수도 있습니다. 사용자가 다음 페이지로 이동하면 쿼리 빌더에 대한 호출이 `guessTotal`과(와) `offset` 및 `limit` 매개 변수의 제한을 증가시킵니다.
 
 Query Builder가 정확한 히트 수를 확인하지 않도록 UI에서 무한 스크롤을 사용해야 하는 경우 `guessTotal`을(를) 사용해야 합니다.
 
@@ -324,7 +322,7 @@ p.properties
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -360,7 +358,7 @@ p.nodedepth=5
 
 자세한 조건자는 [Query Builder 조건자 참조 페이지](/help/sites-developing/querybuilder-predicate-reference.md)를 참조하십시오.
 
-`PredicateEvaluator` 클래스[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)에 대한 Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+`PredicateEvaluator` 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)에 대한 [Javadoc을 확인할 수도 있습니다. 이러한 클래스에 대한 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
 클래스 이름의 접두사(예: [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)의 &quot; `similar`&quot;)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에서 사용할 술어의 이름이기도 합니다(소문자로 표시).
 
@@ -424,7 +422,7 @@ p.nodedepth=5
 
 >[!NOTE]
 >
->QueryBuilder API를 사용하는 OSGi 번들을 빌드하고 Adobe Experience Manager 애플리케이션에서 해당 OSGi 번들을 사용하는 방법에 대해 알아보려면 [Query Builder AP를 사용하는 Adobe CQ OSGi 번들 만들기](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I를 참조하십시오.
+>QueryBuilder API를 사용하는 OSGi 번들을 빌드하고 Adobe Experience Manager 애플리케이션에서 해당 OSGi 번들을 사용하는 방법에 대해 알아보려면 [Query Builder AP를 사용하는 Adobe CQ OSGi 번들 만들기](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)를 참조하십시오.
 
 JSON(Query Builder) 서블릿을 사용하여 HTTP를 통해 실행된 동일한 쿼리:
 
@@ -468,7 +466,7 @@ QueryBuilder 쿼리를 재생하고 디버깅하기 위해에서 QueryBuilder �
 
 (`path=/tmp`은(는) 예제일 뿐입니다.)
 
-### 일반 디버깅 Recommendations {#general-debugging-recommendations}
+### 일반 디버깅 권장 사항 {#general-debugging-recommendations}
 
 ### 로깅을 통해 설명 가능한 XPath 얻기 {#obtain-explain-able-xpath-via-logging}
 
@@ -476,12 +474,12 @@ QueryBuilder 쿼리를 재생하고 디버깅하기 위해에서 QueryBuilder �
 
 * QueryBuilder에 대해 DEBUG 로그를 활성화하여 기본 설명 가능한 XPath 쿼리를 얻습니다.
 
-   * https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog로 이동합니다. **DEBUG**&#x200B;에서 `com.day.cq.search.impl.builder.QueryImpl`에 대한 로거를 만듭니다.
+  * https://<serveraddress>:<serverport>/system/console/slinglog로 이동합니다. **DEBUG**&#x200B;에서 `com.day.cq.search.impl.builder.QueryImpl`에 대한 로거를 만듭니다.
 
 * 위의 클래스에 대해 DEBUG가 활성화되면 로그에 쿼리 빌더에서 생성한 XPath가 표시됩니다.
 * 연결된 QueryBuilder 쿼리에 대한 로그 항목에서 XPath 쿼리를 복사합니다. 예:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * XPath 쿼리를 [쿼리 설명](/help/sites-administering/operations-dashboard.md#explain-query)에 XPath로 붙여 넣어 쿼리 계획을 가져옵니다.
 
@@ -495,12 +493,12 @@ QueryBuilder 쿼리를 재생하고 디버깅하기 위해에서 QueryBuilder �
 
 * QueryBuilder에 대해 DEBUG 로그를 활성화하여 기본 설명 가능한 XPath 쿼리를 얻습니다.
 
-   * https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog로 이동합니다. **DEBUG**&#x200B;에서 `com.day.cq.search.impl.builder.QueryImpl`에 대한 로거를 만듭니다.
+  * https://<serveraddress>:<serverport>/system/console/slinglog로 이동합니다. **DEBUG**&#x200B;에서 `com.day.cq.search.impl.builder.QueryImpl`에 대한 로거를 만듭니다.
 
 * 위의 클래스에 대해 DEBUG가 활성화되면 로그에 쿼리 빌더에서 생성한 XPath가 표시됩니다.
 * 연결된 QueryBuilder 쿼리에 대한 로그 항목에서 XPath 쿼리를 복사합니다. 예:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * XPath 쿼리를 [쿼리 설명](/help/sites-administering/operations-dashboard.md#explain-query)에 XPath로 붙여 넣어 쿼리 계획을 가져옵니다.
 
