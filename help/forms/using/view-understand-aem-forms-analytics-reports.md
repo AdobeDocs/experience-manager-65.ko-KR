@@ -40,7 +40,7 @@ Adobe Experience Manager Forms은 Adobe Analytics과 통합되어 게시된 양�
 
 AEM Forms의 분석 기능은 AEM Forms 추가 기능 패키지의 일부로 사용할 수 있습니다. 추가 기능 패키지 설치에 대한 자세한 내용은 [AEM Forms 설치 및 구성](../../forms/using/installing-configuring-aem-forms-osgi.md)을 참조하십시오.
 
-추가 기능 패키지 외에도 Adobe Analytics 계정이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)을(를) 참조하십시오.
+추가 기능 패키지 외에도 Adobe Analytics 계정이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/kr/solutions/digital-analytics.html)을(를) 참조하십시오.
 
 AEM Forms 추가 기능 패키지 및 Adobe Analytics 계정이 있는 경우 [분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md)에 설명된 대로 Adobe Analytics 계정을 AEM Forms과 통합하고 양식 또는 문서에서 추적을 사용하도록 설정하십시오.
 

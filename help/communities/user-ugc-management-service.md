@@ -32,7 +32,7 @@ ht-degree: 4%
 
 AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 컨텐츠)를 대량 관리하기 위한 API를 즉시 표시합니다. 사용하도록 설정하면 **UserUgcManagement** 서비스를 통해 권한이 있는 사용자(커뮤니티 관리자 및 중재자)가 사용자 프로필을 사용하지 않도록 설정하고, 특정 사용자에 대한 UGC를 대량 삭제하거나 일괄 내보낼 수 있습니다. 또한 이러한 API를 통해 고객 데이터의 제어자와 프로세서는 유럽 연합의 GDPR(일반 데이터 보호 규정) 및 GDPR에서 영감을 얻은 기타 개인 정보 보호 규정을 준수할 수 있습니다.
 
-자세한 내용은 Adobe 개인 정보 보호 센터의 [GDPR 페이지를 참조하십시오.](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+자세한 내용은 Adobe 개인 정보 보호 센터의 [GDPR 페이지를 참조하십시오.](https://www.adobe.com/kr/privacy/general-data-protection-regulation.html)
 
 >[!NOTE]
 >

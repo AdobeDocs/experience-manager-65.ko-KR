@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 외부 브라우저 인증에는 클라이언트에서 지원되는 버전의 Adobe Acrobat 또는 Adobe Acrobat Reader이 필요합니다. 버전 세부 사항 및 업데이트는 [Acrobat 릴리스 노트(2026년 3월 연속 추적)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)를 참조하십시오.
+> 외부 브라우저 인증에는 클라이언트에서 지원되는 버전의 Adobe Acrobat 또는 Adobe Acrobat Reader이 필요합니다. 버전 세부 사항 및 업데이트는 [Acrobat 릴리스 노트(2026년 3월 연속 추적)](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)를 참조하십시오.
 
 ### AEM Forms JEE 핫픽스2 6.5.24.0에 대한 소프트웨어 배포 링크 {#software-distribution-links}
 

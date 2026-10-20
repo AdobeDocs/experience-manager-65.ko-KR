@@ -44,7 +44,7 @@ ht-degree: 3%
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. 핫스팟을 클릭하고 URL 및 대체 텍스트를 입력합니다. **[!UICONTROL Target]** 목록에서 이미지 맵을 표시할 위치(예: 동일한 탭, 새 탭 또는 iFrame)를 지정합니다. 예를 들어 URL로 `https://www.adobe.com`을(를) 입력하고 대체 텍스트로 `Adobe website`을(를) 입력한 다음 이미지 맵의 **[!UICONTROL Target]** 목록에서 **[!UICONTROL 새 탭]**&#x200B;을(를) 지정하여 새 탭에서 엽니다.
+1. 핫스팟을 클릭하고 URL 및 대체 텍스트를 입력합니다. **[!UICONTROL Target]** 목록에서 이미지 맵을 표시할 위치(예: 동일한 탭, 새 탭 또는 iFrame)를 지정합니다. 예를 들어 URL로 `https://www.adobe.com/kr`을(를) 입력하고 대체 텍스트로 `Adobe website`을(를) 입력한 다음 이미지 맵의 **[!UICONTROL Target]** 목록에서 **[!UICONTROL 새 탭]**&#x200B;을(를) 지정하여 새 탭에서 엽니다.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

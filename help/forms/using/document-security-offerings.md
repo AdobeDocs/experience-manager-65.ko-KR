@@ -66,7 +66,7 @@ Document Security SDK, Adobe Acrobat, Microsoft® Office용 Document Security Ex
 
 * **Adobe Acrobat:** Adobe Acrobat을 사용하여 Microsoft® Office, 웹 브라우저와 같이 인기 있는 데스크톱 응용 프로그램을 사용하여 만든 PDF 문서 또는 PDF 형식으로 인쇄를 지원하는 모든 응용 프로그램에 보안 정책을 적용할 수 있습니다.
 
-  [Adobe Acrobat 웹 사이트](https://www.adobe.com/acrobat/free-trial-download.html)에서 Adobe을 구입하고 다운로드할 수 있습니다. Adobe Acrobat 문서 [PDF에 대한 보안 정책 설정](https://helpx.adobe.com/kr/acrobat/using/setting-security-policies-pdfs.html)에서는 Adobe Acrobat에서 정책을 만들고 적용하는 방법에 대한 자세한 정보를 제공합니다.
+  [Adobe Acrobat 웹 사이트](https://www.adobe.com/kr/acrobat/free-trial-download.html)에서 Adobe을 구입하고 다운로드할 수 있습니다. Adobe Acrobat 문서 [PDF에 대한 보안 정책 설정](https://helpx.adobe.com/kr/acrobat/using/setting-security-policies-pdfs.html)에서는 Adobe Acrobat에서 정책을 만들고 적용하는 방법에 대한 자세한 정보를 제공합니다.
 
 * **® Office용 Document Security Extension**: Microsoft® Office용 Document Security Extension을 사용하여 Microsoft® Office 프로그램 내에서 Microsoft® Office 파일에 사전 정의된 정책을 적용할 수 있습니다. 확장은 승인된 사용자만 정책으로 보호된 ® Word, Excel 및 PowerPoint 파일을 사용할 수 있도록 합니다. 플러그인이 설치된 승인된 사용자만 정책으로 보호된 파일을 사용할 수 있습니다.
 

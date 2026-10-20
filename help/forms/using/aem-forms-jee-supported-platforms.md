@@ -648,7 +648,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 >
 >Adobe Acrobat 2020(클래식 트랙)은 AEM Forms에서 지원되지 않습니다. 대신 Adobe Acrobat Pro DC(Continuous track, 최신 버전)를 사용하십시오.
 >
->Acrobat DC 제품군은 Acrobat과 Reader에 대해 &quot;Classic&quot;과 &quot;Continuous&quot;의 두 가지 제품을 도입합니다. 두 트랙에 대한 자세한 내용 및 비교는 [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html)을(를) 참조하십시오.
+>Acrobat DC 제품군은 Acrobat과 Reader에 대해 &quot;Classic&quot;과 &quot;Continuous&quot;의 두 가지 제품을 도입합니다. 두 트랙에 대한 자세한 내용 및 비교는 [https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html)을(를) 참조하십시오.
 
 ## JEE에서 AEM Forms에 대해 지원되는 클라이언트 {#supported-clients-for-aem-forms-on-jee}
 
