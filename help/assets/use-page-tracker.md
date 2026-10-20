@@ -61,7 +61,7 @@ Page Tracker는 Adobe Analytics에서 이러한 웹 사이트의 [!DNL Adobe Exp
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/kr"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
@@ -109,7 +109,7 @@ Page Tracker는 Adobe Analytics에서 이러한 웹 사이트의 [!DNL Adobe Exp
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/kr"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img

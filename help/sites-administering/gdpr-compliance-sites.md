@@ -44,7 +44,7 @@ ht-degree: 86%
 
 AEM Sites는 GDPR 준수 의무와 관련하여 고객을 지원할 준비가 되어 있습니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.
 
-자세한 내용은 [Adobe 개인 정보 보호 센터의 GDPR 페이지](https://www.adobe.com/privacy/general-data-protection-regulation.html)를 참조하십시오.
+자세한 내용은 [Adobe 개인 정보 보호 센터의 GDPR 페이지](https://www.adobe.com/kr/privacy/general-data-protection-regulation.html)를 참조하십시오.
 
 >[!NOTE]
 >

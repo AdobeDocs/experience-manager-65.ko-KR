@@ -46,7 +46,7 @@ AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고
 >
 >AEM Forms의 분석 기능은 AEM Forms 추가 기능 패키지의 일부로 사용할 수 있습니다. 추가 기능 패키지 설치에 대한 자세한 내용은 [AEM Forms 설치 및 구성](../../forms/using/installing-configuring-aem-forms-osgi.md)을 참조하십시오.
 >
->추가 기능 패키지 외에도 AEM 인스턴스에 대한 Adobe Analytics 계정 및 관리자 권한이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)을(를) 참조하십시오.
+>추가 기능 패키지 외에도 AEM 인스턴스에 대한 Adobe Analytics 계정 및 관리자 권한이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/kr/solutions/digital-analytics.html)을(를) 참조하십시오.
 
 Adobe Launch를 사용하여 분석을 수행할 수도 있습니다. AEM Forms을 Adobe Launch와 통합하는 방법에 대한 자세한 내용은 [Adobe Launch를 사용하여 분석](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)을 참조하십시오.
 

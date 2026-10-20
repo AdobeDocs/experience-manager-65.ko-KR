@@ -48,7 +48,7 @@ ROI를 극대화하려면 조직은 고객이 서비스와 상호 작용하는 �
 
 ## 솔루션 {#the-solution}
 
-AEM Forms은 양식의 성과를 모니터링하고 분석하는 데 도움이 되며 전환율 향상을 위한 경험을 실험하고 식별할 수 있는 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) 솔루션([Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) 및 [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html))과 통합됩니다.
+AEM Forms은 양식의 성과를 모니터링하고 분석하는 데 도움이 되며 전환율 향상을 위한 경험을 실험하고 식별할 수 있는 [Adobe Marketing Cloud](https://www.adobe.com/kr/marketing-cloud.html) 솔루션([Adobe Analytics](https://www.adobe.com/kr/marketing-cloud/web-analytics.html) 및 [Adobe Target](https://www.adobe.com/kr/marketing-cloud/testing-targeting.html))과 통합됩니다.
 
 ## 워크플로우 {#the-workflow}
 

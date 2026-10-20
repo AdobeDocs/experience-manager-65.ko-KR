@@ -164,7 +164,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 콘텐츠를 PDF 문서로 변환 {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 콘텐츠를 *AdobeHTML.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)을 참조하십시오.)
+다음 Java 코드 예제에서는 https://www.adobe.com/kr에 있는 HTML 콘텐츠를 *AdobeHTML.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)을 참조하십시오.)
 
 ```java
  /*
@@ -242,7 +242,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
          GeneratePdfServiceClient pdfGenClient = new GeneratePdfServiceClient(myFactory);
  
          //Get an HTML document to convert to a PDF document a
-         String inputFileName = "https://www.adobe.com";
+         String inputFileName = "https://www.adobe.com/kr";
  
           String securitySettings = "No Security";
          String fileTypeSettings = "Standard";

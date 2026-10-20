@@ -32,7 +32,7 @@ ht-degree: 0%
 
 많은 최신 브라우저 버전에는 XFA 기반 PDF forms에 대한 제한된 자체 지원이 포함되어 있습니다. 이러한 브라우저에서는 XFA 기반 PDF forms을 열 수 있지만, 제공되는 기능은 제한됩니다. 최신 브라우저에서 XFA 기반 PDF 양식을 열거나 제출할 수 없는 경우 다음 방법 중 하나를 사용하십시오.
 
-* [® Acrobat®](https://www.adobe.com/acrobat.html) 또는 [Adobe® Adobe® Reader®](https://get.adobe.com/reader/) 버전 8 이상을 사용하여 XFA 기반 PDF forms을 열고 제출합니다.
+* [® Acrobat®](https://www.adobe.com/kr/acrobat.html) 또는 [Adobe® Adobe® Reader®](https://get.adobe.com/reader/) 버전 8 이상을 사용하여 XFA 기반 PDF forms을 열고 제출합니다.
 * ® Windows®의 Acrobat 및 Reader을 사용하면 보호된 보기 모드에서 PDF를 열도록 구성하여 XFA 기반 PDF forms을 열 수 없습니다. Acrobat 또는 Reader의 보호된 보기 모드가 비활성화되어 있는지 확인합니다. 자세한 내용은 [보호된 보기(Windows만 해당)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html)를 참조하십시오.
 * (Forms 개발자용) Adobe Experience Manager Forms은 또한 다음을 지원합니다.
 
