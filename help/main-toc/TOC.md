@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
+source-git-commit: 9240de61985dc32f17593f416e5d054cadb8a392
 workflow-type: tm+mt
-source-wordcount: '8302'
+source-wordcount: '8310'
 ht-degree: 95%
 ---
 
@@ -566,6 +566,7 @@ ht-degree: 95%
       + [AEM Forms JEE의 직렬화 문제 완화](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
     + AEM Forms 구성 {#configure-aem-forms}
       + [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
+      + [적응형 양식 참조를 위한 사용자 지정 인덱스 만들기](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [적응형 양식 캐시 구성](/help/forms/using/configure-adaptive-forms-cache.md)
       + [AEM DS 설정 구성](/help/forms/using/configuring-the-processing-server-url.md)
       + [동기화 스케줄러 구성](/help/forms/using/configure-synchronization-scheduler.md)
