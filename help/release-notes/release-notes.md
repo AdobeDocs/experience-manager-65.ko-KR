@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 5%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -617,6 +617,8 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6525}
 
 * **FORMS-23722** `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식을 **작업 할당** 단계를 통해 AEM Workflow에 제출하면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다.
+
+* **FORMS-28517** 디지털 서명된 PDF을 AEM Forms JEE Workspace의 작업에 연결하면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류로 인해 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재/기존 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오.
 
 #### 핫픽스에 대한 알려진 문제 사용 가능 {#aem-forms-issues-with-hotfixes}
 
