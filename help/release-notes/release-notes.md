@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 5%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -479,7 +479,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이 옵션을 사용하면 사용된 기능을 기반으로 필요한 색인 정의를 추가할 수 있습니다.
 
@@ -618,6 +618,8 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 * **FORMS-23722** `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식을 **작업 할당** 단계를 통해 AEM Workflow에 제출하면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다.
 
+* **FORMS-28517** 디지털 서명된 PDF을 AEM Forms JEE Workspace의 작업에 연결하면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류로 인해 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재/기존 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오.
+
 #### 핫픽스에 대한 알려진 문제 사용 가능 {#aem-forms-issues-with-hotfixes}
 
 다음 문제에는 다운로드 및 설치에 사용할 수 있는 핫픽스가 있습니다. [핫픽스를 다운로드하여 설치](/help/release-notes/aem-forms-hotfix.md)하여 다음 문제를 해결할 수 있습니다.
@@ -651,11 +653,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
