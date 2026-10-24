@@ -16,7 +16,7 @@ Adobe Experience Manager(AEM) Forms에서 적응형 양식 참조를 확인할 �
 
 AEM Forms 6.5.24.0 이상에서는 참조 쿼리가 `aemformsAFReferences` 인덱스 태그를 사용합니다. 이러한 릴리스에는 쿼리 변경 사항이 포함되지만 해당 태그로 사용자 지정 색인을 만들어야 합니다. 이 문서에서는 색인을 정의하고 배포하는 방법을 보여 줍니다.
 
-AEM Forms 6.5 LTS의 경우 [AEM Forms 6.5 LTS에서 적응형 양식 참조에 대한 사용자 지정 인덱스 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references)를 참조하십시오.
+AEM Forms 6.5 LTS의 경우 [AEM Forms 6.5 LTS에서 적응형 양식 참조에 대한 사용자 지정 인덱스 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references)를 참조하십시오.
 
 ## 사전 요구 사항 {#prerequisites}
 
