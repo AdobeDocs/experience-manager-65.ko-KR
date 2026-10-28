@@ -21,7 +21,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 40%
@@ -42,7 +42,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >
 >[IMS 통합이 이제 S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md)로 구성되었습니다.
 >
->[JWT 자격 증명으로 이전 구성을 수행했으며 이제 Adobe Developer Console에서 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)됩니다.
+>Adobe Developer Console에서 이제 더 이상 사용되지 않는 JWT 자격 증명을 사용하여 이전 구성을 만들었습니다.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 >또한 자세한 내용은 다음을 참조하십시오.
 >
 >* [Adobe Target 개발](https://developers.adobetarget.com/)
->* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=ko)
+>* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
 ## 사전 요구 사항 {#prerequisites}
@@ -70,7 +70,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
    >
    >[IMS 통합이 이제 S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md)로 구성되었습니다.
    >
-   >[JWT 자격 증명으로 이전 구성을 수행했으며 이제 Adobe Developer Console에서 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)됩니다.
+   >Adobe Developer Console에서 이제 더 이상 사용되지 않는 JWT 자격 증명을 사용하여 이전 구성을 만들었습니다.
 
 1. AEM 작성자 인스턴스에서 경험 조각을 내보내므로, 경험 조각 내의 모든 참조가 웹 전송에 대해 외부화되도록 작성자 인스턴스에서 [AEM 링크 외부화를 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)해야 합니다.
 
@@ -109,7 +109,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
    >
    >핵심 구성 요소를 참조하십시오.
    >
-   >[핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=ko)
+   >[핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 
    **Adobe Target**&#x200B;에서 다음을 선택합니다.
 
@@ -179,7 +179,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
 ## Adobe Target에서 경험 조각 사용 {#using-your-experience-fragments-in-adobe-target}
 
-앞의 작업을 수행하면 경험 조각이 Adobe Target의 오퍼 페이지에 표시됩니다. [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko)에서 달성할 수 있는 작업에 대해 알아보세요.
+앞의 작업을 수행하면 경험 조각이 Adobe Target의 오퍼 페이지에 표시됩니다. [특정 Target 설명서](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)에서 달성할 수 있는 작업에 대해 알아보세요.
 
 >[!NOTE]
 >

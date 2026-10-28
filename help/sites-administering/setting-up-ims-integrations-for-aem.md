@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 58%
+ht-degree: 54%
 ---
 # AEM에 대한 IMS 통합 설정 {#setting-up-ims-integrations-for-aem}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 
 
 >[!CAUTION]
 >
->이전에는 구성을 만들 때 [JWT 자격 증명을 사용했지만 이는 현재 Adobe Developer Console에서 더 이상 사용되지 않습니다](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>이전에는 JWT 자격 증명으로 구성되었으며, 이제 Adobe Developer Console에서 더 이상 사용되지 않습니다.
 >
 >이러한 구성은 더 이상 만들거나 업데이트할 수 없지만 OAuth 구성으로 마이그레이션할 수 있습니다.
 
@@ -114,5 +114,5 @@ JWT 자격 증명을 기반으로 기존 Adobe IMS 통합을 마이그레이션�
 
    ![OAuth 세부 정보 작성](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. **저장 믿 닫기**&#x200B;를 사용하여 업데이트 내용을 유지합니다.
+1. **저장 믿 닫기**를 사용하여 업데이트 내용을 유지합니다.
 콘솔로 돌아오면 **JWT 자격 증명(더 이상 사용되지 않음)** 경고가 사라집니다.
