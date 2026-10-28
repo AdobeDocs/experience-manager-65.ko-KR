@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 통해 소프트웨어의 작동 방식과 이 소프트웨어를 사용하여 수행할 수 있는 작업을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 9240de61985dc32f17593f416e5d054cadb8a392
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
-source-wordcount: '8310'
+source-wordcount: '8303'
 ht-degree: 95%
 ---
 
@@ -76,7 +76,6 @@ ht-degree: 95%
   + [콘텐츠 배치 필터](/help/sites-administering/content-disposition-filter.md)
   + [AEM 6.5의 사용자 정의 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
   + [동일 사이트 쿠키 지원](/help/sites-administering/same-site-cookie-support.md)
-  + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [AEM에 대한 IMS 통합 설정](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Experience Hub {#experience-hub}
   + [Experience Hub 소개](/help/experience-hub.md)
