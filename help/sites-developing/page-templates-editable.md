@@ -64,7 +64,7 @@ ht-degree: 5%
 
 편집 가능한 템플릿 만들기는 주로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 수행합니다. 이 섹션은 이 프로세스에 대한 개요를 제공하며 다음 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478)를 참조하십시오.
+AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [Lazybones를 사용하여 AEM 프로젝트 만들기](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=ko)를 참조하십시오.
 
 편집 가능한 템플릿을 만들 때 다음 작업을 수행하십시오.
 
