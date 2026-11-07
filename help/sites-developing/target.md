@@ -243,7 +243,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. �
 >
 >DTM을 사용하지 않는 경우 주문 확인을 Adobe Target으로 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. ([orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)를 참조하십시오.) Adobe Target은 MBox 이름이 `orderConfirmPage`일 때 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. ([orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=ko)를 참조하십시오.) Adobe Target은 MBox 이름이 `orderConfirmPage`일 때 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
 
 * productPurchasedId: 구매한 제품을 식별하는 ID 목록입니다.
 * orderId: 주문 ID입니다.
