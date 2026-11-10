@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 42%
+source-wordcount: '780'
+ht-degree: 36%
 ---
 # 번역을 위한 콘텐츠 준비{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ ht-degree: 42%
 * `<language-code>`지원되는 언어 코드는 ISO-639-1에서 정의된 두 자리 코드입니다(예: `en`).
 
 * `<language-code>_<country-code>` 또는 `<language-code>-<country-code>`지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다(예: `en_US`, `en_us`, `en_GB`, `en-gb`).
+
+>[!NOTE]
+>
+>Java 17 또는 Java 21에서 실행되는 AEM 설치의 경우 기본 Java 로케일 매핑은 기존 코드 `iw`, `ji` 및 `in` 대신 히브리어의 경우 `he`, 이디시의 경우 `yi`, 인도네시아어의 경우 `id`을(를) 사용합니다. 기존 코드를 사용하는 기존 i18n 사전을 찾을 수 없습니다.
+>
+>언어 루트 및 i18n 사전에 현재 코드를 사용하십시오. `iw`을(를) `he`(으)로, `ji`을(를) `yi`(으)로, `in`을(를) `id`(으)로 바꾸십시오.
+>
+>호환성 해결 방법으로 레거시 코드를 유지해야 하는 경우 JVM 인수 `-Djava.locale.useOldISOCodes=true`을(를) 사용하여 AEM을 시작할 때 Java 시스템 속성 `java.locale.useOldISOCodes`을(를) `true`(으)로 설정하십시오. 속성은 Java 런타임 시작 시에만 읽혀집니다. AEM이 실행되는 동안 이 속성을 변경해도 영향을 주지 않습니다.
 
 전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다.  예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 이름 속성으로 `fr`이(가) 있습니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
 
