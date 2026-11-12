@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2361'
 ht-degree: 60%
 ---
 # 콘텐츠 조각을 사용한 작업 {#working-with-content-fragments}
@@ -269,7 +269,7 @@ Assets은 각각 고유한 장점이 있는 여러 가지 방법으로 컨텐츠
   * 조각 작성 중에 정의할 수 있습니다.
   * 조각 내에 저장되므로 콘텐츠 사본 살포를 방지할 수 있습니다.
   * 마스터 콘텐츠가 업데이트된 경우 변형을 마스터와 [동기화](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)할 수 있습니다.
-  * [요약](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)하여 텍스트를 사전 정의된 길이로 신속히 자를 수 있습니다.
+
   * 조각 편집기의 [변형](/help/assets/content-fragments/content-fragments-variations.md) 탭에서 사용할 수 있습니다.
 
 ### 콘텐츠 조각을 사용하여 페이지 작성 시 중간 콘텐츠 {#in-between-content-when-page-authoring-with-content-fragments}
