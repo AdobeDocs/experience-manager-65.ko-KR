@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
+source-wordcount: '7273'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -365,7 +365,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### Platform{#foundation-platform-6526}
 
-* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager) URL을 사용합니다. (NPR-44388)
+* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager) URL을 사용합니다. (NPR-44388)
 * 개선 사항: AEM에서 이메일을 보낼 때 고객이 SMTP 대신 Microsoft Graph API를 요청함. 다른 티켓이 이미 Graph API 흐름을 구현하기 때문에 티켓이 중복으로 해결되었습니다. OAuth 2.0을 사용하는 SMTP는 SMTP 기본 인증에서 이동해야 하는 고객에게 계속 사용할 수 있습니다. (GRANITE-57478)
 
 * 이제 유효 권한 대화 상자의 문자열이 **도구** > **일반** > **구성** 브라우저에서 올바르게 정렬됩니다. 이전에는 폴더를 선택하고, 속성을 클릭한 다음, 유효 권한을 클릭한 후에 문자열 하나가 줄 밖에 표시되었습니다. 맞춤을 복원하도록 레이아웃 규칙을 업데이트했습니다. (CQ-4359166)
@@ -428,7 +428,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 >[!NOTE]
 >
->패키지 관리자 UI의 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. Adobe에서는 배포에 액세스하기 전에 오류 로그 변경이 중지될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 이 문제는 [!DNL Safari] 브라우저에서 발생하지만 어떤 브라우저에서도 발생할 수 있습니다.
+>서비스 팩을 설치하는 동안 패키지 관리자 UI의 대화 상자가 닫히는 경우가 있습니다. Adobe에서는 배포에 액세스하기 전에 오류 로그 변경이 중지될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 이 문제는 [!DNL Safari] 브라우저에서 발생하지만 어떤 브라우저에서도 발생할 수 있습니다.
 
 **자동 설치**
 
@@ -461,7 +461,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이 옵션을 사용하면 사용된 기능을 기반으로 필요한 색인 정의를 추가할 수 있습니다.
 
@@ -594,13 +594,9 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 ### AEM Sites의 알려진 문제 {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **AEM Foundation에서 사용할 수 있는 핫픽스에 대해 알려진 문제**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  이전 서비스 팩에서 Experience Manager 6.5.26.0(으)로 업그레이드한 후 CRXDE Lite 번들 버전 순서 지정을 통해 Experience Manager에서 의도한 번들을 선택하지 못할 수 있습니다. 버전 순서를 수정하려면 서비스 팩 26을 설치한 다음 소프트웨어 배포에서 핫픽스 [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip)을(를) 다운로드하여 설치하십시오. 핫픽스는 버전 전용 업데이트입니다. 여기에는 코드 또는 기능 변경 사항이 포함되어 있지 않습니다. (GRANITE-76725)
 
 * 큰 조각 트리에 대한 DoS 보호로 인해 콘텐츠 조각-미리보기가 실패합니다. 기본 GraphQL 쿼리 실행기 구성 옵션에 대한 [KB 문서 보기](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23945)&#x200B;(SITES-17934)
 
@@ -637,11 +633,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
