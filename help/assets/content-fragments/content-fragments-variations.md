@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 61%
+source-wordcount: '2078'
+ht-degree: 59%
 ---
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
@@ -42,8 +42,6 @@ ht-degree: 61%
 * [콘텐츠 업로드](#uploading-content)
 
 * [주요 통계 보기](#viewing-key-statistics)(여러 줄 텍스트에 대한 정보)
-
-* [텍스트 요약](#summarizing-text)
 
 * [변형을 마스터 콘텐츠와 동기화](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ ht-degree: 61%
 * [텍스트 통계 표시](#viewing-key-statistics)
 
 * [마스터와 동기화](#synchronizing-with-master)(변형 편집 시)
-
-* [텍스트 요약](#summarizing-text)
 
 ### 형식 {#formats}
 
@@ -228,60 +224,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 ### 콘텐츠 업로드 {#uploading-content}
 
 컨텐츠 조각 작성 프로세스를 간소화하기 위해 외부 편집기에서 준비한 텍스트를 업로드하고 조각에 바로 추가할 수 있습니다.
-
-### 텍스트 요약 {#summarizing-text}
-
-텍스트 요약 기능은 사용자가 주요 포인트와 전반적인 의미를 유지하면서도 텍스트의 길이를 사전 정의된 단어 수로 줄이는 데 도움이 되도록 설계되었습니다.
-
->[!NOTE]
->
->기술적인 수준에서, 시스템은 특정 알고리즘에 따라 *정보 밀도와 고유성의 최상의 비율*&#x200B;을 제공하는 것으로 평가되는 문장을 유지합니다.
-
->[!CAUTION]
->
->콘텐츠 조각에는 상위 언어 폴더로 유효한 언어 폴더(ISO 코드)가 있어야 합니다. 이 폴더는 사용할 언어 모델을 결정하는 데 사용됩니다.
->
->예를 들어 다음 경로에서 `en/`과 같습니다.
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->영어는 즉시 이용 가능합니다.
->
->다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
->
->* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. **마스터** 또는 필요한 변형을 선택합니다.
-1. 전체 화면 편집기를 엽니다.
-
-1. 도구 모음에서 **Summarize text**&#x200B;를 선택합니다.
-
-   ![요약](assets/cfm-variations-05.png)
-
-1. 타겟 단어 수를 지정하고 **시작**&#x200B;을 선택합니다.
-1. 원래 텍스트는 제안된 요약과 나란히 표시됩니다.
-
-   * 제거할 문장은 빨간색으로 강조 표시되며 취소선이 그어져 있습니다.
-   * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
-   * 제거하려면 강조 표시되지 않은 문장을 클릭합니다.
-
-1. **요약**&#x200B;을 선택하여 변경 내용을 확인합니다.
-
-1. 원래 텍스트는 제안된 요약과 나란히 표시됩니다.
-
-   * 제거할 문장은 빨간색으로 강조 표시되며 취소선이 그어져 있습니다.
-   * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
-   * 제거하려면 강조 표시되지 않은 문장을 클릭합니다.
-   * **실제** 및 **대상** 요약 통계가 표시됩니다.
-   * 변경 내용을 **미리보기**&#x200B;할 수 있습니다.
-
-   ![요약 비교](assets/cfm-variations-06.png)
 
 ### 콘텐츠 조각에 주석 달기 {#annotating-a-content-fragment}
 
