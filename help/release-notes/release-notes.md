@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
+source-wordcount: '7273'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -428,7 +428,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 >[!NOTE]
 >
->패키지 관리자 UI의 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. Adobe에서는 배포에 액세스하기 전에 오류 로그 변경이 중지될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 이 문제는 [!DNL Safari] 브라우저에서 발생하지만 어떤 브라우저에서도 발생할 수 있습니다.
+>서비스 팩을 설치하는 동안 패키지 관리자 UI의 대화 상자가 닫히는 경우가 있습니다. Adobe에서는 배포에 액세스하기 전에 오류 로그 변경이 중지될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 이 문제는 [!DNL Safari] 브라우저에서 발생하지만 어떤 브라우저에서도 발생할 수 있습니다.
 
 **자동 설치**
 
@@ -594,13 +594,9 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 ### AEM Sites의 알려진 문제 {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **AEM Foundation에서 사용할 수 있는 핫픽스에 대해 알려진 문제**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  이전 서비스 팩에서 Experience Manager 6.5.26.0(으)로 업그레이드한 후 CRXDE Lite 번들 버전 순서 지정을 통해 Experience Manager에서 의도한 번들을 선택하지 못할 수 있습니다. 버전 순서를 수정하려면 서비스 팩 26을 설치한 다음 소프트웨어 배포에서 핫픽스 [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip)을(를) 다운로드하여 설치하십시오. 핫픽스는 버전 전용 업데이트입니다. 여기에는 코드 또는 기능 변경 사항이 포함되어 있지 않습니다. (GRANITE-76725)
 
 * 큰 조각 트리에 대한 DoS 보호로 인해 콘텐츠 조각-미리보기가 실패합니다. 기본 GraphQL 쿼리 실행기 구성 옵션에 대한 [KB 문서 보기](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-23945)&#x200B;(SITES-17934)
 
