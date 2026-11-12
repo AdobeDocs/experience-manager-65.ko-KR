@@ -365,7 +365,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### Platform{#foundation-platform-6526}
 
-* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager) URL을 사용합니다. (NPR-44388)
+* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager) URL을 사용합니다. (NPR-44388)
 * 개선 사항: AEM에서 이메일을 보낼 때 고객이 SMTP 대신 Microsoft Graph API를 요청함. 다른 티켓이 이미 Graph API 흐름을 구현하기 때문에 티켓이 중복으로 해결되었습니다. OAuth 2.0을 사용하는 SMTP는 SMTP 기본 인증에서 이동해야 하는 고객에게 계속 사용할 수 있습니다. (GRANITE-57478)
 
 * 이제 유효 권한 대화 상자의 문자열이 **도구** > **일반** > **구성** 브라우저에서 올바르게 정렬됩니다. 이전에는 폴더를 선택하고, 속성을 클릭한 다음, 유효 권한을 클릭한 후에 문자열 하나가 줄 밖에 표시되었습니다. 맞춤을 복원하도록 레이아웃 규칙을 업데이트했습니다. (CQ-4359166)
@@ -637,11 +637,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
