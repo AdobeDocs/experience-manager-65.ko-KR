@@ -23,7 +23,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
+source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
 workflow-type: tm+mt
 source-wordcount: '7369'
 ht-degree: 3%
@@ -313,11 +313,25 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 * 새로운 기능: 리치 텍스트 목록의 접근성 태그 지원. 이전에는 템플릿이 특정 구조를 따르는 경우에만 액세스 가능성 태그 트리에 목록 태그가 표시되었습니다. 이 요청은 기능을 제공하는 관련 티켓의 복제본으로 마감되었습니다. (LC-3923202)
 
-
 <!--
+* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
+* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
+* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
+
 #### Forms JEE {#forms-jee-6526}
 
+* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
+* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
+* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
+* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
+* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
+* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+
 #### Forms Designer {#forms-designer-6526}
+
+* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
+* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
+* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
 -->
 
 
@@ -611,6 +625,22 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 * `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식이 **작업 할당** 단계를 통해 AEM Workflow에 제출되면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다. (FORMS-23722)
 
 * 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류와 함께 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
+
+<!--
+* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
+
+  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
+
+  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
+  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
+
+     ```shell
+     -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
+     ```
+
+  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
+  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
+-->
 
 #### 핫픽스에 대한 알려진 문제 사용 가능 {#aem-forms-issues-with-hotfixes}
 
