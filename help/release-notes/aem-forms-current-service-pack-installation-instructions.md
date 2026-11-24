@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: ed215ea94e2db8589da7734dd4533fb0e55043d4
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 13%
+source-wordcount: '2293'
+ht-degree: 12%
 ---
 # AEM 6.5 Forms 서비스 팩 설치 지침 {#aem-form-patch-installation-instructions}
 
@@ -153,6 +153,16 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >* JEE 서비스 팩에 AEM Forms을 설치한 후 appserver를 다시 시작하기 전에 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 제거해야 합니다. [소프트웨어 배포 포털](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)에서 최신 Forms 추가 기능 패키지를 다운로드합니다.
 >* SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 >* JEE의 AEM Forms에 대한 스프링 프레임워크 취약점을 완화하기 위한 [핫픽스](/help/release-notes/aem-forms-hotfix.md)의 경우, 클러스터 환경에 배포할 때 로케이터가 JDK 17을 사용하여 시작되었는지 확인해야 합니다.
+
+### WebLogic 토폴로지 유효성 검사 실패 해결 {#weblogic-topology-validation}
+
+JEE 서비스 팩 26 패치 136의 AEM Forms을 사용하는 WebLogic에서 GUI 및 CLI 모드 모두에서 LCM(Configuration Manager) `validateApplicationServerTopology` 단계가 실패합니다. 이 문제가 발생하면 다음 수동 해결 방법을 적용하십시오. (FORMS-30037)
+
+1. 소프트웨어 배포에서 [`forms-security-commons-1.0.6.jar`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/forms-security-commons-1.0.6.jar)을(를) 다운로드합니다.
+1. JAR를 AEM Forms 설치 디렉터리 아래의 `configurationManager/lib` 디렉터리에 배치합니다. 예를 들어 Windows에서 경로는 `C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\lib`입니다. 실제 설치 디렉토리가 다른 경우 사용하십시오.
+1. Configuration Manager `bin` 디렉터리에서 `ConfigurationManager.bat`(Windows) 또는 `ConfigurationManager.sh`(Unix/Linux)을(를) 편집합니다. 기존의 모든 클래스 경로 항목을 유지하면서 `forms-security-commons-1.0.6.jar`의 전체 경로를 기존 클래스 경로에 추가합니다.
+1. 수정된 런처를 사용하여 GUI 또는 CLI 모드에서 Configuration Manager를 다시 시작합니다.
+1. `validateApplicationServerTopology`을(를) 다시 실행하고 토폴로지 유효성 검사가 성공적으로 완료되었는지 확인하십시오.
 
 +++
 
