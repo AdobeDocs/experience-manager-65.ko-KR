@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
+source-wordcount: '11350'
 ht-degree: 2%
 ---
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
@@ -230,7 +230,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 ® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 ### Adobe Acrobat Pro DC 설치 {#install-adobe-acrobat-pro-dc}
 
@@ -295,6 +295,10 @@ Microsoft Office용 Adobe Acrobat Pro DC 설치 프로세스는 라이선스 유
 ##### FRL 패키지 준비(Adobe Admin Console)
 
 이 단계는 Adobe Admin Console에 대한 *시스템 관리자* 액세스 권한으로 수행해야 합니다.
+
+>[!NOTE]
+>
+>FRL 패키지는 일반적으로 연간(1년) 구독 갱신 주기에 실행됩니다. 라이선스가 갱신될 예정인 경우 새 FRL 패키지를 생성하고 AEM Forms 서버에서 만료된 라이선스를 제거한 다음 새 패키지를 배포하고 활성화합니다. 자세한 단계는 [Adobe Acrobat 라이선스가 AEM Forms 서버에서 만료되었거나 비활성화됨](#troubleshooting)을(를) 참조하십시오.
 
 ###### 1단계: Adobe Admin Console에 로그인
 
@@ -445,6 +449,10 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 ##### FRL 패키지 준비(Adobe Admin Console)
 
 이 단계는 Adobe Admin Console에 대한 *시스템 관리자* 액세스 권한으로 수행해야 합니다.
+
+>[!NOTE]
+>
+>FRL 패키지는 일반적으로 연간(1년) 구독 갱신 주기에 실행됩니다. 라이선스가 갱신될 예정인 경우 새 FRL 패키지를 생성하고 AEM Forms 서버에서 만료된 라이선스를 제거한 다음 새 패키지를 배포하고 활성화합니다. 자세한 단계는 [Adobe Acrobat 라이선스가 AEM Forms 서버에서 만료되었거나 비활성화됨](#troubleshooting)을(를) 참조하십시오.
 
 ###### 1단계: Adobe Admin Console에 로그인
 
@@ -602,6 +610,10 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 
 이 단계는 Adobe Admin Console에 대한 *시스템 관리자* 액세스 권한으로 수행해야 합니다.
 
+>[!NOTE]
+>
+>FRL 패키지는 일반적으로 연간(1년) 구독 갱신 주기에 실행됩니다. 라이선스가 갱신될 예정인 경우 새 FRL 패키지를 생성하고 AEM Forms 서버에서 만료된 라이선스를 제거한 다음 새 패키지를 배포하고 활성화합니다. 자세한 단계는 [Adobe Acrobat 라이선스가 AEM Forms 서버에서 만료되었거나 비활성화됨](#troubleshooting)을(를) 참조하십시오.
+
 ###### 1단계: Adobe Admin Console에 로그인
 
 1. 웹 브라우저를 열고 [Adobe Admin Console](https://adminconsole.adobe.com/)&#x200B;(으)로 이동
@@ -758,6 +770,10 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 ##### FRL 패키지 준비(Adobe Admin Console)
 
 이 단계는 Adobe Admin Console에 대한 *시스템 관리자* 액세스 권한으로 수행해야 합니다.
+
+>[!NOTE]
+>
+>FRL 패키지는 일반적으로 연간(1년) 구독 갱신 주기에 실행됩니다. 라이선스가 갱신될 예정인 경우 새 FRL 패키지를 생성하고 AEM Forms 서버에서 만료된 라이선스를 제거한 다음 새 패키지를 배포하고 활성화합니다. 자세한 단계는 [Adobe Acrobat 라이선스가 AEM Forms 서버에서 만료되었거나 비활성화됨](#troubleshooting)을(를) 참조하십시오.
 
 ###### 1단계: Adobe Admin Console에 로그인
 
@@ -927,7 +943,7 @@ FLL(Feature Restricted Licensing)을 활성화하고 Acrobat 활성화를 확인
 >
 >AEM Forms PDF Generator과 같은 서버측 자동화 시나리오에는 보호 모드 비활성화가 필요합니다. 이 설정은 최종 사용자 데스크톱이 아닌 전용 서버 환경에서만 변경해야 합니다.
 
-자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/kr/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
+자세한 내용은 [보호 모드의 Adobe 설명서](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html)를 참조하세요.
 
 
 
@@ -1110,10 +1126,10 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -1533,9 +1549,9 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 <!--
 (Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
-* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
+   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
       ```
 
@@ -1550,7 +1566,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
          
       ```
 
-* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
+* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
 (Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
@@ -1558,6 +1574,52 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++
 -->
+
++++ Adobe Acrobat 라이선스가 AEM Forms Server에서 만료되거나 비활성화됨
+
+AEM Forms 서버에서 Adobe Acrobat의 FLL(Feature Restricted License)이 만료되거나 비활성화되면 PDF Generator은 Acrobat PDFMaker를 사용하여 Microsoft® Office 문서를 변환할 수 없습니다. 이 변환은 OpenOffice로 대체되며 OpenOffice가 구성되지 않은 경우 다음 오류가 발생하여 실패합니다.
+
+*기본 변환기의 오류 메시지:
+문서를 인쇄하는 동안 ALC-PDG-010-012-PDFMaker에서 오류가 보고되었습니다.*
+
+*대체 변환기의 오류 메시지:
+ALC-PDG-011-030-Submitted OpenOffice 문서를 PDF으로 변환할 수 없습니다. 이 시스템에 OpenOffice가 설치되어 있지 않거나 환경 변수 OpenOffice_PATH가 올바른 경로로 설정되지 않았습니다.*
+
+이 문제를 해결하려면 라이선스 상태를 확인하고 라이선스를 다시 활성화합니다.
+
+1. 관리자로 AEM Forms 서버에 로그인하고 관리자로 명령 프롬프트를 엽니다.
+1. FRL 패키지를 추출한 디렉토리로 이동합니다. 예를 들어, `C:\AcrobatFRL`과 같이 입력합니다.
+1. 다음 명령을 실행하여 라이선스 상태를 확인합니다.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. 라이센스가 만료된 경우 FRL 패키지를 교체합니다. FRL 패키지는 일반적으로 연간(1년) 구독 갱신 주기에 실행됩니다.
+   1. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 새 FRL 패키지를 만들어 다운로드합니다. 자세한 내용은 [Adobe Acrobat Pro DC 설치](#install-adobe-acrobat-pro-dc)의 2단계부터 7단계까지를 참조하십시오.
+   1. 다음 명령을 실행하여 만료된 라이선스를 제거합니다.
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >대신 서버에서 모든 라이선스 데이터를 지우려면 `adobe-licensing-toolkit.exe --deactivate --all`을(를) 실행하십시오.
+
+   1. 서버의 디렉터리에 새 FRL 패키지를 추출하고 해당 디렉터리로 이동합니다.
+
+1. 다음 명령을 실행하여 라이선스를 활성화합니다. `ngl-preconditioning-data.json`을(를) FRL 패키지에 있는 JSON 파일의 대/소문자를 구분하는 정확한 이름으로 바꾸십시오.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Adobe Acrobat을 열고 사용 가능한 업데이트를 설치합니다.
+1. 실행 중인 Acrobat PDFMaker 프로세스를 중지하려면 AEM Forms 서버를 다시 시작합니다.
+1. ® Office 문서를 PDF으로 변환하여 PDF Generator에서 변환에 Acrobat을 사용하는지 확인합니다.
+
++++
 
 +++ Windows Server에서 Word 또는 Excel 파일을 PDF로 변환할 수 없음
 
