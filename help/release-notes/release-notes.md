@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
+source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
 workflow-type: tm+mt
-source-wordcount: '7369'
+source-wordcount: '8356'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -60,6 +60,9 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 * 현지화. 수십 개의 수정 사항이 Sites, Assets, 보안 및 작업 전반에 걸쳐 문자열을 번역하고 레이아웃 문제를 수정합니다.
 * 신뢰성. 게시 인스턴스, MSM 롤아웃, 리치 텍스트 편집기 도구 모음 작업 및 클래식 UI의 페이지 활성화에 대한 GraphQL 잠금 경합 문제를 해결합니다.
 * 분석. Launch 통합에서는 2026년 8월 31일 Analytics 1.4 서비스 종료에 앞서 Adobe Analytics 2.0 API를 사용합니다.
+* Forms 접근성. Forms Designer 및 출력 서비스는 제목 역할에서 중첩된 PDF(Portable Document Format) 책갈피를 생성하고, 선택한 제목을 페이지 맨 위로 스크롤한 다음 책갈피 `extras` 요소를 추가합니다. 리치 텍스트 목록에는 액세스 가능성 태그도 포함되어 있습니다.
+* Forms 데이터 내보내기. 런타임 API는 하나의 서버 전체 JVM(Java Virtual Machine) 설정 대신 각 요청에 대한 레거시 또는 기본 XML 데이터 내보내기 모드를 선택합니다.
+* FORMS JEE Document Security는 Adobe Acrobat에 대한 암호 키(WebAuthn) 지원을 추가하고 IBM Content Manager 커넥터는 버전 8.7을 지원합니다.
 
 >[!IMPORTANT]
 >
@@ -312,27 +315,24 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 ### [!DNL Forms]{#forms-6526}
 
 * 새로운 기능: 리치 텍스트 목록의 접근성 태그 지원. 이전에는 템플릿이 특정 구조를 따르는 경우에만 액세스 가능성 태그 트리에 목록 태그가 표시되었습니다. 이 요청은 기능을 제공하는 관련 티켓의 복제본으로 마감되었습니다. (LC-3923202)
+* 개선 사항: AEM Forms은 각 요청에 대한 이전 또는 기본 XML(Extensible Markup Language) 데이터 내보내기 모드를 선택하는 런타임 API를 추가합니다. 이전에는 `-Dcom.adobe.fd.forms.export.legacy` JVM(Java Virtual Machine) 매개 변수만 모드를 제어하고 서버의 모든 내보내기에 적용되는 설정이 적용되었습니다. 요청에서 API를 사용하지 않는 경우 JVM 매개변수는 동작을 계속 제어합니다. (FORMS-23114, FORMS-22983)
+* 보이지 않는 인증 서명으로 인증된 Portable Document Format(PDF) 파일이 Adobe Acrobat에서 더 이상 느리게 열리지 않습니다. 이전에 표시된 인증 서명에만 적용되었던 수정 사항이 이제 보이지 않는 인증 서명도 포함합니다. (FORMS-25171)
+* Foundation 구성 요소 기반 적응형 Forms에서 첨부 파일 구성 요소는 이제 업로드 시 허용되는 파일 형식 목록에 대해 파일을 확인합니다. 이전에는 목록에서 `application/pdf`, `image/jpeg` 및 `image/png`만 허용해도 `.xsd`과(와) 같은 파일이 업로드 단계를 전달했습니다. 양식에서 지원되지 않는 일반적인 파일 경고가 있는 제출 시에만 거부했습니다. (FORMS-24295)
 
-<!--
-* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
-* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
-* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
+#### FORMS JEE {#forms-jee-6526}
 
-#### Forms JEE {#forms-jee-6526}
-
-* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
-* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
-* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
-* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
-* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
-* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+* 개선 사항: AEM Forms Document Security는 Adobe Acrobat(PPKLite)에 대한 암호 키(웹 인증 또는 WebAuthn) 지원을 추가합니다. (FORMS-21762)
+* 개선 사항: IBM에서 버전 8.5 및 8.6에 대한 지원이 종료되었으므로 IBM Content Manager 커넥터는 이제 IBM Content Manager 8.7을 지원합니다. (FORMS-6827)
+* Windows에서 특정 PDF(Portable Document Format) 파일을 TIFF과 같은 이미지로 변환할 때 ConvertPDF 서비스가 더 이상 중단되지 않습니다. (FORMS-25796)
+* 이제 SAML(보안 어설션 마크업 언어) 인증이 업로드된 ID 공급자(IdP) 메타데이터의 인증서로 어설션 서명의 유효성을 검사합니다. IdP 인증서가 변경되고 메타데이터가 업데이트되지 않으면 인증이 실패합니다. (FORMS-24679)
+* AEM Forms 서비스 팩 6.5.24.0, `server.log` 및 `error.log`(으)로 업그레이드한 후 더 이상 &quot;보안 파서 팩터리를 만들지 못했습니다. 만들어진 모든 XML 파서는 XML 기반 악용에 취약할 수 있습니다.&quot;와 같은 경고 메시지 `[XMLSecurity]`개로 채워지지 않습니다. 유휴 서버에서도 메시지가 초당 여러 번 나타나고 디스크 공간을 빠르게 소모했습니다. (FORMS-23717)
+* 이제 JEE 측의 구성 요소는 Apache POI 5.4.0을 패키징합니다. 이전에는 일부 번들에 여전히 Apache POI 3.17 및 3.9가 포함되어 있었으며, 이러한 보안 스캔은 AEM Forms 서비스 팩 6.5.24.0(으)로 업그레이드한 후 플래그가 지정되었습니다. (FORMS-23678)
 
 #### Forms Designer {#forms-designer-6526}
 
-* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
-* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
-* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
--->
+* 개선 사항: Forms Designer 및 출력 서비스는 정적 대화식 및 플랫 PDF 파일에서 제목 수준 1부터 제목 수준 6 접근성 역할까지 중첩된 PDF(Portable Document Format) 책갈피를 생성합니다. 제목 수준 1은 이전에 작성자가 Adobe Acrobat에서 수동으로 제거한 비어 있거나 중복된 항목이 없는 최상위 책갈피가 됩니다. 이전 책갈피 동작을 복원하려면 사용자 지정 XCI 파일에 `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>`을(를) 추가하십시오. (LC-3923490, LC-3922369)
+* 개선 사항: 정적 대화형 또는 플랫 휴대용 문서 형식(PDF) 파일에서 책갈피를 선택하면 이제 일치하는 제목이 페이지 맨 위로 스크롤됩니다. (LC-3923489, LC-3923289)
+* 개선 사항: Forms Designer은 제목 수준 1부터 제목 수준 6 접근성 역할을 사용하는 텍스트 개체에 책갈피 `extras` 요소를 추가할 수 있습니다. 이전에는 작성자가 책갈피를 생성하려면 각 머리글에 대해 XML Source에 수동으로 `<extras name="bookmark">`을(를) 추가해야 했습니다. (FORMS-24361)
 
 
 ### 기초 {#foundation-6526}
@@ -385,7 +385,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### Platform{#foundation-platform-6526}
 
-* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager) URL을 사용합니다. (NPR-44388)
+* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager) URL을 사용합니다. (NPR-44388)
 * 개선 사항: AEM에서 이메일을 보낼 때 고객이 SMTP 대신 Microsoft Graph API를 요청함. 다른 티켓이 이미 Graph API 흐름을 구현하기 때문에 티켓이 중복으로 해결되었습니다. OAuth 2.0을 사용하는 SMTP는 SMTP 기본 인증에서 이동해야 하는 고객에게 계속 사용할 수 있습니다. (GRANITE-57478)
 
 * 이제 유효 권한 대화 상자의 문자열이 **도구** > **일반** > **구성** 브라우저에서 올바르게 정렬됩니다. 이전에는 폴더를 선택하고, 속성을 클릭한 다음, 유효 권한을 클릭한 후에 문자열 하나가 줄 밖에 표시되었습니다. 맞춤을 복원하도록 레이아웃 규칙을 업데이트했습니다. (CQ-4359166)
@@ -481,7 +481,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이 옵션을 사용하면 사용된 기능을 기반으로 필요한 색인 정의를 추가할 수 있습니다.
 
@@ -622,25 +622,48 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 ### AEM Forms의 알려진 문제 {#known-issues-aem-forms-6526}
 
+* JEE 서비스 팩 26 패치 136의 AEM Forms을 사용하는 WebLogic에서 GUI 및 CLI 모드 모두에서 Configuration Manager `validateApplicationServerTopology` 단계가 실패합니다. 수동 해결 방법을 적용하려면 **4를 확장합니다. [JEE 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack)에서 JEE 서비스 팩**&#x200B;에 AEM Forms을 설치하고 WebLogic 토폴로지 유효성 검사 해결 방법을 따릅니다. (FORMS-30037)
+
 * `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식이 **작업 할당** 단계를 통해 AEM Workflow에 제출되면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다. (FORMS-23722)
 
 * 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류와 함께 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
 
-<!--
-* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
+* 관리 콘솔 또는 Java 코드(EJB/SOA)를 통해 LCA(LiveCycle Archive)를 가져오면 후속 PDF Generator(PDFG) 및 ConvertPDF 작업이 실패할 수 있습니다. 이 문제는 포함된 AEM 작성자 인스턴스가 있는 Windows 및 Linux의 JDK 및 Oracle WebLogic 14c 스택에 영향을 줍니다. (FORMS-30031)
 
-  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
+  서버 로그에 다음 오류가 표시됩니다.
 
-  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
-  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
+  ```text
+  org.omg.CORBA.INITIALIZE: can't instantiate default ORB implementation org.jacorb.orb.ORB
+  ```
+
+  **임시 복구:** 다시 시작하면 영향을 받는 서버의 서비스가 중단됩니다.
+
+  1. 배포의 일반적인 작업 절차를 사용하여 영향을 받는 WebLogic 관리 서버의 재시작을 계획합니다.
+  1. 영향을 받는 서버를 다시 시작하고 AEM Forms 서비스를 사용할 수 있을 때까지 기다립니다.
+  1. PDF Generator 및 ConvertPDF 작업을 다시 시도하여 복구를 확인합니다.
+
+  WebLogic 14c에 영향을 받는 AEM Forms JEE SP26 패치 136 배포에서 관리 서버를 다시 시작하면 LCA 가져오기 후 PDF Generator 및 ConvertPDF 작업이 일시적으로 복원됩니다. 후속 LCA 가져오기로 인해 오류가 다시 트리거될 수 있습니다.
+
+* **WebLogic URL에서 PDF으로 변환 실패.** WebLogic에서, 패치 135에 보고된 대로 AEM Forms JEE 6.5.26.0(서비스 팩 26)에서 관리 UI 또는 API를 통해 URL을 입력하여 HTML에서 PDF으로 변환할 수 없습니다. 오류는 `ALC-PDG-052-018: Connection to host cannot be resolved (URL does not exist).`입니다. 이진 HTML 입력을 사용한 변환에는 영향을 주지 않습니다.
+
+  이 오류는 URL 연결 가능성 검사와 WebLogic의 HTTPS 연결 처리기 간의 비호환성으로 인해 발생합니다. URL이 반드시 유효하지 않음을 의미하지는 않습니다. 이 오류가 표시된다는 이유만으로 유효한 URL을 변경하지 마십시오.
+
+  WebLogic URL에서 PDF으로 변환에 대한 수정 사항은 패치 136에 포함되지 않으며 별도의 핫픽스가 필요합니다.
+
+
+* IBM WebSphere에서 AEM Forms Workbench에서 웹 서비스 호출 활동을 통해 WSDL(웹 서비스 설명 언어) 파일을 로드할 경우 패치 135에 보고된 대로 AEM Forms JEE 6.5.26.0(서비스 팩 26)으로 실패할 수 있습니다. 동일한 작업이 JBoss에서 작동합니다. (FORMS-29972)
+
+  **해결 방법:** AEM Forms JEE를 호스팅하는 WebSphere 응용 프로그램 서버에 JVM(Java Virtual Machine) 인수를 추가합니다. Workbench 클라이언트 설정이 아닌 서버측 설정입니다.
+
+  1. AEM Forms JEE를 호스팅하는 WebSphere 애플리케이션 서버에 대한 JVM 구성을 엽니다.
+  1. 서버 JVM 인수에 다음 인수를 추가합니다. 기존 인수를 유지합니다.
 
      ```shell
      -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
      ```
 
-  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
-  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
--->
+  1. 구성을 저장한 다음 인수가 적용되도록 WebSphere 응용 프로그램 서버를 다시 시작합니다.
+  1. AEM Forms Workbench에서 다시 연결한 다음 웹 서비스 호출 활동에서 WSDL을 다시 로드합니다.
 
 #### 핫픽스에 대한 알려진 문제 사용 가능 {#aem-forms-issues-with-hotfixes}
 
@@ -669,11 +692,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
