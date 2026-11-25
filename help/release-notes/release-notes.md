@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -625,8 +625,6 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 * JEE 서비스 팩 26 패치 136의 AEM Forms을 사용하는 WebLogic에서 GUI 및 CLI 모드 모두에서 Configuration Manager `validateApplicationServerTopology` 단계가 실패합니다. 수동 해결 방법을 적용하려면 **4를 확장합니다. [JEE 서비스 팩 설치 지침](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack)에서 JEE 서비스 팩**&#x200B;에 AEM Forms을 설치하고 WebLogic 토폴로지 유효성 검사 해결 방법을 따릅니다. (FORMS-30037)
 
 * `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식이 **작업 할당** 단계를 통해 AEM Workflow에 제출되면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다. (FORMS-23722)
-
-* 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류와 함께 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
 
 * 관리 콘솔 또는 Java 코드(EJB/SOA)를 통해 LCA(LiveCycle Archive)를 가져오면 후속 PDF Generator(PDFG) 및 ConvertPDF 작업이 실패할 수 있습니다. 이 문제는 포함된 AEM 작성자 인스턴스가 있는 Windows 및 Linux의 JDK 및 Oracle WebLogic 14c 스택에 영향을 줍니다. (FORMS-30031)
 
