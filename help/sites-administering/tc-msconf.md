@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: f63514691265918da2fa40cc493889c6cd0d23d1
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 64%
+source-wordcount: '478'
+ht-degree: 37%
 ---
 # Microsoft Translator에 연결 {#connecting-to-microsoft-translator}
 
@@ -58,3 +58,18 @@ AEM은 페이지 콘텐츠 또는 에셋을 번역할 수 있도록 [Microsoft T
 ## Translator 서비스 구성 게시 {#publishing-the-translator-service-configurations}
 
 마지막 단계로 [트리 게시](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) 작업을 사용하여 게시된 번역된 콘텐츠를 지원하도록 Microsoft Translator 구성을 게시하십시오.
+
+## Microsoft Translator API 필드 매핑 {#microsoft-translator-api-field-mapping}
+
+Microsoft Translator API v3가 `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`에서 번역 요청을 수락합니다. 대상 언어를 포함한 필수 매개 변수에 대해서는 [Microsoft 번역 API 참조](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate)를 참조하십시오.
+
+다음 표는 AEM 구성 필드와 Microsoft API를 연결합니다.
+
+| AEM 필드 | AEM의 목적 | Microsoft API 관계 |
+|---|---|---|
+| 작업 영역 ID | 사용할 맞춤화된 Microsoft Translator 엔진을 식별합니다. | 사용자 지정 번역 시스템은 `category` 요청 매개 변수를 통해 선택됩니다. Microsoft의 API에는 작업 영역 ID만 있는 것이 아니라 사용자 지정 Translator 범주 ID가 필요합니다. 커넥터 및 사용자 지정 모델 구성에 필요한 값을 확인합니다. |
+| 번역 레이블 | 번역 서비스의 표시 이름을 제공합니다. | 해당 번역 요청 매개 변수가 없습니다. |
+| 번역 속성 | 번역된 사용자 생성 콘텐츠 옆에 선택적 속성을 정의합니다. | 해당 번역 요청 매개 변수가 없습니다. |
+| 구독 키 | Microsoft Translator 구독에 대한 액세스 권한을 인증합니다. | 액세스 토큰을 요청할 때 `Ocp-Apim-Subscription-Key` 헤더에서 전송됩니다. 그러면 토큰이 번역 요청을 위해 `Authorization: Bearer <access-token>` 헤더로 전송됩니다. |
+
+글로벌 Microsoft Translator 리소스의 경우 토큰 끝점은 `https://api.cognitive.microsoft.com/sts/v1.0/issueToken`입니다. 지역 및 다중 서비스 리소스는 지역별 토큰 엔드포인트를 사용합니다. 리소스 유형에 대한 끝점 및 헤더 요구 사항에 대해서는 [Microsoft Translator 인증](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication)을 참조하십시오.
