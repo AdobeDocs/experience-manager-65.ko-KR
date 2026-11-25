@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 최신 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
@@ -385,7 +385,7 @@ Experience Manager 6.5.26.0에는 새로운 기능, 주요 고객 요청 개선 
 
 #### Platform{#foundation-platform-6526}
 
-* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager) URL을 사용합니다. (NPR-44388)
+* 이제 AEM 로그인 페이지의 바닥글에 있는 도움말 링크에 작업 페이지가 열립니다. 이전에는 링크가 더 이상 존재하지 않는 marketing.adobe.com URL을 가리켰습니다. 이제 바닥글 구성에서 [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager) URL을 사용합니다. (NPR-44388)
 * 개선 사항: AEM에서 이메일을 보낼 때 고객이 SMTP 대신 Microsoft Graph API를 요청함. 다른 티켓이 이미 Graph API 흐름을 구현하기 때문에 티켓이 중복으로 해결되었습니다. OAuth 2.0을 사용하는 SMTP는 SMTP 기본 인증에서 이동해야 하는 고객에게 계속 사용할 수 있습니다. (GRANITE-57478)
 
 * 이제 유효 권한 대화 상자의 문자열이 **도구** > **일반** > **구성** 브라우저에서 올바르게 정렬됩니다. 이전에는 폴더를 선택하고, 속성을 클릭한 다음, 유효 권한을 클릭한 후에 문자열 하나가 줄 밖에 표시되었습니다. 맞춤을 복원하도록 레이아웃 규칙을 업데이트했습니다. (CQ-4359166)
@@ -481,7 +481,7 @@ Experience Manager Forms에 서비스 팩을 설치하는 방법은 [Experience 
 
 ### Experience Manager 컨텐츠 조각용 GraphQL 인덱스 패키지 설치{#install-aem-graphql-index-add-on-package}
 
-GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 Experience Manager 콘텐츠 조각을 설치해야 합니다.
+GraphQL을 사용하는 고객은 GraphQL 색인 패키지 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip)에 [Experience Manager 콘텐츠 조각을 설치해야 합니다.
 
 이 옵션을 사용하면 사용된 기능을 기반으로 필요한 색인 정의를 추가할 수 있습니다.
 
@@ -626,8 +626,6 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 
 * `bindref`을(를) 사용하는 **첨부 파일** 필드가 포함된 양식이 **작업 할당** 단계를 통해 AEM Workflow에 제출되면 첨부 파일이 표시되지 않습니다. 따라서 작업이 받은 편지함에서 열리면 나타나지 않습니다. 파일이 저장소에 올바르게 저장되지만 작업 할당 단계 UI에 첨부 파일이 표시되지 않습니다. (FORMS-23722)
 
-* 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류와 함께 실패합니다. 따라서 더 크고 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
-
 * 관리 콘솔 또는 Java 코드(EJB/SOA)를 통해 LCA(LiveCycle Archive)를 가져오면 후속 PDF Generator(PDFG) 및 ConvertPDF 작업이 실패할 수 있습니다. 이 문제는 포함된 AEM 작성자 인스턴스가 있는 Windows 및 Linux의 JDK 및 Oracle WebLogic 14c 스택에 영향을 줍니다. (FORMS-30031)
 
   서버 로그에 다음 오류가 표시됩니다.
@@ -692,11 +690,11 @@ AEM에서 헤드리스 콘텐츠를 관리하기 위한 권장 편집기는 다�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)에 문의하십시오.
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65)
 >* [Adobe 우선 순위 제품 업데이트 구독](https://www.adobe.com/kr/subscription/priority-product-update.html)
 
